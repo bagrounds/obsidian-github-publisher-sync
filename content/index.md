@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-14T16:11:34-07:00
+updated: 2026-05-15T05:00:09-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-05-14T16:11:34-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (546)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (547)  
+- [2026-05-15](./reflections/2026-05-15.md)  
 - [2026-05-14 | 🐾🌈💔 Saying Goodbye](./reflections/2026-05-14.md)  
 - [2026-05-13 | 🌟 Health 📰 Sands 🐔 Miracle 🤖 Alignment 🏛️ Commons 🔀 Integrity 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-13.md)  
 - [2026-05-12 | 🌟 Progress 🏛️ Commons 📰 Ripples 🤖 Intent 🐔 Pantry 🔀 Echoes 📊 Dashboard 📋 Drawer 🧱 Pattern 🧰📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-12.md)  
-- [2026-05-11 | 🌟 World 📰 Ripples 🔍 Fails, 🤖 Conscience 🏛️ Citizen 🐔 Magic 🤖 Removing 🤖 Paying 🔀 Systems ⚙️ Meter. 🧰📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (207)  
+## [🤖 AI Blog](./ai-blog/index.md) (208)  
+- [2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄](./ai-blog/2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
 - [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./ai-blog/2026-05-12-4-word-meter-capability-pattern-refactor.md)  
 - [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./ai-blog/2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
 - [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./ai-blog/2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  
-- [2026-05-11 | 🟣 Word Meter PureScript Slice Two — Captions Land 🤖](./ai-blog/2026-05-11-6-word-meter-purescript-slice-two-captions-land.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (65)  
@@ -71,10 +71,10 @@ updated: 2026-05-14T16:11:34-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
+- [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
+- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
-- [🧱🛠️ Working Effectively with Legacy Code](./books/working-effectively-with-legacy-code.md)  
-- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
-- [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
   
   
 ## [📺 Videos](./videos/index.md) (827)  
@@ -85,17 +85,17 @@ updated: 2026-05-14T16:11:34-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🧠💾 Memory](./topics/memory.md)  
+- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
 - [🤖📈 Maximizing AI Leverage](./topics/maximizing-ai-leverage.md)  
 - [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
-- [➗📐 Math](./topics/math.md)  
-- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](./articles/improving-token-efficiency-in-github-agentic-workflows.md)  
-- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
-- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
+- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
+- [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
+- [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T13:47:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast isometric illustration featuring a glowing, translucent digital brain at the center. From the brain, intricate streams of binary code and geometric data packets flow into a secure, metallic sandbox enclosure. Inside the sandbox, a modular interface displays organized file structures and clean command-line scripts, representing efficient code execution. The background is a deep, professional navy blue with subtle, interconnected glowing nodes and faint circuit board patterns that suggest connectivity and intelligent architecture. The aesthetic is modern, minimalist, and technical, using a color palette of electric cyan, vibrant magenta, and crisp white to symbolize data flow, intelligence, and optimized efficiency.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🤖🧠📈⚡ Code execution with MCP: Building more efficient agents  
+![articles-code-execution-with-mcp-building-more-efficient-agents](../articles-code-execution-with-mcp-building-more-efficient-agents.jpg)  
   
 ## 🤖 AI Summary  
   

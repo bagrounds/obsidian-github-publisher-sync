@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T15:52:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, cross-section illustration of a human head in profile, rendered in soft, calming tones of teal and muted gold. Inside the silhouette of the brain, a glowing, intricate network of neural pathways is interconnected with vibrant, crystalline structures representing energy molecules. Surrounding the brain are soft, ethereal light particles transitioning from a dim, shadowed gradient at the bottom to a bright, clear radiance at the top, symbolizing the shift from depressive states to mental clarity and metabolic restoration. The aesthetic is clean, scientific, and minimalist, emphasizing the intersection of biological energy and neurological well-being.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💪🧠📉💊🔎 [Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11567172)  
+![articles-creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions](../articles-creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.jpg)  
   
 ## 🤖 AI Summary  
 * [💪🏋️‍♂️ Creatine](../topics/creatine.md), traditionally recognized for boosting physical performance, has recently shown potential as an adjunctive therapy for treating depression 😔.  

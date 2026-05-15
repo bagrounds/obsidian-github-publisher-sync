@@ -20,6 +20,13 @@ export const attachClickListener = (node) => (handler) => () => {
   node.addEventListener("click", () => handler())
 }
 
+export const attachCheckboxChangeListener = (node) => (handler) => () => {
+  node.addEventListener("change", (event) => {
+    const checked = !!(event && event.target && event.target.checked)
+    handler(checked)()
+  })
+}
+
 export const appendChildToElement = (parent) => (child) => () => {
   parent.appendChild(child)
 }

@@ -28,5 +28,10 @@ export const installTestHook = (api) => () => {
     reset: () => api.reset(),
     resetAt: (timestamp) => api.resetAt(timestamp)(),
     persistNow: () => api.persistNow(),
+    getKeepAwake: () => api.getKeepAwake(),
+    setKeepAwake: (enabled) => api.setKeepAwake(!!enabled)(),
+    getKeepAwakeStatus: () => api.getKeepAwakeStatus(),
+    getWakeLockHeld: () => api.getWakeLockHeld(),
+    simulateVisibilityVisible: () => api.simulateVisibilityVisible(),
   }
 }

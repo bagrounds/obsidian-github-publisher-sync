@@ -25,15 +25,25 @@ import WordMeter.Capability.Storage
   , persistSnapshot
   , renderLoadError
   )
+import WordMeter.Capability.WakeLock
+  ( class WakeLock
+  , releaseScreenWakeLock
+  , requestScreenWakeLock
+  )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
 import WordMeter.FFI.StorageError (StorageError, renderStorageError)
+import WordMeter.FFI.Visibility (subscribeVisibilityVisible)
+import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
 import WordMeter.Recording
   ( Action(..)
   , diagnosticsText
+  , idleKeepAwakeStatus
   , initialSession
+  , renderKeepAwakeUnavailable
   , resetConfirmationPrompt
   , toPersistedData
   , view
+  , wakeLockAcquiredStatus
   )
 import WordMeter.TestHook as TestHook
 import WordMeter.Version (version)
@@ -45,6 +55,7 @@ type ClickHandlers =
   { requestToggle :: Effect Unit
   , requestCopyDiagnostics :: Effect Unit
   , requestReset :: Effect Unit
+  , requestSetKeepAwake :: Boolean -> Effect Unit
   }
 
 main :: Effect Unit
@@ -54,6 +65,7 @@ main = do
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
     , requestReset: pure unit :: Effect Unit
+    , requestSetKeepAwake: \_ -> pure unit :: Effect Unit
     }
   let
     applicationEnvironment :: ApplicationEnvironment
@@ -70,9 +82,14 @@ main = do
           runAppM applicationEnvironment (handleCopyDiagnostics resolved)
       , requestReset: readClickHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleReset resolved)
+      , requestSetKeepAwake: \enabled ->
+          readClickHandlers >>= \resolved ->
+            runAppM applicationEnvironment (handleSetKeepAwake resolved enabled)
       }
   Ref.write handlers clickHandlersRef
   runAppM applicationEnvironment (startApplication handlers)
+  subscribeVisibilityVisible
+    (runAppM applicationEnvironment (handleVisibilityVisible handlers))
   TestHook.install
     { dispatch: \action ->
         runAppM applicationEnvironment (dispatch handlers action)
@@ -81,7 +98,10 @@ main = do
     , version
     , requestCopyDiagnostics: handlers.requestCopyDiagnostics
     , requestReset: handlers.requestReset
+    , requestSetKeepAwake: handlers.requestSetKeepAwake
     , persistNow: runAppM applicationEnvironment persistCurrentSession
+    , simulateVisibilityVisible:
+        runAppM applicationEnvironment (handleVisibilityVisible handlers)
     }
 
 startApplication
@@ -139,6 +159,9 @@ persistAfterAction (Tick _) = pure unit
 persistAfterAction (RecordDiagnostic _ _ _) = pure unit
 persistAfterAction (SetEnvironment _) = pure unit
 persistAfterAction (SetCopyStatus _) = pure unit
+persistAfterAction (SetKeepAwake _) = pure unit
+persistAfterAction (SetKeepAwakeStatus _) = pure unit
+persistAfterAction (SetWakeLockHeld _) = pure unit
 
 persistCurrentSession
   :: forall m
@@ -176,6 +199,12 @@ recordConfirmFailure failure = do
         (renderConfirmError failure)
     )
 
+recordWakeLockEvent
+  :: forall m. Clock m => SessionState m => String -> String -> m Unit
+recordWakeLockEvent label detail = do
+  timestamp <- currentTimeMillis
+  updateSession (RecordDiagnostic timestamp label detail)
+
 rerender
   :: forall m
    . DomMount m
@@ -192,11 +221,15 @@ handleToggle
   => DomMount m
   => SessionState m
   => Storage m
+  => WakeLock m
   => ClickHandlers
   -> m Unit
 handleToggle handlers = do
   timestamp <- currentTimeMillis
   dispatch handlers (Toggle timestamp)
+  session <- readCurrentSession
+  if session.listening then maybeAcquireWakeLock handlers
+  else releaseAndForgetWakeLock handlers
 
 handleCopyDiagnostics
   :: forall m
@@ -223,13 +256,121 @@ handleReset
   => DomMount m
   => SessionState m
   => Storage m
+  => WakeLock m
   => ClickHandlers
   -> m Unit
 handleReset handlers = do
   outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
   case outcome of
     Right true -> do
+      releaseAndForgetWakeLock handlers
       timestamp <- currentTimeMillis
       dispatch handlers (Reset timestamp)
     Right false -> pure unit
     Left confirmFailure -> recordConfirmFailure confirmFailure
+
+handleSetKeepAwake
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => ClickHandlers
+  -> Boolean
+  -> m Unit
+handleSetKeepAwake handlers enabled = do
+  dispatch handlers (SetKeepAwake enabled)
+  session <- readCurrentSession
+  case enabled, session.listening of
+    true, true -> maybeAcquireWakeLock handlers
+    false, _ -> releaseAndForgetWakeLock handlers
+    true, false -> pure unit
+
+handleVisibilityVisible
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => ClickHandlers
+  -> m Unit
+handleVisibilityVisible handlers = do
+  session <- readCurrentSession
+  if session.listening && session.keepAwake && not session.wakeLockHeld
+  then maybeAcquireWakeLock handlers
+  else pure unit
+
+maybeAcquireWakeLock
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => ClickHandlers
+  -> m Unit
+maybeAcquireWakeLock handlers = do
+  session <- readCurrentSession
+  if not session.keepAwake then pure unit
+  else
+    requestScreenWakeLock
+      (onWakeLockAcquired handlers)
+      (onWakeLockError handlers)
+      (onWakeLockAutoReleased handlers)
+
+releaseAndForgetWakeLock
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => ClickHandlers
+  -> m Unit
+releaseAndForgetWakeLock handlers = do
+  releaseScreenWakeLock
+  recordWakeLockEvent "wake lock release" "released"
+  dispatch handlers (SetWakeLockHeld false)
+  dispatch handlers (SetKeepAwakeStatus idleKeepAwakeStatus)
+
+onWakeLockAcquired
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> m Unit
+onWakeLockAcquired handlers = do
+  recordWakeLockEvent "wake lock acquired" "screen held"
+  dispatch handlers (SetWakeLockHeld true)
+  dispatch handlers (SetKeepAwakeStatus wakeLockAcquiredStatus)
+
+onWakeLockError
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> WakeLockError
+  -> m Unit
+onWakeLockError handlers failure = do
+  let rendered = renderWakeLockError failure
+  recordWakeLockEvent "wake lock failure" rendered
+  dispatch handlers (SetWakeLockHeld false)
+  dispatch handlers (SetKeepAwakeStatus (renderKeepAwakeUnavailable rendered))
+
+onWakeLockAutoReleased
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> m Unit
+onWakeLockAutoReleased handlers = do
+  recordWakeLockEvent "wake lock auto-released" "page hidden"
+  dispatch handlers (SetWakeLockHeld false)

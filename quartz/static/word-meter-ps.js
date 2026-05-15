@@ -572,12 +572,12 @@
 
   // output/Control.Monad/index.js
   var ap = function(dictMonad) {
-    var bind8 = bind(dictMonad.Bind1());
+    var bind9 = bind(dictMonad.Bind1());
     var pure7 = pure(dictMonad.Applicative0());
     return function(f) {
       return function(a) {
-        return bind8(f)(function(f$prime) {
-          return bind8(a)(function(a$prime) {
+        return bind9(f)(function(f$prime) {
+          return bind9(a)(function(a$prime) {
             return pure7(f$prime(a$prime));
           });
         });
@@ -882,13 +882,13 @@
     };
   };
   var bindReaderT = function(dictBind) {
-    var bind8 = bind(dictBind);
+    var bind9 = bind(dictBind);
     var applyReaderT1 = applyReaderT(dictBind.Apply0());
     return {
       bind: function(v) {
         return function(k) {
           return function(r) {
-            return bind8(v(r))(function(a) {
+            return bind9(v(r))(function(a) {
               var v1 = k(a);
               return v1(r);
             });
@@ -1036,6 +1036,12 @@
   var attachClickListener = (node) => (handler) => () => {
     node.addEventListener("click", () => handler());
   };
+  var attachCheckboxChangeListener = (node) => (handler) => () => {
+    node.addEventListener("change", (event) => {
+      const checked = !!(event && event.target && event.target.checked);
+      handler(checked)();
+    });
+  };
   var appendChildToElement = (parent) => (child) => () => {
     parent.appendChild(child);
   };
@@ -1142,6 +1148,26 @@
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
   var traverse_2 = /* @__PURE__ */ traverse_(applicativeEffect)(foldableArray);
+  var ClickListener = /* @__PURE__ */ function() {
+    function ClickListener2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    ClickListener2.create = function(value0) {
+      return new ClickListener2(value0);
+    };
+    return ClickListener2;
+  }();
+  var CheckboxChangeListener = /* @__PURE__ */ function() {
+    function CheckboxChangeListener2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    CheckboxChangeListener2.create = function(value0) {
+      return new CheckboxChangeListener2(value0);
+    };
+    return CheckboxChangeListener2;
+  }();
   var ElementNode = /* @__PURE__ */ function() {
     function ElementNode2(value0) {
       this.value0 = value0;
@@ -1173,12 +1199,12 @@
       };
     };
   };
-  var onClick = function(handler) {
-    return {
-      eventName: "click",
-      handler
-    };
-  };
+  var onClick = /* @__PURE__ */ function() {
+    return ClickListener.create;
+  }();
+  var onCheckboxChange = /* @__PURE__ */ function() {
+    return CheckboxChangeListener.create;
+  }();
   var element = function(tag) {
     return function(attributes) {
       return function(styles) {
@@ -1193,6 +1219,20 @@
             });
           };
         };
+      };
+    };
+  };
+  var input = function(attributes) {
+    return function(styles) {
+      return function(listeners) {
+        return element("input")(attributes)(styles)(listeners)([]);
+      };
+    };
+  };
+  var label_ = function(attributes) {
+    return function(styles) {
+      return function(children) {
+        return element("label")(attributes)(styles)([])(children);
       };
     };
   };
@@ -1242,8 +1282,16 @@
     };
   };
   var applyListener = function(node) {
-    return function(listener) {
-      return attachClickListener(node)(listener.handler);
+    return function(v) {
+      if (v instanceof ClickListener) {
+        return attachClickListener(node)(v.value0);
+      }
+      ;
+      if (v instanceof CheckboxChangeListener) {
+        return attachCheckboxChangeListener(node)(v.value0);
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Vdom (line 148, column 22 - line 150, column 78): " + [v.constructor.name]);
     };
   };
   var applyAttribute = function(node) {
@@ -1267,7 +1315,7 @@
       };
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Vdom (line 109, column 1 - line 109, column 37): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Vdom (line 131, column 1 - line 131, column 37): " + [v.constructor.name]);
   };
   var appendRenderedChild = function(parent) {
     return function(child) {
@@ -1288,7 +1336,7 @@
           return appendChildToElement(hostMaybe.value0)(child)();
         }
         ;
-        throw new Error("Failed pattern match at WordMeter.Vdom (line 102, column 3 - line 107, column 38): " + [hostMaybe.constructor.name]);
+        throw new Error("Failed pattern match at WordMeter.Vdom (line 124, column 3 - line 129, column 38): " + [hostMaybe.constructor.name]);
       };
     };
   };
@@ -1663,11 +1711,11 @@
   // output/WordMeter.Recording/index.js
   var max3 = /* @__PURE__ */ max(ordNumber);
   var min3 = /* @__PURE__ */ min(ordNumber);
+  var append12 = /* @__PURE__ */ append(semigroupArray);
   var show2 = /* @__PURE__ */ show(showInt);
   var div1 = /* @__PURE__ */ div(euclideanRingInt);
   var mod2 = /* @__PURE__ */ mod(euclideanRingInt);
   var max1 = /* @__PURE__ */ max(ordInt);
-  var append12 = /* @__PURE__ */ append(semigroupArray);
   var map4 = /* @__PURE__ */ map(functorArray);
   var show1 = /* @__PURE__ */ show(showNumber);
   var Toggle = /* @__PURE__ */ function() {
@@ -1759,6 +1807,36 @@
     };
     return LoadSession2;
   }();
+  var SetKeepAwake = /* @__PURE__ */ function() {
+    function SetKeepAwake2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetKeepAwake2.create = function(value0) {
+      return new SetKeepAwake2(value0);
+    };
+    return SetKeepAwake2;
+  }();
+  var SetKeepAwakeStatus = /* @__PURE__ */ function() {
+    function SetKeepAwakeStatus2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetKeepAwakeStatus2.create = function(value0) {
+      return new SetKeepAwakeStatus2(value0);
+    };
+    return SetKeepAwakeStatus2;
+  }();
+  var SetWakeLockHeld = /* @__PURE__ */ function() {
+    function SetWakeLockHeld2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetWakeLockHeld2.create = function(value0) {
+      return new SetWakeLockHeld2(value0);
+    };
+    return SetWakeLockHeld2;
+  }();
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
       var cutoff = session.now - windowMs;
@@ -1781,8 +1859,9 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 307, column 22 - line 309, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 345, column 22 - line 347, column 46): " + [session.firstStartedAt.constructor.name]);
   };
+  var wakeLockAcquiredStatus = "screen will stay on";
   var toPersistedData = function(session) {
     return {
       totalWords: session.totalWords,
@@ -1811,10 +1890,13 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 547, column 24 - line 549, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 635, column 24 - line 637, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
+  var renderKeepAwakeUnavailable = function(reason) {
+    return "(" + (reason + ")");
+  };
   var minimumCaptionOpacity = 0.15;
   var millisecondsPerSecond = 1e3;
   var millisecondsPerMinute = 6e4;
@@ -1828,7 +1910,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 320, column 1 - line 320, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 358, column 1 - line 358, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -1845,12 +1927,28 @@
     var elapsed = min3(longWindowMs)(max3(1)(wallSpanMs(session)));
     return ratePerMinute(wordsInTrailingWindow(longWindowMs)(session))(elapsed);
   };
+  var keepAwakeAttributes = function(session) {
+    var base = [testId("wm-keep-awake"), attribute("type")("checkbox")];
+    var withChecked = function() {
+      if (session.keepAwake) {
+        return append12(base)([attribute("checked")("checked")]);
+      }
+      ;
+      return base;
+    }();
+    if (session.listening) {
+      return append12(withChecked)([attribute("disabled")("disabled")]);
+    }
+    ;
+    return withChecked;
+  };
   var intervalDurationMs = function(interval) {
     return max3(0)(interval.endedAt - interval.startedAt);
   };
   var intervalRate = function(interval) {
     return ratePerMinute(interval.wordCount)(max3(1)(intervalDurationMs(interval)));
   };
+  var idleKeepAwakeStatus = "";
   var idleCopyStatus = "";
   var initialSession = /* @__PURE__ */ function() {
     return {
@@ -1867,7 +1965,10 @@
       lastError: Nothing.value,
       diagnostics: [],
       environment: Nothing.value,
-      copyStatus: idleCopyStatus
+      copyStatus: idleCopyStatus,
+      keepAwake: true,
+      keepAwakeStatus: idleKeepAwakeStatus,
+      wakeLockHeld: false
     };
   }();
   var formatRate = function(rate) {
@@ -1890,19 +1991,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 357, column 1 - line 357, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 395, column 1 - line 395, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $40 = totalSeconds < 60;
-    if ($40) {
+    var $45 = totalSeconds < 60;
+    if ($45) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $41 = totalMinutes < 60;
-    if ($41) {
+    var $46 = totalMinutes < 60;
+    if ($46) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -1945,7 +2046,7 @@
               return v.value0;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 177, column 21 - line 179, column 31): " + [v1.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 203, column 21 - line 205, column 31): " + [v1.currentIntervalStart.constructor.name]);
           }();
           var completed = {
             startedAt,
@@ -1965,6 +2066,9 @@
             lastError: v1.lastError,
             environment: v1.environment,
             copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -1990,6 +2094,9 @@
             lastError: v1.lastError,
             environment: v1.environment,
             copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
@@ -2002,7 +2109,7 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 212, column 30 - line 214, column 40): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 238, column 30 - line 240, column 40): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
             captions: pruneCaptions(v.value0)(v1.captions),
@@ -2018,8 +2125,8 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $49 = wordCount === 0;
-          if ($49) {
+          var $54 = wordCount === 0;
+          if ($54) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
@@ -2032,6 +2139,9 @@
               diagnostics: v1.diagnostics,
               environment: v1.environment,
               copyStatus: v1.copyStatus,
+              keepAwake: v1.keepAwake,
+              keepAwakeStatus: v1.keepAwakeStatus,
+              wakeLockHeld: v1.wakeLockHeld,
               now: v.value1,
               wordEvents: prunedEvents,
               captions: prunedCaptions
@@ -2052,6 +2162,9 @@
             lastError: v1.lastError,
             environment: v1.environment,
             copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
             totalWords: v1.totalWords + wordCount | 0,
             currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
             captions: append12(prunedCaptions)([{
@@ -2082,6 +2195,9 @@
             diagnostics: v1.diagnostics,
             environment: v1.environment,
             copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
             now: v.value1,
             captions: pruneCaptions(v.value1)(v1.captions)
           };
@@ -2102,6 +2218,9 @@
           diagnostics: v1.diagnostics,
           environment: v1.environment,
           copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
           now: v.value0,
           wordEvents: pruneEvents(v.value0)(v1.wordEvents),
           captions: pruneCaptions(v.value0)(v1.captions)
@@ -2123,6 +2242,9 @@
           lastError: v1.lastError,
           environment: v1.environment,
           copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
           diagnostics: recordEntry({
             timestamp: v.value0,
             label: v.value1,
@@ -2146,6 +2268,9 @@
           lastError: v1.lastError,
           diagnostics: v1.diagnostics,
           copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
           environment: new Just(v.value0)
         };
       }
@@ -2165,6 +2290,9 @@
           lastError: v1.lastError,
           diagnostics: v1.diagnostics,
           environment: v1.environment,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
           copyStatus: v.value0
         };
       }
@@ -2187,9 +2315,12 @@
           completedActiveMs: initialSession.completedActiveMs,
           lastError: initialSession.lastError,
           copyStatus: initialSession.copyStatus,
+          keepAwakeStatus: initialSession.keepAwakeStatus,
+          wakeLockHeld: initialSession.wakeLockHeld,
           now: v.value0,
           diagnostics: recordEntry(resetEntry)(v1.diagnostics),
-          environment: v1.environment
+          environment: v1.environment,
+          keepAwake: v1.keepAwake
         };
       }
       ;
@@ -2202,6 +2333,9 @@
           diagnostics: v1.diagnostics,
           environment: v1.environment,
           copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
           totalWords: max1(0)(v.value0.totalWords),
           firstStartedAt: v.value0.firstStartedAt,
           wordEvents: v.value0.wordEvents,
@@ -2212,7 +2346,79 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 173, column 1 - line 173, column 39): " + [v.constructor.name, v1.constructor.name]);
+      if (v instanceof SetKeepAwake) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          keepAwake: v.value0,
+          keepAwakeStatus: function() {
+            if (v.value0) {
+              return v1.keepAwakeStatus;
+            }
+            ;
+            return idleKeepAwakeStatus;
+          }()
+        };
+      }
+      ;
+      if (v instanceof SetKeepAwakeStatus) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          wakeLockHeld: v1.wakeLockHeld,
+          keepAwakeStatus: v.value0
+        };
+      }
+      ;
+      if (v instanceof SetWakeLockHeld) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v.value0
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 199, column 1 - line 199, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var captionOpacity = function(nowMs) {
@@ -2264,7 +2470,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 513, column 11 - line 515, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 601, column 11 - line 603, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -2273,14 +2479,31 @@
   var buildReset = function(handlers) {
     return button([testId("wm-reset"), buttonType("button")])([style("margin-top")("8px"), style("margin-left")("8px"), style("padding")("8px 14px"), style("border-radius")("999px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("background")("transparent"), style("color")("#e6edf3"), style("cursor")("pointer"), style("font")("inherit"), style("font-size")("13px")])([onClick(handlers.requestReset)])([text("Reset")]);
   };
+  var buildKeepAwake = function(handlers) {
+    return function(session) {
+      return div_([])([style("display")("flex"), style("flex-wrap")("wrap"), style("align-items")("center"), style("justify-content")("center"), style("gap")("8px"), style("margin-top")("10px"), style("font-size")("13px"), style("color")("#9aa5b1")])([label_([testId("wm-keep-awake-label")])([style("display")("inline-flex"), style("align-items")("center"), style("cursor")(function() {
+        if (session.listening) {
+          return "default";
+        }
+        ;
+        return "pointer";
+      }()), style("opacity")(function() {
+        if (session.listening) {
+          return "0.7";
+        }
+        ;
+        return "1.0";
+      }())])([input(keepAwakeAttributes(session))([style("margin-right")("8px")])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([])([style("user-select")("none")])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status")])([style("font-size")("12px"), style("color")("#7d8590")])([text(session.keepAwakeStatus)])]);
+    };
+  };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
   var buildEventLogEntry = function(interval) {
     return div_([testId("wm-event-log-entry")])([style("display")("flex"), style("justify-content")("space-between"), style("align-items")("baseline"), style("gap")("8px"), style("padding")("6px 0"), style("border-top")("1px solid rgba(255,255,255,0.04)"), style("font-size")("13px")])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $65 = length(session.eventLog) === 0;
-      if ($65) {
+      var $76 = length(session.eventLog) === 0;
+      if ($76) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -2304,8 +2527,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $66 = length(session.captions) === 0;
-      if ($66) {
+      var $77 = length(session.captions) === 0;
+      if ($77) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -2322,7 +2545,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 302, column 31 - line 304, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 340, column 31 - line 342, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -2333,7 +2556,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 
@@ -2551,7 +2774,7 @@
     }
     return m;
   }
-  function _foldM(bind8) {
+  function _foldM(bind9) {
     return function(f) {
       return function(mz) {
         return function(m) {
@@ -2563,7 +2786,7 @@
           }
           for (var k in m) {
             if (hasOwnProperty.call(m, k)) {
-              acc = bind8(acc)(g(k));
+              acc = bind9(acc)(g(k));
             }
           }
           return acc;
@@ -3587,8 +3810,134 @@
     return dict.clearPersistedSnapshot;
   };
 
+  // output/WordMeter.FFI.WakeLock/foreign.js
+  var activeSentinel = null;
+  var describeError2 = (error2) => {
+    if (error2 == null) return "error";
+    if (typeof error2 === "string") return error2;
+    if (error2.name) return String(error2.name);
+    if (error2.message) return String(error2.message);
+    return String(error2);
+  };
+  var hasWakeLock = () => typeof navigator !== "undefined" && navigator.wakeLock && typeof navigator.wakeLock.request === "function";
+  var requestScreenWakeLockImpl = (onAcquired) => (onError) => (onAutoReleased) => () => {
+    if (!hasWakeLock()) {
+      onError("unsupported")();
+      return;
+    }
+    try {
+      navigator.wakeLock.request("screen").then((sentinel) => {
+        activeSentinel = sentinel;
+        if (sentinel && typeof sentinel.addEventListener === "function") {
+          sentinel.addEventListener("release", () => {
+            if (activeSentinel === sentinel) activeSentinel = null;
+            onAutoReleased();
+          });
+        }
+        onAcquired();
+      }).catch((reason) => {
+        onError(describeError2(reason))();
+      });
+    } catch (error2) {
+      onError(describeError2(error2))();
+    }
+  };
+  var releaseScreenWakeLockImpl = () => {
+    const sentinel = activeSentinel;
+    activeSentinel = null;
+    if (!sentinel || typeof sentinel.release !== "function") return;
+    try {
+      const result = sentinel.release();
+      if (result && typeof result.catch === "function") {
+        result.catch(() => {
+        });
+      }
+    } catch (_error) {
+    }
+  };
+
+  // output/WordMeter.FFI.WakeLock/index.js
+  var WakeLockUnsupported = /* @__PURE__ */ function() {
+    function WakeLockUnsupported2() {
+    }
+    ;
+    WakeLockUnsupported2.value = new WakeLockUnsupported2();
+    return WakeLockUnsupported2;
+  }();
+  var WakeLockUnavailable = /* @__PURE__ */ function() {
+    function WakeLockUnavailable2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    WakeLockUnavailable2.create = function(value0) {
+      return new WakeLockUnavailable2(value0);
+    };
+    return WakeLockUnavailable2;
+  }();
+  var renderWakeLockError = function(v) {
+    if (v instanceof WakeLockUnsupported) {
+      return "wake lock not supported on this browser";
+    }
+    ;
+    if (v instanceof WakeLockUnavailable) {
+      return "wake lock unavailable: " + v.value0;
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.FFI.WakeLock (line 31, column 23 - line 33, column 68): " + [v.constructor.name]);
+  };
+  var releaseScreenWakeLock = releaseScreenWakeLockImpl;
+  var interpretReason = function(reason) {
+    if (reason === "unsupported") {
+      return WakeLockUnsupported.value;
+    }
+    ;
+    if (otherwise) {
+      return new WakeLockUnavailable(reason);
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.FFI.WakeLock (line 64, column 1 - line 64, column 43): " + [reason.constructor.name]);
+  };
+  var requestScreenWakeLock = function(onAcquired) {
+    return function(onError) {
+      return function(onAutoReleased) {
+        return requestScreenWakeLockImpl(onAcquired)(function(reason) {
+          return onError(interpretReason(reason));
+        })(onAutoReleased);
+      };
+    };
+  };
+
+  // output/WordMeter.Capability.WakeLock/index.js
+  var bind8 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var wakeLockAppM = {
+    requestScreenWakeLock: function(v) {
+      return function(onError) {
+        return function(v1) {
+          return bind8(ask5)(function(applicationEnvironment) {
+            return liftEffect7(requestScreenWakeLock(runReaderT(v)(applicationEnvironment))(function(reason) {
+              var v2 = onError(reason);
+              return runReaderT(v2)(applicationEnvironment);
+            })(runReaderT(v1)(applicationEnvironment)));
+          });
+        };
+      };
+    },
+    releaseScreenWakeLock: /* @__PURE__ */ liftEffect7(releaseScreenWakeLock),
+    Monad0: function() {
+      return monadAppM;
+    }
+  };
+  var requestScreenWakeLock2 = function(dict) {
+    return dict.requestScreenWakeLock;
+  };
+  var releaseScreenWakeLock2 = function(dict) {
+    return dict.releaseScreenWakeLock;
+  };
+
   // output/WordMeter.FFI.Confirm/foreign.js
-  var describeError2 = (error2) => error2 == null ? "" : String(error2);
+  var describeError3 = (error2) => error2 == null ? "" : String(error2);
   var askForConfirmationImpl = (prompt) => () => {
     if (typeof window === "undefined" || typeof window.confirm !== "function") {
       return { tag: "unavailable", detail: "", accepted: false };
@@ -3596,7 +3945,7 @@
     try {
       return { tag: "ok", detail: "", accepted: Boolean(window.confirm(prompt)) };
     } catch (error2) {
-      return { tag: "exception", detail: describeError2(error2), accepted: false };
+      return { tag: "exception", detail: describeError3(error2), accepted: false };
     }
   };
 
@@ -3645,6 +3994,18 @@
     return map9(interpretConfirm)(askForConfirmationImpl(prompt));
   };
 
+  // output/WordMeter.FFI.Visibility/foreign.js
+  var subscribeVisibilityVisibleImpl = (handler) => () => {
+    if (typeof document === "undefined") return;
+    if (typeof document.addEventListener !== "function") return;
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") handler();
+    });
+  };
+
+  // output/WordMeter.FFI.Visibility/index.js
+  var subscribeVisibilityVisible = subscribeVisibilityVisibleImpl;
+
   // output/WordMeter.TestHook/foreign.js
   var installTestHook = (api) => () => {
     if (typeof window === "undefined") return;
@@ -3673,7 +4034,12 @@
       requestCopyDiagnostics: () => api.requestCopyDiagnostics(),
       reset: () => api.reset(),
       resetAt: (timestamp) => api.resetAt(timestamp)(),
-      persistNow: () => api.persistNow()
+      persistNow: () => api.persistNow(),
+      getKeepAwake: () => api.getKeepAwake(),
+      setKeepAwake: (enabled) => api.setKeepAwake(!!enabled)(),
+      getKeepAwakeStatus: () => api.getKeepAwakeStatus(),
+      getWakeLockHeld: () => api.getWakeLockHeld(),
+      simulateVisibilityVisible: () => api.simulateVisibilityVisible()
     };
   };
 
@@ -3766,7 +4132,18 @@
       resetAt: function(timestamp) {
         return v.dispatch(new Reset(timestamp));
       },
-      persistNow: v.persistNow
+      persistNow: v.persistNow,
+      getKeepAwake: map10(function(v1) {
+        return v1.keepAwake;
+      })(v.readSession),
+      setKeepAwake: v.requestSetKeepAwake,
+      getKeepAwakeStatus: map10(function(v1) {
+        return v1.keepAwakeStatus;
+      })(v.readSession),
+      getWakeLockHeld: map10(function(v1) {
+        return v1.wakeLockHeld;
+      })(v.readSession),
+      simulateVisibilityVisible: v.simulateVisibilityVisible
     });
   };
 
@@ -3774,6 +4151,20 @@
   var discard3 = /* @__PURE__ */ discard(discardUnit);
   var pure6 = /* @__PURE__ */ pure(applicativeEffect);
   var currentTimeMillis3 = /* @__PURE__ */ currentTimeMillis2(clockAppM);
+  var recordWakeLockEvent = function(dictClock) {
+    var bind1 = bind(dictClock.Monad0().Bind1());
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    return function(dictSessionState) {
+      var updateSession2 = updateSession(dictSessionState);
+      return function(label) {
+        return function(detail) {
+          return bind1(currentTimeMillis1)(function(timestamp) {
+            return updateSession2(new RecordDiagnostic(timestamp, label, detail));
+          });
+        };
+      };
+    };
+  };
   var recordStorageFailure = function(dictClock) {
     var bind1 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
@@ -3832,7 +4223,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 152, column 3 - line 154, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 175, column 3 - line 177, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -3870,7 +4261,7 @@
                 return recordStorageFailure2("persist clear")(outcome.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Main (line 134, column 3 - line 136, column 79): " + [outcome.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Main (line 154, column 3 - line 156, column 79): " + [outcome.constructor.name]);
             });
           }
           ;
@@ -3894,7 +4285,19 @@
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 123, column 1 - line 129, column 12): " + [v.constructor.name]);
+          if (v instanceof SetKeepAwake) {
+            return pure1(unit);
+          }
+          ;
+          if (v instanceof SetKeepAwakeStatus) {
+            return pure1(unit);
+          }
+          ;
+          if (v instanceof SetWakeLockHeld) {
+            return pure1(unit);
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Main (line 143, column 1 - line 149, column 12): " + [v.constructor.name]);
         };
       };
     };
@@ -3947,7 +4350,7 @@
                         return recordLoadFailure2(restored.value0);
                       }
                       ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 100, column 3 - line 103, column 54): " + [restored.constructor.name]);
+                      throw new Error("Failed pattern match at WordMeter.Main (line 120, column 3 - line 123, column 54): " + [restored.constructor.name]);
                     }())(function() {
                       return bind1(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
@@ -4015,39 +4418,66 @@
     };
   };
   var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clockAppM)(clipboardAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
-  var handleReset = function(dictMonadEffect) {
-    var liftEffect7 = liftEffect(dictMonadEffect);
-    return function(dictClock) {
-      var Monad0 = dictClock.Monad0();
-      var bind1 = bind(Monad0.Bind1());
-      var currentTimeMillis1 = currentTimeMillis2(dictClock);
-      var dispatch2 = dispatch(dictClock);
-      var pure1 = pure(Monad0.Applicative0());
-      var recordConfirmFailure1 = recordConfirmFailure(dictClock);
-      return function(dictDomMount) {
-        var dispatch3 = dispatch2(dictDomMount);
-        return function(dictSessionState) {
-          var dispatch4 = dispatch3(dictSessionState);
-          var recordConfirmFailure2 = recordConfirmFailure1(dictSessionState);
-          return function(dictStorage) {
-            var dispatch5 = dispatch4(dictStorage);
-            return function(handlers) {
-              return bind1(liftEffect7(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
-                if (outcome instanceof Right && outcome.value0) {
-                  return bind1(currentTimeMillis1)(function(timestamp) {
-                    return dispatch5(handlers)(new Reset(timestamp));
-                  });
-                }
-                ;
-                if (outcome instanceof Right && !outcome.value0) {
-                  return pure1(unit);
-                }
-                ;
-                if (outcome instanceof Left) {
-                  return recordConfirmFailure2(outcome.value0);
-                }
-                ;
-                throw new Error("Failed pattern match at WordMeter.Main (line 230, column 3 - line 235, column 63): " + [outcome.constructor.name]);
+  var onWakeLockAcquired = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(handlers) {
+            return discard22(recordWakeLockEvent2("wake lock acquired")("screen held"))(function() {
+              return discard22(dispatch5(handlers)(new SetWakeLockHeld(true)))(function() {
+                return dispatch5(handlers)(new SetKeepAwakeStatus(wakeLockAcquiredStatus));
+              });
+            });
+          };
+        };
+      };
+    };
+  };
+  var onWakeLockAutoReleased = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(handlers) {
+            return discard22(recordWakeLockEvent2("wake lock auto-released")("page hidden"))(function() {
+              return dispatch5(handlers)(new SetWakeLockHeld(false));
+            });
+          };
+        };
+      };
+    };
+  };
+  var onWakeLockError = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(handlers) {
+            return function(failure) {
+              var rendered = renderWakeLockError(failure);
+              return discard22(recordWakeLockEvent2("wake lock failure")(rendered))(function() {
+                return discard22(dispatch5(handlers)(new SetWakeLockHeld(false)))(function() {
+                  return dispatch5(handlers)(new SetKeepAwakeStatus(renderKeepAwakeUnavailable(rendered)));
+                });
               });
             };
           };
@@ -4055,33 +4485,256 @@
       };
     };
   };
-  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
-  var handleToggle = function(dictClock) {
-    var bind1 = bind(dictClock.Monad0().Bind1());
-    var currentTimeMillis1 = currentTimeMillis2(dictClock);
-    var dispatch2 = dispatch(dictClock);
+  var maybeAcquireWakeLock = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var bind1 = bind(Monad0.Bind1());
+    var pure1 = pure(Monad0.Applicative0());
+    var onWakeLockAcquired1 = onWakeLockAcquired(dictClock);
+    var onWakeLockError1 = onWakeLockError(dictClock);
+    var onWakeLockAutoReleased1 = onWakeLockAutoReleased(dictClock);
     return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
+      var onWakeLockAcquired2 = onWakeLockAcquired1(dictDomMount);
+      var onWakeLockError2 = onWakeLockError1(dictDomMount);
+      var onWakeLockAutoReleased2 = onWakeLockAutoReleased1(dictDomMount);
       return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var onWakeLockAcquired3 = onWakeLockAcquired2(dictSessionState);
+        var onWakeLockError3 = onWakeLockError2(dictSessionState);
+        var onWakeLockAutoReleased3 = onWakeLockAutoReleased2(dictSessionState);
         return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return bind1(currentTimeMillis1)(function(timestamp) {
-              return dispatch5(handlers)(new Toggle(timestamp));
-            });
+          var onWakeLockAcquired4 = onWakeLockAcquired3(dictStorage);
+          var onWakeLockError4 = onWakeLockError3(dictStorage);
+          var onWakeLockAutoReleased4 = onWakeLockAutoReleased3(dictStorage);
+          return function(dictWakeLock) {
+            var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
+            return function(handlers) {
+              return bind1(readCurrentSession2)(function(session) {
+                var $351 = !session.keepAwake;
+                if ($351) {
+                  return pure1(unit);
+                }
+                ;
+                return requestScreenWakeLock3(onWakeLockAcquired4(handlers))(onWakeLockError4(handlers))(onWakeLockAutoReleased4(handlers));
+              });
+            };
           };
         };
       };
     };
   };
-  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var handleVisibilityVisible = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var bind1 = bind(Monad0.Bind1());
+    var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
+    var pure1 = pure(Monad0.Applicative0());
+    return function(dictDomMount) {
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
+      return function(dictSessionState) {
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
+        return function(dictStorage) {
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
+          return function(dictWakeLock) {
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
+            return function(handlers) {
+              return bind1(readCurrentSession2)(function(session) {
+                var $352 = session.listening && (session.keepAwake && !session.wakeLockHeld);
+                if ($352) {
+                  return maybeAcquireWakeLock5(handlers);
+                }
+                ;
+                return pure1(unit);
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleVisibilityVisible1 = /* @__PURE__ */ handleVisibilityVisible(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var releaseAndForgetWakeLock = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(dictWakeLock) {
+            var releaseScreenWakeLock3 = releaseScreenWakeLock2(dictWakeLock);
+            return function(handlers) {
+              return discard22(releaseScreenWakeLock3)(function() {
+                return discard22(recordWakeLockEvent2("wake lock release")("released"))(function() {
+                  return discard22(dispatch5(handlers)(new SetWakeLockHeld(false)))(function() {
+                    return dispatch5(handlers)(new SetKeepAwakeStatus(idleKeepAwakeStatus));
+                  });
+                });
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleReset = function(dictMonadEffect) {
+    var liftEffect8 = liftEffect(dictMonadEffect);
+    return function(dictClock) {
+      var Monad0 = dictClock.Monad0();
+      var Bind1 = Monad0.Bind1();
+      var bind1 = bind(Bind1);
+      var discard22 = discard3(Bind1);
+      var releaseAndForgetWakeLock1 = releaseAndForgetWakeLock(dictClock);
+      var currentTimeMillis1 = currentTimeMillis2(dictClock);
+      var dispatch2 = dispatch(dictClock);
+      var pure1 = pure(Monad0.Applicative0());
+      var recordConfirmFailure1 = recordConfirmFailure(dictClock);
+      return function(dictDomMount) {
+        var releaseAndForgetWakeLock2 = releaseAndForgetWakeLock1(dictDomMount);
+        var dispatch3 = dispatch2(dictDomMount);
+        return function(dictSessionState) {
+          var releaseAndForgetWakeLock3 = releaseAndForgetWakeLock2(dictSessionState);
+          var dispatch4 = dispatch3(dictSessionState);
+          var recordConfirmFailure2 = recordConfirmFailure1(dictSessionState);
+          return function(dictStorage) {
+            var releaseAndForgetWakeLock4 = releaseAndForgetWakeLock3(dictStorage);
+            var dispatch5 = dispatch4(dictStorage);
+            return function(dictWakeLock) {
+              var releaseAndForgetWakeLock5 = releaseAndForgetWakeLock4(dictWakeLock);
+              return function(handlers) {
+                return bind1(liftEffect8(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
+                  if (outcome instanceof Right && outcome.value0) {
+                    return discard22(releaseAndForgetWakeLock5(handlers))(function() {
+                      return bind1(currentTimeMillis1)(function(timestamp) {
+                        return dispatch5(handlers)(new Reset(timestamp));
+                      });
+                    });
+                  }
+                  ;
+                  if (outcome instanceof Right && !outcome.value0) {
+                    return pure1(unit);
+                  }
+                  ;
+                  if (outcome instanceof Left) {
+                    return recordConfirmFailure2(outcome.value0);
+                  }
+                  ;
+                  throw new Error("Failed pattern match at WordMeter.Main (line 264, column 3 - line 270, column 63): " + [outcome.constructor.name]);
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var handleSetKeepAwake = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var bind1 = bind(Bind1);
+    var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
+    var releaseAndForgetWakeLock1 = releaseAndForgetWakeLock(dictClock);
+    var pure1 = pure(Monad0.Applicative0());
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
+      var releaseAndForgetWakeLock2 = releaseAndForgetWakeLock1(dictDomMount);
+      return function(dictSessionState) {
+        var dispatch4 = dispatch3(dictSessionState);
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
+        var releaseAndForgetWakeLock3 = releaseAndForgetWakeLock2(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
+          var releaseAndForgetWakeLock4 = releaseAndForgetWakeLock3(dictStorage);
+          return function(dictWakeLock) {
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
+            var releaseAndForgetWakeLock5 = releaseAndForgetWakeLock4(dictWakeLock);
+            return function(handlers) {
+              return function(enabled) {
+                return discard22(dispatch5(handlers)(new SetKeepAwake(enabled)))(function() {
+                  return bind1(readCurrentSession2)(function(session) {
+                    if (enabled && session.listening) {
+                      return maybeAcquireWakeLock5(handlers);
+                    }
+                    ;
+                    if (!enabled) {
+                      return releaseAndForgetWakeLock5(handlers);
+                    }
+                    ;
+                    if (enabled && !session.listening) {
+                      return pure1(unit);
+                    }
+                    ;
+                    throw new Error("Failed pattern match at WordMeter.Main (line 285, column 3 - line 288, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                  });
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleSetKeepAwake1 = /* @__PURE__ */ handleSetKeepAwake(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var handleToggle = function(dictClock) {
+    var Bind1 = dictClock.Monad0().Bind1();
+    var bind1 = bind(Bind1);
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
+    var releaseAndForgetWakeLock1 = releaseAndForgetWakeLock(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
+      var releaseAndForgetWakeLock2 = releaseAndForgetWakeLock1(dictDomMount);
+      return function(dictSessionState) {
+        var dispatch4 = dispatch3(dictSessionState);
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
+        var releaseAndForgetWakeLock3 = releaseAndForgetWakeLock2(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
+          var releaseAndForgetWakeLock4 = releaseAndForgetWakeLock3(dictStorage);
+          return function(dictWakeLock) {
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
+            var releaseAndForgetWakeLock5 = releaseAndForgetWakeLock4(dictWakeLock);
+            return function(handlers) {
+              return bind1(currentTimeMillis1)(function(timestamp) {
+                return discard22(dispatch5(handlers)(new Toggle(timestamp)))(function() {
+                  return bind1(readCurrentSession2)(function(session) {
+                    if (session.listening) {
+                      return maybeAcquireWakeLock5(handlers);
+                    }
+                    ;
+                    return releaseAndForgetWakeLock5(handlers);
+                  });
+                });
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
   var main = function __do() {
     var sessionRef = $$new(initialSession)();
     var clickHandlersRef = $$new({
       requestToggle: pure6(unit),
       requestCopyDiagnostics: pure6(unit),
-      requestReset: pure6(unit)
+      requestReset: pure6(unit),
+      requestSetKeepAwake: function(v) {
+        return pure6(unit);
+      }
     })();
     var readClickHandlers = read(clickHandlersRef);
     var applicationEnvironment = {
@@ -4099,10 +4752,17 @@
       requestReset: function __do2() {
         var resolved = readClickHandlers();
         return runAppM(applicationEnvironment)(handleReset1(resolved))();
+      },
+      requestSetKeepAwake: function(enabled) {
+        return function __do2() {
+          var resolved = readClickHandlers();
+          return runAppM(applicationEnvironment)(handleSetKeepAwake1(resolved)(enabled))();
+        };
       }
     };
     write(handlers)(clickHandlersRef)();
     runAppM(applicationEnvironment)(startApplication1(handlers))();
+    subscribeVisibilityVisible(runAppM(applicationEnvironment)(handleVisibilityVisible1(handlers)))();
     return install({
       dispatch: function(action) {
         return runAppM(applicationEnvironment)(dispatch1(handlers)(action));
@@ -4112,7 +4772,9 @@
       version,
       requestCopyDiagnostics: handlers.requestCopyDiagnostics,
       requestReset: handlers.requestReset,
-      persistNow: runAppM(applicationEnvironment)(persistCurrentSession1)
+      requestSetKeepAwake: handlers.requestSetKeepAwake,
+      persistNow: runAppM(applicationEnvironment)(persistCurrentSession1),
+      simulateVisibilityVisible: runAppM(applicationEnvironment)(handleVisibilityVisible1(handlers))
     })();
   };
 

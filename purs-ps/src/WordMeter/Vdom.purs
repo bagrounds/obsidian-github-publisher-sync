@@ -2,7 +2,7 @@ module WordMeter.Vdom
   ( Node
   , Attribute
   , Style
-  , Listener
+  , Listener(..)
   , text
   , element
   , div_
@@ -11,11 +11,14 @@ module WordMeter.Vdom
   , details_
   , summary_
   , pre_
+  , input
+  , label_
   , attribute
   , testId
   , buttonType
   , style
   , onClick
+  , onCheckboxChange
   , mount
   ) where
 
@@ -39,7 +42,15 @@ type ElementSpec =
 
 type Attribute = { name :: String, value :: String }
 type Style = { property :: String, value :: String }
-type Listener = { eventName :: String, handler :: Effect Unit }
+
+-- | A DOM listener tagged by its event shape. Click handlers take no
+-- | argument; checkbox change handlers receive the new checked state.
+-- | Keeping the algebra closed (rather than a single `eventName + Foreign`
+-- | constructor) lets the renderer dispatch through a typed FFI shim
+-- | for each event kind.
+data Listener
+  = ClickListener (Effect Unit)
+  | CheckboxChangeListener (Boolean -> Effect Unit)
 
 text :: String -> Node
 text = TextNode
@@ -66,6 +77,12 @@ summary_ = element "summary"
 pre_ :: Array Attribute -> Array Style -> Array Node -> Node
 pre_ attributes styles children = element "pre" attributes styles [] children
 
+input :: Array Attribute -> Array Style -> Array Listener -> Node
+input attributes styles listeners = element "input" attributes styles listeners []
+
+label_ :: Array Attribute -> Array Style -> Array Node -> Node
+label_ attributes styles children = element "label" attributes styles [] children
+
 attribute :: String -> String -> Attribute
 attribute name value = { name, value }
 
@@ -79,7 +96,10 @@ style :: String -> String -> Style
 style property value = { property, value }
 
 onClick :: Effect Unit -> Listener
-onClick handler = { eventName: "click", handler }
+onClick = ClickListener
+
+onCheckboxChange :: (Boolean -> Effect Unit) -> Listener
+onCheckboxChange = CheckboxChangeListener
 
 foreign import data Element :: Type
 
@@ -93,6 +113,8 @@ foreign import createTextNodeInDocument :: String -> Effect Element
 foreign import setAttributeOnElement :: String -> String -> Element -> Effect Unit
 foreign import setStyleOnElement :: String -> String -> Element -> Effect Unit
 foreign import attachClickListener :: Element -> Effect Unit -> Effect Unit
+foreign import attachCheckboxChangeListener
+  :: Element -> (Boolean -> Effect Unit) -> Effect Unit
 foreign import appendChildToElement :: Element -> Element -> Effect Unit
 foreign import removeAllChildrenFromElement :: Element -> Effect Unit
 
@@ -123,7 +145,9 @@ applyStyle :: Element -> Style -> Effect Unit
 applyStyle node decl = setStyleOnElement decl.property decl.value node
 
 applyListener :: Element -> Listener -> Effect Unit
-applyListener node listener = attachClickListener node listener.handler
+applyListener node = case _ of
+  ClickListener handler -> attachClickListener node handler
+  CheckboxChangeListener handler -> attachCheckboxChangeListener node handler
 
 appendRenderedChild :: Element -> Node -> Effect Unit
 appendRenderedChild parent child = renderNode child >>= appendChildToElement parent

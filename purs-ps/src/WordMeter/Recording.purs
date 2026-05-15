@@ -29,6 +29,9 @@ module WordMeter.Recording
   , formatDurationMs
   , diagnosticsText
   , idleCopyStatus
+  , idleKeepAwakeStatus
+  , wakeLockAcquiredStatus
+  , renderKeepAwakeUnavailable
   , toPersistedData
   , resetConfirmationPrompt
   ) where
@@ -50,10 +53,14 @@ import WordMeter.Diagnostics
   )
 import WordMeter.Vdom
   ( Node
+  , attribute
   , button
   , buttonType
   , details_
   , div_
+  , input
+  , label_
+  , onCheckboxChange
   , onClick
   , pre_
   , span_
@@ -80,6 +87,9 @@ type Session =
   , diagnostics :: Array DiagnosticEntry
   , environment :: Maybe EnvironmentSnapshot
   , copyStatus :: String
+  , keepAwake :: Boolean
+  , keepAwakeStatus :: String
+  , wakeLockHeld :: Boolean
   }
 
 type Caption =
@@ -136,6 +146,9 @@ data Action
   | SetCopyStatus String
   | Reset Number
   | LoadSession PersistedData
+  | SetKeepAwake Boolean
+  | SetKeepAwakeStatus String
+  | SetWakeLockHeld Boolean
 
 type Dispatch = Action -> Effect Unit
 
@@ -143,10 +156,20 @@ type Handlers =
   { requestToggle :: Effect Unit
   , requestCopyDiagnostics :: Effect Unit
   , requestReset :: Effect Unit
+  , requestSetKeepAwake :: Boolean -> Effect Unit
   }
 
 idleCopyStatus :: String
 idleCopyStatus = ""
+
+idleKeepAwakeStatus :: String
+idleKeepAwakeStatus = ""
+
+wakeLockAcquiredStatus :: String
+wakeLockAcquiredStatus = "screen will stay on"
+
+renderKeepAwakeUnavailable :: String -> String
+renderKeepAwakeUnavailable reason = "(" <> reason <> ")"
 
 resetConfirmationPrompt :: String
 resetConfirmationPrompt =
@@ -168,6 +191,9 @@ initialSession =
   , diagnostics: []
   , environment: Nothing
   , copyStatus: idleCopyStatus
+  , keepAwake: true
+  , keepAwakeStatus: idleKeepAwakeStatus
+  , wakeLockHeld: false
   }
 
 reduce :: Action -> Session -> Session
@@ -272,6 +298,7 @@ reduce (Reset timestamp) session =
       { now = timestamp
       , diagnostics = recordEntry resetEntry session.diagnostics
       , environment = session.environment
+      , keepAwake = session.keepAwake
       }
 reduce (LoadSession persisted) session = session
   { totalWords = max 0 persisted.totalWords
@@ -281,6 +308,17 @@ reduce (LoadSession persisted) session = session
   , currentIntervalWords = 0
   , currentIntervalStart = Nothing
   , listening = false
+  }
+reduce (SetKeepAwake enabled) session = session
+  { keepAwake = enabled
+  , keepAwakeStatus =
+      if enabled then session.keepAwakeStatus else idleKeepAwakeStatus
+  }
+reduce (SetKeepAwakeStatus statusText) session = session
+  { keepAwakeStatus = statusText
+  }
+reduce (SetWakeLockHeld held) session = session
+  { wakeLockHeld = held
   }
 
 toPersistedData :: Session -> PersistedData
@@ -403,6 +441,7 @@ view handlers session =
     , buildCountLabel
     , buildToggle handlers session
     , buildReset handlers
+    , buildKeepAwake handlers session
     , buildStats session
     , buildCaptions session
     , buildEventLog session
@@ -482,6 +521,55 @@ buildReset handlers =
     ]
     [ onClick handlers.requestReset ]
     [ text "Reset" ]
+
+buildKeepAwake :: Handlers -> Session -> Node
+buildKeepAwake handlers session =
+  div_ []
+    [ style "display" "flex"
+    , style "flex-wrap" "wrap"
+    , style "align-items" "center"
+    , style "justify-content" "center"
+    , style "gap" "8px"
+    , style "margin-top" "10px"
+    , style "font-size" "13px"
+    , style "color" "#9aa5b1"
+    ]
+    [ label_
+        [ testId "wm-keep-awake-label" ]
+        [ style "display" "inline-flex"
+        , style "align-items" "center"
+        , style "cursor" (if session.listening then "default" else "pointer")
+        , style "opacity" (if session.listening then "0.7" else "1.0")
+        ]
+        [ input
+            (keepAwakeAttributes session)
+            [ style "margin-right" "8px" ]
+            [ onCheckboxChange handlers.requestSetKeepAwake ]
+        , span_ []
+            [ style "user-select" "none" ]
+            [ text "🔋 Keep counting with screen on (recommended)" ]
+        ]
+    , span_ [ testId "wm-keep-awake-status" ]
+        [ style "font-size" "12px"
+        , style "color" "#7d8590"
+        ]
+        [ text session.keepAwakeStatus ]
+    ]
+
+keepAwakeAttributes :: Session -> Array { name :: String, value :: String }
+keepAwakeAttributes session =
+  let
+    base =
+      [ testId "wm-keep-awake"
+      , attribute "type" "checkbox"
+      ]
+    withChecked =
+      if session.keepAwake then base <> [ attribute "checked" "checked" ]
+      else base
+  in
+    if session.listening then
+      withChecked <> [ attribute "disabled" "disabled" ]
+    else withChecked
 
 buildStats :: Session -> Node
 buildStats session =

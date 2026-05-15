@@ -44,6 +44,11 @@ foreign import installTestHook
      , reset :: Effect Unit
      , resetAt :: Number -> Effect Unit
      , persistNow :: Effect Unit
+     , getKeepAwake :: Effect Boolean
+     , setKeepAwake :: Boolean -> Effect Unit
+     , getKeepAwakeStatus :: Effect String
+     , getWakeLockHeld :: Effect Boolean
+     , simulateVisibilityVisible :: Effect Unit
      }
   -> Effect Unit
 
@@ -54,7 +59,9 @@ install
      , version :: String
      , requestCopyDiagnostics :: Effect Unit
      , requestReset :: Effect Unit
+     , requestSetKeepAwake :: Boolean -> Effect Unit
      , persistNow :: Effect Unit
+     , simulateVisibilityVisible :: Effect Unit
      }
   -> Effect Unit
 install
@@ -64,7 +71,9 @@ install
   , version
   , requestCopyDiagnostics
   , requestReset
+  , requestSetKeepAwake
   , persistNow
+  , simulateVisibilityVisible
   } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
@@ -111,6 +120,11 @@ install
     , reset: requestReset
     , resetAt: \timestamp -> dispatch (Reset timestamp)
     , persistNow
+    , getKeepAwake: _.keepAwake <$> readSession
+    , setKeepAwake: requestSetKeepAwake
+    , getKeepAwakeStatus: _.keepAwakeStatus <$> readSession
+    , getWakeLockHeld: _.wakeLockHeld <$> readSession
+    , simulateVisibilityVisible
     }
 
 firstStartedOrNaN :: Session -> Number

@@ -44,6 +44,7 @@ purs-ps/
       DomMount.purs            class DomMount + AppM instance + RecordingDomMountM test newtype
       SessionState.purs        class SessionState + AppM instance + StatefulSessionM test newtype
       Storage.purs             class Storage + AppM instance + InMemoryStorageM test newtype (slice 6)
+      WakeLock.purs            class WakeLock + AppM instance + RecordingWakeLockM test newtype (slice 7)
     Persistence.purs           Argonaut-backed encode / decode for `Recording.PersistedData` (slice 6)
     FFI/
       Clock.purs / .js         currentTimeMillis :: Effect Number
@@ -52,6 +53,8 @@ purs-ps/
       Storage.purs / .js       localStorage read / write / clear returning `Either StorageError a` (slice 6)
       StorageError.purs        `data StorageError = StorageUnavailable | StorageException | MissingKey` (slice 6)
       Confirm.purs / .js       window.confirm wrapper returning `Either ConfirmError Boolean` (slice 6)
+      WakeLock.purs / .js      navigator.wakeLock.request('screen') with typed `WakeLockError` (slice 7)
+      Visibility.purs / .js    document `visibilitychange` subscription for wake-lock re-acquisition (slice 7)
   test/Test.Main.purs          pure reducer / formatter unit tests + per-capability test-newtype tests
 scripts/
   build-word-meter-ps.mjs      spago bundle wrapper
@@ -93,7 +96,20 @@ Every fallible boundary returns `Either` rather than swallowing failures:
 - `WordMeter.FFI.Confirm` exposes `askForConfirmation :: String -> Effect (Either ConfirmError Boolean)` with `ConfirmError = ConfirmUnavailable | ConfirmException String`.
 - `WordMeter.Capability.Storage` lifts those errors into a `LoadError = LoadStorageError StorageError | LoadDecodeError PersistenceError` for the read side, and surfaces the raw `StorageError` for writes and clears.
 
-`Main.persistAfterAction` writes after every `Toggle` and `InjectFinalTranscript`, clears after `Reset`, and is a no-op for `Tick` / `RecordDiagnostic` / `SetEnvironment` / `SetCopyStatus` / `LoadSession`. Every `Left` from a load, persist, clear, or confirm call is recorded as a diagnostic entry (`persist load failure`, `persist save failure`, `persist clear failure`, `reset confirm failure`) so failures are visible in the diagnostics drawer rather than silently dropped.
+`Main.persistAfterAction` writes after every `Toggle` and `InjectFinalTranscript`, clears after `Reset`, and is a no-op for `Tick` / `RecordDiagnostic` / `SetEnvironment` / `SetCopyStatus` / `LoadSession` / `SetKeepAwake` / `SetKeepAwakeStatus` / `SetWakeLockHeld`. Every `Left` from a load, persist, clear, or confirm call is recorded as a diagnostic entry (`persist load failure`, `persist save failure`, `persist clear failure`, `reset confirm failure`) so failures are visible in the diagnostics drawer rather than silently dropped.
+
+## Wake lock + keep-awake toggle (slice 7)
+
+The keep-awake feature mirrors the legacy build's "🔋 Keep counting with screen on (recommended)" checkbox. Slice 7 keeps the preference and the wake-lock lifetime fully inside the reducer + capability stack:
+
+- `Session.keepAwake :: Boolean` (default `true`) is the user's preference. It is **not** persisted across reloads — every fresh page load starts with the recommended-on default, matching legacy behavior. The reducer responds to a `SetKeepAwake` action; turning it off also clears any lingering `keepAwakeStatus` so the UI does not contradict the new preference.
+- `Session.keepAwakeStatus :: String` is the human-facing status next to the checkbox: empty when idle, `"screen will stay on"` after a successful acquisition, `"(wake lock not supported on this browser)"` or `"(wake lock unavailable: <reason>)"` on failure. Driven by `SetKeepAwakeStatus`.
+- `Session.wakeLockHeld :: Boolean` tracks whether we currently hold the system sentinel. The browser can auto-release on visibility-hidden; when it does, `onAutoReleased` fires and `SetWakeLockHeld false` flips the flag without changing the user preference.
+- `WordMeter.FFI.WakeLock` (`Capability.WakeLock` + `FFI/WakeLock.purs|.js`) wraps `navigator.wakeLock.request('screen')` with the typed error ADT `WakeLockError = WakeLockUnsupported | WakeLockUnavailable String`. The JS shim keeps the active sentinel in module-level state so PureScript never threads an opaque handle around. `requestScreenWakeLock` takes three continuations (`onAcquired`, `onError`, `onAutoReleased`) — the same shape as `Clipboard` — and `releaseScreenWakeLock` is a fire-and-forget `Effect Unit`.
+- `WordMeter.FFI.Visibility.subscribeVisibilityVisible` registers a single document-level `visibilitychange` listener that fires the supplied handler whenever the page becomes visible. The handler re-acquires the wake lock if (and only if) the session is currently listening, keep-awake is on, and no lock is currently held.
+- `Main` wires it all together: `handleToggle` acquires on the listening edge / releases on the idle edge, `handleSetKeepAwake` acquires/releases when the user toggles the checkbox mid-session, and `handleReset` releases the lock before clearing state. Every success, error, auto-release, and explicit release is recorded as a diagnostic entry (`wake lock acquired`, `wake lock failure`, `wake lock auto-released`, `wake lock release`), keeping the diagnostics drawer the single source of truth for what the program did.
+
+The `WakeLock` capability ships a `RecordingWakeLockM` test newtype that captures every request/release as a `WakeLockEvent` so the reducer + capability wiring is unit-testable without touching the browser.
 
 ## Test hook
 
@@ -111,6 +127,10 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `reset()` — same code path the reset button takes, including the `window.confirm` prompt; tests that want to skip the prompt should use `resetAt` instead.
 - `resetAt(timestamp)` — dispatches a `Reset` action at the given clock value, bypassing the confirmation dialog; clears persisted state via the `Storage` capability.
 - `persistNow()` — force-persists the current session through the `Storage` capability without waiting for the next reducer action.
+- `getKeepAwake()` / `setKeepAwake(boolean)` — read or write the keep-awake preference; `setKeepAwake` goes through the same `handleSetKeepAwake` path the rendered checkbox uses, so it also acquires or releases the wake lock if the session is currently listening.
+- `getKeepAwakeStatus()` — current value of the keep-awake status span (empty, `"screen will stay on"`, or an `(unavailable: …)` reason).
+- `getWakeLockHeld()` — whether the program currently holds a wake-lock sentinel.
+- `simulateVisibilityVisible()` — same code path the document-level `visibilitychange → 'visible'` listener takes; lets tests verify re-acquisition without driving real visibility events.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -146,6 +166,9 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-diagnostics-copy` — the `📋 Copy diagnostics` button. On click the meter calls `navigator.clipboard.writeText` with the rendered text and updates `wm-diagnostics-copy-status` with `Copied!` on success or `Copy failed: <reason>` on failure (including when the Clipboard API is unavailable).
 - `wm-diagnostics-copy-status` — a span next to the copy button, empty until the first copy attempt completes.
 - `wm-diagnostics-content` — a `<pre>` containing the formatted diagnostics text: an environment snapshot prefix (`version`, `userAgent`, `navigator.language`) followed by the rolling event log capped at `diagnosticsLimit` (60) entries. Each event line is `<clock-time>  <label>[ — <detail>]`.
+- `wm-keep-awake` — `<input type="checkbox">` controlling whether the meter requests a Screen Wake Lock when listening starts. Defaults to **checked** on every page load (the preference is deliberately not persisted — the legacy build behaves the same way). Disabled while listening.
+- `wm-keep-awake-label` — the surrounding `<label>` (also acts as the click target for the checkbox).
+- `wm-keep-awake-status` — a status span next to the checkbox. Empty when idle; `"screen will stay on"` after a successful acquisition; `"(wake lock not supported on this browser)"` or `"(wake lock unavailable: <reason>)"` when the request fails.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -160,7 +183,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 4     | Event log with word histories (timeline of completed counting sessions: started, duration, words, wpm) | ✅ Done    |
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ✅ Done    |
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
-| 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
+| 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
 | 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
 | 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |

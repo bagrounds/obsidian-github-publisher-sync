@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T18:08:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric digital illustration featuring a glowing, translucent folder icon floating in the center. Inside the folder, several neatly stacked, layered documents are fanning out, symbolizing progressive disclosure. Emerging from the folder are various modular, puzzle-piece icons representing specialized skills—such as a gear for code execution, a magnifying glass for analysis, and a scroll for instructions. The background is a soft, deep gradient of navy and cool grey, suggesting a professional technical workspace. Subtle, thin lines of light connect the modules to the main folder, implying a dynamic, interconnected system. The overall aesthetic is minimalist, sleek, and high-tech, using a palette of cyan, white, and slate to emphasize clarity and modularity.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills  
+![articles-equipping-agents-for-the-real-world-with-agent-skills](../articles-equipping-agents-for-the-real-world-with-agent-skills.jpg)  
   
 ## 🤖 AI Summary  
   

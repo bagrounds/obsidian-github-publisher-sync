@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - 🎙️📰⚖️ Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart
-title: 🎙️📰⚖️ Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart
+  - 🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart
+title: 🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart
 URL: https://bagrounds.org/videos/media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart
 Author:
 Platform:
@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/fHonUeO_ePU
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# 🎙️📰⚖️ Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart  
+# 🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart  
 ![Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](https://youtu.be/fHonUeO_ePU)  
   
 ## 🤖 AI Summary  

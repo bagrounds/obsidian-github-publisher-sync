@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T10:56:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a glowing, complex neural network transforming into a clean, structured geometric tree. On the left side, a chaotic cloud of interconnected nodes and tangled lines represents a messy, unstructured problem. As the lines move toward the right, they transition into a highly ordered, symmetrical tree diagram composed of distinct, illuminated geometric prisms (the bags). The background is a deep, professional navy blue, with soft, ambient light highlighting the nodes and connections. The overall aesthetic is minimalist and technical, using a palette of cyan, white, and soft gold to emphasize precision, logic, and systematic decomposition.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](https://arxiv.org/pdf/2510.07772)  
+![articles-an-approach-for-systematic-decomposition-of-complex-llm-tasks](../articles-an-approach-for-systematic-decomposition-of-complex-llm-tasks.jpg)  
   
 ## 🤖 🧐 AI Summary  
   

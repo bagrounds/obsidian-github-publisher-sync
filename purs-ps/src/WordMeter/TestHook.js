@@ -33,5 +33,10 @@ export const installTestHook = (api) => () => {
     getKeepAwakeStatus: () => api.getKeepAwakeStatus(),
     getWakeLockHeld: () => api.getWakeLockHeld(),
     simulateVisibilityVisible: () => api.simulateVisibilityVisible(),
+    simulateRecognitionError: (code, message) =>
+      api.simulateRecognitionError(String(code == null ? "" : code))(
+        String(message == null ? "" : message),
+      )(),
+    getErrorBanner: () => api.getErrorBanner(),
   }
 }

@@ -49,6 +49,8 @@ foreign import installTestHook
      , getKeepAwakeStatus :: Effect String
      , getWakeLockHeld :: Effect Boolean
      , simulateVisibilityVisible :: Effect Unit
+     , simulateRecognitionError :: String -> String -> Effect Unit
+     , getErrorBanner :: Effect String
      }
   -> Effect Unit
 
@@ -62,6 +64,7 @@ install
      , requestSetKeepAwake :: Boolean -> Effect Unit
      , persistNow :: Effect Unit
      , simulateVisibilityVisible :: Effect Unit
+     , simulateRecognitionError :: String -> String -> Effect Unit
      }
   -> Effect Unit
 install
@@ -74,6 +77,7 @@ install
   , requestSetKeepAwake
   , persistNow
   , simulateVisibilityVisible
+  , simulateRecognitionError
   } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
@@ -125,6 +129,8 @@ install
     , getKeepAwakeStatus: _.keepAwakeStatus <$> readSession
     , getWakeLockHeld: _.wakeLockHeld <$> readSession
     , simulateVisibilityVisible
+    , simulateRecognitionError
+    , getErrorBanner: _.errorBanner <$> readSession
     }
 
 firstStartedOrNaN :: Session -> Number

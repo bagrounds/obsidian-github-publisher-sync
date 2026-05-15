@@ -34,6 +34,7 @@ module WordMeter.Recording
   , renderKeepAwakeUnavailable
   , toPersistedData
   , resetConfirmationPrompt
+  , idleErrorBanner
   ) where
 
 import Prelude
@@ -50,6 +51,14 @@ import WordMeter.Diagnostics
   , EnvironmentSnapshot
   , formatDiagnostics
   , recordEntry
+  )
+import WordMeter.RecognitionError
+  ( RecognitionErrorCode
+  , classifyRecognitionError
+  , isPermissionDenied
+  , isTransient
+  , recognitionErrorBannerText
+  , renderRecognitionErrorDiagnosticDetail
   )
 import WordMeter.Vdom
   ( Node
@@ -90,6 +99,7 @@ type Session =
   , keepAwake :: Boolean
   , keepAwakeStatus :: String
   , wakeLockHeld :: Boolean
+  , errorBanner :: String
   }
 
 type Caption =
@@ -149,6 +159,8 @@ data Action
   | SetKeepAwake Boolean
   | SetKeepAwakeStatus String
   | SetWakeLockHeld Boolean
+  | HandleRecognitionError Number String String
+  | ClearErrorBanner
 
 type Dispatch = Action -> Effect Unit
 
@@ -170,6 +182,9 @@ wakeLockAcquiredStatus = "screen will stay on"
 
 renderKeepAwakeUnavailable :: String -> String
 renderKeepAwakeUnavailable reason = "(" <> reason <> ")"
+
+idleErrorBanner :: String
+idleErrorBanner = ""
 
 resetConfirmationPrompt :: String
 resetConfirmationPrompt =
@@ -194,38 +209,12 @@ initialSession =
   , keepAwake: true
   , keepAwakeStatus: idleKeepAwakeStatus
   , wakeLockHeld: false
+  , errorBanner: idleErrorBanner
   }
 
 reduce :: Action -> Session -> Session
 reduce (Toggle timestamp) session
-  | session.listening =
-      let
-        startedAt = case session.currentIntervalStart of
-          Just start -> start
-          Nothing -> timestamp
-        closedInterval = max 0.0 (timestamp - startedAt)
-        completed =
-          { startedAt
-          , endedAt: max timestamp startedAt
-          , wordCount: session.currentIntervalWords
-          }
-        stopDetail =
-          "words=" <> show session.currentIntervalWords
-            <> " duration=" <> formatDurationMs closedInterval
-        stopEntry =
-          { timestamp, label: "stop counting", detail: stopDetail }
-      in
-        session
-          { listening = false
-          , currentIntervalStart = Nothing
-          , currentIntervalWords = 0
-          , completedActiveMs = session.completedActiveMs + closedInterval
-          , wordEvents = pruneEvents timestamp session.wordEvents
-          , captions = pruneCaptions timestamp session.captions
-          , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
-          , now = timestamp
-          , diagnostics = recordEntry stopEntry session.diagnostics
-          }
+  | session.listening = stopListeningAt timestamp "stop counting" "" session
   | otherwise =
       let
         startEntry =
@@ -242,6 +231,7 @@ reduce (Toggle timestamp) session
           , captions = pruneCaptions timestamp session.captions
           , now = timestamp
           , diagnostics = recordEntry startEntry session.diagnostics
+          , errorBanner = idleErrorBanner
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -320,6 +310,70 @@ reduce (SetKeepAwakeStatus statusText) session = session
 reduce (SetWakeLockHeld held) session = session
   { wakeLockHeld = held
   }
+reduce (HandleRecognitionError timestamp code message) session =
+  let
+    classified :: RecognitionErrorCode
+    classified = classifyRecognitionError code
+    errorEntry =
+      { timestamp
+      , label: "recognition.onerror"
+      , detail: renderRecognitionErrorDiagnosticDetail code message
+      }
+    sessionWithDiagnostic = session
+      { diagnostics = recordEntry errorEntry session.diagnostics
+      , now = timestamp
+      }
+    bannerText = recognitionErrorBannerText classified
+  in
+    if isTransient classified then sessionWithDiagnostic
+    else if isPermissionDenied classified && sessionWithDiagnostic.listening then
+      let
+        stopped = stopListeningAt timestamp "session ended"
+          "reason=permission denied" sessionWithDiagnostic
+      in
+        stopped { errorBanner = bannerText }
+    else
+      sessionWithDiagnostic { errorBanner = bannerText }
+reduce ClearErrorBanner session = session
+  { errorBanner = idleErrorBanner
+  }
+
+-- | Close the currently open counting interval, append it to the event
+-- | log, prune captions/events, and record a stop-style diagnostic
+-- | entry. Used by both the user-driven Toggle and the
+-- | permission-denied branch of `HandleRecognitionError` so the audit
+-- | trail is identical in both cases.
+stopListeningAt :: Number -> String -> String -> Session -> Session
+stopListeningAt timestamp label reasonDetail session =
+  let
+    startedAt = case session.currentIntervalStart of
+      Just start -> start
+      Nothing -> timestamp
+    closedInterval = max 0.0 (timestamp - startedAt)
+    completed =
+      { startedAt
+      , endedAt: max timestamp startedAt
+      , wordCount: session.currentIntervalWords
+      }
+    statsDetail =
+      "words=" <> show session.currentIntervalWords
+        <> " duration=" <> formatDurationMs closedInterval
+    fullDetail =
+      if reasonDetail == "" then statsDetail
+      else statsDetail <> " " <> reasonDetail
+    stopEntry = { timestamp, label, detail: fullDetail }
+  in
+    session
+      { listening = false
+      , currentIntervalStart = Nothing
+      , currentIntervalWords = 0
+      , completedActiveMs = session.completedActiveMs + closedInterval
+      , wordEvents = pruneEvents timestamp session.wordEvents
+      , captions = pruneCaptions timestamp session.captions
+      , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
+      , now = timestamp
+      , diagnostics = recordEntry stopEntry session.diagnostics
+      }
 
 toPersistedData :: Session -> PersistedData
 toPersistedData session =
@@ -442,6 +496,7 @@ view handlers session =
     , buildToggle handlers session
     , buildReset handlers
     , buildKeepAwake handlers session
+    , buildErrorBanner session
     , buildStats session
     , buildCaptions session
     , buildEventLog session
@@ -760,6 +815,20 @@ buildVersion =
     , style "color" "#7d8590"
     ]
     [ text ("Word Meter (PureScript) v" <> version) ]
+
+buildErrorBanner :: Session -> Node
+buildErrorBanner session =
+  div_
+    [ testId "wm-error"
+    , attribute "role" "alert"
+    ]
+    [ style "margin-top" "12px"
+    , style "font-size" "13px"
+    , style "color" "#ff8b94"
+    , style "text-align" "center"
+    , style "min-height" "18px"
+    ]
+    [ text session.errorBanner ]
 
 buildDiagnostics :: Handlers -> Session -> Node
 buildDiagnostics handlers session =

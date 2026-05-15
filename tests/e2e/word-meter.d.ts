@@ -27,6 +27,11 @@ declare global {
       reset: () => void
       resetAt: (timestamp: number) => void
       persistNow: () => void
+      getKeepAwake: () => boolean
+      setKeepAwake: (enabled: boolean) => void
+      getKeepAwakeStatus: () => string
+      getWakeLockHeld: () => boolean
+      simulateVisibilityVisible: () => void
     }
   }
 }

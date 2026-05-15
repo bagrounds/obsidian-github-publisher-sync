@@ -461,3 +461,110 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
     expect(await page.evaluate(() => window.__wordMeter.getEventLogLength())).toBe(0)
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle", () => {
+  test("renders a keep-awake checkbox that defaults to checked", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    const checkbox = page.getByTestId("wm-keep-awake")
+    await expect(checkbox).toBeVisible()
+    await expect(checkbox).toHaveAttribute("type", "checkbox")
+    await expect(checkbox).toBeChecked()
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(true)
+    await expect(page.getByTestId("wm-keep-awake-status")).toHaveText("")
+  })
+
+  test("setKeepAwake flips the preference and reflects it on the rendered checkbox", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
+    await expect(page.getByTestId("wm-keep-awake")).not.toBeChecked()
+    await page.evaluate(() => window.__wordMeter.setKeepAwake(true))
+    await expect(page.getByTestId("wm-keep-awake")).toBeChecked()
+  })
+
+  test("toggling the checkbox via the DOM dispatches a SetKeepAwake action", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-keep-awake").uncheck()
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
+    await page.getByTestId("wm-keep-awake").check()
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(true)
+  })
+
+  test("starting with keep-awake on records a wake-lock attempt in diagnostics", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-keep-awake")).toBeChecked()
+    const lengthBefore = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLength(),
+    )
+    await page.getByTestId("wm-toggle").click()
+    // The status reflects either success ("screen will stay on") or an
+    // "unavailable" reason in parens — both prove the request flowed
+    // through. Headless Chromium typically denies wake locks, so the
+    // unavailable path is what we usually observe; we accept either.
+    await expect(page.getByTestId("wm-keep-awake-status")).not.toHaveText("")
+    const lengthAfter = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLength(),
+    )
+    expect(lengthAfter).toBeGreaterThan(lengthBefore)
+    const diagnostics = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/wake lock (acquired|failure)/i.test(diagnostics)).toBe(true)
+  })
+
+  test("stopping releases the wake lock and clears the status", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-keep-awake-status")).not.toHaveText("")
+    await page.getByTestId("wm-toggle").click()
+    expect(await page.evaluate(() => window.__wordMeter.getWakeLockHeld())).toBe(false)
+    await expect(page.getByTestId("wm-keep-awake-status")).toHaveText("")
+    // Some wake-lock activity must be visible in the diagnostics: either
+    // we acquired and released (real browser), or we recorded an
+    // acquisition failure (headless Chromium denies the lock). Either is
+    // a valid audit trail — silent no-ops are what we are guarding
+    // against.
+    const diagnostics = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/wake lock (acquired|failure|release)/i.test(diagnostics)).toBe(true)
+  })
+
+  test("starting with keep-awake off does not request a wake lock", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
+    await page.getByTestId("wm-toggle").click()
+    // No status text means we never tried to acquire.
+    await expect(page.getByTestId("wm-keep-awake-status")).toHaveText("")
+    const diagnostics = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/wake lock acquired|wake lock failure/i.test(diagnostics)).toBe(false)
+  })
+
+  test("the checkbox is disabled while listening", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-keep-awake")).toBeEnabled()
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-keep-awake")).toBeDisabled()
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-keep-awake")).toBeEnabled()
+  })
+
+  test("the keep-awake preference is not persisted across reload (always defaults on)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+    expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(true)
+  })
+})

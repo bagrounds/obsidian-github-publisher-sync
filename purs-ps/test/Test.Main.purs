@@ -37,6 +37,12 @@ import WordMeter.Capability.Storage
   , persistSnapshot
   , runInMemoryStorageM
   )
+import WordMeter.Capability.WakeLock
+  ( WakeLockEvent(..)
+  , releaseScreenWakeLock
+  , requestScreenWakeLock
+  , runRecordingWakeLockM
+  )
 import WordMeter.Diagnostics
   ( diagnosticsLimit
   , emptyEnvironment
@@ -54,6 +60,7 @@ import WordMeter.Recording
   , formatDurationMs
   , formatRate
   , idleCopyStatus
+  , idleKeepAwakeStatus
   , initialSession
   , intervalDurationMs
   , intervalRate
@@ -62,9 +69,11 @@ import WordMeter.Recording
   , overallRate
   , ratePerMinute
   , reduce
+  , renderKeepAwakeUnavailable
   , resetConfirmationPrompt
   , shortRate
   , toPersistedData
+  , wakeLockAcquiredStatus
   , wallSpanMs
   , wordsInTrailingWindow
   )
@@ -81,6 +90,7 @@ main = do
   runDiagnosticsTests
   runCapabilityTests
   runPersistenceTests
+  runKeepAwakeTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -500,3 +510,63 @@ runPersistenceTests = do
   assertEqualBoolean "InMemoryStorageM final cell matches cleared state"
     (inMemoryOutcome.finalSnapshot == Nothing) true
 
+
+runKeepAwakeTests :: Effect Unit
+runKeepAwakeTests = do
+  assertEqualBoolean "initialSession.keepAwake defaults to true"
+    initialSession.keepAwake true
+  assertEqualString "initialSession.keepAwakeStatus is empty"
+    initialSession.keepAwakeStatus idleKeepAwakeStatus
+  assertEqualBoolean "initialSession.wakeLockHeld defaults to false"
+    initialSession.wakeLockHeld false
+
+  let
+    afterDisable = reduce (SetKeepAwake false) initialSession
+    afterEnable = reduce (SetKeepAwake true) afterDisable
+  assertEqualBoolean "SetKeepAwake false flips the preference"
+    afterDisable.keepAwake false
+  assertEqualBoolean "SetKeepAwake true flips it back"
+    afterEnable.keepAwake true
+
+  let
+    withStatus = reduce (SetKeepAwakeStatus wakeLockAcquiredStatus) initialSession
+    cleared = reduce (SetKeepAwake false) withStatus
+  assertEqualString "SetKeepAwake false clears keepAwakeStatus"
+    cleared.keepAwakeStatus idleKeepAwakeStatus
+
+  let
+    unavailable = renderKeepAwakeUnavailable "wake lock unavailable: NotAllowedError"
+    advised = reduce (SetKeepAwakeStatus unavailable) initialSession
+  assertEqualString "SetKeepAwakeStatus writes the field"
+    advised.keepAwakeStatus unavailable
+  assertEqualBoolean "renderKeepAwakeUnavailable wraps the reason in parens"
+    (containsSubstring "(wake lock unavailable" unavailable) true
+
+  let held = reduce (SetWakeLockHeld true) initialSession
+  assertEqualBoolean "SetWakeLockHeld flips the flag" held.wakeLockHeld true
+  let dropped = reduce (SetWakeLockHeld false) held
+  assertEqualBoolean "SetWakeLockHeld false flips it back"
+    dropped.wakeLockHeld false
+
+  let
+    preferredOff =
+      reduce (SetWakeLockHeld true)
+        (reduce (SetKeepAwakeStatus wakeLockAcquiredStatus)
+          (reduce (SetKeepAwake false) initialSession))
+    afterReset = reduce (Reset 12345.0) preferredOff
+  assertEqualBoolean "Reset preserves keepAwake preference"
+    afterReset.keepAwake false
+  assertEqualBoolean "Reset clears wakeLockHeld"
+    afterReset.wakeLockHeld false
+  assertEqualString "Reset clears keepAwakeStatus"
+    afterReset.keepAwakeStatus idleKeepAwakeStatus
+
+  let
+    wakeLockOutcome = runRecordingWakeLockM do
+      requestScreenWakeLock (pure unit) (\_ -> pure unit) (pure unit)
+      releaseScreenWakeLock (pure unit) (\_ -> pure unit)
+      requestScreenWakeLock (pure unit) (\_ -> pure unit) (pure unit)
+  assertEqualInt "RecordingWakeLockM records every event in order"
+    (Array.length wakeLockOutcome.events) 3
+  assertEqualBoolean "RecordingWakeLockM first event is a request"
+    (Array.head wakeLockOutcome.events == Just RequestedWakeLock) true

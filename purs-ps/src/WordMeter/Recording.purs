@@ -39,7 +39,7 @@ module WordMeter.Recording
 
 import Prelude
 
-import Data.Array (filter, foldl, takeEnd)
+import Data.Array (filter, foldl, takeEnd, unsnoc)
 import Data.Array (length) as Array
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
@@ -59,6 +59,10 @@ import WordMeter.RecognitionError
   , isTransient
   , recognitionErrorBannerText
   , renderRecognitionErrorDiagnosticDetail
+  )
+import WordMeter.Recognition.Delta
+  ( TranscriptIntegration(..)
+  , classifyFinalizedTranscript
   )
 import WordMeter.Vdom
   ( Node
@@ -100,6 +104,7 @@ type Session =
   , keepAwakeStatus :: String
   , wakeLockHeld :: Boolean
   , errorBanner :: String
+  , lastRawFinalizedTranscript :: String
   }
 
 type Caption =
@@ -150,6 +155,8 @@ millisecondsPerSecond = 1000.0
 data Action
   = Toggle Number
   | InjectFinalTranscript String Number
+  | IntegrateFinalizedTranscript Number String
+  | ResetRecognitionDedupState
   | Tick Number
   | RecordDiagnostic Number String String
   | SetEnvironment EnvironmentSnapshot
@@ -210,6 +217,7 @@ initialSession =
   , keepAwakeStatus: idleKeepAwakeStatus
   , wakeLockHeld: false
   , errorBanner: idleErrorBanner
+  , lastRawFinalizedTranscript: ""
   }
 
 reduce :: Action -> Session -> Session
@@ -232,6 +240,7 @@ reduce (Toggle timestamp) session
           , now = timestamp
           , diagnostics = recordEntry startEntry session.diagnostics
           , errorBanner = idleErrorBanner
+          , lastRawFinalizedTranscript = ""
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -265,6 +274,73 @@ reduce (InjectFinalTranscript transcript timestamp) session
       { now = timestamp
       , captions = pruneCaptions timestamp session.captions
       }
+reduce (IntegrateFinalizedTranscript timestamp transcript) session
+  | not session.listening = session { now = timestamp }
+  | otherwise =
+      let
+        decision = classifyFinalizedTranscript
+          { previous: session.lastRawFinalizedTranscript
+          , incoming: transcript
+          }
+        prunedEvents = pruneEvents timestamp session.wordEvents
+        prunedCaptions = pruneCaptions timestamp session.captions
+        base = session
+          { now = timestamp
+          , wordEvents = prunedEvents
+          , captions = prunedCaptions
+          }
+      in case decision of
+        IgnoreDuplicate -> base
+          { captions = refreshLastCaptionTimestamp timestamp prunedCaptions
+          }
+        IgnoreEarlierSnapshot -> base
+        ExtendUtterance fields ->
+          let
+            extendedCaptions = appendOrExtendCaption fields.caption fields.wordDelta
+              timestamp prunedCaptions
+            transcriptEntry =
+              { timestamp
+              , label: "final transcript"
+              , detail: "extend wordDelta=" <> show fields.wordDelta
+              }
+          in
+            base
+              { totalWords = session.totalWords + fields.wordDelta
+              , currentIntervalWords =
+                  session.currentIntervalWords + fields.wordDelta
+              , captions = extendedCaptions
+              , wordEvents = prunedEvents
+                  <> [ { timestamp, wordCount: fields.wordDelta } ]
+              , lastRawFinalizedTranscript = transcript
+              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              }
+        StartNewUtterance fields ->
+          let
+            transcriptEntry =
+              { timestamp
+              , label: "final transcript"
+              , detail: "words=" <> show fields.wordCount
+              }
+          in
+            base
+              { totalWords = session.totalWords + fields.wordCount
+              , currentIntervalWords =
+                  session.currentIntervalWords + fields.wordCount
+              , captions = prunedCaptions
+                  <>
+                    [ { transcript: fields.caption
+                      , wordCount: fields.wordCount
+                      , timestamp
+                      }
+                    ]
+              , wordEvents = prunedEvents
+                  <> [ { timestamp, wordCount: fields.wordCount } ]
+              , lastRawFinalizedTranscript = transcript
+              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              }
+reduce ResetRecognitionDedupState session = session
+  { lastRawFinalizedTranscript = ""
+  }
 reduce (Tick timestamp) session = session
   { now = timestamp
   , wordEvents = pruneEvents timestamp session.wordEvents
@@ -388,6 +464,32 @@ pruneEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)
 
 pruneCaptions :: Number -> Array Caption -> Array Caption
 pruneCaptions nowMs = filter (\caption -> caption.timestamp >= nowMs - captionWindowMs)
+
+-- | Refresh the timestamp of the most recent caption (if any) so the
+-- | live captions panel keeps a duplicate-finalized utterance from
+-- | aging out while the recognizer keeps re-emitting it.
+refreshLastCaptionTimestamp :: Number -> Array Caption -> Array Caption
+refreshLastCaptionTimestamp nowMs captions = case unsnoc captions of
+  Nothing -> captions
+  Just { init, last } -> init <> [ last { timestamp = nowMs } ]
+
+-- | Replace the most recent caption with the refined transcript when
+-- | the recognizer extends an in-flight utterance, or append a new
+-- | one when no captions remain in the window. Mirrors the legacy
+-- | `session.captionEntries[session.captionEntries.length - 1] = …`
+-- | branch.
+appendOrExtendCaption
+  :: String -> Int -> Number -> Array Caption -> Array Caption
+appendOrExtendCaption caption wordDelta nowMs captions = case unsnoc captions of
+  Nothing ->
+    captions <> [ { transcript: caption, wordCount: wordDelta, timestamp: nowMs } ]
+  Just { init, last } ->
+    init <>
+      [ { transcript: caption
+        , wordCount: last.wordCount + wordDelta
+        , timestamp: nowMs
+        }
+      ]
 
 activeListeningMs :: Session -> Number
 activeListeningMs session =

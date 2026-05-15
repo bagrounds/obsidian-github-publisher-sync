@@ -127,7 +127,7 @@ The test hook exposes `simulateRecognitionError(code, message)` (the same code p
 
 Up through slice 8 the port has no real `SpeechRecognition` instance — every transcript reaches the reducer through the test hook's `simulateFinalTranscript`. Slice 9 is the slice that actually wires up the Web Speech API so the meter counts speech in a real browser. Because the legacy build rolls three distinct features into one chunk of code (real recognition wiring, on-device language-pack pre-flight, runtime cloud fallback for `language-not-supported`), the PureScript port deliberately splits slice 9 into three smaller end-to-end slices. Each sub-slice is still independently user-visible: 9a makes the meter actually work, 9b makes it prefer the on-device path when the browser supports it, and 9c heals the one runtime failure mode that can sneak past the pre-flight.
 
-### Slice 9a — Real cloud-path `SpeechRecognition` wired up
+### Slice 9a — Real cloud-path `SpeechRecognition` wired up ✅
 
 The smallest end-to-end deliverable in slice 9: replace the test-hook-only transcript path with a real `SpeechRecognition` instance configured for cloud recognition. No on-device pre-flight, no transparent fallback path, no `processLocally` hint — just the simplest configuration that already works in every browser exposing the Web Speech API today.
 
@@ -235,7 +235,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
 | 8     | Permission denied + transient-error banner                                                              | ✅ Done    |
-| 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ⏳ Pending |
+| 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ✅ Shipped |
 | 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ⏳ Pending |
 | 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |

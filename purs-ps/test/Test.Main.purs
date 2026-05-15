@@ -26,6 +26,15 @@ import WordMeter.Capability.Environment
   ( captureEnvironmentSnapshot
   , runStubEnvironmentM
   )
+import WordMeter.Capability.Recognition
+  ( RecognitionEvent(..)
+  , runRecordingRecognitionM
+  , recognitionApiAvailable
+  , scheduleAutoRestart
+  , cancelAutoRestart
+  , startRecognition
+  , stopRecognition
+  )
 import WordMeter.Capability.SessionState
   ( readCurrentSession
   , runStatefulSessionM
@@ -61,6 +70,12 @@ import WordMeter.RecognitionError
   , permissionDeniedBanner
   , recognitionErrorBannerText
   , renderRecognitionErrorDiagnosticDetail
+  )
+import WordMeter.Recognition.Delta
+  ( TranscriptIntegration(..)
+  , classifyFinalizedTranscript
+  , isWordBoundaryExtension
+  , normalizeTranscript
   )
 import WordMeter.Recording
   ( Action(..)
@@ -105,6 +120,9 @@ main = do
   runPersistenceTests
   runKeepAwakeTests
   runRecognitionErrorTests
+  runRecognitionDeltaTests
+  runRecognitionCapabilityTests
+  runIntegrateFinalizedTranscriptReducerTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -740,3 +758,217 @@ runRecognitionErrorTests = do
     idlePermission.errorBanner permissionDeniedBanner
   assertEqualInt "idle permission-denied does NOT push an event log entry"
     (Array.length idlePermission.eventLog) 0
+
+runRecognitionDeltaTests :: Effect Unit
+runRecognitionDeltaTests = do
+  -- Slice 9a: classifyFinalizedTranscript reproduces the legacy
+  -- integrateFinalizedTranscript dedup decision tree.
+  assertEqualString "normalizeTranscript lowercases + trims + collapses ws"
+    (normalizeTranscript "  Hello   THERE  General\tKenobi  ")
+    "hello there general kenobi"
+
+  assertEqualBoolean "isWordBoundaryExtension requires a space at the join"
+    (isWordBoundaryExtension "twinkles" "twinkle") false
+  assertEqualBoolean "isWordBoundaryExtension matches the extended utterance"
+    (isWordBoundaryExtension "twinkle twinkle" "twinkle") true
+  assertEqualBoolean "isWordBoundaryExtension rejects empty prefix"
+    (isWordBoundaryExtension "anything" "") false
+  assertEqualBoolean "isWordBoundaryExtension rejects equality"
+    (isWordBoundaryExtension "same" "same") false
+
+  -- empty incoming → IgnoreDuplicate
+  assertEqualBoolean "empty incoming is IgnoreDuplicate"
+    ( classifyFinalizedTranscript { previous: "anything", incoming: "   " }
+        == IgnoreDuplicate
+    )
+    true
+
+  -- exact normalized duplicate → IgnoreDuplicate
+  assertEqualBoolean "exact duplicate (case + whitespace insensitive)"
+    ( classifyFinalizedTranscript
+        { previous: "Twinkle Twinkle", incoming: "twinkle   twinkle" }
+        == IgnoreDuplicate
+    )
+    true
+
+  -- word boundary extension → ExtendUtterance with wordDelta
+  assertEqualBoolean "extension is ExtendUtterance with the right delta"
+    ( classifyFinalizedTranscript
+        { previous: "twinkle twinkle", incoming: "twinkle twinkle little star" }
+        ==
+          ExtendUtterance
+            { wordDelta: 2
+            , caption: "twinkle twinkle little star"
+            }
+    )
+    true
+
+  -- earlier snapshot of the same utterance → IgnoreEarlierSnapshot
+  assertEqualBoolean "earlier snapshot is IgnoreEarlierSnapshot"
+    ( classifyFinalizedTranscript
+        { previous: "twinkle twinkle little star", incoming: "twinkle twinkle" }
+        == IgnoreEarlierSnapshot
+    )
+    true
+
+  -- brand new utterance → StartNewUtterance with wordCount
+  assertEqualBoolean "brand new utterance is StartNewUtterance"
+    ( classifyFinalizedTranscript
+        { previous: "twinkle twinkle little star", incoming: "how I wonder what you are" }
+        ==
+          StartNewUtterance
+            { wordCount: 6
+            , caption: "how I wonder what you are"
+            }
+    )
+    true
+
+  -- previous = "" with any incoming → StartNewUtterance
+  assertEqualBoolean "fresh recognition (no previous) is StartNewUtterance"
+    ( classifyFinalizedTranscript { previous: "", incoming: "hello world" }
+        ==
+          StartNewUtterance { wordCount: 2, caption: "hello world" }
+    )
+    true
+
+runRecognitionCapabilityTests :: Effect Unit
+runRecognitionCapabilityTests = do
+  -- The recording capability records every call site in order, so the
+  -- orchestrator's start/stop wiring is observable from unit tests
+  -- without a browser.
+  let
+    outcome = runRecordingRecognitionM do
+      available <- recognitionApiAvailable
+      startRecognition
+        { locale: "en-US"
+        , onResult: \_ _ -> pure unit
+        , onErrorEvent: \_ _ -> pure unit
+        , onEnded: pure unit
+        , onStarted: pure unit
+        , onStartFailure: \_ -> pure unit
+        , onConstructFailure: \_ -> pure unit
+        }
+      scheduleAutoRestart (pure unit)
+      cancelAutoRestart
+      stopRecognition (pure unit) (\_ -> pure unit)
+      pure available
+  assertEqualBoolean "RecordingRecognitionM reports recognition available"
+    outcome.result true
+  assertEqualInt "RecordingRecognitionM records every call in order"
+    (Array.length outcome.events) 4
+  assertEqualBoolean "first event is StartedRecognition with locale"
+    ( outcome.events ==
+        [ StartedRecognition { locale: "en-US" }
+        , ScheduledAutoRestart
+        , CancelledAutoRestart
+        , StoppedRecognition
+        ]
+    )
+    true
+
+runIntegrateFinalizedTranscriptReducerTests :: Effect Unit
+runIntegrateFinalizedTranscriptReducerTests = do
+  -- The reducer projects each TranscriptIntegration onto a session
+  -- update. Verify each branch independently.
+
+  -- Idle: a finalized transcript while not listening is a no-op.
+  let
+    idleAfter =
+      reduce (IntegrateFinalizedTranscript 1000.0 "ignored") initialSession
+  assertEqualInt "idle: totalWords unchanged"
+    idleAfter.totalWords 0
+  assertEqualString "idle: lastRawFinalizedTranscript unchanged"
+    idleAfter.lastRawFinalizedTranscript ""
+
+  -- StartNewUtterance: a fresh transcript while listening adds words,
+  -- pushes a caption, and stamps lastRawFinalizedTranscript.
+  let
+    listening = reduce (Toggle 0.0) initialSession
+    afterFirst =
+      reduce (IntegrateFinalizedTranscript 1000.0 "hello there") listening
+  assertEqualInt "first transcript adds 2 words" afterFirst.totalWords 2
+  assertEqualInt "first transcript adds one caption"
+    (Array.length afterFirst.captions) 1
+  assertEqualString "first transcript stamps lastRawFinalizedTranscript"
+    afterFirst.lastRawFinalizedTranscript "hello there"
+
+  -- ExtendUtterance: the same in-flight utterance refined by more
+  -- words bumps the count by the delta only and replaces the last
+  -- caption (no append).
+  let
+    afterExtension =
+      reduce (IntegrateFinalizedTranscript 2000.0 "hello there general kenobi")
+        afterFirst
+  assertEqualInt "extension bumps totalWords by the delta only"
+    afterExtension.totalWords 4
+  assertEqualInt "extension does NOT add a new caption"
+    (Array.length afterExtension.captions) 1
+  case Array.head afterExtension.captions of
+    Just c -> assertEqualString "extension replaces the last caption transcript"
+      c.transcript "hello there general kenobi"
+    Nothing -> throw "extension should keep one caption"
+  assertEqualString "extension updates lastRawFinalizedTranscript"
+    afterExtension.lastRawFinalizedTranscript "hello there general kenobi"
+
+  -- IgnoreDuplicate: an exact-normalized refinement leaves the count
+  -- alone but refreshes the caption timestamp.
+  let
+    afterDuplicate =
+      reduce (IntegrateFinalizedTranscript 3500.0 "Hello   THERE general kenobi")
+        afterExtension
+  assertEqualInt "duplicate leaves totalWords alone"
+    afterDuplicate.totalWords 4
+  case Array.head afterDuplicate.captions of
+    Just c -> assertEqualNumber "duplicate refreshes caption timestamp"
+      c.timestamp 3500.0
+    Nothing -> throw "duplicate should keep one caption"
+
+  -- IgnoreEarlierSnapshot: the recognizer re-emitting an earlier
+  -- segment of the same utterance is a no-op for counts and captions.
+  let
+    afterEarlier =
+      reduce (IntegrateFinalizedTranscript 4000.0 "hello there")
+        afterExtension
+  assertEqualInt "earlier snapshot leaves totalWords alone"
+    afterEarlier.totalWords 4
+
+  -- ResetRecognitionDedupState clears the dedup state so the next
+  -- utterance after the auto-restart is treated as a brand new
+  -- utterance.
+  let
+    afterReset = reduce ResetRecognitionDedupState afterExtension
+  assertEqualString "ResetRecognitionDedupState clears lastRawFinalizedTranscript"
+    afterReset.lastRawFinalizedTranscript ""
+  assertEqualInt "ResetRecognitionDedupState does NOT change totalWords"
+    afterReset.totalWords 4
+
+  -- After the dedup state is cleared, a transcript that previously
+  -- looked like an extension now counts as a fresh utterance.
+  let
+    listeningAfterReset = reduce ResetRecognitionDedupState afterExtension
+    afterRestart =
+      reduce
+        (IntegrateFinalizedTranscript 5000.0 "hello there general kenobi")
+        listeningAfterReset
+  assertEqualInt "fresh utterance after dedup-state reset counts in full"
+    afterRestart.totalWords (4 + 4)
+
+  -- Toggle (start) also clears the dedup state.
+  let
+    stopped = reduce (Toggle 6000.0) afterExtension
+    restarted = reduce (Toggle 7000.0) stopped
+  assertEqualString "Toggle (start) clears lastRawFinalizedTranscript"
+    restarted.lastRawFinalizedTranscript ""
+
+  -- The reducer also appends a "final transcript" diagnostic when it
+  -- credits new words (extension or fresh), and not when it ignores.
+  let
+    beforeDiagnosticsCount = Array.length listening.diagnostics
+    afterDiagnostics = Array.length afterFirst.diagnostics
+  assertEqualInt "credited transcript appends one diagnostic entry"
+    afterDiagnostics (beforeDiagnosticsCount + 1)
+  let
+    afterDuplicateDiagnostics = Array.length afterDuplicate.diagnostics
+    afterExtensionDiagnostics = Array.length afterExtension.diagnostics
+  assertEqualInt "duplicate appends no diagnostic entry"
+    afterDuplicateDiagnostics afterExtensionDiagnostics

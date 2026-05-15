@@ -60,6 +60,10 @@ import WordMeter.RecognitionError
   , recognitionErrorBannerText
   , renderRecognitionErrorDiagnosticDetail
   )
+import WordMeter.Recognition.Delta
+  ( TranscriptIntegration(..)
+  , classifyFinalizedTranscript
+  )
 import WordMeter.Vdom
   ( Node
   , attribute
@@ -100,6 +104,8 @@ type Session =
   , keepAwakeStatus :: String
   , wakeLockHeld :: Boolean
   , errorBanner :: String
+  , lastRawFinalizedTranscript :: String
+  , cloudFallbackAttempted :: Boolean
   }
 
 type Caption =
@@ -150,6 +156,7 @@ millisecondsPerSecond = 1000.0
 data Action
   = Toggle Number
   | InjectFinalTranscript String Number
+  | IntegrateFinalizedTranscript Number String
   | Tick Number
   | RecordDiagnostic Number String String
   | SetEnvironment EnvironmentSnapshot
@@ -210,6 +217,8 @@ initialSession =
   , keepAwakeStatus: idleKeepAwakeStatus
   , wakeLockHeld: false
   , errorBanner: idleErrorBanner
+  , lastRawFinalizedTranscript: ""
+  , cloudFallbackAttempted: false
   }
 
 reduce :: Action -> Session -> Session
@@ -232,6 +241,8 @@ reduce (Toggle timestamp) session
           , now = timestamp
           , diagnostics = recordEntry startEntry session.diagnostics
           , errorBanner = idleErrorBanner
+          , lastRawFinalizedTranscript = ""
+          , cloudFallbackAttempted = false
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -265,6 +276,47 @@ reduce (InjectFinalTranscript transcript timestamp) session
       { now = timestamp
       , captions = pruneCaptions timestamp session.captions
       }
+reduce (IntegrateFinalizedTranscript timestamp transcript) session
+  | session.listening =
+      let
+        classification =
+          classifyFinalizedTranscript
+            { previous: session.lastRawFinalizedTranscript
+            , incoming: transcript
+            }
+        prunedEvents = pruneEvents timestamp session.wordEvents
+        prunedCaptions = pruneCaptions timestamp session.captions
+      in
+        case classification of
+          IgnoreDuplicate ->
+            session { now = timestamp, wordEvents = prunedEvents, captions = prunedCaptions }
+          ExtendUtterance { wordDelta, caption } ->
+            session
+              { totalWords = session.totalWords + wordDelta
+              , currentIntervalWords = session.currentIntervalWords + wordDelta
+              , captions =
+                  if Array.length prunedCaptions > 0
+                    then
+                      takeEnd (Array.length prunedCaptions - 1) prunedCaptions
+                        <> [ { transcript: caption, wordCount: wordDelta, timestamp } ]
+                    else prunedCaptions <> [ { transcript: caption, wordCount: wordDelta, timestamp } ]
+              , wordEvents = prunedEvents <> [ { timestamp, wordCount: wordDelta } ]
+              , now = timestamp
+              , lastRawFinalizedTranscript = transcript
+              }
+          StartNewUtterance { wordCount, caption } ->
+            session
+              { totalWords = session.totalWords + wordCount
+              , currentIntervalWords = session.currentIntervalWords + wordCount
+              , captions = prunedCaptions <> [ { transcript: caption, wordCount, timestamp } ]
+              , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
+              , now = timestamp
+              , lastRawFinalizedTranscript = transcript
+              }
+          IgnoreEarlierSnapshot ->
+            session { now = timestamp, wordEvents = prunedEvents, captions = prunedCaptions }
+  | otherwise =
+      session { now = timestamp, captions = pruneCaptions timestamp session.captions }
 reduce (Tick timestamp) session = session
   { now = timestamp
   , wordEvents = pruneEvents timestamp session.wordEvents

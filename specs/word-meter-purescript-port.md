@@ -235,7 +235,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
 | 8     | Permission denied + transient-error banner                                                              | ✅ Done    |
-| 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ⏳ Pending |
+| 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ✅ Done    |
 | 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ⏳ Pending |
 | 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |

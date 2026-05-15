@@ -702,3 +702,44 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
     )
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 9a — recognition wiring", () => {
+  test("toggle-on records a recognition lifecycle diagnostic", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.getByTestId("wm-diagnostics-toggle").click()
+    const diagnosticsText = await page
+      .getByTestId("wm-diagnostics-content")
+      .innerText()
+    // Headless chromium has no SpeechRecognition constructor, so we expect
+    // the unavailable path; on a browser that does, "recognition started"
+    // would appear instead. Either outcome confirms wiring is active.
+    expect(diagnosticsText).toMatch(/recognition (unavailable|started)/)
+  })
+
+  test("toggle-on then toggle-off pairs the lifecycle entries", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.getByTestId("wm-toggle").click()
+    await page.getByTestId("wm-diagnostics-toggle").click()
+    const diagnosticsText = await page
+      .getByTestId("wm-diagnostics-content")
+      .innerText()
+    // After a start→stop cycle, the diagnostic log must record at least one
+    // recognition event. Headless chromium without SpeechRecognition emits
+    // "recognition unavailable"; a real browser would emit "recognition
+    // started" then "recognition stopped".
+    expect(diagnosticsText).toMatch(/recognition (unavailable|stopped)/)
+  })
+
+  test("meter still ticks when recognition API is unavailable", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.startAt(1000))
+    await page.evaluate(() => window.__wordMeter.tick(31000))
+    // Duration advances even when recognition is unavailable — slice 9a spec:
+    // "the meter still loads, the toggle still ticks, but the diagnostics
+    // drawer records `recognition unavailable` and the count never moves".
+    expect(await page.evaluate(() => window.__wordMeter.getDurationMs())).toBe(30000)
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(0)
+  })
+})

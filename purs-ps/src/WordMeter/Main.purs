@@ -7,6 +7,7 @@ import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Ref as Ref
+import Effect.Timer (clearTimeout, setTimeout)
 import WordMeter.AppM (ApplicationEnvironment, runAppM)
 import WordMeter.Capability.Clipboard (class Clipboard, writeClipboardText)
 import WordMeter.Capability.Clock (class Clock, currentTimeMillis)
@@ -30,10 +31,18 @@ import WordMeter.Capability.WakeLock
   , releaseScreenWakeLock
   , requestScreenWakeLock
   )
+import WordMeter.Capability.Recognition
+  ( class Recognition
+  , recognitionApiAvailable
+  , startRecognition
+  , stopRecognition
+  )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
+import WordMeter.Recording (Session)
 import WordMeter.FFI.StorageError (StorageError, renderStorageError)
 import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
+import WordMeter.FFI.Recognition (RecognitionError)
 import WordMeter.Recording
   ( Action(..)
   , diagnosticsText
@@ -51,6 +60,12 @@ import WordMeter.Version (version)
 hostElementId :: String
 hostElementId = "word-meter"
 
+recognitionLocale :: String
+recognitionLocale = "en-US"
+
+restartDelayMilliseconds :: Int
+restartDelayMilliseconds = 250
+
 type ClickHandlers =
   { requestToggle :: Effect Unit
   , requestCopyDiagnostics :: Effect Unit
@@ -62,6 +77,8 @@ main :: Effect Unit
 main = do
   sessionRef <- Ref.new initialSession
   wakeLockSentinelRef <- Ref.new Nothing
+  recognitionInstanceRef <- Ref.new Nothing
+  restartTimerRef <- Ref.new Nothing
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
@@ -70,7 +87,7 @@ main = do
     }
   let
     applicationEnvironment :: ApplicationEnvironment
-    applicationEnvironment = { sessionRef, wakeLockSentinelRef }
+    applicationEnvironment = { sessionRef, wakeLockSentinelRef, recognitionInstanceRef, restartTimerRef }
 
     readClickHandlers :: Effect ClickHandlers
     readClickHandlers = Ref.read clickHandlersRef
@@ -136,6 +153,7 @@ dispatch
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> Action
   -> m Unit
@@ -153,6 +171,7 @@ persistAfterAction
   -> m Unit
 persistAfterAction (Toggle _) = persistCurrentSession
 persistAfterAction (InjectFinalTranscript _ _) = persistCurrentSession
+persistAfterAction (IntegrateFinalizedTranscript _ _) = persistCurrentSession
 persistAfterAction (Reset _) = do
   outcome <- clearPersistedSnapshot
   case outcome of
@@ -223,19 +242,49 @@ rerender handlers = do
 
 handleToggle
   :: forall m
-   . Clock m
+   . MonadEffect m
+  => Clock m
   => DomMount m
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleToggle handlers = do
   timestamp <- currentTimeMillis
   dispatch handlers (Toggle timestamp)
   session <- readCurrentSession
-  if session.listening then maybeAcquireWakeLock handlers
-  else releaseHeldWakeLock handlers
+  if session.listening then do
+    available <- recognitionApiAvailable
+    if available then
+      startRecognition recognitionLocale
+        (\transcript ts -> do
+          dispatch handlers (IntegrateFinalizedTranscript ts transcript)
+        )
+        (\code message -> do
+          dispatch handlers (HandleRecognitionError timestamp code message)
+        )
+        (pure unit)
+    else
+      recordRecognitionEvent "recognition unavailable" "speech recognition api not available"
+    maybeAcquireWakeLock handlers
+  else do
+    stopRecognition (pure unit) \_ -> pure unit
+    cancelRestartTimer
+    releaseHeldWakeLock handlers
+
+recordRecognitionEvent
+  :: forall m. Clock m => SessionState m => String -> String -> m Unit
+recordRecognitionEvent label detail = do
+  timestamp <- currentTimeMillis
+  updateSession (RecordDiagnostic timestamp label detail)
+
+cancelRestartTimer
+  :: forall m. MonadEffect m => m Unit
+cancelRestartTimer =
+  liftEffect do
+    pure unit
 
 handleCopyDiagnostics
   :: forall m
@@ -244,6 +293,7 @@ handleCopyDiagnostics
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleCopyDiagnostics handlers = do
@@ -263,6 +313,7 @@ handleReset
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleReset handlers = do
@@ -282,6 +333,7 @@ handleSetKeepAwake
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> Boolean
   -> m Unit
@@ -300,6 +352,7 @@ handleVisibilityVisible
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleVisibilityVisible handlers = do
@@ -315,6 +368,7 @@ handleRecognitionError
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> String
   -> String
@@ -337,6 +391,7 @@ maybeAcquireWakeLock
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 maybeAcquireWakeLock handlers = do
@@ -355,6 +410,7 @@ releaseHeldWakeLock
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 releaseHeldWakeLock handlers = do
@@ -375,6 +431,7 @@ onWakeLockReleased
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 onWakeLockReleased handlers = do
@@ -388,6 +445,7 @@ onWakeLockReleaseError
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> WakeLockError
   -> m Unit
@@ -406,6 +464,7 @@ onWakeLockAcquired
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 onWakeLockAcquired handlers = do
@@ -419,6 +478,7 @@ onWakeLockError
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> WakeLockError
   -> m Unit
@@ -434,6 +494,7 @@ onWakeLockAutoReleased
   => DomMount m
   => SessionState m
   => Storage m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 onWakeLockAutoReleased handlers = do

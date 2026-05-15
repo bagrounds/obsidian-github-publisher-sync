@@ -15,6 +15,7 @@ package:
     - identity
     - argonaut-core
     - argonaut-codecs
+    - js-timers
   test:
     main: Test.Main
     dependencies:

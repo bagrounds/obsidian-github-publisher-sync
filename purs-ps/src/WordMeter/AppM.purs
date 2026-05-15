@@ -8,13 +8,16 @@ import Prelude
 
 import Control.Monad.Reader.Class (class MonadAsk)
 import Control.Monad.Reader.Trans (ReaderT, runReaderT)
+import Data.Maybe (Maybe)
 import Effect (Effect)
 import Effect.Class (class MonadEffect)
 import Effect.Ref (Ref)
+import WordMeter.FFI.WakeLock (WakeLockSentinel)
 import WordMeter.Recording (Session)
 
 type ApplicationEnvironment =
   { sessionRef :: Ref Session
+  , wakeLockSentinelRef :: Ref (Maybe WakeLockSentinel)
   }
 
 newtype AppM a = AppM (ReaderT ApplicationEnvironment Effect a)

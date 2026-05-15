@@ -1,5 +1,5 @@
 module WordMeter.FFI.Visibility
-  ( subscribeVisibilityVisible
+  ( onPageBecameVisible
   ) where
 
 import Prelude
@@ -12,7 +12,4 @@ import Effect (Effect)
 -- | tab was hidden. The handler is fire-and-forget: there is no
 -- | unsubscribe path because the visibility lifetime is the page
 -- | lifetime.
-foreign import subscribeVisibilityVisibleImpl :: Effect Unit -> Effect Unit
-
-subscribeVisibilityVisible :: Effect Unit -> Effect Unit
-subscribeVisibilityVisible = subscribeVisibilityVisibleImpl
+foreign import onPageBecameVisible :: Effect Unit -> Effect Unit

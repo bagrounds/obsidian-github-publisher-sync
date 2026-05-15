@@ -32,7 +32,7 @@ import WordMeter.Capability.WakeLock
   )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
 import WordMeter.FFI.StorageError (StorageError, renderStorageError)
-import WordMeter.FFI.Visibility (subscribeVisibilityVisible)
+import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
 import WordMeter.Recording
   ( Action(..)
@@ -61,6 +61,7 @@ type ClickHandlers =
 main :: Effect Unit
 main = do
   sessionRef <- Ref.new initialSession
+  wakeLockSentinelRef <- Ref.new Nothing
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
@@ -69,7 +70,7 @@ main = do
     }
   let
     applicationEnvironment :: ApplicationEnvironment
-    applicationEnvironment = { sessionRef }
+    applicationEnvironment = { sessionRef, wakeLockSentinelRef }
 
     readClickHandlers :: Effect ClickHandlers
     readClickHandlers = Ref.read clickHandlersRef
@@ -88,7 +89,7 @@ main = do
       }
   Ref.write handlers clickHandlersRef
   runAppM applicationEnvironment (startApplication handlers)
-  subscribeVisibilityVisible
+  onPageBecameVisible
     (runAppM applicationEnvironment (handleVisibilityVisible handlers))
   TestHook.install
     { dispatch: \action ->
@@ -229,7 +230,7 @@ handleToggle handlers = do
   dispatch handlers (Toggle timestamp)
   session <- readCurrentSession
   if session.listening then maybeAcquireWakeLock handlers
-  else releaseAndForgetWakeLock handlers
+  else releaseHeldWakeLock handlers
 
 handleCopyDiagnostics
   :: forall m
@@ -263,7 +264,7 @@ handleReset handlers = do
   outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
   case outcome of
     Right true -> do
-      releaseAndForgetWakeLock handlers
+      releaseHeldWakeLock handlers
       timestamp <- currentTimeMillis
       dispatch handlers (Reset timestamp)
     Right false -> pure unit
@@ -284,7 +285,7 @@ handleSetKeepAwake handlers enabled = do
   session <- readCurrentSession
   case enabled, session.listening of
     true, true -> maybeAcquireWakeLock handlers
-    false, _ -> releaseAndForgetWakeLock handlers
+    false, _ -> releaseHeldWakeLock handlers
     true, false -> pure unit
 
 handleVisibilityVisible
@@ -320,7 +321,7 @@ maybeAcquireWakeLock handlers = do
       (onWakeLockError handlers)
       (onWakeLockAutoReleased handlers)
 
-releaseAndForgetWakeLock
+releaseHeldWakeLock
   :: forall m
    . Clock m
   => DomMount m
@@ -329,11 +330,48 @@ releaseAndForgetWakeLock
   => WakeLock m
   => ClickHandlers
   -> m Unit
-releaseAndForgetWakeLock handlers = do
-  releaseScreenWakeLock
+releaseHeldWakeLock handlers = do
+  session <- readCurrentSession
+  if not session.wakeLockHeld then
+    -- Nothing held: still reset any lingering UI status so a stale
+    -- "screen will stay on" string does not outlive the listening
+    -- session.
+    dispatch handlers (SetKeepAwakeStatus idleKeepAwakeStatus)
+  else
+    releaseScreenWakeLock
+      (onWakeLockReleased handlers)
+      (onWakeLockReleaseError handlers)
+
+onWakeLockReleased
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> m Unit
+onWakeLockReleased handlers = do
   recordWakeLockEvent "wake lock release" "released"
   dispatch handlers (SetWakeLockHeld false)
   dispatch handlers (SetKeepAwakeStatus idleKeepAwakeStatus)
+
+onWakeLockReleaseError
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> WakeLockError
+  -> m Unit
+onWakeLockReleaseError handlers failure = do
+  let rendered = renderWakeLockError failure
+  recordWakeLockEvent "wake lock release failure" rendered
+  -- The browser's view of the lock is now indeterminate; reflect that
+  -- in the UI by clearing both flags so the next listening edge will
+  -- attempt a fresh acquisition.
+  dispatch handlers (SetWakeLockHeld false)
+  dispatch handlers (SetKeepAwakeStatus (renderKeepAwakeUnavailable rendered))
 
 onWakeLockAcquired
   :: forall m

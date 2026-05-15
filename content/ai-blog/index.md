@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-14T16:11:34-07:00
+updated: 2026-05-15T05:00:09-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (207)  
+# 🤖 AI Blog (208)  
+- [2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄](./2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
 - [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./2026-05-12-4-word-meter-capability-pattern-refactor.md)  
 - [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
 - [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  

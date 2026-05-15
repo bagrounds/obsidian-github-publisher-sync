@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T18:08:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a clean, organized architectural blueprint composed of simple geometric shapes. In the center, a single, glowing lightbulb sits atop a structured grid of interlocking blocks, representing a solid foundation. Surrounding the structure are subtle, clean lines connecting modular nodes, suggesting a well-ordered system. The color palette is professional and calm, using deep navy, slate gray, and crisp white, with a single warm accent color for the lightbulb. The background is a clean, textured off-white, emphasizing a sense of clarity, stability, and boring but effective design. The overall aesthetic is modern, technical, and uncluttered.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤔⚙️🧩🏗️💡 Everything I know about good system design](https://www.seangoedecke.com/good-system-design)  
+![articles-everything-i-know-about-good-system-design](../articles-everything-i-know-about-good-system-design.jpg)  
 ## 🤖 AI Summary  
 * 📉 Good design looks underwhelming: nothing goes wrong for a long time.  
 * 🧱 Complex systems reflect poor design; working complex systems evolve only from simple working systems.  

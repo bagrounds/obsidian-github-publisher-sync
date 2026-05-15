@@ -5,7 +5,7 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-15T11:56:19-07:00
+updated: 2026-05-15T12:24:49-07:00
 ---
 [Home](../index.md)  
 # 📺 Videos (828)  
@@ -406,7 +406,7 @@ updated: 2026-05-15T11:56:19-07:00
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
 - [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
-- [🎙️📰⚖️ Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
+- [🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
 - [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  

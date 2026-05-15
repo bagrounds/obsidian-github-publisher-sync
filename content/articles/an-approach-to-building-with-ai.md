@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/an-approach-to-building-with-ai
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T10:56:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric-style illustration featuring a glowing, translucent human silhouette standing at a high-tech drafting table. The figure is strategically placing glowing, golden building blocks—representing logic and architecture—into a complex, multi-layered structure. Floating above the table are holographic nodes and intricate schematics, symbolizing the iterative design process. The background is a soft, deep navy gradient, suggesting a modern, professional workspace. The scene uses sharp geometric lines and a palette of cool blues, crisp whites, and vibrant amber highlights to emphasize the synthesis of human intuition and artificial intelligence in software construction. The composition is balanced and meticulous, reflecting a structured, thoughtful engineering environment.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧱🏗️🧠 An Approach to Building with AI](https://github.com/ajelinek/vibe-rules)  
+![articles-an-approach-to-building-with-ai](../articles-an-approach-to-building-with-ai.jpg)  
 ## 🤖 AI Summary  
 * ⚙️ The process begins with an initial idea and research phase 📝 using Google's Gemini models to create a project summary and perform market analysis.  
 * ✍️ A foundational document serves as a source of truth for the project.  

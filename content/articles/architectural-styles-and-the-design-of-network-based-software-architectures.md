@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T11:49:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist isometric illustration featuring a complex, glowing network of interconnected nodes and geometric architectural structures. The composition uses a clean, professional aesthetic with a palette of deep navy blue, crisp white, and subtle gold accents. Faint, translucent lines connect various polygonal shapes representing server components, data clusters, and logical gateways. In the center, a stylized, multi-layered structural blueprint emerges, symbolizing the formalization of architectural constraints. The background is a soft, dark gradient that provides depth, while the nodes cast a subtle, ethereal light, suggesting the flow of information across a distributed system. The overall tone is sophisticated, academic, and modern, evoking the precision of software engineering and the interconnected nature of network-based architectures.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm)  
+![articles-architectural-styles-and-the-design-of-network-based-software-architectures](../articles-architectural-styles-and-the-design-of-network-based-software-architectures.jpg)  
 ## 🤖 AI Summary  
 ### Architectural Styles and the Design of Network-based Software Architectures  
   

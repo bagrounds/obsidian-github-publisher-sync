@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T18:42:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen illustration featuring a conceptual fusion of classical logic and modern neural architecture. On the left, intricate, glowing geometric symbols and rigid, interconnected nodes represent symbolic logic and Frege’s structural foundations. On the right, a swirling, dense nebula of interconnected neural synapses and luminous data-points represents modern deep learning. Where the two halves meet in the center, they bleed into one another, with symbolic shapes dissolving into the fluid, organic web of the neural network. The color palette uses deep navy and slate tones contrasted with vibrant, electric cyan and golden-yellow light pulses, evoking a sense of high-level computation, cognitive complexity, and the transition from abstract rules to emergent intelligence.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](https://arxiv.org/pdf/2405.15164)  
+![articles-from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks](../articles-from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.jpg)  
   
 ## 🤖 AI Summary  
 * 🧠 Compositionality is the ability to compose familiar constituents into novel, complex combinations.  

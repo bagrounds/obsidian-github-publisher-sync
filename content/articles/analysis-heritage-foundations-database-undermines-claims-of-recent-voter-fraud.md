@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T11:49:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a pristine, translucent glass ballot box sitting on a polished wooden table. Inside the box, there is only a single, neatly folded white ballot, emphasizing scarcity. In the soft-focus background, a magnifying glass lies on a stack of aged, dusty documents, casting a sharp shadow that reveals the small, scattered nature of the fraud data. The lighting is cool and clinical, utilizing a palette of deep navy blues, slate grays, and a singular, stark white light source to create an atmosphere of objective investigation and analytical clarity. The overall aesthetic is clean, professional, and journalistic.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](https://www.brennancenter.org/our-work/analysis-opinion/analysis-heritage-foundations-database-undermines-claims-recent-voter)  
+![articles-analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud](../articles-analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.jpg)  
   
 ## 🤖 AI Summary  
 * 🗳️ The database, used to support claims of widespread voter fraud, actually **undermines** them, confirming fraud is **vanishingly rare**.  

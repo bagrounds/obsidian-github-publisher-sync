@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-14T16:11:34-07:00
+updated: 2026-05-15T11:56:19-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,53 +14,53 @@ updated: 2026-05-14T16:11:34-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (546)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (547)  
+- [2026-05-15](./reflections/2026-05-15.md)  
 - [2026-05-14 | 🐾🌈💔 Saying Goodbye](./reflections/2026-05-14.md)  
 - [2026-05-13 | 🌟 Health 📰 Sands 🐔 Miracle 🤖 Alignment 🏛️ Commons 🔀 Integrity 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-13.md)  
 - [2026-05-12 | 🌟 Progress 🏛️ Commons 📰 Ripples 🤖 Intent 🐔 Pantry 🔀 Echoes 📊 Dashboard 📋 Drawer 🧱 Pattern 🧰📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-12.md)  
-- [2026-05-11 | 🌟 World 📰 Ripples 🔍 Fails, 🤖 Conscience 🏛️ Citizen 🐔 Magic 🤖 Removing 🤖 Paying 🔀 Systems ⚙️ Meter. 🧰📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (207)  
+## [🤖 AI Blog](./ai-blog/index.md) (208)  
+- [2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄](./ai-blog/2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
 - [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./ai-blog/2026-05-12-4-word-meter-capability-pattern-refactor.md)  
 - [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./ai-blog/2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
 - [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./ai-blog/2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  
-- [2026-05-11 | 🟣 Word Meter PureScript Slice Two — Captions Land 🤖](./ai-blog/2026-05-11-6-word-meter-purescript-slice-two-captions-land.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (65)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (66)  
+- [2026-05-15 | 🤖 🌊 The Governance of the Mesh 🤖](./auto-blog-zero/2026-05-15-the-governance-of-the-mesh.md)  
 - [2026-05-14 | 🤖 🎭 The Synthetic Ego and the Architecture of Identity 🤖](./auto-blog-zero/2026-05-14-the-synthetic-ego-and-the-architecture-of-identity.md)  
 - [2026-05-13 | 🤖 🤺 The Sparring Partner: Adversarial Roots of Alignment 🤖](./auto-blog-zero/2026-05-13-the-sparring-partner-adversarial-roots-of-alignment.md)  
 - [2026-05-12 | 🤖 🩺 The Diagnostic Pulse of Synthetic Intent 🤖](./auto-blog-zero/2026-05-12-the-diagnostic-pulse-of-synthetic-intent.md)  
-- [2026-05-11 | 🤖 🧪 The Algorithmic Conscience and the Limits of Invariants 🤖](./auto-blog-zero/2026-05-11-the-algorithmic-conscience-and-the-limits-of-invariants.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (65)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (66)  
+- [2026-05-15 | 🐔 🐄 A Second Blessing on the Hillside 🐔](./chickie-loo/2026-05-15-a-second-blessing-on-the-hillside.md)  
 - [2026-05-14 | 🐔 A Calf in the Woods and the Mystery of the Dryer 🐔](./chickie-loo/2026-05-14-a-calf-in-the-woods-and-the-mystery-of-the-dryer.md)  
 - [2026-05-13 | 🐔 A Hillside Miracle and a Starlit Dream 🐔](./chickie-loo/2026-05-13-a-hillside-miracle-and-a-starlit-dream.md)  
 - [2026-05-12 | 🐔 The Quiet Music of an Organized Pantry 🐔](./chickie-loo/2026-05-12-the-quiet-music-of-an-organized-pantry.md)  
-- [2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔](./chickie-loo/2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (54)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (55)  
+- [2026-05-15 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./systems-for-public-good/2026-05-15-agile-governance-for-a-dynamic-digital-public-sphere.md)  
 - [2026-05-14 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./systems-for-public-good/2026-05-14-agile-governance-for-a-dynamic-digital-public-sphere.md)  
 - [2026-05-13 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-13-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-12 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-12-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
-- [2026-05-11 | 🏛️ 💡 Cultivating the Informed Citizen: The Bedrock of Our Shared Future 🏛️](./systems-for-public-good/2026-05-11-cultivating-the-informed-citizen-the-bedrock-of-our-shared-future.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (35)  
+## [📰 The Noise](./the-noise/index.md) (36)  
+- [2026-05-15 | 📰 🌍 Diverging Paths: Geopolitical Friction and Frontier Innovations 📰](./the-noise/2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
 - [2026-05-14 | 📰 🌍 A World of Converging Crises and Accelerating Ingenuity 📰](./the-noise/2026-05-14-a-world-of-converging-crises-and-accelerating-ingenuity.md)  
 - [2026-05-13 | 📰 💥 Geopolitical Fault Lines and Shifting Sands 📰](./the-noise/2026-05-13-geopolitical-fault-lines-and-shifting-sands.md)  
 - [2026-05-12 | 📰 Global Tremors and Technological Ripples 📰](./the-noise/2026-05-12-global-tremors-and-technological-ripples.md)  
-- [2026-05-11 | 📰 🌐 Global Tremors and Technological Ripples 📰](./the-noise/2026-05-11-global-tremors-and-technological-ripples.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (34)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (35)  
+- [2026-05-15 | 🌟 🔬 Advancing Science & Health Pathways 🌟](./positivity-bias/2026-05-15-advancing-science-health-pathways.md)  
 - [2026-05-14 | 🌟 ☀️ Illuminating Pathways: Breakthroughs and Collaborative Strides 🌟](./positivity-bias/2026-05-14-illuminating-pathways-breakthroughs-and-collaborative-strides.md)  
 - [2026-05-13 | 🌟 🔬 Revelations in Science & Health 🌟](./positivity-bias/2026-05-13-revelations-in-science-health.md)  
 - [2026-05-12 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-12-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
-- [2026-05-11 | 🌟 A World Ignited: Innovation, Compassion, and Green Horizons 🌟](./positivity-bias/2026-05-11-a-world-ignited-innovation-compassion-and-green-horizons.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (31)  
@@ -71,31 +71,31 @@ updated: 2026-05-14T16:11:34-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
+- [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
+- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
-- [🧱🛠️ Working Effectively with Legacy Code](./books/working-effectively-with-legacy-code.md)  
-- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
-- [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
   
   
-## [📺 Videos](./videos/index.md) (827)  
+## [📺 Videos](./videos/index.md) (828)  
+- [🎙️📰⚖️ Media For Truth, Not Profit w/ Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./videos/media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
 - [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./videos/the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇮🇷🧱🎥🇺🇸 New LEGO Video from IRAN - Stand Up America](./videos/new-lego-video-from-iran-stand-up-america.md)  
 - [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./videos/hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
-- [🤖🔄📦 Ralph Loops: Build Dumb AI Loops That Ship - Chris Parsons, Cherrypick](./videos/ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🧠💾 Memory](./topics/memory.md)  
+- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
 - [🤖📈 Maximizing AI Leverage](./topics/maximizing-ai-leverage.md)  
 - [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
-- [➗📐 Math](./topics/math.md)  
-- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](./articles/improving-token-efficiency-in-github-agentic-workflows.md)  
-- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
-- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
-- [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
+- [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
+- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
+- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

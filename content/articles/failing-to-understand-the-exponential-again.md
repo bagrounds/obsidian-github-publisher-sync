@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T18:42:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, minimalist illustration featuring a clean white background. In the center, a dark, thin line rises slowly and predictably across a grid, but as it nears the right side of the frame, it suddenly breaks into an aggressive, vertical upward curve that shoots off the top of the canvas. A small, stylized human silhouette stands at the base of the curve, looking up with a confused expression, hand raised to their forehead as if shielding their eyes from the sheer scale of the ascent. The color palette is monochromatic, utilizing sharp blacks and deep grays to emphasize the contrast between linear expectation and exponential reality. The overall aesthetic is geometric, modern, and analytical.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❓📈🤦 Failing to Understand the Exponential, Again](https://www.julian.ac/blog/2025/09/27/failing-to-understand-the-exponential-again)  
+![articles-failing-to-understand-the-exponential-again](../articles-failing-to-understand-the-exponential-again.jpg)  
 ## 🤖 AI Summary  
 - 📈 **AI discourse** regarding a "bubble" parallels the failure to grasp **Covid-19's** exponential spread.  
 - 🦠 **Commentators** missed the pandemic's scale, treating it as **remote** after exponential trends became obvious.  

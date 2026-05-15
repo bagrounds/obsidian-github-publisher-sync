@@ -6,9 +6,17 @@ title: 🕵️‍♀️💼👥 Agents
 URL: https://bagrounds.org/articles/agents
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T09:13:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A conceptual, high-tech illustration featuring a stylized, glowing neural network brain at the center, acting as a central hub. Surrounding the brain are various floating, translucent icons representing digital tools: a calculator, a globe, a magnifying glass, and a code script bracket. Faint, glowing lines of light connect the brain to these tools, illustrating a decision-making process. The background is a clean, dark navy gradient, suggesting a sophisticated digital environment. The composition is balanced and modern, using a palette of electric blue, soft white, and subtle metallic gold to represent intelligence and technical precision. The overall aesthetic is sleek, professional, and abstract, focusing on the synergy between artificial cognition and practical utility."
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🕵️‍♀️💼👥 Agents](https://huyenchip.com//2025/01/07/agents.html)  
+![articles-agents](../articles-agents.jpg)  
   
 ## 🤖 AI Summary  
 🤖 **Agents** are 🎯 anything that can **perceive** its environment and **act** upon that environment.  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-13-geopolitical-fault-lines-and-shifting-sands.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-13-geopolitical-fault-lines-and-shifting-sands.md) [⏭️](./2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
 # 2026-05-14 | 📰 🌍 A World of Converging Crises and Accelerating Ingenuity 📰  
 ![the-noise-2026-05-14-a-world-of-converging-crises-and-accelerating-ingenuity](../the-noise-2026-05-14-a-world-of-converging-crises-and-accelerating-ingenuity.jpg)  
   

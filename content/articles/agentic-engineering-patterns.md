@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T07:15:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a glowing, translucent robotic hand delicately assembling a complex structure made of interconnected digital blocks and circuit-like nodes. The scene is set against a clean, soft-gradient background of deep navy and electric blue. Floating above the structure are subtle, glowing geometric icons representing code fragments, gears, and verification checkmarks, symbolizing automated testing and architectural precision. The lighting is cinematic, casting soft highlights on the metallic textures of the robot’s fingers. The composition is balanced and spacious, emphasizing the intersection of human-led design and autonomous construction, with a focus on clarity, order, and the structural integrity of the emerging software system.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🛠️ Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns)  
+![articles-agentic-engineering-patterns](../articles-agentic-engineering-patterns.jpg)  
 ## 🤖 AI Summary  
   
 * ⚡ Writing code is cheap now because the cost to generate initial working implementations has dropped to near zero.  

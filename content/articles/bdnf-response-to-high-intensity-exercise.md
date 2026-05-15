@@ -6,9 +6,17 @@ title: 🧠💪📈 BDNF Response to High Intensity Exercise
 URL: https://bagrounds.org/articles/bdnf-response-to-high-intensity-exercise
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T12:43:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration featuring a human silhouette in motion, transitioning into a vibrant, glowing network of neural synapses. The body is depicted in a dynamic running pose, composed of energetic lines. From the head and spine, these lines transform into intricate, branching bioluminescent structures that resemble both tree roots and neurons, glowing in electric blue and gold against a deep charcoal background. A subtle, sharp upward-trending line graph is integrated into the background, blending seamlessly with the neural pathways to represent the physiological data. The overall aesthetic is modern, scientific, and high-energy, emphasizing the connection between intense physical movement and cognitive enhancement.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠💪📈 BDNF Response to High Intensity Exercise](https://elicit.com/review/ccde27f3-5b5b-4c73-9293-c9fd6195bb9d)  
+![articles-bdnf-response-to-high-intensity-exercise](../articles-bdnf-response-to-high-intensity-exercise.jpg)  
 ### 🤖 AI Summary  
 🌰 The provided document is a research report on the response curve of increased BDNF (Brain-Derived Neurotrophic Factor) to high-intensity exercise. 🧠 The report summarizes findings from multiple studies to characterize this response.  
   

@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-05-15T05:00:09-07:00
+updated: 2026-05-15T11:56:19-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (35)  
+# 📰 The Noise (36)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-05-15 | 📰 🌍 Diverging Paths: Geopolitical Friction and Frontier Innovations 📰](./2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
 - [2026-05-14 | 📰 🌍 A World of Converging Crises and Accelerating Ingenuity 📰](./2026-05-14-a-world-of-converging-crises-and-accelerating-ingenuity.md)  
 - [2026-05-13 | 📰 💥 Geopolitical Fault Lines and Shifting Sands 📰](./2026-05-13-geopolitical-fault-lines-and-shifting-sands.md)  
 - [2026-05-12 | 📰 Global Tremors and Technological Ripples 📰](./2026-05-12-global-tremors-and-technological-ripples.md)  

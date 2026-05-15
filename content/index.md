@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-15T12:32:20-07:00
+updated: 2026-05-15T13:48:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-15T12:32:20-07:00
 - [2026-05-12 | 🌟 Progress 🏛️ Commons 📰 Ripples 🤖 Intent 🐔 Pantry 🔀 Echoes 📊 Dashboard 📋 Drawer 🧱 Pattern 🧰📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (208)  
+## [🤖 AI Blog](./ai-blog/index.md) (209)  
+- [2026-05-14 | 🔋 Word Meter PureScript Slice Seven — Wake Lock + Keep-Awake Toggle 🟢](./ai-blog/2026-05-14-1-word-meter-purescript-slice-seven-wake-lock.md)  
 - [2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄](./ai-blog/2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
 - [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./ai-blog/2026-05-12-4-word-meter-capability-pattern-refactor.md)  
 - [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./ai-blog/2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
-- [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./ai-blog/2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (66)  
@@ -77,11 +77,11 @@ updated: 2026-05-15T12:32:20-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (829)  
+## [📺 Videos](./videos/index.md) (830)  
+- [📈✊✨ Progressives are making real gains](./videos/progressives-are-making-real-gains.md)  
 - [🏛️📰💡 Today in Politics | Explainer | May 14 2026](./videos/today-in-politics-explainer-may-14-2026.md)  
 - [🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./videos/media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
 - [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./videos/the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
-- [🇮🇷🧱🎥🇺🇸 New LEGO Video from IRAN - Stand Up America](./videos/new-lego-video-from-iran-stand-up-america.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-05-15T12:32:20-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
+- [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./articles/google-cautions-against-using-too-many-internal-links.md)  
+- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
-- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T15:02:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette centered against a soft, neutral background. Inside the silhouette’s head, a tangled, chaotic cluster of glowing, multi-colored geometric shapes—representing complex, shallow code modules—is being streamlined into a single, clean, glowing line that flows smoothly outward. The aesthetic is modern and clean, utilizing a muted color palette of slate blue, charcoal, and soft white, with the central streamlined path highlighted in a vibrant, warm amber to signify clarity and reduced cognitive effort. The composition emphasizes the transition from mental clutter to straightforward, logical flow.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠📈🔑 Cognitive load is what matters](https://minds.md/zakirullin/cognitive#long)  
+![articles-cognitive-load-is-what-matters](../articles-cognitive-load-is-what-matters.jpg)  
 ## 🤖 AI Summary  
 * 🧠 **Cognitive load** is how much a developer needs to think in order to complete a task.  
 * 🧐 The **average person** can hold roughly four chunks of information in working memory; cognitive overload occurs once this threshold is passed.  

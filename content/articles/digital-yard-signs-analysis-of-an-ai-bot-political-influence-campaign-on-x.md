@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T17:56:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration of a suburban lawn at twilight. Instead of traditional physical yard signs, the grass is populated by dozens of glowing, translucent digital tablets standing on thin metal wires. Each tablet displays abstract, flickering lines of code or binary patterns in a soft, eerie blue light. The background features the blurred, dark silhouettes of houses, suggesting a quiet neighborhood. A network of faint, glowing geometric lines connects the tablets to one another, trailing upward into the night sky where they converge into a singular, glowing digital eye or a stylized neural network node. The scene uses a cool color palette of deep indigos, charcoal grays, and electric cyans to evoke a sense of technological intrusion in a domestic, political setting.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🤖📢❌ [Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](https://www.clemson.edu/centers-institutes/watt/hub/images/digital-yard-signs.pdf)  
+![articles-digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x](../articles-digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.jpg)  
   
 ## 🤖 AI Summary  
   

@@ -1689,6 +1689,193 @@
     };
   };
 
+  // output/WordMeter.RecognitionError/index.js
+  var NotAllowed = /* @__PURE__ */ function() {
+    function NotAllowed2() {
+    }
+    ;
+    NotAllowed2.value = new NotAllowed2();
+    return NotAllowed2;
+  }();
+  var ServiceNotAllowed = /* @__PURE__ */ function() {
+    function ServiceNotAllowed2() {
+    }
+    ;
+    ServiceNotAllowed2.value = new ServiceNotAllowed2();
+    return ServiceNotAllowed2;
+  }();
+  var NoSpeech = /* @__PURE__ */ function() {
+    function NoSpeech2() {
+    }
+    ;
+    NoSpeech2.value = new NoSpeech2();
+    return NoSpeech2;
+  }();
+  var Aborted = /* @__PURE__ */ function() {
+    function Aborted2() {
+    }
+    ;
+    Aborted2.value = new Aborted2();
+    return Aborted2;
+  }();
+  var AudioCapture = /* @__PURE__ */ function() {
+    function AudioCapture2() {
+    }
+    ;
+    AudioCapture2.value = new AudioCapture2();
+    return AudioCapture2;
+  }();
+  var Network = /* @__PURE__ */ function() {
+    function Network2() {
+    }
+    ;
+    Network2.value = new Network2();
+    return Network2;
+  }();
+  var LanguageNotSupported = /* @__PURE__ */ function() {
+    function LanguageNotSupported2() {
+    }
+    ;
+    LanguageNotSupported2.value = new LanguageNotSupported2();
+    return LanguageNotSupported2;
+  }();
+  var NoRecognitionErrorCode = /* @__PURE__ */ function() {
+    function NoRecognitionErrorCode2() {
+    }
+    ;
+    NoRecognitionErrorCode2.value = new NoRecognitionErrorCode2();
+    return NoRecognitionErrorCode2;
+  }();
+  var OtherRecognitionError = /* @__PURE__ */ function() {
+    function OtherRecognitionError2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    OtherRecognitionError2.create = function(value0) {
+      return new OtherRecognitionError2(value0);
+    };
+    return OtherRecognitionError2;
+  }();
+  var renderRecognitionErrorDiagnosticDetail = function(code) {
+    return function(message2) {
+      var renderCode = function(v) {
+        if (v === "") {
+          return "(none)";
+        }
+        ;
+        return v;
+      };
+      return "code=" + (renderCode(code) + (" message=" + message2));
+    };
+  };
+  var permissionDeniedBanner = "Microphone permission denied. Allow microphone access and try again.";
+  var noRecognitionErrorBanner = "Recognition error: unknown";
+  var networkErrorBanner = "Network error reaching the speech service. Check your connection and try again.";
+  var languageUnavailableBanner = "Speech recognition is not available for your language in this browser.";
+  var isTransient = function(v) {
+    if (v instanceof NoSpeech) {
+      return true;
+    }
+    ;
+    if (v instanceof Aborted) {
+      return true;
+    }
+    ;
+    if (v instanceof AudioCapture) {
+      return true;
+    }
+    ;
+    return false;
+  };
+  var isPermissionDenied = function(v) {
+    if (v instanceof NotAllowed) {
+      return true;
+    }
+    ;
+    if (v instanceof ServiceNotAllowed) {
+      return true;
+    }
+    ;
+    return false;
+  };
+  var genericRecognitionErrorBanner = function(code) {
+    return "Recognition error: " + code;
+  };
+  var recognitionErrorBannerText = function(v) {
+    if (v instanceof NoSpeech) {
+      return "";
+    }
+    ;
+    if (v instanceof Aborted) {
+      return "";
+    }
+    ;
+    if (v instanceof AudioCapture) {
+      return "";
+    }
+    ;
+    if (v instanceof NotAllowed) {
+      return permissionDeniedBanner;
+    }
+    ;
+    if (v instanceof ServiceNotAllowed) {
+      return permissionDeniedBanner;
+    }
+    ;
+    if (v instanceof Network) {
+      return networkErrorBanner;
+    }
+    ;
+    if (v instanceof LanguageNotSupported) {
+      return languageUnavailableBanner;
+    }
+    ;
+    if (v instanceof NoRecognitionErrorCode) {
+      return noRecognitionErrorBanner;
+    }
+    ;
+    if (v instanceof OtherRecognitionError) {
+      return genericRecognitionErrorBanner(v.value0);
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.RecognitionError (line 112, column 30 - line 121, column 65): " + [v.constructor.name]);
+  };
+  var classifyRecognitionError = function(v) {
+    if (v === "not-allowed") {
+      return NotAllowed.value;
+    }
+    ;
+    if (v === "service-not-allowed") {
+      return ServiceNotAllowed.value;
+    }
+    ;
+    if (v === "no-speech") {
+      return NoSpeech.value;
+    }
+    ;
+    if (v === "aborted") {
+      return Aborted.value;
+    }
+    ;
+    if (v === "audio-capture") {
+      return AudioCapture.value;
+    }
+    ;
+    if (v === "network") {
+      return Network.value;
+    }
+    ;
+    if (v === "language-not-supported") {
+      return LanguageNotSupported.value;
+    }
+    ;
+    if (v === "") {
+      return NoRecognitionErrorCode.value;
+    }
+    ;
+    return new OtherRecognitionError(v);
+  };
+
   // output/WordMeter.Version/index.js
   var version = "0.1.0";
 
@@ -1837,6 +2024,29 @@
     };
     return SetWakeLockHeld2;
   }();
+  var HandleRecognitionError = /* @__PURE__ */ function() {
+    function HandleRecognitionError2(value0, value1, value2) {
+      this.value0 = value0;
+      this.value1 = value1;
+      this.value2 = value2;
+    }
+    ;
+    HandleRecognitionError2.create = function(value0) {
+      return function(value1) {
+        return function(value2) {
+          return new HandleRecognitionError2(value0, value1, value2);
+        };
+      };
+    };
+    return HandleRecognitionError2;
+  }();
+  var ClearErrorBanner = /* @__PURE__ */ function() {
+    function ClearErrorBanner2() {
+    }
+    ;
+    ClearErrorBanner2.value = new ClearErrorBanner2();
+    return ClearErrorBanner2;
+  }();
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
       var cutoff = session.now - windowMs;
@@ -1859,7 +2069,7 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 345, column 22 - line 347, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 399, column 22 - line 401, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var wakeLockAcquiredStatus = "screen will stay on";
   var toPersistedData = function(session) {
@@ -1890,7 +2100,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 635, column 24 - line 637, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 690, column 24 - line 692, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
@@ -1910,7 +2120,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 358, column 1 - line 358, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 412, column 1 - line 412, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -1949,6 +2159,7 @@
     return ratePerMinute(interval.wordCount)(max3(1)(intervalDurationMs(interval)));
   };
   var idleKeepAwakeStatus = "";
+  var idleErrorBanner = "";
   var idleCopyStatus = "";
   var initialSession = /* @__PURE__ */ function() {
     return {
@@ -1968,7 +2179,8 @@
       copyStatus: idleCopyStatus,
       keepAwake: true,
       keepAwakeStatus: idleKeepAwakeStatus,
-      wakeLockHeld: false
+      wakeLockHeld: false,
+      errorBanner: idleErrorBanner
     };
   }();
   var formatRate = function(rate) {
@@ -1991,19 +2203,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 395, column 1 - line 395, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 449, column 1 - line 449, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $45 = totalSeconds < 60;
-    if ($45) {
+    var $51 = totalSeconds < 60;
+    if ($51) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $46 = totalMinutes < 60;
-    if ($46) {
+    var $52 = totalMinutes < 60;
+    if ($52) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -2033,52 +2245,70 @@
       return caption.timestamp >= nowMs - captionWindowMs;
     });
   };
+  var stopListeningAt = function(timestamp) {
+    return function(label) {
+      return function(reasonDetail) {
+        return function(session) {
+          var startedAt = function() {
+            if (session.currentIntervalStart instanceof Just) {
+              return session.currentIntervalStart.value0;
+            }
+            ;
+            if (session.currentIntervalStart instanceof Nothing) {
+              return timestamp;
+            }
+            ;
+            throw new Error("Failed pattern match at WordMeter.Recording (line 349, column 17 - line 351, column 27): " + [session.currentIntervalStart.constructor.name]);
+          }();
+          var completed = {
+            startedAt,
+            endedAt: max3(timestamp)(startedAt),
+            wordCount: session.currentIntervalWords
+          };
+          var closedInterval = max3(0)(timestamp - startedAt);
+          var statsDetail = "words=" + (show2(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedInterval)));
+          var fullDetail = function() {
+            var $55 = reasonDetail === "";
+            if ($55) {
+              return statsDetail;
+            }
+            ;
+            return statsDetail + (" " + reasonDetail);
+          }();
+          var stopEntry = {
+            timestamp,
+            label,
+            detail: fullDetail
+          };
+          return {
+            totalWords: session.totalWords,
+            firstStartedAt: session.firstStartedAt,
+            lastError: session.lastError,
+            environment: session.environment,
+            copyStatus: session.copyStatus,
+            keepAwake: session.keepAwake,
+            keepAwakeStatus: session.keepAwakeStatus,
+            wakeLockHeld: session.wakeLockHeld,
+            errorBanner: session.errorBanner,
+            listening: false,
+            currentIntervalStart: Nothing.value,
+            currentIntervalWords: 0,
+            completedActiveMs: session.completedActiveMs + closedInterval,
+            wordEvents: pruneEvents(timestamp)(session.wordEvents),
+            captions: pruneCaptions(timestamp)(session.captions),
+            eventLog: takeEnd(eventLogLimit)(append12(session.eventLog)([completed])),
+            now: timestamp,
+            diagnostics: recordEntry(stopEntry)(session.diagnostics)
+          };
+        };
+      };
+    };
+  };
   var reduce = function(v) {
     return function(v1) {
       if (v instanceof Toggle) {
         if (v1.listening) {
-          var startedAt = function() {
-            if (v1.currentIntervalStart instanceof Just) {
-              return v1.currentIntervalStart.value0;
-            }
-            ;
-            if (v1.currentIntervalStart instanceof Nothing) {
-              return v.value0;
-            }
-            ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 203, column 21 - line 205, column 31): " + [v1.currentIntervalStart.constructor.name]);
-          }();
-          var completed = {
-            startedAt,
-            endedAt: max3(v.value0)(startedAt),
-            wordCount: v1.currentIntervalWords
-          };
-          var closedInterval = max3(0)(v.value0 - startedAt);
-          var stopDetail = "words=" + (show2(v1.currentIntervalWords) + (" duration=" + formatDurationMs(closedInterval)));
-          var stopEntry = {
-            timestamp: v.value0,
-            label: "stop counting",
-            detail: stopDetail
-          };
-          return {
-            totalWords: v1.totalWords,
-            firstStartedAt: v1.firstStartedAt,
-            lastError: v1.lastError,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            keepAwakeStatus: v1.keepAwakeStatus,
-            wakeLockHeld: v1.wakeLockHeld,
-            listening: false,
-            currentIntervalStart: Nothing.value,
-            currentIntervalWords: 0,
-            completedActiveMs: v1.completedActiveMs + closedInterval,
-            wordEvents: pruneEvents(v.value0)(v1.wordEvents),
-            captions: pruneCaptions(v.value0)(v1.captions),
-            eventLog: takeEnd(eventLogLimit)(append12(v1.eventLog)([completed])),
-            now: v.value0,
-            diagnostics: recordEntry(stopEntry)(v1.diagnostics)
-          };
+          return stopListeningAt(v.value0)("stop counting")("")(v1);
         }
         ;
         if (otherwise) {
@@ -2109,12 +2339,13 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 238, column 30 - line 240, column 40): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 227, column 30 - line 229, column 40): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
             captions: pruneCaptions(v.value0)(v1.captions),
             now: v.value0,
-            diagnostics: recordEntry(startEntry)(v1.diagnostics)
+            diagnostics: recordEntry(startEntry)(v1.diagnostics),
+            errorBanner: idleErrorBanner
           };
         }
         ;
@@ -2125,8 +2356,8 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $54 = wordCount === 0;
-          if ($54) {
+          var $61 = wordCount === 0;
+          if ($61) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
@@ -2142,6 +2373,7 @@
               keepAwake: v1.keepAwake,
               keepAwakeStatus: v1.keepAwakeStatus,
               wakeLockHeld: v1.wakeLockHeld,
+              errorBanner: v1.errorBanner,
               now: v.value1,
               wordEvents: prunedEvents,
               captions: prunedCaptions
@@ -2165,6 +2397,7 @@
             keepAwake: v1.keepAwake,
             keepAwakeStatus: v1.keepAwakeStatus,
             wakeLockHeld: v1.wakeLockHeld,
+            errorBanner: v1.errorBanner,
             totalWords: v1.totalWords + wordCount | 0,
             currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
             captions: append12(prunedCaptions)([{
@@ -2198,6 +2431,7 @@
             keepAwake: v1.keepAwake,
             keepAwakeStatus: v1.keepAwakeStatus,
             wakeLockHeld: v1.wakeLockHeld,
+            errorBanner: v1.errorBanner,
             now: v.value1,
             captions: pruneCaptions(v.value1)(v1.captions)
           };
@@ -2221,6 +2455,7 @@
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           now: v.value0,
           wordEvents: pruneEvents(v.value0)(v1.wordEvents),
           captions: pruneCaptions(v.value0)(v1.captions)
@@ -2245,6 +2480,7 @@
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           diagnostics: recordEntry({
             timestamp: v.value0,
             label: v.value1,
@@ -2271,6 +2507,7 @@
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           environment: new Just(v.value0)
         };
       }
@@ -2293,6 +2530,7 @@
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           copyStatus: v.value0
         };
       }
@@ -2317,6 +2555,7 @@
           copyStatus: initialSession.copyStatus,
           keepAwakeStatus: initialSession.keepAwakeStatus,
           wakeLockHeld: initialSession.wakeLockHeld,
+          errorBanner: initialSession.errorBanner,
           now: v.value0,
           diagnostics: recordEntry(resetEntry)(v1.diagnostics),
           environment: v1.environment,
@@ -2336,6 +2575,7 @@
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           totalWords: max1(0)(v.value0.totalWords),
           firstStartedAt: v.value0.firstStartedAt,
           wordEvents: v.value0.wordEvents,
@@ -2363,6 +2603,7 @@
           environment: v1.environment,
           copyStatus: v1.copyStatus,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           keepAwake: v.value0,
           keepAwakeStatus: function() {
             if (v.value0) {
@@ -2392,6 +2633,7 @@
           copyStatus: v1.copyStatus,
           keepAwake: v1.keepAwake,
           wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
           keepAwakeStatus: v.value0
         };
       }
@@ -2414,11 +2656,115 @@
           copyStatus: v1.copyStatus,
           keepAwake: v1.keepAwake,
           keepAwakeStatus: v1.keepAwakeStatus,
+          errorBanner: v1.errorBanner,
           wakeLockHeld: v.value0
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 199, column 1 - line 199, column 39): " + [v.constructor.name, v1.constructor.name]);
+      if (v instanceof HandleRecognitionError) {
+        var errorEntry = {
+          timestamp: v.value0,
+          label: "recognition.onerror",
+          detail: renderRecognitionErrorDiagnosticDetail(v.value1)(v.value2)
+        };
+        var sessionWithDiagnostic = {
+          captions: v1.captions,
+          completedActiveMs: v1.completedActiveMs,
+          copyStatus: v1.copyStatus,
+          currentIntervalStart: v1.currentIntervalStart,
+          currentIntervalWords: v1.currentIntervalWords,
+          environment: v1.environment,
+          errorBanner: v1.errorBanner,
+          eventLog: v1.eventLog,
+          firstStartedAt: v1.firstStartedAt,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          lastError: v1.lastError,
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          wakeLockHeld: v1.wakeLockHeld,
+          wordEvents: v1.wordEvents,
+          diagnostics: recordEntry(errorEntry)(v1.diagnostics),
+          now: v.value0
+        };
+        var classified = classifyRecognitionError(v.value1);
+        var bannerText = recognitionErrorBannerText(classified);
+        var $76 = isTransient(classified);
+        if ($76) {
+          return sessionWithDiagnostic;
+        }
+        ;
+        var $77 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($77) {
+          var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
+          return {
+            listening: stopped.listening,
+            totalWords: stopped.totalWords,
+            captions: stopped.captions,
+            wordEvents: stopped.wordEvents,
+            eventLog: stopped.eventLog,
+            currentIntervalWords: stopped.currentIntervalWords,
+            firstStartedAt: stopped.firstStartedAt,
+            currentIntervalStart: stopped.currentIntervalStart,
+            completedActiveMs: stopped.completedActiveMs,
+            now: stopped.now,
+            lastError: stopped.lastError,
+            diagnostics: stopped.diagnostics,
+            environment: stopped.environment,
+            copyStatus: stopped.copyStatus,
+            keepAwake: stopped.keepAwake,
+            keepAwakeStatus: stopped.keepAwakeStatus,
+            wakeLockHeld: stopped.wakeLockHeld,
+            errorBanner: bannerText
+          };
+        }
+        ;
+        return {
+          listening: sessionWithDiagnostic.listening,
+          totalWords: sessionWithDiagnostic.totalWords,
+          captions: sessionWithDiagnostic.captions,
+          wordEvents: sessionWithDiagnostic.wordEvents,
+          eventLog: sessionWithDiagnostic.eventLog,
+          currentIntervalWords: sessionWithDiagnostic.currentIntervalWords,
+          firstStartedAt: sessionWithDiagnostic.firstStartedAt,
+          currentIntervalStart: sessionWithDiagnostic.currentIntervalStart,
+          completedActiveMs: sessionWithDiagnostic.completedActiveMs,
+          now: sessionWithDiagnostic.now,
+          lastError: sessionWithDiagnostic.lastError,
+          diagnostics: sessionWithDiagnostic.diagnostics,
+          environment: sessionWithDiagnostic.environment,
+          copyStatus: sessionWithDiagnostic.copyStatus,
+          keepAwake: sessionWithDiagnostic.keepAwake,
+          keepAwakeStatus: sessionWithDiagnostic.keepAwakeStatus,
+          wakeLockHeld: sessionWithDiagnostic.wakeLockHeld,
+          errorBanner: bannerText
+        };
+      }
+      ;
+      if (v instanceof ClearErrorBanner) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: idleErrorBanner
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 215, column 1 - line 215, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var captionOpacity = function(nowMs) {
@@ -2470,7 +2816,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 601, column 11 - line 603, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 656, column 11 - line 658, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -2502,13 +2848,16 @@
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $76 = length(session.eventLog) === 0;
-      if ($76) {
+      var $88 = length(session.eventLog) === 0;
+      if ($88) {
         return [buildEventLogPlaceholder];
       }
       ;
       return map4(buildEventLogEntry)(session.eventLog);
     }());
+  };
+  var buildErrorBanner = function(session) {
+    return div_([testId("wm-error"), attribute("role")("alert")])([style("margin-top")("12px"), style("font-size")("13px"), style("color")("#ff8b94"), style("text-align")("center"), style("min-height")("18px")])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
@@ -2527,8 +2876,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $77 = length(session.captions) === 0;
-      if ($77) {
+      var $89 = length(session.captions) === 0;
+      if ($89) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -2545,7 +2894,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 340, column 31 - line 342, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 394, column 31 - line 396, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -2556,7 +2905,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 
@@ -4078,7 +4427,11 @@
       setKeepAwake: (enabled) => api.setKeepAwake(!!enabled)(),
       getKeepAwakeStatus: () => api.getKeepAwakeStatus(),
       getWakeLockHeld: () => api.getWakeLockHeld(),
-      simulateVisibilityVisible: () => api.simulateVisibilityVisible()
+      simulateVisibilityVisible: () => api.simulateVisibilityVisible(),
+      simulateRecognitionError: (code, message2) => api.simulateRecognitionError(String(code == null ? "" : code))(
+        String(message2 == null ? "" : message2)
+      )(),
+      getErrorBanner: () => api.getErrorBanner()
     };
   };
 
@@ -4182,7 +4535,11 @@
       getWakeLockHeld: map10(function(v1) {
         return v1.wakeLockHeld;
       })(v.readSession),
-      simulateVisibilityVisible: v.simulateVisibilityVisible
+      simulateVisibilityVisible: v.simulateVisibilityVisible,
+      simulateRecognitionError: v.simulateRecognitionError,
+      getErrorBanner: map10(function(v1) {
+        return v1.errorBanner;
+      })(v.readSession)
     });
   };
 
@@ -4262,7 +4619,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 176, column 3 - line 178, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 181, column 3 - line 183, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -4300,7 +4657,7 @@
                 return recordStorageFailure2("persist clear")(outcome.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Main (line 155, column 3 - line 157, column 79): " + [outcome.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Main (line 158, column 3 - line 160, column 79): " + [outcome.constructor.name]);
             });
           }
           ;
@@ -4336,7 +4693,15 @@
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 144, column 1 - line 150, column 12): " + [v.constructor.name]);
+          if (v instanceof HandleRecognitionError) {
+            return pure1(unit);
+          }
+          ;
+          if (v instanceof ClearErrorBanner) {
+            return pure1(unit);
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Main (line 147, column 1 - line 153, column 12): " + [v.constructor.name]);
         };
       };
     };
@@ -4389,7 +4754,7 @@
                         return recordLoadFailure2(restored.value0);
                       }
                       ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 121, column 3 - line 124, column 54): " + [restored.constructor.name]);
+                      throw new Error("Failed pattern match at WordMeter.Main (line 124, column 3 - line 127, column 54): " + [restored.constructor.name]);
                     }())(function() {
                       return bind12(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
@@ -4548,8 +4913,8 @@
             var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
             return function(handlers) {
               return bind12(readCurrentSession2)(function(session) {
-                var $384 = !session.keepAwake;
-                if ($384) {
+                var $419 = !session.keepAwake;
+                if ($419) {
                   return pure1(unit);
                 }
                 ;
@@ -4577,8 +4942,8 @@
             var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
             return function(handlers) {
               return bind12(readCurrentSession2)(function(session) {
-                var $385 = session.listening && (session.keepAwake && !session.wakeLockHeld);
-                if ($385) {
+                var $420 = session.listening && (session.keepAwake && !session.wakeLockHeld);
+                if ($420) {
                   return maybeAcquireWakeLock5(handlers);
                 }
                 ;
@@ -4660,8 +5025,8 @@
             var releaseScreenWakeLock2 = releaseScreenWakeLock(dictWakeLock);
             return function(handlers) {
               return bind12(readCurrentSession2)(function(session) {
-                var $386 = !session.wakeLockHeld;
-                if ($386) {
+                var $421 = !session.wakeLockHeld;
+                if ($421) {
                   return dispatch5(handlers)(new SetKeepAwakeStatus(idleKeepAwakeStatus));
                 }
                 ;
@@ -4673,6 +5038,58 @@
       };
     };
   };
+  var handleRecognitionError = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var bind12 = bind(Bind1);
+    var map11 = map(Bind1.Apply0().Functor0());
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
+    var pure1 = pure(Monad0.Applicative0());
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
+      return function(dictSessionState) {
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
+          return function(dictWakeLock) {
+            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
+            return function(handlers) {
+              return function(code) {
+                return function(message2) {
+                  return bind12(map11(function(v) {
+                    return v.listening;
+                  })(readCurrentSession2))(function(wasListening) {
+                    return bind12(currentTimeMillis1)(function(timestamp) {
+                      return discard22(dispatch5(handlers)(new HandleRecognitionError(timestamp, code, message2)))(function() {
+                        return bind12(map11(function(v) {
+                          return v.listening;
+                        })(readCurrentSession2))(function(stillListening) {
+                          var $422 = wasListening && !stillListening;
+                          if ($422) {
+                            return releaseHeldWakeLock5(handlers);
+                          }
+                          ;
+                          return pure1(unit);
+                        });
+                      });
+                    });
+                  });
+                };
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleRecognitionError1 = /* @__PURE__ */ handleRecognitionError(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
   var handleReset = function(dictMonadEffect) {
     var liftEffect8 = liftEffect(dictMonadEffect);
     return function(dictClock) {
@@ -4715,7 +5132,7 @@
                     return recordConfirmFailure2(outcome.value0);
                   }
                   ;
-                  throw new Error("Failed pattern match at WordMeter.Main (line 265, column 3 - line 271, column 63): " + [outcome.constructor.name]);
+                  throw new Error("Failed pattern match at WordMeter.Main (line 270, column 3 - line 276, column 63): " + [outcome.constructor.name]);
                 });
               };
             };
@@ -4766,7 +5183,7 @@
                       return pure1(unit);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 286, column 3 - line 289, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 291, column 3 - line 294, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
                   });
                 });
               };
@@ -4870,7 +5287,12 @@
       requestReset: handlers.requestReset,
       requestSetKeepAwake: handlers.requestSetKeepAwake,
       persistNow: runAppM(applicationEnvironment)(persistCurrentSession1),
-      simulateVisibilityVisible: runAppM(applicationEnvironment)(handleVisibilityVisible1(handlers))
+      simulateVisibilityVisible: runAppM(applicationEnvironment)(handleVisibilityVisible1(handlers)),
+      simulateRecognitionError: function(code) {
+        return function(message2) {
+          return runAppM(applicationEnvironment)(handleRecognitionError1(handlers)(code)(message2));
+        };
+      }
     })();
   };
 

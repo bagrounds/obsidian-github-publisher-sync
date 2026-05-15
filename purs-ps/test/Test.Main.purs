@@ -50,6 +50,18 @@ import WordMeter.Diagnostics
   , recordEntry
   )
 import WordMeter.Persistence (decodePersistedData, encodePersistedData)
+import WordMeter.RecognitionError
+  ( RecognitionErrorCode(..)
+  , classifyRecognitionError
+  , genericRecognitionErrorBanner
+  , isPermissionDenied
+  , isTransient
+  , networkErrorBanner
+  , noRecognitionErrorBanner
+  , permissionDeniedBanner
+  , recognitionErrorBannerText
+  , renderRecognitionErrorDiagnosticDetail
+  )
 import WordMeter.Recording
   ( Action(..)
   , Session
@@ -60,6 +72,7 @@ import WordMeter.Recording
   , formatDurationMs
   , formatRate
   , idleCopyStatus
+  , idleErrorBanner
   , idleKeepAwakeStatus
   , initialSession
   , intervalDurationMs
@@ -91,6 +104,7 @@ main = do
   runCapabilityTests
   runPersistenceTests
   runKeepAwakeTests
+  runRecognitionErrorTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -570,3 +584,159 @@ runKeepAwakeTests = do
     (Array.length wakeLockOutcome.events) 3
   assertEqualBoolean "RecordingWakeLockM first event is a request"
     (Array.head wakeLockOutcome.events == Just RequestedWakeLock) true
+
+runRecognitionErrorTests :: Effect Unit
+runRecognitionErrorTests = do
+  -- Slice 8: typed classification of recognition.onerror codes.
+  assertEqualBoolean "classify not-allowed"
+    (classifyRecognitionError "not-allowed" == NotAllowed) true
+  assertEqualBoolean "classify service-not-allowed"
+    (classifyRecognitionError "service-not-allowed" == ServiceNotAllowed) true
+  assertEqualBoolean "classify no-speech"
+    (classifyRecognitionError "no-speech" == NoSpeech) true
+  assertEqualBoolean "classify aborted"
+    (classifyRecognitionError "aborted" == Aborted) true
+  assertEqualBoolean "classify audio-capture"
+    (classifyRecognitionError "audio-capture" == AudioCapture) true
+  assertEqualBoolean "classify network"
+    (classifyRecognitionError "network" == Network) true
+  assertEqualBoolean "classify language-not-supported"
+    (classifyRecognitionError "language-not-supported" == LanguageNotSupported)
+    true
+  assertEqualBoolean "classify empty string"
+    (classifyRecognitionError "" == NoRecognitionErrorCode) true
+  assertEqualBoolean "classify unknown code carries the raw string"
+    (classifyRecognitionError "weird" == OtherRecognitionError "weird") true
+
+  assertEqualBoolean "no-speech is transient"
+    (isTransient NoSpeech) true
+  assertEqualBoolean "aborted is transient"
+    (isTransient Aborted) true
+  assertEqualBoolean "audio-capture is transient"
+    (isTransient AudioCapture) true
+  assertEqualBoolean "not-allowed is NOT transient"
+    (isTransient NotAllowed) false
+  assertEqualBoolean "network is NOT transient"
+    (isTransient Network) false
+
+  assertEqualBoolean "not-allowed is permission-denied"
+    (isPermissionDenied NotAllowed) true
+  assertEqualBoolean "service-not-allowed is permission-denied"
+    (isPermissionDenied ServiceNotAllowed) true
+  assertEqualBoolean "no-speech is NOT permission-denied"
+    (isPermissionDenied NoSpeech) false
+  assertEqualBoolean "network is NOT permission-denied"
+    (isPermissionDenied Network) false
+
+  assertEqualString "banner text for NotAllowed"
+    (recognitionErrorBannerText NotAllowed) permissionDeniedBanner
+  assertEqualString "banner text for Network"
+    (recognitionErrorBannerText Network) networkErrorBanner
+  assertEqualString "banner text for NoSpeech is empty"
+    (recognitionErrorBannerText NoSpeech) ""
+  assertEqualString "banner text for NoRecognitionErrorCode"
+    (recognitionErrorBannerText NoRecognitionErrorCode)
+    noRecognitionErrorBanner
+  assertEqualString "banner text for an unknown code interpolates the raw code"
+    (recognitionErrorBannerText (OtherRecognitionError "boom"))
+    (genericRecognitionErrorBanner "boom")
+
+  assertEqualString "diagnostic detail with empty code renders (none)"
+    (renderRecognitionErrorDiagnosticDetail "" "")
+    "code=(none) message="
+  assertEqualString "diagnostic detail surfaces both fields"
+    (renderRecognitionErrorDiagnosticDetail "network" "lost wifi")
+    "code=network message=lost wifi"
+
+  -- Reducer: a transient error appends a diagnostic but does not change
+  -- the banner or the listening state.
+  let
+    listening = reduce (Toggle 0.0) initialSession
+    afterTransient =
+      reduce (HandleRecognitionError 5000.0 "no-speech" "ignore me") listening
+  assertEqualBoolean "transient error keeps listening true"
+    afterTransient.listening true
+  assertEqualString "transient error leaves errorBanner empty"
+    afterTransient.errorBanner idleErrorBanner
+  assertEqualInt "transient error still appends a diagnostic"
+    (Array.length afterTransient.diagnostics)
+    (Array.length listening.diagnostics + 1)
+
+  -- Permission-denied: banner set, listening flipped off, interval pushed
+  -- to event log, two diagnostic entries appended (onerror + session ended).
+  let
+    listening2 =
+      reduce (InjectFinalTranscript "one two three" 2000.0)
+        (reduce (Toggle 0.0) initialSession)
+    afterPermission =
+      reduce (HandleRecognitionError 10000.0 "not-allowed" "user denied")
+        listening2
+  assertEqualBoolean "permission-denied stops listening"
+    afterPermission.listening false
+  assertEqualString "permission-denied sets the banner"
+    afterPermission.errorBanner permissionDeniedBanner
+  assertEqualInt "permission-denied pushes the open interval into event log"
+    (Array.length afterPermission.eventLog) 1
+  assertEqualInt "permission-denied appends recognition.onerror AND session ended"
+    (Array.length afterPermission.diagnostics)
+    (Array.length listening2.diagnostics + 2)
+
+  -- Network error: banner set, but listening stays on (recoverable).
+  let
+    afterNetwork =
+      reduce (HandleRecognitionError 11000.0 "network" "")
+        afterTransient
+  assertEqualBoolean "network error keeps listening true"
+    afterNetwork.listening true
+  assertEqualString "network error sets the network banner"
+    afterNetwork.errorBanner networkErrorBanner
+
+  -- Unknown code: banner set with the generic "Recognition error: <code>".
+  let
+    afterUnknown =
+      reduce (HandleRecognitionError 12000.0 "weird" "") afterTransient
+  assertEqualString "unknown error renders the generic banner"
+    afterUnknown.errorBanner (genericRecognitionErrorBanner "weird")
+
+  -- Empty code: banner reads "Recognition error: unknown".
+  let
+    afterEmpty =
+      reduce (HandleRecognitionError 13000.0 "" "") afterTransient
+  assertEqualString "empty-code error renders the unknown banner"
+    afterEmpty.errorBanner noRecognitionErrorBanner
+
+  -- Starting again after an error clears the banner. `afterNetwork` is
+  -- still listening (a network error is recoverable), so we have to stop
+  -- and then start to exercise the start branch.
+  let
+    stopped = reduce (Toggle 14000.0) afterNetwork
+    cleared = reduce (Toggle 14500.0) stopped
+  assertEqualString "Toggle (start) clears any prior errorBanner"
+    cleared.errorBanner idleErrorBanner
+
+  -- Reset clears the banner.
+  let
+    resetAfterError = reduce (Reset 15000.0) afterUnknown
+  assertEqualString "Reset clears any prior errorBanner"
+    resetAfterError.errorBanner idleErrorBanner
+
+  -- ClearErrorBanner does what it says, idempotently.
+  let
+    afterClearOnce = reduce ClearErrorBanner afterUnknown
+    afterClearTwice = reduce ClearErrorBanner afterClearOnce
+  assertEqualString "ClearErrorBanner empties errorBanner"
+    afterClearOnce.errorBanner idleErrorBanner
+  assertEqualString "ClearErrorBanner is idempotent"
+    afterClearTwice.errorBanner idleErrorBanner
+
+  -- Idle (not listening) permission-denied: banner set, no event log push.
+  let
+    idlePermission =
+      reduce (HandleRecognitionError 16000.0 "not-allowed" "from idle")
+        initialSession
+  assertEqualBoolean "idle permission-denied keeps listening false"
+    idlePermission.listening false
+  assertEqualString "idle permission-denied still sets the banner"
+    idlePermission.errorBanner permissionDeniedBanner
+  assertEqualInt "idle permission-denied does NOT push an event log entry"
+    (Array.length idlePermission.eventLog) 0

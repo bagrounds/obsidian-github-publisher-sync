@@ -34,8 +34,9 @@ purs-ps/
     Clock.purs / Clock.js      pure locale clock-time formatter (no effects)
     Vdom.purs / Vdom.js        typed declarative DOM (Element / Attribute / Style / Listener) + mount
     Words.purs                 pure word counter
-    Recording.purs             slices 1–6: session state + reducer + view + rate math + event log + diagnostics view + reset + persisted-data projection
+    Recording.purs             slices 1–8: session state + reducer + view + rate math + event log + diagnostics view + reset + persisted-data projection + recognition error banner
     Diagnostics.purs           slice 5: pure diagnostics log + environment-snapshot formatters
+    RecognitionError.purs      slice 8: pure typed classification of `recognition.onerror` codes + banner-text rendering
     TestHook.purs / .js        window.__wordMeter test hook
     Capability/
       Clock.purs               class Clock + AppM instance + FixedClockM test newtype
@@ -111,6 +112,17 @@ The keep-awake feature mirrors the legacy build's "🔋 Keep counting with scree
 
 The `WakeLock` capability ships a `RecordingWakeLockM` test newtype that captures every request/release as a `WakeLockEvent` so the reducer + capability wiring is unit-testable without touching the browser.
 
+## Recognition error banner (slice 8)
+
+The reducer learns to handle `recognition.onerror` events without yet owning the actual `SpeechRecognition` instance (that wiring lands in slice 9). Slice 8 ships the pure classification logic, the reducer transitions, and the `wm-error` banner so the rest of the port can be exercised by the test hook today and dropped in as the real callback tomorrow.
+
+- `WordMeter.RecognitionError` is a pure module that turns the raw browser error code into a typed `RecognitionErrorCode` ADT (`NotAllowed`, `ServiceNotAllowed`, `NoSpeech`, `Aborted`, `AudioCapture`, `Network`, `LanguageNotSupported`, `NoRecognitionErrorCode`, or `OtherRecognitionError String` for the long tail). Predicates `isTransient` and `isPermissionDenied` give the reducer named, testable decisions instead of string comparisons, and `recognitionErrorBannerText` renders the user-facing banner string (empty for the transient bucket, matching the legacy build's "show nothing, keep listening" behavior).
+- `Session.errorBanner :: String` carries the rendered banner. It is **not** persisted — every page reload starts with an empty banner, matching the legacy build.
+- The reducer adds two actions: `HandleRecognitionError Number String String` (timestamp, code, message) and `ClearErrorBanner`. `HandleRecognitionError` always records a `recognition.onerror` diagnostic with detail `code=<code or "(none)"> message=<message>`, then branches on the classified code: transient codes change nothing else, permission-denied codes also stop listening (reusing the same interval-close + event-log push the user-driven Toggle uses, with a follow-up `session ended — reason=permission denied` diagnostic), and any other non-transient code sets the banner without changing listening state. Starting a fresh counting session (the start branch of `Toggle`) and `Reset` both clear `errorBanner`, so the audit trail does not bleed across sessions.
+- `Main.handleRecognitionError` dispatches the action with a clock-provided timestamp. If the dispatch flipped listening off (today: the permission-denied branch), it also releases any held wake lock so the UI does not look like it is still holding the screen.
+
+The test hook exposes `simulateRecognitionError(code, message)` (the same code path the real `recognition.onerror` will use in slice 9) and a `getErrorBanner()` accessor for the e2e suite.
+
 ## Test hook
 
 When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bundle, the bundle exposes `window.__wordMeter` with both clock-bound and clock-injectable entry points so the e2e suite can drive deterministic time:
@@ -131,6 +143,8 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `getKeepAwakeStatus()` — current value of the keep-awake status span (empty, `"screen will stay on"`, or an `(unavailable: …)` reason).
 - `getWakeLockHeld()` — whether the program currently holds a wake-lock sentinel.
 - `simulateVisibilityVisible()` — same code path the document-level `visibilitychange → 'visible'` listener takes; lets tests verify re-acquisition without driving real visibility events.
+- `simulateRecognitionError(code, message)` — pushes a `recognition.onerror` event through the reducer; same code path the real `SpeechRecognition.onerror` callback will use in slice 9.
+- `getErrorBanner()` — current value of the `wm-error` banner span; `""` when idle.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -169,6 +183,7 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-keep-awake` — `<input type="checkbox">` controlling whether the meter requests a Screen Wake Lock when listening starts. Defaults to **checked** on every page load (the preference is deliberately not persisted — the legacy build behaves the same way). Disabled while listening.
 - `wm-keep-awake-label` — the surrounding `<label>` (also acts as the click target for the checkbox).
 - `wm-keep-awake-status` — a status span next to the checkbox. Empty when idle; `"screen will stay on"` after a successful acquisition; `"(wake lock not supported on this browser)"` or `"(wake lock unavailable: <reason>)"` when the request fails.
+- `wm-error` — `role="alert"` banner that surfaces non-transient recognition errors. Empty when idle; populated with `"Microphone permission denied. Allow microphone access and try again."` on `not-allowed` / `service-not-allowed`, `"Network error reaching the speech service. Check your connection and try again."` on `network`, `"Recognition error: <code>"` on any other code (and `"Recognition error: unknown"` when the browser supplied no code), and stays empty for the transient codes `no-speech` / `aborted` / `audio-capture`. Cleared on the next Start (Toggle on→idle→on) and on Reset.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -184,7 +199,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ✅ Done    |
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
-| 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
+| 8     | Permission denied + transient-error banner                                                              | ✅ Done    |
 | 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
 

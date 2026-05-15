@@ -32,6 +32,8 @@ declare global {
       getKeepAwakeStatus: () => string
       getWakeLockHeld: () => boolean
       simulateVisibilityVisible: () => void
+      simulateRecognitionError: (code: string, message?: string) => void
+      getErrorBanner: () => string
     }
   }
 }

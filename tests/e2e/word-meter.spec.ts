@@ -568,3 +568,137 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
     expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(true)
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 8 — recognition errors", () => {
+  test("renders an empty error banner before any error", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    const banner = page.getByTestId("wm-error")
+    await expect(banner).toBeVisible()
+    await expect(banner).toHaveText("")
+    await expect(banner).toHaveAttribute("role", "alert")
+  })
+
+  test("a transient error (no-speech) does not show a banner and keeps listening", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("no-speech", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText("")
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    expect(await page.evaluate(() => window.__wordMeter.getListening())).toBe(true)
+    const diagnostics = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/recognition\.onerror/.test(diagnostics)).toBe(true)
+    expect(/code=no-speech/.test(diagnostics)).toBe(true)
+  })
+
+  test("a permission-denied error shows the banner and stops listening", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("not-allowed", "blocked"),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(
+      /microphone permission denied/i,
+    )
+    await expect(page.getByTestId("wm-status")).toHaveText(/idle/i)
+    expect(await page.evaluate(() => window.__wordMeter.getListening())).toBe(
+      false,
+    )
+    const diagnostics = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/recognition\.onerror/.test(diagnostics)).toBe(true)
+    expect(/session ended/.test(diagnostics)).toBe(true)
+    expect(/reason=permission denied/.test(diagnostics)).toBe(true)
+  })
+
+  test("a service-not-allowed error is also treated as permission-denied", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("service-not-allowed", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(
+      /microphone permission denied/i,
+    )
+    expect(await page.evaluate(() => window.__wordMeter.getListening())).toBe(
+      false,
+    )
+  })
+
+  test("a network error shows a banner but keeps listening (recoverable)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("network", "offline"),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(/network error/i)
+    expect(await page.evaluate(() => window.__wordMeter.getListening())).toBe(true)
+  })
+
+  test("an unknown error code falls back to a generic banner", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("weird", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText("Recognition error: weird")
+  })
+
+  test("an empty error code renders the unknown-code banner", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText("Recognition error: unknown")
+  })
+
+  test("starting again after a network error clears the banner", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("network", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(/network error/i)
+    // Stop, then start again — the start branch clears the banner.
+    await page.getByTestId("wm-toggle").click()
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-error")).toHaveText("")
+  })
+
+  test("reset clears any prior error banner", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("network", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(/network error/i)
+    await page.evaluate(() => window.__wordMeter.resetAt(99999))
+    await expect(page.getByTestId("wm-error")).toHaveText("")
+  })
+
+  test("getErrorBanner reflects the rendered text", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    expect(await page.evaluate(() => window.__wordMeter.getErrorBanner())).toBe("")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("network", ""),
+    )
+    expect(await page.evaluate(() => window.__wordMeter.getErrorBanner())).toMatch(
+      /network error/i,
+    )
+  })
+})

@@ -103,6 +103,9 @@ main = do
     , persistNow: runAppM applicationEnvironment persistCurrentSession
     , simulateVisibilityVisible:
         runAppM applicationEnvironment (handleVisibilityVisible handlers)
+    , simulateRecognitionError: \code message ->
+        runAppM applicationEnvironment
+          (handleRecognitionError handlers code message)
     }
 
 startApplication
@@ -163,6 +166,8 @@ persistAfterAction (SetCopyStatus _) = pure unit
 persistAfterAction (SetKeepAwake _) = pure unit
 persistAfterAction (SetKeepAwakeStatus _) = pure unit
 persistAfterAction (SetWakeLockHeld _) = pure unit
+persistAfterAction (HandleRecognitionError _ _ _) = pure unit
+persistAfterAction ClearErrorBanner = pure unit
 
 persistCurrentSession
   :: forall m
@@ -301,6 +306,28 @@ handleVisibilityVisible handlers = do
   session <- readCurrentSession
   if session.listening && session.keepAwake && not session.wakeLockHeld
   then maybeAcquireWakeLock handlers
+  else pure unit
+
+handleRecognitionError
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => ClickHandlers
+  -> String
+  -> String
+  -> m Unit
+handleRecognitionError handlers code message = do
+  wasListening <- _.listening <$> readCurrentSession
+  timestamp <- currentTimeMillis
+  dispatch handlers (HandleRecognitionError timestamp code message)
+  -- If the error caused us to stop listening (today: the permission-denied
+  -- branch), let go of any wake lock so the UI does not look like it is
+  -- still holding the screen.
+  stillListening <- _.listening <$> readCurrentSession
+  if wasListening && not stillListening then releaseHeldWakeLock handlers
   else pure unit
 
 maybeAcquireWakeLock

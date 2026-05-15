@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-14T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-4-word-meter-capability-pattern-refactor.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-4-word-meter-capability-pattern-refactor.md) [⏭️](./2026-05-14-1-word-meter-purescript-slice-seven-wake-lock.md)  
 # 2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄  
 ![ai-blog-2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence](../ai-blog-2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.jpg)  
   

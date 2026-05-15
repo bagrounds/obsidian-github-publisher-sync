@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/ErZIMdq9ZZ0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-15T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️📰💡 Today in Politics | Explainer | May 14 2026  
@@ -60,7 +64,7 @@ youtube: https://youtu.be/ErZIMdq9ZZ0
   
 ### ↔️ Similar  
   
-* 📚 Corruption in America by Zephyr Teachout explores the legal and political history of systemic financial influence and anti-corruption safeguards in United States governance.  
+* 📚 [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout explores the legal and political history of systemic financial influence and anti-corruption safeguards in United States governance.  
 * 📚 Political Order and Political Decay by Francis Fukuyama details how state institutions degrade when public resources are systematically captured by private elites.  
   
 ### 🆚 Contrasting  
@@ -70,5 +74,5 @@ youtube: https://youtu.be/ErZIMdq9ZZ0
   
 ### 🎨 Creatively Related  
   
-* 📚 Twilight of Democracy by Anne Applebaum examines the psychological and political allure of nationalistic movements that dismantle democratic guardrails across Western societies.  
+* 📚 [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum examines the psychological and political allure of nationalistic movements that dismantle democratic guardrails across Western societies.  
 * 📚 The Honest Truth About Dishonesty by Dan Ariely explores the behavioral economics and psychology behind why individuals rationalize unethical behavior in complex systems.

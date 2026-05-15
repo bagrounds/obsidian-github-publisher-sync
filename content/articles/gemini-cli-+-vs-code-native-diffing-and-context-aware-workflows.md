@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/gemini-cli-+-vs-code-native-diffing-and-cont
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T19:46:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast digital illustration featuring a sleek, glowing terminal interface seamlessly merging into a VS Code editor window. On the left, a vibrant, ethereal Gemini star-cluster icon emits soft pulses of light, representing AI intelligence. On the right, a clean, modern code editor displays a split-screen diff view with highlighted syntax in shades of neon blue and soft amber. A subtle, interconnected web of thin, glowing data lines flows from the terminal lines into the editors workspace, symbolizing context-aware data transfer. The background is a deep, matte charcoal, providing a professional and focused atmosphere that emphasizes the harmony between command-line power and graphical interface precision.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # ♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows  
+![articles-gemini-cli-vs-code-native-diffing-and-context-aware-workflows](../articles-gemini-cli-vs-code-native-diffing-and-context-aware-workflows.jpg)  
 ## 🤖 AI Summary  
 The latest ✨ update for the Gemini CLI introduces a **deep integration** with VS Code, aiming to enhance developer workflows.  
 - 💡 **Context-aware suggestions**: The Gemini CLI now understands the developer's workspace and the files that are currently open. It can also access selected text to provide **targeted and contextually relevant suggestions**.  

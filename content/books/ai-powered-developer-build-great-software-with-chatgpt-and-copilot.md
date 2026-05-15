@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/3JeV0a9
 CTA: 🤖 Automate development.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-22T21:30:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, minimalist workspace featuring a high-end mechanical keyboard and a glowing dual-monitor setup. On the screens, a vibrant mix of clean Python code and abstract, swirling digital neural network patterns emanates from the editor, symbolizing the collaboration between human logic and machine intelligence. The lighting is modern and cinematic, with cool blue and purple ambient tones contrasting against a dark, professional desk surface. A stylized, glowing cursor or a subtle, translucent robot silhouette hovers near the keyboard, representing the AI assistant. The composition is centered and balanced, capturing the essence of a high-tech, efficient developer environment where technology seamlessly augments human creativity.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot  

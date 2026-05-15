@@ -9,6 +9,10 @@ Platform:
 Channel: The Weekly Show with Jon Stewart
 tags:
 youtube: https://youtu.be/fHonUeO_ePU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-15T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart  
@@ -58,7 +62,7 @@ youtube: https://youtu.be/fHonUeO_ePU
   
 ### ↔️ Similar  
   
-* 📖 Manufacturing Consent by Edward S. Herman and Noam Chomsky explores how corporate media structures filter information to serve dominant political and economic interests.  
+* 📖 [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky explores how corporate media structures filter information to serve dominant political and economic interests.  
 * 📖 News for What by Timothy E. Cook examines the systematic relationship between public institutions and the journalists who cover them.  
   
 ### 🆚 Contrasting  

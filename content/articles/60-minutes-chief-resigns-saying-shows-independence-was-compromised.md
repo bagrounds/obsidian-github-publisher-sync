@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T05:32:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast composition featuring a vintage television set in a dimly lit, modern newsroom. The television screen is shattered, with jagged glass shards reflecting distorted shadows of a towering corporate skyscraper in the background. In the foreground, a single empty wooden chair sits behind a polished desk, with a microphone stand pushed aside. A heavy, dark curtain hangs behind the desk, partially pulled back to reveal a glimpse of a cold, metallic boardroom table. The color palette is dominated by deep charcoal, slate blue, and sharp, clinical white lighting, evoking a sense of institutional tension and the fragility of journalistic integrity.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](https://www.npr.org/2025/04/22/nx-s1-5372733/60-minutes-bill-owens-cbs-trump-paramount)  
+![articles-60-minutes-chief-resigns-saying-shows-independence-was-compromised](../articles-60-minutes-chief-resigns-saying-shows-independence-was-compromised.jpg)  
 ## 🤖 AI Summary  
   
 * 🎬 Bill Owens, the Executive Producer of CBS's "60 Minutes", 💼 resigned from his position after 3️⃣7️⃣ years with CBS News.  

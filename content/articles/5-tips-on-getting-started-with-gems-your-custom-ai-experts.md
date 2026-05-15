@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/5-tips-on-getting-started-with-gems-your-cus
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T03:20:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, isometric illustration set against a clean, soft-gradient background. At the center, a translucent, glowing geometric gemstone floats above a sleek robotic hand reaching upward. Surrounding the gemstone are five distinct, minimalist icons representing the process: a magnifying glass for clarity, a quill pen for detail, a lightbulb for inspiration, a circular arrow for iteration, and a bubbling test tube for exploration. The color palette features vibrant teals, soft purples, and warm ambers, utilizing a modern, flat-design aesthetic with subtle depth and soft ambient lighting to evoke a sense of innovation, precision, and human-AI collaboration."
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](https://blog.google/products/gemini/google-gems-tips)  
+![articles-5-tips-on-getting-started-with-gems-your-custom-ai-experts](../articles-5-tips-on-getting-started-with-gems-your-custom-ai-experts.jpg)  
   
 ## 🤖 AI Summary  
 **Getting Started with ([Gemini](../software/gemini.md)) Gems 💎✨**  

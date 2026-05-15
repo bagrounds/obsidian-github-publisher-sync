@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/hierarchical-gradients-of-multiple-timescale
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T20:36:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, cross-sectional illustration of a mammalian brain silhouette rendered in a deep navy and charcoal gradient. Inside the brain, luminous, translucent topographical layers transition from cool blues at the sensory-perceptual regions to warm, vibrant golds at the executive cortical areas. Emanating from these layers are flowing, rhythmic wave patterns of varying frequencies—tight, rapid oscillations near the base and long, sweeping, fluid waves across the higher cortical surface. The background is a clean, minimalist off-white, emphasizing the organic complexity of the neural gradients. The overall aesthetic is scientific yet artistic, utilizing soft neon glows to represent neural activity, with a subtle depth-of-field effect that highlights the hierarchical structure without any clutter.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](https://pmc.ncbi.nlm.nih.gov/articles/PMC11665873)  
+![articles-hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain](../articles-hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.jpg)  
 ## 🤖 AI Summary  
   
 🧠 The study examines the **hierarchical gradients of multiple timescales** in the brains of different mammalian species.  

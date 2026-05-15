@@ -121,7 +121,42 @@ The reducer learns to handle `recognition.onerror` events without yet owning the
 - The reducer adds two actions: `HandleRecognitionError Number String String` (timestamp, code, message) and `ClearErrorBanner`. `HandleRecognitionError` always records a `recognition.onerror` diagnostic with detail `code=<code or "(none)"> message=<message>`, then branches on the classified code: transient codes change nothing else, permission-denied codes also stop listening (reusing the same interval-close + event-log push the user-driven Toggle uses, with a follow-up `session ended — reason=permission denied` diagnostic), and any other non-transient code sets the banner without changing listening state. Starting a fresh counting session (the start branch of `Toggle`) and `Reset` both clear `errorBanner`, so the audit trail does not bleed across sessions.
 - `Main.handleRecognitionError` dispatches the action with a clock-provided timestamp. If the dispatch flipped listening off (today: the permission-denied branch), it also releases any held wake lock so the UI does not look like it is still holding the screen.
 
-The test hook exposes `simulateRecognitionError(code, message)` (the same code path the real `recognition.onerror` will use in slice 9) and a `getErrorBanner()` accessor for the e2e suite.
+The test hook exposes `simulateRecognitionError(code, message)` (the same code path the real `recognition.onerror` will use in slice 9a) and a `getErrorBanner()` accessor for the e2e suite.
+
+## Real `SpeechRecognition` wiring (slice 9)
+
+Up through slice 8 the port has no real `SpeechRecognition` instance — every transcript reaches the reducer through the test hook's `simulateFinalTranscript`. Slice 9 is the slice that actually wires up the Web Speech API so the meter counts speech in a real browser. Because the legacy build rolls three distinct features into one chunk of code (real recognition wiring, on-device language-pack pre-flight, runtime cloud fallback for `language-not-supported`), the PureScript port deliberately splits slice 9 into three smaller end-to-end slices. Each sub-slice is still independently user-visible: 9a makes the meter actually work, 9b makes it prefer the on-device path when the browser supports it, and 9c heals the one runtime failure mode that can sneak past the pre-flight.
+
+### Slice 9a — Real cloud-path `SpeechRecognition` wired up
+
+The smallest end-to-end deliverable in slice 9: replace the test-hook-only transcript path with a real `SpeechRecognition` instance configured for cloud recognition. No on-device pre-flight, no transparent fallback path, no `processLocally` hint — just the simplest configuration that already works in every browser exposing the Web Speech API today.
+
+- New `WordMeter.FFI.Recognition` exposes thin shims over the constructor lookup (`window.SpeechRecognition || window.webkitSpeechRecognition`), the configurable knobs (`continuous = true`, `interimResults = true`, `lang = <locale>`), the three event subscriptions (`onresult`, `onerror`, `onend`), and the `start()` / `stop()` calls. The shim never owns lifetime: the active `RecognitionInstance` lives in `ApplicationEnvironment.recognitionRef :: Ref (Maybe RecognitionInstance)`, alongside the existing `wakeLockSentinelRef`.
+- New `WordMeter.Capability.Recognition` is the typeclass production code uses. `startRecognition` builds an instance, attaches the three handlers, stashes it in the env ref, and invokes `start()`; `stopRecognition` detaches the handlers, calls `stop()` (swallowing the synchronous `stop-on-stopped` exception is **not** allowed — it surfaces through a typed `RecognitionError` continuation), and clears the ref. A `RecordingRecognitionM` test newtype captures every `startRecognition` / `stopRecognition` call so the reducer wiring is unit-testable without touching the browser. The capability also exposes `recognitionApiAvailable :: m Boolean` so the rest of the program can degrade gracefully when no constructor is present (the meter still loads, the toggle still ticks, but the diagnostics drawer records `recognition unavailable` and the count never moves).
+- `WordMeter.Recognition.Delta` (pure module) reproduces the legacy `integrateFinalizedTranscript` dedup logic from issue #6897. The Android Chrome bug — where continuous + interimResults emits each refinement of one utterance as a fresh finalized result carrying the cumulative transcript — is encoded as a typed decision: `classifyFinalizedTranscript :: { previous :: String, incoming :: String } -> TranscriptIntegration` returning `IgnoreDuplicate | ExtendUtterance { wordDelta :: Int, caption :: String } | StartNewUtterance { wordCount :: Int, caption :: String } | IgnoreEarlierSnapshot`. Slice 9a wires this into a new reducer action `IntegrateFinalizedTranscript Number String` that replaces the test-hook path on the production wire (the test hook keeps `InjectFinalTranscript` for tests that want to bypass dedup).
+- `Main.handleToggle` becomes the orchestration boundary: on the listening edge it calls `startRecognition`, and on the idle edge it calls `stopRecognition`. The same callbacks that slice 8 plumbed for `simulateRecognitionError` are reused — `onerror` now dispatches `HandleRecognitionError` for real. `onend` schedules a 250ms restart through `Effect.Timer` if the session is still listening (legacy `RESTART_DELAY_MILLISECONDS`); the timer handle is kept in another env ref so `stopRecognition` and `Reset` can cancel it cleanly.
+- The keep-awake / wake lock flow from slice 7 is unchanged: it already runs off the listening flag in the reducer, which slice 9a still owns.
+
+When slice 9a lands, the meter counts real speech in any browser exposing `SpeechRecognition` or `webkitSpeechRecognition`. The Playwright suite continues to drive the deterministic path through the test hook, but a new sub-suite covers the `Recognition` capability wiring through a `RecordingRecognitionM` unit test.
+
+### Slice 9b — On-device pre-flight with transparent cloud fallback
+
+Once 9a is in production, 9b teaches `Main.handleToggle` to prefer the on-device path whenever Chromium exposes the static `SpeechRecognition.available()` / `SpeechRecognition.install()` API.
+
+- `WordMeter.FFI.Recognition` grows two new thin shims: `onDeviceLanguagePackApiAvailable :: Effect Boolean` and `ensureOnDeviceLanguagePack :: { locale :: String, onProgress :: Effect Unit } -> Effect (Either OnDeviceUnavailable OnDeviceAvailable)` where the typed `OnDeviceUnavailable = OnDeviceApiAbsent | OnDeviceUnsupportedLanguage | OnDeviceInstallFailed String | OnDeviceAvailabilityRejected String`. The shim catches every promise rejection and packs the failure into the `Either` rather than silently resolving — same rule as `FFI.Storage` and `FFI.WakeLock`.
+- The `Recognition` capability gains `prepareOnDeviceLanguagePack` (returning the same typed `Either`) and `startOnDeviceRecognition` (the on-device variant of `startRecognition` that sets `processLocally = true`).
+- `Main.handleToggle` orchestrates: if the on-device API is absent, go straight to the cloud path; if it is present, call `prepareOnDeviceLanguagePack` and branch — `Right OnDeviceAvailable` starts on-device, anything else logs a diagnostic (`on-device pre-flight non-viable — falling back to cloud`) and falls through to the cloud path. The status row briefly shows `downloading on-device language pack…` while `install()` is in flight.
+- The user-visible difference is silent: counts and behavior look identical, but the on-device path keeps speech off the network for users on a recent Chromium build. The diagnostics drawer is the proof that the pre-flight ran.
+
+### Slice 9c — Runtime `language-not-supported` retry
+
+The on-device pre-flight cannot catch every browser bug — some Chromium builds resolve `available({langs, processLocally: true})` to `'available'` and then reject `start()` at runtime with `error = 'language-not-supported'`. Slice 9c teaches the reducer + recognition layer to retry exactly once on the cloud path when this happens.
+
+- A new `Session.cloudFallbackAttempted :: Boolean` field guards the retry so a misbehaving browser cannot enter an infinite reconfiguration loop.
+- `HandleRecognitionError` keeps its existing classification (it already handles `LanguageNotSupported` through the banner path in slice 8). Slice 9c adds a `Main.handleRecognitionError` branch: when the code classifies as `LanguageNotSupported`, the session is currently listening, the active recognition path is on-device, and `cloudFallbackAttempted` is `false`, the orchestrator stops the current recognition, sets the flag, and starts a fresh cloud-path recognition — all without the user seeing an error banner. Every step is diagnostic-logged (`language-not-supported at runtime — falling back to cloud`).
+- The legacy build resets `cloudFallbackAttempted` on every Toggle-to-start; the PureScript port does the same through the `Toggle` reducer branch.
+
+When slice 9c lands, the port has full parity with the legacy build's recognition layer, and slice 10 (cutover) becomes safe to land.
 
 ## Test hook
 
@@ -200,7 +235,9 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
 | 8     | Permission denied + transient-error banner                                                              | ✅ Done    |
-| 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |
+| 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ⏳ Pending |
+| 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ⏳ Pending |
+| 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
 
 ## Build, test, bundle

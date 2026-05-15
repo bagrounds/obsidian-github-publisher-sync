@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T00:46:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, atmospheric illustration featuring a silhouetted archer in a traditional Japanese *hakama*, captured in a moment of absolute stillness. The archer is drawing a long, elegant bow, with the arrow pointing toward an unseen target just off-frame. The composition is clean and balanced, set against a soft, textured background resembling traditional washi paper. A single, stylized ink-wash circle—an *ensō*—fades into the background behind the archer, symbolizing unity and the void. The lighting is ethereal and soft, suggesting the golden hour, with subtle wisps of incense smoke or mist curling gently around the bowstring, emphasizing a sense of breath, mindfulness, and the seamless connection between the archer and the shot. The color palette is composed of muted earth tones, deep charcoal, and a single accent of warm, muted gold.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏹 Zen in the Art of Archery  
+![books-zen-in-the-art-of-archery](../books-zen-in-the-art-of-archery.jpg)  
 [🛒 Zen in the Art of Archery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z3rcBT)  
   
 🎯🧘‍♂️ Eugen Herrigel’s account of learning Japanese archery transcends sport, revealing a profound path to egoless mastery and mindful presence through diligent practice and surrender to the It.  

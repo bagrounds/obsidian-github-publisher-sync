@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T01:50:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, glowing, three-dimensional geometric shape—a perfect sphere—emerging from a dark, flat, monochromatic plane. The sphere is rendered in a vibrant, electric blue or gold, symbolizing a singular, breakthrough innovation. Surrounding the sphere, the background remains a deep, matte charcoal, emphasizing the void from which this new entity has been created. The composition uses clean, sharp lines and dramatic lighting to suggest a sense of singular focus and the transition from non-existence to existence. The overall style is modern, sleek, and conceptual, evoking a feeling of technological advancement and visionary thinking without the use of any text or iconography.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 0️⃣➡️1️⃣ Zero To One  
+![books-zero-to-one](../books-zero-to-one.jpg)  
 [🛒 Zero To One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZavKqL)  
   
 ## 🤖 AI Summary  

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-12T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md) [⏭️](./2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
 # 2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱  
 ![ai-blog-2026-05-12-4-word-meter-capability-pattern-refactor](../ai-blog-2026-05-12-4-word-meter-capability-pattern-refactor.jpg)  
   

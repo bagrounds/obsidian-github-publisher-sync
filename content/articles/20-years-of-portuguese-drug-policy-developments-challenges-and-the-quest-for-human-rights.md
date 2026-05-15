@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T01:50:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, artistic illustration featuring a stylized outline of the Portuguese coastline rendered in soft, warm terracotta tones. In the center, a balanced scale sits on a weathered wooden surface. One side of the scale holds a medical cross symbol, representing public health, while the other holds a pair of open, empty handcuffs, symbolizing the shift away from incarceration. A gentle, stylized dove takes flight from the center of the scale, bridging the two concepts. The background is a clean, off-white gradient, evoking a sense of clarity and hope. The overall aesthetic is professional, modern, and clinical yet empathetic, using a muted color palette of sage green, slate blue, and earthy clay to reflect the nuance and longevity of the policy.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](https://pmc.ncbi.nlm.nih.gov/articles/PMC8285857)  
+![articles-20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights](../articles-20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.jpg)  
   
 ## 🤖 AI Summary  
 🇵🇹 Portugal decriminalized the public and private use, acquisition, and possession of all drugs in 2000, adopting a focus on 🧑‍⚕️ public health over public-order priorities.  

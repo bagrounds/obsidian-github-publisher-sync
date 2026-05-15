@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-15T12:32:20-07:00
+updated: 2026-05-15T13:48:57-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (829)  
+# 📺 Videos (830)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -492,6 +492,7 @@ updated: 2026-05-15T12:32:20-07:00
 - [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./proactive-agents-kath-korevec-google-labs.md)  
 - [Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](./professor-explains-why-hes-leaving-yale-for-toronto-as-colleges-react-to-trumps-threats.md)  
 - [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./professor-on-regulating-tech-for-kids.md)  
+- [📈✊✨ Progressives are making real gains](./progressives-are-making-real-gains.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  

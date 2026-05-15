@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T12:43:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a central, glowing orb representing a neural core. Numerous fine, translucent lines radiate outward from the orb, connecting to a swarm of floating, interconnected geometric nodes that represent words or data points. The entire structure is suspended in a deep, dark blue void. The lines between nodes vary in thickness and luminosity, with the brightest lines forming a complex, web-like pattern that highlights key relationships between distant points. The overall aesthetic is clean, technical, and futuristic, utilizing a color palette of electric blue, cyan, and stark white to convey the concept of parallel processing and high-speed data attention.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [👀 Attention Is All You Need](https://arxiv.org/pdf/1706.03762)  
+![articles-attention-is-all-you-need](../articles-attention-is-all-you-need.jpg)  
 ## 🤖 AI Summary  
 😴 **TL;DR:** 📄 This paper came up with a new way for computers to process language, called the "Transformer." 🤖 It's really good at tasks like translation 🗣️ because it pays attention 👀 to all parts of a sentence at once, instead of reading it word by word.  
   

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-16T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-5-word-meter-slice-nine-c-one-shot-cloud-retry.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-5-word-meter-slice-nine-c-one-shot-cloud-retry.md) [⏭️](./2026-05-16-2-word-meter-purescript-code-cleanup.md)  
 # 2026-05-16 | 🔧 Word Meter — Fixing the Diagnostics Drawer Rerender Bug 🐛  
 ![ai-blog-2026-05-16-1-word-meter-diagnostics-drawer-state-bug-fix](../ai-blog-2026-05-16-1-word-meter-diagnostics-drawer-state-bug-fix.jpg)  
   

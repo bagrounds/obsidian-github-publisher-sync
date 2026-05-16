@@ -302,6 +302,32 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
   })
 
+  test("drawer stays open after a state update (regression: rerender must not reset open state)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    // Open the drawer.
+    await page.getByTestId("wm-diagnostics-toggle").click()
+    await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
+    // Trigger state updates that cause a rerender (start → transcript → stop).
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello world", 500)
+      window.__wordMeter.stopAt(1000)
+    })
+    // The drawer must remain open after the rerenders.
+    await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
+  })
+
+  test("getDiagnosticsDrawerOpen reflects open/closed drawer state", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsDrawerOpen())).toBe(false)
+    await page.evaluate(() => window.__wordMeter.toggleDiagnosticsDrawer())
+    expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsDrawerOpen())).toBe(true)
+    await page.evaluate(() => window.__wordMeter.toggleDiagnosticsDrawer())
+    expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsDrawerOpen())).toBe(false)
+  })
+
   test("records the init event in the diagnostics log on startup", async ({ page }) => {
     await loadWordMeter(page, "ps")
     expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsLength())).toBeGreaterThan(0)

@@ -110,6 +110,7 @@ type Session =
   , recognitionStatusOverride :: String
   , cloudFallbackAttempted :: Boolean
   , activeRecognitionPath :: Maybe RecognitionPath
+  , diagnosticsDrawerOpen :: Boolean
   }
 
 type Caption =
@@ -176,6 +177,7 @@ data Action
   | SetRecognitionStatusOverride String
   | SetCloudFallbackAttempted Boolean
   | SetActiveRecognitionPath (Maybe RecognitionPath)
+  | SetDiagnosticsDrawerOpen Boolean
 
 type Dispatch = Action -> Effect Unit
 
@@ -184,6 +186,7 @@ type Handlers =
   , requestCopyDiagnostics :: Effect Unit
   , requestReset :: Effect Unit
   , requestSetKeepAwake :: Boolean -> Effect Unit
+  , requestToggleDiagnosticsDrawer :: Effect Unit
   }
 
 idleCopyStatus :: String
@@ -239,6 +242,7 @@ initialSession =
   , recognitionStatusOverride: idleRecognitionStatusOverride
   , cloudFallbackAttempted: false
   , activeRecognitionPath: Nothing
+  , diagnosticsDrawerOpen: false
   }
 
 reduce :: Action -> Session -> Session
@@ -445,6 +449,9 @@ reduce (SetCloudFallbackAttempted attempted) session = session
   }
 reduce (SetActiveRecognitionPath path) session = session
   { activeRecognitionPath = path
+  }
+reduce (SetDiagnosticsDrawerOpen open) session = session
+  { diagnosticsDrawerOpen = open
   }
 
 -- | Close the currently open counting interval, append it to the event
@@ -975,7 +982,7 @@ buildErrorBanner session =
 
 buildDiagnostics :: Handlers -> Session -> Node
 buildDiagnostics handlers session =
-  details_ [ testId "wm-diagnostics" ]
+  details_ drawerAttributes
     [ style "margin-top" "16px"
     , style "padding-top" "10px"
     , style "border-top" "1px solid rgba(255,255,255,0.08)"
@@ -987,7 +994,7 @@ buildDiagnostics handlers session =
         , style "user-select" "none"
         , style "padding" "4px 0"
         ]
-        []
+        [ onClick handlers.requestToggleDiagnosticsDrawer ]
         [ text "🔧 Diagnostics" ]
     , div_ []
         [ style "display" "flex"
@@ -1031,3 +1038,7 @@ buildDiagnostics handlers session =
         ]
         [ text (diagnosticsText session) ]
     ]
+  where
+  drawerAttributes =
+    [ testId "wm-diagnostics" ]
+      <> if session.diagnosticsDrawerOpen then [ attribute "open" "" ] else []

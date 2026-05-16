@@ -137,6 +137,7 @@ main = do
   runRecognitionStatusReducerTests
   runIntegrateFinalizedTranscriptReducerTests
   runCloudFallbackReducerTests
+  runDiagnosticsDrawerReducerTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -1170,3 +1171,40 @@ runCloudFallbackReducerTests = do
   assertEqualBoolean
     "permission-denied clears activeRecognitionPath"
     (afterPermissionDenied.activeRecognitionPath == Nothing) true
+
+runDiagnosticsDrawerReducerTests :: Effect Unit
+runDiagnosticsDrawerReducerTests = do
+  -- The drawer starts closed in the initial session.
+  assertEqualBoolean "initialSession.diagnosticsDrawerOpen is false"
+    initialSession.diagnosticsDrawerOpen false
+
+  -- SetDiagnosticsDrawerOpen true opens the drawer.
+  let
+    opened = reduce (SetDiagnosticsDrawerOpen true) initialSession
+  assertEqualBoolean "SetDiagnosticsDrawerOpen true sets the field to true"
+    opened.diagnosticsDrawerOpen true
+
+  -- SetDiagnosticsDrawerOpen false closes the drawer.
+  let
+    closed = reduce (SetDiagnosticsDrawerOpen false) opened
+  assertEqualBoolean "SetDiagnosticsDrawerOpen false sets the field to false"
+    closed.diagnosticsDrawerOpen false
+
+  -- A state update (Toggle) preserves the drawer open state.
+  let
+    openedSession = reduce (SetDiagnosticsDrawerOpen true) initialSession
+    afterToggle = reduce (Toggle 1000.0) openedSession
+  assertEqualBoolean "Toggle preserves diagnosticsDrawerOpen"
+    afterToggle.diagnosticsDrawerOpen true
+
+  -- A Tick preserves the drawer open state.
+  let
+    afterTick = reduce (Tick 2000.0) openedSession
+  assertEqualBoolean "Tick preserves diagnosticsDrawerOpen"
+    afterTick.diagnosticsDrawerOpen true
+
+  -- Reset returns the drawer to closed.
+  let
+    afterReset = reduce (Reset 9999.0) openedSession
+  assertEqualBoolean "Reset closes the diagnostics drawer"
+    afterReset.diagnosticsDrawerOpen false

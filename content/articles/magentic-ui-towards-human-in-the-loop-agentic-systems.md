@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/magentic-ui-towards-human-in-the-loop-agenti
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T08:45:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric digital workspace featuring a glowing, translucent interface hovering above a desk. A human hand is reaching out to touch a floating, semi-transparent node within a complex, branching flow chart. The chart represents a task-planning tree, where some nodes are colored in warm, inviting gold representing human-led decisions, and others are cool, digital blue representing automated agent actions. Soft, magnetic-like force lines connect the human finger to the digital interface, symbolizing the magnetic pull of human-in-the-loop interaction. The background is a clean, dark-mode gradient with subtle binary data patterns and abstract geometric shapes, emphasizing a sophisticated, modern, and collaborative AI-human environment. The lighting is focused and cinematic, highlighting the intersection between organic touch and synthetic intelligence.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](https://arxiv.org/abs/2507.22358)  
+![articles-magentic-ui-towards-human-in-the-loop-agentic-systems](../articles-magentic-ui-towards-human-in-the-loop-agentic-systems.jpg)  
 ## 🤖 AI Summary  
 Magentic-UI is a human-in-the-loop agentic system that enables 🤝 human-agent collaboration through a variety of mechanisms. The system's main issues and interaction mechanisms are as follows:  
   

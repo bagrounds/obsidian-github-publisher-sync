@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-15T13:48:57-07:00
+updated: 2026-05-15T22:59:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,17 +15,17 @@ updated: 2026-05-15T13:48:57-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (547)  
-- [2026-05-15](./reflections/2026-05-15.md)  
+- [2026-05-15 | 🗣️ Today 🧒 Children 📈 Advancing 🏛️ Agile 🤖 Governance 🔀 Intent 🌟 Truth 📰 Diverging 🐔 Blessing 🎙️ Recognition 🪓 Plan 🤖 Real 💡 Gains 📺📚🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-15.md)  
 - [2026-05-14 | 🐾🌈💔 Saying Goodbye](./reflections/2026-05-14.md)  
 - [2026-05-13 | 🌟 Health 📰 Sands 🐔 Miracle 🤖 Alignment 🏛️ Commons 🔀 Integrity 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-13.md)  
 - [2026-05-12 | 🌟 Progress 🏛️ Commons 📰 Ripples 🤖 Intent 🐔 Pantry 🔀 Echoes 📊 Dashboard 📋 Drawer 🧱 Pattern 🧰📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (209)  
-- [2026-05-14 | 🔋 Word Meter PureScript Slice Seven — Wake Lock + Keep-Awake Toggle 🟢](./ai-blog/2026-05-14-1-word-meter-purescript-slice-seven-wake-lock.md)  
-- [2026-05-12 | 🗃️ Word Meter PureScript Slice Six: Reset and Persistence 🔄](./ai-blog/2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
-- [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./ai-blog/2026-05-12-4-word-meter-capability-pattern-refactor.md)  
-- [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./ai-blog/2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (213)  
+- [2026-05-15 | 🎙️ Word Meter Slice 9b — On-Device Pre-Flight 📦](./ai-blog/2026-05-15-4-word-meter-slice-nine-b-on-device-preflight.md)  
+- [2026-05-15 | 🎙️ Word Meter Slice 9a: Real SpeechRecognition Wired Up 🤖](./ai-blog/2026-05-15-3-word-meter-slice-nine-a-real-speech-recognition.md)  
+- [2026-05-15 | 🗺️ Word Meter Slice Nine — Plan Refinement 🪓](./ai-blog/2026-05-15-2-word-meter-slice-nine-plan-refinement.md)  
+- [2026-05-15 | 🚨 Word Meter Slice Eight — Recognition Error Banner 🎙️](./ai-blog/2026-05-15-1-word-meter-purescript-slice-eight-recognition-errors.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (66)  
@@ -63,11 +63,11 @@ updated: 2026-05-15T13:48:57-07:00
 - [2026-05-12 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-12-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (31)  
+## [🔀 Convergence](./convergence/index.md) (32)  
+- [2026-05-15 | 🔀 🌐 The Orchestration of Intent: From Sovereign Agents to Shared Blessings 🔀](./convergence/2026-05-15-the-orchestration-of-intent-from-sovereign-agents-to-shared-blessings.md)  
 - [2026-05-14 | 🔀 🎭 The Architectures of Self and the Unseen Hand of Care 🔀](./convergence/2026-05-14-the-architectures-of-self-and-the-unseen-hand-of-care.md)  
 - [2026-05-13 | 🔀 🪞 The Mirrors of Integrity: Adversarial Selves and Embodied Validation 🔀](./convergence/2026-05-13-the-mirrors-of-integrity-adversarial-selves-and-embodied-validation.md)  
 - [2026-05-12 | 🔀 The Echoes of Intent 🔀](./convergence/2026-05-12-the-echoes-of-intent.md)  
-- [2026-05-11 | 🔀 🧠 The Conscience of Systems: Dynamic Values, Diverse Flourishing, and Responsive Feedback 🔀](./convergence/2026-05-11-the-conscience-of-systems-dynamic-values-diverse-flourishing-and-responsive-feedback.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -85,17 +85,17 @@ updated: 2026-05-15T13:48:57-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🧠💾 Memory](./topics/memory.md)  
-- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
-- [🤖📈 Maximizing AI Leverage](./topics/maximizing-ai-leverage.md)  
-- [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
+- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
+- [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
+- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
+- [➕ Linear Processes](./topics/linear-processes.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
-- [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./articles/google-cautions-against-using-too-many-internal-links.md)  
-- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
-- [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
+- [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./articles/5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
+- [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
+- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
+- [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](./articles/improving-token-efficiency-in-github-agentic-workflows.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

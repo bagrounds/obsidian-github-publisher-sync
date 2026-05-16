@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T11:33:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stark, monolithic silhouette of a human figure standing against a deep crimson background. The figure is captured in a rigid, angular posture with one arm extended upward in a diagonal line, casting a long, distorted shadow that stretches across the floor. The composition emphasizes sharp, geometric lines and heavy shadows to evoke a sense of authoritarian tension. Subtle, abstract textures resembling weathered concrete or stone suggest a historical, monumental aesthetic. The color palette is strictly limited to deep black, charcoal gray, and a piercing, blood-red hue, creating a somber and ominous atmosphere that focuses on the power dynamics of the gesture.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration  
+![articles-musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration](../articles-musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.jpg)  
   
 ## 🤖 AI Summary Expansion  
 * 📢 **Elon Musk's** salute, performed on January 20, 2025, during the post-inauguration celebration for 🇺🇸 President **Donald Trump**, involved placing his hand on his chest and extending his right arm in an upward diagonal motion, repeated twice.  

@@ -6,9 +6,17 @@ title: 📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling
 URL: https://bagrounds.org/articles/on-the-difficulty-of-extrapolation-with-nn-scaling
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T13:45:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a series of glowing, interconnected nodes representing a neural network. The network structure is depicted as a landscape of peaks and valleys, with a bright, clean line graph overlaid on top. The graph begins as a smooth, ascending curve that suddenly diverges into a jagged, chaotic path as it moves toward the right edge of the frame, symbolizing the unpredictability of extrapolation. The color palette uses deep navy and charcoal backgrounds with vibrant neon cyan and amber accents for the lines and nodes. A subtle, misty grid pattern fades into the background to suggest a technical, mathematical environment, while soft light glows from the junction points to convey the complexity of hyperparameter optimization.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](https://lukemetz.com/difficulty-of-extrapolation-nn-scaling)  
+![articles-on-the-difficulty-of-extrapolation-with-nn-scaling](../articles-on-the-difficulty-of-extrapolation-with-nn-scaling.jpg)  
 ## 🤖 AI Summary  
 * 📉 The article highlights that while scaling laws can predict performance, "this can be misleading in practice if not done carefully."  
 * 💡 An example is provided using "an MLP trained on ImageNet, showing how a naive extrapolation of performance based on a fixed learning rate dramatically underperforms predictions for larger models."  

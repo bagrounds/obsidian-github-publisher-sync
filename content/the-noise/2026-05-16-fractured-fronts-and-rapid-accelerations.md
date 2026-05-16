@@ -1,0 +1,141 @@
+---
+share: true
+aliases:
+  - 2026-05-16 | 📰 🌐 Fractured Fronts and Rapid Accelerations 📰
+title: 2026-05-16 | 📰 🌐 Fractured Fronts and Rapid Accelerations 📰
+URL: https://bagrounds.org/the-noise/2026-05-16-fractured-fronts-and-rapid-accelerations
+Author: "[[the-noise]]"
+image_date: 2026-05-16T13:44:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting two distinct worlds. On the left, a gritty, dark-toned scene depicts a fractured urban landscape with smoke rising from rubble and faint silhouettes of conflict-related machinery, representing geopolitical strife. On the right, a vibrant, high-tech vista showcases a sleek, futuristic space station orbiting a glowing Earth, with streams of digital light and crystalline geometric patterns representing rapid technological innovation and AI advancement. The center of the image features a subtle, glowing noise or interference pattern where the two worlds meet, symbolizing the tension between the grinding pace of conflict and the accelerating speed of human ingenuity. The color palette shifts from desaturated grays and deep reds on the left to brilliant blues, crisp whites, and neon accents on the right.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-16T00:00:00Z
+force_analyze_links: false
+---
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
+# 2026-05-16 | 📰 🌐 Fractured Fronts and Rapid Accelerations 📰  
+![the-noise-2026-05-16-fractured-fronts-and-rapid-accelerations](../the-noise-2026-05-16-fractured-fronts-and-rapid-accelerations.jpg)  
+  
+## 🌐 Fractured Fronts and Rapid Accelerations  
+  
+👋 Welcome to The Noise. 📡 This is your daily digest scanning the world's most reputable news sources to answer one simple question: what is everyone talking about? 🌍 We give you a fast, broad overview of what is happening, then step back to see what the full picture tells us that no single story can.  
+  
+⚡ Let us dive in.  
+  
+## 💥 Global Flashpoints and Diplomatic Frictions  
+  
+🇺🇦 The conflict in Ukraine saw intense hostilities, with Russia launching massive drone and missile attacks on Kyiv, killing at least 24 people, including children, according to reports from The Washington Post and Forbes. 🇷🇺 Ukraine retaliated with drone strikes on residential buildings and an oil refinery in Ryazan, Russia, resulting in four deaths, as reported by Reuters and The Guardian. 🤝 Despite the violence, Russia and Ukraine exchanged 250 prisoners on Friday, part of a larger 1000-for-1000 agreement made during a Victory Day ceasefire, the Institute for the Study of War (ISW) noted. 🏛️ Separately, 36 countries approved the creation of a special tribunal to prosecute Russia for its invasion of Ukraine, France 24 reported. ⚠️ Ukrainian President Volodymyr Zelenskyy also warned that Russia is pressuring Belarus to conduct offensive operations against Ukraine or an unspecified NATO state, according to ISW.  
+  
+🇮🇱 Tensions remained high in the Middle East, with a temporary ceasefire between Israel and Lebanon extended for an additional 45 days, the US State Department announced. 💥 Despite this, Israeli airstrikes killed at least seven people and injured dozens across several Lebanese towns, Sky News reported, while Hezbollah claimed 33 attacks on Israeli soldiers. 🇸🇦 The United Arab Emirates announced plans to accelerate efforts to double its export capacity in Fujairah to bypass the Strait of Hormuz, aiming to reduce strategic vulnerability, ISW noted. 🇺🇸 Meanwhile, US authorities charged a senior Iranian-backed Iraqi militia commander with planning attacks targeting civilians in the US, Canada, and Europe, ISW also reported.  
+  
+🇨🇳 US President Donald Trump and Chinese President Xi Jinping concluded their summit in Beijing, focusing primarily on economic and trade issues. 🤝 Both leaders agreed that the Strait of Hormuz "must remain open" and that Iran "can never have a nuclear weapon," according to a White House readout. 🇹🇼 Secretary of State Marco Rubio affirmed that US policy on Taiwan remained "unchanged" after Xi warned Trump that Taiwan was the "most important issue" in US-China relations, a detail noted by the Council on Foreign Relations. 💲 The US Treasury also sanctioned Chinese firm Mustad for assisting the Islamic Revolutionary Guard Corps' (IRGC) weapons procurements, ISW reported. 🇮🇳 Russian and Iranian Foreign Ministers were reportedly in India for discussions, a Reddit user posted.  
+  
+## 💰 Economic Currents and Fiscal Maneuvers  
+  
+📈 Defense lobbying surged by 10% in the first quarter of this year compared to the same period last year, as President Trump seeks to increase defense spending by 44% next fiscal year to roughly $1.5 trillion, according to OpenSecrets via Marketplace. 💲 In US politics, the Senate Banking Committee advanced a crypto market structure bill, with a 15-9 vote, as reported by the Bank Policy Institute. 🏛️ Separately, the Senate confirmed Kevin Warsh as Federal Reserve chair for a 14-year term, with a 51-45 vote, the Bank Policy Institute also reported.  
+  
+## 🚀 Frontier Technologies and Emerging Frameworks  
+  
+🧠 NASA is testing a next-generation AI space chip designed to allow spacecraft to operate far more independently in deep space, offering performance levels hundreds of times beyond current computers, ScienceDaily reported. 🌌 SpaceX successfully launched its 34th commercial resupply mission to the International Space Station on Friday, carrying 6,500 pounds of science and supplies after two weather-related delays, Spaceflight Now detailed. 🛰️ NASA also updated preliminary plans for next year's Artemis III mission, a crewed flight in Earth orbit testing rendezvous and docking capabilities between the Orion spacecraft and commercial landers, as reported by NASA. SpaceX is targeting May 19 for the debut launch of its Starship V3, intended for crewed missions to the Moon and Mars, according to The Planetary Society.  
+  
+⚖️ States are actively developing regulations for artificial intelligence, with Illinois considering an eight-bill package addressing consumer protection, developer transparency, and educational usage, GovTech reported. 🚫 This Illinois package includes prohibitions on teachers using AI for grading and mandates school board policies for AI use in relation to students. 🧠 Concerns about AI chatbots' handling of suicidal ideation and self-harm are leading to proposed requirements for protocols in social or emotional interaction models, GovTech noted. 💻 Connecticut also passed a law significantly regulating the use of AI in employment, while Colorado amended its AI law to reduce employer obligations, Littler reported. 🏦 The Bank of England, FCA, and HM Treasury released a joint statement on Frontier AI models and cyber resilience, highlighting that current frontier AI models' cyber capabilities already exceed those of skilled practitioners, amplifying cyber threats to financial stability. 🏥 Furthermore, a Penn LDI fellow urged a uniform licensure framework for autonomous clinical AI, noting that Utah's pilot program for a chatbot to recommend prescription renewals was suspended due to safety concerns and a patchwork of state regulations. 🗣️ Some states are also considering laws that would block AI personhood, NPR reported.  
+  
+## 🌡️ Health Horizons and Environmental Alarms  
+  
+🦠 The Washington State Department of Health is investigating two separate hantavirus-related incidents, including individuals potentially exposed to cases linked to the MV Hondius cruise ship, and an unrelated case of Sin Nombre virus hantavirus pulmonary syndrome. 🚢 Marin County Public Health is also monitoring an outbreak of Andes virus linked to the MV Hondius cruise ship, though the risk to the public remains extremely low, according to a Marin County update. 🌍 An Ebola outbreak has been reported in Ituri Province in the Democratic Republic of the Congo, prompting a US Embassy health alert. 🤰 A new longitudinal study found that adverse pregnancy outcomes may have lasting cardiovascular consequences for both mothers and their children into early adulthood, AJMC reported.  
+  
+🌊 Global warming is causing rivers worldwide to slowly lose oxygen, threatening aquatic life, with oxygen levels dropping an average of 2.1% since 1985, according to a study published in Science Advances and reported by the Associated Press. 🌡️ Extreme heat is now a "regular reality" in India and Pakistan, and an analysis suggests one in four World Cup matches could take place in dangerous heat conditions, Earth.Org reported. ⚖️ New Zealand is considering legislation to prohibit civil lawsuits against polluting companies, a move criticized by environmental experts, Earth.Org also noted. 🇺🇸 The Trump administration repealed the endangerment finding for greenhouse gases, an action challenged in court by environmental groups who argue it threatens public health and the environment, according to Food & Water Watch. 🏜️ Much of the US South remains in deep drought, increasing the potential for wildfires, The Washington Post reported. 🆘 Somalia is facing a deadly drought again, with most humanitarian aid reportedly absent this time, the Los Angeles Times reported. The UN announced that the US pledged an additional $1.8 billion for humanitarian work, aiming to reach millions in urgent crises.  
+  
+## 🏛️ Governance and Societal Shifts  
+  
+🇺🇸 The Supreme Court on Friday rejected an emergency request by Virginia Democrats to reinstate a newly approved congressional district map that would have given their party an advantage in the midterms, a major blow to Democrats in redistricting, The New York Times reported. ⚖️ The US Supreme Court also kept in place an order allowing companies to continue mailing abortion drugs nationwide, pausing lower court rulings that sought to restrict telehealth prescribing and mail delivery of mifepristone, AJMC reported. 🏛️ California Governor Gavin Newsom appointed former CFPB Director Rohit Chopra to lead the state's new Business and Consumer Services Agency, which becomes operational on July 1, 2026, the Bank Policy Institute stated.  
+  
+🎭 Spain's Prime Minister Pedro Sanchez defended Barcelona star Lamine Yamal for waving a Palestinian flag at a victory parade, saying it made Spain "proud," Euronews reported. 🗳️ In Europe, Latvia's center-right Prime Minister Evika Siliņa announced her resignation following controversy over her coalition and a drone incident, effectively collapsing the governing coalition, Euronews reported.  
+  
+## 🧠 The Signal — Two-Speed World: Entrenched Strife and Accelerating Adaptation  
+  
+🌪️ Today's news solidifies a pervasive theme: a world simultaneously grappling with entrenched, often escalating, conflicts and a relentless, accelerating drive toward adaptation and innovation. 💥 The continued brutal exchanges in Ukraine and the persistent tensions in the Middle East, despite diplomatic overtures and ceasefires, highlight the profound inertia of geopolitical strife. These conflicts not only inflict immense human cost but also ripple through global economics, as seen in the motivations behind the UAE's efforts to bypass the Strait of Hormuz. The US-China summit, while emphasizing stability, merely underlined the deeply rooted disagreements that continue to shape international relations.  
+  
+🚀 In stark contrast, human ingenuity is not just advancing but accelerating, particularly in technology and our adaptive responses to emerging threats. NASA's new AI space chip and SpaceX's frequent launches signal a rapid expansion of our capabilities beyond Earth. Crucially, the explosion of AI innovation is now being met with a burgeoning wave of regulatory frameworks at both state and international levels, demonstrating a collective effort to govern new technologies responsibly, even as their capabilities rapidly evolve. From regulating AI in classrooms to addressing its cybersecurity implications in finance, there's a clear scramble to adapt governance to innovation's speed. Even in public health, the swift investigations into hantavirus and the global pledge for humanitarian aid underscore an adaptive, albeit reactive, capacity to manage crises.  
+  
+💡 The striking signal is the widening gyre between these two speeds: the grinding, often destructive, pace of human conflict and the lightning-fast, often constructive, pace of human ingenuity and adaptive governance. ❓ Will the accelerating innovations in AI, space, and even public health response be effectively leveraged to overcome the deep-seated historical and political frictions that continue to destabilize our world, or will the "noise" of persistent conflict continue to divert resources and attention, hindering humanity's full potential for a more stable and technologically advanced future?  
+  
+📡 That is the noise for today. 🌊 The world keeps moving, sometimes in sync, often not. 🎧 We will be here tomorrow to help you navigate it.  
+  
+## 🔍 Sources  
+  
+*   🌐 The Washington Post and Forbes reported on Russian drone and missile attacks on Kyiv.  
+*   🌐 Reuters and The Guardian detailed Ukrainian drone strikes on Ryazan, Russia.  
+*   🌐 The Institute for the Study of War (ISW) reported on prisoner exchanges and Zelenskyy's warnings about Belarus.  
+*   🌐 France 24 reported on the approval of a special tribunal for Russia.  
+*   🌐 The US State Department and Sky News reported on the Israel-Lebanon ceasefire extension and Israeli airstrikes.  
+*   🌐 ISW noted the UAE's plans to bypass the Strait of Hormuz and US charges against an Iraqi militia commander.  
+*   🌐 The Council on Foreign Relations and Fox News reported on the Trump-Xi summit, their agreement on the Strait of Hormuz, and discussions on Iran and Taiwan.  
+*   🌐 ISW also reported US sanctions on Chinese firm Mustad.  
+*   🌐 OpenSecrets via Marketplace reported on the surge in defense lobbying and proposed defense spending increases.  
+*   🌐 The Bank Policy Institute reported on the crypto market structure bill and the confirmation of Kevin Warsh as Fed chair.  
+*   🌐 ScienceDaily reported on NASA's new AI space chip.  
+*   🌐 Spaceflight Now detailed SpaceX's resupply mission launch.  
+*   🌐 NASA reported on preliminary Artemis III mission plans.  
+*   🌐 The Planetary Society noted SpaceX's Starship V3 launch target.  
+*   🌐 GovTech reported on Illinois's AI regulation package and concerns about AI chatbots.  
+*   🌐 Littler reported on AI laws in Connecticut and Colorado.  
+*   🌐 The Bank of England, FCA, and HM Treasury released a joint statement on Frontier AI models and cyber resilience.  
+*   🌐 Penn LDI reported on the call for uniform licensure for autonomous clinical AI and Utah's pilot program suspension.  
+*   🌐 NPR reported on states considering laws blocking AI personhood.  
+*   🌐 The Washington State Department of Health and Marin County Public Health reported on hantavirus investigations.  
+*   🌐 A US Embassy health alert reported on an Ebola outbreak in the Democratic Republic of the Congo.  
+*   🌐 AJMC reported on adverse pregnancy outcomes and the Supreme Court's decision on the abortion pill mifepristone.  
+*   🌐 The Associated Press via KSAT and Earth.Org reported on rivers losing oxygen due to global warming, extreme heat, and World Cup conditions.  
+*   🌐 Earth.Org also noted New Zealand's proposed legislation on polluting companies.  
+*   🌐 Food & Water Watch reported on the lawsuit challenging the Trump administration's repeal of the greenhouse gas endangerment finding.  
+*   🌐 The Washington Post and the Los Angeles Times reported on drought in the US South and Somalia.  
+*   🌐 The UN announced a US pledge for humanitarian aid.  
+*   🌐 The New York Times reported on the Supreme Court's rejection of Virginia's voting map.  
+*   🌐 Euronews reported on Spain's Prime Minister defending Lamine Yamal and Latvia's PM resignation.  
+  
+✍️ Written by gemini-2.5-flash  
+  
+✍️ Written by gemini-2.5-flash  
+  
+## 🔍 Sources  
+  
+- 🌐 [washingtonpost.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFV9SuWs_OK5lnKuzJYwiSRyi0bzVC76kB2J-YOHhND69Y95DztiPDUnVU93gFrNP9Jfb2JKx9H_IMGruHa0OVErdX2DOw8RYPh0OD7PzHxbXQYsMkNuH_TRpDJVpREWWPUyQkGlbQjaMOcgDWGAkfa5b7cJra5kW-Y1ho7zlLscbGSZYtw0VqedwXtErfzv56MFOIMlgBZYKpfLRIjK75OgMAtlg==)  
+- 🌐 [forbes.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvhvYRrnM5T1cGmKtjFXiO-Cd4rRX73hExlnLqpFZHX1Fy8vDS5c695HhOzI6pasfyDH7EwWmLoj3PvYWa5a6LrO_hyOWrX3M-DMpwi69Rdp08qsAZhkITcNNt7iIdZmrEp85S6aF43WwqgO1qIqJl-i3f31DFt2Ao6MvqjsXW70sbypSOCwsbbXzl-nkg1_E6hvO_0bUcDFXPxrI4L6gQN9JAr7E0YMjZ_e8jsQJjI3u2386cvw==)  
+- 🌐 [latimes.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhmmME5JuLtjG3f-aPlb8aH11E49Tq93blKN3mGDQL1jTs5ciBECitN6niMozVn2qC7DRKDO4ldvQs-qMvX_tdnqTu-YW2Ir3qyNIzsg0rVz_R8TBuyyu-eG9FlRC_85XMHOHMk2lmVnjxuMKP4yauSVKI3H94pfEoLUhKFMJfFAwVgBTJQAWr4DXfgfLNKw2zbXlVLBPBMW9pN2Z9po0vvM3YxjLqQre9ie3f82EFyNsW_j9jqNu1wo_XHb1mUOo=)  
+- 🌐 [theguardian.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPLNyMcnCKfqGJPRlErzUKWiCNE5ghmPaemPvDPBH1lETVXEZE6rY00gjBjb_iavdQqAb8Gju1nN7uO2oDrFZ9tijeg2VKObwuuxPP-yrTge56livWpcjxI9PhB9i8CG0c3I52x4IgKrqH3niyNZGsj_rcF64dhCC9SNbizyOUMGNk7KgCQ2k6x1ebT2sgcFWTwzZN6Jv8-9u71grEQ9qtuzn-Ng==)  
+- 🌐 [understandingwar.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHf-OiaWiHDUX2EU2mYmNEDhvOFJaGKI4xb3qimpBy29rMstqbkgyrSM8kVxWllFVRKpE-eRNUVXHJ3-jBXQVwXcE_TEZZSi1OjNlgDlg_IfPn5TlMzBKoIF74eWfO79ycWToU8onvDauCAXYoLlnBzDk3nc1Y0MsjTfTiFZFAywhZabqwo90f6AAykG6t_D7iNienYdLOjLhm9IfOVTPtmfc4=)  
+- 🌐 [golocalprov.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeF_F3-Wx8gyZwgGiRGWXsCwMRDg6MXQkRpr3RIpixCESXH8XKU3596_2Ia_PxqAtSlph_pilf41mDaJBykFvb_42LgmnGxjM4-8vBH6d3dh-pA23aKvB7J66AIzfcxltmGdFhe9lwDNwg-EF0Sb1ARBq79Xkhl73wihq-SP9Q6OikBUevE2s7Cjb8Y8o=)  
+- 🌐 [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6u2s4l0hVfxyvE-pe1dquV5wsJ0Mbz0bWDd-zAJRgE_3YMrzhM9bsEd3Yi4ToG3H_K7goP50erQEf9cPt_cL7oW155Rhe1hILCy56UX2G3uQOPgX_ZT579HMNA3lY_vguN7bJYRFXdU4v0topqcBZ0xLPmQWwRFG0iA==)  
+- 🌐 [understandingwar.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2M97sklJvqpGTAjfFqnLB1Y_CQ4Dk06tUQwwz8IE4Ztfb2JBBgfHwMvJQt5XuHAE05UcDoAKzCmskyIiV2Dom79WXwmeXBYH-RaeSRCH1SPA7ylrnavhE4t23hQOtDpk15LwHG7vgYrGDA5aP8LWiUR2HKZJDY66iRWIBGDylWW6zV-0XrffoSaO_-VVvtIHGny4X)  
+- 🌐 [aljazeera.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhGbvkie-JfCPFtlay28-rDoMUOcY4g_T7JjF5sr8Eye3Rd7jDj_zi7pIELqRUdxnruYPA3uFP12o5imsx6BlMok2Fe1QjCqSGKIR3NIatAeJcG2ExWQouWY_ZR9PfWARksGJcj2VchTyaTHVP5klRpT2m0dYBx9mOCvEfgezQ4b2_VwMEyTG1DIoMANSjO_Vufya_wPaLbjQE-dIhmeojfQ-oQu1edIXJsM7BuAgkKUU=)  
+- 🌐 [understandingwar.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK9LBcCWY1pNHoxHeRh4F1dFVNP66Qu8VOay6emiuatfoQlFJg3vQkzr8IgQBS1LSYAccbd5M1L-5znCQHg5pMxrdCIfl2NYF9HCjjcFHEzY6s--P-B__fmXJc4uUpd4I1hNC7DCS5Ep-Ews8Zm_7WIsJxQsWiyovGyF54PfF_RgxDBEuihFeyg2noV7eT)  
+- 🌐 [substack.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE45iFBrJjTiIIHt4NJ4xQc07gdo3-b89mmNsZai77naQ0ru4ImCv1Vjjfxfn5lOczAj5ZpvJFaIuPR1cdiyMZAD0t8NCiUckSMUBUli9Ks1IHqepCCIHPNLOLR309jdnFOWxNzPxV13bjZiGOrLY1uvF2I6r6_6KBKHaEQu5XXXMF9xw==)  
+- 🌐 [cfr.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbmz9zRRj3SzBlbciR9F5iJ6kh2Qk74eP2mwFsfWrYTeUdHTj1TuL7i9AeEYSHx-U52mvoWhp52pGNmLwHgSz3UctrT-zxEzbMwieH2NXjkhxzaHhSvpdt3Zg49K-b6W2D-BYPyWCx3UYAb8EMIpVp2JHW5CDVu2PvkY0spP2FCiUWMwWKjCVwc6Qh)  
+- 🌐 [cbsnews.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpQfj3Wiw75BVsApzaEmEVo3OWSvAnCfYaS3pi4L_HOXUh3_QrdTSAQYtvzqUz8-fAHCEmbi7U74v4mnrautEMpeiJqNRkVmIWwxLoj_uLZREO1dj6CXktBvvgLbljeT0xIvwldcfNs6xRirLDbdSitZvn378ITMltxJYc4pkvltHTaF9aVVlQrCnTQL05RsohQHgxRfL-EgqSmg==)  
+- 🌐 [harvard.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaMnvvJ3pFU-kmqpPg-xKFgtsmVbTTkRsCSkp3QI0f11Kzzcd-v6I0XZQXleL3FcDYL2sPxAj-zQ-mW_B7B9j43-VkSfde_XzsfL39rWvUKgJ4ddpnJEZrk_493DivhphzrleFZJkADVkBO5VGXb7eWi5vwO_z74Tyecy7RGEMtsdlPYkI3MIdfvGpYChZx8OdZBtPLAnAkNsjeRg0a6SEFe63iRGdJEoZQ2S9PDPLNVKzPzYgfGA=)  
+- 🌐 [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSZGJ6HaHtelSJdWKqWwbZDttR5K5NVGG3UmXhtydLA4nyANGJ37CkruMvmjMr300N4H2m9f7WW56-vHt2tPJyCNgMt7h70O_U_nf3nx4WcHXyUCGyAaS-1z-iroZD3nc6mqcHr4AUi4MZCn6KL7LUplca4v8zX_F2jp4f63gw9pX-mZOM7w7OXO05lhFgnkQBPJ0t_Ft6hcc=)  
+- 🌐 [marketplace.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETCCZyUnOQlYRqmydrwMTyvzz7CpSR8LIc5BDYkjgerkVsDEdRUXD9eYQKCzw5kjm3h9-Jh0OGo9wGMUy4MJK_ebpnowl-rQJJtwa1_JmblBTuoPWRQ1fyQYaTLamihu9qWAgowZ91CJEGlXFRi1iO54swSusqXyzzqZ9Vr4ENAcdr1UoWcFoouSQr9jvxiILEXXsIV7J2kh6LxwTa0f8unYYhSYWNRutl)  
+- 🌐 [bpi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi_VwsFQXG7W9pDD5vdmnlzadeav7j9EpHOSsgco5MyzG5-OQq8ZuvmwfchfeifQHcc9F_omLvfe8LYMGqlbBeAxejJolSDVfWiwYroyYQ9b3Fofst6BxPpnW7FLDxhDVSdg==)  
+- 🌐 [sciencedaily.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElZsDtbNMtl2zXjU4V9d7QUl61q2YhlAYJ4P2SAQEtXQp84nn7g3T9C0cH2A-uFeTy4_SqSDqTNzTRs8W3Kd-ve3g6Q_S7rQXRHwk319UvNsyEOclhG87-TRQ_kusNBR_S5Az6vx8fOzx0PYyW4jT2q_zGvtx9bAmF)  
+- 🌐 [spaceflightnow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE02Z-qBVCvTkccVexr1MB0XrISQgxWwfcPrCOdIjzoYnDPJEXtrxPLVDLMb9s84ymyw7u1-ejln6nfls1-NvJBfDMZprC9u1actUWUMiWpoJTg2j96za-SlRKFQ0_0joUpudyYVA0lIYSBES9bu5d9Zk1aS5ozA6awktXk5VZxBs6ZOFkY1NDhfqvU4ei4pmy6_NCcJ_8soNAaq9AdODUR4JQom58vsFulRmTRGUC_iivF)  
+- 🌐 [nasa.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7PIKfhebtxP9xqwEYObsF0PmskQd2nwZjlTvCHXy4SVxCwWFeo-TDqlX3IwkiEYKMEBQTH7UAZIFtz5c6Xedwv29hosILSULNcNWl6BARuRorrbWZv2op3w7Yx7sOClgXrgAxROTi6NTm9qKF6QRWXte92wEItyqDrxjPTj0eDh_eYTPXijzLWdFWABM5yvP47wO9ZTWLFFMQGK98zOU=)  
+- 🌐 [planetary.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGNBCqFk8wT02aRlVnzNVtyEQjPD3BRgpRsbcpcnzSx4WHvQnIbjQ0yf_lUNb3LfXKLTEXbuYRafsblq8afMylV9aEV3w6YdVT8i8cJDDbFqzYdRj3RbX_tC8VzpfMViMJmS6S2rO-S5EBEvXYMxgiFLlQIwK5pEnBip5NllL3pwDMHg==)  
+- 🌐 [govtech.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBLQAHE6-33e4us5HUj5nj0ZW_BVBUr_fQq-LEpL79PDJwmDbmsQ3drWw5Hkk99kHkq26cNS9_BpYaAQfhd2Mb5J9WJSG52bOxW7TgZ3klrVgj-8ofgOcZgPBe5FGmOZIK6dkH0l6B8IN58a73hqZ76Sm7KffeUIxXa-fDFUn2_qzMXPHZznjr6DdU5k335f96wSAg6bZECoFoCgUEu25Y)  
+- 🌐 [littler.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZniAUuQpJOAGVxPXHNduNBuGnK-ydnJBqRbFoVWDQPd3XE501qVT3VG2tAAWX3q2ppeFL5jiegwdZuJWGF9FOdONt2JGmzxYZq-V1HDTrXpCaiuqGIP7WIx4Rt8u7tYrLGtfpcZYl9ksx4L5okhNkW2tIW-vZdv26wAtraH5WugtknJc=)  
+- 🌐 [bankofengland.co.uk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSsDDAjPvS3soWIIIGBY0ZE6NG3oVRrskklxvhA7idqe5Eea2BxIBu2huwcS4Zg2qGs_wfJf8eS8h60B0ZM-SMk7SxkMOuMo77R9oNkh-vM544qAM3inIZF1g28cXU8xlTk5iJwJFnk6QMDq_LEhS-wC90kkENj_4Zjk4j-BCLLmDy3a8Non04Kk0rZRvxfgZUrrfbOAKEkQtzNf-H18UYHOzE__9IDextObHtXPWYbFx7X-YRo2o-oBftWw==)  
+- 🌐 [upenn.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi1MU7OXnvR5CwXioUVuZfVB8NVfoVb_DYlL-2IjWvR-kmS_lcAikCmBxkaSsi2iZ-ZOcwOu7t3WMzSHIosJhiK3Dp-AOAafPW-nwgJt_bSWBXE0qwO3MUp-qv9YknNCNV_jNMBWPHlA6Yi482RiMIMpZPJDwTk1kMn4SKHqm2n6BEmCLm0FhS5kVRxyXKkp9vV5pTaudYk35g6RH86d_MS-J4)  
+- 🌐 [wbur.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY3pJNmp0txgKjvHVGwjMEVTLgjdS_pXCrrOqm0-Bs62ojHAjf9Ywu85plm2E33dsN7gIkbYjB4DmjsDDkrnOeY46ysqeon5FYwakoHsqKqKKrhA6Tixb-kiZLpcZs605htakrPwHpYPzWMfjSvLpXI6hV)  
+- 🌐 [wa.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEf2mOW-7nTjPyoPSJct9Cb3vXNV23YFJysTgMtDZKLCRiTOYgWPz0BQ6PTAps3HdaYX6EGnwRXezNCedxfojvh521nY4LchJ8caJ6GQhl1Vew9J5pw3T08m0bIxyuanwpmteIqZ7ZVUhyZ6FLUktLTp04w9L2S4jaTcUycL3c7tMsAo7LMH3e6vhoc0Jr4XzIJmJqQ3aKyCOjWtkeZmFTtsSjMLSXfTVl_tTVCjBHebOrM6yc=)  
+- 🌐 [marinhhs.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGSdfMEn5rsrIdElT_frKzXH-vkCxISZk-OtACN1kNXCJD5CkAkcz9aOvFUFqPQLJ5XW2StYjMxQs5oJp0xu_wP5up7TExDesh3LF_l5HQ5KniT_O14_4peXKlq-XpGu0iMCrp8ADNWnRc1LIiKG3aZFKB1OmjAw0OwLTBxiksqg==)  
+- 🌐 [usembassy.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYq_Lg7kdaFo1GxeNB8eOTtoOS9nBwoVihtDyO-GifDU66lif6AeDE01IjchrSwFThpmmGWgfBDOqKi_sUgkKdqAD96Y5SAgwfUmXDBjE6HiUaI4qoZR3gQAKGFdjOu_Q9F-B4M7Se5MVLN-FNDa5yaIAWKMpSdLm1757HS6B6nJY=)  
+- 🌐 [ajmc.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXO53QT7cJYgG6fk2f6JMAwd3pscH16-hyoXEWtJCB_xCeFlGfW_pG_H14DKkcFY5QFm_gEl1AK7T4GtU0wtNdna8ROdY3k8KK-c_27MgJwMsKMh5LJ3CkgzVBDP2gWVrkVPi0e-eACari9Go0Zpmnt-dxbk_hM_-opKHy1mr58IkU7bE=)  
+- 🌐 [ksat.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5Q_Qz-25TUJqz9m_MxJRRFNA2R3o_m_KgPPf2SzeLAL9V893Wu2vSF4rnMn14skIY7i3L96f1Hfevx76pUL6zMYEFjcRfmRJM0KRlCFjnQWNI1k-thqsdRd1Zs-YApGntU9NTeDNsuyuVCbB-yV3U3iMuSAEj8fJETsIaSd3a57NRtpdpsaB5VwPS8eZBrwWIQUAsvgTsD2mcfY3WFFWFWy-JHfzq1W-lAY8b)  
+- 🌐 [earth.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHb9pS1P52iEvZGNAeax65qrpbQr4nTUGjNpDk5II-kSCRwXrKoUDm0JDGbfdzl6Q1bFyiBAhmsVm6Yx69O2N0WDnX2K2ZPOekFQk0Mz0PRJFgpDpGScY7P_0-5t6Skpfb7RUoIoLLnxUlG1DD13Xavwmc130FeDg==)  
+- 🌐 [foodandwaterwatch.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERI6VQ9ozRR__gKBn45fGoV5_5yRkI8y8HrhkSvA5Z6oSuhDhM3HfSCaeiet19lPJSXhAqOPpYs5M9D2vuCpYZ6XajLuSFgbU_oK5FS_AmfAa32iuvGmf42HNMddA8x7A5w5wJ5CMNh4HFBjL6ghRhKGmgjnoMwwuePInmccbGXe0tHKTeyusPkzzVkOJCrEEtSS1ZiYYkQ5avYPVijpyuDgFtpPpf)  
+- 🌐 [washingtonpost.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRJT6k3e7RsJjKSrpEcpjmzpe7ZOjgxuLL3mCKqEh4ZMQy9DI8kpjLjKJTfXTA3k2-m15wTS6-M5KIlgR5X8deKSfe5-x_ziIzCilZ_ZNQ6BfmHPLjBswIwsyysuSnAqHI-OSJu09w9R6gSpzzJcmQt6y4LnhOQAMHOBSleALkT-9sId2T1WZYbkYBEn5obzWKw5TVNFuY3wRG1PNGZyOS_TZa5r0WeIgo)  
+- 🌐 [latimes.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmPzVf3F-4JpqnlRsddxW_mmu-03hqKwFpUvFYkePpg98WF1cWc-YYjXTOxaIe8jisO-JZP638VK3G9OEkcsvvWK9G-8HlhsHUtsDTkW1WBJK4ox3mtw5K62VWCR4OkQefdi3dXd1_KSa1fpU-q-U6dcsxfig-sH2BvFSTc2pUCZvR0ZL4vthrm1bDqgeTannB4MA=)  
+- 🌐 [passblue.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFP8rYWpMah3pogk-KG_4QppfdtZ0XMwKGwXvHJqdeHosn-_Zd_JeFJI4UaC9Hzw_bxvsSviwyYSJJAdAbseveqpgTKJyOQN3H1eEmT7qXoGRmqcV2s4PPh7XG3Ur985uG11UBvGMjJHug1g6F5_Pt4KbscRfmptV27OH5tOMIyGjLSz4fFTTtvXlUr3n7hI8OqdaiovSSZfZKsgbfiwOEk23pFPtc_x8BtA==)  
+- 🌐 [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvic1GTQg6pGox7IdU0au26_pf0gvACUQ2UgKxWFa7SaQtxAeNvl1G7a3NOngJ7nkspQUS-D0ETc2eOPl3XzchKTW3Ks_6RPisdo_73qjVh8b1diZDSadFCV_lSQvB-xoBf50LfQ8=)  
+- 🌐 [foxnews.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbvD9Umdsj0AXYuxyThyVra090Hw7W1r2MN6Trr-AbMpDkCLY15zEVl9OU4uziLIhudgepC3-HXFXuU65H0_9Zo4xPfFLMWISz9X27_aeBRXy6jaQsDB46b1bnH5gVpG17NYzyKNZDEs11Tf9NW9hWs9lxC6KhXIo3eKxve3hUsa7XGIFTkCARUuBJ6XP2XSoLvEBrT0sqHrBwgwCmTLKykQ==)  

@@ -11,6 +11,7 @@ image_date: 2026-04-10T00:27:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A surreal, minimalist landscape depicting the intersection of human inquiry. In the center, a solitary, glowing human silhouette sits in a meditative pose atop a mountain peak, looking up at a vast, star-filled night sky. Floating around the figure are symbolic, translucent geometric shapes and objects: an open book, a balanced scale, a complex marble bust, a magnifying glass, and a glowing lightbulb. The color palette features deep indigo, soft violet, and warm golden light, creating a contemplative and intellectual atmosphere. The scene is clean and ethereal, emphasizing the vastness of the universe and the depth of human thought, with no clutter or distractions."
 link_analysis_version: "2"
+updated: 2026-05-16T11:35:17
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)   
 # 🤔📚 Philosophy  
@@ -46,4 +47,12 @@ Here are some influential and accessible books to get you started on your philos
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlxqwsa64x26" data-bluesky-cid="bafyreib675a55jfymfkjvu7ycg6hsbsnkjch7pyvqwhm343wau75rdzqa4"><p>🤔📚 Philosophy  
+  
+#AI Q: 🤔 Which philosophical question keeps you up at night?  
+  
+🌌 Metaphysics | ⚖️ Ethics | 🧠 Epistemology |  
+https://bagrounds.org/topics/philosophy</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlxqwsa64x26?ref_src=embed">2026-05-16T11:35:21.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

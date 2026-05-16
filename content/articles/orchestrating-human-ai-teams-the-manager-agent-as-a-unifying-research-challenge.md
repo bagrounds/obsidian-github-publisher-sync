@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T14:37:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A central, glowing digital node representing the Manager Agent sits at the heart of an intricate, translucent network. From this node, luminous golden threads extend outward, connecting to a diverse cluster of human silhouettes and glowing geometric AI icons. The scene is set against a deep navy blue, tech-inspired background with subtle, shifting graph patterns and faint grid lines. The composition emphasizes a balanced, collaborative ecosystem where the central agent orchestrates the flow of data and tasks between the human and artificial entities. The lighting is soft but precise, highlighting the connections as pathways of information, suggesting a complex, multi-objective workflow being managed in real-time.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](https://arxiv.org/pdf/2510.02557)  
+![articles-orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge](../articles-orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.jpg)  
   
 ## 🤖 AI Summary  
 * 💡 The Autonomous Manager Agent is proposed as a core research challenge for orchestrating dynamic human-AI teams.  

@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/project-2025-and-education-a-lot-of-bad-idea
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T14:37:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized schoolhouse icon at the center, rendered in muted, professional tones like slate blue and charcoal. The building is partially obscured by a series of translucent, overlapping geometric shapes in warning colors like amber and deep red, suggesting fragmentation and structural instability. Faint, abstract lines representing documents or policy papers are scattered and drifting away from the building, symbolizing the dismantling of federal oversight. The background is a clean, textured off-white, emphasizing a sense of academic gravity and systemic shift. The composition is balanced but conveys a sense of tension, transition, and complex change without using any text or literal symbols.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](https://www.brookings.edu/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others)  
+![articles-project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others](../articles-project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.jpg)  
   
 ## 🤖 AI Summary  
 Project 2025's education proposals represent a significant and comprehensive shift in the landscape of American education 🇺🇸📚. To provide a thorough overview, here's a breakdown of the key elements:  

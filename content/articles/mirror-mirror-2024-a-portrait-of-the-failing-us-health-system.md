@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T09:43:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a large, ornate vintage mirror standing in a sterile, dimly lit clinical hallway. The glass of the mirror is cracked down the center. On one side of the crack, the reflection shows a pristine, idealized medical environment with soft blue light. On the other side, the reflection is distorted and fractured, showing a chaotic pile of paperwork, medical bills, and a blurred silhouette of a person looking away in frustration. The color palette is dominated by cold medical whites, deep shadows, and muted teals, punctuated by a single, sharp crimson accent near the crack in the mirror to represent the systemic strain. The floor is reflective, creating a sense of depth and isolation.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024)  
+![articles-mirror-mirror-2024-a-portrait-of-the-failing-us-health-system](../articles-mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.jpg)  
   
 ## 🤖 AI Summary  
 * 🇺🇸 **The United States ranks last overall** in health system performance among 10 high-income nations.  

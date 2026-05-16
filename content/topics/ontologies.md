@@ -11,6 +11,7 @@ image_date: 2026-04-10T00:27:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A digital illustration featuring an intricate, glowing network of interconnected nodes and lines hovering above an open, ancient stone tome. The nodes form a sophisticated tree-like structure, transitioning from organic, branching roots at the bottom to precise, geometric crystalline shapes at the top. The background is a deep, ethereal gradient of midnight blue and soft violet, suggesting a blend of classical wisdom and futuristic computation. Subtle, translucent geometric shapes—spheres, cubes, and tetrahedrons—float within the network, representing structured data. The overall aesthetic is clean, minimalist, and high-tech, using a palette of bioluminescent cyan, gold, and white to emphasize the clarity and connectivity of knowledge.
 link_analysis_version: "2"
+updated: 2026-05-16T09:44:55
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌳🗺️🔗🏛️ Ontologies  
@@ -155,3 +156,11 @@ link_analysis_version: "2"
 * 📖 Fictional: "The Diamond Age: Or, A Young Lady's Illustrated Primer" by Neal Stephenson (explores advanced information and knowledge representation in a fictional setting). 💎  
 * 📖 Rigorous: "A First Course in Logic: An Introduction to Model Theory, Proof Theory, Computability, and Complexity" by Shawn Hedman. 🤓  
 * 📖 Accessible: "Linked Data: Evolving into a Data Web" by Tom Heath and Christian Bizer. 🔗  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlxkrq4dqj2t" data-bluesky-cid="bafyreic7rbkr344x4zcy65h6yy36kupmj2tgfi3jiasi6kobdqij2kxg5y"><p>🌳🗺️🔗🏛️ Ontologies  
+  
+#AI Q: 🧩 How would you categorize the chaos of your own life into a formal system?  
+  
+🧠 Knowledge Representation | 🕸️ Semantic Web | 📊 Knowledge Graphs | 🤓 Formal Logic  
+https://bagrounds.org/topics/ontologies</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlxkrq4dqj2t?ref_src=embed">2026-05-16T09:45:08.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

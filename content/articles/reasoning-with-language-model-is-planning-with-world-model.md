@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T16:36:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-tech visualization of a decision-tree structure branching out from a glowing, translucent digital brain. The nodes of the tree are represented by geometric icons—cogs, lightbulbs, and map pins—interconnected by luminous data lines that fade into a deep, dark blue background. In the foreground, a sleek, semi-transparent robotic silhouette is shown interacting with these branches, carefully selecting a path. The lighting is focused and cinematic, using neon cyan and soft amber gradients to evoke a sense of deliberate, strategic planning. The overall aesthetic is clean, modern, and abstract, emphasizing the transition from chaotic raw data to structured, logical reasoning.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](https://arxiv.org/pdf/2305.14992)  
+![articles-reasoning-with-language-model-is-planning-with-world-model](../articles-reasoning-with-language-model-is-planning-with-world-model.jpg)  
 ## 🤖 AI Summary  
 This paper outlines a new framework, Reasoning via Planning (RAP). It argues that [🤖🦜 Large Language Models (LLMs)](../topics/large-language-models.md) sometimes 🤯 struggle with problems that are easy for humans, such as generating action plans, complex math, or logical reasoning.  
   

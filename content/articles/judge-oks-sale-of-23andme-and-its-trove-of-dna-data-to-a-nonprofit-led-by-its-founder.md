@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T07:47:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a translucent, glowing double helix structure floating in the center of the frame. The DNA strand is partially encased within a shimmering, protective glass sphere, symbolizing data privacy and security. In the foreground, a stylized, balanced scale of justice sits on a clean, white surface, with one side of the scale holding a small, metallic coin and the other side holding a delicate, digital-looking file icon. The background is a soft, professional gradient of cool blues and teals, evoking a sense of clinical precision and corporate transition. The lighting is soft and diffuse, highlighting the contrast between the organic nature of the DNA and the structured, legalistic environment of the scales.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder  
+![articles-judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder](../articles-judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.jpg)  
   
 ## 🤖 AI Summary  
 * ⚖️ A bankruptcy judge has approved the sale of 23andMe for 💰 $305 million to TTAM Research Group, led by former CEO and co-founder 👩‍🔬 Anne Wojcicki.  

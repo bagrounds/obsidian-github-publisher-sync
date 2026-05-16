@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T13:45:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a row of five weathered, academic-style stone pillars representing prestigious universities. Each pillar is partially encased in jagged, translucent blue ice, symbolizing the funding freeze. In the foreground, a medical research laboratory workbench sits in shadows; a glass beaker filled with glowing liquid sits stagnant, with a faint, fractured light source emanating from beneath it. The background is a deep, moody charcoal gray, suggesting an atmosphere of uncertainty and administrative silence. The color palette is limited to cool blues, stark whites, and deep slate, emphasizing a sense of cold, institutional paralysis.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [NIH freezes funds to Harvard and four other universities, but can’t tell them](https://www.science.org/content/article/nih-freezes-funds-harvard-and-four-other-universities-can-t-tell-them)  
+![articles-nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them](../articles-nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them.jpg)  
 ## 🤖 AI Summary  
 **🚨 NIH Freezes Funding to Five Universities**  
   

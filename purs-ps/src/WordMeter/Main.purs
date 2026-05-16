@@ -12,6 +12,15 @@ import WordMeter.Capability.Clipboard (class Clipboard, writeClipboardText)
 import WordMeter.Capability.Clock (class Clock, currentTimeMillis)
 import WordMeter.Capability.DomMount (class DomMount, mountToHost)
 import WordMeter.Capability.Environment (class Environment, captureEnvironmentSnapshot)
+import WordMeter.Capability.Recognition
+  ( class Recognition
+  , RecognitionHandlers
+  , cancelAutoRestart
+  , recognitionApiAvailable
+  , scheduleAutoRestart
+  , startRecognition
+  , stopRecognition
+  )
 import WordMeter.Capability.SessionState
   ( class SessionState
   , readCurrentSession
@@ -31,6 +40,14 @@ import WordMeter.Capability.WakeLock
   , requestScreenWakeLock
   )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
+import WordMeter.FFI.Recognition
+  ( RecognitionConstructError
+  , RecognitionStartError
+  , RecognitionStopError
+  , renderRecognitionConstructError
+  , renderRecognitionStartError
+  , renderRecognitionStopError
+  )
 import WordMeter.FFI.StorageError (StorageError, renderStorageError)
 import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
@@ -62,6 +79,8 @@ main :: Effect Unit
 main = do
   sessionRef <- Ref.new initialSession
   wakeLockSentinelRef <- Ref.new Nothing
+  recognitionInstanceRef <- Ref.new Nothing
+  restartTimerRef <- Ref.new Nothing
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
@@ -70,7 +89,12 @@ main = do
     }
   let
     applicationEnvironment :: ApplicationEnvironment
-    applicationEnvironment = { sessionRef, wakeLockSentinelRef }
+    applicationEnvironment =
+      { sessionRef
+      , wakeLockSentinelRef
+      , recognitionInstanceRef
+      , restartTimerRef
+      }
 
     readClickHandlers :: Effect ClickHandlers
     readClickHandlers = Ref.read clickHandlersRef
@@ -153,6 +177,8 @@ persistAfterAction
   -> m Unit
 persistAfterAction (Toggle _) = persistCurrentSession
 persistAfterAction (InjectFinalTranscript _ _) = persistCurrentSession
+persistAfterAction (IntegrateFinalizedTranscript _ _) = persistCurrentSession
+persistAfterAction ResetRecognitionDedupState = pure unit
 persistAfterAction (Reset _) = do
   outcome <- clearPersistedSnapshot
   case outcome of
@@ -228,14 +254,22 @@ handleToggle
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleToggle handlers = do
+  wasListening <- _.listening <$> readCurrentSession
   timestamp <- currentTimeMillis
   dispatch handlers (Toggle timestamp)
   session <- readCurrentSession
-  if session.listening then maybeAcquireWakeLock handlers
-  else releaseHeldWakeLock handlers
+  if session.listening then do
+    maybeAcquireWakeLock handlers
+    if wasListening then pure unit
+    else startRecognitionForSession handlers
+  else do
+    releaseHeldWakeLock handlers
+    if not wasListening then pure unit
+    else stopRecognitionForSession handlers
 
 handleCopyDiagnostics
   :: forall m
@@ -263,12 +297,14 @@ handleReset
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> m Unit
 handleReset handlers = do
   outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
   case outcome of
     Right true -> do
+      stopRecognitionForSession handlers
       releaseHeldWakeLock handlers
       timestamp <- currentTimeMillis
       dispatch handlers (Reset timestamp)
@@ -315,6 +351,7 @@ handleRecognitionError
   => SessionState m
   => Storage m
   => WakeLock m
+  => Recognition m
   => ClickHandlers
   -> String
   -> String
@@ -324,10 +361,12 @@ handleRecognitionError handlers code message = do
   timestamp <- currentTimeMillis
   dispatch handlers (HandleRecognitionError timestamp code message)
   -- If the error caused us to stop listening (today: the permission-denied
-  -- branch), let go of any wake lock so the UI does not look like it is
-  -- still holding the screen.
+  -- branch), tear down recognition and let go of any wake lock so the UI
+  -- does not look like it is still holding the screen.
   stillListening <- _.listening <$> readCurrentSession
-  if wasListening && not stillListening then releaseHeldWakeLock handlers
+  if wasListening && not stillListening then do
+    stopRecognitionForSession handlers
+    releaseHeldWakeLock handlers
   else pure unit
 
 maybeAcquireWakeLock
@@ -439,3 +478,154 @@ onWakeLockAutoReleased
 onWakeLockAutoReleased handlers = do
   recordWakeLockEvent "wake lock auto-released" "page hidden"
   dispatch handlers (SetWakeLockHeld false)
+
+-- ───────── Recognition orchestration (slice 9a) ─────────
+
+defaultLocale :: String
+defaultLocale = "en-US"
+
+sessionLocale :: forall m. SessionState m => m String
+sessionLocale = do
+  session <- readCurrentSession
+  case session.environment of
+    Just snapshot
+      | snapshot.navigatorLanguage /= ""
+        && snapshot.navigatorLanguage /= "(unknown)" ->
+          pure snapshot.navigatorLanguage
+    _ -> pure defaultLocale
+
+startRecognitionForSession
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> m Unit
+startRecognitionForSession handlers = do
+  available <- recognitionApiAvailable
+  if not available then do
+    recordRecognitionEvent "recognition unavailable"
+      "no SpeechRecognition constructor"
+  else do
+    locale <- sessionLocale
+    startRecognition (recognitionHandlersFor handlers locale)
+
+stopRecognitionForSession
+  :: forall m
+   . Clock m
+  => SessionState m
+  => Recognition m
+  => ClickHandlers
+  -> m Unit
+stopRecognitionForSession _handlers = do
+  cancelAutoRestart
+  stopRecognition
+    (recordRecognitionEvent "recognition stopped" "")
+    onRecognitionStopFailure
+
+recognitionHandlersFor
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> String
+  -> RecognitionHandlers m
+recognitionHandlersFor handlers locale =
+  { locale
+  , onResult: \transcript timestamp ->
+      dispatch handlers (IntegrateFinalizedTranscript timestamp transcript)
+  , onErrorEvent: handleRecognitionError handlers
+  , onEnded: handleRecognitionEnded handlers
+  , onStarted: recordRecognitionEvent "recognition started"
+      ("locale=" <> locale)
+  , onStartFailure: onRecognitionStartFailure
+  , onConstructFailure: onRecognitionConstructFailure
+  }
+
+handleRecognitionEnded
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> m Unit
+handleRecognitionEnded handlers = do
+  -- After every onend, reset the per-recognition-run dedup state so the
+  -- user's next utterance after silence is treated as a brand new
+  -- utterance rather than a refinement of whatever was last said.
+  dispatch handlers ResetRecognitionDedupState
+  session <- readCurrentSession
+  if not session.listening then
+    -- We explicitly stopped (or the reducer flipped listening off);
+    -- nothing more to do.
+    pure unit
+  else do
+    recordRecognitionEvent "recognition restart scheduled"
+      ("delay=" <> show 250 <> "ms")
+    scheduleAutoRestart (fireScheduledRestart handlers)
+
+fireScheduledRestart
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> m Unit
+fireScheduledRestart handlers = do
+  session <- readCurrentSession
+  if not session.listening then
+    -- The user stopped listening before the timer fired; do not
+    -- resurrect the recognizer.
+    pure unit
+  else do
+    recordRecognitionEvent "recognition restart fired" ""
+    startRecognitionForSession handlers
+
+onRecognitionStartFailure
+  :: forall m
+   . Clock m
+  => SessionState m
+  => RecognitionStartError
+  -> m Unit
+onRecognitionStartFailure failure =
+  recordRecognitionEvent "recognition start failure"
+    (renderRecognitionStartError failure)
+
+onRecognitionStopFailure
+  :: forall m
+   . Clock m
+  => SessionState m
+  => RecognitionStopError
+  -> m Unit
+onRecognitionStopFailure failure =
+  recordRecognitionEvent "recognition stop failure"
+    (renderRecognitionStopError failure)
+
+onRecognitionConstructFailure
+  :: forall m
+   . Clock m
+  => SessionState m
+  => RecognitionConstructError
+  -> m Unit
+onRecognitionConstructFailure failure =
+  recordRecognitionEvent "recognition construct failure"
+    (renderRecognitionConstructError failure)
+
+recordRecognitionEvent
+  :: forall m. Clock m => SessionState m => String -> String -> m Unit
+recordRecognitionEvent label detail = do
+  timestamp <- currentTimeMillis
+  updateSession (RecordDiagnostic timestamp label detail)

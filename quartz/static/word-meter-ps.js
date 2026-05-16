@@ -88,10 +88,10 @@
   };
   var applySecond = function(dictApply) {
     var apply1 = apply(dictApply);
-    var map11 = map(dictApply.Functor0());
+    var map13 = map(dictApply.Functor0());
     return function(a) {
       return function(b) {
-        return apply1(map11($$const(identity2))(a))(b);
+        return apply1(map13($$const(identity2))(a))(b);
       };
     };
   };
@@ -117,11 +117,11 @@
     };
   };
   var liftA1 = function(dictApplicative) {
-    var apply2 = apply(dictApplicative.Apply0());
+    var apply3 = apply(dictApplicative.Apply0());
     var pure1 = pure(dictApplicative);
     return function(f) {
       return function(a) {
-        return apply2(pure1(f))(a);
+        return apply3(pure1(f))(a);
       };
     };
   };
@@ -445,6 +445,7 @@
       };
     };
   };
+  var isJust = /* @__PURE__ */ maybe(false)(/* @__PURE__ */ $$const(true));
   var functorMaybe = {
     map: function(v) {
       return function(v1) {
@@ -456,8 +457,27 @@
       };
     }
   };
+  var map2 = /* @__PURE__ */ map(functorMaybe);
   var fromMaybe = function(a) {
     return maybe(a)(identity3);
+  };
+  var applyMaybe = {
+    apply: function(v) {
+      return function(v1) {
+        if (v instanceof Just) {
+          return map2(v.value0)(v1);
+        }
+        ;
+        if (v instanceof Nothing) {
+          return Nothing.value;
+        }
+        ;
+        throw new Error("Failed pattern match at Data.Maybe (line 67, column 1 - line 69, column 30): " + [v.constructor.name, v1.constructor.name]);
+      };
+    },
+    Functor0: function() {
+      return functorMaybe;
+    }
   };
 
   // output/Data.Either/index.js
@@ -499,7 +519,7 @@
       };
     }
   };
-  var map2 = /* @__PURE__ */ map(functorEither);
+  var map3 = /* @__PURE__ */ map(functorEither);
   var either = function(v) {
     return function(v1) {
       return function(v2) {
@@ -523,7 +543,7 @@
         }
         ;
         if (v instanceof Right) {
-          return map2(v.value0)(v1);
+          return map3(v.value0)(v1);
         }
         ;
         throw new Error("Failed pattern match at Data.Either (line 70, column 1 - line 72, column 30): " + [v.constructor.name, v1.constructor.name]);
@@ -866,13 +886,13 @@
     };
   };
   var applyReaderT = function(dictApply) {
-    var apply2 = apply(dictApply);
+    var apply3 = apply(dictApply);
     var functorReaderT1 = functorReaderT(dictApply.Functor0());
     return {
       apply: function(v) {
         return function(v1) {
           return function(r) {
-            return apply2(v(r))(v1(r));
+            return apply3(v(r))(v1(r));
           };
         };
       },
@@ -1378,6 +1398,231 @@
     return dict.captureEnvironmentSnapshot;
   };
 
+  // output/WordMeter.FFI.Recognition/foreign.js
+  var describeFailure = (error2) => {
+    if (error2 == null) return "unknown error";
+    if (typeof error2 === "string") return error2;
+    if (error2.name) return String(error2.name);
+    if (error2.message) return String(error2.message);
+    return String(error2);
+  };
+  var recognitionConstructor = () => {
+    if (typeof window === "undefined") return null;
+    return window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  };
+  var recognitionApiAvailable = () => typeof recognitionConstructor() === "function";
+  var constructRecognitionInstance = (locale) => (onConstructed) => (onError) => () => {
+    try {
+      const Ctor = recognitionConstructor();
+      if (!Ctor) {
+        onError("no SpeechRecognition constructor")();
+        return;
+      }
+      const instance = new Ctor();
+      instance.continuous = true;
+      instance.interimResults = true;
+      instance.lang = locale;
+      onConstructed(instance)();
+    } catch (error2) {
+      onError(describeFailure(error2))();
+    }
+  };
+  var attachOnResult = (instance) => (callback) => () => {
+    instance.onresult = (event) => {
+      const now = Date.now();
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const result = event.results[i];
+        if (result.isFinal !== true) continue;
+        const transcript = (result[0] && result[0].transcript || "").trim();
+        if (!transcript) continue;
+        callback(transcript)(now)();
+      }
+    };
+  };
+  var attachOnError = (instance) => (callback) => () => {
+    instance.onerror = (event) => {
+      const code = event && event.error || "";
+      const message2 = event && event.message || "";
+      callback(String(code))(String(message2))();
+    };
+  };
+  var attachOnEnd = (instance) => (callback) => () => {
+    instance.onend = () => {
+      callback();
+    };
+  };
+  var detachHandlers = (instance) => () => {
+    instance.onresult = null;
+    instance.onerror = null;
+    instance.onend = null;
+  };
+  var startRecognitionInstance = (instance) => (onStarted) => (onError) => () => {
+    try {
+      instance.start();
+      onStarted();
+    } catch (error2) {
+      onError(describeFailure(error2))();
+    }
+  };
+  var stopRecognitionInstance = (instance) => (onStopped) => (onError) => () => {
+    try {
+      instance.stop();
+      onStopped();
+    } catch (error2) {
+      onError(describeFailure(error2))();
+    }
+  };
+
+  // output/WordMeter.FFI.Recognition/index.js
+  var renderRecognitionStopError = function(v) {
+    return v;
+  };
+  var renderRecognitionStartError = function(v) {
+    return v;
+  };
+  var renderRecognitionConstructError = function(v) {
+    return v;
+  };
+
+  // output/WordMeter.FFI.Timer/foreign.js
+  var scheduleAfter = (delayMilliseconds) => (callback) => () => {
+    const handle = setTimeout(() => {
+      callback();
+    }, delayMilliseconds);
+    return handle;
+  };
+  var cancelScheduled = (handle) => () => {
+    clearTimeout(handle);
+  };
+
+  // output/WordMeter.Capability.Recognition/index.js
+  var liftEffect5 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var bind1 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask3 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var stopRecognitionInEnvironment = function(environment) {
+    return function(onStopped) {
+      return function(onError) {
+        var runHere = function(act) {
+          return runAppM(environment)(act);
+        };
+        return function __do2() {
+          var heldInstance = read(environment.recognitionInstanceRef)();
+          if (heldInstance instanceof Nothing) {
+            return runHere(onStopped)();
+          }
+          ;
+          if (heldInstance instanceof Just) {
+            detachHandlers(heldInstance.value0)();
+            write(Nothing.value)(environment.recognitionInstanceRef)();
+            return stopRecognitionInstance(heldInstance.value0)(runHere(onStopped))(function(detail) {
+              return runHere(onError(detail));
+            })();
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 141, column 7 - line 150, column 14): " + [heldInstance.constructor.name]);
+        };
+      };
+    };
+  };
+  var stopRecognition = function(dict) {
+    return dict.stopRecognition;
+  };
+  var startRecognitionInEnvironment = function(environment) {
+    return function(handlers) {
+      var runHere = function(act) {
+        return runAppM(environment)(act);
+      };
+      return constructRecognitionInstance(handlers.locale)(function(instance_) {
+        return function __do2() {
+          attachOnResult(instance_)(function(transcript) {
+            return function(timestamp) {
+              return runHere(handlers.onResult(transcript)(timestamp));
+            };
+          })();
+          attachOnError(instance_)(function(code) {
+            return function(message2) {
+              return runHere(handlers.onErrorEvent(code)(message2));
+            };
+          })();
+          attachOnEnd(instance_)(runHere(handlers.onEnded))();
+          write(new Just(instance_))(environment.recognitionInstanceRef)();
+          return startRecognitionInstance(instance_)(runHere(handlers.onStarted))(function(detail) {
+            return runHere(handlers.onStartFailure(detail));
+          })();
+        };
+      })(function(detail) {
+        return runHere(handlers.onConstructFailure(detail));
+      });
+    };
+  };
+  var startRecognition = function(dict) {
+    return dict.startRecognition;
+  };
+  var scheduleAutoRestart = function(dict) {
+    return dict.scheduleAutoRestart;
+  };
+  var restartDelayMilliseconds = 250;
+  var recognitionApiAvailable2 = function(dict) {
+    return dict.recognitionApiAvailable;
+  };
+  var cancelHeldTimer = function(environment) {
+    return function __do2() {
+      var heldTimer = read(environment.restartTimerRef)();
+      if (heldTimer instanceof Nothing) {
+        return unit;
+      }
+      ;
+      if (heldTimer instanceof Just) {
+        write(Nothing.value)(environment.restartTimerRef)();
+        return cancelScheduled(heldTimer.value0)();
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 169, column 3 - line 173, column 35): " + [heldTimer.constructor.name]);
+    };
+  };
+  var scheduleAutoRestartInEnvironment = function(environment) {
+    return function(action) {
+      return function __do2() {
+        cancelHeldTimer(environment)();
+        var handle = scheduleAfter(restartDelayMilliseconds)(function __do3() {
+          write(Nothing.value)(environment.restartTimerRef)();
+          return runAppM(environment)(action)();
+        })();
+        return write(new Just(handle))(environment.restartTimerRef)();
+      };
+    };
+  };
+  var cancelAutoRestartInEnvironment = cancelHeldTimer;
+  var recognitionAppM = {
+    recognitionApiAvailable: /* @__PURE__ */ liftEffect5(recognitionApiAvailable),
+    startRecognition: function(handlers) {
+      return bind1(ask3)(function(environment) {
+        return liftEffect5(startRecognitionInEnvironment(environment)(handlers));
+      });
+    },
+    stopRecognition: function(onStopped) {
+      return function(onError) {
+        return bind1(ask3)(function(environment) {
+          return liftEffect5(stopRecognitionInEnvironment(environment)(onStopped)(onError));
+        });
+      };
+    },
+    scheduleAutoRestart: function(action) {
+      return bind1(ask3)(function(environment) {
+        return liftEffect5(scheduleAutoRestartInEnvironment(environment)(action));
+      });
+    },
+    cancelAutoRestart: /* @__PURE__ */ bind1(ask3)(function(environment) {
+      return liftEffect5(cancelAutoRestartInEnvironment(environment));
+    }),
+    Monad0: function() {
+      return monadAppM;
+    }
+  };
+  var cancelAutoRestart = function(dict) {
+    return dict.cancelAutoRestart;
+  };
+
   // output/Data.Array/foreign.js
   var replicateFill = function(count, value) {
     if (count < 1) {
@@ -1397,6 +1642,9 @@
   var replicateImpl = typeof Array.prototype.fill === "function" ? replicateFill : replicatePolyfill;
   var length = function(xs) {
     return xs.length;
+  };
+  var indexImpl = function(just, nothing, xs, i) {
+    return i < 0 || i >= xs.length ? nothing : just(xs[i]);
   };
   var filterImpl = function(f, xs) {
     return xs.filter(f);
@@ -1479,8 +1727,8 @@
         return xs.concat(ys);
       };
     }
-    return function(apply2) {
-      return function(map11) {
+    return function(apply3) {
+      return function(map13) {
         return function(pure7) {
           return function(f) {
             return function(array) {
@@ -1489,14 +1737,14 @@
                   case 0:
                     return pure7([]);
                   case 1:
-                    return map11(array1)(f(array[bot]));
+                    return map13(array1)(f(array[bot]));
                   case 2:
-                    return apply2(map11(array2)(f(array[bot])))(f(array[bot + 1]));
+                    return apply3(map13(array2)(f(array[bot])))(f(array[bot + 1]));
                   case 3:
-                    return apply2(apply2(map11(array3)(f(array[bot])))(f(array[bot + 1])))(f(array[bot + 2]));
+                    return apply3(apply3(map13(array3)(f(array[bot])))(f(array[bot + 1])))(f(array[bot + 2]));
                   default:
                     var pivot = bot + Math.floor((top3 - bot) / 4) * 2;
-                    return apply2(map11(concat2)(go(bot, pivot)))(go(pivot, top3));
+                    return apply3(map13(concat2)(go(bot, pivot)))(go(pivot, top3));
                 }
               }
               return go(0, array.length);
@@ -1538,7 +1786,39 @@
   };
 
   // output/Data.Array/index.js
+  var apply2 = /* @__PURE__ */ apply(applyMaybe);
+  var map4 = /* @__PURE__ */ map(functorMaybe);
   var slice = /* @__PURE__ */ runFn3(sliceImpl);
+  var $$null = function(xs) {
+    return length(xs) === 0;
+  };
+  var init = function(xs) {
+    if ($$null(xs)) {
+      return Nothing.value;
+    }
+    ;
+    if (otherwise) {
+      return new Just(slice(0)(length(xs) - 1 | 0)(xs));
+    }
+    ;
+    throw new Error("Failed pattern match at Data.Array (line 351, column 1 - line 351, column 45): " + [xs.constructor.name]);
+  };
+  var index = /* @__PURE__ */ function() {
+    return runFn4(indexImpl)(Just.create)(Nothing.value);
+  }();
+  var last = function(xs) {
+    return index(xs)(length(xs) - 1 | 0);
+  };
+  var unsnoc = function(xs) {
+    return apply2(map4(function(v) {
+      return function(v1) {
+        return {
+          init: v,
+          last: v1
+        };
+      };
+    })(init(xs)))(last(xs));
+  };
   var foldl2 = /* @__PURE__ */ foldl(foldableArray);
   var filter = /* @__PURE__ */ runFn2(filterImpl);
   var drop = function(n) {
@@ -1633,6 +1913,9 @@
       return s.split(sep);
     };
   };
+  var toLower = function(s) {
+    return s.toLowerCase();
+  };
   var trim = function(s) {
     return s.trim();
   };
@@ -1643,7 +1926,7 @@
   };
 
   // output/WordMeter.Diagnostics/index.js
-  var map3 = /* @__PURE__ */ map(functorArray);
+  var map5 = /* @__PURE__ */ map(functorArray);
   var append1 = /* @__PURE__ */ append(semigroupArray);
   var formatSnapshot = function(snapshot) {
     return joinWith("\n")(["version           : " + snapshot.version, "userAgent         : " + snapshot.userAgent, "navigator.language: " + snapshot.navigatorLanguage]);
@@ -1664,7 +1947,7 @@
     }
     ;
     if (otherwise) {
-      return joinWith("\n")(map3(formatEntry)(entries));
+      return joinWith("\n")(map5(formatEntry)(entries));
     }
     ;
     throw new Error("Failed pattern match at WordMeter.Diagnostics (line 68, column 1 - line 68, column 49): " + [entries.constructor.name]);
@@ -1687,6 +1970,142 @@
     return function(entries) {
       return takeEnd(diagnosticsLimit)(append1(entries)([entry]));
     };
+  };
+
+  // output/Data.String.CodeUnits/foreign.js
+  var length2 = function(s) {
+    return s.length;
+  };
+  var splitAt = function(i) {
+    return function(s) {
+      return { before: s.substring(0, i), after: s.substring(i) };
+    };
+  };
+
+  // output/Data.String.CodeUnits/index.js
+  var stripPrefix = function(v) {
+    return function(str) {
+      var v1 = splitAt(length2(v))(str);
+      var $20 = v1.before === v;
+      if ($20) {
+        return new Just(v1.after);
+      }
+      ;
+      return Nothing.value;
+    };
+  };
+
+  // output/WordMeter.Words/index.js
+  var isNonEmpty = function(value) {
+    return value !== "";
+  };
+  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
+    var $2 = replaceAll("\r")(" ");
+    var $3 = replaceAll("\n")(" ");
+    var $4 = replaceAll("	")(" ");
+    return function($5) {
+      return $2($3($4($5)));
+    };
+  }();
+  var countWords = function(transcript) {
+    return length(filter(isNonEmpty)(split(" ")(collapseWhitespaceToSpace(trim(transcript)))));
+  };
+
+  // output/WordMeter.Recognition.Delta/index.js
+  var IgnoreDuplicate = /* @__PURE__ */ function() {
+    function IgnoreDuplicate2() {
+    }
+    ;
+    IgnoreDuplicate2.value = new IgnoreDuplicate2();
+    return IgnoreDuplicate2;
+  }();
+  var ExtendUtterance = /* @__PURE__ */ function() {
+    function ExtendUtterance2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    ExtendUtterance2.create = function(value0) {
+      return new ExtendUtterance2(value0);
+    };
+    return ExtendUtterance2;
+  }();
+  var StartNewUtterance = /* @__PURE__ */ function() {
+    function StartNewUtterance2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    StartNewUtterance2.create = function(value0) {
+      return new StartNewUtterance2(value0);
+    };
+    return StartNewUtterance2;
+  }();
+  var IgnoreEarlierSnapshot = /* @__PURE__ */ function() {
+    function IgnoreEarlierSnapshot2() {
+    }
+    ;
+    IgnoreEarlierSnapshot2.value = new IgnoreEarlierSnapshot2();
+    return IgnoreEarlierSnapshot2;
+  }();
+  var normalizeTranscript = /* @__PURE__ */ function() {
+    var $36 = joinWith(" ");
+    var $37 = filter(function(v) {
+      return v !== "";
+    });
+    var $38 = split(" ");
+    var $39 = replaceAll("\r")(" ");
+    var $40 = replaceAll("\n")(" ");
+    var $41 = replaceAll("	")(" ");
+    return function($42) {
+      return $36($37($38($39($40($41(toLower(trim($42))))))));
+    };
+  }();
+  var isWordBoundaryExtension = function(candidate) {
+    return function(prefix) {
+      if (prefix === "") {
+        return false;
+      }
+      ;
+      if (candidate === prefix) {
+        return false;
+      }
+      ;
+      if (otherwise) {
+        return isJust(stripPrefix(prefix + " ")(candidate));
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recognition.Delta (line 99, column 1 - line 99, column 55): " + [candidate.constructor.name, prefix.constructor.name]);
+    };
+  };
+  var classifyFinalizedTranscript = function(v) {
+    var previousNormalized = normalizeTranscript(v.previous);
+    var incomingNormalized = normalizeTranscript(v.incoming);
+    var $30 = incomingNormalized === "";
+    if ($30) {
+      return IgnoreDuplicate.value;
+    }
+    ;
+    var $31 = previousNormalized !== "" && incomingNormalized === previousNormalized;
+    if ($31) {
+      return IgnoreDuplicate.value;
+    }
+    ;
+    var $32 = isWordBoundaryExtension(incomingNormalized)(previousNormalized);
+    if ($32) {
+      return new ExtendUtterance({
+        wordDelta: countWords(v.incoming) - countWords(v.previous) | 0,
+        caption: v.incoming
+      });
+    }
+    ;
+    var $33 = isWordBoundaryExtension(previousNormalized)(incomingNormalized);
+    if ($33) {
+      return IgnoreEarlierSnapshot.value;
+    }
+    ;
+    return new StartNewUtterance({
+      wordCount: countWords(v.incoming),
+      caption: v.incoming
+    });
   };
 
   // output/WordMeter.RecognitionError/index.js
@@ -1879,31 +2298,15 @@
   // output/WordMeter.Version/index.js
   var version = "0.1.0";
 
-  // output/WordMeter.Words/index.js
-  var isNonEmpty = function(value) {
-    return value !== "";
-  };
-  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
-    var $2 = replaceAll("\r")(" ");
-    var $3 = replaceAll("\n")(" ");
-    var $4 = replaceAll("	")(" ");
-    return function($5) {
-      return $2($3($4($5)));
-    };
-  }();
-  var countWords = function(transcript) {
-    return length(filter(isNonEmpty)(split(" ")(collapseWhitespaceToSpace(trim(transcript)))));
-  };
-
   // output/WordMeter.Recording/index.js
   var max3 = /* @__PURE__ */ max(ordNumber);
-  var min3 = /* @__PURE__ */ min(ordNumber);
   var append12 = /* @__PURE__ */ append(semigroupArray);
+  var min3 = /* @__PURE__ */ min(ordNumber);
   var show2 = /* @__PURE__ */ show(showInt);
   var div1 = /* @__PURE__ */ div(euclideanRingInt);
   var mod2 = /* @__PURE__ */ mod(euclideanRingInt);
   var max1 = /* @__PURE__ */ max(ordInt);
-  var map4 = /* @__PURE__ */ map(functorArray);
+  var map6 = /* @__PURE__ */ map(functorArray);
   var show1 = /* @__PURE__ */ show(showNumber);
   var Toggle = /* @__PURE__ */ function() {
     function Toggle2(value0) {
@@ -1927,6 +2330,26 @@
       };
     };
     return InjectFinalTranscript2;
+  }();
+  var IntegrateFinalizedTranscript = /* @__PURE__ */ function() {
+    function IntegrateFinalizedTranscript2(value0, value1) {
+      this.value0 = value0;
+      this.value1 = value1;
+    }
+    ;
+    IntegrateFinalizedTranscript2.create = function(value0) {
+      return function(value1) {
+        return new IntegrateFinalizedTranscript2(value0, value1);
+      };
+    };
+    return IntegrateFinalizedTranscript2;
+  }();
+  var ResetRecognitionDedupState = /* @__PURE__ */ function() {
+    function ResetRecognitionDedupState2() {
+    }
+    ;
+    ResetRecognitionDedupState2.value = new ResetRecognitionDedupState2();
+    return ResetRecognitionDedupState2;
   }();
   var Tick = /* @__PURE__ */ function() {
     function Tick2(value0) {
@@ -2069,7 +2492,7 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 399, column 22 - line 401, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 501, column 22 - line 503, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var wakeLockAcquiredStatus = "screen will stay on";
   var toPersistedData = function(session) {
@@ -2100,12 +2523,30 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 690, column 24 - line 692, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 792, column 24 - line 794, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var renderKeepAwakeUnavailable = function(reason) {
     return "(" + (reason + ")");
+  };
+  var refreshLastCaptionTimestamp = function(nowMs) {
+    return function(captions) {
+      var v = unsnoc(captions);
+      if (v instanceof Nothing) {
+        return captions;
+      }
+      ;
+      if (v instanceof Just) {
+        return append12(v.value0.init)([{
+          transcript: v.value0.last.transcript,
+          wordCount: v.value0.last.wordCount,
+          timestamp: nowMs
+        }]);
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 472, column 46 - line 474, column 64): " + [v.constructor.name]);
+    };
   };
   var minimumCaptionOpacity = 0.15;
   var millisecondsPerSecond = 1e3;
@@ -2120,7 +2561,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 412, column 1 - line 412, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 514, column 1 - line 514, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -2180,7 +2621,8 @@
       keepAwake: true,
       keepAwakeStatus: idleKeepAwakeStatus,
       wakeLockHeld: false,
-      errorBanner: idleErrorBanner
+      errorBanner: idleErrorBanner,
+      lastRawFinalizedTranscript: ""
     };
   }();
   var formatRate = function(rate) {
@@ -2203,19 +2645,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 449, column 1 - line 449, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 551, column 1 - line 551, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $51 = totalSeconds < 60;
-    if ($51) {
+    var $64 = totalSeconds < 60;
+    if ($64) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $52 = totalMinutes < 60;
-    if ($52) {
+    var $65 = totalMinutes < 60;
+    if ($65) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -2258,7 +2700,7 @@
               return timestamp;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 349, column 17 - line 351, column 27): " + [session.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 425, column 17 - line 427, column 27): " + [session.currentIntervalStart.constructor.name]);
           }();
           var completed = {
             startedAt,
@@ -2268,8 +2710,8 @@
           var closedInterval = max3(0)(timestamp - startedAt);
           var statsDetail = "words=" + (show2(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedInterval)));
           var fullDetail = function() {
-            var $55 = reasonDetail === "";
-            if ($55) {
+            var $68 = reasonDetail === "";
+            if ($68) {
               return statsDetail;
             }
             ;
@@ -2290,6 +2732,7 @@
             keepAwakeStatus: session.keepAwakeStatus,
             wakeLockHeld: session.wakeLockHeld,
             errorBanner: session.errorBanner,
+            lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -2302,469 +2745,6 @@
           };
         };
       };
-    };
-  };
-  var reduce = function(v) {
-    return function(v1) {
-      if (v instanceof Toggle) {
-        if (v1.listening) {
-          return stopListeningAt(v.value0)("stop counting")("")(v1);
-        }
-        ;
-        if (otherwise) {
-          var startEntry = {
-            timestamp: v.value0,
-            label: "start counting",
-            detail: ""
-          };
-          return {
-            totalWords: v1.totalWords,
-            eventLog: v1.eventLog,
-            completedActiveMs: v1.completedActiveMs,
-            lastError: v1.lastError,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            keepAwakeStatus: v1.keepAwakeStatus,
-            wakeLockHeld: v1.wakeLockHeld,
-            listening: true,
-            currentIntervalStart: new Just(v.value0),
-            currentIntervalWords: 0,
-            firstStartedAt: function() {
-              if (v1.firstStartedAt instanceof Just) {
-                return new Just(v1.firstStartedAt.value0);
-              }
-              ;
-              if (v1.firstStartedAt instanceof Nothing) {
-                return new Just(v.value0);
-              }
-              ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 227, column 30 - line 229, column 40): " + [v1.firstStartedAt.constructor.name]);
-            }(),
-            wordEvents: pruneEvents(v.value0)(v1.wordEvents),
-            captions: pruneCaptions(v.value0)(v1.captions),
-            now: v.value0,
-            diagnostics: recordEntry(startEntry)(v1.diagnostics),
-            errorBanner: idleErrorBanner
-          };
-        }
-        ;
-      }
-      ;
-      if (v instanceof InjectFinalTranscript) {
-        if (v1.listening) {
-          var wordCount = countWords(v.value0);
-          var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
-          var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $61 = wordCount === 0;
-          if ($61) {
-            return {
-              listening: v1.listening,
-              totalWords: v1.totalWords,
-              eventLog: v1.eventLog,
-              currentIntervalWords: v1.currentIntervalWords,
-              firstStartedAt: v1.firstStartedAt,
-              currentIntervalStart: v1.currentIntervalStart,
-              completedActiveMs: v1.completedActiveMs,
-              lastError: v1.lastError,
-              diagnostics: v1.diagnostics,
-              environment: v1.environment,
-              copyStatus: v1.copyStatus,
-              keepAwake: v1.keepAwake,
-              keepAwakeStatus: v1.keepAwakeStatus,
-              wakeLockHeld: v1.wakeLockHeld,
-              errorBanner: v1.errorBanner,
-              now: v.value1,
-              wordEvents: prunedEvents,
-              captions: prunedCaptions
-            };
-          }
-          ;
-          var transcriptEntry = {
-            timestamp: v.value1,
-            label: "final transcript",
-            detail: "words=" + show2(wordCount)
-          };
-          return {
-            listening: v1.listening,
-            eventLog: v1.eventLog,
-            firstStartedAt: v1.firstStartedAt,
-            currentIntervalStart: v1.currentIntervalStart,
-            completedActiveMs: v1.completedActiveMs,
-            lastError: v1.lastError,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            keepAwakeStatus: v1.keepAwakeStatus,
-            wakeLockHeld: v1.wakeLockHeld,
-            errorBanner: v1.errorBanner,
-            totalWords: v1.totalWords + wordCount | 0,
-            currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
-            captions: append12(prunedCaptions)([{
-              transcript: v.value0,
-              wordCount,
-              timestamp: v.value1
-            }]),
-            wordEvents: append12(prunedEvents)([{
-              timestamp: v.value1,
-              wordCount
-            }]),
-            now: v.value1,
-            diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
-          };
-        }
-        ;
-        if (otherwise) {
-          return {
-            listening: v1.listening,
-            totalWords: v1.totalWords,
-            wordEvents: v1.wordEvents,
-            eventLog: v1.eventLog,
-            currentIntervalWords: v1.currentIntervalWords,
-            firstStartedAt: v1.firstStartedAt,
-            currentIntervalStart: v1.currentIntervalStart,
-            completedActiveMs: v1.completedActiveMs,
-            lastError: v1.lastError,
-            diagnostics: v1.diagnostics,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            keepAwakeStatus: v1.keepAwakeStatus,
-            wakeLockHeld: v1.wakeLockHeld,
-            errorBanner: v1.errorBanner,
-            now: v.value1,
-            captions: pruneCaptions(v.value1)(v1.captions)
-          };
-        }
-        ;
-      }
-      ;
-      if (v instanceof Tick) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          now: v.value0,
-          wordEvents: pruneEvents(v.value0)(v1.wordEvents),
-          captions: pruneCaptions(v.value0)(v1.captions)
-        };
-      }
-      ;
-      if (v instanceof RecordDiagnostic) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          diagnostics: recordEntry({
-            timestamp: v.value0,
-            label: v.value1,
-            detail: v.value2
-          })(v1.diagnostics)
-        };
-      }
-      ;
-      if (v instanceof SetEnvironment) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          environment: new Just(v.value0)
-        };
-      }
-      ;
-      if (v instanceof SetCopyStatus) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          copyStatus: v.value0
-        };
-      }
-      ;
-      if (v instanceof Reset) {
-        var resetEntry = {
-          timestamp: v.value0,
-          label: "reset",
-          detail: "stats cleared"
-        };
-        return {
-          listening: initialSession.listening,
-          totalWords: initialSession.totalWords,
-          captions: initialSession.captions,
-          wordEvents: initialSession.wordEvents,
-          eventLog: initialSession.eventLog,
-          currentIntervalWords: initialSession.currentIntervalWords,
-          firstStartedAt: initialSession.firstStartedAt,
-          currentIntervalStart: initialSession.currentIntervalStart,
-          completedActiveMs: initialSession.completedActiveMs,
-          lastError: initialSession.lastError,
-          copyStatus: initialSession.copyStatus,
-          keepAwakeStatus: initialSession.keepAwakeStatus,
-          wakeLockHeld: initialSession.wakeLockHeld,
-          errorBanner: initialSession.errorBanner,
-          now: v.value0,
-          diagnostics: recordEntry(resetEntry)(v1.diagnostics),
-          environment: v1.environment,
-          keepAwake: v1.keepAwake
-        };
-      }
-      ;
-      if (v instanceof LoadSession) {
-        return {
-          captions: v1.captions,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          totalWords: max1(0)(v.value0.totalWords),
-          firstStartedAt: v.value0.firstStartedAt,
-          wordEvents: v.value0.wordEvents,
-          eventLog: takeEnd(eventLogLimit)(v.value0.eventLog),
-          currentIntervalWords: 0,
-          currentIntervalStart: Nothing.value,
-          listening: false
-        };
-      }
-      ;
-      if (v instanceof SetKeepAwake) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          keepAwake: v.value0,
-          keepAwakeStatus: function() {
-            if (v.value0) {
-              return v1.keepAwakeStatus;
-            }
-            ;
-            return idleKeepAwakeStatus;
-          }()
-        };
-      }
-      ;
-      if (v instanceof SetKeepAwakeStatus) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: v1.errorBanner,
-          keepAwakeStatus: v.value0
-        };
-      }
-      ;
-      if (v instanceof SetWakeLockHeld) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          errorBanner: v1.errorBanner,
-          wakeLockHeld: v.value0
-        };
-      }
-      ;
-      if (v instanceof HandleRecognitionError) {
-        var errorEntry = {
-          timestamp: v.value0,
-          label: "recognition.onerror",
-          detail: renderRecognitionErrorDiagnosticDetail(v.value1)(v.value2)
-        };
-        var sessionWithDiagnostic = {
-          captions: v1.captions,
-          completedActiveMs: v1.completedActiveMs,
-          copyStatus: v1.copyStatus,
-          currentIntervalStart: v1.currentIntervalStart,
-          currentIntervalWords: v1.currentIntervalWords,
-          environment: v1.environment,
-          errorBanner: v1.errorBanner,
-          eventLog: v1.eventLog,
-          firstStartedAt: v1.firstStartedAt,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          lastError: v1.lastError,
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          wakeLockHeld: v1.wakeLockHeld,
-          wordEvents: v1.wordEvents,
-          diagnostics: recordEntry(errorEntry)(v1.diagnostics),
-          now: v.value0
-        };
-        var classified = classifyRecognitionError(v.value1);
-        var bannerText = recognitionErrorBannerText(classified);
-        var $76 = isTransient(classified);
-        if ($76) {
-          return sessionWithDiagnostic;
-        }
-        ;
-        var $77 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
-        if ($77) {
-          var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
-          return {
-            listening: stopped.listening,
-            totalWords: stopped.totalWords,
-            captions: stopped.captions,
-            wordEvents: stopped.wordEvents,
-            eventLog: stopped.eventLog,
-            currentIntervalWords: stopped.currentIntervalWords,
-            firstStartedAt: stopped.firstStartedAt,
-            currentIntervalStart: stopped.currentIntervalStart,
-            completedActiveMs: stopped.completedActiveMs,
-            now: stopped.now,
-            lastError: stopped.lastError,
-            diagnostics: stopped.diagnostics,
-            environment: stopped.environment,
-            copyStatus: stopped.copyStatus,
-            keepAwake: stopped.keepAwake,
-            keepAwakeStatus: stopped.keepAwakeStatus,
-            wakeLockHeld: stopped.wakeLockHeld,
-            errorBanner: bannerText
-          };
-        }
-        ;
-        return {
-          listening: sessionWithDiagnostic.listening,
-          totalWords: sessionWithDiagnostic.totalWords,
-          captions: sessionWithDiagnostic.captions,
-          wordEvents: sessionWithDiagnostic.wordEvents,
-          eventLog: sessionWithDiagnostic.eventLog,
-          currentIntervalWords: sessionWithDiagnostic.currentIntervalWords,
-          firstStartedAt: sessionWithDiagnostic.firstStartedAt,
-          currentIntervalStart: sessionWithDiagnostic.currentIntervalStart,
-          completedActiveMs: sessionWithDiagnostic.completedActiveMs,
-          now: sessionWithDiagnostic.now,
-          lastError: sessionWithDiagnostic.lastError,
-          diagnostics: sessionWithDiagnostic.diagnostics,
-          environment: sessionWithDiagnostic.environment,
-          copyStatus: sessionWithDiagnostic.copyStatus,
-          keepAwake: sessionWithDiagnostic.keepAwake,
-          keepAwakeStatus: sessionWithDiagnostic.keepAwakeStatus,
-          wakeLockHeld: sessionWithDiagnostic.wakeLockHeld,
-          errorBanner: bannerText
-        };
-      }
-      ;
-      if (v instanceof ClearErrorBanner) {
-        return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          captions: v1.captions,
-          wordEvents: v1.wordEvents,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          now: v1.now,
-          lastError: v1.lastError,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          keepAwakeStatus: v1.keepAwakeStatus,
-          wakeLockHeld: v1.wakeLockHeld,
-          errorBanner: idleErrorBanner
-        };
-      }
-      ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 215, column 1 - line 215, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var captionOpacity = function(nowMs) {
@@ -2816,7 +2796,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 656, column 11 - line 658, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 758, column 11 - line 760, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -2848,12 +2828,12 @@
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $88 = length(session.eventLog) === 0;
-      if ($88) {
+      var $76 = length(session.eventLog) === 0;
+      if ($76) {
         return [buildEventLogPlaceholder];
       }
       ;
-      return map4(buildEventLogEntry)(session.eventLog);
+      return map6(buildEventLogEntry)(session.eventLog);
     }());
   };
   var buildErrorBanner = function(session) {
@@ -2876,13 +2856,698 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $89 = length(session.captions) === 0;
-      if ($89) {
+      var $77 = length(session.captions) === 0;
+      if ($77) {
         return [buildCaptionsPlaceholder];
       }
       ;
-      return map4(buildCaption(session.now))(session.captions);
+      return map6(buildCaption(session.now))(session.captions);
     }());
+  };
+  var appendOrExtendCaption = function(caption) {
+    return function(wordDelta) {
+      return function(nowMs) {
+        return function(captions) {
+          var v = unsnoc(captions);
+          if (v instanceof Nothing) {
+            return append12(captions)([{
+              transcript: caption,
+              wordCount: wordDelta,
+              timestamp: nowMs
+            }]);
+          }
+          ;
+          if (v instanceof Just) {
+            return append12(v.value0.init)([{
+              transcript: caption,
+              wordCount: v.value0.last.wordCount + wordDelta | 0,
+              timestamp: nowMs
+            }]);
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Recording (line 483, column 58 - line 492, column 8): " + [v.constructor.name]);
+        };
+      };
+    };
+  };
+  var reduce = function(v) {
+    return function(v1) {
+      if (v instanceof Toggle) {
+        if (v1.listening) {
+          return stopListeningAt(v.value0)("stop counting")("")(v1);
+        }
+        ;
+        if (otherwise) {
+          var startEntry = {
+            timestamp: v.value0,
+            label: "start counting",
+            detail: ""
+          };
+          return {
+            totalWords: v1.totalWords,
+            eventLog: v1.eventLog,
+            completedActiveMs: v1.completedActiveMs,
+            lastError: v1.lastError,
+            environment: v1.environment,
+            copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
+            listening: true,
+            currentIntervalStart: new Just(v.value0),
+            currentIntervalWords: 0,
+            firstStartedAt: function() {
+              if (v1.firstStartedAt instanceof Just) {
+                return new Just(v1.firstStartedAt.value0);
+              }
+              ;
+              if (v1.firstStartedAt instanceof Nothing) {
+                return new Just(v.value0);
+              }
+              ;
+              throw new Error("Failed pattern match at WordMeter.Recording (line 235, column 30 - line 237, column 40): " + [v1.firstStartedAt.constructor.name]);
+            }(),
+            wordEvents: pruneEvents(v.value0)(v1.wordEvents),
+            captions: pruneCaptions(v.value0)(v1.captions),
+            now: v.value0,
+            diagnostics: recordEntry(startEntry)(v1.diagnostics),
+            errorBanner: idleErrorBanner,
+            lastRawFinalizedTranscript: ""
+          };
+        }
+        ;
+      }
+      ;
+      if (v instanceof InjectFinalTranscript) {
+        if (v1.listening) {
+          var wordCount = countWords(v.value0);
+          var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
+          var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
+          var $87 = wordCount === 0;
+          if ($87) {
+            return {
+              listening: v1.listening,
+              totalWords: v1.totalWords,
+              eventLog: v1.eventLog,
+              currentIntervalWords: v1.currentIntervalWords,
+              firstStartedAt: v1.firstStartedAt,
+              currentIntervalStart: v1.currentIntervalStart,
+              completedActiveMs: v1.completedActiveMs,
+              lastError: v1.lastError,
+              diagnostics: v1.diagnostics,
+              environment: v1.environment,
+              copyStatus: v1.copyStatus,
+              keepAwake: v1.keepAwake,
+              keepAwakeStatus: v1.keepAwakeStatus,
+              wakeLockHeld: v1.wakeLockHeld,
+              errorBanner: v1.errorBanner,
+              lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+              now: v.value1,
+              wordEvents: prunedEvents,
+              captions: prunedCaptions
+            };
+          }
+          ;
+          var transcriptEntry = {
+            timestamp: v.value1,
+            label: "final transcript",
+            detail: "words=" + show2(wordCount)
+          };
+          return {
+            listening: v1.listening,
+            eventLog: v1.eventLog,
+            firstStartedAt: v1.firstStartedAt,
+            currentIntervalStart: v1.currentIntervalStart,
+            completedActiveMs: v1.completedActiveMs,
+            lastError: v1.lastError,
+            environment: v1.environment,
+            copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
+            errorBanner: v1.errorBanner,
+            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+            totalWords: v1.totalWords + wordCount | 0,
+            currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
+            captions: append12(prunedCaptions)([{
+              transcript: v.value0,
+              wordCount,
+              timestamp: v.value1
+            }]),
+            wordEvents: append12(prunedEvents)([{
+              timestamp: v.value1,
+              wordCount
+            }]),
+            now: v.value1,
+            diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+          };
+        }
+        ;
+        if (otherwise) {
+          return {
+            listening: v1.listening,
+            totalWords: v1.totalWords,
+            wordEvents: v1.wordEvents,
+            eventLog: v1.eventLog,
+            currentIntervalWords: v1.currentIntervalWords,
+            firstStartedAt: v1.firstStartedAt,
+            currentIntervalStart: v1.currentIntervalStart,
+            completedActiveMs: v1.completedActiveMs,
+            lastError: v1.lastError,
+            diagnostics: v1.diagnostics,
+            environment: v1.environment,
+            copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
+            errorBanner: v1.errorBanner,
+            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+            now: v.value1,
+            captions: pruneCaptions(v.value1)(v1.captions)
+          };
+        }
+        ;
+      }
+      ;
+      if (v instanceof IntegrateFinalizedTranscript) {
+        if (!v1.listening) {
+          return {
+            listening: v1.listening,
+            totalWords: v1.totalWords,
+            captions: v1.captions,
+            wordEvents: v1.wordEvents,
+            eventLog: v1.eventLog,
+            currentIntervalWords: v1.currentIntervalWords,
+            firstStartedAt: v1.firstStartedAt,
+            currentIntervalStart: v1.currentIntervalStart,
+            completedActiveMs: v1.completedActiveMs,
+            lastError: v1.lastError,
+            diagnostics: v1.diagnostics,
+            environment: v1.environment,
+            copyStatus: v1.copyStatus,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            wakeLockHeld: v1.wakeLockHeld,
+            errorBanner: v1.errorBanner,
+            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+            now: v.value0
+          };
+        }
+        ;
+        if (otherwise) {
+          var prunedEvents = pruneEvents(v.value0)(v1.wordEvents);
+          var prunedCaptions = pruneCaptions(v.value0)(v1.captions);
+          var decision = classifyFinalizedTranscript({
+            previous: v1.lastRawFinalizedTranscript,
+            incoming: v.value1
+          });
+          var base = {
+            completedActiveMs: v1.completedActiveMs,
+            copyStatus: v1.copyStatus,
+            currentIntervalStart: v1.currentIntervalStart,
+            currentIntervalWords: v1.currentIntervalWords,
+            diagnostics: v1.diagnostics,
+            environment: v1.environment,
+            errorBanner: v1.errorBanner,
+            eventLog: v1.eventLog,
+            firstStartedAt: v1.firstStartedAt,
+            keepAwake: v1.keepAwake,
+            keepAwakeStatus: v1.keepAwakeStatus,
+            lastError: v1.lastError,
+            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+            listening: v1.listening,
+            totalWords: v1.totalWords,
+            wakeLockHeld: v1.wakeLockHeld,
+            now: v.value0,
+            wordEvents: prunedEvents,
+            captions: prunedCaptions
+          };
+          if (decision instanceof IgnoreDuplicate) {
+            return {
+              listening: base.listening,
+              totalWords: base.totalWords,
+              wordEvents: base.wordEvents,
+              eventLog: base.eventLog,
+              currentIntervalWords: base.currentIntervalWords,
+              firstStartedAt: base.firstStartedAt,
+              currentIntervalStart: base.currentIntervalStart,
+              completedActiveMs: base.completedActiveMs,
+              now: base.now,
+              lastError: base.lastError,
+              diagnostics: base.diagnostics,
+              environment: base.environment,
+              copyStatus: base.copyStatus,
+              keepAwake: base.keepAwake,
+              keepAwakeStatus: base.keepAwakeStatus,
+              wakeLockHeld: base.wakeLockHeld,
+              errorBanner: base.errorBanner,
+              lastRawFinalizedTranscript: base.lastRawFinalizedTranscript,
+              captions: refreshLastCaptionTimestamp(v.value0)(prunedCaptions)
+            };
+          }
+          ;
+          if (decision instanceof IgnoreEarlierSnapshot) {
+            return base;
+          }
+          ;
+          if (decision instanceof ExtendUtterance) {
+            var transcriptEntry = {
+              timestamp: v.value0,
+              label: "final transcript",
+              detail: "extend wordDelta=" + show2(decision.value0.wordDelta)
+            };
+            var extendedCaptions = appendOrExtendCaption(decision.value0.caption)(decision.value0.wordDelta)(v.value0)(prunedCaptions);
+            return {
+              listening: base.listening,
+              eventLog: base.eventLog,
+              firstStartedAt: base.firstStartedAt,
+              currentIntervalStart: base.currentIntervalStart,
+              completedActiveMs: base.completedActiveMs,
+              now: base.now,
+              lastError: base.lastError,
+              environment: base.environment,
+              copyStatus: base.copyStatus,
+              keepAwake: base.keepAwake,
+              keepAwakeStatus: base.keepAwakeStatus,
+              wakeLockHeld: base.wakeLockHeld,
+              errorBanner: base.errorBanner,
+              totalWords: v1.totalWords + decision.value0.wordDelta | 0,
+              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordDelta | 0,
+              captions: extendedCaptions,
+              wordEvents: append12(prunedEvents)([{
+                timestamp: v.value0,
+                wordCount: decision.value0.wordDelta
+              }]),
+              lastRawFinalizedTranscript: v.value1,
+              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+            };
+          }
+          ;
+          if (decision instanceof StartNewUtterance) {
+            var transcriptEntry = {
+              timestamp: v.value0,
+              label: "final transcript",
+              detail: "words=" + show2(decision.value0.wordCount)
+            };
+            return {
+              listening: base.listening,
+              eventLog: base.eventLog,
+              firstStartedAt: base.firstStartedAt,
+              currentIntervalStart: base.currentIntervalStart,
+              completedActiveMs: base.completedActiveMs,
+              now: base.now,
+              lastError: base.lastError,
+              environment: base.environment,
+              copyStatus: base.copyStatus,
+              keepAwake: base.keepAwake,
+              keepAwakeStatus: base.keepAwakeStatus,
+              wakeLockHeld: base.wakeLockHeld,
+              errorBanner: base.errorBanner,
+              totalWords: v1.totalWords + decision.value0.wordCount | 0,
+              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordCount | 0,
+              captions: append12(prunedCaptions)([{
+                transcript: decision.value0.caption,
+                wordCount: decision.value0.wordCount,
+                timestamp: v.value0
+              }]),
+              wordEvents: append12(prunedEvents)([{
+                timestamp: v.value0,
+                wordCount: decision.value0.wordCount
+              }]),
+              lastRawFinalizedTranscript: v.value1,
+              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+            };
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Recording (line 292, column 10 - line 340, column 16): " + [decision.constructor.name]);
+        }
+        ;
+      }
+      ;
+      if (v instanceof ResetRecognitionDedupState) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: ""
+        };
+      }
+      ;
+      if (v instanceof Tick) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          now: v.value0,
+          wordEvents: pruneEvents(v.value0)(v1.wordEvents),
+          captions: pruneCaptions(v.value0)(v1.captions)
+        };
+      }
+      ;
+      if (v instanceof RecordDiagnostic) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          diagnostics: recordEntry({
+            timestamp: v.value0,
+            label: v.value1,
+            detail: v.value2
+          })(v1.diagnostics)
+        };
+      }
+      ;
+      if (v instanceof SetEnvironment) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          environment: new Just(v.value0)
+        };
+      }
+      ;
+      if (v instanceof SetCopyStatus) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          copyStatus: v.value0
+        };
+      }
+      ;
+      if (v instanceof Reset) {
+        var resetEntry = {
+          timestamp: v.value0,
+          label: "reset",
+          detail: "stats cleared"
+        };
+        return {
+          listening: initialSession.listening,
+          totalWords: initialSession.totalWords,
+          captions: initialSession.captions,
+          wordEvents: initialSession.wordEvents,
+          eventLog: initialSession.eventLog,
+          currentIntervalWords: initialSession.currentIntervalWords,
+          firstStartedAt: initialSession.firstStartedAt,
+          currentIntervalStart: initialSession.currentIntervalStart,
+          completedActiveMs: initialSession.completedActiveMs,
+          lastError: initialSession.lastError,
+          copyStatus: initialSession.copyStatus,
+          keepAwakeStatus: initialSession.keepAwakeStatus,
+          wakeLockHeld: initialSession.wakeLockHeld,
+          errorBanner: initialSession.errorBanner,
+          lastRawFinalizedTranscript: initialSession.lastRawFinalizedTranscript,
+          now: v.value0,
+          diagnostics: recordEntry(resetEntry)(v1.diagnostics),
+          environment: v1.environment,
+          keepAwake: v1.keepAwake
+        };
+      }
+      ;
+      if (v instanceof LoadSession) {
+        return {
+          captions: v1.captions,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          totalWords: max1(0)(v.value0.totalWords),
+          firstStartedAt: v.value0.firstStartedAt,
+          wordEvents: v.value0.wordEvents,
+          eventLog: takeEnd(eventLogLimit)(v.value0.eventLog),
+          currentIntervalWords: 0,
+          currentIntervalStart: Nothing.value,
+          listening: false
+        };
+      }
+      ;
+      if (v instanceof SetKeepAwake) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          keepAwake: v.value0,
+          keepAwakeStatus: function() {
+            if (v.value0) {
+              return v1.keepAwakeStatus;
+            }
+            ;
+            return idleKeepAwakeStatus;
+          }()
+        };
+      }
+      ;
+      if (v instanceof SetKeepAwakeStatus) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          keepAwakeStatus: v.value0
+        };
+      }
+      ;
+      if (v instanceof SetWakeLockHeld) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          wakeLockHeld: v.value0
+        };
+      }
+      ;
+      if (v instanceof HandleRecognitionError) {
+        var errorEntry = {
+          timestamp: v.value0,
+          label: "recognition.onerror",
+          detail: renderRecognitionErrorDiagnosticDetail(v.value1)(v.value2)
+        };
+        var sessionWithDiagnostic = {
+          captions: v1.captions,
+          completedActiveMs: v1.completedActiveMs,
+          copyStatus: v1.copyStatus,
+          currentIntervalStart: v1.currentIntervalStart,
+          currentIntervalWords: v1.currentIntervalWords,
+          environment: v1.environment,
+          errorBanner: v1.errorBanner,
+          eventLog: v1.eventLog,
+          firstStartedAt: v1.firstStartedAt,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          lastError: v1.lastError,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          wakeLockHeld: v1.wakeLockHeld,
+          wordEvents: v1.wordEvents,
+          diagnostics: recordEntry(errorEntry)(v1.diagnostics),
+          now: v.value0
+        };
+        var classified = classifyRecognitionError(v.value1);
+        var bannerText = recognitionErrorBannerText(classified);
+        var $107 = isTransient(classified);
+        if ($107) {
+          return sessionWithDiagnostic;
+        }
+        ;
+        var $108 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($108) {
+          var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
+          return {
+            listening: stopped.listening,
+            totalWords: stopped.totalWords,
+            captions: stopped.captions,
+            wordEvents: stopped.wordEvents,
+            eventLog: stopped.eventLog,
+            currentIntervalWords: stopped.currentIntervalWords,
+            firstStartedAt: stopped.firstStartedAt,
+            currentIntervalStart: stopped.currentIntervalStart,
+            completedActiveMs: stopped.completedActiveMs,
+            now: stopped.now,
+            lastError: stopped.lastError,
+            diagnostics: stopped.diagnostics,
+            environment: stopped.environment,
+            copyStatus: stopped.copyStatus,
+            keepAwake: stopped.keepAwake,
+            keepAwakeStatus: stopped.keepAwakeStatus,
+            wakeLockHeld: stopped.wakeLockHeld,
+            lastRawFinalizedTranscript: stopped.lastRawFinalizedTranscript,
+            errorBanner: bannerText
+          };
+        }
+        ;
+        return {
+          listening: sessionWithDiagnostic.listening,
+          totalWords: sessionWithDiagnostic.totalWords,
+          captions: sessionWithDiagnostic.captions,
+          wordEvents: sessionWithDiagnostic.wordEvents,
+          eventLog: sessionWithDiagnostic.eventLog,
+          currentIntervalWords: sessionWithDiagnostic.currentIntervalWords,
+          firstStartedAt: sessionWithDiagnostic.firstStartedAt,
+          currentIntervalStart: sessionWithDiagnostic.currentIntervalStart,
+          completedActiveMs: sessionWithDiagnostic.completedActiveMs,
+          now: sessionWithDiagnostic.now,
+          lastError: sessionWithDiagnostic.lastError,
+          diagnostics: sessionWithDiagnostic.diagnostics,
+          environment: sessionWithDiagnostic.environment,
+          copyStatus: sessionWithDiagnostic.copyStatus,
+          keepAwake: sessionWithDiagnostic.keepAwake,
+          keepAwakeStatus: sessionWithDiagnostic.keepAwakeStatus,
+          wakeLockHeld: sessionWithDiagnostic.wakeLockHeld,
+          lastRawFinalizedTranscript: sessionWithDiagnostic.lastRawFinalizedTranscript,
+          errorBanner: bannerText
+        };
+      }
+      ;
+      if (v instanceof ClearErrorBanner) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          errorBanner: idleErrorBanner
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 223, column 1 - line 223, column 39): " + [v.constructor.name, v1.constructor.name]);
+    };
   };
   var activeListeningMs = function(session) {
     return session.completedActiveMs + function() {
@@ -2894,7 +3559,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 394, column 31 - line 396, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 496, column 31 - line 498, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -2911,18 +3576,18 @@
 
   // output/WordMeter.Capability.SessionState/index.js
   var bind4 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask3 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect5 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var ask4 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect6 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var updateSession = function(dict) {
     return dict.updateSession;
   };
   var sessionStateAppM = {
-    readCurrentSession: /* @__PURE__ */ bind4(ask3)(function(applicationEnvironment) {
-      return liftEffect5(read(applicationEnvironment.sessionRef));
+    readCurrentSession: /* @__PURE__ */ bind4(ask4)(function(applicationEnvironment) {
+      return liftEffect6(read(applicationEnvironment.sessionRef));
     }),
     updateSession: function(action) {
-      return bind4(ask3)(function(applicationEnvironment) {
-        return liftEffect5(modify_(reduce(action))(applicationEnvironment.sessionRef));
+      return bind4(ask4)(function(applicationEnvironment) {
+        return liftEffect6(modify_(reduce(action))(applicationEnvironment.sessionRef));
       });
     },
     Monad0: function() {
@@ -3030,7 +3695,7 @@
   };
 
   // output/WordMeter.FFI.Storage/index.js
-  var map5 = /* @__PURE__ */ map(functorEffect);
+  var map7 = /* @__PURE__ */ map(functorEffect);
   var interpretRead = function(key) {
     return function(outcome) {
       if (outcome.tag === "ok") {
@@ -3049,7 +3714,7 @@
     };
   };
   var readPersistedString = function(key) {
-    return map5(interpretRead(key))(readPersistedStringImpl(key));
+    return map7(interpretRead(key))(readPersistedStringImpl(key));
   };
   var interpretMutation = function(outcome) {
     if (outcome.tag === "ok") {
@@ -3064,11 +3729,11 @@
   };
   var writePersistedString = function(key) {
     return function(payload) {
-      return map5(interpretMutation)(writePersistedStringImpl(key)(payload));
+      return map7(interpretMutation)(writePersistedStringImpl(key)(payload));
     };
   };
   var clearPersistedString = function(key) {
-    return map5(interpretMutation)(clearPersistedStringImpl(key));
+    return map7(interpretMutation)(clearPersistedStringImpl(key));
   };
 
   // output/Data.Argonaut.Core/foreign.js
@@ -3278,7 +3943,7 @@
     };
   });
   var thawST = _copyST;
-  var singleton2 = function(k) {
+  var singleton3 = function(k) {
     return function(v) {
       return runST(bindFlipped2(poke2(k)(v))(newImpl));
     };
@@ -3375,15 +4040,15 @@
   var traversableWithIndexObject = {
     traverseWithIndex: function(dictApplicative) {
       var Apply0 = dictApplicative.Apply0();
-      var apply2 = apply(Apply0);
-      var map11 = map(Apply0.Functor0());
+      var apply3 = apply(Apply0);
+      var map13 = map(Apply0.Functor0());
       var pure1 = pure(dictApplicative);
       return function(f) {
         return function(ms) {
           return fold2(function(acc) {
             return function(k) {
               return function(v) {
-                return apply2(map11(flip(insert(k)))(acc))(f(k)(v));
+                return apply3(map13(flip(insert(k)))(acc))(f(k)(v));
               };
             };
           })(pure1(empty2))(ms);
@@ -3431,7 +4096,7 @@
   }();
   var jsonSingletonObject = function(key) {
     return function(val) {
-      return id(singleton2(key)(val));
+      return id(singleton3(key)(val));
     };
   };
   var jsonEmptyObject = /* @__PURE__ */ id(empty2);
@@ -3575,7 +4240,7 @@
 
   // output/Data.Argonaut.Decode.Decoders/index.js
   var pure2 = /* @__PURE__ */ pure(applicativeEither);
-  var map6 = /* @__PURE__ */ map(functorEither);
+  var map8 = /* @__PURE__ */ map(functorEither);
   var lmap2 = /* @__PURE__ */ lmap(bifunctorEither);
   var composeKleisliFlipped2 = /* @__PURE__ */ composeKleisliFlipped(bindEither);
   var traverse5 = /* @__PURE__ */ traverse(traversableObject)(applicativeEither);
@@ -3602,7 +4267,7 @@
       }
       ;
       if (otherwise) {
-        return map6(Just.create)(decoder(json));
+        return map8(Just.create)(decoder(json));
       }
       ;
       throw new Error("Failed pattern match at Data.Argonaut.Decode.Decoders (line 37, column 1 - line 41, column 38): " + [decoder.constructor.name, json.constructor.name]);
@@ -3679,7 +4344,7 @@
   // output/Data.Argonaut.Decode.Class/index.js
   var bind5 = /* @__PURE__ */ bind(bindEither);
   var lmap3 = /* @__PURE__ */ lmap(bifunctorEither);
-  var map7 = /* @__PURE__ */ map(functorMaybe);
+  var map9 = /* @__PURE__ */ map(functorMaybe);
   var gDecodeJsonNil = {
     gDecodeJson: function(v) {
       return function(v1) {
@@ -3776,7 +4441,7 @@
     var decodeJson1 = decodeJson(dictDecodeJson);
     return {
       decodeJsonField: function(j) {
-        return map7(decodeJson1)(j);
+        return map9(decodeJson1)(j);
       }
     };
   };
@@ -3816,7 +4481,7 @@
   }();
 
   // output/Data.Argonaut.Encode.Encoders/index.js
-  var map8 = /* @__PURE__ */ map(functorArray);
+  var map10 = /* @__PURE__ */ map(functorArray);
   var extend2 = function(encoder) {
     return function(v) {
       var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))(function() {
@@ -3848,7 +4513,7 @@
     return id(toNumber($53));
   };
   var encodeArray = function(encoder) {
-    var $58 = map8(encoder);
+    var $58 = map10(encoder);
     return function($59) {
       return id($58($59));
     };
@@ -4074,8 +4739,8 @@
 
   // output/WordMeter.Capability.Storage/index.js
   var bind7 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask4 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect6 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var pure4 = /* @__PURE__ */ pure(/* @__PURE__ */ applicativeReaderT(applicativeEffect));
   var LoadStorageError = /* @__PURE__ */ function() {
     function LoadStorageError2(value0) {
@@ -4098,8 +4763,8 @@
     return LoadDecodeError2;
   }();
   var storageAppM = {
-    loadPersistedSnapshot: /* @__PURE__ */ bind7(ask4)(function() {
-      return bind7(liftEffect6(readPersistedString(storageKey)))(function(raw) {
+    loadPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
+      return bind7(liftEffect7(readPersistedString(storageKey)))(function(raw) {
         return pure4(function() {
           if (raw instanceof Left && raw.value0 instanceof MissingKey) {
             return new Right(Nothing.value);
@@ -4127,12 +4792,12 @@
       });
     }),
     persistSnapshot: function(persisted) {
-      return bind7(ask4)(function() {
-        return liftEffect6(writePersistedString(storageKey)(encodePersistedData(persisted)));
+      return bind7(ask5)(function() {
+        return liftEffect7(writePersistedString(storageKey)(encodePersistedData(persisted)));
       });
     },
-    clearPersistedSnapshot: /* @__PURE__ */ bind7(ask4)(function() {
-      return liftEffect6(clearPersistedString(storageKey));
+    clearPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
+      return liftEffect7(clearPersistedString(storageKey));
     }),
     Monad0: function() {
       return monadAppM;
@@ -4160,7 +4825,7 @@
   };
 
   // output/WordMeter.FFI.WakeLock/foreign.js
-  var describeFailure = (error2) => {
+  var describeFailure2 = (error2) => {
     if (error2 == null) return "unknown error";
     if (typeof error2 === "string") return error2;
     if (error2.name) return String(error2.name);
@@ -4172,7 +4837,7 @@
     navigator.wakeLock.request("screen").then((sentinel) => {
       onSentinel(sentinel)();
     }).catch((reason) => {
-      onError(describeFailure(reason))();
+      onError(describeFailure2(reason))();
     });
   };
   var attachSentinelReleaseListener = (sentinel) => (handler) => () => {
@@ -4187,13 +4852,13 @@
         result.then(() => {
           onReleased();
         }).catch((reason) => {
-          onError(describeFailure(reason))();
+          onError(describeFailure2(reason))();
         });
       } else {
         onReleased();
       }
     } catch (error2) {
-      onError(describeFailure(error2))();
+      onError(describeFailure2(error2))();
     }
   };
   var sentinelsEqual = (left) => (right) => left === right;
@@ -4229,9 +4894,9 @@
   };
 
   // output/WordMeter.Capability.WakeLock/index.js
-  var bind1 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var bind12 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask6 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect8 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var requestScreenWakeLock2 = function(dict) {
     return dict.requestScreenWakeLock;
   };
@@ -4309,16 +4974,16 @@
     requestScreenWakeLock: function(onAcquired) {
       return function(onError) {
         return function(onAutoReleased) {
-          return bind1(ask5)(function(environment) {
-            return liftEffect7(requestSentinel(environment)(onAcquired)(onError)(onAutoReleased));
+          return bind12(ask6)(function(environment) {
+            return liftEffect8(requestSentinel(environment)(onAcquired)(onError)(onAutoReleased));
           });
         };
       };
     },
     releaseScreenWakeLock: function(onReleased) {
       return function(onError) {
-        return bind1(ask5)(function(environment) {
-          return liftEffect7(releaseHeldSentinel(environment)(onReleased)(onError));
+        return bind12(ask6)(function(environment) {
+          return liftEffect8(releaseHeldSentinel(environment)(onReleased)(onError));
         });
       };
     },
@@ -4341,7 +5006,7 @@
   };
 
   // output/WordMeter.FFI.Confirm/index.js
-  var map9 = /* @__PURE__ */ map(functorEffect);
+  var map11 = /* @__PURE__ */ map(functorEffect);
   var ConfirmUnavailable = /* @__PURE__ */ function() {
     function ConfirmUnavailable2() {
     }
@@ -4382,7 +5047,7 @@
     return new Left(new ConfirmException(outcome.detail));
   };
   var askForConfirmation = function(prompt) {
-    return map9(interpretConfirm)(askForConfirmationImpl(prompt));
+    return map11(interpretConfirm)(askForConfirmationImpl(prompt));
   };
 
   // output/WordMeter.FFI.Visibility/foreign.js
@@ -4437,7 +5102,7 @@
 
   // output/WordMeter.TestHook/index.js
   var pure5 = /* @__PURE__ */ pure(applicativeEffect);
-  var map10 = /* @__PURE__ */ map(functorEffect);
+  var map12 = /* @__PURE__ */ map(functorEffect);
   var firstStartedOrNaN = function(session) {
     return fromMaybe(0 / 0)(session.firstStartedAt);
   };
@@ -4495,28 +5160,28 @@
       tick: function(timestamp) {
         return v.dispatch(new Tick(timestamp));
       },
-      getTotalWords: map10(function(v1) {
+      getTotalWords: map12(function(v1) {
         return v1.totalWords;
       })(v.readSession),
-      getListening: map10(function(v1) {
+      getListening: map12(function(v1) {
         return v1.listening;
       })(v.readSession),
       getVersion: pure5(v.version),
-      getRateShort: map10(shortRate)(v.readSession),
-      getRateLong: map10(longRate)(v.readSession),
-      getRateOverall: map10(overallRate)(v.readSession),
-      getDurationMs: map10(activeListeningMs)(v.readSession),
-      getFirstStartedAt: map10(firstStartedOrNaN)(v.readSession),
-      getEventLogLength: map10(function(s) {
+      getRateShort: map12(shortRate)(v.readSession),
+      getRateLong: map12(longRate)(v.readSession),
+      getRateOverall: map12(overallRate)(v.readSession),
+      getDurationMs: map12(activeListeningMs)(v.readSession),
+      getFirstStartedAt: map12(firstStartedOrNaN)(v.readSession),
+      getEventLogLength: map12(function(s) {
         return length(s.eventLog);
       })(v.readSession),
       getEventLogLimit: pure5(eventLogLimit),
-      getDiagnosticsText: map10(diagnosticsText)(v.readSession),
-      getDiagnosticsLength: map10(function(s) {
+      getDiagnosticsText: map12(diagnosticsText)(v.readSession),
+      getDiagnosticsLength: map12(function(s) {
         return length(s.diagnostics);
       })(v.readSession),
       getDiagnosticsLimit: pure5(diagnosticsLimit),
-      getCopyStatus: map10(function(v1) {
+      getCopyStatus: map12(function(v1) {
         return v1.copyStatus;
       })(v.readSession),
       requestCopyDiagnostics: v.requestCopyDiagnostics,
@@ -4525,19 +5190,19 @@
         return v.dispatch(new Reset(timestamp));
       },
       persistNow: v.persistNow,
-      getKeepAwake: map10(function(v1) {
+      getKeepAwake: map12(function(v1) {
         return v1.keepAwake;
       })(v.readSession),
       setKeepAwake: v.requestSetKeepAwake,
-      getKeepAwakeStatus: map10(function(v1) {
+      getKeepAwakeStatus: map12(function(v1) {
         return v1.keepAwakeStatus;
       })(v.readSession),
-      getWakeLockHeld: map10(function(v1) {
+      getWakeLockHeld: map12(function(v1) {
         return v1.wakeLockHeld;
       })(v.readSession),
       simulateVisibilityVisible: v.simulateVisibilityVisible,
       simulateRecognitionError: v.simulateRecognitionError,
-      getErrorBanner: map10(function(v1) {
+      getErrorBanner: map12(function(v1) {
         return v1.errorBanner;
       })(v.readSession)
     });
@@ -4545,16 +5210,17 @@
 
   // output/WordMeter.Main/index.js
   var discard3 = /* @__PURE__ */ discard(discardUnit);
+  var show4 = /* @__PURE__ */ show(showInt);
   var pure6 = /* @__PURE__ */ pure(applicativeEffect);
   var currentTimeMillis3 = /* @__PURE__ */ currentTimeMillis2(clockAppM);
   var recordWakeLockEvent = function(dictClock) {
-    var bind12 = bind(dictClock.Monad0().Bind1());
+    var bind13 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(label) {
         return function(detail) {
-          return bind12(currentTimeMillis1)(function(timestamp) {
+          return bind13(currentTimeMillis1)(function(timestamp) {
             return updateSession2(new RecordDiagnostic(timestamp, label, detail));
           });
         };
@@ -4562,38 +5228,52 @@
     };
   };
   var recordStorageFailure = function(dictClock) {
-    var bind12 = bind(dictClock.Monad0().Bind1());
+    var bind13 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(label) {
         return function(failure) {
-          return bind12(currentTimeMillis1)(function(timestamp) {
+          return bind13(currentTimeMillis1)(function(timestamp) {
             return updateSession2(new RecordDiagnostic(timestamp, label + " failure", renderStorageError(failure)));
           });
         };
       };
     };
   };
+  var recordRecognitionEvent = function(dictClock) {
+    var bind13 = bind(dictClock.Monad0().Bind1());
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    return function(dictSessionState) {
+      var updateSession2 = updateSession(dictSessionState);
+      return function(label) {
+        return function(detail) {
+          return bind13(currentTimeMillis1)(function(timestamp) {
+            return updateSession2(new RecordDiagnostic(timestamp, label, detail));
+          });
+        };
+      };
+    };
+  };
   var recordLoadFailure = function(dictClock) {
-    var bind12 = bind(dictClock.Monad0().Bind1());
+    var bind13 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(failure) {
-        return bind12(currentTimeMillis1)(function(timestamp) {
+        return bind13(currentTimeMillis1)(function(timestamp) {
           return updateSession2(new RecordDiagnostic(timestamp, "persist load failure", renderLoadError(failure)));
         });
       };
     };
   };
   var recordConfirmFailure = function(dictClock) {
-    var bind12 = bind(dictClock.Monad0().Bind1());
+    var bind13 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(failure) {
-        return bind12(currentTimeMillis1)(function(timestamp) {
+        return bind13(currentTimeMillis1)(function(timestamp) {
           return updateSession2(new RecordDiagnostic(timestamp, "reset confirm failure", renderConfirmError(failure)));
         });
       };
@@ -4601,7 +5281,7 @@
   };
   var persistCurrentSession = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind12 = bind(Monad0.Bind1());
+    var bind13 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
     var recordStorageFailure1 = recordStorageFailure(dictClock);
     return function(dictSessionState) {
@@ -4609,8 +5289,8 @@
       var recordStorageFailure2 = recordStorageFailure1(dictSessionState);
       return function(dictStorage) {
         var persistSnapshot2 = persistSnapshot(dictStorage);
-        return bind12(readCurrentSession2)(function(session) {
-          return bind12(persistSnapshot2(toPersistedData(session)))(function(outcome) {
+        return bind13(readCurrentSession2)(function(session) {
+          return bind13(persistSnapshot2(toPersistedData(session)))(function(outcome) {
             if (outcome instanceof Right) {
               return pure1(unit);
             }
@@ -4619,7 +5299,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 181, column 3 - line 183, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 207, column 3 - line 209, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -4629,8 +5309,8 @@
   var persistAfterAction = function(dictClock) {
     var persistCurrentSession2 = persistCurrentSession(dictClock);
     var Monad0 = dictClock.Monad0();
-    var bind12 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
+    var bind13 = bind(Monad0.Bind1());
     var recordStorageFailure1 = recordStorageFailure(dictClock);
     return function(dictSessionState) {
       var persistCurrentSession3 = persistCurrentSession2(dictSessionState);
@@ -4647,8 +5327,16 @@
             return persistCurrentSession4;
           }
           ;
+          if (v instanceof IntegrateFinalizedTranscript) {
+            return persistCurrentSession4;
+          }
+          ;
+          if (v instanceof ResetRecognitionDedupState) {
+            return pure1(unit);
+          }
+          ;
           if (v instanceof Reset) {
-            return bind12(clearPersistedSnapshot2)(function(outcome) {
+            return bind13(clearPersistedSnapshot2)(function(outcome) {
               if (outcome instanceof Right) {
                 return pure1(unit);
               }
@@ -4657,7 +5345,7 @@
                 return recordStorageFailure2("persist clear")(outcome.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Main (line 158, column 3 - line 160, column 79): " + [outcome.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Main (line 184, column 3 - line 186, column 79): " + [outcome.constructor.name]);
             });
           }
           ;
@@ -4701,19 +5389,64 @@
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 147, column 1 - line 153, column 12): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Main (line 171, column 1 - line 177, column 12): " + [v.constructor.name]);
         };
+      };
+    };
+  };
+  var onRecognitionStopFailure = function(dictClock) {
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    return function(dictSessionState) {
+      var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+      return function(failure) {
+        return recordRecognitionEvent2("recognition stop failure")(renderRecognitionStopError(failure));
+      };
+    };
+  };
+  var stopRecognitionForSession = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    var onRecognitionStopFailure1 = onRecognitionStopFailure(dictClock);
+    return function(dictSessionState) {
+      var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+      var onRecognitionStopFailure2 = onRecognitionStopFailure1(dictSessionState);
+      return function(dictRecognition) {
+        var cancelAutoRestart2 = cancelAutoRestart(dictRecognition);
+        var stopRecognition2 = stopRecognition(dictRecognition);
+        return function(_handlers) {
+          return discard22(cancelAutoRestart2)(function() {
+            return stopRecognition2(recordRecognitionEvent2("recognition stopped")(""))(onRecognitionStopFailure2);
+          });
+        };
+      };
+    };
+  };
+  var onRecognitionStartFailure = function(dictClock) {
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    return function(dictSessionState) {
+      var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+      return function(failure) {
+        return recordRecognitionEvent2("recognition start failure")(renderRecognitionStartError(failure));
+      };
+    };
+  };
+  var onRecognitionConstructFailure = function(dictClock) {
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    return function(dictSessionState) {
+      var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+      return function(failure) {
+        return recordRecognitionEvent2("recognition construct failure")(renderRecognitionConstructError(failure));
       };
     };
   };
   var hostElementId = "word-meter";
   var rerender = function(dictDomMount) {
-    var bind12 = bind(dictDomMount.Monad0().Bind1());
+    var bind13 = bind(dictDomMount.Monad0().Bind1());
     var mountToHost2 = mountToHost(dictDomMount);
     return function(dictSessionState) {
       var readCurrentSession2 = readCurrentSession(dictSessionState);
       return function(handlers) {
-        return bind12(readCurrentSession2)(function(session) {
+        return bind13(readCurrentSession2)(function(session) {
           return mountToHost2(hostElementId)(view(handlers)(session));
         });
       };
@@ -4722,7 +5455,7 @@
   var startApplication = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind12 = bind(Bind1);
+    var bind13 = bind(Bind1);
     var discard22 = discard3(Bind1);
     var pure1 = pure(Monad0.Applicative0());
     var recordLoadFailure1 = recordLoadFailure(dictClock);
@@ -4738,9 +5471,9 @@
           return function(dictStorage) {
             var loadPersistedSnapshot2 = loadPersistedSnapshot(dictStorage);
             return function(handlers) {
-              return bind12(captureEnvironmentSnapshot3(version))(function(snapshot) {
+              return bind13(captureEnvironmentSnapshot3(version))(function(snapshot) {
                 return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
-                  return bind12(loadPersistedSnapshot2)(function(restored) {
+                  return bind13(loadPersistedSnapshot2)(function(restored) {
                     return discard22(function() {
                       if (restored instanceof Right && restored.value0 instanceof Nothing) {
                         return pure1(unit);
@@ -4754,9 +5487,9 @@
                         return recordLoadFailure2(restored.value0);
                       }
                       ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 124, column 3 - line 127, column 54): " + [restored.constructor.name]);
+                      throw new Error("Failed pattern match at WordMeter.Main (line 148, column 3 - line 151, column 54): " + [restored.constructor.name]);
                     }())(function() {
-                      return bind12(currentTimeMillis1)(function(initTimestamp) {
+                      return bind13(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
                           return rerender2(handlers);
                         });
@@ -4800,7 +5533,7 @@
   var handleCopyDiagnostics = function(dictClock) {
     var dispatch2 = dispatch(dictClock);
     return function(dictClipboard) {
-      var bind12 = bind(dictClipboard.Monad0().Bind1());
+      var bind13 = bind(dictClipboard.Monad0().Bind1());
       var writeClipboardText2 = writeClipboardText(dictClipboard);
       return function(dictDomMount) {
         var dispatch3 = dispatch2(dictDomMount);
@@ -4810,7 +5543,7 @@
           return function(dictStorage) {
             var dispatch5 = dispatch4(dictStorage);
             return function(handlers) {
-              return bind12(readCurrentSession2)(function(session) {
+              return bind13(readCurrentSession2)(function(session) {
                 return writeClipboardText2(diagnosticsText(session))(dispatch5(handlers)(new SetCopyStatus("Copied!")))(function(reason) {
                   return dispatch5(handlers)(new SetCopyStatus("Copy failed: " + reason));
                 });
@@ -4891,7 +5624,7 @@
   };
   var maybeAcquireWakeLock = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind12 = bind(Monad0.Bind1());
+    var bind13 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
     var onWakeLockAcquired1 = onWakeLockAcquired(dictClock);
     var onWakeLockError1 = onWakeLockError(dictClock);
@@ -4912,9 +5645,9 @@
           return function(dictWakeLock) {
             var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
             return function(handlers) {
-              return bind12(readCurrentSession2)(function(session) {
-                var $419 = !session.keepAwake;
-                if ($419) {
+              return bind13(readCurrentSession2)(function(session) {
+                var $559 = !session.keepAwake;
+                if ($559) {
                   return pure1(unit);
                 }
                 ;
@@ -4928,7 +5661,7 @@
   };
   var handleVisibilityVisible = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind12 = bind(Monad0.Bind1());
+    var bind13 = bind(Monad0.Bind1());
     var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
     return function(dictDomMount) {
@@ -4941,9 +5674,9 @@
           return function(dictWakeLock) {
             var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
             return function(handlers) {
-              return bind12(readCurrentSession2)(function(session) {
-                var $420 = session.listening && (session.keepAwake && !session.wakeLockHeld);
-                if ($420) {
+              return bind13(readCurrentSession2)(function(session) {
+                var $560 = session.listening && (session.keepAwake && !session.wakeLockHeld);
+                if ($560) {
                   return maybeAcquireWakeLock5(handlers);
                 }
                 ;
@@ -5004,7 +5737,7 @@
     };
   };
   var releaseHeldWakeLock = function(dictClock) {
-    var bind12 = bind(dictClock.Monad0().Bind1());
+    var bind13 = bind(dictClock.Monad0().Bind1());
     var dispatch2 = dispatch(dictClock);
     var onWakeLockReleased1 = onWakeLockReleased(dictClock);
     var onWakeLockReleaseError1 = onWakeLockReleaseError(dictClock);
@@ -5024,9 +5757,9 @@
           return function(dictWakeLock) {
             var releaseScreenWakeLock2 = releaseScreenWakeLock(dictWakeLock);
             return function(handlers) {
-              return bind12(readCurrentSession2)(function(session) {
-                var $421 = !session.wakeLockHeld;
-                if ($421) {
+              return bind13(readCurrentSession2)(function(session) {
+                var $561 = !session.wakeLockHeld;
+                if ($561) {
                   return dispatch5(handlers)(new SetKeepAwakeStatus(idleKeepAwakeStatus));
                 }
                 ;
@@ -5041,11 +5774,12 @@
   var handleRecognitionError = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind12 = bind(Bind1);
-    var map11 = map(Bind1.Apply0().Functor0());
+    var bind13 = bind(Bind1);
+    var map13 = map(Bind1.Apply0().Functor0());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
+    var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
     var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
     return function(dictDomMount) {
@@ -5054,33 +5788,39 @@
       return function(dictSessionState) {
         var readCurrentSession2 = readCurrentSession(dictSessionState);
         var dispatch4 = dispatch3(dictSessionState);
+        var stopRecognitionForSession2 = stopRecognitionForSession1(dictSessionState);
         var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
         return function(dictStorage) {
           var dispatch5 = dispatch4(dictStorage);
           var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
           return function(dictWakeLock) {
             var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-            return function(handlers) {
-              return function(code) {
-                return function(message2) {
-                  return bind12(map11(function(v) {
-                    return v.listening;
-                  })(readCurrentSession2))(function(wasListening) {
-                    return bind12(currentTimeMillis1)(function(timestamp) {
-                      return discard22(dispatch5(handlers)(new HandleRecognitionError(timestamp, code, message2)))(function() {
-                        return bind12(map11(function(v) {
-                          return v.listening;
-                        })(readCurrentSession2))(function(stillListening) {
-                          var $422 = wasListening && !stillListening;
-                          if ($422) {
-                            return releaseHeldWakeLock5(handlers);
-                          }
-                          ;
-                          return pure1(unit);
+            return function(dictRecognition) {
+              var stopRecognitionForSession3 = stopRecognitionForSession2(dictRecognition);
+              return function(handlers) {
+                return function(code) {
+                  return function(message2) {
+                    return bind13(map13(function(v) {
+                      return v.listening;
+                    })(readCurrentSession2))(function(wasListening) {
+                      return bind13(currentTimeMillis1)(function(timestamp) {
+                        return discard22(dispatch5(handlers)(new HandleRecognitionError(timestamp, code, message2)))(function() {
+                          return bind13(map13(function(v) {
+                            return v.listening;
+                          })(readCurrentSession2))(function(stillListening) {
+                            var $562 = wasListening && !stillListening;
+                            if ($562) {
+                              return discard22(stopRecognitionForSession3(handlers))(function() {
+                                return releaseHeldWakeLock5(handlers);
+                              });
+                            }
+                            ;
+                            return pure1(unit);
+                          });
                         });
                       });
                     });
-                  });
+                  };
                 };
               };
             };
@@ -5089,14 +5829,15 @@
       };
     };
   };
-  var handleRecognitionError1 = /* @__PURE__ */ handleRecognitionError(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var handleRecognitionError1 = /* @__PURE__ */ handleRecognitionError(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM);
   var handleReset = function(dictMonadEffect) {
-    var liftEffect8 = liftEffect(dictMonadEffect);
+    var liftEffect9 = liftEffect(dictMonadEffect);
     return function(dictClock) {
       var Monad0 = dictClock.Monad0();
       var Bind1 = Monad0.Bind1();
-      var bind12 = bind(Bind1);
+      var bind13 = bind(Bind1);
       var discard22 = discard3(Bind1);
+      var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
       var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
       var currentTimeMillis1 = currentTimeMillis2(dictClock);
       var dispatch2 = dispatch(dictClock);
@@ -5106,6 +5847,7 @@
         var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
         var dispatch3 = dispatch2(dictDomMount);
         return function(dictSessionState) {
+          var stopRecognitionForSession2 = stopRecognitionForSession1(dictSessionState);
           var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
           var dispatch4 = dispatch3(dictSessionState);
           var recordConfirmFailure2 = recordConfirmFailure1(dictSessionState);
@@ -5114,26 +5856,31 @@
             var dispatch5 = dispatch4(dictStorage);
             return function(dictWakeLock) {
               var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-              return function(handlers) {
-                return bind12(liftEffect8(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
-                  if (outcome instanceof Right && outcome.value0) {
-                    return discard22(releaseHeldWakeLock5(handlers))(function() {
-                      return bind12(currentTimeMillis1)(function(timestamp) {
-                        return dispatch5(handlers)(new Reset(timestamp));
+              return function(dictRecognition) {
+                var stopRecognitionForSession3 = stopRecognitionForSession2(dictRecognition);
+                return function(handlers) {
+                  return bind13(liftEffect9(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
+                    if (outcome instanceof Right && outcome.value0) {
+                      return discard22(stopRecognitionForSession3(handlers))(function() {
+                        return discard22(releaseHeldWakeLock5(handlers))(function() {
+                          return bind13(currentTimeMillis1)(function(timestamp) {
+                            return dispatch5(handlers)(new Reset(timestamp));
+                          });
+                        });
                       });
-                    });
-                  }
-                  ;
-                  if (outcome instanceof Right && !outcome.value0) {
-                    return pure1(unit);
-                  }
-                  ;
-                  if (outcome instanceof Left) {
-                    return recordConfirmFailure2(outcome.value0);
-                  }
-                  ;
-                  throw new Error("Failed pattern match at WordMeter.Main (line 270, column 3 - line 276, column 63): " + [outcome.constructor.name]);
-                });
+                    }
+                    ;
+                    if (outcome instanceof Right && !outcome.value0) {
+                      return pure1(unit);
+                    }
+                    ;
+                    if (outcome instanceof Left) {
+                      return recordConfirmFailure2(outcome.value0);
+                    }
+                    ;
+                    throw new Error("Failed pattern match at WordMeter.Main (line 305, column 3 - line 312, column 63): " + [outcome.constructor.name]);
+                  });
+                };
               };
             };
           };
@@ -5141,13 +5888,13 @@
       };
     };
   };
-  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM);
   var handleSetKeepAwake = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
-    var bind12 = bind(Bind1);
+    var bind13 = bind(Bind1);
     var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
     var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
@@ -5170,7 +5917,7 @@
             return function(handlers) {
               return function(enabled) {
                 return discard22(dispatch5(handlers)(new SetKeepAwake(enabled)))(function() {
-                  return bind12(readCurrentSession2)(function(session) {
+                  return bind13(readCurrentSession2)(function(session) {
                     if (enabled && session.listening) {
                       return maybeAcquireWakeLock5(handlers);
                     }
@@ -5183,7 +5930,7 @@
                       return pure1(unit);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 291, column 3 - line 294, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 327, column 3 - line 330, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
                   });
                 });
               };
@@ -5194,52 +5941,243 @@
     };
   };
   var handleSetKeepAwake1 = /* @__PURE__ */ handleSetKeepAwake(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
-  var handleToggle = function(dictClock) {
-    var Bind1 = dictClock.Monad0().Bind1();
-    var bind12 = bind(Bind1);
-    var currentTimeMillis1 = currentTimeMillis2(dictClock);
-    var discard22 = discard3(Bind1);
-    var dispatch2 = dispatch(dictClock);
-    var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
-    var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
+  var defaultLocale = "en-US";
+  var sessionLocale = function(dictSessionState) {
+    var Monad0 = dictSessionState.Monad0();
+    var pure1 = pure(Monad0.Applicative0());
+    return bind(Monad0.Bind1())(readCurrentSession(dictSessionState))(function(session) {
+      if (session.environment instanceof Just && (session.environment.value0.navigatorLanguage !== "" && session.environment.value0.navigatorLanguage !== "(unknown)")) {
+        return pure1(session.environment.value0.navigatorLanguage);
+      }
+      ;
+      return pure1(defaultLocale);
+    });
+  };
+  var startRecognitionForSession = function(dictClock) {
+    var bind13 = bind(dictClock.Monad0().Bind1());
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
     return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
-      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
       return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
-        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
+        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+        var sessionLocale1 = sessionLocale(dictSessionState);
         return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
-          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
           return function(dictWakeLock) {
-            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
-            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-            return function(handlers) {
-              return bind12(currentTimeMillis1)(function(timestamp) {
-                return discard22(dispatch5(handlers)(new Toggle(timestamp)))(function() {
-                  return bind12(readCurrentSession2)(function(session) {
-                    if (session.listening) {
-                      return maybeAcquireWakeLock5(handlers);
-                    }
-                    ;
-                    return releaseHeldWakeLock5(handlers);
+            return function(dictRecognition) {
+              var recognitionApiAvailable3 = recognitionApiAvailable2(dictRecognition);
+              var startRecognition2 = startRecognition(dictRecognition);
+              return function(handlers) {
+                return bind13(recognitionApiAvailable3)(function(available) {
+                  var $571 = !available;
+                  if ($571) {
+                    return recordRecognitionEvent2("recognition unavailable")("no SpeechRecognition constructor");
+                  }
+                  ;
+                  return bind13(sessionLocale1)(function(locale) {
+                    return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(handlers)(locale));
                   });
                 });
-              });
+              };
             };
           };
         };
       };
     };
   };
-  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var recognitionHandlersFor = function(dictClock) {
+    var dispatch2 = dispatch(dictClock);
+    var handleRecognitionError2 = handleRecognitionError(dictClock);
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    var onRecognitionStartFailure1 = onRecognitionStartFailure(dictClock);
+    var onRecognitionConstructFailure1 = onRecognitionConstructFailure(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      var handleRecognitionError3 = handleRecognitionError2(dictDomMount);
+      return function(dictSessionState) {
+        var dispatch4 = dispatch3(dictSessionState);
+        var handleRecognitionError4 = handleRecognitionError3(dictSessionState);
+        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+        var onRecognitionStartFailure2 = onRecognitionStartFailure1(dictSessionState);
+        var onRecognitionConstructFailure2 = onRecognitionConstructFailure1(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          var handleRecognitionError5 = handleRecognitionError4(dictStorage);
+          return function(dictWakeLock) {
+            var handleRecognitionError6 = handleRecognitionError5(dictWakeLock);
+            return function(dictRecognition) {
+              var handleRecognitionError7 = handleRecognitionError6(dictRecognition);
+              return function(handlers) {
+                return function(locale) {
+                  return {
+                    locale,
+                    onResult: function(transcript) {
+                      return function(timestamp) {
+                        return dispatch5(handlers)(new IntegrateFinalizedTranscript(timestamp, transcript));
+                      };
+                    },
+                    onErrorEvent: handleRecognitionError7(handlers),
+                    onEnded: handleRecognitionEnded(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(handlers),
+                    onStarted: recordRecognitionEvent2("recognition started")("locale=" + locale),
+                    onStartFailure: onRecognitionStartFailure2,
+                    onConstructFailure: onRecognitionConstructFailure2
+                  };
+                };
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleRecognitionEnded = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var bind13 = bind(Bind1);
+    var pure1 = pure(Monad0.Applicative0());
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var dispatch4 = dispatch3(dictSessionState);
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(dictWakeLock) {
+            return function(dictRecognition) {
+              var scheduleAutoRestart2 = scheduleAutoRestart(dictRecognition);
+              return function(handlers) {
+                return discard22(dispatch5(handlers)(ResetRecognitionDedupState.value))(function() {
+                  return bind13(readCurrentSession2)(function(session) {
+                    var $572 = !session.listening;
+                    if ($572) {
+                      return pure1(unit);
+                    }
+                    ;
+                    return discard22(recordRecognitionEvent2("recognition restart scheduled")("delay=" + (show4(250) + "ms")))(function() {
+                      return scheduleAutoRestart2(fireScheduledRestart(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(handlers));
+                    });
+                  });
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var fireScheduledRestart = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var bind13 = bind(Bind1);
+    var pure1 = pure(Monad0.Applicative0());
+    var discard22 = discard3(Bind1);
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    return function(dictDomMount) {
+      return function(dictSessionState) {
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+        return function(dictStorage) {
+          return function(dictWakeLock) {
+            return function(dictRecognition) {
+              return function(handlers) {
+                return bind13(readCurrentSession2)(function(session) {
+                  var $573 = !session.listening;
+                  if ($573) {
+                    return pure1(unit);
+                  }
+                  ;
+                  return discard22(recordRecognitionEvent2("recognition restart fired")(""))(function() {
+                    return startRecognitionForSession(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(handlers);
+                  });
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleToggle = function(dictClock) {
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var bind13 = bind(Bind1);
+    var map13 = map(Bind1.Apply0().Functor0());
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
+    var pure1 = pure(Monad0.Applicative0());
+    var startRecognitionForSession1 = startRecognitionForSession(dictClock);
+    var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
+    var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
+      var startRecognitionForSession2 = startRecognitionForSession1(dictDomMount);
+      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
+      return function(dictSessionState) {
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
+        var startRecognitionForSession3 = startRecognitionForSession2(dictSessionState);
+        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
+        var stopRecognitionForSession2 = stopRecognitionForSession1(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
+          var startRecognitionForSession4 = startRecognitionForSession3(dictStorage);
+          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
+          return function(dictWakeLock) {
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
+            var startRecognitionForSession5 = startRecognitionForSession4(dictWakeLock);
+            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
+            return function(dictRecognition) {
+              var startRecognitionForSession6 = startRecognitionForSession5(dictRecognition);
+              var stopRecognitionForSession3 = stopRecognitionForSession2(dictRecognition);
+              return function(handlers) {
+                return bind13(map13(function(v) {
+                  return v.listening;
+                })(readCurrentSession2))(function(wasListening) {
+                  return bind13(currentTimeMillis1)(function(timestamp) {
+                    return discard22(dispatch5(handlers)(new Toggle(timestamp)))(function() {
+                      return bind13(readCurrentSession2)(function(session) {
+                        if (session.listening) {
+                          return discard22(maybeAcquireWakeLock5(handlers))(function() {
+                            if (wasListening) {
+                              return pure1(unit);
+                            }
+                            ;
+                            return startRecognitionForSession6(handlers);
+                          });
+                        }
+                        ;
+                        return discard22(releaseHeldWakeLock5(handlers))(function() {
+                          var $576 = !wasListening;
+                          if ($576) {
+                            return pure1(unit);
+                          }
+                          ;
+                          return stopRecognitionForSession3(handlers);
+                        });
+                      });
+                    });
+                  });
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM);
   var main = function __do() {
     var sessionRef = $$new(initialSession)();
     var wakeLockSentinelRef = $$new(Nothing.value)();
+    var recognitionInstanceRef = $$new(Nothing.value)();
+    var restartTimerRef = $$new(Nothing.value)();
     var clickHandlersRef = $$new({
       requestToggle: pure6(unit),
       requestCopyDiagnostics: pure6(unit),
@@ -5251,7 +6189,9 @@
     var readClickHandlers = read(clickHandlersRef);
     var applicationEnvironment = {
       sessionRef,
-      wakeLockSentinelRef
+      wakeLockSentinelRef,
+      recognitionInstanceRef,
+      restartTimerRef
     };
     var handlers = {
       requestToggle: function __do2() {

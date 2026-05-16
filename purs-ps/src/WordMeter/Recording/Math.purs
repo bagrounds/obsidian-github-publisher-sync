@@ -17,6 +17,7 @@ import Prelude
 
 import Data.Array (filter, foldl)
 import Data.Int as Int
+import Data.Maybe (Maybe(..))
 import Data.Number (isFinite)
 import WordMeter.Recording.Session
   ( LoggedInterval

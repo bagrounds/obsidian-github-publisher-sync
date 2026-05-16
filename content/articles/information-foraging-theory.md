@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T01:45:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a digital forest. Instead of traditional trees, the landscape features glowing, geometric data structures and floating nodes connected by thin, luminous filaments. A human silhouette stands in the foreground, holding a magnifying glass that illuminates a cluster of vibrant, bioluminescent information fruits hanging from the branches of a data-tree. The background is a soft, deep-gradient blue, representing a vast, searchable space. The aesthetic is clean, modern, and minimalist, using a color palette of deep forest greens, electric blues, and warm amber highlights to contrast the organic nature of foraging with the precision of computational modeling. Particles of light drift through the air like digital pollen, suggesting a busy, high-density environment.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🔍🍎🌲📚 Information Foraging Theory](https://www.peterpirolli.com/ewExternalFiles/31354_C01_UNCORRECTED_PROOF.pdf)  
+![articles-information-foraging-theory](../articles-information-foraging-theory.jpg)  
 ## 🤖 AI Summary  
 * 🎯 Information foraging theory aims to explain and predict how people will best shape themselves for their information environments and how those environments can best be shaped for people.  
 * 💡 The theory is guided by three maxims from Allen Newell's program of Unified Theories of Cognition: 1. 📢 Good science responds to real problems. 2. 🛠️ Good science makes a difference, providing the basis for new technology designs. 3. 🔍 Good science is in the details, aiming to produce working formal models for the analysis and prediction of observable behavior.  

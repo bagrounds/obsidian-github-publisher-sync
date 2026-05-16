@@ -39,5 +39,9 @@ export const installTestHook = (api) => () => {
       )(),
     getErrorBanner: () => api.getErrorBanner(),
     getRecognitionStatusOverride: () => api.getRecognitionStatusOverride(),
+    getCloudFallbackAttempted: () => api.getCloudFallbackAttempted(),
+    getActiveRecognitionPath: () => api.getActiveRecognitionPath(),
+    setActiveRecognitionPath: (path) =>
+      api.setActiveRecognitionPath(String(path == null ? "" : path))(),
   }
 }

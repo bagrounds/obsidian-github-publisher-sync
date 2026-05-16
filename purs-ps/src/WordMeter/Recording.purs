@@ -38,7 +38,6 @@ module WordMeter.Recording
   , resetConfirmationPrompt
   , idleErrorBanner
   ) where
-
 import Prelude
 
 import Data.Array (filter, foldl, takeEnd, unsnoc)
@@ -66,6 +65,7 @@ import WordMeter.Recognition.Delta
   ( TranscriptIntegration(..)
   , classifyFinalizedTranscript
   )
+import WordMeter.Recognition.Path (RecognitionPath)
 import WordMeter.Vdom
   ( Node
   , attribute
@@ -108,6 +108,8 @@ type Session =
   , errorBanner :: String
   , lastRawFinalizedTranscript :: String
   , recognitionStatusOverride :: String
+  , cloudFallbackAttempted :: Boolean
+  , activeRecognitionPath :: Maybe RecognitionPath
   }
 
 type Caption =
@@ -172,6 +174,8 @@ data Action
   | HandleRecognitionError Number String String
   | ClearErrorBanner
   | SetRecognitionStatusOverride String
+  | SetCloudFallbackAttempted Boolean
+  | SetActiveRecognitionPath (Maybe RecognitionPath)
 
 type Dispatch = Action -> Effect Unit
 
@@ -233,6 +237,8 @@ initialSession =
   , errorBanner: idleErrorBanner
   , lastRawFinalizedTranscript: ""
   , recognitionStatusOverride: idleRecognitionStatusOverride
+  , cloudFallbackAttempted: false
+  , activeRecognitionPath: Nothing
   }
 
 reduce :: Action -> Session -> Session
@@ -257,6 +263,8 @@ reduce (Toggle timestamp) session
           , errorBanner = idleErrorBanner
           , lastRawFinalizedTranscript = ""
           , recognitionStatusOverride = idleRecognitionStatusOverride
+          , cloudFallbackAttempted = false
+          , activeRecognitionPath = Nothing
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -432,6 +440,12 @@ reduce ClearErrorBanner session = session
 reduce (SetRecognitionStatusOverride statusText) session = session
   { recognitionStatusOverride = statusText
   }
+reduce (SetCloudFallbackAttempted attempted) session = session
+  { cloudFallbackAttempted = attempted
+  }
+reduce (SetActiveRecognitionPath path) session = session
+  { activeRecognitionPath = path
+  }
 
 -- | Close the currently open counting interval, append it to the event
 -- | log, prune captions/events, and record a stop-style diagnostic
@@ -469,6 +483,7 @@ stopListeningAt timestamp label reasonDetail session =
       , now = timestamp
       , diagnostics = recordEntry stopEntry session.diagnostics
       , recognitionStatusOverride = idleRecognitionStatusOverride
+      , activeRecognitionPath = Nothing
       }
 
 toPersistedData :: Session -> PersistedData

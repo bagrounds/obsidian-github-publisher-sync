@@ -17,7 +17,6 @@ module WordMeter.Capability.Recognition
   , scheduleAutoRestart
   , RecognitionHandlers
   , RecognitionEvent(..)
-  , RecognitionPath(..)
   , RecordingRecognitionM(..)
   , RecognitionRecording
   , runRecordingRecognitionM
@@ -45,6 +44,7 @@ import WordMeter.FFI.Recognition
   )
 import WordMeter.FFI.Recognition as FFI
 import WordMeter.FFI.Timer as Timer
+import WordMeter.Recognition.Path (RecognitionPath(..), processLocallyFor)
 
 -- | Legacy `RESTART_DELAY_MILLISECONDS`: how long the program waits
 -- | after `onend` before re-issuing `recognition.start()` to keep the
@@ -67,19 +67,8 @@ type RecognitionHandlers m =
   }
 
 -- | Which configuration of `SpeechRecognition` is currently driving a
--- | session. The slice-9b orchestrator picks `OnDevicePath` after a
--- | successful pre-flight and `CloudPath` everywhere else.
-data RecognitionPath = OnDevicePath | CloudPath
-
-derive instance eqRecognitionPath :: Eq RecognitionPath
-
-instance showRecognitionPath :: Show RecognitionPath where
-  show OnDevicePath = "OnDevicePath"
-  show CloudPath = "CloudPath"
-
-processLocallyFor :: RecognitionPath -> Boolean
-processLocallyFor OnDevicePath = true
-processLocallyFor CloudPath = false
+-- | session. Lives in `WordMeter.Recognition.Path` so the reducer can
+-- | reference it without depending on this capability module.
 
 class Monad m <= Recognition m where
   recognitionApiAvailable :: m Boolean

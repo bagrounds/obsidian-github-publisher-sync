@@ -703,6 +703,97 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 })
 
+test.describe("Word Meter — PureScript build — slice 9c — language-not-supported retry", () => {
+  test("on-device language-not-supported swaps to cloud once without showing a banner", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    // Start listening. With the on-device pre-flight disabled in the
+    // fixture, the orchestrator lands on the cloud path. Manually
+    // pin the active path back to "on-device" through the test hook
+    // so we can drive the slice-9c retry branch deterministically.
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    await page.evaluate(() =>
+      window.__wordMeter.setActiveRecognitionPath("on-device"),
+    )
+    expect(
+      await page.evaluate(() => window.__wordMeter.getActiveRecognitionPath()),
+    ).toBe("on-device")
+
+    // Fire the runtime language-not-supported error. The retry branch
+    // must keep listening, leave the banner empty, set the flag, and
+    // swap the active path back to cloud.
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("language-not-supported", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText("")
+    expect(await page.evaluate(() => window.__wordMeter.getListening())).toBe(true)
+    expect(
+      await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
+    ).toBe(true)
+    expect(
+      await page.evaluate(() => window.__wordMeter.getActiveRecognitionPath()),
+    ).toBe("cloud")
+    const diagnostics: string = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(
+      /language-not-supported at runtime — falling back to cloud/.test(diagnostics),
+    ).toBe(true)
+    expect(/code=language-not-supported/.test(diagnostics)).toBe(true)
+  })
+
+  test("a second language-not-supported on the cloud path surfaces the banner (no infinite retry)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    // First strike: from the on-device path the orchestrator swallows
+    // the error and swaps to cloud. The slice-9c flag is now consumed.
+    await page.evaluate(() =>
+      window.__wordMeter.setActiveRecognitionPath("on-device"),
+    )
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("language-not-supported", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText("")
+
+    // Second strike: the path is now cloud; the slice-9c branch must
+    // not fire again. The reducer falls back to the language-unavailable
+    // banner from slice 8.
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("language-not-supported", ""),
+    )
+    await expect(page.getByTestId("wm-error")).toHaveText(
+      /speech recognition is not available for your language/i,
+    )
+  })
+
+  test("Toggle (start) clears cloudFallbackAttempted so the next session gets a fresh retry budget", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await page.evaluate(() =>
+      window.__wordMeter.setActiveRecognitionPath("on-device"),
+    )
+    await page.evaluate(() =>
+      window.__wordMeter.simulateRecognitionError("language-not-supported", ""),
+    )
+    expect(
+      await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
+    ).toBe(true)
+
+    // Stop and start a fresh session; the budget must reset.
+    await page.getByTestId("wm-toggle").click()
+    await page.getByTestId("wm-toggle").click()
+    expect(
+      await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
+    ).toBe(false)
+  })
+})
+
 test.describe("Word Meter — PureScript build — slice 9b — on-device pre-flight", () => {
   test("with on-device pre-flight disabled, start logs the cloud-fallback diagnostic and never sets the download status", async ({ page }) => {
     await loadWordMeter(page, "ps")

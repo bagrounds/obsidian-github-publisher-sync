@@ -66,10 +66,6 @@ type RecognitionHandlers m =
   , onConstructFailure :: RecognitionConstructError -> m Unit
   }
 
--- | Which configuration of `SpeechRecognition` is currently driving a
--- | session. Lives in `WordMeter.Recognition.Path` so the reducer can
--- | reference it without depending on this capability module.
-
 class Monad m <= Recognition m where
   recognitionApiAvailable :: m Boolean
   onDeviceLanguagePackApiAvailable :: m Boolean

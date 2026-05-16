@@ -702,3 +702,29 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
     )
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 9b — on-device pre-flight", () => {
+  test("with on-device pre-flight disabled, start logs the cloud-fallback diagnostic and never sets the download status", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    const diagnostics: string = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsText(),
+    )
+    expect(/on-device API absent — falling back to cloud/.test(diagnostics)).toBe(true)
+    // The "downloading on-device language pack…" override is only set
+    // while install() is in flight; the API-absent branch must never
+    // touch it.
+    const statusOverride: string = await page.evaluate(() =>
+      window.__wordMeter.getRecognitionStatusOverride(),
+    )
+    expect(statusOverride).toBe("")
+  })
+
+  test("getRecognitionStatusOverride defaults to empty on idle", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    expect(
+      await page.evaluate(() => window.__wordMeter.getRecognitionStatusOverride()),
+    ).toBe("")
+  })
+})

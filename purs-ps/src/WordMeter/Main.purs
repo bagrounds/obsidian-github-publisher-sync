@@ -16,8 +16,11 @@ import WordMeter.Capability.Recognition
   ( class Recognition
   , RecognitionHandlers
   , cancelAutoRestart
+  , onDeviceLanguagePackApiAvailable
+  , prepareOnDeviceLanguagePack
   , recognitionApiAvailable
   , scheduleAutoRestart
+  , startOnDeviceRecognition
   , startRecognition
   , stopRecognition
   )
@@ -41,9 +44,12 @@ import WordMeter.Capability.WakeLock
   )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
 import WordMeter.FFI.Recognition
-  ( RecognitionConstructError
+  ( OnDeviceAvailable
+  , OnDeviceUnavailable
+  , RecognitionConstructError
   , RecognitionStartError
   , RecognitionStopError
+  , renderOnDeviceUnavailable
   , renderRecognitionConstructError
   , renderRecognitionStartError
   , renderRecognitionStopError
@@ -54,7 +60,9 @@ import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
 import WordMeter.Recording
   ( Action(..)
   , diagnosticsText
+  , downloadingOnDeviceStatus
   , idleKeepAwakeStatus
+  , idleRecognitionStatusOverride
   , initialSession
   , renderKeepAwakeUnavailable
   , resetConfirmationPrompt
@@ -194,6 +202,7 @@ persistAfterAction (SetKeepAwakeStatus _) = pure unit
 persistAfterAction (SetWakeLockHeld _) = pure unit
 persistAfterAction (HandleRecognitionError _ _ _) = pure unit
 persistAfterAction ClearErrorBanner = pure unit
+persistAfterAction (SetRecognitionStatusOverride _) = pure unit
 
 persistCurrentSession
   :: forall m
@@ -511,7 +520,74 @@ startRecognitionForSession handlers = do
       "no SpeechRecognition constructor"
   else do
     locale <- sessionLocale
-    startRecognition (recognitionHandlersFor handlers locale)
+    onDeviceApi <- onDeviceLanguagePackApiAvailable
+    if not onDeviceApi then do
+      recordRecognitionEvent
+        "on-device API absent — falling back to cloud"
+        ("locale=" <> locale)
+      startRecognition (recognitionHandlersFor handlers locale)
+    else
+      prepareOnDeviceLanguagePack
+        { locale
+        , onProgress: onOnDeviceInstallStarted handlers locale
+        }
+        (onOnDevicePreflightResolved handlers locale)
+
+onOnDeviceInstallStarted
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> String
+  -> m Unit
+onOnDeviceInstallStarted handlers locale = do
+  recordRecognitionEvent
+    "on-device language pack download started"
+    ("locale=" <> locale)
+  -- Only show the download status while we are still listening — if
+  -- the user has hit Stop between the `available()` resolution and
+  -- the `install()` call, the override would otherwise stick around
+  -- on an idle session.
+  session <- readCurrentSession
+  if session.listening
+  then dispatch handlers (SetRecognitionStatusOverride downloadingOnDeviceStatus)
+  else pure unit
+
+onOnDevicePreflightResolved
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> String
+  -> Either OnDeviceUnavailable OnDeviceAvailable
+  -> m Unit
+onOnDevicePreflightResolved handlers locale outcome = do
+  -- The user may have hit Stop while the static API was resolving;
+  -- in that case the session is no longer listening and we must not
+  -- start a fresh recognizer. The dedicated status override is also
+  -- cleared so a stale "downloading…" string cannot outlive the
+  -- listening session.
+  dispatch handlers
+    (SetRecognitionStatusOverride idleRecognitionStatusOverride)
+  session <- readCurrentSession
+  if not session.listening then pure unit
+  else case outcome of
+    Right _onDeviceAvailable -> do
+      recordRecognitionEvent
+        "on-device pre-flight viable — starting on-device"
+        ("locale=" <> locale)
+      startOnDeviceRecognition (recognitionHandlersFor handlers locale)
+    Left reason -> do
+      recordRecognitionEvent
+        "on-device pre-flight non-viable — falling back to cloud"
+        (renderOnDeviceUnavailable reason)
+      startRecognition (recognitionHandlersFor handlers locale)
 
 stopRecognitionForSession
   :: forall m

@@ -148,6 +148,8 @@ Once 9a is in production, 9b teaches `Main.handleToggle` to prefer the on-device
 - `Main.handleToggle` orchestrates: if the on-device API is absent, go straight to the cloud path; if it is present, call `prepareOnDeviceLanguagePack` and branch — `Right OnDeviceAvailable` starts on-device, anything else logs a diagnostic (`on-device pre-flight non-viable — falling back to cloud`) and falls through to the cloud path. The status row briefly shows `downloading on-device language pack…` while `install()` is in flight.
 - The user-visible difference is silent: counts and behavior look identical, but the on-device path keeps speech off the network for users on a recent Chromium build. The diagnostics drawer is the proof that the pre-flight ran.
 
+When slice 9b ships, the recognition status row temporarily reads `downloading on-device language pack…` while the model is being installed, and the diagnostics drawer carries a `recognition` entry naming the path that was selected (`on-device pre-flight viable — starting on-device`, `on-device pre-flight non-viable — falling back to cloud`, or `on-device API absent — falling back to cloud`). The `Session.recognitionStatusOverride` field carries the transient status text and is cleared by every stop transition (Toggle-stop, permission-denied error, Reset) so a stale `downloading…` cannot outlive a listening session. In test environments, setting `window.__WM_DISABLE_ON_DEVICE_PREFLIGHT__ = true` before loading the bundle short-circuits the pre-flight to the cloud path, keeping the Playwright suite deterministic; the e2e fixture sets that flag.
+
 ### Slice 9c — Runtime `language-not-supported` retry
 
 The on-device pre-flight cannot catch every browser bug — some Chromium builds resolve `available({langs, processLocally: true})` to `'available'` and then reject `start()` at runtime with `error = 'language-not-supported'`. Slice 9c teaches the reducer + recognition layer to retry exactly once on the cloud path when this happens.
@@ -236,7 +238,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 7     | Wake lock + keep-awake toggle                                                                           | ✅ Done    |
 | 8     | Permission denied + transient-error banner                                                              | ✅ Done    |
 | 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ✅ Shipped |
-| 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ⏳ Pending |
+| 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ✅ Shipped |
 | 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ⏳ Pending |
 | 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
 

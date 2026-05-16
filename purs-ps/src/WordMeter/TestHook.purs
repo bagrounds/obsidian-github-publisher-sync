@@ -51,6 +51,7 @@ foreign import installTestHook
      , simulateVisibilityVisible :: Effect Unit
      , simulateRecognitionError :: String -> String -> Effect Unit
      , getErrorBanner :: Effect String
+     , getRecognitionStatusOverride :: Effect String
      }
   -> Effect Unit
 
@@ -131,6 +132,7 @@ install
     , simulateVisibilityVisible
     , simulateRecognitionError
     , getErrorBanner: _.errorBanner <$> readSession
+    , getRecognitionStatusOverride: _.recognitionStatusOverride <$> readSession
     }
 
 firstStartedOrNaN :: Session -> Number

@@ -1,18 +1,23 @@
--- | Capability for the slice-9a real recognition wiring. Production
--- | code in `WordMeter.Main` uses the typeclass; the `AppM` instance
--- | owns the active `RecognitionInstance` and the auto-restart timer
--- | handle through refs in `ApplicationEnvironment`. The
--- | `RecordingRecognitionM` test newtype records every call so the
--- | reducer wiring is unit-testable without touching the browser.
+-- | Capability for the slice-9a real recognition wiring plus the
+-- | slice-9b on-device pre-flight. Production code in `WordMeter.Main`
+-- | uses the typeclass; the `AppM` instance owns the active
+-- | `RecognitionInstance` and the auto-restart timer handle through
+-- | refs in `ApplicationEnvironment`. The `RecordingRecognitionM`
+-- | test newtype records every call so the reducer wiring is
+-- | unit-testable without touching the browser.
 module WordMeter.Capability.Recognition
   ( class Recognition
   , recognitionApiAvailable
+  , onDeviceLanguagePackApiAvailable
+  , prepareOnDeviceLanguagePack
   , startRecognition
+  , startOnDeviceRecognition
   , stopRecognition
   , cancelAutoRestart
   , scheduleAutoRestart
   , RecognitionHandlers
   , RecognitionEvent(..)
+  , RecognitionPath(..)
   , RecordingRecognitionM(..)
   , RecognitionRecording
   , runRecordingRecognitionM
@@ -23,6 +28,7 @@ import Prelude
 
 import Control.Monad.Reader.Class (ask)
 import Control.Monad.State.Trans (StateT, modify_, runStateT)
+import Data.Either (Either(..))
 import Data.Identity (Identity(..))
 import Data.Maybe (Maybe(..))
 import Data.Tuple (Tuple(..))
@@ -31,7 +37,9 @@ import Effect.Class (liftEffect)
 import Effect.Ref as Ref
 import WordMeter.AppM (AppM(..), ApplicationEnvironment, runAppM)
 import WordMeter.FFI.Recognition
-  ( RecognitionConstructError(..)
+  ( OnDeviceAvailable(..)
+  , OnDeviceUnavailable
+  , RecognitionConstructError(..)
   , RecognitionStartError(..)
   , RecognitionStopError(..)
   )
@@ -58,9 +66,30 @@ type RecognitionHandlers m =
   , onConstructFailure :: RecognitionConstructError -> m Unit
   }
 
+-- | Which configuration of `SpeechRecognition` is currently driving a
+-- | session. The slice-9b orchestrator picks `OnDevicePath` after a
+-- | successful pre-flight and `CloudPath` everywhere else.
+data RecognitionPath = OnDevicePath | CloudPath
+
+derive instance eqRecognitionPath :: Eq RecognitionPath
+
+instance showRecognitionPath :: Show RecognitionPath where
+  show OnDevicePath = "OnDevicePath"
+  show CloudPath = "CloudPath"
+
+processLocallyFor :: RecognitionPath -> Boolean
+processLocallyFor OnDevicePath = true
+processLocallyFor CloudPath = false
+
 class Monad m <= Recognition m where
   recognitionApiAvailable :: m Boolean
+  onDeviceLanguagePackApiAvailable :: m Boolean
+  prepareOnDeviceLanguagePack
+    :: { locale :: String, onProgress :: m Unit }
+    -> (Either OnDeviceUnavailable OnDeviceAvailable -> m Unit)
+    -> m Unit
   startRecognition :: RecognitionHandlers m -> m Unit
+  startOnDeviceRecognition :: RecognitionHandlers m -> m Unit
   stopRecognition :: m Unit -> (RecognitionStopError -> m Unit) -> m Unit
   scheduleAutoRestart :: m Unit -> m Unit
   cancelAutoRestart :: m Unit
@@ -68,10 +97,21 @@ class Monad m <= Recognition m where
 instance recognitionAppM :: Recognition AppM where
   recognitionApiAvailable =
     AppM (liftEffect FFI.recognitionApiAvailable)
+  onDeviceLanguagePackApiAvailable =
+    AppM (liftEffect FFI.onDeviceLanguagePackApiAvailable)
+  prepareOnDeviceLanguagePack request onDone =
+    AppM do
+      environment <- ask
+      liftEffect (prepareOnDeviceInEnvironment environment request onDone)
   startRecognition handlers =
     AppM do
       environment <- ask
-      liftEffect (startRecognitionInEnvironment environment handlers)
+      liftEffect (startRecognitionInEnvironment environment CloudPath handlers)
+  startOnDeviceRecognition handlers =
+    AppM do
+      environment <- ask
+      liftEffect
+        (startRecognitionInEnvironment environment OnDevicePath handlers)
   stopRecognition onStopped onError =
     AppM do
       environment <- ask
@@ -85,6 +125,20 @@ instance recognitionAppM :: Recognition AppM where
       environment <- ask
       liftEffect (cancelAutoRestartInEnvironment environment)
 
+prepareOnDeviceInEnvironment
+  :: ApplicationEnvironment
+  -> { locale :: String, onProgress :: AppM Unit }
+  -> (Either OnDeviceUnavailable OnDeviceAvailable -> AppM Unit)
+  -> Effect Unit
+prepareOnDeviceInEnvironment environment request onDone =
+  let
+    runHere :: forall a. AppM a -> Effect a
+    runHere act = runAppM environment act
+  in
+    FFI.ensureOnDeviceLanguagePack request.locale
+      (runHere request.onProgress)
+      (\outcome -> runHere (onDone outcome))
+
 -- | Construct an instance, install the three handlers, stash it in
 -- | the env ref, and call `start()`. Every failure mode surfaces
 -- | through its dedicated continuation: synchronous construct
@@ -92,14 +146,15 @@ instance recognitionAppM :: Recognition AppM where
 -- | `recognition.onerror` events.
 startRecognitionInEnvironment
   :: ApplicationEnvironment
+  -> RecognitionPath
   -> RecognitionHandlers AppM
   -> Effect Unit
-startRecognitionInEnvironment environment handlers =
+startRecognitionInEnvironment environment path handlers =
   let
     runHere :: forall a. AppM a -> Effect a
     runHere act = runAppM environment act
   in
-    FFI.constructRecognitionInstance handlers.locale
+    FFI.constructRecognitionInstance handlers.locale (processLocallyFor path)
       ( \instance_ -> do
           FFI.attachOnResult instance_
             (\transcript timestamp ->
@@ -178,6 +233,8 @@ cancelHeldTimer environment = do
 -- | times.
 data RecognitionEvent
   = StartedRecognition { locale :: String }
+  | StartedOnDeviceRecognition { locale :: String }
+  | PreparedOnDeviceLanguagePack { locale :: String }
   | StoppedRecognition
   | ScheduledAutoRestart
   | CancelledAutoRestart
@@ -187,6 +244,10 @@ derive instance eqRecognitionEvent :: Eq RecognitionEvent
 instance showRecognitionEvent :: Show RecognitionEvent where
   show (StartedRecognition fields) =
     "StartedRecognition " <> show fields.locale
+  show (StartedOnDeviceRecognition fields) =
+    "StartedOnDeviceRecognition " <> show fields.locale
+  show (PreparedOnDeviceLanguagePack fields) =
+    "PreparedOnDeviceLanguagePack " <> show fields.locale
   show StoppedRecognition = "StoppedRecognition"
   show ScheduledAutoRestart = "ScheduledAutoRestart"
   show CancelledAutoRestart = "CancelledAutoRestart"
@@ -209,9 +270,27 @@ derive newtype instance monadRecordingRecognitionM ::
 
 instance recognitionRecordingRecognitionM :: Recognition RecordingRecognitionM where
   recognitionApiAvailable = pure true
+  onDeviceLanguagePackApiAvailable = pure true
+  prepareOnDeviceLanguagePack request onDone = do
+    RecordingRecognitionM
+      ( modify_ \events ->
+          events <> [ PreparedOnDeviceLanguagePack { locale: request.locale } ]
+      )
+    -- Default to the happy path: every recorded run lands on the
+    -- on-device branch. Tests that need to exercise the cloud
+    -- fallback path drive the orchestrator directly with the desired
+    -- `Either` value.
+    onDone (Right OnDeviceAvailable)
   startRecognition handlers = do
     RecordingRecognitionM
       (modify_ (\events -> events <> [ StartedRecognition { locale: handlers.locale } ]))
+    handlers.onStarted
+  startOnDeviceRecognition handlers = do
+    RecordingRecognitionM
+      ( modify_ \events ->
+          events
+            <> [ StartedOnDeviceRecognition { locale: handlers.locale } ]
+      )
     handlers.onStarted
   stopRecognition onStopped _onError = do
     RecordingRecognitionM

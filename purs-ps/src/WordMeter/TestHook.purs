@@ -11,11 +11,13 @@ import WordMeter.Recording
   ( Action(..)
   , Dispatch
   , Session
+  , WakeLockState(..)
   , activeListeningMs
   , diagnosticsText
   , eventLogLimit
   , longRate
   , overallRate
+  , renderWakeLockStatus
   , shortRate
   )
 
@@ -135,8 +137,8 @@ install
     , persistNow
     , getKeepAwake: _.keepAwake <$> readSession
     , setKeepAwake: requestSetKeepAwake
-    , getKeepAwakeStatus: _.keepAwakeStatus <$> readSession
-    , getWakeLockHeld: _.wakeLockHeld <$> readSession
+    , getKeepAwakeStatus: (\s -> renderWakeLockStatus s.wakeLockState) <$> readSession
+    , getWakeLockHeld: (\s -> s.wakeLockState == WakeLockHeld) <$> readSession
     , simulateVisibilityVisible
     , simulateRecognitionError
     , getErrorBanner: _.errorBanner <$> readSession

@@ -279,45 +279,27 @@ The following improvements are recommended based on a review against PureScript 
 
 ---
 
-### Introduce a `Locale` newtype
+### ✅ Introduce a `Locale` newtype
 
-**What:** Replace raw `String` locale values with `newtype Locale = Locale String`.
-
-**Why:** A BCP 47 locale tag (like `"en-US"`, `"fr-FR"`, `"zh-Hant"`) is an open, extensible identifier — not a closed enum. The IANA Language Subtag Registry lists thousands of valid tags, and the Web Speech API's `lang` property plus `navigator.language` both accept any BCP 47 string, so modeling this as a sum type would be incorrect and impractical to maintain. A `Locale` newtype is the right abstraction: it documents the role of the string, prevents silent coercion with unrelated strings (e.g. diagnostic labels), and makes the type signature of `recognitionHandlersFor` self-explanatory. No off-the-shelf PureScript locale type exists in the core libraries — the browser's `Intl.Locale` API has no binding in the `purescript/` organization — so a custom newtype is the idiomatic choice. The `renderLocale :: Locale -> String` unwrapper provides a single named extraction point for FFI boundaries and diagnostic log lines.
-
-**Trade-offs:** Small lift; the locale string is produced in one place (`captureEnvironmentSnapshot` → `sessionLocale`) and consumed in a few recognition capability calls. The newtype would need a `renderLocale :: Locale -> String` for diagnostic log lines that embed the locale.
-
-**Complexity:** Low.
+**Done in this PR.** New `WordMeter.Locale` module exposes `newtype Locale = Locale String` with `deriving Eq` and `renderLocale :: Locale -> String`. `RecognitionHandlers.locale`, `prepareOnDeviceLanguagePack`, and `RecognitionEvent` record fields are now `Locale` instead of `String`. `Main.defaultLocale` and `sessionLocale` produce `Locale` values; every diagnostic log line that embeds the locale calls `renderLocale`. The FFI boundary (`FFI.constructRecognitionInstance`, `FFI.ensureOnDeviceLanguagePack`) unwraps via `renderLocale` immediately before crossing into JavaScript.
 
 ---
 
-### Elide `persistAfterAction` with a `shouldPersist` predicate
+### ✅ Elide `persistAfterAction` with a `shouldPersist` predicate
 
-**What:** `persistAfterAction` is an exhaustive case dispatch where 17 of 19 branches return `pure unit`. An alternative is a pure predicate `shouldPersist :: Action -> Boolean` (returning `true` only for `Toggle`, `InjectFinalTranscript`, `IntegrateFinalizedTranscript`, and `Reset`) plus a single `when (shouldPersist action) persistCurrentSession` call.
-
-**Why:** The current exhaustive match is intentional — the compiler forces a decision for every new action. A `shouldPersist` predicate preserves the exhaustiveness guarantee **if and only if it is also written as an exhaustive case expression with no wildcard default**. With that constraint, adding a new `Action` constructor gives the same compiler error as today, and the predicate style collapses 19 lines into 5.
-
-**Trade-offs:** The `shouldPersist` predicate **must not** use a `_ -> false` catch-all wildcard — that would allow a new action to silently skip persistence, which is less safe than the current code. With a fully exhaustive case expression on `shouldPersist`, the type-safety guarantee is identical to the current approach and the refactor is purely cosmetic. The existing exhaustive match also acts as a living checklist (each branch documents what that action does to storage), so the trade-off is conciseness vs. explicitness.
-
-**Complexity:** Low.
+**Done in this PR.** Extracted `shouldPersistSession :: Action -> Boolean` — an exhaustive, no-wildcard predicate that returns `true` only for `Toggle`, `InjectFinalTranscript`, and `IntegrateFinalizedTranscript`. `persistAfterAction` now guards on the predicate for persist, handles `Reset` (clear) in a single explicit case, and returns `pure unit` for everything else. The compiler still catches every new action constructor at the predicate level; no behavior change.
 
 ---
 
 ### ✅ Share `collapseWhitespaceToSpace` between `Words` and `Recognition.Delta`
 
-**Done in this PR.** `Words.purs` contained a private `collapseWhitespaceToSpace` helper (tab/newline/carriage-return → space). `Recognition.Delta.normalizeTranscript` repeated the same three `replaceAll` calls inline. Both now import the function from the new `WordMeter.Text` module, eliminating the duplication. Any future whitespace-handling change (e.g. adding `\u00A0` non-breaking space) now has a single canonical location.
+**Done in a previous PR.** `Words.purs` contained a private `collapseWhitespaceToSpace` helper (tab/newline/carriage-return → space). `Recognition.Delta.normalizeTranscript` repeated the same three `replaceAll` calls inline. Both now import the function from the new `WordMeter.Text` module, eliminating the duplication. Any future whitespace-handling change (e.g. adding `\u00A0` non-breaking space) now has a single canonical location.
 
 ---
 
-### Replace `Boolean` wake-lock + status flags with a `WakeLockState` ADT
+### ✅ Replace `Boolean` wake-lock + status flags with a `WakeLockState` ADT
 
-**What:** `Session` currently uses `wakeLockHeld :: Boolean` combined with `keepAwakeStatus :: String` to encode the wake-lock lifecycle. Replace both with a single `data WakeLockState = WakeLockIdle | WakeLockHeld | WakeLockFailed String` field.
-
-**Why:** A `Boolean` combined with a `String` can represent impossible states (e.g. `held = false` + status `"screen will stay on"`). The ADT makes impossible states unrepresentable and gives the reducer a single field to update on each transition instead of two fields that must be kept in sync.
-
-**Trade-offs:** Requires updating the reducer, the view (`keepAwakeAttributes`, the status span), the test hook (`getWakeLockHeld`, `getKeepAwakeStatus`), and all e2e tests that read those selectors. The `keepAwake :: Boolean` preference field (user-controlled) is separate and unaffected.
-
-**Complexity:** Medium. Pure rename; no behavior change once the ADT is wired.
+**Done in this PR.** `Session` now has `wakeLockState :: WakeLockState` in place of the former `wakeLockHeld :: Boolean` + `keepAwakeStatus :: String` pair. The new `data WakeLockState = WakeLockIdle | WakeLockHeld | WakeLockFailed String` ADT makes impossible combinations (e.g. `held = false` while status reads "screen will stay on") unrepresentable. `renderWakeLockStatus :: WakeLockState -> String` drives the status text in the view. The `SetKeepAwakeStatus` and `SetWakeLockHeld` actions are replaced by a single `SetWakeLockState WakeLockState`. `TestHook.getWakeLockHeld` and `getKeepAwakeStatus` are derived from `wakeLockState` for e2e backward compatibility. The `keepAwake :: Boolean` user preference field is untouched.
 
 ---
 

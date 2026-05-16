@@ -4,6 +4,7 @@ module WordMeter.Recording
   , WordEvent
   , LoggedInterval
   , PersistedData
+  , WakeLockState(..)
   , Action(..)
   , Dispatch
   , Handlers
@@ -29,11 +30,9 @@ module WordMeter.Recording
   , formatDurationMs
   , diagnosticsText
   , idleCopyStatus
-  , idleKeepAwakeStatus
-  , wakeLockAcquiredStatus
   , downloadingOnDeviceStatus
   , idleRecognitionStatusOverride
-  , renderKeepAwakeUnavailable
+  , renderWakeLockStatus
   , toPersistedData
   , resetConfirmationPrompt
   , idleErrorBanner
@@ -102,8 +101,7 @@ type Session =
   , environment :: Maybe EnvironmentSnapshot
   , copyStatus :: String
   , keepAwake :: Boolean
-  , keepAwakeStatus :: String
-  , wakeLockHeld :: Boolean
+  , wakeLockState :: WakeLockState
   , errorBanner :: String
   , lastRawFinalizedTranscript :: String
   , recognitionStatusOverride :: String
@@ -169,8 +167,7 @@ data Action
   | Reset Number
   | LoadSession PersistedData
   | SetKeepAwake Boolean
-  | SetKeepAwakeStatus String
-  | SetWakeLockHeld Boolean
+  | SetWakeLockState WakeLockState
   | HandleRecognitionError Number String String
   | ClearErrorBanner
   | SetRecognitionStatusOverride String
@@ -191,11 +188,25 @@ type Handlers =
 idleCopyStatus :: String
 idleCopyStatus = ""
 
-idleKeepAwakeStatus :: String
-idleKeepAwakeStatus = ""
+-- | The three states a wake lock can be in. Replaces the pair of
+-- | `wakeLockHeld :: Boolean` + `keepAwakeStatus :: String` fields,
+-- | making impossible combinations (e.g. `held = false` while status
+-- | reads "screen will stay on") unrepresentable.
+data WakeLockState
+  = WakeLockIdle
+  | WakeLockHeld
+  | WakeLockFailed String
 
-wakeLockAcquiredStatus :: String
-wakeLockAcquiredStatus = "screen will stay on"
+derive instance eqWakeLockState :: Eq WakeLockState
+
+-- | Render the user-visible status string for a `WakeLockState`.
+-- | Returns empty string for `WakeLockIdle` (no visible status),
+-- | "screen will stay on" for `WakeLockHeld`, and the failure reason
+-- | wrapped in parentheses for `WakeLockFailed`.
+renderWakeLockStatus :: WakeLockState -> String
+renderWakeLockStatus WakeLockIdle = ""
+renderWakeLockStatus WakeLockHeld = "screen will stay on"
+renderWakeLockStatus (WakeLockFailed reason) = "(" <> reason <> ")"
 
 -- | Slice-9b status text shown while the static
 -- | `SpeechRecognition.install()` call is in flight downloading the
@@ -206,9 +217,6 @@ downloadingOnDeviceStatus = "downloading on-device language pack…"
 
 idleRecognitionStatusOverride :: String
 idleRecognitionStatusOverride = ""
-
-renderKeepAwakeUnavailable :: String -> String
-renderKeepAwakeUnavailable reason = "(" <> reason <> ")"
 
 idleErrorBanner :: String
 idleErrorBanner = ""
@@ -233,8 +241,7 @@ initialSession =
   , environment: Nothing
   , copyStatus: idleCopyStatus
   , keepAwake: true
-  , keepAwakeStatus: idleKeepAwakeStatus
-  , wakeLockHeld: false
+  , wakeLockState: WakeLockIdle
   , errorBanner: idleErrorBanner
   , lastRawFinalizedTranscript: ""
   , recognitionStatusOverride: idleRecognitionStatusOverride
@@ -403,14 +410,10 @@ reduce (LoadSession persisted) session = session
   }
 reduce (SetKeepAwake enabled) session = session
   { keepAwake = enabled
-  , keepAwakeStatus =
-      if enabled then session.keepAwakeStatus else idleKeepAwakeStatus
+  , wakeLockState = if enabled then session.wakeLockState else WakeLockIdle
   }
-reduce (SetKeepAwakeStatus statusText) session = session
-  { keepAwakeStatus = statusText
-  }
-reduce (SetWakeLockHeld held) session = session
-  { wakeLockHeld = held
+reduce (SetWakeLockState state) session = session
+  { wakeLockState = state
   }
 reduce (HandleRecognitionError timestamp code message) session =
   let
@@ -756,7 +759,7 @@ buildKeepAwake handlers session =
         [ style "font-size" "12px"
         , style "color" "#7d8590"
         ]
-        [ text session.keepAwakeStatus ]
+        [ text (renderWakeLockStatus session.wakeLockState) ]
     ]
 
 keepAwakeAttributes :: Session -> Array { name :: String, value :: String }

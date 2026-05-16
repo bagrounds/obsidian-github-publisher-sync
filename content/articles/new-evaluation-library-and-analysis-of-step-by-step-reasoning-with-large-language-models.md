@@ -6,9 +6,17 @@ title: 📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Re
 URL: https://bagrounds.org/articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T12:31:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a glowing, translucent robotic brain at the center, connected to a series of modular, floating puzzle pieces representing different reasoning steps. These pieces are arranged in a branching tree structure, glowing with soft blue and gold light. A magnifying glass hovers over one of the branches, highlighting a clear, logical path of nodes. In the background, faint, abstract geometric lines suggest a digital grid. The color palette uses deep navy and slate grays contrasted with vibrant neon cyan and amber accents to signify analytical precision and the search for knowledge. The overall aesthetic is clean, modern, and high-tech, emphasizing the concepts of structured planning and automated evaluation.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](https://arxiv.org/pdf/2404.05221)  
+![articles-new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models](../articles-new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.jpg)  
   
 ## 🤖 AI Summary  
 🤖 The paper introduces two key innovations to address challenges in Large Language Models (LLMs).  

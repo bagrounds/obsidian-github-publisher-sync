@@ -6,9 +6,17 @@ title: "🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding
 URL: https://bagrounds.org/articles/introducing-open-swe-an-open-source-asynchronous-coding-agent
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T03:14:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, isometric illustration of a digital workspace featuring a glowing, translucent robotic avatar working at a virtual terminal. The robot is surrounded by hovering, semi-transparent holographic panels displaying cascading lines of code, architectural flowcharts, and task checklists. A soft, vibrant color palette—using deep navy, electric blue, and warm amber accents—highlights the connection between the agent and a stylized cloud icon above it. The environment is clean and modern, with soft ambient lighting suggesting a high-tech, collaborative cloud-native development atmosphere. The composition emphasizes parallel task execution through multiple glowing data streams flowing into the central agent.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent)  
+![articles-introducing-open-swe-an-open-source-asynchronous-coding-agent](../articles-introducing-open-swe-an-open-source-asynchronous-coding-agent.jpg)  
 ## 🤖 AI Summary  
 - ✨ **Open SWE is an open-source, asynchronous coding agent** built to operate in the cloud. It is designed to act like another engineer on a development team.  
 - ⭐ A key feature is its asynchronous operation, allowing it to run on multiple tasks in parallel without consuming local resources.  

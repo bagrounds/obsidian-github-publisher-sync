@@ -11,9 +11,18 @@ image_date: 2026-04-09T23:25:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A whimsical, soft-focus illustration featuring a cozy, sunlit nursery corner. A plush, cream-colored teddy bear with stitched details sits propped against a pile of oversized, pastel-colored storybooks. Next to the bear, a delicate wooden music box sits slightly open, with a tiny, glowing golden star hovering just above it, emitting faint, sparkling light particles that drift through the air. A small, fluffy white lamb toy rests nearby on a soft, knitted rug. The color palette is composed of warm creams, soft sages, and gentle golds, evoking a nostalgic, dreamy atmosphere. The background features a blurred view of a window with sheer curtains, allowing soft, natural light to create a gentle, magical ambiance.
 link_analysis_version: "2"
+updated: 2026-05-16T03:16:50
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧸🎶🧸 Nursery Rhymes  
 ![topics-nursery-rhymes](../topics-nursery-rhymes.jpg)  
 - [⭐✨🌟💫 The Star](./the-star.md)  
-- [🐑🎀 Mary Had a Little Lamb](./mary-had-a-little-lamb.md)
+- [🐑🎀 Mary Had a Little Lamb](./mary-had-a-little-lamb.md)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlwv3xcegr26" data-bluesky-cid="bafyreidylun6sv4ks7soffeo3ydslb3btovgfzytt5b3a6j6s2533qrboi"><p>🧸🎶🧸 Nursery Rhymes  
+  
+#AI Q: 🧸 Which childhood nursery rhyme still sticks in your head today?  
+  
+🎶 Children&#39;s Songs | 📖 Classic Tales | 🐑 Animal Fables  
+https://bagrounds.org/topics/nursery-rhymes</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlwv3xcegr26?ref_src=embed">2026-05-16T03:17:09.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

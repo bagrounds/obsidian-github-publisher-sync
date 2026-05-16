@@ -6,9 +6,17 @@ title: 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 202
 URL: https://bagrounds.org/articles/letters-from-an-american-august-18-2025
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T08:45:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a complex, fragmented mosaic of symbols representing modern political tension. In the center, a distorted, stylized silhouette of a ballot box sits atop a pile of digital currency and flickering computer screens. Surrounding this are subtle, abstract shadows of a lion and a puppet string mechanism, blending into a background of shifting, dark-toned geometric lines that resemble a fractured map. The color palette consists of deep blues, stark whites, and muted crimsons, creating a high-contrast, moody atmosphere of institutional instability and information overload. The composition emphasizes a sense of chaotic digital noise and crumbling democratic structures.
 ---
 [Home](../index.md) > [Articles](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025  
+![articles-letters-from-an-american-august-18-2025](../articles-letters-from-an-american-august-18-2025.jpg)  
 ## 🤖 AI Summary  
 * 📱 **Social Media Posts**: Trump used his social media account to post 🖼️ AI-generated images of himself with a lion, memes claiming he is the "best president," and material from QAnon-related accounts. 😈 The posts pushed the QAnon belief that the Democratic Party is "the party of hate, evil, and Satan."  
 * 🗳️ **Mail-in Voting and Elections**: His social media post claimed that the president would lead a movement to get rid of mail-in ballots and voting machines. 🤥 The post lied that the U.S. is the only country that uses mail-in voting and claimed that states are merely an "agent" for the federal government in counting and tabulating votes.  

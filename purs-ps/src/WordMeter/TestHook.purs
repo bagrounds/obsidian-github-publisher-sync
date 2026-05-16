@@ -3,7 +3,10 @@ module WordMeter.TestHook (install) where
 import Prelude
 
 import Data.Array (length) as Array
+import Data.DateTime.Instant (Instant, instant, unInstant)
 import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Newtype (unwrap)
+import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import WordMeter.Diagnostics (diagnosticsLimit)
 import WordMeter.Recognition.Path (RecognitionPath(..))
@@ -17,6 +20,7 @@ import WordMeter.Recording.Reducer (Action(..), Dispatch)
 import WordMeter.Recording.Session
   ( Session
   , WakeLockState(..)
+  , epochInstant
   , eventLogLimit
   , renderWakeLockStatus
   )
@@ -67,7 +71,7 @@ foreign import installTestHook
 install
   :: { dispatch :: Dispatch
      , readSession :: Effect Session
-     , clock :: Effect Number
+     , clock :: Effect Instant
      , version :: String
      , requestCopyDiagnostics :: Effect Unit
      , requestReset :: Effect Unit
@@ -95,8 +99,8 @@ install
     { simulateFinalTranscript: \transcript -> do
         timestamp <- clock
         dispatch (InjectFinalTranscript transcript timestamp)
-    , simulateFinalTranscriptAt: \transcript timestamp ->
-        dispatch (InjectFinalTranscript transcript timestamp)
+    , simulateFinalTranscriptAt: \transcript timestampMs ->
+        dispatch (InjectFinalTranscript transcript (millisToInstant timestampMs))
     , start: do
         session <- readSession
         if session.listening then pure unit
@@ -109,15 +113,15 @@ install
           timestamp <- clock
           dispatch (Toggle timestamp)
         else pure unit
-    , startAt: \timestamp -> do
+    , startAt: \timestampMs -> do
         session <- readSession
         if session.listening then pure unit
-        else dispatch (Toggle timestamp)
-    , stopAt: \timestamp -> do
+        else dispatch (Toggle (millisToInstant timestampMs))
+    , stopAt: \timestampMs -> do
         session <- readSession
-        if session.listening then dispatch (Toggle timestamp)
+        if session.listening then dispatch (Toggle (millisToInstant timestampMs))
         else pure unit
-    , tick: \timestamp -> dispatch (Tick timestamp)
+    , tick: \timestampMs -> dispatch (Tick (millisToInstant timestampMs))
     , getTotalWords: _.totalWords <$> readSession
     , getListening: _.listening <$> readSession
     , getVersion: pure version
@@ -134,7 +138,7 @@ install
     , getCopyStatus: _.copyStatus <$> readSession
     , requestCopyDiagnostics
     , reset: requestReset
-    , resetAt: \timestamp -> dispatch (Reset timestamp)
+    , resetAt: \timestampMs -> dispatch (Reset (millisToInstant timestampMs))
     , persistNow
     , getKeepAwake: _.keepAwake <$> readSession
     , setKeepAwake: requestSetKeepAwake
@@ -152,6 +156,12 @@ install
     , toggleDiagnosticsDrawer: requestToggleDiagnosticsDrawer
     }
 
+-- | Convert a raw millisecond value from the JavaScript test helpers
+-- | to an `Instant`, falling back to the epoch for any value outside
+-- | the valid `Instant` range (astronomically impossible for test inputs).
+millisToInstant :: Number -> Instant
+millisToInstant ms = fromMaybe epochInstant (instant (Milliseconds ms))
+
 parseActivePath :: String -> Maybe RecognitionPath
 parseActivePath = case _ of
   "on-device" -> Just OnDevicePath
@@ -165,4 +175,6 @@ renderActivePath session = case session.activeRecognitionPath of
   Just CloudPath -> "cloud"
 
 firstStartedOrNaN :: Session -> Number
-firstStartedOrNaN session = fromMaybe (0.0 / 0.0) session.firstStartedAt
+firstStartedOrNaN session = case session.firstStartedAt of
+  Nothing -> 0.0 / 0.0
+  Just inst -> unwrap (unInstant inst)

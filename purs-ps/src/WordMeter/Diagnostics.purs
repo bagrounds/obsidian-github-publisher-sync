@@ -15,6 +15,7 @@ module WordMeter.Diagnostics
 import Prelude
 
 import Data.Array (length, takeEnd) as Array
+import Data.DateTime.Instant (Instant)
 import Data.Maybe (Maybe(..))
 import Data.String.Common (joinWith)
 import WordMeter.Clock (formatClockTime)
@@ -22,7 +23,7 @@ import WordMeter.Clock (formatClockTime)
 -- | One line in the diagnostics log: a wall-clock timestamp, a short
 -- | label describing the event, and an optional detail string.
 type DiagnosticEntry =
-  { timestamp :: Number
+  { timestamp :: Instant
   , label :: String
   , detail :: String
   }

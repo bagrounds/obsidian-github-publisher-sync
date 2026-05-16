@@ -27,9 +27,11 @@ import Prelude
 
 import Control.Monad.Reader.Class (ask)
 import Control.Monad.State.Trans (StateT, modify_, runStateT)
+import Data.DateTime.Instant (Instant, instant)
 import Data.Either (Either(..))
 import Data.Identity (Identity(..))
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Time.Duration (Milliseconds(..))
 import Data.Tuple (Tuple(..))
 import Effect (Effect)
 import Effect.Class (liftEffect)
@@ -59,7 +61,7 @@ restartDelayMilliseconds = 250
 -- | events, and a clean `onEnded` for the auto-restart logic.
 type RecognitionHandlers m =
   { locale :: Locale
-  , onResult :: String -> Number -> m Unit
+  , onResult :: String -> Instant -> m Unit
   , onErrorEvent :: String -> String -> m Unit
   , onEnded :: m Unit
   , onStarted :: m Unit
@@ -143,8 +145,12 @@ startRecognitionInEnvironment environment path handlers =
     FFI.constructRecognitionInstance (renderLocale handlers.locale) (processLocallyFor path)
       ( \instance_ -> do
           FFI.attachOnResult instance_
-            (\transcript timestamp ->
-              runHere (handlers.onResult transcript timestamp))
+            (\transcript timestampMs ->
+              let
+                timestampInstant =
+                  fromMaybe bottom (instant (Milliseconds timestampMs))
+              in
+                runHere (handlers.onResult transcript timestampInstant))
           FFI.attachOnError instance_
             (\code message ->
               runHere (handlers.onErrorEvent code message))

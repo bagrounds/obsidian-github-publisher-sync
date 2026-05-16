@@ -9,7 +9,10 @@ module WordMeter.Recording.Reducer
 import Prelude
 
 import Data.Array (filter, takeEnd, unsnoc)
-import Data.Maybe (Maybe(..))
+import Data.DateTime.Instant (Instant, instant, unInstant)
+import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Newtype (unwrap)
+import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import WordMeter.Diagnostics (EnvironmentSnapshot, recordEntry)
 import WordMeter.Recognition.Delta
@@ -25,15 +28,18 @@ import WordMeter.RecognitionError
   , recognitionErrorBannerText
   , renderRecognitionErrorDiagnosticDetail
   )
-import WordMeter.Recording.Math (formatDurationMs)
+import WordMeter.Recording.Math (formatDurationMs, millisecondsBetween)
 import WordMeter.Recording.Session
   ( Caption
   , LoggedInterval
   , PersistedData
+  , PersistedLoggedInterval
+  , PersistedWordEvent
   , Session
   , WakeLockState(..)
   , WordEvent
   , captionWindowMs
+  , epochInstant
   , eventLogLimit
   , idleErrorBanner
   , idleRecognitionStatusOverride
@@ -43,19 +49,19 @@ import WordMeter.Recording.Session
 import WordMeter.Words (countWords)
 
 data Action
-  = Toggle Number
-  | InjectFinalTranscript String Number
-  | IntegrateFinalizedTranscript Number String
+  = Toggle Instant
+  | InjectFinalTranscript String Instant
+  | IntegrateFinalizedTranscript Instant String
   | ResetRecognitionDedupState
-  | Tick Number
-  | RecordDiagnostic Number String String
+  | Tick Instant
+  | RecordDiagnostic Instant String String
   | SetEnvironment EnvironmentSnapshot
   | SetCopyStatus String
-  | Reset Number
+  | Reset Instant
   | LoadSession PersistedData
   | SetKeepAwake Boolean
   | SetWakeLockState WakeLockState
-  | HandleRecognitionError Number String String
+  | HandleRecognitionError Instant String String
   | ClearErrorBanner
   | SetRecognitionStatusOverride String
   | SetCloudFallbackAttempted Boolean
@@ -223,9 +229,10 @@ reduce (Reset timestamp) session =
       }
 reduce (LoadSession persisted) session = session
   { totalWords = max 0 persisted.totalWords
-  , firstStartedAt = persisted.firstStartedAt
-  , wordEvents = persisted.wordEvents
-  , eventLog = takeEnd eventLogLimit persisted.eventLog
+  , firstStartedAt = map msToInstant persisted.firstStartedAt
+  , wordEvents = map persistedWordEventToWordEvent persisted.wordEvents
+  , eventLog = takeEnd eventLogLimit
+      (map persistedIntervalToInterval persisted.eventLog)
   , currentIntervalWords = 0
   , currentIntervalStart = Nothing
   , listening = false
@@ -282,13 +289,12 @@ reduce (SetDiagnosticsDrawerOpen open) session = session
 -- | entry. Used by both the user-driven Toggle and the
 -- | permission-denied branch of `HandleRecognitionError` so the audit
 -- | trail is identical in both cases.
-stopListeningAt :: Number -> String -> String -> Session -> Session
+stopListeningAt :: Instant -> String -> String -> Session -> Session
 stopListeningAt timestamp label reasonDetail session =
   let
-    startedAt = case session.currentIntervalStart of
-      Just start -> start
-      Nothing -> timestamp
-    closedInterval = max 0.0 (timestamp - startedAt)
+    startedAt = fromMaybe timestamp session.currentIntervalStart
+    closedIntervalMs =
+      max 0.0 (millisecondsBetween timestamp startedAt)
     completed =
       { startedAt
       , endedAt: max timestamp startedAt
@@ -296,7 +302,7 @@ stopListeningAt timestamp label reasonDetail session =
       }
     statsDetail =
       "words=" <> show session.currentIntervalWords
-        <> " duration=" <> formatDurationMs closedInterval
+        <> " duration=" <> formatDurationMs closedIntervalMs
     fullDetail =
       if reasonDetail == "" then statsDetail
       else statsDetail <> " " <> reasonDetail
@@ -306,7 +312,7 @@ stopListeningAt timestamp label reasonDetail session =
       { listening = false
       , currentIntervalStart = Nothing
       , currentIntervalWords = 0
-      , completedActiveMs = session.completedActiveMs + closedInterval
+      , completedActiveMs = Milliseconds (unwrap session.completedActiveMs + closedIntervalMs)
       , wordEvents = pruneWordEvents timestamp session.wordEvents
       , captions = pruneCaptions timestamp session.captions
       , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
@@ -319,24 +325,60 @@ stopListeningAt timestamp label reasonDetail session =
 toPersistedData :: Session -> PersistedData
 toPersistedData session =
   { totalWords: session.totalWords
-  , firstStartedAt: session.firstStartedAt
-  , wordEvents: session.wordEvents
-  , eventLog: session.eventLog
+  , firstStartedAt: map instantToMs session.firstStartedAt
+  , wordEvents: map wordEventToPersistedWordEvent session.wordEvents
+  , eventLog: map intervalToPersistedInterval session.eventLog
   }
 
-pruneWordEvents :: Number -> Array WordEvent -> Array WordEvent
-pruneWordEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)
+-- | Convert a raw millisecond value to an `Instant`, falling back to
+-- | the epoch for the astronomically impossible out-of-range case.
+msToInstant :: Number -> Instant
+msToInstant ms = fromMaybe epochInstant (instant (Milliseconds ms))
 
-pruneCaptions :: Number -> Array Caption -> Array Caption
-pruneCaptions nowMs = filter (\caption -> caption.timestamp >= nowMs - captionWindowMs)
+instantToMs :: Instant -> Number
+instantToMs inst = unwrap (unInstant inst)
+
+wordEventToPersistedWordEvent :: WordEvent -> PersistedWordEvent
+wordEventToPersistedWordEvent event =
+  { timestamp: instantToMs event.timestamp
+  , wordCount: event.wordCount
+  }
+
+persistedWordEventToWordEvent :: PersistedWordEvent -> WordEvent
+persistedWordEventToWordEvent event =
+  { timestamp: msToInstant event.timestamp
+  , wordCount: event.wordCount
+  }
+
+intervalToPersistedInterval :: LoggedInterval -> PersistedLoggedInterval
+intervalToPersistedInterval interval =
+  { startedAt: instantToMs interval.startedAt
+  , endedAt: instantToMs interval.endedAt
+  , wordCount: interval.wordCount
+  }
+
+persistedIntervalToInterval :: PersistedLoggedInterval -> LoggedInterval
+persistedIntervalToInterval interval =
+  { startedAt: msToInstant interval.startedAt
+  , endedAt: msToInstant interval.endedAt
+  , wordCount: interval.wordCount
+  }
+
+pruneWordEvents :: Instant -> Array WordEvent -> Array WordEvent
+pruneWordEvents now = filter
+  (\event -> millisecondsBetween now event.timestamp <= longWindowMs)
+
+pruneCaptions :: Instant -> Array Caption -> Array Caption
+pruneCaptions now = filter
+  (\caption -> millisecondsBetween now caption.timestamp <= captionWindowMs)
 
 -- | Refresh the timestamp of the most recent caption (if any) so the
 -- | live captions panel keeps a duplicate-finalized utterance from
 -- | aging out while the recognizer keeps re-emitting it.
-refreshLastCaptionTimestamp :: Number -> Array Caption -> Array Caption
-refreshLastCaptionTimestamp nowMs captions = case unsnoc captions of
+refreshLastCaptionTimestamp :: Instant -> Array Caption -> Array Caption
+refreshLastCaptionTimestamp now captions = case unsnoc captions of
   Nothing -> captions
-  Just { init, last } -> init <> [ last { timestamp = nowMs } ]
+  Just { init, last } -> init <> [ last { timestamp = now } ]
 
 -- | Replace the most recent caption with the refined transcript when
 -- | the recognizer extends an in-flight utterance, or append a new
@@ -344,14 +386,14 @@ refreshLastCaptionTimestamp nowMs captions = case unsnoc captions of
 -- | `session.captionEntries[session.captionEntries.length - 1] = …`
 -- | branch.
 appendOrExtendCaption
-  :: String -> Int -> Number -> Array Caption -> Array Caption
-appendOrExtendCaption caption wordDelta nowMs captions = case unsnoc captions of
+  :: String -> Int -> Instant -> Array Caption -> Array Caption
+appendOrExtendCaption caption wordDelta now captions = case unsnoc captions of
   Nothing ->
-    captions <> [ { transcript: caption, wordCount: wordDelta, timestamp: nowMs } ]
+    captions <> [ { transcript: caption, wordCount: wordDelta, timestamp: now } ]
   Just { init, last } ->
     init <>
       [ { transcript: caption
         , wordCount: last.wordCount + wordDelta
-        , timestamp: nowMs
+        , timestamp: now
         }
       ]

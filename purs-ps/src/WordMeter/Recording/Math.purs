@@ -11,14 +11,17 @@ module WordMeter.Recording.Math
   , captionOpacity
   , formatRate
   , formatDurationMs
+  , millisecondsBetween
   ) where
 
 import Prelude
 
 import Data.Array (filter, foldl)
+import Data.DateTime.Instant (Instant, diff)
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Data.Number (isFinite)
+import Data.Time.Duration (Milliseconds(..))
 import WordMeter.Recording.Session
   ( LoggedInterval
   , Session
@@ -34,22 +37,33 @@ millisecondsPerMinute = 60000.0
 millisecondsPerSecond :: Number
 millisecondsPerSecond = 1000.0
 
+-- | Compute the signed difference `a - b` in milliseconds.
+-- | Wraps `Data.DateTime.Instant.diff` and unwraps the result so
+-- | arithmetic expressions remain readable without reintroducing raw
+-- | `Number` timestamps.
+millisecondsBetween :: Instant -> Instant -> Number
+millisecondsBetween a b =
+  let Milliseconds ms = (diff a b :: Milliseconds)
+  in ms
+
 activeListeningMs :: Session -> Number
 activeListeningMs session =
-  session.completedActiveMs + case session.currentIntervalStart of
-    Just start -> max 0.0 (session.now - start)
-    Nothing -> 0.0
+  let Milliseconds completed = session.completedActiveMs
+  in
+    completed + case session.currentIntervalStart of
+      Just start -> max 0.0 (millisecondsBetween session.now start)
+      Nothing -> 0.0
 
 wallSpanMs :: Session -> Number
 wallSpanMs session = case session.firstStartedAt of
   Nothing -> 0.0
-  Just first -> max 0.0 (session.now - first)
+  Just first -> max 0.0 (millisecondsBetween session.now first)
 
 wordsInTrailingWindow :: Number -> Session -> Int
 wordsInTrailingWindow windowMs session =
   let
-    cutoff = session.now - windowMs
-    inWindow event = event.timestamp >= cutoff
+    inWindow event =
+      millisecondsBetween session.now event.timestamp <= windowMs
   in
     foldl (\acc event -> acc + event.wordCount) 0
       (filter inWindow session.wordEvents)
@@ -60,16 +74,18 @@ wordsPerMinute wordCount elapsedMs
   | otherwise = Int.toNumber wordCount * millisecondsPerMinute / elapsedMs
 
 intervalDurationMs :: LoggedInterval -> Number
-intervalDurationMs interval = max 0.0 (interval.endedAt - interval.startedAt)
+intervalDurationMs interval =
+  max 0.0 (millisecondsBetween interval.endedAt interval.startedAt)
 
 intervalRate :: LoggedInterval -> Number
 intervalRate interval =
   wordsPerMinute interval.wordCount (max 1.0 (intervalDurationMs interval))
 
-captionOpacity :: Number -> Number -> Number
-captionOpacity nowMs captionTimestamp =
+captionOpacity :: Instant -> Instant -> Number
+captionOpacity nowInstant captionTimestamp =
   let
-    ageFraction = max 0.0 (nowMs - captionTimestamp) / captionWindowMs
+    ageFraction =
+      max 0.0 (millisecondsBetween nowInstant captionTimestamp) / captionWindowMs
   in
     max minimumCaptionOpacity (1.0 - ageFraction)
 

@@ -5,6 +5,7 @@ module WordMeter.Recording.View
 
 import Prelude
 
+import Data.DateTime.Instant (Instant)
 import Data.Array (length) as Array
 import Data.Maybe (Maybe(..))
 import WordMeter.Clock (formatClockTime)
@@ -290,13 +291,13 @@ buildCaptionsPlaceholder =
     ]
     [ text "Waiting for speech…" ]
 
-buildCaption :: Number -> Caption -> Node
-buildCaption nowMs caption =
+buildCaption :: Instant -> Caption -> Node
+buildCaption nowInstant caption =
   div_ [ testId "wm-caption" ]
     [ style "font-size" "13px"
     , style "color" "#c9d1d9"
     , style "line-height" "1.3"
-    , style "opacity" (show (captionOpacity nowMs caption.timestamp))
+    , style "opacity" (show (captionOpacity nowInstant caption.timestamp))
     ]
     [ text caption.transcript ]
 
@@ -342,7 +343,7 @@ buildEventLogEntry interval =
     , eventLogEntryRate (intervalRate interval)
     ]
 
-eventLogEntryStarted :: Number -> Node
+eventLogEntryStarted :: Instant -> Node
 eventLogEntryStarted startedAt =
   span_ [ testId "wm-event-log-entry-started" ]
     [ style "font-variant-numeric" "tabular-nums"

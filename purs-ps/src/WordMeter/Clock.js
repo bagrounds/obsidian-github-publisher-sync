@@ -1,4 +1,4 @@
-export const formatClockTime = (timestamp) => {
+export const formatClockTimeMillis = (timestamp) => {
   const date = new Date(timestamp)
   try {
     return date.toLocaleTimeString([], {

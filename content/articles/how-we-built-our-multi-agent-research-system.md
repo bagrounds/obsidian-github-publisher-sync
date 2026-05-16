@@ -6,9 +6,17 @@ title: 🤖🧠👨‍💻🏗️ How we built our multi Agent research system
 URL: https://bagrounds.org/articles/how-we-built-our-multi-agent-research-system
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T00:42:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a central, glowing lead node connected by thin, luminous data lines to a constellation of smaller, satellite-like AI agents. The agents are arranged in a circular, collaborative formation against a deep navy blue background. Each satellite agent is casting soft, distinct beams of light toward a central, holographic document or research file, representing the synthesis of information. The aesthetic is clean and futuristic, utilizing a palette of electric blue, soft teal, and sharp white. The visual composition emphasizes a hub-and-spoke architecture, suggesting parallel processing and interconnected intelligence, with subtle geometric nodes pulsating to convey dynamic movement and activity.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)  
+![articles-how-we-built-our-multi-agent-research-system](../articles-how-we-built-our-multi-agent-research-system.jpg)  
 ## 🤖 AI Summary  
 * 🧠 **The multi-agent research system** is an architecture developed by Anthropic that uses multiple Claude agents to explore complex topics.  
 * 💡 **A lead agent** plans a research process based on user queries, then creates parallel subagents to search for information simultaneously.  

@@ -11,6 +11,7 @@ image_date: 2026-04-09T22:21:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A vibrant, minimalist illustration featuring six distinct, stylized geometric icons arranged in a balanced circular formation. Each icon represents a moral foundation: a glowing heart (Care), a symmetrical balance scale (Fairness), interlocking hands (Loyalty), an ornate crown (Authority), a pristine lotus flower (Sanctity), and a broken chain link (Liberty). The background is a soft, warm gradient of deep indigo transitioning to amber, suggesting the complexity of human intuition. The icons are rendered in a clean, modern aesthetic with metallic gold and matte textures. The overall composition uses negative space to convey harmony and structural integrity, reflecting the theory’s concept of innate psychological systems. The lighting is soft and diffused, highlighting the edges of each icon to create a sense of depth and weight, as if they are resting on a polished stone surface."
 link_analysis_version: "2"
+updated: 2026-05-16T01:48:20
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory  
@@ -32,4 +33,12 @@ MFT originally identified 🖐️ five, and later 6️⃣ six, foundational doma
 🗣️ MFT is often used to explain why people with different political ideologies hold such different views. For example, research has shown that political liberals tend to place greater moral value on the **❤️‍🩹 Care/Harm** and **⚖️ Fairness/Cheating** foundations, while conservatives tend to value all six foundations more equally.  
   
 ## 💬 Gemini (flash-2.5) Prompt  
-> What is Moral Foundations Theory?
+> What is Moral Foundations Theory?  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlwq5zajvg2m" data-bluesky-cid="bafyreid5ruub6gbfqpquqydbtpezuekp2oebo7m6mtiglkzmum3e6lemty"><p>❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory  
+  
+#AI Q: ⚖️ Which moral foundation matters most to your personal values?  
+  
+🧠 Social Psychology | 🗳️ Political Ideology | 👤 Jonathan Haidt  
+https://bagrounds.org/topics/moral-foundations-theory</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlwq5zajvg2m?ref_src=embed">2026-05-16T01:48:49.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

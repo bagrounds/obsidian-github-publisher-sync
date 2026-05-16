@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/snohomish-county-schools-react-to-education-
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T20:25:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a silhouette of a classic brick schoolhouse building in the background. In the foreground, a series of digital file folders and paper documents are floating and dispersing into the air, symbolizing administrative uncertainty and staffing cuts. A muted color palette of slate blue and charcoal gray dominates the scene, punctuated by a sharp, glowing orange light emanating from behind the school building, suggesting tension and abrupt change. The composition uses clean lines and a modern, editorial graphic style, focusing on the concept of bureaucratic disruption and the looming impact on educational infrastructure.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🏫🔥 Snohomish County schools react to education department firings  
+![articles-snohomish-county-schools-react-to-education-department-firings](../articles-snohomish-county-schools-react-to-education-department-firings.jpg)  
 ## 🤖 AI Summary  
 ### 📰 Article Summary  
 - **Layoff Announcement 💼:** The U.S. Department of Education is cutting over 1,300 jobs, reducing its staff from about 4,200.  

@@ -86,9 +86,11 @@ import WordMeter.FFI.Recognition
   , renderOnDeviceUnavailable
   )
 import WordMeter.Recognition.Path (RecognitionPath(..))
+import WordMeter.Locale (Locale(..))
 import WordMeter.Recording
   ( Action(..)
   , Session
+  , WakeLockState(..)
   , activeListeningMs
   , captionOpacity
   , diagnosticsText
@@ -98,7 +100,6 @@ import WordMeter.Recording
   , formatRate
   , idleCopyStatus
   , idleErrorBanner
-  , idleKeepAwakeStatus
   , idleRecognitionStatusOverride
   , initialSession
   , intervalDurationMs
@@ -108,11 +109,10 @@ import WordMeter.Recording
   , overallRate
   , ratePerMinute
   , reduce
-  , renderKeepAwakeUnavailable
+  , renderWakeLockStatus
   , resetConfirmationPrompt
   , shortRate
   , toPersistedData
-  , wakeLockAcquiredStatus
   , wallSpanMs
   , wordsInTrailingWindow
   )
@@ -562,10 +562,10 @@ runKeepAwakeTests :: Effect Unit
 runKeepAwakeTests = do
   assertEqualBoolean "initialSession.keepAwake defaults to true"
     initialSession.keepAwake true
-  assertEqualString "initialSession.keepAwakeStatus is empty"
-    initialSession.keepAwakeStatus idleKeepAwakeStatus
-  assertEqualBoolean "initialSession.wakeLockHeld defaults to false"
-    initialSession.wakeLockHeld false
+  assertEqualBoolean "initialSession.wakeLockState defaults to WakeLockIdle"
+    (initialSession.wakeLockState == WakeLockIdle) true
+  assertEqualString "initialSession wake lock status is empty"
+    (renderWakeLockStatus initialSession.wakeLockState) ""
 
   let
     afterDisable = reduce (SetKeepAwake false) initialSession
@@ -576,37 +576,37 @@ runKeepAwakeTests = do
     afterEnable.keepAwake true
 
   let
-    withStatus = reduce (SetKeepAwakeStatus wakeLockAcquiredStatus) initialSession
-    cleared = reduce (SetKeepAwake false) withStatus
-  assertEqualString "SetKeepAwake false clears keepAwakeStatus"
-    cleared.keepAwakeStatus idleKeepAwakeStatus
+    withHeld = reduce (SetWakeLockState WakeLockHeld) initialSession
+    cleared = reduce (SetKeepAwake false) withHeld
+  assertEqualBoolean "SetKeepAwake false clears wakeLockState to WakeLockIdle"
+    (cleared.wakeLockState == WakeLockIdle) true
 
   let
-    unavailable = renderKeepAwakeUnavailable "wake lock unavailable: NotAllowedError"
-    advised = reduce (SetKeepAwakeStatus unavailable) initialSession
-  assertEqualString "SetKeepAwakeStatus writes the field"
-    advised.keepAwakeStatus unavailable
-  assertEqualBoolean "renderKeepAwakeUnavailable wraps the reason in parens"
-    (containsSubstring "(wake lock unavailable" unavailable) true
+    failedReason = "wake lock unavailable: NotAllowedError"
+    advised = reduce (SetWakeLockState (WakeLockFailed failedReason)) initialSession
+  assertEqualBoolean "SetWakeLockState WakeLockFailed stores failed state"
+    (advised.wakeLockState == WakeLockFailed failedReason) true
+  assertEqualBoolean "WakeLockFailed status wraps the reason in parens"
+    (containsSubstring "(wake lock unavailable" (renderWakeLockStatus advised.wakeLockState)) true
 
-  let held = reduce (SetWakeLockHeld true) initialSession
-  assertEqualBoolean "SetWakeLockHeld flips the flag" held.wakeLockHeld true
-  let dropped = reduce (SetWakeLockHeld false) held
-  assertEqualBoolean "SetWakeLockHeld false flips it back"
-    dropped.wakeLockHeld false
+  let held = reduce (SetWakeLockState WakeLockHeld) initialSession
+  assertEqualBoolean "SetWakeLockState WakeLockHeld sets held state"
+    (held.wakeLockState == WakeLockHeld) true
+  let dropped = reduce (SetWakeLockState WakeLockIdle) held
+  assertEqualBoolean "SetWakeLockState WakeLockIdle clears held state"
+    (dropped.wakeLockState == WakeLockIdle) true
+  assertEqualString "WakeLockHeld status is 'screen will stay on'"
+    (renderWakeLockStatus held.wakeLockState) "screen will stay on"
 
   let
     preferredOff =
-      reduce (SetWakeLockHeld true)
-        (reduce (SetKeepAwakeStatus wakeLockAcquiredStatus)
-          (reduce (SetKeepAwake false) initialSession))
+      reduce (SetWakeLockState WakeLockHeld)
+        (reduce (SetKeepAwake false) initialSession)
     afterReset = reduce (Reset 12345.0) preferredOff
   assertEqualBoolean "Reset preserves keepAwake preference"
     afterReset.keepAwake false
-  assertEqualBoolean "Reset clears wakeLockHeld"
-    afterReset.wakeLockHeld false
-  assertEqualString "Reset clears keepAwakeStatus"
-    afterReset.keepAwakeStatus idleKeepAwakeStatus
+  assertEqualBoolean "Reset clears wakeLockState to WakeLockIdle"
+    (afterReset.wakeLockState == WakeLockIdle) true
 
   let
     wakeLockOutcome = runRecordingWakeLockM do
@@ -855,7 +855,7 @@ runRecognitionCapabilityTests = do
     outcome = runRecordingRecognitionM do
       available <- recognitionApiAvailable
       startRecognition
-        { locale: "en-US"
+        { locale: Locale "en-US"
         , onResult: \_ _ -> pure unit
         , onErrorEvent: \_ _ -> pure unit
         , onEnded: pure unit
@@ -873,7 +873,7 @@ runRecognitionCapabilityTests = do
     (Array.length outcome.events) 4
   assertEqualBoolean "first event is StartedRecognition with locale"
     ( outcome.events ==
-        [ StartedRecognition { locale: "en-US" }
+        [ StartedRecognition { locale: Locale "en-US" }
         , ScheduledAutoRestart
         , CancelledAutoRestart
         , StoppedRecognition
@@ -1012,11 +1012,11 @@ runOnDevicePreflightTests = do
     outcome = runRecordingRecognitionM do
       apiAvailable <- onDeviceLanguagePackApiAvailable
       prepareOnDeviceLanguagePack
-        { locale: "en-US", onProgress: pure unit }
+        { locale: Locale "en-US", onProgress: pure unit }
         case _ of
           Right OnDeviceAvailable ->
             startOnDeviceRecognition
-              { locale: "en-US"
+              { locale: Locale "en-US"
               , onResult: \_ _ -> pure unit
               , onErrorEvent: \_ _ -> pure unit
               , onEnded: pure unit
@@ -1026,7 +1026,7 @@ runOnDevicePreflightTests = do
               }
           Left _ ->
             startRecognition
-              { locale: "en-US"
+              { locale: Locale "en-US"
               , onResult: \_ _ -> pure unit
               , onErrorEvent: \_ _ -> pure unit
               , onEnded: pure unit
@@ -1041,8 +1041,8 @@ runOnDevicePreflightTests = do
   assertEqualBoolean
     "RecordingRecognitionM records prepare then on-device start"
     ( outcome.events ==
-        [ PreparedOnDeviceLanguagePack { locale: "en-US" }
-        , StartedOnDeviceRecognition { locale: "en-US" }
+        [ PreparedOnDeviceLanguagePack { locale: Locale "en-US" }
+        , StartedOnDeviceRecognition { locale: Locale "en-US" }
         ]
     )
     true

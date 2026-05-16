@@ -57,19 +57,18 @@ import WordMeter.FFI.Recognition
 import WordMeter.FFI.StorageError (StorageError, renderStorageError)
 import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
+import WordMeter.Locale (Locale(..), renderLocale)
 import WordMeter.Recording
   ( Action(..)
   , Handlers
+  , WakeLockState(..)
   , diagnosticsText
   , downloadingOnDeviceStatus
-  , idleKeepAwakeStatus
   , idleRecognitionStatusOverride
   , initialSession
-  , renderKeepAwakeUnavailable
   , resetConfirmationPrompt
   , toPersistedData
   , view
-  , wakeLockAcquiredStatus
   )
 import WordMeter.RecognitionError
   ( RecognitionErrorCode(..)
@@ -187,29 +186,39 @@ persistAfterAction
   => Storage m
   => Action
   -> m Unit
-persistAfterAction (Toggle _) = persistCurrentSession
-persistAfterAction (InjectFinalTranscript _ _) = persistCurrentSession
-persistAfterAction (IntegrateFinalizedTranscript _ _) = persistCurrentSession
-persistAfterAction ResetRecognitionDedupState = pure unit
-persistAfterAction (Reset _) = do
-  outcome <- clearPersistedSnapshot
-  case outcome of
-    Right _ -> pure unit
-    Left storageFailure -> recordStorageFailure "persist clear" storageFailure
-persistAfterAction (LoadSession _) = pure unit
-persistAfterAction (Tick _) = pure unit
-persistAfterAction (RecordDiagnostic _ _ _) = pure unit
-persistAfterAction (SetEnvironment _) = pure unit
-persistAfterAction (SetCopyStatus _) = pure unit
-persistAfterAction (SetKeepAwake _) = pure unit
-persistAfterAction (SetKeepAwakeStatus _) = pure unit
-persistAfterAction (SetWakeLockHeld _) = pure unit
-persistAfterAction (HandleRecognitionError _ _ _) = pure unit
-persistAfterAction ClearErrorBanner = pure unit
-persistAfterAction (SetRecognitionStatusOverride _) = pure unit
-persistAfterAction (SetCloudFallbackAttempted _) = pure unit
-persistAfterAction (SetActiveRecognitionPath _) = pure unit
-persistAfterAction (SetDiagnosticsDrawerOpen _) = pure unit
+persistAfterAction action
+  | shouldPersistSession action = persistCurrentSession
+  | otherwise = case action of
+      Reset _ -> do
+        outcome <- clearPersistedSnapshot
+        case outcome of
+          Right _ -> pure unit
+          Left storageFailure -> recordStorageFailure "persist clear" storageFailure
+      _ -> pure unit
+
+-- | Exhaustive predicate — every `Action` constructor must explicitly
+-- | answer whether it should trigger a persistence write. The compiler
+-- | enforces this: adding a new constructor without a case here is a
+-- | type error. This must never use a wildcard catch-all.
+shouldPersistSession :: Action -> Boolean
+shouldPersistSession (Toggle _) = true
+shouldPersistSession (InjectFinalTranscript _ _) = true
+shouldPersistSession (IntegrateFinalizedTranscript _ _) = true
+shouldPersistSession ResetRecognitionDedupState = false
+shouldPersistSession (Reset _) = false
+shouldPersistSession (Tick _) = false
+shouldPersistSession (RecordDiagnostic _ _ _) = false
+shouldPersistSession (SetEnvironment _) = false
+shouldPersistSession (SetCopyStatus _) = false
+shouldPersistSession (SetKeepAwake _) = false
+shouldPersistSession (SetWakeLockState _) = false
+shouldPersistSession (HandleRecognitionError _ _ _) = false
+shouldPersistSession ClearErrorBanner = false
+shouldPersistSession (SetRecognitionStatusOverride _) = false
+shouldPersistSession (SetCloudFallbackAttempted _) = false
+shouldPersistSession (SetActiveRecognitionPath _) = false
+shouldPersistSession (SetDiagnosticsDrawerOpen _) = false
+shouldPersistSession (LoadSession _) = false
 
 persistCurrentSession
   :: forall m
@@ -368,7 +377,7 @@ handleVisibilityVisible
   -> m Unit
 handleVisibilityVisible handlers = do
   session <- readCurrentSession
-  if session.listening && session.keepAwake && not session.wakeLockHeld
+  if session.listening && session.keepAwake && session.wakeLockState /= WakeLockHeld
   then maybeAcquireWakeLock handlers
   else pure unit
 
@@ -443,7 +452,7 @@ swapOnDeviceForCloud handlers code message = do
   updateSession
     ( RecordDiagnostic fallbackTimestamp
         "language-not-supported at runtime — falling back to cloud"
-        ("locale=" <> locale)
+        ("locale=" <> renderLocale locale)
     )
   dispatch handlers (SetCloudFallbackAttempted true)
   stopRecognitionForSession handlers
@@ -479,15 +488,15 @@ releaseHeldWakeLock
   -> m Unit
 releaseHeldWakeLock handlers = do
   session <- readCurrentSession
-  if not session.wakeLockHeld then
-    -- Nothing held: still reset any lingering UI status so a stale
-    -- "screen will stay on" string does not outlive the listening
-    -- session.
-    dispatch handlers (SetKeepAwakeStatus idleKeepAwakeStatus)
-  else
-    releaseScreenWakeLock
-      (onWakeLockReleased handlers)
-      (onWakeLockReleaseError handlers)
+  case session.wakeLockState of
+    WakeLockHeld ->
+      releaseScreenWakeLock
+        (onWakeLockReleased handlers)
+        (onWakeLockReleaseError handlers)
+    _ ->
+      -- Nothing held: reset any lingering state so a stale status
+      -- string does not outlive the listening session.
+      dispatch handlers (SetWakeLockState WakeLockIdle)
 
 onWakeLockReleased
   :: forall m
@@ -499,8 +508,7 @@ onWakeLockReleased
   -> m Unit
 onWakeLockReleased handlers = do
   recordWakeLockEvent "wake lock release" "released"
-  dispatch handlers (SetWakeLockHeld false)
-  dispatch handlers (SetKeepAwakeStatus idleKeepAwakeStatus)
+  dispatch handlers (SetWakeLockState WakeLockIdle)
 
 onWakeLockReleaseError
   :: forall m
@@ -515,10 +523,8 @@ onWakeLockReleaseError handlers failure = do
   let rendered = renderWakeLockError failure
   recordWakeLockEvent "wake lock release failure" rendered
   -- The browser's view of the lock is now indeterminate; reflect that
-  -- in the UI by clearing both flags so the next listening edge will
-  -- attempt a fresh acquisition.
-  dispatch handlers (SetWakeLockHeld false)
-  dispatch handlers (SetKeepAwakeStatus (renderKeepAwakeUnavailable rendered))
+  -- in the UI so the next listening edge will attempt a fresh acquisition.
+  dispatch handlers (SetWakeLockState (WakeLockFailed rendered))
 
 onWakeLockAcquired
   :: forall m
@@ -530,8 +536,7 @@ onWakeLockAcquired
   -> m Unit
 onWakeLockAcquired handlers = do
   recordWakeLockEvent "wake lock acquired" "screen held"
-  dispatch handlers (SetWakeLockHeld true)
-  dispatch handlers (SetKeepAwakeStatus wakeLockAcquiredStatus)
+  dispatch handlers (SetWakeLockState WakeLockHeld)
 
 onWakeLockError
   :: forall m
@@ -545,8 +550,7 @@ onWakeLockError
 onWakeLockError handlers failure = do
   let rendered = renderWakeLockError failure
   recordWakeLockEvent "wake lock failure" rendered
-  dispatch handlers (SetWakeLockHeld false)
-  dispatch handlers (SetKeepAwakeStatus (renderKeepAwakeUnavailable rendered))
+  dispatch handlers (SetWakeLockState (WakeLockFailed rendered))
 
 onWakeLockAutoReleased
   :: forall m
@@ -558,20 +562,20 @@ onWakeLockAutoReleased
   -> m Unit
 onWakeLockAutoReleased handlers = do
   recordWakeLockEvent "wake lock auto-released" "page hidden"
-  dispatch handlers (SetWakeLockHeld false)
+  dispatch handlers (SetWakeLockState WakeLockIdle)
 
 
-defaultLocale :: String
-defaultLocale = "en-US"
+defaultLocale :: Locale
+defaultLocale = Locale "en-US"
 
-sessionLocale :: forall m. SessionState m => m String
+sessionLocale :: forall m. SessionState m => m Locale
 sessionLocale = do
   session <- readCurrentSession
   case session.environment of
     Just snapshot
       | snapshot.navigatorLanguage /= ""
         && snapshot.navigatorLanguage /= "(unknown)" ->
-          pure snapshot.navigatorLanguage
+          pure (Locale snapshot.navigatorLanguage)
     _ -> pure defaultLocale
 
 startRecognitionForSession
@@ -595,7 +599,7 @@ startRecognitionForSession handlers = do
     if not onDeviceApi then do
       recordRecognitionEvent
         "on-device API absent — falling back to cloud"
-        ("locale=" <> locale)
+        ("locale=" <> renderLocale locale)
       dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
       startRecognition (recognitionHandlersFor handlers locale)
     else
@@ -612,12 +616,12 @@ onOnDeviceInstallStarted
   => SessionState m
   => Storage m
   => Handlers
-  -> String
+  -> Locale
   -> m Unit
 onOnDeviceInstallStarted handlers locale = do
   recordRecognitionEvent
     "on-device language pack download started"
-    ("locale=" <> locale)
+    ("locale=" <> renderLocale locale)
   -- Only show the download status while we are still listening — if
   -- the user has hit Stop between the `available()` resolution and
   -- the `install()` call, the override would otherwise stick around
@@ -636,7 +640,7 @@ onOnDevicePreflightResolved
   => WakeLock m
   => Recognition m
   => Handlers
-  -> String
+  -> Locale
   -> Either OnDeviceUnavailable OnDeviceAvailable
   -> m Unit
 onOnDevicePreflightResolved handlers locale outcome = do
@@ -653,7 +657,7 @@ onOnDevicePreflightResolved handlers locale outcome = do
     Right _onDeviceAvailable -> do
       recordRecognitionEvent
         "on-device pre-flight viable — starting on-device"
-        ("locale=" <> locale)
+        ("locale=" <> renderLocale locale)
       dispatch handlers (SetActiveRecognitionPath (Just OnDevicePath))
       startOnDeviceRecognition (recognitionHandlersFor handlers locale)
     Left reason -> do
@@ -688,7 +692,7 @@ recognitionHandlersFor
   => WakeLock m
   => Recognition m
   => Handlers
-  -> String
+  -> Locale
   -> RecognitionHandlers m
 recognitionHandlersFor handlers locale =
   { locale
@@ -697,7 +701,7 @@ recognitionHandlersFor handlers locale =
   , onErrorEvent: handleRecognitionError handlers
   , onEnded: handleRecognitionEnded handlers
   , onStarted: recordRecognitionEvent "recognition started"
-      ("locale=" <> locale)
+      ("locale=" <> renderLocale locale)
   , onStartFailure: onRecognitionStartFailure
   , onConstructFailure: onRecognitionConstructFailure
   }

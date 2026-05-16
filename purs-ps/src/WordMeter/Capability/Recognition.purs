@@ -44,6 +44,7 @@ import WordMeter.FFI.Recognition
   )
 import WordMeter.FFI.Recognition as FFI
 import WordMeter.FFI.Timer as Timer
+import WordMeter.Locale (Locale, renderLocale)
 import WordMeter.Recognition.Path (RecognitionPath(..), processLocallyFor)
 
 -- | Legacy `RESTART_DELAY_MILLISECONDS`: how long the program waits
@@ -57,7 +58,7 @@ restartDelayMilliseconds = 250
 -- | construct / start failures, asynchronous `recognition.onerror`
 -- | events, and a clean `onEnded` for the auto-restart logic.
 type RecognitionHandlers m =
-  { locale :: String
+  { locale :: Locale
   , onResult :: String -> Number -> m Unit
   , onErrorEvent :: String -> String -> m Unit
   , onEnded :: m Unit
@@ -70,7 +71,7 @@ class Monad m <= Recognition m where
   recognitionApiAvailable :: m Boolean
   onDeviceLanguagePackApiAvailable :: m Boolean
   prepareOnDeviceLanguagePack
-    :: { locale :: String, onProgress :: m Unit }
+    :: { locale :: Locale, onProgress :: m Unit }
     -> (Either OnDeviceUnavailable OnDeviceAvailable -> m Unit)
     -> m Unit
   startRecognition :: RecognitionHandlers m -> m Unit
@@ -112,7 +113,7 @@ instance recognitionAppM :: Recognition AppM where
 
 prepareOnDeviceInEnvironment
   :: ApplicationEnvironment
-  -> { locale :: String, onProgress :: AppM Unit }
+  -> { locale :: Locale, onProgress :: AppM Unit }
   -> (Either OnDeviceUnavailable OnDeviceAvailable -> AppM Unit)
   -> Effect Unit
 prepareOnDeviceInEnvironment environment request onDone =
@@ -120,7 +121,7 @@ prepareOnDeviceInEnvironment environment request onDone =
     runHere :: forall a. AppM a -> Effect a
     runHere act = runAppM environment act
   in
-    FFI.ensureOnDeviceLanguagePack request.locale
+    FFI.ensureOnDeviceLanguagePack (renderLocale request.locale)
       (runHere request.onProgress)
       (\outcome -> runHere (onDone outcome))
 
@@ -139,7 +140,7 @@ startRecognitionInEnvironment environment path handlers =
     runHere :: forall a. AppM a -> Effect a
     runHere act = runAppM environment act
   in
-    FFI.constructRecognitionInstance handlers.locale (processLocallyFor path)
+    FFI.constructRecognitionInstance (renderLocale handlers.locale) (processLocallyFor path)
       ( \instance_ -> do
           FFI.attachOnResult instance_
             (\transcript timestamp ->
@@ -217,9 +218,9 @@ cancelHeldTimer environment = do
 -- | orchestrator asked for / let go of recognition at the right
 -- | times.
 data RecognitionEvent
-  = StartedRecognition { locale :: String }
-  | StartedOnDeviceRecognition { locale :: String }
-  | PreparedOnDeviceLanguagePack { locale :: String }
+  = StartedRecognition { locale :: Locale }
+  | StartedOnDeviceRecognition { locale :: Locale }
+  | PreparedOnDeviceLanguagePack { locale :: Locale }
   | StoppedRecognition
   | ScheduledAutoRestart
   | CancelledAutoRestart
@@ -228,11 +229,11 @@ derive instance eqRecognitionEvent :: Eq RecognitionEvent
 
 instance showRecognitionEvent :: Show RecognitionEvent where
   show (StartedRecognition fields) =
-    "StartedRecognition " <> show fields.locale
+    "StartedRecognition " <> renderLocale fields.locale
   show (StartedOnDeviceRecognition fields) =
-    "StartedOnDeviceRecognition " <> show fields.locale
+    "StartedOnDeviceRecognition " <> renderLocale fields.locale
   show (PreparedOnDeviceLanguagePack fields) =
-    "PreparedOnDeviceLanguagePack " <> show fields.locale
+    "PreparedOnDeviceLanguagePack " <> renderLocale fields.locale
   show StoppedRecognition = "StoppedRecognition"
   show ScheduledAutoRestart = "ScheduledAutoRestart"
   show CancelledAutoRestart = "CancelledAutoRestart"

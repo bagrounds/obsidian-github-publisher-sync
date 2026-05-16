@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T09:43:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a neoclassical government building rendered in a deep navy blue. A glowing, translucent digital barrier or firewall surrounds the structure, appearing fractured or breached at one corner. A single, stylized fox silhouette is visible in the shadows near the entrance, casting a long, sharp shadow. In the foreground, a series of glowing, abstract data streams and binary code fragments flow toward the building’s heavy stone pillars. The color palette is dominated by dark slate, electric blue, and a sharp, warning-orange highlight near the breach, creating a sense of tension and digital surveillance. The overall aesthetic is clean, modern, and tech-focused, emphasizing the intersection of traditional governance and cyber vulnerability.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](https://www.npr.org/2025/04/24/nx-s1-5375118/congress-doge-nlrb-whistleblower)  
+![articles-more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge](../articles-more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.jpg)  
 ## 🤖 AI Summary  
 **🗳️ Democratic Lawmakers Demand NLRB Investigate DOGE Data Breach Allegations**  
   

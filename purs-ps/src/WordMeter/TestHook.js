@@ -43,5 +43,7 @@ export const installTestHook = (api) => () => {
     getActiveRecognitionPath: () => api.getActiveRecognitionPath(),
     setActiveRecognitionPath: (path) =>
       api.setActiveRecognitionPath(String(path == null ? "" : path))(),
+    getDiagnosticsDrawerOpen: () => api.getDiagnosticsDrawerOpen(),
+    toggleDiagnosticsDrawer: () => api.toggleDiagnosticsDrawer(),
   }
 }

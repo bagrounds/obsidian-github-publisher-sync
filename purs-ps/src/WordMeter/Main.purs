@@ -87,6 +87,7 @@ type ClickHandlers =
   , requestCopyDiagnostics :: Effect Unit
   , requestReset :: Effect Unit
   , requestSetKeepAwake :: Boolean -> Effect Unit
+  , requestToggleDiagnosticsDrawer :: Effect Unit
   }
 
 main :: Effect Unit
@@ -100,6 +101,7 @@ main = do
     , requestCopyDiagnostics: pure unit :: Effect Unit
     , requestReset: pure unit :: Effect Unit
     , requestSetKeepAwake: \_ -> pure unit :: Effect Unit
+    , requestToggleDiagnosticsDrawer: pure unit :: Effect Unit
     }
   let
     applicationEnvironment :: ApplicationEnvironment
@@ -124,6 +126,8 @@ main = do
       , requestSetKeepAwake: \enabled ->
           readClickHandlers >>= \resolved ->
             runAppM applicationEnvironment (handleSetKeepAwake resolved enabled)
+      , requestToggleDiagnosticsDrawer: readClickHandlers >>= \resolved ->
+          runAppM applicationEnvironment (handleToggleDiagnosticsDrawer resolved)
       }
   Ref.write handlers clickHandlersRef
   runAppM applicationEnvironment (startApplication handlers)
@@ -144,6 +148,7 @@ main = do
     , simulateRecognitionError: \code message ->
         runAppM applicationEnvironment
           (handleRecognitionError handlers code message)
+    , requestToggleDiagnosticsDrawer: handlers.requestToggleDiagnosticsDrawer
     }
 
 startApplication
@@ -211,6 +216,7 @@ persistAfterAction ClearErrorBanner = pure unit
 persistAfterAction (SetRecognitionStatusOverride _) = pure unit
 persistAfterAction (SetCloudFallbackAttempted _) = pure unit
 persistAfterAction (SetActiveRecognitionPath _) = pure unit
+persistAfterAction (SetDiagnosticsDrawerOpen _) = pure unit
 
 persistCurrentSession
   :: forall m
@@ -345,6 +351,18 @@ handleSetKeepAwake handlers enabled = do
     true, true -> maybeAcquireWakeLock handlers
     false, _ -> releaseHeldWakeLock handlers
     true, false -> pure unit
+
+handleToggleDiagnosticsDrawer
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> m Unit
+handleToggleDiagnosticsDrawer handlers = do
+  session <- readCurrentSession
+  dispatch handlers (SetDiagnosticsDrawerOpen (not session.diagnosticsDrawerOpen))
 
 handleVisibilityVisible
   :: forall m

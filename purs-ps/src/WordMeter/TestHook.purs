@@ -56,6 +56,8 @@ foreign import installTestHook
      , getCloudFallbackAttempted :: Effect Boolean
      , getActiveRecognitionPath :: Effect String
      , setActiveRecognitionPath :: String -> Effect Unit
+     , getDiagnosticsDrawerOpen :: Effect Boolean
+     , toggleDiagnosticsDrawer :: Effect Unit
      }
   -> Effect Unit
 
@@ -70,6 +72,7 @@ install
      , persistNow :: Effect Unit
      , simulateVisibilityVisible :: Effect Unit
      , simulateRecognitionError :: String -> String -> Effect Unit
+     , requestToggleDiagnosticsDrawer :: Effect Unit
      }
   -> Effect Unit
 install
@@ -83,6 +86,7 @@ install
   , persistNow
   , simulateVisibilityVisible
   , simulateRecognitionError
+  , requestToggleDiagnosticsDrawer
   } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
@@ -141,6 +145,8 @@ install
     , getActiveRecognitionPath: renderActivePath <$> readSession
     , setActiveRecognitionPath: \label ->
         dispatch (SetActiveRecognitionPath (parseActivePath label))
+    , getDiagnosticsDrawerOpen: _.diagnosticsDrawerOpen <$> readSession
+    , toggleDiagnosticsDrawer: requestToggleDiagnosticsDrawer
     }
 
 parseActivePath :: String -> Maybe RecognitionPath

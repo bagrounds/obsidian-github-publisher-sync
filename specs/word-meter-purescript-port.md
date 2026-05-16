@@ -173,6 +173,8 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `getDiagnosticsText()` / `getDiagnosticsLength()` / `getDiagnosticsLimit()` — rendered diagnostics text (snapshot + log), current size, and cap on the rolling event log.
 - `getCopyStatus()` — current value of the copy-to-clipboard status span (`""`, `"Copied!"`, or `"Copy failed: <reason>"`).
 - `requestCopyDiagnostics()` — same code path the copy button takes; useful when a test wants to drive the clipboard write without a click.
+- `getDiagnosticsDrawerOpen()` — whether the diagnostics drawer is currently open (mirrors `Session.diagnosticsDrawerOpen`).
+- `toggleDiagnosticsDrawer()` — dispatches `SetDiagnosticsDrawerOpen (not current)` through `handleToggleDiagnosticsDrawer`; same code path the summary click takes.
 - `reset()` — same code path the reset button takes, including the `window.confirm` prompt; tests that want to skip the prompt should use `resetAt` instead.
 - `resetAt(timestamp)` — dispatches a `Reset` action at the given clock value, bypassing the confirmation dialog; clears persisted state via the `Storage` capability.
 - `persistNow()` — force-persists the current session through the `Storage` capability without waiting for the next reducer action.
@@ -212,8 +214,8 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-event-log-entry-duration` — total duration of the counting session, formatted by `formatDurationMs` (e.g. `30s`, `1m 0s`).
 - `wm-event-log-entry-words` — word count for the session, rendered as `<n> w`.
 - `wm-event-log-entry-rate` — words / minute for the session, rendered as `<x> wpm` via `formatRate`.
-- `wm-diagnostics` — collapsible `<details>` drawer; collapsed by default, opens on a tap of the summary.
-- `wm-diagnostics-toggle` — the `<summary>` row labelled `🔧 Diagnostics`.
+- `wm-diagnostics` — collapsible `<details>` drawer; collapsed by default, opens on a tap of the summary. The open/closed state is tracked in `Session.diagnosticsDrawerOpen` (action `SetDiagnosticsDrawerOpen Boolean`) so it survives rerenders triggered by word-count updates or other state changes.
+- `wm-diagnostics-toggle` — the `<summary>` row labelled `🔧 Diagnostics`. Clicking it dispatches `SetDiagnosticsDrawerOpen (not session.diagnosticsDrawerOpen)` so the open/closed state is held in the reducer, not only in the browser's native `<details>` toggle (which is reset on every full DOM replacement).
 - `wm-diagnostics-copy` — the `📋 Copy diagnostics` button. On click the meter calls `navigator.clipboard.writeText` with the rendered text and updates `wm-diagnostics-copy-status` with `Copied!` on success or `Copy failed: <reason>` on failure (including when the Clipboard API is unavailable).
 - `wm-diagnostics-copy-status` — a span next to the copy button, empty until the first copy attempt completes.
 - `wm-diagnostics-content` — a `<pre>` containing the formatted diagnostics text: an environment snapshot prefix (`version`, `userAgent`, `navigator.language`) followed by the rolling event log capped at `diagnosticsLimit` (60) entries. Each event line is `<clock-time>  <label>[ — <detail>]`.

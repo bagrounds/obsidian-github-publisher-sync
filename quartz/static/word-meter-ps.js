@@ -1729,7 +1729,7 @@
             })();
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 185, column 7 - line 194, column 14): " + [heldInstance.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 181, column 7 - line 190, column 14): " + [heldInstance.constructor.name]);
         };
       };
     };
@@ -1810,7 +1810,7 @@
         return cancelScheduled(heldTimer.value0)();
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 213, column 3 - line 217, column 35): " + [heldTimer.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Capability.Recognition (line 209, column 3 - line 213, column 35): " + [heldTimer.constructor.name]);
     };
   };
   var scheduleAutoRestartInEnvironment = function(environment) {
@@ -2789,6 +2789,16 @@
     };
     return SetActiveRecognitionPath2;
   }();
+  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ function() {
+    function SetDiagnosticsDrawerOpen2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetDiagnosticsDrawerOpen2.create = function(value0) {
+      return new SetDiagnosticsDrawerOpen2(value0);
+    };
+    return SetDiagnosticsDrawerOpen2;
+  }();
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
       var cutoff = session.now - windowMs;
@@ -2811,7 +2821,7 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 536, column 22 - line 538, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 543, column 22 - line 545, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var wakeLockAcquiredStatus = "screen will stay on";
   var toPersistedData = function(session) {
@@ -2842,7 +2852,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 833, column 24 - line 835, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 840, column 24 - line 842, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
@@ -2859,7 +2869,7 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 666, column 1 - line 666, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 673, column 1 - line 673, column 34): " + [session.constructor.name]);
   };
   var renderKeepAwakeUnavailable = function(reason) {
     return "(" + (reason + ")");
@@ -2879,7 +2889,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 507, column 46 - line 509, column 64): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 514, column 46 - line 516, column 64): " + [v.constructor.name]);
     };
   };
   var minimumCaptionOpacity = 0.15;
@@ -2895,7 +2905,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 549, column 1 - line 549, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 556, column 1 - line 556, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -2960,7 +2970,8 @@
       lastRawFinalizedTranscript: "",
       recognitionStatusOverride: idleRecognitionStatusOverride,
       cloudFallbackAttempted: false,
-      activeRecognitionPath: Nothing.value
+      activeRecognitionPath: Nothing.value,
+      diagnosticsDrawerOpen: false
     };
   }();
   var formatRate = function(rate) {
@@ -2983,19 +2994,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 586, column 1 - line 586, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 593, column 1 - line 593, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $69 = totalSeconds < 60;
-    if ($69) {
+    var $70 = totalSeconds < 60;
+    if ($70) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $70 = totalMinutes < 60;
-    if ($70) {
+    var $71 = totalMinutes < 60;
+    if ($71) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -3039,7 +3050,7 @@
               return timestamp;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 458, column 17 - line 460, column 27): " + [session.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 465, column 17 - line 467, column 27): " + [session.currentIntervalStart.constructor.name]);
           }();
           var completed = {
             startedAt,
@@ -3049,8 +3060,8 @@
           var closedInterval = max3(0)(timestamp - startedAt);
           var statsDetail = "words=" + (show2(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedInterval)));
           var fullDetail = function() {
-            var $73 = reasonDetail === "";
-            if ($73) {
+            var $74 = reasonDetail === "";
+            if ($74) {
               return statsDetail;
             }
             ;
@@ -3073,6 +3084,7 @@
             errorBanner: session.errorBanner,
             lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
             cloudFallbackAttempted: session.cloudFallbackAttempted,
+            diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -3132,7 +3144,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 799, column 11 - line 801, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 806, column 11 - line 808, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -3164,8 +3176,8 @@
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $80 = length(session.eventLog) === 0;
-      if ($80) {
+      var $81 = length(session.eventLog) === 0;
+      if ($81) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -3177,7 +3189,14 @@
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      return details_([testId("wm-diagnostics")])([style("margin-top")("16px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("font-size")("12px"), style("color")("#9aa5b1")])([summary_([testId("wm-diagnostics-toggle")])([style("cursor")("pointer"), style("user-select")("none"), style("padding")("4px 0")])([])([text("\u{1F527} Diagnostics")]), div_([])([style("display")("flex"), style("align-items")("center"), style("gap")("8px"), style("margin")("8px 0 0 0")])([button([testId("wm-diagnostics-copy"), buttonType("button")])([style("padding")("8px 12px"), style("border-radius")("999px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("background")("transparent"), style("color")("#e6edf3"), style("cursor")("pointer"), style("font")("inherit")])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status")])([style("color")("#9aa5b1"), style("font-size")("11.5px")])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content")])([style("margin")("8px 0 0 0"), style("padding")("10px 12px"), style("background")("rgba(255,255,255,0.04)"), style("border")("1px solid rgba(255,255,255,0.08)"), style("border-radius")("8px"), style("font-family")("ui-monospace,SFMono-Regular,Menlo,monospace"), style("font-size")("11.5px"), style("line-height")("1.45"), style("color")("#c9d1d9"), style("white-space")("pre-wrap"), style("word-break")("break-word"), style("max-height")("320px"), style("overflow-y")("auto")])([text(diagnosticsText(session))])]);
+      var drawerAttributes = append12([testId("wm-diagnostics")])(function() {
+        if (session.diagnosticsDrawerOpen) {
+          return [attribute("open")("")];
+        }
+        ;
+        return [];
+      }());
+      return details_(drawerAttributes)([style("margin-top")("16px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("font-size")("12px"), style("color")("#9aa5b1")])([summary_([testId("wm-diagnostics-toggle")])([style("cursor")("pointer"), style("user-select")("none"), style("padding")("4px 0")])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([])([style("display")("flex"), style("align-items")("center"), style("gap")("8px"), style("margin")("8px 0 0 0")])([button([testId("wm-diagnostics-copy"), buttonType("button")])([style("padding")("8px 12px"), style("border-radius")("999px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("background")("transparent"), style("color")("#e6edf3"), style("cursor")("pointer"), style("font")("inherit")])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status")])([style("color")("#9aa5b1"), style("font-size")("11.5px")])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content")])([style("margin")("8px 0 0 0"), style("padding")("10px 12px"), style("background")("rgba(255,255,255,0.04)"), style("border")("1px solid rgba(255,255,255,0.08)"), style("border-radius")("8px"), style("font-family")("ui-monospace,SFMono-Regular,Menlo,monospace"), style("font-size")("11.5px"), style("line-height")("1.45"), style("color")("#c9d1d9"), style("white-space")("pre-wrap"), style("word-break")("break-word"), style("max-height")("320px"), style("overflow-y")("auto")])([text(diagnosticsText(session))])]);
     };
   };
   var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label")])([/* @__PURE__ */ style("font-size")("14px"), /* @__PURE__ */ style("color")("#9aa5b1")])([/* @__PURE__ */ text("words counted")]);
@@ -3192,8 +3211,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $81 = length(session.captions) === 0;
-      if ($81) {
+      var $83 = length(session.captions) === 0;
+      if ($83) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -3221,7 +3240,7 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording (line 518, column 58 - line 527, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording (line 525, column 58 - line 534, column 8): " + [v.constructor.name]);
         };
       };
     };
@@ -3249,6 +3268,7 @@
             keepAwake: v1.keepAwake,
             keepAwakeStatus: v1.keepAwakeStatus,
             wakeLockHeld: v1.wakeLockHeld,
+            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
@@ -3261,7 +3281,7 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 256, column 30 - line 258, column 40): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 260, column 30 - line 262, column 40): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
             captions: pruneCaptions(v.value0)(v1.captions),
@@ -3282,8 +3302,8 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $91 = wordCount === 0;
-          if ($91) {
+          var $93 = wordCount === 0;
+          if ($93) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
@@ -3304,6 +3324,7 @@
               recognitionStatusOverride: v1.recognitionStatusOverride,
               cloudFallbackAttempted: v1.cloudFallbackAttempted,
               activeRecognitionPath: v1.activeRecognitionPath,
+              diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
               now: v.value1,
               wordEvents: prunedEvents,
               captions: prunedCaptions
@@ -3332,6 +3353,7 @@
             recognitionStatusOverride: v1.recognitionStatusOverride,
             cloudFallbackAttempted: v1.cloudFallbackAttempted,
             activeRecognitionPath: v1.activeRecognitionPath,
+            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             totalWords: v1.totalWords + wordCount | 0,
             currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
             captions: append12(prunedCaptions)([{
@@ -3370,6 +3392,7 @@
             recognitionStatusOverride: v1.recognitionStatusOverride,
             cloudFallbackAttempted: v1.cloudFallbackAttempted,
             activeRecognitionPath: v1.activeRecognitionPath,
+            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             now: v.value1,
             captions: pruneCaptions(v.value1)(v1.captions)
           };
@@ -3401,6 +3424,7 @@
             recognitionStatusOverride: v1.recognitionStatusOverride,
             cloudFallbackAttempted: v1.cloudFallbackAttempted,
             activeRecognitionPath: v1.activeRecognitionPath,
+            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             now: v.value0
           };
         }
@@ -3420,6 +3444,7 @@
             currentIntervalStart: v1.currentIntervalStart,
             currentIntervalWords: v1.currentIntervalWords,
             diagnostics: v1.diagnostics,
+            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             environment: v1.environment,
             errorBanner: v1.errorBanner,
             eventLog: v1.eventLog,
@@ -3459,6 +3484,7 @@
               recognitionStatusOverride: base.recognitionStatusOverride,
               cloudFallbackAttempted: base.cloudFallbackAttempted,
               activeRecognitionPath: base.activeRecognitionPath,
+              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
               captions: refreshLastCaptionTimestamp(v.value0)(prunedCaptions)
             };
           }
@@ -3491,6 +3517,7 @@
               recognitionStatusOverride: base.recognitionStatusOverride,
               cloudFallbackAttempted: base.cloudFallbackAttempted,
               activeRecognitionPath: base.activeRecognitionPath,
+              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
               totalWords: v1.totalWords + decision.value0.wordDelta | 0,
               currentIntervalWords: v1.currentIntervalWords + decision.value0.wordDelta | 0,
               captions: extendedCaptions,
@@ -3526,6 +3553,7 @@
               recognitionStatusOverride: base.recognitionStatusOverride,
               cloudFallbackAttempted: base.cloudFallbackAttempted,
               activeRecognitionPath: base.activeRecognitionPath,
+              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
               totalWords: v1.totalWords + decision.value0.wordCount | 0,
               currentIntervalWords: v1.currentIntervalWords + decision.value0.wordCount | 0,
               captions: append12(prunedCaptions)([{
@@ -3542,7 +3570,7 @@
             };
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording (line 316, column 10 - line 364, column 16): " + [decision.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording (line 320, column 10 - line 368, column 16): " + [decision.constructor.name]);
         }
         ;
       }
@@ -3570,6 +3598,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           lastRawFinalizedTranscript: ""
         };
       }
@@ -3595,6 +3624,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           now: v.value0,
           wordEvents: pruneEvents(v.value0)(v1.wordEvents),
           captions: pruneCaptions(v.value0)(v1.captions)
@@ -3624,6 +3654,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           diagnostics: recordEntry({
             timestamp: v.value0,
             label: v.value1,
@@ -3655,6 +3686,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           environment: new Just(v.value0)
         };
       }
@@ -3682,6 +3714,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           copyStatus: v.value0
         };
       }
@@ -3711,6 +3744,7 @@
           recognitionStatusOverride: initialSession.recognitionStatusOverride,
           cloudFallbackAttempted: initialSession.cloudFallbackAttempted,
           activeRecognitionPath: initialSession.activeRecognitionPath,
+          diagnosticsDrawerOpen: initialSession.diagnosticsDrawerOpen,
           now: v.value0,
           diagnostics: recordEntry(resetEntry)(v1.diagnostics),
           environment: v1.environment,
@@ -3735,6 +3769,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           totalWords: max1(0)(v.value0.totalWords),
           firstStartedAt: v.value0.firstStartedAt,
           wordEvents: v.value0.wordEvents,
@@ -3767,6 +3802,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           keepAwake: v.value0,
           keepAwakeStatus: function() {
             if (v.value0) {
@@ -3801,6 +3837,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           keepAwakeStatus: v.value0
         };
       }
@@ -3828,6 +3865,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           wakeLockHeld: v.value0
         };
       }
@@ -3846,6 +3884,7 @@
           copyStatus: v1.copyStatus,
           currentIntervalStart: v1.currentIntervalStart,
           currentIntervalWords: v1.currentIntervalWords,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           environment: v1.environment,
           errorBanner: v1.errorBanner,
           eventLog: v1.eventLog,
@@ -3864,13 +3903,13 @@
         };
         var classified = classifyRecognitionError(v.value1);
         var bannerText = recognitionErrorBannerText(classified);
-        var $111 = isTransient(classified);
-        if ($111) {
+        var $113 = isTransient(classified);
+        if ($113) {
           return sessionWithDiagnostic;
         }
         ;
-        var $112 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
-        if ($112) {
+        var $114 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($114) {
           var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
           return {
             listening: stopped.listening,
@@ -3894,6 +3933,7 @@
             recognitionStatusOverride: stopped.recognitionStatusOverride,
             cloudFallbackAttempted: stopped.cloudFallbackAttempted,
             activeRecognitionPath: stopped.activeRecognitionPath,
+            diagnosticsDrawerOpen: stopped.diagnosticsDrawerOpen,
             errorBanner: bannerText
           };
         }
@@ -3920,6 +3960,7 @@
           recognitionStatusOverride: sessionWithDiagnostic.recognitionStatusOverride,
           cloudFallbackAttempted: sessionWithDiagnostic.cloudFallbackAttempted,
           activeRecognitionPath: sessionWithDiagnostic.activeRecognitionPath,
+          diagnosticsDrawerOpen: sessionWithDiagnostic.diagnosticsDrawerOpen,
           errorBanner: bannerText
         };
       }
@@ -3947,6 +3988,7 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           errorBanner: idleErrorBanner
         };
       }
@@ -3974,6 +4016,7 @@
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           recognitionStatusOverride: v.value0
         };
       }
@@ -4001,6 +4044,7 @@
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           recognitionStatusOverride: v1.recognitionStatusOverride,
           activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           cloudFallbackAttempted: v.value0
         };
       }
@@ -4028,11 +4072,40 @@
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           recognitionStatusOverride: v1.recognitionStatusOverride,
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           activeRecognitionPath: v.value0
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 244, column 1 - line 244, column 39): " + [v.constructor.name, v1.constructor.name]);
+      if (v instanceof SetDiagnosticsDrawerOpen) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          keepAwakeStatus: v1.keepAwakeStatus,
+          wakeLockHeld: v1.wakeLockHeld,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          recognitionStatusOverride: v1.recognitionStatusOverride,
+          cloudFallbackAttempted: v1.cloudFallbackAttempted,
+          activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v.value0
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 248, column 1 - line 248, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var activeListeningMs = function(session) {
@@ -4045,7 +4118,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 531, column 31 - line 533, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 538, column 31 - line 540, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -5586,7 +5659,9 @@
       getRecognitionStatusOverride: () => api.getRecognitionStatusOverride(),
       getCloudFallbackAttempted: () => api.getCloudFallbackAttempted(),
       getActiveRecognitionPath: () => api.getActiveRecognitionPath(),
-      setActiveRecognitionPath: (path) => api.setActiveRecognitionPath(String(path == null ? "" : path))()
+      setActiveRecognitionPath: (path) => api.setActiveRecognitionPath(String(path == null ? "" : path))(),
+      getDiagnosticsDrawerOpen: () => api.getDiagnosticsDrawerOpen(),
+      toggleDiagnosticsDrawer: () => api.toggleDiagnosticsDrawer()
     };
   };
 
@@ -5606,7 +5681,7 @@
       return "cloud";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 153, column 28 - line 156, column 28): " + [session.activeRecognitionPath.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 159, column 28 - line 162, column 28): " + [session.activeRecognitionPath.constructor.name]);
   };
   var parseActivePath = function(v) {
     if (v === "on-device") {
@@ -5730,7 +5805,11 @@
       getActiveRecognitionPath: map12(renderActivePath)(v.readSession),
       setActiveRecognitionPath: function(label) {
         return v.dispatch(new SetActiveRecognitionPath(parseActivePath(label)));
-      }
+      },
+      getDiagnosticsDrawerOpen: map12(function(v1) {
+        return v1.diagnosticsDrawerOpen;
+      })(v.readSession),
+      toggleDiagnosticsDrawer: v.requestToggleDiagnosticsDrawer
     });
   };
 
@@ -5827,7 +5906,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 224, column 3 - line 226, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 230, column 3 - line 232, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -5873,7 +5952,7 @@
                 return recordStorageFailure2("persist clear")(outcome.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Main (line 198, column 3 - line 200, column 79): " + [outcome.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Main (line 203, column 3 - line 205, column 79): " + [outcome.constructor.name]);
             });
           }
           ;
@@ -5929,7 +6008,11 @@
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 185, column 1 - line 191, column 12): " + [v.constructor.name]);
+          if (v instanceof SetDiagnosticsDrawerOpen) {
+            return pure1(unit);
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Main (line 190, column 1 - line 196, column 12): " + [v.constructor.name]);
         };
       };
     };
@@ -6009,7 +6092,7 @@
                         return recordLoadFailure2(restored.value0);
                       }
                       ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 162, column 3 - line 165, column 54): " + [restored.constructor.name]);
+                      throw new Error("Failed pattern match at WordMeter.Main (line 167, column 3 - line 170, column 54): " + [restored.constructor.name]);
                     }())(function() {
                       return bind13(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
@@ -6077,6 +6160,26 @@
     };
   };
   var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clockAppM)(clipboardAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var handleToggleDiagnosticsDrawer = function(dictClock) {
+    var bind13 = bind(dictClock.Monad0().Bind1());
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDomMount) {
+      var dispatch3 = dispatch2(dictDomMount);
+      return function(dictSessionState) {
+        var readCurrentSession2 = readCurrentSession(dictSessionState);
+        var dispatch4 = dispatch3(dictSessionState);
+        return function(dictStorage) {
+          var dispatch5 = dispatch4(dictStorage);
+          return function(handlers) {
+            return bind13(readCurrentSession2)(function(session) {
+              return dispatch5(handlers)(new SetDiagnosticsDrawerOpen(!session.diagnosticsDrawerOpen));
+            });
+          };
+        };
+      };
+    };
+  };
+  var handleToggleDiagnosticsDrawer1 = /* @__PURE__ */ handleToggleDiagnosticsDrawer(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var onOnDeviceInstallStarted = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
@@ -6201,8 +6304,8 @@
             var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
             return function(handlers) {
               return bind13(readCurrentSession2)(function(session) {
-                var $643 = !session.keepAwake;
-                if ($643) {
+                var $660 = !session.keepAwake;
+                if ($660) {
                   return pure1(unit);
                 }
                 ;
@@ -6230,8 +6333,8 @@
             var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
             return function(handlers) {
               return bind13(readCurrentSession2)(function(session) {
-                var $644 = session.listening && (session.keepAwake && !session.wakeLockHeld);
-                if ($644) {
+                var $661 = session.listening && (session.keepAwake && !session.wakeLockHeld);
+                if ($661) {
                   return maybeAcquireWakeLock5(handlers);
                 }
                 ;
@@ -6313,8 +6416,8 @@
             var releaseScreenWakeLock2 = releaseScreenWakeLock(dictWakeLock);
             return function(handlers) {
               return bind13(readCurrentSession2)(function(session) {
-                var $645 = !session.wakeLockHeld;
-                if ($645) {
+                var $662 = !session.wakeLockHeld;
+                if ($662) {
                   return dispatch5(handlers)(new SetKeepAwakeStatus(idleKeepAwakeStatus));
                 }
                 ;
@@ -6367,7 +6470,7 @@
                       return pure1(unit);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 344, column 3 - line 347, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 350, column 3 - line 353, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
                   });
                 });
               };
@@ -6456,7 +6559,7 @@
                       return recordConfirmFailure2(outcome.value0);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 322, column 3 - line 329, column 63): " + [outcome.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 328, column 3 - line 335, column 63): " + [outcome.constructor.name]);
                   });
                 };
               };
@@ -6556,15 +6659,15 @@
               var prepareOnDeviceLanguagePack2 = prepareOnDeviceLanguagePack(dictRecognition);
               return function(handlers) {
                 return bind13(recognitionApiAvailable3)(function(available) {
-                  var $654 = !available;
-                  if ($654) {
+                  var $671 = !available;
+                  if ($671) {
                     return recordRecognitionEvent2("recognition unavailable")("no SpeechRecognition constructor");
                   }
                   ;
                   return bind13(sessionLocale1)(function(locale) {
                     return bind13(onDeviceLanguagePackApiAvailable3)(function(onDeviceApi) {
-                      var $655 = !onDeviceApi;
-                      if ($655) {
+                      var $672 = !onDeviceApi;
+                      if ($672) {
                         return discard22(recordRecognitionEvent2("on-device API absent \u2014 falling back to cloud")("locale=" + locale))(function() {
                           return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
                             return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(handlers)(locale));
@@ -6650,8 +6753,8 @@
                   return function(outcome) {
                     return discard22(dispatch5(handlers)(new SetRecognitionStatusOverride(idleRecognitionStatusOverride)))(function() {
                       return bind13(readCurrentSession2)(function(session) {
-                        var $656 = !session.listening;
-                        if ($656) {
+                        var $673 = !session.listening;
+                        if ($673) {
                           return pure1(unit);
                         }
                         ;
@@ -6671,7 +6774,7 @@
                           });
                         }
                         ;
-                        throw new Error("Failed pattern match at WordMeter.Main (line 642, column 8 - line 654, column 64): " + [outcome.constructor.name]);
+                        throw new Error("Failed pattern match at WordMeter.Main (line 660, column 8 - line 672, column 64): " + [outcome.constructor.name]);
                       });
                     });
                   };
@@ -6726,8 +6829,8 @@
                           return bind13(map13(function(v) {
                             return v.listening;
                           })(readCurrentSession2))(function(stillListening) {
-                            var $661 = beforeSession.listening && !stillListening;
-                            if ($661) {
+                            var $678 = beforeSession.listening && !stillListening;
+                            if ($678) {
                               return discard22(stopRecognitionForSession5(handlers))(function() {
                                 return releaseHeldWakeLock5(handlers);
                               });
@@ -6769,8 +6872,8 @@
               return function(handlers) {
                 return discard22(dispatch5(handlers)(ResetRecognitionDedupState.value))(function() {
                   return bind13(readCurrentSession2)(function(session) {
-                    var $662 = !session.listening;
-                    if ($662) {
+                    var $679 = !session.listening;
+                    if ($679) {
                       return pure1(unit);
                     }
                     ;
@@ -6802,8 +6905,8 @@
             return function(dictRecognition) {
               return function(handlers) {
                 return bind13(readCurrentSession2)(function(session) {
-                  var $663 = !session.listening;
-                  if ($663) {
+                  var $680 = !session.listening;
+                  if ($680) {
                     return pure1(unit);
                   }
                   ;
@@ -6876,8 +6979,8 @@
                         }
                         ;
                         return discard22(releaseHeldWakeLock5(handlers))(function() {
-                          var $666 = !wasListening;
-                          if ($666) {
+                          var $683 = !wasListening;
+                          if ($683) {
                             return pure1(unit);
                           }
                           ;
@@ -6906,7 +7009,8 @@
       requestReset: pure6(unit),
       requestSetKeepAwake: function(v) {
         return pure6(unit);
-      }
+      },
+      requestToggleDiagnosticsDrawer: pure6(unit)
     })();
     var readClickHandlers = read(clickHandlersRef);
     var applicationEnvironment = {
@@ -6933,6 +7037,10 @@
           var resolved = readClickHandlers();
           return runAppM(applicationEnvironment)(handleSetKeepAwake1(resolved)(enabled))();
         };
+      },
+      requestToggleDiagnosticsDrawer: function __do2() {
+        var resolved = readClickHandlers();
+        return runAppM(applicationEnvironment)(handleToggleDiagnosticsDrawer1(resolved))();
       }
     };
     write(handlers)(clickHandlersRef)();
@@ -6954,7 +7062,8 @@
         return function(message2) {
           return runAppM(applicationEnvironment)(handleRecognitionError1(handlers)(code)(message2));
         };
-      }
+      },
+      requestToggleDiagnosticsDrawer: handlers.requestToggleDiagnosticsDrawer
     })();
   };
 

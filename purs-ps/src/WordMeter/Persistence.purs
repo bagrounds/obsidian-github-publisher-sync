@@ -13,7 +13,7 @@ import Data.Argonaut.Core (Json, jsonEmptyObject, stringify)
 import Data.Argonaut.Decode (JsonDecodeError, decodeJson, parseJson, printJsonDecodeError, (.:))
 import Data.Argonaut.Encode (encodeJson, (:=), (~>))
 import Data.Either (Either(..))
-import WordMeter.Recording (PersistedData)
+import WordMeter.Recording.Session (PersistedData)
 
 storageKey :: String
 storageKey = "word-meter-ps:state:v1"

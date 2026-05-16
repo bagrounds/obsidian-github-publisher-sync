@@ -34,7 +34,11 @@ purs-ps/
     Clock.purs / Clock.js      pure locale clock-time formatter (no effects)
     Vdom.purs / Vdom.js        typed declarative DOM (Element / Attribute / Style / Listener) + mount
     Words.purs                 pure word counter
-    Recording.purs             slices 1–8: session state + reducer + view + rate math + event log + diagnostics view + reset + persisted-data projection + recognition error banner
+    Recording/
+      Session.purs           session types (Session, Caption, WordEvent, LoggedInterval, PersistedData), WakeLockState ADT, initialSession, constants
+      Math.purs              pure rate calculations (wordsPerMinute, shortRate, longRate, overallRate, captionOpacity) + formatters (formatRate, formatDurationMs)
+      Reducer.purs           Action ADT, Dispatch / Handlers types, reduce, toPersistedData, private caption/event helpers
+      View.purs              view entry point + all build* helpers + diagnosticsText
     Diagnostics.purs           slice 5: pure diagnostics log + environment-snapshot formatters
     RecognitionError.purs      slice 8: pure typed classification of `recognition.onerror` codes + banner-text rendering
     TestHook.purs / .js        window.__wordMeter test hook
@@ -248,22 +252,23 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
+- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `wordsPerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.
 
 ## Optional improvement backlog
 
 The following improvements are recommended based on a review against PureScript best practices (see [`specs/purescript-best-practices.md`](./purescript-best-practices.md)) and the repo's engineering principles. None are required for feature parity; they are listed here for future work with supporting rationale and trade-offs.
 
-### Split `Recording.purs` into focused modules
+### ✅ Split `Recording.purs` into focused modules
 
-**What:** `Recording.purs` currently owns session types, the `Action` ADT, the pure reducer, the view function, all `build*` view helpers, rate math, duration formatting, caption helpers, caption opacity, and persisted-data projection. This is roughly 1 000 lines and five distinct responsibilities in one file.
+**Done in this PR.** The monolithic `Recording.purs` (≈ 1 000 lines, five responsibilities) has been split into four focused modules under a `WordMeter.Recording.*` namespace:
 
-**Why:** The module boundary is the unit of reuse and discoverability. A reader looking for rate math must scan through view helpers. A reader looking for the reducer must scroll past formatting functions. Splitting into `Recording.Session` (types + `initialSession`), `Recording.Reducer` (actions + `reduce`), `Recording.View` (view + all `build*`), and `Recording.Math` (rate calculations + formatters) gives each concern its own search space and allows future changes to land in a smaller diff.
+- `WordMeter.Recording.Session` — session types (`Session`, `Caption`, `WordEvent`, `LoggedInterval`, `PersistedData`), the `WakeLockState` ADT, `initialSession`, all constants, and idle/default string values.
+- `WordMeter.Recording.Math` — pure rate calculations (`wordsPerMinute`, `shortRate`, `longRate`, `overallRate`, `wordsInTrailingWindow`, `wallSpanMs`, `activeListeningMs`, `intervalDurationMs`, `intervalRate`, `captionOpacity`) and formatters (`formatRate`, `formatDurationMs`).
+- `WordMeter.Recording.Reducer` — the `Action` ADT, `Dispatch` and `Handlers` type aliases, the `reduce` function, `toPersistedData`, and all private caption/event-pruning helpers.
+- `WordMeter.Recording.View` — the `view` entry point, all `build*` helper functions, `diagnosticsText`, and `renderStatus`.
 
-**Trade-offs:** Pure rename refactor — no behavior change. Adds several module files. Imports in `Main.purs`, `TestHook.purs`, and `Test.Main.purs` will need updating. PureScript's structural typing means the split is safe as long as all re-used types (like `Session`) stay in one canonical location.
-
-**Complexity:** Medium. Safe automated refactor; most of the work is reorganizing imports.
+The old `WordMeter.Recording` module is deleted; consumers import directly from the appropriate sub-module. Imports in `AppM.purs`, `Persistence.purs`, `Capability/Storage.purs`, `Capability/SessionState.purs`, `Main.purs`, `TestHook.purs`, and `Test.Main.purs` are updated accordingly. No behavior change.
 
 ---
 
@@ -273,7 +278,13 @@ The following improvements are recommended based on a review against PureScript 
 
 **Why:** `purescript-datetime` already provides exactly this concept: `Instant` represents a point in time as milliseconds since the Unix epoch, and `Data.Time.Duration.Milliseconds` (also from `datetime`) represents a duration. Using `Instant` for timestamps and `Milliseconds` for durations gives each concept its own type, prevents accidentally passing a duration where a timestamp is expected, and expresses intent through a well-maintained, widely-used library rather than a custom newtype. Cost at runtime: zero (newtypes are erased). The `unInstant :: Instant -> Milliseconds` function extracts the underlying value when FFI boundaries need a raw `Number`.
 
-**Trade-offs:** Requires adding `datetime` to `spago.yaml` dependencies and touching every `Action` constructor and every `reduce` case that pattern-matches on a timestamp. Tests that hardcode numeric timestamps would need `Instant` wrappers (via `instant :: Milliseconds -> Maybe Instant`). The `FFI/Clock.purs` foreign import `currentTimeMillis :: Effect Number` would become `currentTimeMillis :: Effect Instant` with the `Number → Milliseconds → Instant` conversion happening at the FFI boundary.
+**How — FFI boundary:** `instant :: Milliseconds -> Maybe Instant` returns `Nothing` only when the milliseconds value falls outside the valid `Instant` range (astronomical past/future). At the `FFI/Clock.purs` boundary, the `Maybe` is converted to `Either InvalidTimestamp Instant`; a `Left` is logged as a diagnostic entry and surfaced as a human-friendly error message in the UI, consistent with the repo's "never silently swallow errors" rule.
+
+**How — arithmetic:** `Instant` does not form a `Ring` (adding two instants has no meaning), but `diff :: Instant -> Instant -> Milliseconds` provides idiomatic subtraction that returns the typed `Milliseconds` duration. Duration arithmetic uses the standard numeric operators on `Milliseconds` since that type derives the relevant arithmetic instances. A small private helper `millisecondsBetween :: Instant -> Instant -> Number` (wrapping `diff` and `unMilliseconds`) can be defined locally in `Recording.Math` to keep the rate-calculation expressions readable without reintroducing raw `Number` timestamps.
+
+**How — actions and tests:** `Toggle`, `Tick`, and every other timestamp-carrying action constructor are defined in this codebase, so their parameter types are fully under our control. They would change to accept `Instant` directly. Test cases that currently write `Toggle 1000.0` would become `Toggle (testInstant 1000.0)` where `testInstant :: Number -> Instant` is a small test-only helper implemented as `fromMaybe bottom (instant (Milliseconds ms))`; `bottom` is the minimum valid `Instant` and serves as a safe default for the hard-coded epoch-relative values used in tests.
+
+**Trade-offs:** Requires adding `datetime` to `spago.yaml` dependencies and touching every `Action` constructor and every `reduce` case. Test cases need the `testInstant` helper at each call site, which is mechanical but ensures the compiler verifies every change. The `FFI/Clock.purs` foreign import `currentTimeMillis :: Effect Number` becomes `currentTimeMillis :: Effect Instant` with the conversion and error handling at the FFI boundary.
 
 **Complexity:** Medium. Mechanical transformation; the compiler guides every change site.
 
@@ -303,12 +314,14 @@ The following improvements are recommended based on a review against PureScript 
 
 ---
 
-### Add property-based tests for pure functions
+### ✅ Add property-based tests for pure functions
 
-**What:** The pure functions `formatRate`, `formatDurationMs`, `ratePerMinute`, `captionOpacity`, `normalizeTranscript`, and `classifyFinalizedTranscript` all have clear algebraic properties that are currently tested only with a handful of specific examples.
+**Done in this PR.** Added `purescript-quickcheck` to the test dependencies in `spago.yaml` and `spago.lock`. Seven new `quickCheck`-driven properties cover the pure functions with the most branching logic. Properties are iterated with `sequence_` over a list of `quickCheck propN` calls. Each property name describes the invariant it verifies; no inline comments are needed.
 
-**Why:** Property-based tests (via `purescript-quickcheck`) find edge cases that hand-written examples miss. For instance, `formatRate (ratePerMinute n d) >= 0` for all finite `n` and `d`, and `normalizeTranscript (normalizeTranscript s) == normalizeTranscript s` (idempotence).
-
-**Trade-offs:** Requires adding `purescript-quickcheck` to `spago.yaml`. Test run time increases modestly. The investment pays off most in functions with complex case splits (`formatRate` has four branches, `classifyFinalizedTranscript` has four).
-
-**Complexity:** Low to medium depending on how many generators need to be written.
+- `formatRateContainsDigit` — `formatRate` always returns a string containing at least one digit.
+- `formatDurationContainsDigit` — `formatDurationMs` always returns a string containing at least one digit.
+- `captionOpacityIsInRange` — `captionOpacity` always returns a value in `[minimumCaptionOpacity, 1.0]`.
+- `captionOpacityAtSameTimestampIsOne` — `captionOpacity ts ts == 1.0` for all timestamps.
+- `wordsPerMinuteIsZeroWhenNoWords` — `wordsPerMinute 0 elapsed == 0.0` for any elapsed time.
+- `wordsPerMinuteIsNonNegative` — `wordsPerMinute` with non-negative inputs always returns a non-negative rate.
+- `wordsPerMinuteAtOneMinuteEqualsWordCount` — `wordsPerMinute n 60000.0 == toNumber n` (the definitional identity at exactly one minute elapsed).

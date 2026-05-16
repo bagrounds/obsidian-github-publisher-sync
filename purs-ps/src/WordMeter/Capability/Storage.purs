@@ -28,7 +28,7 @@ import WordMeter.Persistence
   , renderPersistenceError
   , storageKey
   )
-import WordMeter.Recording (PersistedData)
+import WordMeter.Recording.Session (PersistedData)
 
 data LoadError
   = LoadStorageError StorageError

@@ -15,7 +15,8 @@ import Data.Tuple (Tuple(..))
 import Effect.Class (liftEffect)
 import Effect.Ref as Ref
 import WordMeter.AppM (AppM(..))
-import WordMeter.Recording (Action, Session, reduce)
+import WordMeter.Recording.Reducer (Action, reduce)
+import WordMeter.Recording.Session (Session)
 
 class Monad m <= SessionState m where
   readCurrentSession :: m Session

@@ -15,7 +15,7 @@ import Effect.Ref (Ref)
 import WordMeter.FFI.Recognition (RecognitionInstance)
 import WordMeter.FFI.Timer (TimerHandle)
 import WordMeter.FFI.WakeLock (WakeLockSentinel)
-import WordMeter.Recording (Session)
+import WordMeter.Recording.Session (Session)
 
 type ApplicationEnvironment =
   { sessionRef :: Ref Session

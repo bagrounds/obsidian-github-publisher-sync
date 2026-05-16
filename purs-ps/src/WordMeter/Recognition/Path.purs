@@ -6,7 +6,7 @@
 -- | retry.
 -- |
 -- | This lives in its own module so both the reducer
--- | (`WordMeter.Recording`) and the recognition capability
+-- | (`WordMeter.Recording.Reducer`) and the recognition capability
 -- | (`WordMeter.Capability.Recognition`) can depend on it without a
 -- | cycle.
 module WordMeter.Recognition.Path

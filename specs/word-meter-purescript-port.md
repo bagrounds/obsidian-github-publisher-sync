@@ -34,7 +34,11 @@ purs-ps/
     Clock.purs / Clock.js      pure locale clock-time formatter (no effects)
     Vdom.purs / Vdom.js        typed declarative DOM (Element / Attribute / Style / Listener) + mount
     Words.purs                 pure word counter
-    Recording.purs             slices 1–8: session state + reducer + view + rate math + event log + diagnostics view + reset + persisted-data projection + recognition error banner
+    Recording/
+      Session.purs           session types (Session, Caption, WordEvent, LoggedInterval, PersistedData), WakeLockState ADT, initialSession, constants
+      Math.purs              pure rate calculations (ratePerMinute, shortRate, longRate, overallRate, captionOpacity) + formatters (formatRate, formatDurationMs)
+      Reducer.purs           Action ADT, Dispatch / Handlers types, reduce, toPersistedData, private caption/event helpers
+      View.purs              view entry point + all build* helpers + diagnosticsText
     Diagnostics.purs           slice 5: pure diagnostics log + environment-snapshot formatters
     RecognitionError.purs      slice 8: pure typed classification of `recognition.onerror` codes + banner-text rendering
     TestHook.purs / .js        window.__wordMeter test hook
@@ -255,15 +259,16 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 The following improvements are recommended based on a review against PureScript best practices (see [`specs/purescript-best-practices.md`](./purescript-best-practices.md)) and the repo's engineering principles. None are required for feature parity; they are listed here for future work with supporting rationale and trade-offs.
 
-### Split `Recording.purs` into focused modules
+### ✅ Split `Recording.purs` into focused modules
 
-**What:** `Recording.purs` currently owns session types, the `Action` ADT, the pure reducer, the view function, all `build*` view helpers, rate math, duration formatting, caption helpers, caption opacity, and persisted-data projection. This is roughly 1 000 lines and five distinct responsibilities in one file.
+**Done in this PR.** The monolithic `Recording.purs` (≈ 1 000 lines, five responsibilities) has been split into four focused modules under a `WordMeter.Recording.*` namespace:
 
-**Why:** The module boundary is the unit of reuse and discoverability. A reader looking for rate math must scan through view helpers. A reader looking for the reducer must scroll past formatting functions. Splitting into `Recording.Session` (types + `initialSession`), `Recording.Reducer` (actions + `reduce`), `Recording.View` (view + all `build*`), and `Recording.Math` (rate calculations + formatters) gives each concern its own search space and allows future changes to land in a smaller diff.
+- `WordMeter.Recording.Session` — session types (`Session`, `Caption`, `WordEvent`, `LoggedInterval`, `PersistedData`), the `WakeLockState` ADT, `initialSession`, all constants, and idle/default string values.
+- `WordMeter.Recording.Math` — pure rate calculations (`ratePerMinute`, `shortRate`, `longRate`, `overallRate`, `wordsInTrailingWindow`, `wallSpanMs`, `activeListeningMs`, `intervalDurationMs`, `intervalRate`, `captionOpacity`) and formatters (`formatRate`, `formatDurationMs`).
+- `WordMeter.Recording.Reducer` — the `Action` ADT, `Dispatch` and `Handlers` type aliases, the `reduce` function, `toPersistedData`, and all private caption/event-pruning helpers.
+- `WordMeter.Recording.View` — the `view` entry point, all `build*` helper functions, `diagnosticsText`, and `renderStatus`.
 
-**Trade-offs:** Pure rename refactor — no behavior change. Adds several module files. Imports in `Main.purs`, `TestHook.purs`, and `Test.Main.purs` will need updating. PureScript's structural typing means the split is safe as long as all re-used types (like `Session`) stay in one canonical location.
-
-**Complexity:** Medium. Safe automated refactor; most of the work is reorganizing imports.
+The old `WordMeter.Recording` module is deleted; consumers import directly from the appropriate sub-module. Imports in `AppM.purs`, `Persistence.purs`, `Capability/Storage.purs`, `Capability/SessionState.purs`, `Main.purs`, `TestHook.purs`, and `Test.Main.purs` are updated accordingly. No behavior change.
 
 ---
 
@@ -303,12 +308,13 @@ The following improvements are recommended based on a review against PureScript 
 
 ---
 
-### Add property-based tests for pure functions
+### ✅ Add property-based tests for pure functions
 
-**What:** The pure functions `formatRate`, `formatDurationMs`, `ratePerMinute`, `captionOpacity`, `normalizeTranscript`, and `classifyFinalizedTranscript` all have clear algebraic properties that are currently tested only with a handful of specific examples.
+**Done in this PR.** Added `purescript-quickcheck` to the test dependencies in `spago.yaml` and `spago.lock`. Six new `quickCheck`-driven properties cover the pure functions with the most branching logic:
 
-**Why:** Property-based tests (via `purescript-quickcheck`) find edge cases that hand-written examples miss. For instance, `formatRate (ratePerMinute n d) >= 0` for all finite `n` and `d`, and `normalizeTranscript (normalizeTranscript s) == normalizeTranscript s` (idempotence).
-
-**Trade-offs:** Requires adding `purescript-quickcheck` to `spago.yaml`. Test run time increases modestly. The investment pays off most in functions with complex case splits (`formatRate` has four branches, `classifyFinalizedTranscript` has four).
-
-**Complexity:** Low to medium depending on how many generators need to be written.
+- `propFormatRateNonEmpty` — `formatRate` always returns a non-empty string.
+- `propFormatDurationNonEmpty` — `formatDurationMs` always returns a non-empty string.
+- `propCaptionOpacityInRange` — `captionOpacity` always returns a value in `[minimumCaptionOpacity, 1.0]`.
+- `propCaptionOpacityAtAgeZero` — a caption at the same timestamp as now has opacity `1.0`.
+- `propRatePerMinuteZeroWords` — `ratePerMinute 0 elapsed` is always `0.0`.
+- `propRatePerMinuteNonNegative` — `ratePerMinute` with non-negative inputs always returns a non-negative rate.

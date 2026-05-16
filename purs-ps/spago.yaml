@@ -31,6 +31,7 @@ package:
       - transformers
       - argonaut-core
       - argonaut-codecs
+      - quickcheck
 workspace:
   packageSet:
     registry: 76.2.1

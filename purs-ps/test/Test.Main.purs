@@ -6,10 +6,11 @@ import Data.Array (head, length) as Array
 import Data.Either (Either(..), isLeft)
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
-import Data.String (Pattern(..), contains) as String
+import Data.String (Pattern(..), contains, length) as String
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
+import Test.QuickCheck (quickCheck)
 import WordMeter.Capability.Clipboard
   ( runRecordingClipboardM
   , writeClipboardText
@@ -87,35 +88,39 @@ import WordMeter.FFI.Recognition
   )
 import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.Locale (Locale(..))
-import WordMeter.Recording
-  ( Action(..)
-  , Session
-  , WakeLockState(..)
-  , activeListeningMs
+import WordMeter.Recording.Math
+  ( activeListeningMs
   , captionOpacity
-  , diagnosticsText
-  , downloadingOnDeviceStatus
-  , eventLogLimit
   , formatDurationMs
   , formatRate
+  , intervalDurationMs
+  , intervalRate
+  , longRate
+  , overallRate
+  , ratePerMinute
+  , shortRate
+  , wallSpanMs
+  , wordsInTrailingWindow
+  )
+import WordMeter.Recording.Reducer
+  ( Action(..)
+  , reduce
+  , toPersistedData
+  )
+import WordMeter.Recording.Session
+  ( Session
+  , WakeLockState(..)
+  , downloadingOnDeviceStatus
+  , eventLogLimit
   , idleCopyStatus
   , idleErrorBanner
   , idleRecognitionStatusOverride
   , initialSession
-  , intervalDurationMs
-  , intervalRate
-  , longRate
   , minimumCaptionOpacity
-  , overallRate
-  , ratePerMinute
-  , reduce
   , renderWakeLockStatus
   , resetConfirmationPrompt
-  , shortRate
-  , toPersistedData
-  , wallSpanMs
-  , wordsInTrailingWindow
   )
+import WordMeter.Recording.View (diagnosticsText)
 import WordMeter.Vdom (text)
 
 main :: Effect Unit
@@ -138,6 +143,7 @@ main = do
   runIntegrateFinalizedTranscriptReducerTests
   runCloudFallbackReducerTests
   runDiagnosticsDrawerReducerTests
+  runPropertyTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -1208,3 +1214,42 @@ runDiagnosticsDrawerReducerTests = do
     afterReset = reduce (Reset 9999.0) openedSession
   assertEqualBoolean "Reset closes the diagnostics drawer"
     afterReset.diagnosticsDrawerOpen false
+
+runPropertyTests :: Effect Unit
+runPropertyTests = do
+  quickCheck propFormatRateNonEmpty
+  quickCheck propFormatDurationNonEmpty
+  quickCheck propCaptionOpacityInRange
+  quickCheck propCaptionOpacityAtAgeZero
+  quickCheck propRatePerMinuteZeroWords
+  quickCheck propRatePerMinuteNonNegative
+
+-- | formatRate always produces a non-empty string, even for non-finite inputs.
+propFormatRateNonEmpty :: Number -> Boolean
+propFormatRateNonEmpty rate = String.length (formatRate rate) > 0
+
+-- | formatDurationMs always produces a non-empty string.
+propFormatDurationNonEmpty :: Number -> Boolean
+propFormatDurationNonEmpty ms = String.length (formatDurationMs ms) > 0
+
+-- | captionOpacity always returns a value in [minimumCaptionOpacity, 1.0].
+-- | We use abs to keep inputs in the non-negative domain of real timestamps.
+propCaptionOpacityInRange :: Number -> Number -> Boolean
+propCaptionOpacityInRange nowRaw captionRaw =
+  let
+    opacity = captionOpacity (abs nowRaw) (abs captionRaw)
+  in
+    opacity >= minimumCaptionOpacity && opacity <= 1.0
+
+-- | A caption at the same timestamp as now (age = 0) has opacity 1.0.
+propCaptionOpacityAtAgeZero :: Number -> Boolean
+propCaptionOpacityAtAgeZero ts = captionOpacity ts ts == 1.0
+
+-- | ratePerMinute with 0 words is always 0, regardless of elapsed time.
+propRatePerMinuteZeroWords :: Number -> Boolean
+propRatePerMinuteZeroWords elapsed = ratePerMinute 0 elapsed == 0.0
+
+-- | ratePerMinute with non-negative inputs always returns a non-negative rate.
+propRatePerMinuteNonNegative :: Int -> Number -> Boolean
+propRatePerMinuteNonNegative wordCount elapsedMs =
+  ratePerMinute (abs wordCount) (abs elapsedMs) >= 0.0

@@ -58,18 +58,19 @@ import WordMeter.FFI.StorageError (StorageError, renderStorageError)
 import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
 import WordMeter.Locale (Locale(..), renderLocale)
-import WordMeter.Recording
+import WordMeter.Recording.Reducer
   ( Action(..)
   , Handlers
-  , WakeLockState(..)
-  , diagnosticsText
+  , toPersistedData
+  )
+import WordMeter.Recording.Session
+  ( WakeLockState(..)
   , downloadingOnDeviceStatus
   , idleRecognitionStatusOverride
   , initialSession
   , resetConfirmationPrompt
-  , toPersistedData
-  , view
   )
+import WordMeter.Recording.View (diagnosticsText, view)
 import WordMeter.RecognitionError
   ( RecognitionErrorCode(..)
   , classifyRecognitionError

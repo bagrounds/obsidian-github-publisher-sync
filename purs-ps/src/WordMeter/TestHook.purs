@@ -7,19 +7,20 @@ import Data.Maybe (Maybe(..), fromMaybe)
 import Effect (Effect)
 import WordMeter.Diagnostics (diagnosticsLimit)
 import WordMeter.Recognition.Path (RecognitionPath(..))
-import WordMeter.Recording
-  ( Action(..)
-  , Dispatch
-  , Session
-  , WakeLockState(..)
-  , activeListeningMs
-  , diagnosticsText
-  , eventLogLimit
+import WordMeter.Recording.Math
+  ( activeListeningMs
   , longRate
   , overallRate
-  , renderWakeLockStatus
   , shortRate
   )
+import WordMeter.Recording.Reducer (Action(..), Dispatch)
+import WordMeter.Recording.Session
+  ( Session
+  , WakeLockState(..)
+  , eventLogLimit
+  , renderWakeLockStatus
+  )
+import WordMeter.Recording.View (diagnosticsText)
 
 foreign import installTestHook
   :: { simulateFinalTranscript :: String -> Effect Unit

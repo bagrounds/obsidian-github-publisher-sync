@@ -59,6 +59,7 @@ import WordMeter.FFI.Visibility (onPageBecameVisible)
 import WordMeter.FFI.WakeLock (WakeLockError, renderWakeLockError)
 import WordMeter.Recording
   ( Action(..)
+  , Handlers
   , diagnosticsText
   , downloadingOnDeviceStatus
   , idleKeepAwakeStatus
@@ -82,14 +83,6 @@ import WordMeter.Version (version)
 hostElementId :: String
 hostElementId = "word-meter"
 
-type ClickHandlers =
-  { requestToggle :: Effect Unit
-  , requestCopyDiagnostics :: Effect Unit
-  , requestReset :: Effect Unit
-  , requestSetKeepAwake :: Boolean -> Effect Unit
-  , requestToggleDiagnosticsDrawer :: Effect Unit
-  }
-
 main :: Effect Unit
 main = do
   sessionRef <- Ref.new initialSession
@@ -112,21 +105,21 @@ main = do
       , restartTimerRef
       }
 
-    readClickHandlers :: Effect ClickHandlers
-    readClickHandlers = Ref.read clickHandlersRef
+    readHandlers :: Effect Handlers
+    readHandlers = Ref.read clickHandlersRef
 
-    handlers :: ClickHandlers
+    handlers :: Handlers
     handlers =
-      { requestToggle: readClickHandlers >>= \resolved ->
+      { requestToggle: readHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleToggle resolved)
-      , requestCopyDiagnostics: readClickHandlers >>= \resolved ->
+      , requestCopyDiagnostics: readHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleCopyDiagnostics resolved)
-      , requestReset: readClickHandlers >>= \resolved ->
+      , requestReset: readHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleReset resolved)
       , requestSetKeepAwake: \enabled ->
-          readClickHandlers >>= \resolved ->
+          readHandlers >>= \resolved ->
             runAppM applicationEnvironment (handleSetKeepAwake resolved enabled)
-      , requestToggleDiagnosticsDrawer: readClickHandlers >>= \resolved ->
+      , requestToggleDiagnosticsDrawer: readHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleToggleDiagnosticsDrawer resolved)
       }
   Ref.write handlers clickHandlersRef
@@ -158,7 +151,7 @@ startApplication
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 startApplication handlers = do
   snapshot <- captureEnvironmentSnapshot version
@@ -179,7 +172,7 @@ dispatch
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> Action
   -> m Unit
 dispatch handlers action = do
@@ -264,7 +257,7 @@ rerender
   :: forall m
    . DomMount m
   => SessionState m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 rerender handlers = do
   session <- readCurrentSession
@@ -278,7 +271,7 @@ handleToggle
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleToggle handlers = do
   wasListening <- _.listening <$> readCurrentSession
@@ -301,7 +294,7 @@ handleCopyDiagnostics
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleCopyDiagnostics handlers = do
   session <- readCurrentSession
@@ -321,7 +314,7 @@ handleReset
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleReset handlers = do
   outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
@@ -341,7 +334,7 @@ handleSetKeepAwake
   => SessionState m
   => Storage m
   => WakeLock m
-  => ClickHandlers
+  => Handlers
   -> Boolean
   -> m Unit
 handleSetKeepAwake handlers enabled = do
@@ -358,7 +351,7 @@ handleToggleDiagnosticsDrawer
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleToggleDiagnosticsDrawer handlers = do
   session <- readCurrentSession
@@ -371,7 +364,7 @@ handleVisibilityVisible
   => SessionState m
   => Storage m
   => WakeLock m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleVisibilityVisible handlers = do
   session <- readCurrentSession
@@ -387,7 +380,7 @@ handleRecognitionError
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> String
   -> String
   -> m Unit
@@ -433,7 +426,7 @@ swapOnDeviceForCloud
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> String
   -> String
   -> m Unit
@@ -464,7 +457,7 @@ maybeAcquireWakeLock
   => SessionState m
   => Storage m
   => WakeLock m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 maybeAcquireWakeLock handlers = do
   session <- readCurrentSession
@@ -482,7 +475,7 @@ releaseHeldWakeLock
   => SessionState m
   => Storage m
   => WakeLock m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 releaseHeldWakeLock handlers = do
   session <- readCurrentSession
@@ -502,7 +495,7 @@ onWakeLockReleased
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 onWakeLockReleased handlers = do
   recordWakeLockEvent "wake lock release" "released"
@@ -515,7 +508,7 @@ onWakeLockReleaseError
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> WakeLockError
   -> m Unit
 onWakeLockReleaseError handlers failure = do
@@ -533,7 +526,7 @@ onWakeLockAcquired
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 onWakeLockAcquired handlers = do
   recordWakeLockEvent "wake lock acquired" "screen held"
@@ -546,7 +539,7 @@ onWakeLockError
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> WakeLockError
   -> m Unit
 onWakeLockError handlers failure = do
@@ -561,13 +554,12 @@ onWakeLockAutoReleased
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 onWakeLockAutoReleased handlers = do
   recordWakeLockEvent "wake lock auto-released" "page hidden"
   dispatch handlers (SetWakeLockHeld false)
 
--- ───────── Recognition orchestration (slice 9a) ─────────
 
 defaultLocale :: String
 defaultLocale = "en-US"
@@ -590,7 +582,7 @@ startRecognitionForSession
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 startRecognitionForSession handlers = do
   available <- recognitionApiAvailable
@@ -619,7 +611,7 @@ onOnDeviceInstallStarted
   => DomMount m
   => SessionState m
   => Storage m
-  => ClickHandlers
+  => Handlers
   -> String
   -> m Unit
 onOnDeviceInstallStarted handlers locale = do
@@ -643,7 +635,7 @@ onOnDevicePreflightResolved
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> String
   -> Either OnDeviceUnavailable OnDeviceAvailable
   -> m Unit
@@ -678,7 +670,7 @@ stopRecognitionForSession
   => SessionState m
   => Storage m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 stopRecognitionForSession handlers = do
   cancelAutoRestart
@@ -695,7 +687,7 @@ recognitionHandlersFor
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> String
   -> RecognitionHandlers m
 recognitionHandlersFor handlers locale =
@@ -718,7 +710,7 @@ handleRecognitionEnded
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 handleRecognitionEnded handlers = do
   -- After every onend, reset the per-recognition-run dedup state so the
@@ -743,7 +735,7 @@ fireScheduledRestart
   => Storage m
   => WakeLock m
   => Recognition m
-  => ClickHandlers
+  => Handlers
   -> m Unit
 fireScheduledRestart handlers = do
   session <- readCurrentSession

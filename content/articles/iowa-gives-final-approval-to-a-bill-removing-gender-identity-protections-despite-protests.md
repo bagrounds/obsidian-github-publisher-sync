@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T07:01:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a weathered, official-looking legal document or stone tablet resting on a neutral, textured background. The document is partially obscured by a heavy, dark shadow creeping across the surface, symbolizing the removal of protections. In the foreground, a single, vibrant, and slightly frayed ribbon—colored in the soft pastel stripes of the transgender pride flag—lies discarded or partially tucked beneath the edge of the document. The lighting is dramatic and moody, with cool-toned shadows and a singular, sharp highlight emphasizing the texture of the paper and the delicate fabric of the ribbon, evoking a sense of solemnity, erasure, and quiet resilience.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests  
+![articles-iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests](../articles-iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.jpg)  
 ## 🤖 AI Summary  
 ### 💬 [ChatGPT](https://chat.com) Prompt 1  
 > Summarize the article: [Iowa gives final approval to a bill removing gender identity protections despite protests](https://apnews.com/article/iowa-civil-rights-code-gender-identity-cf68d2183210133b15a47e526ad2fb0d). Recommend additional and related resources on the topics discussed.  

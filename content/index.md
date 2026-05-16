@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-16T09:58:15-07:00
+updated: 2026-05-16T14:10:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-16T09:58:15-07:00
 - [2026-05-13 | 🌟 Health 📰 Sands 🐔 Miracle 🤖 Alignment 🏛️ Commons 🔀 Integrity 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-13.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (215)  
+## [🤖 AI Blog](./ai-blog/index.md) (217)  
+- [2026-05-16 | 🧹 Word Meter PureScript Port Cleanup 🤖](./ai-blog/2026-05-16-3-word-meter-purescript-port-cleanup.md)  
+- [2026-05-16 | 🟣 PureScript Code Cleanup — Word Meter 🧹](./ai-blog/2026-05-16-2-word-meter-purescript-code-cleanup.md)  
 - [2026-05-16 | 🔧 Word Meter — Fixing the Diagnostics Drawer Rerender Bug 🐛](./ai-blog/2026-05-16-1-word-meter-diagnostics-drawer-state-bug-fix.md)  
 - [2026-05-15 | 🌀 Word Meter Slice 9c — One-Shot Cloud Retry 🎯](./ai-blog/2026-05-15-5-word-meter-slice-nine-c-one-shot-cloud-retry.md)  
-- [2026-05-15 | 🎙️ Word Meter Slice 9b — On-Device Pre-Flight 📦](./ai-blog/2026-05-15-4-word-meter-slice-nine-b-on-device-preflight.md)  
-- [2026-05-15 | 🎙️ Word Meter Slice 9a: Real SpeechRecognition Wired Up 🤖](./ai-blog/2026-05-15-3-word-meter-slice-nine-a-real-speech-recognition.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (67)  
@@ -77,11 +77,11 @@ updated: 2026-05-16T09:58:15-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (830)  
+## [📺 Videos](./videos/index.md) (831)  
+- [🧩🧠📖 The missing ingredient in how we learn](./videos/the-missing-ingredient-in-how-we-learn.md)  
 - [📈✊✨ Progressives are making real gains](./videos/progressives-are-making-real-gains.md)  
 - [🏛️📰💡 Today in Politics | Explainer | May 14 2026](./videos/today-in-politics-explainer-may-14-2026.md)  
 - [🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./videos/media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
-- [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./videos/the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-05-16T09:58:15-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
-- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
-- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
-- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
+- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
+- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
+- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

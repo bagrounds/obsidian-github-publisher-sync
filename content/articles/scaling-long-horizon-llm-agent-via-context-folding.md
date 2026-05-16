@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T18:32:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist AI brain or core processing unit sits centrally. From it, multiple intricate, glowing neural pathways extend, symbolizing long-horizon tasks. One prominent pathway branches off into a smaller, contained loop, representing a sub-trajectory. Inside this loop, several busy nodes depict intermediate steps. This sub-loop is shown compressing and folding inwards, condensing into a single, compact, glowing data shard or a folded paper-like icon. This concise symbol then seamlessly re-integrates into the main pathway, which appears streamlined and less cluttered. The overall image conveys intelligent organization, expansion, and efficient contraction of complex information.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](https://www.arxiv.org/pdf/2510.11967)  
+![articles-scaling-long-horizon-llm-agent-via-context-folding](../articles-scaling-long-horizon-llm-agent-via-context-folding.jpg)  
   
 ## 🤖 AI Summary  
 * 💡 Large language model (LLM) agents face fundamental limits from context length on tasks that are long-horizon.  

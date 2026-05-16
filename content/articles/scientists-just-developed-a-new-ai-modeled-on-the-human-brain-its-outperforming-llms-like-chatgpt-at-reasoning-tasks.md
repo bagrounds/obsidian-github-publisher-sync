@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/scientists-just-developed-a-new-ai-modeled-o
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T19:38:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, high-contrast illustration featuring a translucent human brain silhouette glowing with soft, bioluminescent blue light. Within the brain, intricate, golden circuitry and geometric neural pathways converge into two distinct layers: a dense, rapid-fire mesh of nodes at the base and a sleek, elegant lattice of interconnected spheres at the top, representing hierarchical reasoning. The background is a deep, moody charcoal, accented by subtle, floating particles of light that suggest digital data streams or synapses firing. The overall aesthetic is clean, minimalist, and futuristic, emphasizing the bridge between biological complexity and efficient, high-performance computational intelligence."
 ---
 [Home](../index.md) > [Articles](./index.md) | [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 # [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](https://www.livescience.com/technology/artificial-intelligence/scientists-just-developed-an-ai-modeled-on-the-human-brain-and-its-outperforming-llms-like-chatgpt-at-reasoning-tasks)  
+![articles-scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks](../articles-scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.jpg)  
 ## 🤖 AI Summary  
   
 🧠 A new AI model, the **hierarchical reasoning model (HRM)**, has been developed to mimic the human brain's 🧠 processing.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T19:38:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A digital landscape featuring a sea of identical, translucent human silhouettes against a dark, glowing network of interconnected nodes. In the foreground, one silhouette stands out, subtly illuminated by a soft, warm light, while behind its mask, a complex, glowing circuitry of digital code is visible. The scene uses a deep blue and neon purple color palette to evoke a sense of high-tech suspense. The background is a blurred, abstract representation of a social media feed with floating, disjointed speech bubbles that fade into binary code. The overall atmosphere is mysterious and ominous, highlighting the concept of hidden, artificial actors blending seamlessly into a human network.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](https://arxiv.org/pdf/2408.12603)  
+![articles-sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat](../articles-sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.jpg)  
   
 ## 🤖 AI Summary  
   

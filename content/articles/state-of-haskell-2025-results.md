@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-16T20:26:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast digital illustration featuring a glowing, stylized Lambda symbol (λ) floating at the center. The symbol is composed of intricate, interconnected geometric nodes and data lines that transition from a deep, cool navy blue to a vibrant, electric violet. Surrounding the symbol are subtle, abstract representations of data charts, bar graphs, and flowing code structures that fade into a dark, textured charcoal background. The lighting is sharp and technical, emphasizing precision and structural elegance. The overall aesthetic is clean, modern, and professional, evoking themes of functional programming, advanced type systems, and mathematical rigor.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [💻📊 State of Haskell 2025 results](https://discourse.haskell.org/t/state-of-haskell-2025-results/13755)  
+![articles-state-of-haskell-2025-results](../articles-state-of-haskell-2025-results.jpg)  
 ## 🤖 AI Summary  
   
 * 📉 Haskell usage remains stable but small, representing a dedicated core of developers who prioritize correctness and safety.  

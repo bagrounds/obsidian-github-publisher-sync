@@ -98,7 +98,6 @@ type Session =
   , currentIntervalStart :: Maybe Number
   , completedActiveMs :: Number
   , now :: Number
-  , lastError :: Maybe String
   , diagnostics :: Array DiagnosticEntry
   , environment :: Maybe EnvironmentSnapshot
   , copyStatus :: String
@@ -230,7 +229,6 @@ initialSession =
   , currentIntervalStart: Nothing
   , completedActiveMs: 0.0
   , now: 0.0
-  , lastError: Nothing
   , diagnostics: []
   , environment: Nothing
   , copyStatus: idleCopyStatus

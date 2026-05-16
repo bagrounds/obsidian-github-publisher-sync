@@ -250,3 +250,83 @@ Every implementation must honor this contract. As behavior moves from the legacy
 - `npm run clean:ps` — wipe PureScript build artifacts.
 - `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.
+
+## Optional improvement backlog
+
+The following improvements are recommended based on a review against PureScript best practices (see [`specs/purescript-best-practices.md`](./purescript-best-practices.md)) and the repo's engineering principles. None are required for feature parity; they are listed here for future work with supporting rationale and trade-offs.
+
+### Split `Recording.purs` into focused modules
+
+**What:** `Recording.purs` currently owns session types, the `Action` ADT, the pure reducer, the view function, all `build*` view helpers, rate math, duration formatting, caption helpers, caption opacity, and persisted-data projection. This is roughly 1 000 lines and five distinct responsibilities in one file.
+
+**Why:** The module boundary is the unit of reuse and discoverability. A reader looking for rate math must scan through view helpers. A reader looking for the reducer must scroll past formatting functions. Splitting into `Recording.Session` (types + `initialSession`), `Recording.Reducer` (actions + `reduce`), `Recording.View` (view + all `build*`), and `Recording.Math` (rate calculations + formatters) gives each concern its own search space and allows future changes to land in a smaller diff.
+
+**Trade-offs:** Pure rename refactor — no behavior change. Adds several module files. Imports in `Main.purs`, `TestHook.purs`, and `Test.Main.purs` will need updating. PureScript's structural typing means the split is safe as long as all re-used types (like `Session`) stay in one canonical location.
+
+**Complexity:** Medium. Safe automated refactor; most of the work is reorganizing imports.
+
+---
+
+### Use `Data.DateTime.Instant` for timestamps
+
+**What:** Replace raw `Number` timestamps (the argument to `Toggle`, `Tick`, `RecordDiagnostic`, etc.) with `Data.DateTime.Instant` from the `purescript-datetime` package, which is in the `purescript/` GitHub organization and thus qualifies as a core library.
+
+**Why:** `purescript-datetime` already provides exactly this concept: `Instant` represents a point in time as milliseconds since the Unix epoch, and `Data.Time.Duration.Milliseconds` (also from `datetime`) represents a duration. Using `Instant` for timestamps and `Milliseconds` for durations gives each concept its own type, prevents accidentally passing a duration where a timestamp is expected, and expresses intent through a well-maintained, widely-used library rather than a custom newtype. Cost at runtime: zero (newtypes are erased). The `unInstant :: Instant -> Milliseconds` function extracts the underlying value when FFI boundaries need a raw `Number`.
+
+**Trade-offs:** Requires adding `datetime` to `spago.yaml` dependencies and touching every `Action` constructor and every `reduce` case that pattern-matches on a timestamp. Tests that hardcode numeric timestamps would need `Instant` wrappers (via `instant :: Milliseconds -> Maybe Instant`). The `FFI/Clock.purs` foreign import `currentTimeMillis :: Effect Number` would become `currentTimeMillis :: Effect Instant` with the `Number → Milliseconds → Instant` conversion happening at the FFI boundary.
+
+**Complexity:** Medium. Mechanical transformation; the compiler guides every change site.
+
+---
+
+### Introduce a `Locale` newtype
+
+**What:** Replace raw `String` locale values with `newtype Locale = Locale String`.
+
+**Why:** A BCP 47 locale tag (like `"en-US"`, `"fr-FR"`, `"zh-Hant"`) is an open, extensible identifier — not a closed enum. The IANA Language Subtag Registry lists thousands of valid tags, and the Web Speech API's `lang` property plus `navigator.language` both accept any BCP 47 string, so modeling this as a sum type would be incorrect and impractical to maintain. A `Locale` newtype is the right abstraction: it documents the role of the string, prevents silent coercion with unrelated strings (e.g. diagnostic labels), and makes the type signature of `recognitionHandlersFor` self-explanatory. No off-the-shelf PureScript locale type exists in the core libraries — the browser's `Intl.Locale` API has no binding in the `purescript/` organization — so a custom newtype is the idiomatic choice. The `renderLocale :: Locale -> String` unwrapper provides a single named extraction point for FFI boundaries and diagnostic log lines.
+
+**Trade-offs:** Small lift; the locale string is produced in one place (`captureEnvironmentSnapshot` → `sessionLocale`) and consumed in a few recognition capability calls. The newtype would need a `renderLocale :: Locale -> String` for diagnostic log lines that embed the locale.
+
+**Complexity:** Low.
+
+---
+
+### Elide `persistAfterAction` with a `shouldPersist` predicate
+
+**What:** `persistAfterAction` is an exhaustive case dispatch where 17 of 19 branches return `pure unit`. An alternative is a pure predicate `shouldPersist :: Action -> Boolean` (returning `true` only for `Toggle`, `InjectFinalTranscript`, `IntegrateFinalizedTranscript`, and `Reset`) plus a single `when (shouldPersist action) persistCurrentSession` call.
+
+**Why:** The current exhaustive match is intentional — the compiler forces a decision for every new action. A `shouldPersist` predicate preserves the exhaustiveness guarantee **if and only if it is also written as an exhaustive case expression with no wildcard default**. With that constraint, adding a new `Action` constructor gives the same compiler error as today, and the predicate style collapses 19 lines into 5.
+
+**Trade-offs:** The `shouldPersist` predicate **must not** use a `_ -> false` catch-all wildcard — that would allow a new action to silently skip persistence, which is less safe than the current code. With a fully exhaustive case expression on `shouldPersist`, the type-safety guarantee is identical to the current approach and the refactor is purely cosmetic. The existing exhaustive match also acts as a living checklist (each branch documents what that action does to storage), so the trade-off is conciseness vs. explicitness.
+
+**Complexity:** Low.
+
+---
+
+### ✅ Share `collapseWhitespaceToSpace` between `Words` and `Recognition.Delta`
+
+**Done in this PR.** `Words.purs` contained a private `collapseWhitespaceToSpace` helper (tab/newline/carriage-return → space). `Recognition.Delta.normalizeTranscript` repeated the same three `replaceAll` calls inline. Both now import the function from the new `WordMeter.Text` module, eliminating the duplication. Any future whitespace-handling change (e.g. adding `\u00A0` non-breaking space) now has a single canonical location.
+
+---
+
+### Replace `Boolean` wake-lock + status flags with a `WakeLockState` ADT
+
+**What:** `Session` currently uses `wakeLockHeld :: Boolean` combined with `keepAwakeStatus :: String` to encode the wake-lock lifecycle. Replace both with a single `data WakeLockState = WakeLockIdle | WakeLockHeld | WakeLockFailed String` field.
+
+**Why:** A `Boolean` combined with a `String` can represent impossible states (e.g. `held = false` + status `"screen will stay on"`). The ADT makes impossible states unrepresentable and gives the reducer a single field to update on each transition instead of two fields that must be kept in sync.
+
+**Trade-offs:** Requires updating the reducer, the view (`keepAwakeAttributes`, the status span), the test hook (`getWakeLockHeld`, `getKeepAwakeStatus`), and all e2e tests that read those selectors. The `keepAwake :: Boolean` preference field (user-controlled) is separate and unaffected.
+
+**Complexity:** Medium. Pure rename; no behavior change once the ADT is wired.
+
+---
+
+### Add property-based tests for pure functions
+
+**What:** The pure functions `formatRate`, `formatDurationMs`, `ratePerMinute`, `captionOpacity`, `normalizeTranscript`, and `classifyFinalizedTranscript` all have clear algebraic properties that are currently tested only with a handful of specific examples.
+
+**Why:** Property-based tests (via `purescript-quickcheck`) find edge cases that hand-written examples miss. For instance, `formatRate (ratePerMinute n d) >= 0` for all finite `n` and `d`, and `normalizeTranscript (normalizeTranscript s) == normalizeTranscript s` (idempotence).
+
+**Trade-offs:** Requires adding `purescript-quickcheck` to `spago.yaml`. Test run time increases modestly. The investment pays off most in functions with complex case splits (`formatRate` has four branches, `classifyFinalizedTranscript` has four).
+
+**Complexity:** Low to medium depending on how many generators need to be written.

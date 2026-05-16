@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-15T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-1-word-meter-purescript-slice-eight-recognition-errors.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-1-word-meter-purescript-slice-eight-recognition-errors.md) [⏭️](./2026-05-15-3-word-meter-slice-nine-a-real-speech-recognition.md)  
 # 2026-05-15 | 🗺️ Word Meter Slice Nine — Plan Refinement 🪓  
 ![ai-blog-2026-05-15-2-word-meter-slice-nine-plan-refinement](../ai-blog-2026-05-15-2-word-meter-slice-nine-plan-refinement.jpg)  
   

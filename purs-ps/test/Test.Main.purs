@@ -85,6 +85,7 @@ import WordMeter.FFI.Recognition
   , OnDeviceUnavailable(..)
   , renderOnDeviceUnavailable
   )
+import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.Recording
   ( Action(..)
   , Session
@@ -135,6 +136,7 @@ main = do
   runOnDevicePreflightTests
   runRecognitionStatusReducerTests
   runIntegrateFinalizedTranscriptReducerTests
+  runCloudFallbackReducerTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -1089,3 +1091,82 @@ runRecognitionStatusReducerTests = do
   assertEqualString
     "Reset clears any lingering recognitionStatusOverride"
     afterReset.recognitionStatusOverride idleRecognitionStatusOverride
+
+runCloudFallbackReducerTests :: Effect Unit
+runCloudFallbackReducerTests = do
+  -- Slice 9c: the one-shot cloud-fallback guard plus the active
+  -- recognition path are exposed on Session so the orchestrator (and
+  -- the e2e test hook) can observe them.
+
+  -- Default state: never attempted, no active path.
+  assertEqualBoolean "initialSession.cloudFallbackAttempted is false"
+    initialSession.cloudFallbackAttempted false
+  assertEqualBoolean "initialSession.activeRecognitionPath is Nothing"
+    (initialSession.activeRecognitionPath == Nothing) true
+
+  -- The two new reducer actions set their respective fields.
+  let
+    afterFlag =
+      reduce (SetCloudFallbackAttempted true) initialSession
+  assertEqualBoolean "SetCloudFallbackAttempted true sets the flag"
+    afterFlag.cloudFallbackAttempted true
+  let
+    afterPath =
+      reduce (SetActiveRecognitionPath (Just OnDevicePath)) initialSession
+  assertEqualBoolean
+    "SetActiveRecognitionPath (Just OnDevicePath) sets the active path"
+    (afterPath.activeRecognitionPath == Just OnDevicePath) true
+
+  -- Toggle-to-start clears both fields (legacy parity: each new
+  -- listening session gets a fresh retry budget).
+  let
+    listeningWithFlag =
+      reduce (Toggle 0.0)
+        ( afterFlag
+            { activeRecognitionPath = Just OnDevicePath }
+        )
+  assertEqualBoolean "Toggle (start) clears cloudFallbackAttempted"
+    listeningWithFlag.cloudFallbackAttempted false
+  assertEqualBoolean "Toggle (start) clears activeRecognitionPath"
+    (listeningWithFlag.activeRecognitionPath == Nothing) true
+
+  -- Toggle-to-stop clears the active path so a stale "on-device"
+  -- label cannot outlive a listening session, but leaves the
+  -- fallback flag alone (consumed budget stays consumed until the
+  -- next start).
+  let
+    onCloudWithFlag = listeningWithFlag
+      { cloudFallbackAttempted = true
+      , activeRecognitionPath = Just CloudPath
+      }
+    stoppedAfterCloud = reduce (Toggle 1000.0) onCloudWithFlag
+  assertEqualBoolean "Toggle (stop) clears activeRecognitionPath"
+    (stoppedAfterCloud.activeRecognitionPath == Nothing) true
+  assertEqualBoolean
+    "Toggle (stop) leaves cloudFallbackAttempted alone"
+    stoppedAfterCloud.cloudFallbackAttempted true
+
+  -- Reset returns both fields to their initial state.
+  let
+    afterResetAll = reduce (Reset 9999.0) onCloudWithFlag
+  assertEqualBoolean "Reset clears cloudFallbackAttempted"
+    afterResetAll.cloudFallbackAttempted false
+  assertEqualBoolean "Reset clears activeRecognitionPath"
+    (afterResetAll.activeRecognitionPath == Nothing) true
+
+  -- The permission-denied branch of HandleRecognitionError stops
+  -- listening and also clears the active path (recognition is no
+  -- longer running). This guards against a stale "on-device" label
+  -- surviving an aborted session.
+  let
+    listeningOnDevice =
+      reduce (SetActiveRecognitionPath (Just OnDevicePath))
+        (reduce (Toggle 0.0) initialSession)
+    afterPermissionDenied =
+      reduce (HandleRecognitionError 5000.0 "not-allowed" "blocked")
+        listeningOnDevice
+  assertEqualBoolean "permission-denied stops listening"
+    afterPermissionDenied.listening false
+  assertEqualBoolean
+    "permission-denied clears activeRecognitionPath"
+    (afterPermissionDenied.activeRecognitionPath == Nothing) true

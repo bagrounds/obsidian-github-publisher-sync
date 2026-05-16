@@ -70,6 +70,12 @@ import WordMeter.Recording
   , view
   , wakeLockAcquiredStatus
   )
+import WordMeter.RecognitionError
+  ( RecognitionErrorCode(..)
+  , classifyRecognitionError
+  , renderRecognitionErrorDiagnosticDetail
+  )
+import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.TestHook as TestHook
 import WordMeter.Version (version)
 
@@ -203,6 +209,8 @@ persistAfterAction (SetWakeLockHeld _) = pure unit
 persistAfterAction (HandleRecognitionError _ _ _) = pure unit
 persistAfterAction ClearErrorBanner = pure unit
 persistAfterAction (SetRecognitionStatusOverride _) = pure unit
+persistAfterAction (SetCloudFallbackAttempted _) = pure unit
+persistAfterAction (SetActiveRecognitionPath _) = pure unit
 
 persistCurrentSession
   :: forall m
@@ -366,17 +374,70 @@ handleRecognitionError
   -> String
   -> m Unit
 handleRecognitionError handlers code message = do
-  wasListening <- _.listening <$> readCurrentSession
-  timestamp <- currentTimeMillis
-  dispatch handlers (HandleRecognitionError timestamp code message)
-  -- If the error caused us to stop listening (today: the permission-denied
-  -- branch), tear down recognition and let go of any wake lock so the UI
-  -- does not look like it is still holding the screen.
-  stillListening <- _.listening <$> readCurrentSession
-  if wasListening && not stillListening then do
-    stopRecognitionForSession handlers
-    releaseHeldWakeLock handlers
-  else pure unit
+  beforeSession <- readCurrentSession
+  let
+    wasListening = beforeSession.listening
+    priorPath = beforeSession.activeRecognitionPath
+    priorFallbackAttempted = beforeSession.cloudFallbackAttempted
+    classified = classifyRecognitionError code
+    shouldRetryOnCloud =
+      classified == LanguageNotSupported
+        && wasListening
+        && priorPath == Just OnDevicePath
+        && not priorFallbackAttempted
+  if shouldRetryOnCloud then
+    swapOnDeviceForCloud handlers code message
+  else do
+    timestamp <- currentTimeMillis
+    dispatch handlers (HandleRecognitionError timestamp code message)
+    -- If the error caused us to stop listening (today: the permission-denied
+    -- branch), tear down recognition and let go of any wake lock so the UI
+    -- does not look like it is still holding the screen.
+    stillListening <- _.listening <$> readCurrentSession
+    if wasListening && not stillListening then do
+      stopRecognitionForSession handlers
+      releaseHeldWakeLock handlers
+    else pure unit
+
+-- | Slice 9c: a runtime `language-not-supported` against the on-device
+-- | path is one of the few error codes that can leak past slice 9b's
+-- | pre-flight on some Chromium builds. Rather than surface the
+-- | language-unavailable banner, the orchestrator swallows the error,
+-- | tears down the on-device recognizer, and starts a fresh cloud-path
+-- | recognition. The retry is one-shot per session: `cloudFallbackAttempted`
+-- | guards a second attempt so a misbehaving browser cannot loop. The
+-- | flag is cleared on every Toggle-to-start.
+swapOnDeviceForCloud
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => WakeLock m
+  => Recognition m
+  => ClickHandlers
+  -> String
+  -> String
+  -> m Unit
+swapOnDeviceForCloud handlers code message = do
+  -- Record the same `recognition.onerror` diagnostic the reducer would
+  -- have appended, so bug reports across both builds stay byte-comparable.
+  errorTimestamp <- currentTimeMillis
+  updateSession
+    ( RecordDiagnostic errorTimestamp "recognition.onerror"
+        (renderRecognitionErrorDiagnosticDetail code message)
+    )
+  locale <- sessionLocale
+  fallbackTimestamp <- currentTimeMillis
+  updateSession
+    ( RecordDiagnostic fallbackTimestamp
+        "language-not-supported at runtime — falling back to cloud"
+        ("locale=" <> locale)
+    )
+  dispatch handlers (SetCloudFallbackAttempted true)
+  stopRecognitionForSession handlers
+  dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
+  startRecognition (recognitionHandlersFor handlers locale)
 
 maybeAcquireWakeLock
   :: forall m
@@ -525,6 +586,7 @@ startRecognitionForSession handlers = do
       recordRecognitionEvent
         "on-device API absent — falling back to cloud"
         ("locale=" <> locale)
+      dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
       startRecognition (recognitionHandlersFor handlers locale)
     else
       prepareOnDeviceLanguagePack
@@ -582,22 +644,27 @@ onOnDevicePreflightResolved handlers locale outcome = do
       recordRecognitionEvent
         "on-device pre-flight viable — starting on-device"
         ("locale=" <> locale)
+      dispatch handlers (SetActiveRecognitionPath (Just OnDevicePath))
       startOnDeviceRecognition (recognitionHandlersFor handlers locale)
     Left reason -> do
       recordRecognitionEvent
         "on-device pre-flight non-viable — falling back to cloud"
         (renderOnDeviceUnavailable reason)
+      dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
       startRecognition (recognitionHandlersFor handlers locale)
 
 stopRecognitionForSession
   :: forall m
    . Clock m
+  => DomMount m
   => SessionState m
+  => Storage m
   => Recognition m
   => ClickHandlers
   -> m Unit
-stopRecognitionForSession _handlers = do
+stopRecognitionForSession handlers = do
   cancelAutoRestart
+  dispatch handlers (SetActiveRecognitionPath Nothing)
   stopRecognition
     (recordRecognitionEvent "recognition stopped" "")
     onRecognitionStopFailure

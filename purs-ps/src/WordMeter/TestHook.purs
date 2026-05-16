@@ -3,9 +3,10 @@ module WordMeter.TestHook (install) where
 import Prelude
 
 import Data.Array (length) as Array
-import Data.Maybe (fromMaybe)
+import Data.Maybe (Maybe(..), fromMaybe)
 import Effect (Effect)
 import WordMeter.Diagnostics (diagnosticsLimit)
+import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.Recording
   ( Action(..)
   , Dispatch
@@ -52,6 +53,9 @@ foreign import installTestHook
      , simulateRecognitionError :: String -> String -> Effect Unit
      , getErrorBanner :: Effect String
      , getRecognitionStatusOverride :: Effect String
+     , getCloudFallbackAttempted :: Effect Boolean
+     , getActiveRecognitionPath :: Effect String
+     , setActiveRecognitionPath :: String -> Effect Unit
      }
   -> Effect Unit
 
@@ -133,7 +137,23 @@ install
     , simulateRecognitionError
     , getErrorBanner: _.errorBanner <$> readSession
     , getRecognitionStatusOverride: _.recognitionStatusOverride <$> readSession
+    , getCloudFallbackAttempted: _.cloudFallbackAttempted <$> readSession
+    , getActiveRecognitionPath: renderActivePath <$> readSession
+    , setActiveRecognitionPath: \label ->
+        dispatch (SetActiveRecognitionPath (parseActivePath label))
     }
+
+parseActivePath :: String -> Maybe RecognitionPath
+parseActivePath = case _ of
+  "on-device" -> Just OnDevicePath
+  "cloud" -> Just CloudPath
+  _ -> Nothing
+
+renderActivePath :: Session -> String
+renderActivePath session = case session.activeRecognitionPath of
+  Nothing -> ""
+  Just OnDevicePath -> "on-device"
+  Just CloudPath -> "cloud"
 
 firstStartedOrNaN :: Session -> Number
 firstStartedOrNaN session = fromMaybe (0.0 / 0.0) session.firstStartedAt

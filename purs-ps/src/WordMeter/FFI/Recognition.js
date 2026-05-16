@@ -22,7 +22,7 @@ export const recognitionApiAvailable = () =>
   typeof recognitionConstructor() === "function"
 
 export const constructRecognitionInstance =
-  (locale) => (onConstructed) => (onError) => () => {
+  (locale) => (processLocally) => (onConstructed) => (onError) => () => {
     try {
       const Ctor = recognitionConstructor()
       if (!Ctor) {
@@ -33,9 +33,89 @@ export const constructRecognitionInstance =
       instance.continuous = true
       instance.interimResults = true
       instance.lang = locale
+      // `processLocally` is read-only on some Chromium builds; surfacing
+      // the assignment failure here would be noise because the language
+      // pack pre-flight is the authoritative on-device gate.
+      try {
+        instance.processLocally = processLocally
+      } catch (_ignored) {
+        /* read-only on some builds */
+      }
       onConstructed(instance)()
     } catch (error) {
       onError(describeFailure(error))()
+    }
+  }
+
+const supportsOnDeviceLanguagePackApi = (Ctor) =>
+  !!Ctor &&
+  typeof Ctor.available === "function" &&
+  typeof Ctor.install === "function"
+
+export const onDeviceLanguagePackApiAvailable = () => {
+  // Calling the static `available()` / `install()` methods in headless
+  // browsers without the model installed has been observed to crash
+  // the renderer (no language pack -> native helper unreachable).
+  // Tests opt out of the pre-flight entirely so the cloud path is
+  // exercised deterministically; production browsers always run the
+  // full pre-flight.
+  if (typeof window !== "undefined" && window.__WM_DISABLE_ON_DEVICE_PREFLIGHT__ === true) {
+    return false
+  }
+  return supportsOnDeviceLanguagePackApi(recognitionConstructor())
+}
+
+export const ensureOnDeviceLanguagePackImpl =
+  (locale) => (onProgress) => (onAvailable) => (onUnavailable) => () => {
+    const finishUnavailable = (kind, detail) =>
+      onUnavailable(kind)(detail || "")()
+    try {
+      const Ctor = recognitionConstructor()
+      if (!supportsOnDeviceLanguagePackApi(Ctor)) {
+        finishUnavailable("api-absent", "")
+        return
+      }
+      const options = { langs: [locale], processLocally: true }
+      Promise.resolve()
+        .then(() => Ctor.available(options))
+        .then(
+          (availability) => {
+            if (availability === "available") {
+              onAvailable()
+              return
+            }
+            if (availability === "unavailable") {
+              finishUnavailable("unsupported-language", "")
+              return
+            }
+            // 'downloadable' or 'downloading' — start install. Fire the
+            // progress callback exactly once so the UI can flip its
+            // status row.
+            onProgress()
+            Promise.resolve()
+              .then(() => Ctor.install(options))
+              .then(
+                (installed) => {
+                  if (installed) onAvailable()
+                  else finishUnavailable("install-failed", "not installed")
+                },
+                (installError) => {
+                  finishUnavailable(
+                    "install-failed",
+                    describeFailure(installError),
+                  )
+                },
+              )
+          },
+          (availableError) => {
+            finishUnavailable(
+              "availability-rejected",
+              describeFailure(availableError),
+            )
+          },
+        )
+    } catch (error) {
+      finishUnavailable("availability-rejected", describeFailure(error))
     }
   }
 

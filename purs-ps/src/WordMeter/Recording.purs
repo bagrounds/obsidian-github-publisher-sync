@@ -31,6 +31,8 @@ module WordMeter.Recording
   , idleCopyStatus
   , idleKeepAwakeStatus
   , wakeLockAcquiredStatus
+  , downloadingOnDeviceStatus
+  , idleRecognitionStatusOverride
   , renderKeepAwakeUnavailable
   , toPersistedData
   , resetConfirmationPrompt
@@ -105,6 +107,7 @@ type Session =
   , wakeLockHeld :: Boolean
   , errorBanner :: String
   , lastRawFinalizedTranscript :: String
+  , recognitionStatusOverride :: String
   }
 
 type Caption =
@@ -168,6 +171,7 @@ data Action
   | SetWakeLockHeld Boolean
   | HandleRecognitionError Number String String
   | ClearErrorBanner
+  | SetRecognitionStatusOverride String
 
 type Dispatch = Action -> Effect Unit
 
@@ -186,6 +190,16 @@ idleKeepAwakeStatus = ""
 
 wakeLockAcquiredStatus :: String
 wakeLockAcquiredStatus = "screen will stay on"
+
+-- | Slice-9b status text shown while the static
+-- | `SpeechRecognition.install()` call is in flight downloading the
+-- | on-device language pack. Lives on `Session.recognitionStatusOverride`
+-- | which takes precedence over the default Listening / Idle status row.
+downloadingOnDeviceStatus :: String
+downloadingOnDeviceStatus = "downloading on-device language pack…"
+
+idleRecognitionStatusOverride :: String
+idleRecognitionStatusOverride = ""
 
 renderKeepAwakeUnavailable :: String -> String
 renderKeepAwakeUnavailable reason = "(" <> reason <> ")"
@@ -218,6 +232,7 @@ initialSession =
   , wakeLockHeld: false
   , errorBanner: idleErrorBanner
   , lastRawFinalizedTranscript: ""
+  , recognitionStatusOverride: idleRecognitionStatusOverride
   }
 
 reduce :: Action -> Session -> Session
@@ -241,6 +256,7 @@ reduce (Toggle timestamp) session
           , diagnostics = recordEntry startEntry session.diagnostics
           , errorBanner = idleErrorBanner
           , lastRawFinalizedTranscript = ""
+          , recognitionStatusOverride = idleRecognitionStatusOverride
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -413,6 +429,9 @@ reduce (HandleRecognitionError timestamp code message) session =
 reduce ClearErrorBanner session = session
   { errorBanner = idleErrorBanner
   }
+reduce (SetRecognitionStatusOverride statusText) session = session
+  { recognitionStatusOverride = statusText
+  }
 
 -- | Close the currently open counting interval, append it to the event
 -- | log, prune captions/events, and record a stop-style diagnostic
@@ -449,6 +468,7 @@ stopListeningAt timestamp label reasonDetail session =
       , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
       , now = timestamp
       , diagnostics = recordEntry stopEntry session.diagnostics
+      , recognitionStatusOverride = idleRecognitionStatusOverride
       }
 
 toPersistedData :: Session -> PersistedData
@@ -626,7 +646,13 @@ buildStatus session =
     , style "color" "#9aa5b1"
     , style "margin" "6px 0 4px"
     ]
-    [ text (if session.listening then "Listening" else "Idle") ]
+    [ text (renderStatus session) ]
+
+renderStatus :: Session -> String
+renderStatus session
+  | session.recognitionStatusOverride /= "" = session.recognitionStatusOverride
+  | session.listening = "Listening"
+  | otherwise = "Idle"
 
 buildCount :: Session -> Node
 buildCount session =

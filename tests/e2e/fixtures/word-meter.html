@@ -13,6 +13,7 @@
         ? "/quartz/static/word-meter.js"
         : "/quartz/static/word-meter-ps.js"
       window.__WM_TEST_HOOK__ = true
+      window.__WM_DISABLE_ON_DEVICE_PREFLIGHT__ = true
       const tag = document.createElement("script")
       tag.src = source
       tag.dataset.build = build

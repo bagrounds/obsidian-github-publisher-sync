@@ -29,9 +29,12 @@ import WordMeter.Capability.Environment
 import WordMeter.Capability.Recognition
   ( RecognitionEvent(..)
   , runRecordingRecognitionM
+  , onDeviceLanguagePackApiAvailable
+  , prepareOnDeviceLanguagePack
   , recognitionApiAvailable
   , scheduleAutoRestart
   , cancelAutoRestart
+  , startOnDeviceRecognition
   , startRecognition
   , stopRecognition
   )
@@ -77,18 +80,25 @@ import WordMeter.Recognition.Delta
   , isWordBoundaryExtension
   , normalizeTranscript
   )
+import WordMeter.FFI.Recognition
+  ( OnDeviceAvailable(..)
+  , OnDeviceUnavailable(..)
+  , renderOnDeviceUnavailable
+  )
 import WordMeter.Recording
   ( Action(..)
   , Session
   , activeListeningMs
   , captionOpacity
   , diagnosticsText
+  , downloadingOnDeviceStatus
   , eventLogLimit
   , formatDurationMs
   , formatRate
   , idleCopyStatus
   , idleErrorBanner
   , idleKeepAwakeStatus
+  , idleRecognitionStatusOverride
   , initialSession
   , intervalDurationMs
   , intervalRate
@@ -122,6 +132,8 @@ main = do
   runRecognitionErrorTests
   runRecognitionDeltaTests
   runRecognitionCapabilityTests
+  runOnDevicePreflightTests
+  runRecognitionStatusReducerTests
   runIntegrateFinalizedTranscriptReducerTests
   log "word-meter: all PureScript unit tests passed"
 
@@ -972,3 +984,108 @@ runIntegrateFinalizedTranscriptReducerTests = do
     afterExtensionDiagnostics = Array.length afterExtension.diagnostics
   assertEqualInt "duplicate appends no diagnostic entry"
     afterDuplicateDiagnostics afterExtensionDiagnostics
+
+runOnDevicePreflightTests :: Effect Unit
+runOnDevicePreflightTests = do
+  -- The typed OnDeviceUnavailable ADT is rendered into a stable
+  -- diagnostic detail string. The Main orchestrator passes this into
+  -- the recognition diagnostic when it falls back to cloud.
+  assertEqualString "renderOnDeviceUnavailable OnDeviceApiAbsent"
+    (renderOnDeviceUnavailable OnDeviceApiAbsent) "api-absent"
+  assertEqualString "renderOnDeviceUnavailable OnDeviceUnsupportedLanguage"
+    (renderOnDeviceUnavailable OnDeviceUnsupportedLanguage)
+    "unsupported-language"
+  assertEqualString "renderOnDeviceUnavailable OnDeviceInstallFailed"
+    (renderOnDeviceUnavailable (OnDeviceInstallFailed "quota exceeded"))
+    "install-failed: quota exceeded"
+  assertEqualString "renderOnDeviceUnavailable OnDeviceAvailabilityRejected"
+    (renderOnDeviceUnavailable (OnDeviceAvailabilityRejected "SecurityError"))
+    "availability-rejected: SecurityError"
+
+  -- The recording recognition capability surfaces both the
+  -- on-device-pre-flight API check and the prepare/start pair so the
+  -- orchestrator's call sequence is observable from a unit test.
+  let
+    outcome = runRecordingRecognitionM do
+      apiAvailable <- onDeviceLanguagePackApiAvailable
+      prepareOnDeviceLanguagePack
+        { locale: "en-US", onProgress: pure unit }
+        case _ of
+          Right OnDeviceAvailable ->
+            startOnDeviceRecognition
+              { locale: "en-US"
+              , onResult: \_ _ -> pure unit
+              , onErrorEvent: \_ _ -> pure unit
+              , onEnded: pure unit
+              , onStarted: pure unit
+              , onStartFailure: \_ -> pure unit
+              , onConstructFailure: \_ -> pure unit
+              }
+          Left _ ->
+            startRecognition
+              { locale: "en-US"
+              , onResult: \_ _ -> pure unit
+              , onErrorEvent: \_ _ -> pure unit
+              , onEnded: pure unit
+              , onStarted: pure unit
+              , onStartFailure: \_ -> pure unit
+              , onConstructFailure: \_ -> pure unit
+              }
+      pure apiAvailable
+  assertEqualBoolean
+    "RecordingRecognitionM reports on-device language pack API available"
+    outcome.result true
+  assertEqualBoolean
+    "RecordingRecognitionM records prepare then on-device start"
+    ( outcome.events ==
+        [ PreparedOnDeviceLanguagePack { locale: "en-US" }
+        , StartedOnDeviceRecognition { locale: "en-US" }
+        ]
+    )
+    true
+
+runRecognitionStatusReducerTests :: Effect Unit
+runRecognitionStatusReducerTests = do
+  -- The recognitionStatusOverride field starts empty, accepts arbitrary
+  -- override text (set by Main during the on-device install), and is
+  -- cleared by any stop transition so a stale "downloading…" cannot
+  -- outlive the listening session.
+  assertEqualString "initialSession has empty recognitionStatusOverride"
+    initialSession.recognitionStatusOverride idleRecognitionStatusOverride
+
+  let
+    listening = reduce (Toggle 0.0) initialSession
+    downloading =
+      reduce (SetRecognitionStatusOverride downloadingOnDeviceStatus) listening
+  assertEqualString
+    "SetRecognitionStatusOverride installs the download status"
+    downloading.recognitionStatusOverride downloadingOnDeviceStatus
+
+  let
+    cleared =
+      reduce (SetRecognitionStatusOverride idleRecognitionStatusOverride)
+        downloading
+  assertEqualString
+    "SetRecognitionStatusOverride with empty string clears the override"
+    cleared.recognitionStatusOverride idleRecognitionStatusOverride
+
+  let
+    stopped = reduce (Toggle 1000.0) downloading
+  assertEqualString
+    "Toggle (stop) clears any lingering recognition status override"
+    stopped.recognitionStatusOverride idleRecognitionStatusOverride
+
+  -- The status override survives across non-stop reducer actions while
+  -- the install is still in flight.
+  let
+    downloadingAfterTick = reduce (Tick 500.0) downloading
+  assertEqualString
+    "Tick preserves an in-flight recognitionStatusOverride"
+    downloadingAfterTick.recognitionStatusOverride downloadingOnDeviceStatus
+
+  -- Reset returns the session to the empty override.
+  let
+    afterReset = reduce (Reset 9999.0) downloading
+  assertEqualString
+    "Reset clears any lingering recognitionStatusOverride"
+    afterReset.recognitionStatusOverride idleRecognitionStatusOverride

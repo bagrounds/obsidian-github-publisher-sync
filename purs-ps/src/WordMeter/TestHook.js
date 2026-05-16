@@ -38,5 +38,6 @@ export const installTestHook = (api) => () => {
         String(message == null ? "" : message),
       )(),
     getErrorBanner: () => api.getErrorBanner(),
+    getRecognitionStatusOverride: () => api.getRecognitionStatusOverride(),
   }
 }

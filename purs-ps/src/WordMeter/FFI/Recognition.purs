@@ -3,11 +3,16 @@ module WordMeter.FFI.Recognition
   , RecognitionConstructError(..)
   , RecognitionStartError(..)
   , RecognitionStopError(..)
+  , OnDeviceAvailable(..)
+  , OnDeviceUnavailable(..)
   , renderRecognitionConstructError
   , renderRecognitionStartError
   , renderRecognitionStopError
+  , renderOnDeviceUnavailable
   , recognitionApiAvailable
   , constructRecognitionInstance
+  , onDeviceLanguagePackApiAvailable
+  , ensureOnDeviceLanguagePack
   , attachOnResult
   , attachOnError
   , attachOnEnd
@@ -18,6 +23,7 @@ module WordMeter.FFI.Recognition
 
 import Prelude
 
+import Data.Either (Either(..))
 import Effect (Effect)
 
 -- | Opaque PureScript handle for a browser `SpeechRecognition`
@@ -82,14 +88,102 @@ foreign import recognitionApiAvailable :: Effect Boolean
 
 -- | Thin wrapper over `new SpeechRecognition()` with the legacy
 -- | configuration knobs (`continuous = true`, `interimResults = true`,
--- | `lang = locale`). Invokes exactly one of the two continuations:
--- | the instance callback on success, the error callback (carrying
--- | the browser's error name) on synchronous failure.
+-- | `lang = locale`). The `processLocally` flag is the standardized
+-- | Chromium hint for on-device recognition: set `true` after a
+-- | successful `ensureOnDeviceLanguagePack`, set `false` for the
+-- | cloud path. The constructor invokes exactly one of the two
+-- | continuations: the instance callback on success, the error
+-- | callback (carrying the browser's error name) on synchronous
+-- | failure.
 foreign import constructRecognitionInstance
   :: String
+  -> Boolean
   -> (RecognitionInstance -> Effect Unit)
   -> (String -> Effect Unit)
   -> Effect Unit
+
+-- | True iff the constructor exposes the standardized static
+-- | `available()` and `install()` methods used to pre-flight an
+-- | on-device language pack. Older Chromium builds, Samsung Internet,
+-- | Safari, and Firefox all answer `false`; the capability layer takes
+-- | this as the unambiguous signal to skip the pre-flight and go
+-- | straight to the cloud path.
+foreign import onDeviceLanguagePackApiAvailable :: Effect Boolean
+
+-- | Witness that the on-device language pack for a given locale is
+-- | currently installed and the recognizer is safe to start with
+-- | `processLocally = true`. The constructor is uninhabited from
+-- | PureScript code: only the FFI shim is allowed to mint one, after
+-- | the static `available()` / `install()` round trip resolves
+-- | successfully.
+data OnDeviceAvailable = OnDeviceAvailable
+
+derive instance eqOnDeviceAvailable :: Eq OnDeviceAvailable
+
+instance showOnDeviceAvailable :: Show OnDeviceAvailable where
+  show OnDeviceAvailable = "OnDeviceAvailable"
+
+-- | Why the on-device pre-flight refused to certify the language
+-- | pack. Each variant maps to a single failure mode the JS shim can
+-- | observe so the capability layer can decide whether to fall back
+-- | silently (every case here) and how to render the diagnostic.
+data OnDeviceUnavailable
+  = OnDeviceApiAbsent
+  | OnDeviceUnsupportedLanguage
+  | OnDeviceInstallFailed String
+  | OnDeviceAvailabilityRejected String
+
+derive instance eqOnDeviceUnavailable :: Eq OnDeviceUnavailable
+
+instance showOnDeviceUnavailable :: Show OnDeviceUnavailable where
+  show OnDeviceApiAbsent = "OnDeviceApiAbsent"
+  show OnDeviceUnsupportedLanguage = "OnDeviceUnsupportedLanguage"
+  show (OnDeviceInstallFailed detail) =
+    "OnDeviceInstallFailed " <> show detail
+  show (OnDeviceAvailabilityRejected detail) =
+    "OnDeviceAvailabilityRejected " <> show detail
+
+renderOnDeviceUnavailable :: OnDeviceUnavailable -> String
+renderOnDeviceUnavailable OnDeviceApiAbsent = "api-absent"
+renderOnDeviceUnavailable OnDeviceUnsupportedLanguage = "unsupported-language"
+renderOnDeviceUnavailable (OnDeviceInstallFailed detail) =
+  "install-failed: " <> detail
+renderOnDeviceUnavailable (OnDeviceAvailabilityRejected detail) =
+  "availability-rejected: " <> detail
+
+-- | Pre-flight the on-device language pack for the given locale.
+-- | Invokes exactly one terminal continuation: `onDone` with `Right
+-- | OnDeviceAvailable` once the recognizer is safe to start with
+-- | `processLocally = true`, or `Left OnDeviceUnavailable` carrying
+-- | the classified failure. The `onProgress` continuation fires zero
+-- | or one times before the terminal one, exactly when `install()`
+-- | needs to run; UI code uses it to flip the status row to
+-- | "downloading on-device language pack…".
+ensureOnDeviceLanguagePack
+  :: String
+  -> Effect Unit
+  -> (Either OnDeviceUnavailable OnDeviceAvailable -> Effect Unit)
+  -> Effect Unit
+ensureOnDeviceLanguagePack locale onProgress onDone =
+  ensureOnDeviceLanguagePackImpl locale onProgress
+    (onDone (Right OnDeviceAvailable))
+    ( \kind detail -> onDone (Left (classifyOnDeviceUnavailable kind detail))
+    )
+
+foreign import ensureOnDeviceLanguagePackImpl
+  :: String
+  -> Effect Unit
+  -> Effect Unit
+  -> (String -> String -> Effect Unit)
+  -> Effect Unit
+
+classifyOnDeviceUnavailable :: String -> String -> OnDeviceUnavailable
+classifyOnDeviceUnavailable kind detail = case kind of
+  "api-absent" -> OnDeviceApiAbsent
+  "unsupported-language" -> OnDeviceUnsupportedLanguage
+  "install-failed" -> OnDeviceInstallFailed detail
+  "availability-rejected" -> OnDeviceAvailabilityRejected detail
+  other -> OnDeviceAvailabilityRejected (other <> ": " <> detail)
 
 -- | Subscribe to `recognition.onresult`. The JS shim iterates
 -- | `event.results` from `event.resultIndex`, filters out non-final

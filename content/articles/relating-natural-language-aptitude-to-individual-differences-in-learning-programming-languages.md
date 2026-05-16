@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T16:36:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, split-composition illustration depicting the intersection of linguistics and logic. On the left side, elegant, flowing calligraphy and ink-stained parchment represent natural language, with soft, organic curves. On the right side, the composition transitions into sharp, geometric patterns, glowing circuit-like pathways, and structured binary code blocks in cool blues and teals. In the center, where the two halves meet, a glowing, translucent human silhouette of a head is visible, with neural connections radiating from the center like a glowing synapse. The background is a soft, neutral gradient that allows the transition from analog, humanistic textures to digital, computational precision to stand out. The lighting is cinematic, highlighting the cognitive spark of discovery at the boundary between language and code.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](https://www.nature.com/articles/s41598-020-60661-8)  
+![articles-relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages](../articles-relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.jpg)  
   
 ## 🤖 AI Summary  
   

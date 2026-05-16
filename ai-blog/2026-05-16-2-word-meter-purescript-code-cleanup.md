@@ -20,13 +20,21 @@ URL: https://bagrounds.org/ai-blog/2026-05-16-2-word-meter-purescript-code-clean
 🧩 It uses the capability typeclass pattern, a pure reducer, a typed virtual DOM, and thin FFI shims — all good architectural choices.
 👁️ But careful review turned up a few genuine issues worth addressing now, and several worthwhile improvements worth planning for the future.
 
-### 🪦 Dead Code: the `lastError` Field
+### 🪦 Dead Code: the `lastError` Field — And How to Prevent It Automatically
 
 💀 The `Session` type included a field called `lastError` of type `Maybe String`.
 🔍 It was initialized to `Nothing` in `initialSession` and never set to anything else in any reducer case.
 🚫 No reducer case read it. No view function rendered it. No test checked it.
 🗑️ It was pure dead code — a field from early development that was superseded by the more specific `errorBanner` field in a later slice.
 ✂️ Removing it is a strict improvement: fewer moving parts, a smaller record type, and no risk of future confusion about whether the field is meaningful.
+
+🤖 Can a tool catch this automatically? The short answer is: not quite, but we can get close.
+
+🔍 The PureScript compiler, when run with the `--strict` flag, turns all compiler warnings into hard errors. This catches real problems like unused imports, shadowed names, and overlapping patterns. However, the compiler does not warn about unused record fields or exported functions that are never imported — those gaps require a different approach.
+
+🛠️ The closest PureScript has to `hlint` for Haskell is `purs-tidy`, which is a code formatter rather than a semantic linter. As of 2025, there is no mature, widely-used PureScript tool that flags "this field is always `Nothing`" as an error.
+
+🧱 The most reliable defence today is a combination of three practices: running `spago build --strict` in CI to keep the codebase warning-free, writing tests that exercise every field in `Session` (so an unused field stands out as something no test reads), and treating `initialSession` as a living checklist where every entry must have a corresponding `reduce` case that writes to it.
 
 ### 🪞 Duplicate Type Definition: `ClickHandlers` vs `Handlers`
 
@@ -71,19 +79,19 @@ URL: https://bagrounds.org/ai-blog/2026-05-16-2-word-meter-purescript-code-clean
 
 💥 Splitting `Recording.purs` — currently around 1,000 lines across five distinct responsibilities — into focused modules: `Recording.Session`, `Recording.Reducer`, `Recording.View`, and `Recording.Math`.
 
-🏷️ Introducing a `Timestamp` newtype to replace the raw `Number` timestamps that flow through every action constructor and reducer case.
+🏷️ Using `Data.DateTime.Instant` from the `purescript-datetime` core library for timestamps instead of raw `Number`. The library provides `Instant` for points in time and `Milliseconds` for durations — a built-in way to distinguish the two concepts without rolling a custom newtype.
 
-🌍 Introducing a `Locale` newtype to replace the raw `String` locale values that flow through the recognition orchestration.
+🌍 Introducing a `Locale` newtype to replace the raw `String` locale values. Because BCP 47 locale tags are an open, extensible set — not a closed enum — a newtype wrapper is the right abstraction. There's no off-the-shelf PureScript locale type in the core libraries, so a custom `newtype Locale = Locale String` is the idiomatic choice.
 
-🪄 Simplifying `persistAfterAction` with a `shouldPersist` predicate, collapsing 19 lines of mostly-identical branches into 5.
+🪄 Simplifying `persistAfterAction` with a `shouldPersist` predicate, collapsing 19 lines of mostly-identical branches into 5 — but only if `shouldPersist` is itself an exhaustive case expression with no wildcard default, so the compiler continues to enforce decisions for new action constructors.
 
-♻️ Sharing the `collapseWhitespaceToSpace` helper between `Words.purs` and `Recognition.Delta.purs`, which currently both define the same three `replaceAll` calls independently.
+♻️ Sharing the `collapseWhitespaceToSpace` helper — done in this PR, moved to the new `WordMeter.Text` module.
 
 🚦 Replacing the `wakeLockHeld :: Boolean` plus `keepAwakeStatus :: String` pair with a `WakeLockState` ADT that makes impossible states unrepresentable.
 
 ## 🛠️ What Was Implemented
 
-🔴 Three code changes were implemented directly in this pull request.
+🔴 Four code changes were implemented directly in this pull request.
 
 🗑️ The `lastError :: Maybe String` dead field was removed from the `Session` type and from `initialSession`.
 
@@ -91,13 +99,17 @@ URL: https://bagrounds.org/ai-blog/2026-05-16-2-word-meter-purescript-code-clean
 
 🧹 The banner-style section comment was removed from `Main.purs`.
 
-✅ All three changes are pure cleanup with no behavior change. The remaining six improvements are documented in the backlog for future work.
+📦 A new `WordMeter.Text` module was created with the shared `collapseWhitespaceToSpace` helper. Both `WordMeter.Words` and `WordMeter.Recognition.Delta` now import from it, eliminating the duplicate `replaceAll` chain that lived in both files.
+
+✅ All four changes are pure cleanup with no behavior change. The remaining improvements are documented in the backlog for future work.
 
 ## 💡 Reflection
 
 🧐 One of the most useful exercises in this kind of review is asking "what is the simplest true statement I can make about this code?" For the `lastError` field, the simplest true statement was "this value is always `Nothing`." For the `ClickHandlers` duplicate, it was "this type and `Handlers` are identical." Both statements reveal something worth fixing immediately.
 
-🌱 The larger recommendations — splitting `Recording.purs`, introducing newtypes for `Timestamp` and `Locale` — are the kind of improvements that pay compound interest over time. They make the codebase more discoverable, more type-safe, and easier to extend. But they require coordination with the feature roadmap, so documenting them carefully and letting the owner decide when to act is the right call.
+🌱 The larger recommendations — splitting `Recording.purs`, using `Data.DateTime.Instant` for timestamps, introducing a `Locale` newtype — are the kind of improvements that pay compound interest over time. They make the codebase more discoverable, more type-safe, and easier to extend. But they require coordination with the feature roadmap, so documenting them carefully and letting the owner decide when to act is the right call.
+
+🔬 On the question of automated dead code detection: adding `--strict` to the spago build and test commands is a good step forward, catching unused imports and shadowed names at the CI level. For field-level dead code in record types specifically, the ecosystem gap is real — but treating `initialSession` as a canonical checklist and writing tests that read every field are the practical compensating controls available today.
 
 ## 📚 Book Recommendations
 

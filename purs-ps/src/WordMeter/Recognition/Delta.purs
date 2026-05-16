@@ -21,13 +21,12 @@ import Data.Array (filter)
 import Data.Maybe (isJust)
 import Data.String
   ( Pattern(..)
-  , Replacement(..)
-  , replaceAll
   , split
   , stripPrefix
   , trim
   )
 import Data.String.Common (joinWith, toLower)
+import WordMeter.Text (collapseWhitespaceToSpace)
 import WordMeter.Words (countWords)
 
 -- | The four possible outcomes when a finalized transcript arrives,
@@ -85,9 +84,7 @@ normalizeTranscript :: String -> String
 normalizeTranscript =
   trim
     >>> toLower
-    >>> replaceAll (Pattern "\t") (Replacement " ")
-    >>> replaceAll (Pattern "\n") (Replacement " ")
-    >>> replaceAll (Pattern "\r") (Replacement " ")
+    >>> collapseWhitespaceToSpace
     >>> split (Pattern " ")
     >>> filter (_ /= "")
     >>> joinWith " "

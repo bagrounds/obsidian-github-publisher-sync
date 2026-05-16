@@ -3,7 +3,8 @@ module WordMeter.Words (countWords) where
 import Prelude
 
 import Data.Array (filter, length)
-import Data.String (Pattern(..), Replacement(..), replaceAll, split, trim)
+import Data.String (Pattern(..), split, trim)
+import WordMeter.Text (collapseWhitespaceToSpace)
 
 countWords :: String -> Int
 countWords transcript =
@@ -15,9 +16,3 @@ countWords transcript =
 
 isNonEmpty :: String -> Boolean
 isNonEmpty value = value /= ""
-
-collapseWhitespaceToSpace :: String -> String
-collapseWhitespaceToSpace =
-  replaceAll (Pattern "\t") (Replacement " ")
-    >>> replaceAll (Pattern "\n") (Replacement " ")
-    >>> replaceAll (Pattern "\r") (Replacement " ")

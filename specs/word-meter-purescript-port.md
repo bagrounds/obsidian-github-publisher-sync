@@ -267,13 +267,13 @@ The following improvements are recommended based on a review against PureScript 
 
 ---
 
-### Introduce a `Timestamp` newtype
+### Use `Data.DateTime.Instant` for timestamps
 
-**What:** Replace raw `Number` timestamps (the argument to `Toggle`, `Tick`, `RecordDiagnostic`, etc.) with a `newtype Timestamp = Timestamp Number` defined in a dedicated module.
+**What:** Replace raw `Number` timestamps (the argument to `Toggle`, `Tick`, `RecordDiagnostic`, etc.) with `Data.DateTime.Instant` from the `purescript-datetime` package, which is in the `purescript/` GitHub organization and thus qualifies as a core library.
 
-**Why:** `Number` is used for multiple distinct concepts in the codebase — timestamps, durations, word rates, and opacity fractions. A `Timestamp` newtype makes function signatures self-documenting and prevents accidentally passing a duration (also `Number`) where a timestamp is expected. Cost at runtime: zero (newtypes are erased).
+**Why:** `purescript-datetime` already provides exactly this concept: `Instant` represents a point in time as milliseconds since the Unix epoch, and `Data.Time.Duration.Milliseconds` (also from `datetime`) represents a duration. Using `Instant` for timestamps and `Milliseconds` for durations gives each concept its own type, prevents accidentally passing a duration where a timestamp is expected, and expresses intent through a well-maintained, widely-used library rather than a custom newtype. Cost at runtime: zero (newtypes are erased). The `unInstant :: Instant -> Milliseconds` function extracts the underlying value when FFI boundaries need a raw `Number`.
 
-**Trade-offs:** Requires touching every Action constructor and every reduce case that pattern-matches on a timestamp. Tests that hardcode numeric timestamps would need `Timestamp` wrappers. The benefit compounds as the codebase grows.
+**Trade-offs:** Requires adding `datetime` to `spago.yaml` dependencies and touching every `Action` constructor and every `reduce` case that pattern-matches on a timestamp. Tests that hardcode numeric timestamps would need `Instant` wrappers (via `instant :: Milliseconds -> Maybe Instant`). The `FFI/Clock.purs` foreign import `currentTimeMillis :: Effect Number` would become `currentTimeMillis :: Effect Instant` with the `Number → Milliseconds → Instant` conversion happening at the FFI boundary.
 
 **Complexity:** Medium. Mechanical transformation; the compiler guides every change site.
 
@@ -283,9 +283,9 @@ The following improvements are recommended based on a review against PureScript 
 
 **What:** Replace raw `String` locale values with `newtype Locale = Locale String`.
 
-**Why:** Locale strings are passed from `captureEnvironmentSnapshot` through `sessionLocale` to every `startRecognition` call. Wrapping them in a newtype documents their role, prevents silent coercion with unrelated strings (e.g. diagnostic labels), and makes the type signature of `recognitionHandlersFor` self-explanatory.
+**Why:** A BCP 47 locale tag (like `"en-US"`, `"fr-FR"`, `"zh-Hant"`) is an open, extensible identifier — not a closed enum. The IANA Language Subtag Registry lists thousands of valid tags, and the Web Speech API's `lang` property plus `navigator.language` both accept any BCP 47 string, so modeling this as a sum type would be incorrect and impractical to maintain. A `Locale` newtype is the right abstraction: it documents the role of the string, prevents silent coercion with unrelated strings (e.g. diagnostic labels), and makes the type signature of `recognitionHandlersFor` self-explanatory. No off-the-shelf PureScript locale type exists in the core libraries — the browser's `Intl.Locale` API has no binding in the `purescript/` organization — so a custom newtype is the idiomatic choice. The `renderLocale :: Locale -> String` unwrapper provides a single named extraction point for FFI boundaries and diagnostic log lines.
 
-**Trade-offs:** Small lift; the locale string is produced in one place and consumed in a few. The `Locale` newtype would need `renderLocale :: Locale -> String` for the diagnostic log lines that embed the locale in detail strings.
+**Trade-offs:** Small lift; the locale string is produced in one place (`captureEnvironmentSnapshot` → `sessionLocale`) and consumed in a few recognition capability calls. The newtype would need a `renderLocale :: Locale -> String` for diagnostic log lines that embed the locale.
 
 **Complexity:** Low.
 
@@ -295,23 +295,17 @@ The following improvements are recommended based on a review against PureScript 
 
 **What:** `persistAfterAction` is an exhaustive case dispatch where 17 of 19 branches return `pure unit`. An alternative is a pure predicate `shouldPersist :: Action -> Boolean` (returning `true` only for `Toggle`, `InjectFinalTranscript`, `IntegrateFinalizedTranscript`, and `Reset`) plus a single `when (shouldPersist action) persistCurrentSession` call.
 
-**Why:** The current exhaustive match is intentional — the compiler forces a decision for every new action. A `shouldPersist` predicate preserves the exhaustiveness guarantee if it is also an exhaustive case expression, and collapses 19 lines into 5.
+**Why:** The current exhaustive match is intentional — the compiler forces a decision for every new action. A `shouldPersist` predicate preserves the exhaustiveness guarantee **if and only if it is also written as an exhaustive case expression with no wildcard default**. With that constraint, adding a new `Action` constructor gives the same compiler error as today, and the predicate style collapses 19 lines into 5.
 
-**Trade-offs:** The exhaustive match is a living checklist that tells readers exactly what each action does to storage. The predicate style is more concise but slightly less explicit. Either approach is safe as long as the new `Action` variant gets a case in the predicate.
+**Trade-offs:** The `shouldPersist` predicate **must not** use a `_ -> false` catch-all wildcard — that would allow a new action to silently skip persistence, which is less safe than the current code. With a fully exhaustive case expression on `shouldPersist`, the type-safety guarantee is identical to the current approach and the refactor is purely cosmetic. The existing exhaustive match also acts as a living checklist (each branch documents what that action does to storage), so the trade-off is conciseness vs. explicitness.
 
 **Complexity:** Low.
 
 ---
 
-### Share `collapseWhitespaceToSpace` between `Words` and `Recognition.Delta`
+### ✅ Share `collapseWhitespaceToSpace` between `Words` and `Recognition.Delta`
 
-**What:** `Words.purs` contains a private `collapseWhitespaceToSpace` helper (tab/newline/carriage-return → space). `Recognition.Delta.normalizeTranscript` repeats the same three `replaceAll` calls inline. Exporting `collapseWhitespaceToSpace` from `Words.purs` (or moving it to a shared `WordMeter.Text` module) removes the duplication.
-
-**Why:** Two copies of the same transformation can drift independently. If a new whitespace character (e.g. `\u00A0` non-breaking space) needs handling, it must be added in two places. A single canonical function eliminates the risk.
-
-**Trade-offs:** Exporting a helper from `Words` slightly widens its public API. Alternatively, a small `WordMeter.Text` module could own both the whitespace helper and `countWords`, giving `Words` a natural home. Either approach is safe — both modules are pure, with no FFI dependencies.
-
-**Complexity:** Low.
+**Done in this PR.** `Words.purs` contained a private `collapseWhitespaceToSpace` helper (tab/newline/carriage-return → space). `Recognition.Delta.normalizeTranscript` repeated the same three `replaceAll` calls inline. Both now import the function from the new `WordMeter.Text` module, eliminating the duplication. Any future whitespace-handling change (e.g. adding `\u00A0` non-breaking space) now has a single canonical location.
 
 ---
 

@@ -185,3 +185,47 @@ Use `derive instance` and `derive newtype instance` to avoid boilerplate `Eq`, `
 - No `Impl` / `_impl` suffixes on FFI bindings.
 - No single-letter variables unless the function is a genuinely abstract combinator (category-theory level).
 - Qualified imports for feature modules; the qualifier folds the namespace into the call site.
+
+## Compiler tooling and static analysis
+
+### `--strict` flag — turn all warnings into errors in CI
+
+Running `spago build --strict` or `spago test --strict` tells the PureScript compiler to treat every warning as a hard error, which prevents the build from succeeding until all warnings are resolved. Warnings caught by `--strict` include:
+
+- Unused imports (a common source of drift as modules evolve).
+- Name shadowing (a silent footgun — the outer binding is still in scope but the inner one wins).
+- Typed wildcards left in code after a refactor.
+- Overlapping pattern rows (a warning, not yet an error by default).
+
+Adding `--strict` to the CI build and test scripts is the single highest-leverage compiler configuration improvement available. Any new warning introduced in a PR causes CI to fail, so warnings never accumulate.
+
+### What `--strict` does not catch
+
+The PureScript compiler does not warn about:
+
+- Unused top-level exports (functions that are exported but never imported by any other module).
+- Unused record fields (fields that are only ever set in `initialSession` and never written by any `reduce` case).
+- Unused `data` constructors (constructors that are never pattern-matched).
+
+These gaps mean that dead code at the module boundary level can still silently accumulate without triggering a compiler warning. The only reliable defences today are code review and careful bookkeeping in `initialSession` (treating it as a living checklist of all `Session` fields).
+
+### `purs-tidy` — the official formatter
+
+`purs-tidy` (from the `tidy` package in the `purescript/` org) is the standard PureScript code formatter, analogous to `gofmt` or `rustfmt`. Running it in CI with `purs-tidy check src` enforces consistent whitespace, alignment, and import ordering. It does not perform semantic checks.
+
+### No mature hlint equivalent exists
+
+As of 2025, there is no PureScript equivalent of `hlint` — no tool that inspects source patterns and suggests semantic rewrites (e.g. "use `catMaybes` instead of `mapMaybe id`"). The closest substitute is the `--strict` flag plus editor integration (the PureScript language server surfaces all compiler warnings inline). Community linters exist as experimental projects but none have the maturity or maintenance level of `hlint`.
+
+### Recommended CI additions
+
+Add `--strict` to the unit-test and build steps:
+
+```bash
+# package.json
+"test:ps": "cd purs-ps && npx --prefix .. spago test --strict",
+"build:ps": "node ./scripts/build-word-meter-ps.mjs"
+# in build-word-meter-ps.mjs, add "--strict" to the spago bundle args
+```
+
+Before enabling, run the compiler once without `--strict` and audit any existing warnings so they are fixed in the same PR — otherwise enabling `--strict` in CI would immediately break the build.

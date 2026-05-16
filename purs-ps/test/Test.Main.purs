@@ -2,10 +2,11 @@ module Test.Main where
 
 import Prelude
 
-import Data.Array (head, length) as Array
+import Data.Array (any, head, length) as Array
 import Data.Either (Either(..), isLeft)
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
+import Data.Foldable (sequence_)
 import Data.Ord (abs)
 import Data.String (Pattern(..), contains, length) as String
 import Effect (Effect)
@@ -98,10 +99,10 @@ import WordMeter.Recording.Math
   , intervalRate
   , longRate
   , overallRate
-  , ratePerMinute
   , shortRate
   , wallSpanMs
   , wordsInTrailingWindow
+  , wordsPerMinute
   )
 import WordMeter.Recording.Reducer
   ( Action(..)
@@ -149,14 +150,14 @@ main = do
 
 runRatePerMinuteTests :: Effect Unit
 runRatePerMinuteTests = do
-  assertEqualNumber "ratePerMinute 60 words / 60s = 60"
-    (ratePerMinute 60 60000.0) 60.0
-  assertEqualNumber "ratePerMinute 30 words / 60s = 30"
-    (ratePerMinute 30 60000.0) 30.0
-  assertEqualNumber "ratePerMinute with zero elapsed returns 0"
-    (ratePerMinute 5 0.0) 0.0
-  assertEqualNumber "ratePerMinute with negative elapsed returns 0"
-    (ratePerMinute 5 (-1.0)) 0.0
+  assertEqualNumber "wordsPerMinute 60 words / 60s = 60"
+    (wordsPerMinute 60 60000.0) 60.0
+  assertEqualNumber "wordsPerMinute 30 words / 60s = 30"
+    (wordsPerMinute 30 60000.0) 30.0
+  assertEqualNumber "wordsPerMinute with zero elapsed returns 0"
+    (wordsPerMinute 5 0.0) 0.0
+  assertEqualNumber "wordsPerMinute with negative elapsed returns 0"
+    (wordsPerMinute 5 (-1.0)) 0.0
 
 runFormatRateTests :: Effect Unit
 runFormatRateTests = do
@@ -1216,41 +1217,46 @@ runDiagnosticsDrawerReducerTests = do
   assertEqualBoolean "Reset closes the diagnostics drawer"
     afterReset.diagnosticsDrawerOpen false
 
+digits :: Array String
+digits = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+
+containsDigit :: String -> Boolean
+containsDigit s = Array.any (\d -> String.contains (String.Pattern d) s) digits
+
 runPropertyTests :: Effect Unit
-runPropertyTests = do
-  quickCheck propFormatRateNonEmpty
-  quickCheck propFormatDurationNonEmpty
-  quickCheck propCaptionOpacityInRange
-  quickCheck propCaptionOpacityAtAgeZero
-  quickCheck propRatePerMinuteZeroWords
-  quickCheck propRatePerMinuteNonNegative
+runPropertyTests = sequence_
+  [ quickCheck formatRateContainsDigit
+  , quickCheck formatDurationContainsDigit
+  , quickCheck captionOpacityIsInRange
+  , quickCheck captionOpacityAtSameTimestampIsOne
+  , quickCheck wordsPerMinuteIsZeroWhenNoWords
+  , quickCheck wordsPerMinuteIsNonNegative
+  , quickCheck wordsPerMinuteAtOneMinuteEqualsWordCount
+  ]
 
--- | formatRate always produces a non-empty string, even for non-finite inputs.
-propFormatRateNonEmpty :: Number -> Boolean
-propFormatRateNonEmpty rate = String.length (formatRate rate) > 0
+formatRateContainsDigit :: Number -> Boolean
+formatRateContainsDigit rate = containsDigit (formatRate rate)
 
--- | formatDurationMs always produces a non-empty string.
-propFormatDurationNonEmpty :: Number -> Boolean
-propFormatDurationNonEmpty ms = String.length (formatDurationMs ms) > 0
+formatDurationContainsDigit :: Number -> Boolean
+formatDurationContainsDigit ms = containsDigit (formatDurationMs (abs ms))
 
--- | captionOpacity always returns a value in [minimumCaptionOpacity, 1.0].
--- | We use abs to keep inputs in the non-negative domain of real timestamps.
-propCaptionOpacityInRange :: Number -> Number -> Boolean
-propCaptionOpacityInRange nowRaw captionRaw =
+captionOpacityIsInRange :: Number -> Number -> Boolean
+captionOpacityIsInRange nowRaw captionRaw =
   let
     opacity = captionOpacity (abs nowRaw) (abs captionRaw)
   in
     opacity >= minimumCaptionOpacity && opacity <= 1.0
 
--- | A caption at the same timestamp as now (age = 0) has opacity 1.0.
-propCaptionOpacityAtAgeZero :: Number -> Boolean
-propCaptionOpacityAtAgeZero ts = captionOpacity ts ts == 1.0
+captionOpacityAtSameTimestampIsOne :: Number -> Boolean
+captionOpacityAtSameTimestampIsOne ts = captionOpacity ts ts == 1.0
 
--- | ratePerMinute with 0 words is always 0, regardless of elapsed time.
-propRatePerMinuteZeroWords :: Number -> Boolean
-propRatePerMinuteZeroWords elapsed = ratePerMinute 0 elapsed == 0.0
+wordsPerMinuteIsZeroWhenNoWords :: Number -> Boolean
+wordsPerMinuteIsZeroWhenNoWords elapsed = wordsPerMinute 0 elapsed == 0.0
 
--- | ratePerMinute with non-negative inputs always returns a non-negative rate.
-propRatePerMinuteNonNegative :: Int -> Number -> Boolean
-propRatePerMinuteNonNegative wordCount elapsedMs =
-  ratePerMinute (abs wordCount) (abs elapsedMs) >= 0.0
+wordsPerMinuteIsNonNegative :: Int -> Number -> Boolean
+wordsPerMinuteIsNonNegative wordCount elapsedMs =
+  wordsPerMinute (abs wordCount) (abs elapsedMs) >= 0.0
+
+wordsPerMinuteAtOneMinuteEqualsWordCount :: Int -> Boolean
+wordsPerMinuteAtOneMinuteEqualsWordCount wordCount =
+  wordsPerMinute (abs wordCount) 60000.0 == Int.toNumber (abs wordCount)

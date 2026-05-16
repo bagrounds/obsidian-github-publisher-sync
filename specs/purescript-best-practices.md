@@ -146,7 +146,7 @@ Each capability typeclass should have a deterministic test newtype that records 
 
 ### Property-based tests for invariants
 
-Pure functions with clear algebraic properties (e.g. `reduce` is referentially transparent, `formatDurationMs` is monotone, `ratePerMinute` is zero for zero words) are candidates for property-based tests via `purescript-quickcheck` or `purescript-spec-quickcheck`.
+Pure functions with clear algebraic properties (e.g. `reduce` is referentially transparent, `formatDurationMs` is monotone, `wordsPerMinute` is zero for zero words) are candidates for property-based tests via `purescript-quickcheck` or `purescript-spec-quickcheck`.
 
 ## PureScript-specific idioms
 

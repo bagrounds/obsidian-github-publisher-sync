@@ -2,7 +2,7 @@ module WordMeter.Recording.Math
   ( activeListeningMs
   , wallSpanMs
   , wordsInTrailingWindow
-  , ratePerMinute
+  , wordsPerMinute
   , shortRate
   , longRate
   , overallRate
@@ -54,8 +54,8 @@ wordsInTrailingWindow windowMs session =
     foldl (\acc event -> acc + event.wordCount) 0
       (filter inWindow session.wordEvents)
 
-ratePerMinute :: Int -> Number -> Number
-ratePerMinute wordCount elapsedMs
+wordsPerMinute :: Int -> Number -> Number
+wordsPerMinute wordCount elapsedMs
   | elapsedMs <= 0.0 = 0.0
   | otherwise = Int.toNumber wordCount * millisecondsPerMinute / elapsedMs
 
@@ -64,7 +64,7 @@ intervalDurationMs interval = max 0.0 (interval.endedAt - interval.startedAt)
 
 intervalRate :: LoggedInterval -> Number
 intervalRate interval =
-  ratePerMinute interval.wordCount (max 1.0 (intervalDurationMs interval))
+  wordsPerMinute interval.wordCount (max 1.0 (intervalDurationMs interval))
 
 captionOpacity :: Number -> Number -> Number
 captionOpacity nowMs captionTimestamp =
@@ -78,18 +78,18 @@ shortRate session =
   let
     elapsed = min shortWindowMs (max 1.0 (wallSpanMs session))
   in
-    ratePerMinute (wordsInTrailingWindow shortWindowMs session) elapsed
+    wordsPerMinute (wordsInTrailingWindow shortWindowMs session) elapsed
 
 longRate :: Session -> Number
 longRate session =
   let
     elapsed = min longWindowMs (max 1.0 (wallSpanMs session))
   in
-    ratePerMinute (wordsInTrailingWindow longWindowMs session) elapsed
+    wordsPerMinute (wordsInTrailingWindow longWindowMs session) elapsed
 
 overallRate :: Session -> Number
 overallRate session =
-  ratePerMinute session.totalWords (max 1.0 (activeListeningMs session))
+  wordsPerMinute session.totalWords (max 1.0 (activeListeningMs session))
 
 formatRate :: Number -> String
 formatRate rate

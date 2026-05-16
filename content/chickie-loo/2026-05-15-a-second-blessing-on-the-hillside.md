@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-14-a-calf-in-the-woods-and-the-mystery-of-the-dryer.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-14-a-calf-in-the-woods-and-the-mystery-of-the-dryer.md) [⏭️](./2026-05-16-a-girl-at-last-and-other-ranch-adventures.md)  
 # 2026-05-15 | 🐔 🐄 A Second Blessing on the Hillside 🐔  
 ![chickie-loo-2026-05-15-a-second-blessing-on-the-hillside](../chickie-loo-2026-05-15-a-second-blessing-on-the-hillside.jpg)  
   

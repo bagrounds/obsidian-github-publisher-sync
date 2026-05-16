@@ -6,9 +6,17 @@ title: ❤️📈🏋️ HRV Guided training
 URL: https://bagrounds.org/articles/
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-16T00:43:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist composition featuring a glowing, stylized digital pulse wave that transitions from a soft, rhythmic blue to a vibrant, energetic orange. The wave is centered against a dark, matte charcoal background, symbolizing the balance between rest and high-intensity effort. Floating subtly above the wave is a faint, holographic geometric heart icon rendered in thin, elegant white lines. The lighting is soft and atmospheric, emphasizing the intersection of biological data and modern athletic performance. The overall aesthetic is sleek, high-tech, and professional, reflecting the intersection of physiology and data-driven training.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❤️📈🏋️ HRV Guided training](https://www.kubios.com/blog/hrv-guided-training)  
+![articles-hrv-guided-training](../articles-hrv-guided-training.jpg)  
 ## 🤖 AI Summary  
 📈 HRV-guided training is a method that uses 🔬 daily heart rate variability readings to 🎯 tailor workout intensity.  
 * 🧘 HRV reflects fluctuations in the intervals between heartbeats and provides insight into an individual's physiological state.  

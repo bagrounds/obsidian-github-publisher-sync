@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/high-intensity-functional-training-guided-by
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-15T22:30:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, split-composition illustration. On the left, a stylized digital heartbeat line transitions into a smooth, rising bar graph, rendered in clean, vibrant teal and soft grey tones. On the right, a silhouette of an athlete in a focused, balanced yoga or recovery pose, bathed in warm, soft-focus ambient light. The background is a clean, off-white gradient, emphasizing a sense of clarity, efficiency, and wellness. The overall aesthetic is modern, scientific, and serene, representing the balance between high-intensity performance and data-driven recovery.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](https://pmc.ncbi.nlm.nih.gov/articles/PMC8705715)  
+![articles-high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort](../articles-high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.jpg)  
   
 ## 🤖 AI Summary  
 The study compares high-intensity functional training (HIFT) guided by individualized heart rate variability (HRV) to predetermined HIFT on cardiovascular function, body composition, and performance. 🏃‍♀️  

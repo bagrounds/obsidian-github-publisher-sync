@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-15T13:49:06
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-13-the-mirrors-of-integrity-adversarial-selves-and-embodied-validation.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-13-the-mirrors-of-integrity-adversarial-selves-and-embodied-validation.md) [⏭️](./2026-05-15-the-orchestration-of-intent-from-sovereign-agents-to-shared-blessings.md)  
 # 2026-05-14 | 🔀 🎭 The Architectures of Self and the Unseen Hand of Care 🔀  
 ![convergence-2026-05-14-the-architectures-of-self-and-the-unseen-hand-of-care](../convergence-2026-05-14-the-architectures-of-self-and-the-unseen-hand-of-care.jpg)  
   

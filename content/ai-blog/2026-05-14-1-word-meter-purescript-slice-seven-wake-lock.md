@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-15T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-12-5-word-meter-purescript-slice-six-reset-and-persistence.md) [⏭️](./2026-05-15-1-word-meter-purescript-slice-eight-recognition-errors.md)  
 # 2026-05-14 | 🔋 Word Meter PureScript Slice Seven — Wake Lock + Keep-Awake Toggle 🟢  
 ![ai-blog-2026-05-14-1-word-meter-purescript-slice-seven-wake-lock](../ai-blog-2026-05-14-1-word-meter-purescript-slice-seven-wake-lock.jpg)  
   

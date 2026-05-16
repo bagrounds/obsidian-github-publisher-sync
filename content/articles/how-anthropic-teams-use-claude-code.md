@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-15T22:30:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric digital illustration featuring a sleek, glowing terminal interface at the center, emitting soft light onto a clean, modern workspace. Floating around the terminal are abstract, interconnected nodes representing data flow, code snippets, and security shields in a palette of deep navy, electric blue, and warm amber. A stylized, minimalist robotic hand gently touches a holographic branch of code, symbolizing human-AI collaboration. The background is a subtle, dark grid pattern that suggests a professional software architecture environment. The overall aesthetic is clean, sophisticated, and futuristic, emphasizing the seamless integration of intelligent automation into complex technical workflows.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf)  
+![articles-how-anthropic-teams-use-claude-code](../articles-how-anthropic-teams-use-claude-code.jpg)  
 ## 🤖 AI Summary  
 Claude Code was used by Anthropic's 📊 Data Infrastructure, 🚀 Product Development, 🔒 Security Engineering, 🧠 Inference, 🧪 Data Science and Visualization, 🔗 API Knowledge, 📈 Growth Marketing, and 🎨 Product Design teams to enhance productivity across various functions by performing tasks such as:  
   

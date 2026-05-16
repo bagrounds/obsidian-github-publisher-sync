@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
+image_date: 2026-05-16T01:45:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist isometric illustration featuring a glowing, translucent robotic hand holding a digital magnifying glass over a complex, interconnected web of code blocks and data streams. Several nodes in the network are being selectively pruned or trimmed away, causing the remaining structure to glow with a brighter, more efficient blue light. A sleek, abstract bar graph floats in the background, showing a sharp downward trend in a red line representing cost, transitioning into a steady, efficient green line. The color palette uses deep navy, electric cyan, and soft white, set against a clean, matte dark gray background to emphasize a high-tech, architectural aesthetic.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows)  
+![articles-improving-token-efficiency-in-github-agentic-workflows](../articles-improving-token-efficiency-in-github-agentic-workflows.jpg)  
   
 ## 🤖 AI Summary  
   

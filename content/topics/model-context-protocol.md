@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🧠🌍⚙️ Model Context Protocol
 title: 🧠🌍⚙️ Model Context Protocol
-URL: https://bagrounds.org/software/model-context-protocol
+URL: https://bagrounds.org/topics/model-context-protocol
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
@@ -11,6 +11,7 @@ image_date: 2026-04-09T21:25:34Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a glowing, translucent human brain floating in the center. Connected to the brain are various sleek, semi-transparent conduits or fiber-optic cables extending outward in all directions. These cables terminate into diverse, floating icons representing different data sources: a miniature database server, a stylized code snippet window, a cloud storage symbol, and a gear-shaped tool icon. The background is a clean, deep navy blue with a subtle, faint grid pattern suggesting a digital environment. Soft, ethereal light pulses along the conduits, flowing toward the brain to represent the movement of context and information. The overall aesthetic is clean, modern, and high-tech, using a palette of cyan, electric blue, and soft white to emphasize connectivity and intelligence."
 link_analysis_version: "2"
+updated: 2026-05-15T21:49:09
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧠🌍⚙️ Model Context Protocol  
@@ -109,4 +110,12 @@ link_analysis_version: "2"
 * Accessible: (Keep an eye out for blog posts and tutorials on MCP from Anthropic and the community.)  
   
 📺 **Links To Relevant YouTube Channels Or Videos:**  
-- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](../videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)
+- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](../videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlwcrkafuj2u" data-bluesky-cid="bafyreidkdak3mqchpgmk6ntho35ks4tbkf7pczwb5gpe6kh3wv4d6lfkem"><p>🧠🌍⚙️ Model Context Protocol  
+  
+#AI Q: 🔗 What is the one app you wish your AI could access directly?  
+  
+🤖 Artificial Intelligence | 🔗 Data Integration | 💻 Software Engineering | 🕸  
+https://bagrounds.org/topics/model-context-protocol</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlwcrkafuj2u?ref_src=embed">2026-05-15T21:49:12.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

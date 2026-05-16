@@ -6,6 +6,7 @@ import Data.Array (head, length) as Array
 import Data.Either (Either(..), isLeft)
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
+import Data.Ord (abs)
 import Data.String (Pattern(..), contains, length) as String
 import Effect (Effect)
 import Effect.Console (log)

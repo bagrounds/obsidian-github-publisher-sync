@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-15T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-3-word-meter-slice-nine-a-real-speech-recognition.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-15-3-word-meter-slice-nine-a-real-speech-recognition.md) [⏭️](./2026-05-15-5-word-meter-slice-nine-c-one-shot-cloud-retry.md)  
 # 2026-05-15 | 🎙️ Word Meter Slice 9b — On-Device Pre-Flight 📦  
 ![ai-blog-2026-05-15-4-word-meter-slice-nine-b-on-device-preflight](../ai-blog-2026-05-15-4-word-meter-slice-nine-b-on-device-preflight.jpg)  
   

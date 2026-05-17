@@ -1458,31 +1458,26 @@
     while (node.firstChild) node.removeChild(node.firstChild);
   };
   var safeTestidPattern = /^[a-z0-9-]+$/;
+  var scrollEntryOf = (element2) => ({
+    testid: element2.getAttribute("data-testid"),
+    scrollTop: element2.scrollTop || 0,
+    scrollLeft: element2.scrollLeft || 0
+  });
+  var entryIsScrolled = (entry) => safeTestidPattern.test(entry.testid) && (entry.scrollTop !== 0 || entry.scrollLeft !== 0);
   var captureScrollPositions = (host) => () => {
     if (!host || typeof host.querySelectorAll !== "function") return [];
-    const positions = [];
-    const elements = host.querySelectorAll("[data-testid]");
-    for (let i = 0; i < elements.length; i++) {
-      const element2 = elements[i];
-      const testid = element2.getAttribute("data-testid");
-      if (!testid || !safeTestidPattern.test(testid)) continue;
-      const scrollTop = element2.scrollTop || 0;
-      const scrollLeft = element2.scrollLeft || 0;
-      if (scrollTop === 0 && scrollLeft === 0) continue;
-      positions.push({ testid, scrollTop, scrollLeft });
-    }
-    return positions;
+    return Array.from(host.querySelectorAll("[data-testid]")).map(scrollEntryOf).filter(entryIsScrolled);
+  };
+  var restoreEntry = (host) => (entry) => {
+    if (!safeTestidPattern.test(entry.testid)) return;
+    const match = host.querySelector(`[data-testid="${entry.testid}"]`);
+    if (!match) return;
+    match.scrollTop = entry.scrollTop;
+    match.scrollLeft = entry.scrollLeft;
   };
   var restoreScrollPositions = (host) => (snapshot) => () => {
     if (!host || typeof host.querySelector !== "function" || !snapshot) return;
-    for (let i = 0; i < snapshot.length; i++) {
-      const entry = snapshot[i];
-      if (!safeTestidPattern.test(entry.testid)) continue;
-      const match = host.querySelector(`[data-testid="${entry.testid}"]`);
-      if (!match) continue;
-      match.scrollTop = entry.scrollTop;
-      match.scrollLeft = entry.scrollLeft;
-    }
+    snapshot.forEach(restoreEntry(host));
   };
   var ensureStylesheetLinked = (defaultHref) => () => {
     if (typeof document === "undefined") return;
@@ -1490,8 +1485,7 @@
     const filename = "word-meter.css";
     const currentScript = document.currentScript;
     const href = currentScript && currentScript.src ? currentScript.src.replace(/[^/]+$/, filename) : defaultHref;
-    if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`))
-      return;
+    if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`)) return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = href;

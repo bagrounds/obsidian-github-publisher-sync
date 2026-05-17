@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T22:31:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, top-down illustration of a sleek, circular clock-like dial floating in a soft, dreamy atmosphere. The dial is divided into vibrant, semi-transparent color segments—bright blue for REM and warm golden yellow for Slow-Wave Sleep—radiating from the center like a pie chart. Subtle, glowing tick marks trace the outer edge, representing a 24-hour cycle. A delicate, translucent pointer rests at an angle, suggesting a precise selection on the wheel. The background is a gradient of deep indigo fading into a soft, ethereal mist, evoking a sense of calm, precision, and scientific rest. Soft, diffused lighting highlights the texture of the wheel, making it appear like a high-end, tactile instrument for wellness.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [😴🎡 The Nap Wheel](https://www.saramednick.com/napwheel)  
+![articles-the-nap-wheel](../articles-the-nap-wheel.jpg)  
 ## 🤖 AI Summary  
 - 💤 The Nap Wheel shows the proportionate relationship between sleep stages.  
 - ⏰ It is based on normal sleep/wake schedules and is accurate for people who aren’t excessively sleep-deprived.  

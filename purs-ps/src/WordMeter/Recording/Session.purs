@@ -4,7 +4,10 @@ module WordMeter.Recording.Session
   , WordEvent
   , LoggedInterval
   , PersistedData
+  , PersistedWordEvent
+  , PersistedLoggedInterval
   , WakeLockState(..)
+  , epochInstant
   , initialSession
   , renderWakeLockStatus
   , captionWindowMs
@@ -21,7 +24,9 @@ module WordMeter.Recording.Session
 
 import Prelude
 
-import Data.Maybe (Maybe(..))
+import Data.DateTime.Instant (Instant, instant)
+import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Time.Duration (Milliseconds(..))
 import WordMeter.Diagnostics (DiagnosticEntry, EnvironmentSnapshot)
 import WordMeter.Recognition.Path (RecognitionPath)
 
@@ -32,10 +37,10 @@ type Session =
   , wordEvents :: Array WordEvent
   , eventLog :: Array LoggedInterval
   , currentIntervalWords :: Int
-  , firstStartedAt :: Maybe Number
-  , currentIntervalStart :: Maybe Number
-  , completedActiveMs :: Number
-  , now :: Number
+  , firstStartedAt :: Maybe Instant
+  , currentIntervalStart :: Maybe Instant
+  , completedActiveMs :: Milliseconds
+  , now :: Instant
   , diagnostics :: Array DiagnosticEntry
   , environment :: Maybe EnvironmentSnapshot
   , copyStatus :: String
@@ -52,15 +57,29 @@ type Session =
 type Caption =
   { transcript :: String
   , wordCount :: Int
-  , timestamp :: Number
+  , timestamp :: Instant
   }
 
 type WordEvent =
-  { timestamp :: Number
+  { timestamp :: Instant
   , wordCount :: Int
   }
 
 type LoggedInterval =
+  { startedAt :: Instant
+  , endedAt :: Instant
+  , wordCount :: Int
+  }
+
+-- | Persisted versions of `WordEvent` and `LoggedInterval` use raw
+-- | `Number` millisecond timestamps so that JSON encoding round-trips
+-- | cleanly without requiring Argonaut codec instances for `Instant`.
+type PersistedWordEvent =
+  { timestamp :: Number
+  , wordCount :: Int
+  }
+
+type PersistedLoggedInterval =
   { startedAt :: Number
   , endedAt :: Number
   , wordCount :: Int
@@ -69,8 +88,8 @@ type LoggedInterval =
 type PersistedData =
   { totalWords :: Int
   , firstStartedAt :: Maybe Number
-  , wordEvents :: Array WordEvent
-  , eventLog :: Array LoggedInterval
+  , wordEvents :: Array PersistedWordEvent
+  , eventLog :: Array PersistedLoggedInterval
   }
 
 -- | The three states a wake lock can be in. Replaces the pair of
@@ -127,6 +146,12 @@ resetConfirmationPrompt :: String
 resetConfirmationPrompt =
   "Reset all word meter stats? This cannot be undone."
 
+-- | The Unix epoch as an `Instant` (0 milliseconds offset). Used as
+-- | the initial `now` value in `initialSession` and as a fallback when
+-- | converting raw millisecond numbers that are known to be in range.
+epochInstant :: Instant
+epochInstant = fromMaybe bottom (instant (Milliseconds 0.0))
+
 initialSession :: Session
 initialSession =
   { listening: false
@@ -137,8 +162,8 @@ initialSession =
   , currentIntervalWords: 0
   , firstStartedAt: Nothing
   , currentIntervalStart: Nothing
-  , completedActiveMs: 0.0
-  , now: 0.0
+  , completedActiveMs: Milliseconds 0.0
+  , now: epochInstant
   , diagnostics: []
   , environment: Nothing
   , copyStatus: idleCopyStatus

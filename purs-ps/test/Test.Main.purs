@@ -3,12 +3,15 @@ module Test.Main where
 import Prelude
 
 import Data.Array (any, head, length) as Array
+import Data.DateTime.Instant (Instant, instant, unInstant)
 import Data.Either (Either(..), isLeft)
 import Data.Int as Int
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Foldable (sequence_)
+import Data.Newtype (unwrap)
 import Data.Ord (abs)
 import Data.String (Pattern(..), contains, length) as String
+import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
@@ -113,6 +116,7 @@ import WordMeter.Recording.Session
   ( Session
   , WakeLockState(..)
   , downloadingOnDeviceStatus
+  , epochInstant
   , eventLogLimit
   , idleCopyStatus
   , idleErrorBanner
@@ -186,9 +190,9 @@ runReducerStatsTests = do
   -- stats math: start at t=0, say six words at t=10s, tick at t=60s.
   let
     s0 = initialSession
-    s1 = reduce (Toggle 0.0) s0
-    s2 = reduce (InjectFinalTranscript "one two three four five six" 10000.0) s1
-    s3 = reduce (Tick 60000.0) s2
+    s1 = reduce (Toggle (testInstant 0.0)) s0
+    s2 = reduce (InjectFinalTranscript "one two three four five six" (testInstant 10000.0)) s1
+    s3 = reduce (Tick (testInstant 60000.0)) s2
   assertEqualBoolean "after Toggle, listening is true" s1.listening true
   assertEqualInt "after a six-word utterance, totalWords = 6"
     s2.totalWords 6
@@ -203,7 +207,7 @@ runReducerStatsTests = do
     (overallRate s3) 6.0
 
   -- Stop at t=90s; active listening = 90s, no new words → 4 wpm overall.
-  let s4 = reduce (Toggle 90000.0) s3
+  let s4 = reduce (Toggle (testInstant 90000.0)) s3
   assertEqualBoolean "after second Toggle, listening flips back to false"
     s4.listening false
   assertEqualNumber "activeListeningMs after a 90s interval is 90000"
@@ -213,7 +217,7 @@ runReducerStatsTests = do
 
   -- firstStartedAt is sticky across stops.
   case s4.firstStartedAt of
-    Just t -> assertEqualNumber "firstStartedAt preserved on stop" t 0.0
+    Just t -> assertEqualNumber "firstStartedAt preserved on stop" (instantMs t) 0.0
     Nothing -> throw "firstStartedAt should remain set after stop"
 
 assertEqualNumber :: String -> Number -> Number -> Effect Unit
@@ -240,6 +244,18 @@ assertEqualBoolean label actual expected =
   else throw $ label <> ": expected " <> show expected
     <> " but got " <> show actual
 
+-- | Convert a raw millisecond timestamp (as used throughout the test
+-- | suite) to an `Instant`, falling back to the epoch for any value
+-- | outside the valid `Instant` range (impossible in practice for test
+-- | timestamps).
+testInstant :: Number -> Instant
+testInstant ms = fromMaybe epochInstant (instant (Milliseconds ms))
+
+-- | Extract the millisecond value from an `Instant` for use in
+-- | numeric assertions.
+instantMs :: Instant -> Number
+instantMs inst = unwrap (unInstant inst)
+
 runEventLogTests :: Effect Unit
 runEventLogTests = do
   -- Slice 4: the event log records one LoggedInterval per completed
@@ -248,16 +264,16 @@ runEventLogTests = do
   -- and restarts and is capped at `eventLogLimit` intervals.
   let
     s0 = initialSession
-    s1 = reduce (Toggle 0.0) s0
-    s2 = reduce (InjectFinalTranscript "one two three" 5000.0) s1
+    s1 = reduce (Toggle (testInstant 0.0)) s0
+    s2 = reduce (InjectFinalTranscript "one two three" (testInstant 5000.0)) s1
     -- Stop after a 30s interval with 3 words → 6.0 wpm.
-    s3 = reduce (Toggle 30000.0) s2
+    s3 = reduce (Toggle (testInstant 30000.0)) s2
     -- A blank transcript while listening does not seed a new interval.
-    s4 = reduce (Toggle 60000.0) s3
-    s4' = reduce (InjectFinalTranscript "   " 60500.0) s4
-    s5 = reduce (Toggle 120000.0) s4'
+    s4 = reduce (Toggle (testInstant 60000.0)) s3
+    s4' = reduce (InjectFinalTranscript "   " (testInstant 60500.0)) s4
+    s5 = reduce (Toggle (testInstant 120000.0)) s4'
     -- An idle InjectFinalTranscript before any start does nothing.
-    sIdle = reduce (InjectFinalTranscript "noise" 200.0) s0
+    sIdle = reduce (InjectFinalTranscript "noise" (testInstant 200.0)) s0
   assertEqualInt "event log starts empty"
     (Array.length s0.eventLog) 0
   assertEqualInt "an open interval has not yet been logged"
@@ -271,15 +287,15 @@ runEventLogTests = do
 
   case s5.eventLog of
     [ first, second ] -> do
-      assertEqualNumber "first interval started at 0ms" first.startedAt 0.0
-      assertEqualNumber "first interval ended at 30000ms" first.endedAt 30000.0
+      assertEqualNumber "first interval started at 0ms" (instantMs first.startedAt) 0.0
+      assertEqualNumber "first interval ended at 30000ms" (instantMs first.endedAt) 30000.0
       assertEqualInt "first interval word count" first.wordCount 3
       assertEqualNumber "first interval duration is 30s"
         (intervalDurationMs first) 30000.0
       assertEqualNumber "first interval rate is 6.0 wpm"
         (intervalRate first) 6.0
-      assertEqualNumber "second interval started at 60000ms" second.startedAt 60000.0
-      assertEqualNumber "second interval ended at 120000ms" second.endedAt 120000.0
+      assertEqualNumber "second interval started at 60000ms" (instantMs second.startedAt) 60000.0
+      assertEqualNumber "second interval ended at 120000ms" (instantMs second.endedAt) 120000.0
       assertEqualInt "second interval (whitespace only) word count" second.wordCount 0
     _ -> throw "event log should contain exactly two intervals"
 
@@ -292,7 +308,7 @@ runEventLogTests = do
       -- Intervals are indexed 0..N-1; oldest surviving started at the 5th.
       assertEqualNumber
         "oldest surviving interval corresponds to the 5th counting session"
-        oldest.startedAt
+        (instantMs oldest.startedAt)
         (Int.toNumber 5 * 10000.0)
     Nothing -> throw "event log should not be empty after stuffing"
 
@@ -302,11 +318,11 @@ runCaptionDecayTests = do
   -- (30 seconds in legacy parity), and their opacity fades linearly with age
   -- down to `minimumCaptionOpacity`.
   let
-    s0 = reduce (Toggle 0.0) initialSession
-    s1 = reduce (InjectFinalTranscript "early word" 0.0) s0
-    s2 = reduce (InjectFinalTranscript "later words" 25000.0) s1
+    s0 = reduce (Toggle (testInstant 0.0)) initialSession
+    s1 = reduce (InjectFinalTranscript "early word" (testInstant 0.0)) s0
+    s2 = reduce (InjectFinalTranscript "later words" (testInstant 25000.0)) s1
     -- Tick past the 30s window for the first caption; it should fall off.
-    s3 = reduce (Tick 35000.0) s2
+    s3 = reduce (Tick (testInstant 35000.0)) s2
   assertEqualInt "two captions are kept while both are inside the 30s window"
     (Array.length s2.captions) 2
   assertEqualInt "a caption older than 30s is pruned on the next tick"
@@ -317,11 +333,11 @@ runCaptionDecayTests = do
         kept.transcript "later words"
     Nothing -> throw "expected the 25s caption to survive"
   assertEqualNumber "a brand-new caption has full opacity (1.0)"
-    (captionOpacity 0.0 0.0) 1.0
+    (captionOpacity (testInstant 0.0) (testInstant 0.0)) 1.0
   assertEqualNumber "a half-aged caption (15s) sits at 0.5 opacity"
-    (captionOpacity 15000.0 0.0) 0.5
+    (captionOpacity (testInstant 15000.0) (testInstant 0.0)) 0.5
   assertEqualNumber "a caption past the window floors at minimumCaptionOpacity"
-    (captionOpacity 60000.0 0.0) minimumCaptionOpacity
+    (captionOpacity (testInstant 60000.0) (testInstant 0.0)) minimumCaptionOpacity
 
 stuffIntervals :: Int -> Session -> Session
 stuffIntervals total = go 0
@@ -331,8 +347,8 @@ stuffIntervals total = go 0
     | index >= total = session
     | otherwise =
         let
-          startTs = Int.toNumber index * 10000.0
-          endTs = startTs + 1000.0
+          startTs = testInstant (Int.toNumber index * 10000.0)
+          endTs = testInstant (Int.toNumber index * 10000.0 + 1000.0)
           started = reduce (Toggle startTs) session
         in
           go (index + 1) (reduce (Toggle endTs) started)
@@ -345,10 +361,10 @@ runDiagnosticsTests = do
   -- been captured; SetCopyStatus updates the copyStatus field.
   let
     s0 = initialSession
-    s1 = reduce (Toggle 0.0) s0
-    s2 = reduce (InjectFinalTranscript "hello there general kenobi" 1000.0) s1
-    s3 = reduce (InjectFinalTranscript "   " 2000.0) s2
-    s4 = reduce (Toggle 30000.0) s3
+    s1 = reduce (Toggle (testInstant 0.0)) s0
+    s2 = reduce (InjectFinalTranscript "hello there general kenobi" (testInstant 1000.0)) s1
+    s3 = reduce (InjectFinalTranscript "   " (testInstant 2000.0)) s2
+    s4 = reduce (Toggle (testInstant 30000.0)) s3
   assertEqualString "initialSession.copyStatus is empty"
     s0.copyStatus idleCopyStatus
   assertEqualInt "initialSession has no diagnostic entries"
@@ -369,7 +385,7 @@ runDiagnosticsTests = do
 
   -- recordEntry caps the array at diagnosticsLimit.
   let
-    sample = { timestamp: 0.0, label: "noisy", detail: "" }
+    sample = { timestamp: testInstant 0.0, label: "noisy", detail: "" }
     overrun = stuffEntries (diagnosticsLimit + 7) sample []
   assertEqualInt "diagnostics log is capped at diagnosticsLimit"
     (Array.length overrun) diagnosticsLimit
@@ -394,9 +410,9 @@ runDiagnosticsTests = do
 
 stuffEntries
   :: Int
-  -> { timestamp :: Number, label :: String, detail :: String }
-  -> Array { timestamp :: Number, label :: String, detail :: String }
-  -> Array { timestamp :: Number, label :: String, detail :: String }
+  -> { timestamp :: Instant, label :: String, detail :: String }
+  -> Array { timestamp :: Instant, label :: String, detail :: String }
+  -> Array { timestamp :: Instant, label :: String, detail :: String }
 stuffEntries n entry entries
   | n <= 0 = entries
   | otherwise = stuffEntries (n - 1) entry (recordEntry entry entries)
@@ -407,10 +423,10 @@ containsSubstring needle haystack = String.contains (String.Pattern needle) hays
 runCapabilityTests :: Effect Unit
 runCapabilityTests = do
   let
-    fixedClockTime = 1_700_000_000_000.0
+    fixedClockTime = testInstant 1_700_000_000_000.0
     sampledClockTime = runFixedClockM fixedClockTime currentTimeMillis
-  assertEqualNumber "FixedClockM hands back the configured clock value"
-    sampledClockTime fixedClockTime
+  assertEqualBoolean "FixedClockM hands back the configured clock value"
+    (sampledClockTime == fixedClockTime) true
 
   let
     canned =
@@ -446,8 +462,8 @@ runCapabilityTests = do
 
   let
     sessionOutcome = runStatefulSessionM initialSession do
-      updateSession (Toggle 1000.0)
-      updateSession (InjectFinalTranscript "hello world" 2000.0)
+      updateSession (Toggle (testInstant 1000.0))
+      updateSession (InjectFinalTranscript "hello world" (testInstant 2000.0))
       readCurrentSession
   assertEqualInt "StatefulSessionM threads reducer updates through pure state"
     sessionOutcome.result.totalWords 2
@@ -458,9 +474,9 @@ runPersistenceTests :: Effect Unit
 runPersistenceTests = do
   let
     seeded =
-      reduce (InjectFinalTranscript "alpha beta" 1500.0)
-        (reduce (Toggle 1000.0) initialSession)
-    seededStopped = reduce (Toggle 5000.0) seeded
+      reduce (InjectFinalTranscript "alpha beta" (testInstant 1500.0))
+        (reduce (Toggle (testInstant 1000.0)) initialSession)
+    seededStopped = reduce (Toggle (testInstant 5000.0)) seeded
     projected = toPersistedData seededStopped
   assertEqualInt "toPersistedData preserves totalWords"
     projected.totalWords 2
@@ -511,8 +527,8 @@ runPersistenceTests = do
     env = emptyEnvironment { version = "9.9.9" }
     populated =
       reduce (SetEnvironment env)
-        (reduce (Toggle 6000.0) seededStopped)
-    resetted = reduce (Reset 7000.0) populated
+        (reduce (Toggle (testInstant 6000.0)) seededStopped)
+    resetted = reduce (Reset (testInstant 7000.0)) populated
   assertEqualInt "Reset clears totalWords" resetted.totalWords 0
   assertEqualInt "Reset clears eventLog" (Array.length resetted.eventLog) 0
   assertEqualBoolean "Reset turns listening off" resetted.listening false
@@ -534,7 +550,7 @@ runPersistenceTests = do
     (Array.length loaded.eventLog) (Array.length projected.eventLog)
   case loaded.firstStartedAt of
     Just t -> assertEqualNumber "LoadSession restores firstStartedAt"
-      t 1000.0
+      (instantMs t) 1000.0
     Nothing -> throw "LoadSession should have restored firstStartedAt"
   assertEqualBoolean "LoadSession leaves listening off"
     loaded.listening false
@@ -610,7 +626,7 @@ runKeepAwakeTests = do
     preferredOff =
       reduce (SetWakeLockState WakeLockHeld)
         (reduce (SetKeepAwake false) initialSession)
-    afterReset = reduce (Reset 12345.0) preferredOff
+    afterReset = reduce (Reset (testInstant 12345.0)) preferredOff
   assertEqualBoolean "Reset preserves keepAwake preference"
     afterReset.keepAwake false
   assertEqualBoolean "Reset clears wakeLockState to WakeLockIdle"
@@ -692,9 +708,9 @@ runRecognitionErrorTests = do
   -- Reducer: a transient error appends a diagnostic but does not change
   -- the banner or the listening state.
   let
-    listening = reduce (Toggle 0.0) initialSession
+    listening = reduce (Toggle (testInstant 0.0)) initialSession
     afterTransient =
-      reduce (HandleRecognitionError 5000.0 "no-speech" "ignore me") listening
+      reduce (HandleRecognitionError (testInstant 5000.0) "no-speech" "ignore me") listening
   assertEqualBoolean "transient error keeps listening true"
     afterTransient.listening true
   assertEqualString "transient error leaves errorBanner empty"
@@ -707,10 +723,10 @@ runRecognitionErrorTests = do
   -- to event log, two diagnostic entries appended (onerror + session ended).
   let
     listening2 =
-      reduce (InjectFinalTranscript "one two three" 2000.0)
-        (reduce (Toggle 0.0) initialSession)
+      reduce (InjectFinalTranscript "one two three" (testInstant 2000.0))
+        (reduce (Toggle (testInstant 0.0)) initialSession)
     afterPermission =
-      reduce (HandleRecognitionError 10000.0 "not-allowed" "user denied")
+      reduce (HandleRecognitionError (testInstant 10000.0) "not-allowed" "user denied")
         listening2
   assertEqualBoolean "permission-denied stops listening"
     afterPermission.listening false
@@ -725,7 +741,7 @@ runRecognitionErrorTests = do
   -- Network error: banner set, but listening stays on (recoverable).
   let
     afterNetwork =
-      reduce (HandleRecognitionError 11000.0 "network" "")
+      reduce (HandleRecognitionError (testInstant 11000.0) "network" "")
         afterTransient
   assertEqualBoolean "network error keeps listening true"
     afterNetwork.listening true
@@ -735,14 +751,14 @@ runRecognitionErrorTests = do
   -- Unknown code: banner set with the generic "Recognition error: <code>".
   let
     afterUnknown =
-      reduce (HandleRecognitionError 12000.0 "weird" "") afterTransient
+      reduce (HandleRecognitionError (testInstant 12000.0) "weird" "") afterTransient
   assertEqualString "unknown error renders the generic banner"
     afterUnknown.errorBanner (genericRecognitionErrorBanner "weird")
 
   -- Empty code: banner reads "Recognition error: unknown".
   let
     afterEmpty =
-      reduce (HandleRecognitionError 13000.0 "" "") afterTransient
+      reduce (HandleRecognitionError (testInstant 13000.0) "" "") afterTransient
   assertEqualString "empty-code error renders the unknown banner"
     afterEmpty.errorBanner noRecognitionErrorBanner
 
@@ -750,14 +766,14 @@ runRecognitionErrorTests = do
   -- still listening (a network error is recoverable), so we have to stop
   -- and then start to exercise the start branch.
   let
-    stopped = reduce (Toggle 14000.0) afterNetwork
-    cleared = reduce (Toggle 14500.0) stopped
+    stopped = reduce (Toggle (testInstant 14000.0)) afterNetwork
+    cleared = reduce (Toggle (testInstant 14500.0)) stopped
   assertEqualString "Toggle (start) clears any prior errorBanner"
     cleared.errorBanner idleErrorBanner
 
   -- Reset clears the banner.
   let
-    resetAfterError = reduce (Reset 15000.0) afterUnknown
+    resetAfterError = reduce (Reset (testInstant 15000.0)) afterUnknown
   assertEqualString "Reset clears any prior errorBanner"
     resetAfterError.errorBanner idleErrorBanner
 
@@ -773,7 +789,7 @@ runRecognitionErrorTests = do
   -- Idle (not listening) permission-denied: banner set, no event log push.
   let
     idlePermission =
-      reduce (HandleRecognitionError 16000.0 "not-allowed" "from idle")
+      reduce (HandleRecognitionError (testInstant 16000.0) "not-allowed" "from idle")
         initialSession
   assertEqualBoolean "idle permission-denied keeps listening false"
     idlePermission.listening false
@@ -897,7 +913,7 @@ runIntegrateFinalizedTranscriptReducerTests = do
   -- Idle: a finalized transcript while not listening is a no-op.
   let
     idleAfter =
-      reduce (IntegrateFinalizedTranscript 1000.0 "ignored") initialSession
+      reduce (IntegrateFinalizedTranscript (testInstant 1000.0) "ignored") initialSession
   assertEqualInt "idle: totalWords unchanged"
     idleAfter.totalWords 0
   assertEqualString "idle: lastRawFinalizedTranscript unchanged"
@@ -906,9 +922,9 @@ runIntegrateFinalizedTranscriptReducerTests = do
   -- StartNewUtterance: a fresh transcript while listening adds words,
   -- pushes a caption, and stamps lastRawFinalizedTranscript.
   let
-    listening = reduce (Toggle 0.0) initialSession
+    listening = reduce (Toggle (testInstant 0.0)) initialSession
     afterFirst =
-      reduce (IntegrateFinalizedTranscript 1000.0 "hello there") listening
+      reduce (IntegrateFinalizedTranscript (testInstant 1000.0) "hello there") listening
   assertEqualInt "first transcript adds 2 words" afterFirst.totalWords 2
   assertEqualInt "first transcript adds one caption"
     (Array.length afterFirst.captions) 1
@@ -920,7 +936,7 @@ runIntegrateFinalizedTranscriptReducerTests = do
   -- caption (no append).
   let
     afterExtension =
-      reduce (IntegrateFinalizedTranscript 2000.0 "hello there general kenobi")
+      reduce (IntegrateFinalizedTranscript (testInstant 2000.0) "hello there general kenobi")
         afterFirst
   assertEqualInt "extension bumps totalWords by the delta only"
     afterExtension.totalWords 4
@@ -937,20 +953,20 @@ runIntegrateFinalizedTranscriptReducerTests = do
   -- alone but refreshes the caption timestamp.
   let
     afterDuplicate =
-      reduce (IntegrateFinalizedTranscript 3500.0 "Hello   THERE general kenobi")
+      reduce (IntegrateFinalizedTranscript (testInstant 3500.0) "Hello   THERE general kenobi")
         afterExtension
   assertEqualInt "duplicate leaves totalWords alone"
     afterDuplicate.totalWords 4
   case Array.head afterDuplicate.captions of
     Just c -> assertEqualNumber "duplicate refreshes caption timestamp"
-      c.timestamp 3500.0
+      (instantMs c.timestamp) 3500.0
     Nothing -> throw "duplicate should keep one caption"
 
   -- IgnoreEarlierSnapshot: the recognizer re-emitting an earlier
   -- segment of the same utterance is a no-op for counts and captions.
   let
     afterEarlier =
-      reduce (IntegrateFinalizedTranscript 4000.0 "hello there")
+      reduce (IntegrateFinalizedTranscript (testInstant 4000.0) "hello there")
         afterExtension
   assertEqualInt "earlier snapshot leaves totalWords alone"
     afterEarlier.totalWords 4
@@ -971,15 +987,15 @@ runIntegrateFinalizedTranscriptReducerTests = do
     listeningAfterReset = reduce ResetRecognitionDedupState afterExtension
     afterRestart =
       reduce
-        (IntegrateFinalizedTranscript 5000.0 "hello there general kenobi")
+        (IntegrateFinalizedTranscript (testInstant 5000.0) "hello there general kenobi")
         listeningAfterReset
   assertEqualInt "fresh utterance after dedup-state reset counts in full"
     afterRestart.totalWords (4 + 4)
 
   -- Toggle (start) also clears the dedup state.
   let
-    stopped = reduce (Toggle 6000.0) afterExtension
-    restarted = reduce (Toggle 7000.0) stopped
+    stopped = reduce (Toggle (testInstant 6000.0)) afterExtension
+    restarted = reduce (Toggle (testInstant 7000.0)) stopped
   assertEqualString "Toggle (start) clears lastRawFinalizedTranscript"
     restarted.lastRawFinalizedTranscript ""
 
@@ -1065,7 +1081,7 @@ runRecognitionStatusReducerTests = do
     initialSession.recognitionStatusOverride idleRecognitionStatusOverride
 
   let
-    listening = reduce (Toggle 0.0) initialSession
+    listening = reduce (Toggle (testInstant 0.0)) initialSession
     downloading =
       reduce (SetRecognitionStatusOverride downloadingOnDeviceStatus) listening
   assertEqualString
@@ -1081,7 +1097,7 @@ runRecognitionStatusReducerTests = do
     cleared.recognitionStatusOverride idleRecognitionStatusOverride
 
   let
-    stopped = reduce (Toggle 1000.0) downloading
+    stopped = reduce (Toggle (testInstant 1000.0)) downloading
   assertEqualString
     "Toggle (stop) clears any lingering recognition status override"
     stopped.recognitionStatusOverride idleRecognitionStatusOverride
@@ -1089,14 +1105,14 @@ runRecognitionStatusReducerTests = do
   -- The status override survives across non-stop reducer actions while
   -- the install is still in flight.
   let
-    downloadingAfterTick = reduce (Tick 500.0) downloading
+    downloadingAfterTick = reduce (Tick (testInstant 500.0)) downloading
   assertEqualString
     "Tick preserves an in-flight recognitionStatusOverride"
     downloadingAfterTick.recognitionStatusOverride downloadingOnDeviceStatus
 
   -- Reset returns the session to the empty override.
   let
-    afterReset = reduce (Reset 9999.0) downloading
+    afterReset = reduce (Reset (testInstant 9999.0)) downloading
   assertEqualString
     "Reset clears any lingering recognitionStatusOverride"
     afterReset.recognitionStatusOverride idleRecognitionStatusOverride
@@ -1130,7 +1146,7 @@ runCloudFallbackReducerTests = do
   -- listening session gets a fresh retry budget).
   let
     listeningWithFlag =
-      reduce (Toggle 0.0)
+      reduce (Toggle (testInstant 0.0))
         ( afterFlag
             { activeRecognitionPath = Just OnDevicePath }
         )
@@ -1148,7 +1164,7 @@ runCloudFallbackReducerTests = do
       { cloudFallbackAttempted = true
       , activeRecognitionPath = Just CloudPath
       }
-    stoppedAfterCloud = reduce (Toggle 1000.0) onCloudWithFlag
+    stoppedAfterCloud = reduce (Toggle (testInstant 1000.0)) onCloudWithFlag
   assertEqualBoolean "Toggle (stop) clears activeRecognitionPath"
     (stoppedAfterCloud.activeRecognitionPath == Nothing) true
   assertEqualBoolean
@@ -1157,7 +1173,7 @@ runCloudFallbackReducerTests = do
 
   -- Reset returns both fields to their initial state.
   let
-    afterResetAll = reduce (Reset 9999.0) onCloudWithFlag
+    afterResetAll = reduce (Reset (testInstant 9999.0)) onCloudWithFlag
   assertEqualBoolean "Reset clears cloudFallbackAttempted"
     afterResetAll.cloudFallbackAttempted false
   assertEqualBoolean "Reset clears activeRecognitionPath"
@@ -1170,9 +1186,9 @@ runCloudFallbackReducerTests = do
   let
     listeningOnDevice =
       reduce (SetActiveRecognitionPath (Just OnDevicePath))
-        (reduce (Toggle 0.0) initialSession)
+        (reduce (Toggle (testInstant 0.0)) initialSession)
     afterPermissionDenied =
-      reduce (HandleRecognitionError 5000.0 "not-allowed" "blocked")
+      reduce (HandleRecognitionError (testInstant 5000.0) "not-allowed" "blocked")
         listeningOnDevice
   assertEqualBoolean "permission-denied stops listening"
     afterPermissionDenied.listening false
@@ -1201,19 +1217,19 @@ runDiagnosticsDrawerReducerTests = do
   -- A state update (Toggle) preserves the drawer open state.
   let
     openedSession = reduce (SetDiagnosticsDrawerOpen true) initialSession
-    afterToggle = reduce (Toggle 1000.0) openedSession
+    afterToggle = reduce (Toggle (testInstant 1000.0)) openedSession
   assertEqualBoolean "Toggle preserves diagnosticsDrawerOpen"
     afterToggle.diagnosticsDrawerOpen true
 
   -- A Tick preserves the drawer open state.
   let
-    afterTick = reduce (Tick 2000.0) openedSession
+    afterTick = reduce (Tick (testInstant 2000.0)) openedSession
   assertEqualBoolean "Tick preserves diagnosticsDrawerOpen"
     afterTick.diagnosticsDrawerOpen true
 
   -- Reset returns the drawer to closed.
   let
-    afterReset = reduce (Reset 9999.0) openedSession
+    afterReset = reduce (Reset (testInstant 9999.0)) openedSession
   assertEqualBoolean "Reset closes the diagnostics drawer"
     afterReset.diagnosticsDrawerOpen false
 
@@ -1243,12 +1259,14 @@ formatDurationContainsDigit ms = containsDigit (formatDurationMs (abs ms))
 captionOpacityIsInRange :: Number -> Number -> Boolean
 captionOpacityIsInRange nowRaw captionRaw =
   let
-    opacity = captionOpacity (abs nowRaw) (abs captionRaw)
+    opacity = captionOpacity (testInstant (abs nowRaw)) (testInstant (abs captionRaw))
   in
     opacity >= minimumCaptionOpacity && opacity <= 1.0
 
 captionOpacityAtSameTimestampIsOne :: Number -> Boolean
-captionOpacityAtSameTimestampIsOne ts = captionOpacity ts ts == 1.0
+captionOpacityAtSameTimestampIsOne tsRaw =
+  let ts = testInstant (abs tsRaw)
+  in captionOpacity ts ts == 1.0
 
 wordsPerMinuteIsZeroWhenNoWords :: Number -> Boolean
 wordsPerMinuteIsZeroWhenNoWords elapsed = wordsPerMinute 0 elapsed == 0.0

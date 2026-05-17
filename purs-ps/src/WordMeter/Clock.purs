@@ -2,4 +2,10 @@ module WordMeter.Clock
   ( formatClockTime
   ) where
 
-foreign import formatClockTime :: Number -> String
+import Data.DateTime.Instant (Instant, unInstant)
+import Data.Newtype (unwrap)
+
+foreign import formatClockTimeMillis :: Number -> String
+
+formatClockTime :: Instant -> String
+formatClockTime inst = formatClockTimeMillis (unwrap (unInstant inst))

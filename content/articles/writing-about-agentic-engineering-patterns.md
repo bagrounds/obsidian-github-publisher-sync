@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-17T07:14:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist workspace featuring a clean, light-colored desk. On the desk sits a sleek, modern laptop displaying a complex, glowing flow-chart of interconnected nodes and logic loops. Beside the laptop, a human hand holds a mechanical drafting pencil over a blueprint, symbolizing the bridge between human architectural oversight and digital execution. A stylized, translucent geometric brain made of interconnected silver gears and glowing circuitry hovers slightly above the keyboard, representing the synergy between human cognition and autonomous agentic processing. The lighting is soft and professional, utilizing a palette of deep navy, slate gray, and electric blue accents to convey a sense of disciplined, high-tech engineering.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🧠 Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns)  
+![articles-writing-about-agentic-engineering-patterns](../articles-writing-about-agentic-engineering-patterns.jpg)  
 ## 🤖 AI Summary  
   
 * 🛠️ Agentic engineering involves using coding agents like Claude Code and OpenAI Codex that generate, execute, and test code independently.  

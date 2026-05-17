@@ -37,6 +37,13 @@ export const removeAllChildrenFromElement = (node) => () => {
   while (node.firstChild) node.removeChild(node.firstChild);
 };
 
+// Stable identity must be drawn from a kebab-case alphabet so the
+// attribute-selector in `restoreScrollPositions` can never become a
+// vector for selector injection (every Word Meter testid in `View.purs`
+// already conforms to this pattern). Entries that fail the check are
+// skipped rather than silently round-tripped through an unsafe selector.
+const safeTestidPattern = /^[a-z0-9-]+$/;
+
 // Capture the scroll offsets of every testid-bearing descendant that has
 // been scrolled away from the origin. The new DOM tree is regenerated from
 // scratch on every dispatch, so without this any element with
@@ -44,13 +51,16 @@ export const removeAllChildrenFromElement = (node) => () => {
 // changes. Using `data-testid` as stable identity reuses an existing
 // convention without forcing the view layer to opt elements in one by one.
 export const captureScrollPositions = (host) => () => {
+  // An empty array (not null) is the canonical "no scrolled elements"
+  // snapshot — it is truthy and zero-length, so `restoreScrollPositions`
+  // simply iterates nothing.
   if (!host || typeof host.querySelectorAll !== "function") return [];
   const positions = [];
   const elements = host.querySelectorAll("[data-testid]");
   for (let i = 0; i < elements.length; i++) {
     const element = elements[i];
     const testid = element.getAttribute("data-testid");
-    if (!testid) continue;
+    if (!testid || !safeTestidPattern.test(testid)) continue;
     const scrollTop = element.scrollTop || 0;
     const scrollLeft = element.scrollLeft || 0;
     if (scrollTop === 0 && scrollLeft === 0) continue;
@@ -63,9 +73,10 @@ export const restoreScrollPositions = (host) => (snapshot) => () => {
   if (!host || typeof host.querySelector !== "function" || !snapshot) return;
   for (let i = 0; i < snapshot.length; i++) {
     const entry = snapshot[i];
-    // CSS.escape isn't ubiquitous in jsdom test envs, but every Word Meter
-    // testid is a kebab-case identifier so a plain attribute selector is
-    // safe here.
+    // Defense in depth: `captureScrollPositions` already filters to
+    // kebab-case testids, but re-check here so a future caller cannot
+    // smuggle an attacker-controlled string into the attribute selector.
+    if (!safeTestidPattern.test(entry.testid)) continue;
     const match = host.querySelector(`[data-testid="${entry.testid}"]`);
     if (!match) continue;
     match.scrollTop = entry.scrollTop;

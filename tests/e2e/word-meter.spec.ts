@@ -1090,4 +1090,48 @@ test.describe("Word Meter — PureScript build — vdom scroll preservation", ()
     // preservation this would snap back to 0.
     expect(scrollAfterRerender).toBe(scrollAfterScrolling);
   });
+
+  test("scrolled event-log timeline keeps its scroll position across a rerender", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps");
+
+    // Drive enough completed counting sessions to overflow the timeline's
+    // max-height so it exposes a real scrollbar.
+    await page.evaluate(() => {
+      const capacity = window.__wordMeter.getEventLogLimit();
+      const iterations = Math.max(capacity, 50);
+      for (let i = 0; i < iterations; i++) {
+        const startTs = i * 1_000;
+        window.__wordMeter.startAt(startTs);
+        window.__wordMeter.simulateFinalTranscriptAt(
+          "alpha beta gamma",
+          startTs + 100,
+        );
+        window.__wordMeter.stopAt(startTs + 500);
+      }
+    });
+
+    const eventLog = page.getByTestId("wm-event-log");
+    const maxScrollTop: number = await eventLog.evaluate(
+      (element: HTMLElement) => element.scrollHeight - element.clientHeight,
+    );
+    expect(maxScrollTop).toBeGreaterThan(0);
+
+    const targetScrollTop = Math.floor(maxScrollTop / 2);
+    await eventLog.evaluate((element: HTMLElement, top: number) => {
+      element.scrollTop = top;
+    }, targetScrollTop);
+    const scrollAfterScrolling: number = await eventLog.evaluate(
+      (element: HTMLElement) => element.scrollTop,
+    );
+    expect(scrollAfterScrolling).toBeGreaterThan(0);
+
+    await page.evaluate(() => window.__wordMeter.tick(999_999_000));
+
+    const scrollAfterRerender: number = await eventLog.evaluate(
+      (element: HTMLElement) => element.scrollTop,
+    );
+    expect(scrollAfterRerender).toBe(scrollAfterScrolling);
+  });
 });

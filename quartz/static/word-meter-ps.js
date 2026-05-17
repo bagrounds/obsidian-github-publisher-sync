@@ -1457,6 +1457,7 @@
   var removeAllChildrenFromElement = (node) => () => {
     while (node.firstChild) node.removeChild(node.firstChild);
   };
+  var safeTestidPattern = /^[a-z0-9-]+$/;
   var captureScrollPositions = (host) => () => {
     if (!host || typeof host.querySelectorAll !== "function") return [];
     const positions = [];
@@ -1464,7 +1465,7 @@
     for (let i = 0; i < elements.length; i++) {
       const element2 = elements[i];
       const testid = element2.getAttribute("data-testid");
-      if (!testid) continue;
+      if (!testid || !safeTestidPattern.test(testid)) continue;
       const scrollTop = element2.scrollTop || 0;
       const scrollLeft = element2.scrollLeft || 0;
       if (scrollTop === 0 && scrollLeft === 0) continue;
@@ -1476,6 +1477,7 @@
     if (!host || typeof host.querySelector !== "function" || !snapshot) return;
     for (let i = 0; i < snapshot.length; i++) {
       const entry = snapshot[i];
+      if (!safeTestidPattern.test(entry.testid)) continue;
       const match = host.querySelector(`[data-testid="${entry.testid}"]`);
       if (!match) continue;
       match.scrollTop = entry.scrollTop;
@@ -1488,7 +1490,8 @@
     const filename = "word-meter.css";
     const currentScript = document.currentScript;
     const href = currentScript && currentScript.src ? currentScript.src.replace(/[^/]+$/, filename) : defaultHref;
-    if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`)) return;
+    if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`))
+      return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = href;

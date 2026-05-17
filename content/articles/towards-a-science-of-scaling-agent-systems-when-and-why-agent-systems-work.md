@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T23:28:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric digital illustration depicting a complex architectural network of glowing, interconnected nodes. In the center, a single, large, illuminated hub acts as a centralized orchestrator, with lines of light radiating outward to smaller, secondary nodes. Some branches of the network are organized and symmetrical, representing parallel tasks, while others appear tangled and cluttered, illustrating the inefficiency of over-scaling. The background is a deep, professional navy blue with subtle grid lines. The aesthetic is modern and technical, using a palette of cyan, electric blue, and soft white to represent data flow, with a few muted amber accents indicating points of coordination tax or friction. The composition is balanced to highlight the contrast between streamlined centralized structures and chaotic independent clusters.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work)  
+![articles-towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work](../articles-towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.jpg)  
   
 ## 🧬 AI Summary  
   

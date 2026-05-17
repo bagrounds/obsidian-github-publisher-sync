@@ -34,3 +34,23 @@ export const appendChildToElement = (parent) => (child) => () => {
 export const removeAllChildrenFromElement = (node) => () => {
   while (node.firstChild) node.removeChild(node.firstChild)
 }
+
+export const ensureStylesheetLinked = (defaultHref) => () => {
+  if (typeof document === "undefined") return
+  const marker = "data-word-meter-stylesheet"
+  // Derive the stylesheet URL from the currently-executing script so the
+  // bundle works both in production (served from `/static/`) and in the
+  // e2e fixture (served from `/quartz/static/`).
+  const filename = "word-meter.css"
+  const currentScript = document.currentScript
+  const href = (currentScript && currentScript.src)
+    ? currentScript.src.replace(/[^/]+$/, filename)
+    : defaultHref
+  if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`)) return
+  const link = document.createElement("link")
+  link.rel = "stylesheet"
+  link.href = href
+  link.setAttribute(marker, href)
+  const parent = document.head || document.body
+  if (parent && parent.appendChild) parent.appendChild(link)
+}

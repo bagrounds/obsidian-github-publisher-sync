@@ -78,13 +78,18 @@ import WordMeter.RecognitionError
   )
 import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.TestHook as TestHook
+import WordMeter.Vdom (ensureStylesheetLinked)
 import WordMeter.Version (version)
 
 hostElementId :: String
 hostElementId = "word-meter"
 
+stylesheetHref :: String
+stylesheetHref = "/static/word-meter.css"
+
 main :: Effect Unit
 main = do
+  ensureStylesheetLinked stylesheetHref
   sessionRef <- Ref.new initialSession
   wakeLockSentinelRef <- Ref.new Nothing
   recognitionInstanceRef <- Ref.new Nothing

@@ -70,23 +70,20 @@ void function () {
     cloud: 'cloud'
   });
 
-  const PALETTE = Object.freeze({
-    panelBackground: 'linear-gradient(180deg,#0b1320,#0a1729)',
-    panelShadow: '0 8px 30px rgba(0,0,0,0.25)',
-    primaryText: '#f6fbff',
-    secondaryText: '#cfe0f2',
-    mutedText: '#7e95b3',
-    dimText: '#54708f',
-    tileBackground: 'rgba(255,255,255,0.04)',
-    captionsBackground: 'rgba(255,255,255,0.03)',
-    captionsBorder: '1px solid rgba(255,255,255,0.05)',
-    startBackground: '#2aa198',
-    startForeground: '#001019',
-    stopBackground: '#dc322f',
-    stopForeground: '#ffffff',
-    errorText: '#ff8b94',
-    bodyFont: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
-  });
+  // All visual styling lives in `word-meter.css` (alongside this script in
+  // `/static/`). The application only applies and removes class names. The
+  // stylesheet is loaded relative to this script so the same code works
+  // both in production (where the file is served from `/static/`) and in
+  // the e2e fixture (where it is served from `/quartz/static/`).
+  const STYLESHEET_FILENAME = 'word-meter.css';
+  const STYLESHEET_MARKER_ATTRIBUTE = 'data-word-meter-stylesheet';
+  const wordMeterScriptElement = typeof document !== 'undefined' ? document.currentScript : null;
+  const stylesheetHref = () => {
+    if (wordMeterScriptElement && wordMeterScriptElement.src) {
+      return wordMeterScriptElement.src.replace(/[^/]+$/, STYLESHEET_FILENAME);
+    }
+    return '/static/' + STYLESHEET_FILENAME;
+  };
 
   const ELEMENT_IDS = Object.freeze({
     status: 'wm-status',
@@ -189,14 +186,26 @@ void function () {
   const element = (tagName, options = {}) => {
     const node = document.createElement(tagName);
     if (options.id) node.id = options.id;
+    if (options.className) node.className = options.className;
     if (options.text !== undefined) node.textContent = options.text;
     if (options.html !== undefined) node.innerHTML = options.html;
     if (options.attributes) {
       Object.entries(options.attributes).forEach(([name, value]) => node.setAttribute(name, value));
     }
-    if (options.styles) Object.assign(node.style, options.styles);
     if (options.children) options.children.forEach((child) => node.appendChild(child));
     return node;
+  };
+
+  const ensureStylesheetLinked = () => {
+    if (typeof document === 'undefined' || !document.createElement) return;
+    const href = stylesheetHref();
+    if (document.querySelector && document.querySelector(`link[${STYLESHEET_MARKER_ATTRIBUTE}="${href}"]`)) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    link.setAttribute(STYLESHEET_MARKER_ATTRIBUTE, href);
+    const parent = document.head || document.body;
+    if (parent && parent.appendChild) parent.appendChild(link);
   };
 
   const byId = (id) => document.getElementById(id);
@@ -207,159 +216,96 @@ void function () {
 
   const buildStatus = () => element('div', {
     id: ELEMENT_IDS.status,
-    text: 'idle',
-    styles: {
-      fontSize: '13px',
-      letterSpacing: '0.08em',
-      textTransform: 'uppercase',
-      color: PALETTE.mutedText,
-      textAlign: 'center',
-      marginBottom: '12px'
-    }
+    className: 'wm-status',
+    text: 'idle'
   });
 
   const buildBigCount = () => element('div', {
     id: ELEMENT_IDS.count,
-    text: '0',
-    styles: {
-      fontSize: 'clamp(72px,18vw,160px)',
-      fontWeight: '700',
-      lineHeight: '1',
-      textAlign: 'center',
-      fontVariantNumeric: 'tabular-nums',
-      letterSpacing: '-0.04em',
-      color: PALETTE.primaryText
-    }
+    className: 'wm-count',
+    text: '0'
   });
 
   const buildCountLabel = () => element('div', {
-    text: 'words spoken',
-    styles: {
-      fontSize: '14px',
-      textAlign: 'center',
-      color: PALETTE.mutedText,
-      marginTop: '6px'
-    }
+    className: 'wm-count-label',
+    text: 'words spoken'
   });
 
   const buildButton = () => element('button', {
     id: ELEMENT_IDS.button,
+    className: 'wm-button-pill wm-button-pill-start',
     text: 'Start counting',
-    attributes: { type: 'button' },
-    styles: {
-      font: '600 16px/1 inherit',
-      padding: '14px 28px',
-      borderRadius: '999px',
-      border: '0',
-      background: PALETTE.startBackground,
-      color: PALETTE.startForeground,
-      cursor: 'pointer',
-      minWidth: '180px'
-    }
+    attributes: { type: 'button' }
   });
 
   const buildResetButton = () => element('button', {
     id: ELEMENT_IDS.resetButton,
+    className: 'wm-button-pill-secondary',
     text: 'Reset',
-    attributes: { type: 'button', title: 'Clear all stats' },
-    styles: {
-      font: '600 14px/1 inherit',
-      padding: '14px 18px',
-      borderRadius: '999px',
-      border: '1px solid rgba(255,255,255,0.18)',
-      background: 'transparent',
-      color: PALETTE.secondaryText,
-      cursor: 'pointer',
-      minWidth: '92px'
-    }
+    attributes: { type: 'button', title: 'Clear all stats' }
   });
 
   const buildButtonRow = () => element('div', {
-    styles: { display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', margin: '22px 0 14px' },
+    className: 'wm-button-row',
     children: [buildButton(), buildResetButton()]
   });
 
   const buildKeepAwakeToggle = () => {
     const checkbox = element('input', {
       id: ELEMENT_IDS.keepAwake,
-      attributes: { type: 'checkbox', checked: 'checked' },
-      styles: { marginRight: '8px', accentColor: PALETTE.startBackground }
+      className: 'wm-keep-awake-checkbox',
+      attributes: { type: 'checkbox', checked: 'checked' }
     });
     const label = element('label', {
+      className: 'wm-keep-awake-label',
       attributes: { for: ELEMENT_IDS.keepAwake },
-      styles: {
-        display: 'inline-flex',
-        alignItems: 'center',
-        fontSize: '13px',
-        color: PALETTE.secondaryText,
-        cursor: 'pointer'
-      },
       children: [
         checkbox,
-        element('span', { text: '🔋 Keep counting with screen on (recommended)' })
+        element('span', {
+          className: 'wm-keep-awake-caption',
+          text: '🔋 Keep counting with screen on (recommended)'
+        })
       ]
     });
     const status = element('span', {
       id: ELEMENT_IDS.keepAwakeStatus,
-      text: '',
-      styles: { marginLeft: '10px', fontSize: '12px', color: PALETTE.dimText }
+      className: 'wm-keep-awake-status',
+      text: ''
     });
     return element('div', {
-      styles: {
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-        marginBottom: '4px'
-      },
+      className: 'wm-keep-awake-row',
       children: [label, status]
     });
   };
 
-  const buildMetricTile = (label, valueId, sublabel) => element('div', {
-    styles: {
-      background: PALETTE.tileBackground,
-      borderRadius: '10px',
-      padding: '12px',
-      textAlign: 'center'
-    },
-    children: [
-      element('div', {
-        text: label,
-        styles: {
-          fontSize: '11px',
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          color: PALETTE.mutedText
-        }
-      }),
-      element('div', {
-        id: valueId,
-        text: valueId === ELEMENT_IDS.started ? '—' : '0',
-        styles: {
-          fontSize: valueId === ELEMENT_IDS.started ? '15px' : '22px',
-          fontWeight: valueId === ELEMENT_IDS.started ? 'normal' : '600',
-          marginTop: valueId === ELEMENT_IDS.started ? '4px' : '2px',
-          fontVariantNumeric: 'tabular-nums',
-          color: valueId === ELEMENT_IDS.started ? PALETTE.secondaryText : PALETTE.primaryText
-        }
-      }),
-      ...(sublabel
-        ? [element('div', {
-            text: sublabel,
-            styles: { fontSize: '11px', color: PALETTE.mutedText }
-          })]
-        : [])
-    ]
-  });
+  const buildMetricTile = (label, valueId, sublabel) => {
+    const isStarted = valueId === ELEMENT_IDS.started;
+    return element('div', {
+      className: 'wm-metric-tile',
+      children: [
+        element('div', {
+          className: 'wm-metric-tile-label',
+          text: label
+        }),
+        element('div', {
+          id: valueId,
+          className: isStarted
+            ? 'wm-metric-tile-value wm-metric-tile-value-started'
+            : 'wm-metric-tile-value',
+          text: isStarted ? '—' : '0'
+        }),
+        ...(sublabel
+          ? [element('div', {
+              className: 'wm-metric-tile-sublabel',
+              text: sublabel
+            })]
+          : [])
+      ]
+    });
+  };
 
   const buildMetricsGrid = () => element('div', {
-    styles: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(150px,1fr))',
-      gap: '10px',
-      marginTop: '18px'
-    },
+    className: 'wm-metrics-grid',
     children: [
       buildMetricTile('Started', ELEMENT_IDS.started),
       buildMetricTile('Last 1 min', ELEMENT_IDS.rateShort, 'words / minute'),
@@ -369,91 +315,53 @@ void function () {
   });
 
   const buildCaptionsPanel = () => element('div', {
-    styles: { marginTop: '22px' },
+    className: 'wm-section',
     children: [
       element('div', {
-        styles: {
-          fontSize: '11px',
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          color: PALETTE.mutedText,
-          marginBottom: '6px'
-        },
+        className: 'wm-section-heading',
         children: [
           element('span', { text: 'Recent captions ' }),
           element('span', {
-            text: '(last 30 s)',
-            styles: { textTransform: 'none', letterSpacing: '0', color: PALETTE.dimText }
+            className: 'wm-section-heading-suffix',
+            text: '(last 30 s)'
           })
         ]
       }),
       element('div', {
         id: ELEMENT_IDS.captions,
-        attributes: { 'aria-live': 'polite' },
-        styles: {
-          background: PALETTE.captionsBackground,
-          border: PALETTE.captionsBorder,
-          borderRadius: '10px',
-          padding: '12px',
-          minHeight: '96px',
-          fontSize: '15px',
-          lineHeight: '1.5',
-          color: PALETTE.secondaryText,
-          overflow: 'hidden'
-        }
+        className: 'wm-captions-panel',
+        attributes: { 'aria-live': 'polite' }
       })
     ]
   });
 
   const buildErrorBanner = () => element('div', {
     id: ELEMENT_IDS.error,
-    attributes: { role: 'alert' },
-    styles: {
-      marginTop: '12px',
-      fontSize: '13px',
-      color: PALETTE.errorText,
-      textAlign: 'center',
-      minHeight: '18px'
-    }
+    className: 'wm-error',
+    attributes: { role: 'alert' }
   });
 
   const buildTimelinePanel = () => element('div', {
-    styles: { marginTop: '22px' },
+    className: 'wm-section',
     children: [
       element('div', {
-        styles: {
-          fontSize: '11px',
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          color: PALETTE.mutedText,
-          marginBottom: '6px'
-        },
+        className: 'wm-section-heading',
         children: [
           element('span', { text: 'Timeline ' }),
           element('span', {
-            text: '(intervals · words · words/min)',
-            styles: { textTransform: 'none', letterSpacing: '0', color: PALETTE.dimText }
+            className: 'wm-section-heading-suffix',
+            text: '(intervals · words · words/min)'
           })
         ]
       }),
       element('div', {
         id: ELEMENT_IDS.timeline,
-        styles: {
-          background: PALETTE.captionsBackground,
-          border: PALETTE.captionsBorder,
-          borderRadius: '10px',
-          padding: '8px 12px',
-          maxHeight: '220px',
-          overflowY: 'auto',
-          fontSize: '13px',
-          lineHeight: '1.5',
-          color: PALETTE.secondaryText
-        },
+        className: 'wm-timeline',
         children: [
           element('div', {
             id: ELEMENT_IDS.timelineEmpty,
-            text: 'No intervals yet — press Start counting to begin.',
-            styles: { color: PALETTE.dimText, fontStyle: 'italic', padding: '6px 0' }
+            className: 'wm-timeline-empty',
+            text: 'No intervals yet — press Start counting to begin.'
           })
         ]
       })
@@ -461,22 +369,16 @@ void function () {
   });
 
   const buildPrivacyFooter = () => element('div', {
-    styles: {
-      marginTop: '14px',
-      fontSize: '11px',
-      color: PALETTE.dimText,
-      textAlign: 'center',
-      lineHeight: '1.5'
-    },
+    className: 'wm-privacy-footer',
     children: [
       element('div', {
         text: 'Speech recognition runs in your browser. Nothing is sent or stored by this page.'
       }),
       element('div', {
         id: ELEMENT_IDS.version,
+        className: 'wm-privacy-footer-version',
         text: `Word Meter v${WORD_METER_VERSION}`,
-        attributes: { 'data-word-meter-version': WORD_METER_VERSION },
-        styles: { marginTop: '8px', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace', color: PALETTE.dimText }
+        attributes: { 'data-word-meter-version': WORD_METER_VERSION }
       })
     ]
   });
@@ -491,70 +393,39 @@ void function () {
   // with a `[word-meter]` prefix so curious users can grep the devtools log.
   const buildDiagnosticsPanel = () => element('details', {
     id: ELEMENT_IDS.diagnosticsPanel,
-    styles: { marginTop: '16px', fontSize: '12px', color: PALETTE.secondaryText },
+    className: 'wm-diagnostics-drawer',
     children: [
       element('summary', {
         id: ELEMENT_IDS.diagnosticsToggle,
-        text: '🔧 Diagnostics',
-        styles: { cursor: 'pointer', color: PALETTE.mutedText, padding: '4px 0', userSelect: 'none' }
+        className: 'wm-diagnostics-summary',
+        text: '🔧 Diagnostics'
       }),
       element('div', {
-        styles: { display: 'flex', alignItems: 'center', gap: '8px', margin: '8px 0 0 0' },
+        className: 'wm-diagnostics-actions',
         children: [
           element('button', {
             id: ELEMENT_IDS.diagnosticsCopy,
+            className: 'wm-diagnostics-copy-button',
             text: '📋 Copy diagnostics',
-            attributes: { type: 'button', title: 'Copy the snapshot and event log to the clipboard' },
-            styles: {
-              font: '600 12px/1 inherit',
-              padding: '8px 12px',
-              borderRadius: '999px',
-              border: '1px solid rgba(255,255,255,0.18)',
-              background: 'transparent',
-              color: PALETTE.secondaryText,
-              cursor: 'pointer'
-            }
+            attributes: { type: 'button', title: 'Copy the snapshot and event log to the clipboard' }
           }),
           element('span', {
             id: ELEMENT_IDS.diagnosticsCopyStatus,
-            text: '',
-            styles: { color: PALETTE.mutedText, fontSize: '11.5px' }
+            className: 'wm-diagnostics-copy-status',
+            text: ''
           })
         ]
       }),
       element('pre', {
         id: ELEMENT_IDS.diagnosticsContent,
-        text: 'collecting…',
-        styles: {
-          margin: '8px 0 0 0',
-          padding: '10px 12px',
-          background: PALETTE.captionsBackground,
-          border: PALETTE.captionsBorder,
-          borderRadius: '8px',
-          fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace',
-          fontSize: '11.5px',
-          lineHeight: '1.45',
-          color: PALETTE.secondaryText,
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word',
-          maxHeight: '320px',
-          overflowY: 'auto'
-        }
+        className: 'wm-diagnostics-content',
+        text: 'collecting…'
       })
     ]
   });
 
   const buildPanel = () => element('div', {
-    styles: {
-      fontFamily: PALETTE.bodyFont,
-      color: PALETTE.primaryText,
-      background: PALETTE.panelBackground,
-      borderRadius: '14px',
-      padding: '24px 20px',
-      boxShadow: PALETTE.panelShadow,
-      maxWidth: '760px',
-      margin: '0 auto'
-    },
+    className: 'wm-panel',
     children: [
       buildStatus(),
       buildBigCount(),
@@ -1375,16 +1246,31 @@ void function () {
     setText(ELEMENT_IDS.rateOverall, formatRate(ratePerMinute(session.totalWords, activeSpan)));
   };
 
+  // The per-caption fade is bucketed into discrete classes so the only CSS
+  // operation the application performs is applying a class. Five buckets
+  // approximate the continuous `1 - age/CAPTION_WINDOW` curve clamped to
+  // `MINIMUM_CAPTION_OPACITY`, which is visually indistinguishable from the
+  // continuous version at the recognizer's update cadence.
+  const CAPTION_FADE_BUCKETS = 5;
+
+  const captionFadeBucket = (ageMilliseconds) => {
+    const fraction = Math.max(0, ageMilliseconds) / CAPTION_WINDOW_MILLISECONDS;
+    const bucket = Math.floor(fraction * CAPTION_FADE_BUCKETS);
+    if (bucket < 0) return 0;
+    if (bucket >= CAPTION_FADE_BUCKETS) return CAPTION_FADE_BUCKETS - 1;
+    return bucket;
+  };
+
   const renderCaptions = () => {
     if (!session.captionEntries.length) {
-      setHtml(ELEMENT_IDS.captions, `<span style="color:${PALETTE.dimText};font-style:italic;">Waiting for speech…</span>`);
+      setHtml(ELEMENT_IDS.captions, `<span class="wm-captions-placeholder">Waiting for speech…</span>`);
       return;
     }
     const now = Date.now();
     const captionsHtml = session.captionEntries
       .map((entry) => {
-        const opacity = captionOpacity(now - entry.timestamp).toFixed(2);
-        return `<span style="opacity:${opacity};">${escapeHtml(entry.text)}</span>`;
+        const bucket = captionFadeBucket(now - entry.timestamp);
+        return `<span class="wm-caption wm-caption-fade-${bucket}">${escapeHtml(entry.text)}</span>`;
       })
       .join(' ');
     setHtml(ELEMENT_IDS.captions, captionsHtml);
@@ -1422,13 +1308,13 @@ void function () {
     const elapsedMs = Math.max(1, endpoint - interval.startedAt);
     const wpm = formatRate(ratePerMinute(words, elapsedMs));
     const liveTag = isOpen
-      ? `<span style="color:${PALETTE.startBackground};margin-left:6px;">● live</span>`
+      ? `<span class="wm-timeline-row-live">● live</span>`
       : '';
-    return `<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:6px 0;border-top:1px solid rgba(255,255,255,0.04);">`
-      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.secondaryText};">${escapeHtml(startClock)} → ${escapeHtml(endClock)}${liveTag}</span>`
-      + `<span style="color:${PALETTE.mutedText};font-size:12px;">${escapeHtml(durationText)}</span>`
-      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.primaryText};min-width:56px;text-align:right;">${words} w</span>`
-      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.secondaryText};min-width:64px;text-align:right;">${wpm} wpm</span>`
+    return `<div class="wm-timeline-row">`
+      + `<span class="wm-timeline-row-time">${escapeHtml(startClock)} → ${escapeHtml(endClock)}${liveTag}</span>`
+      + `<span class="wm-timeline-row-duration">${escapeHtml(durationText)}</span>`
+      + `<span class="wm-timeline-row-words">${words} w</span>`
+      + `<span class="wm-timeline-row-rate">${wpm} wpm</span>`
       + `</div>`;
   };
 
@@ -1446,7 +1332,7 @@ void function () {
       rows.push(formatTimelineRow(interval, false, now));
     });
     if (!rows.length) {
-      setHtml(ELEMENT_IDS.timeline, `<div id="${ELEMENT_IDS.timelineEmpty}" style="color:${PALETTE.dimText};font-style:italic;padding:6px 0;">No intervals yet — press Start counting to begin.</div>`);
+      setHtml(ELEMENT_IDS.timeline, `<div id="${ELEMENT_IDS.timelineEmpty}" class="wm-timeline-empty">No intervals yet — press Start counting to begin.</div>`);
       return;
     }
     setHtml(ELEMENT_IDS.timeline, rows.join(''));
@@ -1461,23 +1347,27 @@ void function () {
     if (node) node.textContent = text || '';
   };
 
-  const setButtonAppearance = (label, background, foreground) => {
+  const setButtonListening = (listening) => {
     const button = byId(ELEMENT_IDS.button);
     if (!button) return;
-    button.textContent = label;
-    button.style.background = background;
-    button.style.color = foreground;
+    button.textContent = listening ? 'Stop counting' : 'Start counting';
+    if (button.classList) {
+      button.classList.toggle('wm-button-pill-stop', listening);
+      button.classList.toggle('wm-button-pill-start', !listening);
+    }
   };
 
-  const setButtonStart = () => setButtonAppearance('Start counting', PALETTE.startBackground, PALETTE.startForeground);
-  const setButtonStop = () => setButtonAppearance('Stop counting', PALETTE.stopBackground, PALETTE.stopForeground);
+  const setButtonStart = () => setButtonListening(false);
+  const setButtonStop = () => setButtonListening(true);
 
   const setKeepAwakeEnabled = (enabled) => {
     const input = byId(ELEMENT_IDS.keepAwake);
     if (input) {
       input.disabled = !enabled;
       const label = input.parentElement;
-      if (label) label.style.opacity = enabled ? '1' : '0.55';
+      if (label && label.classList) {
+        label.classList.toggle('wm-keep-awake-label-disabled', !enabled);
+      }
     }
   };
 
@@ -1486,8 +1376,7 @@ void function () {
     const button = byId(ELEMENT_IDS.button);
     if (button) {
       button.disabled = true;
-      button.style.opacity = '0.5';
-      button.style.cursor = 'not-allowed';
+      if (button.classList) button.classList.add('wm-button-pill-unsupported');
     }
     setKeepAwakeEnabled(false);
     setStatus('unsupported');
@@ -1500,6 +1389,7 @@ void function () {
   const init = () => {
     const host = byId(HOST_ELEMENT_ID);
     if (!host) return () => {};
+    ensureStylesheetLinked();
     host.innerHTML = '';
     host.appendChild(buildPanel());
 

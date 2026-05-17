@@ -1,0 +1,427 @@
+/* Word Meter — shared stylesheet for the JavaScript and PureScript builds.
+ *
+ * All visual style for the Word Meter lives here. The application code only
+ * applies and removes class names; it never writes inline styles or sets
+ * style properties imperatively. The single concession to dynamic data is
+ * the caption fade, which is bucketed into a small set of discrete classes
+ * (`wm-caption-fade-0` … `wm-caption-fade-4`) so even fading remains a
+ * class-only operation.
+ *
+ * Class names are declarative: they label the part of the meter they
+ * apply to (`wm-button-pill-start`, `wm-metric-tile-label`, etc.) rather
+ * than describing the visual effect (`pill`, `uppercase`). Utility
+ * classes are intentionally avoided so that style remains a fully
+ * independent concern from the markup that consumes it.
+ */
+
+/* ---------- Color tokens ---------- */
+/* These are stylesheet-internal tokens, not utility classes. They are
+ * referenced by the rules below so that the same palette is reused
+ * consistently across both builds, matching the look of the JS build. */
+:root {
+  --wm-panel-background: linear-gradient(180deg, #0b1320, #0a1729);
+  --wm-panel-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  --wm-primary-text: #f6fbff;
+  --wm-secondary-text: #cfe0f2;
+  --wm-muted-text: #7e95b3;
+  --wm-dim-text: #54708f;
+  --wm-tile-background: rgba(255, 255, 255, 0.04);
+  --wm-surface-background: rgba(255, 255, 255, 0.03);
+  --wm-surface-border: 1px solid rgba(255, 255, 255, 0.05);
+  --wm-divider: 1px solid rgba(255, 255, 255, 0.04);
+  --wm-start-background: #2aa198;
+  --wm-start-foreground: #001019;
+  --wm-stop-background: #dc322f;
+  --wm-stop-foreground: #ffffff;
+  --wm-error-text: #ff8b94;
+  --wm-secondary-button-border: 1px solid rgba(255, 255, 255, 0.18);
+  --wm-body-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --wm-mono-font: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---------- Outer panel ---------- */
+
+.wm-panel {
+  font-family: var(--wm-body-font);
+  color: var(--wm-primary-text);
+  background: var(--wm-panel-background);
+  border-radius: 14px;
+  padding: 24px 20px;
+  box-shadow: var(--wm-panel-shadow);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ---------- Build badge (PureScript build only) ---------- */
+
+.wm-build-badge {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7aa2f7;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* ---------- Status line ---------- */
+
+.wm-status {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wm-muted-text);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ---------- Big count ---------- */
+
+.wm-count {
+  font-size: clamp(72px, 18vw, 160px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  color: var(--wm-primary-text);
+}
+
+.wm-count-label {
+  font-size: 14px;
+  text-align: center;
+  color: var(--wm-muted-text);
+  margin-top: 6px;
+}
+
+/* ---------- Button row ---------- */
+
+.wm-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 22px 0 14px;
+}
+
+.wm-button-pill {
+  font: 600 16px/1 inherit;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.wm-button-pill-start {
+  background: var(--wm-start-background);
+  color: var(--wm-start-foreground);
+}
+
+.wm-button-pill-stop {
+  background: var(--wm-stop-background);
+  color: var(--wm-stop-foreground);
+}
+
+.wm-button-pill-unsupported {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wm-button-pill-secondary {
+  font: 600 14px/1 inherit;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: var(--wm-secondary-button-border);
+  background: transparent;
+  color: var(--wm-secondary-text);
+  cursor: pointer;
+  min-width: 92px;
+}
+
+/* ---------- Keep-awake toggle ---------- */
+
+.wm-keep-awake-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: var(--wm-secondary-text);
+}
+
+.wm-keep-awake-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wm-keep-awake-label-disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.wm-keep-awake-checkbox {
+  margin-right: 8px;
+  accent-color: var(--wm-start-background);
+}
+
+.wm-keep-awake-caption {
+  user-select: none;
+}
+
+.wm-keep-awake-status {
+  margin-left: 10px;
+  font-size: 12px;
+  color: var(--wm-dim-text);
+}
+
+/* ---------- Metrics grid ---------- */
+
+.wm-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.wm-metric-tile {
+  background: var(--wm-tile-background);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+
+.wm-metric-tile-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wm-muted-text);
+}
+
+.wm-metric-tile-value {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-primary-text);
+}
+
+.wm-metric-tile-value-started {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 4px;
+  color: var(--wm-secondary-text);
+}
+
+.wm-metric-tile-sublabel {
+  font-size: 11px;
+  color: var(--wm-muted-text);
+}
+
+/* ---------- Section heading (Recent captions, Timeline, Event log) ---------- */
+
+.wm-section {
+  margin-top: 22px;
+}
+
+.wm-section-heading {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wm-muted-text);
+  margin-bottom: 6px;
+}
+
+.wm-section-heading-suffix {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--wm-dim-text);
+}
+
+/* ---------- Captions panel ---------- */
+
+.wm-captions-panel {
+  background: var(--wm-surface-background);
+  border: var(--wm-surface-border);
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 96px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--wm-secondary-text);
+  overflow: hidden;
+}
+
+.wm-caption {
+  /* Per-caption fade uses discrete buckets so the application only ever
+   * applies a class — never sets a style. Five buckets approximate the
+   * continuous fade visually. */
+}
+
+.wm-caption-fade-0 { opacity: 1; }
+.wm-caption-fade-1 { opacity: 0.8; }
+.wm-caption-fade-2 { opacity: 0.6; }
+.wm-caption-fade-3 { opacity: 0.4; }
+.wm-caption-fade-4 { opacity: 0.2; }
+
+.wm-captions-placeholder {
+  color: var(--wm-dim-text);
+  font-style: italic;
+}
+
+/* ---------- Error banner ---------- */
+
+.wm-error {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--wm-error-text);
+  text-align: center;
+  min-height: 18px;
+}
+
+/* ---------- Timeline / Event log ---------- */
+
+.wm-timeline {
+  background: var(--wm-surface-background);
+  border: var(--wm-surface-border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  max-height: 220px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--wm-secondary-text);
+}
+
+.wm-timeline-empty {
+  color: var(--wm-dim-text);
+  font-style: italic;
+  padding: 6px 0;
+}
+
+.wm-timeline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: var(--wm-divider);
+  font-size: 13px;
+}
+
+.wm-timeline-row-time {
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-secondary-text);
+}
+
+.wm-timeline-row-live {
+  color: var(--wm-start-background);
+  margin-left: 6px;
+}
+
+.wm-timeline-row-duration {
+  color: var(--wm-muted-text);
+  font-size: 12px;
+}
+
+.wm-timeline-row-words {
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-primary-text);
+  min-width: 56px;
+  text-align: right;
+}
+
+.wm-timeline-row-rate {
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-secondary-text);
+  min-width: 64px;
+  text-align: right;
+}
+
+/* PureScript build uses these flex-based variants in its event log row. */
+
+.wm-timeline-row-duration-centered {
+  flex: 1;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-secondary-text);
+}
+
+/* ---------- Privacy footer ---------- */
+
+.wm-privacy-footer {
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--wm-dim-text);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.wm-privacy-footer-version {
+  margin-top: 8px;
+  font-family: var(--wm-mono-font);
+  color: var(--wm-dim-text);
+}
+
+.wm-version {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--wm-dim-text);
+  text-align: center;
+}
+
+/* ---------- Diagnostics drawer ---------- */
+
+.wm-diagnostics-drawer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--wm-secondary-text);
+}
+
+.wm-diagnostics-summary {
+  cursor: pointer;
+  color: var(--wm-muted-text);
+  padding: 4px 0;
+  user-select: none;
+}
+
+.wm-diagnostics-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 0 0;
+}
+
+.wm-diagnostics-copy-button {
+  font: 600 12px/1 inherit;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: var(--wm-secondary-button-border);
+  background: transparent;
+  color: var(--wm-secondary-text);
+  cursor: pointer;
+}
+
+.wm-diagnostics-copy-status {
+  color: var(--wm-muted-text);
+  font-size: 11.5px;
+}
+
+.wm-diagnostics-content {
+  margin: 8px 0 0 0;
+  padding: 10px 12px;
+  background: var(--wm-surface-background);
+  border: var(--wm-surface-border);
+  border-radius: 8px;
+  font-family: var(--wm-mono-font);
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--wm-secondary-text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 320px;
+  overflow-y: auto;
+}

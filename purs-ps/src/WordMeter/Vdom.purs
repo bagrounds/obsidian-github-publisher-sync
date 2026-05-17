@@ -14,12 +14,14 @@ module WordMeter.Vdom
   , input
   , label_
   , attribute
+  , className
   , testId
   , buttonType
   , style
   , onClick
   , onCheckboxChange
   , mount
+  , ensureStylesheetLinked
   ) where
 
 import Prelude
@@ -89,6 +91,9 @@ attribute name value = { name, value }
 testId :: String -> Attribute
 testId = attribute "data-testid"
 
+className :: String -> Attribute
+className = attribute "class"
+
 buttonType :: String -> Attribute
 buttonType = attribute "type"
 
@@ -117,6 +122,7 @@ foreign import attachCheckboxChangeListener
   :: Element -> (Boolean -> Effect Unit) -> Effect Unit
 foreign import appendChildToElement :: Element -> Element -> Effect Unit
 foreign import removeAllChildrenFromElement :: Element -> Effect Unit
+foreign import ensureStylesheetLinked :: String -> Effect Unit
 
 mount :: String -> Node -> Effect Unit
 mount hostId tree = do

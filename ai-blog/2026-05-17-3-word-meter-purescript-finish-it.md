@@ -42,11 +42,11 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 🧪 The second win was a capability stack that is genuinely swappable. Every effect the app needs lives behind a typeclass with a production AppM instance and at least one test newtype. The test suite drives the entire orchestrator under deterministic test newtypes that never touch the browser, which means whole code paths — visibility re-acquisition of the wake lock, recognition auto-restart on `onend`, the one-shot cloud fallback on a runtime language-not-supported — are unit-tested. In JavaScript these paths were untestable without a real browser, so they shipped on hope.
 
-🧰 The third win was a typed FFI boundary. Every JavaScript shim in the port is thin: no module state, no decisions, no silent failures. Every fallible operation returns an either with a domain-specific error type, and every left ends up in the diagnostics drawer verbatim. The "never silently swallow errors" rule that lives in AGENTS dot M D is now enforced by the FFI contract, not by reviewer vigilance.
+🧰 The third win was a typed FFI boundary. Every JavaScript shim in the port is thin: no module state, no decisions, no silent failures. Every fallible operation returns an either with a domain-specific error type, and every left ends up in the diagnostics drawer verbatim. The "never silently swallow errors" rule that lives in AGENTS.md is now enforced by the FFI contract, not by reviewer vigilance.
 
 🛠️ The compiler is a refactoring tool. Splitting the recording module into four files, introducing an instant type for every timestamp in the program, introducing a locale newtype, replacing two boolean flags with the wake-lock state algebraic data type — each one of these landed without a single runtime regression because the compiler walked us to every call site. The legacy build's equivalent refactor would have required a global search and a prayer.
 
-🍰 Slicing vertically pays. Every slice from one through nine-C delivered end-to-end user-visible functionality. We never built a horizontal layer like a virtual D O M library or a capability stack or a persistence module as a slice on its own. Each one grew in service of the feature that needed it. That kept the port shippable on every Friday.
+🍰 Slicing vertically pays. Every slice from one through 9c delivered end-to-end user-visible functionality. We never built a horizontal layer like a virtual DOM library or a capability stack or a persistence module as a slice on its own. Each one grew in service of the feature that needed it. That kept the port shippable on every Friday.
 
 ## 🪧 What the cutover looks like
 
@@ -56,7 +56,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 🧷 The acceptance criteria are in the spec and on the tracking issue: a fresh browser sees only the PureScript bundle, an existing user's stats survive the upgrade through the migration step, a fresh user starts at zero, the end-to-end suite passes, and the unit suite passes including the new migration test.
 
-📌 The tracking issue is on the repository as issue six-nine-nine-one. Once that lands, the port is done, and the next feature added to the Word Meter — whatever it is — adds to one codebase instead of two.
+📌 The tracking issue is on the repository as issue #6991. Once that lands, the port is done, and the next feature added to the Word Meter — whatever it is — adds to one codebase instead of two.
 
 ## 📚 Book Recommendations
 

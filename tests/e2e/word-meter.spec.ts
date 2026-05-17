@@ -845,3 +845,65 @@ test.describe("Word Meter — PureScript build — slice 9b — on-device pre-fl
     ).toBe("")
   })
 })
+
+test.describe("Word Meter — PureScript build — vdom scroll preservation", () => {
+  const overflowScrollableSection = async (
+    page: Page,
+    iterations: number,
+  ) =>
+    page.evaluate((count) => {
+      for (let i = 0; i < count; i++) {
+        const startTs = i * 1_000
+        window.__wordMeter.startAt(startTs)
+        window.__wordMeter.simulateFinalTranscriptAt("alpha beta gamma", startTs + 100)
+        window.__wordMeter.stopAt(startTs + 500)
+      }
+    }, iterations)
+
+  const scrollToMiddleAndDispatchTick = async (
+    page: Page,
+    locator: ReturnType<Page["getByTestId"]>,
+  ) => {
+    const maxScrollTop: number = await locator.evaluate(
+      (element: HTMLElement) => element.scrollHeight - element.clientHeight,
+    )
+    expect(maxScrollTop).toBeGreaterThan(0)
+    const targetScrollTop = Math.floor(maxScrollTop / 2)
+    await locator.evaluate((element: HTMLElement, top: number) => {
+      element.scrollTop = top
+    }, targetScrollTop)
+    const scrollBeforeRerender: number = await locator.evaluate(
+      (element: HTMLElement) => element.scrollTop,
+    )
+    expect(scrollBeforeRerender).toBeGreaterThan(0)
+    await page.evaluate(() => window.__wordMeter.tick(999_999_000))
+    const scrollAfterRerender: number = await locator.evaluate(
+      (element: HTMLElement) => element.scrollTop,
+    )
+    expect(scrollAfterRerender).toBe(scrollBeforeRerender)
+  }
+
+  test("scrolled diagnostics drawer keeps its scroll position across a rerender", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-diagnostics-toggle").click()
+    await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
+    const capacity = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLimit(),
+    )
+    await overflowScrollableSection(page, Math.max(capacity, 200))
+    await scrollToMiddleAndDispatchTick(page, page.getByTestId("wm-diagnostics-content"))
+  })
+
+  test("scrolled event-log timeline keeps its scroll position across a rerender", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    const capacity = await page.evaluate(() =>
+      window.__wordMeter.getEventLogLimit(),
+    )
+    await overflowScrollableSection(page, Math.max(capacity, 50))
+    await scrollToMiddleAndDispatchTick(page, page.getByTestId("wm-event-log"))
+  })
+})

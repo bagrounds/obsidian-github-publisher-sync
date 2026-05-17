@@ -35,6 +35,47 @@ export const removeAllChildrenFromElement = (node) => () => {
   while (node.firstChild) node.removeChild(node.firstChild)
 }
 
+// Capture the scroll offsets of every testid-bearing descendant that has
+// drifted away from the origin. The new DOM tree is regenerated from
+// scratch on every dispatch, so without this any element with
+// `overflow: auto` would silently snap back to (0, 0) every time the model
+// changes. Using `data-testid` as stable identity reuses an existing
+// convention without forcing the view layer to opt elements in one by one.
+//
+// Testids are filtered to a kebab-case alphabet so the attribute selector
+// used during restore can never become a vector for selector injection.
+const safeTestidPattern = /^[a-z0-9-]+$/
+
+const scrollEntryOf = (element) => ({
+  testid: element.getAttribute("data-testid"),
+  scrollTop: element.scrollTop || 0,
+  scrollLeft: element.scrollLeft || 0,
+})
+
+const entryIsScrolled = (entry) =>
+  safeTestidPattern.test(entry.testid) &&
+  (entry.scrollTop !== 0 || entry.scrollLeft !== 0)
+
+export const captureScrollPositions = (host) => () => {
+  if (!host || typeof host.querySelectorAll !== "function") return []
+  return Array.from(host.querySelectorAll("[data-testid]"))
+    .map(scrollEntryOf)
+    .filter(entryIsScrolled)
+}
+
+const restoreEntry = (host) => (entry) => {
+  if (!safeTestidPattern.test(entry.testid)) return
+  const match = host.querySelector(`[data-testid="${entry.testid}"]`)
+  if (!match) return
+  match.scrollTop = entry.scrollTop
+  match.scrollLeft = entry.scrollLeft
+}
+
+export const restoreScrollPositions = (host) => (snapshot) => () => {
+  if (!host || typeof host.querySelector !== "function" || !snapshot) return
+  snapshot.forEach(restoreEntry(host))
+}
+
 export const ensureStylesheetLinked = (defaultHref) => () => {
   if (typeof document === "undefined") return
   const marker = "data-word-meter-stylesheet"

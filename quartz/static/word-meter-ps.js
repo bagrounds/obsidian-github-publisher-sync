@@ -1457,6 +1457,31 @@
   var removeAllChildrenFromElement = (node) => () => {
     while (node.firstChild) node.removeChild(node.firstChild);
   };
+  var captureScrollPositions = (host) => () => {
+    if (!host || typeof host.querySelectorAll !== "function") return [];
+    const positions = [];
+    const elements = host.querySelectorAll("[data-testid]");
+    for (let i = 0; i < elements.length; i++) {
+      const element2 = elements[i];
+      const testid = element2.getAttribute("data-testid");
+      if (!testid) continue;
+      const scrollTop = element2.scrollTop || 0;
+      const scrollLeft = element2.scrollLeft || 0;
+      if (scrollTop === 0 && scrollLeft === 0) continue;
+      positions.push({ testid, scrollTop, scrollLeft });
+    }
+    return positions;
+  };
+  var restoreScrollPositions = (host) => (snapshot) => () => {
+    if (!host || typeof host.querySelector !== "function" || !snapshot) return;
+    for (let i = 0; i < snapshot.length; i++) {
+      const entry = snapshot[i];
+      const match = host.querySelector(`[data-testid="${entry.testid}"]`);
+      if (!match) continue;
+      match.scrollTop = entry.scrollTop;
+      match.scrollLeft = entry.scrollLeft;
+    }
+  };
   var ensureStylesheetLinked = (defaultHref) => () => {
     if (typeof document === "undefined") return;
     const marker = "data-word-meter-stylesheet";
@@ -1611,7 +1636,7 @@
         return attachCheckboxChangeListener(node)(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Vdom (line 154, column 22 - line 156, column 78): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Vdom (line 173, column 22 - line 175, column 78): " + [v.constructor.name]);
     };
   };
   var applyAttribute = function(node) {
@@ -1635,7 +1660,7 @@
       };
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Vdom (line 137, column 1 - line 137, column 37): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Vdom (line 156, column 1 - line 156, column 37): " + [v.constructor.name]);
   };
   var appendRenderedChild = function(parent) {
     return function(child) {
@@ -1651,12 +1676,14 @@
         }
         ;
         if (hostMaybe instanceof Just) {
+          var scrollSnapshot = captureScrollPositions(hostMaybe.value0)();
           removeAllChildrenFromElement(hostMaybe.value0)();
           var child = renderNode(tree)();
-          return appendChildToElement(hostMaybe.value0)(child)();
+          appendChildToElement(hostMaybe.value0)(child)();
+          return restoreScrollPositions(hostMaybe.value0)(scrollSnapshot)();
         }
         ;
-        throw new Error("Failed pattern match at WordMeter.Vdom (line 130, column 3 - line 135, column 38): " + [hostMaybe.constructor.name]);
+        throw new Error("Failed pattern match at WordMeter.Vdom (line 147, column 3 - line 154, column 49): " + [hostMaybe.constructor.name]);
       };
     };
   };

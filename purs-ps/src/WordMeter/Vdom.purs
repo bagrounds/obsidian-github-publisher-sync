@@ -124,15 +124,34 @@ foreign import appendChildToElement :: Element -> Element -> Effect Unit
 foreign import removeAllChildrenFromElement :: Element -> Effect Unit
 foreign import ensureStylesheetLinked :: String -> Effect Unit
 
+-- | Opaque handle that carries the scroll offsets of every testid-bearing
+-- | descendant captured before a re-render. The contents are owned by the
+-- | JS shim; PureScript only needs to thread the value from capture to
+-- | restore.
+foreign import data ScrollSnapshot :: Type
+
+foreign import captureScrollPositions :: Element -> Effect ScrollSnapshot
+foreign import restoreScrollPositions :: Element -> ScrollSnapshot -> Effect Unit
+
+-- | Mount a freshly rendered tree under the given host element id while
+-- | preserving the scroll positions of any testid-bearing descendant. The
+-- | full removal + re-render strategy keeps the renderer trivial (no diff
+-- | algorithm) but would otherwise reset every native scrollbar — for
+-- | example, the diagnostics drawer and the event log timeline — on every
+-- | reducer dispatch. Capturing and restoring scroll offsets by testid
+-- | gives every current and future scrollable element automatic
+-- | preservation without forcing the view layer to opt elements in.
 mount :: String -> Node -> Effect Unit
 mount hostId tree = do
   hostMaybe <- findElementById Nothing Just hostId
   case hostMaybe of
     Nothing -> pure unit
     Just host -> do
+      scrollSnapshot <- captureScrollPositions host
       removeAllChildrenFromElement host
       child <- renderNode tree
       appendChildToElement host child
+      restoreScrollPositions host scrollSnapshot
 
 renderNode :: Node -> Effect Element
 renderNode (TextNode value) = createTextNodeInDocument value

@@ -231,6 +231,10 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
 
+## Vdom scroll preservation
+
+`WordMeter.Vdom.mount` rebuilds the host's subtree from scratch on every reducer dispatch (no diff algorithm — the renderer is a function from `Session` to `Node` followed by a full DOM replacement). On its own, that strategy would reset every native scrollbar — for example the diagnostics `<pre>` (`wm-diagnostics-content`, `max-height: 320px; overflow-y: auto`) and the event-log timeline (`wm-event-log`, `max-height: 220px; overflow-y: auto`) — every time the model changes (a Tick, a transcript, a wake-lock state update, …). The view layer never opts elements in: `mount` walks the existing tree for descendants carrying a `data-testid` attribute, captures any non-zero `(scrollTop, scrollLeft)` into an opaque `ScrollSnapshot` handle, clears the host, renders the new tree, then restores each entry by looking up the matching testid in the new tree. This reuses the same stable-identity convention that the e2e test contract already relies on and means every current and future scrollable element with a testid is preserved automatically. The same mechanism is what keeps the `<details>` drawer open across rerenders mirrored through `Session.diagnosticsDrawerOpen` complete: model-level state for things the reducer cares about (drawer open/closed), DOM-level preservation for things that are purely view ephemera (scroll position).
+
 ## Feature slices
 
 | Slice | Feature                                                                                                 | Status     |

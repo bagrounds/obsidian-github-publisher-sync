@@ -451,15 +451,8 @@
   var showIntImpl = function(n) {
     return n.toString();
   };
-  var showNumberImpl = function(n) {
-    var str = n.toString();
-    return isNaN(str + ".0") ? str : str + ".0";
-  };
 
   // output/Data.Show/index.js
-  var showNumber = {
-    show: showNumberImpl
-  };
   var showInt = {
     show: showIntImpl
   };
@@ -1464,6 +1457,20 @@
   var removeAllChildrenFromElement = (node) => () => {
     while (node.firstChild) node.removeChild(node.firstChild);
   };
+  var ensureStylesheetLinked = (defaultHref) => () => {
+    if (typeof document === "undefined") return;
+    const marker = "data-word-meter-stylesheet";
+    const filename = "word-meter.css";
+    const currentScript = document.currentScript;
+    const href = currentScript && currentScript.src ? currentScript.src.replace(/[^/]+$/, filename) : defaultHref;
+    if (document.querySelector && document.querySelector(`link[${marker}="${href}"]`)) return;
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    link.setAttribute(marker, href);
+    const parent = document.head || document.body;
+    if (parent && parent.appendChild) parent.appendChild(link);
+  };
 
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
@@ -1511,14 +1518,6 @@
   var text = /* @__PURE__ */ function() {
     return TextNode.create;
   }();
-  var style = function(property) {
-    return function(value) {
-      return {
-        property,
-        value
-      };
-    };
-  };
   var onClick = /* @__PURE__ */ function() {
     return ClickListener.create;
   }();
@@ -1595,6 +1594,7 @@
     };
   };
   var buttonType = /* @__PURE__ */ attribute("type");
+  var className = /* @__PURE__ */ attribute("class");
   var testId = /* @__PURE__ */ attribute("data-testid");
   var applyStyle = function(node) {
     return function(decl) {
@@ -1611,7 +1611,7 @@
         return attachCheckboxChangeListener(node)(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Vdom (line 148, column 22 - line 150, column 78): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Vdom (line 154, column 22 - line 156, column 78): " + [v.constructor.name]);
     };
   };
   var applyAttribute = function(node) {
@@ -1635,7 +1635,7 @@
       };
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Vdom (line 131, column 1 - line 131, column 37): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Vdom (line 137, column 1 - line 137, column 37): " + [v.constructor.name]);
   };
   var appendRenderedChild = function(parent) {
     return function(child) {
@@ -1656,7 +1656,7 @@
           return appendChildToElement(hostMaybe.value0)(child)();
         }
         ;
-        throw new Error("Failed pattern match at WordMeter.Vdom (line 124, column 3 - line 129, column 38): " + [hostMaybe.constructor.name]);
+        throw new Error("Failed pattern match at WordMeter.Vdom (line 130, column 3 - line 135, column 38): " + [hostMaybe.constructor.name]);
       };
     };
   };
@@ -5594,17 +5594,16 @@
   var append3 = /* @__PURE__ */ append(semigroupArray);
   var show5 = /* @__PURE__ */ show(showInt);
   var map12 = /* @__PURE__ */ map(functorArray);
-  var show12 = /* @__PURE__ */ show(showNumber);
   var statTileValue = function(valueTestId) {
     return function(valueText) {
-      return div_([testId(valueTestId)])([style("font-size")("20px"), style("font-weight")("600"), style("margin-top")("2px"), style("font-variant-numeric")("tabular-nums"), style("color")("#e6edf3")])([text(valueText)]);
+      return div_([testId(valueTestId), className("wm-metric-tile-value")])([])([text(valueText)]);
     };
   };
   var statTileSublabel = function(sublabel) {
-    return div_([])([style("font-size")("11px"), style("color")("#9aa5b1")])([text(sublabel)]);
+    return div_([className("wm-metric-tile-sublabel")])([])([text(sublabel)]);
   };
   var statTileLabel = function(label) {
-    return div_([])([style("font-size")("11px"), style("letter-spacing")("0.08em"), style("text-transform")("uppercase"), style("color")("#9aa5b1")])([text(label)]);
+    return div_([className("wm-metric-tile-label")])([])([text(label)]);
   };
   var startedLabel = function(session) {
     if (session.firstStartedAt instanceof Nothing) {
@@ -5615,7 +5614,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 266, column 24 - line 268, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 232, column 24 - line 234, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var renderStatus = function(session) {
     if (session.recognitionStatusOverride !== "") {
@@ -5630,10 +5629,10 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 99, column 1 - line 99, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 104, column 1 - line 104, column 34): " + [session.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
-    var base = [testId("wm-keep-awake"), attribute("type")("checkbox")];
+    var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
     var withChecked = function() {
       if (session.keepAwake) {
         return append3(base)([attribute("checked")("checked")]);
@@ -5648,32 +5647,54 @@
     return withChecked;
   };
   var eventLogEntryWords = function(wordCount) {
-    return span_([testId("wm-event-log-entry-words")])([style("font-variant-numeric")("tabular-nums"), style("color")("#e6edf3"), style("min-width")("56px"), style("text-align")("right")])([text(show5(wordCount) + " w")]);
+    return span_([testId("wm-event-log-entry-words"), className("wm-timeline-row-words")])([])([text(show5(wordCount) + " w")]);
   };
   var eventLogEntryStarted = function(startedAt) {
-    return span_([testId("wm-event-log-entry-started")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("72px")])([text(formatClockTime(startedAt))]);
+    return span_([testId("wm-event-log-entry-started"), className("wm-timeline-row-time")])([])([text(formatClockTime(startedAt))]);
   };
   var eventLogEntryRate = function(rate) {
-    return span_([testId("wm-event-log-entry-rate")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("64px"), style("text-align")("right")])([text(formatRate(rate) + " wpm")]);
+    return span_([testId("wm-event-log-entry-rate"), className("wm-timeline-row-rate")])([])([text(formatRate(rate) + " wpm")]);
   };
   var eventLogEntryDuration = function(durationMs) {
-    return span_([testId("wm-event-log-entry-duration")])([style("font-variant-numeric")("tabular-nums"), style("color")("#c9d1d9"), style("flex")("1"), style("text-align")("center")])([text(formatDurationMs(durationMs))]);
+    return span_([testId("wm-event-log-entry-duration"), className("wm-timeline-row-duration-centered")])([])([text(formatDurationMs(durationMs))]);
   };
   var diagnosticsText = function(session) {
     return formatDiagnostics(session.environment)(session.diagnostics);
   };
+  var captionFadeBucketCount = 5;
+  var captionFadeClass = function(nowInstant) {
+    return function(timestamp) {
+      var opacity = captionOpacity(nowInstant)(timestamp);
+      var fraction = 1 - opacity;
+      var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
+      var bucket = function() {
+        var $16 = rawBucket < 0;
+        if ($16) {
+          return 0;
+        }
+        ;
+        var $17 = rawBucket >= captionFadeBucketCount;
+        if ($17) {
+          return captionFadeBucketCount - 1 | 0;
+        }
+        ;
+        return rawBucket;
+      }();
+      return "wm-caption wm-caption-fade-" + show5(bucket);
+    };
+  };
   var buildVersion = /* @__PURE__ */ function() {
-    return span_([testId("wm-version")])([style("display")("block"), style("margin-top")("12px"), style("font-size")("11px"), style("color")("#7d8590")])([text("Word Meter (PureScript) v" + version)]);
+    return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
   }();
   var buildToggle = function(handlers) {
     return function(session) {
-      return button([testId("wm-toggle"), buttonType("button")])([style("margin-top")("12px"), style("padding")("10px 18px"), style("border")("0"), style("border-radius")("999px"), style("background")(function() {
+      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + function() {
         if (session.listening) {
-          return "#a85f5f";
+          return "wm-button-pill-stop";
         }
         ;
-        return "#1f6feb";
-      }()), style("color")("white"), style("cursor")("pointer"), style("font")("inherit")])([onClick(handlers.requestToggle)])([text(function() {
+        return "wm-button-pill-start";
+      }())])([])([onClick(handlers.requestToggle)])([text(function() {
         if (session.listening) {
           return "Stop counting";
         }
@@ -5682,15 +5703,15 @@
       }())]);
     };
   };
-  var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("letter-spacing")("0.08em"), /* @__PURE__ */ style("text-transform")("uppercase"), /* @__PURE__ */ style("color")("#7aa2f7")])([/* @__PURE__ */ text("PureScript build")]);
+  var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build"), /* @__PURE__ */ className("wm-build-badge")])([])([/* @__PURE__ */ text("PureScript build")]);
   var buildStatus = function(session) {
-    return div_([testId("wm-status")])([style("font-size")("13px"), style("color")("#9aa5b1"), style("margin")("6px 0 4px")])([text(renderStatus(session))]);
+    return div_([testId("wm-status"), className("wm-status")])([])([text(renderStatus(session))]);
   };
   var buildStatTile = function(valueTestId) {
     return function(label) {
       return function(valueText) {
         return function(maybeSublabel) {
-          return div_([])([style("background")("rgba(255,255,255,0.04)"), style("border-radius")("10px"), style("padding")("10px"), style("text-align")("center")])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
+          return div_([className("wm-metric-tile")])([])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
             if (maybeSublabel instanceof Just) {
               return [statTileSublabel(maybeSublabel.value0)];
             }
@@ -5699,43 +5720,40 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording.View (line 232, column 11 - line 234, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording.View (line 198, column 11 - line 200, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
     };
   };
+  var buildStartedTile = function(session) {
+    return div_([className("wm-metric-tile")])([])([statTileLabel("Started"), div_([testId("wm-started"), className("wm-metric-tile-value wm-metric-tile-value-started")])([])([text(startedLabel(session))])]);
+  };
   var buildStats = function(session) {
-    return div_([testId("wm-stats")])([style("display")("grid"), style("grid-template-columns")("repeat(auto-fit,minmax(120px,1fr))"), style("gap")("10px"), style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)")])([buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStatTile("wm-started")("Started")(startedLabel(session))(Nothing.value)]);
+    return div_([testId("wm-stats"), className("wm-metrics-grid")])([])([buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStartedTile(session)]);
   };
   var buildReset = function(handlers) {
-    return button([testId("wm-reset"), buttonType("button")])([style("margin-top")("8px"), style("margin-left")("8px"), style("padding")("8px 14px"), style("border-radius")("999px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("background")("transparent"), style("color")("#e6edf3"), style("cursor")("pointer"), style("font")("inherit"), style("font-size")("13px")])([onClick(handlers.requestReset)])([text("Reset")]);
+    return button([testId("wm-reset"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestReset)])([text("Reset")]);
   };
   var buildKeepAwake = function(handlers) {
     return function(session) {
-      return div_([])([style("display")("flex"), style("flex-wrap")("wrap"), style("align-items")("center"), style("justify-content")("center"), style("gap")("8px"), style("margin-top")("10px"), style("font-size")("13px"), style("color")("#9aa5b1")])([label_([testId("wm-keep-awake-label")])([style("display")("inline-flex"), style("align-items")("center"), style("cursor")(function() {
+      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + function() {
         if (session.listening) {
-          return "default";
+          return " wm-keep-awake-label-disabled";
         }
         ;
-        return "pointer";
-      }()), style("opacity")(function() {
-        if (session.listening) {
-          return "0.7";
-        }
-        ;
-        return "1.0";
-      }())])([input(keepAwakeAttributes(session))([style("margin-right")("8px")])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([])([style("user-select")("none")])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status")])([style("font-size")("12px"), style("color")("#7d8590")])([text(renderWakeLockStatus(session.wakeLockState))])]);
+        return "";
+      }())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
     };
   };
-  var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
+  var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder"), /* @__PURE__ */ className("wm-timeline-empty")])([])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
   var buildEventLogEntry = function(interval) {
-    return div_([testId("wm-event-log-entry")])([style("display")("flex"), style("justify-content")("space-between"), style("align-items")("baseline"), style("gap")("8px"), style("padding")("6px 0"), style("border-top")("1px solid rgba(255,255,255,0.04)"), style("font-size")("13px")])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
+    return div_([testId("wm-event-log-entry"), className("wm-timeline-row")])([])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
   };
   var buildEventLog = function(session) {
-    return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $18 = length(session.eventLog) === 0;
-      if ($18) {
+    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
+      var $23 = length(session.eventLog) === 0;
+      if ($23) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -5743,34 +5761,34 @@
     }());
   };
   var buildErrorBanner = function(session) {
-    return div_([testId("wm-error"), attribute("role")("alert")])([style("margin-top")("12px"), style("font-size")("13px"), style("color")("#ff8b94"), style("text-align")("center"), style("min-height")("18px")])([text(session.errorBanner)]);
+    return div_([testId("wm-error"), className("wm-error"), attribute("role")("alert")])([])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      var drawerAttributes = append3([testId("wm-diagnostics")])(function() {
+      var drawerAttributes = append3([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])(function() {
         if (session.diagnosticsDrawerOpen) {
           return [attribute("open")("")];
         }
         ;
         return [];
       }());
-      return details_(drawerAttributes)([style("margin-top")("16px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("font-size")("12px"), style("color")("#9aa5b1")])([summary_([testId("wm-diagnostics-toggle")])([style("cursor")("pointer"), style("user-select")("none"), style("padding")("4px 0")])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([])([style("display")("flex"), style("align-items")("center"), style("gap")("8px"), style("margin")("8px 0 0 0")])([button([testId("wm-diagnostics-copy"), buttonType("button")])([style("padding")("8px 12px"), style("border-radius")("999px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("background")("transparent"), style("color")("#e6edf3"), style("cursor")("pointer"), style("font")("inherit")])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status")])([style("color")("#9aa5b1"), style("font-size")("11.5px")])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content")])([style("margin")("8px 0 0 0"), style("padding")("10px 12px"), style("background")("rgba(255,255,255,0.04)"), style("border")("1px solid rgba(255,255,255,0.08)"), style("border-radius")("8px"), style("font-family")("ui-monospace,SFMono-Regular,Menlo,monospace"), style("font-size")("11.5px"), style("line-height")("1.45"), style("color")("#c9d1d9"), style("white-space")("pre-wrap"), style("word-break")("break-word"), style("max-height")("320px"), style("overflow-y")("auto")])([text(diagnosticsText(session))])]);
+      return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
-  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label")])([/* @__PURE__ */ style("font-size")("14px"), /* @__PURE__ */ style("color")("#9aa5b1")])([/* @__PURE__ */ text("words counted")]);
+  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label"), /* @__PURE__ */ className("wm-count-label")])([])([/* @__PURE__ */ text("words counted")]);
   var buildCount = function(session) {
-    return div_([testId("wm-count")])([style("font-size")("48px"), style("font-variant-numeric")("tabular-nums"), style("margin")("4px 0")])([text(show5(session.totalWords))]);
+    return div_([testId("wm-count"), className("wm-count")])([])([text(show5(session.totalWords))]);
   };
-  var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("Waiting for speech\u2026")]);
+  var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder"), /* @__PURE__ */ className("wm-captions-placeholder")])([])([/* @__PURE__ */ text("Waiting for speech\u2026")]);
   var buildCaption = function(nowInstant) {
     return function(caption) {
-      return div_([testId("wm-caption")])([style("font-size")("13px"), style("color")("#c9d1d9"), style("line-height")("1.3"), style("opacity")(show12(captionOpacity(nowInstant)(caption.timestamp)))])([text(caption.transcript)]);
+      return div_([testId("wm-caption"), className(captionFadeClass(nowInstant)(caption.timestamp))])([])([text(caption.transcript)]);
     };
   };
   var buildCaptions = function(session) {
-    return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $20 = length(session.captions) === 0;
-      if ($20) {
+    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
+      var $25 = length(session.captions) === 0;
+      if ($25) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -5779,7 +5797,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root"), className("wm-panel")])([])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 
@@ -5999,6 +6017,7 @@
   var show6 = /* @__PURE__ */ show(showInt);
   var pure7 = /* @__PURE__ */ pure(applicativeEffect);
   var currentTimeMillis3 = /* @__PURE__ */ currentTimeMillis2(clockAppM);
+  var stylesheetHref = "/static/word-meter.css";
   var shouldPersistSession = function(v) {
     if (v instanceof Toggle) {
       return true;
@@ -6072,7 +6091,7 @@
       return false;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Main (line 204, column 1 - line 204, column 42): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Main (line 209, column 1 - line 209, column 42): " + [v.constructor.name]);
   };
   var recordWakeLockEvent = function(dictClock) {
     var bind13 = bind(dictClock.Monad0().Bind1());
@@ -6160,7 +6179,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 233, column 3 - line 235, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 238, column 3 - line 240, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -6195,14 +6214,14 @@
                   return recordStorageFailure2("persist clear")(outcome.value0);
                 }
                 ;
-                throw new Error("Failed pattern match at WordMeter.Main (line 195, column 9 - line 197, column 85): " + [outcome.constructor.name]);
+                throw new Error("Failed pattern match at WordMeter.Main (line 200, column 9 - line 202, column 85): " + [outcome.constructor.name]);
               });
             }
             ;
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 183, column 1 - line 189, column 12): " + [action.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Main (line 188, column 1 - line 194, column 12): " + [action.constructor.name]);
         };
       };
     };
@@ -6282,7 +6301,7 @@
                         return recordLoadFailure2(restored.value0);
                       }
                       ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 160, column 3 - line 163, column 54): " + [restored.constructor.name]);
+                      throw new Error("Failed pattern match at WordMeter.Main (line 165, column 3 - line 168, column 54): " + [restored.constructor.name]);
                     }())(function() {
                       return bind13(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
@@ -6651,7 +6670,7 @@
                       return pure1(unit);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 353, column 3 - line 356, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 358, column 3 - line 361, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
                   });
                 });
               };
@@ -6740,7 +6759,7 @@
                       return recordConfirmFailure2(outcome.value0);
                     }
                     ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 331, column 3 - line 338, column 63): " + [outcome.constructor.name]);
+                    throw new Error("Failed pattern match at WordMeter.Main (line 336, column 3 - line 343, column 63): " + [outcome.constructor.name]);
                   });
                 };
               };
@@ -6955,7 +6974,7 @@
                           });
                         }
                         ;
-                        throw new Error("Failed pattern match at WordMeter.Main (line 657, column 8 - line 669, column 64): " + [outcome.constructor.name]);
+                        throw new Error("Failed pattern match at WordMeter.Main (line 662, column 8 - line 674, column 64): " + [outcome.constructor.name]);
                       });
                     });
                   };
@@ -7180,6 +7199,7 @@
   };
   var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM);
   var main = function __do() {
+    ensureStylesheetLinked(stylesheetHref)();
     var sessionRef = $$new(initialSession)();
     var wakeLockSentinelRef = $$new(Nothing.value)();
     var recognitionInstanceRef = $$new(Nothing.value)();

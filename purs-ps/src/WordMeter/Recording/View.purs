@@ -7,6 +7,7 @@ import Prelude
 
 import Data.DateTime.Instant (Instant)
 import Data.Array (length) as Array
+import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import WordMeter.Clock (formatClockTime)
 import WordMeter.Diagnostics (formatDiagnostics)
@@ -34,6 +35,7 @@ import WordMeter.Vdom
   , attribute
   , button
   , buttonType
+  , className
   , details_
   , div_
   , input
@@ -42,23 +44,35 @@ import WordMeter.Vdom
   , onClick
   , pre_
   , span_
-  , style
   , summary_
   , testId
   , text
   )
 
+-- | Per-caption fade is bucketed into discrete classes so the application
+-- | only ever applies a class — never sets a style. The buckets approximate
+-- | the continuous fade computed by `captionOpacity`.
+captionFadeBucketCount :: Int
+captionFadeBucketCount = 5
+
+captionFadeClass :: Instant -> Instant -> String
+captionFadeClass nowInstant timestamp =
+  let
+    opacity = captionOpacity nowInstant timestamp
+    fraction = 1.0 - opacity
+    rawBucket = Int.floor (fraction * Int.toNumber captionFadeBucketCount)
+    bucket =
+      if rawBucket < 0 then 0
+      else if rawBucket >= captionFadeBucketCount then captionFadeBucketCount - 1
+      else rawBucket
+  in
+    "wm-caption wm-caption-fade-" <> show bucket
+
 view :: Handlers -> Session -> Node
 view handlers session =
   div_
-    [ testId "wm-root" ]
-    [ style "font-family" "system-ui, -apple-system, sans-serif"
-    , style "padding" "16px"
-    , style "border-radius" "12px"
-    , style "background" "#0b1220"
-    , style "color" "#e6edf3"
-    , style "max-width" "420px"
-    ]
+    [ testId "wm-root", className "wm-panel" ]
+    []
     [ buildTag
     , buildStatus session
     , buildCount session
@@ -79,21 +93,12 @@ diagnosticsText session = formatDiagnostics session.environment session.diagnost
 
 buildTag :: Node
 buildTag =
-  div_ [ testId "wm-build" ]
-    [ style "font-size" "12px"
-    , style "letter-spacing" "0.08em"
-    , style "text-transform" "uppercase"
-    , style "color" "#7aa2f7"
-    ]
+  div_ [ testId "wm-build", className "wm-build-badge" ] []
     [ text "PureScript build" ]
 
 buildStatus :: Session -> Node
 buildStatus session =
-  div_ [ testId "wm-status" ]
-    [ style "font-size" "13px"
-    , style "color" "#9aa5b1"
-    , style "margin" "6px 0 4px"
-    ]
+  div_ [ testId "wm-status", className "wm-status" ] []
     [ text (renderStatus session) ]
 
 renderStatus :: Session -> String
@@ -104,86 +109,58 @@ renderStatus session
 
 buildCount :: Session -> Node
 buildCount session =
-  div_ [ testId "wm-count" ]
-    [ style "font-size" "48px"
-    , style "font-variant-numeric" "tabular-nums"
-    , style "margin" "4px 0"
-    ]
+  div_ [ testId "wm-count", className "wm-count" ] []
     [ text (show session.totalWords) ]
 
 buildCountLabel :: Node
 buildCountLabel =
-  div_ [ testId "wm-count-label" ]
-    [ style "font-size" "14px"
-    , style "color" "#9aa5b1"
-    ]
+  div_ [ testId "wm-count-label", className "wm-count-label" ] []
     [ text "words counted" ]
 
 buildToggle :: Handlers -> Session -> Node
 buildToggle handlers session =
   button
-    [ testId "wm-toggle", buttonType "button" ]
-    [ style "margin-top" "12px"
-    , style "padding" "10px 18px"
-    , style "border" "0"
-    , style "border-radius" "999px"
-    , style "background" (if session.listening then "#a85f5f" else "#1f6feb")
-    , style "color" "white"
-    , style "cursor" "pointer"
-    , style "font" "inherit"
+    [ testId "wm-toggle"
+    , buttonType "button"
+    , className
+        ( "wm-button-pill "
+            <> (if session.listening then "wm-button-pill-stop" else "wm-button-pill-start")
+        )
     ]
+    []
     [ onClick handlers.requestToggle ]
     [ text (if session.listening then "Stop counting" else "Start counting") ]
 
 buildReset :: Handlers -> Node
 buildReset handlers =
   button
-    [ testId "wm-reset", buttonType "button" ]
-    [ style "margin-top" "8px"
-    , style "margin-left" "8px"
-    , style "padding" "8px 14px"
-    , style "border-radius" "999px"
-    , style "border" "1px solid rgba(255,255,255,0.18)"
-    , style "background" "transparent"
-    , style "color" "#e6edf3"
-    , style "cursor" "pointer"
-    , style "font" "inherit"
-    , style "font-size" "13px"
+    [ testId "wm-reset"
+    , buttonType "button"
+    , className "wm-button-pill-secondary"
     ]
+    []
     [ onClick handlers.requestReset ]
     [ text "Reset" ]
 
 buildKeepAwake :: Handlers -> Session -> Node
 buildKeepAwake handlers session =
-  div_ []
-    [ style "display" "flex"
-    , style "flex-wrap" "wrap"
-    , style "align-items" "center"
-    , style "justify-content" "center"
-    , style "gap" "8px"
-    , style "margin-top" "10px"
-    , style "font-size" "13px"
-    , style "color" "#9aa5b1"
-    ]
+  div_ [ className "wm-keep-awake-row" ] []
     [ label_
-        [ testId "wm-keep-awake-label" ]
-        [ style "display" "inline-flex"
-        , style "align-items" "center"
-        , style "cursor" (if session.listening then "default" else "pointer")
-        , style "opacity" (if session.listening then "0.7" else "1.0")
+        [ testId "wm-keep-awake-label"
+        , className
+            ( "wm-keep-awake-label"
+                <> (if session.listening then " wm-keep-awake-label-disabled" else "")
+            )
         ]
+        []
         [ input
             (keepAwakeAttributes session)
-            [ style "margin-right" "8px" ]
+            []
             [ onCheckboxChange handlers.requestSetKeepAwake ]
-        , span_ []
-            [ style "user-select" "none" ]
+        , span_ [ className "wm-keep-awake-caption" ] []
             [ text "🔋 Keep counting with screen on (recommended)" ]
         ]
-    , span_ [ testId "wm-keep-awake-status" ]
-        [ style "font-size" "12px"
-        , style "color" "#7d8590"
-        ]
+    , span_ [ testId "wm-keep-awake-status", className "wm-keep-awake-status" ] []
         [ text (renderWakeLockStatus session.wakeLockState) ]
     ]
 
@@ -192,6 +169,7 @@ keepAwakeAttributes session =
   let
     base =
       [ testId "wm-keep-awake"
+      , className "wm-keep-awake-checkbox"
       , attribute "type" "checkbox"
       ]
     withChecked =
@@ -204,62 +182,50 @@ keepAwakeAttributes session =
 
 buildStats :: Session -> Node
 buildStats session =
-  div_ [ testId "wm-stats" ]
-    [ style "display" "grid"
-    , style "grid-template-columns" "repeat(auto-fit,minmax(120px,1fr))"
-    , style "gap" "10px"
-    , style "margin-top" "14px"
-    , style "padding-top" "10px"
-    , style "border-top" "1px solid rgba(255,255,255,0.08)"
-    ]
+  div_ [ testId "wm-stats", className "wm-metrics-grid" ] []
     [ buildStatTile "wm-rate-short" "Last 1 min" (formatRate (shortRate session)) (Just "words / minute")
     , buildStatTile "wm-rate-long" "Last 10 min" (formatRate (longRate session)) (Just "words / minute")
     , buildStatTile "wm-rate-overall" "Overall" (formatRate (overallRate session)) (Just "words / minute")
     , buildStatTile "wm-duration" "Duration" (formatDurationMs (activeListeningMs session)) (Just "listening time")
-    , buildStatTile "wm-started" "Started" (startedLabel session) Nothing
+    , buildStartedTile session
     ]
 
 buildStatTile :: String -> String -> String -> Maybe String -> Node
 buildStatTile valueTestId label valueText maybeSublabel =
-  div_ []
-    [ style "background" "rgba(255,255,255,0.04)"
-    , style "border-radius" "10px"
-    , style "padding" "10px"
-    , style "text-align" "center"
-    ]
+  div_ [ className "wm-metric-tile" ] []
     ([ statTileLabel label
      , statTileValue valueTestId valueText
      ] <> case maybeSublabel of
         Just sublabel -> [ statTileSublabel sublabel ]
         Nothing -> [])
 
+-- The Started tile uses a smaller, lighter value than the other tiles;
+-- give it the "started" variant class so the look matches the JS build.
+buildStartedTile :: Session -> Node
+buildStartedTile session =
+  div_ [ className "wm-metric-tile" ] []
+    [ statTileLabel "Started"
+    , div_
+        [ testId "wm-started"
+        , className "wm-metric-tile-value wm-metric-tile-value-started"
+        ]
+        []
+        [ text (startedLabel session) ]
+    ]
+
 statTileLabel :: String -> Node
 statTileLabel label =
-  div_ []
-    [ style "font-size" "11px"
-    , style "letter-spacing" "0.08em"
-    , style "text-transform" "uppercase"
-    , style "color" "#9aa5b1"
-    ]
+  div_ [ className "wm-metric-tile-label" ] []
     [ text label ]
 
 statTileValue :: String -> String -> Node
 statTileValue valueTestId valueText =
-  div_ [ testId valueTestId ]
-    [ style "font-size" "20px"
-    , style "font-weight" "600"
-    , style "margin-top" "2px"
-    , style "font-variant-numeric" "tabular-nums"
-    , style "color" "#e6edf3"
-    ]
+  div_ [ testId valueTestId, className "wm-metric-tile-value" ] []
     [ text valueText ]
 
 statTileSublabel :: String -> Node
 statTileSublabel sublabel =
-  div_ []
-    [ style "font-size" "11px"
-    , style "color" "#9aa5b1"
-    ]
+  div_ [ className "wm-metric-tile-sublabel" ] []
     [ text sublabel ]
 
 startedLabel :: Session -> String
@@ -269,74 +235,36 @@ startedLabel session = case session.firstStartedAt of
 
 buildCaptions :: Session -> Node
 buildCaptions session =
-  div_ [ testId "wm-captions" ]
-    [ style "margin-top" "14px"
-    , style "padding-top" "10px"
-    , style "border-top" "1px solid rgba(255,255,255,0.08)"
-    , style "display" "flex"
-    , style "flex-direction" "column"
-    , style "gap" "4px"
-    , style "min-height" "20px"
-    ]
+  div_ [ testId "wm-captions", className "wm-section wm-captions-panel" ] []
     (if Array.length session.captions == 0
       then [ buildCaptionsPlaceholder ]
       else map (buildCaption session.now) session.captions)
 
 buildCaptionsPlaceholder :: Node
 buildCaptionsPlaceholder =
-  div_ [ testId "wm-captions-placeholder" ]
-    [ style "font-size" "12px"
-    , style "color" "#7d8590"
-    , style "font-style" "italic"
-    ]
+  div_ [ testId "wm-captions-placeholder", className "wm-captions-placeholder" ] []
     [ text "Waiting for speech…" ]
 
 buildCaption :: Instant -> Caption -> Node
 buildCaption nowInstant caption =
-  div_ [ testId "wm-caption" ]
-    [ style "font-size" "13px"
-    , style "color" "#c9d1d9"
-    , style "line-height" "1.3"
-    , style "opacity" (show (captionOpacity nowInstant caption.timestamp))
-    ]
+  div_ [ testId "wm-caption", className (captionFadeClass nowInstant caption.timestamp) ] []
     [ text caption.transcript ]
 
 buildEventLog :: Session -> Node
 buildEventLog session =
-  div_ [ testId "wm-event-log" ]
-    [ style "margin-top" "14px"
-    , style "padding-top" "10px"
-    , style "border-top" "1px solid rgba(255,255,255,0.08)"
-    , style "display" "flex"
-    , style "flex-direction" "column"
-    , style "gap" "4px"
-    , style "max-height" "220px"
-    , style "overflow-y" "auto"
-    ]
+  div_ [ testId "wm-event-log", className "wm-section wm-timeline" ] []
     (if Array.length session.eventLog == 0
       then [ buildEventLogPlaceholder ]
       else map buildEventLogEntry session.eventLog)
 
 buildEventLogPlaceholder :: Node
 buildEventLogPlaceholder =
-  div_ [ testId "wm-event-log-placeholder" ]
-    [ style "font-size" "12px"
-    , style "color" "#7d8590"
-    , style "font-style" "italic"
-    ]
+  div_ [ testId "wm-event-log-placeholder", className "wm-timeline-empty" ] []
     [ text "(no counting sessions yet — press Start counting to begin)" ]
 
 buildEventLogEntry :: LoggedInterval -> Node
 buildEventLogEntry interval =
-  div_ [ testId "wm-event-log-entry" ]
-    [ style "display" "flex"
-    , style "justify-content" "space-between"
-    , style "align-items" "baseline"
-    , style "gap" "8px"
-    , style "padding" "6px 0"
-    , style "border-top" "1px solid rgba(255,255,255,0.04)"
-    , style "font-size" "13px"
-    ]
+  div_ [ testId "wm-event-log-entry", className "wm-timeline-row" ] []
     [ eventLogEntryStarted interval.startedAt
     , eventLogEntryDuration (intervalDurationMs interval)
     , eventLogEntryWords interval.wordCount
@@ -345,126 +273,63 @@ buildEventLogEntry interval =
 
 eventLogEntryStarted :: Instant -> Node
 eventLogEntryStarted startedAt =
-  span_ [ testId "wm-event-log-entry-started" ]
-    [ style "font-variant-numeric" "tabular-nums"
-    , style "color" "#9aa5b1"
-    , style "min-width" "72px"
-    ]
+  span_ [ testId "wm-event-log-entry-started", className "wm-timeline-row-time" ] []
     [ text (formatClockTime startedAt) ]
 
 eventLogEntryDuration :: Number -> Node
 eventLogEntryDuration durationMs =
-  span_ [ testId "wm-event-log-entry-duration" ]
-    [ style "font-variant-numeric" "tabular-nums"
-    , style "color" "#c9d1d9"
-    , style "flex" "1"
-    , style "text-align" "center"
-    ]
+  span_ [ testId "wm-event-log-entry-duration", className "wm-timeline-row-duration-centered" ] []
     [ text (formatDurationMs durationMs) ]
 
 eventLogEntryWords :: Int -> Node
 eventLogEntryWords wordCount =
-  span_ [ testId "wm-event-log-entry-words" ]
-    [ style "font-variant-numeric" "tabular-nums"
-    , style "color" "#e6edf3"
-    , style "min-width" "56px"
-    , style "text-align" "right"
-    ]
+  span_ [ testId "wm-event-log-entry-words", className "wm-timeline-row-words" ] []
     [ text (show wordCount <> " w") ]
 
 eventLogEntryRate :: Number -> Node
 eventLogEntryRate rate =
-  span_ [ testId "wm-event-log-entry-rate" ]
-    [ style "font-variant-numeric" "tabular-nums"
-    , style "color" "#9aa5b1"
-    , style "min-width" "64px"
-    , style "text-align" "right"
-    ]
+  span_ [ testId "wm-event-log-entry-rate", className "wm-timeline-row-rate" ] []
     [ text (formatRate rate <> " wpm") ]
 
 buildVersion :: Node
 buildVersion =
-  span_ [ testId "wm-version" ]
-    [ style "display" "block"
-    , style "margin-top" "12px"
-    , style "font-size" "11px"
-    , style "color" "#7d8590"
-    ]
+  span_ [ testId "wm-version", className "wm-version" ] []
     [ text ("Word Meter (PureScript) v" <> version) ]
 
 buildErrorBanner :: Session -> Node
 buildErrorBanner session =
   div_
     [ testId "wm-error"
+    , className "wm-error"
     , attribute "role" "alert"
     ]
-    [ style "margin-top" "12px"
-    , style "font-size" "13px"
-    , style "color" "#ff8b94"
-    , style "text-align" "center"
-    , style "min-height" "18px"
-    ]
+    []
     [ text session.errorBanner ]
 
 buildDiagnostics :: Handlers -> Session -> Node
 buildDiagnostics handlers session =
-  details_ drawerAttributes
-    [ style "margin-top" "16px"
-    , style "padding-top" "10px"
-    , style "border-top" "1px solid rgba(255,255,255,0.08)"
-    , style "font-size" "12px"
-    , style "color" "#9aa5b1"
-    ]
-    [ summary_ [ testId "wm-diagnostics-toggle" ]
-        [ style "cursor" "pointer"
-        , style "user-select" "none"
-        , style "padding" "4px 0"
-        ]
+  details_ drawerAttributes []
+    [ summary_ [ testId "wm-diagnostics-toggle", className "wm-diagnostics-summary" ] []
         [ onClick handlers.requestToggleDiagnosticsDrawer ]
         [ text "🔧 Diagnostics" ]
-    , div_ []
-        [ style "display" "flex"
-        , style "align-items" "center"
-        , style "gap" "8px"
-        , style "margin" "8px 0 0 0"
-        ]
+    , div_ [ className "wm-diagnostics-actions" ] []
         [ button
-            [ testId "wm-diagnostics-copy", buttonType "button" ]
-            [ style "padding" "8px 12px"
-            , style "border-radius" "999px"
-            , style "border" "1px solid rgba(255,255,255,0.18)"
-            , style "background" "transparent"
-            , style "color" "#e6edf3"
-            , style "cursor" "pointer"
-            , style "font" "inherit"
+            [ testId "wm-diagnostics-copy"
+            , buttonType "button"
+            , className "wm-diagnostics-copy-button"
             ]
+            []
             [ onClick handlers.requestCopyDiagnostics ]
             [ text "📋 Copy diagnostics" ]
-        , span_ [ testId "wm-diagnostics-copy-status" ]
-            [ style "color" "#9aa5b1"
-            , style "font-size" "11.5px"
-            ]
+        , span_ [ testId "wm-diagnostics-copy-status", className "wm-diagnostics-copy-status" ] []
             [ text session.copyStatus ]
         ]
     , pre_
-        [ testId "wm-diagnostics-content" ]
-        [ style "margin" "8px 0 0 0"
-        , style "padding" "10px 12px"
-        , style "background" "rgba(255,255,255,0.04)"
-        , style "border" "1px solid rgba(255,255,255,0.08)"
-        , style "border-radius" "8px"
-        , style "font-family" "ui-monospace,SFMono-Regular,Menlo,monospace"
-        , style "font-size" "11.5px"
-        , style "line-height" "1.45"
-        , style "color" "#c9d1d9"
-        , style "white-space" "pre-wrap"
-        , style "word-break" "break-word"
-        , style "max-height" "320px"
-        , style "overflow-y" "auto"
-        ]
+        [ testId "wm-diagnostics-content", className "wm-diagnostics-content" ]
+        []
         [ text (diagnosticsText session) ]
     ]
   where
   drawerAttributes =
-    [ testId "wm-diagnostics" ]
+    [ testId "wm-diagnostics", className "wm-diagnostics-drawer" ]
       <> if session.diagnosticsDrawerOpen then [ attribute "open" "" ] else []

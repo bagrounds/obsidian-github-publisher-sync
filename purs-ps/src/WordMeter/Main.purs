@@ -37,6 +37,11 @@ import WordMeter.Capability.Storage
   , persistSnapshot
   , renderLoadError
   )
+import WordMeter.Capability.Ticker
+  ( class Ticker
+  , startTickerInterval
+  , stopTickerInterval
+  )
 import WordMeter.Capability.WakeLock
   ( class WakeLock
   , releaseScreenWakeLock
@@ -94,6 +99,7 @@ main = do
   wakeLockSentinelRef <- Ref.new Nothing
   recognitionInstanceRef <- Ref.new Nothing
   restartTimerRef <- Ref.new Nothing
+  tickIntervalHandleRef <- Ref.new Nothing
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
@@ -108,6 +114,7 @@ main = do
       , wakeLockSentinelRef
       , recognitionInstanceRef
       , restartTimerRef
+      , tickIntervalHandleRef
       }
 
     readHandlers :: Effect Handlers
@@ -167,6 +174,12 @@ startApplication handlers = do
     Right (Just persisted) -> updateSession (LoadSession persisted)
     Left loadFailure -> recordLoadFailure loadFailure
   initTimestamp <- currentTimeMillis
+  -- After restoring persisted state, immediately advance `now` to the
+  -- real wall-clock timestamp. Without this, `now` stays at the epoch
+  -- and `wallSpanMs`/`activeListeningMs` would clamp to ~0 ms,
+  -- producing astronomically inflated rates until the next user-driven
+  -- dispatch or live tick.
+  updateSession (Tick initTimestamp)
   updateSession
     (RecordDiagnostic initTimestamp "init" ("version=" <> version))
   rerender handlers
@@ -221,7 +234,7 @@ shouldPersistSession (SetWakeLockState _) = false
 shouldPersistSession (HandleRecognitionError _ _ _) = false
 shouldPersistSession ClearErrorBanner = false
 shouldPersistSession (SetRecognitionStatusOverride _) = false
-shouldPersistSession (SetCloudFallbackAttempted _) = false
+shouldPersistSession (SetCloudFallbackAttempted _) = true
 shouldPersistSession (SetActiveRecognitionPath _) = false
 shouldPersistSession (SetDiagnosticsDrawerOpen _) = false
 shouldPersistSession (LoadSession _) = false
@@ -286,6 +299,7 @@ handleToggle
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> m Unit
 handleToggle handlers = do
@@ -295,12 +309,31 @@ handleToggle handlers = do
   session <- readCurrentSession
   if session.listening then do
     maybeAcquireWakeLock handlers
+    startTickerInterval (handleTick handlers)
     if wasListening then pure unit
     else startRecognitionForSession handlers
   else do
+    stopTickerInterval
     releaseHeldWakeLock handlers
     if not wasListening then pure unit
     else stopRecognitionForSession handlers
+
+-- | Single tick of the live driver: re-dispatch a `Tick` action with
+-- | the wall-clock now so rates/captions/trailing windows reflect
+-- | reality, and re-render the host. Mirrors the legacy
+-- | `handleTick` callback that `word-meter.js` runs every 200 ms while
+-- | listening.
+handleTick
+  :: forall m
+   . Clock m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> m Unit
+handleTick handlers = do
+  timestamp <- currentTimeMillis
+  dispatch handlers (Tick timestamp)
 
 handleCopyDiagnostics
   :: forall m
@@ -329,12 +362,14 @@ handleReset
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> m Unit
 handleReset handlers = do
   outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
   case outcome of
     Right true -> do
+      stopTickerInterval
       stopRecognitionForSession handlers
       releaseHeldWakeLock handlers
       timestamp <- currentTimeMillis
@@ -395,6 +430,7 @@ handleRecognitionError
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> String
   -> String
@@ -418,9 +454,11 @@ handleRecognitionError handlers code message = do
     dispatch handlers (HandleRecognitionError timestamp code message)
     -- If the error caused us to stop listening (today: the permission-denied
     -- branch), tear down recognition and let go of any wake lock so the UI
-    -- does not look like it is still holding the screen.
+    -- does not look like it is still holding the screen. Also cancel the
+    -- live tick driver so we stop re-rendering once we are idle.
     stillListening <- _.listening <$> readCurrentSession
     if wasListening && not stillListening then do
+      stopTickerInterval
       stopRecognitionForSession handlers
       releaseHeldWakeLock handlers
     else pure unit
@@ -441,6 +479,7 @@ swapOnDeviceForCloud
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> String
   -> String
@@ -592,6 +631,7 @@ startRecognitionForSession
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> m Unit
 startRecognitionForSession handlers = do
@@ -601,19 +641,37 @@ startRecognitionForSession handlers = do
       "no SpeechRecognition constructor"
   else do
     locale <- sessionLocale
-    onDeviceApi <- onDeviceLanguagePackApiAvailable
-    if not onDeviceApi then do
+    -- Issue #N: only attempt the on-device pre-flight once per
+    -- "session" (i.e. until the next user-driven Reset). Once we have
+    -- settled on the cloud path — whether because the static API is
+    -- absent, the pre-flight returned `Left`, or a runtime
+    -- LanguageNotSupported swap fired — every subsequent
+    -- start/auto-restart skips the pre-flight and goes straight to the
+    -- cloud recognizer. Without this gate the on-device path is
+    -- retried on every onend auto-restart even though we already know
+    -- it is not viable on this device.
+    session <- readCurrentSession
+    if session.cloudFallbackAttempted then do
       recordRecognitionEvent
-        "on-device API absent — falling back to cloud"
+        "skipping on-device pre-flight — cloud already selected"
         ("locale=" <> renderLocale locale)
       dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
       startRecognition (recognitionHandlersFor handlers locale)
-    else
-      prepareOnDeviceLanguagePack
-        { locale
-        , onProgress: onOnDeviceInstallStarted handlers locale
-        }
-        (onOnDevicePreflightResolved handlers locale)
+    else do
+      onDeviceApi <- onDeviceLanguagePackApiAvailable
+      if not onDeviceApi then do
+        recordRecognitionEvent
+          "on-device API absent — falling back to cloud"
+          ("locale=" <> renderLocale locale)
+        dispatch handlers (SetCloudFallbackAttempted true)
+        dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
+        startRecognition (recognitionHandlersFor handlers locale)
+      else
+        prepareOnDeviceLanguagePack
+          { locale
+          , onProgress: onOnDeviceInstallStarted handlers locale
+          }
+          (onOnDevicePreflightResolved handlers locale)
 
 onOnDeviceInstallStarted
   :: forall m
@@ -645,6 +703,7 @@ onOnDevicePreflightResolved
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> Locale
   -> Either OnDeviceUnavailable OnDeviceAvailable
@@ -670,6 +729,7 @@ onOnDevicePreflightResolved handlers locale outcome = do
       recordRecognitionEvent
         "on-device pre-flight non-viable — falling back to cloud"
         (renderOnDeviceUnavailable reason)
+      dispatch handlers (SetCloudFallbackAttempted true)
       dispatch handlers (SetActiveRecognitionPath (Just CloudPath))
       startRecognition (recognitionHandlersFor handlers locale)
 
@@ -697,6 +757,7 @@ recognitionHandlersFor
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> Locale
   -> RecognitionHandlers m
@@ -720,6 +781,7 @@ handleRecognitionEnded
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> m Unit
 handleRecognitionEnded handlers = do
@@ -745,6 +807,7 @@ fireScheduledRestart
   => Storage m
   => WakeLock m
   => Recognition m
+  => Ticker m
   => Handlers
   -> m Unit
 fireScheduledRestart handlers = do

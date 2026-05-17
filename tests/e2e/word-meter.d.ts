@@ -34,6 +34,7 @@ declare global {
       simulateVisibilityVisible: () => void
       simulateRecognitionError: (code: string, message?: string) => void
       getErrorBanner: () => string
+      setCloudFallbackAttempted: (attempted: boolean) => void
     }
   }
 }

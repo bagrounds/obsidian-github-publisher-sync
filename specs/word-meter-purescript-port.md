@@ -160,9 +160,17 @@ The on-device pre-flight cannot catch every browser bug — some Chromium builds
 
 - A new `Session.cloudFallbackAttempted :: Boolean` field guards the retry so a misbehaving browser cannot enter an infinite reconfiguration loop.
 - `HandleRecognitionError` keeps its existing classification (it already handles `LanguageNotSupported` through the banner path in slice 8). Slice 9c adds a `Main.handleRecognitionError` branch: when the code classifies as `LanguageNotSupported`, the session is currently listening, the active recognition path is on-device, and `cloudFallbackAttempted` is `false`, the orchestrator stops the current recognition, sets the flag, and starts a fresh cloud-path recognition — all without the user seeing an error banner. Every step is diagnostic-logged (`language-not-supported at runtime — falling back to cloud`).
-- The legacy build resets `cloudFallbackAttempted` on every Toggle-to-start; the PureScript port does the same through the `Toggle` reducer branch.
+- `cloudFallbackAttempted` is also set whenever `startRecognitionForSession` settles on the cloud path without ever attempting the on-device recognizer (static `onDeviceLanguagePackApiAvailable = false`, or the pre-flight returned `Left`). Once set, the flag survives Toggle-to-stop / Toggle-to-start and a page reload via `Persistence`; only `Reset` clears it. This is the "only attempt on-device once at start up, do not try again until stats reset" rule from the v0.1.1 issue — without it, every auto-restart of the recognizer (every couple of seconds in normal use) would re-run the pre-flight and re-log the diagnostic.
 
 When slice 9c lands, the port has full parity with the legacy build's recognition layer, and slice 10 (cutover) becomes safe to land.
+
+### v0.1.1 fixes — live tick, post-reload stats, one-shot on-device
+
+Three regressions reported against the PureScript build that ship in v0.1.1:
+
+- **Live tick driver.** The legacy `word-meter.js` runs `setInterval(handleTick, 200)` while listening so the rate tiles, duration, and trailing-window calculations refresh against the real wall clock even when no transcript callback has fired in a while. The port did not install this interval, so the rate tiles only updated on the next user-driven dispatch. v0.1.1 introduces a `WordMeter.Capability.Ticker` typeclass with `startTickerInterval` / `stopTickerInterval`, backed by `FFI.Timer.scheduleAtIntervals` / `cancelInterval` and an `IntervalHandle` ref in `ApplicationEnvironment`. `handleToggle` starts the interval on the listening edge and cancels it on the idle edge; `handleReset` and the permission-denied branch also cancel.
+- **Post-reload sanity.** `Session.completedActiveMs` and `Session.cloudFallbackAttempted` are now part of `PersistedData` and round-trip through `WordMeter.Persistence` (decoded with `.:?` so v1 payloads written before v0.1.1 still load, defaulting to `0.0` / `false`). After `LoadSession` runs in `startApplication`, the orchestrator immediately dispatches `Tick currentTimeMillis` so `Session.now` reflects the real wall clock rather than `epochInstant` (the Jan 1 1970 default). Without these two pieces, `overallRate` divided by a denominator of ~1 ms after a reload and the trailing-window rates blew up by similar factors.
+- **One-shot on-device pre-flight.** As described above for slice 9c, `cloudFallbackAttempted` is now set in every branch of `startRecognitionForSession` that lands on the cloud path, persisted across reloads, and consulted at the very top of `startRecognitionForSession` to skip the pre-flight outright once the decision has been made. The `Toggle` reducer no longer clears the flag.
 
 ## Test hook
 

@@ -88,6 +88,8 @@ type PersistedLoggedInterval =
 type PersistedData =
   { totalWords :: Int
   , firstStartedAt :: Maybe Number
+  , completedActiveMs :: Number
+  , cloudFallbackAttempted :: Boolean
   , wordEvents :: Array PersistedWordEvent
   , eventLog :: Array PersistedLoggedInterval
   }

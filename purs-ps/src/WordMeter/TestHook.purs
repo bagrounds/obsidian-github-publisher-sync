@@ -63,6 +63,7 @@ foreign import installTestHook
      , getCloudFallbackAttempted :: Effect Boolean
      , getActiveRecognitionPath :: Effect String
      , setActiveRecognitionPath :: String -> Effect Unit
+     , setCloudFallbackAttempted :: Boolean -> Effect Unit
      , getDiagnosticsDrawerOpen :: Effect Boolean
      , toggleDiagnosticsDrawer :: Effect Unit
      }
@@ -152,6 +153,8 @@ install
     , getActiveRecognitionPath: renderActivePath <$> readSession
     , setActiveRecognitionPath: \label ->
         dispatch (SetActiveRecognitionPath (parseActivePath label))
+    , setCloudFallbackAttempted: \attempted ->
+        dispatch (SetCloudFallbackAttempted attempted)
     , getDiagnosticsDrawerOpen: _.diagnosticsDrawerOpen <$> readSession
     , toggleDiagnosticsDrawer: requestToggleDiagnosticsDrawer
     }

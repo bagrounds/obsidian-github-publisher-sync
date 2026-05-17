@@ -10,9 +10,10 @@ module WordMeter.Persistence
 import Prelude
 
 import Data.Argonaut.Core (Json, jsonEmptyObject, stringify)
-import Data.Argonaut.Decode (JsonDecodeError, decodeJson, parseJson, printJsonDecodeError, (.:))
+import Data.Argonaut.Decode (JsonDecodeError, decodeJson, parseJson, printJsonDecodeError, (.:), (.:?))
 import Data.Argonaut.Encode (encodeJson, (:=), (~>))
 import Data.Either (Either(..))
+import Data.Maybe (fromMaybe)
 import WordMeter.Recording.Session (PersistedData)
 
 storageKey :: String
@@ -44,6 +45,8 @@ encodePersistedData persisted = stringify (encodeJson envelope)
     "version" := storageVersion
       ~> "totalWords" := persisted.totalWords
       ~> "firstStartedAt" := persisted.firstStartedAt
+      ~> "completedActiveMs" := persisted.completedActiveMs
+      ~> "cloudFallbackAttempted" := persisted.cloudFallbackAttempted
       ~> "wordEvents" := persisted.wordEvents
       ~> "eventLog" := persisted.eventLog
       ~> jsonEmptyObject
@@ -57,11 +60,18 @@ decodePersistedData payload = do
     (Left (UnsupportedVersion actualVersion))
   totalWords <- mapSchema (envelope .: "totalWords")
   firstStartedAt <- mapSchema (envelope .: "firstStartedAt")
+  -- `completedActiveMs` and `cloudFallbackAttempted` were added after
+  -- v1 shipped; decode them as optional so existing localStorage
+  -- payloads keep loading. New writes always include them.
+  completedActiveMs <- mapSchema (envelope .:? "completedActiveMs")
+  cloudFallbackAttempted <- mapSchema (envelope .:? "cloudFallbackAttempted")
   wordEvents <- mapSchema (envelope .: "wordEvents")
   eventLog <- mapSchema (envelope .: "eventLog")
   pure
     { totalWords
     , firstStartedAt
+    , completedActiveMs: fromMaybe 0.0 completedActiveMs
+    , cloudFallbackAttempted: fromMaybe false cloudFallbackAttempted
     , wordEvents
     , eventLog
     }

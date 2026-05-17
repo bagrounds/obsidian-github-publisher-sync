@@ -22,7 +22,7 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
     await loadWordMeter(page, "ps")
     await expect(page.getByTestId("wm-root")).toBeVisible()
     await expect(page.getByTestId("wm-build")).toHaveText(/purescript/i)
-    await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.1\.0/i)
+    await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.1\.1/i)
   })
 
   test("starts idle with zero words", async ({ page }) => {
@@ -279,6 +279,25 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
     expect(await page.evaluate(() => window.__wordMeter.getRateLong())).toBe(1)
     await expect(page.getByTestId("wm-rate-long")).toHaveText("1.0")
   })
+
+  test("duration tile re-renders on the live tick while listening (no user input needed)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    // Press Start; the orchestrator must install a setInterval that
+    // dispatches Tick currentTimeMillis every 200 ms, mirroring the
+    // legacy `word-meter.js` driver. Without that driver, the
+    // duration tile freezes at "0s" until the user interacts again.
+    await page.getByTestId("wm-toggle").click()
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    // The tile starts at "0s" on the very first paint.
+    await expect(page.getByTestId("wm-duration")).toHaveText("0s")
+    // After ~1.2s of real time the live tick must have re-rendered
+    // the duration tile to something larger than zero seconds.
+    await expect(page.getByTestId("wm-duration")).not.toHaveText("0s", {
+      timeout: 3_000,
+    })
+  })
 })
 
 test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () => {
@@ -293,7 +312,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     await expect(drawer).not.toHaveAttribute("open", "")
     // The snapshot prefix is rendered into the content even while collapsed.
     await expect(page.getByTestId("wm-diagnostics-content")).toContainText("version")
-    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.1.0")
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.1.1")
   })
 
   test("clicking the summary expands the drawer", async ({ page }) => {
@@ -465,6 +484,54 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
     await expect(page.getByTestId("wm-count")).toHaveText("6")
     await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(2)
     expect(await page.evaluate(() => window.__wordMeter.getEventLogLength())).toBe(2)
+  })
+
+  test("rates remain sane after a reload (regression: completedActiveMs persists and `now` is bumped on init)", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    // Simulate a real listening session of a few seconds with a
+    // handful of words. Use real wall-clock timestamps via the
+    // non-`At` hooks so the post-reload `Tick currentTimeMillis`
+    // pulls in a real `now` rather than a synthetic test instant.
+    await page.evaluate(() => {
+      window.__wordMeter.start()
+    })
+    await page.evaluate(() => {
+      window.__wordMeter.simulateFinalTranscript("alpha beta gamma delta")
+    })
+    await page.waitForTimeout(50)
+    await page.evaluate(() => {
+      window.__wordMeter.stop()
+    })
+    const ratesBeforeReload = await page.evaluate(() => ({
+      short: window.__wordMeter.getRateShort(),
+      long: window.__wordMeter.getRateLong(),
+      overall: window.__wordMeter.getRateOverall(),
+      durationMs: window.__wordMeter.getDurationMs(),
+    }))
+    // Sanity: before the reload the rates are already plausible.
+    expect(ratesBeforeReload.overall).toBeLessThan(100_000)
+
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+
+    const ratesAfterReload = await page.evaluate(() => ({
+      short: window.__wordMeter.getRateShort(),
+      long: window.__wordMeter.getRateLong(),
+      overall: window.__wordMeter.getRateOverall(),
+      durationMs: window.__wordMeter.getDurationMs(),
+    }))
+    // Before the fix, `completedActiveMs` was not persisted and `now`
+    // stayed at the epoch after LoadSession, so `overallRate` and the
+    // trailing-window rates blew up to ~totalWords*60_000 wpm. Cap
+    // the assertion well below that to guard against regressions.
+    expect(ratesAfterReload.overall).toBeLessThan(100_000)
+    expect(ratesAfterReload.short).toBeLessThan(100_000)
+    expect(ratesAfterReload.long).toBeLessThan(100_000)
+    // The duration counter must survive the reload (was dropping to 0
+    // before the fix because completedActiveMs was not persisted).
+    expect(ratesAfterReload.durationMs).toBeGreaterThan(0)
   })
 
   test("resetAt clears the persisted snapshot so a reload starts fresh", async ({
@@ -735,11 +802,16 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
   }) => {
     await loadWordMeter(page, "ps")
     // Start listening. With the on-device pre-flight disabled in the
-    // fixture, the orchestrator lands on the cloud path. Manually
-    // pin the active path back to "on-device" through the test hook
-    // so we can drive the slice-9c retry branch deterministically.
+    // fixture, the orchestrator lands on the cloud path and sets the
+    // one-shot cloud-fallback flag. Reset the flag and pin the active
+    // path back to "on-device" through the test hook so we can drive
+    // the slice-9c runtime-retry branch deterministically as if the
+    // on-device path had actually been picked.
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    await page.evaluate(() =>
+      window.__wordMeter.setCloudFallbackAttempted(false),
+    )
     await page.evaluate(() =>
       window.__wordMeter.setActiveRecognitionPath("on-device"),
     )
@@ -775,8 +847,12 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
   }) => {
     await loadWordMeter(page, "ps")
     await page.getByTestId("wm-toggle").click()
-    // First strike: from the on-device path the orchestrator swallows
-    // the error and swaps to cloud. The slice-9c flag is now consumed.
+    // First strike: re-seed the pre-conditions for the on-device runtime
+    // retry branch, fire the error, and verify the orchestrator
+    // swallows it and swaps to cloud. The slice-9c flag is now consumed.
+    await page.evaluate(() =>
+      window.__wordMeter.setCloudFallbackAttempted(false),
+    )
     await page.evaluate(() =>
       window.__wordMeter.setActiveRecognitionPath("on-device"),
     )
@@ -796,11 +872,17 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
     )
   })
 
-  test("Toggle (start) clears cloudFallbackAttempted so the next session gets a fresh retry budget", async ({
+  test("Toggle (stop then start) preserves cloudFallbackAttempted; only Reset clears it", async ({
     page,
   }) => {
     await loadWordMeter(page, "ps")
     await page.getByTestId("wm-toggle").click()
+    // Drive the orchestrator into the "settled on cloud" state via the
+    // runtime swap so the flag is set the way it would be in a real
+    // session.
+    await page.evaluate(() =>
+      window.__wordMeter.setCloudFallbackAttempted(false),
+    )
     await page.evaluate(() =>
       window.__wordMeter.setActiveRecognitionPath("on-device"),
     )
@@ -811,9 +893,18 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
       await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
     ).toBe(true)
 
-    // Stop and start a fresh session; the budget must reset.
+    // Stop and start a fresh session; per the user-visible spec the
+    // decision sticks until the next Reset so we do not redundantly
+    // re-attempt the on-device path on every Start press.
     await page.getByTestId("wm-toggle").click()
     await page.getByTestId("wm-toggle").click()
+    expect(
+      await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
+    ).toBe(true)
+
+    // Only Reset clears the flag.
+    page.once("dialog", (dialog) => dialog.accept())
+    await page.getByTestId("wm-reset").click()
     expect(
       await page.evaluate(() => window.__wordMeter.getCloudFallbackAttempted()),
     ).toBe(false)

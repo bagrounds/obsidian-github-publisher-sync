@@ -522,6 +522,23 @@ runPersistenceTests = do
     true
   assertEqualBoolean "missing fields decode to Left"
     (isLeft (decodePersistedData "{\"version\":1}")) true
+  -- Backward compatibility: localStorage payloads written by earlier
+  -- builds did not include `completedActiveMs` or
+  -- `cloudFallbackAttempted`. They must still decode cleanly with
+  -- safe defaults so users do not lose their stats on upgrade.
+  let
+    legacyPayload =
+      "{\"version\":1,\"totalWords\":7,\"firstStartedAt\":1000,"
+        <> "\"wordEvents\":[],\"eventLog\":[]}"
+  case decodePersistedData legacyPayload of
+    Right legacy -> do
+      assertEqualInt "legacy payload decodes totalWords"
+        legacy.totalWords 7
+      assertEqualNumber "legacy payload defaults completedActiveMs to 0"
+        legacy.completedActiveMs 0.0
+      assertEqualBoolean "legacy payload defaults cloudFallbackAttempted to false"
+        legacy.cloudFallbackAttempted false
+    Left _ -> throw "legacy payload should decode with default new fields"
 
   let
     env = emptyEnvironment { version = "9.9.9" }
@@ -554,6 +571,26 @@ runPersistenceTests = do
     Nothing -> throw "LoadSession should have restored firstStartedAt"
   assertEqualBoolean "LoadSession leaves listening off"
     loaded.listening false
+  -- Issue #N (nonsensical post-reload rates): `completedActiveMs`
+  -- must round-trip through persistence so `overallRate` does not
+  -- divide by ~0 after a page reload.
+  assertEqualNumber "toPersistedData preserves completedActiveMs"
+    projected.completedActiveMs 4000.0
+  assertEqualNumber "LoadSession restores completedActiveMs"
+    (unwrap loaded.completedActiveMs) 4000.0
+  -- Issue #N (on-device retried every capture): once the cloud path
+  -- has been chosen the decision survives page reloads, so the
+  -- pre-flight is not re-attempted on the next start.
+  let
+    projectedAfterFallback =
+      toPersistedData (loaded { cloudFallbackAttempted = true })
+  assertEqualBoolean "toPersistedData preserves cloudFallbackAttempted"
+    projectedAfterFallback.cloudFallbackAttempted true
+  let
+    reloadedAfterFallback =
+      reduce (LoadSession projectedAfterFallback) initialSession
+  assertEqualBoolean "LoadSession restores cloudFallbackAttempted"
+    reloadedAfterFallback.cloudFallbackAttempted true
 
   let
     inMemoryOutcome = runInMemoryStorageM Nothing do
@@ -1142,16 +1179,19 @@ runCloudFallbackReducerTests = do
     "SetActiveRecognitionPath (Just OnDevicePath) sets the active path"
     (afterPath.activeRecognitionPath == Just OnDevicePath) true
 
-  -- Toggle-to-start clears both fields (legacy parity: each new
-  -- listening session gets a fresh retry budget).
+  -- Toggle-to-start clears the active path but preserves the
+  -- one-shot cloud-fallback flag. Per the user-visible spec, once we
+  -- have decided the on-device path is non-viable on this device the
+  -- decision sticks until the next user-driven Reset so we do not
+  -- re-attempt the pre-flight on every Start press / auto-restart.
   let
     listeningWithFlag =
       reduce (Toggle (testInstant 0.0))
         ( afterFlag
             { activeRecognitionPath = Just OnDevicePath }
         )
-  assertEqualBoolean "Toggle (start) clears cloudFallbackAttempted"
-    listeningWithFlag.cloudFallbackAttempted false
+  assertEqualBoolean "Toggle (start) preserves cloudFallbackAttempted"
+    listeningWithFlag.cloudFallbackAttempted true
   assertEqualBoolean "Toggle (start) clears activeRecognitionPath"
     (listeningWithFlag.activeRecognitionPath == Nothing) true
 

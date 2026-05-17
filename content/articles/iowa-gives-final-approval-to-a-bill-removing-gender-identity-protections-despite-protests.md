@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T07:01:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stark, high-contrast illustration featuring a weathered, official-looking legal document or stone tablet resting on a neutral, textured background. The document is partially obscured by a heavy, dark shadow creeping across the surface, symbolizing the removal of protections. In the foreground, a single, vibrant, and slightly frayed ribbon—colored in the soft pastel stripes of the transgender pride flag—lies discarded or partially tucked beneath the edge of the document. The lighting is dramatic and moody, with cool-toned shadows and a singular, sharp highlight emphasizing the texture of the paper and the delicate fabric of the ribbon, evoking a sense of solemnity, erasure, and quiet resilience.
+updated: 2026-05-17T08:05:18
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests  
@@ -241,3 +242,11 @@ Below is a list of high-quality books, resources, and thought leaders for furthe
 ---  
   
 Each of these books and resources offers a unique perspective—from historical context and personal memoirs to legal analyses and activist strategies. Engaging with multiple viewpoints can help build a well-rounded understanding of the complex debates around gender identity and transgender rights.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlzvp7k2fp2o" data-bluesky-cid="bafyreigvpknzf75okhxfnh3vonlbpgnxwaye4phes3rjpzp3dchlqc7ppu"><p>🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests  
+  
+#AI Q: ⚖️ Should law define gender?  
+  
+⚖️ Civil Rights | 📜 State Legislation  
+https://bagrounds.org/articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlzvp7k2fp2o?ref_src=embed">2026-05-17T08:05:54.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

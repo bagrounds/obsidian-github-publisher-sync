@@ -6,10 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-16T14:10:31-07:00
+updated: 2026-05-17T09:41:12-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (217)  
+# 🤖 AI Blog (220)  
+- [2026-05-17 | 📜 Word Meter — Preserving Scroll Across Rerenders 🧷](./2026-05-17-1-word-meter-vdom-scroll-preservation.md)  
+- [2026-05-16 | ⏱️ Word Meter Instant Timestamps 🤖](./2026-05-16-5-word-meter-instant-timestamps.md)  
+- [2026-05-16 | 🪓 Word Meter PureScript Port Cleanup 🧪](./2026-05-16-4-word-meter-purescript-port-cleanup-2.md)  
 - [2026-05-16 | 🧹 Word Meter PureScript Port Cleanup 🤖](./2026-05-16-3-word-meter-purescript-port-cleanup.md)  
 - [2026-05-16 | 🟣 PureScript Code Cleanup — Word Meter 🧹](./2026-05-16-2-word-meter-purescript-code-cleanup.md)  
 - [2026-05-16 | 🔧 Word Meter — Fixing the Diagnostics Drawer Rerender Bug 🐛](./2026-05-16-1-word-meter-diagnostics-drawer-state-bug-fix.md)  

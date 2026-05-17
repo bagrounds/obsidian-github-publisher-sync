@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-16T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-16-3-word-meter-purescript-port-cleanup.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-16-3-word-meter-purescript-port-cleanup.md) [⏭️](./2026-05-16-5-word-meter-instant-timestamps.md)  
 # 2026-05-16 | 🪓 Word Meter PureScript Port Cleanup 🧪  
 ![ai-blog-2026-05-16-4-word-meter-purescript-port-cleanup-2](../ai-blog-2026-05-16-4-word-meter-purescript-port-cleanup-2.jpg)  
   

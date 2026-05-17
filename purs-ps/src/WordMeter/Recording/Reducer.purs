@@ -100,7 +100,6 @@ reduce (Toggle timestamp) session
           , errorBanner = idleErrorBanner
           , lastRawFinalizedTranscript = ""
           , recognitionStatusOverride = idleRecognitionStatusOverride
-          , cloudFallbackAttempted = false
           , activeRecognitionPath = Nothing
           }
 reduce (InjectFinalTranscript transcript timestamp) session
@@ -230,6 +229,8 @@ reduce (Reset timestamp) session =
 reduce (LoadSession persisted) session = session
   { totalWords = max 0 persisted.totalWords
   , firstStartedAt = map msToInstant persisted.firstStartedAt
+  , completedActiveMs = Milliseconds (max 0.0 persisted.completedActiveMs)
+  , cloudFallbackAttempted = persisted.cloudFallbackAttempted
   , wordEvents = map persistedWordEventToWordEvent persisted.wordEvents
   , eventLog = takeEnd eventLogLimit
       (map persistedIntervalToInterval persisted.eventLog)
@@ -326,6 +327,8 @@ toPersistedData :: Session -> PersistedData
 toPersistedData session =
   { totalWords: session.totalWords
   , firstStartedAt: map instantToMs session.firstStartedAt
+  , completedActiveMs: unwrap session.completedActiveMs
+  , cloudFallbackAttempted: session.cloudFallbackAttempted
   , wordEvents: map wordEventToPersistedWordEvent session.wordEvents
   , eventLog: map intervalToPersistedInterval session.eventLog
   }

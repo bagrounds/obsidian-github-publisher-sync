@@ -1,9 +1,9 @@
--- | Pure transcript-integration decision for the slice-9a real
--- | recognition wiring. Reproduces the legacy
--- | `integrateFinalizedTranscript` dedup logic from issue #6897: on
--- | Android Chrome with `continuous = true` and `interimResults =
--- | true` the recognizer re-emits the same utterance as a sequence of
--- | finalized results, each carrying the full cumulative transcript.
+-- | Pure transcript-integration decision for the real recognition
+-- | wiring. Reproduces the dedup logic that the original JavaScript
+-- | build worked out for issue #6897: on Android Chrome with
+-- | `continuous = true` and `interimResults = true` the recognizer
+-- | re-emits the same utterance as a sequence of finalized results,
+-- | each carrying the full cumulative transcript.
 -- |
 -- | This module is intentionally pure — no `Effect`, no FFI — so the
 -- | reducer + unit tests can exercise every branch without touching the

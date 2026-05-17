@@ -132,9 +132,8 @@ longWindowMs = 600000.0
 idleCopyStatus :: String
 idleCopyStatus = ""
 
--- | Slice-9b status text shown while the static
--- | `SpeechRecognition.install()` call is in flight downloading the
--- | on-device language pack.
+-- | Status text shown while the static `SpeechRecognition.install()`
+-- | call is in flight downloading the on-device language pack.
 downloadingOnDeviceStatus :: String
 downloadingOnDeviceStatus = "downloading on-device language pack…"
 

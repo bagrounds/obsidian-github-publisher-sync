@@ -1,6 +1,6 @@
--- | Pure logic for the slice-5 diagnostics drawer: the timestamped
--- | event log, the captured environment snapshot, and the rendered
--- | text that the copy-to-clipboard button hands back to the user.
+-- | Pure logic for the diagnostics drawer: the timestamped event log,
+-- | the captured environment snapshot, and the rendered text that the
+-- | copy-to-clipboard button hands back to the user.
 module WordMeter.Diagnostics
   ( DiagnosticEntry
   , EnvironmentSnapshot

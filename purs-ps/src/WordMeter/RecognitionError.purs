@@ -1,12 +1,13 @@
--- | Pure logic for the slice-8 recognition error banner: classifying
--- | the error code reported by the Web Speech API, deciding whether
--- | the program should stop listening / show a banner, and rendering
--- | the user-facing banner text.
+-- | Pure logic for the recognition error banner: classifying the
+-- | error code reported by the Web Speech API, deciding whether the
+-- | program should stop listening / show a banner, and rendering the
+-- | user-facing banner text.
 -- |
 -- | This module is intentionally pure — no `Effect`, no FFI — so the
 -- | reducer + unit tests can exercise every branch without touching
--- | the browser. Slice 9 will wire the real `recognition.onerror`
--- | callback into `Main` and dispatch through `HandleRecognitionError`.
+-- | the browser. `WordMeter.Main.handleRecognitionError` wires the
+-- | real `recognition.onerror` callback into the reducer through
+-- | `HandleRecognitionError`.
 module WordMeter.RecognitionError
   ( RecognitionErrorCode(..)
   , classifyRecognitionError

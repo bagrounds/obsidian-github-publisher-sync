@@ -463,8 +463,8 @@ handleRecognitionError handlers code message = do
       releaseHeldWakeLock handlers
     else pure unit
 
--- | Slice 9c: a runtime `language-not-supported` against the on-device
--- | path is one of the few error codes that can leak past slice 9b's
+-- | A runtime `language-not-supported` against the on-device path is
+-- | one of the few error codes that can leak past the on-device
 -- | pre-flight on some Chromium builds. Rather than surface the
 -- | language-unavailable banner, the orchestrator swallows the error,
 -- | tears down the on-device recognizer, and starts a fresh cloud-path

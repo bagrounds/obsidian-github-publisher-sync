@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T23:28:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, professional illustration featuring a stylized, calm cat sitting in profile. The cat is rendered in soft, warm tones. Floating gently around the cat are abstract, soft-focus geometric shapes representing microscopic elements: small, translucent spheres and pill-like capsules in muted blues, teals, and soft yellows. The background is a clean, solid, light-neutral color that creates a sense of clinical clarity and tranquility. The overall aesthetic is modern, empathetic, and scientific, utilizing clean lines and a soft color palette to evoke a sense of hope, healing, and medical care without being overly sterile."
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092124)  
+![articles-treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids](../articles-treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.jpg)  
   
 ## 🤖 AI Summary  
 ### Study Summary: Feline GI Small-Cell Lymphoma Treatment 😸🔬  

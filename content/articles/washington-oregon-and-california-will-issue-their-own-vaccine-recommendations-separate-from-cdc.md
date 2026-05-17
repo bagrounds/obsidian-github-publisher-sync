@@ -7,11 +7,16 @@ URL: https://bagrounds.org/articles/washington-oregon-and-california-will-issue-
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-17T00:46:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist map of the United States, focusing on the Pacific coastline. The three states of Washington, Oregon, and California are highlighted in a vibrant, unified color, standing out against the rest of the country in a muted, neutral tone. Above the coastline, three distinct, glowing geometric icons—representing science, medicine, and regional cooperation—float in the sky. The background is a clean, modern gradient that transitions from a soft dawn orange to a cool, professional blue, symbolizing a shift in perspective. The overall aesthetic is clean, editorial, and sophisticated, using sharp lines and a high-contrast palette to convey a sense of institutional independence and regional alignment.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC  
+![articles-washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc](../articles-washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.jpg)  
   
 ## 🤖 AI Summary  
   

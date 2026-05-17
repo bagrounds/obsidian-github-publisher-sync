@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-17T03:21:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A somber, high-contrast composition featuring a single, flickering memorial candle placed on a weathered stone surface. In the background, the soft-focus silhouette of a rusted, iron train track stretches into the distance, fading into a hazy, muted gray horizon. Light from the candle casts long, dramatic shadows that suggest the weight of history and the fragility of memory. The color palette is restricted to deep charcoal, slate gray, and the warm, golden glow of the flame, creating an atmosphere of solemn reflection. The image is minimalist and atmospheric, focusing on the concepts of remembrance, the passage of time, and the contrast between darkness and the persistent light of human resilience.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📜💀⚠️ What the Holocaust Teaches Us](https://time.com/7278818/holocaust-remembrance-lessons)  
+![articles-what-the-holocaust-teaches-us](../articles-what-the-holocaust-teaches-us.jpg)  
   
 ## 🤖 AI Summary  
   

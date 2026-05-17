@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T21:30:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a sleek, glowing digital pipeline running horizontally across the frame. Inside the pipeline, a continuous stream of glowing data packets flows like a river of light. On one side, various nodes and interconnected servers feed into the line, while on the other, multiple specialized processors draw from it. The background is a deep, architectural navy blue with subtle grid lines, suggesting a high-level technical schematic. The style is clean, modern, and vector-based, using a palette of electric blue, vibrant cyan, and soft white highlights to represent the constant, orderly flow of real-time information. A single, stylized, polished wooden texture block is integrated at the very start of the pipeline as a symbolic foundation.
 ---
 [Home](../index.md) > [Articles](./index.md) | [👨‍💻☁️🐘 Jay Kreps](../people/jay-kreps.md)  
 # 🪵 [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)  
+![articles-the-log-what-every-software-engineer-should-know-about-real-time-datas-unifying-abstraction](../articles-the-log-what-every-software-engineer-should-know-about-real-time-datas-unifying-abstraction.jpg)  
   
 ## 🤖 AI Summary  
 **📖 Summary of "The Log: What every software engineer should know about real-time data's unifying abstraction"**  

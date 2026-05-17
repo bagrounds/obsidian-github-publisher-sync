@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-17T01:46:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass cube floating in the center of a void. Inside the cube, a complex, glowing network of golden geometric lines represents essential complexity. Surrounding the cube, scattered, chaotic shards of dark metal represent accidental complexity. A clean, sharp architectural blueprint lines the floor, upon which a glowing, ethereal quill pen is actively drawing firm, bold red borders around the cube. The lighting is focused and clinical, using a palette of deep navy, slate gray, and vibrant electric gold to evoke a sense of technical precision and intellectual clarity. The composition is balanced and spacious, emphasizing the contrast between the core logical truth and the surrounding noise.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](https://www.whitepages.com/blog/what-brooks-can-teach-us-about-spec-writing-for-ai)  
+![articles-what-fred-brooks-can-teach-us-about-writing-specs-for-ai](../articles-what-fred-brooks-can-teach-us-about-writing-specs-for-ai.jpg)  
 ## 🤖 AI Summary  
   
 * 🧠 Fred Brooks' 1986 paper No Silver Bullet correctly identifies that software's essential complexity - the inherent difficulty of the problem domain - remains irreducible despite better tools.  

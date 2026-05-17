@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-17T00:47:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic shot of a vast, rugged Alaskan landscape during twilight. In the foreground, a solitary, weathered wooden meeting table stands on a tundra ridge overlooking a deep blue fjord and distant snow-capped mountains. A soft, warm light glows from a single lantern on the table, casting long shadows against the encroaching dark blue of the evening sky. The atmosphere is quiet, contemplative, and slightly tense, symbolizing the intersection of remote community stability and the looming, turbulent political horizon. The color palette features deep indigos, icy whites, and a single, flickering amber highlight.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 😨 [‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](https://www.adn.com/politics/2025/04/14/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government)  
+![articles-we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government](../articles-we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.jpg)  
 ## 🤖 AI Summary  
 **Murkowski Expresses Concerns Over Trump Administration Policies**  
   

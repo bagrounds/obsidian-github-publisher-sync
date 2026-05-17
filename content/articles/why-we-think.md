@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-17T05:30:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the contrast between intuitive and deliberate thought. On the left, a glowing, translucent human silhouette is filled with a chaotic, rapid-fire network of bright sparks and quick, jagged lightning lines representing fast System 1 thinking. On the right, the same silhouette is composed of an intricate, methodical web of interconnected golden geometric gears and crystalline nodes, with a slow, steady pulse of light flowing through them to represent slow System 2 reasoning. The background is a deep, atmospheric navy blue, with faint, ethereal neural pathways bridging the two halves, symbolizing the transition from instinct to analytical chain-of-thought. The overall aesthetic is clean, modern, and high-tech, using a palette of soft gold, electric blue, and deep charcoal.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤔💭🤔💭 Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking)  
+![articles-why-we-think](../articles-why-we-think.jpg)  
 ## 🤖 AI Summary  
 * 🧠 Enabling models to think longer mirrors the human dual process theory: 💨 fast (System 1) versus 🐌 slow (System 2) thinking.  
 * 💻 Architectures that use more test-time computation and are trained to utilize it will perform better.  

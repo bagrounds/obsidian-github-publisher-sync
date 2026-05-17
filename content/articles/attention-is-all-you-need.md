@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T12:43:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a central, glowing orb representing a neural core. Numerous fine, translucent lines radiate outward from the orb, connecting to a swarm of floating, interconnected geometric nodes that represent words or data points. The entire structure is suspended in a deep, dark blue void. The lines between nodes vary in thickness and luminosity, with the brightest lines forming a complex, web-like pattern that highlights key relationships between distant points. The overall aesthetic is clean, technical, and futuristic, utilizing a color palette of electric blue, cyan, and stark white to convey the concept of parallel processing and high-speed data attention.
+updated: 2026-05-17T03:22:41
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [👀 Attention Is All You Need](https://arxiv.org/pdf/1706.03762)  
@@ -51,4 +52,12 @@ image_prompt: A minimalist, high-contrast illustration featuring a central, glow
   
 📚 **6. To Consider the Implications:**  
 * ❓ **"The Alignment Problem: Machine Learning and Human Values" by Brian Christian:**  
-    * 🕊️ This book delves into the challenges of aligning advanced AI systems with human values. ⚖️ As Transformer models become more powerful and are used in various applications, it's important to consider the ethical implications and potential societal impact, which this book explores. 💭
+    * 🕊️ This book delves into the challenges of aligning advanced AI systems with human values. ⚖️ As Transformer models become more powerful and are used in various applications, it's important to consider the ethical implications and potential societal impact, which this book explores. 💭  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlzfuwgo3m26" data-bluesky-cid="bafyreiaricmhbcqetlibzyfl2sbndqhhygpb56mp43yaptnqnij7xu6wwm"><p>👀 Attention Is All You Need  
+  
+#AI Q: 🤖 Does paying attention to everything at once make for better understanding?  
+  
+🧠 Neural Networks | 🌍 Machine Translation | 🏗️ Transformer Architecture  
+https://bagrounds.org/articles/attention-is-all-you-need</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlzfuwgo3m26?ref_src=embed">2026-05-17T03:22:46.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

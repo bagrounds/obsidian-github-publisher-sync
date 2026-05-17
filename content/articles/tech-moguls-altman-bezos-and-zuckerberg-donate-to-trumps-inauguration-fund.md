@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-16T21:30:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring three stylized, silhouette-style figures in sharp business suits standing around a polished glass conference table. In the center of the table sits a large, ornate golden seal representing government power, partially obscured by stacks of glowing digital currency icons and sleek, abstract fiber-optic cables. The background is a deep, moody navy blue, transitioning into a subtle, warm golden glow near the center. The aesthetic is clean, corporate, and slightly surreal, emphasizing themes of high-stakes political influence, technology, and wealth. The lighting is dramatic, casting long, sharp shadows across the table to evoke a sense of secrecy and power dynamics.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💻💰🤝👹🇺🇸 [Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](https://www.npr.org/2024/12/13/nx-s1-5227874/trump-bezos-zuckerberg-amazon-facebook-open-ai-meta-inauguration-fund)  
+![articles-tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund](../articles-tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.jpg)  
 ## 🤖 AI Summary  
 🚀 Tech industry leaders have made significant contributions to President Donald Trump's inauguration fund, signaling a notable shift in their relationship with the new administration. 🤝  
   

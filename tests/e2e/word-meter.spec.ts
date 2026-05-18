@@ -25,7 +25,7 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
     await loadWordMeter(page)
     await expect(page.getByTestId("wm-root")).toBeVisible()
     await expect(page.getByTestId("wm-build")).toHaveText(/purescript/i)
-    await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.1\.1/i)
+    await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.2\.0/i)
   })
 
   test("starts idle with zero words", async ({ page }) => {
@@ -402,7 +402,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     await expect(drawer).not.toHaveAttribute("open", "")
     // The snapshot prefix is rendered into the content even while collapsed.
     await expect(page.getByTestId("wm-diagnostics-content")).toContainText("version")
-    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.1.1")
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.2.0")
   })
 
   test("clicking the summary expands the drawer", async ({ page }) => {

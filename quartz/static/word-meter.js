@@ -62,13 +62,13 @@
   var unit = void 0;
 
   // output/Type.Proxy/index.js
-  var $$Proxy = /* @__PURE__ */ function() {
+  var $$Proxy = /* @__PURE__ */ (function() {
     function $$Proxy2() {
     }
     ;
     $$Proxy2.value = new $$Proxy2();
     return $$Proxy2;
-  }();
+  })();
 
   // output/Data.Functor/index.js
   var map = function(dict) {
@@ -279,27 +279,27 @@
   };
 
   // output/Data.Ordering/index.js
-  var LT = /* @__PURE__ */ function() {
+  var LT = /* @__PURE__ */ (function() {
     function LT2() {
     }
     ;
     LT2.value = new LT2();
     return LT2;
-  }();
-  var GT = /* @__PURE__ */ function() {
+  })();
+  var GT = /* @__PURE__ */ (function() {
     function GT2() {
     }
     ;
     GT2.value = new GT2();
     return GT2;
-  }();
-  var EQ = /* @__PURE__ */ function() {
+  })();
+  var EQ = /* @__PURE__ */ (function() {
     function EQ2() {
     }
     ;
     EQ2.value = new EQ2();
     return EQ2;
-  }();
+  })();
 
   // output/Data.Ring/foreign.js
   var intSub = function(x) {
@@ -377,22 +377,22 @@
   };
 
   // output/Data.Ord/index.js
-  var ordNumber = /* @__PURE__ */ function() {
+  var ordNumber = /* @__PURE__ */ (function() {
     return {
       compare: ordNumberImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqNumber;
       }
     };
-  }();
-  var ordInt = /* @__PURE__ */ function() {
+  })();
+  var ordInt = /* @__PURE__ */ (function() {
     return {
       compare: ordIntImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqInt;
       }
     };
-  }();
+  })();
   var compare = function(dict) {
     return dict.compare;
   };
@@ -469,14 +469,14 @@
 
   // output/Data.Maybe/index.js
   var identity4 = /* @__PURE__ */ identity(categoryFn);
-  var Nothing = /* @__PURE__ */ function() {
+  var Nothing = /* @__PURE__ */ (function() {
     function Nothing2() {
     }
     ;
     Nothing2.value = new Nothing2();
     return Nothing2;
-  }();
-  var Just = /* @__PURE__ */ function() {
+  })();
+  var Just = /* @__PURE__ */ (function() {
     function Just2(value0) {
       this.value0 = value0;
     }
@@ -485,7 +485,7 @@
       return new Just2(value0);
     };
     return Just2;
-  }();
+  })();
   var maybe = function(v) {
     return function(v1) {
       return function(v2) {
@@ -573,7 +573,7 @@
   };
 
   // output/Data.Either/index.js
-  var Left = /* @__PURE__ */ function() {
+  var Left = /* @__PURE__ */ (function() {
     function Left2(value0) {
       this.value0 = value0;
     }
@@ -582,8 +582,8 @@
       return new Left2(value0);
     };
     return Left2;
-  }();
-  var Right = /* @__PURE__ */ function() {
+  })();
+  var Right = /* @__PURE__ */ (function() {
     function Right2(value0) {
       this.value0 = value0;
     }
@@ -592,7 +592,7 @@
       return new Right2(value0);
     };
     return Right2;
-  }();
+  })();
   var note = function(a) {
     return maybe(new Left(a))(Right.create);
   };
@@ -659,14 +659,14 @@
       return applyEither;
     }
   };
-  var applicativeEither = /* @__PURE__ */ function() {
+  var applicativeEither = /* @__PURE__ */ (function() {
     return {
       pure: Right.create,
       Apply0: function() {
         return applyEither;
       }
     };
-  }();
+  })();
 
   // output/Effect/foreign.js
   var pureE = function(a) {
@@ -926,7 +926,7 @@
   });
 
   // output/Data.Tuple/index.js
-  var Tuple = /* @__PURE__ */ function() {
+  var Tuple = /* @__PURE__ */ (function() {
     function Tuple2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -938,7 +938,7 @@
       };
     };
     return Tuple2;
-  }();
+  })();
   var uncurry = function(f) {
     return function(v) {
       return f(v.value0)(v.value1);
@@ -992,12 +992,12 @@
   };
   var functorReaderT = function(dictFunctor) {
     return {
-      map: function() {
+      map: (function() {
         var $155 = map(dictFunctor);
         return function($156) {
           return mapReaderT($155($156));
         };
-      }()
+      })()
     };
   };
   var applyReaderT = function(dictApply) {
@@ -1038,12 +1038,12 @@
   var applicativeReaderT = function(dictApplicative) {
     var applyReaderT1 = applyReaderT(dictApplicative.Apply0());
     return {
-      pure: function() {
+      pure: (function() {
         var $160 = pure(dictApplicative);
         return function($161) {
           return ReaderT($$const($160($161)));
         };
-      }(),
+      })(),
       Apply0: function() {
         return applyReaderT1;
       }
@@ -1074,13 +1074,13 @@
     var Monad0 = dictMonadEffect.Monad0();
     var monadReaderT1 = monadReaderT(Monad0);
     return {
-      liftEffect: function() {
+      liftEffect: (function() {
         var $163 = lift3(Monad0);
         var $164 = liftEffect(dictMonadEffect);
         return function($165) {
           return $163($164($165));
         };
-      }(),
+      })(),
       Monad0: function() {
         return monadReaderT1;
       }
@@ -1141,7 +1141,7 @@
   };
 
   // output/Data.Traversable/foreign.js
-  var traverseArrayImpl = /* @__PURE__ */ function() {
+  var traverseArrayImpl = /* @__PURE__ */ (function() {
     function array1(a) {
       return [a];
     }
@@ -1188,7 +1188,7 @@
         };
       };
     };
-  }();
+  })();
 
   // output/Data.Foldable/foreign.js
   var foldrArray = function(f) {
@@ -1336,9 +1336,9 @@
   // output/Data.Int/index.js
   var top2 = /* @__PURE__ */ top(boundedInt);
   var bottom2 = /* @__PURE__ */ bottom(boundedInt);
-  var fromNumber = /* @__PURE__ */ function() {
+  var fromNumber = /* @__PURE__ */ (function() {
     return fromNumberImpl(Just.create)(Nothing.value);
-  }();
+  })();
   var unsafeClamp = function(x) {
     if (!isFiniteImpl(x)) {
       return 0;
@@ -1425,7 +1425,7 @@
       };
     };
   };
-  var boundedInstant = /* @__PURE__ */ function() {
+  var boundedInstant = /* @__PURE__ */ (function() {
     return {
       bottom: -86399778816e5,
       top: 8639977881599999,
@@ -1433,7 +1433,7 @@
         return ordDateTime;
       }
     };
-  }();
+  })();
 
   // output/WordMeter.FFI.Clock/foreign.js
   var currentTimeMillis = () => Date.now();
@@ -1522,7 +1522,7 @@
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
   var traverse_2 = /* @__PURE__ */ traverse_(applicativeEffect)(foldableArray);
-  var ClickListener = /* @__PURE__ */ function() {
+  var ClickListener = /* @__PURE__ */ (function() {
     function ClickListener2(value0) {
       this.value0 = value0;
     }
@@ -1531,8 +1531,8 @@
       return new ClickListener2(value0);
     };
     return ClickListener2;
-  }();
-  var CheckboxChangeListener = /* @__PURE__ */ function() {
+  })();
+  var CheckboxChangeListener = /* @__PURE__ */ (function() {
     function CheckboxChangeListener2(value0) {
       this.value0 = value0;
     }
@@ -1541,8 +1541,8 @@
       return new CheckboxChangeListener2(value0);
     };
     return CheckboxChangeListener2;
-  }();
-  var ElementNode = /* @__PURE__ */ function() {
+  })();
+  var ElementNode = /* @__PURE__ */ (function() {
     function ElementNode2(value0) {
       this.value0 = value0;
     }
@@ -1551,8 +1551,8 @@
       return new ElementNode2(value0);
     };
     return ElementNode2;
-  }();
-  var TextNode = /* @__PURE__ */ function() {
+  })();
+  var TextNode = /* @__PURE__ */ (function() {
     function TextNode2(value0) {
       this.value0 = value0;
     }
@@ -1561,16 +1561,16 @@
       return new TextNode2(value0);
     };
     return TextNode2;
-  }();
-  var text = /* @__PURE__ */ function() {
+  })();
+  var text = /* @__PURE__ */ (function() {
     return TextNode.create;
-  }();
-  var onClick = /* @__PURE__ */ function() {
+  })();
+  var onClick = /* @__PURE__ */ (function() {
     return ClickListener.create;
-  }();
-  var onCheckboxChange = /* @__PURE__ */ function() {
+  })();
+  var onCheckboxChange = /* @__PURE__ */ (function() {
     return CheckboxChangeListener.create;
-  }();
+  })();
   var element = function(tag) {
     return function(attributes) {
       return function(styles) {
@@ -1878,21 +1878,21 @@
   };
 
   // output/WordMeter.FFI.Recognition/index.js
-  var OnDeviceApiAbsent = /* @__PURE__ */ function() {
+  var OnDeviceApiAbsent = /* @__PURE__ */ (function() {
     function OnDeviceApiAbsent2() {
     }
     ;
     OnDeviceApiAbsent2.value = new OnDeviceApiAbsent2();
     return OnDeviceApiAbsent2;
-  }();
-  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ (function() {
     function OnDeviceUnsupportedLanguage2() {
     }
     ;
     OnDeviceUnsupportedLanguage2.value = new OnDeviceUnsupportedLanguage2();
     return OnDeviceUnsupportedLanguage2;
-  }();
-  var OnDeviceInstallFailed = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceInstallFailed = /* @__PURE__ */ (function() {
     function OnDeviceInstallFailed2(value0) {
       this.value0 = value0;
     }
@@ -1901,8 +1901,8 @@
       return new OnDeviceInstallFailed2(value0);
     };
     return OnDeviceInstallFailed2;
-  }();
-  var OnDeviceAvailabilityRejected = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailabilityRejected = /* @__PURE__ */ (function() {
     function OnDeviceAvailabilityRejected2(value0) {
       this.value0 = value0;
     }
@@ -1911,14 +1911,14 @@
       return new OnDeviceAvailabilityRejected2(value0);
     };
     return OnDeviceAvailabilityRejected2;
-  }();
-  var OnDeviceAvailable = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailable = /* @__PURE__ */ (function() {
     function OnDeviceAvailable2() {
     }
     ;
     OnDeviceAvailable2.value = new OnDeviceAvailable2();
     return OnDeviceAvailable2;
-  }();
+  })();
   var renderRecognitionStopError = function(v) {
     return v;
   };
@@ -2006,20 +2006,20 @@
   };
 
   // output/WordMeter.Recognition.Path/index.js
-  var OnDevicePath = /* @__PURE__ */ function() {
+  var OnDevicePath = /* @__PURE__ */ (function() {
     function OnDevicePath2() {
     }
     ;
     OnDevicePath2.value = new OnDevicePath2();
     return OnDevicePath2;
-  }();
-  var CloudPath = /* @__PURE__ */ function() {
+  })();
+  var CloudPath = /* @__PURE__ */ (function() {
     function CloudPath2() {
     }
     ;
     CloudPath2.value = new CloudPath2();
     return CloudPath2;
-  }();
+  })();
   var processLocallyFor = function(v) {
     if (v instanceof OnDevicePath) {
       return true;
@@ -2313,9 +2313,9 @@
     ;
     throw new Error("Failed pattern match at Data.Array (line 351, column 1 - line 351, column 45): " + [xs.constructor.name]);
   };
-  var index = /* @__PURE__ */ function() {
+  var index = /* @__PURE__ */ (function() {
     return runFn4(indexImpl)(Just.create)(Nothing.value);
-  }();
+  })();
   var last = function(xs) {
     return index(xs)(length(xs) - 1 | 0);
   };
@@ -2399,14 +2399,14 @@
     return joinWith("\n")(["version           : " + snapshot.version, "userAgent         : " + snapshot.userAgent, "navigator.language: " + snapshot.navigatorLanguage]);
   };
   var formatEntry = function(entry) {
-    return formatClockTime(entry.timestamp) + ("  " + (entry.label + function() {
+    return formatClockTime(entry.timestamp) + ("  " + (entry.label + (function() {
       var $5 = entry.detail === "";
       if ($5) {
         return "";
       }
       ;
       return " \u2014 " + entry.detail;
-    }()));
+    })()));
   };
   var formatEntries = function(entries) {
     if (length(entries) === 0) {
@@ -2492,14 +2492,14 @@
   };
 
   // output/WordMeter.Text/index.js
-  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
+  var collapseWhitespaceToSpace = /* @__PURE__ */ (function() {
     var $1 = replaceAll("\r")(" ");
     var $2 = replaceAll("\n")(" ");
     var $3 = replaceAll("	")(" ");
     return function($4) {
       return $1($2($3($4)));
     };
-  }();
+  })();
 
   // output/WordMeter.Words/index.js
   var isNonEmpty = function(value) {
@@ -2510,14 +2510,14 @@
   };
 
   // output/WordMeter.Recognition.Delta/index.js
-  var IgnoreDuplicate = /* @__PURE__ */ function() {
+  var IgnoreDuplicate = /* @__PURE__ */ (function() {
     function IgnoreDuplicate2() {
     }
     ;
     IgnoreDuplicate2.value = new IgnoreDuplicate2();
     return IgnoreDuplicate2;
-  }();
-  var ExtendUtterance = /* @__PURE__ */ function() {
+  })();
+  var ExtendUtterance = /* @__PURE__ */ (function() {
     function ExtendUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2526,8 +2526,8 @@
       return new ExtendUtterance2(value0);
     };
     return ExtendUtterance2;
-  }();
-  var StartNewUtterance = /* @__PURE__ */ function() {
+  })();
+  var StartNewUtterance = /* @__PURE__ */ (function() {
     function StartNewUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2536,15 +2536,15 @@
       return new StartNewUtterance2(value0);
     };
     return StartNewUtterance2;
-  }();
-  var IgnoreEarlierSnapshot = /* @__PURE__ */ function() {
+  })();
+  var IgnoreEarlierSnapshot = /* @__PURE__ */ (function() {
     function IgnoreEarlierSnapshot2() {
     }
     ;
     IgnoreEarlierSnapshot2.value = new IgnoreEarlierSnapshot2();
     return IgnoreEarlierSnapshot2;
-  }();
-  var normalizeTranscript = /* @__PURE__ */ function() {
+  })();
+  var normalizeTranscript = /* @__PURE__ */ (function() {
     var $36 = joinWith(" ");
     var $37 = filter(function(v) {
       return v !== "";
@@ -2553,7 +2553,7 @@
     return function($39) {
       return $36($37($38(collapseWhitespaceToSpace(toLower(trim($39))))));
     };
-  }();
+  })();
   var isWordBoundaryExtension = function(candidate) {
     return function(prefix) {
       if (prefix === "") {
@@ -2604,63 +2604,63 @@
   };
 
   // output/WordMeter.RecognitionError/index.js
-  var NotAllowed = /* @__PURE__ */ function() {
+  var NotAllowed = /* @__PURE__ */ (function() {
     function NotAllowed2() {
     }
     ;
     NotAllowed2.value = new NotAllowed2();
     return NotAllowed2;
-  }();
-  var ServiceNotAllowed = /* @__PURE__ */ function() {
+  })();
+  var ServiceNotAllowed = /* @__PURE__ */ (function() {
     function ServiceNotAllowed2() {
     }
     ;
     ServiceNotAllowed2.value = new ServiceNotAllowed2();
     return ServiceNotAllowed2;
-  }();
-  var NoSpeech = /* @__PURE__ */ function() {
+  })();
+  var NoSpeech = /* @__PURE__ */ (function() {
     function NoSpeech2() {
     }
     ;
     NoSpeech2.value = new NoSpeech2();
     return NoSpeech2;
-  }();
-  var Aborted = /* @__PURE__ */ function() {
+  })();
+  var Aborted = /* @__PURE__ */ (function() {
     function Aborted2() {
     }
     ;
     Aborted2.value = new Aborted2();
     return Aborted2;
-  }();
-  var AudioCapture = /* @__PURE__ */ function() {
+  })();
+  var AudioCapture = /* @__PURE__ */ (function() {
     function AudioCapture2() {
     }
     ;
     AudioCapture2.value = new AudioCapture2();
     return AudioCapture2;
-  }();
-  var Network = /* @__PURE__ */ function() {
+  })();
+  var Network = /* @__PURE__ */ (function() {
     function Network2() {
     }
     ;
     Network2.value = new Network2();
     return Network2;
-  }();
-  var LanguageNotSupported = /* @__PURE__ */ function() {
+  })();
+  var LanguageNotSupported = /* @__PURE__ */ (function() {
     function LanguageNotSupported2() {
     }
     ;
     LanguageNotSupported2.value = new LanguageNotSupported2();
     return LanguageNotSupported2;
-  }();
-  var NoRecognitionErrorCode = /* @__PURE__ */ function() {
+  })();
+  var NoRecognitionErrorCode = /* @__PURE__ */ (function() {
     function NoRecognitionErrorCode2() {
     }
     ;
     NoRecognitionErrorCode2.value = new NoRecognitionErrorCode2();
     return NoRecognitionErrorCode2;
-  }();
-  var OtherRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var OtherRecognitionError = /* @__PURE__ */ (function() {
     function OtherRecognitionError2(value0) {
       this.value0 = value0;
     }
@@ -2669,7 +2669,7 @@
       return new OtherRecognitionError2(value0);
     };
     return OtherRecognitionError2;
-  }();
+  })();
   var renderRecognitionErrorDiagnosticDetail = function(code) {
     return function(message2) {
       var renderCode = function(v) {
@@ -2834,21 +2834,21 @@
   };
 
   // output/WordMeter.Recording.Session/index.js
-  var WakeLockIdle = /* @__PURE__ */ function() {
+  var WakeLockIdle = /* @__PURE__ */ (function() {
     function WakeLockIdle2() {
     }
     ;
     WakeLockIdle2.value = new WakeLockIdle2();
     return WakeLockIdle2;
-  }();
-  var WakeLockHeld = /* @__PURE__ */ function() {
+  })();
+  var WakeLockHeld = /* @__PURE__ */ (function() {
     function WakeLockHeld2() {
     }
     ;
     WakeLockHeld2.value = new WakeLockHeld2();
     return WakeLockHeld2;
-  }();
-  var WakeLockFailed = /* @__PURE__ */ function() {
+  })();
+  var WakeLockFailed = /* @__PURE__ */ (function() {
     function WakeLockFailed2(value0) {
       this.value0 = value0;
     }
@@ -2857,7 +2857,7 @@
       return new WakeLockFailed2(value0);
     };
     return WakeLockFailed2;
-  }();
+  })();
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var renderWakeLockStatus = function(v) {
@@ -2901,7 +2901,7 @@
     }
   };
   var epochInstant = /* @__PURE__ */ fromMaybe(/* @__PURE__ */ bottom(boundedInstant))(/* @__PURE__ */ instant(0));
-  var initialSession = /* @__PURE__ */ function() {
+  var initialSession = /* @__PURE__ */ (function() {
     return {
       listening: false,
       totalWords: 0,
@@ -2927,7 +2927,7 @@
       activeRecognitionPath: Nothing.value,
       diagnosticsDrawerOpen: false
     };
-  }();
+  })();
   var downloadingOnDeviceStatus = "downloading on-device language pack\u2026";
   var captionWindowMs = 3e4;
 
@@ -3030,7 +3030,7 @@
     }
     ;
     if (otherwise) {
-      var clamped = function() {
+      var clamped = (function() {
         var $27 = value < 0;
         if ($27) {
           return 0;
@@ -3042,7 +3042,7 @@
         }
         ;
         return value;
-      }();
+      })();
       var rounded = round2(clamped * 100);
       return show2(rounded) + "%";
     }
@@ -3074,7 +3074,7 @@
     };
   };
   var activeListeningMs = function(session) {
-    return session.completedActiveMs + function() {
+    return session.completedActiveMs + (function() {
       if (session.currentIntervalStart instanceof Just) {
         return max3(0)(millisecondsBetween(session.now)(session.currentIntervalStart.value0));
       }
@@ -3084,7 +3084,7 @@
       }
       ;
       throw new Error("Failed pattern match at WordMeter.Recording.Math (line 59, column 17 - line 61, column 21): " + [session.currentIntervalStart.constructor.name]);
-    }();
+    })();
   };
   var overallRate = function(session) {
     return wordsPerMinute(session.totalWords)(max3(1)(activeListeningMs(session)));
@@ -3120,7 +3120,7 @@
   var map6 = /* @__PURE__ */ map(functorMaybe);
   var map1 = /* @__PURE__ */ map(functorArray);
   var max22 = /* @__PURE__ */ max(ordInt);
-  var Toggle = /* @__PURE__ */ function() {
+  var Toggle = /* @__PURE__ */ (function() {
     function Toggle2(value0) {
       this.value0 = value0;
     }
@@ -3129,8 +3129,8 @@
       return new Toggle2(value0);
     };
     return Toggle2;
-  }();
-  var InjectFinalTranscript = /* @__PURE__ */ function() {
+  })();
+  var InjectFinalTranscript = /* @__PURE__ */ (function() {
     function InjectFinalTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3142,8 +3142,8 @@
       };
     };
     return InjectFinalTranscript2;
-  }();
-  var IntegrateFinalizedTranscript = /* @__PURE__ */ function() {
+  })();
+  var IntegrateFinalizedTranscript = /* @__PURE__ */ (function() {
     function IntegrateFinalizedTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3155,15 +3155,15 @@
       };
     };
     return IntegrateFinalizedTranscript2;
-  }();
-  var ResetRecognitionDedupState = /* @__PURE__ */ function() {
+  })();
+  var ResetRecognitionDedupState = /* @__PURE__ */ (function() {
     function ResetRecognitionDedupState2() {
     }
     ;
     ResetRecognitionDedupState2.value = new ResetRecognitionDedupState2();
     return ResetRecognitionDedupState2;
-  }();
-  var Tick = /* @__PURE__ */ function() {
+  })();
+  var Tick = /* @__PURE__ */ (function() {
     function Tick2(value0) {
       this.value0 = value0;
     }
@@ -3172,8 +3172,8 @@
       return new Tick2(value0);
     };
     return Tick2;
-  }();
-  var RecordDiagnostic = /* @__PURE__ */ function() {
+  })();
+  var RecordDiagnostic = /* @__PURE__ */ (function() {
     function RecordDiagnostic2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3188,8 +3188,8 @@
       };
     };
     return RecordDiagnostic2;
-  }();
-  var SetEnvironment = /* @__PURE__ */ function() {
+  })();
+  var SetEnvironment = /* @__PURE__ */ (function() {
     function SetEnvironment2(value0) {
       this.value0 = value0;
     }
@@ -3198,8 +3198,8 @@
       return new SetEnvironment2(value0);
     };
     return SetEnvironment2;
-  }();
-  var SetCopyStatus = /* @__PURE__ */ function() {
+  })();
+  var SetCopyStatus = /* @__PURE__ */ (function() {
     function SetCopyStatus2(value0) {
       this.value0 = value0;
     }
@@ -3208,8 +3208,8 @@
       return new SetCopyStatus2(value0);
     };
     return SetCopyStatus2;
-  }();
-  var Reset = /* @__PURE__ */ function() {
+  })();
+  var Reset = /* @__PURE__ */ (function() {
     function Reset2(value0) {
       this.value0 = value0;
     }
@@ -3218,8 +3218,8 @@
       return new Reset2(value0);
     };
     return Reset2;
-  }();
-  var LoadSession = /* @__PURE__ */ function() {
+  })();
+  var LoadSession = /* @__PURE__ */ (function() {
     function LoadSession2(value0) {
       this.value0 = value0;
     }
@@ -3228,8 +3228,8 @@
       return new LoadSession2(value0);
     };
     return LoadSession2;
-  }();
-  var SetKeepAwake = /* @__PURE__ */ function() {
+  })();
+  var SetKeepAwake = /* @__PURE__ */ (function() {
     function SetKeepAwake2(value0) {
       this.value0 = value0;
     }
@@ -3238,8 +3238,8 @@
       return new SetKeepAwake2(value0);
     };
     return SetKeepAwake2;
-  }();
-  var SetWakeLockState = /* @__PURE__ */ function() {
+  })();
+  var SetWakeLockState = /* @__PURE__ */ (function() {
     function SetWakeLockState2(value0) {
       this.value0 = value0;
     }
@@ -3248,8 +3248,8 @@
       return new SetWakeLockState2(value0);
     };
     return SetWakeLockState2;
-  }();
-  var HandleRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var HandleRecognitionError = /* @__PURE__ */ (function() {
     function HandleRecognitionError2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3264,15 +3264,15 @@
       };
     };
     return HandleRecognitionError2;
-  }();
-  var ClearErrorBanner = /* @__PURE__ */ function() {
+  })();
+  var ClearErrorBanner = /* @__PURE__ */ (function() {
     function ClearErrorBanner2() {
     }
     ;
     ClearErrorBanner2.value = new ClearErrorBanner2();
     return ClearErrorBanner2;
-  }();
-  var SetRecognitionStatusOverride = /* @__PURE__ */ function() {
+  })();
+  var SetRecognitionStatusOverride = /* @__PURE__ */ (function() {
     function SetRecognitionStatusOverride2(value0) {
       this.value0 = value0;
     }
@@ -3281,8 +3281,8 @@
       return new SetRecognitionStatusOverride2(value0);
     };
     return SetRecognitionStatusOverride2;
-  }();
-  var SetCloudFallbackAttempted = /* @__PURE__ */ function() {
+  })();
+  var SetCloudFallbackAttempted = /* @__PURE__ */ (function() {
     function SetCloudFallbackAttempted2(value0) {
       this.value0 = value0;
     }
@@ -3291,8 +3291,8 @@
       return new SetCloudFallbackAttempted2(value0);
     };
     return SetCloudFallbackAttempted2;
-  }();
-  var SetActiveRecognitionPath = /* @__PURE__ */ function() {
+  })();
+  var SetActiveRecognitionPath = /* @__PURE__ */ (function() {
     function SetActiveRecognitionPath2(value0) {
       this.value0 = value0;
     }
@@ -3301,8 +3301,8 @@
       return new SetActiveRecognitionPath2(value0);
     };
     return SetActiveRecognitionPath2;
-  }();
-  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ function() {
+  })();
+  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ (function() {
     function SetDiagnosticsDrawerOpen2(value0) {
       this.value0 = value0;
     }
@@ -3311,7 +3311,7 @@
       return new SetDiagnosticsDrawerOpen2(value0);
     };
     return SetDiagnosticsDrawerOpen2;
-  }();
+  })();
   var rolloverWordsToday = function(timestamp) {
     return function(session) {
       var currentDate = localDateOf(timestamp);
@@ -3418,14 +3418,14 @@
           };
           var closedIntervalMs = max12(0)(millisecondsBetween(timestamp)(startedAt));
           var statsDetail = "words=" + (show3(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedIntervalMs)));
-          var fullDetail = function() {
+          var fullDetail = (function() {
             var $59 = reasonDetail === "";
             if ($59) {
               return statsDetail;
             }
             ;
             return statsDetail + (" " + reasonDetail);
-          }();
+          })();
           var stopEntry = {
             timestamp,
             label,
@@ -3591,7 +3591,7 @@
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
-            firstStartedAt: function() {
+            firstStartedAt: (function() {
               if (rolled.firstStartedAt instanceof Just) {
                 return new Just(rolled.firstStartedAt.value0);
               }
@@ -3601,7 +3601,7 @@
               }
               ;
               throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 95, column 30 - line 97, column 40): " + [rolled.firstStartedAt.constructor.name]);
-            }(),
+            })(),
             wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
             captions: pruneCaptions(v.value0)(rolled.captions),
             now: v.value0,
@@ -4126,13 +4126,13 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           keepAwake: v.value0,
-          wakeLockState: function() {
+          wakeLockState: (function() {
             if (v.value0) {
               return v1.wakeLockState;
             }
             ;
             return WakeLockIdle.value;
-          }()
+          })()
         };
       }
       ;
@@ -4480,14 +4480,14 @@
   };
 
   // output/WordMeter.FFI.StorageError/index.js
-  var StorageUnavailable = /* @__PURE__ */ function() {
+  var StorageUnavailable = /* @__PURE__ */ (function() {
     function StorageUnavailable2() {
     }
     ;
     StorageUnavailable2.value = new StorageUnavailable2();
     return StorageUnavailable2;
-  }();
-  var StorageException = /* @__PURE__ */ function() {
+  })();
+  var StorageException = /* @__PURE__ */ (function() {
     function StorageException2(value0) {
       this.value0 = value0;
     }
@@ -4496,8 +4496,8 @@
       return new StorageException2(value0);
     };
     return StorageException2;
-  }();
-  var MissingKey = /* @__PURE__ */ function() {
+  })();
+  var MissingKey = /* @__PURE__ */ (function() {
     function MissingKey2(value0) {
       this.value0 = value0;
     }
@@ -4506,7 +4506,7 @@
       return new MissingKey2(value0);
     };
     return MissingKey2;
-  }();
+  })();
   var renderStorageError = function(v) {
     if (v instanceof StorageUnavailable) {
       return "localStorage is unavailable in this environment";
@@ -4791,9 +4791,9 @@
       return _mapWithKey(m, f);
     };
   };
-  var lookup = /* @__PURE__ */ function() {
+  var lookup = /* @__PURE__ */ (function() {
     return runFn4(_lookup)(Nothing.value)(Just.create);
-  }();
+  })();
   var insert = function(k) {
     return function(v) {
       return mutate(poke2(k)(v));
@@ -4920,9 +4920,9 @@
       };
     };
   };
-  var toJsonType = /* @__PURE__ */ function() {
+  var toJsonType = /* @__PURE__ */ (function() {
     return verbJsonType(Nothing.value)(Just.create);
-  }();
+  })();
   var jsonSingletonObject = function(key) {
     return function(val) {
       return id(singleton3(key)(val));
@@ -4978,7 +4978,7 @@
 
   // output/Data.Argonaut.Decode.Error/index.js
   var show1 = /* @__PURE__ */ show(showInt);
-  var TypeMismatch = /* @__PURE__ */ function() {
+  var TypeMismatch = /* @__PURE__ */ (function() {
     function TypeMismatch2(value0) {
       this.value0 = value0;
     }
@@ -4987,8 +4987,8 @@
       return new TypeMismatch2(value0);
     };
     return TypeMismatch2;
-  }();
-  var UnexpectedValue = /* @__PURE__ */ function() {
+  })();
+  var UnexpectedValue = /* @__PURE__ */ (function() {
     function UnexpectedValue2(value0) {
       this.value0 = value0;
     }
@@ -4997,8 +4997,8 @@
       return new UnexpectedValue2(value0);
     };
     return UnexpectedValue2;
-  }();
-  var AtIndex = /* @__PURE__ */ function() {
+  })();
+  var AtIndex = /* @__PURE__ */ (function() {
     function AtIndex2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -5010,8 +5010,8 @@
       };
     };
     return AtIndex2;
-  }();
-  var AtKey = /* @__PURE__ */ function() {
+  })();
+  var AtKey = /* @__PURE__ */ (function() {
     function AtKey2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -5023,8 +5023,8 @@
       };
     };
     return AtKey2;
-  }();
-  var Named = /* @__PURE__ */ function() {
+  })();
+  var Named = /* @__PURE__ */ (function() {
     function Named2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -5036,14 +5036,14 @@
       };
     };
     return Named2;
-  }();
-  var MissingValue = /* @__PURE__ */ function() {
+  })();
+  var MissingValue = /* @__PURE__ */ (function() {
     function MissingValue2() {
     }
     ;
     MissingValue2.value = new MissingValue2();
     return MissingValue2;
-  }();
+  })();
   var printJsonDecodeError = function(err) {
     var go = function(v) {
       if (v instanceof TypeMismatch) {
@@ -5076,7 +5076,6 @@
   };
 
   // output/Data.String.CodePoints/foreign.js
-  var hasArrayFrom = typeof Array.from === "function";
   var hasStringIterator = typeof Symbol !== "undefined" && Symbol != null && typeof Symbol.iterator !== "undefined" && typeof String.prototype[Symbol.iterator] === "function";
   var hasFromCodePoint = typeof String.prototype.fromCodePoint === "function";
   var hasCodePointAt = typeof String.prototype.codePointAt === "function";
@@ -5106,21 +5105,21 @@
   var getField = function(decoder) {
     return function(obj) {
       return function(str) {
-        return maybe(new Left(new AtKey(str, MissingValue.value)))(function() {
+        return maybe(new Left(new AtKey(str, MissingValue.value)))((function() {
           var $48 = lmap2(AtKey.create(str));
           return function($49) {
             return $48(decoder($49));
           };
-        }())(lookup(str)(obj));
+        })())(lookup(str)(obj));
       };
     };
   };
-  var decodeString = /* @__PURE__ */ function() {
+  var decodeString = /* @__PURE__ */ (function() {
     return caseJsonString(new Left(new TypeMismatch("String")))(Right.create);
-  }();
-  var decodeNumber = /* @__PURE__ */ function() {
+  })();
+  var decodeNumber = /* @__PURE__ */ (function() {
     return caseJsonNumber(new Left(new TypeMismatch("Number")))(Right.create);
-  }();
+  })();
   var decodeMaybe = function(decoder) {
     return function(json) {
       if (isNull(json)) {
@@ -5134,38 +5133,38 @@
       throw new Error("Failed pattern match at Data.Argonaut.Decode.Decoders (line 37, column 1 - line 41, column 38): " + [decoder.constructor.name, json.constructor.name]);
     };
   };
-  var decodeJObject = /* @__PURE__ */ function() {
+  var decodeJObject = /* @__PURE__ */ (function() {
     var $50 = note(new TypeMismatch("Object"));
     return function($51) {
       return $50(toObject($51));
     };
-  }();
-  var decodeJArray = /* @__PURE__ */ function() {
+  })();
+  var decodeJArray = /* @__PURE__ */ (function() {
     var $52 = note(new TypeMismatch("Array"));
     return function($53) {
       return $52(toArray($53));
     };
-  }();
-  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ function() {
+  })();
+  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ (function() {
     var $84 = note(new TypeMismatch("Integer"));
     return function($85) {
       return $84(fromNumber($85));
     };
-  }())(decodeNumber);
+  })())(decodeNumber);
   var decodeForeignObject = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $86 = lmap2(Named.create("ForeignObject"));
       var $87 = traverse5(decoder);
       return function($88) {
         return $86($87($88));
       };
-    }())(decodeJObject);
+    })())(decodeJObject);
   };
-  var decodeBoolean = /* @__PURE__ */ function() {
+  var decodeBoolean = /* @__PURE__ */ (function() {
     return caseJsonBoolean(new Left(new TypeMismatch("Boolean")))(Right.create);
-  }();
+  })();
   var decodeArray = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $89 = lmap2(Named.create("Array"));
       var $90 = traverseWithIndex2(function(i) {
         var $92 = lmap2(AtIndex.create(i));
@@ -5176,7 +5175,7 @@
       return function($91) {
         return $89($90($91));
       };
-    }())(decodeJArray);
+    })())(decodeJArray);
   };
 
   // output/Record/index.js
@@ -5244,11 +5243,11 @@
   var decodeJsonNumber = {
     decodeJson: decodeNumber
   };
-  var decodeJsonJson = /* @__PURE__ */ function() {
+  var decodeJsonJson = /* @__PURE__ */ (function() {
     return {
       decodeJson: Right.create
     };
-  }();
+  })();
   var decodeJsonInt = {
     decodeJson: decodeInt
   };
@@ -5344,25 +5343,25 @@
   };
 
   // output/Data.Argonaut.Decode.Parser/index.js
-  var parseJson = /* @__PURE__ */ function() {
+  var parseJson = /* @__PURE__ */ (function() {
     var $3 = lmap(bifunctorEither)(function(v) {
       return new TypeMismatch("JSON");
     });
     return function($4) {
       return $3(jsonParser($4));
     };
-  }();
+  })();
 
   // output/Data.Argonaut.Encode.Encoders/index.js
   var map10 = /* @__PURE__ */ map(functorArray);
   var extend2 = function(encoder) {
     return function(v) {
-      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))(function() {
+      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))((function() {
         var $42 = insert(v.value0)(v.value1);
         return function($43) {
           return id($42($43));
         };
-      }());
+      })());
       return function($41) {
         return $40(encoder($41));
       };
@@ -5528,7 +5527,7 @@
   var getField32 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons2(/* @__PURE__ */ gDecodeJsonCons1(startedAtIsSymbol)()())(endedAtIsSymbol)()())()));
   var pure4 = /* @__PURE__ */ pure(applicativeEither);
   var join2 = /* @__PURE__ */ join(bindMaybe);
-  var InvalidJson = /* @__PURE__ */ function() {
+  var InvalidJson = /* @__PURE__ */ (function() {
     function InvalidJson2(value0) {
       this.value0 = value0;
     }
@@ -5537,8 +5536,8 @@
       return new InvalidJson2(value0);
     };
     return InvalidJson2;
-  }();
-  var SchemaMismatch = /* @__PURE__ */ function() {
+  })();
+  var SchemaMismatch = /* @__PURE__ */ (function() {
     function SchemaMismatch2(value0) {
       this.value0 = value0;
     }
@@ -5547,8 +5546,8 @@
       return new SchemaMismatch2(value0);
     };
     return SchemaMismatch2;
-  }();
-  var UnsupportedVersion = /* @__PURE__ */ function() {
+  })();
+  var UnsupportedVersion = /* @__PURE__ */ (function() {
     function UnsupportedVersion2(value0) {
       this.value0 = value0;
     }
@@ -5557,7 +5556,7 @@
       return new UnsupportedVersion2(value0);
     };
     return UnsupportedVersion2;
-  }();
+  })();
   var storageVersion = 1;
   var storageKey = "word-meter:state:v1";
   var renderPersistenceError = function(v) {
@@ -5643,7 +5642,7 @@
   var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
   var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var pure5 = /* @__PURE__ */ pure(/* @__PURE__ */ applicativeReaderT(applicativeEffect));
-  var LoadStorageError = /* @__PURE__ */ function() {
+  var LoadStorageError = /* @__PURE__ */ (function() {
     function LoadStorageError2(value0) {
       this.value0 = value0;
     }
@@ -5652,8 +5651,8 @@
       return new LoadStorageError2(value0);
     };
     return LoadStorageError2;
-  }();
-  var LoadDecodeError = /* @__PURE__ */ function() {
+  })();
+  var LoadDecodeError = /* @__PURE__ */ (function() {
     function LoadDecodeError2(value0) {
       this.value0 = value0;
     }
@@ -5662,11 +5661,11 @@
       return new LoadDecodeError2(value0);
     };
     return LoadDecodeError2;
-  }();
+  })();
   var storageAppM = {
     loadPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
       return bind7(liftEffect7(readPersistedString(storageKey)))(function(raw) {
-        return pure5(function() {
+        return pure5((function() {
           if (raw instanceof Left && raw.value0 instanceof MissingKey) {
             return new Right(Nothing.value);
           }
@@ -5689,7 +5688,7 @@
           }
           ;
           throw new Error("Failed pattern match at WordMeter.Capability.Storage (line 51, column 10 - line 56, column 46): " + [raw.constructor.name]);
-        }());
+        })());
       });
     }),
     persistSnapshot: function(persisted) {
@@ -5814,14 +5813,14 @@
   var sentinelsEqual = (left) => (right) => left === right;
 
   // output/WordMeter.FFI.WakeLock/index.js
-  var WakeLockUnsupported = /* @__PURE__ */ function() {
+  var WakeLockUnsupported = /* @__PURE__ */ (function() {
     function WakeLockUnsupported2() {
     }
     ;
     WakeLockUnsupported2.value = new WakeLockUnsupported2();
     return WakeLockUnsupported2;
-  }();
-  var WakeLockUnavailable = /* @__PURE__ */ function() {
+  })();
+  var WakeLockUnavailable = /* @__PURE__ */ (function() {
     function WakeLockUnavailable2(value0) {
       this.value0 = value0;
     }
@@ -5830,7 +5829,7 @@
       return new WakeLockUnavailable2(value0);
     };
     return WakeLockUnavailable2;
-  }();
+  })();
   var renderWakeLockError = function(v) {
     if (v instanceof WakeLockUnsupported) {
       return "wake lock not supported on this browser";
@@ -5957,14 +5956,14 @@
 
   // output/WordMeter.FFI.Confirm/index.js
   var map11 = /* @__PURE__ */ map(functorEffect);
-  var ConfirmUnavailable = /* @__PURE__ */ function() {
+  var ConfirmUnavailable = /* @__PURE__ */ (function() {
     function ConfirmUnavailable2() {
     }
     ;
     ConfirmUnavailable2.value = new ConfirmUnavailable2();
     return ConfirmUnavailable2;
-  }();
-  var ConfirmException = /* @__PURE__ */ function() {
+  })();
+  var ConfirmException = /* @__PURE__ */ (function() {
     function ConfirmException2(value0) {
       this.value0 = value0;
     }
@@ -5973,7 +5972,7 @@
       return new ConfirmException2(value0);
     };
     return ConfirmException2;
-  }();
+  })();
   var renderConfirmError = function(v) {
     if (v instanceof ConfirmUnavailable) {
       return "window.confirm is unavailable in this environment";
@@ -6010,7 +6009,7 @@
   };
 
   // output/WordMeter.Version/index.js
-  var version = "0.1.1";
+  var version = "0.2.0";
 
   // output/WordMeter.Recording.View/index.js
   var append3 = /* @__PURE__ */ append(semigroupArray);
@@ -6055,13 +6054,13 @@
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
-    var withChecked = function() {
+    var withChecked = (function() {
       if (session.keepAwake) {
         return append3(base)([attribute("checked")("checked")]);
       }
       ;
       return base;
-    }();
+    })();
     if (session.listening) {
       return append3(withChecked)([attribute("disabled")("disabled")]);
     }
@@ -6089,7 +6088,7 @@
       var opacity = captionOpacity(nowInstant)(timestamp);
       var fraction = 1 - opacity;
       var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
-      var bucket = function() {
+      var bucket = (function() {
         var $16 = rawBucket < 0;
         if ($16) {
           return 0;
@@ -6101,28 +6100,28 @@
         }
         ;
         return rawBucket;
-      }();
+      })();
       return "wm-caption wm-caption-fade-" + show5(bucket);
     };
   };
-  var buildVersion = /* @__PURE__ */ function() {
+  var buildVersion = /* @__PURE__ */ (function() {
     return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
-  }();
+  })();
   var buildToggle = function(handlers) {
     return function(session) {
-      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + function() {
+      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + (function() {
         if (session.listening) {
           return "wm-button-pill-stop";
         }
         ;
         return "wm-button-pill-start";
-      }())])([])([onClick(handlers.requestToggle)])([text(function() {
+      })())])([])([onClick(handlers.requestToggle)])([text((function() {
         if (session.listening) {
           return "Stop counting";
         }
         ;
         return "Start counting";
-      }())]);
+      })())]);
     };
   };
   var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build"), /* @__PURE__ */ className("wm-build-badge")])([])([/* @__PURE__ */ text("PureScript build")]);
@@ -6133,7 +6132,7 @@
     return function(label) {
       return function(valueText) {
         return function(maybeSublabel) {
-          return div_([className("wm-metric-tile")])([])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
+          return div_([className("wm-metric-tile")])([])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])((function() {
             if (maybeSublabel instanceof Just) {
               return [statTileSublabel(maybeSublabel.value0)];
             }
@@ -6143,7 +6142,7 @@
             }
             ;
             throw new Error("Failed pattern match at WordMeter.Recording.View (line 204, column 11 - line 206, column 22): " + [maybeSublabel.constructor.name]);
-          }()));
+          })()));
         };
       };
     };
@@ -6159,13 +6158,13 @@
   };
   var buildKeepAwake = function(handlers) {
     return function(session) {
-      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + function() {
+      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + (function() {
         if (session.listening) {
           return " wm-keep-awake-label-disabled";
         }
         ;
         return "";
-      }())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
+      })())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
     };
   };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder"), /* @__PURE__ */ className("wm-timeline-empty")])([])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
@@ -6173,27 +6172,27 @@
     return div_([testId("wm-event-log-entry"), className("wm-timeline-row")])([])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
   };
   var buildEventLog = function(session) {
-    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
+    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])((function() {
       var $23 = length(session.eventLog) === 0;
       if ($23) {
         return [buildEventLogPlaceholder];
       }
       ;
       return map12(buildEventLogEntry)(session.eventLog);
-    }());
+    })());
   };
   var buildErrorBanner = function(session) {
     return div_([testId("wm-error"), className("wm-error"), attribute("role")("alert")])([])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      var drawerAttributes = append3([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])(function() {
+      var drawerAttributes = append3([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])((function() {
         if (session.diagnosticsDrawerOpen) {
           return [attribute("open")("")];
         }
         ;
         return [];
-      }());
+      })());
       return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
@@ -6208,14 +6207,14 @@
     };
   };
   var buildCaptions = function(session) {
-    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
+    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])((function() {
       var $25 = length(session.captions) === 0;
       if ($25) {
         return [buildCaptionsPlaceholder];
       }
       ;
       return map12(buildCaption(session.now))(session.captions);
-    }());
+    })());
   };
   var view = function(handlers) {
     return function(session) {
@@ -6735,7 +6734,7 @@
               return bind14(captureEnvironmentSnapshot3(version))(function(snapshot) {
                 return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
                   return bind14(loadPersistedSnapshot2)(function(restored) {
-                    return discard22(function() {
+                    return discard22((function() {
                       if (restored instanceof Right && restored.value0 instanceof Nothing) {
                         return pure1(unit);
                       }
@@ -6749,7 +6748,7 @@
                       }
                       ;
                       throw new Error("Failed pattern match at WordMeter.Main (line 172, column 3 - line 175, column 54): " + [restored.constructor.name]);
-                    }())(function() {
+                    })())(function() {
                       return bind14(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new Tick(initTimestamp)))(function() {
                           return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {

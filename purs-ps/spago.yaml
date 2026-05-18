@@ -17,6 +17,8 @@ package:
     - argonaut-codecs
     - datetime
     - newtype
+    - ordered-collections
+    - tuples
   test:
     main: Test.Main
     dependencies:
@@ -36,6 +38,8 @@ package:
       - quickcheck
       - datetime
       - newtype
+      - ordered-collections
+      - tuples
 workspace:
   packageSet:
     registry: 76.2.1

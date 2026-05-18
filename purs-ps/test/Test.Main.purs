@@ -131,6 +131,13 @@ import WordMeter.Recording.Session
   )
 import WordMeter.Recording.View (diagnosticsText)
 import WordMeter.Vdom (text)
+import WordMeter.WordStats
+  ( addTranscript
+  , emptyWordStats
+  , isEmptyWordStats
+  , longestWord
+  , mostFrequentWord
+  )
 
 main :: Effect Unit
 main = do
@@ -153,6 +160,7 @@ main = do
   runCloudFallbackReducerTests
   runDiagnosticsDrawerReducerTests
   runMultiDayStatsTests
+  runWordStatsTests
   runPropertyTests
   log "word-meter: all PureScript unit tests passed"
 
@@ -1467,3 +1475,134 @@ runMultiDayStatsTests = do
       assertEqualBoolean "legacy payload defaults todayLocalDate to Nothing"
         (legacy.todayLocalDate == Nothing) true
     Left _ -> throw "legacy payload should decode with default new fields"
+
+  -- A pre-stats event-log entry (no most-frequent / longest fields)
+  -- still decodes — the new fields default to Nothing.
+  let
+    preStatsEventLogPayload =
+      "{\"version\":1,\"totalWords\":5,\"firstStartedAt\":1000,"
+        <> "\"wordEvents\":[],"
+        <> "\"eventLog\":[{\"startedAt\":0,\"endedAt\":1000,\"wordCount\":3}]}"
+  case decodePersistedData preStatsEventLogPayload of
+    Right legacy -> case legacy.eventLog of
+      [ entry ] -> do
+        assertEqualInt "pre-stats event-log entry preserves word count"
+          entry.wordCount 3
+        assertEqualBoolean "pre-stats event-log entry has no most-frequent word"
+          (entry.mostFrequentWord == Nothing) true
+        assertEqualBoolean "pre-stats event-log entry has no longest word"
+          (entry.longestWord == Nothing) true
+      _ -> throw "pre-stats payload should decode to one interval"
+    Left _ -> throw "pre-stats event-log payload should decode with defaults"
+
+runWordStatsTests :: Effect Unit
+runWordStatsTests = do
+  -- Empty stats expose nothing.
+  assertEqualBoolean "empty stats have no most-frequent word"
+    (mostFrequentWord emptyWordStats == Nothing) true
+  assertEqualBoolean "empty stats have no longest word"
+    (longestWord emptyWordStats == Nothing) true
+  assertEqualBoolean "emptyWordStats reports isEmpty true"
+    (isEmptyWordStats emptyWordStats) true
+
+  -- Frequency is case-insensitive and ignores surrounding punctuation.
+  let
+    statsA = addTranscript "Hello world, hello!" emptyWordStats
+  case mostFrequentWord statsA of
+    Just top -> do
+      assertEqualString "case-insensitive top word" top.word "hello"
+      assertEqualInt "case-insensitive top count" top.count 2
+    Nothing -> throw "expected a most-frequent word"
+
+  -- Longest word preserves casing; punctuation is stripped from ends.
+  let
+    statsB = addTranscript "Antidisestablishmentarianism, please." emptyWordStats
+  case longestWord statsB of
+    Just longest ->
+      assertEqualString "longest word preserves casing"
+        longest "Antidisestablishmentarianism"
+    Nothing -> throw "expected a longest word"
+
+  -- Subsequent transcripts accumulate frequencies across the period.
+  let
+    statsC = addTranscript "the the cat" (addTranscript "the dog" emptyWordStats)
+  case mostFrequentWord statsC of
+    Just top -> do
+      assertEqualString "accumulated top word" top.word "the"
+      assertEqualInt "accumulated top count" top.count 3
+    Nothing -> throw "expected an accumulated most-frequent word"
+
+  -- Ties on count break alphabetically on the normalized key so the
+  -- choice is deterministic across reloads.
+  let
+    statsTied = addTranscript "bravo alpha" emptyWordStats
+  case mostFrequentWord statsTied of
+    Just top -> assertEqualString "ties break alphabetically" top.word "alpha"
+    Nothing -> throw "expected a top word for a tied period"
+
+  -- Earliest casing wins on length ties.
+  let
+    statsTiedLength = addTranscript "alpha bravo" emptyWordStats
+  case longestWord statsTiedLength of
+    Just word -> assertEqualString "length ties keep first-seen casing"
+      word "alpha"
+    Nothing -> throw "expected a longest word for a tied period"
+
+  -- An all-punctuation transcript yields empty stats.
+  let
+    statsPunct = addTranscript ",.;!?" emptyWordStats
+  assertEqualBoolean "all-punctuation transcript yields empty stats"
+    (isEmptyWordStats statsPunct) true
+
+  -- The reducer pipeline freezes per-interval stats into the event
+  -- log at stop time.
+  let
+    s0 = initialSession
+    s1 = reduce (Toggle (testInstant 0.0)) s0
+    s2 = reduce (InjectFinalTranscript "hello world hello" (testInstant 1000.0)) s1
+    s3 = reduce (InjectFinalTranscript "Antidisestablishmentarianism!" (testInstant 2000.0)) s2
+    s4 = reduce (Toggle (testInstant 5000.0)) s3
+  case s4.eventLog of
+    [ entry ] -> do
+      case entry.mostFrequentWord of
+        Just top -> do
+          assertEqualString "stopped interval most-frequent word" top.word "hello"
+          assertEqualInt "stopped interval most-frequent count" top.count 2
+        Nothing -> throw "stopped interval should have a most-frequent word"
+      case entry.longestWord of
+        Just longest -> assertEqualString "stopped interval longest word"
+          longest "Antidisestablishmentarianism"
+        Nothing -> throw "stopped interval should have a longest word"
+    _ -> throw "expected exactly one entry in the event log"
+
+  -- Starting a new interval resets the live stats so the next period
+  -- starts from a clean slate.
+  let
+    s5 = reduce (Toggle (testInstant 10000.0)) s4
+  assertEqualBoolean "new interval resets currentIntervalWordStats"
+    (isEmptyWordStats s5.currentIntervalWordStats) true
+
+  -- The IntegrateFinalizedTranscript extend branch (cumulative
+  -- refinement of a single utterance) must only add the trailing
+  -- *new* tokens to the frequency tracker — feeding it the entire
+  -- refined caption would double-count the words already absorbed
+  -- from the prior snapshot.
+  let
+    e0 = initialSession
+    e1 = reduce (Toggle (testInstant 0.0)) e0
+    e2 = reduce (IntegrateFinalizedTranscript (testInstant 1000.0) "hello there") e1
+    e3 = reduce
+      (IntegrateFinalizedTranscript (testInstant 2000.0) "hello there general kenobi")
+      e2
+  case mostFrequentWord e3.currentIntervalWordStats of
+    Just top -> do
+      assertEqualInt
+        "extend branch adds only new tokens (hello stays at count 1)"
+        top.count 1
+    Nothing -> throw "extended interval should have a most-frequent word"
+  case longestWord e3.currentIntervalWordStats of
+    Just longest ->
+      assertEqualString
+        "extend branch tracks the longest new token"
+        longest "general"
+    Nothing -> throw "extended interval should have a longest word"

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-17T21:26:22-07:00
+updated: 2026-05-18T04:53:51-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-05-17T21:26:22-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (549)  
-- [2026-05-17](./reflections/2026-05-17.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (550)  
+- [2026-05-18](./reflections/2026-05-18.md)  
+- [2026-05-17 | ✨ Rest 🤖 Architecture 🐔 Milestones 🔀 Systems 🌟 Progress 🏛️ Investment 📰 Sands 🧷 Meter 🧮 Reloads. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-17.md)  
 - [2026-05-16 | ✨ Missing 💡 Illuminating 📰 Rapid 🐔 Last 🤖 Echoes 🐛 Fixing 🧹 Cleanup 🤖 Port 🧪 Meter 🏛️ Governance 🔀 Realities. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-16.md)  
 - [2026-05-15 | 🗣️ Today 🧒 Children 📈 Advancing 🏛️ Agile 🤖 Governance 🔀 Intent 🌟 Truth 📰 Diverging 🐔 Blessing 🎙️ Recognition 🪓 Plan 🤖 Real 💡 Gains 📺📚🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-15.md)  
-- [2026-05-14 | 🐾🌈💔 Saying Goodbye](./reflections/2026-05-14.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (221)  
+## [🤖 AI Blog](./ai-blog/index.md) (222)  
+- [2026-05-17 | 🏁 Word Meter PureScript Port: Finish It 🎙️](./ai-blog/2026-05-17-3-word-meter-purescript-finish-it.md)  
 - [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./ai-blog/2026-05-17-2-word-meter-purescript-v0-1-1.md)  
 - [2026-05-17 | 📜 Word Meter — Preserving Scroll Across Rerenders 🧷](./ai-blog/2026-05-17-1-word-meter-vdom-scroll-preservation.md)  
 - [2026-05-16 | ⏱️ Word Meter Instant Timestamps 🤖](./ai-blog/2026-05-16-5-word-meter-instant-timestamps.md)  
-- [2026-05-16 | 🪓 Word Meter PureScript Port Cleanup 🧪](./ai-blog/2026-05-16-4-word-meter-purescript-port-cleanup-2.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (68)  
@@ -131,7 +131,7 @@ updated: 2026-05-17T21:26:22-07:00
 - [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
   
   
-## [🎮 Games](./games/index.md) (3)  
+## [🎮 Games](./games/index.md) (2)  
 - [🧬 Valence](./games/valence.md)  
   
   

@@ -17,10 +17,12 @@
             "integers",
             "maybe",
             "newtype",
+            "ordered-collections",
             "prelude",
             "refs",
             "strings",
-            "transformers"
+            "transformers",
+            "tuples"
           ]
         },
         "test": {
@@ -37,10 +39,12 @@
             "integers",
             "maybe",
             "newtype",
+            "ordered-collections",
             "prelude",
             "quickcheck",
             "strings",
-            "transformers"
+            "transformers",
+            "tuples"
           ]
         }
       }

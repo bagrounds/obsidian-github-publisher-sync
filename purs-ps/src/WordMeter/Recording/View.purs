@@ -9,6 +9,7 @@ import Data.DateTime.Instant (Instant)
 import Data.Array (length) as Array
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
+import Data.String (length) as String
 import WordMeter.Clock (formatClockTime)
 import WordMeter.Diagnostics (formatDiagnostics)
 import WordMeter.Recording.Math
@@ -32,6 +33,7 @@ import WordMeter.Recording.Session
   , Session
   , renderWakeLockStatus
   )
+import WordMeter.WordStats (longestWord, mostFrequentWord)
 import WordMeter.Version (version)
 import WordMeter.Vdom
   ( Node
@@ -194,7 +196,31 @@ buildStats session =
     , buildStatTile "wm-rate-overall" "Overall" (formatRate (overallRate session)) (Just "words / minute")
     , buildStatTile "wm-duration" "Duration" (formatDurationMs (activeListeningMs session)) (Just "listening time")
     , buildStartedTile session
+    , buildStatTile "wm-top-word" "Top word"
+        (renderTopWordValue (mostFrequentWord session.currentIntervalWordStats))
+        (renderTopWordSublabel (mostFrequentWord session.currentIntervalWordStats))
+    , buildStatTile "wm-longest-word" "Longest word"
+        (renderLongestWordValue (longestWord session.currentIntervalWordStats))
+        (renderLongestWordSublabel (longestWord session.currentIntervalWordStats))
     ]
+
+renderTopWordValue :: Maybe { word :: String, count :: Int } -> String
+renderTopWordValue Nothing = "—"
+renderTopWordValue (Just top) = top.word
+
+renderTopWordSublabel :: Maybe { word :: String, count :: Int } -> Maybe String
+renderTopWordSublabel Nothing = Just "this period"
+renderTopWordSublabel (Just top) =
+  Just (show top.count <> "× this period")
+
+renderLongestWordValue :: Maybe String -> String
+renderLongestWordValue Nothing = "—"
+renderLongestWordValue (Just word) = word
+
+renderLongestWordSublabel :: Maybe String -> Maybe String
+renderLongestWordSublabel Nothing = Just "this period"
+renderLongestWordSublabel (Just word) =
+  Just (show (String.length word) <> " letters")
 
 buildStatTile :: String -> String -> String -> Maybe String -> Node
 buildStatTile valueTestId label valueText maybeSublabel =
@@ -275,7 +301,37 @@ buildEventLogEntry interval =
     , eventLogEntryDuration (intervalDurationMs interval)
     , eventLogEntryWords interval.wordCount
     , eventLogEntryRate (intervalRate interval)
+    , eventLogEntryTopWord interval.mostFrequentWord
+    , eventLogEntryLongestWord interval.longestWord
     ]
+
+eventLogEntryTopWord :: Maybe { word :: String, count :: Int } -> Node
+eventLogEntryTopWord maybeTop =
+  span_
+    [ testId "wm-event-log-entry-top-word"
+    , className "wm-timeline-row-top-word"
+    ]
+    []
+    [ text (renderEventTopWord maybeTop) ]
+
+renderEventTopWord :: Maybe { word :: String, count :: Int } -> String
+renderEventTopWord Nothing = "— top"
+renderEventTopWord (Just top) =
+  "“" <> top.word <> "” ×" <> show top.count
+
+eventLogEntryLongestWord :: Maybe String -> Node
+eventLogEntryLongestWord maybeWord =
+  span_
+    [ testId "wm-event-log-entry-longest-word"
+    , className "wm-timeline-row-longest-word"
+    ]
+    []
+    [ text (renderEventLongestWord maybeWord) ]
+
+renderEventLongestWord :: Maybe String -> String
+renderEventLongestWord Nothing = "— longest"
+renderEventLongestWord (Just word) =
+  "“" <> word <> "” (" <> show (String.length word) <> ")"
 
 eventLogEntryStarted :: Instant -> Node
 eventLogEntryStarted startedAt =

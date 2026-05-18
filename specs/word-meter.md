@@ -89,7 +89,18 @@ Pure-web browsers do not allow microphone capture once the page becomes hidden o
 
 ## UI structure
 
-`buildPanel` composes, in order: status line, big count (today's words), count label, start/stop button, keep-awake toggle, metrics grid (lifetime total, per-day average, sample %, last-1-min rate, last-10-min rate, overall rate, listening duration, started time), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
+`buildPanel` composes, in order: status line, big count (today's words), count label, start/stop button, keep-awake toggle, metrics grid (lifetime total, per-day average, sample %, last-1-min rate, last-10-min rate, overall rate, listening duration, started time, top word and longest word for the current period), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
+
+### Per-period word stats
+
+Each counting period — one Start → Stop cycle — tracks two extra stats in addition to the word count:
+
+- **Top word** — the single most-frequently-used word in the period, paired with its occurrence count. Words are compared case-insensitively after surrounding ASCII punctuation is stripped, so `"Hello,"` and `"hello"` collapse into the same bucket. Ties on count break alphabetically on the normalized key so reloads always show the same word.
+- **Longest word** — the single longest word in the period, preserving the casing of its first occurrence. Length ties go to the first word seen.
+
+Both stats accumulate live while the meter is listening and surface in the metrics grid (`wm-top-word`, `wm-longest-word`). On Stop, they are frozen into the closed `LoggedInterval` and rendered alongside the existing duration / word count / rate cells in the historical event log (`wm-event-log-entry-top-word`, `wm-event-log-entry-longest-word`). Starting a new period resets the live counters so each period stands on its own.
+
+The frozen stats are stored as optional fields on `PersistedLoggedInterval` (`mostFrequentWord`, `mostFrequentWordCount`, `longestWord`) so existing localStorage payloads written by earlier builds keep decoding — every missing field defaults to `Nothing`.
 
 ### Multi-day stats
 

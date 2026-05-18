@@ -14,7 +14,8 @@ import Data.Argonaut.Decode (JsonDecodeError, decodeJson, parseJson, printJsonDe
 import Data.Argonaut.Encode (encodeJson, (:=), (~>))
 import Data.Either (Either(..))
 import Data.Maybe (fromMaybe)
-import WordMeter.Recording.Session (PersistedData)
+import Data.Traversable (traverse)
+import WordMeter.Recording.Session (PersistedData, PersistedLoggedInterval)
 
 storageKey :: String
 storageKey = "word-meter:state:v1"
@@ -71,7 +72,8 @@ decodePersistedData payload = do
   wordsToday <- mapSchema (envelope .:? "wordsToday")
   todayLocalDate <- mapSchema (envelope .:? "todayLocalDate")
   wordEvents <- mapSchema (envelope .: "wordEvents")
-  eventLog <- mapSchema (envelope .: "eventLog")
+  rawEventLog <- mapSchema (envelope .: "eventLog" :: Either JsonDecodeError (Array Json))
+  eventLog <- mapSchema (traverse decodePersistedLoggedInterval rawEventLog)
   pure
     { totalWords
     , wordsToday: fromMaybe 0 wordsToday
@@ -92,3 +94,26 @@ decodePersistedData payload = do
   mapSchema = case _ of
     Left detail -> Left (SchemaMismatch detail)
     Right value -> Right value
+
+-- | Decode one event-log entry. The three word-stats fields
+-- | (`mostFrequentWord`, `mostFrequentWordCount`, `longestWord`) were
+-- | added after v1 shipped, so decode them as optional and default
+-- | them to `Nothing`. New writes always include them.
+decodePersistedLoggedInterval
+  :: Json -> Either JsonDecodeError PersistedLoggedInterval
+decodePersistedLoggedInterval json = do
+  entry <- decodeJson json
+  startedAt <- entry .: "startedAt"
+  endedAt <- entry .: "endedAt"
+  wordCount <- entry .: "wordCount"
+  mostFrequentWord <- entry .:? "mostFrequentWord"
+  mostFrequentWordCount <- entry .:? "mostFrequentWordCount"
+  longestWord <- entry .:? "longestWord"
+  pure
+    { startedAt
+    , endedAt
+    , wordCount
+    , mostFrequentWord: join mostFrequentWord
+    , mostFrequentWordCount: join mostFrequentWordCount
+    , longestWord: join longestWord
+    }

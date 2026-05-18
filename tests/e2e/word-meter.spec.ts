@@ -196,6 +196,48 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
     await expect(entry.getByTestId("wm-event-log-entry-rate")).toHaveText("0 wpm")
   })
 
+  test("event log entries surface the period's most-frequent and longest word", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello world hello", 1_000)
+      window.__wordMeter.simulateFinalTranscriptAt(
+        "Antidisestablishmentarianism!",
+        2_000,
+      )
+      window.__wordMeter.stopAt(5_000)
+    })
+    const entry = page.getByTestId("wm-event-log-entry").nth(0)
+    await expect(entry.getByTestId("wm-event-log-entry-top-word")).toContainText(
+      "hello",
+    )
+    await expect(entry.getByTestId("wm-event-log-entry-top-word")).toContainText(
+      "×2",
+    )
+    await expect(
+      entry.getByTestId("wm-event-log-entry-longest-word"),
+    ).toContainText("Antidisestablishmentarianism")
+  })
+
+  test("an interval with no spoken words renders em-dashes for the word stats", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.stopAt(5_000)
+    })
+    const entry = page.getByTestId("wm-event-log-entry").nth(0)
+    await expect(entry.getByTestId("wm-event-log-entry-top-word")).toContainText(
+      "—",
+    )
+    await expect(
+      entry.getByTestId("wm-event-log-entry-longest-word"),
+    ).toContainText("—")
+  })
+
   test("caps the event log at the most recent counting sessions", async ({ page }) => {
     await loadWordMeter(page)
     const limit = await page.evaluate(() => window.__wordMeter.getEventLogLimit())
@@ -229,6 +271,23 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
     const firstStartedAt = await page.evaluate(() => window.__wordMeter.getFirstStartedAt())
     expect(firstStartedAt).toBe(1_700_000_000_000)
     await expect(page.getByTestId("wm-started")).not.toHaveText("—")
+  })
+
+  test("the current-period stats grid surfaces the live top and longest word", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    await expect(page.getByTestId("wm-top-word")).toHaveText("—")
+    await expect(page.getByTestId("wm-longest-word")).toHaveText("—")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt(
+        "the the the rhinoceros",
+        2_000,
+      )
+    })
+    await expect(page.getByTestId("wm-top-word")).toHaveText("the")
+    await expect(page.getByTestId("wm-longest-word")).toHaveText("rhinoceros")
   })
 
   test("words / minute over the short window after a full minute", async ({ page }) => {

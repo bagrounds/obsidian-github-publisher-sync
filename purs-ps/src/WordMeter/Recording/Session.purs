@@ -30,6 +30,7 @@ import Data.Time.Duration (Milliseconds(..))
 import WordMeter.Diagnostics (DiagnosticEntry, EnvironmentSnapshot)
 import WordMeter.LocalDate (LocalDate)
 import WordMeter.Recognition.Path (RecognitionPath)
+import WordMeter.WordStats (WordStats, emptyWordStats)
 
 type Session =
   { listening :: Boolean
@@ -55,6 +56,7 @@ type Session =
   , cloudFallbackAttempted :: Boolean
   , activeRecognitionPath :: Maybe RecognitionPath
   , diagnosticsDrawerOpen :: Boolean
+  , currentIntervalWordStats :: WordStats
   }
 
 type Caption =
@@ -72,6 +74,8 @@ type LoggedInterval =
   { startedAt :: Instant
   , endedAt :: Instant
   , wordCount :: Int
+  , mostFrequentWord :: Maybe { word :: String, count :: Int }
+  , longestWord :: Maybe String
   }
 
 -- | Persisted versions of `WordEvent` and `LoggedInterval` use raw
@@ -86,6 +90,9 @@ type PersistedLoggedInterval =
   { startedAt :: Number
   , endedAt :: Number
   , wordCount :: Int
+  , mostFrequentWord :: Maybe String
+  , mostFrequentWordCount :: Maybe Int
+  , longestWord :: Maybe String
   }
 
 type PersistedData =
@@ -183,4 +190,5 @@ initialSession =
   , cloudFallbackAttempted: false
   , activeRecognitionPath: Nothing
   , diagnosticsDrawerOpen: false
+  , currentIntervalWordStats: emptyWordStats
   }

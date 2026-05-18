@@ -8,10 +8,12 @@ module WordMeter.Recording.Reducer
 
 import Prelude
 
-import Data.Array (filter, takeEnd, unsnoc)
+import Data.Array (filter, length, takeEnd, unsnoc)
+import Data.Array as Array
 import Data.DateTime.Instant (Instant, instant, unInstant)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
+import Data.String (joinWith)
 import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import WordMeter.Diagnostics (EnvironmentSnapshot, recordEntry)
@@ -48,6 +50,13 @@ import WordMeter.Recording.Session
   , longWindowMs
   )
 import WordMeter.Words (countWords)
+import WordMeter.WordStats
+  ( addTranscript
+  , emptyWordStats
+  , extractWords
+  , longestWord
+  , mostFrequentWord
+  )
 
 data Action
   = Toggle Instant
@@ -103,6 +112,7 @@ reduce (Toggle timestamp) session
           , lastRawFinalizedTranscript = ""
           , recognitionStatusOverride = idleRecognitionStatusOverride
           , activeRecognitionPath = Nothing
+          , currentIntervalWordStats = emptyWordStats
           }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
@@ -131,6 +141,7 @@ reduce (InjectFinalTranscript transcript timestamp) session
               , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
               , now = timestamp
               , diagnostics = recordEntry transcriptEntry counted.diagnostics
+              , currentIntervalWordStats = addTranscript transcript counted.currentIntervalWordStats
               }
   | otherwise = session
       { now = timestamp
@@ -166,6 +177,12 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
               , detail: "extend wordDelta=" <> show fields.wordDelta
               }
             counted = addWordsForToday timestamp fields.wordDelta base
+            -- Only the trailing `wordDelta` tokens are genuinely new
+            -- in this refinement; feeding the entire refined caption
+            -- to `addTranscript` would double-count the previously
+            -- seen words. Reuse `extractWords` so the tokenization
+            -- stays consistent with the frequency tracker.
+            newTokens = takeEndArray fields.wordDelta (extractWords fields.caption)
           in
             counted
               { currentIntervalWords =
@@ -175,6 +192,9 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
                   <> [ { timestamp, wordCount: fields.wordDelta } ]
               , lastRawFinalizedTranscript = transcript
               , diagnostics = recordEntry transcriptEntry counted.diagnostics
+              , currentIntervalWordStats =
+                  addTranscript (joinWithSpace newTokens)
+                    counted.currentIntervalWordStats
               }
         StartNewUtterance fields ->
           let
@@ -199,6 +219,8 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
                   <> [ { timestamp, wordCount: fields.wordCount } ]
               , lastRawFinalizedTranscript = transcript
               , diagnostics = recordEntry transcriptEntry counted.diagnostics
+              , currentIntervalWordStats =
+                  addTranscript fields.caption counted.currentIntervalWordStats
               }
 reduce ResetRecognitionDedupState session = session
   { lastRawFinalizedTranscript = ""
@@ -245,6 +267,7 @@ reduce (LoadSession persisted) session = session
   , currentIntervalWords = 0
   , currentIntervalStart = Nothing
   , listening = false
+  , currentIntervalWordStats = emptyWordStats
   }
 reduce (SetKeepAwake enabled) session = session
   { keepAwake = enabled
@@ -308,6 +331,8 @@ stopListeningAt timestamp label reasonDetail session =
       { startedAt
       , endedAt: max timestamp startedAt
       , wordCount: session.currentIntervalWords
+      , mostFrequentWord: mostFrequentWord session.currentIntervalWordStats
+      , longestWord: longestWord session.currentIntervalWordStats
       }
     statsDetail =
       "words=" <> show session.currentIntervalWords
@@ -329,6 +354,7 @@ stopListeningAt timestamp label reasonDetail session =
       , diagnostics = recordEntry stopEntry session.diagnostics
       , recognitionStatusOverride = idleRecognitionStatusOverride
       , activeRecognitionPath = Nothing
+      , currentIntervalWordStats = emptyWordStats
       }
 
 toPersistedData :: Session -> PersistedData
@@ -395,6 +421,9 @@ intervalToPersistedInterval interval =
   { startedAt: instantToMs interval.startedAt
   , endedAt: instantToMs interval.endedAt
   , wordCount: interval.wordCount
+  , mostFrequentWord: map _.word interval.mostFrequentWord
+  , mostFrequentWordCount: map _.count interval.mostFrequentWord
+  , longestWord: interval.longestWord
   }
 
 persistedIntervalToInterval :: PersistedLoggedInterval -> LoggedInterval
@@ -402,7 +431,28 @@ persistedIntervalToInterval interval =
   { startedAt: msToInstant interval.startedAt
   , endedAt: msToInstant interval.endedAt
   , wordCount: interval.wordCount
+  , mostFrequentWord: rehydrateMostFrequent interval.mostFrequentWord interval.mostFrequentWordCount
+  , longestWord: interval.longestWord
   }
+
+rehydrateMostFrequent
+  :: Maybe String -> Maybe Int -> Maybe { word :: String, count :: Int }
+rehydrateMostFrequent maybeWord maybeCount = case maybeWord, maybeCount of
+  Just word, Just count -> Just { word, count }
+  _, _ -> Nothing
+
+-- | Keep the last `n` elements of an array. Local helper named to
+-- | avoid colliding with `Data.Array.takeEnd` already imported above.
+takeEndArray :: forall a. Int -> Array a -> Array a
+takeEndArray n xs =
+  let
+    total = length xs
+    start = total - max 0 n
+  in
+    Array.drop (max 0 start) xs
+
+joinWithSpace :: Array String -> String
+joinWithSpace = joinWith " "
 
 pruneWordEvents :: Instant -> Array WordEvent -> Array WordEvent
 pruneWordEvents now = filter

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-17T09:41:12-07:00
+updated: 2026-05-17T21:26:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-17T09:41:12-07:00
 - [2026-05-14 | 🐾🌈💔 Saying Goodbye](./reflections/2026-05-14.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (220)  
+## [🤖 AI Blog](./ai-blog/index.md) (221)  
+- [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./ai-blog/2026-05-17-2-word-meter-purescript-v0-1-1.md)  
 - [2026-05-17 | 📜 Word Meter — Preserving Scroll Across Rerenders 🧷](./ai-blog/2026-05-17-1-word-meter-vdom-scroll-preservation.md)  
 - [2026-05-16 | ⏱️ Word Meter Instant Timestamps 🤖](./ai-blog/2026-05-16-5-word-meter-instant-timestamps.md)  
 - [2026-05-16 | 🪓 Word Meter PureScript Port Cleanup 🧪](./ai-blog/2026-05-16-4-word-meter-purescript-port-cleanup-2.md)  
-- [2026-05-16 | 🧹 Word Meter PureScript Port Cleanup 🤖](./ai-blog/2026-05-16-3-word-meter-purescript-port-cleanup.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (68)  
@@ -77,11 +77,11 @@ updated: 2026-05-17T09:41:12-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (831)  
+## [📺 Videos](./videos/index.md) (832)  
+- [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./videos/how-to-rest-so-well-you-never-feel-exhausted-again.md)  
 - [🧩🧠📖 The missing ingredient in how we learn](./videos/the-missing-ingredient-in-how-we-learn.md)  
 - [📈✊✨ Progressives are making real gains](./videos/progressives-are-making-real-gains.md)  
 - [🏛️📰💡 Today in Politics | Explainer | May 14 2026](./videos/today-in-politics-explainer-may-14-2026.md)  
-- [🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./videos/media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-05-17T09:41:12-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
+- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
-- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
-- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

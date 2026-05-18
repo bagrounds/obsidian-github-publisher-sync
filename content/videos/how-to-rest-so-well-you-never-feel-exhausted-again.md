@@ -9,6 +9,10 @@ Platform:
 Channel: Justin Sung
 tags:
 youtube: https://youtu.be/Re5MZ9pwbC8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again  
@@ -67,13 +71,13 @@ youtube: https://youtu.be/Re5MZ9pwbC8
   
 ### ↔️ Similar  
   
-* 🔋 Peak Performance by Brad Stulberg and Steve Magness explores the critical balance between systematic stress and intentional rest for sustaining optimal human capability over long periods.  
+* 🔋 [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](../books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md) by Brad Stulberg and Steve Magness explores the critical balance between systematic stress and intentional rest for sustaining optimal human capability over long periods.  
 * 💤 Rest by Alex Soojung-Kim Pang discusses how deliberate downtime, hobbies, and psychological detachment directly fuel creative insights and professional productivity.  
   
 ### 🆚 Contrasting  
   
 * 🏃 Can't Hurt Me by David Goggins argues that mental resilience and energy reserves are expanded by consistently pushing past perceived cognitive and physical boundaries rather than prioritizing structured recovery.  
-* 💥 Extreme Ownership by Jocko Willink and Leif Babin focuses on maintaining relentless operational intensity, constant availability, and unwavering professional discipline through sheer mental fortitude.  
+* 💥 [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](../books/extreme-ownership-how-us-navy-seals-lead-and-win.md) by Jocko Willink and Leif Babin focuses on maintaining relentless operational intensity, constant availability, and unwavering professional discipline through sheer mental fortitude.  
   
 ### 🎨 Creatively Related  
   

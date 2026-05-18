@@ -6,10 +6,13 @@ module WordMeter.Recording.Math
   , shortRate
   , longRate
   , overallRate
+  , wordsPerDay
+  , sampleFraction
   , intervalDurationMs
   , intervalRate
   , captionOpacity
   , formatRate
+  , formatPercent
   , formatDurationMs
   , millisecondsBetween
   ) where
@@ -36,6 +39,9 @@ millisecondsPerMinute = 60000.0
 
 millisecondsPerSecond :: Number
 millisecondsPerSecond = 1000.0
+
+millisecondsPerDay :: Number
+millisecondsPerDay = 86400000.0
 
 -- | Compute the signed difference `a - b` in milliseconds.
 -- | Wraps `Data.DateTime.Instant.diff` and unwraps the result so
@@ -107,6 +113,33 @@ overallRate :: Session -> Number
 overallRate session =
   wordsPerMinute session.totalWords (max 1.0 (activeListeningMs session))
 
+-- | Average lifetime words per calendar day. The denominator is the
+-- | wall-clock span since the first start, expressed in days and never
+-- | less than one day so a fresh session does not divide by zero.
+wordsPerDay :: Session -> Number
+wordsPerDay session =
+  let
+    days = max 1.0 (wallSpanMs session / millisecondsPerDay)
+  in
+    Int.toNumber session.totalWords / days
+
+-- | The fraction (between 0 and 1) of wall-clock time since the first
+-- | start that the meter has been actively recording. Returns 0 before
+-- | the first start.
+sampleFraction :: Session -> Number
+sampleFraction session =
+  let
+    wall = wallSpanMs session
+  in
+    if wall <= 0.0 then 0.0
+    else
+      let
+        ratio = activeListeningMs session / wall
+      in
+        if ratio < 0.0 then 0.0
+        else if ratio > 1.0 then 1.0
+        else ratio
+
 formatRate :: Number -> String
 formatRate rate
   | not (isFinite rate) = "0"
@@ -119,6 +152,22 @@ formatRate rate
         fracPart = scaled `mod` 10
       in
         show wholePart <> "." <> show fracPart
+
+-- | Render a fraction in `[0, 1]` as a percentage string with no
+-- | decimal places (e.g. `0.5` → `"50%"`). Values outside the
+-- | expected range are clamped before rendering.
+formatPercent :: Number -> String
+formatPercent value
+  | not (isFinite value) = "0%"
+  | otherwise =
+      let
+        clamped =
+          if value < 0.0 then 0.0
+          else if value > 1.0 then 1.0
+          else value
+        rounded = Int.round (clamped * 100.0)
+      in
+        show rounded <> "%"
 
 formatDurationMs :: Number -> String
 formatDurationMs ms =

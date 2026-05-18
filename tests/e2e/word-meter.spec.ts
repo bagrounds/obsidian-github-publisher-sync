@@ -4,8 +4,11 @@ import { test, expect, type Page } from "@playwright/test"
 //   wm-root          mounted container
 //   wm-build         "PureScript build" tag
 //   wm-status        listening / idle status
-//   wm-count         total words count
-//   wm-count-label   "words counted" descriptor
+//   wm-count         today's words count (midnight-to-midnight local)
+//   wm-count-label   "words today" descriptor
+//   wm-stat-total    lifetime total (all days)
+//   wm-stat-per-day  average words per calendar day
+//   wm-stat-sample   percent of wall time spent recording
 //   wm-toggle        start / stop button
 //   wm-version       "Word Meter v<x>" footer
 
@@ -300,6 +303,93 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 })
 
+test.describe("Word Meter — PureScript build — multi-day stats", () => {
+  test("renames the big count tile to 'words today'", async ({ page }) => {
+    await loadWordMeter(page)
+    await expect(page.getByTestId("wm-count-label")).toHaveText("words today")
+  })
+
+  test("the new total, per-day, and sample tiles render alongside the rate tiles", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    await expect(page.getByTestId("wm-stat-total")).toBeVisible()
+    await expect(page.getByTestId("wm-stat-total")).toContainText("0")
+    await expect(page.getByTestId("wm-stat-per-day")).toBeVisible()
+    await expect(page.getByTestId("wm-stat-per-day")).toContainText("0")
+    await expect(page.getByTestId("wm-stat-sample")).toBeVisible()
+    await expect(page.getByTestId("wm-stat-sample")).toContainText("0%")
+  })
+
+  test("words today increments on each transcript, totalWords mirrors it on day one", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    await page.getByTestId("wm-toggle").click()
+    await simulateFinalTranscript(page, "one two three")
+    await expect(page.getByTestId("wm-count")).toHaveText("3")
+    expect(await page.evaluate(() => window.__wordMeter.getWordsToday())).toBe(3)
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(3)
+  })
+
+  test("ticking past midnight rolls words today back to zero without touching the lifetime total", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    // Start at 1970-01-01, count a handful of words, then tick to a
+    // wall-clock time exactly seven days later. The local-date bucket
+    // is guaranteed to differ regardless of the runner's timezone.
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("alpha beta gamma", 1_000)
+      window.__wordMeter.stopAt(2_000)
+    })
+    expect(await page.evaluate(() => window.__wordMeter.getWordsToday())).toBe(3)
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(3)
+
+    const sevenDaysMs = 7 * 24 * 60 * 60 * 1000
+    await page.evaluate((ms) => window.__wordMeter.tick(ms), sevenDaysMs)
+
+    expect(await page.evaluate(() => window.__wordMeter.getWordsToday())).toBe(0)
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(3)
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+    await expect(page.getByTestId("wm-stat-total")).toContainText("3")
+  })
+
+  test("the sample tile reports the fraction of wall time spent recording", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    // 20s listening out of a 40s wall span = 50%.
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three four", 10_000)
+      window.__wordMeter.stopAt(20_000)
+      window.__wordMeter.tick(40_000)
+    })
+    expect(await page.evaluate(() => window.__wordMeter.getSampleFraction())).toBe(0.5)
+    await expect(page.getByTestId("wm-stat-sample")).toContainText("50%")
+  })
+
+  test("the per-day tile averages totalWords across the wall-clock span", async ({
+    page,
+  }) => {
+    await loadWordMeter(page)
+    // Eight words counted, then a tick ten days after first start.
+    // wordsPerDay = 8 / 10 = 0.8.
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three four", 1_000)
+      window.__wordMeter.simulateFinalTranscriptAt("five six seven eight", 2_000)
+      window.__wordMeter.stopAt(3_000)
+    })
+    const tenDaysMs = 10 * 24 * 60 * 60 * 1000
+    await page.evaluate((ms) => window.__wordMeter.tick(ms), tenDaysMs)
+    expect(await page.evaluate(() => window.__wordMeter.getWordsPerDay())).toBe(0.8)
+    await expect(page.getByTestId("wm-stat-per-day")).toContainText("0.8")
+  })
+})
+
 test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () => {
   test("renders the collapsible drawer collapsed by default with the snapshot in its content", async ({
     page,
@@ -472,7 +562,8 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
       window.__wordMeter.simulateFinalTranscriptAt("five six", 7_000)
       window.__wordMeter.stopAt(8_000)
     })
-    await expect(page.getByTestId("wm-count")).toHaveText("6")
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(6)
+    await expect(page.getByTestId("wm-stat-total")).toContainText("6")
     const persistedKey = await page.evaluate(() =>
       Object.keys(window.localStorage).find((k) => k.startsWith("word-meter:state")),
     )
@@ -481,7 +572,12 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
     await page.reload()
     await page.waitForFunction(() => Boolean(window.__wordMeter))
 
-    await expect(page.getByTestId("wm-count")).toHaveText("6")
+    // The lifetime total survives the reload. The big "words today"
+    // count, on the other hand, rolls over to zero because the
+    // synthetic 1970 timestamps are no longer today by the time the
+    // browser re-mounts the page.
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(6)
+    await expect(page.getByTestId("wm-stat-total")).toContainText("6")
     await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(2)
     expect(await page.evaluate(() => window.__wordMeter.getEventLogLength())).toBe(2)
   })

@@ -9,12 +9,15 @@ import Data.Newtype (unwrap)
 import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import WordMeter.Diagnostics (diagnosticsLimit)
+import WordMeter.LocalDate (renderLocalDate)
 import WordMeter.Recognition.Path (RecognitionPath(..))
 import WordMeter.Recording.Math
   ( activeListeningMs
   , longRate
   , overallRate
+  , sampleFraction
   , shortRate
+  , wordsPerDay
   )
 import WordMeter.Recording.Reducer (Action(..), Dispatch)
 import WordMeter.Recording.Session
@@ -35,6 +38,10 @@ foreign import installTestHook
      , stopAt :: Number -> Effect Unit
      , tick :: Number -> Effect Unit
      , getTotalWords :: Effect Int
+     , getWordsToday :: Effect Int
+     , getTodayLocalDate :: Effect String
+     , getWordsPerDay :: Effect Number
+     , getSampleFraction :: Effect Number
      , getListening :: Effect Boolean
      , getVersion :: Effect String
      , getRateShort :: Effect Number
@@ -124,6 +131,10 @@ install
         else pure unit
     , tick: \timestampMs -> dispatch (Tick (millisToInstant timestampMs))
     , getTotalWords: _.totalWords <$> readSession
+    , getWordsToday: _.wordsToday <$> readSession
+    , getTodayLocalDate: renderTodayLocalDate <$> readSession
+    , getWordsPerDay: wordsPerDay <$> readSession
+    , getSampleFraction: sampleFraction <$> readSession
     , getListening: _.listening <$> readSession
     , getVersion: pure version
     , getRateShort: shortRate <$> readSession
@@ -176,6 +187,11 @@ renderActivePath session = case session.activeRecognitionPath of
   Nothing -> ""
   Just OnDevicePath -> "on-device"
   Just CloudPath -> "cloud"
+
+renderTodayLocalDate :: Session -> String
+renderTodayLocalDate session = case session.todayLocalDate of
+  Nothing -> ""
+  Just localDate -> renderLocalDate localDate
 
 firstStartedOrNaN :: Session -> Number
 firstStartedOrNaN session = case session.firstStartedAt of

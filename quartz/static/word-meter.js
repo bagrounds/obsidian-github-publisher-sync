@@ -147,6 +147,7 @@
   };
 
   // output/Control.Bind/index.js
+  var identity3 = /* @__PURE__ */ identity(categoryFn);
   var discard = function(dict) {
     return dict.discard;
   };
@@ -170,6 +171,12 @@
     discard: function(dictBind) {
       return bind(dictBind);
     }
+  };
+  var join = function(dictBind) {
+    var bind14 = bind(dictBind);
+    return function(m) {
+      return bind14(m)(identity3);
+    };
   };
 
   // output/Data.Semigroup/foreign.js
@@ -225,11 +232,11 @@
 
   // output/Data.Ord/foreign.js
   var unsafeCompareImpl = function(lt) {
-    return function(eq5) {
+    return function(eq6) {
       return function(gt) {
         return function(x) {
           return function(y) {
-            return x < y ? lt : x === y ? eq5 : gt;
+            return x < y ? lt : x === y ? eq6 : gt;
           };
         };
       };
@@ -461,7 +468,7 @@
   };
 
   // output/Data.Maybe/index.js
-  var identity3 = /* @__PURE__ */ identity(categoryFn);
+  var identity4 = /* @__PURE__ */ identity(categoryFn);
   var Nothing = /* @__PURE__ */ function() {
     function Nothing2() {
     }
@@ -508,10 +515,10 @@
   };
   var map2 = /* @__PURE__ */ map(functorMaybe);
   var fromMaybe = function(a) {
-    return maybe(a)(identity3);
+    return maybe(a)(identity4);
   };
   var eqMaybe = function(dictEq) {
-    var eq5 = eq(dictEq);
+    var eq6 = eq(dictEq);
     return {
       eq: function(x) {
         return function(y) {
@@ -520,7 +527,7 @@
           }
           ;
           if (x instanceof Just && y instanceof Just) {
-            return eq5(x.value0)(y.value0);
+            return eq6(x.value0)(y.value0);
           }
           ;
           return false;
@@ -544,6 +551,24 @@
     },
     Functor0: function() {
       return functorMaybe;
+    }
+  };
+  var bindMaybe = {
+    bind: function(v) {
+      return function(v1) {
+        if (v instanceof Just) {
+          return v1(v.value0);
+        }
+        ;
+        if (v instanceof Nothing) {
+          return Nothing.value;
+        }
+        ;
+        throw new Error("Failed pattern match at Data.Maybe (line 125, column 1 - line 127, column 28): " + [v.constructor.name, v1.constructor.name]);
+      };
+    },
+    Apply0: function() {
+      return applyMaybe;
     }
   };
 
@@ -1192,14 +1217,14 @@
   };
 
   // output/Data.Bifunctor/index.js
-  var identity4 = /* @__PURE__ */ identity(categoryFn);
+  var identity5 = /* @__PURE__ */ identity(categoryFn);
   var bimap = function(dict) {
     return dict.bimap;
   };
   var lmap = function(dictBifunctor) {
     var bimap1 = bimap(dictBifunctor);
     return function(f) {
-      return bimap1(f)(identity4);
+      return bimap1(f)(identity5);
     };
   };
   var bifunctorEither = {
@@ -1262,14 +1287,14 @@
   };
 
   // output/Data.Traversable/index.js
-  var identity5 = /* @__PURE__ */ identity(categoryFn);
+  var identity6 = /* @__PURE__ */ identity(categoryFn);
   var traverse = function(dict) {
     return dict.traverse;
   };
   var sequenceDefault = function(dictTraversable) {
     var traverse2 = traverse(dictTraversable);
     return function(dictApplicative) {
-      return traverse2(dictApplicative)(identity5);
+      return traverse2(dictApplicative)(identity6);
     };
   };
   var traversableArray = {
@@ -1343,7 +1368,7 @@
   // output/Data.Time.Duration/index.js
   var over2 = /* @__PURE__ */ over()();
   var negate2 = /* @__PURE__ */ negate(ringNumber);
-  var identity6 = /* @__PURE__ */ identity(categoryFn);
+  var identity7 = /* @__PURE__ */ identity(categoryFn);
   var Milliseconds = function(x) {
     return x;
   };
@@ -1370,8 +1395,8 @@
     };
   };
   var durationMilliseconds = {
-    fromDuration: identity6,
-    toDuration: identity6
+    fromDuration: identity7,
+    toDuration: identity7
   };
 
   // output/Data.DateTime.Instant/index.js
@@ -2414,6 +2439,35 @@
     };
   };
 
+  // output/WordMeter.LocalDate/foreign.js
+  var localDateOfMillis = (timestamp) => {
+    const date = new Date(timestamp);
+    const year2 = String(date.getFullYear()).padStart(4, "0");
+    const month2 = String(date.getMonth() + 1).padStart(2, "0");
+    const day2 = String(date.getDate()).padStart(2, "0");
+    return `${year2}-${month2}-${day2}`;
+  };
+
+  // output/WordMeter.LocalDate/index.js
+  var unwrap3 = /* @__PURE__ */ unwrap();
+  var LocalDate = function(x) {
+    return x;
+  };
+  var renderLocalDate = function(v) {
+    return v;
+  };
+  var localDateOf = function(inst) {
+    return localDateOfMillis(unwrap3(unInstant(inst)));
+  };
+  var localDateFromString = LocalDate;
+  var eqLocalDate = {
+    eq: function(x) {
+      return function(y) {
+        return x === y;
+      };
+    }
+  };
+
   // output/Data.String.CodeUnits/foreign.js
   var length2 = function(s) {
     return s.length;
@@ -2819,7 +2873,7 @@
       return "(" + (v.value0 + ")");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 112, column 1 - line 112, column 48): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 117, column 1 - line 117, column 48): " + [v.constructor.name]);
   };
   var minimumCaptionOpacity = 0.15;
   var longWindowMs = 6e5;
@@ -2851,6 +2905,8 @@
     return {
       listening: false,
       totalWords: 0,
+      wordsToday: 0,
+      todayLocalDate: Nothing.value,
       captions: [],
       wordEvents: [],
       eventLog: [],
@@ -2895,9 +2951,10 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 71, column 1 - line 71, column 42): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 77, column 1 - line 77, column 42): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
+  var millisecondsPerDay = 864e5;
   var millisecondsBetween = function(a) {
     return function(b) {
       var v = diff2(a)(b);
@@ -2913,7 +2970,11 @@
       return max3(0)(millisecondsBetween(session.now)(session.firstStartedAt.value0));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 58, column 22 - line 60, column 64): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 64, column 22 - line 66, column 64): " + [session.firstStartedAt.constructor.name]);
+  };
+  var wordsPerDay = function(session) {
+    var days = max3(1)(wallSpanMs(session) / millisecondsPerDay);
+    return toNumber(session.totalWords) / days;
   };
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
@@ -2961,19 +3022,44 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 110, column 1 - line 110, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 143, column 1 - line 143, column 31): " + [rate.constructor.name]);
+  };
+  var formatPercent = function(value) {
+    if (!isFiniteImpl(value)) {
+      return "0%";
+    }
+    ;
+    if (otherwise) {
+      var clamped = function() {
+        var $27 = value < 0;
+        if ($27) {
+          return 0;
+        }
+        ;
+        var $28 = value > 1;
+        if ($28) {
+          return 1;
+        }
+        ;
+        return value;
+      }();
+      var rounded = round2(clamped * 100);
+      return show2(rounded) + "%";
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 159, column 1 - line 159, column 34): " + [value.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $24 = totalSeconds < 60;
-    if ($24) {
+    var $29 = totalSeconds < 60;
+    if ($29) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $25 = totalMinutes < 60;
-    if ($25) {
+    var $30 = totalMinutes < 60;
+    if ($30) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -2997,19 +3083,40 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 53, column 17 - line 55, column 21): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 59, column 17 - line 61, column 21): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
     return wordsPerMinute(session.totalWords)(max3(1)(activeListeningMs(session)));
   };
+  var sampleFraction = function(session) {
+    var wall = wallSpanMs(session);
+    var $34 = wall <= 0;
+    if ($34) {
+      return 0;
+    }
+    ;
+    var ratio = activeListeningMs(session) / wall;
+    var $35 = ratio < 0;
+    if ($35) {
+      return 0;
+    }
+    ;
+    var $36 = ratio > 1;
+    if ($36) {
+      return 1;
+    }
+    ;
+    return ratio;
+  };
 
   // output/WordMeter.Recording.Reducer/index.js
+  var eq3 = /* @__PURE__ */ eq(eqLocalDate);
   var append2 = /* @__PURE__ */ append(semigroupArray);
   var max4 = /* @__PURE__ */ max(ordDateTime);
   var max12 = /* @__PURE__ */ max(ordNumber);
   var show3 = /* @__PURE__ */ show(showInt);
-  var unwrap3 = /* @__PURE__ */ unwrap();
+  var unwrap4 = /* @__PURE__ */ unwrap();
   var map6 = /* @__PURE__ */ map(functorMaybe);
   var map1 = /* @__PURE__ */ map(functorArray);
   var max22 = /* @__PURE__ */ max(ordInt);
@@ -3205,6 +3312,72 @@
     };
     return SetDiagnosticsDrawerOpen2;
   }();
+  var rolloverWordsToday = function(timestamp) {
+    return function(session) {
+      var currentDate = localDateOf(timestamp);
+      if (session.todayLocalDate instanceof Just && eq3(session.todayLocalDate.value0)(currentDate)) {
+        return session;
+      }
+      ;
+      if (session.todayLocalDate instanceof Just) {
+        return {
+          listening: session.listening,
+          totalWords: session.totalWords,
+          captions: session.captions,
+          wordEvents: session.wordEvents,
+          eventLog: session.eventLog,
+          currentIntervalWords: session.currentIntervalWords,
+          firstStartedAt: session.firstStartedAt,
+          currentIntervalStart: session.currentIntervalStart,
+          completedActiveMs: session.completedActiveMs,
+          now: session.now,
+          diagnostics: session.diagnostics,
+          environment: session.environment,
+          copyStatus: session.copyStatus,
+          keepAwake: session.keepAwake,
+          wakeLockState: session.wakeLockState,
+          errorBanner: session.errorBanner,
+          lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
+          recognitionStatusOverride: session.recognitionStatusOverride,
+          cloudFallbackAttempted: session.cloudFallbackAttempted,
+          activeRecognitionPath: session.activeRecognitionPath,
+          diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+          wordsToday: 0,
+          todayLocalDate: new Just(currentDate)
+        };
+      }
+      ;
+      if (session.todayLocalDate instanceof Nothing) {
+        return {
+          listening: session.listening,
+          totalWords: session.totalWords,
+          wordsToday: session.wordsToday,
+          captions: session.captions,
+          wordEvents: session.wordEvents,
+          eventLog: session.eventLog,
+          currentIntervalWords: session.currentIntervalWords,
+          firstStartedAt: session.firstStartedAt,
+          currentIntervalStart: session.currentIntervalStart,
+          completedActiveMs: session.completedActiveMs,
+          now: session.now,
+          diagnostics: session.diagnostics,
+          environment: session.environment,
+          copyStatus: session.copyStatus,
+          keepAwake: session.keepAwake,
+          wakeLockState: session.wakeLockState,
+          errorBanner: session.errorBanner,
+          lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
+          recognitionStatusOverride: session.recognitionStatusOverride,
+          cloudFallbackAttempted: session.cloudFallbackAttempted,
+          activeRecognitionPath: session.activeRecognitionPath,
+          diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+          todayLocalDate: new Just(currentDate)
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 355, column 5 - line 358, column 63): " + [session.todayLocalDate.constructor.name]);
+    };
+  };
   var refreshLastCaptionTimestamp = function(now) {
     return function(captions) {
       var v = unsnoc(captions);
@@ -3220,7 +3393,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 382, column 44 - line 384, column 62): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 419, column 44 - line 421, column 62): " + [v.constructor.name]);
     };
   };
   var pruneWordEvents = function(now) {
@@ -3246,8 +3419,8 @@
           var closedIntervalMs = max12(0)(millisecondsBetween(timestamp)(startedAt));
           var statsDetail = "words=" + (show3(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedIntervalMs)));
           var fullDetail = function() {
-            var $52 = reasonDetail === "";
-            if ($52) {
+            var $59 = reasonDetail === "";
+            if ($59) {
               return statsDetail;
             }
             ;
@@ -3260,6 +3433,8 @@
           };
           return {
             totalWords: session.totalWords,
+            wordsToday: session.wordsToday,
+            todayLocalDate: session.todayLocalDate,
             firstStartedAt: session.firstStartedAt,
             environment: session.environment,
             copyStatus: session.copyStatus,
@@ -3272,7 +3447,7 @@
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
-            completedActiveMs: unwrap3(session.completedActiveMs) + closedIntervalMs,
+            completedActiveMs: unwrap4(session.completedActiveMs) + closedIntervalMs,
             wordEvents: pruneWordEvents(timestamp)(session.wordEvents),
             captions: pruneCaptions(timestamp)(session.captions),
             eventLog: takeEnd(eventLogLimit)(append2(session.eventLog)([completed])),
@@ -3302,7 +3477,7 @@
     };
   };
   var instantToMs = function(inst) {
-    return unwrap3(unInstant(inst));
+    return unwrap4(unInstant(inst));
   };
   var intervalToPersistedInterval = function(interval) {
     return {
@@ -3320,8 +3495,10 @@
   var toPersistedData = function(session) {
     return {
       totalWords: session.totalWords,
+      wordsToday: session.wordsToday,
+      todayLocalDate: map6(renderLocalDate)(session.todayLocalDate),
       firstStartedAt: map6(instantToMs)(session.firstStartedAt),
-      completedActiveMs: unwrap3(session.completedActiveMs),
+      completedActiveMs: unwrap4(session.completedActiveMs),
       cloudFallbackAttempted: session.cloudFallbackAttempted,
       wordEvents: map1(wordEventToPersistedWordEvent)(session.wordEvents),
       eventLog: map1(intervalToPersistedInterval)(session.eventLog)
@@ -3348,7 +3525,39 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 393, column 56 - line 402, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 430, column 56 - line 439, column 8): " + [v.constructor.name]);
+        };
+      };
+    };
+  };
+  var addWordsForToday = function(timestamp) {
+    return function(wordDelta) {
+      return function(session) {
+        var rolled = rolloverWordsToday(timestamp)(session);
+        return {
+          listening: rolled.listening,
+          todayLocalDate: rolled.todayLocalDate,
+          captions: rolled.captions,
+          wordEvents: rolled.wordEvents,
+          eventLog: rolled.eventLog,
+          currentIntervalWords: rolled.currentIntervalWords,
+          firstStartedAt: rolled.firstStartedAt,
+          currentIntervalStart: rolled.currentIntervalStart,
+          completedActiveMs: rolled.completedActiveMs,
+          now: rolled.now,
+          diagnostics: rolled.diagnostics,
+          environment: rolled.environment,
+          copyStatus: rolled.copyStatus,
+          keepAwake: rolled.keepAwake,
+          wakeLockState: rolled.wakeLockState,
+          errorBanner: rolled.errorBanner,
+          lastRawFinalizedTranscript: rolled.lastRawFinalizedTranscript,
+          recognitionStatusOverride: rolled.recognitionStatusOverride,
+          cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+          activeRecognitionPath: rolled.activeRecognitionPath,
+          diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
+          totalWords: rolled.totalWords + wordDelta | 0,
+          wordsToday: rolled.wordsToday + wordDelta | 0
         };
       };
     };
@@ -3366,34 +3575,37 @@
             label: "start counting",
             detail: ""
           };
+          var rolled = rolloverWordsToday(v.value0)(v1);
           return {
-            totalWords: v1.totalWords,
-            eventLog: v1.eventLog,
-            completedActiveMs: v1.completedActiveMs,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            wakeLockState: v1.wakeLockState,
-            cloudFallbackAttempted: v1.cloudFallbackAttempted,
-            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+            totalWords: rolled.totalWords,
+            wordsToday: rolled.wordsToday,
+            todayLocalDate: rolled.todayLocalDate,
+            eventLog: rolled.eventLog,
+            completedActiveMs: rolled.completedActiveMs,
+            environment: rolled.environment,
+            copyStatus: rolled.copyStatus,
+            keepAwake: rolled.keepAwake,
+            wakeLockState: rolled.wakeLockState,
+            cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+            diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
             firstStartedAt: function() {
-              if (v1.firstStartedAt instanceof Just) {
-                return new Just(v1.firstStartedAt.value0);
+              if (rolled.firstStartedAt instanceof Just) {
+                return new Just(rolled.firstStartedAt.value0);
               }
               ;
-              if (v1.firstStartedAt instanceof Nothing) {
+              if (rolled.firstStartedAt instanceof Nothing) {
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 93, column 30 - line 95, column 40): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 95, column 30 - line 97, column 40): " + [rolled.firstStartedAt.constructor.name]);
             }(),
-            wordEvents: pruneWordEvents(v.value0)(v1.wordEvents),
-            captions: pruneCaptions(v.value0)(v1.captions),
+            wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
+            captions: pruneCaptions(v.value0)(rolled.captions),
             now: v.value0,
-            diagnostics: recordEntry(startEntry)(v1.diagnostics),
+            diagnostics: recordEntry(startEntry)(rolled.diagnostics),
             errorBanner: idleErrorBanner,
             lastRawFinalizedTranscript: "",
             recognitionStatusOverride: idleRecognitionStatusOverride,
@@ -3408,11 +3620,13 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneWordEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $62 = wordCount === 0;
-          if ($62) {
+          var $69 = wordCount === 0;
+          if ($69) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
+              wordsToday: v1.wordsToday,
+              todayLocalDate: v1.todayLocalDate,
               eventLog: v1.eventLog,
               currentIntervalWords: v1.currentIntervalWords,
               firstStartedAt: v1.firstStartedAt,
@@ -3440,24 +3654,27 @@
             label: "final transcript",
             detail: "words=" + show3(wordCount)
           };
+          var counted = addWordsForToday(v.value1)(wordCount)(v1);
           return {
-            listening: v1.listening,
-            eventLog: v1.eventLog,
-            firstStartedAt: v1.firstStartedAt,
-            currentIntervalStart: v1.currentIntervalStart,
-            completedActiveMs: v1.completedActiveMs,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            wakeLockState: v1.wakeLockState,
-            errorBanner: v1.errorBanner,
-            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
-            recognitionStatusOverride: v1.recognitionStatusOverride,
-            cloudFallbackAttempted: v1.cloudFallbackAttempted,
-            activeRecognitionPath: v1.activeRecognitionPath,
-            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
-            totalWords: v1.totalWords + wordCount | 0,
-            currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
+            listening: counted.listening,
+            totalWords: counted.totalWords,
+            wordsToday: counted.wordsToday,
+            todayLocalDate: counted.todayLocalDate,
+            eventLog: counted.eventLog,
+            firstStartedAt: counted.firstStartedAt,
+            currentIntervalStart: counted.currentIntervalStart,
+            completedActiveMs: counted.completedActiveMs,
+            environment: counted.environment,
+            copyStatus: counted.copyStatus,
+            keepAwake: counted.keepAwake,
+            wakeLockState: counted.wakeLockState,
+            errorBanner: counted.errorBanner,
+            lastRawFinalizedTranscript: counted.lastRawFinalizedTranscript,
+            recognitionStatusOverride: counted.recognitionStatusOverride,
+            cloudFallbackAttempted: counted.cloudFallbackAttempted,
+            activeRecognitionPath: counted.activeRecognitionPath,
+            diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+            currentIntervalWords: counted.currentIntervalWords + wordCount | 0,
             captions: append2(prunedCaptions)([{
               transcript: v.value0,
               wordCount,
@@ -3468,7 +3685,7 @@
               wordCount
             }]),
             now: v.value1,
-            diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+            diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
           };
         }
         ;
@@ -3476,6 +3693,8 @@
           return {
             listening: v1.listening,
             totalWords: v1.totalWords,
+            wordsToday: v1.wordsToday,
+            todayLocalDate: v1.todayLocalDate,
             wordEvents: v1.wordEvents,
             eventLog: v1.eventLog,
             currentIntervalWords: v1.currentIntervalWords,
@@ -3505,6 +3724,8 @@
           return {
             listening: v1.listening,
             totalWords: v1.totalWords,
+            wordsToday: v1.wordsToday,
+            todayLocalDate: v1.todayLocalDate,
             captions: v1.captions,
             wordEvents: v1.wordEvents,
             eventLog: v1.eventLog,
@@ -3551,8 +3772,10 @@
             lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
             listening: v1.listening,
             recognitionStatusOverride: v1.recognitionStatusOverride,
+            todayLocalDate: v1.todayLocalDate,
             totalWords: v1.totalWords,
             wakeLockState: v1.wakeLockState,
+            wordsToday: v1.wordsToday,
             now: v.value0,
             wordEvents: prunedEvents,
             captions: prunedCaptions
@@ -3561,6 +3784,8 @@
             return {
               listening: base.listening,
               totalWords: base.totalWords,
+              wordsToday: base.wordsToday,
+              todayLocalDate: base.todayLocalDate,
               wordEvents: base.wordEvents,
               eventLog: base.eventLog,
               currentIntervalWords: base.currentIntervalWords,
@@ -3594,31 +3819,34 @@
               detail: "extend wordDelta=" + show3(decision.value0.wordDelta)
             };
             var extendedCaptions = appendOrExtendCaption(decision.value0.caption)(decision.value0.wordDelta)(v.value0)(prunedCaptions);
+            var counted = addWordsForToday(v.value0)(decision.value0.wordDelta)(base);
             return {
-              listening: base.listening,
-              eventLog: base.eventLog,
-              firstStartedAt: base.firstStartedAt,
-              currentIntervalStart: base.currentIntervalStart,
-              completedActiveMs: base.completedActiveMs,
-              now: base.now,
-              environment: base.environment,
-              copyStatus: base.copyStatus,
-              keepAwake: base.keepAwake,
-              wakeLockState: base.wakeLockState,
-              errorBanner: base.errorBanner,
-              recognitionStatusOverride: base.recognitionStatusOverride,
-              cloudFallbackAttempted: base.cloudFallbackAttempted,
-              activeRecognitionPath: base.activeRecognitionPath,
-              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
-              totalWords: v1.totalWords + decision.value0.wordDelta | 0,
-              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordDelta | 0,
+              listening: counted.listening,
+              totalWords: counted.totalWords,
+              wordsToday: counted.wordsToday,
+              todayLocalDate: counted.todayLocalDate,
+              eventLog: counted.eventLog,
+              firstStartedAt: counted.firstStartedAt,
+              currentIntervalStart: counted.currentIntervalStart,
+              completedActiveMs: counted.completedActiveMs,
+              now: counted.now,
+              environment: counted.environment,
+              copyStatus: counted.copyStatus,
+              keepAwake: counted.keepAwake,
+              wakeLockState: counted.wakeLockState,
+              errorBanner: counted.errorBanner,
+              recognitionStatusOverride: counted.recognitionStatusOverride,
+              cloudFallbackAttempted: counted.cloudFallbackAttempted,
+              activeRecognitionPath: counted.activeRecognitionPath,
+              diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              currentIntervalWords: counted.currentIntervalWords + decision.value0.wordDelta | 0,
               captions: extendedCaptions,
               wordEvents: append2(prunedEvents)([{
                 timestamp: v.value0,
                 wordCount: decision.value0.wordDelta
               }]),
               lastRawFinalizedTranscript: v.value1,
-              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+              diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
             };
           }
           ;
@@ -3628,24 +3856,27 @@
               label: "final transcript",
               detail: "words=" + show3(decision.value0.wordCount)
             };
+            var counted = addWordsForToday(v.value0)(decision.value0.wordCount)(base);
             return {
-              listening: base.listening,
-              eventLog: base.eventLog,
-              firstStartedAt: base.firstStartedAt,
-              currentIntervalStart: base.currentIntervalStart,
-              completedActiveMs: base.completedActiveMs,
-              now: base.now,
-              environment: base.environment,
-              copyStatus: base.copyStatus,
-              keepAwake: base.keepAwake,
-              wakeLockState: base.wakeLockState,
-              errorBanner: base.errorBanner,
-              recognitionStatusOverride: base.recognitionStatusOverride,
-              cloudFallbackAttempted: base.cloudFallbackAttempted,
-              activeRecognitionPath: base.activeRecognitionPath,
-              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
-              totalWords: v1.totalWords + decision.value0.wordCount | 0,
-              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordCount | 0,
+              listening: counted.listening,
+              totalWords: counted.totalWords,
+              wordsToday: counted.wordsToday,
+              todayLocalDate: counted.todayLocalDate,
+              eventLog: counted.eventLog,
+              firstStartedAt: counted.firstStartedAt,
+              currentIntervalStart: counted.currentIntervalStart,
+              completedActiveMs: counted.completedActiveMs,
+              now: counted.now,
+              environment: counted.environment,
+              copyStatus: counted.copyStatus,
+              keepAwake: counted.keepAwake,
+              wakeLockState: counted.wakeLockState,
+              errorBanner: counted.errorBanner,
+              recognitionStatusOverride: counted.recognitionStatusOverride,
+              cloudFallbackAttempted: counted.cloudFallbackAttempted,
+              activeRecognitionPath: counted.activeRecognitionPath,
+              diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              currentIntervalWords: counted.currentIntervalWords + decision.value0.wordCount | 0,
               captions: append2(prunedCaptions)([{
                 transcript: decision.value0.caption,
                 wordCount: decision.value0.wordCount,
@@ -3656,11 +3887,11 @@
                 wordCount: decision.value0.wordCount
               }]),
               lastRawFinalizedTranscript: v.value1,
-              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+              diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
             };
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 152, column 10 - line 200, column 16): " + [decision.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 154, column 10 - line 202, column 16): " + [decision.constructor.name]);
         }
         ;
       }
@@ -3669,6 +3900,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3692,28 +3925,31 @@
       }
       ;
       if (v instanceof Tick) {
+        var rolled = rolloverWordsToday(v.value0)(v1);
         return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          wakeLockState: v1.wakeLockState,
-          errorBanner: v1.errorBanner,
-          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
-          recognitionStatusOverride: v1.recognitionStatusOverride,
-          cloudFallbackAttempted: v1.cloudFallbackAttempted,
-          activeRecognitionPath: v1.activeRecognitionPath,
-          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+          listening: rolled.listening,
+          totalWords: rolled.totalWords,
+          wordsToday: rolled.wordsToday,
+          todayLocalDate: rolled.todayLocalDate,
+          eventLog: rolled.eventLog,
+          currentIntervalWords: rolled.currentIntervalWords,
+          firstStartedAt: rolled.firstStartedAt,
+          currentIntervalStart: rolled.currentIntervalStart,
+          completedActiveMs: rolled.completedActiveMs,
+          diagnostics: rolled.diagnostics,
+          environment: rolled.environment,
+          copyStatus: rolled.copyStatus,
+          keepAwake: rolled.keepAwake,
+          wakeLockState: rolled.wakeLockState,
+          errorBanner: rolled.errorBanner,
+          lastRawFinalizedTranscript: rolled.lastRawFinalizedTranscript,
+          recognitionStatusOverride: rolled.recognitionStatusOverride,
+          cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+          activeRecognitionPath: rolled.activeRecognitionPath,
+          diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
           now: v.value0,
-          wordEvents: pruneWordEvents(v.value0)(v1.wordEvents),
-          captions: pruneCaptions(v.value0)(v1.captions)
+          wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
+          captions: pruneCaptions(v.value0)(rolled.captions)
         };
       }
       ;
@@ -3721,6 +3957,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3751,6 +3989,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3777,6 +4017,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3808,6 +4050,8 @@
         return {
           listening: initialSession.listening,
           totalWords: initialSession.totalWords,
+          wordsToday: initialSession.wordsToday,
+          todayLocalDate: initialSession.todayLocalDate,
           captions: initialSession.captions,
           wordEvents: initialSession.wordEvents,
           eventLog: initialSession.eventLog,
@@ -3845,6 +4089,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           totalWords: max22(0)(v.value0.totalWords),
+          wordsToday: max22(0)(v.value0.wordsToday),
+          todayLocalDate: map6(localDateFromString)(v.value0.todayLocalDate),
           firstStartedAt: map6(msToInstant)(v.value0.firstStartedAt),
           completedActiveMs: max12(0)(v.value0.completedActiveMs),
           cloudFallbackAttempted: v.value0.cloudFallbackAttempted,
@@ -3860,6 +4106,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3892,6 +4140,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3937,25 +4187,29 @@
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           listening: v1.listening,
           recognitionStatusOverride: v1.recognitionStatusOverride,
+          todayLocalDate: v1.todayLocalDate,
           totalWords: v1.totalWords,
           wakeLockState: v1.wakeLockState,
           wordEvents: v1.wordEvents,
+          wordsToday: v1.wordsToday,
           diagnostics: recordEntry(errorEntry)(v1.diagnostics),
           now: v.value0
         };
         var classified = classifyRecognitionError(v.value1);
         var bannerText = recognitionErrorBannerText(classified);
-        var $81 = isTransient(classified);
-        if ($81) {
+        var $88 = isTransient(classified);
+        if ($88) {
           return sessionWithDiagnostic;
         }
         ;
-        var $82 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
-        if ($82) {
+        var $89 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($89) {
           var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
           return {
             listening: stopped.listening,
             totalWords: stopped.totalWords,
+            wordsToday: stopped.wordsToday,
+            todayLocalDate: stopped.todayLocalDate,
             captions: stopped.captions,
             wordEvents: stopped.wordEvents,
             eventLog: stopped.eventLog,
@@ -3981,6 +4235,8 @@
         return {
           listening: sessionWithDiagnostic.listening,
           totalWords: sessionWithDiagnostic.totalWords,
+          wordsToday: sessionWithDiagnostic.wordsToday,
+          todayLocalDate: sessionWithDiagnostic.todayLocalDate,
           captions: sessionWithDiagnostic.captions,
           wordEvents: sessionWithDiagnostic.wordEvents,
           eventLog: sessionWithDiagnostic.eventLog,
@@ -4007,6 +4263,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4033,6 +4291,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4059,6 +4319,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4085,6 +4347,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4111,6 +4375,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4133,7 +4399,7 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 81, column 1 - line 81, column 39): " + [v.constructor.name, v1.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 82, column 1 - line 82, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
 
@@ -4499,7 +4765,7 @@
   // output/Foreign.Object/index.js
   var bindFlipped2 = /* @__PURE__ */ bindFlipped(bindST);
   var foldr2 = /* @__PURE__ */ foldr(foldableArray);
-  var identity7 = /* @__PURE__ */ identity(categoryFn);
+  var identity8 = /* @__PURE__ */ identity(categoryFn);
   var values = /* @__PURE__ */ toArrayWithKey(function(v) {
     return function(v1) {
       return v1;
@@ -4636,7 +4902,7 @@
       };
     },
     sequence: function(dictApplicative) {
-      return traverse(traversableObject)(dictApplicative)(identity7);
+      return traverse(traversableObject)(dictApplicative)(identity8);
     },
     Functor0: function() {
       return functorObject;
@@ -4664,6 +4930,13 @@
   };
   var jsonEmptyObject = /* @__PURE__ */ id(empty2);
   var isJsonType = /* @__PURE__ */ verbJsonType(false)(/* @__PURE__ */ $$const(true));
+  var caseJsonString = function(d) {
+    return function(f) {
+      return function(j) {
+        return _caseJson($$const(d), $$const(d), $$const(d), f, $$const(d), $$const(d), j);
+      };
+    };
+  };
   var caseJsonObject = function(d) {
     return function(f) {
       return function(j) {
@@ -4842,6 +5115,9 @@
       };
     };
   };
+  var decodeString = /* @__PURE__ */ function() {
+    return caseJsonString(new Left(new TypeMismatch("String")))(Right.create);
+  }();
   var decodeNumber = /* @__PURE__ */ function() {
     return caseJsonNumber(new Left(new TypeMismatch("Number")))(Right.create);
   }();
@@ -4961,6 +5237,9 @@
         }
       };
     };
+  };
+  var decodeJsonString = {
+    decodeJson: decodeString
   };
   var decodeJsonNumber = {
     decodeJson: decodeNumber
@@ -5089,6 +5368,7 @@
       };
     };
   };
+  var encodeString = id;
   var encodeNumber = id;
   var encodeMaybe = function(encoder) {
     return function(v) {
@@ -5146,6 +5426,9 @@
   var encodeJsonJson = {
     encodeJson: /* @__PURE__ */ identity(categoryFn)
   };
+  var encodeJsonJString = {
+    encodeJson: encodeString
+  };
   var encodeJsonJNumber = {
     encodeJson: encodeNumber
   };
@@ -5200,9 +5483,10 @@
   var show4 = /* @__PURE__ */ show(showInt);
   var extend4 = /* @__PURE__ */ extend3(encodeJsonJson);
   var assoc3 = /* @__PURE__ */ assoc2(encodeJsonInt);
-  var assoc1 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJNumber));
-  var assoc22 = /* @__PURE__ */ assoc2(encodeJsonJNumber);
-  var assoc32 = /* @__PURE__ */ assoc2(encodeJsonJBoolean);
+  var assoc1 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJString));
+  var assoc22 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJNumber));
+  var assoc32 = /* @__PURE__ */ assoc2(encodeJsonJNumber);
+  var assoc4 = /* @__PURE__ */ assoc2(encodeJsonJBoolean);
   var gEncodeJsonCons2 = /* @__PURE__ */ gEncodeJsonCons(encodeJsonJNumber);
   var wordCountIsSymbol = {
     reflectSymbol: function() {
@@ -5215,7 +5499,7 @@
       return "timestamp";
     }
   };
-  var assoc4 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons1(timestampIsSymbol)())()));
+  var assoc5 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons1(timestampIsSymbol)())()));
   var startedAtIsSymbol = {
     reflectSymbol: function() {
       return "startedAt";
@@ -5226,7 +5510,7 @@
       return "endedAt";
     }
   };
-  var assoc5 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons2(/* @__PURE__ */ gEncodeJsonCons1(startedAtIsSymbol)())(endedAtIsSymbol)())()));
+  var assoc6 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons2(/* @__PURE__ */ gEncodeJsonCons1(startedAtIsSymbol)())(endedAtIsSymbol)())()));
   var encodeJson2 = /* @__PURE__ */ encodeJson(encodeJsonJson);
   var bind6 = /* @__PURE__ */ bind(bindEither);
   var decodeJson2 = /* @__PURE__ */ decodeJson(/* @__PURE__ */ decodeForeignObject2(decodeJsonJson));
@@ -5236,11 +5520,14 @@
   var getField1 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeJsonMaybe(decodeJsonNumber));
   var getFieldOptional$prime3 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonNumber);
   var getFieldOptional$prime1 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonBoolean);
+  var getFieldOptional$prime22 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonInt);
+  var getFieldOptional$prime32 = /* @__PURE__ */ getFieldOptional$prime2(/* @__PURE__ */ decodeJsonMaybe(decodeJsonString));
   var gDecodeJsonCons2 = /* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonNumber));
   var gDecodeJsonCons1 = /* @__PURE__ */ gDecodeJsonCons2(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonInt))(gDecodeJsonNil)(wordCountIsSymbol)()());
   var getField22 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons1(timestampIsSymbol)()())()));
   var getField32 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons2(/* @__PURE__ */ gDecodeJsonCons1(startedAtIsSymbol)()())(endedAtIsSymbol)()())()));
   var pure4 = /* @__PURE__ */ pure(applicativeEither);
+  var join2 = /* @__PURE__ */ join(bindMaybe);
   var InvalidJson = /* @__PURE__ */ function() {
     function InvalidJson2(value0) {
       this.value0 = value0;
@@ -5289,7 +5576,7 @@
     throw new Error("Failed pattern match at WordMeter.Persistence (line 30, column 1 - line 30, column 53): " + [v.constructor.name]);
   };
   var encodePersistedData = function(persisted) {
-    var envelope = extend4(assoc3("version")(storageVersion))(extend4(assoc3("totalWords")(persisted.totalWords))(extend4(assoc1("firstStartedAt")(persisted.firstStartedAt))(extend4(assoc22("completedActiveMs")(persisted.completedActiveMs))(extend4(assoc32("cloudFallbackAttempted")(persisted.cloudFallbackAttempted))(extend4(assoc4("wordEvents")(persisted.wordEvents))(extend4(assoc5("eventLog")(persisted.eventLog))(jsonEmptyObject)))))));
+    var envelope = extend4(assoc3("version")(storageVersion))(extend4(assoc3("totalWords")(persisted.totalWords))(extend4(assoc3("wordsToday")(persisted.wordsToday))(extend4(assoc1("todayLocalDate")(persisted.todayLocalDate))(extend4(assoc22("firstStartedAt")(persisted.firstStartedAt))(extend4(assoc32("completedActiveMs")(persisted.completedActiveMs))(extend4(assoc4("cloudFallbackAttempted")(persisted.cloudFallbackAttempted))(extend4(assoc5("wordEvents")(persisted.wordEvents))(extend4(assoc6("eventLog")(persisted.eventLog))(jsonEmptyObject)))))))));
     return stringify(encodeJson2(envelope));
   };
   var decodePersistedData = function(payload) {
@@ -5302,7 +5589,7 @@
         return new Right(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Persistence (line 85, column 15 - line 87, column 31): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Persistence (line 92, column 15 - line 94, column 31): " + [v.constructor.name]);
     };
     var mapInvalidJson = function(v) {
       if (v instanceof Left) {
@@ -5313,7 +5600,7 @@
         return new Right(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Persistence (line 80, column 20 - line 82, column 31): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Persistence (line 87, column 20 - line 89, column 31): " + [v.constructor.name]);
     };
     return bind6(mapInvalidJson(parseJson(payload)))(function(json) {
       return bind6(mapSchema(decodeJson2(json)))(function(envelope) {
@@ -5323,15 +5610,21 @@
               return bind6(mapSchema(getField1(envelope)("firstStartedAt")))(function(firstStartedAt) {
                 return bind6(mapSchema(getFieldOptional$prime3(envelope)("completedActiveMs")))(function(completedActiveMs) {
                   return bind6(mapSchema(getFieldOptional$prime1(envelope)("cloudFallbackAttempted")))(function(cloudFallbackAttempted) {
-                    return bind6(mapSchema(getField22(envelope)("wordEvents")))(function(wordEvents) {
-                      return bind6(mapSchema(getField32(envelope)("eventLog")))(function(eventLog) {
-                        return pure4({
-                          totalWords,
-                          firstStartedAt,
-                          completedActiveMs: fromMaybe(0)(completedActiveMs),
-                          cloudFallbackAttempted: fromMaybe(false)(cloudFallbackAttempted),
-                          wordEvents,
-                          eventLog
+                    return bind6(mapSchema(getFieldOptional$prime22(envelope)("wordsToday")))(function(wordsToday) {
+                      return bind6(mapSchema(getFieldOptional$prime32(envelope)("todayLocalDate")))(function(todayLocalDate) {
+                        return bind6(mapSchema(getField22(envelope)("wordEvents")))(function(wordEvents) {
+                          return bind6(mapSchema(getField32(envelope)("eventLog")))(function(eventLog) {
+                            return pure4({
+                              totalWords,
+                              wordsToday: fromMaybe(0)(wordsToday),
+                              todayLocalDate: join2(todayLocalDate),
+                              firstStartedAt,
+                              completedActiveMs: fromMaybe(0)(completedActiveMs),
+                              cloudFallbackAttempted: fromMaybe(false)(cloudFallbackAttempted),
+                              wordEvents,
+                              eventLog
+                            });
+                          });
                         });
                       });
                     });
@@ -5743,7 +6036,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 232, column 24 - line 234, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 238, column 24 - line 240, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var renderStatus = function(session) {
     if (session.recognitionStatusOverride !== "") {
@@ -5758,7 +6051,7 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 104, column 1 - line 104, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 107, column 1 - line 107, column 34): " + [session.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
@@ -5849,7 +6142,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording.View (line 198, column 11 - line 200, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording.View (line 204, column 11 - line 206, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -5859,7 +6152,7 @@
     return div_([className("wm-metric-tile")])([])([statTileLabel("Started"), div_([testId("wm-started"), className("wm-metric-tile-value wm-metric-tile-value-started")])([])([text(startedLabel(session))])]);
   };
   var buildStats = function(session) {
-    return div_([testId("wm-stats"), className("wm-metrics-grid")])([])([buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStartedTile(session)]);
+    return div_([testId("wm-stats"), className("wm-metrics-grid")])([])([buildStatTile("wm-stat-total")("Total")(show5(session.totalWords))(new Just("words all time")), buildStatTile("wm-stat-per-day")("Per day")(formatRate(wordsPerDay(session)))(new Just("words / day")), buildStatTile("wm-stat-sample")("Sample")(formatPercent(sampleFraction(session)))(new Just("of wall time")), buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStartedTile(session)]);
   };
   var buildReset = function(handlers) {
     return button([testId("wm-reset"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestReset)])([text("Reset")]);
@@ -5904,9 +6197,9 @@
       return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
-  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label"), /* @__PURE__ */ className("wm-count-label")])([])([/* @__PURE__ */ text("words counted")]);
+  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label"), /* @__PURE__ */ className("wm-count-label")])([])([/* @__PURE__ */ text("words today")]);
   var buildCount = function(session) {
-    return div_([testId("wm-count"), className("wm-count")])([])([text(show5(session.totalWords))]);
+    return div_([testId("wm-count"), className("wm-count")])([])([text(show5(session.wordsToday))]);
   };
   var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder"), /* @__PURE__ */ className("wm-captions-placeholder")])([])([/* @__PURE__ */ text("Waiting for speech\u2026")]);
   var buildCaption = function(nowInstant) {
@@ -5942,6 +6235,10 @@
       stopAt: (timestamp) => api.stopAt(timestamp)(),
       tick: (timestamp) => api.tick(timestamp)(),
       getTotalWords: () => api.getTotalWords(),
+      getWordsToday: () => api.getWordsToday(),
+      getTodayLocalDate: () => api.getTodayLocalDate(),
+      getWordsPerDay: () => api.getWordsPerDay(),
+      getSampleFraction: () => api.getSampleFraction(),
       getListening: () => api.getListening(),
       getVersion: () => api.getVersion(),
       getRateShort: () => api.getRateShort(),
@@ -5979,10 +6276,21 @@
   };
 
   // output/WordMeter.TestHook/index.js
-  var unwrap4 = /* @__PURE__ */ unwrap();
+  var unwrap5 = /* @__PURE__ */ unwrap();
   var pure6 = /* @__PURE__ */ pure(applicativeEffect);
   var map13 = /* @__PURE__ */ map(functorEffect);
-  var eq3 = /* @__PURE__ */ eq(eqWakeLockState);
+  var eq4 = /* @__PURE__ */ eq(eqWakeLockState);
+  var renderTodayLocalDate = function(session) {
+    if (session.todayLocalDate instanceof Nothing) {
+      return "";
+    }
+    ;
+    if (session.todayLocalDate instanceof Just) {
+      return renderLocalDate(session.todayLocalDate.value0);
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 192, column 32 - line 194, column 46): " + [session.todayLocalDate.constructor.name]);
+  };
   var renderActivePath = function(session) {
     if (session.activeRecognitionPath instanceof Nothing) {
       return "";
@@ -5996,7 +6304,7 @@
       return "cloud";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 175, column 28 - line 178, column 28): " + [session.activeRecognitionPath.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 186, column 28 - line 189, column 28): " + [session.activeRecognitionPath.constructor.name]);
   };
   var parseActivePath = function(v) {
     if (v === "on-device") {
@@ -6018,10 +6326,10 @@
     }
     ;
     if (session.firstStartedAt instanceof Just) {
-      return unwrap4(unInstant(session.firstStartedAt.value0));
+      return unwrap5(unInstant(session.firstStartedAt.value0));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 181, column 29 - line 183, column 39): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 197, column 29 - line 199, column 39): " + [session.firstStartedAt.constructor.name]);
   };
   var install = function(v) {
     return installTestHook({
@@ -6080,6 +6388,12 @@
       getTotalWords: map13(function(v1) {
         return v1.totalWords;
       })(v.readSession),
+      getWordsToday: map13(function(v1) {
+        return v1.wordsToday;
+      })(v.readSession),
+      getTodayLocalDate: map13(renderTodayLocalDate)(v.readSession),
+      getWordsPerDay: map13(wordsPerDay)(v.readSession),
+      getSampleFraction: map13(sampleFraction)(v.readSession),
       getListening: map13(function(v1) {
         return v1.listening;
       })(v.readSession),
@@ -6115,7 +6429,7 @@
         return renderWakeLockStatus(s.wakeLockState);
       })(v.readSession),
       getWakeLockHeld: map13(function(s) {
-        return eq3(s.wakeLockState)(WakeLockHeld.value);
+        return eq4(s.wakeLockState)(WakeLockHeld.value);
       })(v.readSession),
       simulateVisibilityVisible: v.simulateVisibilityVisible,
       simulateRecognitionError: v.simulateRecognitionError,
@@ -6145,7 +6459,7 @@
   // output/WordMeter.Main/index.js
   var discard3 = /* @__PURE__ */ discard(discardUnit);
   var notEq2 = /* @__PURE__ */ notEq(eqWakeLockState);
-  var eq4 = /* @__PURE__ */ eq(eqRecognitionErrorCode);
+  var eq5 = /* @__PURE__ */ eq(eqRecognitionErrorCode);
   var eq12 = /* @__PURE__ */ eq(/* @__PURE__ */ eqMaybe(eqRecognitionPath));
   var show6 = /* @__PURE__ */ show(showInt);
   var pure7 = /* @__PURE__ */ pure(applicativeEffect);
@@ -7203,7 +7517,7 @@
                     return function(message2) {
                       return bind14(readCurrentSession2)(function(beforeSession) {
                         var classified = classifyRecognitionError(code);
-                        var shouldRetryOnCloud = eq4(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
+                        var shouldRetryOnCloud = eq5(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
                         if (shouldRetryOnCloud) {
                           return swapOnDeviceForCloud(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(code)(message2);
                         }

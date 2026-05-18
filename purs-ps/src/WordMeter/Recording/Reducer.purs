@@ -15,6 +15,7 @@ import Data.Newtype (unwrap)
 import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import WordMeter.Diagnostics (EnvironmentSnapshot, recordEntry)
+import WordMeter.LocalDate (localDateFromString, localDateOf, renderLocalDate)
 import WordMeter.Recognition.Delta
   ( TranscriptIntegration(..)
   , classifyFinalizedTranscript
@@ -85,18 +86,19 @@ reduce (Toggle timestamp) session
       let
         startEntry =
           { timestamp, label: "start counting", detail: "" }
+        rolled = rolloverWordsToday timestamp session
       in
-        session
+        rolled
           { listening = true
           , currentIntervalStart = Just timestamp
           , currentIntervalWords = 0
-          , firstStartedAt = case session.firstStartedAt of
+          , firstStartedAt = case rolled.firstStartedAt of
               Just t -> Just t
               Nothing -> Just timestamp
-          , wordEvents = pruneWordEvents timestamp session.wordEvents
-          , captions = pruneCaptions timestamp session.captions
+          , wordEvents = pruneWordEvents timestamp rolled.wordEvents
+          , captions = pruneCaptions timestamp rolled.captions
           , now = timestamp
-          , diagnostics = recordEntry startEntry session.diagnostics
+          , diagnostics = recordEntry startEntry rolled.diagnostics
           , errorBanner = idleErrorBanner
           , lastRawFinalizedTranscript = ""
           , recognitionStatusOverride = idleRecognitionStatusOverride
@@ -121,14 +123,14 @@ reduce (InjectFinalTranscript transcript timestamp) session
               , label: "final transcript"
               , detail: "words=" <> show wordCount
               }
+            counted = addWordsForToday timestamp wordCount session
           in
-            session
-              { totalWords = session.totalWords + wordCount
-              , currentIntervalWords = session.currentIntervalWords + wordCount
+            counted
+              { currentIntervalWords = counted.currentIntervalWords + wordCount
               , captions = prunedCaptions <> [ { transcript, wordCount, timestamp } ]
               , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
               , now = timestamp
-              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              , diagnostics = recordEntry transcriptEntry counted.diagnostics
               }
   | otherwise = session
       { now = timestamp
@@ -163,16 +165,16 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
               , label: "final transcript"
               , detail: "extend wordDelta=" <> show fields.wordDelta
               }
+            counted = addWordsForToday timestamp fields.wordDelta base
           in
-            base
-              { totalWords = session.totalWords + fields.wordDelta
-              , currentIntervalWords =
-                  session.currentIntervalWords + fields.wordDelta
+            counted
+              { currentIntervalWords =
+                  counted.currentIntervalWords + fields.wordDelta
               , captions = extendedCaptions
               , wordEvents = prunedEvents
                   <> [ { timestamp, wordCount: fields.wordDelta } ]
               , lastRawFinalizedTranscript = transcript
-              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              , diagnostics = recordEntry transcriptEntry counted.diagnostics
               }
         StartNewUtterance fields ->
           let
@@ -181,11 +183,11 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
               , label: "final transcript"
               , detail: "words=" <> show fields.wordCount
               }
+            counted = addWordsForToday timestamp fields.wordCount base
           in
-            base
-              { totalWords = session.totalWords + fields.wordCount
-              , currentIntervalWords =
-                  session.currentIntervalWords + fields.wordCount
+            counted
+              { currentIntervalWords =
+                  counted.currentIntervalWords + fields.wordCount
               , captions = prunedCaptions
                   <>
                     [ { transcript: fields.caption
@@ -196,16 +198,20 @@ reduce (IntegrateFinalizedTranscript timestamp transcript) session
               , wordEvents = prunedEvents
                   <> [ { timestamp, wordCount: fields.wordCount } ]
               , lastRawFinalizedTranscript = transcript
-              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              , diagnostics = recordEntry transcriptEntry counted.diagnostics
               }
 reduce ResetRecognitionDedupState session = session
   { lastRawFinalizedTranscript = ""
   }
-reduce (Tick timestamp) session = session
-  { now = timestamp
-  , wordEvents = pruneWordEvents timestamp session.wordEvents
-  , captions = pruneCaptions timestamp session.captions
-  }
+reduce (Tick timestamp) session =
+  let
+    rolled = rolloverWordsToday timestamp session
+  in
+    rolled
+      { now = timestamp
+      , wordEvents = pruneWordEvents timestamp rolled.wordEvents
+      , captions = pruneCaptions timestamp rolled.captions
+      }
 reduce (RecordDiagnostic timestamp label detail) session = session
   { diagnostics = recordEntry { timestamp, label, detail } session.diagnostics
   }
@@ -228,6 +234,8 @@ reduce (Reset timestamp) session =
       }
 reduce (LoadSession persisted) session = session
   { totalWords = max 0 persisted.totalWords
+  , wordsToday = max 0 persisted.wordsToday
+  , todayLocalDate = map localDateFromString persisted.todayLocalDate
   , firstStartedAt = map msToInstant persisted.firstStartedAt
   , completedActiveMs = Milliseconds (max 0.0 persisted.completedActiveMs)
   , cloudFallbackAttempted = persisted.cloudFallbackAttempted
@@ -326,12 +334,41 @@ stopListeningAt timestamp label reasonDetail session =
 toPersistedData :: Session -> PersistedData
 toPersistedData session =
   { totalWords: session.totalWords
+  , wordsToday: session.wordsToday
+  , todayLocalDate: map renderLocalDate session.todayLocalDate
   , firstStartedAt: map instantToMs session.firstStartedAt
   , completedActiveMs: unwrap session.completedActiveMs
   , cloudFallbackAttempted: session.cloudFallbackAttempted
   , wordEvents: map wordEventToPersistedWordEvent session.wordEvents
   , eventLog: map intervalToPersistedInterval session.eventLog
   }
+
+-- | Reset `wordsToday` to zero when the local date has rolled over.
+-- | Always updates `todayLocalDate` to the date of `timestamp` so the
+-- | view shows the correct day after the very first start or after a
+-- | persisted snapshot reloads on a new calendar day.
+rolloverWordsToday :: Instant -> Session -> Session
+rolloverWordsToday timestamp session =
+  let
+    currentDate = localDateOf timestamp
+  in
+    case session.todayLocalDate of
+      Just stored | stored == currentDate -> session
+      Just _ -> session { wordsToday = 0, todayLocalDate = Just currentDate }
+      Nothing -> session { todayLocalDate = Just currentDate }
+
+-- | Add `wordDelta` to today's count, rolling over to zero first when
+-- | the event's local date differs from the stored `todayLocalDate`.
+-- | Also bumps the lifetime `totalWords` counter.
+addWordsForToday :: Instant -> Int -> Session -> Session
+addWordsForToday timestamp wordDelta session =
+  let
+    rolled = rolloverWordsToday timestamp session
+  in
+    rolled
+      { totalWords = rolled.totalWords + wordDelta
+      , wordsToday = rolled.wordsToday + wordDelta
+      }
 
 -- | Convert a raw millisecond value to an `Instant`, falling back to
 -- | the epoch for the astronomically impossible out-of-range case.

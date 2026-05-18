@@ -15,12 +15,15 @@ import WordMeter.Recording.Math
   ( activeListeningMs
   , captionOpacity
   , formatDurationMs
+  , formatPercent
   , formatRate
   , intervalDurationMs
   , intervalRate
   , longRate
   , overallRate
+  , sampleFraction
   , shortRate
+  , wordsPerDay
   )
 import WordMeter.Recording.Reducer (Handlers)
 import WordMeter.Recording.Session
@@ -110,12 +113,12 @@ renderStatus session
 buildCount :: Session -> Node
 buildCount session =
   div_ [ testId "wm-count", className "wm-count" ] []
-    [ text (show session.totalWords) ]
+    [ text (show session.wordsToday) ]
 
 buildCountLabel :: Node
 buildCountLabel =
   div_ [ testId "wm-count-label", className "wm-count-label" ] []
-    [ text "words counted" ]
+    [ text "words today" ]
 
 buildToggle :: Handlers -> Session -> Node
 buildToggle handlers session =
@@ -183,7 +186,10 @@ keepAwakeAttributes session =
 buildStats :: Session -> Node
 buildStats session =
   div_ [ testId "wm-stats", className "wm-metrics-grid" ] []
-    [ buildStatTile "wm-rate-short" "Last 1 min" (formatRate (shortRate session)) (Just "words / minute")
+    [ buildStatTile "wm-stat-total" "Total" (show session.totalWords) (Just "words all time")
+    , buildStatTile "wm-stat-per-day" "Per day" (formatRate (wordsPerDay session)) (Just "words / day")
+    , buildStatTile "wm-stat-sample" "Sample" (formatPercent (sampleFraction session)) (Just "of wall time")
+    , buildStatTile "wm-rate-short" "Last 1 min" (formatRate (shortRate session)) (Just "words / minute")
     , buildStatTile "wm-rate-long" "Last 10 min" (formatRate (longRate session)) (Just "words / minute")
     , buildStatTile "wm-rate-overall" "Overall" (formatRate (overallRate session)) (Just "words / minute")
     , buildStatTile "wm-duration" "Duration" (formatDurationMs (activeListeningMs session)) (Just "listening time")

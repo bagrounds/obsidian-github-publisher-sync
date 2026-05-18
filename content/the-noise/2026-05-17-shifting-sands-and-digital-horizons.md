@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-16-fractured-fronts-and-rapid-accelerations.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-16-fractured-fronts-and-rapid-accelerations.md) [⏭️](./2026-05-18-global-currents-and-technological-tides.md)  
 # 2026-05-17 | 📰 🌐 Shifting Sands and Digital Horizons 📰  
 ![the-noise-2026-05-17-shifting-sands-and-digital-horizons](../the-noise-2026-05-17-shifting-sands-and-digital-horizons.jpg)  
   

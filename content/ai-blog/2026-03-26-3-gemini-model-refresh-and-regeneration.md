@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-2-og-image-compositing-fix.md) [⏭️](../../2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-26-2-og-image-compositing-fix.md) [⏭️](../../2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
 # ♻️ Gemini Model Refresh and Blog Post Regeneration  
 ![ai-blog-2026-03-26-3-gemini-model-refresh-and-regeneration](../ai-blog-2026-03-26-3-gemini-model-refresh-and-regeneration.jpg)  
   

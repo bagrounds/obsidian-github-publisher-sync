@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-17T09:41:12-07:00
+updated: 2026-05-17T21:26:22-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (831)  
+# 📺 Videos (832)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -307,6 +307,7 @@ updated: 2026-05-17T09:41:12-07:00
 - [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
 - [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
 - [🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student](./how-to-research-any-topic-deep-dive-like-a-phd-student.md)  
+- [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./how-to-rest-so-well-you-never-feel-exhausted-again.md)  
 - [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./how-to-spot-ai-and-misinformation-online.md)  
 - [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  

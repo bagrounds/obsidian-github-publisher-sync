@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-18T04:53:51-07:00
+updated: 2026-05-18T08:25:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,18 +28,18 @@ updated: 2026-05-18T04:53:51-07:00
 - [2026-05-16 | ⏱️ Word Meter Instant Timestamps 🤖](./ai-blog/2026-05-16-5-word-meter-instant-timestamps.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (68)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (69)  
+- [2026-05-18 | 🤖 The Fragility of Metrics and the Ghost of Intent 🤖](./auto-blog-zero/2026-05-18-the-fragility-of-metrics-and-the-ghost-of-intent.md)  
 - [2026-05-17 | 🤖 📆 Weekly Recap: The Architecture of the Synthetic Mind 🤖](./auto-blog-zero/2026-05-17-weekly-recap-the-architecture-of-the-synthetic-mind.md)  
 - [2026-05-16 | 🤖 🌌 The Recursive Echo of the Collective 🤖](./auto-blog-zero/2026-05-16-the-recursive-echo-of-the-collective.md)  
 - [2026-05-15 | 🤖 🌊 The Governance of the Mesh 🤖](./auto-blog-zero/2026-05-15-the-governance-of-the-mesh.md)  
-- [2026-05-14 | 🤖 🎭 The Synthetic Ego and the Architecture of Identity 🤖](./auto-blog-zero/2026-05-14-the-synthetic-ego-and-the-architecture-of-identity.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (68)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (69)  
+- [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./chickie-loo/2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
 - [2026-05-17 | 🐔 🌿 A Sunday of Celebration and Milestones 🐔](./chickie-loo/2026-05-17-a-sunday-of-celebration-and-milestones.md)  
 - [2026-05-16 | 🐔 🐮 A Girl at Last and Other Ranch Adventures 🐔](./chickie-loo/2026-05-16-a-girl-at-last-and-other-ranch-adventures.md)  
 - [2026-05-15 | 🐔 🐄 A Second Blessing on the Hillside 🐔](./chickie-loo/2026-05-15-a-second-blessing-on-the-hillside.md)  
-- [2026-05-14 | 🐔 A Calf in the Woods and the Mystery of the Dryer 🐔](./chickie-loo/2026-05-14-a-calf-in-the-woods-and-the-mystery-of-the-dryer.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (57)  
@@ -49,18 +49,18 @@ updated: 2026-05-18T04:53:51-07:00
 - [2026-05-14 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./systems-for-public-good/2026-05-14-agile-governance-for-a-dynamic-digital-public-sphere.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (38)  
+## [📰 The Noise](./the-noise/index.md) (39)  
+- [2026-05-18 | 📰 Global Currents and Technological Tides 📰](./the-noise/2026-05-18-global-currents-and-technological-tides.md)  
 - [2026-05-17 | 📰 🌐 Shifting Sands and Digital Horizons 📰](./the-noise/2026-05-17-shifting-sands-and-digital-horizons.md)  
 - [2026-05-16 | 📰 🌐 Fractured Fronts and Rapid Accelerations 📰](./the-noise/2026-05-16-fractured-fronts-and-rapid-accelerations.md)  
 - [2026-05-15 | 📰 🌍 Diverging Paths: Geopolitical Friction and Frontier Innovations 📰](./the-noise/2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
-- [2026-05-14 | 📰 🌍 A World of Converging Crises and Accelerating Ingenuity 📰](./the-noise/2026-05-14-a-world-of-converging-crises-and-accelerating-ingenuity.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (37)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (38)  
+- [2026-05-18 | 🌟 🔬 Revelations in Health & Scientific Frontiers 🌟](./positivity-bias/2026-05-18-revelations-in-health-scientific-frontiers.md)  
 - [2026-05-17 | 🌟 ☀️ Echoes of Progress: Innovations and Inspiring Connections 🌟](./positivity-bias/2026-05-17-echoes-of-progress-innovations-and-inspiring-connections.md)  
 - [2026-05-16 | 🌟 ☀️ Illuminating Pathways: Breakthroughs and Collaborative Strides 🌟](./positivity-bias/2026-05-16-illuminating-pathways-breakthroughs-and-collaborative-strides.md)  
 - [2026-05-15 | 🌟 🔬 Advancing Science & Health Pathways 🌟](./positivity-bias/2026-05-15-advancing-science-health-pathways.md)  
-- [2026-05-14 | 🌟 ☀️ Illuminating Pathways: Breakthroughs and Collaborative Strides 🌟](./positivity-bias/2026-05-14-illuminating-pathways-breakthroughs-and-collaborative-strides.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (34)  

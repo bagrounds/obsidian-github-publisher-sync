@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-05-18T04:53:51-07:00
+updated: 2026-05-18T08:25:21-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (68)  
+# 🐔 Chickie Loo (69)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
 - [2026-05-17 | 🐔 🌿 A Sunday of Celebration and Milestones 🐔](./2026-05-17-a-sunday-of-celebration-and-milestones.md)  
 - [2026-05-16 | 🐔 🐮 A Girl at Last and Other Ranch Adventures 🐔](./2026-05-16-a-girl-at-last-and-other-ranch-adventures.md)  
 - [2026-05-15 | 🐔 🐄 A Second Blessing on the Hillside 🐔](./2026-05-15-a-second-blessing-on-the-hillside.md)  

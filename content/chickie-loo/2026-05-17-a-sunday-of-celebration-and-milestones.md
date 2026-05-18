@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-17T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-18T09:21:48
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-16-a-girl-at-last-and-other-ranch-adventures.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-16-a-girl-at-last-and-other-ranch-adventures.md) [⏭️](./2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
 # 2026-05-17 | 🐔 🌿 A Sunday of Celebration and Milestones 🐔  
 ![chickie-loo-2026-05-17-a-sunday-of-celebration-and-milestones](../chickie-loo-2026-05-17-a-sunday-of-celebration-and-milestones.jpg)  
   

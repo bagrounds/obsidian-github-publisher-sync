@@ -5,7 +5,7 @@ title: 🎙️ Word Meter PureScript Port Spec
 
 # 🎙️ Word Meter PureScript Port Spec
 
-Incremental port of `quartz/static/word-meter.js` to PureScript, compiling to `quartz/static/word-meter-ps.js`. Both builds run side-by-side until the cutover. `specs/word-meter.md` remains the source of truth for **what** the Word Meter does; this spec covers **how** the PureScript port is structured.
+The Word Meter, now fully implemented in PureScript, ships as `quartz/static/word-meter.js`. `specs/word-meter.md` remains the source of truth for **what** the Word Meter does; this spec covers **how** the PureScript implementation is structured.
 
 ## Slicing principle
 
@@ -67,7 +67,7 @@ tests/e2e/
   playwright.config.ts
   word-meter.spec.ts
   word-meter.d.ts              ambient types for window.__wordMeter
-  fixtures/word-meter.html     ?build=js|ps loader
+  fixtures/word-meter.html     loads `quartz/static/word-meter.js`
 ```
 
 ## Declarative typed DOM
@@ -199,17 +199,17 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
-## Implementation-agnostic test suite
+## End-to-end test suite
 
-`tests/e2e/word-meter.spec.ts` loads `?build=js` or `?build=ps` and drives the panel through a stable `data-testid` selector contract:
+`tests/e2e/word-meter.spec.ts` loads the production bundle from the fixture and drives the panel through a stable `data-testid` selector contract:
 
 - `wm-root` — mounted container.
-- `wm-build` — "PureScript build" / "JavaScript build" tag.
+- `wm-build` — "PureScript build" tag.
 - `wm-status` — listening / idle status.
 - `wm-count` — total words.
 - `wm-count-label` — descriptor.
 - `wm-toggle` — start / stop button.
-- `wm-reset` — reset button. On tap, prompts via `window.confirm(resetConfirmationPrompt)`; on acceptance, dispatches a `Reset` action that clears `totalWords`, `wordEvents`, `eventLog`, captions, and `firstStartedAt`, preserves the captured environment + diagnostics log (so the reset itself is auditable), and clears the persisted snapshot from `localStorage` (key `word-meter-ps:state:v1`).
+- `wm-reset` — reset button. On tap, prompts via `window.confirm(resetConfirmationPrompt)`; on acceptance, dispatches a `Reset` action that clears `totalWords`, `wordEvents`, `eventLog`, captions, and `firstStartedAt`, preserves the captured environment + diagnostics log (so the reset itself is auditable), and clears the persisted snapshot from `localStorage` (key `word-meter:state:v1`).
 - `wm-captions` — captions strip container; mostly a troubleshooting aid showing recent recognized utterances as they fade out.
 - `wm-captions-placeholder` — "Waiting for speech…" shown when no caption is within the 30s window.
 - `wm-caption` — one per recognized utterance, in chronological order. Captions older than `captionWindowMs` (30s) are pruned on every action, and their CSS `opacity` fades linearly with age from 1.0 down to `minimumCaptionOpacity` (0.15).
@@ -258,11 +258,11 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ✅ Shipped |
 | 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ✅ Shipped |
 | 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ✅ Shipped |
-| 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Planned (see [Slice 10 — cutover plan](#slice-10--cutover-plan)) |
+| 10    | Cutover — `quartz/static/word-meter.js` is now the PureScript bundle; legacy JS retired                | ✅ Shipped |
 
 ## Build, test, bundle
 
-- `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
+- `npm run build:ps` — rebuild `quartz/static/word-meter.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
 - `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `wordsPerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.
@@ -328,7 +328,7 @@ The old `WordMeter.Recording` module is deleted; consumers import directly from 
 
 ## Comparative analysis — JS vs. PureScript builds
 
-A walk-through of the legacy `quartz/static/word-meter.js` against the current PureScript bundle reveals that every user-visible feature has parity. The differences below are catalogued so the cutover PR can address (or knowingly accept) each one rather than discover them in production.
+A walk-through of the legacy JavaScript build (preserved in git history) against the PureScript bundle that now ships at `quartz/static/word-meter.js` confirmed parity on every user-visible feature. The differences below are catalogued so future contributors know what the cutover deliberately carried forward, rather than discovering them in a field report.
 
 ### Parity matrix
 
@@ -345,23 +345,21 @@ A walk-through of the legacy `quartz/static/word-meter.js` against the current P
 - Reset button + `window.confirm` prompt + clears persisted snapshot: parity.
 - Persistence round-trip: parity for shape (`totalWords`, `firstStartedAt`, word events, event log) plus the PureScript-only additions described below.
 
-### Product-visible differences worth knowing at cutover
+### Product-visible differences carried forward from the legacy build
 
-These are intentional improvements the PureScript build carries; they are not regressions, but they matter for the cutover plan.
+These are intentional improvements the PureScript build carries; they are not regressions.
 
-1. **`localStorage` key**. The JavaScript build writes to `word-meter:state:v1`. The PureScript build writes to `word-meter-ps:state:v1` (to allow the two builds to coexist during the port). Without migration, every existing user starts at zero on the first page load after cutover. The cutover plan covers a one-shot read from the legacy key into the PureScript shape.
-2. **Persisted fields**. The PureScript build persists `completedActiveMs` and `cloudFallbackAttempted` in addition to the legacy fields, so post-reload rates and on-device pre-flight obey the v0.1.1 rules. The legacy build silently lost `completedActiveMs` across reloads and re-ran the on-device pre-flight every recognizer auto-restart. Both PureScript-only fields decode with `.:?` defaults so legacy v1 payloads still load.
-3. **Version string**. JS = `0.1.0`. PureScript = `0.1.1`. The bump captures the live-tick driver, post-reload sanity, and one-shot on-device pre-flight (the v0.1.1 fixes). The footer and diagnostics drawer render the value verbatim.
-4. **Clipboard fallback path**. JS falls back to a hidden `<textarea>` + `document.execCommand('copy')` when `navigator.clipboard.writeText` is unavailable. PureScript surfaces a `Copy failed: Clipboard API unavailable` status instead. Modern Chromium / Safari / Firefox all support `navigator.clipboard.writeText` on `https://` origins, so this only matters for very old browsers — which already cannot use the Web Speech API the meter depends on.
-5. **Copy-status copy**. JS = `copied!` / `copy failed — long-press the log to select`. PureScript = `Copied!` / `Copy failed: <reason>`. The information conveyed is equivalent; the wording differs in tone (sentence-case vs. lower-case) and the legacy build's mobile-only hint about long-pressing the log is not echoed.
-6. **Per-event `console.log`**. JS mirrors every diagnostic entry to `console.log` so the devtools console doubles as a tail of the diagnostics drawer. The PureScript build does not. The diagnostics drawer itself still carries the full log, the copy button still hands it back, and the on-screen event log still records every counting session — only the devtools mirror is gone.
+1. **Persisted fields**. The PureScript build persists `completedActiveMs` and `cloudFallbackAttempted` in addition to the original fields, so post-reload rates and on-device pre-flight obey the v0.1.1 rules. The legacy build silently lost `completedActiveMs` across reloads and re-ran the on-device pre-flight every recognizer auto-restart. Both PureScript-only fields decode with `.:?` defaults, so any `localStorage` payload the legacy JS wrote under `word-meter:state:v1` still loads cleanly — the cutover reused the legacy key rather than introducing a parallel one.
+2. **Version string**. The legacy JS shipped `0.1.0`. The PureScript build ships `0.1.1`. The bump captures the live-tick driver, post-reload sanity, and one-shot on-device pre-flight (the v0.1.1 fixes). The footer and diagnostics drawer render the value verbatim.
+3. **Clipboard fallback path**. The legacy JS fell back to a hidden `<textarea>` + `document.execCommand('copy')` when `navigator.clipboard.writeText` was unavailable. PureScript surfaces a `Copy failed: Clipboard API unavailable` status instead. Modern Chromium / Safari / Firefox all support `navigator.clipboard.writeText` on `https://` origins, so this only matters for very old browsers — which already cannot use the Web Speech API the meter depends on.
+4. **Copy-status copy**. Legacy = `copied!` / `copy failed — long-press the log to select`. PureScript = `Copied!` / `Copy failed: <reason>`. The information conveyed is equivalent; the wording differs in tone (sentence-case vs. lower-case) and the legacy build's mobile-only hint about long-pressing the log is not echoed.
+5. **Per-event `console.log`**. The legacy JS mirrored every diagnostic entry to `console.log` so the devtools console doubled as a tail of the diagnostics drawer. The PureScript build does not. The diagnostics drawer itself still carries the full log, the copy button still hands it back, and the on-screen event log still records every counting session — only the devtools mirror is gone.
 
-### Recommended follow-up work (in priority order)
+### Optional follow-up work (none are blocking)
 
-1. **Persisted-state migration at cutover** (REQUIRED). Read the legacy `word-meter:state:v1` key once at startup when the PureScript key is absent, decode it through `WordMeter.Persistence` with `.:?` defaults for the new fields, write it back under the PureScript key, and delete the legacy key. Without this, every existing user resets their stats on the cutover deploy.
-2. **Optional: console mirror of diagnostics**. Add a `console.log` call inside the `RecordDiagnostic` reducer path (or, more cleanly, a `Capability.Log` typeclass with an `AppM` instance that calls `Effect.Console.log` and a `RecordingLogM` test newtype). Helps with field debugging without opening the drawer.
-3. **Optional: clipboard fallback parity**. If field reports show users on browsers without `navigator.clipboard`, add a one-shot `<textarea>` + `document.execCommand('copy')` fallback inside `FFI.Clipboard`. Likely never needed — the meter requires a recent browser to function at all.
-4. **Optional: copy-status hint for long-press**. If mobile users report not knowing how to copy when the API fails, append the legacy build's `(long-press the log to select)` hint to the failure message.
+1. **Optional: console mirror of diagnostics**. Add a `console.log` call inside the `RecordDiagnostic` reducer path (or, more cleanly, a `Capability.Log` typeclass with an `AppM` instance that calls `Effect.Console.log` and a `RecordingLogM` test newtype). Helps with field debugging without opening the drawer.
+2. **Optional: clipboard fallback parity**. If field reports show users on browsers without `navigator.clipboard`, add a one-shot `<textarea>` + `document.execCommand('copy')` fallback inside `FFI.Clipboard`. Likely never needed — the meter requires a recent browser to function at all.
+3. **Optional: copy-status hint for long-press**. If mobile users report not knowing how to copy when the API fails, append the legacy build's `(long-press the log to select)` hint to the failure message.
 
 ## Reflection on the migration
 
@@ -387,41 +385,18 @@ These are intentional improvements the PureScript build carries; they are not re
 - **The Vdom is small enough to copy.** `WordMeter.Vdom` is ~250 lines and renders a full app with scroll preservation. Future tools that need a single-component browser surface can copy it rather than reach for a framework. The trade-off (full subtree replacement on every dispatch) is fine for an app this size and is genuinely simpler than diffing.
 - **Vertical slices belong in every port.** When the next legacy module is ported, the slice plan should look exactly like this one: a numbered list of user-visible slices, each independently shippable, each independently testable through the same selector contract the legacy build honors.
 - **Diagnostics drawer is non-negotiable.** Every web-facing tool in this repo should ship a rolling diagnostics log with a copy button. Field bug reports turn from "the meter is broken" into a stack of evidence that names the path the program took.
-- **The cutover plan is part of the port spec.** The plan for slice 10 (below) is documented inside this spec rather than scattered across issue comments so the next person who reads the spec knows what is left to do.
+- **The cutover plan is part of the port spec.** The cutover for slice 10 is documented inside this spec rather than scattered across issue comments so the next person who reads the spec knows exactly what landed.
 
-## Slice 10 — cutover plan
+## Slice 10 — cutover (shipped)
 
-Slice 10 is intentionally subtractive: the PureScript build already passes every Playwright contract, and the JavaScript build is the redundant copy. The plan below is the proposed shape for the cutover PR; the tracking issue lives separately so it can host discussion before the PR opens.
+The cutover was deliberately a pure subtraction. The PureScript build had passed the full Playwright contract for several slices already; the legacy JavaScript was just the redundant copy. There were no real users other than the repo owner, and the daily-reset workflow meant the persisted-state question had a one-line answer: reuse the legacy `localStorage` key.
 
-### Pre-flight checks
+What landed in this slice:
 
-1. Confirm the current PureScript bundle still passes `npm run test:ps` and `npm run test:e2e` against the production fixture.
-2. Confirm the version string in `WordMeter.Version` is at the value the cutover should ship (likely `0.1.2`, bumped to mark the cutover itself).
-
-### Required behavior change before subtraction
-
-3. Add a one-time legacy-key migration in `WordMeter.Main.startApplication`: before the regular `load`, check whether the PureScript key (`word-meter-ps:state:v1`) is absent **and** the legacy key (`word-meter:state:v1`) is present. If both, decode the legacy payload through `WordMeter.Persistence` (the v1 envelope matches; only the new `completedActiveMs` and `cloudFallbackAttempted` fields default), write it back under the PureScript key, delete the legacy key, and record a `persisted state migrated from legacy build` diagnostic. Single shot, runs once per user. Add a `RecordingStorageM` unit test that covers the three branches (no legacy key, legacy key present, both keys present).
-
-### Subtractive changes
-
-4. Update `content/tools/word-meter.md`: change the `<script src="/static/word-meter.js"></script>` line to `<script src="/static/word-meter-ps.js"></script>`. This is the single user-visible cutover line.
-5. Delete `quartz/static/word-meter.js`. (`word-meter.css` stays — both builds use the same stylesheet.)
-6. Delete `quartz/static/word-meter.test.mjs` if it exists and is the legacy-only sandbox suite (the Playwright suite at `tests/e2e/word-meter.spec.ts` is implementation-agnostic and stays).
-7. Update `tests/e2e/fixtures/word-meter.html` to drop the `?build=js` branch. The fixture loader becomes a single unconditional `script` tag pointing at `word-meter-ps.js`. Delete the `?build=js` query-string handling from `tests/e2e/word-meter.spec.ts` if any tests still reference it.
-
-### Documentation pass
-
-8. Update this spec: change the slice 10 row to `✅ Shipped`, replace the "JavaScript build coexists" framing in the intro paragraph with the post-cutover wording (the PureScript build *is* Word Meter; the JS build is gone), and move the "Comparative analysis" section into past tense or delete it (since there is no longer a JS build to compare against).
-9. Update `specs/word-meter.md` if it still mentions the dual-build coexistence.
-10. Update `README.md` if it mentions either build by name.
-11. Write the ai-blog post for the cutover in `ai-blog/`.
-
-### Acceptance
-
-The PR is ready to land when, on a fresh browser profile:
-
-- `https://bagrounds.org/tools/word-meter` serves the PureScript bundle and only the PureScript bundle.
-- An existing user's `localStorage` survives the upgrade: their `totalWords`, event log, and `firstStartedAt` are preserved.
-- A fresh user starts at zero.
-- The Playwright suite (`npm run test:e2e`) passes against the post-cutover fixture.
-- The PureScript unit suite (`npm run test:ps`) passes, including the new migration test.
+- `WordMeter.Persistence.storageKey` now reads and writes `word-meter:state:v1` — the same key the legacy JS used. No migration code, no parallel key, no merging logic. The PureScript build's `Persistence` codec accepts the legacy v1 envelope because the two new fields (`completedActiveMs`, `cloudFallbackAttempted`) are decoded with `.:?` defaults.
+- `scripts/build-word-meter-ps.mjs` now compiles the PureScript bundle to `quartz/static/word-meter.js`. The build target moved; `content/tools/word-meter.md` was untouched because the `<script src="/static/word-meter.js">` reference still resolves.
+- `quartz/static/word-meter.js` is now the PureScript bundle. The legacy IIFE that used to live at that path is gone, along with `quartz/static/word-meter.test.mjs` (the Node `vm` sandbox suite that exercised the legacy IIFE).
+- `quartz/static/word-meter-ps.js` is gone — the staging artifact for the dual-build era no longer has a reason to exist.
+- `tests/e2e/fixtures/word-meter.html` loads `/quartz/static/word-meter.js` unconditionally. The `?build=js`/`?build=ps` query-string handling is gone.
+- `tests/e2e/word-meter.spec.ts` loses the `build: "js" | "ps"` parameter on `loadWordMeter`. Every test goes straight to the fixture without a query string. `tests/e2e/playwright.config.ts` does the same.
+- `package.json`'s `clean:ps` script now removes `quartz/static/word-meter.js` instead of the staging path.

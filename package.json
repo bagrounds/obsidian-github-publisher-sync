@@ -19,7 +19,7 @@
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "build:ps": "node ./scripts/build-word-meter-ps.mjs",
-    "clean:ps": "rm -rf purs-ps/output purs-ps/.spago quartz/static/word-meter-ps.js",
+    "clean:ps": "rm -rf purs-ps/output purs-ps/.spago quartz/static/word-meter.js",
     "test:ps": "cd purs-ps && npx --prefix .. spago test",
     "test:e2e": "playwright test --config tests/e2e/playwright.config.ts"
   },

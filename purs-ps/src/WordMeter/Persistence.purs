@@ -17,7 +17,7 @@ import Data.Maybe (fromMaybe)
 import WordMeter.Recording.Session (PersistedData)
 
 storageKey :: String
-storageKey = "word-meter-ps:state:v1"
+storageKey = "word-meter:state:v1"
 
 storageVersion :: Int
 storageVersion = 1

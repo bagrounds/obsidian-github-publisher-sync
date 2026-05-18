@@ -12,9 +12,9 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 🎙️ The Word Meter is the little single-button page that counts every word spoken around you in your browser, and over the last several weeks it has been growing a second implementation, written in PureScript, slice by slice, behind the production JavaScript build.
 
-🏁 This wrap-up PR closes out the port: every slice from one through nine-C is shipped, the v0.1.1 live-tick and post-reload-sanity fixes are in, the recognizer pre-flight is one-shot, and the two builds are now in feature parity through the same Playwright contract.
+🏁 This wrap-up PR closes out the port and lands the cutover in the same commit train: every slice from one through 9c is shipped, the v0.1.1 live-tick and post-reload-sanity fixes are in, the recognizer pre-flight is one-shot, the two builds reached feature parity through the same Playwright contract, and then the JavaScript build was retired in favor of the PureScript bundle at `quartz/static/word-meter.js`.
 
-🪞 What is left is the cutover itself: deleting the JavaScript bundle, repointing the content page at the PureScript bundle, and migrating existing users' local storage so nobody resets their stats on deploy day. That work has its own tracking issue and its own plan — this post is about the wrap-up that made it safe to schedule.
+🪞 What follows is a short tour of how the wrap-up shook out: the comment cleanup that came first, the comparative analysis that confirmed parity, the migration reflections, and the cutover itself which turned out to be small enough to do in the same PR.
 
 ## 🧹 Cleaning up the historical comments
 
@@ -30,9 +30,9 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 ✅ The good news is that every user-visible feature has parity. Start and stop counting, the live word count, the live rate tiles over short, long, and overall windows, the captions strip with its thirty-second decay, the event log capped at two hundred sessions, the wake-lock and keep-awake toggle, the recognition error banner with the same code classification, the cloud-path recognizer with two-hundred-and-fifty-millisecond auto-restart, the on-device pre-flight with transparent cloud fallback, the one-shot retry on runtime language-not-supported — all of them behave the same way in both builds.
 
-⚠️ The differences worth knowing at cutover are catalogued in the spec. The most important one is that the two builds use different local-storage keys today so they can coexist during the port. Without a one-time migration step at cutover, every existing user would start at zero on the deploy. That migration is the first required item in the slice-ten plan.
+⚠️ The differences that survive the cutover are catalogued in the spec, and the most pleasant surprise is the local-storage one. During the dual-build era the PureScript build used its own key so the two implementations could coexist without stepping on each other. At cutover the question was whether to migrate the legacy data into a new key or to just point the PureScript codec at the legacy key. With essentially one user — the person who already resets daily to get the new daily count — the answer was the second one. The PureScript persistence module now reads and writes the legacy key directly. No migration code, no parallel key, no scheduled cleanup task.
 
-📦 Two smaller differences are intentional improvements the PureScript build carries: it persists active-listening milliseconds and the cloud-fallback flag across reloads, which the legacy build silently dropped. After a reload the legacy build's rate tiles divided by a denominator of about one millisecond and produced absurd numbers; the PureScript build does not.
+📦 Two smaller differences are intentional improvements the PureScript build carries: it persists active-listening milliseconds and the cloud-fallback flag across reloads, which the legacy build silently dropped. After a reload the legacy build's rate tiles divided by a denominator of about one millisecond and produced absurd numbers; the PureScript build does not. Both new fields are decoded with optional defaults, so any legacy payload that already exists in local storage continues to load cleanly.
 
 🕊️ The remaining differences are tone and minor surface area. The copy-status text uses sentence case in PureScript and lower case in JavaScript. The clipboard fallback path that uses an off-screen textarea and the deprecated execCommand call is absent in PureScript. The legacy build mirrored every diagnostic entry to the developer console, the PureScript build does not. None of these are regressions; they are listed as optional follow-up.
 
@@ -48,15 +48,15 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 🍰 Slicing vertically pays. Every slice from one through 9c delivered end-to-end user-visible functionality. We never built a horizontal layer like a virtual DOM library or a capability stack or a persistence module as a slice on its own. Each one grew in service of the feature that needed it. That kept the port shippable on every Friday.
 
-## 🪧 What the cutover looks like
+## 🪧 The cutover, in the same PR
 
-🪜 The slice-ten plan is small and mostly subtractive. There is one piece of new code: the migration step that, on startup, reads from the legacy local-storage key if and only if the PureScript key is absent and the legacy key is present, decodes through the existing persistence module with default values for the new fields, writes the result back under the PureScript key, deletes the legacy key, and records a diagnostic so the audit trail shows the migration ran.
+🪜 Once the comparative analysis came back clean, the cutover was small enough to land in the same PR. There was no real user other than the repo owner, and the daily-reset workflow meant that even if the local-storage question went badly, the worst case was a one-day setback. So the cutover happened immediately: the PureScript persistence module now reads and writes the legacy local-storage key directly, the PureScript bundle now compiles to `quartz/static/word-meter.js` overwriting the location the legacy IIFE used to occupy, the staging file at `quartz/static/word-meter-ps.js` is gone, and the node-vm sandbox suite that exercised the legacy IIFE is gone.
 
-✂️ Everything else is deletion. The content page that today loads `/static/word-meter.js` will load `/static/word-meter-ps.js` instead. The legacy bundle goes away. The Playwright fixture loses its `?build=js` branch. The spec gets its slice-ten row flipped to shipped and its comparative-analysis section either moved to past tense or deleted, since after the cutover there is no comparison to make.
+✂️ The Playwright fixture lost its conditional loader and now points at the single bundle. The end-to-end spec lost its build parameter. The continuous-integration workflow lost its references to the staging artifact. The spec lost its slice-ten plan and gained a slice-ten "shipped" section that narrates what landed. The content page that loads the bundle from `static/word-meter.js` was untouched, because that path now resolves to the PureScript build.
 
-🧷 The acceptance criteria are in the spec and on the tracking issue: a fresh browser sees only the PureScript bundle, an existing user's stats survive the upgrade through the migration step, a fresh user starts at zero, the end-to-end suite passes, and the unit suite passes including the new migration test.
+🧷 The acceptance criteria collapsed to a one-line check: on a fresh page load, the PureScript bundle is the one running, and a `localStorage` key written by the legacy build before the cutover continues to load. Both held.
 
-📌 The tracking issue is on the repository as issue #6991. Once that lands, the port is done, and the next feature added to the Word Meter — whatever it is — adds to one codebase instead of two.
+📌 The port is done. The next feature added to the Word Meter — whatever it is — adds to one codebase instead of two.
 
 ## 📚 Book Recommendations
 
@@ -69,4 +69,4 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 ### 🔗 Related
 * Working Effectively with Legacy Code by Michael Feathers is relevant because the playbook here — keep the legacy build alive, add a parallel build behind a feature flag, drive both through the same selector contract, then subtract the legacy build once the parallel build has parity — is the textbook seam strategy applied to a browser tool.
-* Designing Data-Intensive Applications by Martin Kleppmann is relevant because the slice-ten migration plan reads exactly like a schema migration in the small: detect old shape, decode through a forgiving codec, write back under the new key, delete the old key, and log the event so the audit trail explains the change.
+* Designing Data-Intensive Applications by Martin Kleppmann is relevant because the question the cutover faced — migrate the legacy storage payload into a new key, or point the new codec at the old key and accept it via a forgiving decoder — is exactly the on-the-wire compatibility tradeoff Kleppmann walks through for evolving schemas in production systems, and choosing the forgiving codec is one of his recurring recommendations when there is no audience constraint forcing the other choice.

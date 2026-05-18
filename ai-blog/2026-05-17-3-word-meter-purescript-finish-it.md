@@ -12,7 +12,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-17-3-word-meter-purescript-finish-it
 
 🎙️ The Word Meter is the little single-button page that counts every word spoken around you in your browser, and over the last several weeks it has been growing a second implementation, written in PureScript, slice by slice, behind the production JavaScript build.
 
-🏁 This wrap-up PR closes out the port and lands the cutover in the same commit train: every slice from one through 9c is shipped, the v0.1.1 live-tick and post-reload-sanity fixes are in, the recognizer pre-flight is one-shot, the two builds reached feature parity through the same Playwright contract, and then the JavaScript build was retired in favor of the PureScript bundle at `quartz/static/word-meter.js`.
+🏁 This wrap-up PR closes out the port and lands the cutover in the same PR: every slice from one through 9c is shipped, the v0.1.1 live-tick and post-reload-sanity fixes are in, the recognizer pre-flight is one-shot, the two builds reached feature parity through the same Playwright contract, and then the JavaScript build was retired in favor of the PureScript bundle at `quartz/static/word-meter.js`.
 
 🪞 What follows is a short tour of how the wrap-up shook out: the comment cleanup that came first, the comparative analysis that confirmed parity, the migration reflections, and the cutover itself which turned out to be small enough to do in the same PR.
 

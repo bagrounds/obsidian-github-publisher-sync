@@ -5,7 +5,7 @@ title: 🎙️ Word Meter PureScript Port Spec
 
 # 🎙️ Word Meter PureScript Port Spec
 
-Incremental port of `quartz/static/word-meter.js` to PureScript, compiling to `quartz/static/word-meter-ps.js`. Both builds run side-by-side until the cutover. `specs/word-meter.md` remains the source of truth for **what** the Word Meter does; this spec covers **how** the PureScript port is structured.
+The Word Meter, now fully implemented in PureScript, ships as `quartz/static/word-meter.js`. `specs/word-meter.md` remains the source of truth for **what** the Word Meter does; this spec covers **how** the PureScript implementation is structured.
 
 ## Slicing principle
 
@@ -67,7 +67,7 @@ tests/e2e/
   playwright.config.ts
   word-meter.spec.ts
   word-meter.d.ts              ambient types for window.__wordMeter
-  fixtures/word-meter.html     ?build=js|ps loader
+  fixtures/word-meter.html     loads `quartz/static/word-meter.js`
 ```
 
 ## Declarative typed DOM
@@ -199,17 +199,17 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
-## Implementation-agnostic test suite
+## End-to-end test suite
 
-`tests/e2e/word-meter.spec.ts` loads `?build=js` or `?build=ps` and drives the panel through a stable `data-testid` selector contract:
+`tests/e2e/word-meter.spec.ts` loads the production bundle from the fixture and drives the panel through a stable `data-testid` selector contract:
 
 - `wm-root` — mounted container.
-- `wm-build` — "PureScript build" / "JavaScript build" tag.
+- `wm-build` — "PureScript build" tag.
 - `wm-status` — listening / idle status.
 - `wm-count` — total words.
 - `wm-count-label` — descriptor.
 - `wm-toggle` — start / stop button.
-- `wm-reset` — reset button. On tap, prompts via `window.confirm(resetConfirmationPrompt)`; on acceptance, dispatches a `Reset` action that clears `totalWords`, `wordEvents`, `eventLog`, captions, and `firstStartedAt`, preserves the captured environment + diagnostics log (so the reset itself is auditable), and clears the persisted snapshot from `localStorage` (key `word-meter-ps:state:v1`).
+- `wm-reset` — reset button. On tap, prompts via `window.confirm(resetConfirmationPrompt)`; on acceptance, dispatches a `Reset` action that clears `totalWords`, `wordEvents`, `eventLog`, captions, and `firstStartedAt`, preserves the captured environment + diagnostics log (so the reset itself is auditable), and clears the persisted snapshot from `localStorage` (key `word-meter:state:v1`).
 - `wm-captions` — captions strip container; mostly a troubleshooting aid showing recent recognized utterances as they fade out.
 - `wm-captions-placeholder` — "Waiting for speech…" shown when no caption is within the 30s window.
 - `wm-caption` — one per recognized utterance, in chronological order. Captions older than `captionWindowMs` (30s) are pruned on every action, and their CSS `opacity` fades linearly with age from 1.0 down to `minimumCaptionOpacity` (0.15).
@@ -258,11 +258,11 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 9a    | Real cloud-path `SpeechRecognition` wired up (start / stop / result / error / end + auto-restart)       | ✅ Shipped |
 | 9b    | On-device pre-flight with transparent cloud fallback (static `available()` / `install()` API)           | ✅ Shipped |
 | 9c    | Runtime `language-not-supported` retry on the cloud path (one-shot per session)                         | ✅ Shipped |
-| 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
+| 10    | Cutover — `quartz/static/word-meter.js` is now the PureScript bundle; legacy JS retired                | ✅ Shipped |
 
 ## Build, test, bundle
 
-- `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
+- `npm run build:ps` — rebuild `quartz/static/word-meter.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
 - `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `wordsPerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.
@@ -284,21 +284,9 @@ The old `WordMeter.Recording` module is deleted; consumers import directly from 
 
 ---
 
-### Use `Data.DateTime.Instant` for timestamps
+### ✅ Use `Data.DateTime.Instant` for timestamps
 
-**What:** Replace raw `Number` timestamps (the argument to `Toggle`, `Tick`, `RecordDiagnostic`, etc.) with `Data.DateTime.Instant` from the `purescript-datetime` package, which is in the `purescript/` GitHub organization and thus qualifies as a core library.
-
-**Why:** `purescript-datetime` already provides exactly this concept: `Instant` represents a point in time as milliseconds since the Unix epoch, and `Data.Time.Duration.Milliseconds` (also from `datetime`) represents a duration. Using `Instant` for timestamps and `Milliseconds` for durations gives each concept its own type, prevents accidentally passing a duration where a timestamp is expected, and expresses intent through a well-maintained, widely-used library rather than a custom newtype. Cost at runtime: zero (newtypes are erased). The `unInstant :: Instant -> Milliseconds` function extracts the underlying value when FFI boundaries need a raw `Number`.
-
-**How — FFI boundary:** `instant :: Milliseconds -> Maybe Instant` returns `Nothing` only when the milliseconds value falls outside the valid `Instant` range (astronomical past/future). At the `FFI/Clock.purs` boundary, the `Maybe` is converted to `Either InvalidTimestamp Instant`; a `Left` is logged as a diagnostic entry and surfaced as a human-friendly error message in the UI, consistent with the repo's "never silently swallow errors" rule.
-
-**How — arithmetic:** `Instant` does not form a `Ring` (adding two instants has no meaning), but `diff :: Instant -> Instant -> Milliseconds` provides idiomatic subtraction that returns the typed `Milliseconds` duration. Duration arithmetic uses the standard numeric operators on `Milliseconds` since that type derives the relevant arithmetic instances. A small private helper `millisecondsBetween :: Instant -> Instant -> Number` (wrapping `diff` and `unMilliseconds`) can be defined locally in `Recording.Math` to keep the rate-calculation expressions readable without reintroducing raw `Number` timestamps.
-
-**How — actions and tests:** `Toggle`, `Tick`, and every other timestamp-carrying action constructor are defined in this codebase, so their parameter types are fully under our control. They would change to accept `Instant` directly. Test cases that currently write `Toggle 1000.0` would become `Toggle (testInstant 1000.0)` where `testInstant :: Number -> Instant` is a small test-only helper implemented as `fromMaybe bottom (instant (Milliseconds ms))`; `bottom` is the minimum valid `Instant` and serves as a safe default for the hard-coded epoch-relative values used in tests.
-
-**Trade-offs:** Requires adding `datetime` to `spago.yaml` dependencies and touching every `Action` constructor and every `reduce` case. Test cases need the `testInstant` helper at each call site, which is mechanical but ensures the compiler verifies every change. The `FFI/Clock.purs` foreign import `currentTimeMillis :: Effect Number` becomes `currentTimeMillis :: Effect Instant` with the conversion and error handling at the FFI boundary.
-
-**Complexity:** Medium. Mechanical transformation; the compiler guides every change site.
+**Done in a previous PR.** Every `Action` that carries a timestamp (`Toggle`, `Tick`, `RecordDiagnostic`, `HandleRecognitionError`, `IntegrateFinalizedTranscript`, …) now takes `Data.DateTime.Instant` from the `purescript-datetime` package. `Data.Time.Duration.Milliseconds` carries durations (e.g. `Session.completedActiveMs`). `WordMeter.Recording.Math.millisecondsBetween :: Instant -> Instant -> Number` wraps `diff` + `unwrap` so rate expressions stay readable. The `FFI/Clock.purs` boundary converts the raw `Number` returned by `Date.now()` through `millisToInstant`, falling back to `epochInstant` only on the astronomical out-of-range corner case. Test helpers `testInstant`/`instantMs` cover the `Number ↔ Instant` round trip in `Test.Main`.
 
 ---
 
@@ -337,3 +325,78 @@ The old `WordMeter.Recording` module is deleted; consumers import directly from 
 - `wordsPerMinuteIsZeroWhenNoWords` — `wordsPerMinute 0 elapsed == 0.0` for any elapsed time.
 - `wordsPerMinuteIsNonNegative` — `wordsPerMinute` with non-negative inputs always returns a non-negative rate.
 - `wordsPerMinuteAtOneMinuteEqualsWordCount` — `wordsPerMinute n 60000.0 == toNumber n` (the definitional identity at exactly one minute elapsed).
+
+## Comparative analysis — JS vs. PureScript builds
+
+A walk-through of the legacy JavaScript build (preserved in git history) against the PureScript bundle that now ships at `quartz/static/word-meter.js` confirmed parity on every user-visible feature. The differences below are catalogued so future contributors know what the cutover deliberately carried forward, rather than discovering them in a field report.
+
+### Parity matrix
+
+- Start / stop counting, toggle button label, status text, listening / idle state machine: parity.
+- Live word count and live rate tiles (short / long / overall): parity. The PureScript build drives them through the same 200 ms tick interval (`WordMeter.Capability.Ticker`).
+- Captions strip with 30 s window and linear opacity fade: parity. Both prune past `captionWindowMs` on every action and clamp opacity to `minimumCaptionOpacity = 0.15`.
+- Event log of completed counting sessions, capped at 200 entries, persisted: parity.
+- Diagnostics drawer with collapsible `<details>`, environment snapshot prefix, rolling 60-entry log, and copy-to-clipboard button: parity.
+- Wake lock + keep-awake checkbox, visibility-driven re-acquisition, status text after acquisition / failure / auto-release: parity.
+- Recognition-error banner with the same code classification (`not-allowed`, `service-not-allowed`, `no-speech`, `aborted`, `audio-capture`, `network`, `language-not-supported`, generic): parity.
+- Real cloud-path `SpeechRecognition` with 250 ms auto-restart on `onend`: parity.
+- On-device pre-flight via `SpeechRecognition.available()` / `install()` with transparent cloud fallback: parity.
+- One-shot cloud-fallback on runtime `language-not-supported`: parity.
+- Reset button + `window.confirm` prompt + clears persisted snapshot: parity.
+- Persistence round-trip: parity for shape (`totalWords`, `firstStartedAt`, word events, event log) plus the PureScript-only additions described below.
+
+### Product-visible differences carried forward from the legacy build
+
+These are intentional improvements the PureScript build carries; they are not regressions.
+
+1. **Persisted fields**. The PureScript build persists `completedActiveMs` and `cloudFallbackAttempted` in addition to the original fields, so post-reload rates and on-device pre-flight obey the v0.1.1 rules. The legacy build silently lost `completedActiveMs` across reloads and re-ran the on-device pre-flight every recognizer auto-restart. Both PureScript-only fields decode with `.:?` defaults, so any `localStorage` payload the legacy JS wrote under `word-meter:state:v1` still loads cleanly — the cutover reused the legacy key rather than introducing a parallel one.
+2. **Version string**. The legacy JS shipped `0.1.0`. The PureScript build ships `0.1.1`. The bump captures the live-tick driver, post-reload sanity, and one-shot on-device pre-flight (the v0.1.1 fixes). The footer and diagnostics drawer render the value verbatim.
+3. **Clipboard fallback path**. The legacy JS fell back to a hidden `<textarea>` + `document.execCommand('copy')` when `navigator.clipboard.writeText` was unavailable. PureScript surfaces a `Copy failed: Clipboard API unavailable` status instead. Modern Chromium / Safari / Firefox all support `navigator.clipboard.writeText` on `https://` origins, so this only matters for very old browsers — which already cannot use the Web Speech API the meter depends on.
+4. **Copy-status copy**. Legacy = `copied!` / `copy failed — long-press the log to select`. PureScript = `Copied!` / `Copy failed: <reason>`. The information conveyed is equivalent; the wording differs in tone (sentence-case vs. lower-case) and the legacy build's mobile-only hint about long-pressing the log is not echoed.
+5. **Per-event `console.log`**. The legacy JS mirrored every diagnostic entry to `console.log` so the devtools console doubled as a tail of the diagnostics drawer. The PureScript build does not. The diagnostics drawer itself still carries the full log, the copy button still hands it back, and the on-screen event log still records every counting session — only the devtools mirror is gone.
+
+### Optional follow-up work (none are blocking)
+
+1. **Optional: console mirror of diagnostics**. Add a `console.log` call inside the `RecordDiagnostic` reducer path (or, more cleanly, a `Capability.Log` typeclass with an `AppM` instance that calls `Effect.Console.log` and a `RecordingLogM` test newtype). Helps with field debugging without opening the drawer.
+2. **Optional: clipboard fallback parity**. If field reports show users on browsers without `navigator.clipboard`, add a one-shot `<textarea>` + `document.execCommand('copy')` fallback inside `FFI.Clipboard`. Likely never needed — the meter requires a recent browser to function at all.
+3. **Optional: copy-status hint for long-press**. If mobile users report not knowing how to copy when the API fails, append the legacy build's `(long-press the log to select)` hint to the failure message.
+
+## Reflection on the migration
+
+### What we gained
+
+- **A vocabulary of impossible states.** The headline win was deleting whole categories of bugs by making them unrepresentable. `WakeLockState = WakeLockIdle | WakeLockHeld | WakeLockFailed String` made it impossible for the held-flag and the status text to disagree. `RecognitionPath = OnDevicePath | CloudPath` made it impossible to forget which path a session is on. `RecognitionErrorCode` made `is-permission-denied?` a typed predicate instead of a string comparison the compiler cannot check. None of these are accidents — they came from listening to the bugs the JavaScript build had already shipped and then encoding the invariant we wanted into the type.
+- **A capability stack that is genuinely swappable.** Every effect this app needs lives behind a typeclass with an `AppM` instance and at least one test newtype. The reducer + orchestrator code is generic in `m`; the test suite drives the whole orchestrator under deterministic test newtypes that never touch the browser. The cost of the abstraction is the boilerplate of two implementations per capability; the payoff is unit tests that cover code paths (visibility re-acquisition, wake-lock failure, recognition auto-restart) that were untestable in JavaScript without a real browser.
+- **A pure reducer that is easy to reason about.** The `WordMeter.Recording.Reducer.reduce` function takes an `Action` and a `Session` and returns a new `Session`. Every transition is a pattern match on the action, every transition is verifiable in `Test.Main`, and every transition is small. The legacy build's `endListening`, `beginListening`, and `integrateFinalizedTranscript` were imperative routines that touched session, recognition, wake-lock, and UI state in a single function — easy to write, hard to test.
+- **Property-based tests.** `quickCheck` covers seven invariants over the pure math (rate formatters, opacity range, words-per-minute definitional identity). These properties caught a divide-by-near-zero bug post-reload before it shipped — that fix became part of v0.1.1.
+- **A typed FFI boundary.** Every JavaScript shim is thin (no state, no decisions), and every fallible boundary returns `Either <DomainError> a`. The `Storage`, `Clipboard`, `WakeLock`, `Recognition`, `Confirm`, and on-device pre-flight FFIs all hand structured outcomes back to PureScript. The diagnostics drawer carries every failure verbatim. The "never silently swallow errors" rule from `AGENTS.md` is enforced by the FFI contract, not by reviewer vigilance.
+
+### What we learned
+
+- **Slicing vertically pays.** Every slice from 1 through 9c delivered end-to-end user-visible functionality. We never built a horizontal layer (a Vdom library, a capability stack, a persistence module) as a slice on its own; each one grew in service of the feature that needed it. The Vdom started as a "render a button and a count" sketch in slice 1 and grew into typed scroll preservation by the time slice 9b needed `<details>` to stay open. The Storage capability appeared in slice 6 because that is when persistence shipped. This kept the port shippable every Friday.
+- **The compiler is a refactoring tool.** Splitting `Recording.purs` into four modules, introducing `Instant` everywhere, introducing the `Locale` newtype, replacing two boolean flags with `WakeLockState`: every one of these refactors landed without a single runtime regression because the compiler walked us to every call site. The legacy build's equivalent refactor would have required a global grep and a prayer.
+- **FFI shims must be thin.** Slice 7 originally shipped a JavaScript wake-lock shim that owned the active sentinel, decided what "auto-release" meant, and silently swallowed release failures. The code review caught it and the fix moved every decision into PureScript: the JavaScript shim now exposes five thin foreign imports with no state. The convention generalizes — every later FFI shim (`Recognition`, `Confirm`, `Storage`, `OnDeviceLanguagePack`) follows it.
+- **Test newtypes are worth their weight.** `RecordingClipboardM`, `RecordingWakeLockM`, `RecordingRecognitionM`, `StubEnvironmentM`, `FixedClockM`, `StatefulSessionM`, `InMemoryStorageM` — every one of these started as a unit test and ended as a verification that the production wiring does exactly what we say it does. They are also the cheapest way to drive every branch of `Main.handleRecognitionError`'s 9c retry logic.
+- **Capture the invariant in the type, not in the comment.** Wherever the port introduced a typed ADT for what JavaScript was modelling as a string or a pair of booleans, the comment that used to explain "remember, this is only valid when …" disappeared with the impossible state.
+
+### What to carry forward
+
+- **The capability pattern travels.** Any future browser-targeted PureScript app in this repo should start with the same shape: pure reducer over a typed `Action` ADT, capabilities behind typeclasses, `AppM = ReaderT Env Effect` newtype, test newtypes per capability. See `specs/purescript-capability-pattern.md` for the canonical walkthrough.
+- **The Vdom is small enough to copy.** `WordMeter.Vdom` is ~250 lines and renders a full app with scroll preservation. Future tools that need a single-component browser surface can copy it rather than reach for a framework. The trade-off (full subtree replacement on every dispatch) is fine for an app this size and is genuinely simpler than diffing.
+- **Vertical slices belong in every port.** When the next legacy module is ported, the slice plan should look exactly like this one: a numbered list of user-visible slices, each independently shippable, each independently testable through the same selector contract the legacy build honors.
+- **Diagnostics drawer is non-negotiable.** Every web-facing tool in this repo should ship a rolling diagnostics log with a copy button. Field bug reports turn from "the meter is broken" into a stack of evidence that names the path the program took.
+- **The cutover plan is part of the port spec.** The cutover for slice 10 is documented inside this spec rather than scattered across issue comments so the next person who reads the spec knows exactly what landed.
+
+## Slice 10 — cutover (shipped)
+
+The cutover was deliberately a pure subtraction. The PureScript build had passed the full Playwright contract for several slices already; the legacy JavaScript was just the redundant copy. There were no real users other than the repo owner, and the daily-reset workflow meant the persisted-state question had a one-line answer: reuse the legacy `localStorage` key.
+
+What landed in this slice:
+
+- `WordMeter.Persistence.storageKey` now reads and writes `word-meter:state:v1` — the same key the legacy JS used. No migration code, no parallel key, no merging logic. The PureScript build's `Persistence` codec accepts the legacy v1 envelope because the two new fields (`completedActiveMs`, `cloudFallbackAttempted`) are decoded with `.:?` defaults.
+- `scripts/build-word-meter-ps.mjs` now compiles the PureScript bundle to `quartz/static/word-meter.js`. The build target moved; `content/tools/word-meter.md` was untouched because the `<script src="/static/word-meter.js">` reference still resolves.
+- `quartz/static/word-meter.js` is now the PureScript bundle. The legacy IIFE that used to live at that path is gone, along with `quartz/static/word-meter.test.mjs` (the Node `vm` sandbox suite that exercised the legacy IIFE).
+- `quartz/static/word-meter-ps.js` is gone — the staging artifact for the dual-build era no longer has a reason to exist.
+- `tests/e2e/fixtures/word-meter.html` loads `/quartz/static/word-meter.js` unconditionally. The `?build=js`/`?build=ps` query-string handling is gone.
+- `tests/e2e/word-meter.spec.ts` loses the `build: "js" | "ps"` parameter on `loadWordMeter`. Every test goes straight to the fixture without a query string. `tests/e2e/playwright.config.ts` does the same.
+- `package.json`'s `clean:ps` script now removes `quartz/static/word-meter.js` instead of the staging path.

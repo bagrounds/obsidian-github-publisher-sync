@@ -7,7 +7,7 @@ on:
     paths:
       - 'purs-ps/**'
       - 'tests/e2e/**'
-      - 'quartz/static/word-meter-ps.js'
+      - 'quartz/static/word-meter.js'
       - 'scripts/build-word-meter-ps.mjs'
       - 'package.json'
       - 'package-lock.json'
@@ -16,7 +16,7 @@ on:
     paths:
       - 'purs-ps/**'
       - 'tests/e2e/**'
-      - 'quartz/static/word-meter-ps.js'
+      - 'quartz/static/word-meter.js'
       - 'scripts/build-word-meter-ps.mjs'
       - 'package.json'
       - 'package-lock.json'
@@ -56,7 +56,7 @@ jobs:
           restore-keys: |
             spago-${{ runner.os }}-
 
-      - name: Build word-meter-ps bundle
+      - name: Build word-meter bundle
         run: npm run build:ps
 
       - name: Run PureScript unit tests
@@ -65,8 +65,8 @@ jobs:
       - name: Upload built bundle
         uses: actions/upload-artifact@v4
         with:
-          name: word-meter-ps-bundle
-          path: quartz/static/word-meter-ps.js
+          name: word-meter-bundle
+          path: quartz/static/word-meter.js
           retention-days: 14
 
   playwright-e2e-tests:
@@ -96,7 +96,7 @@ jobs:
           restore-keys: |
             spago-${{ runner.os }}-
 
-      - name: Build word-meter-ps bundle
+      - name: Build word-meter bundle
         run: npm run build:ps
 
       - name: Install Playwright browsers

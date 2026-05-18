@@ -1,9 +1,9 @@
 -- | Pure value identifying which `SpeechRecognition` configuration is
--- | currently driving a counting session. The slice-9b orchestrator
--- | picks `OnDevicePath` after a successful pre-flight and `CloudPath`
--- | everywhere else; slice 9c reads this back to decide whether a
--- | runtime `language-not-supported` deserves a one-shot cloud-path
--- | retry.
+-- | currently driving a counting session. The recognition orchestrator
+-- | picks `OnDevicePath` after a successful on-device pre-flight and
+-- | `CloudPath` everywhere else; `Main.handleRecognitionError` reads
+-- | this back to decide whether a runtime `language-not-supported`
+-- | deserves a one-shot cloud-path retry.
 -- |
 -- | This lives in its own module so both the reducer
 -- | (`WordMeter.Recording.Reducer`) and the recognition capability

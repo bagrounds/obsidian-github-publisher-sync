@@ -5,7 +5,7 @@ title: "🎙️ Word Meter Spec"
 
 # 🎙️ Word Meter Spec
 
-The Word Meter is a single-page browser tool that listens to ambient speech via the Web Speech API and counts the words it hears. It lives at `/tools/word-meter` (rendered from `content/tools/word-meter.md`) and is implemented entirely in `quartz/static/word-meter.js`. There is no server, no upload from this page, no account, and no cost.
+The Word Meter is a single-page browser tool that listens to ambient speech via the Web Speech API and counts the words it hears. It lives at `/tools/word-meter` (rendered from `content/tools/word-meter.md`) and is served as `quartz/static/word-meter.js`, compiled from PureScript sources under `purs-ps/src/WordMeter/`. There is no server, no upload from this page, no account, and no cost.
 
 ## Goals
 
@@ -30,7 +30,7 @@ The meter has one user-visible mode and no chooser. Internally it has two implem
 
 At every Start, the meter tries the on-device path first when the static API is exposed; if anything other than `available` comes back from the pre-flight (`unavailable`, `install-failed`, or `unknown`), the meter silently builds a fresh recognition object with `processLocally = false` and starts that one instead. The user is not asked to choose, and the page does not surface a chooser. This is justified by field telemetry: on Android (Chrome and Brave) the static API exists but reports `unavailable` for `en-US`; on Samsung Internet the static API does not exist at all and the cloud path takes over by default. In both cases the user gets a working meter without ever seeing or thinking about modes.
 
-The on-device path lives in a single labeled block between `BEGIN on-device path` and `END on-device path` in `quartz/static/word-meter.js`. If the on-device API is ever dropped (or proves never to work in practice), that block plus the `attemptStart` branch above the cloud build can be removed in one cut.
+The on-device path lives in `WordMeter.Capability.Recognition.prepareOnDeviceLanguagePack` plus the `OnDevicePath` branch of `WordMeter.Main.startRecognitionForSession`. If the on-device API is ever dropped (or proves never to work in practice), removing that branch and collapsing `startRecognitionForSession` to the cloud path is a small, local change.
 
 ### On-device language pack lifecycle
 
@@ -93,13 +93,13 @@ Pure-web browsers do not allow microphone capture once the page becomes hidden o
 
 ## Lifecycle and cleanup
 
-The whole app is wrapped in an IIFE that re-inits on Quartz `nav` events. The cleanup hook stops listening, clears the tick interval, clears the restart timer, releases any active wake lock, and removes the `visibilitychange` listener.
+The whole app is a PureScript-built IIFE that re-inits on Quartz `nav` events. The cleanup hook stops listening, clears the tick interval, clears the restart timer, releases any active wake lock, and removes the `visibilitychange` listener.
 
 ## Tests
 
-`quartz/static/word-meter.test.mjs` loads the source into a Node `vm` sandbox and exercises the production code paths via the `__WM_TEST_HOOK__` test hook. Two loaders are provided:
+The PureScript implementation is exercised by two suites:
 
-- `loadWordMeter` — minimal sandbox for the finalized-result integration tests (no DOM, no SpeechRecognition).
-- `loadWordMeterWithLifecycle` — richer sandbox with mocked SpeechRecognition, navigator (with optional `wakeLock`), and a DOM that exposes the keep-awake checkbox so the wake-lock lifecycle can be driven end-to-end.
+- **Unit tests** in `purs-ps/test/` (`npm run test:ps`) cover the pure reducer, the rate math, the recognition delta classifier, the recognition error classifier, and the persistence codec.
+- **Playwright end-to-end tests** in `tests/e2e/word-meter.spec.ts` (`npm run test:e2e`) drive the live bundle through a stable `data-testid` selector contract — start/stop, transcript injection, captions, stats, event log, diagnostics drawer, persistence round-trip, wake lock, recognition error banner, on-device pre-flight, and the cloud-fallback retry path.
 
 The wake-lock test cases cover: acquisition with the toggle on, no acquisition with the toggle off, release on stop, graceful no-op when the API is missing, and bounded re-acquisition on visibility change (never lose a request, never double-request while a lock is already held).

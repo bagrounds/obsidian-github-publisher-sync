@@ -2,15 +2,15 @@ import { test, expect, type Page } from "@playwright/test"
 
 // Selector contract every Word Meter implementation must honor:
 //   wm-root          mounted container
-//   wm-build         "PureScript build" / "JavaScript build" tag
+//   wm-build         "PureScript build" tag
 //   wm-status        listening / idle status
 //   wm-count         total words count
 //   wm-count-label   "words counted" descriptor
 //   wm-toggle        start / stop button
 //   wm-version       "Word Meter v<x>" footer
 
-const loadWordMeter = async (page: Page, build: "js" | "ps") => {
-  await page.goto(`/tests/e2e/fixtures/word-meter.html?build=${build}`)
+const loadWordMeter = async (page: Page) => {
+  await page.goto("/tests/e2e/fixtures/word-meter.html")
   await page.waitForFunction(() => Boolean(window.__wordMeter))
 }
 
@@ -19,21 +19,21 @@ const simulateFinalTranscript = (page: Page, transcript: string) =>
 
 test.describe("Word Meter — PureScript build — slice 1 — recording", () => {
   test("renders the panel and identifies the build", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-root")).toBeVisible()
     await expect(page.getByTestId("wm-build")).toHaveText(/purescript/i)
     await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.1\.1/i)
   })
 
   test("starts idle with zero words", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-status")).toHaveText(/idle/i)
     await expect(page.getByTestId("wm-count")).toHaveText("0")
     await expect(page.getByTestId("wm-toggle")).toHaveText(/start counting/i)
   })
 
   test("clicking the toggle flips listening status and button label", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
     await expect(page.getByTestId("wm-toggle")).toHaveText(/stop counting/i)
@@ -43,7 +43,7 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
   })
 
   test("injecting a final transcript while listening increments the count", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await simulateFinalTranscript(page, "hello world")
     await expect(page.getByTestId("wm-count")).toHaveText("2")
@@ -52,13 +52,13 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
   })
 
   test("injecting a transcript while idle does not change the count", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await simulateFinalTranscript(page, "hello world")
     await expect(page.getByTestId("wm-count")).toHaveText("0")
   })
 
   test("counter persists across stop and restart", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await simulateFinalTranscript(page, "one two three")
     await page.getByTestId("wm-toggle").click()
@@ -71,14 +71,14 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
 
 test.describe("Word Meter — PureScript build — slice 2 — live captions", () => {
   test("renders an empty captions panel with a placeholder before any speech", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-captions")).toBeVisible()
     await expect(page.getByTestId("wm-captions-placeholder")).toBeVisible()
     await expect(page.getByTestId("wm-caption")).toHaveCount(0)
   })
 
   test("appends one caption per injected final transcript", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await simulateFinalTranscript(page, "hello there")
     await simulateFinalTranscript(page, "general kenobi")
@@ -90,7 +90,7 @@ test.describe("Word Meter — PureScript build — slice 2 — live captions", (
   })
 
   test("does not record a caption while idle", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await simulateFinalTranscript(page, "noise")
     await expect(page.getByTestId("wm-caption")).toHaveCount(0)
   })
@@ -98,7 +98,7 @@ test.describe("Word Meter — PureScript build — slice 2 — live captions", (
   test("drops empty transcripts and prunes captions that age past the 30s window", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("   ", 100)
@@ -122,14 +122,14 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
   test("renders an empty event-log panel with a placeholder before any counting session", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-event-log")).toBeVisible()
     await expect(page.getByTestId("wm-event-log-placeholder")).toBeVisible()
     await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
   })
 
   test("does not log anything while a counting session is still open", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("hello there", 5_000)
@@ -141,7 +141,7 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
   test("stop pushes one entry with started clock, duration, word count and wpm rate", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(1_700_000_000_000)
       window.__wordMeter.simulateFinalTranscriptAt(
@@ -161,7 +161,7 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
   })
 
   test("stop/restart appends a second entry in chronological order", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("alpha", 1_000)
@@ -181,7 +181,7 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
   })
 
   test("intervals with no recognized utterances log a zero-word session", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("   ", 1_000)
@@ -194,7 +194,7 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
   })
 
   test("caps the event log at the most recent counting sessions", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const limit = await page.evaluate(() => window.__wordMeter.getEventLogLimit())
     expect(limit).toBeGreaterThan(0)
     await page.evaluate((capacity) => {
@@ -211,7 +211,7 @@ test.describe("Word Meter — PureScript build — slice 4 — event log", () =>
 
 test.describe("Word Meter — PureScript build — slice 3 — stats dashboard", () => {
   test("renders all five stat tiles starting at zero / em-dash", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-stats")).toBeVisible()
     await expect(page.getByTestId("wm-rate-short")).toContainText("0")
     await expect(page.getByTestId("wm-rate-long")).toContainText("0")
@@ -221,7 +221,7 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 
   test("captures the first-started timestamp on the very first start", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => window.__wordMeter.startAt(1_700_000_000_000))
     const firstStartedAt = await page.evaluate(() => window.__wordMeter.getFirstStartedAt())
     expect(firstStartedAt).toBe(1_700_000_000_000)
@@ -229,7 +229,7 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 
   test("words / minute over the short window after a full minute", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("one two three four five six", 10_000)
@@ -240,7 +240,7 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 
   test("duration tile reflects active listening time across stop / start", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.stopAt(30_000)
@@ -252,7 +252,7 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 
   test("overall words / minute uses active listening time, not wall clock", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     // 6 words spoken over a 120s active-listening total with a 60s paused gap
     // in the middle. Overall WPM divides by active time (120s) → 3 wpm.
     await page.evaluate(() => {
@@ -268,7 +268,7 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   })
 
   test("long-window rate counts everything inside the trailing 10 minutes", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("one two three four five", 60_000)
@@ -283,11 +283,11 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
   test("duration tile re-renders on the live tick while listening (no user input needed)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     // Press Start; the orchestrator must install a setInterval that
-    // dispatches Tick currentTimeMillis every 200 ms, mirroring the
-    // legacy `word-meter.js` driver. Without that driver, the
-    // duration tile freezes at "0s" until the user interacts again.
+    // dispatches Tick currentTimeMillis every 200 ms. Without that
+    // driver, the duration tile freezes at "0s" until the user
+    // interacts again.
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
     // The tile starts at "0s" on the very first paint.
@@ -304,7 +304,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   test("renders the collapsible drawer collapsed by default with the snapshot in its content", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const drawer = page.getByTestId("wm-diagnostics")
     await expect(drawer).toBeVisible()
     await expect(page.getByTestId("wm-diagnostics-toggle")).toHaveText(/diagnostics/i)
@@ -316,7 +316,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   })
 
   test("clicking the summary expands the drawer", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-diagnostics-toggle").click()
     await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
   })
@@ -324,7 +324,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   test("drawer stays open after a state update (regression: rerender must not reset open state)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     // Open the drawer.
     await page.getByTestId("wm-diagnostics-toggle").click()
     await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
@@ -339,7 +339,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   })
 
   test("getDiagnosticsDrawerOpen reflects open/closed drawer state", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsDrawerOpen())).toBe(false)
     await page.evaluate(() => window.__wordMeter.toggleDiagnosticsDrawer())
     expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsDrawerOpen())).toBe(true)
@@ -348,13 +348,13 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   })
 
   test("records the init event in the diagnostics log on startup", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsLength())).toBeGreaterThan(0)
     await expect(page.getByTestId("wm-diagnostics-content")).toContainText("init")
   })
 
   test("records start, transcript, and stop entries through the reducer", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const startingLength = await page.evaluate(() =>
       window.__wordMeter.getDiagnosticsLength(),
     )
@@ -375,7 +375,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
   })
 
   test("caps the diagnostics log at the documented limit", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const limit = await page.evaluate(() => window.__wordMeter.getDiagnosticsLimit())
     expect(limit).toBeGreaterThan(0)
     // Each start → counted utterance → stop appends three entries; drive
@@ -401,7 +401,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     test("clicking the copy button updates the status and writes the rendered text to the clipboard", async ({
       page,
     }) => {
-      await loadWordMeter(page, "ps")
+      await loadWordMeter(page)
       await expect(page.getByTestId("wm-diagnostics-copy-status")).toHaveText("")
       // Expand the drawer so the copy button is visible.
       await page.getByTestId("wm-diagnostics-toggle").click()
@@ -416,7 +416,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
 
 test.describe("Word Meter — PureScript build — slice 6 — reset + persistence", () => {
   test("renders a reset button next to the toggle", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-reset")).toBeVisible()
     await expect(page.getByTestId("wm-reset")).toHaveText(/reset/i)
   })
@@ -424,7 +424,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
   test("reset button asks for confirmation and wipes accumulated stats on accept", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("alpha beta gamma", 1_000)
@@ -446,7 +446,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
   })
 
   test("declining the confirmation leaves stats untouched", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("hello world", 1_000)
@@ -463,7 +463,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
   test("totals and event log survive a full page reload via localStorage", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("one two three four", 1_000)
@@ -474,7 +474,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
     })
     await expect(page.getByTestId("wm-count")).toHaveText("6")
     const persistedKey = await page.evaluate(() =>
-      Object.keys(window.localStorage).find((k) => k.startsWith("word-meter-ps:state")),
+      Object.keys(window.localStorage).find((k) => k.startsWith("word-meter:state")),
     )
     expect(persistedKey).toBeTruthy()
 
@@ -489,7 +489,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
   test("rates remain sane after a reload (regression: completedActiveMs persists and `now` is bumped on init)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     // Simulate a real listening session of a few seconds with a
     // handful of words. Use real wall-clock timestamps via the
     // non-`At` hooks so the post-reload `Tick currentTimeMillis`
@@ -537,7 +537,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
   test("resetAt clears the persisted snapshot so a reload starts fresh", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("alpha beta", 1_000)
@@ -557,7 +557,7 @@ test.describe("Word Meter — PureScript build — slice 6 — reset + persisten
 
 test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle", () => {
   test("renders a keep-awake checkbox that defaults to checked", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const checkbox = page.getByTestId("wm-keep-awake")
     await expect(checkbox).toBeVisible()
     await expect(checkbox).toHaveAttribute("type", "checkbox")
@@ -569,7 +569,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   test("setKeepAwake flips the preference and reflects it on the rendered checkbox", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
     expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
     await expect(page.getByTestId("wm-keep-awake")).not.toBeChecked()
@@ -580,7 +580,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   test("toggling the checkbox via the DOM dispatches a SetKeepAwake action", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-keep-awake").uncheck()
     expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
     await page.getByTestId("wm-keep-awake").check()
@@ -590,7 +590,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   test("starting with keep-awake on records a wake-lock attempt in diagnostics", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-keep-awake")).toBeChecked()
     const lengthBefore = await page.evaluate(() =>
       window.__wordMeter.getDiagnosticsLength(),
@@ -612,7 +612,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   })
 
   test("stopping releases the wake lock and clears the status", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-keep-awake-status")).not.toHaveText("")
     await page.getByTestId("wm-toggle").click()
@@ -630,7 +630,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   })
 
   test("starting with keep-awake off does not request a wake lock", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
     await page.getByTestId("wm-toggle").click()
     // No status text means we never tried to acquire.
@@ -642,7 +642,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   })
 
   test("the checkbox is disabled while listening", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await expect(page.getByTestId("wm-keep-awake")).toBeEnabled()
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-keep-awake")).toBeDisabled()
@@ -653,7 +653,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
   test("the keep-awake preference is not persisted across reload (always defaults on)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.evaluate(() => window.__wordMeter.setKeepAwake(false))
     expect(await page.evaluate(() => window.__wordMeter.getKeepAwake())).toBe(false)
     await page.reload()
@@ -664,7 +664,7 @@ test.describe("Word Meter — PureScript build — slice 7 — keep-awake toggle
 
 test.describe("Word Meter — PureScript build — slice 8 — recognition errors", () => {
   test("renders an empty error banner before any error", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const banner = page.getByTestId("wm-error")
     await expect(banner).toBeVisible()
     await expect(banner).toHaveText("")
@@ -674,7 +674,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   test("a transient error (no-speech) does not show a banner and keeps listening", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
     await page.evaluate(() =>
@@ -693,7 +693,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   test("a permission-denied error shows the banner and stops listening", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("not-allowed", "blocked"),
@@ -716,7 +716,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   test("a service-not-allowed error is also treated as permission-denied", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("service-not-allowed", ""),
@@ -732,7 +732,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   test("a network error shows a banner but keeps listening (recoverable)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("network", "offline"),
@@ -742,7 +742,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 
   test("an unknown error code falls back to a generic banner", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("weird", ""),
@@ -751,7 +751,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 
   test("an empty error code renders the unknown-code banner", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("", ""),
@@ -760,7 +760,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 
   test("starting again after a network error clears the banner", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("network", ""),
@@ -773,7 +773,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 
   test("reset clears any prior error banner", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
       window.__wordMeter.simulateRecognitionError("network", ""),
@@ -784,7 +784,7 @@ test.describe("Word Meter — PureScript build — slice 8 — recognition error
   })
 
   test("getErrorBanner reflects the rendered text", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     expect(await page.evaluate(() => window.__wordMeter.getErrorBanner())).toBe("")
     await page.getByTestId("wm-toggle").click()
     await page.evaluate(() =>
@@ -800,7 +800,7 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
   test("on-device language-not-supported swaps to cloud once without showing a banner", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     // Start listening. With the on-device pre-flight disabled in the
     // fixture, the orchestrator lands on the cloud path and sets the
     // one-shot cloud-fallback flag. Reset the flag and pin the active
@@ -845,7 +845,7 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
   test("a second language-not-supported on the cloud path surfaces the banner (no infinite retry)", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     // First strike: re-seed the pre-conditions for the on-device runtime
     // retry branch, fire the error, and verify the orchestrator
@@ -875,7 +875,7 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
   test("Toggle (stop then start) preserves cloudFallbackAttempted; only Reset clears it", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     // Drive the orchestrator into the "settled on cloud" state via the
     // runtime swap so the flag is set the way it would be in a real
@@ -913,7 +913,7 @@ test.describe("Word Meter — PureScript build — slice 9c — language-not-sup
 
 test.describe("Word Meter — PureScript build — slice 9b — on-device pre-flight", () => {
   test("with on-device pre-flight disabled, start logs the cloud-fallback diagnostic and never sets the download status", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-toggle").click()
     await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
     const diagnostics: string = await page.evaluate(() =>
@@ -930,7 +930,7 @@ test.describe("Word Meter — PureScript build — slice 9b — on-device pre-fl
   })
 
   test("getRecognitionStatusOverride defaults to empty on idle", async ({ page }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     expect(
       await page.evaluate(() => window.__wordMeter.getRecognitionStatusOverride()),
     ).toBe("")
@@ -977,7 +977,7 @@ test.describe("Word Meter — PureScript build — vdom scroll preservation", ()
   test("scrolled diagnostics drawer keeps its scroll position across a rerender", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     await page.getByTestId("wm-diagnostics-toggle").click()
     await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
     const capacity = await page.evaluate(() =>
@@ -990,7 +990,7 @@ test.describe("Word Meter — PureScript build — vdom scroll preservation", ()
   test("scrolled event-log timeline keeps its scroll position across a rerender", async ({
     page,
   }) => {
-    await loadWordMeter(page, "ps")
+    await loadWordMeter(page)
     const capacity = await page.evaluate(() =>
       window.__wordMeter.getEventLogLimit(),
     )

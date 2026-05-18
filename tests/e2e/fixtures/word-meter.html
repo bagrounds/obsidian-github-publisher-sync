@@ -7,16 +7,10 @@
   <body>
     <div id="word-meter"></div>
     <script>
-      const params = new URLSearchParams(window.location.search)
-      const build = params.get("build") === "js" ? "js" : "ps"
-      const source = build === "js"
-        ? "/quartz/static/word-meter.js"
-        : "/quartz/static/word-meter-ps.js"
       window.__WM_TEST_HOOK__ = true
       window.__WM_DISABLE_ON_DEVICE_PREFLIGHT__ = true
       const tag = document.createElement("script")
-      tag.src = source
-      tag.dataset.build = build
+      tag.src = "/quartz/static/word-meter.js"
       document.body.appendChild(tag)
     </script>
   </body>

@@ -1,6 +1,6 @@
--- | Capability for the slice-9a real recognition wiring plus the
--- | slice-9b on-device pre-flight. Production code in `WordMeter.Main`
--- | uses the typeclass; the `AppM` instance owns the active
+-- | Capability for the real recognition wiring plus the on-device
+-- | pre-flight. Production code in `WordMeter.Main` uses the
+-- | typeclass; the `AppM` instance owns the active
 -- | `RecognitionInstance` and the auto-restart timer handle through
 -- | refs in `ApplicationEnvironment`. The `RecordingRecognitionM`
 -- | test newtype records every call so the reducer wiring is

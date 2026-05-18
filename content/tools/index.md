@@ -8,8 +8,7 @@ URL: https://bagrounds.org/tools
 updated: 2026-05-17T09:41:12-07:00
 ---
 [Home](../index.md)  
-# 🧰 Tools (3)  
+# 🧰 Tools (2)  
 - [🧮 Calculator](./calculator.md)  
 - [🎙️ Word Meter](./word-meter.md)  
-- [🟣 Word Meter (PureScript)](./word-meter-ps.md)  
   

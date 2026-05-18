@@ -135,8 +135,7 @@ updated: 2026-05-17T09:41:12-07:00
 - [🧬 Valence](./games/valence.md)  
   
   
-## [🧰 Tools](./tools/index.md) (3)  
-- [🟣 Word Meter (PureScript)](./tools/word-meter-ps.md)  
+## [🧰 Tools](./tools/index.md) (2)  
 - [🎙️ Word Meter](./tools/word-meter.md)  
 - [🧮 Calculator](./tools/calculator.md)  
   

@@ -97,14 +97,17 @@ import WordMeter.Recording.Math
   ( activeListeningMs
   , captionOpacity
   , formatDurationMs
+  , formatPercent
   , formatRate
   , intervalDurationMs
   , intervalRate
   , longRate
   , overallRate
+  , sampleFraction
   , shortRate
   , wallSpanMs
   , wordsInTrailingWindow
+  , wordsPerDay
   , wordsPerMinute
   )
 import WordMeter.Recording.Reducer
@@ -149,6 +152,7 @@ main = do
   runIntegrateFinalizedTranscriptReducerTests
   runCloudFallbackReducerTests
   runDiagnosticsDrawerReducerTests
+  runMultiDayStatsTests
   runPropertyTests
   log "word-meter: all PureScript unit tests passed"
 
@@ -1288,6 +1292,8 @@ runPropertyTests = sequence_
   , quickCheck wordsPerMinuteIsZeroWhenNoWords
   , quickCheck wordsPerMinuteIsNonNegative
   , quickCheck wordsPerMinuteAtOneMinuteEqualsWordCount
+  , quickCheck sampleFractionIsBetweenZeroAndOne
+  , quickCheck formatPercentEndsInPercentSign
   ]
 
 formatRateContainsDigit :: Number -> Boolean
@@ -1318,3 +1324,146 @@ wordsPerMinuteIsNonNegative wordCount elapsedMs =
 wordsPerMinuteAtOneMinuteEqualsWordCount :: Int -> Boolean
 wordsPerMinuteAtOneMinuteEqualsWordCount wordCount =
   wordsPerMinute (abs wordCount) 60000.0 == Int.toNumber (abs wordCount)
+
+sampleFractionIsBetweenZeroAndOne :: Number -> Number -> Boolean
+sampleFractionIsBetweenZeroAndOne wallRaw activeRaw =
+  let
+    wallMs = abs wallRaw
+    activeMs = abs activeRaw
+    session =
+      initialSession
+        { firstStartedAt = Just (testInstant 0.0)
+        , now = testInstant wallMs
+        , completedActiveMs = Milliseconds activeMs
+        }
+    fraction = sampleFraction session
+  in
+    fraction >= 0.0 && fraction <= 1.0
+
+formatPercentEndsInPercentSign :: Number -> Boolean
+formatPercentEndsInPercentSign value =
+  String.contains (String.Pattern "%") (formatPercent value)
+
+runMultiDayStatsTests :: Effect Unit
+runMultiDayStatsTests = do
+  assertEqualString "formatPercent 0.5 = \"50%\""
+    (formatPercent 0.5) "50%"
+  assertEqualString "formatPercent 0.0 = \"0%\""
+    (formatPercent 0.0) "0%"
+  assertEqualString "formatPercent 1.0 = \"100%\""
+    (formatPercent 1.0) "100%"
+  assertEqualString "formatPercent clamps negatives to 0%"
+    (formatPercent (-0.4)) "0%"
+  assertEqualString "formatPercent clamps values above 1 to 100%"
+    (formatPercent 1.7) "100%"
+  assertEqualString "formatPercent rounds 0.124 to 12%"
+    (formatPercent 0.124) "12%"
+
+  assertEqualInt "initialSession.wordsToday defaults to 0"
+    initialSession.wordsToday 0
+  assertEqualBoolean "initialSession.todayLocalDate defaults to Nothing"
+    (initialSession.todayLocalDate == Nothing) true
+
+  let
+    started = reduce (Toggle (testInstant 1000.0)) initialSession
+    counted = reduce
+      (InjectFinalTranscript "alpha beta gamma" (testInstant 2000.0))
+      started
+  assertEqualInt "InjectFinalTranscript bumps wordsToday"
+    counted.wordsToday 3
+  assertEqualInt "InjectFinalTranscript still bumps the lifetime totalWords"
+    counted.totalWords 3
+  assertEqualBoolean "InjectFinalTranscript stamps todayLocalDate"
+    (counted.todayLocalDate /= Nothing) true
+
+  -- A `Tick` exactly seven days later lands on a different local day
+  -- regardless of the runner's timezone, so `wordsToday` must reset
+  -- while `totalWords` survives untouched.
+  let
+    sevenDaysMs = 7.0 * 86_400_000.0
+    afterMidnightTick =
+      reduce (Tick (testInstant (2000.0 + sevenDaysMs))) counted
+  assertEqualInt "Tick across the local midnight zeroes wordsToday"
+    afterMidnightTick.wordsToday 0
+  assertEqualInt "Tick across the local midnight preserves totalWords"
+    afterMidnightTick.totalWords 3
+  assertEqualBoolean "todayLocalDate advances when the day rolls over"
+    (afterMidnightTick.todayLocalDate /= counted.todayLocalDate) true
+
+  -- A subsequent transcript on the new day starts a fresh today
+  -- counter while continuing to accumulate the lifetime total.
+  let
+    stopped =
+      reduce (Toggle (testInstant (2000.0 + sevenDaysMs + 500.0)))
+        afterMidnightTick
+    restarted =
+      reduce (Toggle (testInstant (2000.0 + sevenDaysMs + 1000.0)))
+        stopped
+    countedNextDay =
+      reduce
+        ( InjectFinalTranscript "delta epsilon"
+            (testInstant (2000.0 + sevenDaysMs + 2000.0))
+        )
+        restarted
+  assertEqualInt "next-day transcript counts toward fresh wordsToday"
+    countedNextDay.wordsToday 2
+  assertEqualInt "next-day transcript accumulates into totalWords"
+    countedNextDay.totalWords 5
+
+  -- A `Reset` clears `wordsToday` along with everything else.
+  let
+    afterReset = reduce (Reset (testInstant 3000.0)) counted
+  assertEqualInt "Reset clears wordsToday"
+    afterReset.wordsToday 0
+  assertEqualBoolean "Reset clears todayLocalDate"
+    (afterReset.todayLocalDate == Nothing) true
+
+  -- `wordsPerDay` and `sampleFraction` math.
+  let
+    sampleSession = initialSession
+      { firstStartedAt = Just (testInstant 0.0)
+      , now = testInstant 40_000.0
+      , completedActiveMs = Milliseconds 20_000.0
+      , totalWords = 8
+      }
+  assertEqualNumber "sampleFraction 20s active / 40s wall = 0.5"
+    (sampleFraction sampleSession) 0.5
+  assertEqualNumber "sampleFraction returns 0 before the first start"
+    (sampleFraction initialSession) 0.0
+  assertEqualNumber "wordsPerDay clamps the denominator to one day minimum"
+    (wordsPerDay sampleSession) 8.0
+  let
+    tenDaySession = sampleSession
+      { now = testInstant (10.0 * 86_400_000.0)
+      }
+  assertEqualNumber "wordsPerDay 8 words / 10 days = 0.8"
+    (wordsPerDay tenDaySession) 0.8
+
+  -- Persistence round-trip preserves the new fields.
+  let
+    persisted = toPersistedData counted
+    encoded = encodePersistedData persisted
+  assertEqualInt "toPersistedData preserves wordsToday"
+    persisted.wordsToday 3
+  assertEqualBoolean "toPersistedData preserves todayLocalDate"
+    (persisted.todayLocalDate /= Nothing) true
+  case decodePersistedData encoded of
+    Right decoded -> do
+      assertEqualInt "decoded payload preserves wordsToday"
+        decoded.wordsToday 3
+      assertEqualBoolean "decoded payload preserves todayLocalDate"
+        (decoded.todayLocalDate == persisted.todayLocalDate) true
+    Left _ -> throw "round-trip of multi-day fields failed"
+
+  -- Legacy payloads without the new fields decode with safe defaults.
+  let
+    legacyPayload =
+      "{\"version\":1,\"totalWords\":5,\"firstStartedAt\":1000,"
+        <> "\"wordEvents\":[],\"eventLog\":[]}"
+  case decodePersistedData legacyPayload of
+    Right legacy -> do
+      assertEqualInt "legacy payload defaults wordsToday to 0"
+        legacy.wordsToday 0
+      assertEqualBoolean "legacy payload defaults todayLocalDate to Nothing"
+        (legacy.todayLocalDate == Nothing) true
+    Left _ -> throw "legacy payload should decode with default new fields"

@@ -28,11 +28,14 @@ import Data.DateTime.Instant (Instant, instant)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Time.Duration (Milliseconds(..))
 import WordMeter.Diagnostics (DiagnosticEntry, EnvironmentSnapshot)
+import WordMeter.LocalDate (LocalDate)
 import WordMeter.Recognition.Path (RecognitionPath)
 
 type Session =
   { listening :: Boolean
   , totalWords :: Int
+  , wordsToday :: Int
+  , todayLocalDate :: Maybe LocalDate
   , captions :: Array Caption
   , wordEvents :: Array WordEvent
   , eventLog :: Array LoggedInterval
@@ -87,6 +90,8 @@ type PersistedLoggedInterval =
 
 type PersistedData =
   { totalWords :: Int
+  , wordsToday :: Int
+  , todayLocalDate :: Maybe String
   , firstStartedAt :: Maybe Number
   , completedActiveMs :: Number
   , cloudFallbackAttempted :: Boolean
@@ -157,6 +162,8 @@ initialSession :: Session
 initialSession =
   { listening: false
   , totalWords: 0
+  , wordsToday: 0
+  , todayLocalDate: Nothing
   , captions: []
   , wordEvents: []
   , eventLog: []

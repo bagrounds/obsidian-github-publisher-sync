@@ -44,6 +44,8 @@ encodePersistedData persisted = stringify (encodeJson envelope)
   envelope =
     "version" := storageVersion
       ~> "totalWords" := persisted.totalWords
+      ~> "wordsToday" := persisted.wordsToday
+      ~> "todayLocalDate" := persisted.todayLocalDate
       ~> "firstStartedAt" := persisted.firstStartedAt
       ~> "completedActiveMs" := persisted.completedActiveMs
       ~> "cloudFallbackAttempted" := persisted.cloudFallbackAttempted
@@ -60,15 +62,20 @@ decodePersistedData payload = do
     (Left (UnsupportedVersion actualVersion))
   totalWords <- mapSchema (envelope .: "totalWords")
   firstStartedAt <- mapSchema (envelope .: "firstStartedAt")
-  -- `completedActiveMs` and `cloudFallbackAttempted` were added after
-  -- v1 shipped; decode them as optional so existing localStorage
-  -- payloads keep loading. New writes always include them.
+  -- `completedActiveMs`, `cloudFallbackAttempted`, `wordsToday`, and
+  -- `todayLocalDate` were added after v1 shipped; decode them as
+  -- optional so existing localStorage payloads keep loading. New
+  -- writes always include them.
   completedActiveMs <- mapSchema (envelope .:? "completedActiveMs")
   cloudFallbackAttempted <- mapSchema (envelope .:? "cloudFallbackAttempted")
+  wordsToday <- mapSchema (envelope .:? "wordsToday")
+  todayLocalDate <- mapSchema (envelope .:? "todayLocalDate")
   wordEvents <- mapSchema (envelope .: "wordEvents")
   eventLog <- mapSchema (envelope .: "eventLog")
   pure
     { totalWords
+    , wordsToday: fromMaybe 0 wordsToday
+    , todayLocalDate: join todayLocalDate
     , firstStartedAt
     , completedActiveMs: fromMaybe 0.0 completedActiveMs
     , cloudFallbackAttempted: fromMaybe false cloudFallbackAttempted

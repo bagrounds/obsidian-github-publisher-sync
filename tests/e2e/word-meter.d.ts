@@ -10,6 +10,10 @@ declare global {
       stopAt: (timestamp: number) => void
       tick: (timestamp: number) => void
       getTotalWords: () => number
+      getWordsToday: () => number
+      getTodayLocalDate: () => string
+      getWordsPerDay: () => number
+      getSampleFraction: () => number
       getListening: () => boolean
       getVersion: () => string
       getRateShort: () => number

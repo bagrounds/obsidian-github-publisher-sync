@@ -10,7 +10,7 @@ The Word Meter is a single-page browser tool that listens to ambient speech via 
 ## Goals
 
 - Tap a single button to start/stop counting
-- Show a giant total word count, a few rate metrics (last 1 min, last 10 min, overall), and a 30-second caption strip for transparency
+- Show a big "words today" count plus a multi-tile metrics grid covering lifetime total, per-day average, sample-percent (the fraction of wall time the meter actually recorded), short/long/overall rates, listening duration, and first-start timestamp — backed by a 30-second caption strip for transparency
 - Use only free, open browser APIs — no servers, no accounts, no model downloads
 - Behave correctly on Android Chrome's continuous-mode recognition (cumulative-refinement deduplication)
 - Support a long-running ambient session that survives a leisurely walk with the phone in a pocket
@@ -89,7 +89,19 @@ Pure-web browsers do not allow microphone capture once the page becomes hidden o
 
 ## UI structure
 
-`buildPanel` composes, in order: status line, big count, count label, start/stop button, keep-awake toggle, metrics grid (started time, last-1-min rate, last-10-min rate, overall rate), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
+`buildPanel` composes, in order: status line, big count (today's words), count label, start/stop button, keep-awake toggle, metrics grid (lifetime total, per-day average, sample %, last-1-min rate, last-10-min rate, overall rate, listening duration, started time), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
+
+### Multi-day stats
+
+The big number reflects **today's** words, bucketed by the user's local calendar date (midnight-to-midnight). The session carries a `wordsToday :: Int` counter and a `todayLocalDate :: Maybe LocalDate` stamp. Every word-adding action and every live `Tick` runs `rolloverWordsToday`: if the local date of the timestamp differs from the stored `todayLocalDate`, `wordsToday` is reset to zero before the new words are added. `LocalDate` is a thin newtype wrapping a `YYYY-MM-DD` string produced by a tiny FFI shim that reads `Date.getFullYear` / `getMonth` / `getDate` in the browser's local timezone.
+
+The metrics grid surfaces three multi-day stats alongside the existing rate tiles:
+
+- **Total** — lifetime `totalWords` since the very first start (survives stop/start cycles and page reloads via localStorage).
+- **Per day** — `totalWords / max(1, wallSpanDays)` where `wallSpanDays = (now - firstStartedAt) / 86_400_000`. The denominator is clamped to at least one day so a fresh session does not divide by zero.
+- **Sample %** — `activeListeningMs / wallSpanMs` clamped to `[0, 1]`. Communicates what fraction of the wall-clock time since first start the meter has actually been recording. Twelve hours of listening in a 24-hour wall span surfaces as `50%`.
+
+Both `wordsToday` and `todayLocalDate` are persisted in the localStorage envelope (`word-meter:state:v1`) as optional fields with safe defaults (`0` and `null`) so payloads written by earlier builds keep loading. The post-reload `Tick currentTimeMillis` re-checks the date, so a session loaded on a new calendar day shows the big number at zero while the Total tile preserves the full history.
 
 ## Lifecycle and cleanup
 

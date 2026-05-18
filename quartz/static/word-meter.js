@@ -62,13 +62,13 @@
   var unit = void 0;
 
   // output/Type.Proxy/index.js
-  var $$Proxy = /* @__PURE__ */ function() {
+  var $$Proxy = /* @__PURE__ */ (function() {
     function $$Proxy2() {
     }
     ;
     $$Proxy2.value = new $$Proxy2();
     return $$Proxy2;
-  }();
+  })();
 
   // output/Data.Functor/index.js
   var map = function(dict) {
@@ -147,6 +147,7 @@
   };
 
   // output/Control.Bind/index.js
+  var identity3 = /* @__PURE__ */ identity(categoryFn);
   var discard = function(dict) {
     return dict.discard;
   };
@@ -170,6 +171,12 @@
     discard: function(dictBind) {
       return bind(dictBind);
     }
+  };
+  var join = function(dictBind) {
+    var bind14 = bind(dictBind);
+    return function(m) {
+      return bind14(m)(identity3);
+    };
   };
 
   // output/Data.Semigroup/foreign.js
@@ -225,11 +232,11 @@
 
   // output/Data.Ord/foreign.js
   var unsafeCompareImpl = function(lt) {
-    return function(eq5) {
+    return function(eq6) {
       return function(gt) {
         return function(x) {
           return function(y) {
-            return x < y ? lt : x === y ? eq5 : gt;
+            return x < y ? lt : x === y ? eq6 : gt;
           };
         };
       };
@@ -272,27 +279,27 @@
   };
 
   // output/Data.Ordering/index.js
-  var LT = /* @__PURE__ */ function() {
+  var LT = /* @__PURE__ */ (function() {
     function LT2() {
     }
     ;
     LT2.value = new LT2();
     return LT2;
-  }();
-  var GT = /* @__PURE__ */ function() {
+  })();
+  var GT = /* @__PURE__ */ (function() {
     function GT2() {
     }
     ;
     GT2.value = new GT2();
     return GT2;
-  }();
-  var EQ = /* @__PURE__ */ function() {
+  })();
+  var EQ = /* @__PURE__ */ (function() {
     function EQ2() {
     }
     ;
     EQ2.value = new EQ2();
     return EQ2;
-  }();
+  })();
 
   // output/Data.Ring/foreign.js
   var intSub = function(x) {
@@ -370,22 +377,22 @@
   };
 
   // output/Data.Ord/index.js
-  var ordNumber = /* @__PURE__ */ function() {
+  var ordNumber = /* @__PURE__ */ (function() {
     return {
       compare: ordNumberImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqNumber;
       }
     };
-  }();
-  var ordInt = /* @__PURE__ */ function() {
+  })();
+  var ordInt = /* @__PURE__ */ (function() {
     return {
       compare: ordIntImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqInt;
       }
     };
-  }();
+  })();
   var compare = function(dict) {
     return dict.compare;
   };
@@ -461,15 +468,15 @@
   };
 
   // output/Data.Maybe/index.js
-  var identity3 = /* @__PURE__ */ identity(categoryFn);
-  var Nothing = /* @__PURE__ */ function() {
+  var identity4 = /* @__PURE__ */ identity(categoryFn);
+  var Nothing = /* @__PURE__ */ (function() {
     function Nothing2() {
     }
     ;
     Nothing2.value = new Nothing2();
     return Nothing2;
-  }();
-  var Just = /* @__PURE__ */ function() {
+  })();
+  var Just = /* @__PURE__ */ (function() {
     function Just2(value0) {
       this.value0 = value0;
     }
@@ -478,7 +485,7 @@
       return new Just2(value0);
     };
     return Just2;
-  }();
+  })();
   var maybe = function(v) {
     return function(v1) {
       return function(v2) {
@@ -508,10 +515,10 @@
   };
   var map2 = /* @__PURE__ */ map(functorMaybe);
   var fromMaybe = function(a) {
-    return maybe(a)(identity3);
+    return maybe(a)(identity4);
   };
   var eqMaybe = function(dictEq) {
-    var eq5 = eq(dictEq);
+    var eq6 = eq(dictEq);
     return {
       eq: function(x) {
         return function(y) {
@@ -520,7 +527,7 @@
           }
           ;
           if (x instanceof Just && y instanceof Just) {
-            return eq5(x.value0)(y.value0);
+            return eq6(x.value0)(y.value0);
           }
           ;
           return false;
@@ -546,9 +553,27 @@
       return functorMaybe;
     }
   };
+  var bindMaybe = {
+    bind: function(v) {
+      return function(v1) {
+        if (v instanceof Just) {
+          return v1(v.value0);
+        }
+        ;
+        if (v instanceof Nothing) {
+          return Nothing.value;
+        }
+        ;
+        throw new Error("Failed pattern match at Data.Maybe (line 125, column 1 - line 127, column 28): " + [v.constructor.name, v1.constructor.name]);
+      };
+    },
+    Apply0: function() {
+      return applyMaybe;
+    }
+  };
 
   // output/Data.Either/index.js
-  var Left = /* @__PURE__ */ function() {
+  var Left = /* @__PURE__ */ (function() {
     function Left2(value0) {
       this.value0 = value0;
     }
@@ -557,8 +582,8 @@
       return new Left2(value0);
     };
     return Left2;
-  }();
-  var Right = /* @__PURE__ */ function() {
+  })();
+  var Right = /* @__PURE__ */ (function() {
     function Right2(value0) {
       this.value0 = value0;
     }
@@ -567,7 +592,7 @@
       return new Right2(value0);
     };
     return Right2;
-  }();
+  })();
   var note = function(a) {
     return maybe(new Left(a))(Right.create);
   };
@@ -634,14 +659,14 @@
       return applyEither;
     }
   };
-  var applicativeEither = /* @__PURE__ */ function() {
+  var applicativeEither = /* @__PURE__ */ (function() {
     return {
       pure: Right.create,
       Apply0: function() {
         return applyEither;
       }
     };
-  }();
+  })();
 
   // output/Effect/foreign.js
   var pureE = function(a) {
@@ -901,7 +926,7 @@
   });
 
   // output/Data.Tuple/index.js
-  var Tuple = /* @__PURE__ */ function() {
+  var Tuple = /* @__PURE__ */ (function() {
     function Tuple2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -913,7 +938,7 @@
       };
     };
     return Tuple2;
-  }();
+  })();
   var uncurry = function(f) {
     return function(v) {
       return f(v.value0)(v.value1);
@@ -967,12 +992,12 @@
   };
   var functorReaderT = function(dictFunctor) {
     return {
-      map: function() {
+      map: (function() {
         var $155 = map(dictFunctor);
         return function($156) {
           return mapReaderT($155($156));
         };
-      }()
+      })()
     };
   };
   var applyReaderT = function(dictApply) {
@@ -1013,12 +1038,12 @@
   var applicativeReaderT = function(dictApplicative) {
     var applyReaderT1 = applyReaderT(dictApplicative.Apply0());
     return {
-      pure: function() {
+      pure: (function() {
         var $160 = pure(dictApplicative);
         return function($161) {
           return ReaderT($$const($160($161)));
         };
-      }(),
+      })(),
       Apply0: function() {
         return applyReaderT1;
       }
@@ -1049,13 +1074,13 @@
     var Monad0 = dictMonadEffect.Monad0();
     var monadReaderT1 = monadReaderT(Monad0);
     return {
-      liftEffect: function() {
+      liftEffect: (function() {
         var $163 = lift3(Monad0);
         var $164 = liftEffect(dictMonadEffect);
         return function($165) {
           return $163($164($165));
         };
-      }(),
+      })(),
       Monad0: function() {
         return monadReaderT1;
       }
@@ -1116,7 +1141,7 @@
   };
 
   // output/Data.Traversable/foreign.js
-  var traverseArrayImpl = /* @__PURE__ */ function() {
+  var traverseArrayImpl = /* @__PURE__ */ (function() {
     function array1(a) {
       return [a];
     }
@@ -1163,7 +1188,7 @@
         };
       };
     };
-  }();
+  })();
 
   // output/Data.Foldable/foreign.js
   var foldrArray = function(f) {
@@ -1192,14 +1217,14 @@
   };
 
   // output/Data.Bifunctor/index.js
-  var identity4 = /* @__PURE__ */ identity(categoryFn);
+  var identity5 = /* @__PURE__ */ identity(categoryFn);
   var bimap = function(dict) {
     return dict.bimap;
   };
   var lmap = function(dictBifunctor) {
     var bimap1 = bimap(dictBifunctor);
     return function(f) {
-      return bimap1(f)(identity4);
+      return bimap1(f)(identity5);
     };
   };
   var bifunctorEither = {
@@ -1262,14 +1287,14 @@
   };
 
   // output/Data.Traversable/index.js
-  var identity5 = /* @__PURE__ */ identity(categoryFn);
+  var identity6 = /* @__PURE__ */ identity(categoryFn);
   var traverse = function(dict) {
     return dict.traverse;
   };
   var sequenceDefault = function(dictTraversable) {
     var traverse2 = traverse(dictTraversable);
     return function(dictApplicative) {
-      return traverse2(dictApplicative)(identity5);
+      return traverse2(dictApplicative)(identity6);
     };
   };
   var traversableArray = {
@@ -1311,9 +1336,9 @@
   // output/Data.Int/index.js
   var top2 = /* @__PURE__ */ top(boundedInt);
   var bottom2 = /* @__PURE__ */ bottom(boundedInt);
-  var fromNumber = /* @__PURE__ */ function() {
+  var fromNumber = /* @__PURE__ */ (function() {
     return fromNumberImpl(Just.create)(Nothing.value);
-  }();
+  })();
   var unsafeClamp = function(x) {
     if (!isFiniteImpl(x)) {
       return 0;
@@ -1343,7 +1368,7 @@
   // output/Data.Time.Duration/index.js
   var over2 = /* @__PURE__ */ over()();
   var negate2 = /* @__PURE__ */ negate(ringNumber);
-  var identity6 = /* @__PURE__ */ identity(categoryFn);
+  var identity7 = /* @__PURE__ */ identity(categoryFn);
   var Milliseconds = function(x) {
     return x;
   };
@@ -1370,8 +1395,8 @@
     };
   };
   var durationMilliseconds = {
-    fromDuration: identity6,
-    toDuration: identity6
+    fromDuration: identity7,
+    toDuration: identity7
   };
 
   // output/Data.DateTime.Instant/index.js
@@ -1400,7 +1425,7 @@
       };
     };
   };
-  var boundedInstant = /* @__PURE__ */ function() {
+  var boundedInstant = /* @__PURE__ */ (function() {
     return {
       bottom: -86399778816e5,
       top: 8639977881599999,
@@ -1408,7 +1433,7 @@
         return ordDateTime;
       }
     };
-  }();
+  })();
 
   // output/WordMeter.FFI.Clock/foreign.js
   var currentTimeMillis = () => Date.now();
@@ -1497,7 +1522,7 @@
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
   var traverse_2 = /* @__PURE__ */ traverse_(applicativeEffect)(foldableArray);
-  var ClickListener = /* @__PURE__ */ function() {
+  var ClickListener = /* @__PURE__ */ (function() {
     function ClickListener2(value0) {
       this.value0 = value0;
     }
@@ -1506,8 +1531,8 @@
       return new ClickListener2(value0);
     };
     return ClickListener2;
-  }();
-  var CheckboxChangeListener = /* @__PURE__ */ function() {
+  })();
+  var CheckboxChangeListener = /* @__PURE__ */ (function() {
     function CheckboxChangeListener2(value0) {
       this.value0 = value0;
     }
@@ -1516,8 +1541,8 @@
       return new CheckboxChangeListener2(value0);
     };
     return CheckboxChangeListener2;
-  }();
-  var ElementNode = /* @__PURE__ */ function() {
+  })();
+  var ElementNode = /* @__PURE__ */ (function() {
     function ElementNode2(value0) {
       this.value0 = value0;
     }
@@ -1526,8 +1551,8 @@
       return new ElementNode2(value0);
     };
     return ElementNode2;
-  }();
-  var TextNode = /* @__PURE__ */ function() {
+  })();
+  var TextNode = /* @__PURE__ */ (function() {
     function TextNode2(value0) {
       this.value0 = value0;
     }
@@ -1536,16 +1561,16 @@
       return new TextNode2(value0);
     };
     return TextNode2;
-  }();
-  var text = /* @__PURE__ */ function() {
+  })();
+  var text = /* @__PURE__ */ (function() {
     return TextNode.create;
-  }();
-  var onClick = /* @__PURE__ */ function() {
+  })();
+  var onClick = /* @__PURE__ */ (function() {
     return ClickListener.create;
-  }();
-  var onCheckboxChange = /* @__PURE__ */ function() {
+  })();
+  var onCheckboxChange = /* @__PURE__ */ (function() {
     return CheckboxChangeListener.create;
-  }();
+  })();
   var element = function(tag) {
     return function(attributes) {
       return function(styles) {
@@ -1853,21 +1878,21 @@
   };
 
   // output/WordMeter.FFI.Recognition/index.js
-  var OnDeviceApiAbsent = /* @__PURE__ */ function() {
+  var OnDeviceApiAbsent = /* @__PURE__ */ (function() {
     function OnDeviceApiAbsent2() {
     }
     ;
     OnDeviceApiAbsent2.value = new OnDeviceApiAbsent2();
     return OnDeviceApiAbsent2;
-  }();
-  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ (function() {
     function OnDeviceUnsupportedLanguage2() {
     }
     ;
     OnDeviceUnsupportedLanguage2.value = new OnDeviceUnsupportedLanguage2();
     return OnDeviceUnsupportedLanguage2;
-  }();
-  var OnDeviceInstallFailed = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceInstallFailed = /* @__PURE__ */ (function() {
     function OnDeviceInstallFailed2(value0) {
       this.value0 = value0;
     }
@@ -1876,8 +1901,8 @@
       return new OnDeviceInstallFailed2(value0);
     };
     return OnDeviceInstallFailed2;
-  }();
-  var OnDeviceAvailabilityRejected = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailabilityRejected = /* @__PURE__ */ (function() {
     function OnDeviceAvailabilityRejected2(value0) {
       this.value0 = value0;
     }
@@ -1886,14 +1911,14 @@
       return new OnDeviceAvailabilityRejected2(value0);
     };
     return OnDeviceAvailabilityRejected2;
-  }();
-  var OnDeviceAvailable = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailable = /* @__PURE__ */ (function() {
     function OnDeviceAvailable2() {
     }
     ;
     OnDeviceAvailable2.value = new OnDeviceAvailable2();
     return OnDeviceAvailable2;
-  }();
+  })();
   var renderRecognitionStopError = function(v) {
     return v;
   };
@@ -1981,20 +2006,20 @@
   };
 
   // output/WordMeter.Recognition.Path/index.js
-  var OnDevicePath = /* @__PURE__ */ function() {
+  var OnDevicePath = /* @__PURE__ */ (function() {
     function OnDevicePath2() {
     }
     ;
     OnDevicePath2.value = new OnDevicePath2();
     return OnDevicePath2;
-  }();
-  var CloudPath = /* @__PURE__ */ function() {
+  })();
+  var CloudPath = /* @__PURE__ */ (function() {
     function CloudPath2() {
     }
     ;
     CloudPath2.value = new CloudPath2();
     return CloudPath2;
-  }();
+  })();
   var processLocallyFor = function(v) {
     if (v instanceof OnDevicePath) {
       return true;
@@ -2288,9 +2313,9 @@
     ;
     throw new Error("Failed pattern match at Data.Array (line 351, column 1 - line 351, column 45): " + [xs.constructor.name]);
   };
-  var index = /* @__PURE__ */ function() {
+  var index = /* @__PURE__ */ (function() {
     return runFn4(indexImpl)(Just.create)(Nothing.value);
-  }();
+  })();
   var last = function(xs) {
     return index(xs)(length(xs) - 1 | 0);
   };
@@ -2374,14 +2399,14 @@
     return joinWith("\n")(["version           : " + snapshot.version, "userAgent         : " + snapshot.userAgent, "navigator.language: " + snapshot.navigatorLanguage]);
   };
   var formatEntry = function(entry) {
-    return formatClockTime(entry.timestamp) + ("  " + (entry.label + function() {
+    return formatClockTime(entry.timestamp) + ("  " + (entry.label + (function() {
       var $5 = entry.detail === "";
       if ($5) {
         return "";
       }
       ;
       return " \u2014 " + entry.detail;
-    }()));
+    })()));
   };
   var formatEntries = function(entries) {
     if (length(entries) === 0) {
@@ -2414,6 +2439,35 @@
     };
   };
 
+  // output/WordMeter.LocalDate/foreign.js
+  var localDateOfMillis = (timestamp) => {
+    const date = new Date(timestamp);
+    const year2 = String(date.getFullYear()).padStart(4, "0");
+    const month2 = String(date.getMonth() + 1).padStart(2, "0");
+    const day2 = String(date.getDate()).padStart(2, "0");
+    return `${year2}-${month2}-${day2}`;
+  };
+
+  // output/WordMeter.LocalDate/index.js
+  var unwrap3 = /* @__PURE__ */ unwrap();
+  var LocalDate = function(x) {
+    return x;
+  };
+  var renderLocalDate = function(v) {
+    return v;
+  };
+  var localDateOf = function(inst) {
+    return localDateOfMillis(unwrap3(unInstant(inst)));
+  };
+  var localDateFromString = LocalDate;
+  var eqLocalDate = {
+    eq: function(x) {
+      return function(y) {
+        return x === y;
+      };
+    }
+  };
+
   // output/Data.String.CodeUnits/foreign.js
   var length2 = function(s) {
     return s.length;
@@ -2438,14 +2492,14 @@
   };
 
   // output/WordMeter.Text/index.js
-  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
+  var collapseWhitespaceToSpace = /* @__PURE__ */ (function() {
     var $1 = replaceAll("\r")(" ");
     var $2 = replaceAll("\n")(" ");
     var $3 = replaceAll("	")(" ");
     return function($4) {
       return $1($2($3($4)));
     };
-  }();
+  })();
 
   // output/WordMeter.Words/index.js
   var isNonEmpty = function(value) {
@@ -2456,14 +2510,14 @@
   };
 
   // output/WordMeter.Recognition.Delta/index.js
-  var IgnoreDuplicate = /* @__PURE__ */ function() {
+  var IgnoreDuplicate = /* @__PURE__ */ (function() {
     function IgnoreDuplicate2() {
     }
     ;
     IgnoreDuplicate2.value = new IgnoreDuplicate2();
     return IgnoreDuplicate2;
-  }();
-  var ExtendUtterance = /* @__PURE__ */ function() {
+  })();
+  var ExtendUtterance = /* @__PURE__ */ (function() {
     function ExtendUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2472,8 +2526,8 @@
       return new ExtendUtterance2(value0);
     };
     return ExtendUtterance2;
-  }();
-  var StartNewUtterance = /* @__PURE__ */ function() {
+  })();
+  var StartNewUtterance = /* @__PURE__ */ (function() {
     function StartNewUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2482,15 +2536,15 @@
       return new StartNewUtterance2(value0);
     };
     return StartNewUtterance2;
-  }();
-  var IgnoreEarlierSnapshot = /* @__PURE__ */ function() {
+  })();
+  var IgnoreEarlierSnapshot = /* @__PURE__ */ (function() {
     function IgnoreEarlierSnapshot2() {
     }
     ;
     IgnoreEarlierSnapshot2.value = new IgnoreEarlierSnapshot2();
     return IgnoreEarlierSnapshot2;
-  }();
-  var normalizeTranscript = /* @__PURE__ */ function() {
+  })();
+  var normalizeTranscript = /* @__PURE__ */ (function() {
     var $36 = joinWith(" ");
     var $37 = filter(function(v) {
       return v !== "";
@@ -2499,7 +2553,7 @@
     return function($39) {
       return $36($37($38(collapseWhitespaceToSpace(toLower(trim($39))))));
     };
-  }();
+  })();
   var isWordBoundaryExtension = function(candidate) {
     return function(prefix) {
       if (prefix === "") {
@@ -2550,63 +2604,63 @@
   };
 
   // output/WordMeter.RecognitionError/index.js
-  var NotAllowed = /* @__PURE__ */ function() {
+  var NotAllowed = /* @__PURE__ */ (function() {
     function NotAllowed2() {
     }
     ;
     NotAllowed2.value = new NotAllowed2();
     return NotAllowed2;
-  }();
-  var ServiceNotAllowed = /* @__PURE__ */ function() {
+  })();
+  var ServiceNotAllowed = /* @__PURE__ */ (function() {
     function ServiceNotAllowed2() {
     }
     ;
     ServiceNotAllowed2.value = new ServiceNotAllowed2();
     return ServiceNotAllowed2;
-  }();
-  var NoSpeech = /* @__PURE__ */ function() {
+  })();
+  var NoSpeech = /* @__PURE__ */ (function() {
     function NoSpeech2() {
     }
     ;
     NoSpeech2.value = new NoSpeech2();
     return NoSpeech2;
-  }();
-  var Aborted = /* @__PURE__ */ function() {
+  })();
+  var Aborted = /* @__PURE__ */ (function() {
     function Aborted2() {
     }
     ;
     Aborted2.value = new Aborted2();
     return Aborted2;
-  }();
-  var AudioCapture = /* @__PURE__ */ function() {
+  })();
+  var AudioCapture = /* @__PURE__ */ (function() {
     function AudioCapture2() {
     }
     ;
     AudioCapture2.value = new AudioCapture2();
     return AudioCapture2;
-  }();
-  var Network = /* @__PURE__ */ function() {
+  })();
+  var Network = /* @__PURE__ */ (function() {
     function Network2() {
     }
     ;
     Network2.value = new Network2();
     return Network2;
-  }();
-  var LanguageNotSupported = /* @__PURE__ */ function() {
+  })();
+  var LanguageNotSupported = /* @__PURE__ */ (function() {
     function LanguageNotSupported2() {
     }
     ;
     LanguageNotSupported2.value = new LanguageNotSupported2();
     return LanguageNotSupported2;
-  }();
-  var NoRecognitionErrorCode = /* @__PURE__ */ function() {
+  })();
+  var NoRecognitionErrorCode = /* @__PURE__ */ (function() {
     function NoRecognitionErrorCode2() {
     }
     ;
     NoRecognitionErrorCode2.value = new NoRecognitionErrorCode2();
     return NoRecognitionErrorCode2;
-  }();
-  var OtherRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var OtherRecognitionError = /* @__PURE__ */ (function() {
     function OtherRecognitionError2(value0) {
       this.value0 = value0;
     }
@@ -2615,7 +2669,7 @@
       return new OtherRecognitionError2(value0);
     };
     return OtherRecognitionError2;
-  }();
+  })();
   var renderRecognitionErrorDiagnosticDetail = function(code) {
     return function(message2) {
       var renderCode = function(v) {
@@ -2780,21 +2834,21 @@
   };
 
   // output/WordMeter.Recording.Session/index.js
-  var WakeLockIdle = /* @__PURE__ */ function() {
+  var WakeLockIdle = /* @__PURE__ */ (function() {
     function WakeLockIdle2() {
     }
     ;
     WakeLockIdle2.value = new WakeLockIdle2();
     return WakeLockIdle2;
-  }();
-  var WakeLockHeld = /* @__PURE__ */ function() {
+  })();
+  var WakeLockHeld = /* @__PURE__ */ (function() {
     function WakeLockHeld2() {
     }
     ;
     WakeLockHeld2.value = new WakeLockHeld2();
     return WakeLockHeld2;
-  }();
-  var WakeLockFailed = /* @__PURE__ */ function() {
+  })();
+  var WakeLockFailed = /* @__PURE__ */ (function() {
     function WakeLockFailed2(value0) {
       this.value0 = value0;
     }
@@ -2803,7 +2857,7 @@
       return new WakeLockFailed2(value0);
     };
     return WakeLockFailed2;
-  }();
+  })();
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var renderWakeLockStatus = function(v) {
@@ -2819,7 +2873,7 @@
       return "(" + (v.value0 + ")");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 112, column 1 - line 112, column 48): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 117, column 1 - line 117, column 48): " + [v.constructor.name]);
   };
   var minimumCaptionOpacity = 0.15;
   var longWindowMs = 6e5;
@@ -2847,10 +2901,12 @@
     }
   };
   var epochInstant = /* @__PURE__ */ fromMaybe(/* @__PURE__ */ bottom(boundedInstant))(/* @__PURE__ */ instant(0));
-  var initialSession = /* @__PURE__ */ function() {
+  var initialSession = /* @__PURE__ */ (function() {
     return {
       listening: false,
       totalWords: 0,
+      wordsToday: 0,
+      todayLocalDate: Nothing.value,
       captions: [],
       wordEvents: [],
       eventLog: [],
@@ -2871,7 +2927,7 @@
       activeRecognitionPath: Nothing.value,
       diagnosticsDrawerOpen: false
     };
-  }();
+  })();
   var downloadingOnDeviceStatus = "downloading on-device language pack\u2026";
   var captionWindowMs = 3e4;
 
@@ -2895,9 +2951,10 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 71, column 1 - line 71, column 42): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 77, column 1 - line 77, column 42): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
+  var millisecondsPerDay = 864e5;
   var millisecondsBetween = function(a) {
     return function(b) {
       var v = diff2(a)(b);
@@ -2913,7 +2970,11 @@
       return max3(0)(millisecondsBetween(session.now)(session.firstStartedAt.value0));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 58, column 22 - line 60, column 64): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 64, column 22 - line 66, column 64): " + [session.firstStartedAt.constructor.name]);
+  };
+  var wordsPerDay = function(session) {
+    var days = max3(1)(wallSpanMs(session) / millisecondsPerDay);
+    return toNumber(session.totalWords) / days;
   };
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
@@ -2961,19 +3022,44 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 110, column 1 - line 110, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 143, column 1 - line 143, column 31): " + [rate.constructor.name]);
+  };
+  var formatPercent = function(value) {
+    if (!isFiniteImpl(value)) {
+      return "0%";
+    }
+    ;
+    if (otherwise) {
+      var clamped = (function() {
+        var $27 = value < 0;
+        if ($27) {
+          return 0;
+        }
+        ;
+        var $28 = value > 1;
+        if ($28) {
+          return 1;
+        }
+        ;
+        return value;
+      })();
+      var rounded = round2(clamped * 100);
+      return show2(rounded) + "%";
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.Recording.Math (line 159, column 1 - line 159, column 34): " + [value.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $24 = totalSeconds < 60;
-    if ($24) {
+    var $29 = totalSeconds < 60;
+    if ($29) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $25 = totalMinutes < 60;
-    if ($25) {
+    var $30 = totalMinutes < 60;
+    if ($30) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -2988,7 +3074,7 @@
     };
   };
   var activeListeningMs = function(session) {
-    return session.completedActiveMs + function() {
+    return session.completedActiveMs + (function() {
       if (session.currentIntervalStart instanceof Just) {
         return max3(0)(millisecondsBetween(session.now)(session.currentIntervalStart.value0));
       }
@@ -2997,23 +3083,44 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 53, column 17 - line 55, column 21): " + [session.currentIntervalStart.constructor.name]);
-    }();
+      throw new Error("Failed pattern match at WordMeter.Recording.Math (line 59, column 17 - line 61, column 21): " + [session.currentIntervalStart.constructor.name]);
+    })();
   };
   var overallRate = function(session) {
     return wordsPerMinute(session.totalWords)(max3(1)(activeListeningMs(session)));
   };
+  var sampleFraction = function(session) {
+    var wall = wallSpanMs(session);
+    var $34 = wall <= 0;
+    if ($34) {
+      return 0;
+    }
+    ;
+    var ratio = activeListeningMs(session) / wall;
+    var $35 = ratio < 0;
+    if ($35) {
+      return 0;
+    }
+    ;
+    var $36 = ratio > 1;
+    if ($36) {
+      return 1;
+    }
+    ;
+    return ratio;
+  };
 
   // output/WordMeter.Recording.Reducer/index.js
+  var eq3 = /* @__PURE__ */ eq(eqLocalDate);
   var append2 = /* @__PURE__ */ append(semigroupArray);
   var max4 = /* @__PURE__ */ max(ordDateTime);
   var max12 = /* @__PURE__ */ max(ordNumber);
   var show3 = /* @__PURE__ */ show(showInt);
-  var unwrap3 = /* @__PURE__ */ unwrap();
+  var unwrap4 = /* @__PURE__ */ unwrap();
   var map6 = /* @__PURE__ */ map(functorMaybe);
   var map1 = /* @__PURE__ */ map(functorArray);
   var max22 = /* @__PURE__ */ max(ordInt);
-  var Toggle = /* @__PURE__ */ function() {
+  var Toggle = /* @__PURE__ */ (function() {
     function Toggle2(value0) {
       this.value0 = value0;
     }
@@ -3022,8 +3129,8 @@
       return new Toggle2(value0);
     };
     return Toggle2;
-  }();
-  var InjectFinalTranscript = /* @__PURE__ */ function() {
+  })();
+  var InjectFinalTranscript = /* @__PURE__ */ (function() {
     function InjectFinalTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3035,8 +3142,8 @@
       };
     };
     return InjectFinalTranscript2;
-  }();
-  var IntegrateFinalizedTranscript = /* @__PURE__ */ function() {
+  })();
+  var IntegrateFinalizedTranscript = /* @__PURE__ */ (function() {
     function IntegrateFinalizedTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3048,15 +3155,15 @@
       };
     };
     return IntegrateFinalizedTranscript2;
-  }();
-  var ResetRecognitionDedupState = /* @__PURE__ */ function() {
+  })();
+  var ResetRecognitionDedupState = /* @__PURE__ */ (function() {
     function ResetRecognitionDedupState2() {
     }
     ;
     ResetRecognitionDedupState2.value = new ResetRecognitionDedupState2();
     return ResetRecognitionDedupState2;
-  }();
-  var Tick = /* @__PURE__ */ function() {
+  })();
+  var Tick = /* @__PURE__ */ (function() {
     function Tick2(value0) {
       this.value0 = value0;
     }
@@ -3065,8 +3172,8 @@
       return new Tick2(value0);
     };
     return Tick2;
-  }();
-  var RecordDiagnostic = /* @__PURE__ */ function() {
+  })();
+  var RecordDiagnostic = /* @__PURE__ */ (function() {
     function RecordDiagnostic2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3081,8 +3188,8 @@
       };
     };
     return RecordDiagnostic2;
-  }();
-  var SetEnvironment = /* @__PURE__ */ function() {
+  })();
+  var SetEnvironment = /* @__PURE__ */ (function() {
     function SetEnvironment2(value0) {
       this.value0 = value0;
     }
@@ -3091,8 +3198,8 @@
       return new SetEnvironment2(value0);
     };
     return SetEnvironment2;
-  }();
-  var SetCopyStatus = /* @__PURE__ */ function() {
+  })();
+  var SetCopyStatus = /* @__PURE__ */ (function() {
     function SetCopyStatus2(value0) {
       this.value0 = value0;
     }
@@ -3101,8 +3208,8 @@
       return new SetCopyStatus2(value0);
     };
     return SetCopyStatus2;
-  }();
-  var Reset = /* @__PURE__ */ function() {
+  })();
+  var Reset = /* @__PURE__ */ (function() {
     function Reset2(value0) {
       this.value0 = value0;
     }
@@ -3111,8 +3218,8 @@
       return new Reset2(value0);
     };
     return Reset2;
-  }();
-  var LoadSession = /* @__PURE__ */ function() {
+  })();
+  var LoadSession = /* @__PURE__ */ (function() {
     function LoadSession2(value0) {
       this.value0 = value0;
     }
@@ -3121,8 +3228,8 @@
       return new LoadSession2(value0);
     };
     return LoadSession2;
-  }();
-  var SetKeepAwake = /* @__PURE__ */ function() {
+  })();
+  var SetKeepAwake = /* @__PURE__ */ (function() {
     function SetKeepAwake2(value0) {
       this.value0 = value0;
     }
@@ -3131,8 +3238,8 @@
       return new SetKeepAwake2(value0);
     };
     return SetKeepAwake2;
-  }();
-  var SetWakeLockState = /* @__PURE__ */ function() {
+  })();
+  var SetWakeLockState = /* @__PURE__ */ (function() {
     function SetWakeLockState2(value0) {
       this.value0 = value0;
     }
@@ -3141,8 +3248,8 @@
       return new SetWakeLockState2(value0);
     };
     return SetWakeLockState2;
-  }();
-  var HandleRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var HandleRecognitionError = /* @__PURE__ */ (function() {
     function HandleRecognitionError2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3157,15 +3264,15 @@
       };
     };
     return HandleRecognitionError2;
-  }();
-  var ClearErrorBanner = /* @__PURE__ */ function() {
+  })();
+  var ClearErrorBanner = /* @__PURE__ */ (function() {
     function ClearErrorBanner2() {
     }
     ;
     ClearErrorBanner2.value = new ClearErrorBanner2();
     return ClearErrorBanner2;
-  }();
-  var SetRecognitionStatusOverride = /* @__PURE__ */ function() {
+  })();
+  var SetRecognitionStatusOverride = /* @__PURE__ */ (function() {
     function SetRecognitionStatusOverride2(value0) {
       this.value0 = value0;
     }
@@ -3174,8 +3281,8 @@
       return new SetRecognitionStatusOverride2(value0);
     };
     return SetRecognitionStatusOverride2;
-  }();
-  var SetCloudFallbackAttempted = /* @__PURE__ */ function() {
+  })();
+  var SetCloudFallbackAttempted = /* @__PURE__ */ (function() {
     function SetCloudFallbackAttempted2(value0) {
       this.value0 = value0;
     }
@@ -3184,8 +3291,8 @@
       return new SetCloudFallbackAttempted2(value0);
     };
     return SetCloudFallbackAttempted2;
-  }();
-  var SetActiveRecognitionPath = /* @__PURE__ */ function() {
+  })();
+  var SetActiveRecognitionPath = /* @__PURE__ */ (function() {
     function SetActiveRecognitionPath2(value0) {
       this.value0 = value0;
     }
@@ -3194,8 +3301,8 @@
       return new SetActiveRecognitionPath2(value0);
     };
     return SetActiveRecognitionPath2;
-  }();
-  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ function() {
+  })();
+  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ (function() {
     function SetDiagnosticsDrawerOpen2(value0) {
       this.value0 = value0;
     }
@@ -3204,7 +3311,73 @@
       return new SetDiagnosticsDrawerOpen2(value0);
     };
     return SetDiagnosticsDrawerOpen2;
-  }();
+  })();
+  var rolloverWordsToday = function(timestamp) {
+    return function(session) {
+      var currentDate = localDateOf(timestamp);
+      if (session.todayLocalDate instanceof Just && eq3(session.todayLocalDate.value0)(currentDate)) {
+        return session;
+      }
+      ;
+      if (session.todayLocalDate instanceof Just) {
+        return {
+          listening: session.listening,
+          totalWords: session.totalWords,
+          captions: session.captions,
+          wordEvents: session.wordEvents,
+          eventLog: session.eventLog,
+          currentIntervalWords: session.currentIntervalWords,
+          firstStartedAt: session.firstStartedAt,
+          currentIntervalStart: session.currentIntervalStart,
+          completedActiveMs: session.completedActiveMs,
+          now: session.now,
+          diagnostics: session.diagnostics,
+          environment: session.environment,
+          copyStatus: session.copyStatus,
+          keepAwake: session.keepAwake,
+          wakeLockState: session.wakeLockState,
+          errorBanner: session.errorBanner,
+          lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
+          recognitionStatusOverride: session.recognitionStatusOverride,
+          cloudFallbackAttempted: session.cloudFallbackAttempted,
+          activeRecognitionPath: session.activeRecognitionPath,
+          diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+          wordsToday: 0,
+          todayLocalDate: new Just(currentDate)
+        };
+      }
+      ;
+      if (session.todayLocalDate instanceof Nothing) {
+        return {
+          listening: session.listening,
+          totalWords: session.totalWords,
+          wordsToday: session.wordsToday,
+          captions: session.captions,
+          wordEvents: session.wordEvents,
+          eventLog: session.eventLog,
+          currentIntervalWords: session.currentIntervalWords,
+          firstStartedAt: session.firstStartedAt,
+          currentIntervalStart: session.currentIntervalStart,
+          completedActiveMs: session.completedActiveMs,
+          now: session.now,
+          diagnostics: session.diagnostics,
+          environment: session.environment,
+          copyStatus: session.copyStatus,
+          keepAwake: session.keepAwake,
+          wakeLockState: session.wakeLockState,
+          errorBanner: session.errorBanner,
+          lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
+          recognitionStatusOverride: session.recognitionStatusOverride,
+          cloudFallbackAttempted: session.cloudFallbackAttempted,
+          activeRecognitionPath: session.activeRecognitionPath,
+          diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+          todayLocalDate: new Just(currentDate)
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 355, column 5 - line 358, column 63): " + [session.todayLocalDate.constructor.name]);
+    };
+  };
   var refreshLastCaptionTimestamp = function(now) {
     return function(captions) {
       var v = unsnoc(captions);
@@ -3220,7 +3393,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 382, column 44 - line 384, column 62): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 419, column 44 - line 421, column 62): " + [v.constructor.name]);
     };
   };
   var pruneWordEvents = function(now) {
@@ -3245,14 +3418,14 @@
           };
           var closedIntervalMs = max12(0)(millisecondsBetween(timestamp)(startedAt));
           var statsDetail = "words=" + (show3(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedIntervalMs)));
-          var fullDetail = function() {
-            var $52 = reasonDetail === "";
-            if ($52) {
+          var fullDetail = (function() {
+            var $59 = reasonDetail === "";
+            if ($59) {
               return statsDetail;
             }
             ;
             return statsDetail + (" " + reasonDetail);
-          }();
+          })();
           var stopEntry = {
             timestamp,
             label,
@@ -3260,6 +3433,8 @@
           };
           return {
             totalWords: session.totalWords,
+            wordsToday: session.wordsToday,
+            todayLocalDate: session.todayLocalDate,
             firstStartedAt: session.firstStartedAt,
             environment: session.environment,
             copyStatus: session.copyStatus,
@@ -3272,7 +3447,7 @@
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
-            completedActiveMs: unwrap3(session.completedActiveMs) + closedIntervalMs,
+            completedActiveMs: unwrap4(session.completedActiveMs) + closedIntervalMs,
             wordEvents: pruneWordEvents(timestamp)(session.wordEvents),
             captions: pruneCaptions(timestamp)(session.captions),
             eventLog: takeEnd(eventLogLimit)(append2(session.eventLog)([completed])),
@@ -3302,7 +3477,7 @@
     };
   };
   var instantToMs = function(inst) {
-    return unwrap3(unInstant(inst));
+    return unwrap4(unInstant(inst));
   };
   var intervalToPersistedInterval = function(interval) {
     return {
@@ -3320,8 +3495,10 @@
   var toPersistedData = function(session) {
     return {
       totalWords: session.totalWords,
+      wordsToday: session.wordsToday,
+      todayLocalDate: map6(renderLocalDate)(session.todayLocalDate),
       firstStartedAt: map6(instantToMs)(session.firstStartedAt),
-      completedActiveMs: unwrap3(session.completedActiveMs),
+      completedActiveMs: unwrap4(session.completedActiveMs),
       cloudFallbackAttempted: session.cloudFallbackAttempted,
       wordEvents: map1(wordEventToPersistedWordEvent)(session.wordEvents),
       eventLog: map1(intervalToPersistedInterval)(session.eventLog)
@@ -3348,7 +3525,39 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 393, column 56 - line 402, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 430, column 56 - line 439, column 8): " + [v.constructor.name]);
+        };
+      };
+    };
+  };
+  var addWordsForToday = function(timestamp) {
+    return function(wordDelta) {
+      return function(session) {
+        var rolled = rolloverWordsToday(timestamp)(session);
+        return {
+          listening: rolled.listening,
+          todayLocalDate: rolled.todayLocalDate,
+          captions: rolled.captions,
+          wordEvents: rolled.wordEvents,
+          eventLog: rolled.eventLog,
+          currentIntervalWords: rolled.currentIntervalWords,
+          firstStartedAt: rolled.firstStartedAt,
+          currentIntervalStart: rolled.currentIntervalStart,
+          completedActiveMs: rolled.completedActiveMs,
+          now: rolled.now,
+          diagnostics: rolled.diagnostics,
+          environment: rolled.environment,
+          copyStatus: rolled.copyStatus,
+          keepAwake: rolled.keepAwake,
+          wakeLockState: rolled.wakeLockState,
+          errorBanner: rolled.errorBanner,
+          lastRawFinalizedTranscript: rolled.lastRawFinalizedTranscript,
+          recognitionStatusOverride: rolled.recognitionStatusOverride,
+          cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+          activeRecognitionPath: rolled.activeRecognitionPath,
+          diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
+          totalWords: rolled.totalWords + wordDelta | 0,
+          wordsToday: rolled.wordsToday + wordDelta | 0
         };
       };
     };
@@ -3366,34 +3575,37 @@
             label: "start counting",
             detail: ""
           };
+          var rolled = rolloverWordsToday(v.value0)(v1);
           return {
-            totalWords: v1.totalWords,
-            eventLog: v1.eventLog,
-            completedActiveMs: v1.completedActiveMs,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            wakeLockState: v1.wakeLockState,
-            cloudFallbackAttempted: v1.cloudFallbackAttempted,
-            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+            totalWords: rolled.totalWords,
+            wordsToday: rolled.wordsToday,
+            todayLocalDate: rolled.todayLocalDate,
+            eventLog: rolled.eventLog,
+            completedActiveMs: rolled.completedActiveMs,
+            environment: rolled.environment,
+            copyStatus: rolled.copyStatus,
+            keepAwake: rolled.keepAwake,
+            wakeLockState: rolled.wakeLockState,
+            cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+            diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
-            firstStartedAt: function() {
-              if (v1.firstStartedAt instanceof Just) {
-                return new Just(v1.firstStartedAt.value0);
+            firstStartedAt: (function() {
+              if (rolled.firstStartedAt instanceof Just) {
+                return new Just(rolled.firstStartedAt.value0);
               }
               ;
-              if (v1.firstStartedAt instanceof Nothing) {
+              if (rolled.firstStartedAt instanceof Nothing) {
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 93, column 30 - line 95, column 40): " + [v1.firstStartedAt.constructor.name]);
-            }(),
-            wordEvents: pruneWordEvents(v.value0)(v1.wordEvents),
-            captions: pruneCaptions(v.value0)(v1.captions),
+              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 95, column 30 - line 97, column 40): " + [rolled.firstStartedAt.constructor.name]);
+            })(),
+            wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
+            captions: pruneCaptions(v.value0)(rolled.captions),
             now: v.value0,
-            diagnostics: recordEntry(startEntry)(v1.diagnostics),
+            diagnostics: recordEntry(startEntry)(rolled.diagnostics),
             errorBanner: idleErrorBanner,
             lastRawFinalizedTranscript: "",
             recognitionStatusOverride: idleRecognitionStatusOverride,
@@ -3408,11 +3620,13 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneWordEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $62 = wordCount === 0;
-          if ($62) {
+          var $69 = wordCount === 0;
+          if ($69) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
+              wordsToday: v1.wordsToday,
+              todayLocalDate: v1.todayLocalDate,
               eventLog: v1.eventLog,
               currentIntervalWords: v1.currentIntervalWords,
               firstStartedAt: v1.firstStartedAt,
@@ -3440,24 +3654,27 @@
             label: "final transcript",
             detail: "words=" + show3(wordCount)
           };
+          var counted = addWordsForToday(v.value1)(wordCount)(v1);
           return {
-            listening: v1.listening,
-            eventLog: v1.eventLog,
-            firstStartedAt: v1.firstStartedAt,
-            currentIntervalStart: v1.currentIntervalStart,
-            completedActiveMs: v1.completedActiveMs,
-            environment: v1.environment,
-            copyStatus: v1.copyStatus,
-            keepAwake: v1.keepAwake,
-            wakeLockState: v1.wakeLockState,
-            errorBanner: v1.errorBanner,
-            lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
-            recognitionStatusOverride: v1.recognitionStatusOverride,
-            cloudFallbackAttempted: v1.cloudFallbackAttempted,
-            activeRecognitionPath: v1.activeRecognitionPath,
-            diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
-            totalWords: v1.totalWords + wordCount | 0,
-            currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
+            listening: counted.listening,
+            totalWords: counted.totalWords,
+            wordsToday: counted.wordsToday,
+            todayLocalDate: counted.todayLocalDate,
+            eventLog: counted.eventLog,
+            firstStartedAt: counted.firstStartedAt,
+            currentIntervalStart: counted.currentIntervalStart,
+            completedActiveMs: counted.completedActiveMs,
+            environment: counted.environment,
+            copyStatus: counted.copyStatus,
+            keepAwake: counted.keepAwake,
+            wakeLockState: counted.wakeLockState,
+            errorBanner: counted.errorBanner,
+            lastRawFinalizedTranscript: counted.lastRawFinalizedTranscript,
+            recognitionStatusOverride: counted.recognitionStatusOverride,
+            cloudFallbackAttempted: counted.cloudFallbackAttempted,
+            activeRecognitionPath: counted.activeRecognitionPath,
+            diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+            currentIntervalWords: counted.currentIntervalWords + wordCount | 0,
             captions: append2(prunedCaptions)([{
               transcript: v.value0,
               wordCount,
@@ -3468,7 +3685,7 @@
               wordCount
             }]),
             now: v.value1,
-            diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+            diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
           };
         }
         ;
@@ -3476,6 +3693,8 @@
           return {
             listening: v1.listening,
             totalWords: v1.totalWords,
+            wordsToday: v1.wordsToday,
+            todayLocalDate: v1.todayLocalDate,
             wordEvents: v1.wordEvents,
             eventLog: v1.eventLog,
             currentIntervalWords: v1.currentIntervalWords,
@@ -3505,6 +3724,8 @@
           return {
             listening: v1.listening,
             totalWords: v1.totalWords,
+            wordsToday: v1.wordsToday,
+            todayLocalDate: v1.todayLocalDate,
             captions: v1.captions,
             wordEvents: v1.wordEvents,
             eventLog: v1.eventLog,
@@ -3551,8 +3772,10 @@
             lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
             listening: v1.listening,
             recognitionStatusOverride: v1.recognitionStatusOverride,
+            todayLocalDate: v1.todayLocalDate,
             totalWords: v1.totalWords,
             wakeLockState: v1.wakeLockState,
+            wordsToday: v1.wordsToday,
             now: v.value0,
             wordEvents: prunedEvents,
             captions: prunedCaptions
@@ -3561,6 +3784,8 @@
             return {
               listening: base.listening,
               totalWords: base.totalWords,
+              wordsToday: base.wordsToday,
+              todayLocalDate: base.todayLocalDate,
               wordEvents: base.wordEvents,
               eventLog: base.eventLog,
               currentIntervalWords: base.currentIntervalWords,
@@ -3594,31 +3819,34 @@
               detail: "extend wordDelta=" + show3(decision.value0.wordDelta)
             };
             var extendedCaptions = appendOrExtendCaption(decision.value0.caption)(decision.value0.wordDelta)(v.value0)(prunedCaptions);
+            var counted = addWordsForToday(v.value0)(decision.value0.wordDelta)(base);
             return {
-              listening: base.listening,
-              eventLog: base.eventLog,
-              firstStartedAt: base.firstStartedAt,
-              currentIntervalStart: base.currentIntervalStart,
-              completedActiveMs: base.completedActiveMs,
-              now: base.now,
-              environment: base.environment,
-              copyStatus: base.copyStatus,
-              keepAwake: base.keepAwake,
-              wakeLockState: base.wakeLockState,
-              errorBanner: base.errorBanner,
-              recognitionStatusOverride: base.recognitionStatusOverride,
-              cloudFallbackAttempted: base.cloudFallbackAttempted,
-              activeRecognitionPath: base.activeRecognitionPath,
-              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
-              totalWords: v1.totalWords + decision.value0.wordDelta | 0,
-              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordDelta | 0,
+              listening: counted.listening,
+              totalWords: counted.totalWords,
+              wordsToday: counted.wordsToday,
+              todayLocalDate: counted.todayLocalDate,
+              eventLog: counted.eventLog,
+              firstStartedAt: counted.firstStartedAt,
+              currentIntervalStart: counted.currentIntervalStart,
+              completedActiveMs: counted.completedActiveMs,
+              now: counted.now,
+              environment: counted.environment,
+              copyStatus: counted.copyStatus,
+              keepAwake: counted.keepAwake,
+              wakeLockState: counted.wakeLockState,
+              errorBanner: counted.errorBanner,
+              recognitionStatusOverride: counted.recognitionStatusOverride,
+              cloudFallbackAttempted: counted.cloudFallbackAttempted,
+              activeRecognitionPath: counted.activeRecognitionPath,
+              diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              currentIntervalWords: counted.currentIntervalWords + decision.value0.wordDelta | 0,
               captions: extendedCaptions,
               wordEvents: append2(prunedEvents)([{
                 timestamp: v.value0,
                 wordCount: decision.value0.wordDelta
               }]),
               lastRawFinalizedTranscript: v.value1,
-              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+              diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
             };
           }
           ;
@@ -3628,24 +3856,27 @@
               label: "final transcript",
               detail: "words=" + show3(decision.value0.wordCount)
             };
+            var counted = addWordsForToday(v.value0)(decision.value0.wordCount)(base);
             return {
-              listening: base.listening,
-              eventLog: base.eventLog,
-              firstStartedAt: base.firstStartedAt,
-              currentIntervalStart: base.currentIntervalStart,
-              completedActiveMs: base.completedActiveMs,
-              now: base.now,
-              environment: base.environment,
-              copyStatus: base.copyStatus,
-              keepAwake: base.keepAwake,
-              wakeLockState: base.wakeLockState,
-              errorBanner: base.errorBanner,
-              recognitionStatusOverride: base.recognitionStatusOverride,
-              cloudFallbackAttempted: base.cloudFallbackAttempted,
-              activeRecognitionPath: base.activeRecognitionPath,
-              diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
-              totalWords: v1.totalWords + decision.value0.wordCount | 0,
-              currentIntervalWords: v1.currentIntervalWords + decision.value0.wordCount | 0,
+              listening: counted.listening,
+              totalWords: counted.totalWords,
+              wordsToday: counted.wordsToday,
+              todayLocalDate: counted.todayLocalDate,
+              eventLog: counted.eventLog,
+              firstStartedAt: counted.firstStartedAt,
+              currentIntervalStart: counted.currentIntervalStart,
+              completedActiveMs: counted.completedActiveMs,
+              now: counted.now,
+              environment: counted.environment,
+              copyStatus: counted.copyStatus,
+              keepAwake: counted.keepAwake,
+              wakeLockState: counted.wakeLockState,
+              errorBanner: counted.errorBanner,
+              recognitionStatusOverride: counted.recognitionStatusOverride,
+              cloudFallbackAttempted: counted.cloudFallbackAttempted,
+              activeRecognitionPath: counted.activeRecognitionPath,
+              diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              currentIntervalWords: counted.currentIntervalWords + decision.value0.wordCount | 0,
               captions: append2(prunedCaptions)([{
                 transcript: decision.value0.caption,
                 wordCount: decision.value0.wordCount,
@@ -3656,11 +3887,11 @@
                 wordCount: decision.value0.wordCount
               }]),
               lastRawFinalizedTranscript: v.value1,
-              diagnostics: recordEntry(transcriptEntry)(v1.diagnostics)
+              diagnostics: recordEntry(transcriptEntry)(counted.diagnostics)
             };
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 152, column 10 - line 200, column 16): " + [decision.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 154, column 10 - line 202, column 16): " + [decision.constructor.name]);
         }
         ;
       }
@@ -3669,6 +3900,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3692,28 +3925,31 @@
       }
       ;
       if (v instanceof Tick) {
+        var rolled = rolloverWordsToday(v.value0)(v1);
         return {
-          listening: v1.listening,
-          totalWords: v1.totalWords,
-          eventLog: v1.eventLog,
-          currentIntervalWords: v1.currentIntervalWords,
-          firstStartedAt: v1.firstStartedAt,
-          currentIntervalStart: v1.currentIntervalStart,
-          completedActiveMs: v1.completedActiveMs,
-          diagnostics: v1.diagnostics,
-          environment: v1.environment,
-          copyStatus: v1.copyStatus,
-          keepAwake: v1.keepAwake,
-          wakeLockState: v1.wakeLockState,
-          errorBanner: v1.errorBanner,
-          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
-          recognitionStatusOverride: v1.recognitionStatusOverride,
-          cloudFallbackAttempted: v1.cloudFallbackAttempted,
-          activeRecognitionPath: v1.activeRecognitionPath,
-          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+          listening: rolled.listening,
+          totalWords: rolled.totalWords,
+          wordsToday: rolled.wordsToday,
+          todayLocalDate: rolled.todayLocalDate,
+          eventLog: rolled.eventLog,
+          currentIntervalWords: rolled.currentIntervalWords,
+          firstStartedAt: rolled.firstStartedAt,
+          currentIntervalStart: rolled.currentIntervalStart,
+          completedActiveMs: rolled.completedActiveMs,
+          diagnostics: rolled.diagnostics,
+          environment: rolled.environment,
+          copyStatus: rolled.copyStatus,
+          keepAwake: rolled.keepAwake,
+          wakeLockState: rolled.wakeLockState,
+          errorBanner: rolled.errorBanner,
+          lastRawFinalizedTranscript: rolled.lastRawFinalizedTranscript,
+          recognitionStatusOverride: rolled.recognitionStatusOverride,
+          cloudFallbackAttempted: rolled.cloudFallbackAttempted,
+          activeRecognitionPath: rolled.activeRecognitionPath,
+          diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
           now: v.value0,
-          wordEvents: pruneWordEvents(v.value0)(v1.wordEvents),
-          captions: pruneCaptions(v.value0)(v1.captions)
+          wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
+          captions: pruneCaptions(v.value0)(rolled.captions)
         };
       }
       ;
@@ -3721,6 +3957,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3751,6 +3989,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3777,6 +4017,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3808,6 +4050,8 @@
         return {
           listening: initialSession.listening,
           totalWords: initialSession.totalWords,
+          wordsToday: initialSession.wordsToday,
+          todayLocalDate: initialSession.todayLocalDate,
           captions: initialSession.captions,
           wordEvents: initialSession.wordEvents,
           eventLog: initialSession.eventLog,
@@ -3845,6 +4089,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           totalWords: max22(0)(v.value0.totalWords),
+          wordsToday: max22(0)(v.value0.wordsToday),
+          todayLocalDate: map6(localDateFromString)(v.value0.todayLocalDate),
           firstStartedAt: map6(msToInstant)(v.value0.firstStartedAt),
           completedActiveMs: max12(0)(v.value0.completedActiveMs),
           cloudFallbackAttempted: v.value0.cloudFallbackAttempted,
@@ -3860,6 +4106,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3878,13 +4126,13 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           keepAwake: v.value0,
-          wakeLockState: function() {
+          wakeLockState: (function() {
             if (v.value0) {
               return v1.wakeLockState;
             }
             ;
             return WakeLockIdle.value;
-          }()
+          })()
         };
       }
       ;
@@ -3892,6 +4140,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -3937,25 +4187,29 @@
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           listening: v1.listening,
           recognitionStatusOverride: v1.recognitionStatusOverride,
+          todayLocalDate: v1.todayLocalDate,
           totalWords: v1.totalWords,
           wakeLockState: v1.wakeLockState,
           wordEvents: v1.wordEvents,
+          wordsToday: v1.wordsToday,
           diagnostics: recordEntry(errorEntry)(v1.diagnostics),
           now: v.value0
         };
         var classified = classifyRecognitionError(v.value1);
         var bannerText = recognitionErrorBannerText(classified);
-        var $81 = isTransient(classified);
-        if ($81) {
+        var $88 = isTransient(classified);
+        if ($88) {
           return sessionWithDiagnostic;
         }
         ;
-        var $82 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
-        if ($82) {
+        var $89 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($89) {
           var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
           return {
             listening: stopped.listening,
             totalWords: stopped.totalWords,
+            wordsToday: stopped.wordsToday,
+            todayLocalDate: stopped.todayLocalDate,
             captions: stopped.captions,
             wordEvents: stopped.wordEvents,
             eventLog: stopped.eventLog,
@@ -3981,6 +4235,8 @@
         return {
           listening: sessionWithDiagnostic.listening,
           totalWords: sessionWithDiagnostic.totalWords,
+          wordsToday: sessionWithDiagnostic.wordsToday,
+          todayLocalDate: sessionWithDiagnostic.todayLocalDate,
           captions: sessionWithDiagnostic.captions,
           wordEvents: sessionWithDiagnostic.wordEvents,
           eventLog: sessionWithDiagnostic.eventLog,
@@ -4007,6 +4263,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4033,6 +4291,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4059,6 +4319,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4085,6 +4347,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4111,6 +4375,8 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
           captions: v1.captions,
           wordEvents: v1.wordEvents,
           eventLog: v1.eventLog,
@@ -4133,7 +4399,7 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 81, column 1 - line 81, column 39): " + [v.constructor.name, v1.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 82, column 1 - line 82, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
 
@@ -4214,14 +4480,14 @@
   };
 
   // output/WordMeter.FFI.StorageError/index.js
-  var StorageUnavailable = /* @__PURE__ */ function() {
+  var StorageUnavailable = /* @__PURE__ */ (function() {
     function StorageUnavailable2() {
     }
     ;
     StorageUnavailable2.value = new StorageUnavailable2();
     return StorageUnavailable2;
-  }();
-  var StorageException = /* @__PURE__ */ function() {
+  })();
+  var StorageException = /* @__PURE__ */ (function() {
     function StorageException2(value0) {
       this.value0 = value0;
     }
@@ -4230,8 +4496,8 @@
       return new StorageException2(value0);
     };
     return StorageException2;
-  }();
-  var MissingKey = /* @__PURE__ */ function() {
+  })();
+  var MissingKey = /* @__PURE__ */ (function() {
     function MissingKey2(value0) {
       this.value0 = value0;
     }
@@ -4240,7 +4506,7 @@
       return new MissingKey2(value0);
     };
     return MissingKey2;
-  }();
+  })();
   var renderStorageError = function(v) {
     if (v instanceof StorageUnavailable) {
       return "localStorage is unavailable in this environment";
@@ -4499,7 +4765,7 @@
   // output/Foreign.Object/index.js
   var bindFlipped2 = /* @__PURE__ */ bindFlipped(bindST);
   var foldr2 = /* @__PURE__ */ foldr(foldableArray);
-  var identity7 = /* @__PURE__ */ identity(categoryFn);
+  var identity8 = /* @__PURE__ */ identity(categoryFn);
   var values = /* @__PURE__ */ toArrayWithKey(function(v) {
     return function(v1) {
       return v1;
@@ -4525,9 +4791,9 @@
       return _mapWithKey(m, f);
     };
   };
-  var lookup = /* @__PURE__ */ function() {
+  var lookup = /* @__PURE__ */ (function() {
     return runFn4(_lookup)(Nothing.value)(Just.create);
-  }();
+  })();
   var insert = function(k) {
     return function(v) {
       return mutate(poke2(k)(v));
@@ -4636,7 +4902,7 @@
       };
     },
     sequence: function(dictApplicative) {
-      return traverse(traversableObject)(dictApplicative)(identity7);
+      return traverse(traversableObject)(dictApplicative)(identity8);
     },
     Functor0: function() {
       return functorObject;
@@ -4654,9 +4920,9 @@
       };
     };
   };
-  var toJsonType = /* @__PURE__ */ function() {
+  var toJsonType = /* @__PURE__ */ (function() {
     return verbJsonType(Nothing.value)(Just.create);
-  }();
+  })();
   var jsonSingletonObject = function(key) {
     return function(val) {
       return id(singleton3(key)(val));
@@ -4664,6 +4930,13 @@
   };
   var jsonEmptyObject = /* @__PURE__ */ id(empty2);
   var isJsonType = /* @__PURE__ */ verbJsonType(false)(/* @__PURE__ */ $$const(true));
+  var caseJsonString = function(d) {
+    return function(f) {
+      return function(j) {
+        return _caseJson($$const(d), $$const(d), $$const(d), f, $$const(d), $$const(d), j);
+      };
+    };
+  };
   var caseJsonObject = function(d) {
     return function(f) {
       return function(j) {
@@ -4705,7 +4978,7 @@
 
   // output/Data.Argonaut.Decode.Error/index.js
   var show1 = /* @__PURE__ */ show(showInt);
-  var TypeMismatch = /* @__PURE__ */ function() {
+  var TypeMismatch = /* @__PURE__ */ (function() {
     function TypeMismatch2(value0) {
       this.value0 = value0;
     }
@@ -4714,8 +4987,8 @@
       return new TypeMismatch2(value0);
     };
     return TypeMismatch2;
-  }();
-  var UnexpectedValue = /* @__PURE__ */ function() {
+  })();
+  var UnexpectedValue = /* @__PURE__ */ (function() {
     function UnexpectedValue2(value0) {
       this.value0 = value0;
     }
@@ -4724,8 +4997,8 @@
       return new UnexpectedValue2(value0);
     };
     return UnexpectedValue2;
-  }();
-  var AtIndex = /* @__PURE__ */ function() {
+  })();
+  var AtIndex = /* @__PURE__ */ (function() {
     function AtIndex2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4737,8 +5010,8 @@
       };
     };
     return AtIndex2;
-  }();
-  var AtKey = /* @__PURE__ */ function() {
+  })();
+  var AtKey = /* @__PURE__ */ (function() {
     function AtKey2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4750,8 +5023,8 @@
       };
     };
     return AtKey2;
-  }();
-  var Named = /* @__PURE__ */ function() {
+  })();
+  var Named = /* @__PURE__ */ (function() {
     function Named2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4763,14 +5036,14 @@
       };
     };
     return Named2;
-  }();
-  var MissingValue = /* @__PURE__ */ function() {
+  })();
+  var MissingValue = /* @__PURE__ */ (function() {
     function MissingValue2() {
     }
     ;
     MissingValue2.value = new MissingValue2();
     return MissingValue2;
-  }();
+  })();
   var printJsonDecodeError = function(err) {
     var go = function(v) {
       if (v instanceof TypeMismatch) {
@@ -4803,7 +5076,6 @@
   };
 
   // output/Data.String.CodePoints/foreign.js
-  var hasArrayFrom = typeof Array.from === "function";
   var hasStringIterator = typeof Symbol !== "undefined" && Symbol != null && typeof Symbol.iterator !== "undefined" && typeof String.prototype[Symbol.iterator] === "function";
   var hasFromCodePoint = typeof String.prototype.fromCodePoint === "function";
   var hasCodePointAt = typeof String.prototype.codePointAt === "function";
@@ -4833,18 +5105,21 @@
   var getField = function(decoder) {
     return function(obj) {
       return function(str) {
-        return maybe(new Left(new AtKey(str, MissingValue.value)))(function() {
+        return maybe(new Left(new AtKey(str, MissingValue.value)))((function() {
           var $48 = lmap2(AtKey.create(str));
           return function($49) {
             return $48(decoder($49));
           };
-        }())(lookup(str)(obj));
+        })())(lookup(str)(obj));
       };
     };
   };
-  var decodeNumber = /* @__PURE__ */ function() {
+  var decodeString = /* @__PURE__ */ (function() {
+    return caseJsonString(new Left(new TypeMismatch("String")))(Right.create);
+  })();
+  var decodeNumber = /* @__PURE__ */ (function() {
     return caseJsonNumber(new Left(new TypeMismatch("Number")))(Right.create);
-  }();
+  })();
   var decodeMaybe = function(decoder) {
     return function(json) {
       if (isNull(json)) {
@@ -4858,38 +5133,38 @@
       throw new Error("Failed pattern match at Data.Argonaut.Decode.Decoders (line 37, column 1 - line 41, column 38): " + [decoder.constructor.name, json.constructor.name]);
     };
   };
-  var decodeJObject = /* @__PURE__ */ function() {
+  var decodeJObject = /* @__PURE__ */ (function() {
     var $50 = note(new TypeMismatch("Object"));
     return function($51) {
       return $50(toObject($51));
     };
-  }();
-  var decodeJArray = /* @__PURE__ */ function() {
+  })();
+  var decodeJArray = /* @__PURE__ */ (function() {
     var $52 = note(new TypeMismatch("Array"));
     return function($53) {
       return $52(toArray($53));
     };
-  }();
-  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ function() {
+  })();
+  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ (function() {
     var $84 = note(new TypeMismatch("Integer"));
     return function($85) {
       return $84(fromNumber($85));
     };
-  }())(decodeNumber);
+  })())(decodeNumber);
   var decodeForeignObject = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $86 = lmap2(Named.create("ForeignObject"));
       var $87 = traverse5(decoder);
       return function($88) {
         return $86($87($88));
       };
-    }())(decodeJObject);
+    })())(decodeJObject);
   };
-  var decodeBoolean = /* @__PURE__ */ function() {
+  var decodeBoolean = /* @__PURE__ */ (function() {
     return caseJsonBoolean(new Left(new TypeMismatch("Boolean")))(Right.create);
-  }();
+  })();
   var decodeArray = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $89 = lmap2(Named.create("Array"));
       var $90 = traverseWithIndex2(function(i) {
         var $92 = lmap2(AtIndex.create(i));
@@ -4900,7 +5175,7 @@
       return function($91) {
         return $89($90($91));
       };
-    }())(decodeJArray);
+    })())(decodeJArray);
   };
 
   // output/Record/index.js
@@ -4962,14 +5237,17 @@
       };
     };
   };
+  var decodeJsonString = {
+    decodeJson: decodeString
+  };
   var decodeJsonNumber = {
     decodeJson: decodeNumber
   };
-  var decodeJsonJson = /* @__PURE__ */ function() {
+  var decodeJsonJson = /* @__PURE__ */ (function() {
     return {
       decodeJson: Right.create
     };
-  }();
+  })();
   var decodeJsonInt = {
     decodeJson: decodeInt
   };
@@ -5065,30 +5343,31 @@
   };
 
   // output/Data.Argonaut.Decode.Parser/index.js
-  var parseJson = /* @__PURE__ */ function() {
+  var parseJson = /* @__PURE__ */ (function() {
     var $3 = lmap(bifunctorEither)(function(v) {
       return new TypeMismatch("JSON");
     });
     return function($4) {
       return $3(jsonParser($4));
     };
-  }();
+  })();
 
   // output/Data.Argonaut.Encode.Encoders/index.js
   var map10 = /* @__PURE__ */ map(functorArray);
   var extend2 = function(encoder) {
     return function(v) {
-      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))(function() {
+      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))((function() {
         var $42 = insert(v.value0)(v.value1);
         return function($43) {
           return id($42($43));
         };
-      }());
+      })());
       return function($41) {
         return $40(encoder($41));
       };
     };
   };
+  var encodeString = id;
   var encodeNumber = id;
   var encodeMaybe = function(encoder) {
     return function(v) {
@@ -5146,6 +5425,9 @@
   var encodeJsonJson = {
     encodeJson: /* @__PURE__ */ identity(categoryFn)
   };
+  var encodeJsonJString = {
+    encodeJson: encodeString
+  };
   var encodeJsonJNumber = {
     encodeJson: encodeNumber
   };
@@ -5200,9 +5482,10 @@
   var show4 = /* @__PURE__ */ show(showInt);
   var extend4 = /* @__PURE__ */ extend3(encodeJsonJson);
   var assoc3 = /* @__PURE__ */ assoc2(encodeJsonInt);
-  var assoc1 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJNumber));
-  var assoc22 = /* @__PURE__ */ assoc2(encodeJsonJNumber);
-  var assoc32 = /* @__PURE__ */ assoc2(encodeJsonJBoolean);
+  var assoc1 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJString));
+  var assoc22 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonMaybe(encodeJsonJNumber));
+  var assoc32 = /* @__PURE__ */ assoc2(encodeJsonJNumber);
+  var assoc4 = /* @__PURE__ */ assoc2(encodeJsonJBoolean);
   var gEncodeJsonCons2 = /* @__PURE__ */ gEncodeJsonCons(encodeJsonJNumber);
   var wordCountIsSymbol = {
     reflectSymbol: function() {
@@ -5215,7 +5498,7 @@
       return "timestamp";
     }
   };
-  var assoc4 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons1(timestampIsSymbol)())()));
+  var assoc5 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons1(timestampIsSymbol)())()));
   var startedAtIsSymbol = {
     reflectSymbol: function() {
       return "startedAt";
@@ -5226,7 +5509,7 @@
       return "endedAt";
     }
   };
-  var assoc5 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons2(/* @__PURE__ */ gEncodeJsonCons1(startedAtIsSymbol)())(endedAtIsSymbol)())()));
+  var assoc6 = /* @__PURE__ */ assoc2(/* @__PURE__ */ encodeJsonArray(/* @__PURE__ */ encodeRecord(/* @__PURE__ */ gEncodeJsonCons2(/* @__PURE__ */ gEncodeJsonCons1(startedAtIsSymbol)())(endedAtIsSymbol)())()));
   var encodeJson2 = /* @__PURE__ */ encodeJson(encodeJsonJson);
   var bind6 = /* @__PURE__ */ bind(bindEither);
   var decodeJson2 = /* @__PURE__ */ decodeJson(/* @__PURE__ */ decodeForeignObject2(decodeJsonJson));
@@ -5236,12 +5519,15 @@
   var getField1 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeJsonMaybe(decodeJsonNumber));
   var getFieldOptional$prime3 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonNumber);
   var getFieldOptional$prime1 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonBoolean);
+  var getFieldOptional$prime22 = /* @__PURE__ */ getFieldOptional$prime2(decodeJsonInt);
+  var getFieldOptional$prime32 = /* @__PURE__ */ getFieldOptional$prime2(/* @__PURE__ */ decodeJsonMaybe(decodeJsonString));
   var gDecodeJsonCons2 = /* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonNumber));
   var gDecodeJsonCons1 = /* @__PURE__ */ gDecodeJsonCons2(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonInt))(gDecodeJsonNil)(wordCountIsSymbol)()());
   var getField22 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons1(timestampIsSymbol)()())()));
   var getField32 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons2(/* @__PURE__ */ gDecodeJsonCons1(startedAtIsSymbol)()())(endedAtIsSymbol)()())()));
   var pure4 = /* @__PURE__ */ pure(applicativeEither);
-  var InvalidJson = /* @__PURE__ */ function() {
+  var join2 = /* @__PURE__ */ join(bindMaybe);
+  var InvalidJson = /* @__PURE__ */ (function() {
     function InvalidJson2(value0) {
       this.value0 = value0;
     }
@@ -5250,8 +5536,8 @@
       return new InvalidJson2(value0);
     };
     return InvalidJson2;
-  }();
-  var SchemaMismatch = /* @__PURE__ */ function() {
+  })();
+  var SchemaMismatch = /* @__PURE__ */ (function() {
     function SchemaMismatch2(value0) {
       this.value0 = value0;
     }
@@ -5260,8 +5546,8 @@
       return new SchemaMismatch2(value0);
     };
     return SchemaMismatch2;
-  }();
-  var UnsupportedVersion = /* @__PURE__ */ function() {
+  })();
+  var UnsupportedVersion = /* @__PURE__ */ (function() {
     function UnsupportedVersion2(value0) {
       this.value0 = value0;
     }
@@ -5270,7 +5556,7 @@
       return new UnsupportedVersion2(value0);
     };
     return UnsupportedVersion2;
-  }();
+  })();
   var storageVersion = 1;
   var storageKey = "word-meter:state:v1";
   var renderPersistenceError = function(v) {
@@ -5289,7 +5575,7 @@
     throw new Error("Failed pattern match at WordMeter.Persistence (line 30, column 1 - line 30, column 53): " + [v.constructor.name]);
   };
   var encodePersistedData = function(persisted) {
-    var envelope = extend4(assoc3("version")(storageVersion))(extend4(assoc3("totalWords")(persisted.totalWords))(extend4(assoc1("firstStartedAt")(persisted.firstStartedAt))(extend4(assoc22("completedActiveMs")(persisted.completedActiveMs))(extend4(assoc32("cloudFallbackAttempted")(persisted.cloudFallbackAttempted))(extend4(assoc4("wordEvents")(persisted.wordEvents))(extend4(assoc5("eventLog")(persisted.eventLog))(jsonEmptyObject)))))));
+    var envelope = extend4(assoc3("version")(storageVersion))(extend4(assoc3("totalWords")(persisted.totalWords))(extend4(assoc3("wordsToday")(persisted.wordsToday))(extend4(assoc1("todayLocalDate")(persisted.todayLocalDate))(extend4(assoc22("firstStartedAt")(persisted.firstStartedAt))(extend4(assoc32("completedActiveMs")(persisted.completedActiveMs))(extend4(assoc4("cloudFallbackAttempted")(persisted.cloudFallbackAttempted))(extend4(assoc5("wordEvents")(persisted.wordEvents))(extend4(assoc6("eventLog")(persisted.eventLog))(jsonEmptyObject)))))))));
     return stringify(encodeJson2(envelope));
   };
   var decodePersistedData = function(payload) {
@@ -5302,7 +5588,7 @@
         return new Right(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Persistence (line 85, column 15 - line 87, column 31): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Persistence (line 92, column 15 - line 94, column 31): " + [v.constructor.name]);
     };
     var mapInvalidJson = function(v) {
       if (v instanceof Left) {
@@ -5313,7 +5599,7 @@
         return new Right(v.value0);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Persistence (line 80, column 20 - line 82, column 31): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Persistence (line 87, column 20 - line 89, column 31): " + [v.constructor.name]);
     };
     return bind6(mapInvalidJson(parseJson(payload)))(function(json) {
       return bind6(mapSchema(decodeJson2(json)))(function(envelope) {
@@ -5323,15 +5609,21 @@
               return bind6(mapSchema(getField1(envelope)("firstStartedAt")))(function(firstStartedAt) {
                 return bind6(mapSchema(getFieldOptional$prime3(envelope)("completedActiveMs")))(function(completedActiveMs) {
                   return bind6(mapSchema(getFieldOptional$prime1(envelope)("cloudFallbackAttempted")))(function(cloudFallbackAttempted) {
-                    return bind6(mapSchema(getField22(envelope)("wordEvents")))(function(wordEvents) {
-                      return bind6(mapSchema(getField32(envelope)("eventLog")))(function(eventLog) {
-                        return pure4({
-                          totalWords,
-                          firstStartedAt,
-                          completedActiveMs: fromMaybe(0)(completedActiveMs),
-                          cloudFallbackAttempted: fromMaybe(false)(cloudFallbackAttempted),
-                          wordEvents,
-                          eventLog
+                    return bind6(mapSchema(getFieldOptional$prime22(envelope)("wordsToday")))(function(wordsToday) {
+                      return bind6(mapSchema(getFieldOptional$prime32(envelope)("todayLocalDate")))(function(todayLocalDate) {
+                        return bind6(mapSchema(getField22(envelope)("wordEvents")))(function(wordEvents) {
+                          return bind6(mapSchema(getField32(envelope)("eventLog")))(function(eventLog) {
+                            return pure4({
+                              totalWords,
+                              wordsToday: fromMaybe(0)(wordsToday),
+                              todayLocalDate: join2(todayLocalDate),
+                              firstStartedAt,
+                              completedActiveMs: fromMaybe(0)(completedActiveMs),
+                              cloudFallbackAttempted: fromMaybe(false)(cloudFallbackAttempted),
+                              wordEvents,
+                              eventLog
+                            });
+                          });
                         });
                       });
                     });
@@ -5350,7 +5642,7 @@
   var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
   var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var pure5 = /* @__PURE__ */ pure(/* @__PURE__ */ applicativeReaderT(applicativeEffect));
-  var LoadStorageError = /* @__PURE__ */ function() {
+  var LoadStorageError = /* @__PURE__ */ (function() {
     function LoadStorageError2(value0) {
       this.value0 = value0;
     }
@@ -5359,8 +5651,8 @@
       return new LoadStorageError2(value0);
     };
     return LoadStorageError2;
-  }();
-  var LoadDecodeError = /* @__PURE__ */ function() {
+  })();
+  var LoadDecodeError = /* @__PURE__ */ (function() {
     function LoadDecodeError2(value0) {
       this.value0 = value0;
     }
@@ -5369,11 +5661,11 @@
       return new LoadDecodeError2(value0);
     };
     return LoadDecodeError2;
-  }();
+  })();
   var storageAppM = {
     loadPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
       return bind7(liftEffect7(readPersistedString(storageKey)))(function(raw) {
-        return pure5(function() {
+        return pure5((function() {
           if (raw instanceof Left && raw.value0 instanceof MissingKey) {
             return new Right(Nothing.value);
           }
@@ -5396,7 +5688,7 @@
           }
           ;
           throw new Error("Failed pattern match at WordMeter.Capability.Storage (line 51, column 10 - line 56, column 46): " + [raw.constructor.name]);
-        }());
+        })());
       });
     }),
     persistSnapshot: function(persisted) {
@@ -5521,14 +5813,14 @@
   var sentinelsEqual = (left) => (right) => left === right;
 
   // output/WordMeter.FFI.WakeLock/index.js
-  var WakeLockUnsupported = /* @__PURE__ */ function() {
+  var WakeLockUnsupported = /* @__PURE__ */ (function() {
     function WakeLockUnsupported2() {
     }
     ;
     WakeLockUnsupported2.value = new WakeLockUnsupported2();
     return WakeLockUnsupported2;
-  }();
-  var WakeLockUnavailable = /* @__PURE__ */ function() {
+  })();
+  var WakeLockUnavailable = /* @__PURE__ */ (function() {
     function WakeLockUnavailable2(value0) {
       this.value0 = value0;
     }
@@ -5537,7 +5829,7 @@
       return new WakeLockUnavailable2(value0);
     };
     return WakeLockUnavailable2;
-  }();
+  })();
   var renderWakeLockError = function(v) {
     if (v instanceof WakeLockUnsupported) {
       return "wake lock not supported on this browser";
@@ -5664,14 +5956,14 @@
 
   // output/WordMeter.FFI.Confirm/index.js
   var map11 = /* @__PURE__ */ map(functorEffect);
-  var ConfirmUnavailable = /* @__PURE__ */ function() {
+  var ConfirmUnavailable = /* @__PURE__ */ (function() {
     function ConfirmUnavailable2() {
     }
     ;
     ConfirmUnavailable2.value = new ConfirmUnavailable2();
     return ConfirmUnavailable2;
-  }();
-  var ConfirmException = /* @__PURE__ */ function() {
+  })();
+  var ConfirmException = /* @__PURE__ */ (function() {
     function ConfirmException2(value0) {
       this.value0 = value0;
     }
@@ -5680,7 +5972,7 @@
       return new ConfirmException2(value0);
     };
     return ConfirmException2;
-  }();
+  })();
   var renderConfirmError = function(v) {
     if (v instanceof ConfirmUnavailable) {
       return "window.confirm is unavailable in this environment";
@@ -5717,7 +6009,7 @@
   };
 
   // output/WordMeter.Version/index.js
-  var version = "0.1.1";
+  var version = "0.2.0";
 
   // output/WordMeter.Recording.View/index.js
   var append3 = /* @__PURE__ */ append(semigroupArray);
@@ -5743,7 +6035,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 232, column 24 - line 234, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 238, column 24 - line 240, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var renderStatus = function(session) {
     if (session.recognitionStatusOverride !== "") {
@@ -5758,17 +6050,17 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 104, column 1 - line 104, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 107, column 1 - line 107, column 34): " + [session.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
-    var withChecked = function() {
+    var withChecked = (function() {
       if (session.keepAwake) {
         return append3(base)([attribute("checked")("checked")]);
       }
       ;
       return base;
-    }();
+    })();
     if (session.listening) {
       return append3(withChecked)([attribute("disabled")("disabled")]);
     }
@@ -5796,7 +6088,7 @@
       var opacity = captionOpacity(nowInstant)(timestamp);
       var fraction = 1 - opacity;
       var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
-      var bucket = function() {
+      var bucket = (function() {
         var $16 = rawBucket < 0;
         if ($16) {
           return 0;
@@ -5808,28 +6100,28 @@
         }
         ;
         return rawBucket;
-      }();
+      })();
       return "wm-caption wm-caption-fade-" + show5(bucket);
     };
   };
-  var buildVersion = /* @__PURE__ */ function() {
+  var buildVersion = /* @__PURE__ */ (function() {
     return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
-  }();
+  })();
   var buildToggle = function(handlers) {
     return function(session) {
-      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + function() {
+      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + (function() {
         if (session.listening) {
           return "wm-button-pill-stop";
         }
         ;
         return "wm-button-pill-start";
-      }())])([])([onClick(handlers.requestToggle)])([text(function() {
+      })())])([])([onClick(handlers.requestToggle)])([text((function() {
         if (session.listening) {
           return "Stop counting";
         }
         ;
         return "Start counting";
-      }())]);
+      })())]);
     };
   };
   var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build"), /* @__PURE__ */ className("wm-build-badge")])([])([/* @__PURE__ */ text("PureScript build")]);
@@ -5840,7 +6132,7 @@
     return function(label) {
       return function(valueText) {
         return function(maybeSublabel) {
-          return div_([className("wm-metric-tile")])([])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
+          return div_([className("wm-metric-tile")])([])(append3([statTileLabel(label), statTileValue(valueTestId)(valueText)])((function() {
             if (maybeSublabel instanceof Just) {
               return [statTileSublabel(maybeSublabel.value0)];
             }
@@ -5849,8 +6141,8 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording.View (line 198, column 11 - line 200, column 22): " + [maybeSublabel.constructor.name]);
-          }()));
+            throw new Error("Failed pattern match at WordMeter.Recording.View (line 204, column 11 - line 206, column 22): " + [maybeSublabel.constructor.name]);
+          })()));
         };
       };
     };
@@ -5859,20 +6151,20 @@
     return div_([className("wm-metric-tile")])([])([statTileLabel("Started"), div_([testId("wm-started"), className("wm-metric-tile-value wm-metric-tile-value-started")])([])([text(startedLabel(session))])]);
   };
   var buildStats = function(session) {
-    return div_([testId("wm-stats"), className("wm-metrics-grid")])([])([buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStartedTile(session)]);
+    return div_([testId("wm-stats"), className("wm-metrics-grid")])([])([buildStatTile("wm-stat-total")("Total")(show5(session.totalWords))(new Just("words all time")), buildStatTile("wm-stat-per-day")("Per day")(formatRate(wordsPerDay(session)))(new Just("words / day")), buildStatTile("wm-stat-sample")("Sample")(formatPercent(sampleFraction(session)))(new Just("of wall time")), buildStatTile("wm-rate-short")("Last 1 min")(formatRate(shortRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-long")("Last 10 min")(formatRate(longRate(session)))(new Just("words / minute")), buildStatTile("wm-rate-overall")("Overall")(formatRate(overallRate(session)))(new Just("words / minute")), buildStatTile("wm-duration")("Duration")(formatDurationMs(activeListeningMs(session)))(new Just("listening time")), buildStartedTile(session)]);
   };
   var buildReset = function(handlers) {
     return button([testId("wm-reset"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestReset)])([text("Reset")]);
   };
   var buildKeepAwake = function(handlers) {
     return function(session) {
-      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + function() {
+      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + (function() {
         if (session.listening) {
           return " wm-keep-awake-label-disabled";
         }
         ;
         return "";
-      }())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
+      })())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
     };
   };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder"), /* @__PURE__ */ className("wm-timeline-empty")])([])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
@@ -5880,33 +6172,33 @@
     return div_([testId("wm-event-log-entry"), className("wm-timeline-row")])([])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
   };
   var buildEventLog = function(session) {
-    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
+    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])((function() {
       var $23 = length(session.eventLog) === 0;
       if ($23) {
         return [buildEventLogPlaceholder];
       }
       ;
       return map12(buildEventLogEntry)(session.eventLog);
-    }());
+    })());
   };
   var buildErrorBanner = function(session) {
     return div_([testId("wm-error"), className("wm-error"), attribute("role")("alert")])([])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      var drawerAttributes = append3([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])(function() {
+      var drawerAttributes = append3([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])((function() {
         if (session.diagnosticsDrawerOpen) {
           return [attribute("open")("")];
         }
         ;
         return [];
-      }());
+      })());
       return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
-  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label"), /* @__PURE__ */ className("wm-count-label")])([])([/* @__PURE__ */ text("words counted")]);
+  var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label"), /* @__PURE__ */ className("wm-count-label")])([])([/* @__PURE__ */ text("words today")]);
   var buildCount = function(session) {
-    return div_([testId("wm-count"), className("wm-count")])([])([text(show5(session.totalWords))]);
+    return div_([testId("wm-count"), className("wm-count")])([])([text(show5(session.wordsToday))]);
   };
   var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder"), /* @__PURE__ */ className("wm-captions-placeholder")])([])([/* @__PURE__ */ text("Waiting for speech\u2026")]);
   var buildCaption = function(nowInstant) {
@@ -5915,14 +6207,14 @@
     };
   };
   var buildCaptions = function(session) {
-    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
+    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])((function() {
       var $25 = length(session.captions) === 0;
       if ($25) {
         return [buildCaptionsPlaceholder];
       }
       ;
       return map12(buildCaption(session.now))(session.captions);
-    }());
+    })());
   };
   var view = function(handlers) {
     return function(session) {
@@ -5942,6 +6234,10 @@
       stopAt: (timestamp) => api.stopAt(timestamp)(),
       tick: (timestamp) => api.tick(timestamp)(),
       getTotalWords: () => api.getTotalWords(),
+      getWordsToday: () => api.getWordsToday(),
+      getTodayLocalDate: () => api.getTodayLocalDate(),
+      getWordsPerDay: () => api.getWordsPerDay(),
+      getSampleFraction: () => api.getSampleFraction(),
       getListening: () => api.getListening(),
       getVersion: () => api.getVersion(),
       getRateShort: () => api.getRateShort(),
@@ -5979,10 +6275,21 @@
   };
 
   // output/WordMeter.TestHook/index.js
-  var unwrap4 = /* @__PURE__ */ unwrap();
+  var unwrap5 = /* @__PURE__ */ unwrap();
   var pure6 = /* @__PURE__ */ pure(applicativeEffect);
   var map13 = /* @__PURE__ */ map(functorEffect);
-  var eq3 = /* @__PURE__ */ eq(eqWakeLockState);
+  var eq4 = /* @__PURE__ */ eq(eqWakeLockState);
+  var renderTodayLocalDate = function(session) {
+    if (session.todayLocalDate instanceof Nothing) {
+      return "";
+    }
+    ;
+    if (session.todayLocalDate instanceof Just) {
+      return renderLocalDate(session.todayLocalDate.value0);
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 192, column 32 - line 194, column 46): " + [session.todayLocalDate.constructor.name]);
+  };
   var renderActivePath = function(session) {
     if (session.activeRecognitionPath instanceof Nothing) {
       return "";
@@ -5996,7 +6303,7 @@
       return "cloud";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 175, column 28 - line 178, column 28): " + [session.activeRecognitionPath.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 186, column 28 - line 189, column 28): " + [session.activeRecognitionPath.constructor.name]);
   };
   var parseActivePath = function(v) {
     if (v === "on-device") {
@@ -6018,10 +6325,10 @@
     }
     ;
     if (session.firstStartedAt instanceof Just) {
-      return unwrap4(unInstant(session.firstStartedAt.value0));
+      return unwrap5(unInstant(session.firstStartedAt.value0));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 181, column 29 - line 183, column 39): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 197, column 29 - line 199, column 39): " + [session.firstStartedAt.constructor.name]);
   };
   var install = function(v) {
     return installTestHook({
@@ -6080,6 +6387,12 @@
       getTotalWords: map13(function(v1) {
         return v1.totalWords;
       })(v.readSession),
+      getWordsToday: map13(function(v1) {
+        return v1.wordsToday;
+      })(v.readSession),
+      getTodayLocalDate: map13(renderTodayLocalDate)(v.readSession),
+      getWordsPerDay: map13(wordsPerDay)(v.readSession),
+      getSampleFraction: map13(sampleFraction)(v.readSession),
       getListening: map13(function(v1) {
         return v1.listening;
       })(v.readSession),
@@ -6115,7 +6428,7 @@
         return renderWakeLockStatus(s.wakeLockState);
       })(v.readSession),
       getWakeLockHeld: map13(function(s) {
-        return eq3(s.wakeLockState)(WakeLockHeld.value);
+        return eq4(s.wakeLockState)(WakeLockHeld.value);
       })(v.readSession),
       simulateVisibilityVisible: v.simulateVisibilityVisible,
       simulateRecognitionError: v.simulateRecognitionError,
@@ -6145,7 +6458,7 @@
   // output/WordMeter.Main/index.js
   var discard3 = /* @__PURE__ */ discard(discardUnit);
   var notEq2 = /* @__PURE__ */ notEq(eqWakeLockState);
-  var eq4 = /* @__PURE__ */ eq(eqRecognitionErrorCode);
+  var eq5 = /* @__PURE__ */ eq(eqRecognitionErrorCode);
   var eq12 = /* @__PURE__ */ eq(/* @__PURE__ */ eqMaybe(eqRecognitionPath));
   var show6 = /* @__PURE__ */ show(showInt);
   var pure7 = /* @__PURE__ */ pure(applicativeEffect);
@@ -6421,7 +6734,7 @@
               return bind14(captureEnvironmentSnapshot3(version))(function(snapshot) {
                 return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
                   return bind14(loadPersistedSnapshot2)(function(restored) {
-                    return discard22(function() {
+                    return discard22((function() {
                       if (restored instanceof Right && restored.value0 instanceof Nothing) {
                         return pure1(unit);
                       }
@@ -6435,7 +6748,7 @@
                       }
                       ;
                       throw new Error("Failed pattern match at WordMeter.Main (line 172, column 3 - line 175, column 54): " + [restored.constructor.name]);
-                    }())(function() {
+                    })())(function() {
                       return bind14(currentTimeMillis1)(function(initTimestamp) {
                         return discard22(updateSession2(new Tick(initTimestamp)))(function() {
                           return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
@@ -7203,7 +7516,7 @@
                     return function(message2) {
                       return bind14(readCurrentSession2)(function(beforeSession) {
                         var classified = classifyRecognitionError(code);
-                        var shouldRetryOnCloud = eq4(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
+                        var shouldRetryOnCloud = eq5(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
                         if (shouldRetryOnCloud) {
                           return swapOnDeviceForCloud(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(code)(message2);
                         }

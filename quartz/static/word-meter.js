@@ -2698,7 +2698,7 @@
       return genericRecognitionErrorBanner(v.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.RecognitionError (line 112, column 30 - line 121, column 65): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.RecognitionError (line 113, column 30 - line 122, column 65): " + [v.constructor.name]);
   };
   var eqRecognitionErrorCode = {
     eq: function(x) {

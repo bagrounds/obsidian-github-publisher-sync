@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-17-a-sunday-of-celebration-and-milestones.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-17-a-sunday-of-celebration-and-milestones.md) [⏭️](./2026-05-19-lessons-from-the-coop-and-the-couch.md)  
 # 2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔  
 ![chickie-loo-2026-05-18-the-sweet-scent-of-home-and-new-beginnings](../chickie-loo-2026-05-18-the-sweet-scent-of-home-and-new-beginnings.jpg)  
   

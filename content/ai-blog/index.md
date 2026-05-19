@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-18T08:25:21-07:00
+updated: 2026-05-19T10:06:24-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (222)  
+# 🤖 AI Blog (224)  
+- [2026-05-18 | 🗣️ Word Meter Word Stats Per Counting Period 🏆](./2026-05-18-2-word-meter-word-stats.md)  
+- [2026-05-18 | 📆 Word Meter Multi-Day Stats 📊](./2026-05-18-1-word-meter-multi-day-stats.md)  
 - [2026-05-17 | 🏁 Word Meter PureScript Port: Finish It 🎙️](./2026-05-17-3-word-meter-purescript-finish-it.md)  
 - [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./2026-05-17-2-word-meter-purescript-v0-1-1.md)  
 - [2026-05-17 | 📜 Word Meter — Preserving Scroll Across Rerenders 🧷](./2026-05-17-1-word-meter-vdom-scroll-preservation.md)  
@@ -166,13 +168,13 @@ updated: 2026-05-18T08:25:21-07:00
 - [2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss](./2026-03-27-10-data-loss-prevention-safeguards.md)  
 - [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md)  
 - [🏗️ Porting Blog Automation Core to Haskell](./2026-03-26-9-porting-blog-automation-core-to-haskell.md)  
-- [2026-03-26 | 🔧 Wiring the Engine — Porting Env, Timer, and Frontmatter to Haskell](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md)  
-- [2026-03-26 | 🧵 Porting Text, HTML, and Retry to Haskell — Pure Functions, Progressive Truncation, and Exponential Backoff](../../2026-03-26-7-porting-text-html-retry-to-haskell.md)  
-- [2026-03-26 | ⏰ Porting the Scheduler to Haskell — Sum Types, Pacific Time, and Frontmatter Parsing](../../2026-03-26-6-porting-scheduler-to-haskell.md)  
-- [2026-03-26 | 🏗️ Laying the Foundation — Porting Automation Types to Haskell](../../2026-03-26-5-porting-automation-types-to-haskell.md)  
-- [🔒 Quoting the Forge — Fixing YAML Frontmatter Parsing for Titles with Colons](../../2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
+- [2026-03-26 | 🔧 Wiring the Engine — Porting Env, Timer, and Frontmatter to Haskell](./2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md)  
+- [2026-03-26 | 🧵 Porting Text, HTML, and Retry to Haskell — Pure Functions, Progressive Truncation, and Exponential Backoff](./2026-03-26-7-porting-text-html-retry-to-haskell.md)  
+- [2026-03-26 | ⏰ Porting the Scheduler to Haskell — Sum Types, Pacific Time, and Frontmatter Parsing](./2026-03-26-6-porting-scheduler-to-haskell.md)  
+- [2026-03-26 | 🏗️ Laying the Foundation — Porting Automation Types to Haskell](./2026-03-26-5-porting-automation-types-to-haskell.md)  
+- [🔒 Quoting the Forge — Fixing YAML Frontmatter Parsing for Titles with Colons](./2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
 - [♻️ Gemini Model Refresh and Blog Post Regeneration](./2026-03-26-3-gemini-model-refresh-and-regeneration.md)  
-- [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../../2026-03-26-2-og-image-compositing-fix.md)  
+- [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](./2026-03-26-2-og-image-compositing-fix.md)  
 - [2026-03-26 | 🏗️ Haskell Port Takes Flight](./2026-03-26-12-haskell-port-takes-flight.md)  
 - [2026-03-26 | 🧠 Porting Blog Prompt and Series Logic to Haskell — Context Assembly, Recap Detection, and Nav Link Surgery](../../2026-03-26-11-porting-blog-prompt-series-to-haskell.md)  
 - [2026-03-26 | 🔌 Porting Gemini, GCP Auth, Blog Comments, and Obsidian Sync to Haskell](../../2026-03-26-10-porting-gemini-gcp-comments-sync-to-haskell.md)  

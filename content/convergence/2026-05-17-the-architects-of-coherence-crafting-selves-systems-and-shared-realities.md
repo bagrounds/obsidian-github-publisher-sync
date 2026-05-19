@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-17T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-18T11:28:05
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-16-the-grounding-echo-from-synthetic-solipsism-to-shared-realities.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-16-the-grounding-echo-from-synthetic-solipsism-to-shared-realities.md) [⏭️](./2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
 # 2026-05-17 | 🔀 🌐 The Architects of Coherence: Crafting Selves, Systems, and Shared Realities 🔀  
 ![convergence-2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities](../convergence-2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities.jpg)  
   

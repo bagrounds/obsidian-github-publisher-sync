@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-18T08:25:21-07:00
+updated: 2026-05-19T10:06:24-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (832)  
+# 📺 Videos (833)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -464,6 +464,7 @@ updated: 2026-05-18T08:25:21-07:00
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
 - [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
+- [✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana](./petes-opening-message-live-from-butte-montana.md)  
 - [🎙️📰🧠 Podcasting Through It with Heather Cox Richardson | The Weekly Show with Jon Stewart](./podcasting-through-it-with-heather-cox-richardson-the-weekly-show-with-jon-stewart.md)  
 - [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./police-chases-last-week-tonight-with-john-oliver-hbo.md)  

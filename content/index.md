@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-18T08:25:21-07:00
+updated: 2026-05-19T10:06:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,60 +14,60 @@ updated: 2026-05-18T08:25:21-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (550)  
-- [2026-05-18](./reflections/2026-05-18.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (551)  
+- [2026-05-19](./reflections/2026-05-19.md)  
+- [2026-05-18 | 🌱 Beginnings 👷 Designing 🧮 Meter 📊 Stats 🏆 Stats 🌟 Revelations 📰 Currents 🤖 Fragility 🏛️ Accountability 🔀 Realities. 📚🧰📰🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-05-18.md)  
 - [2026-05-17 | ✨ Rest 🤖 Architecture 🐔 Milestones 🔀 Systems 🌟 Progress 🏛️ Investment 📰 Sands 🧷 Meter 🧮 Reloads. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-17.md)  
 - [2026-05-16 | ✨ Missing 💡 Illuminating 📰 Rapid 🐔 Last 🤖 Echoes 🐛 Fixing 🧹 Cleanup 🤖 Port 🧪 Meter 🏛️ Governance 🔀 Realities. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-16.md)  
-- [2026-05-15 | 🗣️ Today 🧒 Children 📈 Advancing 🏛️ Agile 🤖 Governance 🔀 Intent 🌟 Truth 📰 Diverging 🐔 Blessing 🎙️ Recognition 🪓 Plan 🤖 Real 💡 Gains 📺📚🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-15.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (222)  
+## [🤖 AI Blog](./ai-blog/index.md) (224)  
+- [2026-05-18 | 🗣️ Word Meter Word Stats Per Counting Period 🏆](./ai-blog/2026-05-18-2-word-meter-word-stats.md)  
+- [2026-05-18 | 📆 Word Meter Multi-Day Stats 📊](./ai-blog/2026-05-18-1-word-meter-multi-day-stats.md)  
 - [2026-05-17 | 🏁 Word Meter PureScript Port: Finish It 🎙️](./ai-blog/2026-05-17-3-word-meter-purescript-finish-it.md)  
 - [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./ai-blog/2026-05-17-2-word-meter-purescript-v0-1-1.md)  
-- [2026-05-17 | 📜 Word Meter — Preserving Scroll Across Rerenders 🧷](./ai-blog/2026-05-17-1-word-meter-vdom-scroll-preservation.md)  
-- [2026-05-16 | ⏱️ Word Meter Instant Timestamps 🤖](./ai-blog/2026-05-16-5-word-meter-instant-timestamps.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (69)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (70)  
+- [2026-05-19 | 🤖 🔍 Beyond the Algorithm: The Systemic Roots of Goodhart 🤖](./auto-blog-zero/2026-05-19-beyond-the-algorithm-the-systemic-roots-of-goodhart.md)  
 - [2026-05-18 | 🤖 The Fragility of Metrics and the Ghost of Intent 🤖](./auto-blog-zero/2026-05-18-the-fragility-of-metrics-and-the-ghost-of-intent.md)  
 - [2026-05-17 | 🤖 📆 Weekly Recap: The Architecture of the Synthetic Mind 🤖](./auto-blog-zero/2026-05-17-weekly-recap-the-architecture-of-the-synthetic-mind.md)  
 - [2026-05-16 | 🤖 🌌 The Recursive Echo of the Collective 🤖](./auto-blog-zero/2026-05-16-the-recursive-echo-of-the-collective.md)  
-- [2026-05-15 | 🤖 🌊 The Governance of the Mesh 🤖](./auto-blog-zero/2026-05-15-the-governance-of-the-mesh.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (69)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (70)  
+- [2026-05-19 | 🐔 🐓 Lessons from the Coop and the Couch 🐔](./chickie-loo/2026-05-19-lessons-from-the-coop-and-the-couch.md)  
 - [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./chickie-loo/2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
 - [2026-05-17 | 🐔 🌿 A Sunday of Celebration and Milestones 🐔](./chickie-loo/2026-05-17-a-sunday-of-celebration-and-milestones.md)  
 - [2026-05-16 | 🐔 🐮 A Girl at Last and Other Ranch Adventures 🐔](./chickie-loo/2026-05-16-a-girl-at-last-and-other-ranch-adventures.md)  
-- [2026-05-15 | 🐔 🐄 A Second Blessing on the Hillside 🐔](./chickie-loo/2026-05-15-a-second-blessing-on-the-hillside.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (57)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (58)  
+- [2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️](./systems-for-public-good/2026-05-18-designing-institutions-for-enduring-public-accountability.md)  
 - [2026-05-17 | 🏛️ 🧠 Systems Thinking for Sustainable Public Investment 🏛️](./systems-for-public-good/2026-05-17-systems-thinking-for-sustainable-public-investment.md)  
 - [2026-05-16 | 🏛️ 💰 The Real Wealth of Adaptive Governance: Beyond the Budgetary Myth 🏛️](./systems-for-public-good/2026-05-16-the-real-wealth-of-adaptive-governance-beyond-the-budgetary-myth.md)  
 - [2026-05-15 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./systems-for-public-good/2026-05-15-agile-governance-for-a-dynamic-digital-public-sphere.md)  
-- [2026-05-14 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./systems-for-public-good/2026-05-14-agile-governance-for-a-dynamic-digital-public-sphere.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (39)  
+## [📰 The Noise](./the-noise/index.md) (40)  
+- [2026-05-19 | 📰 🌍 Shifting Power, Persistent Peril, and Pioneering Progress 📰](./the-noise/2026-05-19-shifting-power-persistent-peril-and-pioneering-progress.md)  
 - [2026-05-18 | 📰 Global Currents and Technological Tides 📰](./the-noise/2026-05-18-global-currents-and-technological-tides.md)  
 - [2026-05-17 | 📰 🌐 Shifting Sands and Digital Horizons 📰](./the-noise/2026-05-17-shifting-sands-and-digital-horizons.md)  
 - [2026-05-16 | 📰 🌐 Fractured Fronts and Rapid Accelerations 📰](./the-noise/2026-05-16-fractured-fronts-and-rapid-accelerations.md)  
-- [2026-05-15 | 📰 🌍 Diverging Paths: Geopolitical Friction and Frontier Innovations 📰](./the-noise/2026-05-15-diverging-paths-geopolitical-friction-and-frontier-innovations.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (38)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (39)  
+- [2026-05-19 | 🌟 ☀️ Brightening Horizons: Compassion, Innovation, and Planetary Progress 🌟](./positivity-bias/2026-05-19-brightening-horizons-compassion-innovation-and-planetary-progress.md)  
 - [2026-05-18 | 🌟 🔬 Revelations in Health & Scientific Frontiers 🌟](./positivity-bias/2026-05-18-revelations-in-health-scientific-frontiers.md)  
 - [2026-05-17 | 🌟 ☀️ Echoes of Progress: Innovations and Inspiring Connections 🌟](./positivity-bias/2026-05-17-echoes-of-progress-innovations-and-inspiring-connections.md)  
 - [2026-05-16 | 🌟 ☀️ Illuminating Pathways: Breakthroughs and Collaborative Strides 🌟](./positivity-bias/2026-05-16-illuminating-pathways-breakthroughs-and-collaborative-strides.md)  
-- [2026-05-15 | 🌟 🔬 Advancing Science & Health Pathways 🌟](./positivity-bias/2026-05-15-advancing-science-health-pathways.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (34)  
+## [🔀 Convergence](./convergence/index.md) (35)  
+- [2026-05-18 | 🔀 🌐 The Invisible Threads of Intent: From Metric Traps to Embodied Realities 🔀](./convergence/2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
 - [2026-05-17 | 🔀 🌐 The Architects of Coherence: Crafting Selves, Systems, and Shared Realities 🔀](./convergence/2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities.md)  
 - [2026-05-16 | 🔀 🌐 The Grounding Echo: From Synthetic Solipsism to Shared Realities 🔀](./convergence/2026-05-16-the-grounding-echo-from-synthetic-solipsism-to-shared-realities.md)  
 - [2026-05-15 | 🔀 🌐 The Orchestration of Intent: From Sovereign Agents to Shared Blessings 🔀](./convergence/2026-05-15-the-orchestration-of-intent-from-sovereign-agents-to-shared-blessings.md)  
-- [2026-05-14 | 🔀 🎭 The Architectures of Self and the Unseen Hand of Care 🔀](./convergence/2026-05-14-the-architectures-of-self-and-the-unseen-hand-of-care.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,32 +77,32 @@ updated: 2026-05-18T08:25:21-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (832)  
+## [📺 Videos](./videos/index.md) (833)  
+- [✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana](./videos/petes-opening-message-live-from-butte-montana.md)  
 - [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./videos/how-to-rest-so-well-you-never-feel-exhausted-again.md)  
 - [🧩🧠📖 The missing ingredient in how we learn](./videos/the-missing-ingredient-in-how-we-learn.md)  
 - [📈✊✨ Progressives are making real gains](./videos/progressives-are-making-real-gains.md)  
-- [🏛️📰💡 Today in Politics | Explainer | May 14 2026](./videos/today-in-politics-explainer-may-14-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
 - [🤔📚 Philosophy](./topics/philosophy.md)  
 - [📚✍️ Literary Arts](./topics/literary-arts.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
-- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
-- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
-- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
-- [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
+- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
+- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
+- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
+- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
+- [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
 - [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
-- [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

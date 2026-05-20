@@ -11,6 +11,7 @@ image_date: 2026-04-10T03:10:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a satellite orbiting Earth. From the satellite, several glowing, translucent pulses of light travel downward toward a smartphone positioned on the surface of a blue, grid-mapped globe. Each beam is slightly refracted or blurred as it nears the device, representing the concept of a pseudo distance. The background is a deep, dark space gradient with subtle geometric constellations. The aesthetic is clean and modern, using a color palette of electric blue, crisp white, and soft violet to emphasize the technical nature of GNSS signaling and the mathematical precision of the measurement. Floating, faint wireframe circles surround the contact point on Earth, symbolizing the intersection of multiple range calculations.
 link_analysis_version: "2"
+updated: 2026-05-20T21:49:00
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🛰️📐≈ Pseudorange  
@@ -141,3 +142,11 @@ Pseudorange is calculated by multiplying the time it takes for a signal to trave
 * **Fictional:** "Cryptonomicon" by Neal Stephenson (for a fictional take on code breaking and related tech). 💻  
 * **Rigorous:** "Least-Squares Adjustment: With Applications in Surveying and Geodesy" by P. Cross. 📊  
 * **Accessible:** "GPS Made Easy: Using Global Positioning Systems in the Outdoors" by L. Letham. 🏞️  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmcv3xtc4m2j" data-bluesky-cid="bafyreigtdp6mthckj7aqfjzqxyr3k4ynsjmyp34svvukoi4x25rhbyu324"><p>🛰️📐≈ Pseudorange  
+  
+#AI Q: 📍 How much do you rely on GPS to find your way?  
+  
+🛰️ Satellite Navigation | ⌚️ Clock Synchronization | 📍 Positioning Technology  
+https://bagrounds.org/topics/pseudorange</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmcv3xtc4m2j?ref_src=embed">2026-05-20T21:49:06.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -11,6 +11,7 @@ image_date: 2026-04-10T01:41:13Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, abstract composition featuring a glowing, central neural-network-like structure made of interconnected digital nodes. Radiating outward from the center are various stylized, translucent geometric shapes—cubes, spheres, and crystalline prisms—each representing a different programming paradigm. These shapes are connected by flowing, illuminated data streams in shades of electric blue, magenta, and soft gold. The background is a deep, dark navy gradient, creating a sense of infinite digital space. Some of the data streams form subtle, elegant lines of code syntax that dissolve into stardust at their edges. The overall aesthetic is clean, modern, and futuristic, emphasizing the bridge between human logic and machine complexity through light and form.
 link_analysis_version: "2"
+updated: 2026-05-20T09:17:46
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💻🗣️ Programming Languages  
@@ -56,4 +57,12 @@ Programming languages are the essential tools that bridge the gap between human 
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmbl4mmps42t" data-bluesky-cid="bafyreifqrvfawcxhlxfmeioqol3qu6opmj5aazcksnh2sezqf36fiebhlq"><p>💻🗣️ Programming Languages  
+  
+#AI Q: 💻 Which programming language changed the way you solve problems?  
+  
+🛠️ Development Paradigms | 🧼 Code Craftsmanship | 🧩 Algorithmic Logic |  
+https://bagrounds.org/topics/programming-languages</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmbl4mmps42t?ref_src=embed">2026-05-20T09:17:51.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

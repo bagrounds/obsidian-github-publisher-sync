@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-05-20T14:39:48-07:00
+updated: 2026-05-20T15:59:33-07:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (552)  
-- [2026-05-20](./2026-05-20.md)  
+- [2026-05-20 | 💉⚰️🪽 Angel of Death](./2026-05-20.md)  
 - [2026-05-19 | ✉️ Message 🗓️ Last 🌟 Progress, 📰 Shifting 🤖 Systemic 🐔 Lessons 🏛️ Agile 🔀 Integrity. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./2026-05-19.md)  
 - [2026-05-18 | 🌱 Beginnings 👷 Designing 🧮 Meter 📊 Stats 🏆 Stats 🌟 Revelations 📰 Currents 🤖 Fragility 🏛️ Accountability 🔀 Realities. 📚🧰📰🤖🐔🌟🏛️🔀🔄🤖🐲](./2026-05-18.md)  
 - [2026-05-17 | ✨ Rest 🤖 Architecture 🐔 Milestones 🔀 Systems 🌟 Progress 🏛️ Investment 📰 Sands 🧷 Meter 🧮 Reloads. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./2026-05-17.md)  

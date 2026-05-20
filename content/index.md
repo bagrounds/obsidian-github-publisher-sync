@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-20T14:39:48-07:00
+updated: 2026-05-20T15:59:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-05-20T14:39:48-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (552)  
-- [2026-05-20](./reflections/2026-05-20.md)  
+- [2026-05-20 | 💉⚰️🪽 Angel of Death](./reflections/2026-05-20.md)  
 - [2026-05-19 | ✉️ Message 🗓️ Last 🌟 Progress, 📰 Shifting 🤖 Systemic 🐔 Lessons 🏛️ Agile 🔀 Integrity. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-19.md)  
 - [2026-05-18 | 🌱 Beginnings 👷 Designing 🧮 Meter 📊 Stats 🏆 Stats 🌟 Revelations 📰 Currents 🤖 Fragility 🏛️ Accountability 🔀 Realities. 📚🧰📰🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-05-18.md)  
 - [2026-05-17 | ✨ Rest 🤖 Architecture 🐔 Milestones 🔀 Systems 🌟 Progress 🏛️ Investment 📰 Sands 🧷 Meter 🧮 Reloads. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-17.md)  
@@ -77,18 +77,18 @@ updated: 2026-05-20T14:39:48-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (834)  
+## [📺 Videos](./videos/index.md) (835)  
+- [⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work](./videos/systems-thinking-for-leaders-designing-solutions-that-work.md)  
 - [💰📉📺 Structured Settlements & Factoring Companies: Last Week Tonight with John Oliver (HBO)](./videos/structured-settlements-factoring-companies-last-week-tonight-with-john-oliver-hbo.md)  
 - [✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana](./videos/petes-opening-message-live-from-butte-montana.md)  
 - [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./videos/how-to-rest-so-well-you-never-feel-exhausted-again.md)  
-- [🧩🧠📖 The missing ingredient in how we learn](./videos/the-missing-ingredient-in-how-we-learn.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🛰️📐≈ Pseudorange](./topics/pseudorange.md)  
 - [🎲🧪 Property Based Testing](./topics/property-based-testing.md)  
 - [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
 - [💻🗣️ Programming Languages](./topics/programming-languages.md)  
-- [🧠💾 Memory](./topics/memory.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

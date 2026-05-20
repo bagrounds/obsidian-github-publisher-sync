@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-20T14:39:48-07:00
+updated: 2026-05-20T15:59:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (834)  
+# 📺 Videos (835)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -559,6 +559,7 @@ updated: 2026-05-20T14:39:48-07:00
 - [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
 - [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./systems-thinking-course-lesson-03-pillar-2-communication.md)  
+- [⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work](./systems-thinking-for-leaders-designing-solutions-that-work.md)  
 - [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  

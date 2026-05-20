@@ -77,6 +77,8 @@ data Action
   | SetCloudFallbackAttempted Boolean
   | SetActiveRecognitionPath (Maybe RecognitionPath)
   | SetDiagnosticsDrawerOpen Boolean
+  | SetPipOpen Boolean
+  | SetPipStatus String
 
 type Dispatch = Action -> Effect Unit
 
@@ -86,6 +88,7 @@ type Handlers =
   , requestReset :: Effect Unit
   , requestSetKeepAwake :: Boolean -> Effect Unit
   , requestToggleDiagnosticsDrawer :: Effect Unit
+  , requestTogglePip :: Effect Unit
   }
 
 reduce :: Action -> Session -> Session
@@ -314,6 +317,12 @@ reduce (SetActiveRecognitionPath path) session = session
   }
 reduce (SetDiagnosticsDrawerOpen open) session = session
   { diagnosticsDrawerOpen = open
+  }
+reduce (SetPipOpen open) session = session
+  { pipOpen = open
+  }
+reduce (SetPipStatus statusText) session = session
+  { pipStatus = statusText
   }
 
 -- | Close the currently open counting interval, append it to the event

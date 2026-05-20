@@ -12,6 +12,12 @@ import WordMeter.Capability.Clipboard (class Clipboard, writeClipboardText)
 import WordMeter.Capability.Clock (class Clock, currentTimeMillis)
 import WordMeter.Capability.DomMount (class DomMount, mountToHost)
 import WordMeter.Capability.Environment (class Environment, captureEnvironmentSnapshot)
+import WordMeter.Capability.DocumentPip
+  ( class DocumentPip
+  , closePipWindow
+  , requestPipWindow
+  , syncPipContent
+  )
 import WordMeter.Capability.Recognition
   ( class Recognition
   , RecognitionHandlers
@@ -48,6 +54,7 @@ import WordMeter.Capability.WakeLock
   , requestScreenWakeLock
   )
 import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
+import WordMeter.FFI.DocumentPip (DocumentPipError, renderDocumentPipError)
 import WordMeter.FFI.Recognition
   ( OnDeviceAvailable
   , OnDeviceUnavailable
@@ -75,7 +82,7 @@ import WordMeter.Recording.Session
   , initialSession
   , resetConfirmationPrompt
   )
-import WordMeter.Recording.View (diagnosticsText, view)
+import WordMeter.Recording.View (diagnosticsText, renderStatus, view)
 import WordMeter.RecognitionError
   ( RecognitionErrorCode(..)
   , classifyRecognitionError
@@ -100,12 +107,14 @@ main = do
   recognitionInstanceRef <- Ref.new Nothing
   restartTimerRef <- Ref.new Nothing
   tickIntervalHandleRef <- Ref.new Nothing
+  pipWindowRef <- Ref.new Nothing
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
     , requestReset: pure unit :: Effect Unit
     , requestSetKeepAwake: \_ -> pure unit :: Effect Unit
     , requestToggleDiagnosticsDrawer: pure unit :: Effect Unit
+    , requestTogglePip: pure unit :: Effect Unit
     }
   let
     applicationEnvironment :: ApplicationEnvironment
@@ -115,6 +124,7 @@ main = do
       , recognitionInstanceRef
       , restartTimerRef
       , tickIntervalHandleRef
+      , pipWindowRef
       }
 
     readHandlers :: Effect Handlers
@@ -133,6 +143,8 @@ main = do
             runAppM applicationEnvironment (handleSetKeepAwake resolved enabled)
       , requestToggleDiagnosticsDrawer: readHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleToggleDiagnosticsDrawer resolved)
+      , requestTogglePip: readHandlers >>= \resolved ->
+          runAppM applicationEnvironment (handleTogglePip resolved)
       }
   Ref.write handlers clickHandlersRef
   runAppM applicationEnvironment (startApplication handlers)
@@ -154,12 +166,14 @@ main = do
         runAppM applicationEnvironment
           (handleRecognitionError handlers code message)
     , requestToggleDiagnosticsDrawer: handlers.requestToggleDiagnosticsDrawer
+    , requestTogglePip: handlers.requestTogglePip
     }
 
 startApplication
   :: forall m
    . Clock m
   => Environment m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -187,6 +201,7 @@ startApplication handlers = do
 dispatch
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -237,6 +252,8 @@ shouldPersistSession (SetRecognitionStatusOverride _) = false
 shouldPersistSession (SetCloudFallbackAttempted _) = true
 shouldPersistSession (SetActiveRecognitionPath _) = false
 shouldPersistSession (SetDiagnosticsDrawerOpen _) = false
+shouldPersistSession (SetPipOpen _) = false
+shouldPersistSession (SetPipStatus _) = false
 shouldPersistSession (LoadSession _) = false
 
 persistCurrentSession
@@ -283,17 +300,29 @@ recordWakeLockEvent label detail = do
 
 rerender
   :: forall m
-   . DomMount m
+   . DocumentPip m
+  => DocumentPip m
+  => DomMount m
   => SessionState m
   => Handlers
   -> m Unit
 rerender handlers = do
   session <- readCurrentSession
   mountToHost hostElementId (view handlers session)
+  -- Mirror the latest count + status into the PiP window whenever
+  -- one is open. The capability layer no-ops when the window has
+  -- already closed, so this is safe to call unconditionally.
+  if session.pipOpen
+  then syncPipContent
+    { wordsToday: session.wordsToday
+    , status: renderStatus session
+    }
+  else pure unit
 
 handleToggle
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -326,6 +355,7 @@ handleToggle handlers = do
 handleTick
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -339,6 +369,7 @@ handleCopyDiagnostics
   :: forall m
    . Clock m
   => Clipboard m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -357,6 +388,7 @@ handleReset
   :: forall m
    . MonadEffect m
   => Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -372,6 +404,7 @@ handleReset handlers = do
       stopTickerInterval
       stopRecognitionForSession handlers
       releaseHeldWakeLock handlers
+      closePipWindow (onPipClosed handlers)
       timestamp <- currentTimeMillis
       dispatch handlers (Reset timestamp)
     Right false -> pure unit
@@ -380,6 +413,7 @@ handleReset handlers = do
 handleSetKeepAwake
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -398,6 +432,7 @@ handleSetKeepAwake handlers enabled = do
 handleToggleDiagnosticsDrawer
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -407,9 +442,90 @@ handleToggleDiagnosticsDrawer handlers = do
   session <- readCurrentSession
   dispatch handlers (SetDiagnosticsDrawerOpen (not session.diagnosticsDrawerOpen))
 
+handleTogglePip
+  :: forall m
+   . Clock m
+  => DocumentPip m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> m Unit
+handleTogglePip handlers = do
+  session <- readCurrentSession
+  if session.pipOpen
+  then closePipWindow (onPipClosed handlers)
+  else do
+    dispatch handlers (SetPipStatus "")
+    requestPipWindow
+      (onPipOpened handlers)
+      (onPipError handlers)
+      (onPipClosedByUser handlers)
+
+onPipOpened
+  :: forall m
+   . Clock m
+  => DocumentPip m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> m Unit
+onPipOpened handlers = do
+  recordPipEvent "pop-out opened" ""
+  dispatch handlers (SetPipOpen true)
+
+onPipClosed
+  :: forall m
+   . Clock m
+  => DocumentPip m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> m Unit
+onPipClosed handlers = do
+  recordPipEvent "pop-out closed" "via button"
+  dispatch handlers (SetPipOpen false)
+
+onPipClosedByUser
+  :: forall m
+   . Clock m
+  => DocumentPip m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> m Unit
+onPipClosedByUser handlers = do
+  recordPipEvent "pop-out closed" "via window chrome"
+  dispatch handlers (SetPipOpen false)
+
+onPipError
+  :: forall m
+   . Clock m
+  => DocumentPip m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => Handlers
+  -> DocumentPipError
+  -> m Unit
+onPipError handlers failure = do
+  let rendered = renderDocumentPipError failure
+  recordPipEvent "pop-out failure" rendered
+  dispatch handlers (SetPipStatus rendered)
+
+recordPipEvent
+  :: forall m. Clock m => SessionState m => String -> String -> m Unit
+recordPipEvent label detail = do
+  timestamp <- currentTimeMillis
+  updateSession (RecordDiagnostic timestamp label detail)
+
 handleVisibilityVisible
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -425,6 +541,7 @@ handleVisibilityVisible handlers = do
 handleRecognitionError
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -474,6 +591,7 @@ handleRecognitionError handlers code message = do
 swapOnDeviceForCloud
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -507,6 +625,7 @@ swapOnDeviceForCloud handlers code message = do
 maybeAcquireWakeLock
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -525,6 +644,7 @@ maybeAcquireWakeLock handlers = do
 releaseHeldWakeLock
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -546,6 +666,7 @@ releaseHeldWakeLock handlers = do
 onWakeLockReleased
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -558,6 +679,7 @@ onWakeLockReleased handlers = do
 onWakeLockReleaseError
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -574,6 +696,7 @@ onWakeLockReleaseError handlers failure = do
 onWakeLockAcquired
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -586,6 +709,7 @@ onWakeLockAcquired handlers = do
 onWakeLockError
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -600,6 +724,7 @@ onWakeLockError handlers failure = do
 onWakeLockAutoReleased
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -626,6 +751,7 @@ sessionLocale = do
 startRecognitionForSession
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -676,6 +802,7 @@ startRecognitionForSession handlers = do
 onOnDeviceInstallStarted
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -698,6 +825,7 @@ onOnDeviceInstallStarted handlers locale = do
 onOnDevicePreflightResolved
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -736,6 +864,7 @@ onOnDevicePreflightResolved handlers locale outcome = do
 stopRecognitionForSession
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -752,6 +881,7 @@ stopRecognitionForSession handlers = do
 recognitionHandlersFor
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -776,6 +906,7 @@ recognitionHandlersFor handlers locale =
 handleRecognitionEnded
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m
@@ -802,6 +933,7 @@ handleRecognitionEnded handlers = do
 fireScheduledRestart
   :: forall m
    . Clock m
+  => DocumentPip m
   => DomMount m
   => SessionState m
   => Storage m

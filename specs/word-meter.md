@@ -87,6 +87,8 @@ A user-toggleable **🔋 Keep counting with screen on** checkbox (default ON) ga
 
 Pure-web browsers do not allow microphone capture once the page becomes hidden or the screen locks. There is no public web API that grants a webpage background mic access — that capability is reserved for native apps via Android foreground services or iOS background-audio entitlements. Service Workers can run in the background but cannot access the microphone. Silent-audio-loop hacks no longer keep `SpeechRecognition` alive on modern Android Chrome / iOS Safari when the screen actually locks. The Screen Wake Lock workaround is the closest a pure-web tool can get to the user's stated use case (start meter → put in pocket → walk for an hour → check count when home).
 
+A complementary mitigation for app-switching (rather than screen-locking) is the **Document Picture-in-Picture pop-out**, described in its own spec at [word-meter-pip.md](word-meter-pip.md). The user taps a Pop-out button before leaving the tab; the floating PiP window stays visible across app switches on Chromium, which keeps `SpeechRecognition` running.
+
 ## UI structure
 
 `buildPanel` composes, in order: status line, big count (today's words), count label, start/stop button, keep-awake toggle, metrics grid (lifetime total, per-day average, sample %, last-1-min rate, last-10-min rate, overall rate, listening duration, started time, top word and longest word for the current period), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.

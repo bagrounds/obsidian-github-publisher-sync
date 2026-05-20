@@ -57,6 +57,8 @@ type Session =
   , activeRecognitionPath :: Maybe RecognitionPath
   , diagnosticsDrawerOpen :: Boolean
   , currentIntervalWordStats :: WordStats
+  , pipOpen :: Boolean
+  , pipStatus :: String
   }
 
 type Caption =
@@ -191,4 +193,6 @@ initialSession =
   , activeRecognitionPath: Nothing
   , diagnosticsDrawerOpen: false
   , currentIntervalWordStats: emptyWordStats
+  , pipOpen: false
+  , pipStatus: ""
   }

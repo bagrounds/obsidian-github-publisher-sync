@@ -63,13 +63,13 @@ The Word Meter Pop-out button works in the green cells. On every other combinati
 
 | Browser           | Desktop Document PiP | Mobile Document PiP | Speech available |
 | ----------------- | -------------------- | ------------------- | ---------------- |
-| Chrome 116+       | ✅ yes                | ❌ no                | ✅ yes            |
-| Edge 116+         | ✅ yes                | ❌ no                | ✅ yes            |
-| Opera 102+        | ✅ yes                | ❌ no                | ✅ yes            |
-| Firefox           | ❌ no                 | ❌ no                | ❌ no             |
-| Safari            | ❌ no                 | ❌ no                | ⚠️ partial        |
-| Samsung Internet  | n/a                  | ❌ no                | ⚠️ partial        |
-| Chromium WebView  | n/a                  | ❌ no                | ⚠️ partial        |
+| Chrome 116+       | yes                  | no                  | yes              |
+| Edge 116+         | yes                  | no                  | yes              |
+| Opera 102+        | yes                  | no                  | yes              |
+| Firefox           | no                   | no                  | no               |
+| Safari            | no                   | no                  | partial          |
+| Samsung Internet  | n/a                  | no                  | partial          |
+| Chromium WebView  | n/a                  | no                  | partial          |
 
 In prose, for TTS listeners: Document Picture-in-Picture is available on desktop Chrome, Edge, and Opera from version one hundred sixteen onward. It is not available on any mobile browser, including Chrome for Android and Safari on iOS. Firefox does not implement it on any platform. Therefore the Pop-out button is useful only on desktop Chromium, and on every other combination the meter shows a diagnostic explaining why the feature is missing.
 

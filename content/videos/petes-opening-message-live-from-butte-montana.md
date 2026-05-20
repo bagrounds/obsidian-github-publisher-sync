@@ -9,6 +9,10 @@ Platform:
 Channel: Pete Buttigieg
 tags:
 youtube: https://youtu.be/J6AG-VIucSM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana  
@@ -60,7 +64,7 @@ youtube: https://youtu.be/J6AG-VIucSM
   
 ### ↔️ Similar  
   
-* 📕 Corruption in America by Zephyr Teachout published by Harvard University Press explores the legal history of political corruption and the evolution of campaign finance law from the framing of the Constitution to the modern era.  
+* 📕 [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout published by Harvard University Press explores the legal history of political corruption and the evolution of campaign finance law from the framing of the Constitution to the modern era.  
 * 📘 Republic, Lost by Lawrence Lessig published by Twelve details how the influx of financial contributions has systematically broken the legislative process and alienated everyday citizens from their government.  
   
 ### 🆚 Contrasting  

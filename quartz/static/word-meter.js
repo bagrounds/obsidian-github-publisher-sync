@@ -62,13 +62,13 @@
   var unit = void 0;
 
   // output/Type.Proxy/index.js
-  var $$Proxy = /* @__PURE__ */ function() {
+  var $$Proxy = /* @__PURE__ */ (function() {
     function $$Proxy2() {
     }
     ;
     $$Proxy2.value = new $$Proxy2();
     return $$Proxy2;
-  }();
+  })();
 
   // output/Data.Functor/index.js
   var map = function(dict) {
@@ -289,27 +289,27 @@
   };
 
   // output/Data.Ordering/index.js
-  var LT = /* @__PURE__ */ function() {
+  var LT = /* @__PURE__ */ (function() {
     function LT2() {
     }
     ;
     LT2.value = new LT2();
     return LT2;
-  }();
-  var GT = /* @__PURE__ */ function() {
+  })();
+  var GT = /* @__PURE__ */ (function() {
     function GT2() {
     }
     ;
     GT2.value = new GT2();
     return GT2;
-  }();
-  var EQ = /* @__PURE__ */ function() {
+  })();
+  var EQ = /* @__PURE__ */ (function() {
     function EQ2() {
     }
     ;
     EQ2.value = new EQ2();
     return EQ2;
-  }();
+  })();
 
   // output/Data.Ring/foreign.js
   var intSub = function(x) {
@@ -387,38 +387,38 @@
   };
 
   // output/Data.Ord/index.js
-  var ordString = /* @__PURE__ */ function() {
+  var ordString = /* @__PURE__ */ (function() {
     return {
       compare: ordStringImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqString;
       }
     };
-  }();
-  var ordNumber = /* @__PURE__ */ function() {
+  })();
+  var ordNumber = /* @__PURE__ */ (function() {
     return {
       compare: ordNumberImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqNumber;
       }
     };
-  }();
-  var ordInt = /* @__PURE__ */ function() {
+  })();
+  var ordInt = /* @__PURE__ */ (function() {
     return {
       compare: ordIntImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqInt;
       }
     };
-  }();
-  var ordChar = /* @__PURE__ */ function() {
+  })();
+  var ordChar = /* @__PURE__ */ (function() {
     return {
       compare: ordCharImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqChar;
       }
     };
-  }();
+  })();
   var compare = function(dict) {
     return dict.compare;
   };
@@ -512,14 +512,14 @@
 
   // output/Data.Maybe/index.js
   var identity4 = /* @__PURE__ */ identity(categoryFn);
-  var Nothing = /* @__PURE__ */ function() {
+  var Nothing = /* @__PURE__ */ (function() {
     function Nothing2() {
     }
     ;
     Nothing2.value = new Nothing2();
     return Nothing2;
-  }();
-  var Just = /* @__PURE__ */ function() {
+  })();
+  var Just = /* @__PURE__ */ (function() {
     function Just2(value0) {
       this.value0 = value0;
     }
@@ -528,7 +528,7 @@
       return new Just2(value0);
     };
     return Just2;
-  }();
+  })();
   var maybe = function(v) {
     return function(v1) {
       return function(v2) {
@@ -626,7 +626,7 @@
   };
 
   // output/Data.Either/index.js
-  var Left = /* @__PURE__ */ function() {
+  var Left = /* @__PURE__ */ (function() {
     function Left2(value0) {
       this.value0 = value0;
     }
@@ -635,8 +635,8 @@
       return new Left2(value0);
     };
     return Left2;
-  }();
-  var Right = /* @__PURE__ */ function() {
+  })();
+  var Right = /* @__PURE__ */ (function() {
     function Right2(value0) {
       this.value0 = value0;
     }
@@ -645,7 +645,7 @@
       return new Right2(value0);
     };
     return Right2;
-  }();
+  })();
   var note = function(a) {
     return maybe(new Left(a))(Right.create);
   };
@@ -712,14 +712,14 @@
       return applyEither;
     }
   };
-  var applicativeEither = /* @__PURE__ */ function() {
+  var applicativeEither = /* @__PURE__ */ (function() {
     return {
       pure: Right.create,
       Apply0: function() {
         return applyEither;
       }
     };
-  }();
+  })();
 
   // output/Effect/foreign.js
   var pureE = function(a) {
@@ -979,7 +979,7 @@
   });
 
   // output/Data.Tuple/index.js
-  var Tuple = /* @__PURE__ */ function() {
+  var Tuple = /* @__PURE__ */ (function() {
     function Tuple2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -991,7 +991,7 @@
       };
     };
     return Tuple2;
-  }();
+  })();
   var uncurry = function(f) {
     return function(v) {
       return f(v.value0)(v.value1);
@@ -1091,12 +1091,12 @@
   };
   var functorReaderT = function(dictFunctor) {
     return {
-      map: function() {
+      map: (function() {
         var $155 = map(dictFunctor);
         return function($156) {
           return mapReaderT($155($156));
         };
-      }()
+      })()
     };
   };
   var applyReaderT = function(dictApply) {
@@ -1137,12 +1137,12 @@
   var applicativeReaderT = function(dictApplicative) {
     var applyReaderT1 = applyReaderT(dictApplicative.Apply0());
     return {
-      pure: function() {
+      pure: (function() {
         var $160 = pure(dictApplicative);
         return function($161) {
           return ReaderT($$const($160($161)));
         };
-      }(),
+      })(),
       Apply0: function() {
         return applyReaderT1;
       }
@@ -1173,13 +1173,13 @@
     var Monad0 = dictMonadEffect.Monad0();
     var monadReaderT1 = monadReaderT(Monad0);
     return {
-      liftEffect: function() {
+      liftEffect: (function() {
         var $163 = lift3(Monad0);
         var $164 = liftEffect(dictMonadEffect);
         return function($165) {
           return $163($164($165));
         };
-      }(),
+      })(),
       Monad0: function() {
         return monadReaderT1;
       }
@@ -1271,7 +1271,7 @@
   };
 
   // output/Data.Traversable/foreign.js
-  var traverseArrayImpl = /* @__PURE__ */ function() {
+  var traverseArrayImpl = /* @__PURE__ */ (function() {
     function array1(a) {
       return [a];
     }
@@ -1318,7 +1318,7 @@
         };
       };
     };
-  }();
+  })();
 
   // output/Data.Foldable/foreign.js
   var foldrArray = function(f) {
@@ -1550,7 +1550,7 @@
       return ordChar;
     }
   };
-  var boundedEnumChar = /* @__PURE__ */ function() {
+  var boundedEnumChar = /* @__PURE__ */ (function() {
     return {
       cardinality: toCharCode(top1) - toCharCode(bottom1) | 0,
       toEnum: charToEnum,
@@ -1562,7 +1562,7 @@
         return enumChar;
       }
     };
-  }();
+  })();
 
   // output/Data.Int/foreign.js
   var fromNumberImpl = function(just) {
@@ -1584,9 +1584,9 @@
   // output/Data.Int/index.js
   var top2 = /* @__PURE__ */ top(boundedInt);
   var bottom2 = /* @__PURE__ */ bottom(boundedInt);
-  var fromNumber = /* @__PURE__ */ function() {
+  var fromNumber = /* @__PURE__ */ (function() {
     return fromNumberImpl(Just.create)(Nothing.value);
-  }();
+  })();
   var unsafeClamp = function(x) {
     if (!isFiniteImpl(x)) {
       return 0;
@@ -1673,7 +1673,7 @@
       };
     };
   };
-  var boundedInstant = /* @__PURE__ */ function() {
+  var boundedInstant = /* @__PURE__ */ (function() {
     return {
       bottom: -86399778816e5,
       top: 8639977881599999,
@@ -1681,7 +1681,7 @@
         return ordDateTime;
       }
     };
-  }();
+  })();
 
   // output/WordMeter.FFI.Clock/foreign.js
   var currentTimeMillis = () => Date.now();
@@ -1704,6 +1704,7 @@
   // output/WordMeter.FFI.DocumentPip/foreign.js
   var pipWindowWidth = 320;
   var pipWindowHeight = 220;
+  var videoPipFramesPerSecond = 2;
   var getUserAgentContext = () => {
     if (typeof navigator === "undefined") {
       return { mobile: false, description: "no navigator" };
@@ -1724,20 +1725,30 @@
     const mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua);
     return { mobile, description: ua };
   };
+  var documentPipAvailable = () => typeof window !== "undefined" && !!window.documentPictureInPicture && typeof window.documentPictureInPicture.requestWindow === "function";
+  var videoPipAvailable = () => {
+    if (typeof window === "undefined") return false;
+    if (typeof document === "undefined") return false;
+    if (!document.pictureInPictureEnabled) return false;
+    const videoProto = window.HTMLVideoElement && window.HTMLVideoElement.prototype;
+    if (!videoProto || typeof videoProto.requestPictureInPicture !== "function") {
+      return false;
+    }
+    const canvasProto = window.HTMLCanvasElement && window.HTMLCanvasElement.prototype;
+    if (!canvasProto || typeof canvasProto.captureStream !== "function") {
+      return false;
+    }
+    return true;
+  };
   var checkDocumentPipAvailability = () => {
     if (typeof window === "undefined") return "no window object available";
-    const api = window.documentPictureInPicture;
+    if (documentPipAvailable()) return "";
+    if (videoPipAvailable()) return "";
     const { mobile, description } = getUserAgentContext();
-    if (!api) {
-      if (mobile) {
-        return "Document Picture-in-Picture is desktop-only on Chromium (no Android/iOS support as of 2026); user-agent=" + description;
-      }
-      return "window.documentPictureInPicture is undefined; user-agent=" + description;
+    if (mobile) {
+      return "no Picture-in-Picture path available on this device (HTMLVideoElement.requestPictureInPicture is missing or pictureInPictureEnabled is false); user-agent=" + description;
     }
-    if (typeof api.requestWindow !== "function") {
-      return "documentPictureInPicture.requestWindow is not a function; user-agent=" + description;
-    }
-    return "";
+    return "Document Picture-in-Picture API is absent and HTMLVideoElement.requestPictureInPicture is not callable; user-agent=" + description;
   };
   var describeFailure = (error2) => {
     if (error2 == null) return "unknown error";
@@ -1747,10 +1758,21 @@
     return String(error2);
   };
   var requestPipWindow = (onWindow) => (onError) => () => {
+    if (documentPipAvailable()) {
+      requestDocumentPipWindow(onWindow, onError);
+      return;
+    }
+    if (videoPipAvailable()) {
+      requestVideoPipWindow(onWindow, onError);
+      return;
+    }
+    onError("no Picture-in-Picture path available at request time")();
+  };
+  var requestDocumentPipWindow = (onWindow, onError) => {
     try {
       window.documentPictureInPicture.requestWindow({ width: pipWindowWidth, height: pipWindowHeight }).then((pipWindow) => {
         seedPipDocument(pipWindow);
-        onWindow(pipWindow)();
+        onWindow({ kind: "document", pipWindow })();
       }).catch((reason) => {
         onError(describeFailure(reason))();
       });
@@ -1758,18 +1780,140 @@
       onError(describeFailure(error2))();
     }
   };
-  var attachPipCloseListener = (pipWindow) => (handler) => () => {
-    pipWindow.addEventListener("pagehide", () => {
-      handler();
-    });
-  };
-  var closePipWindow = (pipWindow) => () => {
+  var requestVideoPipWindow = (onWindow, onError) => {
     try {
-      pipWindow.close();
+      const canvas = document.createElement("canvas");
+      canvas.width = pipWindowWidth;
+      canvas.height = pipWindowHeight;
+      const context = canvas.getContext("2d");
+      if (!context) {
+        onError("canvas 2d context unavailable")();
+        return;
+      }
+      const stream = canvas.captureStream(videoPipFramesPerSecond);
+      const video = document.createElement("video");
+      video.muted = true;
+      video.playsInline = true;
+      video.autoplay = true;
+      video.srcObject = stream;
+      video.style.position = "fixed";
+      video.style.left = "-9999px";
+      video.style.top = "-9999px";
+      video.style.width = "1px";
+      video.style.height = "1px";
+      video.style.opacity = "0";
+      video.setAttribute("data-testid", "wm-pip-video");
+      document.body.appendChild(video);
+      const handle = {
+        kind: "video",
+        video,
+        canvas,
+        context,
+        stream,
+        lastContent: { wordsToday: 0, status: "Idle" }
+      };
+      drawVideoPipFrame(handle);
+      const requestPip = () => {
+        try {
+          video.requestPictureInPicture().then(() => {
+            onWindow(handle)();
+          }).catch((reason) => {
+            cleanupVideoPipHandle(handle);
+            onError(describeFailure(reason))();
+          });
+        } catch (error2) {
+          cleanupVideoPipHandle(handle);
+          onError(describeFailure(error2))();
+        }
+      };
+      const startWhenReady = () => {
+        video.removeEventListener("loadedmetadata", startWhenReady);
+        video.removeEventListener("playing", startWhenReady);
+        requestPip();
+      };
+      if (video.readyState >= 1) {
+        requestPip();
+      } else {
+        video.addEventListener("loadedmetadata", startWhenReady, { once: true });
+        video.addEventListener("playing", startWhenReady, { once: true });
+      }
+      try {
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {
+          });
+        }
+      } catch {
+      }
+    } catch (error2) {
+      onError(describeFailure(error2))();
+    }
+  };
+  var cleanupVideoPipHandle = (handle) => {
+    try {
+      if (handle.stream) {
+        handle.stream.getTracks().forEach((track) => {
+          try {
+            track.stop();
+          } catch {
+          }
+        });
+      }
+    } catch {
+    }
+    try {
+      if (handle.video && handle.video.parentNode) {
+        handle.video.parentNode.removeChild(handle.video);
+      }
     } catch {
     }
   };
-  var writePipContent = (pipWindow) => (content) => () => {
+  var attachPipCloseListener = (handle) => (handler) => () => {
+    if (handle.kind === "document") {
+      handle.pipWindow.addEventListener("pagehide", () => {
+        handler();
+      });
+      return;
+    }
+    if (handle.kind === "video") {
+      handle.video.addEventListener("leavepictureinpicture", () => {
+        handler();
+      });
+    }
+  };
+  var closePipWindow = (handle) => () => {
+    if (handle.kind === "document") {
+      try {
+        handle.pipWindow.close();
+      } catch {
+      }
+      return;
+    }
+    if (handle.kind === "video") {
+      try {
+        if (document.pictureInPictureElement === handle.video && typeof document.exitPictureInPicture === "function") {
+          const exitPromise = document.exitPictureInPicture();
+          if (exitPromise && typeof exitPromise.catch === "function") {
+            exitPromise.catch(() => {
+            });
+          }
+        }
+      } catch {
+      }
+      cleanupVideoPipHandle(handle);
+    }
+  };
+  var writePipContent = (handle) => (content) => () => {
+    if (handle.kind === "document") {
+      writeDocumentPipContent(handle.pipWindow, content);
+      return;
+    }
+    if (handle.kind === "video") {
+      handle.lastContent = content;
+      drawVideoPipFrame(handle);
+    }
+  };
+  var writeDocumentPipContent = (pipWindow, content) => {
     const doc = pipWindow.document;
     if (!doc) return;
     let countEl = doc.getElementById("wm-pip-count");
@@ -1781,6 +1925,25 @@
     }
     if (countEl) countEl.textContent = String(content.wordsToday);
     if (statusEl) statusEl.textContent = String(content.status);
+  };
+  var drawVideoPipFrame = (handle) => {
+    const context = handle.context;
+    const canvas = handle.canvas;
+    const content = handle.lastContent;
+    context.fillStyle = "#0b0d10";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = "#f3f4f6";
+    context.textAlign = "center";
+    context.textBaseline = "alphabetic";
+    context.font = "bold 96px system-ui, sans-serif";
+    context.fillText(String(content.wordsToday), canvas.width / 2, 120);
+    context.font = "14px system-ui, sans-serif";
+    context.globalAlpha = 0.7;
+    context.fillText("WORDS TODAY", canvas.width / 2, 148);
+    context.globalAlpha = 0.85;
+    context.font = "16px system-ui, sans-serif";
+    context.fillText(String(content.status), canvas.width / 2, 190);
+    context.globalAlpha = 1;
   };
   var seedPipDocument = (pipWindow) => {
     const doc = pipWindow.document;
@@ -1819,7 +1982,7 @@
 `;
 
   // output/WordMeter.FFI.DocumentPip/index.js
-  var DocumentPipUnsupported = /* @__PURE__ */ function() {
+  var DocumentPipUnsupported = /* @__PURE__ */ (function() {
     function DocumentPipUnsupported2(value0) {
       this.value0 = value0;
     }
@@ -1828,8 +1991,8 @@
       return new DocumentPipUnsupported2(value0);
     };
     return DocumentPipUnsupported2;
-  }();
-  var DocumentPipRequestRejected = /* @__PURE__ */ function() {
+  })();
+  var DocumentPipRequestRejected = /* @__PURE__ */ (function() {
     function DocumentPipRequestRejected2(value0) {
       this.value0 = value0;
     }
@@ -1838,7 +2001,7 @@
       return new DocumentPipRequestRejected2(value0);
     };
     return DocumentPipRequestRejected2;
-  }();
+  })();
   var renderDocumentPipError = function(v) {
     if (v instanceof DocumentPipUnsupported) {
       return "picture-in-picture not supported on this browser \u2014 " + v.value0;
@@ -2042,7 +2205,7 @@
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
   var traverse_2 = /* @__PURE__ */ traverse_(applicativeEffect)(foldableArray);
-  var ClickListener = /* @__PURE__ */ function() {
+  var ClickListener = /* @__PURE__ */ (function() {
     function ClickListener2(value0) {
       this.value0 = value0;
     }
@@ -2051,8 +2214,8 @@
       return new ClickListener2(value0);
     };
     return ClickListener2;
-  }();
-  var CheckboxChangeListener = /* @__PURE__ */ function() {
+  })();
+  var CheckboxChangeListener = /* @__PURE__ */ (function() {
     function CheckboxChangeListener2(value0) {
       this.value0 = value0;
     }
@@ -2061,8 +2224,8 @@
       return new CheckboxChangeListener2(value0);
     };
     return CheckboxChangeListener2;
-  }();
-  var ElementNode = /* @__PURE__ */ function() {
+  })();
+  var ElementNode = /* @__PURE__ */ (function() {
     function ElementNode2(value0) {
       this.value0 = value0;
     }
@@ -2071,8 +2234,8 @@
       return new ElementNode2(value0);
     };
     return ElementNode2;
-  }();
-  var TextNode = /* @__PURE__ */ function() {
+  })();
+  var TextNode = /* @__PURE__ */ (function() {
     function TextNode2(value0) {
       this.value0 = value0;
     }
@@ -2081,16 +2244,16 @@
       return new TextNode2(value0);
     };
     return TextNode2;
-  }();
-  var text = /* @__PURE__ */ function() {
+  })();
+  var text = /* @__PURE__ */ (function() {
     return TextNode.create;
-  }();
-  var onClick = /* @__PURE__ */ function() {
+  })();
+  var onClick = /* @__PURE__ */ (function() {
     return ClickListener.create;
-  }();
-  var onCheckboxChange = /* @__PURE__ */ function() {
+  })();
+  var onCheckboxChange = /* @__PURE__ */ (function() {
     return CheckboxChangeListener.create;
-  }();
+  })();
   var element = function(tag) {
     return function(attributes) {
       return function(styles) {
@@ -2398,21 +2561,21 @@
   };
 
   // output/WordMeter.FFI.Recognition/index.js
-  var OnDeviceApiAbsent = /* @__PURE__ */ function() {
+  var OnDeviceApiAbsent = /* @__PURE__ */ (function() {
     function OnDeviceApiAbsent2() {
     }
     ;
     OnDeviceApiAbsent2.value = new OnDeviceApiAbsent2();
     return OnDeviceApiAbsent2;
-  }();
-  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ (function() {
     function OnDeviceUnsupportedLanguage2() {
     }
     ;
     OnDeviceUnsupportedLanguage2.value = new OnDeviceUnsupportedLanguage2();
     return OnDeviceUnsupportedLanguage2;
-  }();
-  var OnDeviceInstallFailed = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceInstallFailed = /* @__PURE__ */ (function() {
     function OnDeviceInstallFailed2(value0) {
       this.value0 = value0;
     }
@@ -2421,8 +2584,8 @@
       return new OnDeviceInstallFailed2(value0);
     };
     return OnDeviceInstallFailed2;
-  }();
-  var OnDeviceAvailabilityRejected = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailabilityRejected = /* @__PURE__ */ (function() {
     function OnDeviceAvailabilityRejected2(value0) {
       this.value0 = value0;
     }
@@ -2431,14 +2594,14 @@
       return new OnDeviceAvailabilityRejected2(value0);
     };
     return OnDeviceAvailabilityRejected2;
-  }();
-  var OnDeviceAvailable = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailable = /* @__PURE__ */ (function() {
     function OnDeviceAvailable2() {
     }
     ;
     OnDeviceAvailable2.value = new OnDeviceAvailable2();
     return OnDeviceAvailable2;
-  }();
+  })();
   var renderRecognitionStopError = function(v) {
     return v;
   };
@@ -2526,20 +2689,20 @@
   };
 
   // output/WordMeter.Recognition.Path/index.js
-  var OnDevicePath = /* @__PURE__ */ function() {
+  var OnDevicePath = /* @__PURE__ */ (function() {
     function OnDevicePath2() {
     }
     ;
     OnDevicePath2.value = new OnDevicePath2();
     return OnDevicePath2;
-  }();
-  var CloudPath = /* @__PURE__ */ function() {
+  })();
+  var CloudPath = /* @__PURE__ */ (function() {
     function CloudPath2() {
     }
     ;
     CloudPath2.value = new CloudPath2();
     return CloudPath2;
-  }();
+  })();
   var processLocallyFor = function(v) {
     if (v instanceof OnDevicePath) {
       return true;
@@ -2762,7 +2925,7 @@
   var filterImpl = function(f, xs) {
     return xs.filter(f);
   };
-  var sortByImpl = /* @__PURE__ */ function() {
+  var sortByImpl = /* @__PURE__ */ (function() {
     function mergeFromTo(compare2, fromOrdering, xs1, xs2, from2, to) {
       var mid;
       var i;
@@ -2803,7 +2966,7 @@
       mergeFromTo(compare2, fromOrdering, out, xs.slice(0), 0, xs.length);
       return out;
     };
-  }();
+  })();
   var sliceImpl = function(s, e, l) {
     return l.slice(s, e);
   };
@@ -2901,9 +3064,9 @@
     ;
     throw new Error("Failed pattern match at Data.Array (line 351, column 1 - line 351, column 45): " + [xs.constructor.name]);
   };
-  var index = /* @__PURE__ */ function() {
+  var index = /* @__PURE__ */ (function() {
     return runFn4(indexImpl)(Just.create)(Nothing.value);
-  }();
+  })();
   var last = function(xs) {
     return index(xs)(length(xs) - 1 | 0);
   };
@@ -3057,14 +3220,14 @@
     return joinWith("\n")(["version           : " + snapshot.version, "userAgent         : " + snapshot.userAgent, "navigator.language: " + snapshot.navigatorLanguage]);
   };
   var formatEntry = function(entry) {
-    return formatClockTime(entry.timestamp) + ("  " + (entry.label + function() {
+    return formatClockTime(entry.timestamp) + ("  " + (entry.label + (function() {
       var $5 = entry.detail === "";
       if ($5) {
         return "";
       }
       ;
       return " \u2014 " + entry.detail;
-    }()));
+    })()));
   };
   var formatEntries = function(entries) {
     if (length(entries) === 0) {
@@ -3166,14 +3329,14 @@
   };
 
   // output/WordMeter.Text/index.js
-  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
+  var collapseWhitespaceToSpace = /* @__PURE__ */ (function() {
     var $1 = replaceAll("\r")(" ");
     var $2 = replaceAll("\n")(" ");
     var $3 = replaceAll("	")(" ");
     return function($4) {
       return $1($2($3($4)));
     };
-  }();
+  })();
 
   // output/WordMeter.Words/index.js
   var isNonEmpty = function(value) {
@@ -3184,14 +3347,14 @@
   };
 
   // output/WordMeter.Recognition.Delta/index.js
-  var IgnoreDuplicate = /* @__PURE__ */ function() {
+  var IgnoreDuplicate = /* @__PURE__ */ (function() {
     function IgnoreDuplicate2() {
     }
     ;
     IgnoreDuplicate2.value = new IgnoreDuplicate2();
     return IgnoreDuplicate2;
-  }();
-  var ExtendUtterance = /* @__PURE__ */ function() {
+  })();
+  var ExtendUtterance = /* @__PURE__ */ (function() {
     function ExtendUtterance2(value0) {
       this.value0 = value0;
     }
@@ -3200,8 +3363,8 @@
       return new ExtendUtterance2(value0);
     };
     return ExtendUtterance2;
-  }();
-  var StartNewUtterance = /* @__PURE__ */ function() {
+  })();
+  var StartNewUtterance = /* @__PURE__ */ (function() {
     function StartNewUtterance2(value0) {
       this.value0 = value0;
     }
@@ -3210,15 +3373,15 @@
       return new StartNewUtterance2(value0);
     };
     return StartNewUtterance2;
-  }();
-  var IgnoreEarlierSnapshot = /* @__PURE__ */ function() {
+  })();
+  var IgnoreEarlierSnapshot = /* @__PURE__ */ (function() {
     function IgnoreEarlierSnapshot2() {
     }
     ;
     IgnoreEarlierSnapshot2.value = new IgnoreEarlierSnapshot2();
     return IgnoreEarlierSnapshot2;
-  }();
-  var normalizeTranscript = /* @__PURE__ */ function() {
+  })();
+  var normalizeTranscript = /* @__PURE__ */ (function() {
     var $36 = joinWith(" ");
     var $37 = filter(function(v) {
       return v !== "";
@@ -3227,7 +3390,7 @@
     return function($39) {
       return $36($37($38(collapseWhitespaceToSpace(toLower(trim($39))))));
     };
-  }();
+  })();
   var isWordBoundaryExtension = function(candidate) {
     return function(prefix) {
       if (prefix === "") {
@@ -3278,63 +3441,63 @@
   };
 
   // output/WordMeter.RecognitionError/index.js
-  var NotAllowed = /* @__PURE__ */ function() {
+  var NotAllowed = /* @__PURE__ */ (function() {
     function NotAllowed2() {
     }
     ;
     NotAllowed2.value = new NotAllowed2();
     return NotAllowed2;
-  }();
-  var ServiceNotAllowed = /* @__PURE__ */ function() {
+  })();
+  var ServiceNotAllowed = /* @__PURE__ */ (function() {
     function ServiceNotAllowed2() {
     }
     ;
     ServiceNotAllowed2.value = new ServiceNotAllowed2();
     return ServiceNotAllowed2;
-  }();
-  var NoSpeech = /* @__PURE__ */ function() {
+  })();
+  var NoSpeech = /* @__PURE__ */ (function() {
     function NoSpeech2() {
     }
     ;
     NoSpeech2.value = new NoSpeech2();
     return NoSpeech2;
-  }();
-  var Aborted = /* @__PURE__ */ function() {
+  })();
+  var Aborted = /* @__PURE__ */ (function() {
     function Aborted2() {
     }
     ;
     Aborted2.value = new Aborted2();
     return Aborted2;
-  }();
-  var AudioCapture = /* @__PURE__ */ function() {
+  })();
+  var AudioCapture = /* @__PURE__ */ (function() {
     function AudioCapture2() {
     }
     ;
     AudioCapture2.value = new AudioCapture2();
     return AudioCapture2;
-  }();
-  var Network = /* @__PURE__ */ function() {
+  })();
+  var Network = /* @__PURE__ */ (function() {
     function Network2() {
     }
     ;
     Network2.value = new Network2();
     return Network2;
-  }();
-  var LanguageNotSupported = /* @__PURE__ */ function() {
+  })();
+  var LanguageNotSupported = /* @__PURE__ */ (function() {
     function LanguageNotSupported2() {
     }
     ;
     LanguageNotSupported2.value = new LanguageNotSupported2();
     return LanguageNotSupported2;
-  }();
-  var NoRecognitionErrorCode = /* @__PURE__ */ function() {
+  })();
+  var NoRecognitionErrorCode = /* @__PURE__ */ (function() {
     function NoRecognitionErrorCode2() {
     }
     ;
     NoRecognitionErrorCode2.value = new NoRecognitionErrorCode2();
     return NoRecognitionErrorCode2;
-  }();
-  var OtherRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var OtherRecognitionError = /* @__PURE__ */ (function() {
     function OtherRecognitionError2(value0) {
       this.value0 = value0;
     }
@@ -3343,7 +3506,7 @@
       return new OtherRecognitionError2(value0);
     };
     return OtherRecognitionError2;
-  }();
+  })();
   var renderRecognitionErrorDiagnosticDetail = function(code) {
     return function(message2) {
       var renderCode = function(v) {
@@ -3610,14 +3773,14 @@
       return val;
     };
   };
-  var Leaf = /* @__PURE__ */ function() {
+  var Leaf = /* @__PURE__ */ (function() {
     function Leaf2() {
     }
     ;
     Leaf2.value = new Leaf2();
     return Leaf2;
-  }();
-  var Node = /* @__PURE__ */ function() {
+  })();
+  var Node = /* @__PURE__ */ (function() {
     function Node2(value0, value1, value2, value3, value4, value5) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3641,15 +3804,15 @@
       };
     };
     return Node2;
-  }();
-  var IterLeaf = /* @__PURE__ */ function() {
+  })();
+  var IterLeaf = /* @__PURE__ */ (function() {
     function IterLeaf2() {
     }
     ;
     IterLeaf2.value = new IterLeaf2();
     return IterLeaf2;
-  }();
-  var IterEmit = /* @__PURE__ */ function() {
+  })();
+  var IterEmit = /* @__PURE__ */ (function() {
     function IterEmit2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3664,8 +3827,8 @@
       };
     };
     return IterEmit2;
-  }();
-  var IterNode = /* @__PURE__ */ function() {
+  })();
+  var IterNode = /* @__PURE__ */ (function() {
     function IterNode2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3677,8 +3840,8 @@
       };
     };
     return IterNode2;
-  }();
-  var Split = /* @__PURE__ */ function() {
+  })();
+  var Split = /* @__PURE__ */ (function() {
     function Split2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3693,8 +3856,8 @@
       };
     };
     return Split2;
-  }();
-  var SplitLast = /* @__PURE__ */ function() {
+  })();
+  var SplitLast = /* @__PURE__ */ (function() {
     function SplitLast2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3709,7 +3872,7 @@
       };
     };
     return SplitLast2;
-  }();
+  })();
   var unsafeNode = function(k, v, l, r) {
     if (l instanceof Leaf) {
       if (r instanceof Leaf) {
@@ -3729,14 +3892,14 @@
       }
       ;
       if (r instanceof Node) {
-        return new Node(1 + function() {
+        return new Node(1 + (function() {
           var $280 = l.value0 > r.value0;
           if ($280) {
             return l.value0;
           }
           ;
           return r.value0;
-        }() | 0, (1 + l.value1 | 0) + r.value1 | 0, k, v, l, r);
+        })() | 0, (1 + l.value1 | 0) + r.value1 | 0, k, v, l, r);
       }
       ;
       throw new Error("Failed pattern match at Data.Map.Internal (line 708, column 5 - line 712, column 68): " + [r.constructor.name]);
@@ -3744,9 +3907,9 @@
     ;
     throw new Error("Failed pattern match at Data.Map.Internal (line 700, column 32 - line 712, column 68): " + [l.constructor.name]);
   };
-  var toMapIter = /* @__PURE__ */ function() {
+  var toMapIter = /* @__PURE__ */ (function() {
     return flip(IterNode.create)(IterLeaf.value);
-  }();
+  })();
   var stepWith = function(f) {
     return function(next) {
       return function(done) {
@@ -3787,7 +3950,7 @@
       return new Node(1, 1, k, v, Leaf.value, Leaf.value);
     };
   };
-  var unsafeBalancedNode = /* @__PURE__ */ function() {
+  var unsafeBalancedNode = /* @__PURE__ */ (function() {
     var height = function(v) {
       if (v instanceof Leaf) {
         return 0;
@@ -3847,7 +4010,7 @@
       ;
       throw new Error("Failed pattern match at Data.Map.Internal (line 717, column 40 - line 738, column 34): " + [l.constructor.name]);
     };
-  }();
+  })();
   var $lazy_unsafeSplit = /* @__PURE__ */ $runtime_lazy3("unsafeSplit", "Data.Map.Internal", function() {
     return function(comp, k, m) {
       if (m instanceof Leaf) {
@@ -3904,7 +4067,7 @@
     ;
     throw new Error("Failed pattern match at Data.Map.Internal (line 764, column 25 - line 768, column 38): " + [v.constructor.name, v1.constructor.name]);
   };
-  var iterMapL = /* @__PURE__ */ function() {
+  var iterMapL = /* @__PURE__ */ (function() {
     var go = function($copy_iter) {
       return function($copy_v) {
         var $tco_var_iter = $copy_iter;
@@ -3939,25 +4102,25 @@
       };
     };
     return go;
-  }();
+  })();
   var stepAscCps = /* @__PURE__ */ stepWith(iterMapL);
-  var stepUnfoldr = /* @__PURE__ */ function() {
+  var stepUnfoldr = /* @__PURE__ */ (function() {
     var step = function(k, v, next) {
       return new Just(new Tuple(new Tuple(k, v), next));
     };
     return stepAscCps(step)(function(v) {
       return Nothing.value;
     });
-  }();
+  })();
   var toUnfoldable = function(dictUnfoldable) {
     var $784 = unfoldr(dictUnfoldable)(stepUnfoldr);
     return function($785) {
       return $784(toMapIter($785));
     };
   };
-  var empty2 = /* @__PURE__ */ function() {
+  var empty2 = /* @__PURE__ */ (function() {
     return Leaf.value;
-  }();
+  })();
   var alter = function(dictOrd) {
     var compare2 = compare(dictOrd);
     return function(f) {
@@ -4086,12 +4249,12 @@
   var length3 = function($74) {
     return length(toCodePointArray($74));
   };
-  var fromCharCode2 = /* @__PURE__ */ function() {
+  var fromCharCode2 = /* @__PURE__ */ (function() {
     var $75 = toEnumWithDefaults(boundedEnumChar)(bottom(boundedChar))(top(boundedChar));
     return function($76) {
       return singleton2($75($76));
     };
-  }();
+  })();
   var singletonFallback = function(v) {
     if (v <= 65535) {
       return fromCharCode2(v);
@@ -4187,12 +4350,12 @@
       return !$$null2($58);
     })(split(" ")(collapseWhitespaceToSpace(trim(transcript))))));
   };
-  var emptyWordStats = /* @__PURE__ */ function() {
+  var emptyWordStats = /* @__PURE__ */ (function() {
     return {
       frequencies: empty2,
       longest: Nothing.value
     };
-  }();
+  })();
   var addWord = function(rawWord) {
     return function(v) {
       var normalized = normalizeForFrequency(rawWord);
@@ -4214,21 +4377,21 @@
   };
 
   // output/WordMeter.Recording.Session/index.js
-  var WakeLockIdle = /* @__PURE__ */ function() {
+  var WakeLockIdle = /* @__PURE__ */ (function() {
     function WakeLockIdle2() {
     }
     ;
     WakeLockIdle2.value = new WakeLockIdle2();
     return WakeLockIdle2;
-  }();
-  var WakeLockHeld = /* @__PURE__ */ function() {
+  })();
+  var WakeLockHeld = /* @__PURE__ */ (function() {
     function WakeLockHeld2() {
     }
     ;
     WakeLockHeld2.value = new WakeLockHeld2();
     return WakeLockHeld2;
-  }();
-  var WakeLockFailed = /* @__PURE__ */ function() {
+  })();
+  var WakeLockFailed = /* @__PURE__ */ (function() {
     function WakeLockFailed2(value0) {
       this.value0 = value0;
     }
@@ -4237,7 +4400,7 @@
       return new WakeLockFailed2(value0);
     };
     return WakeLockFailed2;
-  }();
+  })();
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var renderWakeLockStatus = function(v) {
@@ -4281,7 +4444,7 @@
     }
   };
   var epochInstant = /* @__PURE__ */ fromMaybe(/* @__PURE__ */ bottom(boundedInstant))(/* @__PURE__ */ instant(0));
-  var initialSession = /* @__PURE__ */ function() {
+  var initialSession = /* @__PURE__ */ (function() {
     return {
       listening: false,
       totalWords: 0,
@@ -4310,7 +4473,7 @@
       pipOpen: false,
       pipStatus: ""
     };
-  }();
+  })();
   var downloadingOnDeviceStatus = "downloading on-device language pack\u2026";
   var captionWindowMs = 3e4;
 
@@ -4413,7 +4576,7 @@
     }
     ;
     if (otherwise) {
-      var clamped = function() {
+      var clamped = (function() {
         var $27 = value < 0;
         if ($27) {
           return 0;
@@ -4425,7 +4588,7 @@
         }
         ;
         return value;
-      }();
+      })();
       var rounded = round2(clamped * 100);
       return show2(rounded) + "%";
     }
@@ -4457,7 +4620,7 @@
     };
   };
   var activeListeningMs = function(session) {
-    return session.completedActiveMs + function() {
+    return session.completedActiveMs + (function() {
       if (session.currentIntervalStart instanceof Just) {
         return max3(0)(millisecondsBetween(session.now)(session.currentIntervalStart.value0));
       }
@@ -4467,7 +4630,7 @@
       }
       ;
       throw new Error("Failed pattern match at WordMeter.Recording.Math (line 59, column 17 - line 61, column 21): " + [session.currentIntervalStart.constructor.name]);
-    }();
+    })();
   };
   var overallRate = function(session) {
     return wordsPerMinute(session.totalWords)(max3(1)(activeListeningMs(session)));
@@ -4503,7 +4666,7 @@
   var unwrap4 = /* @__PURE__ */ unwrap();
   var map8 = /* @__PURE__ */ map(functorMaybe);
   var map1 = /* @__PURE__ */ map(functorArray);
-  var Toggle = /* @__PURE__ */ function() {
+  var Toggle = /* @__PURE__ */ (function() {
     function Toggle2(value0) {
       this.value0 = value0;
     }
@@ -4512,8 +4675,8 @@
       return new Toggle2(value0);
     };
     return Toggle2;
-  }();
-  var InjectFinalTranscript = /* @__PURE__ */ function() {
+  })();
+  var InjectFinalTranscript = /* @__PURE__ */ (function() {
     function InjectFinalTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4525,8 +4688,8 @@
       };
     };
     return InjectFinalTranscript2;
-  }();
-  var IntegrateFinalizedTranscript = /* @__PURE__ */ function() {
+  })();
+  var IntegrateFinalizedTranscript = /* @__PURE__ */ (function() {
     function IntegrateFinalizedTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4538,15 +4701,15 @@
       };
     };
     return IntegrateFinalizedTranscript2;
-  }();
-  var ResetRecognitionDedupState = /* @__PURE__ */ function() {
+  })();
+  var ResetRecognitionDedupState = /* @__PURE__ */ (function() {
     function ResetRecognitionDedupState2() {
     }
     ;
     ResetRecognitionDedupState2.value = new ResetRecognitionDedupState2();
     return ResetRecognitionDedupState2;
-  }();
-  var Tick = /* @__PURE__ */ function() {
+  })();
+  var Tick = /* @__PURE__ */ (function() {
     function Tick2(value0) {
       this.value0 = value0;
     }
@@ -4555,8 +4718,8 @@
       return new Tick2(value0);
     };
     return Tick2;
-  }();
-  var RecordDiagnostic = /* @__PURE__ */ function() {
+  })();
+  var RecordDiagnostic = /* @__PURE__ */ (function() {
     function RecordDiagnostic2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4571,8 +4734,8 @@
       };
     };
     return RecordDiagnostic2;
-  }();
-  var SetEnvironment = /* @__PURE__ */ function() {
+  })();
+  var SetEnvironment = /* @__PURE__ */ (function() {
     function SetEnvironment2(value0) {
       this.value0 = value0;
     }
@@ -4581,8 +4744,8 @@
       return new SetEnvironment2(value0);
     };
     return SetEnvironment2;
-  }();
-  var SetCopyStatus = /* @__PURE__ */ function() {
+  })();
+  var SetCopyStatus = /* @__PURE__ */ (function() {
     function SetCopyStatus2(value0) {
       this.value0 = value0;
     }
@@ -4591,8 +4754,8 @@
       return new SetCopyStatus2(value0);
     };
     return SetCopyStatus2;
-  }();
-  var Reset = /* @__PURE__ */ function() {
+  })();
+  var Reset = /* @__PURE__ */ (function() {
     function Reset2(value0) {
       this.value0 = value0;
     }
@@ -4601,8 +4764,8 @@
       return new Reset2(value0);
     };
     return Reset2;
-  }();
-  var LoadSession = /* @__PURE__ */ function() {
+  })();
+  var LoadSession = /* @__PURE__ */ (function() {
     function LoadSession2(value0) {
       this.value0 = value0;
     }
@@ -4611,8 +4774,8 @@
       return new LoadSession2(value0);
     };
     return LoadSession2;
-  }();
-  var SetKeepAwake = /* @__PURE__ */ function() {
+  })();
+  var SetKeepAwake = /* @__PURE__ */ (function() {
     function SetKeepAwake2(value0) {
       this.value0 = value0;
     }
@@ -4621,8 +4784,8 @@
       return new SetKeepAwake2(value0);
     };
     return SetKeepAwake2;
-  }();
-  var SetWakeLockState = /* @__PURE__ */ function() {
+  })();
+  var SetWakeLockState = /* @__PURE__ */ (function() {
     function SetWakeLockState2(value0) {
       this.value0 = value0;
     }
@@ -4631,8 +4794,8 @@
       return new SetWakeLockState2(value0);
     };
     return SetWakeLockState2;
-  }();
-  var HandleRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var HandleRecognitionError = /* @__PURE__ */ (function() {
     function HandleRecognitionError2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4647,15 +4810,15 @@
       };
     };
     return HandleRecognitionError2;
-  }();
-  var ClearErrorBanner = /* @__PURE__ */ function() {
+  })();
+  var ClearErrorBanner = /* @__PURE__ */ (function() {
     function ClearErrorBanner2() {
     }
     ;
     ClearErrorBanner2.value = new ClearErrorBanner2();
     return ClearErrorBanner2;
-  }();
-  var SetRecognitionStatusOverride = /* @__PURE__ */ function() {
+  })();
+  var SetRecognitionStatusOverride = /* @__PURE__ */ (function() {
     function SetRecognitionStatusOverride2(value0) {
       this.value0 = value0;
     }
@@ -4664,8 +4827,8 @@
       return new SetRecognitionStatusOverride2(value0);
     };
     return SetRecognitionStatusOverride2;
-  }();
-  var SetCloudFallbackAttempted = /* @__PURE__ */ function() {
+  })();
+  var SetCloudFallbackAttempted = /* @__PURE__ */ (function() {
     function SetCloudFallbackAttempted2(value0) {
       this.value0 = value0;
     }
@@ -4674,8 +4837,8 @@
       return new SetCloudFallbackAttempted2(value0);
     };
     return SetCloudFallbackAttempted2;
-  }();
-  var SetActiveRecognitionPath = /* @__PURE__ */ function() {
+  })();
+  var SetActiveRecognitionPath = /* @__PURE__ */ (function() {
     function SetActiveRecognitionPath2(value0) {
       this.value0 = value0;
     }
@@ -4684,8 +4847,8 @@
       return new SetActiveRecognitionPath2(value0);
     };
     return SetActiveRecognitionPath2;
-  }();
-  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ function() {
+  })();
+  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ (function() {
     function SetDiagnosticsDrawerOpen2(value0) {
       this.value0 = value0;
     }
@@ -4694,8 +4857,8 @@
       return new SetDiagnosticsDrawerOpen2(value0);
     };
     return SetDiagnosticsDrawerOpen2;
-  }();
-  var SetPipOpen = /* @__PURE__ */ function() {
+  })();
+  var SetPipOpen = /* @__PURE__ */ (function() {
     function SetPipOpen2(value0) {
       this.value0 = value0;
     }
@@ -4704,8 +4867,8 @@
       return new SetPipOpen2(value0);
     };
     return SetPipOpen2;
-  }();
-  var SetPipStatus = /* @__PURE__ */ function() {
+  })();
+  var SetPipStatus = /* @__PURE__ */ (function() {
     function SetPipStatus2(value0) {
       this.value0 = value0;
     }
@@ -4714,7 +4877,7 @@
       return new SetPipStatus2(value0);
     };
     return SetPipStatus2;
-  }();
+  })();
   var takeEndArray = function(n) {
     return function(xs) {
       var total = length(xs);
@@ -4848,14 +5011,14 @@
           };
           var closedIntervalMs = max22(0)(millisecondsBetween(timestamp)(startedAt));
           var statsDetail = "words=" + (show3(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedIntervalMs)));
-          var fullDetail = function() {
+          var fullDetail = (function() {
             var $68 = reasonDetail === "";
             if ($68) {
               return statsDetail;
             }
             ;
             return statsDetail + (" " + reasonDetail);
-          }();
+          })();
           var stopEntry = {
             timestamp,
             label,
@@ -5039,7 +5202,7 @@
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
-            firstStartedAt: function() {
+            firstStartedAt: (function() {
               if (rolled.firstStartedAt instanceof Just) {
                 return new Just(rolled.firstStartedAt.value0);
               }
@@ -5049,7 +5212,7 @@
               }
               ;
               throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 107, column 30 - line 109, column 40): " + [rolled.firstStartedAt.constructor.name]);
-            }(),
+            })(),
             wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
             captions: pruneCaptions(v.value0)(rolled.captions),
             now: v.value0,
@@ -5624,13 +5787,13 @@
           pipOpen: v1.pipOpen,
           pipStatus: v1.pipStatus,
           keepAwake: v.value0,
-          wakeLockState: function() {
+          wakeLockState: (function() {
             if (v.value0) {
               return v1.wakeLockState;
             }
             ;
             return WakeLockIdle.value;
-          }()
+          })()
         };
       }
       ;
@@ -6067,14 +6230,14 @@
   };
 
   // output/WordMeter.FFI.StorageError/index.js
-  var StorageUnavailable = /* @__PURE__ */ function() {
+  var StorageUnavailable = /* @__PURE__ */ (function() {
     function StorageUnavailable2() {
     }
     ;
     StorageUnavailable2.value = new StorageUnavailable2();
     return StorageUnavailable2;
-  }();
-  var StorageException = /* @__PURE__ */ function() {
+  })();
+  var StorageException = /* @__PURE__ */ (function() {
     function StorageException2(value0) {
       this.value0 = value0;
     }
@@ -6083,8 +6246,8 @@
       return new StorageException2(value0);
     };
     return StorageException2;
-  }();
-  var MissingKey = /* @__PURE__ */ function() {
+  })();
+  var MissingKey = /* @__PURE__ */ (function() {
     function MissingKey2(value0) {
       this.value0 = value0;
     }
@@ -6093,7 +6256,7 @@
       return new MissingKey2(value0);
     };
     return MissingKey2;
-  }();
+  })();
   var renderStorageError = function(v) {
     if (v instanceof StorageUnavailable) {
       return "localStorage is unavailable in this environment";
@@ -6288,9 +6451,9 @@
       return _mapWithKey(m, f);
     };
   };
-  var lookup = /* @__PURE__ */ function() {
+  var lookup = /* @__PURE__ */ (function() {
     return runFn4(_lookup)(Nothing.value)(Just.create);
-  }();
+  })();
   var insert = function(k) {
     return function(v) {
       return mutate(poke2(k)(v));
@@ -6417,9 +6580,9 @@
       };
     };
   };
-  var toJsonType = /* @__PURE__ */ function() {
+  var toJsonType = /* @__PURE__ */ (function() {
     return verbJsonType(Nothing.value)(Just.create);
-  }();
+  })();
   var jsonSingletonObject = function(key) {
     return function(val) {
       return id(singleton5(key)(val));
@@ -6475,7 +6638,7 @@
 
   // output/Data.Argonaut.Decode.Error/index.js
   var show1 = /* @__PURE__ */ show(showInt);
-  var TypeMismatch = /* @__PURE__ */ function() {
+  var TypeMismatch = /* @__PURE__ */ (function() {
     function TypeMismatch2(value0) {
       this.value0 = value0;
     }
@@ -6484,8 +6647,8 @@
       return new TypeMismatch2(value0);
     };
     return TypeMismatch2;
-  }();
-  var UnexpectedValue = /* @__PURE__ */ function() {
+  })();
+  var UnexpectedValue = /* @__PURE__ */ (function() {
     function UnexpectedValue2(value0) {
       this.value0 = value0;
     }
@@ -6494,8 +6657,8 @@
       return new UnexpectedValue2(value0);
     };
     return UnexpectedValue2;
-  }();
-  var AtIndex = /* @__PURE__ */ function() {
+  })();
+  var AtIndex = /* @__PURE__ */ (function() {
     function AtIndex2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6507,8 +6670,8 @@
       };
     };
     return AtIndex2;
-  }();
-  var AtKey = /* @__PURE__ */ function() {
+  })();
+  var AtKey = /* @__PURE__ */ (function() {
     function AtKey2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6520,8 +6683,8 @@
       };
     };
     return AtKey2;
-  }();
-  var Named = /* @__PURE__ */ function() {
+  })();
+  var Named = /* @__PURE__ */ (function() {
     function Named2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6533,14 +6696,14 @@
       };
     };
     return Named2;
-  }();
-  var MissingValue = /* @__PURE__ */ function() {
+  })();
+  var MissingValue = /* @__PURE__ */ (function() {
     function MissingValue2() {
     }
     ;
     MissingValue2.value = new MissingValue2();
     return MissingValue2;
-  }();
+  })();
   var printJsonDecodeError = function(err) {
     var go = function(v) {
       if (v instanceof TypeMismatch) {
@@ -6597,21 +6760,21 @@
   var getField = function(decoder) {
     return function(obj) {
       return function(str) {
-        return maybe(new Left(new AtKey(str, MissingValue.value)))(function() {
+        return maybe(new Left(new AtKey(str, MissingValue.value)))((function() {
           var $48 = lmap2(AtKey.create(str));
           return function($49) {
             return $48(decoder($49));
           };
-        }())(lookup(str)(obj));
+        })())(lookup(str)(obj));
       };
     };
   };
-  var decodeString = /* @__PURE__ */ function() {
+  var decodeString = /* @__PURE__ */ (function() {
     return caseJsonString(new Left(new TypeMismatch("String")))(Right.create);
-  }();
-  var decodeNumber = /* @__PURE__ */ function() {
+  })();
+  var decodeNumber = /* @__PURE__ */ (function() {
     return caseJsonNumber(new Left(new TypeMismatch("Number")))(Right.create);
-  }();
+  })();
   var decodeMaybe = function(decoder) {
     return function(json) {
       if (isNull(json)) {
@@ -6625,38 +6788,38 @@
       throw new Error("Failed pattern match at Data.Argonaut.Decode.Decoders (line 37, column 1 - line 41, column 38): " + [decoder.constructor.name, json.constructor.name]);
     };
   };
-  var decodeJObject = /* @__PURE__ */ function() {
+  var decodeJObject = /* @__PURE__ */ (function() {
     var $50 = note(new TypeMismatch("Object"));
     return function($51) {
       return $50(toObject($51));
     };
-  }();
-  var decodeJArray = /* @__PURE__ */ function() {
+  })();
+  var decodeJArray = /* @__PURE__ */ (function() {
     var $52 = note(new TypeMismatch("Array"));
     return function($53) {
       return $52(toArray($53));
     };
-  }();
-  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ function() {
+  })();
+  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ (function() {
     var $84 = note(new TypeMismatch("Integer"));
     return function($85) {
       return $84(fromNumber($85));
     };
-  }())(decodeNumber);
+  })())(decodeNumber);
   var decodeForeignObject = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $86 = lmap2(Named.create("ForeignObject"));
       var $87 = traverse5(decoder);
       return function($88) {
         return $86($87($88));
       };
-    }())(decodeJObject);
+    })())(decodeJObject);
   };
-  var decodeBoolean = /* @__PURE__ */ function() {
+  var decodeBoolean = /* @__PURE__ */ (function() {
     return caseJsonBoolean(new Left(new TypeMismatch("Boolean")))(Right.create);
-  }();
+  })();
   var decodeArray = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $89 = lmap2(Named.create("Array"));
       var $90 = traverseWithIndex2(function(i) {
         var $92 = lmap2(AtIndex.create(i));
@@ -6667,7 +6830,7 @@
       return function($91) {
         return $89($90($91));
       };
-    }())(decodeJArray);
+    })())(decodeJArray);
   };
 
   // output/Record/index.js
@@ -6735,11 +6898,11 @@
   var decodeJsonNumber = {
     decodeJson: decodeNumber
   };
-  var decodeJsonJson = /* @__PURE__ */ function() {
+  var decodeJsonJson = /* @__PURE__ */ (function() {
     return {
       decodeJson: Right.create
     };
-  }();
+  })();
   var decodeJsonInt = {
     decodeJson: decodeInt
   };
@@ -6835,25 +6998,25 @@
   };
 
   // output/Data.Argonaut.Decode.Parser/index.js
-  var parseJson = /* @__PURE__ */ function() {
+  var parseJson = /* @__PURE__ */ (function() {
     var $3 = lmap(bifunctorEither)(function(v) {
       return new TypeMismatch("JSON");
     });
     return function($4) {
       return $3(jsonParser($4));
     };
-  }();
+  })();
 
   // output/Data.Argonaut.Encode.Encoders/index.js
   var map12 = /* @__PURE__ */ map(functorArray);
   var extend2 = function(encoder) {
     return function(v) {
-      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))(function() {
+      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))((function() {
         var $42 = insert(v.value0)(v.value1);
         return function($43) {
           return id($42($43));
         };
-      }());
+      })());
       return function($41) {
         return $40(encoder($41));
       };
@@ -7032,7 +7195,7 @@
   var getField32 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonNumber))(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonInt))(gDecodeJsonNil)(wordCountIsSymbol)()())(timestampIsSymbol)()())()));
   var getField4 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(decodeJsonJson));
   var traverse2 = /* @__PURE__ */ traverse(traversableArray)(applicativeEither);
-  var InvalidJson = /* @__PURE__ */ function() {
+  var InvalidJson = /* @__PURE__ */ (function() {
     function InvalidJson2(value0) {
       this.value0 = value0;
     }
@@ -7041,8 +7204,8 @@
       return new InvalidJson2(value0);
     };
     return InvalidJson2;
-  }();
-  var SchemaMismatch = /* @__PURE__ */ function() {
+  })();
+  var SchemaMismatch = /* @__PURE__ */ (function() {
     function SchemaMismatch2(value0) {
       this.value0 = value0;
     }
@@ -7051,8 +7214,8 @@
       return new SchemaMismatch2(value0);
     };
     return SchemaMismatch2;
-  }();
-  var UnsupportedVersion = /* @__PURE__ */ function() {
+  })();
+  var UnsupportedVersion = /* @__PURE__ */ (function() {
     function UnsupportedVersion2(value0) {
       this.value0 = value0;
     }
@@ -7061,7 +7224,7 @@
       return new UnsupportedVersion2(value0);
     };
     return UnsupportedVersion2;
-  }();
+  })();
   var storageVersion = 1;
   var storageKey = "word-meter:state:v1";
   var renderPersistenceError = function(v) {
@@ -7173,7 +7336,7 @@
   var ask6 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
   var liftEffect8 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var pure5 = /* @__PURE__ */ pure(/* @__PURE__ */ applicativeReaderT(applicativeEffect));
-  var LoadStorageError = /* @__PURE__ */ function() {
+  var LoadStorageError = /* @__PURE__ */ (function() {
     function LoadStorageError2(value0) {
       this.value0 = value0;
     }
@@ -7182,8 +7345,8 @@
       return new LoadStorageError2(value0);
     };
     return LoadStorageError2;
-  }();
-  var LoadDecodeError = /* @__PURE__ */ function() {
+  })();
+  var LoadDecodeError = /* @__PURE__ */ (function() {
     function LoadDecodeError2(value0) {
       this.value0 = value0;
     }
@@ -7192,11 +7355,11 @@
       return new LoadDecodeError2(value0);
     };
     return LoadDecodeError2;
-  }();
+  })();
   var storageAppM = {
     loadPersistedSnapshot: /* @__PURE__ */ bind7(ask6)(function() {
       return bind7(liftEffect8(readPersistedString(storageKey)))(function(raw) {
-        return pure5(function() {
+        return pure5((function() {
           if (raw instanceof Left && raw.value0 instanceof MissingKey) {
             return new Right(Nothing.value);
           }
@@ -7219,7 +7382,7 @@
           }
           ;
           throw new Error("Failed pattern match at WordMeter.Capability.Storage (line 51, column 10 - line 56, column 46): " + [raw.constructor.name]);
-        }());
+        })());
       });
     }),
     persistSnapshot: function(persisted) {
@@ -7344,14 +7507,14 @@
   var sentinelsEqual = (left) => (right) => left === right;
 
   // output/WordMeter.FFI.WakeLock/index.js
-  var WakeLockUnsupported = /* @__PURE__ */ function() {
+  var WakeLockUnsupported = /* @__PURE__ */ (function() {
     function WakeLockUnsupported2() {
     }
     ;
     WakeLockUnsupported2.value = new WakeLockUnsupported2();
     return WakeLockUnsupported2;
-  }();
-  var WakeLockUnavailable = /* @__PURE__ */ function() {
+  })();
+  var WakeLockUnavailable = /* @__PURE__ */ (function() {
     function WakeLockUnavailable2(value0) {
       this.value0 = value0;
     }
@@ -7360,7 +7523,7 @@
       return new WakeLockUnavailable2(value0);
     };
     return WakeLockUnavailable2;
-  }();
+  })();
   var renderWakeLockError = function(v) {
     if (v instanceof WakeLockUnsupported) {
       return "wake lock not supported on this browser";
@@ -7487,14 +7650,14 @@
 
   // output/WordMeter.FFI.Confirm/index.js
   var map13 = /* @__PURE__ */ map(functorEffect);
-  var ConfirmUnavailable = /* @__PURE__ */ function() {
+  var ConfirmUnavailable = /* @__PURE__ */ (function() {
     function ConfirmUnavailable2() {
     }
     ;
     ConfirmUnavailable2.value = new ConfirmUnavailable2();
     return ConfirmUnavailable2;
-  }();
-  var ConfirmException = /* @__PURE__ */ function() {
+  })();
+  var ConfirmException = /* @__PURE__ */ (function() {
     function ConfirmException2(value0) {
       this.value0 = value0;
     }
@@ -7503,7 +7666,7 @@
       return new ConfirmException2(value0);
     };
     return ConfirmException2;
-  }();
+  })();
   var renderConfirmError = function(v) {
     if (v instanceof ConfirmUnavailable) {
       return "window.confirm is unavailable in this environment";
@@ -7651,13 +7814,13 @@
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
-    var withChecked = function() {
+    var withChecked = (function() {
       if (session.keepAwake) {
         return append13(base)([attribute("checked")("checked")]);
       }
       ;
       return base;
-    }();
+    })();
     if (session.listening) {
       return append13(withChecked)([attribute("disabled")("disabled")]);
     }
@@ -7691,7 +7854,7 @@
       var opacity = captionOpacity(nowInstant)(timestamp);
       var fraction = 1 - opacity;
       var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
-      var bucket = function() {
+      var bucket = (function() {
         var $34 = rawBucket < 0;
         if ($34) {
           return 0;
@@ -7703,28 +7866,28 @@
         }
         ;
         return rawBucket;
-      }();
+      })();
       return "wm-caption wm-caption-fade-" + show5(bucket);
     };
   };
-  var buildVersion = /* @__PURE__ */ function() {
+  var buildVersion = /* @__PURE__ */ (function() {
     return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
-  }();
+  })();
   var buildToggle = function(handlers) {
     return function(session) {
-      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + function() {
+      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + (function() {
         if (session.listening) {
           return "wm-button-pill-stop";
         }
         ;
         return "wm-button-pill-start";
-      }())])([])([onClick(handlers.requestToggle)])([text(function() {
+      })())])([])([onClick(handlers.requestToggle)])([text((function() {
         if (session.listening) {
           return "Stop counting";
         }
         ;
         return "Start counting";
-      }())]);
+      })())]);
     };
   };
   var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build"), /* @__PURE__ */ className("wm-build-badge")])([])([/* @__PURE__ */ text("PureScript build")]);
@@ -7735,7 +7898,7 @@
     return function(label) {
       return function(valueText) {
         return function(maybeSublabel) {
-          return div_([className("wm-metric-tile")])([])(append13([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
+          return div_([className("wm-metric-tile")])([])(append13([statTileLabel(label), statTileValue(valueTestId)(valueText)])((function() {
             if (maybeSublabel instanceof Just) {
               return [statTileSublabel(maybeSublabel.value0)];
             }
@@ -7745,7 +7908,7 @@
             }
             ;
             throw new Error("Failed pattern match at WordMeter.Recording.View (line 251, column 11 - line 253, column 22): " + [maybeSublabel.constructor.name]);
-          }()));
+          })()));
         };
       };
     };
@@ -7761,24 +7924,24 @@
   };
   var buildPipToggle = function(handlers) {
     return function(session) {
-      return div_([className("wm-pip-row")])([])([button([testId("wm-pip-toggle"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestTogglePip)])([text(function() {
+      return div_([className("wm-pip-row")])([])([button([testId("wm-pip-toggle"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestTogglePip)])([text((function() {
         if (session.pipOpen) {
           return "\u2715 Close pop-out";
         }
         ;
         return "\u{1F4FA} Pop out count";
-      }())]), span_([testId("wm-pip-status"), className("wm-pip-status")])([])([text(session.pipStatus)])]);
+      })())]), span_([testId("wm-pip-status"), className("wm-pip-status")])([])([text(session.pipStatus)])]);
     };
   };
   var buildKeepAwake = function(handlers) {
     return function(session) {
-      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + function() {
+      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + (function() {
         if (session.listening) {
           return " wm-keep-awake-label-disabled";
         }
         ;
         return "";
-      }())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
+      })())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
     };
   };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder"), /* @__PURE__ */ className("wm-timeline-empty")])([])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
@@ -7786,27 +7949,27 @@
     return div_([testId("wm-event-log-entry"), className("wm-timeline-row")])([])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval)), eventLogEntryTopWord(interval.mostFrequentWord), eventLogEntryLongestWord(interval.longestWord)]);
   };
   var buildEventLog = function(session) {
-    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
+    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])((function() {
       var $42 = length(session.eventLog) === 0;
       if ($42) {
         return [buildEventLogPlaceholder];
       }
       ;
       return map14(buildEventLogEntry)(session.eventLog);
-    }());
+    })());
   };
   var buildErrorBanner = function(session) {
     return div_([testId("wm-error"), className("wm-error"), attribute("role")("alert")])([])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      var drawerAttributes = append13([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])(function() {
+      var drawerAttributes = append13([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])((function() {
         if (session.diagnosticsDrawerOpen) {
           return [attribute("open")("")];
         }
         ;
         return [];
-      }());
+      })());
       return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
@@ -7821,14 +7984,14 @@
     };
   };
   var buildCaptions = function(session) {
-    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
+    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])((function() {
       var $44 = length(session.captions) === 0;
       if ($44) {
         return [buildCaptionsPlaceholder];
       }
       ;
       return map14(buildCaption(session.now))(session.captions);
-    }());
+    })());
   };
   var view = function(handlers) {
     return function(session) {
@@ -8400,7 +8563,7 @@
                 return bind15(captureEnvironmentSnapshot3(version))(function(snapshot) {
                   return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
                     return bind15(loadPersistedSnapshot2)(function(restored) {
-                      return discard22(function() {
+                      return discard22((function() {
                         if (restored instanceof Right && restored.value0 instanceof Nothing) {
                           return pure1(unit);
                         }
@@ -8414,7 +8577,7 @@
                         }
                         ;
                         throw new Error("Failed pattern match at WordMeter.Main (line 186, column 3 - line 189, column 54): " + [restored.constructor.name]);
-                      }())(function() {
+                      })())(function() {
                         return bind15(currentTimeMillis1)(function(initTimestamp) {
                           return discard22(updateSession2(new Tick(initTimestamp)))(function() {
                             return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {

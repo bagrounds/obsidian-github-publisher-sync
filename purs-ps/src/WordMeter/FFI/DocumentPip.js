@@ -1,12 +1,33 @@
-// Thin foreign shims for the Document Picture-in-Picture API. Each
-// export wraps a single browser call and surfaces every failure mode
-// through its supplied callback — there is no module-level state, no
-// decisions about lifecycle, and no swallowed errors. The PureScript
-// side (WordMeter.FFI.DocumentPip + WordMeter.Capability.DocumentPip)
-// owns window lifetime and the typed error algebra.
+// Thin foreign shims for Picture-in-Picture. Each export wraps one
+// browser-side concern and surfaces every failure mode through its
+// supplied callback — no swallowed errors. The PureScript side
+// (WordMeter.FFI.DocumentPip + WordMeter.Capability.DocumentPip) owns
+// the opaque PipWindow handle, the typed error algebra, and lifecycle.
+//
+// Two underlying browser APIs are bridged here:
+//
+// 1. Document Picture-in-Picture (window.documentPictureInPicture):
+//    desktop Chromium only. When available the shim renders the count
+//    into a real HTML document inside the floating window.
+//
+// 2. Element-level Video Picture-in-Picture
+//    (HTMLVideoElement.requestPictureInPicture): widely supported on
+//    Android Chrome and other mobile Chromium browsers. The shim
+//    draws the count onto an offscreen canvas, captures the canvas
+//    into a hidden <video> via captureStream, and requests PiP on
+//    that video. From PureScript's perspective both paths return a
+//    single opaque PipWindow handle.
+//
+// The opaque handle is an internal record { kind, ... } that all
+// other exports dispatch on. PureScript never inspects it.
 
 const pipWindowWidth = 320
 const pipWindowHeight = 220
+// Video-PiP redraws are driven by writePipContent, so the captured
+// stream only needs enough frames to keep the OS happy that the video
+// is "live". Two frames per second is gentle on battery and avoids
+// dropping the PiP window on idle on some Chromium builds.
+const videoPipFramesPerSecond = 2
 
 const getUserAgentContext = () => {
   if (typeof navigator === "undefined") {
@@ -39,30 +60,42 @@ const getUserAgentContext = () => {
   return { mobile, description: ua }
 }
 
+const documentPipAvailable = () =>
+  typeof window !== "undefined"
+    && !!window.documentPictureInPicture
+    && typeof window.documentPictureInPicture.requestWindow === "function"
+
+const videoPipAvailable = () => {
+  if (typeof window === "undefined") return false
+  if (typeof document === "undefined") return false
+  // `pictureInPictureEnabled` is the spec-defined gate. We also
+  // require the request method and canvas captureStream — both are
+  // present on every UA that supports the API.
+  if (!document.pictureInPictureEnabled) return false
+  const videoProto = window.HTMLVideoElement && window.HTMLVideoElement.prototype
+  if (!videoProto || typeof videoProto.requestPictureInPicture !== "function") {
+    return false
+  }
+  const canvasProto = window.HTMLCanvasElement && window.HTMLCanvasElement.prototype
+  if (!canvasProto || typeof canvasProto.captureStream !== "function") {
+    return false
+  }
+  return true
+}
+
 export const checkDocumentPipAvailability = () => {
   if (typeof window === "undefined") return "no window object available"
-  const api = window.documentPictureInPicture
+  if (documentPipAvailable()) return ""
+  if (videoPipAvailable()) return ""
   const { mobile, description } = getUserAgentContext()
-  if (!api) {
-    // The most likely cause of a missing API on a sane install. We call
-    // out Chromium on mobile explicitly because the user can see the
-    // platform's PiP permission toggle and reasonably expect this API
-    // to follow — but Chromium ships Document Picture-in-Picture only
-    // on desktop (Windows, macOS, Linux, ChromeOS) as of 2026. The
-    // mobile PiP toggle governs the legacy HTMLVideoElement PiP API
-    // instead, which is unrelated.
-    if (mobile) {
-      return "Document Picture-in-Picture is desktop-only on Chromium" +
-        " (no Android/iOS support as of 2026); user-agent=" + description
-    }
-    return "window.documentPictureInPicture is undefined; user-agent=" +
-      description
+  if (mobile) {
+    return "no Picture-in-Picture path available on this device" +
+      " (HTMLVideoElement.requestPictureInPicture is missing or" +
+      " pictureInPictureEnabled is false); user-agent=" + description
   }
-  if (typeof api.requestWindow !== "function") {
-    return "documentPictureInPicture.requestWindow is not a function" +
-      "; user-agent=" + description
-  }
-  return ""
+  return "Document Picture-in-Picture API is absent and" +
+    " HTMLVideoElement.requestPictureInPicture is not callable;" +
+    " user-agent=" + description
 }
 
 const describeFailure = (error) => {
@@ -74,12 +107,24 @@ const describeFailure = (error) => {
 }
 
 export const requestPipWindow = (onWindow) => (onError) => () => {
+  if (documentPipAvailable()) {
+    requestDocumentPipWindow(onWindow, onError)
+    return
+  }
+  if (videoPipAvailable()) {
+    requestVideoPipWindow(onWindow, onError)
+    return
+  }
+  onError("no Picture-in-Picture path available at request time")()
+}
+
+const requestDocumentPipWindow = (onWindow, onError) => {
   try {
     window.documentPictureInPicture
       .requestWindow({ width: pipWindowWidth, height: pipWindowHeight })
       .then((pipWindow) => {
         seedPipDocument(pipWindow)
-        onWindow(pipWindow)()
+        onWindow({ kind: "document", pipWindow })()
       })
       .catch((reason) => { onError(describeFailure(reason))() })
   } catch (error) {
@@ -87,22 +132,149 @@ export const requestPipWindow = (onWindow) => (onError) => () => {
   }
 }
 
-export const attachPipCloseListener = (pipWindow) => (handler) => () => {
-  pipWindow.addEventListener("pagehide", () => { handler() })
-}
-
-export const closePipWindow = (pipWindow) => () => {
+const requestVideoPipWindow = (onWindow, onError) => {
   try {
-    pipWindow.close()
-  } catch {
-    // close() throws when the window has already been closed (e.g. the
-    // user dismissed it via the OS chrome a moment ago). The close
-    // listener fires for both paths, so swallowing this synchronous
-    // exception cannot hide an unobserved failure.
+    const canvas = document.createElement("canvas")
+    canvas.width = pipWindowWidth
+    canvas.height = pipWindowHeight
+    const context = canvas.getContext("2d")
+    if (!context) {
+      onError("canvas 2d context unavailable")()
+      return
+    }
+    const stream = canvas.captureStream(videoPipFramesPerSecond)
+    const video = document.createElement("video")
+    video.muted = true
+    video.playsInline = true
+    video.autoplay = true
+    video.srcObject = stream
+    // The video element must be attached to the document for some
+    // Chromium builds to grant PiP — but it should not be visible.
+    video.style.position = "fixed"
+    video.style.left = "-9999px"
+    video.style.top = "-9999px"
+    video.style.width = "1px"
+    video.style.height = "1px"
+    video.style.opacity = "0"
+    video.setAttribute("data-testid", "wm-pip-video")
+    document.body.appendChild(video)
+    const handle = {
+      kind: "video",
+      video,
+      canvas,
+      context,
+      stream,
+      lastContent: { wordsToday: 0, status: "Idle" },
+    }
+    drawVideoPipFrame(handle)
+    const requestPip = () => {
+      try {
+        video.requestPictureInPicture()
+          .then(() => { onWindow(handle)() })
+          .catch((reason) => {
+            cleanupVideoPipHandle(handle)
+            onError(describeFailure(reason))()
+          })
+      } catch (error) {
+        cleanupVideoPipHandle(handle)
+        onError(describeFailure(error))()
+      }
+    }
+    // Some Android Chromium builds reject requestPictureInPicture if
+    // the video has not produced its first frame yet. Wait for one
+    // loadedmetadata / playing tick before requesting.
+    const startWhenReady = () => {
+      video.removeEventListener("loadedmetadata", startWhenReady)
+      video.removeEventListener("playing", startWhenReady)
+      requestPip()
+    }
+    if (video.readyState >= 1) {
+      requestPip()
+    } else {
+      video.addEventListener("loadedmetadata", startWhenReady, { once: true })
+      video.addEventListener("playing", startWhenReady, { once: true })
+    }
+    // Kick the playback pipeline. `.play()` returns a promise on most
+    // builds; we ignore rejection because the readyState branch above
+    // is the source of truth.
+    try {
+      const playPromise = video.play()
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {})
+      }
+    } catch {
+      // Older builds throw synchronously; loadedmetadata still fires.
+    }
+  } catch (error) {
+    onError(describeFailure(error))()
   }
 }
 
-export const writePipContent = (pipWindow) => (content) => () => {
+const cleanupVideoPipHandle = (handle) => {
+  try {
+    if (handle.stream) {
+      handle.stream.getTracks().forEach((track) => {
+        try { track.stop() } catch {}
+      })
+    }
+  } catch {}
+  try {
+    if (handle.video && handle.video.parentNode) {
+      handle.video.parentNode.removeChild(handle.video)
+    }
+  } catch {}
+}
+
+export const attachPipCloseListener = (handle) => (handler) => () => {
+  if (handle.kind === "document") {
+    handle.pipWindow.addEventListener("pagehide", () => { handler() })
+    return
+  }
+  if (handle.kind === "video") {
+    handle.video.addEventListener("leavepictureinpicture", () => {
+      handler()
+    })
+  }
+}
+
+export const closePipWindow = (handle) => () => {
+  if (handle.kind === "document") {
+    try {
+      handle.pipWindow.close()
+    } catch {
+      // close() throws when the window has already been closed (e.g.
+      // the user dismissed it via the OS chrome a moment ago). The
+      // close listener fires for both paths, so swallowing this
+      // synchronous exception cannot hide an unobserved failure.
+    }
+    return
+  }
+  if (handle.kind === "video") {
+    try {
+      if (document.pictureInPictureElement === handle.video
+        && typeof document.exitPictureInPicture === "function") {
+        const exitPromise = document.exitPictureInPicture()
+        if (exitPromise && typeof exitPromise.catch === "function") {
+          exitPromise.catch(() => {})
+        }
+      }
+    } catch {}
+    cleanupVideoPipHandle(handle)
+  }
+}
+
+export const writePipContent = (handle) => (content) => () => {
+  if (handle.kind === "document") {
+    writeDocumentPipContent(handle.pipWindow, content)
+    return
+  }
+  if (handle.kind === "video") {
+    handle.lastContent = content
+    drawVideoPipFrame(handle)
+  }
+}
+
+const writeDocumentPipContent = (pipWindow, content) => {
   const doc = pipWindow.document
   if (!doc) return
   let countEl = doc.getElementById("wm-pip-count")
@@ -114,6 +286,26 @@ export const writePipContent = (pipWindow) => (content) => () => {
   }
   if (countEl) countEl.textContent = String(content.wordsToday)
   if (statusEl) statusEl.textContent = String(content.status)
+}
+
+const drawVideoPipFrame = (handle) => {
+  const context = handle.context
+  const canvas = handle.canvas
+  const content = handle.lastContent
+  context.fillStyle = "#0b0d10"
+  context.fillRect(0, 0, canvas.width, canvas.height)
+  context.fillStyle = "#f3f4f6"
+  context.textAlign = "center"
+  context.textBaseline = "alphabetic"
+  context.font = "bold 96px system-ui, sans-serif"
+  context.fillText(String(content.wordsToday), canvas.width / 2, 120)
+  context.font = "14px system-ui, sans-serif"
+  context.globalAlpha = 0.7
+  context.fillText("WORDS TODAY", canvas.width / 2, 148)
+  context.globalAlpha = 0.85
+  context.font = "16px system-ui, sans-serif"
+  context.fillText(String(content.status), canvas.width / 2, 190)
+  context.globalAlpha = 1
 }
 
 const seedPipDocument = (pipWindow) => {

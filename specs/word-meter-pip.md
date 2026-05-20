@@ -17,7 +17,7 @@ The Word Meter offers an optional **Picture-in-Picture (PiP)** "pop-out" window 
 
 - Streaming the full UI into the PiP window. Slice 1 only shows the daily count and the status. Future slices may add rate / duration tiles.
 - Automatically entering PiP when the user switches apps. The Document Picture-in-Picture API requires a **user gesture** for `requestWindow()`, so silent auto-entry is impossible from a pure web page (see Feasibility below).
-- Keeping `SpeechRecognition` running on mobile Safari or Firefox. Document PiP is Chromium-only today.
+- Keeping `SpeechRecognition` running while the source page is **fully backgrounded** on Android. Chromium suspends `SpeechRecognition` whenever the page becomes hidden, regardless of whether a video-PiP window is on top. The mobile fallback below floats the **last known count** above other apps, but live updates depend on the source page staying visible (e.g. split-screen view, or returning to the tab).
 
 ## Feasibility
 
@@ -26,9 +26,9 @@ The browser API powering this is `window.documentPictureInPicture.requestWindow(
 Two constraints shape the design:
 
 1. **User gesture required.** `requestWindow()` only resolves when called from a trusted user gesture (a click on a button is enough). A timer, a `visibilitychange` listener, or any other ambient handler cannot open a PiP window. There is no Permission-Policy that grants ambient PiP for documents — the autoPiP entitlements that exist (`autoPictureInPicture` on `<video>`) apply only to media-element PiP, not Document PiP.
-2. **Document PiP is desktop-only.** Chromium ships Document Picture-in-Picture only on desktop platforms (Windows, macOS, Linux, ChromeOS). Android Chrome, iOS Safari, Firefox, Samsung Internet, and Android WebView all return `undefined` for `window.documentPictureInPicture`. This is documented on MDN as of 2026 and shows no signs of changing.
+2. **Document PiP is desktop-only; mobile Chromium uses video PiP instead.** Chromium ships `window.documentPictureInPicture` only on desktop platforms (Windows, macOS, Linux, ChromeOS). Android Chrome, iOS Safari, Firefox, Samsung Internet, and Android WebView all return `undefined`. They do, however, expose the older `HTMLVideoElement.requestPictureInPicture` API. The Word Meter FFI now transparently falls through to that path when Document PiP is unavailable: a canvas-captured video is used as the floating surface and the count is painted onto it.
 
-The honest answer to the original "auto-enter PiP when I switch apps" question is therefore **no — not without a prior user tap, and not on mobile at all**. The realistic desktop UX is a **manual pop-out**: the user taps a button once before switching apps, the PiP window stays on top, and the count keeps ticking.
+The honest answer to the original "auto-enter PiP when I switch apps" question is therefore **no — not without a prior user tap**. The realistic UX is a **manual pop-out** on desktop and on mobile. On desktop the floating count tracks live across app switches because the source page stays running; on mobile it tracks live while the source page is visible (split-screen, foreground tab) and freezes the count display when the page is fully backgrounded (because `SpeechRecognition` pauses).
 
 ## RCA — "picture-in-picture not supported on this browser" on mobile Chrome
 
@@ -57,27 +57,52 @@ picture-in-picture not supported on this browser — Document Picture-in-Picture
 
 ### Per-browser / per-platform expectations
 
-The following table reflects browser-vendor compatibility data as of 2026. "Document PiP" refers to `window.documentPictureInPicture.requestWindow`; "Speech" refers to `SpeechRecognition` (cloud or on-device).
+The following table reflects browser-vendor compatibility data as of 2026. "Document PiP" refers to `window.documentPictureInPicture.requestWindow`; "Video PiP" refers to `HTMLVideoElement.requestPictureInPicture`; "Speech" refers to `SpeechRecognition` (cloud or on-device).
 
-The Word Meter Pop-out button works in the green cells. On every other combination the button surfaces an explanatory unsupported message and the wake-lock toggle remains the only mitigation for "I want to switch apps without losing my count".
+The Word Meter Pop-out button works on every combination where either column shows yes. The mobile Video-PiP path is a frozen-when-backgrounded display surface, not a live background counter (see "Honest limitations" above).
 
-| Browser           | Desktop Document PiP | Mobile Document PiP | Speech available |
-| ----------------- | -------------------- | ------------------- | ---------------- |
-| Chrome 116+       | yes                  | no                  | yes              |
-| Edge 116+         | yes                  | no                  | yes              |
-| Opera 102+        | yes                  | no                  | yes              |
-| Firefox           | no                   | no                  | no               |
-| Safari            | no                   | no                  | partial          |
-| Samsung Internet  | n/a                  | no                  | partial          |
-| Chromium WebView  | n/a                  | no                  | partial          |
+| Browser           | Desktop Document PiP | Mobile Document PiP | Desktop Video PiP | Mobile Video PiP | Speech available |
+| ----------------- | -------------------- | ------------------- | ----------------- | ---------------- | ---------------- |
+| Chrome 116+       | yes                  | no                  | yes               | yes              | yes              |
+| Edge 116+         | yes                  | no                  | yes               | yes              | yes              |
+| Opera 102+        | yes                  | no                  | yes               | yes              | yes              |
+| Firefox           | no                   | no                  | yes (limited)     | no               | no               |
+| Safari            | no                   | no                  | yes               | yes (iOS)        | partial          |
+| Samsung Internet  | n/a                  | no                  | n/a               | yes              | partial          |
+| Chromium WebView  | n/a                  | no                  | n/a               | partial          | partial          |
 
-In prose, for TTS listeners: Document Picture-in-Picture is available on desktop Chrome, Edge, and Opera from version one hundred sixteen onward. It is not available on any mobile browser, including Chrome for Android and Safari on iOS. Firefox does not implement it on any platform. Therefore the Pop-out button is useful only on desktop Chromium, and on every other combination the meter shows a diagnostic explaining why the feature is missing.
+In prose, for TTS listeners: on desktop Chrome, Edge, and Opera the Pop-out button uses the rich Document Picture-in-Picture path, which renders a real HTML count inside the floating window. On mobile Chromium browsers — Android Chrome, Edge, Opera, and Samsung Internet — the button falls through to a video Picture-in-Picture path that paints the count onto a canvas and pipes it into a hidden video element. On mobile Safari (iOS), video Picture-in-Picture is available and the same fallback runs. On desktop Safari the video fallback also runs. Firefox supports neither Document Picture-in-Picture nor the canvas-capture variant reliably, so the button surfaces an explanatory diagnostic there.
 
-### Why a video-PiP workaround on mobile is not pursued
+### Why a video-PiP workaround on mobile is now pursued (Slice 1b)
 
-A common hack for "I want any DOM rendered into PiP on Android" is to render content onto a `<canvas>`, capture the stream with `captureStream()`, attach it to a hidden `<video>`, and call `video.requestPictureInPicture()`. This path is technically open on Android Chrome.
+A common path for "I want any DOM rendered into PiP on Android" is to render content onto a `<canvas>`, capture the stream with `captureStream()`, attach it to a hidden `<video>`, and call `video.requestPictureInPicture()`. This path is supported on Android Chrome, Samsung Internet, and other mobile Chromium browsers.
 
-But it does not actually solve the underlying problem the Pop-out button is trying to solve. The meter needs `SpeechRecognition` to keep running while the user is in another app, and Chromium suspends `SpeechRecognition` whenever the source page becomes hidden — regardless of whether a video element is in PiP. A floating video window on Android would therefore show a frozen number, not a live one. The wake-lock toggle (which keeps the screen on, which keeps the page visible) remains the only viable mitigation on mobile, and a video-PiP shim would simply add complexity without changing the outcome.
+This PR adds that fallback inside the FFI shim. When `window.documentPictureInPicture` is missing, `requestPipWindow` transparently falls through to the video-PiP path:
+
+1. A 320×220 offscreen `<canvas>` is allocated.
+2. The canvas is painted with the same count + label + status as the Document-PiP body.
+3. `canvas.captureStream(2)` produces a low-frame-rate MediaStream — two frames per second is enough to keep the PiP window alive without burning battery.
+4. A hidden `<video>` element is attached to the page, its `srcObject` is wired to the stream, and `video.requestPictureInPicture()` is called from the user gesture.
+5. On every meter dispatch, `writePipContent` repaints the canvas. The capture pipeline propagates the new pixels into the PiP window automatically.
+6. Closing dispatches `document.exitPictureInPicture()` and tears down the stream tracks and hidden video element.
+
+From PureScript's perspective the two paths are interchangeable: the opaque `PipWindow` handle hides which underlying API is in use, and all three FFI exports (`requestPipWindow`, `attachPipCloseListener`, `closePipWindow`, `writePipContent`) dispatch on a private `kind` field inside the handle.
+
+#### Honest limitations of the mobile fallback
+
+The fallback **does not** turn the meter into a true background counter on Android. Two truths sit underneath it:
+
+1. **`SpeechRecognition` suspends when the source page hides.** The Web Speech API ties its microphone tap to the document's visibility lifecycle. The moment the user switches apps and the meter tab goes fully hidden, Chromium pauses recognition. The PiP window stays on top with the **last seen count and status**, but the number is frozen until the user returns to the tab.
+2. **No setting on the device unlocks background recognition.** The Android per-app PiP permission toggle is unrelated; it governs whether *any* video PiP window is allowed at all. There is no Chromium flag that keeps Web Speech alive while the page is hidden.
+
+For a real always-on mobile counter we would need to swap Web Speech for raw `navigator.mediaDevices.getUserMedia()` + an in-house or cloud STT pipeline. That would let us hold the microphone open across visibility changes (because `getUserMedia` is gated by tab activity, not document visibility, and a PiP video element keeps the tab active on Chromium). This is out of scope for this PR — it would require replacing the entire recognition module, the on-device language pack pre-flight, the cloud fallback path, and the dedup/restart machinery. It is tracked as a future slice in the spec.
+
+What the user gets today on mobile:
+
+- A floating count window on top of any other app, mirroring the meter's current count and status.
+- Live updates while the meter tab is in the foreground (including split-screen, picture-in-picture-of-the-system-task-switcher, or when the user briefly checks another app and comes back).
+- A frozen-but-visible count window during full background — useful as a "where was I" reference rather than a live counter.
+- No setting change required and no extra microphone permission.
 
 ## UI
 

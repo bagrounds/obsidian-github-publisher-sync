@@ -1161,10 +1161,12 @@ test.describe("Word Meter — picture-in-picture pop-out", () => {
     await expect(page.getByTestId("wm-pip-status")).toHaveText("")
   })
 
-  test("toggling without the Document PiP API surfaces an unsupported status", async ({ page }) => {
+  test("toggling without any PiP API surfaces an unsupported status", async ({ page }) => {
     await page.addInitScript(() => {
       // Force the unsupported branch even on a Chromium build that
-      // exposes documentPictureInPicture.
+      // exposes documentPictureInPicture or video PiP. Both paths are
+      // probed by checkDocumentPipAvailability, so both must be off
+      // for the status line to fall through to the diagnostic.
       try {
         Object.defineProperty(window, "documentPictureInPicture", {
           configurable: true,
@@ -1175,6 +1177,15 @@ test.describe("Word Meter — picture-in-picture pop-out", () => {
         // a direct assignment so the FFI check still reads `undefined`.
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ;(window as any).documentPictureInPicture = undefined
+      }
+      try {
+        Object.defineProperty(document, "pictureInPictureEnabled", {
+          configurable: true,
+          get: () => false,
+        })
+      } catch {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(document as any).pictureInPictureEnabled = false
       }
     })
     await loadWordMeter(page)
@@ -1230,6 +1241,103 @@ test.describe("Word Meter — picture-in-picture pop-out", () => {
     await page.getByTestId("wm-pip-toggle").click()
     await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/close pop-out/i)
     expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(true)
+    await page.getByTestId("wm-pip-toggle").click()
+    await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/pop out count/i)
+    expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(false)
+  })
+
+  test("falls back to video Picture-in-Picture when Document PiP is missing", async ({ page }) => {
+    await page.addInitScript(() => {
+      // Disable Document PiP so checkDocumentPipAvailability falls
+      // through to the video-PiP path. The video shim is the one we
+      // exercise here — it's what mobile Chromium gets.
+      try {
+        Object.defineProperty(window, "documentPictureInPicture", {
+          configurable: true,
+          get: () => undefined,
+        })
+      } catch {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(window as any).documentPictureInPicture = undefined
+      }
+      // Mock the HTMLVideoElement PiP surface. We resolve immediately
+      // so the capability layer fires onOpened, and we record the
+      // exit-PiP call so the close path is observable.
+      try {
+        Object.defineProperty(document, "pictureInPictureEnabled", {
+          configurable: true,
+          get: () => true,
+        })
+      } catch {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(document as any).pictureInPictureEnabled = true
+      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const videoProto: any = HTMLVideoElement.prototype
+      videoProto.requestPictureInPicture = function () {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(document as any).pictureInPictureElement = this
+        return Promise.resolve({})
+      }
+      const originalExit = document.exitPictureInPicture
+      document.exitPictureInPicture = () => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const el = (document as any).pictureInPictureElement as
+          | HTMLVideoElement
+          | null
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(document as any).pictureInPictureElement = null
+        if (el) el.dispatchEvent(new Event("leavepictureinpicture"))
+        return originalExit ? originalExit.call(document) : Promise.resolve()
+      }
+      // captureStream is the other capability gate. Returning a real
+      // MediaStream keeps `video.srcObject = stream` from throwing
+      // (the setter validates the assigned value is a MediaProvider).
+      // An empty stream has no real frames but suffices for the shim's
+      // lifecycle: we only assert that the videopath ran end-to-end.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const canvasProto: any = HTMLCanvasElement.prototype
+      canvasProto.captureStream = function () {
+        return new MediaStream()
+      }
+      // With a fake stream the real <video> never produces a frame,
+      // so its readyState stays 0 and loadedmetadata never fires. The
+      // shim waits for one of those signals before calling
+      // requestPictureInPicture, so we observe DOM insertions and
+      // synthesise the loadedmetadata event the shim is listening for.
+      const installObserver = () => {
+        const observer = new MutationObserver((records) => {
+          records.forEach((record) => {
+            record.addedNodes.forEach((node) => {
+              if (
+                node instanceof HTMLVideoElement
+                && node.getAttribute("data-testid") === "wm-pip-video"
+              ) {
+                setTimeout(() => {
+                  node.dispatchEvent(new Event("loadedmetadata"))
+                }, 0)
+              }
+            })
+          })
+        })
+        observer.observe(document.body, { childList: true, subtree: true })
+      }
+      if (document.body) {
+        installObserver()
+      } else {
+        document.addEventListener("DOMContentLoaded", installObserver, { once: true })
+      }
+    })
+    await loadWordMeter(page)
+    await page.getByTestId("wm-pip-toggle").click()
+    await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/close pop-out/i)
+    expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(true)
+    // The hidden video element should be on the page while PiP is open.
+    expect(
+      await page.evaluate(
+        () => document.querySelectorAll("video[data-testid='wm-pip-video']").length,
+      ),
+    ).toBe(1)
     await page.getByTestId("wm-pip-toggle").click()
     await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/pop out count/i)
     expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(false)

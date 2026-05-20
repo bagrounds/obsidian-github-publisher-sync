@@ -67,8 +67,9 @@ openPipWindow
 openPipWindow environment onOpened onError onClosedByUser = do
   let runHere :: forall a. AppM a -> Effect a
       runHere act = runAppM environment act
-  available <- FFI.documentPipApiAvailable
-  if not available then runHere (onError DocumentPipUnsupported)
+  unsupportedReason <- FFI.checkDocumentPipAvailability
+  if unsupportedReason /= "" then
+    runHere (onError (DocumentPipUnsupported unsupportedReason))
   else FFI.requestPipWindow
     ( \pipWindow -> do
         Ref.write (Just pipWindow) environment.pipWindowRef

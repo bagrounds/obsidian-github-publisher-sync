@@ -5,6 +5,68 @@
 // side (WordMeter.FFI.DocumentPip + WordMeter.Capability.DocumentPip)
 // owns window lifetime and the typed error algebra.
 
+const pipWindowWidth = 320
+const pipWindowHeight = 220
+
+const describeUserAgent = () => {
+  if (typeof navigator === "undefined") return "no navigator"
+  // Prefer the structured User-Agent Client Hints API where available
+  // (Chromium-based browsers expose `userAgentData`). It distinguishes
+  // mobile from desktop without UA-string sniffing.
+  const data = navigator.userAgentData
+  if (data && typeof data === "object") {
+    const brandList = Array.isArray(data.brands)
+      ? data.brands
+          .map((entry) => (entry && entry.brand ? String(entry.brand) : ""))
+          .filter((brand) => brand && !/Not.A.Brand/i.test(brand))
+          .join(", ")
+      : ""
+    const platform = data.platform ? String(data.platform) : "unknown platform"
+    const form = data.mobile ? "mobile" : "desktop"
+    const brands = brandList || "unknown browser"
+    return brands + " on " + platform + " (" + form + ")"
+  }
+  // Fall back to the legacy UA string, which is good enough for the
+  // diagnostic detail even though it's lossy.
+  return navigator.userAgent ? String(navigator.userAgent) : "unknown UA"
+}
+
+const looksMobile = () => {
+  if (typeof navigator === "undefined") return false
+  const data = navigator.userAgentData
+  if (data && typeof data.mobile === "boolean") return data.mobile
+  // UA-string fallback: Chromium on Android always advertises "Android"
+  // and "Mobile"; iOS Safari advertises "iPhone"/"iPad".
+  const ua = navigator.userAgent || ""
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(ua)
+}
+
+export const checkDocumentPipAvailability = () => {
+  if (typeof window === "undefined") return "no window object available"
+  const api = window.documentPictureInPicture
+  if (!api) {
+    // The most likely cause of a missing API on a sane install. We call
+    // out Chromium on mobile explicitly because the user can see the
+    // platform's PiP permission toggle and reasonably expect this API
+    // to follow — but Chromium ships Document Picture-in-Picture only
+    // on desktop (Windows, macOS, Linux, ChromeOS) as of 2026. The
+    // mobile PiP toggle governs the legacy HTMLVideoElement PiP API
+    // instead, which is unrelated.
+    if (looksMobile()) {
+      return "Document Picture-in-Picture is desktop-only on Chromium" +
+        " (no Android/iOS support as of 2026); user-agent=" +
+        describeUserAgent()
+    }
+    return "window.documentPictureInPicture is undefined; user-agent=" +
+      describeUserAgent()
+  }
+  if (typeof api.requestWindow !== "function") {
+    return "documentPictureInPicture.requestWindow is not a function" +
+      "; user-agent=" + describeUserAgent()
+  }
+  return ""
+}
+
 const describeFailure = (error) => {
   if (error == null) return "unknown error"
   if (typeof error === "string") return error
@@ -12,14 +74,6 @@ const describeFailure = (error) => {
   if (error.message) return String(error.message)
   return String(error)
 }
-
-const pipWindowWidth = 320
-const pipWindowHeight = 220
-
-export const documentPipApiAvailable = () =>
-  typeof window !== "undefined"
-    && !!window.documentPictureInPicture
-    && typeof window.documentPictureInPicture.requestWindow === "function"
 
 export const requestPipWindow = (onWindow) => (onError) => () => {
   try {

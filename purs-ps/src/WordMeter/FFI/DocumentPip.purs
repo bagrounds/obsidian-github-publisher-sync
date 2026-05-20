@@ -3,7 +3,7 @@ module WordMeter.FFI.DocumentPip
   , DocumentPipError(..)
   , PipContent
   , renderDocumentPipError
-  , documentPipApiAvailable
+  , checkDocumentPipAvailability
   , requestPipWindow
   , attachPipCloseListener
   , closePipWindow
@@ -22,28 +22,31 @@ foreign import data PipWindow :: Type
 
 -- | Why a Document Picture-in-Picture operation failed.
 -- |
--- | * `DocumentPipUnsupported` — the browser does not expose
--- |   `documentPictureInPicture` at all. Surfaces in the UI status as
--- |   the user-facing "not supported on this browser" message.
+-- | * `DocumentPipUnsupported` — the browser does not expose a usable
+-- |   `documentPictureInPicture` object. Carries a platform-aware
+-- |   diagnostic detail (e.g. "Document PiP is desktop-only on
+-- |   Chromium; this device reports Chrome on Android") so the user
+-- |   can tell *why* the API is missing rather than just *that* it is.
 -- | * `DocumentPipRequestRejected` — `requestWindow` returned a
 -- |   promise that rejected (most often because the call did not
 -- |   originate in a user gesture, or the user dismissed a permission
 -- |   prompt). Carries the browser's error name for diagnostics.
 data DocumentPipError
-  = DocumentPipUnsupported
+  = DocumentPipUnsupported String
   | DocumentPipRequestRejected String
 
 derive instance eqDocumentPipError :: Eq DocumentPipError
 
 instance showDocumentPipError :: Show DocumentPipError where
-  show DocumentPipUnsupported = "DocumentPipUnsupported"
+  show (DocumentPipUnsupported detail) =
+    "DocumentPipUnsupported " <> show detail
   show (DocumentPipRequestRejected detail) =
     "DocumentPipRequestRejected " <> show detail
 
 renderDocumentPipError :: DocumentPipError -> String
 renderDocumentPipError = case _ of
-  DocumentPipUnsupported ->
-    "picture-in-picture not supported on this browser"
+  DocumentPipUnsupported detail ->
+    "picture-in-picture not supported on this browser — " <> detail
   DocumentPipRequestRejected detail ->
     "pop-out unavailable: " <> detail
 
@@ -55,11 +58,15 @@ type PipContent =
   , status :: String
   }
 
--- | True iff `window.documentPictureInPicture` is exposed and exposes
--- | a `requestWindow` function. The capability layer queries this
--- | before every `requestPipWindow` so the "unsupported" case is
--- | detected in PureScript rather than via a sentinel string from JS.
-foreign import documentPipApiAvailable :: Effect Boolean
+-- | Probe the browser for Document Picture-in-Picture support. Returns
+-- | the empty string when the API is callable; otherwise returns a
+-- | human-readable, platform-aware diagnostic string describing
+-- | exactly which check failed (no `window`, missing
+-- | `documentPictureInPicture` object, missing `requestWindow` method,
+-- | or a mobile/unsupported platform with the user-agent appended).
+-- | The capability layer wraps the non-empty case into
+-- | `DocumentPipUnsupported detail`.
+foreign import checkDocumentPipAvailability :: Effect String
 
 -- | Thin wrapper over `documentPictureInPicture.requestWindow`.
 -- | Invokes exactly one of the two continuations: the window callback

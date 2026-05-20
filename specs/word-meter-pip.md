@@ -26,9 +26,58 @@ The browser API powering this is `window.documentPictureInPicture.requestWindow(
 Two constraints shape the design:
 
 1. **User gesture required.** `requestWindow()` only resolves when called from a trusted user gesture (a click on a button is enough). A timer, a `visibilitychange` listener, or any other ambient handler cannot open a PiP window. There is no Permission-Policy that grants ambient PiP for documents — the autoPiP entitlements that exist (`autoPictureInPicture` on `<video>`) apply only to media-element PiP, not Document PiP.
-2. **Mic capture only survives where the window does.** On desktop Chrome, the PiP window stays user-visible after the source tab hides, which keeps `SpeechRecognition` running. On Android Chrome the PiP rollout is still partial — when present it behaves the same way, but absence is the common case today.
+2. **Document PiP is desktop-only.** Chromium ships Document Picture-in-Picture only on desktop platforms (Windows, macOS, Linux, ChromeOS). Android Chrome, iOS Safari, Firefox, Samsung Internet, and Android WebView all return `undefined` for `window.documentPictureInPicture`. This is documented on MDN as of 2026 and shows no signs of changing.
 
-The honest answer to the original "auto-enter PiP when I switch apps" question is therefore **no — not without a prior user tap**. The realistic UX is a **manual pop-out**: the user taps a button once before pocketing the phone, the PiP window stays on top, and the count keeps ticking.
+The honest answer to the original "auto-enter PiP when I switch apps" question is therefore **no — not without a prior user tap, and not on mobile at all**. The realistic desktop UX is a **manual pop-out**: the user taps a button once before switching apps, the PiP window stays on top, and the count keeps ticking.
+
+## RCA — "picture-in-picture not supported on this browser" on mobile Chrome
+
+The user reported tapping Pop-out on mobile Chrome and getting the "not supported" status, even though their Android Chrome app settings show a PiP permission toggle. Walking through five whys:
+
+1. **Why does the button say "not supported" on mobile Chrome?** Because the `documentPipApiAvailable` foreign import returned `false`. The implementation checks for `window.documentPictureInPicture` and its `requestWindow` method.
+2. **Why is that object missing on mobile Chrome?** Because Chromium intentionally gates Document Picture-in-Picture off on Android. The build artifact for Android Chrome simply does not register the API on the window object.
+3. **Why is the API desktop-only?** Android already exposes a native PiP system that integrates with the platform task switcher, and Chromium routes the existing `HTMLVideoElement.requestPictureInPicture` API into it. The platform PiP model does not natively support arbitrary HTML documents, so Document PiP has not been ported.
+4. **Why did the Android Chrome app settings suggest it should work?** Because Android's per-app PiP permission toggle controls *video* PiP — the legacy `HTMLVideoElement.requestPictureInPicture` API. There is no UI affordance on the device to distinguish video PiP from Document PiP, so seeing the toggle enabled is misleading.
+5. **Why didn't the meter explain any of this?** Because the FFI returned a bare `Boolean` and the UI surfaced a single generic string. The user had no way to tell whether the API was missing, the call failed, or the device was simply not on the supported platform list.
+
+### What this PR adds
+
+The FFI now returns a platform-aware diagnostic string instead of a boolean. The capability layer wraps it into a new `DocumentPipUnsupported String` variant of `DocumentPipError`, and the status line surfaces the detail next to the existing "not supported on this browser" prefix. The detail includes:
+
+- The exact missing surface (`window`, `documentPictureInPicture` object, or `requestWindow` method).
+- A platform classification using `navigator.userAgentData.mobile` where available (Chromium Client Hints) and a user-agent string fallback otherwise.
+- An explicit note that "Document Picture-in-Picture is desktop-only on Chromium" when the mobile branch fires, so users understand that no setting change on their phone will unlock the API.
+- The raw user-agent or `userAgentData` brands+platform string for bug reports.
+
+A representative status message on mobile Chrome now reads:
+
+```
+picture-in-picture not supported on this browser — Document Picture-in-Picture is desktop-only on Chromium (no Android/iOS support as of 2026); user-agent=Google Chrome, Chromium on Android (mobile)
+```
+
+### Per-browser / per-platform expectations
+
+The following table reflects browser-vendor compatibility data as of 2026. "Document PiP" refers to `window.documentPictureInPicture.requestWindow`; "Speech" refers to `SpeechRecognition` (cloud or on-device).
+
+The Word Meter Pop-out button works in the green cells. On every other combination the button surfaces an explanatory unsupported message and the wake-lock toggle remains the only mitigation for "I want to switch apps without losing my count".
+
+| Browser           | Desktop Document PiP | Mobile Document PiP | Speech available |
+| ----------------- | -------------------- | ------------------- | ---------------- |
+| Chrome 116+       | ✅ yes                | ❌ no                | ✅ yes            |
+| Edge 116+         | ✅ yes                | ❌ no                | ✅ yes            |
+| Opera 102+        | ✅ yes                | ❌ no                | ✅ yes            |
+| Firefox           | ❌ no                 | ❌ no                | ❌ no             |
+| Safari            | ❌ no                 | ❌ no                | ⚠️ partial        |
+| Samsung Internet  | n/a                  | ❌ no                | ⚠️ partial        |
+| Chromium WebView  | n/a                  | ❌ no                | ⚠️ partial        |
+
+In prose, for TTS listeners: Document Picture-in-Picture is available on desktop Chrome, Edge, and Opera from version one hundred sixteen onward. It is not available on any mobile browser, including Chrome for Android and Safari on iOS. Firefox does not implement it on any platform. Therefore the Pop-out button is useful only on desktop Chromium, and on every other combination the meter shows a diagnostic explaining why the feature is missing.
+
+### Why a video-PiP workaround on mobile is not pursued
+
+A common hack for "I want any DOM rendered into PiP on Android" is to render content onto a `<canvas>`, capture the stream with `captureStream()`, attach it to a hidden `<video>`, and call `video.requestPictureInPicture()`. This path is technically open on Android Chrome.
+
+But it does not actually solve the underlying problem the Pop-out button is trying to solve. The meter needs `SpeechRecognition` to keep running while the user is in another app, and Chromium suspends `SpeechRecognition` whenever the source page becomes hidden — regardless of whether a video element is in PiP. A floating video window on Android would therefore show a frozen number, not a live one. The wake-lock toggle (which keeps the screen on, which keeps the page visible) remains the only viable mitigation on mobile, and a video-PiP shim would simply add complexity without changing the outcome.
 
 ## UI
 

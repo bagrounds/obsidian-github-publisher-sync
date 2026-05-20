@@ -1182,6 +1182,11 @@ test.describe("Word Meter — picture-in-picture pop-out", () => {
     await expect(page.getByTestId("wm-pip-status")).toHaveText(
       /picture-in-picture not supported on this browser/i,
     )
+    // The detail should be platform-aware: when running headless
+    // chromium on Linux the user-agent is reported, so the diagnostic
+    // status must include the "user-agent=" tag rather than collapsing
+    // to a generic message.
+    await expect(page.getByTestId("wm-pip-status")).toHaveText(/user-agent=/)
     expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(false)
   })
 

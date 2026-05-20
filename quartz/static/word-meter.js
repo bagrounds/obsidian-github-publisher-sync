@@ -62,13 +62,13 @@
   var unit = void 0;
 
   // output/Type.Proxy/index.js
-  var $$Proxy = /* @__PURE__ */ function() {
+  var $$Proxy = /* @__PURE__ */ (function() {
     function $$Proxy2() {
     }
     ;
     $$Proxy2.value = new $$Proxy2();
     return $$Proxy2;
-  }();
+  })();
 
   // output/Data.Functor/index.js
   var map = function(dict) {
@@ -173,9 +173,9 @@
     }
   };
   var join = function(dictBind) {
-    var bind14 = bind(dictBind);
+    var bind15 = bind(dictBind);
     return function(m) {
-      return bind14(m)(identity3);
+      return bind15(m)(identity3);
     };
   };
 
@@ -289,27 +289,27 @@
   };
 
   // output/Data.Ordering/index.js
-  var LT = /* @__PURE__ */ function() {
+  var LT = /* @__PURE__ */ (function() {
     function LT2() {
     }
     ;
     LT2.value = new LT2();
     return LT2;
-  }();
-  var GT = /* @__PURE__ */ function() {
+  })();
+  var GT = /* @__PURE__ */ (function() {
     function GT2() {
     }
     ;
     GT2.value = new GT2();
     return GT2;
-  }();
-  var EQ = /* @__PURE__ */ function() {
+  })();
+  var EQ = /* @__PURE__ */ (function() {
     function EQ2() {
     }
     ;
     EQ2.value = new EQ2();
     return EQ2;
-  }();
+  })();
 
   // output/Data.Ring/foreign.js
   var intSub = function(x) {
@@ -387,38 +387,38 @@
   };
 
   // output/Data.Ord/index.js
-  var ordString = /* @__PURE__ */ function() {
+  var ordString = /* @__PURE__ */ (function() {
     return {
       compare: ordStringImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqString;
       }
     };
-  }();
-  var ordNumber = /* @__PURE__ */ function() {
+  })();
+  var ordNumber = /* @__PURE__ */ (function() {
     return {
       compare: ordNumberImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqNumber;
       }
     };
-  }();
-  var ordInt = /* @__PURE__ */ function() {
+  })();
+  var ordInt = /* @__PURE__ */ (function() {
     return {
       compare: ordIntImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqInt;
       }
     };
-  }();
-  var ordChar = /* @__PURE__ */ function() {
+  })();
+  var ordChar = /* @__PURE__ */ (function() {
     return {
       compare: ordCharImpl(LT.value)(EQ.value)(GT.value),
       Eq0: function() {
         return eqChar;
       }
     };
-  }();
+  })();
   var compare = function(dict) {
     return dict.compare;
   };
@@ -512,14 +512,14 @@
 
   // output/Data.Maybe/index.js
   var identity4 = /* @__PURE__ */ identity(categoryFn);
-  var Nothing = /* @__PURE__ */ function() {
+  var Nothing = /* @__PURE__ */ (function() {
     function Nothing2() {
     }
     ;
     Nothing2.value = new Nothing2();
     return Nothing2;
-  }();
-  var Just = /* @__PURE__ */ function() {
+  })();
+  var Just = /* @__PURE__ */ (function() {
     function Just2(value0) {
       this.value0 = value0;
     }
@@ -528,7 +528,7 @@
       return new Just2(value0);
     };
     return Just2;
-  }();
+  })();
   var maybe = function(v) {
     return function(v1) {
       return function(v2) {
@@ -626,7 +626,7 @@
   };
 
   // output/Data.Either/index.js
-  var Left = /* @__PURE__ */ function() {
+  var Left = /* @__PURE__ */ (function() {
     function Left2(value0) {
       this.value0 = value0;
     }
@@ -635,8 +635,8 @@
       return new Left2(value0);
     };
     return Left2;
-  }();
-  var Right = /* @__PURE__ */ function() {
+  })();
+  var Right = /* @__PURE__ */ (function() {
     function Right2(value0) {
       this.value0 = value0;
     }
@@ -645,7 +645,7 @@
       return new Right2(value0);
     };
     return Right2;
-  }();
+  })();
   var note = function(a) {
     return maybe(new Left(a))(Right.create);
   };
@@ -712,14 +712,14 @@
       return applyEither;
     }
   };
-  var applicativeEither = /* @__PURE__ */ function() {
+  var applicativeEither = /* @__PURE__ */ (function() {
     return {
       pure: Right.create,
       Apply0: function() {
         return applyEither;
       }
     };
-  }();
+  })();
 
   // output/Effect/foreign.js
   var pureE = function(a) {
@@ -979,7 +979,7 @@
   });
 
   // output/Data.Tuple/index.js
-  var Tuple = /* @__PURE__ */ function() {
+  var Tuple = /* @__PURE__ */ (function() {
     function Tuple2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -991,7 +991,7 @@
       };
     };
     return Tuple2;
-  }();
+  })();
   var uncurry = function(f) {
     return function(v) {
       return f(v.value0)(v.value1);
@@ -1091,12 +1091,12 @@
   };
   var functorReaderT = function(dictFunctor) {
     return {
-      map: function() {
+      map: (function() {
         var $155 = map(dictFunctor);
         return function($156) {
           return mapReaderT($155($156));
         };
-      }()
+      })()
     };
   };
   var applyReaderT = function(dictApply) {
@@ -1137,12 +1137,12 @@
   var applicativeReaderT = function(dictApplicative) {
     var applyReaderT1 = applyReaderT(dictApplicative.Apply0());
     return {
-      pure: function() {
+      pure: (function() {
         var $160 = pure(dictApplicative);
         return function($161) {
           return ReaderT($$const($160($161)));
         };
-      }(),
+      })(),
       Apply0: function() {
         return applyReaderT1;
       }
@@ -1173,13 +1173,13 @@
     var Monad0 = dictMonadEffect.Monad0();
     var monadReaderT1 = monadReaderT(Monad0);
     return {
-      liftEffect: function() {
+      liftEffect: (function() {
         var $163 = lift3(Monad0);
         var $164 = liftEffect(dictMonadEffect);
         return function($165) {
           return $163($164($165));
         };
-      }(),
+      })(),
       Monad0: function() {
         return monadReaderT1;
       }
@@ -1271,7 +1271,7 @@
   };
 
   // output/Data.Traversable/foreign.js
-  var traverseArrayImpl = /* @__PURE__ */ function() {
+  var traverseArrayImpl = /* @__PURE__ */ (function() {
     function array1(a) {
       return [a];
     }
@@ -1318,7 +1318,7 @@
         };
       };
     };
-  }();
+  })();
 
   // output/Data.Foldable/foreign.js
   var foldrArray = function(f) {
@@ -1550,7 +1550,7 @@
       return ordChar;
     }
   };
-  var boundedEnumChar = /* @__PURE__ */ function() {
+  var boundedEnumChar = /* @__PURE__ */ (function() {
     return {
       cardinality: toCharCode(top1) - toCharCode(bottom1) | 0,
       toEnum: charToEnum,
@@ -1562,7 +1562,7 @@
         return enumChar;
       }
     };
-  }();
+  })();
 
   // output/Data.Int/foreign.js
   var fromNumberImpl = function(just) {
@@ -1584,9 +1584,9 @@
   // output/Data.Int/index.js
   var top2 = /* @__PURE__ */ top(boundedInt);
   var bottom2 = /* @__PURE__ */ bottom(boundedInt);
-  var fromNumber = /* @__PURE__ */ function() {
+  var fromNumber = /* @__PURE__ */ (function() {
     return fromNumberImpl(Just.create)(Nothing.value);
-  }();
+  })();
   var unsafeClamp = function(x) {
     if (!isFiniteImpl(x)) {
       return 0;
@@ -1673,7 +1673,7 @@
       };
     };
   };
-  var boundedInstant = /* @__PURE__ */ function() {
+  var boundedInstant = /* @__PURE__ */ (function() {
     return {
       bottom: -86399778816e5,
       top: 8639977881599999,
@@ -1681,7 +1681,7 @@
         return ordDateTime;
       }
     };
-  }();
+  })();
 
   // output/WordMeter.FFI.Clock/foreign.js
   var currentTimeMillis = () => Date.now();
@@ -1696,6 +1696,241 @@
     currentTimeMillis: /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect))(/* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect))(currentTimeMillis))(function(ms) {
       return pure2(fromMaybe(bottom3)(instant(ms)));
     }),
+    Monad0: function() {
+      return monadAppM;
+    }
+  };
+
+  // output/WordMeter.FFI.DocumentPip/foreign.js
+  var describeFailure = (error2) => {
+    if (error2 == null) return "unknown error";
+    if (typeof error2 === "string") return error2;
+    if (error2.name) return String(error2.name);
+    if (error2.message) return String(error2.message);
+    return String(error2);
+  };
+  var pipWindowWidth = 320;
+  var pipWindowHeight = 220;
+  var documentPipApiAvailable = () => typeof window !== "undefined" && !!window.documentPictureInPicture && typeof window.documentPictureInPicture.requestWindow === "function";
+  var requestPipWindow = (onWindow) => (onError) => () => {
+    try {
+      window.documentPictureInPicture.requestWindow({ width: pipWindowWidth, height: pipWindowHeight }).then((pipWindow) => {
+        seedPipDocument(pipWindow);
+        onWindow(pipWindow)();
+      }).catch((reason) => {
+        onError(describeFailure(reason))();
+      });
+    } catch (error2) {
+      onError(describeFailure(error2))();
+    }
+  };
+  var attachPipCloseListener = (pipWindow) => (handler) => () => {
+    pipWindow.addEventListener("pagehide", () => {
+      handler();
+    });
+  };
+  var closePipWindow = (pipWindow) => () => {
+    try {
+      pipWindow.close();
+    } catch {
+    }
+  };
+  var writePipContent = (pipWindow) => (content) => () => {
+    const doc = pipWindow.document;
+    if (!doc) return;
+    let countEl = doc.getElementById("wm-pip-count");
+    let statusEl = doc.getElementById("wm-pip-status");
+    if (!countEl || !statusEl) {
+      seedPipDocument(pipWindow);
+      countEl = doc.getElementById("wm-pip-count");
+      statusEl = doc.getElementById("wm-pip-status");
+    }
+    if (countEl) countEl.textContent = String(content.wordsToday);
+    if (statusEl) statusEl.textContent = String(content.status);
+  };
+  var seedPipDocument = (pipWindow) => {
+    const doc = pipWindow.document;
+    if (!doc) return;
+    doc.title = "Word Meter";
+    const style = doc.createElement("style");
+    style.textContent = pipStylesheet;
+    doc.head.appendChild(style);
+    const root = doc.createElement("div");
+    root.className = "wm-pip-root";
+    root.setAttribute("data-testid", "wm-pip-root");
+    const count = doc.createElement("div");
+    count.id = "wm-pip-count";
+    count.className = "wm-pip-count";
+    count.setAttribute("data-testid", "wm-pip-count");
+    count.textContent = "0";
+    const label = doc.createElement("div");
+    label.className = "wm-pip-count-label";
+    label.textContent = "words today";
+    const status = doc.createElement("div");
+    status.id = "wm-pip-status";
+    status.className = "wm-pip-status";
+    status.setAttribute("data-testid", "wm-pip-window-status");
+    status.textContent = "Idle";
+    root.appendChild(count);
+    root.appendChild(label);
+    root.appendChild(status);
+    doc.body.appendChild(root);
+  };
+  var pipStylesheet = `
+  html, body { margin: 0; padding: 0; height: 100%; background: #0b0d10; color: #f3f4f6; font-family: system-ui, sans-serif; }
+  .wm-pip-root { box-sizing: border-box; height: 100%; padding: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
+  .wm-pip-count { font-size: 96px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .wm-pip-count-label { font-size: 14px; opacity: 0.7; letter-spacing: 0.04em; text-transform: uppercase; }
+  .wm-pip-status { margin-top: 12px; font-size: 16px; opacity: 0.85; }
+`;
+
+  // output/WordMeter.FFI.DocumentPip/index.js
+  var DocumentPipUnsupported = /* @__PURE__ */ (function() {
+    function DocumentPipUnsupported2() {
+    }
+    ;
+    DocumentPipUnsupported2.value = new DocumentPipUnsupported2();
+    return DocumentPipUnsupported2;
+  })();
+  var DocumentPipRequestRejected = /* @__PURE__ */ (function() {
+    function DocumentPipRequestRejected2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    DocumentPipRequestRejected2.create = function(value0) {
+      return new DocumentPipRequestRejected2(value0);
+    };
+    return DocumentPipRequestRejected2;
+  })();
+  var renderDocumentPipError = function(v) {
+    if (v instanceof DocumentPipUnsupported) {
+      return "picture-in-picture not supported on this browser";
+    }
+    ;
+    if (v instanceof DocumentPipRequestRejected) {
+      return "pop-out unavailable: " + v.value0;
+    }
+    ;
+    throw new Error("Failed pattern match at WordMeter.FFI.DocumentPip (line 44, column 26 - line 48, column 38): " + [v.constructor.name]);
+  };
+
+  // output/WordMeter.Capability.DocumentPip/index.js
+  var bind1 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask3 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect3 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var writeIfHeld = function(environment) {
+    return function(content) {
+      return function __do2() {
+        var held = read(environment.pipWindowRef)();
+        if (held instanceof Nothing) {
+          return unit;
+        }
+        ;
+        if (held instanceof Just) {
+          return writePipContent(held.value0)(content)();
+        }
+        ;
+        throw new Error("Failed pattern match at WordMeter.Capability.DocumentPip (line 115, column 3 - line 117, column 60): " + [held.constructor.name]);
+      };
+    };
+  };
+  var syncPipContent = function(dict) {
+    return dict.syncPipContent;
+  };
+  var requestPipWindow2 = function(dict) {
+    return dict.requestPipWindow;
+  };
+  var handlePipWindowClosed = function(environment) {
+    return function(_pipWindow) {
+      return function(onClosedByUser) {
+        return function __do2() {
+          var currentlyHeld = read(environment.pipWindowRef)();
+          if (currentlyHeld instanceof Just) {
+            write(Nothing.value)(environment.pipWindowRef)();
+            return runAppM(environment)(onClosedByUser)();
+          }
+          ;
+          if (currentlyHeld instanceof Nothing) {
+            return unit;
+          }
+          ;
+          throw new Error("Failed pattern match at WordMeter.Capability.DocumentPip (line 92, column 3 - line 96, column 25): " + [currentlyHeld.constructor.name]);
+        };
+      };
+    };
+  };
+  var openPipWindow = function(environment) {
+    return function(onOpened) {
+      return function(onError) {
+        return function(onClosedByUser) {
+          var runHere = function(act) {
+            return runAppM(environment)(act);
+          };
+          return function __do2() {
+            var available = documentPipApiAvailable();
+            var $44 = !available;
+            if ($44) {
+              return runHere(onError(DocumentPipUnsupported.value))();
+            }
+            ;
+            return requestPipWindow(function(pipWindow) {
+              return function __do3() {
+                write(new Just(pipWindow))(environment.pipWindowRef)();
+                attachPipCloseListener(pipWindow)(handlePipWindowClosed(environment)(pipWindow)(onClosedByUser))();
+                return runHere(onOpened)();
+              };
+            })(function(reason) {
+              return runHere(onError(new DocumentPipRequestRejected(reason)));
+            })();
+          };
+        };
+      };
+    };
+  };
+  var closePipWindow2 = function(dict) {
+    return dict.closePipWindow;
+  };
+  var closeHeldPipWindow = function(environment) {
+    return function(onClosed) {
+      var runHere = function(act) {
+        return runAppM(environment)(act);
+      };
+      return function __do2() {
+        var held = read(environment.pipWindowRef)();
+        if (held instanceof Nothing) {
+          return runHere(onClosed)();
+        }
+        ;
+        if (held instanceof Just) {
+          write(Nothing.value)(environment.pipWindowRef)();
+          closePipWindow(held.value0)();
+          return runHere(onClosed)();
+        }
+        ;
+        throw new Error("Failed pattern match at WordMeter.Capability.DocumentPip (line 104, column 3 - line 109, column 23): " + [held.constructor.name]);
+      };
+    };
+  };
+  var documentPipAppM = {
+    requestPipWindow: function(onOpened) {
+      return function(onError) {
+        return function(onClosedByUser) {
+          return bind1(ask3)(function(environment) {
+            return liftEffect3(openPipWindow(environment)(onOpened)(onError)(onClosedByUser));
+          });
+        };
+      };
+    },
+    closePipWindow: function(onClosed) {
+      return bind1(ask3)(function(environment) {
+        return liftEffect3(closeHeldPipWindow(environment)(onClosed));
+      });
+    },
+    syncPipContent: function(content) {
+      return bind1(ask3)(function(environment) {
+        return liftEffect3(writeIfHeld(environment)(content));
+      });
+    },
     Monad0: function() {
       return monadAppM;
     }
@@ -1770,7 +2005,7 @@
   // output/WordMeter.Vdom/index.js
   var bind3 = /* @__PURE__ */ bind(bindEffect);
   var traverse_2 = /* @__PURE__ */ traverse_(applicativeEffect)(foldableArray);
-  var ClickListener = /* @__PURE__ */ function() {
+  var ClickListener = /* @__PURE__ */ (function() {
     function ClickListener2(value0) {
       this.value0 = value0;
     }
@@ -1779,8 +2014,8 @@
       return new ClickListener2(value0);
     };
     return ClickListener2;
-  }();
-  var CheckboxChangeListener = /* @__PURE__ */ function() {
+  })();
+  var CheckboxChangeListener = /* @__PURE__ */ (function() {
     function CheckboxChangeListener2(value0) {
       this.value0 = value0;
     }
@@ -1789,8 +2024,8 @@
       return new CheckboxChangeListener2(value0);
     };
     return CheckboxChangeListener2;
-  }();
-  var ElementNode = /* @__PURE__ */ function() {
+  })();
+  var ElementNode = /* @__PURE__ */ (function() {
     function ElementNode2(value0) {
       this.value0 = value0;
     }
@@ -1799,8 +2034,8 @@
       return new ElementNode2(value0);
     };
     return ElementNode2;
-  }();
-  var TextNode = /* @__PURE__ */ function() {
+  })();
+  var TextNode = /* @__PURE__ */ (function() {
     function TextNode2(value0) {
       this.value0 = value0;
     }
@@ -1809,16 +2044,16 @@
       return new TextNode2(value0);
     };
     return TextNode2;
-  }();
-  var text = /* @__PURE__ */ function() {
+  })();
+  var text = /* @__PURE__ */ (function() {
     return TextNode.create;
-  }();
-  var onClick = /* @__PURE__ */ function() {
+  })();
+  var onClick = /* @__PURE__ */ (function() {
     return ClickListener.create;
-  }();
-  var onCheckboxChange = /* @__PURE__ */ function() {
+  })();
+  var onCheckboxChange = /* @__PURE__ */ (function() {
     return CheckboxChangeListener.create;
-  }();
+  })();
   var element = function(tag) {
     return function(attributes) {
       return function(styles) {
@@ -1959,14 +2194,14 @@
   };
 
   // output/WordMeter.Capability.DomMount/index.js
-  var liftEffect3 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var liftEffect4 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var mountToHost = function(dict) {
     return dict.mountToHost;
   };
   var domMountAppM = {
     mountToHost: function(hostElementId2) {
       return function(node) {
-        return liftEffect3(mount(hostElementId2)(node));
+        return liftEffect4(mount(hostElementId2)(node));
       };
     },
     Monad0: function() {
@@ -1982,10 +2217,10 @@
   };
 
   // output/WordMeter.Capability.Environment/index.js
-  var liftEffect4 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var liftEffect5 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var environmentAppM = {
     captureEnvironmentSnapshot: function(bundleVersion) {
-      return liftEffect4(captureEnvironmentSnapshot(bundleVersion));
+      return liftEffect5(captureEnvironmentSnapshot(bundleVersion));
     },
     Monad0: function() {
       return monadAppM;
@@ -1996,7 +2231,7 @@
   };
 
   // output/WordMeter.FFI.Recognition/foreign.js
-  var describeFailure = (error2) => {
+  var describeFailure2 = (error2) => {
     if (error2 == null) return "unknown error";
     if (typeof error2 === "string") return error2;
     if (error2.name) return String(error2.name);
@@ -2025,7 +2260,7 @@
       }
       onConstructed(instance)();
     } catch (error2) {
-      onError(describeFailure(error2))();
+      onError(describeFailure2(error2))();
     }
   };
   var supportsOnDeviceLanguagePackApi = (Ctor) => !!Ctor && typeof Ctor.available === "function" && typeof Ctor.install === "function";
@@ -2063,7 +2298,7 @@
             (installError) => {
               finishUnavailable(
                 "install-failed",
-                describeFailure(installError)
+                describeFailure2(installError)
               );
             }
           );
@@ -2071,12 +2306,12 @@
         (availableError) => {
           finishUnavailable(
             "availability-rejected",
-            describeFailure(availableError)
+            describeFailure2(availableError)
           );
         }
       );
     } catch (error2) {
-      finishUnavailable("availability-rejected", describeFailure(error2));
+      finishUnavailable("availability-rejected", describeFailure2(error2));
     }
   };
   var attachOnResult = (instance) => (callback) => () => {
@@ -2113,7 +2348,7 @@
       instance.start();
       onStarted();
     } catch (error2) {
-      onError(describeFailure(error2))();
+      onError(describeFailure2(error2))();
     }
   };
   var stopRecognitionInstance = (instance) => (onStopped) => (onError) => () => {
@@ -2121,26 +2356,26 @@
       instance.stop();
       onStopped();
     } catch (error2) {
-      onError(describeFailure(error2))();
+      onError(describeFailure2(error2))();
     }
   };
 
   // output/WordMeter.FFI.Recognition/index.js
-  var OnDeviceApiAbsent = /* @__PURE__ */ function() {
+  var OnDeviceApiAbsent = /* @__PURE__ */ (function() {
     function OnDeviceApiAbsent2() {
     }
     ;
     OnDeviceApiAbsent2.value = new OnDeviceApiAbsent2();
     return OnDeviceApiAbsent2;
-  }();
-  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceUnsupportedLanguage = /* @__PURE__ */ (function() {
     function OnDeviceUnsupportedLanguage2() {
     }
     ;
     OnDeviceUnsupportedLanguage2.value = new OnDeviceUnsupportedLanguage2();
     return OnDeviceUnsupportedLanguage2;
-  }();
-  var OnDeviceInstallFailed = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceInstallFailed = /* @__PURE__ */ (function() {
     function OnDeviceInstallFailed2(value0) {
       this.value0 = value0;
     }
@@ -2149,8 +2384,8 @@
       return new OnDeviceInstallFailed2(value0);
     };
     return OnDeviceInstallFailed2;
-  }();
-  var OnDeviceAvailabilityRejected = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailabilityRejected = /* @__PURE__ */ (function() {
     function OnDeviceAvailabilityRejected2(value0) {
       this.value0 = value0;
     }
@@ -2159,14 +2394,14 @@
       return new OnDeviceAvailabilityRejected2(value0);
     };
     return OnDeviceAvailabilityRejected2;
-  }();
-  var OnDeviceAvailable = /* @__PURE__ */ function() {
+  })();
+  var OnDeviceAvailable = /* @__PURE__ */ (function() {
     function OnDeviceAvailable2() {
     }
     ;
     OnDeviceAvailable2.value = new OnDeviceAvailable2();
     return OnDeviceAvailable2;
-  }();
+  })();
   var renderRecognitionStopError = function(v) {
     return v;
   };
@@ -2254,20 +2489,20 @@
   };
 
   // output/WordMeter.Recognition.Path/index.js
-  var OnDevicePath = /* @__PURE__ */ function() {
+  var OnDevicePath = /* @__PURE__ */ (function() {
     function OnDevicePath2() {
     }
     ;
     OnDevicePath2.value = new OnDevicePath2();
     return OnDevicePath2;
-  }();
-  var CloudPath = /* @__PURE__ */ function() {
+  })();
+  var CloudPath = /* @__PURE__ */ (function() {
     function CloudPath2() {
     }
     ;
     CloudPath2.value = new CloudPath2();
     return CloudPath2;
-  }();
+  })();
   var processLocallyFor = function(v) {
     if (v instanceof OnDevicePath) {
       return true;
@@ -2297,9 +2532,9 @@
 
   // output/WordMeter.Capability.Recognition/index.js
   var bottom4 = /* @__PURE__ */ bottom(boundedInstant);
-  var liftEffect5 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
-  var bind1 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask3 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect6 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var bind12 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask4 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
   var stopRecognitionInEnvironment = function(environment) {
     return function(onStopped) {
       return function(onError) {
@@ -2419,39 +2654,39 @@
   };
   var cancelAutoRestartInEnvironment = cancelHeldTimer;
   var recognitionAppM = {
-    recognitionApiAvailable: /* @__PURE__ */ liftEffect5(recognitionApiAvailable),
-    onDeviceLanguagePackApiAvailable: /* @__PURE__ */ liftEffect5(onDeviceLanguagePackApiAvailable),
+    recognitionApiAvailable: /* @__PURE__ */ liftEffect6(recognitionApiAvailable),
+    onDeviceLanguagePackApiAvailable: /* @__PURE__ */ liftEffect6(onDeviceLanguagePackApiAvailable),
     prepareOnDeviceLanguagePack: function(request) {
       return function(onDone) {
-        return bind1(ask3)(function(environment) {
-          return liftEffect5(prepareOnDeviceInEnvironment(environment)(request)(onDone));
+        return bind12(ask4)(function(environment) {
+          return liftEffect6(prepareOnDeviceInEnvironment(environment)(request)(onDone));
         });
       };
     },
     startRecognition: function(handlers) {
-      return bind1(ask3)(function(environment) {
-        return liftEffect5(startRecognitionInEnvironment(environment)(CloudPath.value)(handlers));
+      return bind12(ask4)(function(environment) {
+        return liftEffect6(startRecognitionInEnvironment(environment)(CloudPath.value)(handlers));
       });
     },
     startOnDeviceRecognition: function(handlers) {
-      return bind1(ask3)(function(environment) {
-        return liftEffect5(startRecognitionInEnvironment(environment)(OnDevicePath.value)(handlers));
+      return bind12(ask4)(function(environment) {
+        return liftEffect6(startRecognitionInEnvironment(environment)(OnDevicePath.value)(handlers));
       });
     },
     stopRecognition: function(onStopped) {
       return function(onError) {
-        return bind1(ask3)(function(environment) {
-          return liftEffect5(stopRecognitionInEnvironment(environment)(onStopped)(onError));
+        return bind12(ask4)(function(environment) {
+          return liftEffect6(stopRecognitionInEnvironment(environment)(onStopped)(onError));
         });
       };
     },
     scheduleAutoRestart: function(action) {
-      return bind1(ask3)(function(environment) {
-        return liftEffect5(scheduleAutoRestartInEnvironment(environment)(action));
+      return bind12(ask4)(function(environment) {
+        return liftEffect6(scheduleAutoRestartInEnvironment(environment)(action));
       });
     },
-    cancelAutoRestart: /* @__PURE__ */ bind1(ask3)(function(environment) {
-      return liftEffect5(cancelAutoRestartInEnvironment(environment));
+    cancelAutoRestart: /* @__PURE__ */ bind12(ask4)(function(environment) {
+      return liftEffect6(cancelAutoRestartInEnvironment(environment));
     }),
     Monad0: function() {
       return monadAppM;
@@ -2490,7 +2725,7 @@
   var filterImpl = function(f, xs) {
     return xs.filter(f);
   };
-  var sortByImpl = /* @__PURE__ */ function() {
+  var sortByImpl = /* @__PURE__ */ (function() {
     function mergeFromTo(compare2, fromOrdering, xs1, xs2, from2, to) {
       var mid;
       var i;
@@ -2531,7 +2766,7 @@
       mergeFromTo(compare2, fromOrdering, out, xs.slice(0), 0, xs.length);
       return out;
     };
-  }();
+  })();
   var sliceImpl = function(s, e, l) {
     return l.slice(s, e);
   };
@@ -2629,9 +2864,9 @@
     ;
     throw new Error("Failed pattern match at Data.Array (line 351, column 1 - line 351, column 45): " + [xs.constructor.name]);
   };
-  var index = /* @__PURE__ */ function() {
+  var index = /* @__PURE__ */ (function() {
     return runFn4(indexImpl)(Just.create)(Nothing.value);
-  }();
+  })();
   var last = function(xs) {
     return index(xs)(length(xs) - 1 | 0);
   };
@@ -2785,14 +3020,14 @@
     return joinWith("\n")(["version           : " + snapshot.version, "userAgent         : " + snapshot.userAgent, "navigator.language: " + snapshot.navigatorLanguage]);
   };
   var formatEntry = function(entry) {
-    return formatClockTime(entry.timestamp) + ("  " + (entry.label + function() {
+    return formatClockTime(entry.timestamp) + ("  " + (entry.label + (function() {
       var $5 = entry.detail === "";
       if ($5) {
         return "";
       }
       ;
       return " \u2014 " + entry.detail;
-    }()));
+    })()));
   };
   var formatEntries = function(entries) {
     if (length(entries) === 0) {
@@ -2894,14 +3129,14 @@
   };
 
   // output/WordMeter.Text/index.js
-  var collapseWhitespaceToSpace = /* @__PURE__ */ function() {
+  var collapseWhitespaceToSpace = /* @__PURE__ */ (function() {
     var $1 = replaceAll("\r")(" ");
     var $2 = replaceAll("\n")(" ");
     var $3 = replaceAll("	")(" ");
     return function($4) {
       return $1($2($3($4)));
     };
-  }();
+  })();
 
   // output/WordMeter.Words/index.js
   var isNonEmpty = function(value) {
@@ -2912,14 +3147,14 @@
   };
 
   // output/WordMeter.Recognition.Delta/index.js
-  var IgnoreDuplicate = /* @__PURE__ */ function() {
+  var IgnoreDuplicate = /* @__PURE__ */ (function() {
     function IgnoreDuplicate2() {
     }
     ;
     IgnoreDuplicate2.value = new IgnoreDuplicate2();
     return IgnoreDuplicate2;
-  }();
-  var ExtendUtterance = /* @__PURE__ */ function() {
+  })();
+  var ExtendUtterance = /* @__PURE__ */ (function() {
     function ExtendUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2928,8 +3163,8 @@
       return new ExtendUtterance2(value0);
     };
     return ExtendUtterance2;
-  }();
-  var StartNewUtterance = /* @__PURE__ */ function() {
+  })();
+  var StartNewUtterance = /* @__PURE__ */ (function() {
     function StartNewUtterance2(value0) {
       this.value0 = value0;
     }
@@ -2938,15 +3173,15 @@
       return new StartNewUtterance2(value0);
     };
     return StartNewUtterance2;
-  }();
-  var IgnoreEarlierSnapshot = /* @__PURE__ */ function() {
+  })();
+  var IgnoreEarlierSnapshot = /* @__PURE__ */ (function() {
     function IgnoreEarlierSnapshot2() {
     }
     ;
     IgnoreEarlierSnapshot2.value = new IgnoreEarlierSnapshot2();
     return IgnoreEarlierSnapshot2;
-  }();
-  var normalizeTranscript = /* @__PURE__ */ function() {
+  })();
+  var normalizeTranscript = /* @__PURE__ */ (function() {
     var $36 = joinWith(" ");
     var $37 = filter(function(v) {
       return v !== "";
@@ -2955,7 +3190,7 @@
     return function($39) {
       return $36($37($38(collapseWhitespaceToSpace(toLower(trim($39))))));
     };
-  }();
+  })();
   var isWordBoundaryExtension = function(candidate) {
     return function(prefix) {
       if (prefix === "") {
@@ -3006,63 +3241,63 @@
   };
 
   // output/WordMeter.RecognitionError/index.js
-  var NotAllowed = /* @__PURE__ */ function() {
+  var NotAllowed = /* @__PURE__ */ (function() {
     function NotAllowed2() {
     }
     ;
     NotAllowed2.value = new NotAllowed2();
     return NotAllowed2;
-  }();
-  var ServiceNotAllowed = /* @__PURE__ */ function() {
+  })();
+  var ServiceNotAllowed = /* @__PURE__ */ (function() {
     function ServiceNotAllowed2() {
     }
     ;
     ServiceNotAllowed2.value = new ServiceNotAllowed2();
     return ServiceNotAllowed2;
-  }();
-  var NoSpeech = /* @__PURE__ */ function() {
+  })();
+  var NoSpeech = /* @__PURE__ */ (function() {
     function NoSpeech2() {
     }
     ;
     NoSpeech2.value = new NoSpeech2();
     return NoSpeech2;
-  }();
-  var Aborted = /* @__PURE__ */ function() {
+  })();
+  var Aborted = /* @__PURE__ */ (function() {
     function Aborted2() {
     }
     ;
     Aborted2.value = new Aborted2();
     return Aborted2;
-  }();
-  var AudioCapture = /* @__PURE__ */ function() {
+  })();
+  var AudioCapture = /* @__PURE__ */ (function() {
     function AudioCapture2() {
     }
     ;
     AudioCapture2.value = new AudioCapture2();
     return AudioCapture2;
-  }();
-  var Network = /* @__PURE__ */ function() {
+  })();
+  var Network = /* @__PURE__ */ (function() {
     function Network2() {
     }
     ;
     Network2.value = new Network2();
     return Network2;
-  }();
-  var LanguageNotSupported = /* @__PURE__ */ function() {
+  })();
+  var LanguageNotSupported = /* @__PURE__ */ (function() {
     function LanguageNotSupported2() {
     }
     ;
     LanguageNotSupported2.value = new LanguageNotSupported2();
     return LanguageNotSupported2;
-  }();
-  var NoRecognitionErrorCode = /* @__PURE__ */ function() {
+  })();
+  var NoRecognitionErrorCode = /* @__PURE__ */ (function() {
     function NoRecognitionErrorCode2() {
     }
     ;
     NoRecognitionErrorCode2.value = new NoRecognitionErrorCode2();
     return NoRecognitionErrorCode2;
-  }();
-  var OtherRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var OtherRecognitionError = /* @__PURE__ */ (function() {
     function OtherRecognitionError2(value0) {
       this.value0 = value0;
     }
@@ -3071,7 +3306,7 @@
       return new OtherRecognitionError2(value0);
     };
     return OtherRecognitionError2;
-  }();
+  })();
   var renderRecognitionErrorDiagnosticDetail = function(code) {
     return function(message2) {
       var renderCode = function(v) {
@@ -3338,14 +3573,14 @@
       return val;
     };
   };
-  var Leaf = /* @__PURE__ */ function() {
+  var Leaf = /* @__PURE__ */ (function() {
     function Leaf2() {
     }
     ;
     Leaf2.value = new Leaf2();
     return Leaf2;
-  }();
-  var Node = /* @__PURE__ */ function() {
+  })();
+  var Node = /* @__PURE__ */ (function() {
     function Node2(value0, value1, value2, value3, value4, value5) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3369,15 +3604,15 @@
       };
     };
     return Node2;
-  }();
-  var IterLeaf = /* @__PURE__ */ function() {
+  })();
+  var IterLeaf = /* @__PURE__ */ (function() {
     function IterLeaf2() {
     }
     ;
     IterLeaf2.value = new IterLeaf2();
     return IterLeaf2;
-  }();
-  var IterEmit = /* @__PURE__ */ function() {
+  })();
+  var IterEmit = /* @__PURE__ */ (function() {
     function IterEmit2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3392,8 +3627,8 @@
       };
     };
     return IterEmit2;
-  }();
-  var IterNode = /* @__PURE__ */ function() {
+  })();
+  var IterNode = /* @__PURE__ */ (function() {
     function IterNode2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3405,8 +3640,8 @@
       };
     };
     return IterNode2;
-  }();
-  var Split = /* @__PURE__ */ function() {
+  })();
+  var Split = /* @__PURE__ */ (function() {
     function Split2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3421,8 +3656,8 @@
       };
     };
     return Split2;
-  }();
-  var SplitLast = /* @__PURE__ */ function() {
+  })();
+  var SplitLast = /* @__PURE__ */ (function() {
     function SplitLast2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -3437,7 +3672,7 @@
       };
     };
     return SplitLast2;
-  }();
+  })();
   var unsafeNode = function(k, v, l, r) {
     if (l instanceof Leaf) {
       if (r instanceof Leaf) {
@@ -3457,14 +3692,14 @@
       }
       ;
       if (r instanceof Node) {
-        return new Node(1 + function() {
+        return new Node(1 + (function() {
           var $280 = l.value0 > r.value0;
           if ($280) {
             return l.value0;
           }
           ;
           return r.value0;
-        }() | 0, (1 + l.value1 | 0) + r.value1 | 0, k, v, l, r);
+        })() | 0, (1 + l.value1 | 0) + r.value1 | 0, k, v, l, r);
       }
       ;
       throw new Error("Failed pattern match at Data.Map.Internal (line 708, column 5 - line 712, column 68): " + [r.constructor.name]);
@@ -3472,9 +3707,9 @@
     ;
     throw new Error("Failed pattern match at Data.Map.Internal (line 700, column 32 - line 712, column 68): " + [l.constructor.name]);
   };
-  var toMapIter = /* @__PURE__ */ function() {
+  var toMapIter = /* @__PURE__ */ (function() {
     return flip(IterNode.create)(IterLeaf.value);
-  }();
+  })();
   var stepWith = function(f) {
     return function(next) {
       return function(done) {
@@ -3515,7 +3750,7 @@
       return new Node(1, 1, k, v, Leaf.value, Leaf.value);
     };
   };
-  var unsafeBalancedNode = /* @__PURE__ */ function() {
+  var unsafeBalancedNode = /* @__PURE__ */ (function() {
     var height = function(v) {
       if (v instanceof Leaf) {
         return 0;
@@ -3575,7 +3810,7 @@
       ;
       throw new Error("Failed pattern match at Data.Map.Internal (line 717, column 40 - line 738, column 34): " + [l.constructor.name]);
     };
-  }();
+  })();
   var $lazy_unsafeSplit = /* @__PURE__ */ $runtime_lazy3("unsafeSplit", "Data.Map.Internal", function() {
     return function(comp, k, m) {
       if (m instanceof Leaf) {
@@ -3632,7 +3867,7 @@
     ;
     throw new Error("Failed pattern match at Data.Map.Internal (line 764, column 25 - line 768, column 38): " + [v.constructor.name, v1.constructor.name]);
   };
-  var iterMapL = /* @__PURE__ */ function() {
+  var iterMapL = /* @__PURE__ */ (function() {
     var go = function($copy_iter) {
       return function($copy_v) {
         var $tco_var_iter = $copy_iter;
@@ -3667,25 +3902,25 @@
       };
     };
     return go;
-  }();
+  })();
   var stepAscCps = /* @__PURE__ */ stepWith(iterMapL);
-  var stepUnfoldr = /* @__PURE__ */ function() {
+  var stepUnfoldr = /* @__PURE__ */ (function() {
     var step = function(k, v, next) {
       return new Just(new Tuple(new Tuple(k, v), next));
     };
     return stepAscCps(step)(function(v) {
       return Nothing.value;
     });
-  }();
+  })();
   var toUnfoldable = function(dictUnfoldable) {
     var $784 = unfoldr(dictUnfoldable)(stepUnfoldr);
     return function($785) {
       return $784(toMapIter($785));
     };
   };
-  var empty2 = /* @__PURE__ */ function() {
+  var empty2 = /* @__PURE__ */ (function() {
     return Leaf.value;
-  }();
+  })();
   var alter = function(dictOrd) {
     var compare2 = compare(dictOrd);
     return function(f) {
@@ -3814,12 +4049,12 @@
   var length3 = function($74) {
     return length(toCodePointArray($74));
   };
-  var fromCharCode2 = /* @__PURE__ */ function() {
+  var fromCharCode2 = /* @__PURE__ */ (function() {
     var $75 = toEnumWithDefaults(boundedEnumChar)(bottom(boundedChar))(top(boundedChar));
     return function($76) {
       return singleton2($75($76));
     };
-  }();
+  })();
   var singletonFallback = function(v) {
     if (v <= 65535) {
       return fromCharCode2(v);
@@ -3915,12 +4150,12 @@
       return !$$null2($58);
     })(split(" ")(collapseWhitespaceToSpace(trim(transcript))))));
   };
-  var emptyWordStats = /* @__PURE__ */ function() {
+  var emptyWordStats = /* @__PURE__ */ (function() {
     return {
       frequencies: empty2,
       longest: Nothing.value
     };
-  }();
+  })();
   var addWord = function(rawWord) {
     return function(v) {
       var normalized = normalizeForFrequency(rawWord);
@@ -3942,21 +4177,21 @@
   };
 
   // output/WordMeter.Recording.Session/index.js
-  var WakeLockIdle = /* @__PURE__ */ function() {
+  var WakeLockIdle = /* @__PURE__ */ (function() {
     function WakeLockIdle2() {
     }
     ;
     WakeLockIdle2.value = new WakeLockIdle2();
     return WakeLockIdle2;
-  }();
-  var WakeLockHeld = /* @__PURE__ */ function() {
+  })();
+  var WakeLockHeld = /* @__PURE__ */ (function() {
     function WakeLockHeld2() {
     }
     ;
     WakeLockHeld2.value = new WakeLockHeld2();
     return WakeLockHeld2;
-  }();
-  var WakeLockFailed = /* @__PURE__ */ function() {
+  })();
+  var WakeLockFailed = /* @__PURE__ */ (function() {
     function WakeLockFailed2(value0) {
       this.value0 = value0;
     }
@@ -3965,7 +4200,7 @@
       return new WakeLockFailed2(value0);
     };
     return WakeLockFailed2;
-  }();
+  })();
   var shortWindowMs = 6e4;
   var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var renderWakeLockStatus = function(v) {
@@ -3981,7 +4216,7 @@
       return "(" + (v.value0 + ")");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 124, column 1 - line 124, column 48): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.Session (line 126, column 1 - line 126, column 48): " + [v.constructor.name]);
   };
   var minimumCaptionOpacity = 0.15;
   var longWindowMs = 6e5;
@@ -4009,7 +4244,7 @@
     }
   };
   var epochInstant = /* @__PURE__ */ fromMaybe(/* @__PURE__ */ bottom(boundedInstant))(/* @__PURE__ */ instant(0));
-  var initialSession = /* @__PURE__ */ function() {
+  var initialSession = /* @__PURE__ */ (function() {
     return {
       listening: false,
       totalWords: 0,
@@ -4034,9 +4269,11 @@
       cloudFallbackAttempted: false,
       activeRecognitionPath: Nothing.value,
       diagnosticsDrawerOpen: false,
-      currentIntervalWordStats: emptyWordStats
+      currentIntervalWordStats: emptyWordStats,
+      pipOpen: false,
+      pipStatus: ""
     };
-  }();
+  })();
   var downloadingOnDeviceStatus = "downloading on-device language pack\u2026";
   var captionWindowMs = 3e4;
 
@@ -4139,7 +4376,7 @@
     }
     ;
     if (otherwise) {
-      var clamped = function() {
+      var clamped = (function() {
         var $27 = value < 0;
         if ($27) {
           return 0;
@@ -4151,7 +4388,7 @@
         }
         ;
         return value;
-      }();
+      })();
       var rounded = round2(clamped * 100);
       return show2(rounded) + "%";
     }
@@ -4183,7 +4420,7 @@
     };
   };
   var activeListeningMs = function(session) {
-    return session.completedActiveMs + function() {
+    return session.completedActiveMs + (function() {
       if (session.currentIntervalStart instanceof Just) {
         return max3(0)(millisecondsBetween(session.now)(session.currentIntervalStart.value0));
       }
@@ -4193,7 +4430,7 @@
       }
       ;
       throw new Error("Failed pattern match at WordMeter.Recording.Math (line 59, column 17 - line 61, column 21): " + [session.currentIntervalStart.constructor.name]);
-    }();
+    })();
   };
   var overallRate = function(session) {
     return wordsPerMinute(session.totalWords)(max3(1)(activeListeningMs(session)));
@@ -4229,7 +4466,7 @@
   var unwrap4 = /* @__PURE__ */ unwrap();
   var map8 = /* @__PURE__ */ map(functorMaybe);
   var map1 = /* @__PURE__ */ map(functorArray);
-  var Toggle = /* @__PURE__ */ function() {
+  var Toggle = /* @__PURE__ */ (function() {
     function Toggle2(value0) {
       this.value0 = value0;
     }
@@ -4238,8 +4475,8 @@
       return new Toggle2(value0);
     };
     return Toggle2;
-  }();
-  var InjectFinalTranscript = /* @__PURE__ */ function() {
+  })();
+  var InjectFinalTranscript = /* @__PURE__ */ (function() {
     function InjectFinalTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4251,8 +4488,8 @@
       };
     };
     return InjectFinalTranscript2;
-  }();
-  var IntegrateFinalizedTranscript = /* @__PURE__ */ function() {
+  })();
+  var IntegrateFinalizedTranscript = /* @__PURE__ */ (function() {
     function IntegrateFinalizedTranscript2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4264,15 +4501,15 @@
       };
     };
     return IntegrateFinalizedTranscript2;
-  }();
-  var ResetRecognitionDedupState = /* @__PURE__ */ function() {
+  })();
+  var ResetRecognitionDedupState = /* @__PURE__ */ (function() {
     function ResetRecognitionDedupState2() {
     }
     ;
     ResetRecognitionDedupState2.value = new ResetRecognitionDedupState2();
     return ResetRecognitionDedupState2;
-  }();
-  var Tick = /* @__PURE__ */ function() {
+  })();
+  var Tick = /* @__PURE__ */ (function() {
     function Tick2(value0) {
       this.value0 = value0;
     }
@@ -4281,8 +4518,8 @@
       return new Tick2(value0);
     };
     return Tick2;
-  }();
-  var RecordDiagnostic = /* @__PURE__ */ function() {
+  })();
+  var RecordDiagnostic = /* @__PURE__ */ (function() {
     function RecordDiagnostic2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4297,8 +4534,8 @@
       };
     };
     return RecordDiagnostic2;
-  }();
-  var SetEnvironment = /* @__PURE__ */ function() {
+  })();
+  var SetEnvironment = /* @__PURE__ */ (function() {
     function SetEnvironment2(value0) {
       this.value0 = value0;
     }
@@ -4307,8 +4544,8 @@
       return new SetEnvironment2(value0);
     };
     return SetEnvironment2;
-  }();
-  var SetCopyStatus = /* @__PURE__ */ function() {
+  })();
+  var SetCopyStatus = /* @__PURE__ */ (function() {
     function SetCopyStatus2(value0) {
       this.value0 = value0;
     }
@@ -4317,8 +4554,8 @@
       return new SetCopyStatus2(value0);
     };
     return SetCopyStatus2;
-  }();
-  var Reset = /* @__PURE__ */ function() {
+  })();
+  var Reset = /* @__PURE__ */ (function() {
     function Reset2(value0) {
       this.value0 = value0;
     }
@@ -4327,8 +4564,8 @@
       return new Reset2(value0);
     };
     return Reset2;
-  }();
-  var LoadSession = /* @__PURE__ */ function() {
+  })();
+  var LoadSession = /* @__PURE__ */ (function() {
     function LoadSession2(value0) {
       this.value0 = value0;
     }
@@ -4337,8 +4574,8 @@
       return new LoadSession2(value0);
     };
     return LoadSession2;
-  }();
-  var SetKeepAwake = /* @__PURE__ */ function() {
+  })();
+  var SetKeepAwake = /* @__PURE__ */ (function() {
     function SetKeepAwake2(value0) {
       this.value0 = value0;
     }
@@ -4347,8 +4584,8 @@
       return new SetKeepAwake2(value0);
     };
     return SetKeepAwake2;
-  }();
-  var SetWakeLockState = /* @__PURE__ */ function() {
+  })();
+  var SetWakeLockState = /* @__PURE__ */ (function() {
     function SetWakeLockState2(value0) {
       this.value0 = value0;
     }
@@ -4357,8 +4594,8 @@
       return new SetWakeLockState2(value0);
     };
     return SetWakeLockState2;
-  }();
-  var HandleRecognitionError = /* @__PURE__ */ function() {
+  })();
+  var HandleRecognitionError = /* @__PURE__ */ (function() {
     function HandleRecognitionError2(value0, value1, value2) {
       this.value0 = value0;
       this.value1 = value1;
@@ -4373,15 +4610,15 @@
       };
     };
     return HandleRecognitionError2;
-  }();
-  var ClearErrorBanner = /* @__PURE__ */ function() {
+  })();
+  var ClearErrorBanner = /* @__PURE__ */ (function() {
     function ClearErrorBanner2() {
     }
     ;
     ClearErrorBanner2.value = new ClearErrorBanner2();
     return ClearErrorBanner2;
-  }();
-  var SetRecognitionStatusOverride = /* @__PURE__ */ function() {
+  })();
+  var SetRecognitionStatusOverride = /* @__PURE__ */ (function() {
     function SetRecognitionStatusOverride2(value0) {
       this.value0 = value0;
     }
@@ -4390,8 +4627,8 @@
       return new SetRecognitionStatusOverride2(value0);
     };
     return SetRecognitionStatusOverride2;
-  }();
-  var SetCloudFallbackAttempted = /* @__PURE__ */ function() {
+  })();
+  var SetCloudFallbackAttempted = /* @__PURE__ */ (function() {
     function SetCloudFallbackAttempted2(value0) {
       this.value0 = value0;
     }
@@ -4400,8 +4637,8 @@
       return new SetCloudFallbackAttempted2(value0);
     };
     return SetCloudFallbackAttempted2;
-  }();
-  var SetActiveRecognitionPath = /* @__PURE__ */ function() {
+  })();
+  var SetActiveRecognitionPath = /* @__PURE__ */ (function() {
     function SetActiveRecognitionPath2(value0) {
       this.value0 = value0;
     }
@@ -4410,8 +4647,8 @@
       return new SetActiveRecognitionPath2(value0);
     };
     return SetActiveRecognitionPath2;
-  }();
-  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ function() {
+  })();
+  var SetDiagnosticsDrawerOpen = /* @__PURE__ */ (function() {
     function SetDiagnosticsDrawerOpen2(value0) {
       this.value0 = value0;
     }
@@ -4420,7 +4657,27 @@
       return new SetDiagnosticsDrawerOpen2(value0);
     };
     return SetDiagnosticsDrawerOpen2;
-  }();
+  })();
+  var SetPipOpen = /* @__PURE__ */ (function() {
+    function SetPipOpen2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetPipOpen2.create = function(value0) {
+      return new SetPipOpen2(value0);
+    };
+    return SetPipOpen2;
+  })();
+  var SetPipStatus = /* @__PURE__ */ (function() {
+    function SetPipStatus2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    SetPipStatus2.create = function(value0) {
+      return new SetPipStatus2(value0);
+    };
+    return SetPipStatus2;
+  })();
   var takeEndArray = function(n) {
     return function(xs) {
       var total = length(xs);
@@ -4459,6 +4716,8 @@
           activeRecognitionPath: session.activeRecognitionPath,
           diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
           currentIntervalWordStats: session.currentIntervalWordStats,
+          pipOpen: session.pipOpen,
+          pipStatus: session.pipStatus,
           wordsToday: 0,
           todayLocalDate: new Just(currentDate)
         };
@@ -4489,11 +4748,13 @@
           activeRecognitionPath: session.activeRecognitionPath,
           diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
           currentIntervalWordStats: session.currentIntervalWordStats,
+          pipOpen: session.pipOpen,
+          pipStatus: session.pipStatus,
           todayLocalDate: new Just(currentDate)
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 381, column 5 - line 384, column 63): " + [session.todayLocalDate.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 390, column 5 - line 393, column 63): " + [session.todayLocalDate.constructor.name]);
     };
   };
   var rehydrateMostFrequent = function(maybeWord) {
@@ -4523,7 +4784,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 469, column 44 - line 471, column 62): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 478, column 44 - line 480, column 62): " + [v.constructor.name]);
     };
   };
   var pruneWordEvents = function(now) {
@@ -4550,14 +4811,14 @@
           };
           var closedIntervalMs = max22(0)(millisecondsBetween(timestamp)(startedAt));
           var statsDetail = "words=" + (show3(session.currentIntervalWords) + (" duration=" + formatDurationMs(closedIntervalMs)));
-          var fullDetail = function() {
-            var $66 = reasonDetail === "";
-            if ($66) {
+          var fullDetail = (function() {
+            var $68 = reasonDetail === "";
+            if ($68) {
               return statsDetail;
             }
             ;
             return statsDetail + (" " + reasonDetail);
-          }();
+          })();
           var stopEntry = {
             timestamp,
             label,
@@ -4576,6 +4837,8 @@
             lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
             cloudFallbackAttempted: session.cloudFallbackAttempted,
             diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+            pipOpen: session.pipOpen,
+            pipStatus: session.pipStatus,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -4668,7 +4931,7 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 480, column 56 - line 489, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 489, column 56 - line 498, column 8): " + [v.constructor.name]);
         };
       };
     };
@@ -4700,6 +4963,8 @@
           activeRecognitionPath: rolled.activeRecognitionPath,
           diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
           currentIntervalWordStats: rolled.currentIntervalWordStats,
+          pipOpen: rolled.pipOpen,
+          pipStatus: rolled.pipStatus,
           totalWords: rolled.totalWords + wordDelta | 0,
           wordsToday: rolled.wordsToday + wordDelta | 0
         };
@@ -4732,10 +4997,12 @@
             wakeLockState: rolled.wakeLockState,
             cloudFallbackAttempted: rolled.cloudFallbackAttempted,
             diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
+            pipOpen: rolled.pipOpen,
+            pipStatus: rolled.pipStatus,
             listening: true,
             currentIntervalStart: new Just(v.value0),
             currentIntervalWords: 0,
-            firstStartedAt: function() {
+            firstStartedAt: (function() {
               if (rolled.firstStartedAt instanceof Just) {
                 return new Just(rolled.firstStartedAt.value0);
               }
@@ -4744,8 +5011,8 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 104, column 30 - line 106, column 40): " + [rolled.firstStartedAt.constructor.name]);
-            }(),
+              throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 107, column 30 - line 109, column 40): " + [rolled.firstStartedAt.constructor.name]);
+            })(),
             wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
             captions: pruneCaptions(v.value0)(rolled.captions),
             now: v.value0,
@@ -4765,8 +5032,8 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneWordEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $76 = wordCount === 0;
-          if ($76) {
+          var $78 = wordCount === 0;
+          if ($78) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
@@ -4789,6 +5056,8 @@
               activeRecognitionPath: v1.activeRecognitionPath,
               diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
               currentIntervalWordStats: v1.currentIntervalWordStats,
+              pipOpen: v1.pipOpen,
+              pipStatus: v1.pipStatus,
               now: v.value1,
               wordEvents: prunedEvents,
               captions: prunedCaptions
@@ -4820,6 +5089,8 @@
             cloudFallbackAttempted: counted.cloudFallbackAttempted,
             activeRecognitionPath: counted.activeRecognitionPath,
             diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+            pipOpen: counted.pipOpen,
+            pipStatus: counted.pipStatus,
             currentIntervalWords: counted.currentIntervalWords + wordCount | 0,
             captions: append2(prunedCaptions)([{
               transcript: v.value0,
@@ -4860,6 +5131,8 @@
             activeRecognitionPath: v1.activeRecognitionPath,
             diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             currentIntervalWordStats: v1.currentIntervalWordStats,
+            pipOpen: v1.pipOpen,
+            pipStatus: v1.pipStatus,
             now: v.value1,
             captions: pruneCaptions(v.value1)(v1.captions)
           };
@@ -4893,6 +5166,8 @@
             activeRecognitionPath: v1.activeRecognitionPath,
             diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
             currentIntervalWordStats: v1.currentIntervalWordStats,
+            pipOpen: v1.pipOpen,
+            pipStatus: v1.pipStatus,
             now: v.value0
           };
         }
@@ -4921,6 +5196,8 @@
             keepAwake: v1.keepAwake,
             lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
             listening: v1.listening,
+            pipOpen: v1.pipOpen,
+            pipStatus: v1.pipStatus,
             recognitionStatusOverride: v1.recognitionStatusOverride,
             todayLocalDate: v1.todayLocalDate,
             totalWords: v1.totalWords,
@@ -4955,6 +5232,8 @@
               activeRecognitionPath: base.activeRecognitionPath,
               diagnosticsDrawerOpen: base.diagnosticsDrawerOpen,
               currentIntervalWordStats: base.currentIntervalWordStats,
+              pipOpen: base.pipOpen,
+              pipStatus: base.pipStatus,
               captions: refreshLastCaptionTimestamp(v.value0)(prunedCaptions)
             };
           }
@@ -4991,6 +5270,8 @@
               cloudFallbackAttempted: counted.cloudFallbackAttempted,
               activeRecognitionPath: counted.activeRecognitionPath,
               diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              pipOpen: counted.pipOpen,
+              pipStatus: counted.pipStatus,
               currentIntervalWords: counted.currentIntervalWords + decision.value0.wordDelta | 0,
               captions: extendedCaptions,
               wordEvents: append2(prunedEvents)([{
@@ -5029,6 +5310,8 @@
               cloudFallbackAttempted: counted.cloudFallbackAttempted,
               activeRecognitionPath: counted.activeRecognitionPath,
               diagnosticsDrawerOpen: counted.diagnosticsDrawerOpen,
+              pipOpen: counted.pipOpen,
+              pipStatus: counted.pipStatus,
               currentIntervalWords: counted.currentIntervalWords + decision.value0.wordCount | 0,
               captions: append2(prunedCaptions)([{
                 transcript: decision.value0.caption,
@@ -5045,7 +5328,7 @@
             };
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 165, column 10 - line 224, column 16): " + [decision.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 168, column 10 - line 227, column 16): " + [decision.constructor.name]);
         }
         ;
       }
@@ -5075,6 +5358,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           lastRawFinalizedTranscript: ""
         };
       }
@@ -5103,6 +5388,8 @@
           activeRecognitionPath: rolled.activeRecognitionPath,
           diagnosticsDrawerOpen: rolled.diagnosticsDrawerOpen,
           currentIntervalWordStats: rolled.currentIntervalWordStats,
+          pipOpen: rolled.pipOpen,
+          pipStatus: rolled.pipStatus,
           now: v.value0,
           wordEvents: pruneWordEvents(v.value0)(rolled.wordEvents),
           captions: pruneCaptions(v.value0)(rolled.captions)
@@ -5134,6 +5421,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           diagnostics: recordEntry({
             timestamp: v.value0,
             label: v.value1,
@@ -5167,6 +5456,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           environment: new Just(v.value0)
         };
       }
@@ -5196,6 +5487,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           copyStatus: v.value0
         };
       }
@@ -5227,6 +5520,8 @@
           activeRecognitionPath: initialSession.activeRecognitionPath,
           diagnosticsDrawerOpen: initialSession.diagnosticsDrawerOpen,
           currentIntervalWordStats: initialSession.currentIntervalWordStats,
+          pipOpen: initialSession.pipOpen,
+          pipStatus: initialSession.pipStatus,
           now: v.value0,
           diagnostics: recordEntry(resetEntry)(v1.diagnostics),
           environment: v1.environment,
@@ -5248,6 +5543,8 @@
           recognitionStatusOverride: v1.recognitionStatusOverride,
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           totalWords: max4(0)(v.value0.totalWords),
           wordsToday: max4(0)(v.value0.wordsToday),
           todayLocalDate: map8(localDateFromString)(v.value0.todayLocalDate),
@@ -5287,14 +5584,16 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           keepAwake: v.value0,
-          wakeLockState: function() {
+          wakeLockState: (function() {
             if (v.value0) {
               return v1.wakeLockState;
             }
             ;
             return WakeLockIdle.value;
-          }()
+          })()
         };
       }
       ;
@@ -5323,6 +5622,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           wakeLockState: v.value0
         };
       }
@@ -5350,6 +5651,8 @@
           keepAwake: v1.keepAwake,
           lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
           listening: v1.listening,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           recognitionStatusOverride: v1.recognitionStatusOverride,
           todayLocalDate: v1.todayLocalDate,
           totalWords: v1.totalWords,
@@ -5361,13 +5664,13 @@
         };
         var classified = classifyRecognitionError(v.value1);
         var bannerText = recognitionErrorBannerText(classified);
-        var $95 = isTransient(classified);
-        if ($95) {
+        var $97 = isTransient(classified);
+        if ($97) {
           return sessionWithDiagnostic;
         }
         ;
-        var $96 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
-        if ($96) {
+        var $98 = isPermissionDenied(classified) && sessionWithDiagnostic.listening;
+        if ($98) {
           var stopped = stopListeningAt(v.value0)("session ended")("reason=permission denied")(sessionWithDiagnostic);
           return {
             listening: stopped.listening,
@@ -5393,6 +5696,8 @@
             activeRecognitionPath: stopped.activeRecognitionPath,
             diagnosticsDrawerOpen: stopped.diagnosticsDrawerOpen,
             currentIntervalWordStats: stopped.currentIntervalWordStats,
+            pipOpen: stopped.pipOpen,
+            pipStatus: stopped.pipStatus,
             errorBanner: bannerText
           };
         }
@@ -5421,6 +5726,8 @@
           activeRecognitionPath: sessionWithDiagnostic.activeRecognitionPath,
           diagnosticsDrawerOpen: sessionWithDiagnostic.diagnosticsDrawerOpen,
           currentIntervalWordStats: sessionWithDiagnostic.currentIntervalWordStats,
+          pipOpen: sessionWithDiagnostic.pipOpen,
+          pipStatus: sessionWithDiagnostic.pipStatus,
           errorBanner: bannerText
         };
       }
@@ -5450,6 +5757,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           errorBanner: idleErrorBanner
         };
       }
@@ -5479,6 +5788,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           recognitionStatusOverride: v.value0
         };
       }
@@ -5508,6 +5819,8 @@
           activeRecognitionPath: v1.activeRecognitionPath,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           cloudFallbackAttempted: v.value0
         };
       }
@@ -5537,6 +5850,8 @@
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           activeRecognitionPath: v.value0
         };
       }
@@ -5566,28 +5881,92 @@
           cloudFallbackAttempted: v1.cloudFallbackAttempted,
           activeRecognitionPath: v1.activeRecognitionPath,
           currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v1.pipStatus,
           diagnosticsDrawerOpen: v.value0
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 91, column 1 - line 91, column 39): " + [v.constructor.name, v1.constructor.name]);
+      if (v instanceof SetPipOpen) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          wakeLockState: v1.wakeLockState,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          recognitionStatusOverride: v1.recognitionStatusOverride,
+          cloudFallbackAttempted: v1.cloudFallbackAttempted,
+          activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+          currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipStatus: v1.pipStatus,
+          pipOpen: v.value0
+        };
+      }
+      ;
+      if (v instanceof SetPipStatus) {
+        return {
+          listening: v1.listening,
+          totalWords: v1.totalWords,
+          wordsToday: v1.wordsToday,
+          todayLocalDate: v1.todayLocalDate,
+          captions: v1.captions,
+          wordEvents: v1.wordEvents,
+          eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
+          firstStartedAt: v1.firstStartedAt,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          keepAwake: v1.keepAwake,
+          wakeLockState: v1.wakeLockState,
+          errorBanner: v1.errorBanner,
+          lastRawFinalizedTranscript: v1.lastRawFinalizedTranscript,
+          recognitionStatusOverride: v1.recognitionStatusOverride,
+          cloudFallbackAttempted: v1.cloudFallbackAttempted,
+          activeRecognitionPath: v1.activeRecognitionPath,
+          diagnosticsDrawerOpen: v1.diagnosticsDrawerOpen,
+          currentIntervalWordStats: v1.currentIntervalWordStats,
+          pipOpen: v1.pipOpen,
+          pipStatus: v.value0
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 94, column 1 - line 94, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
 
   // output/WordMeter.Capability.SessionState/index.js
   var bind4 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask4 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect6 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var updateSession = function(dict) {
     return dict.updateSession;
   };
   var sessionStateAppM = {
-    readCurrentSession: /* @__PURE__ */ bind4(ask4)(function(applicationEnvironment) {
-      return liftEffect6(read(applicationEnvironment.sessionRef));
+    readCurrentSession: /* @__PURE__ */ bind4(ask5)(function(applicationEnvironment) {
+      return liftEffect7(read(applicationEnvironment.sessionRef));
     }),
     updateSession: function(action) {
-      return bind4(ask4)(function(applicationEnvironment) {
-        return liftEffect6(modify_(reduce(action))(applicationEnvironment.sessionRef));
+      return bind4(ask5)(function(applicationEnvironment) {
+        return liftEffect7(modify_(reduce(action))(applicationEnvironment.sessionRef));
       });
     },
     Monad0: function() {
@@ -5651,14 +6030,14 @@
   };
 
   // output/WordMeter.FFI.StorageError/index.js
-  var StorageUnavailable = /* @__PURE__ */ function() {
+  var StorageUnavailable = /* @__PURE__ */ (function() {
     function StorageUnavailable2() {
     }
     ;
     StorageUnavailable2.value = new StorageUnavailable2();
     return StorageUnavailable2;
-  }();
-  var StorageException = /* @__PURE__ */ function() {
+  })();
+  var StorageException = /* @__PURE__ */ (function() {
     function StorageException2(value0) {
       this.value0 = value0;
     }
@@ -5667,8 +6046,8 @@
       return new StorageException2(value0);
     };
     return StorageException2;
-  }();
-  var MissingKey = /* @__PURE__ */ function() {
+  })();
+  var MissingKey = /* @__PURE__ */ (function() {
     function MissingKey2(value0) {
       this.value0 = value0;
     }
@@ -5677,7 +6056,7 @@
       return new MissingKey2(value0);
     };
     return MissingKey2;
-  }();
+  })();
   var renderStorageError = function(v) {
     if (v instanceof StorageUnavailable) {
       return "localStorage is unavailable in this environment";
@@ -5872,9 +6251,9 @@
       return _mapWithKey(m, f);
     };
   };
-  var lookup = /* @__PURE__ */ function() {
+  var lookup = /* @__PURE__ */ (function() {
     return runFn4(_lookup)(Nothing.value)(Just.create);
-  }();
+  })();
   var insert = function(k) {
     return function(v) {
       return mutate(poke2(k)(v));
@@ -6001,9 +6380,9 @@
       };
     };
   };
-  var toJsonType = /* @__PURE__ */ function() {
+  var toJsonType = /* @__PURE__ */ (function() {
     return verbJsonType(Nothing.value)(Just.create);
-  }();
+  })();
   var jsonSingletonObject = function(key) {
     return function(val) {
       return id(singleton5(key)(val));
@@ -6059,7 +6438,7 @@
 
   // output/Data.Argonaut.Decode.Error/index.js
   var show1 = /* @__PURE__ */ show(showInt);
-  var TypeMismatch = /* @__PURE__ */ function() {
+  var TypeMismatch = /* @__PURE__ */ (function() {
     function TypeMismatch2(value0) {
       this.value0 = value0;
     }
@@ -6068,8 +6447,8 @@
       return new TypeMismatch2(value0);
     };
     return TypeMismatch2;
-  }();
-  var UnexpectedValue = /* @__PURE__ */ function() {
+  })();
+  var UnexpectedValue = /* @__PURE__ */ (function() {
     function UnexpectedValue2(value0) {
       this.value0 = value0;
     }
@@ -6078,8 +6457,8 @@
       return new UnexpectedValue2(value0);
     };
     return UnexpectedValue2;
-  }();
-  var AtIndex = /* @__PURE__ */ function() {
+  })();
+  var AtIndex = /* @__PURE__ */ (function() {
     function AtIndex2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6091,8 +6470,8 @@
       };
     };
     return AtIndex2;
-  }();
-  var AtKey = /* @__PURE__ */ function() {
+  })();
+  var AtKey = /* @__PURE__ */ (function() {
     function AtKey2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6104,8 +6483,8 @@
       };
     };
     return AtKey2;
-  }();
-  var Named = /* @__PURE__ */ function() {
+  })();
+  var Named = /* @__PURE__ */ (function() {
     function Named2(value0, value1) {
       this.value0 = value0;
       this.value1 = value1;
@@ -6117,14 +6496,14 @@
       };
     };
     return Named2;
-  }();
-  var MissingValue = /* @__PURE__ */ function() {
+  })();
+  var MissingValue = /* @__PURE__ */ (function() {
     function MissingValue2() {
     }
     ;
     MissingValue2.value = new MissingValue2();
     return MissingValue2;
-  }();
+  })();
   var printJsonDecodeError = function(err) {
     var go = function(v) {
       if (v instanceof TypeMismatch) {
@@ -6181,21 +6560,21 @@
   var getField = function(decoder) {
     return function(obj) {
       return function(str) {
-        return maybe(new Left(new AtKey(str, MissingValue.value)))(function() {
+        return maybe(new Left(new AtKey(str, MissingValue.value)))((function() {
           var $48 = lmap2(AtKey.create(str));
           return function($49) {
             return $48(decoder($49));
           };
-        }())(lookup(str)(obj));
+        })())(lookup(str)(obj));
       };
     };
   };
-  var decodeString = /* @__PURE__ */ function() {
+  var decodeString = /* @__PURE__ */ (function() {
     return caseJsonString(new Left(new TypeMismatch("String")))(Right.create);
-  }();
-  var decodeNumber = /* @__PURE__ */ function() {
+  })();
+  var decodeNumber = /* @__PURE__ */ (function() {
     return caseJsonNumber(new Left(new TypeMismatch("Number")))(Right.create);
-  }();
+  })();
   var decodeMaybe = function(decoder) {
     return function(json) {
       if (isNull(json)) {
@@ -6209,38 +6588,38 @@
       throw new Error("Failed pattern match at Data.Argonaut.Decode.Decoders (line 37, column 1 - line 41, column 38): " + [decoder.constructor.name, json.constructor.name]);
     };
   };
-  var decodeJObject = /* @__PURE__ */ function() {
+  var decodeJObject = /* @__PURE__ */ (function() {
     var $50 = note(new TypeMismatch("Object"));
     return function($51) {
       return $50(toObject($51));
     };
-  }();
-  var decodeJArray = /* @__PURE__ */ function() {
+  })();
+  var decodeJArray = /* @__PURE__ */ (function() {
     var $52 = note(new TypeMismatch("Array"));
     return function($53) {
       return $52(toArray($53));
     };
-  }();
-  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ function() {
+  })();
+  var decodeInt = /* @__PURE__ */ composeKleisliFlipped2(/* @__PURE__ */ (function() {
     var $84 = note(new TypeMismatch("Integer"));
     return function($85) {
       return $84(fromNumber($85));
     };
-  }())(decodeNumber);
+  })())(decodeNumber);
   var decodeForeignObject = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $86 = lmap2(Named.create("ForeignObject"));
       var $87 = traverse5(decoder);
       return function($88) {
         return $86($87($88));
       };
-    }())(decodeJObject);
+    })())(decodeJObject);
   };
-  var decodeBoolean = /* @__PURE__ */ function() {
+  var decodeBoolean = /* @__PURE__ */ (function() {
     return caseJsonBoolean(new Left(new TypeMismatch("Boolean")))(Right.create);
-  }();
+  })();
   var decodeArray = function(decoder) {
-    return composeKleisliFlipped2(function() {
+    return composeKleisliFlipped2((function() {
       var $89 = lmap2(Named.create("Array"));
       var $90 = traverseWithIndex2(function(i) {
         var $92 = lmap2(AtIndex.create(i));
@@ -6251,7 +6630,7 @@
       return function($91) {
         return $89($90($91));
       };
-    }())(decodeJArray);
+    })())(decodeJArray);
   };
 
   // output/Record/index.js
@@ -6319,11 +6698,11 @@
   var decodeJsonNumber = {
     decodeJson: decodeNumber
   };
-  var decodeJsonJson = /* @__PURE__ */ function() {
+  var decodeJsonJson = /* @__PURE__ */ (function() {
     return {
       decodeJson: Right.create
     };
-  }();
+  })();
   var decodeJsonInt = {
     decodeJson: decodeInt
   };
@@ -6419,25 +6798,25 @@
   };
 
   // output/Data.Argonaut.Decode.Parser/index.js
-  var parseJson = /* @__PURE__ */ function() {
+  var parseJson = /* @__PURE__ */ (function() {
     var $3 = lmap(bifunctorEither)(function(v) {
       return new TypeMismatch("JSON");
     });
     return function($4) {
       return $3(jsonParser($4));
     };
-  }();
+  })();
 
   // output/Data.Argonaut.Encode.Encoders/index.js
   var map12 = /* @__PURE__ */ map(functorArray);
   var extend2 = function(encoder) {
     return function(v) {
-      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))(function() {
+      var $40 = caseJsonObject(jsonSingletonObject(v.value0)(v.value1))((function() {
         var $42 = insert(v.value0)(v.value1);
         return function($43) {
           return id($42($43));
         };
-      }());
+      })());
       return function($41) {
         return $40(encoder($41));
       };
@@ -6616,7 +6995,7 @@
   var getField32 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(/* @__PURE__ */ decodeRecord(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonNumber))(/* @__PURE__ */ gDecodeJsonCons(/* @__PURE__ */ decodeFieldId(decodeJsonInt))(gDecodeJsonNil)(wordCountIsSymbol)()())(timestampIsSymbol)()())()));
   var getField4 = /* @__PURE__ */ getField2(/* @__PURE__ */ decodeArray2(decodeJsonJson));
   var traverse2 = /* @__PURE__ */ traverse(traversableArray)(applicativeEither);
-  var InvalidJson = /* @__PURE__ */ function() {
+  var InvalidJson = /* @__PURE__ */ (function() {
     function InvalidJson2(value0) {
       this.value0 = value0;
     }
@@ -6625,8 +7004,8 @@
       return new InvalidJson2(value0);
     };
     return InvalidJson2;
-  }();
-  var SchemaMismatch = /* @__PURE__ */ function() {
+  })();
+  var SchemaMismatch = /* @__PURE__ */ (function() {
     function SchemaMismatch2(value0) {
       this.value0 = value0;
     }
@@ -6635,8 +7014,8 @@
       return new SchemaMismatch2(value0);
     };
     return SchemaMismatch2;
-  }();
-  var UnsupportedVersion = /* @__PURE__ */ function() {
+  })();
+  var UnsupportedVersion = /* @__PURE__ */ (function() {
     function UnsupportedVersion2(value0) {
       this.value0 = value0;
     }
@@ -6645,7 +7024,7 @@
       return new UnsupportedVersion2(value0);
     };
     return UnsupportedVersion2;
-  }();
+  })();
   var storageVersion = 1;
   var storageKey = "word-meter:state:v1";
   var renderPersistenceError = function(v) {
@@ -6754,10 +7133,10 @@
 
   // output/WordMeter.Capability.Storage/index.js
   var bind7 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask5 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect7 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var ask6 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect8 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var pure5 = /* @__PURE__ */ pure(/* @__PURE__ */ applicativeReaderT(applicativeEffect));
-  var LoadStorageError = /* @__PURE__ */ function() {
+  var LoadStorageError = /* @__PURE__ */ (function() {
     function LoadStorageError2(value0) {
       this.value0 = value0;
     }
@@ -6766,8 +7145,8 @@
       return new LoadStorageError2(value0);
     };
     return LoadStorageError2;
-  }();
-  var LoadDecodeError = /* @__PURE__ */ function() {
+  })();
+  var LoadDecodeError = /* @__PURE__ */ (function() {
     function LoadDecodeError2(value0) {
       this.value0 = value0;
     }
@@ -6776,11 +7155,11 @@
       return new LoadDecodeError2(value0);
     };
     return LoadDecodeError2;
-  }();
+  })();
   var storageAppM = {
-    loadPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
-      return bind7(liftEffect7(readPersistedString(storageKey)))(function(raw) {
-        return pure5(function() {
+    loadPersistedSnapshot: /* @__PURE__ */ bind7(ask6)(function() {
+      return bind7(liftEffect8(readPersistedString(storageKey)))(function(raw) {
+        return pure5((function() {
           if (raw instanceof Left && raw.value0 instanceof MissingKey) {
             return new Right(Nothing.value);
           }
@@ -6803,16 +7182,16 @@
           }
           ;
           throw new Error("Failed pattern match at WordMeter.Capability.Storage (line 51, column 10 - line 56, column 46): " + [raw.constructor.name]);
-        }());
+        })());
       });
     }),
     persistSnapshot: function(persisted) {
-      return bind7(ask5)(function() {
-        return liftEffect7(writePersistedString(storageKey)(encodePersistedData(persisted)));
+      return bind7(ask6)(function() {
+        return liftEffect8(writePersistedString(storageKey)(encodePersistedData(persisted)));
       });
     },
-    clearPersistedSnapshot: /* @__PURE__ */ bind7(ask5)(function() {
-      return liftEffect7(clearPersistedString(storageKey));
+    clearPersistedSnapshot: /* @__PURE__ */ bind7(ask6)(function() {
+      return liftEffect8(clearPersistedString(storageKey));
     }),
     Monad0: function() {
       return monadAppM;
@@ -6840,9 +7219,9 @@
   };
 
   // output/WordMeter.Capability.Ticker/index.js
-  var bind12 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask6 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect8 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var bind13 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask7 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect9 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var tickIntervalMilliseconds = 200;
   var stopTickerIntervalInEnvironment = function(environment) {
     return function __do2() {
@@ -6873,12 +7252,12 @@
   };
   var tickerAppM = {
     startTickerInterval: function(tickAction) {
-      return bind12(ask6)(function(environment) {
-        return liftEffect8(startTickerIntervalInEnvironment(environment)(tickAction));
+      return bind13(ask7)(function(environment) {
+        return liftEffect9(startTickerIntervalInEnvironment(environment)(tickAction));
       });
     },
-    stopTickerInterval: /* @__PURE__ */ bind12(ask6)(function(environment) {
-      return liftEffect8(stopTickerIntervalInEnvironment(environment));
+    stopTickerInterval: /* @__PURE__ */ bind13(ask7)(function(environment) {
+      return liftEffect9(stopTickerIntervalInEnvironment(environment));
     }),
     Monad0: function() {
       return monadAppM;
@@ -6889,7 +7268,7 @@
   };
 
   // output/WordMeter.FFI.WakeLock/foreign.js
-  var describeFailure2 = (error2) => {
+  var describeFailure3 = (error2) => {
     if (error2 == null) return "unknown error";
     if (typeof error2 === "string") return error2;
     if (error2.name) return String(error2.name);
@@ -6901,7 +7280,7 @@
     navigator.wakeLock.request("screen").then((sentinel) => {
       onSentinel(sentinel)();
     }).catch((reason) => {
-      onError(describeFailure2(reason))();
+      onError(describeFailure3(reason))();
     });
   };
   var attachSentinelReleaseListener = (sentinel) => (handler) => () => {
@@ -6916,26 +7295,26 @@
         result.then(() => {
           onReleased();
         }).catch((reason) => {
-          onError(describeFailure2(reason))();
+          onError(describeFailure3(reason))();
         });
       } else {
         onReleased();
       }
     } catch (error2) {
-      onError(describeFailure2(error2))();
+      onError(describeFailure3(error2))();
     }
   };
   var sentinelsEqual = (left) => (right) => left === right;
 
   // output/WordMeter.FFI.WakeLock/index.js
-  var WakeLockUnsupported = /* @__PURE__ */ function() {
+  var WakeLockUnsupported = /* @__PURE__ */ (function() {
     function WakeLockUnsupported2() {
     }
     ;
     WakeLockUnsupported2.value = new WakeLockUnsupported2();
     return WakeLockUnsupported2;
-  }();
-  var WakeLockUnavailable = /* @__PURE__ */ function() {
+  })();
+  var WakeLockUnavailable = /* @__PURE__ */ (function() {
     function WakeLockUnavailable2(value0) {
       this.value0 = value0;
     }
@@ -6944,7 +7323,7 @@
       return new WakeLockUnavailable2(value0);
     };
     return WakeLockUnavailable2;
-  }();
+  })();
   var renderWakeLockError = function(v) {
     if (v instanceof WakeLockUnsupported) {
       return "wake lock not supported on this browser";
@@ -6958,9 +7337,9 @@
   };
 
   // output/WordMeter.Capability.WakeLock/index.js
-  var bind13 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
-  var ask7 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
-  var liftEffect9 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var bind14 = /* @__PURE__ */ bind(/* @__PURE__ */ bindReaderT(bindEffect));
+  var ask8 = /* @__PURE__ */ ask(/* @__PURE__ */ monadAskReaderT(monadEffect));
+  var liftEffect10 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
   var requestScreenWakeLock2 = function(dict) {
     return dict.requestScreenWakeLock;
   };
@@ -7038,16 +7417,16 @@
     requestScreenWakeLock: function(onAcquired) {
       return function(onError) {
         return function(onAutoReleased) {
-          return bind13(ask7)(function(environment) {
-            return liftEffect9(requestSentinel(environment)(onAcquired)(onError)(onAutoReleased));
+          return bind14(ask8)(function(environment) {
+            return liftEffect10(requestSentinel(environment)(onAcquired)(onError)(onAutoReleased));
           });
         };
       };
     },
     releaseScreenWakeLock: function(onReleased) {
       return function(onError) {
-        return bind13(ask7)(function(environment) {
-          return liftEffect9(releaseHeldSentinel(environment)(onReleased)(onError));
+        return bind14(ask8)(function(environment) {
+          return liftEffect10(releaseHeldSentinel(environment)(onReleased)(onError));
         });
       };
     },
@@ -7071,14 +7450,14 @@
 
   // output/WordMeter.FFI.Confirm/index.js
   var map13 = /* @__PURE__ */ map(functorEffect);
-  var ConfirmUnavailable = /* @__PURE__ */ function() {
+  var ConfirmUnavailable = /* @__PURE__ */ (function() {
     function ConfirmUnavailable2() {
     }
     ;
     ConfirmUnavailable2.value = new ConfirmUnavailable2();
     return ConfirmUnavailable2;
-  }();
-  var ConfirmException = /* @__PURE__ */ function() {
+  })();
+  var ConfirmException = /* @__PURE__ */ (function() {
     function ConfirmException2(value0) {
       this.value0 = value0;
     }
@@ -7087,7 +7466,7 @@
       return new ConfirmException2(value0);
     };
     return ConfirmException2;
-  }();
+  })();
   var renderConfirmError = function(v) {
     if (v instanceof ConfirmUnavailable) {
       return "window.confirm is unavailable in this environment";
@@ -7150,7 +7529,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 264, column 24 - line 266, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 285, column 24 - line 287, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var renderTopWordValue = function(v) {
     if (v instanceof Nothing) {
@@ -7161,7 +7540,7 @@
       return v.value0.word;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 207, column 1 - line 207, column 71): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 228, column 1 - line 228, column 71): " + [v.constructor.name]);
   };
   var renderTopWordSublabel = function(v) {
     if (v instanceof Nothing) {
@@ -7172,7 +7551,7 @@
       return new Just(show5(v.value0.count) + "\xD7 this period");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 211, column 1 - line 211, column 80): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 232, column 1 - line 232, column 80): " + [v.constructor.name]);
   };
   var renderStatus = function(session) {
     if (session.recognitionStatusOverride !== "") {
@@ -7187,7 +7566,7 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 109, column 1 - line 109, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 111, column 1 - line 111, column 34): " + [session.constructor.name]);
   };
   var renderLongestWordValue = function(v) {
     if (v instanceof Nothing) {
@@ -7198,7 +7577,7 @@
       return v.value0;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 216, column 1 - line 216, column 49): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 237, column 1 - line 237, column 49): " + [v.constructor.name]);
   };
   var renderLongestWordSublabel = function(v) {
     if (v instanceof Nothing) {
@@ -7209,7 +7588,7 @@
       return new Just(show5(length3(v.value0)) + " letters");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 220, column 1 - line 220, column 58): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 241, column 1 - line 241, column 58): " + [v.constructor.name]);
   };
   var renderEventTopWord = function(v) {
     if (v instanceof Nothing) {
@@ -7220,7 +7599,7 @@
       return "\u201C" + (v.value0.word + ("\u201D \xD7" + show5(v.value0.count)));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 317, column 1 - line 317, column 71): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 338, column 1 - line 338, column 71): " + [v.constructor.name]);
   };
   var renderEventLongestWord = function(v) {
     if (v instanceof Nothing) {
@@ -7231,17 +7610,17 @@
       return "\u201C" + (v.value0 + ("\u201D (" + (show5(length3(v.value0)) + ")")));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 331, column 1 - line 331, column 49): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 352, column 1 - line 352, column 49): " + [v.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
-    var withChecked = function() {
+    var withChecked = (function() {
       if (session.keepAwake) {
         return append13(base)([attribute("checked")("checked")]);
       }
       ;
       return base;
-    }();
+    })();
     if (session.listening) {
       return append13(withChecked)([attribute("disabled")("disabled")]);
     }
@@ -7275,7 +7654,7 @@
       var opacity = captionOpacity(nowInstant)(timestamp);
       var fraction = 1 - opacity;
       var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
-      var bucket = function() {
+      var bucket = (function() {
         var $34 = rawBucket < 0;
         if ($34) {
           return 0;
@@ -7287,28 +7666,28 @@
         }
         ;
         return rawBucket;
-      }();
+      })();
       return "wm-caption wm-caption-fade-" + show5(bucket);
     };
   };
-  var buildVersion = /* @__PURE__ */ function() {
+  var buildVersion = /* @__PURE__ */ (function() {
     return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
-  }();
+  })();
   var buildToggle = function(handlers) {
     return function(session) {
-      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + function() {
+      return button([testId("wm-toggle"), buttonType("button"), className("wm-button-pill " + (function() {
         if (session.listening) {
           return "wm-button-pill-stop";
         }
         ;
         return "wm-button-pill-start";
-      }())])([])([onClick(handlers.requestToggle)])([text(function() {
+      })())])([])([onClick(handlers.requestToggle)])([text((function() {
         if (session.listening) {
           return "Stop counting";
         }
         ;
         return "Start counting";
-      }())]);
+      })())]);
     };
   };
   var buildTag = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-build"), /* @__PURE__ */ className("wm-build-badge")])([])([/* @__PURE__ */ text("PureScript build")]);
@@ -7319,7 +7698,7 @@
     return function(label) {
       return function(valueText) {
         return function(maybeSublabel) {
-          return div_([className("wm-metric-tile")])([])(append13([statTileLabel(label), statTileValue(valueTestId)(valueText)])(function() {
+          return div_([className("wm-metric-tile")])([])(append13([statTileLabel(label), statTileValue(valueTestId)(valueText)])((function() {
             if (maybeSublabel instanceof Just) {
               return [statTileSublabel(maybeSublabel.value0)];
             }
@@ -7328,8 +7707,8 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording.View (line 230, column 11 - line 232, column 22): " + [maybeSublabel.constructor.name]);
-          }()));
+            throw new Error("Failed pattern match at WordMeter.Recording.View (line 251, column 11 - line 253, column 22): " + [maybeSublabel.constructor.name]);
+          })()));
         };
       };
     };
@@ -7343,15 +7722,26 @@
   var buildReset = function(handlers) {
     return button([testId("wm-reset"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestReset)])([text("Reset")]);
   };
+  var buildPipToggle = function(handlers) {
+    return function(session) {
+      return div_([className("wm-pip-row")])([])([button([testId("wm-pip-toggle"), buttonType("button"), className("wm-button-pill-secondary")])([])([onClick(handlers.requestTogglePip)])([text((function() {
+        if (session.pipOpen) {
+          return "\u2715 Close pop-out";
+        }
+        ;
+        return "\u{1F4FA} Pop out count";
+      })())]), span_([testId("wm-pip-status"), className("wm-pip-status")])([])([text(session.pipStatus)])]);
+    };
+  };
   var buildKeepAwake = function(handlers) {
     return function(session) {
-      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + function() {
+      return div_([className("wm-keep-awake-row")])([])([label_([testId("wm-keep-awake-label"), className("wm-keep-awake-label" + (function() {
         if (session.listening) {
           return " wm-keep-awake-label-disabled";
         }
         ;
         return "";
-      }())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
+      })())])([])([input(keepAwakeAttributes(session))([])([onCheckboxChange(handlers.requestSetKeepAwake)]), span_([className("wm-keep-awake-caption")])([])([text("\u{1F50B} Keep counting with screen on (recommended)")])]), span_([testId("wm-keep-awake-status"), className("wm-keep-awake-status")])([])([text(renderWakeLockStatus(session.wakeLockState))])]);
     };
   };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder"), /* @__PURE__ */ className("wm-timeline-empty")])([])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
@@ -7359,27 +7749,27 @@
     return div_([testId("wm-event-log-entry"), className("wm-timeline-row")])([])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval)), eventLogEntryTopWord(interval.mostFrequentWord), eventLogEntryLongestWord(interval.longestWord)]);
   };
   var buildEventLog = function(session) {
-    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
-      var $41 = length(session.eventLog) === 0;
-      if ($41) {
+    return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])((function() {
+      var $42 = length(session.eventLog) === 0;
+      if ($42) {
         return [buildEventLogPlaceholder];
       }
       ;
       return map14(buildEventLogEntry)(session.eventLog);
-    }());
+    })());
   };
   var buildErrorBanner = function(session) {
     return div_([testId("wm-error"), className("wm-error"), attribute("role")("alert")])([])([text(session.errorBanner)]);
   };
   var buildDiagnostics = function(handlers) {
     return function(session) {
-      var drawerAttributes = append13([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])(function() {
+      var drawerAttributes = append13([testId("wm-diagnostics"), className("wm-diagnostics-drawer")])((function() {
         if (session.diagnosticsDrawerOpen) {
           return [attribute("open")("")];
         }
         ;
         return [];
-      }());
+      })());
       return details_(drawerAttributes)([])([summary_([testId("wm-diagnostics-toggle"), className("wm-diagnostics-summary")])([])([onClick(handlers.requestToggleDiagnosticsDrawer)])([text("\u{1F527} Diagnostics")]), div_([className("wm-diagnostics-actions")])([])([button([testId("wm-diagnostics-copy"), buttonType("button"), className("wm-diagnostics-copy-button")])([])([onClick(handlers.requestCopyDiagnostics)])([text("\u{1F4CB} Copy diagnostics")]), span_([testId("wm-diagnostics-copy-status"), className("wm-diagnostics-copy-status")])([])([text(session.copyStatus)])]), pre_([testId("wm-diagnostics-content"), className("wm-diagnostics-content")])([])([text(diagnosticsText(session))])]);
     };
   };
@@ -7394,18 +7784,18 @@
     };
   };
   var buildCaptions = function(session) {
-    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
-      var $43 = length(session.captions) === 0;
-      if ($43) {
+    return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])((function() {
+      var $44 = length(session.captions) === 0;
+      if ($44) {
         return [buildCaptionsPlaceholder];
       }
       ;
       return map14(buildCaption(session.now))(session.captions);
-    }());
+    })());
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root"), className("wm-panel")])([])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root"), className("wm-panel")])([])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildPipToggle(handlers)(session), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 
@@ -7457,7 +7847,10 @@
       setActiveRecognitionPath: (path) => api.setActiveRecognitionPath(String(path == null ? "" : path))(),
       setCloudFallbackAttempted: (attempted) => api.setCloudFallbackAttempted(!!attempted)(),
       getDiagnosticsDrawerOpen: () => api.getDiagnosticsDrawerOpen(),
-      toggleDiagnosticsDrawer: () => api.toggleDiagnosticsDrawer()
+      toggleDiagnosticsDrawer: () => api.toggleDiagnosticsDrawer(),
+      togglePip: () => api.togglePip(),
+      getPipOpen: () => api.getPipOpen(),
+      getPipStatus: () => api.getPipStatus()
     };
   };
 
@@ -7475,7 +7868,7 @@
       return renderLocalDate(session.todayLocalDate.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 192, column 32 - line 194, column 46): " + [session.todayLocalDate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 200, column 32 - line 202, column 46): " + [session.todayLocalDate.constructor.name]);
   };
   var renderActivePath = function(session) {
     if (session.activeRecognitionPath instanceof Nothing) {
@@ -7490,7 +7883,7 @@
       return "cloud";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 186, column 28 - line 189, column 28): " + [session.activeRecognitionPath.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 194, column 28 - line 197, column 28): " + [session.activeRecognitionPath.constructor.name]);
   };
   var parseActivePath = function(v) {
     if (v === "on-device") {
@@ -7515,7 +7908,7 @@
       return unwrap5(unInstant(session.firstStartedAt.value0));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.TestHook (line 197, column 29 - line 199, column 39): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.TestHook (line 205, column 29 - line 207, column 39): " + [session.firstStartedAt.constructor.name]);
   };
   var install = function(v) {
     return installTestHook({
@@ -7638,7 +8031,14 @@
       getDiagnosticsDrawerOpen: map15(function(v1) {
         return v1.diagnosticsDrawerOpen;
       })(v.readSession),
-      toggleDiagnosticsDrawer: v.requestToggleDiagnosticsDrawer
+      toggleDiagnosticsDrawer: v.requestToggleDiagnosticsDrawer,
+      togglePip: v.requestTogglePip,
+      getPipOpen: map15(function(v1) {
+        return v1.pipOpen;
+      })(v.readSession),
+      getPipStatus: map15(function(v1) {
+        return v1.pipStatus;
+      })(v.readSession)
     });
   };
 
@@ -7720,20 +8120,28 @@
       return false;
     }
     ;
+    if (v instanceof SetPipOpen) {
+      return false;
+    }
+    ;
+    if (v instanceof SetPipStatus) {
+      return false;
+    }
+    ;
     if (v instanceof LoadSession) {
       return false;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Main (line 222, column 1 - line 222, column 42): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Main (line 237, column 1 - line 237, column 42): " + [v.constructor.name]);
   };
   var recordWakeLockEvent = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(label) {
         return function(detail) {
-          return bind14(currentTimeMillis1)(function(timestamp) {
+          return bind15(currentTimeMillis1)(function(timestamp) {
             return updateSession2(new RecordDiagnostic(timestamp, label, detail));
           });
         };
@@ -7741,13 +8149,13 @@
     };
   };
   var recordStorageFailure = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(label) {
         return function(failure) {
-          return bind14(currentTimeMillis1)(function(timestamp) {
+          return bind15(currentTimeMillis1)(function(timestamp) {
             return updateSession2(new RecordDiagnostic(timestamp, label + " failure", renderStorageError(failure)));
           });
         };
@@ -7755,13 +8163,27 @@
     };
   };
   var recordRecognitionEvent = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(label) {
         return function(detail) {
-          return bind14(currentTimeMillis1)(function(timestamp) {
+          return bind15(currentTimeMillis1)(function(timestamp) {
+            return updateSession2(new RecordDiagnostic(timestamp, label, detail));
+          });
+        };
+      };
+    };
+  };
+  var recordPipEvent = function(dictClock) {
+    var bind15 = bind(dictClock.Monad0().Bind1());
+    var currentTimeMillis1 = currentTimeMillis2(dictClock);
+    return function(dictSessionState) {
+      var updateSession2 = updateSession(dictSessionState);
+      return function(label) {
+        return function(detail) {
+          return bind15(currentTimeMillis1)(function(timestamp) {
             return updateSession2(new RecordDiagnostic(timestamp, label, detail));
           });
         };
@@ -7769,24 +8191,24 @@
     };
   };
   var recordLoadFailure = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(failure) {
-        return bind14(currentTimeMillis1)(function(timestamp) {
+        return bind15(currentTimeMillis1)(function(timestamp) {
           return updateSession2(new RecordDiagnostic(timestamp, "persist load failure", renderLoadError(failure)));
         });
       };
     };
   };
   var recordConfirmFailure = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictSessionState) {
       var updateSession2 = updateSession(dictSessionState);
       return function(failure) {
-        return bind14(currentTimeMillis1)(function(timestamp) {
+        return bind15(currentTimeMillis1)(function(timestamp) {
           return updateSession2(new RecordDiagnostic(timestamp, "reset confirm failure", renderConfirmError(failure)));
         });
       };
@@ -7794,7 +8216,7 @@
   };
   var persistCurrentSession = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind14 = bind(Monad0.Bind1());
+    var bind15 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
     var recordStorageFailure1 = recordStorageFailure(dictClock);
     return function(dictSessionState) {
@@ -7802,8 +8224,8 @@
       var recordStorageFailure2 = recordStorageFailure1(dictSessionState);
       return function(dictStorage) {
         var persistSnapshot2 = persistSnapshot(dictStorage);
-        return bind14(readCurrentSession2)(function(session) {
-          return bind14(persistSnapshot2(toPersistedData(session)))(function(outcome) {
+        return bind15(readCurrentSession2)(function(session) {
+          return bind15(persistSnapshot2(toPersistedData(session)))(function(outcome) {
             if (outcome instanceof Right) {
               return pure1(unit);
             }
@@ -7812,7 +8234,7 @@
               return recordStorageFailure2("persist save")(outcome.value0);
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Main (line 251, column 3 - line 253, column 78): " + [outcome.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Main (line 268, column 3 - line 270, column 78): " + [outcome.constructor.name]);
           });
         });
       };
@@ -7822,7 +8244,7 @@
   var persistAfterAction = function(dictClock) {
     var persistCurrentSession2 = persistCurrentSession(dictClock);
     var Monad0 = dictClock.Monad0();
-    var bind14 = bind(Monad0.Bind1());
+    var bind15 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
     var recordStorageFailure1 = recordStorageFailure(dictClock);
     return function(dictSessionState) {
@@ -7838,7 +8260,7 @@
           ;
           if (otherwise) {
             if (action instanceof Reset) {
-              return bind14(clearPersistedSnapshot2)(function(outcome) {
+              return bind15(clearPersistedSnapshot2)(function(outcome) {
                 if (outcome instanceof Right) {
                   return pure1(unit);
                 }
@@ -7847,14 +8269,14 @@
                   return recordStorageFailure2("persist clear")(outcome.value0);
                 }
                 ;
-                throw new Error("Failed pattern match at WordMeter.Main (line 213, column 9 - line 215, column 85): " + [outcome.constructor.name]);
+                throw new Error("Failed pattern match at WordMeter.Main (line 228, column 9 - line 230, column 85): " + [outcome.constructor.name]);
               });
             }
             ;
             return pure1(unit);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Main (line 201, column 1 - line 207, column 12): " + [action.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Main (line 216, column 1 - line 222, column 12): " + [action.constructor.name]);
         };
       };
     };
@@ -7887,187 +8309,370 @@
     };
   };
   var hostElementId = "word-meter";
-  var rerender = function(dictDomMount) {
-    var bind14 = bind(dictDomMount.Monad0().Bind1());
-    var mountToHost2 = mountToHost(dictDomMount);
-    return function(dictSessionState) {
-      var readCurrentSession2 = readCurrentSession(dictSessionState);
-      return function(handlers) {
-        return bind14(readCurrentSession2)(function(session) {
-          return mountToHost2(hostElementId)(view(handlers)(session));
-        });
+  var rerender = function(dictDocumentPip) {
+    var Monad0 = dictDocumentPip.Monad0();
+    var Bind1 = Monad0.Bind1();
+    var bind15 = bind(Bind1);
+    var discard22 = discard3(Bind1);
+    var syncPipContent2 = syncPipContent(dictDocumentPip);
+    var pure1 = pure(Monad0.Applicative0());
+    return function(dictDocumentPip1) {
+      return function(dictDomMount) {
+        var mountToHost2 = mountToHost(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          return function(handlers) {
+            return bind15(readCurrentSession2)(function(session) {
+              return discard22(mountToHost2(hostElementId)(view(handlers)(session)))(function() {
+                if (session.pipOpen) {
+                  return syncPipContent2({
+                    wordsToday: session.wordsToday,
+                    status: renderStatus(session)
+                  });
+                }
+                ;
+                return pure1(unit);
+              });
+            });
+          };
+        };
       };
     };
   };
   var startApplication = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var discard22 = discard3(Bind1);
     var pure1 = pure(Monad0.Applicative0());
     var recordLoadFailure1 = recordLoadFailure(dictClock);
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictEnvironment) {
       var captureEnvironmentSnapshot3 = captureEnvironmentSnapshot2(dictEnvironment);
-      return function(dictDomMount) {
-        var rerender1 = rerender(dictDomMount);
-        return function(dictSessionState) {
-          var updateSession2 = updateSession(dictSessionState);
-          var recordLoadFailure2 = recordLoadFailure1(dictSessionState);
-          var rerender2 = rerender1(dictSessionState);
-          return function(dictStorage) {
-            var loadPersistedSnapshot2 = loadPersistedSnapshot(dictStorage);
-            return function(handlers) {
-              return bind14(captureEnvironmentSnapshot3(version))(function(snapshot) {
-                return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
-                  return bind14(loadPersistedSnapshot2)(function(restored) {
-                    return discard22(function() {
-                      if (restored instanceof Right && restored.value0 instanceof Nothing) {
-                        return pure1(unit);
-                      }
-                      ;
-                      if (restored instanceof Right && restored.value0 instanceof Just) {
-                        return updateSession2(new LoadSession(restored.value0.value0));
-                      }
-                      ;
-                      if (restored instanceof Left) {
-                        return recordLoadFailure2(restored.value0);
-                      }
-                      ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 172, column 3 - line 175, column 54): " + [restored.constructor.name]);
-                    }())(function() {
-                      return bind14(currentTimeMillis1)(function(initTimestamp) {
-                        return discard22(updateSession2(new Tick(initTimestamp)))(function() {
-                          return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
-                            return rerender2(handlers);
+      return function(dictDocumentPip) {
+        var rerender1 = rerender(dictDocumentPip)(dictDocumentPip);
+        return function(dictDomMount) {
+          var rerender2 = rerender1(dictDomMount);
+          return function(dictSessionState) {
+            var updateSession2 = updateSession(dictSessionState);
+            var recordLoadFailure2 = recordLoadFailure1(dictSessionState);
+            var rerender3 = rerender2(dictSessionState);
+            return function(dictStorage) {
+              var loadPersistedSnapshot2 = loadPersistedSnapshot(dictStorage);
+              return function(handlers) {
+                return bind15(captureEnvironmentSnapshot3(version))(function(snapshot) {
+                  return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
+                    return bind15(loadPersistedSnapshot2)(function(restored) {
+                      return discard22((function() {
+                        if (restored instanceof Right && restored.value0 instanceof Nothing) {
+                          return pure1(unit);
+                        }
+                        ;
+                        if (restored instanceof Right && restored.value0 instanceof Just) {
+                          return updateSession2(new LoadSession(restored.value0.value0));
+                        }
+                        ;
+                        if (restored instanceof Left) {
+                          return recordLoadFailure2(restored.value0);
+                        }
+                        ;
+                        throw new Error("Failed pattern match at WordMeter.Main (line 186, column 3 - line 189, column 54): " + [restored.constructor.name]);
+                      })())(function() {
+                        return bind15(currentTimeMillis1)(function(initTimestamp) {
+                          return discard22(updateSession2(new Tick(initTimestamp)))(function() {
+                            return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
+                              return rerender3(handlers);
+                            });
                           });
                         });
                       });
                     });
                   });
                 });
-              });
+              };
             };
           };
         };
       };
     };
   };
-  var startApplication1 = /* @__PURE__ */ startApplication(clockAppM)(environmentAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var startApplication1 = /* @__PURE__ */ startApplication(clockAppM)(environmentAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var dispatch = function(dictClock) {
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var persistAfterAction1 = persistAfterAction(dictClock);
-    return function(dictDomMount) {
-      var rerender1 = rerender(dictDomMount);
-      return function(dictSessionState) {
-        var updateSession2 = updateSession(dictSessionState);
-        var persistAfterAction2 = persistAfterAction1(dictSessionState);
-        var rerender2 = rerender1(dictSessionState);
-        return function(dictStorage) {
-          var persistAfterAction3 = persistAfterAction2(dictStorage);
-          return function(handlers) {
-            return function(action) {
-              return discard22(updateSession2(action))(function() {
-                return discard22(persistAfterAction3(action))(function() {
-                  return rerender2(handlers);
+    return function(dictDocumentPip) {
+      var rerender1 = rerender(dictDocumentPip)(dictDocumentPip);
+      return function(dictDomMount) {
+        var rerender2 = rerender1(dictDomMount);
+        return function(dictSessionState) {
+          var updateSession2 = updateSession(dictSessionState);
+          var persistAfterAction2 = persistAfterAction1(dictSessionState);
+          var rerender3 = rerender2(dictSessionState);
+          return function(dictStorage) {
+            var persistAfterAction3 = persistAfterAction2(dictStorage);
+            return function(handlers) {
+              return function(action) {
+                return discard22(updateSession2(action))(function() {
+                  return discard22(persistAfterAction3(action))(function() {
+                    return rerender3(handlers);
+                  });
                 });
-              });
+              };
             };
           };
         };
       };
     };
   };
-  var dispatch1 = /* @__PURE__ */ dispatch(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var dispatch1 = /* @__PURE__ */ dispatch(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var handleCopyDiagnostics = function(dictClock) {
     var dispatch2 = dispatch(dictClock);
     return function(dictClipboard) {
-      var bind14 = bind(dictClipboard.Monad0().Bind1());
+      var bind15 = bind(dictClipboard.Monad0().Bind1());
       var writeClipboardText2 = writeClipboardText(dictClipboard);
-      return function(dictDomMount) {
-        var dispatch3 = dispatch2(dictDomMount);
-        return function(dictSessionState) {
-          var readCurrentSession2 = readCurrentSession(dictSessionState);
-          var dispatch4 = dispatch3(dictSessionState);
-          return function(dictStorage) {
-            var dispatch5 = dispatch4(dictStorage);
-            return function(handlers) {
-              return bind14(readCurrentSession2)(function(session) {
-                return writeClipboardText2(diagnosticsText(session))(dispatch5(handlers)(new SetCopyStatus("Copied!")))(function(reason) {
-                  return dispatch5(handlers)(new SetCopyStatus("Copy failed: " + reason));
+      return function(dictDocumentPip) {
+        var dispatch3 = dispatch2(dictDocumentPip);
+        return function(dictDomMount) {
+          var dispatch4 = dispatch3(dictDomMount);
+          return function(dictSessionState) {
+            var readCurrentSession2 = readCurrentSession(dictSessionState);
+            var dispatch5 = dispatch4(dictSessionState);
+            return function(dictStorage) {
+              var dispatch6 = dispatch5(dictStorage);
+              return function(handlers) {
+                return bind15(readCurrentSession2)(function(session) {
+                  return writeClipboardText2(diagnosticsText(session))(dispatch6(handlers)(new SetCopyStatus("Copied!")))(function(reason) {
+                    return dispatch6(handlers)(new SetCopyStatus("Copy failed: " + reason));
+                  });
                 });
-              });
+              };
             };
           };
         };
       };
     };
   };
-  var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clockAppM)(clipboardAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clockAppM)(clipboardAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var handleTick = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return bind14(currentTimeMillis1)(function(timestamp) {
-              return dispatch5(handlers)(new Tick(timestamp));
-            });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return bind15(currentTimeMillis1)(function(timestamp) {
+                return dispatch6(handlers)(new Tick(timestamp));
+              });
+            };
           };
         };
       };
     };
   };
   var handleToggleDiagnosticsDrawer = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return bind14(readCurrentSession2)(function(session) {
-              return dispatch5(handlers)(new SetDiagnosticsDrawerOpen(!session.diagnosticsDrawerOpen));
-            });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return bind15(readCurrentSession2)(function(session) {
+                return dispatch6(handlers)(new SetDiagnosticsDrawerOpen(!session.diagnosticsDrawerOpen));
+              });
+            };
           };
         };
       };
     };
   };
-  var handleToggleDiagnosticsDrawer1 = /* @__PURE__ */ handleToggleDiagnosticsDrawer(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var handleToggleDiagnosticsDrawer1 = /* @__PURE__ */ handleToggleDiagnosticsDrawer(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var onOnDeviceInstallStarted = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
     var discard22 = discard3(Bind1);
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var dispatch2 = dispatch(dictClock);
     var pure1 = pure(Monad0.Applicative0());
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return function(locale) {
-              return discard22(recordRecognitionEvent2("on-device language pack download started")("locale=" + renderLocale(locale)))(function() {
-                return bind14(readCurrentSession2)(function(session) {
-                  if (session.listening) {
-                    return dispatch5(handlers)(new SetRecognitionStatusOverride(downloadingOnDeviceStatus));
-                  }
-                  ;
-                  return pure1(unit);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return function(locale) {
+                return discard22(recordRecognitionEvent2("on-device language pack download started")("locale=" + renderLocale(locale)))(function() {
+                  return bind15(readCurrentSession2)(function(session) {
+                    if (session.listening) {
+                      return dispatch6(handlers)(new SetRecognitionStatusOverride(downloadingOnDeviceStatus));
+                    }
+                    ;
+                    return pure1(unit);
+                  });
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var onPipClosed = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordPipEvent1 = recordPipEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordPipEvent2 = recordPipEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordPipEvent2("pop-out closed")("via button"))(function() {
+                return dispatch6(handlers)(new SetPipOpen(false));
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var onPipClosedByUser = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordPipEvent1 = recordPipEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordPipEvent2 = recordPipEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordPipEvent2("pop-out closed")("via window chrome"))(function() {
+                return dispatch6(handlers)(new SetPipOpen(false));
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var onPipError = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordPipEvent1 = recordPipEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordPipEvent2 = recordPipEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return function(failure) {
+                var rendered = renderDocumentPipError(failure);
+                return discard22(recordPipEvent2("pop-out failure")(rendered))(function() {
+                  return dispatch6(handlers)(new SetPipStatus(rendered));
+                });
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var onPipOpened = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var recordPipEvent1 = recordPipEvent(dictClock);
+    var dispatch2 = dispatch(dictClock);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordPipEvent2 = recordPipEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordPipEvent2("pop-out opened")(""))(function() {
+                return dispatch6(handlers)(new SetPipOpen(true));
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleTogglePip = function(dictClock) {
+    var Bind1 = dictClock.Monad0().Bind1();
+    var bind15 = bind(Bind1);
+    var onPipClosed1 = onPipClosed(dictClock);
+    var discard22 = discard3(Bind1);
+    var dispatch2 = dispatch(dictClock);
+    var onPipOpened1 = onPipOpened(dictClock);
+    var onPipError1 = onPipError(dictClock);
+    var onPipClosedByUser1 = onPipClosedByUser(dictClock);
+    return function(dictDocumentPip) {
+      var closePipWindow3 = closePipWindow2(dictDocumentPip);
+      var onPipClosed2 = onPipClosed1(dictDocumentPip);
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var requestPipWindow3 = requestPipWindow2(dictDocumentPip);
+      var onPipOpened2 = onPipOpened1(dictDocumentPip);
+      var onPipError2 = onPipError1(dictDocumentPip);
+      var onPipClosedByUser2 = onPipClosedByUser1(dictDocumentPip);
+      return function(dictDomMount) {
+        var onPipClosed3 = onPipClosed2(dictDomMount);
+        var dispatch4 = dispatch3(dictDomMount);
+        var onPipOpened3 = onPipOpened2(dictDomMount);
+        var onPipError3 = onPipError2(dictDomMount);
+        var onPipClosedByUser3 = onPipClosedByUser2(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var onPipClosed4 = onPipClosed3(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          var onPipOpened4 = onPipOpened3(dictSessionState);
+          var onPipError4 = onPipError3(dictSessionState);
+          var onPipClosedByUser4 = onPipClosedByUser3(dictSessionState);
+          return function(dictStorage) {
+            var onPipClosed5 = onPipClosed4(dictStorage);
+            var dispatch6 = dispatch5(dictStorage);
+            var onPipOpened5 = onPipOpened4(dictStorage);
+            var onPipError5 = onPipError4(dictStorage);
+            var onPipClosedByUser5 = onPipClosedByUser4(dictStorage);
+            return function(handlers) {
+              return bind15(readCurrentSession2)(function(session) {
+                if (session.pipOpen) {
+                  return closePipWindow3(onPipClosed5(handlers));
+                }
+                ;
+                return discard22(dispatch6(handlers)(new SetPipStatus("")))(function() {
+                  return requestPipWindow3(onPipOpened5(handlers))(onPipError5(handlers))(onPipClosedByUser5(handlers));
                 });
               });
             };
@@ -8076,21 +8681,25 @@
       };
     };
   };
+  var handleTogglePip1 = /* @__PURE__ */ handleTogglePip(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var onWakeLockAcquired = function(dictClock) {
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return discard22(recordWakeLockEvent2("wake lock acquired")("screen held"))(function() {
-              return dispatch5(handlers)(new SetWakeLockState(WakeLockHeld.value));
-            });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordWakeLockEvent2("wake lock acquired")("screen held"))(function() {
+                return dispatch6(handlers)(new SetWakeLockState(WakeLockHeld.value));
+              });
+            };
           };
         };
       };
@@ -8100,17 +8709,20 @@
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return discard22(recordWakeLockEvent2("wake lock auto-released")("page hidden"))(function() {
-              return dispatch5(handlers)(new SetWakeLockState(WakeLockIdle.value));
-            });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordWakeLockEvent2("wake lock auto-released")("page hidden"))(function() {
+                return dispatch6(handlers)(new SetWakeLockState(WakeLockIdle.value));
+              });
+            };
           };
         };
       };
@@ -8120,19 +8732,22 @@
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return function(failure) {
-              var rendered = renderWakeLockError(failure);
-              return discard22(recordWakeLockEvent2("wake lock failure")(rendered))(function() {
-                return dispatch5(handlers)(new SetWakeLockState(new WakeLockFailed(rendered)));
-              });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return function(failure) {
+                var rendered = renderWakeLockError(failure);
+                return discard22(recordWakeLockEvent2("wake lock failure")(rendered))(function() {
+                  return dispatch6(handlers)(new SetWakeLockState(new WakeLockFailed(rendered)));
+                });
+              };
             };
           };
         };
@@ -8141,35 +8756,40 @@
   };
   var maybeAcquireWakeLock = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind14 = bind(Monad0.Bind1());
+    var bind15 = bind(Monad0.Bind1());
     var pure1 = pure(Monad0.Applicative0());
     var onWakeLockAcquired1 = onWakeLockAcquired(dictClock);
     var onWakeLockError1 = onWakeLockError(dictClock);
     var onWakeLockAutoReleased1 = onWakeLockAutoReleased(dictClock);
-    return function(dictDomMount) {
-      var onWakeLockAcquired2 = onWakeLockAcquired1(dictDomMount);
-      var onWakeLockError2 = onWakeLockError1(dictDomMount);
-      var onWakeLockAutoReleased2 = onWakeLockAutoReleased1(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var onWakeLockAcquired3 = onWakeLockAcquired2(dictSessionState);
-        var onWakeLockError3 = onWakeLockError2(dictSessionState);
-        var onWakeLockAutoReleased3 = onWakeLockAutoReleased2(dictSessionState);
-        return function(dictStorage) {
-          var onWakeLockAcquired4 = onWakeLockAcquired3(dictStorage);
-          var onWakeLockError4 = onWakeLockError3(dictStorage);
-          var onWakeLockAutoReleased4 = onWakeLockAutoReleased3(dictStorage);
-          return function(dictWakeLock) {
-            var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
-            return function(handlers) {
-              return bind14(readCurrentSession2)(function(session) {
-                var $697 = !session.keepAwake;
-                if ($697) {
-                  return pure1(unit);
-                }
-                ;
-                return requestScreenWakeLock3(onWakeLockAcquired4(handlers))(onWakeLockError4(handlers))(onWakeLockAutoReleased4(handlers));
-              });
+    return function(dictDocumentPip) {
+      var onWakeLockAcquired2 = onWakeLockAcquired1(dictDocumentPip);
+      var onWakeLockError2 = onWakeLockError1(dictDocumentPip);
+      var onWakeLockAutoReleased2 = onWakeLockAutoReleased1(dictDocumentPip);
+      return function(dictDomMount) {
+        var onWakeLockAcquired3 = onWakeLockAcquired2(dictDomMount);
+        var onWakeLockError3 = onWakeLockError2(dictDomMount);
+        var onWakeLockAutoReleased3 = onWakeLockAutoReleased2(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var onWakeLockAcquired4 = onWakeLockAcquired3(dictSessionState);
+          var onWakeLockError4 = onWakeLockError3(dictSessionState);
+          var onWakeLockAutoReleased4 = onWakeLockAutoReleased3(dictSessionState);
+          return function(dictStorage) {
+            var onWakeLockAcquired5 = onWakeLockAcquired4(dictStorage);
+            var onWakeLockError5 = onWakeLockError4(dictStorage);
+            var onWakeLockAutoReleased5 = onWakeLockAutoReleased4(dictStorage);
+            return function(dictWakeLock) {
+              var requestScreenWakeLock3 = requestScreenWakeLock2(dictWakeLock);
+              return function(handlers) {
+                return bind15(readCurrentSession2)(function(session) {
+                  var $899 = !session.keepAwake;
+                  if ($899) {
+                    return pure1(unit);
+                  }
+                  ;
+                  return requestScreenWakeLock3(onWakeLockAcquired5(handlers))(onWakeLockError5(handlers))(onWakeLockAutoReleased5(handlers));
+                });
+              };
             };
           };
         };
@@ -8178,51 +8798,57 @@
   };
   var handleVisibilityVisible = function(dictClock) {
     var Monad0 = dictClock.Monad0();
-    var bind14 = bind(Monad0.Bind1());
+    var bind15 = bind(Monad0.Bind1());
     var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
-    return function(dictDomMount) {
-      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
-        return function(dictStorage) {
-          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
-          return function(dictWakeLock) {
-            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
-            return function(handlers) {
-              return bind14(readCurrentSession2)(function(session) {
-                var $698 = session.listening && (session.keepAwake && notEq2(session.wakeLockState)(WakeLockHeld.value));
-                if ($698) {
-                  return maybeAcquireWakeLock5(handlers);
-                }
-                ;
-                return pure1(unit);
-              });
+    return function(dictDocumentPip) {
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDocumentPip);
+      return function(dictDomMount) {
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictSessionState);
+          return function(dictStorage) {
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictStorage);
+            return function(dictWakeLock) {
+              var maybeAcquireWakeLock6 = maybeAcquireWakeLock5(dictWakeLock);
+              return function(handlers) {
+                return bind15(readCurrentSession2)(function(session) {
+                  var $900 = session.listening && (session.keepAwake && notEq2(session.wakeLockState)(WakeLockHeld.value));
+                  if ($900) {
+                    return maybeAcquireWakeLock6(handlers);
+                  }
+                  ;
+                  return pure1(unit);
+                });
+              };
             };
           };
         };
       };
     };
   };
-  var handleVisibilityVisible1 = /* @__PURE__ */ handleVisibilityVisible(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var handleVisibilityVisible1 = /* @__PURE__ */ handleVisibilityVisible(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
   var onWakeLockReleaseError = function(dictClock) {
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return function(failure) {
-              var rendered = renderWakeLockError(failure);
-              return discard22(recordWakeLockEvent2("wake lock release failure")(rendered))(function() {
-                return dispatch5(handlers)(new SetWakeLockState(new WakeLockFailed(rendered)));
-              });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return function(failure) {
+                var rendered = renderWakeLockError(failure);
+                return discard22(recordWakeLockEvent2("wake lock release failure")(rendered))(function() {
+                  return dispatch6(handlers)(new SetWakeLockState(new WakeLockFailed(rendered)));
+                });
+              };
             };
           };
         };
@@ -8233,50 +8859,58 @@
     var discard22 = discard3(dictClock.Monad0().Bind1());
     var recordWakeLockEvent1 = recordWakeLockEvent(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(handlers) {
-            return discard22(recordWakeLockEvent2("wake lock release")("released"))(function() {
-              return dispatch5(handlers)(new SetWakeLockState(WakeLockIdle.value));
-            });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var recordWakeLockEvent2 = recordWakeLockEvent1(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(handlers) {
+              return discard22(recordWakeLockEvent2("wake lock release")("released"))(function() {
+                return dispatch6(handlers)(new SetWakeLockState(WakeLockIdle.value));
+              });
+            };
           };
         };
       };
     };
   };
   var releaseHeldWakeLock = function(dictClock) {
-    var bind14 = bind(dictClock.Monad0().Bind1());
+    var bind15 = bind(dictClock.Monad0().Bind1());
     var onWakeLockReleased1 = onWakeLockReleased(dictClock);
     var onWakeLockReleaseError1 = onWakeLockReleaseError(dictClock);
     var dispatch2 = dispatch(dictClock);
-    return function(dictDomMount) {
-      var onWakeLockReleased2 = onWakeLockReleased1(dictDomMount);
-      var onWakeLockReleaseError2 = onWakeLockReleaseError1(dictDomMount);
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var onWakeLockReleased3 = onWakeLockReleased2(dictSessionState);
-        var onWakeLockReleaseError3 = onWakeLockReleaseError2(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        return function(dictStorage) {
-          var onWakeLockReleased4 = onWakeLockReleased3(dictStorage);
-          var onWakeLockReleaseError4 = onWakeLockReleaseError3(dictStorage);
-          var dispatch5 = dispatch4(dictStorage);
-          return function(dictWakeLock) {
-            var releaseScreenWakeLock2 = releaseScreenWakeLock(dictWakeLock);
-            return function(handlers) {
-              return bind14(readCurrentSession2)(function(session) {
-                if (session.wakeLockState instanceof WakeLockHeld) {
-                  return releaseScreenWakeLock2(onWakeLockReleased4(handlers))(onWakeLockReleaseError4(handlers));
-                }
-                ;
-                return dispatch5(handlers)(new SetWakeLockState(WakeLockIdle.value));
-              });
+    return function(dictDocumentPip) {
+      var onWakeLockReleased2 = onWakeLockReleased1(dictDocumentPip);
+      var onWakeLockReleaseError2 = onWakeLockReleaseError1(dictDocumentPip);
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var onWakeLockReleased3 = onWakeLockReleased2(dictDomMount);
+        var onWakeLockReleaseError3 = onWakeLockReleaseError2(dictDomMount);
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var onWakeLockReleased4 = onWakeLockReleased3(dictSessionState);
+          var onWakeLockReleaseError4 = onWakeLockReleaseError3(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          return function(dictStorage) {
+            var onWakeLockReleased5 = onWakeLockReleased4(dictStorage);
+            var onWakeLockReleaseError5 = onWakeLockReleaseError4(dictStorage);
+            var dispatch6 = dispatch5(dictStorage);
+            return function(dictWakeLock) {
+              var releaseScreenWakeLock2 = releaseScreenWakeLock(dictWakeLock);
+              return function(handlers) {
+                return bind15(readCurrentSession2)(function(session) {
+                  if (session.wakeLockState instanceof WakeLockHeld) {
+                    return releaseScreenWakeLock2(onWakeLockReleased5(handlers))(onWakeLockReleaseError5(handlers));
+                  }
+                  ;
+                  return dispatch6(handlers)(new SetWakeLockState(WakeLockIdle.value));
+                });
+              };
             };
           };
         };
@@ -8288,43 +8922,80 @@
     var Bind1 = Monad0.Bind1();
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var maybeAcquireWakeLock1 = maybeAcquireWakeLock(dictClock);
     var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
-      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
-        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
-          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
-          return function(dictWakeLock) {
-            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
-            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-            return function(handlers) {
-              return function(enabled) {
-                return discard22(dispatch5(handlers)(new SetKeepAwake(enabled)))(function() {
-                  return bind14(readCurrentSession2)(function(session) {
-                    if (enabled && session.listening) {
-                      return maybeAcquireWakeLock5(handlers);
-                    }
-                    ;
-                    if (!enabled) {
-                      return releaseHeldWakeLock5(handlers);
-                    }
-                    ;
-                    if (enabled && !session.listening) {
-                      return pure1(unit);
-                    }
-                    ;
-                    throw new Error("Failed pattern match at WordMeter.Main (line 393, column 3 - line 396, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDocumentPip);
+      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictDomMount);
+        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictSessionState);
+          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictStorage);
+            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictStorage);
+            return function(dictWakeLock) {
+              var maybeAcquireWakeLock6 = maybeAcquireWakeLock5(dictWakeLock);
+              var releaseHeldWakeLock6 = releaseHeldWakeLock5(dictWakeLock);
+              return function(handlers) {
+                return function(enabled) {
+                  return discard22(dispatch6(handlers)(new SetKeepAwake(enabled)))(function() {
+                    return bind15(readCurrentSession2)(function(session) {
+                      if (enabled && session.listening) {
+                        return maybeAcquireWakeLock6(handlers);
+                      }
+                      ;
+                      if (!enabled) {
+                        return releaseHeldWakeLock6(handlers);
+                      }
+                      ;
+                      if (enabled && !session.listening) {
+                        return pure1(unit);
+                      }
+                      ;
+                      throw new Error("Failed pattern match at WordMeter.Main (line 427, column 3 - line 430, column 29): " + [enabled.constructor.name, session.listening.constructor.name]);
+                    });
+                  });
+                };
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+  var handleSetKeepAwake1 = /* @__PURE__ */ handleSetKeepAwake(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
+  var stopRecognitionForSession = function(dictClock) {
+    var discard22 = discard3(dictClock.Monad0().Bind1());
+    var dispatch2 = dispatch(dictClock);
+    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
+    var onRecognitionStopFailure1 = onRecognitionStopFailure(dictClock);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          var onRecognitionStopFailure2 = onRecognitionStopFailure1(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(dictRecognition) {
+              var cancelAutoRestart2 = cancelAutoRestart(dictRecognition);
+              var stopRecognition2 = stopRecognition(dictRecognition);
+              return function(handlers) {
+                return discard22(cancelAutoRestart2)(function() {
+                  return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(Nothing.value)))(function() {
+                    return stopRecognition2(recordRecognitionEvent2("recognition stopped")(""))(onRecognitionStopFailure2);
                   });
                 });
               };
@@ -8334,91 +9005,75 @@
       };
     };
   };
-  var handleSetKeepAwake1 = /* @__PURE__ */ handleSetKeepAwake(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM);
-  var stopRecognitionForSession = function(dictClock) {
-    var discard22 = discard3(dictClock.Monad0().Bind1());
-    var dispatch2 = dispatch(dictClock);
-    var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
-    var onRecognitionStopFailure1 = onRecognitionStopFailure(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        var onRecognitionStopFailure2 = onRecognitionStopFailure1(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(dictRecognition) {
-            var cancelAutoRestart2 = cancelAutoRestart(dictRecognition);
-            var stopRecognition2 = stopRecognition(dictRecognition);
-            return function(handlers) {
-              return discard22(cancelAutoRestart2)(function() {
-                return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(Nothing.value)))(function() {
-                  return stopRecognition2(recordRecognitionEvent2("recognition stopped")(""))(onRecognitionStopFailure2);
-                });
-              });
-            };
-          };
-        };
-      };
-    };
-  };
   var handleReset = function(dictMonadEffect) {
-    var liftEffect10 = liftEffect(dictMonadEffect);
+    var liftEffect11 = liftEffect(dictMonadEffect);
     return function(dictClock) {
       var Monad0 = dictClock.Monad0();
       var Bind1 = Monad0.Bind1();
-      var bind14 = bind(Bind1);
+      var bind15 = bind(Bind1);
       var discard22 = discard3(Bind1);
       var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
       var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
+      var onPipClosed1 = onPipClosed(dictClock);
       var currentTimeMillis1 = currentTimeMillis2(dictClock);
       var dispatch2 = dispatch(dictClock);
       var pure1 = pure(Monad0.Applicative0());
       var recordConfirmFailure1 = recordConfirmFailure(dictClock);
-      return function(dictDomMount) {
-        var stopRecognitionForSession2 = stopRecognitionForSession1(dictDomMount);
-        var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
-        var dispatch3 = dispatch2(dictDomMount);
-        return function(dictSessionState) {
-          var stopRecognitionForSession3 = stopRecognitionForSession2(dictSessionState);
-          var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
-          var dispatch4 = dispatch3(dictSessionState);
-          var recordConfirmFailure2 = recordConfirmFailure1(dictSessionState);
-          return function(dictStorage) {
-            var stopRecognitionForSession4 = stopRecognitionForSession3(dictStorage);
-            var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
-            var dispatch5 = dispatch4(dictStorage);
-            return function(dictWakeLock) {
-              var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-              return function(dictRecognition) {
-                var stopRecognitionForSession5 = stopRecognitionForSession4(dictRecognition);
-                return function(dictTicker) {
-                  var stopTickerInterval2 = stopTickerInterval(dictTicker);
-                  return function(handlers) {
-                    return bind14(liftEffect10(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
-                      if (outcome instanceof Right && outcome.value0) {
-                        return discard22(stopTickerInterval2)(function() {
-                          return discard22(stopRecognitionForSession5(handlers))(function() {
-                            return discard22(releaseHeldWakeLock5(handlers))(function() {
-                              return bind14(currentTimeMillis1)(function(timestamp) {
-                                return dispatch5(handlers)(new Reset(timestamp));
+      return function(dictDocumentPip) {
+        var stopRecognitionForSession2 = stopRecognitionForSession1(dictDocumentPip);
+        var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDocumentPip);
+        var closePipWindow3 = closePipWindow2(dictDocumentPip);
+        var onPipClosed2 = onPipClosed1(dictDocumentPip);
+        var dispatch3 = dispatch2(dictDocumentPip);
+        return function(dictDomMount) {
+          var stopRecognitionForSession3 = stopRecognitionForSession2(dictDomMount);
+          var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictDomMount);
+          var onPipClosed3 = onPipClosed2(dictDomMount);
+          var dispatch4 = dispatch3(dictDomMount);
+          return function(dictSessionState) {
+            var stopRecognitionForSession4 = stopRecognitionForSession3(dictSessionState);
+            var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictSessionState);
+            var onPipClosed4 = onPipClosed3(dictSessionState);
+            var dispatch5 = dispatch4(dictSessionState);
+            var recordConfirmFailure2 = recordConfirmFailure1(dictSessionState);
+            return function(dictStorage) {
+              var stopRecognitionForSession5 = stopRecognitionForSession4(dictStorage);
+              var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictStorage);
+              var onPipClosed5 = onPipClosed4(dictStorage);
+              var dispatch6 = dispatch5(dictStorage);
+              return function(dictWakeLock) {
+                var releaseHeldWakeLock6 = releaseHeldWakeLock5(dictWakeLock);
+                return function(dictRecognition) {
+                  var stopRecognitionForSession6 = stopRecognitionForSession5(dictRecognition);
+                  return function(dictTicker) {
+                    var stopTickerInterval2 = stopTickerInterval(dictTicker);
+                    return function(handlers) {
+                      return bind15(liftEffect11(askForConfirmation(resetConfirmationPrompt)))(function(outcome) {
+                        if (outcome instanceof Right && outcome.value0) {
+                          return discard22(stopTickerInterval2)(function() {
+                            return discard22(stopRecognitionForSession6(handlers))(function() {
+                              return discard22(releaseHeldWakeLock6(handlers))(function() {
+                                return discard22(closePipWindow3(onPipClosed5(handlers)))(function() {
+                                  return bind15(currentTimeMillis1)(function(timestamp) {
+                                    return dispatch6(handlers)(new Reset(timestamp));
+                                  });
+                                });
                               });
                             });
                           });
-                        });
-                      }
-                      ;
-                      if (outcome instanceof Right && !outcome.value0) {
-                        return pure1(unit);
-                      }
-                      ;
-                      if (outcome instanceof Left) {
-                        return recordConfirmFailure2(outcome.value0);
-                      }
-                      ;
-                      throw new Error("Failed pattern match at WordMeter.Main (line 370, column 3 - line 378, column 63): " + [outcome.constructor.name]);
-                    });
+                        }
+                        ;
+                        if (outcome instanceof Right && !outcome.value0) {
+                          return pure1(unit);
+                        }
+                        ;
+                        if (outcome instanceof Left) {
+                          return recordConfirmFailure2(outcome.value0);
+                        }
+                        ;
+                        throw new Error("Failed pattern match at WordMeter.Main (line 402, column 3 - line 411, column 63): " + [outcome.constructor.name]);
+                      });
+                    };
                   };
                 };
               };
@@ -8428,7 +9083,7 @@
       };
     };
   };
-  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
+  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
   var defaultLocale = "en-US";
   var sessionLocale = function(dictSessionState) {
     var Monad0 = dictSessionState.Monad0();
@@ -8443,39 +9098,43 @@
   };
   var swapOnDeviceForCloud = function(dictClock) {
     var Bind1 = dictClock.Monad0().Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
     var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDomMount);
-      return function(dictSessionState) {
-        var updateSession2 = updateSession(dictSessionState);
-        var sessionLocale1 = sessionLocale(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        var stopRecognitionForSession3 = stopRecognitionForSession2(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var stopRecognitionForSession4 = stopRecognitionForSession3(dictStorage);
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              var stopRecognitionForSession5 = stopRecognitionForSession4(dictRecognition);
-              var startRecognition2 = startRecognition(dictRecognition);
-              return function(dictTicker) {
-                return function(handlers) {
-                  return function(code) {
-                    return function(message2) {
-                      return bind14(currentTimeMillis1)(function(errorTimestamp) {
-                        return discard22(updateSession2(new RecordDiagnostic(errorTimestamp, "recognition.onerror", renderRecognitionErrorDiagnosticDetail(code)(message2))))(function() {
-                          return bind14(sessionLocale1)(function(locale) {
-                            return bind14(currentTimeMillis1)(function(fallbackTimestamp) {
-                              return discard22(updateSession2(new RecordDiagnostic(fallbackTimestamp, "language-not-supported at runtime \u2014 falling back to cloud", "locale=" + renderLocale(locale))))(function() {
-                                return discard22(dispatch5(handlers)(new SetCloudFallbackAttempted(true)))(function() {
-                                  return discard22(stopRecognitionForSession5(handlers))(function() {
-                                    return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
-                                      return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        var stopRecognitionForSession3 = stopRecognitionForSession2(dictDomMount);
+        return function(dictSessionState) {
+          var updateSession2 = updateSession(dictSessionState);
+          var sessionLocale1 = sessionLocale(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          var stopRecognitionForSession4 = stopRecognitionForSession3(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            var stopRecognitionForSession5 = stopRecognitionForSession4(dictStorage);
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                var stopRecognitionForSession6 = stopRecognitionForSession5(dictRecognition);
+                var startRecognition2 = startRecognition(dictRecognition);
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return function(code) {
+                      return function(message2) {
+                        return bind15(currentTimeMillis1)(function(errorTimestamp) {
+                          return discard22(updateSession2(new RecordDiagnostic(errorTimestamp, "recognition.onerror", renderRecognitionErrorDiagnosticDetail(code)(message2))))(function() {
+                            return bind15(sessionLocale1)(function(locale) {
+                              return bind15(currentTimeMillis1)(function(fallbackTimestamp) {
+                                return discard22(updateSession2(new RecordDiagnostic(fallbackTimestamp, "language-not-supported at runtime \u2014 falling back to cloud", "locale=" + renderLocale(locale))))(function() {
+                                  return discard22(dispatch6(handlers)(new SetCloudFallbackAttempted(true)))(function() {
+                                    return discard22(stopRecognitionForSession6(handlers))(function() {
+                                      return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
+                                        return startRecognition2(recognitionHandlersFor(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+                                      });
                                     });
                                   });
                                 });
@@ -8483,7 +9142,7 @@
                             });
                           });
                         });
-                      });
+                      };
                     };
                   };
                 };
@@ -8496,67 +9155,71 @@
   };
   var startRecognitionForSession = function(dictClock) {
     var Bind1 = dictClock.Monad0().Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
     var onOnDeviceInstallStarted1 = onOnDeviceInstallStarted(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var onOnDeviceInstallStarted2 = onOnDeviceInstallStarted1(dictDomMount);
-      return function(dictSessionState) {
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        var sessionLocale1 = sessionLocale(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        var onOnDeviceInstallStarted3 = onOnDeviceInstallStarted2(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var onOnDeviceInstallStarted4 = onOnDeviceInstallStarted3(dictStorage);
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              var recognitionApiAvailable3 = recognitionApiAvailable2(dictRecognition);
-              var startRecognition2 = startRecognition(dictRecognition);
-              var onDeviceLanguagePackApiAvailable3 = onDeviceLanguagePackApiAvailable2(dictRecognition);
-              var prepareOnDeviceLanguagePack2 = prepareOnDeviceLanguagePack(dictRecognition);
-              return function(dictTicker) {
-                return function(handlers) {
-                  return bind14(recognitionApiAvailable3)(function(available) {
-                    var $708 = !available;
-                    if ($708) {
-                      return recordRecognitionEvent2("recognition unavailable")("no SpeechRecognition constructor");
-                    }
-                    ;
-                    return bind14(sessionLocale1)(function(locale) {
-                      return bind14(readCurrentSession2)(function(session) {
-                        if (session.cloudFallbackAttempted) {
-                          return discard22(recordRecognitionEvent2("skipping on-device pre-flight \u2014 cloud already selected")("locale=" + renderLocale(locale)))(function() {
-                            return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
-                              return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
-                            });
-                          });
-                        }
-                        ;
-                        return bind14(onDeviceLanguagePackApiAvailable3)(function(onDeviceApi) {
-                          var $710 = !onDeviceApi;
-                          if ($710) {
-                            return discard22(recordRecognitionEvent2("on-device API absent \u2014 falling back to cloud")("locale=" + renderLocale(locale)))(function() {
-                              return discard22(dispatch5(handlers)(new SetCloudFallbackAttempted(true)))(function() {
-                                return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
-                                  return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
-                                });
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var onOnDeviceInstallStarted2 = onOnDeviceInstallStarted1(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        var onOnDeviceInstallStarted3 = onOnDeviceInstallStarted2(dictDomMount);
+        return function(dictSessionState) {
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          var sessionLocale1 = sessionLocale(dictSessionState);
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          var onOnDeviceInstallStarted4 = onOnDeviceInstallStarted3(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            var onOnDeviceInstallStarted5 = onOnDeviceInstallStarted4(dictStorage);
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                var recognitionApiAvailable3 = recognitionApiAvailable2(dictRecognition);
+                var startRecognition2 = startRecognition(dictRecognition);
+                var onDeviceLanguagePackApiAvailable3 = onDeviceLanguagePackApiAvailable2(dictRecognition);
+                var prepareOnDeviceLanguagePack2 = prepareOnDeviceLanguagePack(dictRecognition);
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return bind15(recognitionApiAvailable3)(function(available) {
+                      var $910 = !available;
+                      if ($910) {
+                        return recordRecognitionEvent2("recognition unavailable")("no SpeechRecognition constructor");
+                      }
+                      ;
+                      return bind15(sessionLocale1)(function(locale) {
+                        return bind15(readCurrentSession2)(function(session) {
+                          if (session.cloudFallbackAttempted) {
+                            return discard22(recordRecognitionEvent2("skipping on-device pre-flight \u2014 cloud already selected")("locale=" + renderLocale(locale)))(function() {
+                              return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
+                                return startRecognition2(recognitionHandlersFor(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
                               });
                             });
                           }
                           ;
-                          return prepareOnDeviceLanguagePack2({
-                            locale,
-                            onProgress: onOnDeviceInstallStarted4(handlers)(locale)
-                          })(onOnDevicePreflightResolved(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+                          return bind15(onDeviceLanguagePackApiAvailable3)(function(onDeviceApi) {
+                            var $912 = !onDeviceApi;
+                            if ($912) {
+                              return discard22(recordRecognitionEvent2("on-device API absent \u2014 falling back to cloud")("locale=" + renderLocale(locale)))(function() {
+                                return discard22(dispatch6(handlers)(new SetCloudFallbackAttempted(true)))(function() {
+                                  return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
+                                    return startRecognition2(recognitionHandlersFor(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+                                  });
+                                });
+                              });
+                            }
+                            ;
+                            return prepareOnDeviceLanguagePack2({
+                              locale,
+                              onProgress: onOnDeviceInstallStarted5(handlers)(locale)
+                            })(onOnDevicePreflightResolved(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+                          });
                         });
                       });
                     });
-                  });
+                  };
                 };
               };
             };
@@ -8570,32 +9233,35 @@
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
     var onRecognitionStartFailure1 = onRecognitionStartFailure(dictClock);
     var onRecognitionConstructFailure1 = onRecognitionConstructFailure(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        var onRecognitionStartFailure2 = onRecognitionStartFailure1(dictSessionState);
-        var onRecognitionConstructFailure2 = onRecognitionConstructFailure1(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              return function(dictTicker) {
-                return function(handlers) {
-                  return function(locale) {
-                    return {
-                      locale,
-                      onResult: function(transcript) {
-                        return function(timestamp) {
-                          return dispatch5(handlers)(new IntegrateFinalizedTranscript(timestamp, transcript));
-                        };
-                      },
-                      onErrorEvent: handleRecognitionError(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers),
-                      onEnded: handleRecognitionEnded(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers),
-                      onStarted: recordRecognitionEvent2("recognition started")("locale=" + renderLocale(locale)),
-                      onStartFailure: onRecognitionStartFailure2,
-                      onConstructFailure: onRecognitionConstructFailure2
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          var onRecognitionStartFailure2 = onRecognitionStartFailure1(dictSessionState);
+          var onRecognitionConstructFailure2 = onRecognitionConstructFailure1(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return function(locale) {
+                      return {
+                        locale,
+                        onResult: function(transcript) {
+                          return function(timestamp) {
+                            return dispatch6(handlers)(new IntegrateFinalizedTranscript(timestamp, transcript));
+                          };
+                        },
+                        onErrorEvent: handleRecognitionError(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers),
+                        onEnded: handleRecognitionEnded(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers),
+                        onStarted: recordRecognitionEvent2("recognition started")("locale=" + renderLocale(locale)),
+                        onStartFailure: onRecognitionStartFailure2,
+                        onConstructFailure: onRecognitionConstructFailure2
+                      };
                     };
                   };
                 };
@@ -8611,53 +9277,56 @@
     var Bind1 = Monad0.Bind1();
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var pure1 = pure(Monad0.Applicative0());
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              var startOnDeviceRecognition2 = startOnDeviceRecognition(dictRecognition);
-              var startRecognition2 = startRecognition(dictRecognition);
-              return function(dictTicker) {
-                return function(handlers) {
-                  return function(locale) {
-                    return function(outcome) {
-                      return discard22(dispatch5(handlers)(new SetRecognitionStatusOverride(idleRecognitionStatusOverride)))(function() {
-                        return bind14(readCurrentSession2)(function(session) {
-                          var $711 = !session.listening;
-                          if ($711) {
-                            return pure1(unit);
-                          }
-                          ;
-                          if (outcome instanceof Right) {
-                            return discard22(recordRecognitionEvent2("on-device pre-flight viable \u2014 starting on-device")("locale=" + renderLocale(locale)))(function() {
-                              return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(OnDevicePath.value))))(function() {
-                                return startOnDeviceRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
-                              });
-                            });
-                          }
-                          ;
-                          if (outcome instanceof Left) {
-                            return discard22(recordRecognitionEvent2("on-device pre-flight non-viable \u2014 falling back to cloud")(renderOnDeviceUnavailable(outcome.value0)))(function() {
-                              return discard22(dispatch5(handlers)(new SetCloudFallbackAttempted(true)))(function() {
-                                return discard22(dispatch5(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
-                                  return startRecognition2(recognitionHandlersFor(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                var startOnDeviceRecognition2 = startOnDeviceRecognition(dictRecognition);
+                var startRecognition2 = startRecognition(dictRecognition);
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return function(locale) {
+                      return function(outcome) {
+                        return discard22(dispatch6(handlers)(new SetRecognitionStatusOverride(idleRecognitionStatusOverride)))(function() {
+                          return bind15(readCurrentSession2)(function(session) {
+                            var $913 = !session.listening;
+                            if ($913) {
+                              return pure1(unit);
+                            }
+                            ;
+                            if (outcome instanceof Right) {
+                              return discard22(recordRecognitionEvent2("on-device pre-flight viable \u2014 starting on-device")("locale=" + renderLocale(locale)))(function() {
+                                return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(new Just(OnDevicePath.value))))(function() {
+                                  return startOnDeviceRecognition2(recognitionHandlersFor(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
                                 });
                               });
-                            });
-                          }
-                          ;
-                          throw new Error("Failed pattern match at WordMeter.Main (line 721, column 8 - line 734, column 64): " + [outcome.constructor.name]);
+                            }
+                            ;
+                            if (outcome instanceof Left) {
+                              return discard22(recordRecognitionEvent2("on-device pre-flight non-viable \u2014 falling back to cloud")(renderOnDeviceUnavailable(outcome.value0)))(function() {
+                                return discard22(dispatch6(handlers)(new SetCloudFallbackAttempted(true)))(function() {
+                                  return discard22(dispatch6(handlers)(new SetActiveRecognitionPath(new Just(CloudPath.value))))(function() {
+                                    return startRecognition2(recognitionHandlersFor(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(locale));
+                                  });
+                                });
+                              });
+                            }
+                            ;
+                            throw new Error("Failed pattern match at WordMeter.Main (line 849, column 8 - line 862, column 64): " + [outcome.constructor.name]);
+                          });
                         });
-                      });
+                      };
                     };
                   };
                 };
@@ -8671,7 +9340,7 @@
   var handleRecognitionError = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
@@ -8679,54 +9348,59 @@
     var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
     var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
     var pure1 = pure(Monad0.Applicative0());
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDomMount);
-      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        var stopRecognitionForSession3 = stopRecognitionForSession2(dictSessionState);
-        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var stopRecognitionForSession4 = stopRecognitionForSession3(dictStorage);
-          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
-          return function(dictWakeLock) {
-            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-            return function(dictRecognition) {
-              var stopRecognitionForSession5 = stopRecognitionForSession4(dictRecognition);
-              return function(dictTicker) {
-                var stopTickerInterval2 = stopTickerInterval(dictTicker);
-                return function(handlers) {
-                  return function(code) {
-                    return function(message2) {
-                      return bind14(readCurrentSession2)(function(beforeSession) {
-                        var classified = classifyRecognitionError(code);
-                        var shouldRetryOnCloud = eq6(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
-                        if (shouldRetryOnCloud) {
-                          return swapOnDeviceForCloud(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(code)(message2);
-                        }
-                        ;
-                        return bind14(currentTimeMillis1)(function(timestamp) {
-                          return discard22(dispatch5(handlers)(new HandleRecognitionError(timestamp, code, message2)))(function() {
-                            return bind14(map16(function(v) {
-                              return v.listening;
-                            })(readCurrentSession2))(function(stillListening) {
-                              var $716 = beforeSession.listening && !stillListening;
-                              if ($716) {
-                                return discard22(stopTickerInterval2)(function() {
-                                  return discard22(stopRecognitionForSession5(handlers))(function() {
-                                    return releaseHeldWakeLock5(handlers);
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDocumentPip);
+      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        var stopRecognitionForSession3 = stopRecognitionForSession2(dictDomMount);
+        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          var stopRecognitionForSession4 = stopRecognitionForSession3(dictSessionState);
+          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            var stopRecognitionForSession5 = stopRecognitionForSession4(dictStorage);
+            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictStorage);
+            return function(dictWakeLock) {
+              var releaseHeldWakeLock6 = releaseHeldWakeLock5(dictWakeLock);
+              return function(dictRecognition) {
+                var stopRecognitionForSession6 = stopRecognitionForSession5(dictRecognition);
+                return function(dictTicker) {
+                  var stopTickerInterval2 = stopTickerInterval(dictTicker);
+                  return function(handlers) {
+                    return function(code) {
+                      return function(message2) {
+                        return bind15(readCurrentSession2)(function(beforeSession) {
+                          var classified = classifyRecognitionError(code);
+                          var shouldRetryOnCloud = eq6(classified)(LanguageNotSupported.value) && (beforeSession.listening && (eq12(beforeSession.activeRecognitionPath)(new Just(OnDevicePath.value)) && !beforeSession.cloudFallbackAttempted));
+                          if (shouldRetryOnCloud) {
+                            return swapOnDeviceForCloud(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers)(code)(message2);
+                          }
+                          ;
+                          return bind15(currentTimeMillis1)(function(timestamp) {
+                            return discard22(dispatch6(handlers)(new HandleRecognitionError(timestamp, code, message2)))(function() {
+                              return bind15(map16(function(v) {
+                                return v.listening;
+                              })(readCurrentSession2))(function(stillListening) {
+                                var $918 = beforeSession.listening && !stillListening;
+                                if ($918) {
+                                  return discard22(stopTickerInterval2)(function() {
+                                    return discard22(stopRecognitionForSession6(handlers))(function() {
+                                      return releaseHeldWakeLock6(handlers);
+                                    });
                                   });
-                                });
-                              }
-                              ;
-                              return pure1(unit);
+                                }
+                                ;
+                                return pure1(unit);
+                              });
                             });
                           });
                         });
-                      });
+                      };
                     };
                   };
                 };
@@ -8742,34 +9416,37 @@
     var Bind1 = Monad0.Bind1();
     var discard22 = discard3(Bind1);
     var dispatch2 = dispatch(dictClock);
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var pure1 = pure(Monad0.Applicative0());
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      return function(dictSessionState) {
-        var dispatch4 = dispatch3(dictSessionState);
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              var scheduleAutoRestart2 = scheduleAutoRestart(dictRecognition);
-              return function(dictTicker) {
-                return function(handlers) {
-                  return discard22(dispatch5(handlers)(ResetRecognitionDedupState.value))(function() {
-                    return bind14(readCurrentSession2)(function(session) {
-                      var $717 = !session.listening;
-                      if ($717) {
-                        return pure1(unit);
-                      }
-                      ;
-                      return discard22(recordRecognitionEvent2("recognition restart scheduled")("delay=" + (show6(250) + "ms")))(function() {
-                        return scheduleAutoRestart2(fireScheduledRestart(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers));
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        return function(dictSessionState) {
+          var dispatch5 = dispatch4(dictSessionState);
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                var scheduleAutoRestart2 = scheduleAutoRestart(dictRecognition);
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return discard22(dispatch6(handlers)(ResetRecognitionDedupState.value))(function() {
+                      return bind15(readCurrentSession2)(function(session) {
+                        var $919 = !session.listening;
+                        if ($919) {
+                          return pure1(unit);
+                        }
+                        ;
+                        return discard22(recordRecognitionEvent2("recognition restart scheduled")("delay=" + (show6(250) + "ms")))(function() {
+                          return scheduleAutoRestart2(fireScheduledRestart(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers));
+                        });
                       });
                     });
-                  });
+                  };
                 };
               };
             };
@@ -8781,29 +9458,31 @@
   var fireScheduledRestart = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var pure1 = pure(Monad0.Applicative0());
     var discard22 = discard3(Bind1);
     var recordRecognitionEvent1 = recordRecognitionEvent(dictClock);
-    return function(dictDomMount) {
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
-        return function(dictStorage) {
-          return function(dictWakeLock) {
-            return function(dictRecognition) {
-              return function(dictTicker) {
-                return function(handlers) {
-                  return bind14(readCurrentSession2)(function(session) {
-                    var $718 = !session.listening;
-                    if ($718) {
-                      return pure1(unit);
-                    }
-                    ;
-                    return discard22(recordRecognitionEvent2("recognition restart fired")(""))(function() {
-                      return startRecognitionForSession(dictClock)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers);
+    return function(dictDocumentPip) {
+      return function(dictDomMount) {
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var recordRecognitionEvent2 = recordRecognitionEvent1(dictSessionState);
+          return function(dictStorage) {
+            return function(dictWakeLock) {
+              return function(dictRecognition) {
+                return function(dictTicker) {
+                  return function(handlers) {
+                    return bind15(readCurrentSession2)(function(session) {
+                      var $920 = !session.listening;
+                      if ($920) {
+                        return pure1(unit);
+                      }
+                      ;
+                      return discard22(recordRecognitionEvent2("recognition restart fired")(""))(function() {
+                        return startRecognitionForSession(dictClock)(dictDocumentPip)(dictDomMount)(dictSessionState)(dictStorage)(dictWakeLock)(dictRecognition)(dictTicker)(handlers);
+                      });
                     });
-                  });
+                  };
                 };
               };
             };
@@ -8812,11 +9491,11 @@
       };
     };
   };
-  var handleRecognitionError1 = /* @__PURE__ */ handleRecognitionError(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
+  var handleRecognitionError1 = /* @__PURE__ */ handleRecognitionError(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
   var handleToggle = function(dictClock) {
     var Monad0 = dictClock.Monad0();
     var Bind1 = Monad0.Bind1();
-    var bind14 = bind(Bind1);
+    var bind15 = bind(Bind1);
     var map16 = map(Bind1.Apply0().Functor0());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     var discard22 = discard3(Bind1);
@@ -8827,72 +9506,80 @@
     var startRecognitionForSession1 = startRecognitionForSession(dictClock);
     var releaseHeldWakeLock1 = releaseHeldWakeLock(dictClock);
     var stopRecognitionForSession1 = stopRecognitionForSession(dictClock);
-    return function(dictDomMount) {
-      var dispatch3 = dispatch2(dictDomMount);
-      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDomMount);
-      var handleTick2 = handleTick1(dictDomMount);
-      var startRecognitionForSession2 = startRecognitionForSession1(dictDomMount);
-      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDomMount);
-      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDomMount);
-      return function(dictSessionState) {
-        var readCurrentSession2 = readCurrentSession(dictSessionState);
-        var dispatch4 = dispatch3(dictSessionState);
-        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictSessionState);
-        var handleTick3 = handleTick2(dictSessionState);
-        var startRecognitionForSession3 = startRecognitionForSession2(dictSessionState);
-        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictSessionState);
-        var stopRecognitionForSession3 = stopRecognitionForSession2(dictSessionState);
-        return function(dictStorage) {
-          var dispatch5 = dispatch4(dictStorage);
-          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictStorage);
-          var handleTick4 = handleTick3(dictStorage);
-          var startRecognitionForSession4 = startRecognitionForSession3(dictStorage);
-          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictStorage);
-          var stopRecognitionForSession4 = stopRecognitionForSession3(dictStorage);
-          return function(dictWakeLock) {
-            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictWakeLock);
-            var startRecognitionForSession5 = startRecognitionForSession4(dictWakeLock);
-            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictWakeLock);
-            return function(dictRecognition) {
-              var startRecognitionForSession6 = startRecognitionForSession5(dictRecognition);
-              var stopRecognitionForSession5 = stopRecognitionForSession4(dictRecognition);
-              return function(dictTicker) {
-                var startTickerInterval2 = startTickerInterval(dictTicker);
-                var startRecognitionForSession7 = startRecognitionForSession6(dictTicker);
-                var stopTickerInterval2 = stopTickerInterval(dictTicker);
-                return function(handlers) {
-                  return bind14(map16(function(v) {
-                    return v.listening;
-                  })(readCurrentSession2))(function(wasListening) {
-                    return bind14(currentTimeMillis1)(function(timestamp) {
-                      return discard22(dispatch5(handlers)(new Toggle(timestamp)))(function() {
-                        return bind14(readCurrentSession2)(function(session) {
-                          if (session.listening) {
-                            return discard22(maybeAcquireWakeLock5(handlers))(function() {
-                              return discard22(startTickerInterval2(handleTick4(handlers)))(function() {
-                                if (wasListening) {
+    return function(dictDocumentPip) {
+      var dispatch3 = dispatch2(dictDocumentPip);
+      var maybeAcquireWakeLock2 = maybeAcquireWakeLock1(dictDocumentPip);
+      var handleTick2 = handleTick1(dictDocumentPip);
+      var startRecognitionForSession2 = startRecognitionForSession1(dictDocumentPip);
+      var releaseHeldWakeLock2 = releaseHeldWakeLock1(dictDocumentPip);
+      var stopRecognitionForSession2 = stopRecognitionForSession1(dictDocumentPip);
+      return function(dictDomMount) {
+        var dispatch4 = dispatch3(dictDomMount);
+        var maybeAcquireWakeLock3 = maybeAcquireWakeLock2(dictDomMount);
+        var handleTick3 = handleTick2(dictDomMount);
+        var startRecognitionForSession3 = startRecognitionForSession2(dictDomMount);
+        var releaseHeldWakeLock3 = releaseHeldWakeLock2(dictDomMount);
+        var stopRecognitionForSession3 = stopRecognitionForSession2(dictDomMount);
+        return function(dictSessionState) {
+          var readCurrentSession2 = readCurrentSession(dictSessionState);
+          var dispatch5 = dispatch4(dictSessionState);
+          var maybeAcquireWakeLock4 = maybeAcquireWakeLock3(dictSessionState);
+          var handleTick4 = handleTick3(dictSessionState);
+          var startRecognitionForSession4 = startRecognitionForSession3(dictSessionState);
+          var releaseHeldWakeLock4 = releaseHeldWakeLock3(dictSessionState);
+          var stopRecognitionForSession4 = stopRecognitionForSession3(dictSessionState);
+          return function(dictStorage) {
+            var dispatch6 = dispatch5(dictStorage);
+            var maybeAcquireWakeLock5 = maybeAcquireWakeLock4(dictStorage);
+            var handleTick5 = handleTick4(dictStorage);
+            var startRecognitionForSession5 = startRecognitionForSession4(dictStorage);
+            var releaseHeldWakeLock5 = releaseHeldWakeLock4(dictStorage);
+            var stopRecognitionForSession5 = stopRecognitionForSession4(dictStorage);
+            return function(dictWakeLock) {
+              var maybeAcquireWakeLock6 = maybeAcquireWakeLock5(dictWakeLock);
+              var startRecognitionForSession6 = startRecognitionForSession5(dictWakeLock);
+              var releaseHeldWakeLock6 = releaseHeldWakeLock5(dictWakeLock);
+              return function(dictRecognition) {
+                var startRecognitionForSession7 = startRecognitionForSession6(dictRecognition);
+                var stopRecognitionForSession6 = stopRecognitionForSession5(dictRecognition);
+                return function(dictTicker) {
+                  var startTickerInterval2 = startTickerInterval(dictTicker);
+                  var startRecognitionForSession8 = startRecognitionForSession7(dictTicker);
+                  var stopTickerInterval2 = stopTickerInterval(dictTicker);
+                  return function(handlers) {
+                    return bind15(map16(function(v) {
+                      return v.listening;
+                    })(readCurrentSession2))(function(wasListening) {
+                      return bind15(currentTimeMillis1)(function(timestamp) {
+                        return discard22(dispatch6(handlers)(new Toggle(timestamp)))(function() {
+                          return bind15(readCurrentSession2)(function(session) {
+                            if (session.listening) {
+                              return discard22(maybeAcquireWakeLock6(handlers))(function() {
+                                return discard22(startTickerInterval2(handleTick5(handlers)))(function() {
+                                  if (wasListening) {
+                                    return pure1(unit);
+                                  }
+                                  ;
+                                  return startRecognitionForSession8(handlers);
+                                });
+                              });
+                            }
+                            ;
+                            return discard22(stopTickerInterval2)(function() {
+                              return discard22(releaseHeldWakeLock6(handlers))(function() {
+                                var $923 = !wasListening;
+                                if ($923) {
                                   return pure1(unit);
                                 }
                                 ;
-                                return startRecognitionForSession7(handlers);
+                                return stopRecognitionForSession6(handlers);
                               });
-                            });
-                          }
-                          ;
-                          return discard22(stopTickerInterval2)(function() {
-                            return discard22(releaseHeldWakeLock5(handlers))(function() {
-                              var $721 = !wasListening;
-                              if ($721) {
-                                return pure1(unit);
-                              }
-                              ;
-                              return stopRecognitionForSession5(handlers);
                             });
                           });
                         });
                       });
                     });
-                  });
+                  };
                 };
               };
             };
@@ -8901,7 +9588,7 @@
       };
     };
   };
-  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
+  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(documentPipAppM)(domMountAppM)(sessionStateAppM)(storageAppM)(wakeLockAppM)(recognitionAppM)(tickerAppM);
   var main = function __do() {
     ensureStylesheetLinked(stylesheetHref)();
     var sessionRef = $$new(initialSession)();
@@ -8909,6 +9596,7 @@
     var recognitionInstanceRef = $$new(Nothing.value)();
     var restartTimerRef = $$new(Nothing.value)();
     var tickIntervalHandleRef = $$new(Nothing.value)();
+    var pipWindowRef = $$new(Nothing.value)();
     var clickHandlersRef = $$new({
       requestToggle: pure7(unit),
       requestCopyDiagnostics: pure7(unit),
@@ -8916,7 +9604,8 @@
       requestSetKeepAwake: function(v) {
         return pure7(unit);
       },
-      requestToggleDiagnosticsDrawer: pure7(unit)
+      requestToggleDiagnosticsDrawer: pure7(unit),
+      requestTogglePip: pure7(unit)
     })();
     var readHandlers = read(clickHandlersRef);
     var applicationEnvironment = {
@@ -8924,7 +9613,8 @@
       wakeLockSentinelRef,
       recognitionInstanceRef,
       restartTimerRef,
-      tickIntervalHandleRef
+      tickIntervalHandleRef,
+      pipWindowRef
     };
     var handlers = {
       requestToggle: function __do2() {
@@ -8948,6 +9638,10 @@
       requestToggleDiagnosticsDrawer: function __do2() {
         var resolved = readHandlers();
         return runAppM(applicationEnvironment)(handleToggleDiagnosticsDrawer1(resolved))();
+      },
+      requestTogglePip: function __do2() {
+        var resolved = readHandlers();
+        return runAppM(applicationEnvironment)(handleTogglePip1(resolved))();
       }
     };
     write(handlers)(clickHandlersRef)();
@@ -8970,7 +9664,8 @@
           return runAppM(applicationEnvironment)(handleRecognitionError1(handlers)(code)(message2));
         };
       },
-      requestToggleDiagnosticsDrawer: handlers.requestToggleDiagnosticsDrawer
+      requestToggleDiagnosticsDrawer: handlers.requestToggleDiagnosticsDrawer,
+      requestTogglePip: handlers.requestTogglePip
     })();
   };
 

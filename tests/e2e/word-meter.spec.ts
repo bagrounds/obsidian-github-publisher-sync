@@ -1153,3 +1153,80 @@ test.describe("Word Meter — PureScript build — vdom scroll preservation", ()
     await scrollToMiddleAndDispatchTick(page, page.getByTestId("wm-event-log"))
   })
 })
+
+test.describe("Word Meter — picture-in-picture pop-out", () => {
+  test("renders the pop-out button idle with the default label", async ({ page }) => {
+    await loadWordMeter(page)
+    await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/pop out count/i)
+    await expect(page.getByTestId("wm-pip-status")).toHaveText("")
+  })
+
+  test("toggling without the Document PiP API surfaces an unsupported status", async ({ page }) => {
+    await page.addInitScript(() => {
+      // Force the unsupported branch even on a Chromium build that
+      // exposes documentPictureInPicture.
+      try {
+        Object.defineProperty(window, "documentPictureInPicture", {
+          configurable: true,
+          get: () => undefined,
+        })
+      } catch {
+        // Property may not be configurable on every build; fall back to
+        // a direct assignment so the FFI check still reads `undefined`.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(window as any).documentPictureInPicture = undefined
+      }
+    })
+    await loadWordMeter(page)
+    await page.getByTestId("wm-pip-toggle").click()
+    await expect(page.getByTestId("wm-pip-status")).toHaveText(
+      /picture-in-picture not supported on this browser/i,
+    )
+    expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(false)
+  })
+
+  test("toggling with a mocked PiP API flips the button label", async ({ page }) => {
+    await page.addInitScript(() => {
+      // A tiny mock of the Document Picture-in-Picture API that lets the
+      // capability layer exercise its open/close flow without spawning a
+      // real OS-level window in headless chromium.
+      const listeners = new WeakMap<object, Array<() => void>>()
+      const fakeWindow = {
+        document: {
+          title: "",
+          head: { appendChild() {} },
+          body: { appendChild() {} },
+          getElementById: () => null,
+          createElement: () => ({
+            id: "",
+            className: "",
+            textContent: "",
+            setAttribute() {},
+            appendChild() {},
+          }),
+        },
+        addEventListener(event: string, handler: () => void) {
+          if (event !== "pagehide") return
+          const existing = listeners.get(fakeWindow) ?? []
+          existing.push(handler)
+          listeners.set(fakeWindow, existing)
+        },
+        close() {
+          const handlers = listeners.get(fakeWindow) ?? []
+          handlers.forEach((handler) => handler())
+        },
+      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ;(window as any).documentPictureInPicture = {
+        requestWindow: () => Promise.resolve(fakeWindow),
+      }
+    })
+    await loadWordMeter(page)
+    await page.getByTestId("wm-pip-toggle").click()
+    await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/close pop-out/i)
+    expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(true)
+    await page.getByTestId("wm-pip-toggle").click()
+    await expect(page.getByTestId("wm-pip-toggle")).toHaveText(/pop out count/i)
+    expect(await page.evaluate(() => window.__wordMeter.getPipOpen())).toBe(false)
+  })
+})

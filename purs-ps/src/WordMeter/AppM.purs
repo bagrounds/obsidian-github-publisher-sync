@@ -12,6 +12,7 @@ import Data.Maybe (Maybe)
 import Effect (Effect)
 import Effect.Class (class MonadEffect)
 import Effect.Ref (Ref)
+import WordMeter.FFI.DocumentPip (PipWindow)
 import WordMeter.FFI.Recognition (RecognitionInstance)
 import WordMeter.FFI.Timer (IntervalHandle, TimerHandle)
 import WordMeter.FFI.WakeLock (WakeLockSentinel)
@@ -23,6 +24,7 @@ type ApplicationEnvironment =
   , recognitionInstanceRef :: Ref (Maybe RecognitionInstance)
   , restartTimerRef :: Ref (Maybe TimerHandle)
   , tickIntervalHandleRef :: Ref (Maybe IntervalHandle)
+  , pipWindowRef :: Ref (Maybe PipWindow)
   }
 
 newtype AppM a = AppM (ReaderT ApplicationEnvironment Effect a)

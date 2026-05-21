@@ -11,6 +11,7 @@ image_date: 2026-04-10T03:10:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing microphone standing center-stage on a dark, polished podium. Behind the microphone, a series of abstract, translucent geometric shapes—representing logos and structure—radiate outward like a spotlight. Floating silhouettes of abstract speech bubbles in varying sizes and soft, warm gradients emerge from the microphone, drifting upward into the negative space. The composition uses a sophisticated color palette of deep navy, slate gray, and electric gold accents to evoke professionalism and intellectual weight. The lighting is cinematic, casting a soft, focused glow on the podium to symbolize the clarity and impact of effective communication.
 link_analysis_version: "2"
+updated: 2026-05-21T03:21:22
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md)  
 # 🎤🗣️ Public Speaking and Rhetoric  
@@ -53,4 +54,12 @@ Public Speaking and Rhetoric is the art and science of effective communication, 
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmdhofnyjo26" data-bluesky-cid="bafyreidaarvzfjlo5csqowtymmacirz6hinvaj5spojvtb5qculdpbtiwm"><p>🎤🗣️ Public Speaking and Rhetoric  
+  
+#AI Q: 🎤 Which matters more in a speech: logical facts or emotional connection?  
+  
+🗣️ Communication Skills | 🎯 Persuasion Art | 🧠 Logical Argument  
+https://bagrounds.org/topics/public-speaking-and-rhetoric</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmdhofnyjo26?ref_src=embed">2026-05-21T03:21:32.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

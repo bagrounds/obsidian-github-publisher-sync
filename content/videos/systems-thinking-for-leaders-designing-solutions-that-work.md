@@ -9,6 +9,10 @@ Platform:
 Channel: MIT Sloan Executive Education
 tags:
 youtube: https://youtu.be/wSuQQYv-E64
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work  
@@ -55,8 +59,8 @@ youtube: https://youtu.be/wSuQQYv-E64
   
 ### ↔️ Similar  
   
-* 🧠 Business Dynamics by John Sterman provides a rigorous, data-driven framework for modeling complex corporate and public policy systems using systemic feedback structures.  
-* 🌐 The Fifth Discipline by Peter Senge explores the theory and practice of building learning organizations through the application of systems thinking archetypes.  
+* 🧠 [🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World](../books/business-dynamics.md) by John Sterman provides a rigorous, data-driven framework for modeling complex corporate and public policy systems using systemic feedback structures.  
+* 🌐 [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](../books/the-fifth-discipline.md) by Peter Senge explores the theory and practice of building learning organizations through the application of systems thinking archetypes.  
   
 ### 🆚 Contrasting  
   

@@ -11,6 +11,7 @@ image_date: 2026-04-10T05:57:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-tech illustration featuring a central, glowing neural network node that transitions into a mechanical gear assembly. The nodes are interconnected by vibrant, pulsing light paths that flow toward a stylized robotic arm or a sleek autonomous vehicle silhouette. The background is a deep, dark navy blue with subtle, translucent grid lines suggesting a digital environment. Floating around the central hub are abstract mathematical symbols and ethereal data streams, representing the fusion of adaptive algorithms and physical control. The lighting is cinematic, utilizing a palette of electric cyan, magenta, and warm gold to emphasize the synergy between artificial intelligence and precise engineering. The overall aesthetic is clean, modern, and sophisticated, conveying a sense of intelligent motion and structural adaptability.
 link_analysis_version: "2"
+updated: 2026-05-21T09:19:17
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md) > [Adaptive Control](./adaptive-control.md)  
 # 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control  
@@ -45,4 +46,12 @@ Here are some influential and accessible books that provide a good introduction 
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mme3o7jkju26" data-bluesky-cid="bafyreibolkap5ze4svyrsrsxohcvriw423eyssrgsreareewq76xx6myuu"><p>🤖🔄🧠💪 Reinforcement Learning based Adaptive Control  
+  
+#AI Q: 🤖 Should machines learn to adapt on their own or follow strict human rules?  
+  
+⚙️ Engineering | 🦾 Robotics | 🧠 Neural Networks | 🏎️ Autonomous Systems  
+https://bagrounds.org/topics/reinforcement-learning-based-adaptive-control</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mme3o7jkju26?ref_src=embed">2026-05-21T09:19:20.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

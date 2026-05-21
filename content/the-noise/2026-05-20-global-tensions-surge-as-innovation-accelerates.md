@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-19-shifting-power-persistent-peril-and-pioneering-progress.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-19-shifting-power-persistent-peril-and-pioneering-progress.md) [⏭️](./2026-05-21-shifting-tides-and-technological-frontiers.md)  
 # 2026-05-20 | 📰 🌍 Global Tensions Surge as Innovation Accelerates 📰  
 ![the-noise-2026-05-20-global-tensions-surge-as-innovation-accelerates](../the-noise-2026-05-20-global-tensions-surge-as-innovation-accelerates.jpg)  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-20T17:26:37-07:00
+updated: 2026-05-21T09:47:55-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-20T17:26:37-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (552)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (553)  
+- [2026-05-21](./reflections/2026-05-21.md)  
 - [2026-05-20 | 💉⚰️🪽 Angel of Death](./reflections/2026-05-20.md)  
 - [2026-05-19 | ✉️ Message 🗓️ Last 🌟 Progress, 📰 Shifting 🤖 Systemic 🐔 Lessons 🏛️ Agile 🔀 Integrity. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-19.md)  
 - [2026-05-18 | 🌱 Beginnings 👷 Designing 🧮 Meter 📊 Stats 🏆 Stats 🌟 Revelations 📰 Currents 🤖 Fragility 🏛️ Accountability 🔀 Realities. 📚🧰📰🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-05-18.md)  
-- [2026-05-17 | ✨ Rest 🤖 Architecture 🐔 Milestones 🔀 Systems 🌟 Progress 🏛️ Investment 📰 Sands 🧷 Meter 🧮 Reloads. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-17.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (224)  
@@ -28,18 +28,18 @@ updated: 2026-05-20T17:26:37-07:00
 - [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./ai-blog/2026-05-17-2-word-meter-purescript-v0-1-1.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (71)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (72)  
+- [2026-05-21 | 🤖 The Friction of Truth 🤖](./auto-blog-zero/2026-05-21-the-friction-of-truth.md)  
 - [2026-05-20 | 🤖 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-20-the-architecture-of-uncertainty.md)  
 - [2026-05-19 | 🤖 🔍 Beyond the Algorithm: The Systemic Roots of Goodhart 🤖](./auto-blog-zero/2026-05-19-beyond-the-algorithm-the-systemic-roots-of-goodhart.md)  
 - [2026-05-18 | 🤖 The Fragility of Metrics and the Ghost of Intent 🤖](./auto-blog-zero/2026-05-18-the-fragility-of-metrics-and-the-ghost-of-intent.md)  
-- [2026-05-17 | 🤖 📆 Weekly Recap: The Architecture of the Synthetic Mind 🤖](./auto-blog-zero/2026-05-17-weekly-recap-the-architecture-of-the-synthetic-mind.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (71)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (72)  
+- [2026-05-21 | 🐔 🏡 Welcoming Hearts and Ranch Rhythms 🐔](./chickie-loo/2026-05-21-welcoming-hearts-and-ranch-rhythms.md)  
 - [2026-05-20 | 🐔 🧺 Laundry Bliss and Cheesecake Dreams 🐔](./chickie-loo/2026-05-20-laundry-bliss-and-cheesecake-dreams.md)  
 - [2026-05-19 | 🐔 🐓 Lessons from the Coop and the Couch 🐔](./chickie-loo/2026-05-19-lessons-from-the-coop-and-the-couch.md)  
 - [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./chickie-loo/2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
-- [2026-05-17 | 🐔 🌿 A Sunday of Celebration and Milestones 🐔](./chickie-loo/2026-05-17-a-sunday-of-celebration-and-milestones.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (60)  
@@ -49,18 +49,18 @@ updated: 2026-05-20T17:26:37-07:00
 - [2026-05-17 | 🏛️ 🧠 Systems Thinking for Sustainable Public Investment 🏛️](./systems-for-public-good/2026-05-17-systems-thinking-for-sustainable-public-investment.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (41)  
+## [📰 The Noise](./the-noise/index.md) (42)  
+- [2026-05-21 | 📰 🌐 Shifting Tides and Technological Frontiers 📰](./the-noise/2026-05-21-shifting-tides-and-technological-frontiers.md)  
 - [2026-05-20 | 📰 🌍 Global Tensions Surge as Innovation Accelerates 📰](./the-noise/2026-05-20-global-tensions-surge-as-innovation-accelerates.md)  
 - [2026-05-19 | 📰 🌍 Shifting Power, Persistent Peril, and Pioneering Progress 📰](./the-noise/2026-05-19-shifting-power-persistent-peril-and-pioneering-progress.md)  
 - [2026-05-18 | 📰 Global Currents and Technological Tides 📰](./the-noise/2026-05-18-global-currents-and-technological-tides.md)  
-- [2026-05-17 | 📰 🌐 Shifting Sands and Digital Horizons 📰](./the-noise/2026-05-17-shifting-sands-and-digital-horizons.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (40)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (41)  
+- [2026-05-21 | 🌟 Currents of Progress: Discovery, Sustainability, and Uplifting Connections 🌟](./positivity-bias/2026-05-21-currents-of-progress-discovery-sustainability-and-uplifting-connections.md)  
 - [2026-05-20 | 🌟 A Universe of Progress: Science, Sustainability, and Shared Humanity 🌟](./positivity-bias/2026-05-20-a-universe-of-progress-science-sustainability-and-shared-humanity.md)  
 - [2026-05-19 | 🌟 ☀️ Brightening Horizons: Compassion, Innovation, and Planetary Progress 🌟](./positivity-bias/2026-05-19-brightening-horizons-compassion-innovation-and-planetary-progress.md)  
 - [2026-05-18 | 🌟 🔬 Revelations in Health & Scientific Frontiers 🌟](./positivity-bias/2026-05-18-revelations-in-health-scientific-frontiers.md)  
-- [2026-05-17 | 🌟 ☀️ Echoes of Progress: Innovations and Inspiring Connections 🌟](./positivity-bias/2026-05-17-echoes-of-progress-innovations-and-inspiring-connections.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (37)  
@@ -77,18 +77,18 @@ updated: 2026-05-20T17:26:37-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (837)  
+## [📺 Videos](./videos/index.md) (838)  
+- [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./videos/the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  
 - [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./videos/big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
 - [⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election](./videos/the-shocking-billionaire-plot-to-steal-the-election.md)  
 - [⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work](./videos/systems-thinking-for-leaders-designing-solutions-that-work.md)  
-- [💰📉📺 Structured Settlements & Factoring Companies: Last Week Tonight with John Oliver (HBO)](./videos/structured-settlements-factoring-companies-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🛰️📐≈ Pseudorange](./topics/pseudorange.md)  
-- [🎲🧪 Property Based Testing](./topics/property-based-testing.md)  
-- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
+- [😴🛌🧘 REST](./topics/rest.md)  
 - [💻🗣️ Programming Languages](./topics/programming-languages.md)  
+- [🕊️⛪ Religion](./topics/religion.md)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

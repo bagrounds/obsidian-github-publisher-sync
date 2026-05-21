@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-20T15:59:33-07:00
+updated: 2026-05-20T17:26:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -63,11 +63,11 @@ updated: 2026-05-20T15:59:33-07:00
 - [2026-05-17 | 🌟 ☀️ Echoes of Progress: Innovations and Inspiring Connections 🌟](./positivity-bias/2026-05-17-echoes-of-progress-innovations-and-inspiring-connections.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (36)  
+## [🔀 Convergence](./convergence/index.md) (37)  
+- [2026-05-20 | 🔀 🌐 The Architecture of Certainty and the Embrace of Doubt 🔀](./convergence/2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.md)  
 - [2026-05-19 | 🔀 🌐 The Wisdom of Knowing: Navigating Proxies, Intuition, and Systemic Integrity 🔀](./convergence/2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md)  
 - [2026-05-18 | 🔀 🌐 The Invisible Threads of Intent: From Metric Traps to Embodied Realities 🔀](./convergence/2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
 - [2026-05-17 | 🔀 🌐 The Architects of Coherence: Crafting Selves, Systems, and Shared Realities 🔀](./convergence/2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities.md)  
-- [2026-05-16 | 🔀 🌐 The Grounding Echo: From Synthetic Solipsism to Shared Realities 🔀](./convergence/2026-05-16-the-grounding-echo-from-synthetic-solipsism-to-shared-realities.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,11 +77,11 @@ updated: 2026-05-20T15:59:33-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (835)  
+## [📺 Videos](./videos/index.md) (837)  
+- [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./videos/big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
+- [⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election](./videos/the-shocking-billionaire-plot-to-steal-the-election.md)  
 - [⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work](./videos/systems-thinking-for-leaders-designing-solutions-that-work.md)  
 - [💰📉📺 Structured Settlements & Factoring Companies: Last Week Tonight with John Oliver (HBO)](./videos/structured-settlements-factoring-companies-last-week-tonight-with-john-oliver-hbo.md)  
-- [✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana](./videos/petes-opening-message-live-from-butte-montana.md)  
-- [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./videos/how-to-rest-so-well-you-never-feel-exhausted-again.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

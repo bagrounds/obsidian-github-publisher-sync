@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-20T15:59:33-07:00
+updated: 2026-05-20T17:26:37-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (835)  
+# 📺 Videos (837)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -113,6 +113,7 @@ updated: 2026-05-20T15:59:33-07:00
 - [🏡🌳🍎 Backyard Fruit Trees](./backyard-fruit-trees.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./be-like-water-the-philosophy-of-bruce-lee.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
+- [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
 - [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
@@ -657,6 +658,7 @@ updated: 2026-05-20T15:59:33-07:00
 - [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
+- [⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election](./the-shocking-billionaire-plot-to-steal-the-election.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🇺🇸🤝🏛️ The State of Our Union](./the-state-of-our-union.md)  

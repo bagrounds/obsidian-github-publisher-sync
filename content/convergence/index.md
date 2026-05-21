@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-05-20T15:59:33-07:00
+updated: 2026-05-20T17:26:37-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (36)  
+# 🔀 Convergence (37)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-05-20 | 🔀 🌐 The Architecture of Certainty and the Embrace of Doubt 🔀](./2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.md)  
 - [2026-05-19 | 🔀 🌐 The Wisdom of Knowing: Navigating Proxies, Intuition, and Systemic Integrity 🔀](./2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md)  
 - [2026-05-18 | 🔀 🌐 The Invisible Threads of Intent: From Metric Traps to Embodied Realities 🔀](./2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
 - [2026-05-17 | 🔀 🌐 The Architects of Coherence: Crafting Selves, Systems, and Shared Realities 🔀](./2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities.md)  

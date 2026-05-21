@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-20T17:26:37-07:00
+updated: 2026-05-21T09:47:55-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (837)  
+# 📺 Videos (838)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -615,6 +615,7 @@ updated: 2026-05-20T17:26:37-07:00
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
 - [The history of civil service and the impact of Trump's slashing of the workforce](./the-history-of-civil-service-and-the-impact-of-trumps-slashing-of-the-workforce.md)  
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  
+- [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  
 - [♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix](./the-infinite-software-crisis-jake-nations-netflix.md)  
 - [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
 - [🇯🇵🧘🔄✨ The Japanese System for Breaking Bad Habits & Addiction | Kaizen & Ikigai Philosophy](./the-japanese-system-for-breaking-bad-habits-addiction-kaizen-ikigai-philosophy.md)  

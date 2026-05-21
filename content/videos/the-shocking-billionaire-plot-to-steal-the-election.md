@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/GUHm6MfnPvw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election  
@@ -51,7 +55,7 @@ youtube: https://youtu.be/GUHm6MfnPvw
 ### ↔️ Similar  
   
 * 📚 One Person No Vote by Carol Anderson examines the systematic implementation of legislative barriers designed to suppress minority participation in American elections.  
-* 💵 Dark Money by Jane Mayer details how a network of ultra wealthy conservative billionaires covertly built political foundations to reshape American public policy and regulatory systems.  
+* 💵 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer details how a network of ultra wealthy conservative billionaires covertly built political foundations to reshape American public policy and regulatory systems.  
   
 ### 🆚 Contrasting  
   

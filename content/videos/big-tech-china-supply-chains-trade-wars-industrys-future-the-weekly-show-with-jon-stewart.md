@@ -9,6 +9,10 @@ Platform:
 Channel: The Weekly Show with Jon Stewart
 tags:
 youtube: https://youtu.be/VExpRN0eF40
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart  

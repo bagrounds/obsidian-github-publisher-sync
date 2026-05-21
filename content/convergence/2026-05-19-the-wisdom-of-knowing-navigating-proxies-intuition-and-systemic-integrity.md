@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md) [⏭️](./2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.md)  
 # 2026-05-19 | 🔀 🌐 The Wisdom of Knowing: Navigating Proxies, Intuition, and Systemic Integrity 🔀  
 ![convergence-2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity](../convergence-2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.jpg)  
   

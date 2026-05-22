@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-22T08:47:23-07:00
+updated: 2026-05-22T16:18:11-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (841)  
+# 📺 Videos (842)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -824,6 +824,7 @@ updated: 2026-05-22T08:47:23-07:00
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./why-the-constitution-separates-church-and-state-explainer.md)  
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
+- [🛝📉🏚️ Why these playgrounds disappeared](./why-these-playgrounds-disappeared.md)  
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  

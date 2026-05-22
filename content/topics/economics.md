@@ -11,6 +11,7 @@ image_date: 2026-04-09T05:45:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a bustling global marketplace. At the center, a large, glowing tree represents growth, with roots extending into a complex network of golden data streams and geometric shapes. Surrounding the tree are miniature, detailed scenes: a small factory producing goods, a bustling stock exchange ticker tape, a globe encircled by trade arrows, and a human brain glowing with light bulbs to represent behavioral analysis. The color palette features a sophisticated blend of deep navy, vibrant teal, and accents of metallic gold. The aesthetic is clean, modern, and professional, utilizing soft, cinematic lighting to create depth. The background is a clean, minimalist off-white, allowing the intricate network of lines and icons to pop with clarity and precision."
 link_analysis_version: "2"
+updated: 2026-05-22T09:17:16
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
 # 💰📈 Economics  
@@ -41,4 +42,12 @@ Economics is the social science that studies the production, distribution, and c
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmglzvf3sg26" data-bluesky-cid="bafyreiaoffdrv3yf4xdor4qn723pdpbpqxypbxe2gwc6gghd5673fcjdbq"><p>💰📈 Economics  
+  
+#AI Q: 📈 Does irrational behavior play a bigger role in your spending than logic?  
+  
+⚖️ Resource Allocation | 🧠 Behavioral Science | 📊 Market Analysis | 🌎 Global  
+https://bagrounds.org/topics/economics</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmglzvf3sg26?ref_src=embed">2026-05-22T09:17:32.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-20-laundry-bliss-and-cheesecake-dreams.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-20-laundry-bliss-and-cheesecake-dreams.md) [⏭️](./2026-05-22-life-lessons-from-the-coop-and-the-pasture.md)  
 # 2026-05-21 | 🐔 🏡 Welcoming Hearts and Ranch Rhythms 🐔  
 ![chickie-loo-2026-05-21-welcoming-hearts-and-ranch-rhythms](../chickie-loo-2026-05-21-welcoming-hearts-and-ranch-rhythms.jpg)  
   

@@ -11,6 +11,7 @@ image_date: 2026-04-09T01:40:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, conceptual illustration featuring a central, glowing network of interconnected nodes representing human interaction. Thin, elegant lines emanate from the center, branching out into diverse symbolic icons: a stylized microphone for rhetoric, a pair of speech bubbles for interpersonal dialogue, a digital screen for mass media, and a globe for cultural exchange. The color palette utilizes soft gradients of deep indigo, vibrant cyan, and warm amber to suggest the flow of information and energy. The background is a clean, muted charcoal, providing high contrast to the luminous, interconnected structures. The overall aesthetic is modern, academic, and clean, emphasizing the complexity and beauty of human connectivity without the use of any text."
 link_analysis_version: "2"
+updated: 2026-05-22T11:10:56
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
 # 🗣️📢 Communication Studies  
@@ -52,4 +53,12 @@ Here are some influential and accessible books to get you started on your commun
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmgsfo4jzd2s" data-bluesky-cid="bafyreie6j5ga6jl466usvcfwo3fv3b4kiar4gywawg547pmaasgma6el54"><p>🗣️📢 Communication Studies  
+  
+#AI Q: 💬 Which form of communication affects daily life the most?  
+  
+🤝 Interpersonal Dynamics | 📺 Media Literacy | 🤫 Nonverbal Cues | 🌍 Cultural  
+https://bagrounds.org/topics/communication-studies</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmgsfo4jzd2s?ref_src=embed">2026-05-22T11:11:29.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

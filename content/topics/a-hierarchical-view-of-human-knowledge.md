@@ -11,6 +11,7 @@ image_date: 2026-04-08T17:31:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a luminous, multi-tiered structure resembling a glowing tree or a crystalline ladder ascending toward a soft, ethereal light. Each level of the structure branches out into distinct, geometric nodes that represent different disciplines, connected by thin, pulsing threads of light that signify the interconnected nature of knowledge. The color palette transitions from deep, grounded earth tones at the base to vibrant, translucent gradients of gold, azure, and violet at the apex. The background is a clean, dark obsidian, creating a high-contrast aesthetic that makes the intricate, interconnected nodes pop. The overall style is modern and minimalist, blending organic shapes with architectural precision to evoke a sense of intellectual growth and systemic complexity.
 link_analysis_version: "2"
+updated: 2026-05-22T07:22:54
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌲🪜🧠 A Hierarchical View of Human Knowledge  
@@ -42,3 +43,11 @@ These categories are chosen as the top level because they represent:
 6.  **Recognizable and Understood:** These categories are generally understood by a large portion of the population. This makes them a great starting point, for further exploration 🤝.  
   
 this hierarchy is not rigid. Knowledge is fluid and interconnected, and these categories often overlap. However, this framework serves as a valuable starting point for exploring the vast landscape of human knowledge ✨.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmgfn4fndt26" data-bluesky-cid="bafyreigegnlbyup5wc25qlmx5tjmni5l463wtpei3z6na7im27hfsmrgay"><p>🌲🪜🧠 A Hierarchical View of Human Knowledge  
+  
+#AI Q: 🌳 Which field of knowledge matters most for the future?  
+  
+🎓 Academic Disciplines | 🏛️ Information Classification | 📜 Philosophical Thought | 🗺️ Epistem  
+https://bagrounds.org/topics/a-hierarchical-view-of-human-knowledge</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmgfn4fndt26?ref_src=embed">2026-05-22T07:23:01.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

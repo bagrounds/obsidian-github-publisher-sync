@@ -10,6 +10,8 @@ image_date: 2026-04-10T06:44:10Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, clean illustration featuring a stylized, glowing compass resting on a complex blueprint of geometric shapes and pathways. The composition uses a sophisticated color palette of deep navy, slate gray, and soft gold accents. Surrounding the compass are several translucent, interconnected crystalline structures that represent decision-making nodes, with thin, glowing lines weaving between them to signify the creation of a structured system. The style is modern, abstract, and professional, utilizing soft, cinematic lighting to create a sense of clarity and purpose. The overall aesthetic is uncluttered and architectural, emphasizing the concept of building a framework for life through thoughtful, intentional design.
 link_analysis_version: "2"
+URL: https://bagrounds.org/topics/rules
+updated: 2026-05-22T05:38:30
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📋⚖️ Rules  
@@ -40,3 +42,11 @@ link_analysis_version: "2"
 ## How do we make rules with a group?  
 - If an individual makes rules in order to more easily achieve their goals according to their understanding of reality, then maybe a group can do the same.  
 - A group can make rules together in order to make it easier to achieve their collective goals according to their collective understanding of reality.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmg7sei7jz26" data-bluesky-cid="bafyreic2cq7ffrvqqd7hsckvd4su7z662bc6u66fa2usvvmvymoige3xsu"><p>📋⚖️ Rules  
+  
+#AI Q: ⚖️ Which personal rule makes your life significantly easier?  
+  
+🤔 Decisions | 🎯 Goal Setting | 🗓️ Habits  
+https://bagrounds.org/topics/rules</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmg7sei7jz26?ref_src=embed">2026-05-22T05:38:34.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

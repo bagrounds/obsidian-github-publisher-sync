@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-22T16:37:44-07:00
+updated: 2026-05-22T16:46:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -63,11 +63,11 @@ updated: 2026-05-22T16:37:44-07:00
 - [2026-05-19 | 🌟 ☀️ Brightening Horizons: Compassion, Innovation, and Planetary Progress 🌟](./positivity-bias/2026-05-19-brightening-horizons-compassion-innovation-and-planetary-progress.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (38)  
+## [🔀 Convergence](./convergence/index.md) (39)  
+- [2026-05-22 | 🔀 🌐 The Ethics of Inertia: When Purpose Guides Restraint 🔀](./convergence/2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint.md)  
 - [2026-05-21 | 🔀 🌐 The Calculus of Caution: When Friction Forges Trust 🔀](./convergence/2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md)  
 - [2026-05-20 | 🔀 🌐 The Architecture of Certainty and the Embrace of Doubt 🔀](./convergence/2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.md)  
 - [2026-05-19 | 🔀 🌐 The Wisdom of Knowing: Navigating Proxies, Intuition, and Systemic Integrity 🔀](./convergence/2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md)  
-- [2026-05-18 | 🔀 🌐 The Invisible Threads of Intent: From Metric Traps to Embodied Realities 🔀](./convergence/2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,11 +77,11 @@ updated: 2026-05-22T16:37:44-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (843)  
-- [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./videos/we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
+## [📺 Videos](./videos/index.md) (844)  
+- [🇰🇾😲 We Went To Kentucky What We Found Will Shock You](./videos/we-went-to-kentucky-what-we-found-will-shock-you.md)  
 - [🛝📉🏚️ Why these playgrounds disappeared](./videos/why-these-playgrounds-disappeared.md)  
+- [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./videos/we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
 - [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./videos/creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
-- [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./videos/i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

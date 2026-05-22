@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md) [⏭️](./2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md)  
 # 2026-05-20 | 🔀 🌐 The Architecture of Certainty and the Embrace of Doubt 🔀  
 ![convergence-2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt](../convergence-2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.jpg)  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-22T16:18:11-07:00
+updated: 2026-05-22T16:37:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-22T16:18:11-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (842)  
+## [📺 Videos](./videos/index.md) (843)  
+- [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./videos/we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
 - [🛝📉🏚️ Why these playgrounds disappeared](./videos/why-these-playgrounds-disappeared.md)  
 - [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./videos/creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./videos/i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
-- [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./videos/we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

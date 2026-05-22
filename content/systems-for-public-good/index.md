@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-05-21T09:47:55-07:00
+updated: 2026-05-21T17:17:18-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (60)  
+# 🏛️ Systems for Public Good (61)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-05-21 | 🏛️ 💰 Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
 - [2026-05-20 | 🏛️ 👂 Centering the Unheard: Beyond Consultation to Co-Creation 🏛️](./2026-05-20-centering-the-unheard-beyond-consultation-to-co-creation.md)  
 - [2026-05-19 | 🏛️ 🤝 Beyond Bureaucracy: Cultivating Agile Governance 🏛️](./2026-05-19-beyond-bureaucracy-cultivating-agile-governance.md)  
 - [2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️](./2026-05-18-designing-institutions-for-enduring-public-accountability.md)  

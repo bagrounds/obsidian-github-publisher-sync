@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-21T09:47:55-07:00
+updated: 2026-05-21T17:17:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-05-21T09:47:55-07:00
 - [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./chickie-loo/2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (60)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (61)  
+- [2026-05-21 | 🏛️ 💰 Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./systems-for-public-good/2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
 - [2026-05-20 | 🏛️ 👂 Centering the Unheard: Beyond Consultation to Co-Creation 🏛️](./systems-for-public-good/2026-05-20-centering-the-unheard-beyond-consultation-to-co-creation.md)  
 - [2026-05-19 | 🏛️ 🤝 Beyond Bureaucracy: Cultivating Agile Governance 🏛️](./systems-for-public-good/2026-05-19-beyond-bureaucracy-cultivating-agile-governance.md)  
 - [2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️](./systems-for-public-good/2026-05-18-designing-institutions-for-enduring-public-accountability.md)  
-- [2026-05-17 | 🏛️ 🧠 Systems Thinking for Sustainable Public Investment 🏛️](./systems-for-public-good/2026-05-17-systems-thinking-for-sustainable-public-investment.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (42)  
@@ -63,11 +63,11 @@ updated: 2026-05-21T09:47:55-07:00
 - [2026-05-18 | 🌟 🔬 Revelations in Health & Scientific Frontiers 🌟](./positivity-bias/2026-05-18-revelations-in-health-scientific-frontiers.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (37)  
+## [🔀 Convergence](./convergence/index.md) (38)  
+- [2026-05-21 | 🔀 🌐 The Calculus of Caution: When Friction Forges Trust 🔀](./convergence/2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md)  
 - [2026-05-20 | 🔀 🌐 The Architecture of Certainty and the Embrace of Doubt 🔀](./convergence/2026-05-20-the-architecture-of-certainty-and-the-embrace-of-doubt.md)  
 - [2026-05-19 | 🔀 🌐 The Wisdom of Knowing: Navigating Proxies, Intuition, and Systemic Integrity 🔀](./convergence/2026-05-19-the-wisdom-of-knowing-navigating-proxies-intuition-and-systemic-integrity.md)  
 - [2026-05-18 | 🔀 🌐 The Invisible Threads of Intent: From Metric Traps to Embodied Realities 🔀](./convergence/2026-05-18-the-invisible-threads-of-intent-from-metric-traps-to-embodied-realities.md)  
-- [2026-05-17 | 🔀 🌐 The Architects of Coherence: Crafting Selves, Systems, and Shared Realities 🔀](./convergence/2026-05-17-the-architects-of-coherence-crafting-selves-systems-and-shared-realities.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,11 +77,11 @@ updated: 2026-05-21T09:47:55-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (838)  
+## [📺 Videos](./videos/index.md) (840)  
+- [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./videos/i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
+- [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./videos/we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
 - [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./videos/the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  
 - [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./videos/big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
-- [⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election](./videos/the-shocking-billionaire-plot-to-steal-the-election.md)  
-- [⚙️🧠🧩 Systems Thinking for Leaders: Designing Solutions That Work](./videos/systems-thinking-for-leaders-designing-solutions-that-work.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-21T09:47:55-07:00
+updated: 2026-05-21T17:17:18-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (838)  
+# 📺 Videos (840)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -337,6 +337,7 @@ updated: 2026-05-21T09:47:55-07:00
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
 - [Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](./immigration-judge-rules-trump-administration-can-deport-columbia-protestor-mahmoud-khalil.md)  
+- [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
 - [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
@@ -763,6 +764,7 @@ updated: 2026-05-21T09:47:55-07:00
 - [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
 - [📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.](./we-heard-you-the-new-framework-laptop-13-pro.md)  
+- [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  

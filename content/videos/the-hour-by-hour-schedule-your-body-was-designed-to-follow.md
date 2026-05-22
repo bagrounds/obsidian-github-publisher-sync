@@ -9,6 +9,10 @@ Platform:
 Channel: The Feynman Way
 tags:
 youtube: https://youtu.be/XmpDZRse3KA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-21T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow  
@@ -35,8 +39,8 @@ youtube: https://youtu.be/XmpDZRse3KA
   
 ## 🤔 Evaluation  
   
-* 🔬 This schedule emphasizes strict optimization based on biological mechanisms, matching perspectives found in Why We Sleep by the National Academy of Sciences publishing group. That research confirms that modern electronic screens heavily disrupt melatonin, and that cool environmental temperatures are critical for deep sleep cycles.  
-* ⚖️ While the presented sequence claims universal biological optimization, individual biological variance is highly prevalent. In The Circadian Code by Rodale Books, evidence shows that genetic chronotypes drastically alter individual peak performance windows, meaning a rigid 6:00 in the morning protocol may induce chronic fatigue in natural late-risers.  
+* 🔬 This schedule emphasizes strict optimization based on biological mechanisms, matching perspectives found in [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by the National Academy of Sciences publishing group. That research confirms that modern electronic screens heavily disrupt melatonin, and that cool environmental temperatures are critical for deep sleep cycles.  
+* ⚖️ While the presented sequence claims universal biological optimization, individual biological variance is highly prevalent. In [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Rodale Books, evidence shows that genetic chronotypes drastically alter individual peak performance windows, meaning a rigid 6:00 in the morning protocol may induce chronic fatigue in natural late-risers.  
 * 🩺 The presentation links specific behaviors to acute medical outcomes like preventing strokes or systemic biofilm infections. For a safer understanding, it is necessary to explore how these daily interventions interact with pre-existing conditions like chronic hypotension, gastrointestinal disorders, or severe sleep apnea before implementing them.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

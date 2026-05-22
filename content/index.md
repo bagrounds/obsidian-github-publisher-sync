@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-21T17:40:54-07:00
+updated: 2026-05-22T08:47:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-21T17:40:54-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (553)  
-- [2026-05-21](./reflections/2026-05-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (554)  
+- [2026-05-22](./reflections/2026-05-22.md)  
+- [2026-05-21 | 💡 Designed 😲 Shock 🗣️ Call 🚫 Mistakes 🌟 Progress 📰 Shifting 🤖 Friction ❤️ Hearts 🏛️ Funding 🔀 Trust 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-21.md)  
 - [2026-05-20 | 💉⚰️🪽 Angel of Death](./reflections/2026-05-20.md)  
 - [2026-05-19 | ✉️ Message 🗓️ Last 🌟 Progress, 📰 Shifting 🤖 Systemic 🐔 Lessons 🏛️ Agile 🔀 Integrity. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-19.md)  
-- [2026-05-18 | 🌱 Beginnings 👷 Designing 🧮 Meter 📊 Stats 🏆 Stats 🌟 Revelations 📰 Currents 🤖 Fragility 🏛️ Accountability 🔀 Realities. 📚🧰📰🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-05-18.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (224)  
@@ -28,18 +28,18 @@ updated: 2026-05-21T17:40:54-07:00
 - [2026-05-17 | 🎙️ Word Meter PureScript v0.1.1 — Live Ticks and Sane Reloads 🧮](./ai-blog/2026-05-17-2-word-meter-purescript-v0-1-1.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (72)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (73)  
+- [2026-05-22 | 🤖 The Architecture of Restraint 🤖](./auto-blog-zero/2026-05-22-the-architecture-of-restraint.md)  
 - [2026-05-21 | 🤖 The Friction of Truth 🤖](./auto-blog-zero/2026-05-21-the-friction-of-truth.md)  
 - [2026-05-20 | 🤖 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-20-the-architecture-of-uncertainty.md)  
 - [2026-05-19 | 🤖 🔍 Beyond the Algorithm: The Systemic Roots of Goodhart 🤖](./auto-blog-zero/2026-05-19-beyond-the-algorithm-the-systemic-roots-of-goodhart.md)  
-- [2026-05-18 | 🤖 The Fragility of Metrics and the Ghost of Intent 🤖](./auto-blog-zero/2026-05-18-the-fragility-of-metrics-and-the-ghost-of-intent.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (72)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (73)  
+- [2026-05-22 | 🐔 Life Lessons from the Coop and the Pasture 🐔](./chickie-loo/2026-05-22-life-lessons-from-the-coop-and-the-pasture.md)  
 - [2026-05-21 | 🐔 🏡 Welcoming Hearts and Ranch Rhythms 🐔](./chickie-loo/2026-05-21-welcoming-hearts-and-ranch-rhythms.md)  
 - [2026-05-20 | 🐔 🧺 Laundry Bliss and Cheesecake Dreams 🐔](./chickie-loo/2026-05-20-laundry-bliss-and-cheesecake-dreams.md)  
 - [2026-05-19 | 🐔 🐓 Lessons from the Coop and the Couch 🐔](./chickie-loo/2026-05-19-lessons-from-the-coop-and-the-couch.md)  
-- [2026-05-18 | 🐔 🍳 The Sweet Scent of Home and New Beginnings 🐔](./chickie-loo/2026-05-18-the-sweet-scent-of-home-and-new-beginnings.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (61)  
@@ -49,18 +49,18 @@ updated: 2026-05-21T17:40:54-07:00
 - [2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️](./systems-for-public-good/2026-05-18-designing-institutions-for-enduring-public-accountability.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (42)  
+## [📰 The Noise](./the-noise/index.md) (43)  
+- [2026-05-22 | 📰 🌐 Shifting Sands of Diplomacy and Accelerating Tech Horizons 📰](./the-noise/2026-05-22-shifting-sands-of-diplomacy-and-accelerating-tech-horizons.md)  
 - [2026-05-21 | 📰 🌐 Shifting Tides and Technological Frontiers 📰](./the-noise/2026-05-21-shifting-tides-and-technological-frontiers.md)  
 - [2026-05-20 | 📰 🌍 Global Tensions Surge as Innovation Accelerates 📰](./the-noise/2026-05-20-global-tensions-surge-as-innovation-accelerates.md)  
 - [2026-05-19 | 📰 🌍 Shifting Power, Persistent Peril, and Pioneering Progress 📰](./the-noise/2026-05-19-shifting-power-persistent-peril-and-pioneering-progress.md)  
-- [2026-05-18 | 📰 Global Currents and Technological Tides 📰](./the-noise/2026-05-18-global-currents-and-technological-tides.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (41)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (42)  
+- [2026-05-22 | 🌟 🔬 Scientific Strides & Health Horizons 🌟](./positivity-bias/2026-05-22-scientific-strides-health-horizons.md)  
 - [2026-05-21 | 🌟 Currents of Progress: Discovery, Sustainability, and Uplifting Connections 🌟](./positivity-bias/2026-05-21-currents-of-progress-discovery-sustainability-and-uplifting-connections.md)  
 - [2026-05-20 | 🌟 A Universe of Progress: Science, Sustainability, and Shared Humanity 🌟](./positivity-bias/2026-05-20-a-universe-of-progress-science-sustainability-and-shared-humanity.md)  
 - [2026-05-19 | 🌟 ☀️ Brightening Horizons: Compassion, Innovation, and Planetary Progress 🌟](./positivity-bias/2026-05-19-brightening-horizons-compassion-innovation-and-planetary-progress.md)  
-- [2026-05-18 | 🌟 🔬 Revelations in Health & Scientific Frontiers 🌟](./positivity-bias/2026-05-18-revelations-in-health-scientific-frontiers.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (38)  
@@ -85,10 +85,10 @@ updated: 2026-05-21T17:40:54-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [😴🛌🧘 REST](./topics/rest.md)  
-- [💻🗣️ Programming Languages](./topics/programming-languages.md)  
-- [🕊️⛪ Religion](./topics/religion.md)  
-- [🤔📚 Philosophy](./topics/philosophy.md)  
+- [🎲🌲📊 Random Forest Classifier](./topics/random-forest-classifier.md)  
+- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
+- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
+- [🎤🗣️ Public Speaking and Rhetoric](./topics/public-speaking-and-rhetoric.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

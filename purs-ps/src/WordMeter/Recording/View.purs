@@ -1,7 +1,6 @@
 module WordMeter.Recording.View
   ( view
   , diagnosticsText
-  , renderStatus
   ) where
 
 import Prelude
@@ -85,7 +84,6 @@ view handlers session =
     , buildCountLabel
     , buildToggle handlers session
     , buildReset handlers
-    , buildPipToggle handlers session
     , buildKeepAwake handlers session
     , buildErrorBanner session
     , buildStats session
@@ -148,25 +146,6 @@ buildReset handlers =
     []
     [ onClick handlers.requestReset ]
     [ text "Reset" ]
-
-buildPipToggle :: Handlers -> Session -> Node
-buildPipToggle handlers session =
-  div_ [ className "wm-pip-row" ] []
-    [ button
-        [ testId "wm-pip-toggle"
-        , buttonType "button"
-        , className "wm-button-pill-secondary"
-        ]
-        []
-        [ onClick handlers.requestTogglePip ]
-        [ text
-            ( if session.pipOpen then "✕ Close pop-out"
-              else "📺 Pop out count"
-            )
-        ]
-    , span_ [ testId "wm-pip-status", className "wm-pip-status" ] []
-        [ text session.pipStatus ]
-    ]
 
 buildKeepAwake :: Handlers -> Session -> Node
 buildKeepAwake handlers session =

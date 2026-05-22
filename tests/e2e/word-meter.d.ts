@@ -39,9 +39,6 @@ declare global {
       simulateRecognitionError: (code: string, message?: string) => void
       getErrorBanner: () => string
       setCloudFallbackAttempted: (attempted: boolean) => void
-      togglePip: () => void
-      getPipOpen: () => boolean
-      getPipStatus: () => string
     }
   }
 }

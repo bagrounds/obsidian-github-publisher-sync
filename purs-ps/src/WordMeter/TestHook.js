@@ -51,8 +51,5 @@ export const installTestHook = (api) => () => {
       api.setCloudFallbackAttempted(!!attempted)(),
     getDiagnosticsDrawerOpen: () => api.getDiagnosticsDrawerOpen(),
     toggleDiagnosticsDrawer: () => api.toggleDiagnosticsDrawer(),
-    togglePip: () => api.togglePip(),
-    getPipOpen: () => api.getPipOpen(),
-    getPipStatus: () => api.getPipStatus(),
   }
 }

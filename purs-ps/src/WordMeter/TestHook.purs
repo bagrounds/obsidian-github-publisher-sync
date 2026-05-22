@@ -73,9 +73,6 @@ foreign import installTestHook
      , setCloudFallbackAttempted :: Boolean -> Effect Unit
      , getDiagnosticsDrawerOpen :: Effect Boolean
      , toggleDiagnosticsDrawer :: Effect Unit
-     , togglePip :: Effect Unit
-     , getPipOpen :: Effect Boolean
-     , getPipStatus :: Effect String
      }
   -> Effect Unit
 
@@ -91,7 +88,6 @@ install
      , simulateVisibilityVisible :: Effect Unit
      , simulateRecognitionError :: String -> String -> Effect Unit
      , requestToggleDiagnosticsDrawer :: Effect Unit
-     , requestTogglePip :: Effect Unit
      }
   -> Effect Unit
 install
@@ -106,7 +102,6 @@ install
   , simulateVisibilityVisible
   , simulateRecognitionError
   , requestToggleDiagnosticsDrawer
-  , requestTogglePip
   } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
@@ -173,9 +168,6 @@ install
         dispatch (SetCloudFallbackAttempted attempted)
     , getDiagnosticsDrawerOpen: _.diagnosticsDrawerOpen <$> readSession
     , toggleDiagnosticsDrawer: requestToggleDiagnosticsDrawer
-    , togglePip: requestTogglePip
-    , getPipOpen: _.pipOpen <$> readSession
-    , getPipStatus: _.pipStatus <$> readSession
     }
 
 -- | Convert a raw millisecond value from the JavaScript test helpers

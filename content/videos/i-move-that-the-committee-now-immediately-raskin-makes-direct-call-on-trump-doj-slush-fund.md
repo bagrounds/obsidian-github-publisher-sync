@@ -9,6 +9,10 @@ Platform:
 Channel: Hook Global
 tags:
 youtube: https://youtu.be/yV3V1AWrDIY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-21T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’  
@@ -40,4 +44,4 @@ youtube: https://youtu.be/yV3V1AWrDIY
 ### 🎨 Creatively Related  
   
 * 🏙️ The Power Broker by Robert A. Caro masterfully analyzes how political figures manipulate institutional mechanisms and public funds to consolidate unauthorized influence.  
-* 🎰 Moneyball by Michael Lewis demonstrates how data driven analysis can expose underlying institutional inefficiencies and hidden systemic vulnerabilities.
+* 🎰 [📉⚾💰 Moneyball: The Art of Winning an Unfair Game](../books/moneyball.md) by Michael Lewis demonstrates how data driven analysis can expose underlying institutional inefficiencies and hidden systemic vulnerabilities.

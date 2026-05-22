@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-22T08:47:23-07:00
+updated: 2026-05-22T16:18:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-05-22T08:47:23-07:00
 - [2026-05-19 | 🐔 🐓 Lessons from the Coop and the Couch 🐔](./chickie-loo/2026-05-19-lessons-from-the-coop-and-the-couch.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (61)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (62)  
+- [2026-05-22 | 🏛️ Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./systems-for-public-good/2026-05-22-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
 - [2026-05-21 | 🏛️ 💰 Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./systems-for-public-good/2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
 - [2026-05-20 | 🏛️ 👂 Centering the Unheard: Beyond Consultation to Co-Creation 🏛️](./systems-for-public-good/2026-05-20-centering-the-unheard-beyond-consultation-to-co-creation.md)  
 - [2026-05-19 | 🏛️ 🤝 Beyond Bureaucracy: Cultivating Agile Governance 🏛️](./systems-for-public-good/2026-05-19-beyond-bureaucracy-cultivating-agile-governance.md)  
-- [2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️](./systems-for-public-good/2026-05-18-designing-institutions-for-enduring-public-accountability.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (43)  
@@ -77,11 +77,11 @@ updated: 2026-05-22T08:47:23-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (841)  
+## [📺 Videos](./videos/index.md) (842)  
+- [🛝📉🏚️ Why these playgrounds disappeared](./videos/why-these-playgrounds-disappeared.md)  
 - [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./videos/creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./videos/i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
 - [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./videos/we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
-- [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./videos/the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

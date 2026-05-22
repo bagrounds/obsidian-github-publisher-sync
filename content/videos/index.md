@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-22T16:18:11-07:00
+updated: 2026-05-22T16:37:44-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (842)  
+# 📺 Videos (843)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -768,6 +768,7 @@ updated: 2026-05-22T16:18:11-07:00
 - [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
+- [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  

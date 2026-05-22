@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-21T17:17:18-07:00
+updated: 2026-05-21T17:40:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-21T17:17:18-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (840)  
+## [📺 Videos](./videos/index.md) (841)  
+- [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./videos/creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [⚖️💸📢 ‘I Move That The Committee Now Immediately…’: Raskin Makes Direct Call On Trump DOJ ‘Slush Fund’](./videos/i-move-that-the-committee-now-immediately-raskin-makes-direct-call-on-trump-doj-slush-fund.md)  
 - [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./videos/we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
 - [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./videos/the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  
-- [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./videos/big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

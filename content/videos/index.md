@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-21T17:17:18-07:00
+updated: 2026-05-21T17:40:54-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (840)  
+# 📺 Videos (841)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -161,6 +161,7 @@ updated: 2026-05-21T17:17:18-07:00
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
+- [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./dear-americans-we-saved-you-a-seat.md)  
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./defying-gravity-kevin-hou-google-deepmind.md)  

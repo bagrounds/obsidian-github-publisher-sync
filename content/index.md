@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-22T17:27:56-07:00
+updated: 2026-05-22T17:42:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-22T17:27:56-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (845)  
+## [📺 Videos](./videos/index.md) (846)  
+- [🧱🔨 Starting to Crack](./videos/starting-to-crack.md)  
 - [🎤❓📺 Stephen Colbert Takes The Colbert Questionert - EXTENDED SEGMENT](./videos/stephen-colbert-takes-the-colbert-questionert-extended-segment.md)  
 - [🇰🇾😲 We Went To Kentucky What We Found Will Shock You](./videos/we-went-to-kentucky-what-we-found-will-shock-you.md)  
 - [🛝📉🏚️ Why these playgrounds disappeared](./videos/why-these-playgrounds-disappeared.md)  
-- [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./videos/we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

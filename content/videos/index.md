@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-22T17:27:56-07:00
+updated: 2026-05-22T17:42:50-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (845)  
+# 📺 Videos (846)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -552,6 +552,7 @@ updated: 2026-05-22T17:27:56-07:00
 - [Spaceship You](./spaceship-you.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
 - [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
+- [🧱🔨 Starting to Crack](./starting-to-crack.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
 - [🎤❓📺 Stephen Colbert Takes The Colbert Questionert - EXTENDED SEGMENT](./stephen-colbert-takes-the-colbert-questionert-extended-segment.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  

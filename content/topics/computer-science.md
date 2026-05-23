@@ -11,6 +11,7 @@ image_date: 2026-04-09T03:10:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A digital, isometric composition featuring a stylized, glowing brain merging with a complex array of interconnected circuit boards and floating data nodes. Streams of binary code in soft cyan and violet light weave through the components, suggesting the flow of information. The background is a deep, dark navy gradient, providing high contrast for the luminous, geometric elements. Floating icons representing sub-disciplines—such as a small gear for hardware, a crystalline structure for algorithms, and a neural network node for AI—are arranged in a clean, organized cloud around the central brain. The overall aesthetic is sleek, modern, and futuristic, utilizing a sophisticated color palette of electric blue, magenta, and white to convey intelligence and computational power.
 link_analysis_version: "2"
+updated: 2026-05-23T03:21:52
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md)  
 # 💻🔬 Computer Science  
@@ -52,4 +53,12 @@ Here are some excellent books to get you started in Computer Science:
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmiin2onom2u" data-bluesky-cid="bafyreifstf7l6exnw5e3athwraoovvllfnr255jc6enwlcr3tjl7m5liim"><p>💻🔬 Computer Science  
+  
+#AI Q: 💻 Which area of computer science will shape the future the most?  
+  
+🤖 AI | 📊 Algorithms | ⌨️ Programming  
+https://bagrounds.org/topics/computer-science</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmiin2onom2u?ref_src=embed">2026-05-23T03:22:00.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

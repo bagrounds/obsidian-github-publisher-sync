@@ -13,7 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T16:36:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-tech visualization of a decision-tree structure branching out from a glowing, translucent digital brain. The nodes of the tree are represented by geometric icons—cogs, lightbulbs, and map pins—interconnected by luminous data lines that fade into a deep, dark blue background. In the foreground, a sleek, semi-transparent robotic silhouette is shown interacting with these branches, carefully selecting a path. The lighting is focused and cinematic, using neon cyan and soft amber gradients to evoke a sense of deliberate, strategic planning. The overall aesthetic is clean, modern, and abstract, emphasizing the transition from chaotic raw data to structured, logical reasoning.
-updated: 2026-05-19T01:52:18
+updated: 2026-05-23T11:39:27
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](https://arxiv.org/pdf/2305.14992)  

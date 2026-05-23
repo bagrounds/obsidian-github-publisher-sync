@@ -6,7 +6,7 @@ module WordMeter.Recording.View
 import Prelude
 
 import Data.DateTime.Instant (Instant)
-import Data.Array (length) as Array
+import Data.Array (head, length, null) as Array
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Data.String (length) as String
@@ -33,7 +33,7 @@ import WordMeter.Recording.Session
   , Session
   , renderWakeLockStatus
   )
-import WordMeter.WordStats (longestWord, mostFrequentWord)
+import WordMeter.WordStats (WordFrequency, longestWord, mostFrequentWord, topWords)
 import WordMeter.Version (version)
 import WordMeter.Vdom
   ( Node
@@ -87,6 +87,7 @@ view handlers session =
     , buildKeepAwake handlers session
     , buildErrorBanner session
     , buildStats session
+    , buildWordCloud session
     , buildCaptions session
     , buildEventLog session
     , buildDiagnostics handlers session
@@ -264,6 +265,40 @@ startedLabel :: Session -> String
 startedLabel session = case session.firstStartedAt of
   Nothing -> "—"
   Just timestamp -> formatClockTime timestamp
+
+-- | Number of discrete size buckets for the word cloud. Higher
+-- | numbered buckets get a larger font via the corresponding
+-- | `wm-word-cloud-size-N` CSS class.
+wordCloudSizeBucketCount :: Int
+wordCloudSizeBucketCount = 5
+
+wordCloudSizeClass :: Int -> Int -> String
+wordCloudSizeClass maxCount count =
+  let
+    fraction = Int.toNumber count / Int.toNumber (max 1 maxCount)
+    rawBucket = Int.floor (fraction * Int.toNumber wordCloudSizeBucketCount)
+    bucket =
+      if rawBucket < 1 then 1
+      else if rawBucket >= wordCloudSizeBucketCount then wordCloudSizeBucketCount
+      else rawBucket
+  in
+    "wm-word-cloud-word wm-word-cloud-size-" <> show bucket
+
+buildWordCloud :: Session -> Node
+buildWordCloud session =
+  let
+    words = topWords session.currentIntervalWordStats
+    maxCount = case Array.head words of
+      Just top -> top.count
+      Nothing -> 1
+  in
+    div_ [ testId "wm-word-cloud", className "wm-section wm-word-cloud" ] []
+      (map (buildWordCloudEntry maxCount) words)
+
+buildWordCloudEntry :: Int -> WordFrequency -> Node
+buildWordCloudEntry maxCount entry =
+  span_ [ testId "wm-word-cloud-word", className (wordCloudSizeClass maxCount entry.count) ] []
+    [ text entry.word ]
 
 buildCaptions :: Session -> Node
 buildCaptions session =

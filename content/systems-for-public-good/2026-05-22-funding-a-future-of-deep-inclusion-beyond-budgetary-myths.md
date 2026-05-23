@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md) [⏭️](./2026-05-23-public-financial-institutions-architects-of-real-wealth.md)  
 # 2026-05-22 | 🏛️ Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️  
 ![systems-for-public-good-2026-05-22-funding-a-future-of-deep-inclusion-beyond-budgetary-myths](../systems-for-public-good-2026-05-22-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.jpg)  
   

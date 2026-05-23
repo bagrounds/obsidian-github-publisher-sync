@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/ypq2liO0kqk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇰🇾😲 We Went To Kentucky What We Found Will Shock You  
@@ -28,7 +32,7 @@ youtube: https://youtu.be/ypq2liO0kqk
   
 * ⚖️ The video highlights internal friction within the Republican Party, pitting populist "America First" principles against the current administration's shifting policy priorities.  
 * 🧐 This conflict illustrates a broader, established tension in political science: the challenge of maintaining ideological consistency while navigating the pragmatic requirements of executive power.  
-* 🔍 To explore this further, research the concept of democratic accountability in the book *The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics* by Bruce Bueno de Mesquita and Alastair Smith (PublicAffairs).  
+* 🔍 To explore this further, research the concept of democratic accountability in the book *[👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](../books/the-dictators-handbook.md): Why Bad Behavior is Almost Always Good Politics* by Bruce Bueno de Mesquita and Alastair Smith (PublicAffairs).  
 * 🌍 Additionally, examine the evolution of foreign policy shifts in modern US administrations, which are analyzed in *The Back Channel: A Memoir of American Diplomacy and the Case for Its Renewal* by William J. Burns (Random House).  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -49,7 +53,7 @@ youtube: https://youtu.be/ypq2liO0kqk
   
 ### ↔️ Similar  
   
-* 📚 The Conservative Sensibility by George F. Will explores the philosophical foundations of American conservatism and its internal tensions in contemporary politics.  
+* 📚 [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md) explores the philosophical foundations of American conservatism and its internal tensions in contemporary politics.  
 * 📚 Party of One: The Rise of Xi Jinping and the Superpower Future by Chun Han Wong examines the challenges of party discipline and the impact of individual leadership styles on ideological movements.  
   
 ### 🆚 Contrasting  
@@ -60,4 +64,4 @@ youtube: https://youtu.be/ypq2liO0kqk
 ### 🎨 Creatively Related  
   
 * 📚 The Man Who Ran Washington: The Life and Times of James A. Baker III by Peter Baker and Susan Glasser details the intricate balance between legislative influence, executive power, and personal loyalty in American governance.  
-* 📚 Bullshit Jobs: A Theory by David Graeber discusses the systemic disconnect between stated institutional values and the reality of political and professional life, mirroring voter frustration with political performance.
+* 📚 [💩💼 Bullshit Jobs: A Theory](../books/bullshit-jobs-a-theory.md) by David Graeber discusses the systemic disconnect between stated institutional values and the reality of political and professional life, mirroring voter frustration with political performance.

@@ -109,3 +109,19 @@ If someone wants to revisit this, here are the paths worth exploring:
 
 - This blog post is all that remains of the PiP experiment. All code, specs, and tests were reverted.
 - The PR discussion thread has the full technical conversation, including the 5-Whys RCA and per-browser support table.
+
+## 📚 Book Recommendations
+
+### 📖 Similar
+
+* The Design of Everyday Things by Don Norman is relevant because the core failure here — an API that looks like it should work on mobile but silently does not — is a classic affordance mismatch. Norman's framework for mapping user expectations to system capabilities explains exactly why the Android PiP permission toggle misleads users into thinking Document PiP is available.
+* Release It! by Michael T. Nygard is relevant because it covers the principle of knowing your failure modes before you ship. The mobile dead-end could have been caught earlier with the same discipline Nygard applies to production systems: test at the boundaries, not just in the happy path.
+
+### ↔️ Contrasting
+
+* The Pragmatic Programmer by David Thomas and Andrew Hunt advises finishing what you start and shipping working software incrementally. This PR takes the opposite path — abandon and document rather than ship a half-working feature. That tension is real, and sometimes the right call is to stop.
+
+### 🔗 Related
+
+* High Performance Browser Networking by Ilya Grigorik is related because understanding why `SpeechRecognition` dies on page hide requires understanding how browsers manage background page lifecycle, process throttling, and media permissions — all topics covered in depth in that book.
+* Domain Modeling Made Functional by Scott Wlaschin is related because the PureScript implementation used opaque newtypes and typed error ADTs throughout (DocumentPipError, the opaque PipWindow handle with its kind tag) — a direct application of the functional domain-modeling style the book advocates.

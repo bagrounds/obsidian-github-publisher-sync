@@ -9,6 +9,10 @@ Platform:
 Channel: The Late Show with Stephen Colbert
 tags:
 youtube: https://youtu.be/iRvWlAGx7EM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎤❓📺 Stephen Colbert Takes The Colbert Questionert - EXTENDED SEGMENT  
@@ -63,7 +67,7 @@ A: He describes the afterlife not as a specific destination, but as a feeling of
   
 ### 🆚 Contrasting  
   
-* Thinking, Fast and Slow by Daniel Kahneman analyzes the psychological foundations of judgment and decision-making, offering a rigorous, data-driven alternative to the intuitive answers provided in interviews.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman analyzes the psychological foundations of judgment and decision-making, offering a rigorous, data-driven alternative to the intuitive answers provided in interviews.  
 * Stardust by Neil Gaiman presents a fantastical exploration of identity and self-discovery that contrasts sharply with the grounded, autobiographical nature of the questionnaire.  
   
 ### 🎨 Creatively Related  

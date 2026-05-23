@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-23T09:14:00-07:00
+updated: 2026-05-23T15:15:56-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (847)  
+# 📺 Videos (849)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -131,6 +131,7 @@ updated: 2026-05-23T09:14:00-07:00
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
+- [🗣️⚖️👑 Brooks and Capehart on Trump's loyalty demands](./brooks-and-capehart-on-trumps-loyalty-demands.md)  
 - [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
@@ -354,6 +355,7 @@ updated: 2026-05-23T09:14:00-07:00
 - [🔍🔬🧠 I Researched How To Do Research, Here's What I Learned](./i-researched-how-to-do-research-heres-what-i-learned.md)  
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
 - [🗳️🔓🤔 Is it easy to steal an election?](./is-it-easy-to-steal-an-election.md)  
+- [🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show](./is-it-time-to-break-the-two-party-system-the-ezra-klein-show.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./italys-radical-solution-to-extreme-inequality.md)  
 - [🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT](./i-tracked-down-the-hidden-workers-secretly-powering-chatgpt.md)  

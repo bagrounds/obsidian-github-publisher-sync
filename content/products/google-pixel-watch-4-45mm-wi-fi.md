@@ -12,7 +12,6 @@ CTA: ⌚ What time is it?
 [🛒 Google Pixel Watch 4 (45mm) Wi-Fi. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3PU2l2u)  
   
 ## ⌚ Product Report  
-  
 ### 🎨 Design and Visual Presentation  
   
 * 🔮 The hardware showcases a unique, physically curved Actua 360 domed display that provides an edgeless appearance.  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-22T17:42:50-07:00
+updated: 2026-05-22T20:13:45-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,18 +77,18 @@ updated: 2026-05-22T17:42:50-07:00
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
   
   
-## [📺 Videos](./videos/index.md) (846)  
+## [📺 Videos](./videos/index.md) (847)  
+- [🥱📺 There's Nothing Special About Stephen Colbert's Final Monologue At «The Late Show»](./videos/theres-nothing-special-about-stephen-colberts-final-monologue-at-the-late-show.md)  
 - [🧱🔨 Starting to Crack](./videos/starting-to-crack.md)  
 - [🎤❓📺 Stephen Colbert Takes The Colbert Questionert - EXTENDED SEGMENT](./videos/stephen-colbert-takes-the-colbert-questionert-extended-segment.md)  
 - [🇰🇾😲 We Went To Kentucky What We Found Will Shock You](./videos/we-went-to-kentucky-what-we-found-will-shock-you.md)  
-- [🛝📉🏚️ Why these playgrounds disappeared](./videos/why-these-playgrounds-disappeared.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
+- [🧪🔬 Code Testing and Validation](./topics/code-testing-and-validation.md)  
+- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
 - [🎲🌲📊 Random Forest Classifier](./topics/random-forest-classifier.md)  
-- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
-- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
-- [🎤🗣️ Public Speaking and Rhetoric](./topics/public-speaking-and-rhetoric.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-22T17:42:50-07:00
+updated: 2026-05-22T20:13:45-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (846)  
+# 📺 Videos (847)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -647,6 +647,7 @@ updated: 2026-05-22T17:42:50-07:00
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [👓⚖️ There Are Two Ways to Look At Freedom | Explainer](./there-are-two-ways-to-look-at-freedom-explainer.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  
+- [🥱📺 There's Nothing Special About Stephen Colbert's Final Monologue At «The Late Show»](./theres-nothing-special-about-stephen-colberts-final-monologue-at-the-late-show.md)  
 - [😇🧠⚖️ The Righteous Mind by Jonathan Haidt (BOOK INSIGHTS)](./the-righteous-mind-by-jonathan-haidt-book-insights.md)  
 - [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./the-righteous-mind-jonathan-haidt-talks-at-google.md)  
 - [😇😈💔 The Righteous Mind: Why Liberals and Conservatives Can't Get Along](./the-righteous-mind-why-liberals-and-conservatives-cant-get-along.md)  

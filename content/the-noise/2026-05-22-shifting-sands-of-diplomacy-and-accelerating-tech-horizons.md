@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-21-shifting-tides-and-technological-frontiers.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-21-shifting-tides-and-technological-frontiers.md) [⏭️](./2026-05-23-navigating-the-crossroads-of-geopolitics-ai-drift-and-climate-alarms.md)  
 # 2026-05-22 | 📰 🌐 Shifting Sands of Diplomacy and Accelerating Tech Horizons 📰  
 ![the-noise-2026-05-22-shifting-sands-of-diplomacy-and-accelerating-tech-horizons](../the-noise-2026-05-22-shifting-sands-of-diplomacy-and-accelerating-tech-horizons.jpg)  
   

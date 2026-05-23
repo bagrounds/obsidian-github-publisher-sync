@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md) [⏭️](./2026-05-23-the-ethical-horizon-from-relentless-optimization-to-rooted-integrity.md)  
 # 2026-05-22 | 🔀 🌐 The Ethics of Inertia: When Purpose Guides Restraint 🔀  
 ![convergence-2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint](../convergence-2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint.jpg)  
   

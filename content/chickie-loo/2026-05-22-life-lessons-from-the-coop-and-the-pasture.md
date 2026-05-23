@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-21-welcoming-hearts-and-ranch-rhythms.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-21-welcoming-hearts-and-ranch-rhythms.md) [⏭️](./2026-05-23-tales-of-serpents-opossums-and-modern-technology.md)  
 # 2026-05-22 | 🐔 Life Lessons from the Coop and the Pasture 🐔  
 ![chickie-loo-2026-05-22-life-lessons-from-the-coop-and-the-pasture](../chickie-loo-2026-05-22-life-lessons-from-the-coop-and-the-pasture.jpg)  
   

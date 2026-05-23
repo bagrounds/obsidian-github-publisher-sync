@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-05-22T20:13:45-07:00
+updated: 2026-05-23T08:48:38-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (73)  
+# 🐔 Chickie Loo (74)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-05-23 | 🐔 🐣 Tales of Serpents, Opossums, and Modern Technology 🐔](./2026-05-23-tales-of-serpents-opossums-and-modern-technology.md)  
 - [2026-05-22 | 🐔 Life Lessons from the Coop and the Pasture 🐔](./2026-05-22-life-lessons-from-the-coop-and-the-pasture.md)  
 - [2026-05-21 | 🐔 🏡 Welcoming Hearts and Ranch Rhythms 🐔](./2026-05-21-welcoming-hearts-and-ranch-rhythms.md)  
 - [2026-05-20 | 🐔 🧺 Laundry Bliss and Cheesecake Dreams 🐔](./2026-05-20-laundry-bliss-and-cheesecake-dreams.md)  

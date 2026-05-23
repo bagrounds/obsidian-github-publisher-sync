@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-22T20:13:45-07:00
+updated: 2026-05-23T08:48:38-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (224)  
+# 🤖 AI Blog (225)  
+- [2026-05-20 | 📺 Word Meter Picture-in-Picture — Lessons from a Failed Experiment 🏳️](./2026-05-20-1-word-meter-picture-in-picture.md)  
 - [2026-05-18 | 🗣️ Word Meter Word Stats Per Counting Period 🏆](./2026-05-18-2-word-meter-word-stats.md)  
 - [2026-05-18 | 📆 Word Meter Multi-Day Stats 📊](./2026-05-18-1-word-meter-multi-day-stats.md)  
 - [2026-05-17 | 🏁 Word Meter PureScript Port: Finish It 🎙️](./2026-05-17-3-word-meter-purescript-finish-it.md)  

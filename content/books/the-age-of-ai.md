@@ -14,6 +14,7 @@ link_analysis_version: "2"
 image_date: 2026-05-06T15:59:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, conceptual illustration featuring a sleek, glowing neural network that transitions from a digital, crystalline grid into the silhouette of a human brain. The background is a deep, atmospheric navy blue, suggesting the vastness of space or the digital void. Floating around the central motif are subtle, abstract geometric symbols representing global connectivity—like faint, ethereal arcs mirroring the Earth’s meridian lines. A soft, warm light emanates from the center of the brain, casting gentle illumination on the surrounding dark particles. The overall aesthetic is minimalist, sophisticated, and intellectual, evoking a sense of profound technological evolution and philosophical inquiry.
+updated: 2026-05-23T11:39:27
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🤖 The Age of AI  
@@ -72,3 +73,11 @@ A: 🤓 Yes. Its focus on fundamental questions about human identity and AI's so
   
 * How should societies govern AI development that transcends national boundaries?  
 * Can democratic values survive in a world where machines make increasingly important decisions?  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmjegtkq3w2v" data-bluesky-cid="bafyreic764yljvy3kjpsmsmueos5ck5yxtdpvfc2d5n4bwe37zqw7ewyia"><p>🔮🤖 The Age of AI  
+  
+#AI Q: 🤖 Can human identity survive in a world shaped by machine intelligence?  
+  
+🌍 Geopolitics | 🏛️ Philosophy | 🧠 Human Cognition |  
+https://bagrounds.org/books/the-age-of-ai</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmjegtkq3w2v?ref_src=embed">2026-05-23T11:39:36.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

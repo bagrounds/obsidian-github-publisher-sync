@@ -298,7 +298,9 @@ buildWordCloud session =
 buildWordCloudEntry :: Int -> WordFrequency -> Node
 buildWordCloudEntry maxCount entry =
   span_ [ testId "wm-word-cloud-word", className (wordCloudSizeClass maxCount entry.count) ] []
-    [ text entry.word ]
+    [ text entry.word
+    , span_ [ className "wm-word-cloud-count" ] [] [ text (" x" <> show entry.count) ]
+    ]
 
 buildCaptions :: Session -> Node
 buildCaptions session =

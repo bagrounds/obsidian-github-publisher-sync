@@ -298,6 +298,13 @@
 .wm-word-cloud-size-4 { font-size: 30px; opacity: 0.9; }
 .wm-word-cloud-size-5 { font-size: 40px; opacity: 1; }
 
+.wm-word-cloud-count {
+  font-size: 10px;
+  opacity: 0.5;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
 /* ---------- Error banner ---------- */
 
 .wm-error {

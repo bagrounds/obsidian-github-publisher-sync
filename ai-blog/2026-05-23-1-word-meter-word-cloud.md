@@ -26,6 +26,8 @@ URL: https://bagrounds.org/ai-blog/2026-05-23-1-word-meter-word-cloud
 
 🧩 The cloud container uses flexbox with wrapping so words flow naturally across the available width. When no words have been spoken yet, the container is empty and the CSS empty pseudo-class hides it entirely so there is no visual gap.
 
+🔢 Each word carries a small superscript count annotation showing exactly how many times it was spoken, formatted as x followed by the number. The annotation uses a fixed ten-pixel font size at half opacity so it stays readable without competing visually with the word itself.
+
 ## 🧪 Testing
 
 🔬 Three new PureScript unit tests cover the topWords function. The first confirms that empty stats produce an empty array. The second verifies that results come back in descending count order with alphabetical tiebreaking. The third checks that the count values themselves are correct and match the number of times each word was spoken.

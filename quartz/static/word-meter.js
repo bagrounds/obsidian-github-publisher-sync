@@ -7254,7 +7254,7 @@
       return "\u201C" + (v.value0.word + ("\u201D \xD7" + show5(v.value0.count)));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 352, column 1 - line 352, column 71): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 354, column 1 - line 354, column 71): " + [v.constructor.name]);
   };
   var renderEventLongestWord = function(v) {
     if (v instanceof Nothing) {
@@ -7265,7 +7265,7 @@
       return "\u201C" + (v.value0 + ("\u201D (" + (show5(length3(v.value0)) + ")")));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 366, column 1 - line 366, column 49): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 368, column 1 - line 368, column 49): " + [v.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
@@ -7327,7 +7327,7 @@
   };
   var buildWordCloudEntry = function(maxCount) {
     return function(entry) {
-      return span_([testId("wm-word-cloud-word"), className(wordCloudSizeClass(maxCount)(entry.count))])([])([text(entry.word)]);
+      return span_([testId("wm-word-cloud-word"), className(wordCloudSizeClass(maxCount)(entry.count))])([])([text(entry.word), span_([className("wm-word-cloud-count")])([])([text(" x" + show5(entry.count))])]);
     };
   };
   var buildWordCloud = function(session) {

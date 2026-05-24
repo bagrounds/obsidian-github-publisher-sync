@@ -4505,7 +4505,7 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 381, column 5 - line 384, column 63): " + [session.todayLocalDate.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 380, column 5 - line 383, column 63): " + [session.todayLocalDate.constructor.name]);
     };
   };
   var rehydrateMostFrequent = function(maybeWord) {
@@ -4535,7 +4535,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 469, column 44 - line 471, column 62): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 468, column 44 - line 470, column 62): " + [v.constructor.name]);
     };
   };
   var pruneWordEvents = function(now) {
@@ -4588,6 +4588,7 @@
             lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
             cloudFallbackAttempted: session.cloudFallbackAttempted,
             diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+            currentIntervalWordStats: session.currentIntervalWordStats,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -4598,8 +4599,7 @@
             now: timestamp,
             diagnostics: recordEntry(stopEntry)(session.diagnostics),
             recognitionStatusOverride: idleRecognitionStatusOverride,
-            activeRecognitionPath: Nothing.value,
-            currentIntervalWordStats: emptyWordStats
+            activeRecognitionPath: Nothing.value
           };
         };
       };
@@ -4680,7 +4680,7 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 480, column 56 - line 489, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 479, column 56 - line 488, column 8): " + [v.constructor.name]);
         };
       };
     };

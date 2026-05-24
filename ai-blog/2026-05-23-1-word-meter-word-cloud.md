@@ -14,7 +14,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-23-1-word-meter-word-cloud
 
 🔤 Every word you speak appears in the cloud, sized according to how frequently it has been used relative to the most-spoken word. The most common word gets the largest font, and less frequent words appear progressively smaller.
 
-🔄 The cloud resets automatically whenever a new counting interval begins, whether by toggling start, resetting the session, or loading a saved session. No new session state was needed because the existing per-interval word stats tracker already handles the frequency map and already resets in those reducer branches.
+🔄 The cloud persists after you stop counting so you can review the words from your last session at a glance. It only resets when the next counting interval begins — toggling start, resetting the session, or loading a saved session. No new session state was needed because the existing per-interval word stats tracker already handles the frequency map and already resets in those reducer branches.
 
 ## 🧱 How It Works
 

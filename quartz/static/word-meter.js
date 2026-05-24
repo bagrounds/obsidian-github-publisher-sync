@@ -7136,7 +7136,7 @@
   };
 
   // output/WordMeter.Version/index.js
-  var version = "0.2.0";
+  var version = "0.3.0";
 
   // output/WordMeter.Recording.View/index.js
   var max5 = /* @__PURE__ */ max(ordInt);

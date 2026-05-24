@@ -12,6 +12,7 @@ module WordMeter.WordStats
   , mostFrequentWord
   , longestWord
   , isEmptyWordStats
+  , topWords
   ) where
 
 import Prelude
@@ -147,3 +148,14 @@ mostFrequentWord (WordStats stats) =
 -- | casing). Ties go to the first occurrence.
 longestWord :: WordStats -> Maybe String
 longestWord (WordStats stats) = stats.longest
+
+-- | All words in the period sorted by descending frequency, then
+-- | alphabetically on the normalized key for determinism.
+topWords :: WordStats -> Array WordFrequency
+topWords (WordStats stats) =
+  map toFrequency (sortWith rankKey (Map.toUnfoldable stats.frequencies))
+  where
+  rankKey :: Tuple String Int -> Tuple Int String
+  rankKey (Tuple word count) = Tuple (-count) word
+  toFrequency :: Tuple String Int -> WordFrequency
+  toFrequency (Tuple word count) = { word, count }

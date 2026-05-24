@@ -137,6 +137,7 @@ import WordMeter.WordStats
   , isEmptyWordStats
   , longestWord
   , mostFrequentWord
+  , topWords
   )
 
 main :: Effect Unit
@@ -1606,3 +1607,17 @@ runWordStatsTests = do
         "extend branch tracks the longest new token"
         longest "general"
     Nothing -> throw "extended interval should have a longest word"
+
+  -- topWords returns empty for empty stats.
+  assertEqualInt "topWords empty stats yields empty array"
+    (Array.length (topWords emptyWordStats)) 0
+
+  -- topWords returns entries sorted by descending count.
+  let
+    tw = topWords (addTranscript "the the cat" (addTranscript "the dog" emptyWordStats))
+  assertEqualInt "topWords returns all unique words" (Array.length tw) 3
+  case Array.head tw of
+    Just first -> do
+      assertEqualString "topWords first entry is highest-frequency word" first.word "the"
+      assertEqualInt "topWords first entry count" first.count 3
+    Nothing -> throw "topWords should return at least one entry"

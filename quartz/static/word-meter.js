@@ -3842,10 +3842,10 @@
   };
 
   // output/WordMeter.WordStats/index.js
+  var map7 = /* @__PURE__ */ map(functorArray);
   var sortWith2 = /* @__PURE__ */ sortWith(/* @__PURE__ */ ordTuple(ordInt)(ordString));
   var toUnfoldable2 = /* @__PURE__ */ toUnfoldable(unfoldableArray);
   var eq3 = /* @__PURE__ */ eq(eqCodePoint);
-  var map7 = /* @__PURE__ */ map(functorArray);
   var alter2 = /* @__PURE__ */ alter(ordString);
   var updateLongest = function(v) {
     return function(v1) {
@@ -3864,8 +3864,20 @@
         ;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.WordStats (line 77, column 1 - line 77, column 56): " + [v.constructor.name, v1.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.WordStats (line 78, column 1 - line 78, column 56): " + [v.constructor.name, v1.constructor.name]);
     };
+  };
+  var topWords = function(v) {
+    var toFrequency = function(v1) {
+      return {
+        word: v1.value0,
+        count: v1.value1
+      };
+    };
+    var rankKey = function(v1) {
+      return new Tuple(-v1.value1 | 0, v1.value0);
+    };
+    return map7(toFrequency)(sortWith2(rankKey)(toUnfoldable2(v.frequencies)));
   };
   var mostFrequentWord = function(v) {
     var rankKey = function(v12) {
@@ -3883,7 +3895,7 @@
       });
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.WordStats (line 139, column 3 - line 141, column 52): " + [v1.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.WordStats (line 140, column 3 - line 142, column 52): " + [v1.constructor.name]);
   };
   var longestWord = function(v) {
     return v.longest;
@@ -3894,8 +3906,8 @@
   var stripWordPunctuation = function(word) {
     return fromCodePointArray(reverse(dropWhile(isStrippablePunctuation)(reverse(dropWhile(isStrippablePunctuation)(toCodePointArray(word))))));
   };
-  var normalizeForFrequency = function($56) {
-    return toLower(stripWordPunctuation($56));
+  var normalizeForFrequency = function($66) {
+    return toLower(stripWordPunctuation($66));
   };
   var incrementCount = function(v) {
     if (v instanceof Nothing) {
@@ -3906,13 +3918,13 @@
       return new Just(v.value0 + 1 | 0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.WordStats (line 71, column 1 - line 71, column 41): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.WordStats (line 72, column 1 - line 72, column 41): " + [v.constructor.name]);
   };
   var extractWords = function(transcript) {
-    return filter(function($57) {
-      return !$$null2($57);
-    })(map7(stripWordPunctuation)(filter(function($58) {
-      return !$$null2($58);
+    return filter(function($67) {
+      return !$$null2($67);
+    })(map7(stripWordPunctuation)(filter(function($68) {
+      return !$$null2($68);
     })(split(" ")(collapseWhitespaceToSpace(trim(transcript))))));
   };
   var emptyWordStats = /* @__PURE__ */ function() {
@@ -3924,8 +3936,8 @@
   var addWord = function(rawWord) {
     return function(v) {
       var normalized = normalizeForFrequency(rawWord);
-      var $55 = $$null2(normalized);
-      if ($55) {
+      var $65 = $$null2(normalized);
+      if ($65) {
         return v;
       }
       ;
@@ -4493,7 +4505,7 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 381, column 5 - line 384, column 63): " + [session.todayLocalDate.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 380, column 5 - line 383, column 63): " + [session.todayLocalDate.constructor.name]);
     };
   };
   var rehydrateMostFrequent = function(maybeWord) {
@@ -4523,7 +4535,7 @@
         }]);
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 469, column 44 - line 471, column 62): " + [v.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 468, column 44 - line 470, column 62): " + [v.constructor.name]);
     };
   };
   var pruneWordEvents = function(now) {
@@ -4576,6 +4588,7 @@
             lastRawFinalizedTranscript: session.lastRawFinalizedTranscript,
             cloudFallbackAttempted: session.cloudFallbackAttempted,
             diagnosticsDrawerOpen: session.diagnosticsDrawerOpen,
+            currentIntervalWordStats: session.currentIntervalWordStats,
             listening: false,
             currentIntervalStart: Nothing.value,
             currentIntervalWords: 0,
@@ -4586,8 +4599,7 @@
             now: timestamp,
             diagnostics: recordEntry(stopEntry)(session.diagnostics),
             recognitionStatusOverride: idleRecognitionStatusOverride,
-            activeRecognitionPath: Nothing.value,
-            currentIntervalWordStats: emptyWordStats
+            activeRecognitionPath: Nothing.value
           };
         };
       };
@@ -4668,7 +4680,7 @@
             }]);
           }
           ;
-          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 480, column 56 - line 489, column 8): " + [v.constructor.name]);
+          throw new Error("Failed pattern match at WordMeter.Recording.Reducer (line 479, column 56 - line 488, column 8): " + [v.constructor.name]);
         };
       };
     };
@@ -7124,12 +7136,34 @@
   };
 
   // output/WordMeter.Version/index.js
-  var version = "0.2.0";
+  var version = "0.3.0";
 
   // output/WordMeter.Recording.View/index.js
+  var max5 = /* @__PURE__ */ max(ordInt);
   var show5 = /* @__PURE__ */ show(showInt);
   var append13 = /* @__PURE__ */ append(semigroupArray);
   var map14 = /* @__PURE__ */ map(functorArray);
+  var wordCloudSizeBucketCount = 5;
+  var wordCloudSizeClass = function(maxCount) {
+    return function(count) {
+      var fraction = toNumber(count) / toNumber(max5(1)(maxCount));
+      var rawBucket = floor2(fraction * toNumber(wordCloudSizeBucketCount));
+      var bucket = function() {
+        var $20 = rawBucket < 1;
+        if ($20) {
+          return 1;
+        }
+        ;
+        var $21 = rawBucket >= wordCloudSizeBucketCount;
+        if ($21) {
+          return wordCloudSizeBucketCount;
+        }
+        ;
+        return rawBucket;
+      }();
+      return "wm-word-cloud-word wm-word-cloud-size-" + show5(bucket);
+    };
+  };
   var statTileValue = function(valueTestId) {
     return function(valueText) {
       return div_([testId(valueTestId), className("wm-metric-tile-value")])([])([text(valueText)]);
@@ -7150,7 +7184,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 264, column 24 - line 266, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 265, column 24 - line 267, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var renderTopWordValue = function(v) {
     if (v instanceof Nothing) {
@@ -7161,7 +7195,7 @@
       return v.value0.word;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 207, column 1 - line 207, column 71): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 208, column 1 - line 208, column 71): " + [v.constructor.name]);
   };
   var renderTopWordSublabel = function(v) {
     if (v instanceof Nothing) {
@@ -7172,7 +7206,7 @@
       return new Just(show5(v.value0.count) + "\xD7 this period");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 211, column 1 - line 211, column 80): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 212, column 1 - line 212, column 80): " + [v.constructor.name]);
   };
   var renderStatus = function(session) {
     if (session.recognitionStatusOverride !== "") {
@@ -7187,7 +7221,7 @@
       return "Idle";
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 109, column 1 - line 109, column 34): " + [session.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 110, column 1 - line 110, column 34): " + [session.constructor.name]);
   };
   var renderLongestWordValue = function(v) {
     if (v instanceof Nothing) {
@@ -7198,7 +7232,7 @@
       return v.value0;
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 216, column 1 - line 216, column 49): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 217, column 1 - line 217, column 49): " + [v.constructor.name]);
   };
   var renderLongestWordSublabel = function(v) {
     if (v instanceof Nothing) {
@@ -7209,7 +7243,7 @@
       return new Just(show5(length3(v.value0)) + " letters");
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 220, column 1 - line 220, column 58): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 221, column 1 - line 221, column 58): " + [v.constructor.name]);
   };
   var renderEventTopWord = function(v) {
     if (v instanceof Nothing) {
@@ -7220,7 +7254,7 @@
       return "\u201C" + (v.value0.word + ("\u201D \xD7" + show5(v.value0.count)));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 317, column 1 - line 317, column 71): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 354, column 1 - line 354, column 71): " + [v.constructor.name]);
   };
   var renderEventLongestWord = function(v) {
     if (v instanceof Nothing) {
@@ -7231,7 +7265,7 @@
       return "\u201C" + (v.value0 + ("\u201D (" + (show5(length3(v.value0)) + ")")));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording.View (line 331, column 1 - line 331, column 49): " + [v.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording.View (line 368, column 1 - line 368, column 49): " + [v.constructor.name]);
   };
   var keepAwakeAttributes = function(session) {
     var base = [testId("wm-keep-awake"), className("wm-keep-awake-checkbox"), attribute("type")("checkbox")];
@@ -7276,13 +7310,13 @@
       var fraction = 1 - opacity;
       var rawBucket = floor2(fraction * toNumber(captionFadeBucketCount));
       var bucket = function() {
-        var $34 = rawBucket < 0;
-        if ($34) {
+        var $39 = rawBucket < 0;
+        if ($39) {
           return 0;
         }
         ;
-        var $35 = rawBucket >= captionFadeBucketCount;
-        if ($35) {
+        var $40 = rawBucket >= captionFadeBucketCount;
+        if ($40) {
           return captionFadeBucketCount - 1 | 0;
         }
         ;
@@ -7290,6 +7324,27 @@
       }();
       return "wm-caption wm-caption-fade-" + show5(bucket);
     };
+  };
+  var buildWordCloudEntry = function(maxCount) {
+    return function(entry) {
+      return span_([testId("wm-word-cloud-word"), className(wordCloudSizeClass(maxCount)(entry.count))])([])([text(entry.word), span_([className("wm-word-cloud-count")])([])([text(" x" + show5(entry.count))])]);
+    };
+  };
+  var buildWordCloud = function(session) {
+    var words = topWords(session.currentIntervalWordStats);
+    var maxCount = function() {
+      var v = head(words);
+      if (v instanceof Just) {
+        return v.value0.count;
+      }
+      ;
+      if (v instanceof Nothing) {
+        return 1;
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording.View (line 291, column 16 - line 293, column 19): " + [v.constructor.name]);
+    }();
+    return div_([testId("wm-word-cloud"), className("wm-section wm-word-cloud")])([])(map14(buildWordCloudEntry(maxCount))(words));
   };
   var buildVersion = /* @__PURE__ */ function() {
     return span_([testId("wm-version"), className("wm-version")])([])([text("Word Meter (PureScript) v" + version)]);
@@ -7328,7 +7383,7 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording.View (line 230, column 11 - line 232, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording.View (line 231, column 11 - line 233, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
@@ -7360,8 +7415,8 @@
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log"), className("wm-section wm-timeline")])([])(function() {
-      var $41 = length(session.eventLog) === 0;
-      if ($41) {
+      var $48 = length(session.eventLog) === 0;
+      if ($48) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -7395,8 +7450,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions"), className("wm-section wm-captions-panel")])([])(function() {
-      var $43 = length(session.captions) === 0;
-      if ($43) {
+      var $50 = length(session.captions) === 0;
+      if ($50) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -7405,7 +7460,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root"), className("wm-panel")])([])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root"), className("wm-panel")])([])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildKeepAwake(handlers)(session), buildErrorBanner(session), buildStats(session), buildWordCloud(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 

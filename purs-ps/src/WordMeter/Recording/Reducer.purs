@@ -354,7 +354,6 @@ stopListeningAt timestamp label reasonDetail session =
       , diagnostics = recordEntry stopEntry session.diagnostics
       , recognitionStatusOverride = idleRecognitionStatusOverride
       , activeRecognitionPath = Nothing
-      , currentIntervalWordStats = emptyWordStats
       }
 
 toPersistedData :: Session -> PersistedData

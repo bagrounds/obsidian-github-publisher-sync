@@ -1,4 +1,15 @@
 import { test, expect, type Page } from "@playwright/test"
+import { readFileSync } from "fs"
+import { resolve, dirname } from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const wordMeterVersion = readFileSync(
+  resolve(__dirname, "../../purs-ps/src/WordMeter/Version.purs"),
+  "utf-8",
+).match(/version = "(.+)"/)?.[1] ?? "UNKNOWN"
 
 // Selector contract every Word Meter implementation must honor:
 //   wm-root          mounted container
@@ -25,7 +36,7 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
     await loadWordMeter(page)
     await expect(page.getByTestId("wm-root")).toBeVisible()
     await expect(page.getByTestId("wm-build")).toHaveText(/purescript/i)
-    await expect(page.getByTestId("wm-version")).toHaveText(/word meter \(purescript\) v0\.2\.0/i)
+    await expect(page.getByTestId("wm-version")).toHaveText(new RegExp(`word meter \\(purescript\\) v${wordMeterVersion.replace(/\./g, "\\.")}`, "i"))
   })
 
   test("starts idle with zero words", async ({ page }) => {
@@ -461,7 +472,7 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     await expect(drawer).not.toHaveAttribute("open", "")
     // The snapshot prefix is rendered into the content even while collapsed.
     await expect(page.getByTestId("wm-diagnostics-content")).toContainText("version")
-    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.2.0")
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText(wordMeterVersion)
   })
 
   test("clicking the summary expands the drawer", async ({ page }) => {

@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/QSIkHU-StEY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-23T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️⚖️👑 Brooks and Capehart on Trump's loyalty demands  
@@ -54,5 +58,5 @@ youtube: https://youtu.be/QSIkHU-StEY
   
 ### 🎨 Creatively Related  
   
-* The Righteous Mind by Jonathan Haidt investigates the moral foundations of political belief, helping to explain why different groups remain so entrenched in their ideological commitments.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt investigates the moral foundations of political belief, helping to explain why different groups remain so entrenched in their ideological commitments.  
 * The Death of Expertise by Tom Nichols discusses how the loss of public trust in specialized knowledge contributes to the broader volatility seen in modern political discourse.

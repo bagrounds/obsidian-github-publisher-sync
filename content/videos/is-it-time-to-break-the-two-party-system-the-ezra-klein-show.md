@@ -9,6 +9,10 @@ Platform:
 Channel: The Ezra Klein Show
 tags:
 youtube: https://youtu.be/cWN4Gsk9Ms0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-23T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show  

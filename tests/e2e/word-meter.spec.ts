@@ -1,6 +1,10 @@
 import { test, expect, type Page } from "@playwright/test"
 import { readFileSync } from "fs"
-import { resolve } from "path"
+import { resolve, dirname } from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const wordMeterVersion = readFileSync(
   resolve(__dirname, "../../purs-ps/src/WordMeter/Version.purs"),

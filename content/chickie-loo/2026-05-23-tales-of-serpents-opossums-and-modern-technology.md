@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-23T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-24T09:45:23
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-22-life-lessons-from-the-coop-and-the-pasture.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-22-life-lessons-from-the-coop-and-the-pasture.md) [⏭️](./2026-05-24-a-week-of-roots-and-new-beginnings.md)  
 # 2026-05-23 | 🐔 🐣 Tales of Serpents, Opossums, and Modern Technology 🐔  
 ![chickie-loo-2026-05-23-tales-of-serpents-opossums-and-modern-technology](../chickie-loo-2026-05-23-tales-of-serpents-opossums-and-modern-technology.jpg)  
   

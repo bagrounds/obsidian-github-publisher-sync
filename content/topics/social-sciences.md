@@ -10,7 +10,7 @@ force_analyze_links: false
 image_date: 2026-04-10T08:36:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, isometric illustration featuring a central, glowing glass sphere containing a complex network of interconnected nodes and lines, representing human connectivity. Surrounding the sphere are stylized, floating icons representing the various social sciences: a miniature marble column for history, a geometric brain for psychology, a stylized bar chart for economics, a globe for geography, and a magnifying glass for sociology. The color palette is a sophisticated blend of deep navy blue, soft teal, and warm gold accents. The background is a clean, off-white workspace with subtle, thin grid lines that suggest academic structure and data analysis. The lighting is soft and diffused, creating a sense of clarity, intellectual depth, and modern discovery."
-updated: 2026-05-23T13:43:37
+updated: 2026-05-24T19:42:23
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  

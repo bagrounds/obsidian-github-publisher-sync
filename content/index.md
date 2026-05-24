@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-24T14:38:52-07:00
+updated: 2026-05-24T15:10:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-24T14:38:52-07:00
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
   
   
-## [📺 Videos](./videos/index.md) (850)  
+## [📺 Videos](./videos/index.md) (851)  
+- [⚖️➡️🗳️ From Federalist Society to Democrat: George Conway's Political Reckoning](./videos/from-federalist-society-to-democrat-george-conways-political-reckoning.md)  
 - [🗣️🎙️🏛️ AOC in Conversation with David Axelrod](./videos/aoc-in-conversation-with-david-axelrod.md)  
 - [🗣️⚖️👑 Brooks and Capehart on Trump's loyalty demands](./videos/brooks-and-capehart-on-trumps-loyalty-demands.md)  
 - [🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show](./videos/is-it-time-to-break-the-two-party-system-the-ezra-klein-show.md)  
-- [🥱📺 There's Nothing Special About Stephen Colbert's Final Monologue At «The Late Show»](./videos/theres-nothing-special-about-stephen-colberts-final-monologue-at-the-late-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-24T14:38:52-07:00
+updated: 2026-05-24T15:10:28-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (850)  
+# 📺 Videos (851)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -220,6 +220,7 @@ updated: 2026-05-24T14:38:52-07:00
 - [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
 - [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
+- [⚖️➡️🗳️ From Federalist Society to Democrat: George Conway's Political Reckoning](./from-federalist-society-to-democrat-george-conways-political-reckoning.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./from-ides-to-ai-agents-with-steve-yegge.md)  
 - [🌳🍎❓🛠️ Fruit Tree Care Troubleshooting](./fruit-tree-care-troubleshooting.md)  
 - [🍏🌳✅✂️ Fruit Tree selection and pruning](./fruit-tree-selection-and-pruning.md)  

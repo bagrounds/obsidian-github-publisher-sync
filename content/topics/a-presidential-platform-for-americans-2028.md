@@ -11,6 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+updated: 2026-05-25T13:20:53
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028  
@@ -185,4 +186,12 @@ link_analysis_version: "2"
 ## [📚 Books](../books/index.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)  
 - [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md)  
-- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)
+- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmokzzde5a2s" data-bluesky-cid="bafyreie6gwl7qwvs5k6bzkaqwf4ce5jk7mt7n2slor3ebjolssxaxmzshq"><p>🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028  
+  
+#AI Q: 🚀 Which government program would most improve your daily life?  
+  
+🏦 Modern Monetary Theory | 💼 Job Guarantee | 📱 Public Digital Infrastructure | 🍩 Sustainable Economics  
+https://bagrounds.org/topics/a-presidential-platform-for-americans-2028</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmokzzde5a2s?ref_src=embed">2026-05-25T13:21:00.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

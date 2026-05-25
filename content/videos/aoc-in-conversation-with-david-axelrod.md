@@ -9,6 +9,10 @@ Platform:
 Channel: UChicago Institute of Politics
 tags:
 youtube: https://youtu.be/nbzYO_e9xnw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-24T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️🎙️🏛️ AOC in Conversation with David Axelrod  
@@ -45,7 +49,7 @@ youtube: https://youtu.be/nbzYO_e9xnw
   
 ### ↔️ Similar  
   
-* Capital in the Twenty-First Century by Thomas Piketty examines the long-term history of wealth concentration and the dynamics of economic inequality.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty examines the long-term history of wealth concentration and the dynamics of economic inequality.  
 * The Price of Inequality by Joseph Stiglitz explores how the current economic system undermines democratic processes and societal growth.  
   
 ### 🆚 Contrasting  

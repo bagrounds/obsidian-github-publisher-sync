@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-23T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-24T11:38:31
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint.md) [⏭️](./2026-05-24-the-architects-of-meaning-weaving-humility-reflection-and-flourishing.md)  
 # 2026-05-23 | 🔀 🌐 The Ethical Horizon: From Relentless Optimization to Rooted Integrity 🔀  
 ![convergence-2026-05-23-the-ethical-horizon-from-relentless-optimization-to-rooted-integrity](../convergence-2026-05-23-the-ethical-horizon-from-relentless-optimization-to-rooted-integrity.jpg)  
   

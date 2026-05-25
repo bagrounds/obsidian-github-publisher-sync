@@ -10,6 +10,8 @@ image_date: 2026-04-08T17:33:34Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, flat-style illustration featuring a sleek hourglass centered on a clean, soft-toned background. The hourglass is stylized with two distinct, glowing bands of color—a vibrant teal representing the tight P5 lower bound and a warm amber representing the broader P95 upper bound. Floating around the hourglass are small, abstract geometric shapes (circles and squares) representing data points, some perfectly aligned within the colored bands and a few scattered slightly outside to symbolize calibration and outliers. The aesthetic is clean, professional, and modern, using a limited color palette of navy, slate, teal, and amber to evoke a sense of precision, analytical thinking, and effective time management. There is subtle lighting that casts a soft shadow, giving the composition depth while maintaining a focus on the concept of probabilistic estimation.
 link_analysis_version: "2"
+URL: https://bagrounds.org/topics/a-method-for-estimating-work
+updated: 2026-05-25T11:36:27
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ⏱️📊 A Method For Estimating Work  
@@ -69,3 +71,11 @@ Observing how our completed task durations differ from our estimates informs how
     2. invites collaborative planning. Improving a plan is often faster, easier, cheaper, and feasible compared to improving a completed task.  
     3. produces a reference plan that someone else may use for a similar task in the future.  
     4. highlights processes that may be learned from or improved upon  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmof7a2v6u2c" data-bluesky-cid="bafyreifwzxf6pemn5uesyex75h2zosfgb4rcgr4chhyvrz5kjxav2x2lbu"><p>⏱️📊 A Method For Estimating Work  
+  
+#AI Q: 🗓️ How often do you underestimate how long a project will take?  
+  
+Selection:*  
+https://bagrounds.org/topics/a-method-for-estimating-work</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmof7a2v6u2c?ref_src=embed">2026-05-25T11:36:33.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

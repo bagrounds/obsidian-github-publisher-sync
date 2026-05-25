@@ -9,6 +9,10 @@ Platform:
 Channel: Katie Couric
 tags:
 youtube: https://youtu.be/kV-qrG-ODpE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-24T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚖️➡️🗳️ From Federalist Society to Democrat: George Conway's Political Reckoning  
@@ -49,7 +53,7 @@ youtube: https://youtu.be/kV-qrG-ODpE
 ### 🆚 Contrasting  
   
 * The Hillbilly Elegy by J.D. Vance offers a perspective on the economic and cultural resentments felt by the working-class voters who often form the core of populist support.  
-* The Righteous Mind by Jonathan Haidt provides insights into the moral foundations of different political ideologies, explaining why people hold such divergent views on authority and loyalty.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt provides insights into the moral foundations of different political ideologies, explaining why people hold such divergent views on authority and loyalty.  
   
 ### 🎨 Creatively Related  
   

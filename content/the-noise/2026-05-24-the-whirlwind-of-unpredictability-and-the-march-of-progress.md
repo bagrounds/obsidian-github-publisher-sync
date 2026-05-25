@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-23-navigating-the-crossroads-of-geopolitics-ai-drift-and-climate-alarms.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-23-navigating-the-crossroads-of-geopolitics-ai-drift-and-climate-alarms.md) [⏭️](./2026-05-25-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
 # 2026-05-24 | 📰 🌪️ The Whirlwind of Unpredictability and the March of Progress 📰  
 ![the-noise-2026-05-24-the-whirlwind-of-unpredictability-and-the-march-of-progress](../the-noise-2026-05-24-the-whirlwind-of-unpredictability-and-the-march-of-progress.jpg)  
   

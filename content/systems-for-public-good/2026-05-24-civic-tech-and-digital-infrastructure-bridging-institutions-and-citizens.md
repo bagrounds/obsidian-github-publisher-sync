@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-23-public-financial-institutions-architects-of-real-wealth.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-23-public-financial-institutions-architects-of-real-wealth.md) [⏭️](./2026-05-25-the-human-operating-system-for-digital-democracy.md)  
 # 2026-05-24 | 🏛️ 💻 Civic Tech and Digital Infrastructure: Bridging Institutions and Citizens 🏛️  
 ![systems-for-public-good-2026-05-24-civic-tech-and-digital-infrastructure-bridging-institutions-and-citizens](../systems-for-public-good-2026-05-24-civic-tech-and-digital-infrastructure-bridging-institutions-and-citizens.jpg)  
   

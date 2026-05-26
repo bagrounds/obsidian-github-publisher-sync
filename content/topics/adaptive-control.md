@@ -11,6 +11,7 @@ image_date: 2026-04-08T18:35:30Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-contrast illustration featuring a central, glowing human brain interconnected with complex mechanical gears and digital circuit pathways. The brain is depicted as a hub where organic neural networks seamlessly transition into geometric, metallic structures. Surrounding the center are translucent, shifting geometric shapes—like prisms and cubes—that appear to be morphing in real-time, representing dynamic adjustment. A subtle, glowing feedback loop pulse emanates from the center, casting soft light onto the surrounding intricate components. The color palette uses deep navy and charcoal backgrounds contrasted with vibrant cyan, electric purple, and warm amber highlights, evoking a sense of high-tech intelligence, precision, and fluid adaptability. The composition is clean, modern, and symmetrical, emphasizing the balance between biological intuition and algorithmic control.
 link_analysis_version: "2"
+updated: 2026-05-26T09:18:23
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md)  
 # ⚙️🧠🔄 Adaptive Control  
@@ -45,4 +46,12 @@ Here are some influential and accessible books on Adaptive Control:
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmqnxcufzs2u" data-bluesky-cid="bafyreibwjgaj2psq34gtngubgibf4si5zzo3xtbsi5ymfi3tl7vuc5yeom"><p>⚙️🧠🔄 Adaptive Control  
+  
+#AI Q: 🤖 Which everyday system adapts best to change?  
+  
+⚡ Electrical Engineering | 🕹️ Reinforcement Learning | 🛠️ Automation Theory  
+https://bagrounds.org/topics/adaptive-control</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmqnxcufzs2u?ref_src=embed">2026-05-26T09:18:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

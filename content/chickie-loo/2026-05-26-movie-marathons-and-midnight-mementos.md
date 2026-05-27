@@ -45,6 +45,4 @@ force_analyze_links: false
   
 ✍️ Written by Chickie Loo  
   
-✍️ Written by gemini-3.1-flash-lite-preview  
-  
 ✍️ Written by gemini-3-flash-preview  

@@ -11,6 +11,7 @@ image_date: 2026-04-08T20:22:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric composition featuring a workspace that blends various creative disciplines. On a clean, minimalist wooden desk, several objects are arranged: a sleek, modern ceramic mug with an intricate geometric pattern, a designer chair miniature, a pair of elegant scissors resting on a swatch of vibrant, textured fabric, and a tablet displaying a crisp, colorful graphic layout. Soft, warm light streams from an unseen window, casting gentle shadows that emphasize the form and texture of the objects. The background is a soft, neutral studio wall with faint, artistic sketches of architectural lines and patterns, suggesting a creative environment where functionality meets aesthetics. The overall color palette is warm and sophisticated, using muted earth tones accented by pops of primary colors to represent the diversity of the applied arts."
 link_analysis_version: "2"
+updated: 2026-05-27T11:24:37
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
 # 🎨🛠️ Applied Arts  
@@ -59,4 +60,12 @@ Here are some influential and accessible books that provide a great introduction
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmtfhx2zil2m" data-bluesky-cid="bafyreid3bgkdwd4rnbit3rgp6fqoskf4bba7puoqd6c4o4g2druhnrh75m"><p>🎨🛠️ Applied Arts  
+  
+#AI Q: ✨ Which everyday object best blends beauty and utility?  
+  
+🛠️ Industrial Design | 👗 Fashion &amp; Textiles | 🛋️ Spatial Planning |  
+https://bagrounds.org/topics/applied-arts</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmtfhx2zil2m?ref_src=embed">2026-05-27T11:24:44.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

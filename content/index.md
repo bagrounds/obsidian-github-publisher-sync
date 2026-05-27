@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-25T09:01:55-07:00
+updated: 2026-05-26T19:08:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-25T09:01:55-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (557)  
-- [2026-05-25](./reflections/2026-05-25.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (558)  
+- [2026-05-26](./reflections/2026-05-26.md)  
+- [2026-05-25 | 🌟 Progress 📰 Emerge 🤖 Architecture 🐔 Morning 🏛️ Human 🔀 Intentional. 🌟📰🤖🐔🏛️🔀 🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-25.md)  
 - [2026-05-24 | 🧮 Meter 🗣️ Conversation ⚖️ Reckoning, 🌉 Bridging 🌱 Beginnings to 🌟 Progress and 🧶 Weaving 🤖 Humility for the 🌍 World. 🧰📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-24.md)  
 - [2026-05-23 | 📰 Navigating 🗣️ demands to 💔 break the 🤖 End ⚙️ System, 🐔 Technology 🔀 Integrity 🌟 Progress, 🏛️ Wealth 🧒 Children. 📺📚🛍️🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-23.md)  
-- [2026-05-22 | 🧒 Children 🏗️ uncovered 🏞️ playgrounds that 💥 shock and 💔 crack 🎤 monologues, 🌟 strides, and 📚 lessons, revealing 🤖 restraint and 🔀 purpose through ❓ questionert 🏛️ myths. 📚📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-22.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (226)  
@@ -28,46 +28,46 @@ updated: 2026-05-25T09:01:55-07:00
 - [2026-05-18 | 📆 Word Meter Multi-Day Stats 📊](./ai-blog/2026-05-18-1-word-meter-multi-day-stats.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (76)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (77)  
+- [2026-05-26 | 🤖 The Internal Constitution 🤖](./auto-blog-zero/2026-05-26-the-internal-constitution.md)  
 - [2026-05-25 | 🤖 The Architecture of Deliberation 🤖](./auto-blog-zero/2026-05-25-the-architecture-of-deliberation.md)  
 - [2026-05-24 | 🤖 Weekly Recap: The Architecture of Humility 🤖](./auto-blog-zero/2026-05-24-weekly-recap-the-architecture-of-humility.md)  
 - [2026-05-23 | 🤖 The End of Optimization 🤖](./auto-blog-zero/2026-05-23-the-end-of-optimization.md)  
-- [2026-05-22 | 🤖 The Architecture of Restraint 🤖](./auto-blog-zero/2026-05-22-the-architecture-of-restraint.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (76)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (77)  
+- [2026-05-26 | 🐔 Movie Marathons and Midnight Mementos 🐔](./chickie-loo/2026-05-26-movie-marathons-and-midnight-mementos.md)  
 - [2026-05-25 | 🐔 A Monday Morning Reflection 🐔](./chickie-loo/2026-05-25-a-monday-morning-reflection.md)  
 - [2026-05-24 | 🐔 🌿 A Week of Roots and New Beginnings 🐔](./chickie-loo/2026-05-24-a-week-of-roots-and-new-beginnings.md)  
 - [2026-05-23 | 🐔 🐣 Tales of Serpents, Opossums, and Modern Technology 🐔](./chickie-loo/2026-05-23-tales-of-serpents-opossums-and-modern-technology.md)  
-- [2026-05-22 | 🐔 Life Lessons from the Coop and the Pasture 🐔](./chickie-loo/2026-05-22-life-lessons-from-the-coop-and-the-pasture.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (64)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (66)  
+- [2026-05-26 | 🏛️ 🧠 Cultivating the Digital Citizen: Beyond Participation to Impact 🏛️](./systems-for-public-good/2026-05-26-cultivating-the-digital-citizen-beyond-participation-to-impact.md)  
+- [2026-05-25 | 🏛️ 🧠 The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-05-25-the-human-operating-system-for-digital-democracy.md)  
 - [2026-05-24 | 🏛️ 💻 Civic Tech and Digital Infrastructure: Bridging Institutions and Citizens 🏛️](./systems-for-public-good/2026-05-24-civic-tech-and-digital-infrastructure-bridging-institutions-and-citizens.md)  
 - [2026-05-23 | 🏛️ Public Financial Institutions: Architects of Real Wealth 🏛️](./systems-for-public-good/2026-05-23-public-financial-institutions-architects-of-real-wealth.md)  
-- [2026-05-22 | 🏛️ Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./systems-for-public-good/2026-05-22-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
-- [2026-05-21 | 🏛️ 💰 Funding a Future of Deep Inclusion: Beyond Budgetary Myths 🏛️](./systems-for-public-good/2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (46)  
+## [📰 The Noise](./the-noise/index.md) (47)  
+- [2026-05-26 | 📰 Global Crossroads: From Hormuz to Human Rights, New Norms Emerge 📰](./the-noise/2026-05-26-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
 - [2026-05-25 | 📰 🌍 Global Crossroads: From Hormuz to Human Rights, New Norms Emerge 📰](./the-noise/2026-05-25-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
 - [2026-05-24 | 📰 🌪️ The Whirlwind of Unpredictability and the March of Progress 📰](./the-noise/2026-05-24-the-whirlwind-of-unpredictability-and-the-march-of-progress.md)  
 - [2026-05-23 | 📰 🌐 Navigating the Crossroads of Geopolitics, AI Drift, and Climate Alarms 📰](./the-noise/2026-05-23-navigating-the-crossroads-of-geopolitics-ai-drift-and-climate-alarms.md)  
-- [2026-05-22 | 📰 🌐 Shifting Sands of Diplomacy and Accelerating Tech Horizons 📰](./the-noise/2026-05-22-shifting-sands-of-diplomacy-and-accelerating-tech-horizons.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (45)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (46)  
+- [2026-05-26 | 🌟 ☀️ Dawn of Breakthroughs: Expanding Horizons in Science, Diplomacy, and Society 🌟](./positivity-bias/2026-05-26-dawn-of-breakthroughs-expanding-horizons-in-science-diplomacy-and-society.md)  
 - [2026-05-25 | 🌟 🌊 Waves of Progress: Discovery, Diplomacy, and Flourishing Communities 🌟](./positivity-bias/2026-05-25-waves-of-progress-discovery-diplomacy-and-flourishing-communities.md)  
 - [2026-05-24 | 🌟 Expanding Horizons: Diplomacy, Discovery, and a Greener World 🌟](./positivity-bias/2026-05-24-expanding-horizons-diplomacy-discovery-and-a-greener-world.md)  
 - [2026-05-23 | 🌟 ☀️ Threads of Progress: Unity, Ingenuity, and Renewed Purpose 🌟](./positivity-bias/2026-05-23-threads-of-progress-unity-ingenuity-and-renewed-purpose.md)  
-- [2026-05-22 | 🌟 🔬 Scientific Strides & Health Horizons 🌟](./positivity-bias/2026-05-22-scientific-strides-health-horizons.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (41)  
+## [🔀 Convergence](./convergence/index.md) (43)  
+- [2026-05-26 | 🔀 🌐 The Architectures of Being: Crafting Purpose, Sanctuary, and Self 🔀](./convergence/2026-05-26-the-architectures-of-being-crafting-purpose-sanctuary-and-self.md)  
+- [2026-05-25 | 🔀 🌐 The Rhythms of Deliberation: Balancing Intuition, Integrity, and Intentional Pause 🔀](./convergence/2026-05-25-the-rhythms-of-deliberation-balancing-intuition-integrity-and-intentional-pause.md)  
 - [2026-05-24 | 🔀 🌐 The Architects of Meaning: Weaving Humility, Reflection, and Flourishing 🔀](./convergence/2026-05-24-the-architects-of-meaning-weaving-humility-reflection-and-flourishing.md)  
 - [2026-05-23 | 🔀 🌐 The Ethical Horizon: From Relentless Optimization to Rooted Integrity 🔀](./convergence/2026-05-23-the-ethical-horizon-from-relentless-optimization-to-rooted-integrity.md)  
-- [2026-05-22 | 🔀 🌐 The Ethics of Inertia: When Purpose Guides Restraint 🔀](./convergence/2026-05-22-the-ethics-of-inertia-when-purpose-guides-restraint.md)  
-- [2026-05-21 | 🔀 🌐 The Calculus of Caution: When Friction Forges Trust 🔀](./convergence/2026-05-21-the-calculus-of-caution-when-friction-forges-trust.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,18 +77,18 @@ updated: 2026-05-25T09:01:55-07:00
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
   
   
-## [📺 Videos](./videos/index.md) (851)  
+## [📺 Videos](./videos/index.md) (852)  
+- [⚖️🛠️📈 This Simple Tool for Unrigging the Economy Is Spreading Your Town Could Be Next](./videos/this-simple-tool-for-unrigging-the-economy-is-spreading-your-town-could-be-next.md)  
 - [⚖️➡️🗳️ From Federalist Society to Democrat: George Conway's Political Reckoning](./videos/from-federalist-society-to-democrat-george-conways-political-reckoning.md)  
 - [🗣️🎙️🏛️ AOC in Conversation with David Axelrod](./videos/aoc-in-conversation-with-david-axelrod.md)  
 - [🗣️⚖️👑 Brooks and Capehart on Trump's loyalty demands](./videos/brooks-and-capehart-on-trumps-loyalty-demands.md)  
-- [🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show](./videos/is-it-time-to-break-the-two-party-system-the-ezra-klein-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
 - [⏱️📊 A Method For Estimating Work](./topics/a-method-for-estimating-work.md)  
 - [💻🔬 Computer Science](./topics/computer-science.md)  
-- [💻🌐<> Web Development](./topics/web-development.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-24-the-architects-of-meaning-weaving-humility-reflection-and-flourishing.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-24-the-architects-of-meaning-weaving-humility-reflection-and-flourishing.md) [⏭️](./2026-05-26-the-architectures-of-being-crafting-purpose-sanctuary-and-self.md)  
 # 2026-05-25 | 🔀 🌐 The Rhythms of Deliberation: Balancing Intuition, Integrity, and Intentional Pause 🔀  
 ![convergence-2026-05-25-the-rhythms-of-deliberation-balancing-intuition-integrity-and-intentional-pause](../convergence-2026-05-25-the-rhythms-of-deliberation-balancing-intuition-integrity-and-intentional-pause.jpg)  
   

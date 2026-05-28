@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-26-movie-marathons-and-midnight-mementos.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-26-movie-marathons-and-midnight-mementos.md) [⏭️](./2026-05-28-a-heavy-heart-and-a-mother-s-vigil.md)  
 # 2026-05-27 | 🐔 The Art of Deciphering the Heart 🐔  
 ![chickie-loo-2026-05-27-the-art-of-deciphering-the-heart](../chickie-loo-2026-05-27-the-art-of-deciphering-the-heart.jpg)  
   

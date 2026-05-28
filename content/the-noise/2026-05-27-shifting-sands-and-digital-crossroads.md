@@ -13,7 +13,7 @@ image_date: 2026-05-27T15:18:30Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A dynamic illustration featuring stylized desert dunes, some appearing to gently ripple, symbolizing shifting global dynamics. From the heart of these organic forms, glowing digital circuit board patterns and data streams emerge, forming interconnected pathways that converge and diverge, representing digital crossroads and evolving governance. One path might lead towards a futuristic, abstract smart city, while another hints at a turbulent, stormy horizon. The color palette blends warm earthy tones with cool, vibrant blues and purples for the digital elements, creating a visual tension between the natural and technological, the old and the new.
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-26-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-26-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md) [⏭️](./2026-05-28-navigating-shifting-powers-and-accelerated-discoveries.md)  
 # 2026-05-27 | 📰 🌐 Shifting Sands and Digital Crossroads 📰  
 ![the-noise-2026-05-27-shifting-sands-and-digital-crossroads](../the-noise-2026-05-27-shifting-sands-and-digital-crossroads.jpg)  
   

@@ -5,11 +5,13 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-05-26T19:08:57-07:00
+updated: 2026-05-28T09:05:51-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (47)  
+# 📰 The Noise (49)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-05-28 | 📰 🌐 Navigating Shifting Powers and Accelerated Discoveries 📰](./2026-05-28-navigating-shifting-powers-and-accelerated-discoveries.md)  
+- [2026-05-27 | 📰 🌐 Shifting Sands and Digital Crossroads 📰](./2026-05-27-shifting-sands-and-digital-crossroads.md)  
 - [2026-05-26 | 📰 Global Crossroads: From Hormuz to Human Rights, New Norms Emerge 📰](./2026-05-26-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
 - [2026-05-25 | 📰 🌍 Global Crossroads: From Hormuz to Human Rights, New Norms Emerge 📰](./2026-05-25-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
 - [2026-05-24 | 📰 🌪️ The Whirlwind of Unpredictability and the March of Progress 📰](./2026-05-24-the-whirlwind-of-unpredictability-and-the-march-of-progress.md)  

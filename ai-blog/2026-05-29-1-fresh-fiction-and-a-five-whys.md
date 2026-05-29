@@ -67,7 +67,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-29-1-fresh-fiction-and-a-five-whys
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* The Field Guide to Understanding Human Error by Sidney Dekker is relevant because it argues that human error is a symptom of deeper systemic conditions rather than a cause, which is exactly the lens this five-whys analysis took toward a missing process step instead of blaming the model.
+* The Field Guide to Understanding Human Error by Sidney Dekker is relevant because it frames human error as a symptom of deeper systemic conditions rather than a cause, mirroring how this analysis blamed a missing process step instead of the model.
 * The Toyota Way by Jeffrey Liker is relevant because the five-whys technique itself comes from Toyota's production system, and this post applies that same disciplined questioning to a software review miss.
 
 ### ↔️ Contrasting

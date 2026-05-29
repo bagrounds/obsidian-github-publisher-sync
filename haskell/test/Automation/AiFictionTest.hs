@@ -1,6 +1,9 @@
 module Automation.AiFictionTest (tests) where
 
-import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian)
+import Data.List (nub)
+import qualified Data.List.NonEmpty as NE
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian, addDays)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -13,6 +16,8 @@ import qualified Automation.Gemini as Gemini
 tests :: TestTree
 tests = testGroup "AiFiction"
   [ constantTests
+  , fictionModelPoolTests
+  , selectFictionModelChainTests
   , fictionEligibilityCutoffTests
   , stripForPromptTests
   , reflectionNeedsFictionTests
@@ -33,6 +38,59 @@ constantTests = testGroup "constants"
   , testCase "defaultFictionModel" $
       defaultFictionModel @?= Gemini.Gemini25Flash
   ]
+
+--------------------------------------------------------------------------------
+-- fictionModelPool
+--------------------------------------------------------------------------------
+
+fictionModelPoolTests :: TestTree
+fictionModelPoolTests = testGroup "fictionModelPool"
+  [ testCase "contains more than one model to rotate through" $
+      assertBool "pool has at least two models" (length (NE.toList fictionModelPool) >= 2)
+  , testCase "has no duplicate models" $
+      let models = NE.toList fictionModelPool
+      in length (nub models) @?= length models
+  , testCase "every pool model is a known Gemini text model" $
+      assertBool "all pool models are known" $
+        all (`elem` Gemini.knownModels) (NE.toList fictionModelPool)
+  , testCase "does not include the image-generation model" $
+      assertBool "no image model in pool" $
+        Gemini.Gemini31FlashImage `notElem` NE.toList fictionModelPool
+  ]
+
+--------------------------------------------------------------------------------
+-- selectFictionModelChain
+--------------------------------------------------------------------------------
+
+selectFictionModelChainTests :: TestTree
+selectFictionModelChainTests = testGroup "selectFictionModelChain"
+  [ testCase "chain contains every model in the pool (full fallback)" $
+      let chain = selectFictionModelChain (fromGregorian 2026 5 27) fictionModelPool
+      in nub (NE.toList chain) `sameElements` NE.toList fictionModelPool
+  , testCase "selection is deterministic for a given day" $
+      let day = fromGregorian 2026 5 27
+          a = selectFictionModelChain day fictionModelPool
+          b = selectFictionModelChain day fictionModelPool
+      in NE.head a @?= NE.head b
+  , testCase "consecutive days rotate to a different primary model" $
+      let d0 = fromGregorian 2026 5 27
+          d1 = fromGregorian 2026 5 28
+      in assertBool "different primary model on next day"
+           (NE.head (selectFictionModelChain d0 fictionModelPool)
+              /= NE.head (selectFictionModelChain d1 fictionModelPool))
+  , testCase "rotation cycles back after pool-length days" $
+      let poolLen = length (NE.toList fictionModelPool)
+          d0 = fromGregorian 2026 5 27
+          dCycle = addDays (toInteger poolLen) d0
+      in NE.head (selectFictionModelChain d0 fictionModelPool)
+           @?= NE.head (selectFictionModelChain dCycle fictionModelPool)
+  , testCase "single-model pool always selects that model" $
+      let pool = Gemini.Gemini25Flash :| []
+          chain = selectFictionModelChain (fromGregorian 2026 5 27) pool
+      in NE.toList chain @?= [Gemini.Gemini25Flash]
+  ]
+  where
+    sameElements xs ys = (length xs @?= length ys) >> assertBool "same elements" (all (`elem` ys) xs)
 
 --------------------------------------------------------------------------------
 -- fictionEligibilityCutoff

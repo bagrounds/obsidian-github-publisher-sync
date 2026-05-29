@@ -29,8 +29,7 @@ import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
 import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import qualified Automation.AiFiction as AiFiction
 import Automation.AiFiction
-  ( defaultFictionModel
-  , fictionEligibilityCutoff
+  ( fictionEligibilityCutoff
   , generateFiction
   , reflectionNeedsFiction
   )
@@ -419,8 +418,8 @@ tryFictionForDate context day = do
         then logMsg $ "  ⏭️  AI fiction already present for " <> dateText
         else do
           envModel <- lookupEnvText "FICTION_MODEL"
-          let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-              models = Gemini.overrideModelChain envModel defaultChain
+          let dayChain = AiFiction.selectFictionModelChain day AiFiction.fictionModelPool
+              models = Gemini.overrideModelChain envModel dayChain
 
           let config = AiFiction.FictionConfig
                 { AiFiction.models = models

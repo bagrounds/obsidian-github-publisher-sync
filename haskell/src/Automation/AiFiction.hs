@@ -1,6 +1,8 @@
 module Automation.AiFiction
   ( fictionSectionHeader
   , defaultFictionModel
+  , fictionModelPool
+  , selectFictionModelChain
   , fictionEligibilityCutoff
   , stripForPrompt
   , reflectionNeedsFiction
@@ -13,10 +15,12 @@ module Automation.AiFiction
   , FictionResult (FictionResult, fiction, model, updatedContent)
   ) where
 
-import Data.List.NonEmpty (NonEmpty)
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time (Day, LocalTime (..), TimeOfDay (..))
+import Data.Time.Calendar (toModifiedJulianDay)
 
 import Automation.Platform
   ( updatesSectionHeader
@@ -33,6 +37,37 @@ fictionSectionHeader = "## 🤖🐲 AI Fiction"
 
 defaultFictionModel :: Gemini.Model
 defaultFictionModel = Gemini.Gemini25Flash
+
+-- | The pool of models rotated through for fiction generation, one per day,
+-- so the quality and feel of different models can be compared over time.
+-- Every model in the pool also acts as a fallback for every other model, so
+-- a rate-limited or otherwise failing primary model still yields fiction.
+fictionModelPool :: NonEmpty Gemini.Model
+fictionModelPool =
+  Gemini.Gemini25Flash :|
+    [ Gemini.Gemini25FlashLite
+    , Gemini.Gemini31FlashLite
+    , Gemini.Gemini3Flash
+    , Gemini.Gemini20Flash
+    , Gemini.Gemma3
+    ]
+
+-- | Deterministically rotate the model pool by calendar day so each day picks
+-- a different primary model, cycling through the whole pool. The full pool is
+-- preserved as the fallback chain (primary first, then the rest), so on a
+-- rate-limit or failure the generator falls back across all models until one
+-- works. Because selection is a pure function of the day, re-runs for the same
+-- day pick the same primary model — keeping the model signature line
+-- deterministic.
+selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model
+selectFictionModelChain day pool =
+  let modelsList = NE.toList pool
+      count = length modelsList
+      offset = fromInteger (toModifiedJulianDay day `mod` toInteger count)
+      rotated = drop offset modelsList <> take offset modelsList
+  in case rotated of
+    (m : ms) -> m :| ms
+    []       -> pool
 
 fictionEligibilityCutoff :: Day -> LocalTime
 fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
@@ -83,21 +118,28 @@ reflectionNeedsFiction content = not (T.isInfixOf fictionSectionHeader content)
 
 buildFictionPrompt :: Text -> (Text, Text)
 buildFictionPrompt strippedContent =
-  let system = "You are a creative fiction writer. Your task is to:\n\
+  let system = "You are an inventive fiction writer crafting one tiny story per day.\n\
                \\n\
-               \1. Read the content from today's daily reflection note\n\
-               \2. Identify 2-4 abstract themes from the content\n\
-               \3. Write a short piece of engaging fiction (UNDER 100 words) inspired by those themes\n\
+               \Your task:\n\
+               \1. Read today's daily reflection note below\n\
+               \2. Find the SINGLE most distinctive thread in today's topics — the one image, tension, question, or detail that makes TODAY different from every other day\n\
+               \3. Write a short, vivid piece of fiction (UNDER 100 words) that grows out of that specific thread\n\
                \\n\
-               \RULES:\n\
-               \- Every sentence MUST begin with an emoji\n\
+               \VOICE AND VIBE:\n\
+               \- Write an engaging FIRST-PERSON narrative, or a tightly-scoped THIRD-PERSON narrative that stays close to a single character\n\
+               \- Ground it in a concrete scene: a real place, a specific moment, a character actually doing something\n\
+               \- Let the theme fall out of the specifics of today's topics so that each day feels unmistakably its own\n\
+               \- Favor sensory detail, a small narrative arc, and a distinct narrator over abstract, generic musing\n\
+               \- AVOID stale, interchangeable imagery (shifting sands, humming networks, woven tapestries, whispering winds, grand looms, glittering surfaces). Surprise the reader instead.\n\
+               \\n\
+               \FORMATTING RULES:\n\
+               \- Every sentence MUST begin with an emoji that fits that sentence\n\
                \- NEVER use quotation marks (no \", no ', no `, no curly quotes)\n\
-               \- Keep it under 100 words\n\
-               \- The fiction should be evocative and slightly philosophical\n\
-               \- Abstract the themes — do NOT directly reference the specific books, videos, or articles\n\
-               \- Do NOT include any heading or title — just the fiction text\n\
+               \- Keep it UNDER 100 words\n\
+               \- Do NOT name or directly quote the specific books, videos, articles, or people — transform them into the story\n\
+               \- Do NOT include any heading or title — output ONLY the fiction text\n\
                \- Output ONLY the fiction — no explanation, no theme list, no preamble"
-      user = "Write a short fiction piece inspired by themes from this daily reflection:\n\n" <> strippedContent
+      user = "Write today's short fiction, inspired by the most distinctive thread in this daily reflection:\n\n" <> strippedContent
   in (system, user)
 
 parseFictionResponse :: Text -> Text

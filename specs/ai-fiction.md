@@ -71,14 +71,16 @@ eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
 
 ## ✍️ Fiction Rules
 
-📝 The generated fiction passage follows strict formatting rules:
+📝 The generated fiction passage follows strict formatting and creative rules:
 
 | 📏 Rule | 📝 Detail |
 |---|---|
 | 🎯 Each sentence starts with an emoji | 🌟 The emoji reflects the sentence's mood or theme |
 | 🚫 No quotation marks | ❌ Neither single nor double quotes allowed |
 | 📐 Under 100 words | 🧮 The entire fiction passage must be concise |
-| 🌀 Themes abstracted from content | 🧠 Inspired by the day's reflection, not a literal summary |
+| 🧵 One distinctive daily thread | 🧠 The story grows out of the single most distinctive thread in the day's topics, so every day feels its own |
+| 🎙️ Engaging narrative voice | 👤 Written in first person, or tightly-scoped third person following one character, grounded in a concrete scene |
+| 🚫 No stale imagery | 🪐 Avoids interchangeable abstractions (shifting sands, humming networks, woven tapestries, whispering winds) |
 | ✍️ Model signature | 📌 `✍️ Written by {model}` appended after the fiction text |
 
 ## 🧹 Content Stripping
@@ -101,7 +103,9 @@ eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
 
 ## 🤖 Model Configuration
 
-- **Default model chain**: `gemini-2.5-flash` → `gemini-2.5-flash-lite` → `gemini-3.1-flash-lite-preview`
+- **Daily model rotation**: A different primary model is chosen each day from a pool of available text models, so the quality and feel of writing across models can be compared over time. Selection is a deterministic function of the calendar day (`selectFictionModelChain day fictionModelPool`), so re-runs for the same day pick the same primary model — keeping the `✍️ Written by {model}` signature line deterministic.
+- **Model pool**: `gemini-2.5-flash`, `gemini-2.5-flash-lite`, `gemini-3.1-flash-lite-preview`, `gemini-3-flash-preview`, `gemini-2.0-flash`, `gemma-3-27b-it`
+- **Full fallback chain**: The day's primary model is placed first, then the rest of the pool follows as fallbacks, so a rate-limited or otherwise failing model still yields fiction by falling back across all models until one works.
 - **Environment override**: `FICTION_MODEL` prepends a model to the chain when set
 - **Retry**: Exponential backoff (2s, 4s, 8s) on 5XX/429 errors, up to 3 retries per model
 - **Fallback**: On definitive failure, proceeds to the next model in the chain
@@ -113,6 +117,8 @@ eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `fictionEligibilityCutoff(day)` | 📅 Returns the `LocalTime` at which a reflection becomes eligible for fiction (10 PM Pacific on that day) |
+| `fictionModelPool` | 🎲 The pool of available text models rotated through for daily comparison |
+| `selectFictionModelChain(day, pool)` | 🔁 Deterministically rotate the pool by calendar day — primary model first, full pool as fallback |
 | `stripForPrompt(content)` | 🧹 Remove frontmatter and embed/updates sections from reflection content |
 | `reflectionNeedsFiction(content)` | 🛡️ Idempotency check — returns false if `## 🤖🐲 AI Fiction` already exists |
 | `buildFictionPrompt(strippedContent)` | 🧠 Construct structured Gemini prompt with fiction rules and themes |
@@ -143,6 +149,7 @@ eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
 
 🔬 Tests in `haskell/test/Automation/AiFictionTest.hs` covering:
 - 📅 `fictionEligibilityCutoff`: cutoff construction, eligibility semantics (10 PM eligible, before 10 PM not eligible, midnight-crossing eligible)
+- 🎲 `fictionModelPool` / `selectFictionModelChain`: pool integrity, deterministic per-day selection, daily rotation, full-pool fallback, cycle-back after pool-length days
 - 🧹 `stripForPrompt`: frontmatter removal, embed section removal, updates section removal, content preservation
 - 🛡️ `reflectionNeedsFiction`: detection of existing fiction section, fresh reflections
 - 🧠 `buildFictionPrompt`: prompt structure, fiction rules inclusion, content forwarding

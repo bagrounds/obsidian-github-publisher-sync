@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/sYA-z0Y8WRQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-28T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚀📉🎰 Did Elon Musk Just Rig the Stock Market  
@@ -49,10 +53,10 @@ A: A seasoning period is a required duration that a company must trade publicly 
   
 ### 🆚 Contrasting  
   
-* The Intelligent Investor by Benjamin Graham provides the foundational value-investing framework, emphasizing fundamental business analysis over market hype or speculative price trends.  
+* [🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing](../books/the-intelligent-investor.md) by Benjamin Graham provides the foundational value-investing framework, emphasizing fundamental business analysis over market hype or speculative price trends.  
 * Market Wizards by Jack D. Schwager compiles interviews with highly successful traders to illustrate how diverse strategies can profit from market inefficiencies and human emotion.  
   
 ### 🎨 Creatively Related  
   
-* The Big Short by Michael Lewis chronicles the systemic incentives and complex financial engineering that fueled the housing bubble and the subsequent 2008 economic collapse.  
+* [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md) by Michael Lewis chronicles the systemic incentives and complex financial engineering that fueled the housing bubble and the subsequent 2008 economic collapse.  
 * Elon Musk by Walter Isaacson offers an authorized look into the professional motivations and management style of the entrepreneur behind these ventures.

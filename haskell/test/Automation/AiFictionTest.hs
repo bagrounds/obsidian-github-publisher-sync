@@ -27,10 +27,6 @@ tests = testGroup "AiFiction"
   , propertyTests
   ]
 
---------------------------------------------------------------------------------
--- constants
---------------------------------------------------------------------------------
-
 constantTests :: TestTree
 constantTests = testGroup "constants"
   [ testCase "fictionSectionHeader" $
@@ -38,10 +34,6 @@ constantTests = testGroup "constants"
   , testCase "defaultFictionModel" $
       defaultFictionModel @?= Gemini.Gemini25Flash
   ]
-
---------------------------------------------------------------------------------
--- fictionModelPool
---------------------------------------------------------------------------------
 
 fictionModelPoolTests :: TestTree
 fictionModelPoolTests = testGroup "fictionModelPool"
@@ -57,10 +49,6 @@ fictionModelPoolTests = testGroup "fictionModelPool"
       assertBool "no image model in pool" $
         Gemini.Gemini31FlashImage `notElem` NE.toList fictionModelPool
   ]
-
---------------------------------------------------------------------------------
--- selectFictionModelChain
---------------------------------------------------------------------------------
 
 selectFictionModelChainTests :: TestTree
 selectFictionModelChainTests = testGroup "selectFictionModelChain"
@@ -94,10 +82,6 @@ selectFictionModelChainTests = testGroup "selectFictionModelChain"
       length xs @?= length ys
       assertBool "same elements" (all (`elem` ys) xs && all (`elem` xs) ys)
 
---------------------------------------------------------------------------------
--- fictionEligibilityCutoff
---------------------------------------------------------------------------------
-
 fictionEligibilityCutoffTests :: TestTree
 fictionEligibilityCutoffTests = testGroup "fictionEligibilityCutoff"
   [ testCase "cutoff for a mid-month day is that day at 22:00:00" $
@@ -130,10 +114,6 @@ fictionEligibilityCutoffTests = testGroup "fictionEligibilityCutoff"
         >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
         @?= False
   ]
-
---------------------------------------------------------------------------------
--- stripForPrompt
---------------------------------------------------------------------------------
 
 stripForPromptTests :: TestTree
 stripForPromptTests = testGroup "stripForPrompt"
@@ -173,10 +153,6 @@ stripForPromptTests = testGroup "stripForPrompt"
       in assertBool "result is empty or whitespace" (T.null (T.strip result))
   ]
 
---------------------------------------------------------------------------------
--- reflectionNeedsFiction
---------------------------------------------------------------------------------
-
 reflectionNeedsFictionTests :: TestTree
 reflectionNeedsFictionTests = testGroup "reflectionNeedsFiction"
   [ testCase "returns True when no fiction section" $
@@ -186,10 +162,6 @@ reflectionNeedsFictionTests = testGroup "reflectionNeedsFiction"
   , testCase "returns True for empty content" $
       reflectionNeedsFiction "" @?= True
   ]
-
---------------------------------------------------------------------------------
--- parseFictionResponse
---------------------------------------------------------------------------------
 
 parseFictionResponseTests :: TestTree
 parseFictionResponseTests = testGroup "parseFictionResponse"
@@ -215,10 +187,6 @@ parseFictionResponseTests = testGroup "parseFictionResponse"
       parseFictionResponse "" @?= ""
   ]
 
---------------------------------------------------------------------------------
--- buildFictionSignature
---------------------------------------------------------------------------------
-
 buildFictionSignatureTests :: TestTree
 buildFictionSignatureTests = testGroup "buildFictionSignature"
   [ testCase "formats model signature" $
@@ -226,10 +194,6 @@ buildFictionSignatureTests = testGroup "buildFictionSignature"
   , testCase "formats custom model" $
       buildFictionSignature "gpt-4" @?= "\n\n✍️ Written by gpt-4"
   ]
-
---------------------------------------------------------------------------------
--- applyFiction
---------------------------------------------------------------------------------
 
 applyFictionTests :: TestTree
 applyFictionTests = testGroup "applyFiction"
@@ -269,10 +233,6 @@ applyFictionTests = testGroup "applyFiction"
       let result = applyFiction "" "Fiction" Nothing
       in assertBool "contains fiction" (T.isInfixOf "Fiction" result)
   ]
-
---------------------------------------------------------------------------------
--- property tests
---------------------------------------------------------------------------------
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"

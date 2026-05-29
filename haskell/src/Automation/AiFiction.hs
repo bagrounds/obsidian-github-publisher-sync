@@ -38,10 +38,6 @@ fictionSectionHeader = "## 🤖🐲 AI Fiction"
 defaultFictionModel :: Gemini.Model
 defaultFictionModel = Gemini.Gemini25Flash
 
--- | The pool of models rotated through for fiction generation, one per day,
--- so the quality and feel of different models can be compared over time.
--- Every model in the pool also acts as a fallback for every other model, so
--- a rate-limited or otherwise failing primary model still yields fiction.
 fictionModelPool :: NonEmpty Gemini.Model
 fictionModelPool =
   Gemini.Gemini25Flash :|
@@ -52,13 +48,6 @@ fictionModelPool =
     , Gemini.Gemma3
     ]
 
--- | Deterministically rotate the model pool by calendar day so each day picks
--- a different primary model, cycling through the whole pool. The full pool is
--- preserved as the fallback chain (primary first, then the rest), so on a
--- rate-limit or failure the generator falls back across all models until one
--- works. Because selection is a pure function of the day, re-runs for the same
--- day pick the same primary model — keeping the model signature line
--- deterministic.
 selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model
 selectFictionModelChain day pool =
   let modelsList = NE.toList pool

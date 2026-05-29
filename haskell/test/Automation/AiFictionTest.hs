@@ -1,6 +1,9 @@
 module Automation.AiFictionTest (tests) where
 
-import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian)
+import Data.List (nub)
+import qualified Data.List.NonEmpty as NE
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian, addDays)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -13,6 +16,8 @@ import qualified Automation.Gemini as Gemini
 tests :: TestTree
 tests = testGroup "AiFiction"
   [ constantTests
+  , fictionModelPoolTests
+  , selectFictionModelChainTests
   , fictionEligibilityCutoffTests
   , stripForPromptTests
   , reflectionNeedsFictionTests
@@ -22,10 +27,6 @@ tests = testGroup "AiFiction"
   , propertyTests
   ]
 
---------------------------------------------------------------------------------
--- constants
---------------------------------------------------------------------------------
-
 constantTests :: TestTree
 constantTests = testGroup "constants"
   [ testCase "fictionSectionHeader" $
@@ -34,9 +35,52 @@ constantTests = testGroup "constants"
       defaultFictionModel @?= Gemini.Gemini25Flash
   ]
 
---------------------------------------------------------------------------------
--- fictionEligibilityCutoff
---------------------------------------------------------------------------------
+fictionModelPoolTests :: TestTree
+fictionModelPoolTests = testGroup "fictionModelPool"
+  [ testCase "contains more than one model to rotate through" $
+      assertBool "pool has at least two models" (length (NE.toList fictionModelPool) >= 2)
+  , testCase "has no duplicate models" $
+      let models = NE.toList fictionModelPool
+      in length (nub models) @?= length models
+  , testCase "every pool model is a known Gemini text model" $
+      assertBool "all pool models are known" $
+        all (`elem` Gemini.knownModels) (NE.toList fictionModelPool)
+  , testCase "does not include the image-generation model" $
+      assertBool "no image model in pool" $
+        Gemini.Gemini31FlashImage `notElem` NE.toList fictionModelPool
+  ]
+
+selectFictionModelChainTests :: TestTree
+selectFictionModelChainTests = testGroup "selectFictionModelChain"
+  [ testCase "chain contains every model in the pool (full fallback)" $
+      let chain = selectFictionModelChain (fromGregorian 2026 5 27) fictionModelPool
+      in nub (NE.toList chain) `sameElements` NE.toList fictionModelPool
+  , testCase "selection is deterministic for a given day" $
+      let day = fromGregorian 2026 5 27
+          a = selectFictionModelChain day fictionModelPool
+          b = selectFictionModelChain day fictionModelPool
+      in NE.head a @?= NE.head b
+  , testCase "consecutive days rotate to a different primary model" $
+      let d0 = fromGregorian 2026 5 27
+          d1 = fromGregorian 2026 5 28
+      in assertBool "different primary model on next day"
+           (NE.head (selectFictionModelChain d0 fictionModelPool)
+              /= NE.head (selectFictionModelChain d1 fictionModelPool))
+  , testCase "rotation cycles back after pool-length days" $
+      let poolLen = length (NE.toList fictionModelPool)
+          d0 = fromGregorian 2026 5 27
+          dCycle = addDays (toInteger poolLen) d0
+      in NE.head (selectFictionModelChain d0 fictionModelPool)
+           @?= NE.head (selectFictionModelChain dCycle fictionModelPool)
+  , testCase "single-model pool always selects that model" $
+      let pool = Gemini.Gemini25Flash :| []
+          chain = selectFictionModelChain (fromGregorian 2026 5 27) pool
+      in NE.toList chain @?= [Gemini.Gemini25Flash]
+  ]
+  where
+    sameElements xs ys = do
+      length xs @?= length ys
+      assertBool "same elements" (all (`elem` ys) xs && all (`elem` xs) ys)
 
 fictionEligibilityCutoffTests :: TestTree
 fictionEligibilityCutoffTests = testGroup "fictionEligibilityCutoff"
@@ -70,10 +114,6 @@ fictionEligibilityCutoffTests = testGroup "fictionEligibilityCutoff"
         >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
         @?= False
   ]
-
---------------------------------------------------------------------------------
--- stripForPrompt
---------------------------------------------------------------------------------
 
 stripForPromptTests :: TestTree
 stripForPromptTests = testGroup "stripForPrompt"
@@ -113,10 +153,6 @@ stripForPromptTests = testGroup "stripForPrompt"
       in assertBool "result is empty or whitespace" (T.null (T.strip result))
   ]
 
---------------------------------------------------------------------------------
--- reflectionNeedsFiction
---------------------------------------------------------------------------------
-
 reflectionNeedsFictionTests :: TestTree
 reflectionNeedsFictionTests = testGroup "reflectionNeedsFiction"
   [ testCase "returns True when no fiction section" $
@@ -126,10 +162,6 @@ reflectionNeedsFictionTests = testGroup "reflectionNeedsFiction"
   , testCase "returns True for empty content" $
       reflectionNeedsFiction "" @?= True
   ]
-
---------------------------------------------------------------------------------
--- parseFictionResponse
---------------------------------------------------------------------------------
 
 parseFictionResponseTests :: TestTree
 parseFictionResponseTests = testGroup "parseFictionResponse"
@@ -155,10 +187,6 @@ parseFictionResponseTests = testGroup "parseFictionResponse"
       parseFictionResponse "" @?= ""
   ]
 
---------------------------------------------------------------------------------
--- buildFictionSignature
---------------------------------------------------------------------------------
-
 buildFictionSignatureTests :: TestTree
 buildFictionSignatureTests = testGroup "buildFictionSignature"
   [ testCase "formats model signature" $
@@ -166,10 +194,6 @@ buildFictionSignatureTests = testGroup "buildFictionSignature"
   , testCase "formats custom model" $
       buildFictionSignature "gpt-4" @?= "\n\n✍️ Written by gpt-4"
   ]
-
---------------------------------------------------------------------------------
--- applyFiction
---------------------------------------------------------------------------------
 
 applyFictionTests :: TestTree
 applyFictionTests = testGroup "applyFiction"
@@ -209,10 +233,6 @@ applyFictionTests = testGroup "applyFiction"
       let result = applyFiction "" "Fiction" Nothing
       in assertBool "contains fiction" (T.isInfixOf "Fiction" result)
   ]
-
---------------------------------------------------------------------------------
--- property tests
---------------------------------------------------------------------------------
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"

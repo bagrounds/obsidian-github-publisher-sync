@@ -90,7 +90,9 @@ selectFictionModelChainTests = testGroup "selectFictionModelChain"
       in NE.toList chain @?= [Gemini.Gemini25Flash]
   ]
   where
-    sameElements xs ys = (length xs @?= length ys) >> assertBool "same elements" (all (`elem` ys) xs)
+    sameElements xs ys = do
+      length xs @?= length ys
+      assertBool "same elements" (all (`elem` ys) xs && all (`elem` xs) ys)
 
 --------------------------------------------------------------------------------
 -- fictionEligibilityCutoff

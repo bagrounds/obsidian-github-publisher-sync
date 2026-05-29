@@ -29,7 +29,7 @@ mkTestContext = do
         }
   case mkAppContext manager "/tmp/vault" "/tmp/repo" (Secret "test-key") credentials of
     Right context -> pure context
-    Left err -> fail $ "Failed to create test context: " <> err
+    Left failure -> fail $ "Failed to create test context: " <> failure
 
 mkTestSeries :: Text -> AutoBlogSeries
 mkTestSeries seriesIdValue = AutoBlogSeries

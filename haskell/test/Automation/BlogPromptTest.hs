@@ -44,12 +44,12 @@ testSeriesMap = Map.fromList
 unsafeLookupSeries :: T.Text -> BlogSeriesConfig
 unsafeLookupSeries name = case lookupSeriesIn testSeriesMap name of
   Right config -> config
-  Left err -> error $ "Test setup failed: " <> T.unpack err
+  Left failure -> error $ "Test setup failed: " <> T.unpack failure
 
 unsafeMkSlug :: T.Text -> Slug
 unsafeMkSlug name = case mkSlug name of
   Right slug -> slug
-  Left err -> error $ "Test setup failed: " <> T.unpack err
+  Left failure -> error $ "Test setup failed: " <> T.unpack failure
 
 tests :: TestTree
 tests = testGroup "BlogPrompt"

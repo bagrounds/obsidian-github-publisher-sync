@@ -141,7 +141,7 @@ parseMastodonResponseTests = testGroup "Mastodon.parseMastodonResponse"
       let body = "{\"id\":\"123456\",\"url\":\"https://fosstodon.org/@user/123456\"}"
       in case Mastodon.parseMastodonResponse "hello" (toLBS body) of
            Right result -> Mastodon.postId result @?= "123456"
-           Left err -> fail $ "Expected Right, got: " <> show err
+           Left failure -> fail $ "Expected Right, got: " <> show failure
 
   , testCase "returns JsonParseError for invalid JSON" $
       case Mastodon.parseMastodonResponse "txt" (toLBS "not json") of

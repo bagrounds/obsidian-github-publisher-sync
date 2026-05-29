@@ -100,7 +100,7 @@ callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let config = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 2048 }
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
   case result of
-    Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
+    Left failure -> failTask $ "Gemini API error: " <> T.pack (show failure)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
 
 extractRecentCreativeTitles :: FilePath -> Text -> IO [Text]
@@ -178,7 +178,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
           result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
           case result of
-            Left err -> failTask $ "Blog generation failed: " <> T.pack (show err)
+            Left failure -> failTask $ "Blog generation failed: " <> T.pack (show failure)
             Right response -> do
               let rawText = stripCodeFences (Gemini.responseText response)
                   usedModel = Gemini.modelToText (Gemini.responseModel response)
@@ -230,7 +230,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
                       case imageResult of
                         Right _ -> logMsg $ "  🖼️  Image generated for " <> newPostFilename
-                        Left err -> logMsg $ "  ⚠️  Image generation failed for " <> newPostFilename <> ": " <> T.pack (show err)
+                        Left failure -> logMsg $ "  ⚠️  Image generation failed for " <> newPostFilename <> ": " <> T.pack (show failure)
 
                   case previousPost of
                     Just post -> updatePreviousPost (vaultDir </> T.unpack seriesId) post series newPostFilename
@@ -505,15 +505,15 @@ runDailyAnalytics context = do
       logMsg "✅ daily-analytics (disabled)"
     (Just propertyId, Just serviceAccountJson) -> do
       case GcpAuth.parseServiceAccountKey serviceAccountJson of
-        Left err -> do
-          logMsg $ "  ❌ Failed to parse service account key: " <> err
+        Left failure -> do
+          logMsg $ "  ❌ Failed to parse service account key: " <> failure
           logMsg "✅ daily-analytics (error)"
         Right serviceAccount -> do
           logMsg $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
           tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
           case tokenResult of
-            Left err -> do
-              logMsg $ "  ❌ Failed to get access token: " <> err
+            Left failure -> do
+              logMsg $ "  ❌ Failed to get access token: " <> failure
               logMsg "✅ daily-analytics (error)"
             Right accessToken -> do
               logMsg "  🔓 Access token obtained"
@@ -545,21 +545,21 @@ runDailyAnalytics context = do
                       pagesResult <- fetchAnalytics manager accessToken endpoint (GA.buildTopPagesRequestBody yesterdayText)
 
                       case (summaryResult, pagesResult) of
-                        (Left err, _) -> do
-                          logMsg $ "  ❌ Summary API error: " <> err
+                        (Left failure, _) -> do
+                          logMsg $ "  ❌ Summary API error: " <> failure
                           logMsg "✅ daily-analytics (error)"
-                        (_, Left err) -> do
-                          logMsg $ "  ❌ Top pages API error: " <> err
+                        (_, Left failure) -> do
+                          logMsg $ "  ❌ Top pages API error: " <> failure
                           logMsg "✅ daily-analytics (error)"
                         (Right summaryJson, Right pagesJson) -> do
                           logMsg $ "  📦 Summary response rows: " <> T.pack (show (GA.extractRowCount summaryJson))
                           logMsg $ "  📦 Pages response rows: " <> T.pack (show (GA.extractRowCount pagesJson))
                           case (GA.parseSummaryResponse summaryJson, GA.parseAnalyticsResponse pagesJson) of
-                            (Left err, _) -> do
-                              logMsg $ "  ❌ Parse summary error: " <> err
+                            (Left failure, _) -> do
+                              logMsg $ "  ❌ Parse summary error: " <> failure
                               logMsg "✅ daily-analytics (error)"
-                            (_, Left err) -> do
-                              logMsg $ "  ❌ Parse pages error: " <> err
+                            (_, Left failure) -> do
+                              logMsg $ "  ❌ Parse pages error: " <> failure
                               logMsg "✅ daily-analytics (error)"
                             (Right summary, Right pages) -> do
                               enrichedPages <- traverse (enrichPageMetricWithTitle vaultDir) pages
@@ -605,7 +605,7 @@ fetchAnalytics manager accessToken endpoint body = do
     200 ->
       case Json.eitherDecode responseBytes of
         Right val -> pure $ Right val
-        Left err -> pure $ Left $ "GA API JSON parse error: " <> T.pack err
+        Left failure -> pure $ Left $ "GA API JSON parse error: " <> T.pack failure
           <> " — response: " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 500 responseBytes))
     _ -> pure $ Left $ "GA API HTTP " <> T.pack (show status)
       <> ": " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 1000 responseBytes))

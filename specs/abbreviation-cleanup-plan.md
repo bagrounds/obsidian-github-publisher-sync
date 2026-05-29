@@ -59,9 +59,10 @@ runs the linter and the full test suite, and ships its own AI blog post. Pure re
 not change behavior, so the existing tests are the safety net — no new tests are required
 unless a rename surfaces a latent bug.
 
-1. **`err` → `failure`**: highest-impact, mechanical. Rename every `Left err` /
-   `Left failure` arm and any `err`-named bindings. Prefer domain-specific names where the
-   surrounding code already knows the kind of failure (parse, HTTP, extraction).
+1. ✅ **`err` → `failure`** (done): highest-impact, mechanical. Renamed every `Left err`
+   arm and every `err`-named binding across `haskell/src`, `haskell/app`, and
+   `haskell/test` to `failure`. Pure rename — all 2021 Haskell tests still pass and the
+   `-Werror` build is clean. Zero whole-word `err` identifiers remain.
 2. **`dir` → `directory`**: rename parameters and bindings such as `findMarkdownFiles dir`
    and `walkHtmlFiles dir`.
 3. **`msg` → `message`** and **`ctx` → `context`**: rename across source and tests.

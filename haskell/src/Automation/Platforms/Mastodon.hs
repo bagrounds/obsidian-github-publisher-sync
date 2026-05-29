@@ -163,15 +163,15 @@ post manager Credentials{..} statusText = do
         HttpCodeException status ("Mastodon API error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right body -> parseMastodonResponse statusText body
 
 parseMastodonResponse :: Text -> LBS.ByteString -> Either Error PostResult
 parseMastodonResponse fallbackText body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (JsonParseError (T.pack err))
+    Left failure -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case extractMastodonData fallbackText jsonValue of
-      Left err -> Left (ExtractionError (T.pack err))
+      Left failure -> Left (ExtractionError (T.pack failure))
       Right r -> Right r
 
 extractMastodonData :: Text -> Json.Value -> Either String PostResult
@@ -184,7 +184,7 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
       , url = url
       , content = fallbackText
       }
-    Left err -> Left (T.unpack err)
+    Left failure -> Left (T.unpack failure)
 
 deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager Credentials{..} statusId = do
@@ -203,7 +203,7 @@ deletePost manager Credentials{..} statusId = do
       throwIO $
         HttpCodeException status ("Mastodon delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right () -> Right ()
 
 fetchOEmbed :: Manager -> Text -> Text -> IO (Either Error Text)
@@ -218,15 +218,15 @@ fetchOEmbed manager instanceUrl statusUrl = do
         HttpCodeException status ("Mastodon oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right body -> fmap toDarkMode (parseOEmbedHtml body)
 
 parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (JsonParseError (T.pack err))
+    Left failure -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case withObject "oembed" (.: "html") jsonValue of
-      Left err -> Left (ExtractionError (T.pack err))
+      Left failure -> Left (ExtractionError (T.pack failure))
       Right html -> Right html
 
 toDarkMode :: Text -> Text

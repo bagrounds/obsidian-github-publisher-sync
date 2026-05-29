@@ -86,12 +86,12 @@ runTasksTests = testGroup "runTasks"
 taskErrorTests :: TestTree
 taskErrorTests = testGroup "TaskError"
   [ testCase "Show displays message without constructor" $ do
-      let err = TaskError "something went wrong"
-      show err @?= "something went wrong"
+      let failure = TaskError "something went wrong"
+      show failure @?= "something went wrong"
 
   , testCase "Show preserves unicode in message" $ do
-      let err = TaskError "Blog generation failed: ❌ rate limit"
-      show err @?= "Blog generation failed: ❌ rate limit"
+      let failure = TaskError "Blog generation failed: ❌ rate limit"
+      show failure @?= "Blog generation failed: ❌ rate limit"
 
   , testCase "failTask throws TaskError catchable as SomeException" $ do
       result <- try (failTask "test failure") :: IO (Either SomeException ())

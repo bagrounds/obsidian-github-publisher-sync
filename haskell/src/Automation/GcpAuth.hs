@@ -103,10 +103,10 @@ parseServiceAccountKey raw =
           case B64.decode rawBs of
             Right decodedBs -> case eitherDecodeStrict decodedBs of
               Right key -> Right key
-              Left err  -> Left $ "Failed to parse decoded base64 JSON: " <> T.pack err
-            Left err -> Left $ "Failed to parse JSON or base64: " <> T.pack (show err)
+              Left failure  -> Left $ "Failed to parse decoded base64 JSON: " <> T.pack failure
+            Left failure -> Left $ "Failed to parse JSON or base64: " <> T.pack (show failure)
   in case decoded of
-    Left err -> Left err
+    Left failure -> Left failure
     Right key
       | T.null (projectId key)   -> Left "Service account key must contain project_id"
       | T.null (clientEmail key) -> Left "Service account key must contain client_email"
@@ -124,7 +124,7 @@ decodePem pemText =
       bodyLines = filter (\l -> not (T.isPrefixOf "-----" l) && not (T.null (T.strip l))) textLines
       body = TE.encodeUtf8 (T.concat bodyLines)
   in case B64.decode body of
-    Left err -> Left $ "PEM base64 decode error: " <> T.pack err
+    Left failure -> Left $ "PEM base64 decode error: " <> T.pack failure
     Right bytes -> Right bytes
 
 parseDerPrivateKey :: ByteString -> Either Text PrivateKey
@@ -133,7 +133,7 @@ parseDerPrivateKey derBytes =
     Right key -> Right key
     Left _ -> case parsePkcs1Key derBytes of
       Right key -> Right key
-      Left err -> Left $ "Failed to parse private key (tried PKCS#8 and PKCS#1): " <> err
+      Left failure -> Left $ "Failed to parse private key (tried PKCS#8 and PKCS#1): " <> failure
 
 parsePkcs8Key :: ByteString -> Either Text PrivateKey
 parsePkcs8Key derBytes = do
@@ -247,7 +247,7 @@ createJwt claims privateKey =
       payload = base64UrlEncode $ encodeJwtPayload claims
       signingInput = header <> "." <> payload
   in case sign Nothing (Just SHA256) privateKey signingInput of
-    Left err  -> Left $ "RSA signing error: " <> T.pack (show err)
+    Left failure  -> Left $ "RSA signing error: " <> T.pack (show failure)
     Right sig -> Right $ signingInput <> "." <> base64UrlEncode sig
 
 getAccessToken :: Manager -> ServiceAccountKey -> IO (Either Text Text)
@@ -257,7 +257,7 @@ getAccessTokenWithScope :: Text -> Manager -> ServiceAccountKey -> IO (Either Te
 getAccessTokenWithScope scope manager serviceAccountKey = do
   now <- round <$> getPOSIXTime :: IO Int
   case parseRSAPrivateKey (privateKey serviceAccountKey) of
-    Left err -> pure $ Left err
+    Left failure -> pure $ Left failure
     Right privKey -> do
       let claims = JwtClaims
             { issuer    = clientEmail serviceAccountKey
@@ -267,7 +267,7 @@ getAccessTokenWithScope scope manager serviceAccountKey = do
             , expiresAt = now + jwtExpirationSeconds
             }
       case createJwt claims privKey of
-        Left err -> pure $ Left err
+        Left failure -> pure $ Left failure
         Right jwt -> do
           initialRequest <- parseRequest tokenEndpoint
           let httpReq = urlEncodedBody
@@ -279,7 +279,7 @@ getAccessTokenWithScope scope manager serviceAccountKey = do
           case status of
             200 ->
               case Json.eitherDecode (responseBody response) of
-                Left err -> pure $ Left $ "Token response parse error: " <> T.pack err
+                Left failure -> pure $ Left $ "Token response parse error: " <> T.pack failure
                 Right tokenResp -> pure $ Right $ accessToken tokenResp
             code -> pure $ Left $
               "Token endpoint returned status " <> T.pack (show code)

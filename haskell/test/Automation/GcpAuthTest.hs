@@ -21,11 +21,11 @@ parseServiceAccountKeyTests = testGroup "parseServiceAccountKey"
         Right key -> do
           projectId key @?= "my-project"
           clientEmail key @?= "test@test.iam.gserviceaccount.com"
-        Left err -> error ("Parse failed: " <> T.unpack err)
+        Left failure -> error ("Parse failed: " <> T.unpack failure)
   , testCase "rejects empty project_id" $
       let json = "{\"project_id\":\"\",\"client_email\":\"test@test.iam.gserviceaccount.com\",\"private_key\":\"key\"}"
       in case parseServiceAccountKey json of
-        Left err -> assertBool "contains project_id" (T.isInfixOf "project_id" err)
+        Left failure -> assertBool "contains project_id" (T.isInfixOf "project_id" failure)
         Right _ -> error "Should have failed"
   , testCase "rejects missing fields" $
       case parseServiceAccountKey "{}" of
@@ -41,7 +41,7 @@ parseRSAPrivateKeyTests = testGroup "parseRSAPrivateKey"
         Right _ -> error "Should have failed on empty input"
   , testCase "fails on invalid PEM" $
       case parseRSAPrivateKey "not a real key" of
-        Left err -> assertBool "contains error info" (not (T.null err))
+        Left failure -> assertBool "contains error info" (not (T.null failure))
         Right _ -> error "Should have failed on invalid PEM"
   , testCase "fails on truncated base64" $
       let badPem = "-----BEGIN PRIVATE KEY-----\nnotvalidbase64!\n-----END PRIVATE KEY-----"
@@ -51,7 +51,7 @@ parseRSAPrivateKeyTests = testGroup "parseRSAPrivateKey"
   , testCase "parses a well-formed PKCS#8 RSA key" $
       case parseRSAPrivateKey testPkcs8Key of
         Right _ -> pure ()
-        Left err -> error ("Failed to parse test key: " <> T.unpack err)
+        Left failure -> error ("Failed to parse test key: " <> T.unpack failure)
   ]
 
 scopeTests :: TestTree

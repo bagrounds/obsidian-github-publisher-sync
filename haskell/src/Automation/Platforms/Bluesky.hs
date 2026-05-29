@@ -154,15 +154,15 @@ createSession manager Credentials{..} = do
       throwIO $ HttpCodeException status ("Bluesky login error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (classifyException err)
+    Left failure   -> Left (classifyException failure)
     Right body -> parseSession body
 
 parseSession :: LBS.ByteString -> Either Error AtpSession
 parseSession body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (JsonParseError (T.pack err))
+    Left failure  -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case extractSession jsonValue of
-      Left err  -> Left (ExtractionError (T.pack err))
+      Left failure  -> Left (ExtractionError (T.pack failure))
       Right s   -> Right s
 
 extractSession :: Json.Value -> Either String AtpSession
@@ -290,11 +290,11 @@ uploadBlob manager AtpSession{..} contentType imageData = do
       throwIO $ HttpCodeException status ("Bluesky blob upload error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (classifyException err)
+    Left failure   -> Left (classifyException failure)
     Right body -> case eitherDecode @Json.Value body of
-      Left err  -> Left (JsonParseError (T.pack err))
+      Left failure  -> Left (JsonParseError (T.pack failure))
       Right jsonValue -> case withObject "blob response" (.: "blob") jsonValue of
-        Left err   -> Left (ExtractionError (T.pack err))
+        Left failure   -> Left (ExtractionError (T.pack failure))
         Right blob -> Right blob
 
 
@@ -307,7 +307,7 @@ post
 post manager creds postText maybeLinkCard = do
   sessionResult <- createSession manager creds
   case sessionResult of
-    Left err -> pure (Left err)
+    Left failure -> pure (Left failure)
     Right session -> createPost manager session postText maybeLinkCard
 
 createPost
@@ -323,7 +323,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
       facetValues = Json.Array (fmap encodeFacet facets)
   embedResult <- buildEmbed manager session maybeLinkCard
   case embedResult of
-    Left err -> pure (Left err)
+    Left failure -> pure (Left failure)
     Right maybeEmbed -> do
       let baseRecord =
             [ "$type" .= ("app.bsky.feed.post" :: Text)
@@ -356,7 +356,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
           throwIO $ HttpCodeException status ("Bluesky create post error: " <> show status)
         pure (responseBody response)
       pure $ case result of
-        Left err   -> Left (classifyException err)
+        Left failure   -> Left (classifyException failure)
         Right body -> parsePostResponse postText body
 
 buildEmbed
@@ -374,7 +374,7 @@ buildEmbed manager session (Just LinkCard{..}) = do
       blobResult <- uploadBlob manager session mimeType imageData
       pure (fmap Just blobResult)
   pure $ case thumbResult of
-    Left err -> Left err
+    Left failure -> Left failure
     Right maybeBlob ->
       let externalFields =
             [ "uri" .= unUrl uri
@@ -389,9 +389,9 @@ buildEmbed manager session (Just LinkCard{..}) = do
 parsePostResponse :: Text -> LBS.ByteString -> Either Error PostResult
 parsePostResponse postText body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (JsonParseError (T.pack err))
+    Left failure  -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case extractPostData postText jsonValue of
-      Left err  -> Left (ExtractionError (T.pack err))
+      Left failure  -> Left (ExtractionError (T.pack failure))
       Right r   -> Right r
 
 extractPostData :: Text -> Json.Value -> Either String PostResult
@@ -413,7 +413,7 @@ deletePost
 deletePost manager creds uri = do
   sessionResult <- createSession manager creds
   case sessionResult of
-    Left err -> pure (Left err)
+    Left failure -> pure (Left failure)
     Right session -> deleteRecord manager session uri
 
 deleteRecord :: Manager -> AtpSession -> Text -> IO (Either Error ())
@@ -440,7 +440,7 @@ deleteRecord manager AtpSession{..} uri = do
     when (status < 200 || status >= 300) $
       throwIO $ HttpCodeException status ("Bluesky delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right () -> Right ()
 
 parseAtUri :: Text -> (Text, Text)
@@ -468,15 +468,15 @@ fetchOEmbed manager postUrl = do
       throwIO $ HttpCodeException status ("Bluesky oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (classifyException err)
+    Left failure   -> Left (classifyException failure)
     Right body -> parseOEmbedHtml body
 
 parseOEmbedHtml :: LBS.ByteString -> Either Error EmbedResult
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (JsonParseError (T.pack err))
+    Left failure  -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case withObject "oembed" (.: "html") jsonValue of
-      Left err   -> Left (ExtractionError (T.pack err))
+      Left failure   -> Left (ExtractionError (T.pack failure))
       Right html -> Right (EmbedResult html)
 
 getEmbedHtml :: Manager -> OEmbedConfig -> Text -> IO Text
@@ -502,9 +502,9 @@ tryOEmbedWithRetry manager config postUrl attempt = do
     Left (HttpError 404 _)
       | attempt + 1 < maxAttempts config ->
           tryOEmbedWithRetry manager config postUrl (attempt + 1)
-    Left err -> do
+    Left failure -> do
       putStrLn $ "  ⚠️  Bluesky oEmbed failed after " <> show (attempt + 1)
-                   <> " attempts: " <> show err <> " — using placeholder link"
+                   <> " attempts: " <> show failure <> " — using placeholder link"
       pure (unUrl postUrl)
 
 toDarkMode :: Text -> Text

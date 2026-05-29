@@ -149,8 +149,8 @@ generateSocialPostText manager apiKey note platform = do
   questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
-    (Left err, _) -> pure (Left $ "Tags generation failed: " <> T.pack (show err))
-    (_, Left err) -> pure (Left $ "Question generation failed: " <> T.pack (show err))
+    (Left failure, _) -> pure (Left $ "Tags generation failed: " <> T.pack (show failure))
+    (_, Left failure) -> pure (Left $ "Question generation failed: " <> T.pack (show failure))
     (Right tagsResponse, Right questionResponse) -> do
       let tags = T.strip (Gemini.responseText tagsResponse)
           question = T.strip (Gemini.responseText questionResponse)
@@ -200,7 +200,7 @@ postToTwitterPlatform manager environmentConfig _note postText =
     Just creds -> do
       result <- Twitter.post manager creds postText
       case result of
-        Left err -> pure (Left $ "Twitter post failed: " <> T.pack (show err))
+        Left failure -> pure (Left $ "Twitter post failed: " <> T.pack (show failure))
         Right (tweetId, _tweetText) -> do
           embedHtml <- Twitter.getEmbedHtml manager tweetId (unSecret (Twitter.accessToken creds))
                          (unSecret (Twitter.apiKey creds)) (unSecret (Twitter.apiSecret creds))
@@ -225,7 +225,7 @@ postToBlueskyPlatform manager environmentConfig note postText =
             }
       result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
-        Left err -> pure (Left $ "Bluesky post failed: " <> T.pack (show err))
+        Left failure -> pure (Left $ "Bluesky post failed: " <> T.pack (show failure))
         Right blueskyPostResult -> do
           embedHtml <- Bluesky.getEmbedHtml manager Bluesky.defaultOEmbedConfig
                          (Bluesky.postUri blueskyPostResult)
@@ -243,7 +243,7 @@ postToMastodonPlatform manager environmentConfig _note postText =
     Just creds -> do
       result <- Mastodon.post manager creds postText
       case result of
-        Left err -> pure (Left $ "Mastodon post failed: " <> T.pack (show err))
+        Left failure -> pure (Left $ "Mastodon post failed: " <> T.pack (show failure))
         Right mpr -> do
           let postUrl = unUrl (Mastodon.url mpr)
               mInstance = Mastodon.extractInstanceUrl postUrl
@@ -333,9 +333,9 @@ postForPlatform :: Manager -> EnvironmentConfig -> Secret -> ContentNote -> Plat
 postForPlatform manager environmentConfig apiKey note platform = do
   postTextResult <- generateSocialPostText manager apiKey note platform
   case postTextResult of
-    Left err -> do
-      putStrLn $ "  ❌ " <> show platform <> " text generation failed: " <> T.unpack err
-      pure (Left err)
+    Left failure -> do
+      putStrLn $ "  ❌ " <> show platform <> " text generation failed: " <> T.unpack failure
+      pure (Left failure)
     Right postText -> do
       putStrLn $ "  📤 Posting to " <> show platform <> "..."
       result <- try (postToPlatform manager environmentConfig note postText platform)
@@ -345,9 +345,9 @@ postForPlatform manager environmentConfig apiKey note platform = do
           let errMsg = "Exception posting to " <> T.pack (show platform) <> ": " <> T.pack (show exc)
           putStrLn $ "  ❌ " <> T.unpack errMsg
           pure (Left errMsg)
-        Right (Left err) -> do
-          putStrLn $ "  ❌ " <> show platform <> ": " <> T.unpack err
-          pure (Left err)
+        Right (Left failure) -> do
+          putStrLn $ "  ❌ " <> show platform <> ": " <> T.unpack failure
+          pure (Left failure)
         Right (Right pr) -> do
           putStrLn $ "  ✅ " <> show platform <> " posted successfully"
           pure (Right pr)
@@ -432,8 +432,8 @@ tryRegenerateFile manager filePath = do
               TIO.writeFile filePath newContent
               putStrLn $ "  ✅ Regenerated: " <> filePath
               pure 1
-            Left err -> do
-              putStrLn $ "  ⚠️  oEmbed still failing for " <> filePath <> ": " <> show err
+            Left failure -> do
+              putStrLn $ "  ⚠️  oEmbed still failing for " <> filePath <> ": " <> show failure
               pure 0
         Nothing
           | Bluesky.needsDarkModeUpdate sectionContent -> do

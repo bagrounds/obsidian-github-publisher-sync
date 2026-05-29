@@ -205,14 +205,14 @@ generateAndSaveImage
 generateAndSaveImage manager provider notePath attachmentsDir content baseName = do
   promptResult <- resolvePrompt manager provider content
   case promptResult of
-    Left err -> do
-      putStrLn $ "⚠️ Failed to resolve prompt: " <> T.unpack err
+    Left failure -> do
+      putStrLn $ "⚠️ Failed to resolve prompt: " <> T.unpack failure
       pure $ ImageGenerationResult True Nothing Nothing Nothing
     Right prompt -> do
       imageResult <- generateImage manager provider prompt
       case imageResult of
-        Left err -> do
-          putStrLn $ "❌ Image generation failed: " <> T.unpack err
+        Left failure -> do
+          putStrLn $ "❌ Image generation failed: " <> T.unpack failure
           pure $ ImageGenerationResult True Nothing Nothing Nothing
         Right (imageData, mimeType) -> do
           let extension = mimeTypeToExtension mimeType
@@ -371,9 +371,9 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
           putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (filename candidate)
           let newResult = result { filesSkipped = filesSkipped result + 1 }
           processWithProviders manager config rest providerIdx newResult
-    Left err
-      | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
-          putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (providerName (ipcProvider provider)) <> ": " <> T.unpack err
+    Left failure
+      | isDailyQuotaError failure || isQuotaError failure || isProviderUnavailableError failure -> do
+          putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (providerName (ipcProvider provider)) <> ": " <> T.unpack failure
           let nextIdx = providerIdx + 1
           if nextIdx < length (backfillProviders config)
             then do
@@ -384,11 +384,11 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
               processWithProviders manager config (candidate : rest) nextIdx result
             else do
               putStrLn $ "🛑 All " <> show (length (backfillProviders config)) <> " providers exhausted"
-              pure result { errors = errors result <> [err] }
+              pure result { errors = errors result <> [failure] }
       | otherwise -> do
           putStrLn $ "❌ Error on " <> directoryLabel <> "/" <> T.unpack (filename candidate)
-                  <> ": " <> T.unpack err
-          let newResult = result { errors = errors result <> [err] }
+                  <> ": " <> T.unpack failure
+          let newResult = result { errors = errors result <> [failure] }
           processWithProviders manager config rest providerIdx newResult
 
 tryGenerate

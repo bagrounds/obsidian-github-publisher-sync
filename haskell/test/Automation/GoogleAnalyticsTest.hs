@@ -207,11 +207,11 @@ parseSummaryResponseTests = testGroup "parseSummaryResponse"
           assertBool "bounce rate close" (abs (bounceRate summary - 0.65) < 0.01)
           assertBool "pages per session close" (abs (pagesPerSession summary - 2.3) < 0.01)
           assertBool "duration close" (abs (averageSessionDuration summary - 154.5) < 0.01)
-        Left err -> error ("Parse failed: " <> T.unpack err)
+        Left failure -> error ("Parse failed: " <> T.unpack failure)
   , testCase "returns error for empty response (no rows)" $
       let json = Json.Object []
       in case parseSummaryResponse json of
-        Left err -> assertBool "mentions no data" (T.isInfixOf "No analytics data" err)
+        Left failure -> assertBool "mentions no data" (T.isInfixOf "No analytics data" failure)
         Right _ -> error "Expected Left for empty response"
   , testCase "returns error for API error response" $
       let json = Json.Object
@@ -221,9 +221,9 @@ parseSummaryResponseTests = testGroup "parseSummaryResponse"
                 ])
             ]
       in case parseSummaryResponse json of
-        Left err -> do
-          assertBool "mentions permission" (T.isInfixOf "permissions" err)
-          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" err)
+        Left failure -> do
+          assertBool "mentions permission" (T.isInfixOf "permissions" failure)
+          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" failure)
         Right _ -> error "Expected Left for error response"
   ]
 
@@ -259,12 +259,12 @@ parseAnalyticsResponseTests = testGroup "parseAnalyticsResponse"
               pagePageViews first @?= 50
               pageTitle first @?= Nothing
             [] -> error "Expected at least one page"
-        Left err -> error ("Parse failed: " <> T.unpack err)
+        Left failure -> error ("Parse failed: " <> T.unpack failure)
   , testCase "handles empty rows" $
       let json = Json.Object []
       in case parseAnalyticsResponse json of
         Right pages -> length pages @?= 0
-        Left err -> error ("Parse failed: " <> T.unpack err)
+        Left failure -> error ("Parse failed: " <> T.unpack failure)
   ]
 
 requestBodyTests :: TestTree
@@ -337,9 +337,9 @@ checkForApiErrorTests = testGroup "checkForApiError"
                 ])
             ]
       in case checkForApiError json of
-        Left err -> do
-          assertBool "mentions permission" (T.isInfixOf "Permission denied" err)
-          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" err)
+        Left failure -> do
+          assertBool "mentions permission" (T.isInfixOf "Permission denied" failure)
+          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" failure)
         Right _ -> error "Expected Left for error response"
   , testCase "returns Right when no error field" $
       checkForApiError (Json.Object []) @?= Right ()

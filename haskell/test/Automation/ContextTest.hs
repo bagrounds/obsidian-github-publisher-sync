@@ -38,7 +38,7 @@ mkAppContextTests = testGroup "mkAppContext"
           repoRoot context @?= "/repo"
           geminiApiKey context @?= Secret "key"
           obsidianCredentials context @?= testObsidianCredentials
-        Left err -> fail $ "Expected Right, got Left: " <> err
+        Left failure -> fail $ "Expected Right, got Left: " <> failure
 
   , testCase "rejects empty vault directory" $
       case mkAppContext testManager "" "/repo" (Secret "key") testObsidianCredentials of
@@ -74,7 +74,7 @@ showTests = testGroup "Show"
           assertBool "Should contain <redacted>" ("<redacted>" `isInfixOf` shown)
           assertBool "Should contain obsidianCredentials" ("obsidianCredentials" `isInfixOf` shown)
           assertBool "Should NOT contain the secret" (not ("super-secret-key" `isInfixOf` shown))
-        Left err -> fail $ "Expected Right, got Left: " <> err
+        Left failure -> fail $ "Expected Right, got Left: " <> failure
   ]
 
 genNonEmptyPath :: QC.Gen FilePath

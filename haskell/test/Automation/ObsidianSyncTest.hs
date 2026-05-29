@@ -97,8 +97,8 @@ validatePrePushTests = testGroup "validatePrePushFileCount"
         writeFile (vaultFileCountPath dir) "200"
         result <- try (validatePrePushFileCount dir 195) :: IO (Either SomeException ())
         case result of
-          Left err -> assertBool "error mentions CIRCUIT BREAKER"
-            (T.isInfixOf "CIRCUIT BREAKER" (T.pack (show err)))
+          Left failure -> assertBool "error mentions CIRCUIT BREAKER"
+            (T.isInfixOf "CIRCUIT BREAKER" (T.pack (show failure)))
           Right _ -> assertBool "should have failed" False
   ]
 

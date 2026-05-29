@@ -13,6 +13,7 @@ image_date: 2026-04-09T06:39:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist illustration featuring a professional desk workspace. At the center, a sleek tablet displays a digital document with organized bar charts and a checklist. Beside it, a vintage magnifying glass rests on a notebook, symbolizing deep analysis and scrutiny. Surrounding the workspace are subtle, abstract geometric icons representing gears, lightbulbs, and data nodes, rendered in a soft, monochromatic blue and slate color palette. The lighting is bright and even, casting gentle shadows to add depth and a sense of clarity. The overall aesthetic is modern, analytical, and professional, conveying the process of building a structured evaluation system.
 link_analysis_version: "2"
+updated: 2026-05-29T23:43:38
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📊🧐📝⚙️ Design a Performance Self-Evaluation System  
@@ -172,3 +173,11 @@ FATAL    Enveloppe
   
 ### 🦟 The Bug  
 ![design-a-performance-self-evaluation-system](../../design-a-performance-self-evaluation-system.md)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mmzpppoc5z2g" data-bluesky-cid="bafyreifh5sdcisxckcenqf2zpqvkdwtyto2icmpx23ivonfdghk45zoivm"><p>📊🧐📝⚙️ Design a Performance Self-Evaluation System  
+  
+#AI Q: 📈 How often do you find performance reviews actually helpful?  
+  
+🦟 Bug Investigation | 🛠️ Obsidian Plugins | ⚙️ Workflow Automation | 💻  
+https://bagrounds.org/topics/design-a-performance-self-evaluation-system</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mmzpppoc5z2g?ref_src=embed">2026-05-29T23:44:00.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

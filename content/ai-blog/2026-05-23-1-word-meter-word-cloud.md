@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-24T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-20-1-word-meter-picture-in-picture.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-20-1-word-meter-picture-in-picture.md) [⏭️](./2026-05-29-1-fresh-fiction-and-a-five-whys.md)  
 # 2026-05-23 | ☁️ Word Meter Word Cloud 🔤  
 ![ai-blog-2026-05-23-1-word-meter-word-cloud](../ai-blog-2026-05-23-1-word-meter-word-cloud.jpg)  
   

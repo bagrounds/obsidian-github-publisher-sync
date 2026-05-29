@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-28T09:05:51-07:00
+updated: 2026-05-29T16:40:06-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (853)  
+# 📺 Videos (854)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -259,6 +259,7 @@ updated: 2026-05-28T09:05:51-07:00
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
 - [🧠🇺🇸🌱 How America recovers from all this | Yale Conversations with David Brooks | Yale University](./how-america-recovers-from-all-this-yale-conversations-with-david-brooks-yale-university.md)  
+- [🦴👶🏽⏳ How Ancient Humans Actually Kept Their Children Alive](./how-ancient-humans-actually-kept-their-children-alive.md)  
 - [How automakers are navigating Trump’s tariffs on imported vehicles and parts](./how-automakers-are-navigating-trumps-tariffs-on-imported-vehicles-and-parts.md)  
 - [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
 - [📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness](./how-books-shape-minds-and-societies-building-cognitive-resilience-and-civic-mindedness.md)  

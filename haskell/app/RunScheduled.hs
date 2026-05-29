@@ -100,8 +100,8 @@ main = do
       geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
       context <- case Context.mkAppContext manager vaultDir repoRoot geminiApiKey creds of
         Right ctx -> pure ctx
-        Left err -> do
-          TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
+        Left failure -> do
+          TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack failure
           exitFailure
       let runners = taskRunners context seriesMap runConfigs contentDirs discovered
       results <- runTasks runners tasks

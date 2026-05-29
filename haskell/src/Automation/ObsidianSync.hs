@@ -127,8 +127,8 @@ runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
       result <- try $ runObCommand args Nothing env :: IO (Either SomeException (String, String))
       case result of
         Right _ -> pure ()
-        Left err ->
-          let msg = show err
+        Left failure ->
+          let msg = show failure
               isLockContention = "Another sync instance" `T.isInfixOf` T.pack msg
               canRetry = attempt < maxRetries
           in case (isLockContention, canRetry) of
@@ -139,7 +139,7 @@ runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
               ensureSyncClean vaultDir
               threadDelay (delayMs * 1000)
               runAttempt (attempt + 1)
-            _ -> throwIO err
+            _ -> throwIO failure
 
 syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do

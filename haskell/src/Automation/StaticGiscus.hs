@@ -222,8 +222,8 @@ fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
   case status of
     200 ->
       case eitherDecode (responseBody response) of
-        Left err -> do
-          putStrLn $ "GraphQL parse error: " <> err
+        Left failure -> do
+          putStrLn $ "GraphQL parse error: " <> failure
           pure Nothing
         Right gqlResp ->
           case Gql.errors gqlResp of

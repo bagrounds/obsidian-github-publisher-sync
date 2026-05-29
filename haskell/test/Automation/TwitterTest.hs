@@ -105,24 +105,24 @@ classifyExceptionTests = testGroup "Twitter.classifyException"
 errorShowTests :: TestTree
 errorShowTests = testGroup "Error Show"
   [ testCase "HttpError shows status code and message" $
-      let err = Twitter.HttpError 429 "Rate limited"
+      let failure = Twitter.HttpError 429 "Rate limited"
       in assertBool "should contain 429" $
-           "429" `isInfixOfShow` err
+           "429" `isInfixOfShow` failure
 
   , testCase "JsonParseError shows parse details" $
-      let err = Twitter.JsonParseError "unexpected end of input"
+      let failure = Twitter.JsonParseError "unexpected end of input"
       in assertBool "should contain parse message" $
-           "unexpected end of input" `isInfixOfShow` err
+           "unexpected end of input" `isInfixOfShow` failure
 
   , testCase "ExtractionError shows field info" $
-      let err = Twitter.ExtractionError "key \"data\" not found"
+      let failure = Twitter.ExtractionError "key \"data\" not found"
       in assertBool "should contain field name" $
-           "data" `isInfixOfShow` err
+           "data" `isInfixOfShow` failure
 
   , testCase "NetworkError shows exception info" $
-      let err = Twitter.NetworkError "connection refused"
+      let failure = Twitter.NetworkError "connection refused"
       in assertBool "should contain error" $
-           "connection refused" `isInfixOfShow` err
+           "connection refused" `isInfixOfShow` failure
   ]
 
 -- ── Property Tests ────────────────────────────────────────────────────
@@ -157,4 +157,4 @@ toLBS :: String -> LBS.ByteString
 toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack
 
 isInfixOfShow :: String -> Twitter.Error -> Bool
-isInfixOfShow needle err = needle `isInfixOf` show err
+isInfixOfShow needle failure = needle `isInfixOf` show failure

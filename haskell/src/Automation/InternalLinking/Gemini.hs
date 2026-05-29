@@ -80,16 +80,16 @@ retryLoop manager apiKey model prompt attempt backoff = do
   case result of
     Right response ->
       pure (parseGeminiBookPaths (Gemini.responseText response))
-    Left err
-      | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
+    Left failure
+      | Gemini.isRateLimitError failure && attempt < maxGeminiRetries -> do
           putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
             <> " in " <> show (backoff `div` 1_000_000) <> "s"
           threadDelay backoff
           retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffMicroseconds)
-      | Gemini.isQuotaExhaustedError err ->
-          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
+      | Gemini.isQuotaExhaustedError failure ->
+          pure (Left ("QuotaExhausted: " <> T.pack (show failure)))
       | otherwise ->
-          pure (Left (T.pack (show err)))
+          pure (Left (T.pack (show failure)))
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =

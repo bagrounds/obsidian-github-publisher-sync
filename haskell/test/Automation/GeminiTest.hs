@@ -169,24 +169,24 @@ showErrorTests = testGroup "Show"
         (not (null (show Gemini.JsonParseError)))
 
   , testCase "Show nested AllModelsFailed contains model constructor" $
-      let err = Gemini.AllModelsFailed Gemini.Gemma3 (Gemini.ExtractionError "detail")
+      let failure = Gemini.AllModelsFailed Gemini.Gemma3 (Gemini.ExtractionError "detail")
       in assertBool "Show should contain model constructor"
-           ("Gemma3" `isInfixOf` show err)
+           ("Gemma3" `isInfixOf` show failure)
 
   , testCase "Show HttpError contains ApiStatus constructor" $
-      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
+      let failure = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
       in assertBool "Show should contain ResourceExhausted"
-           ("ResourceExhausted" `isInfixOf` show err)
+           ("ResourceExhausted" `isInfixOf` show failure)
 
   , testCase "Show HttpError contains status code" $
-      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
+      let failure = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
       in assertBool "Show should contain status code"
-           ("429" `isInfixOf` show err)
+           ("429" `isInfixOf` show failure)
 
   , testCase "Show HttpError contains message" $
-      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "rate limit exceeded"
+      let failure = Gemini.HttpError 429 Gemini.ResourceExhausted "rate limit exceeded"
       in assertBool "Show should contain message"
-           ("rate limit exceeded" `isInfixOf` show err)
+           ("rate limit exceeded" `isInfixOf` show failure)
   ]
 
 isRateLimitErrorTests :: TestTree
@@ -664,8 +664,8 @@ formatGroundingSourcesTests = testGroup "formatGroundingSources"
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "show always produces non-empty string" $
-      QC.forAll genError $ \err ->
-        not (null (show err))
+      QC.forAll genError $ \failure ->
+        not (null (show failure))
 
   , testProperty "HttpError with ResourceExhausted is always rate limited" $
       QC.forAll (T.pack <$> (QC.arbitrary :: QC.Gen String)) $ \message ->

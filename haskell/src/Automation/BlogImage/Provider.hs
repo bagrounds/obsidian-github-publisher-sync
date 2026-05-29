@@ -151,7 +151,7 @@ generateWithCloudflare manager apiToken accountId model prompt = do
 parseCloudflareResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseCloudflareResponse body =
   case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
+    Left failure -> Left (T.pack failure)
     Right (Json.Object obj) -> do
       success <- mapLeft T.pack (obj Json..: "success" :: Either String Bool)
       if not success
@@ -161,7 +161,7 @@ parseCloudflareResponse body =
             case lookup "image" resultObj of
               Just (Json.String b64) ->
                 case B64.decode (TE.encodeUtf8 b64) of
-                  Left err -> Left ("Base64 decode error: " <> T.pack err)
+                  Left failure -> Left ("Base64 decode error: " <> T.pack failure)
                   Right bs -> Right (LBS.fromStrict bs, "image/jpeg")
               _ -> Left "No image in Cloudflare response"
           _ -> Left "No result in Cloudflare response"
@@ -225,14 +225,14 @@ generateWithTogether manager apiKey model prompt = do
 parseTogetherResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseTogetherResponse body =
   case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
+    Left failure -> Left (T.pack failure)
     Right (Json.Object obj) ->
       case lookup "data" obj of
         Just (Json.Array (Json.Object item : _)) ->
           case lookup "b64_json" item of
             Just (Json.String b64) ->
               case B64.decode (TE.encodeUtf8 b64) of
-                Left err -> Left ("Base64 decode error: " <> T.pack err)
+                Left failure -> Left ("Base64 decode error: " <> T.pack failure)
                 Right bs -> Right (LBS.fromStrict bs, "image/jpeg")
             _ -> Left "No b64_json in Together response"
         _ -> Left "No data array in Together response"
@@ -296,14 +296,14 @@ generateWithImagen manager apiKey model prompt = do
 parseImagenResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseImagenResponse body =
   case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
+    Left failure -> Left (T.pack failure)
     Right (Json.Object obj) ->
       case lookup "predictions" obj of
         Just (Json.Array (Json.Object pred' : _)) ->
           case lookup "bytesBase64Encoded" pred' of
             Just (Json.String b64) ->
               case B64.decode (TE.encodeUtf8 b64) of
-                Left err -> Left ("Base64 decode error: " <> T.pack err)
+                Left failure -> Left ("Base64 decode error: " <> T.pack failure)
                 Right bs ->
                   let mime = case lookup "mimeType" pred' of
                         Just (Json.String m) -> m
@@ -341,7 +341,7 @@ generateWithGeminiContent manager apiKey model prompt = do
 parseGeminiImageResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseGeminiImageResponse body =
   case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
+    Left failure -> Left (T.pack failure)
     Right (Json.Object obj) ->
       case lookup "candidates" obj of
         Just (Json.Array (Json.Object cand : _)) ->
@@ -362,7 +362,7 @@ findInlineData (Json.Object partObj : rest) =
       case lookup "data" inlineObj of
         Just (Json.String b64) ->
           case B64.decode (TE.encodeUtf8 b64) of
-            Left err -> Left ("Base64 decode error: " <> T.pack err)
+            Left failure -> Left ("Base64 decode error: " <> T.pack failure)
             Right bs ->
               let mime = case lookup "mimeType" inlineObj of
                     Just (Json.String m) -> m
@@ -392,7 +392,7 @@ describeImageWithGemini manager apiKey model content = do
       fallbackResult <- Gemini.generateContent manager fallbackReq
       case fallbackResult of
         Right response -> pure $ Right (Gemini.responseText response)
-        Left err   -> pure $ Left (T.pack (show err))
+        Left failure   -> pure $ Left (T.pack (show failure))
 
 geminiModelFallback :: Gemini.Model -> Gemini.Model
 geminiModelFallback Gemini.Gemini3Flash       = Gemini.Gemini25Flash

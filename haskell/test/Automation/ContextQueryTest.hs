@@ -74,42 +74,42 @@ jsonParsingTests = testGroup "JSON parsing"
           result = parseContextQuery json
       in case result of
         Right query -> directories query @?= ["series-a", "series-b"]
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "parses orderBy as field name" $
       let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"limit\": 3}"
           result = parseContextQuery json
       in case result of
         Right query -> orderBy query @?= OrderBy Date Descending
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "parses ascending true" $
       let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"ascending\": true, \"limit\": 3}"
           result = parseContextQuery json
       in case result of
         Right query -> orderBy query @?= OrderBy Date Ascending
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "ascending false means descending" $
       let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"ascending\": false, \"limit\": 3}"
           result = parseContextQuery json
       in case result of
         Right query -> orderBy query @?= OrderBy Date Descending
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "parses limitPerSource" $
       let json = "{\"from\": [\"a\", \"b\"], \"limitPerSource\": 1}"
           result = parseContextQuery json
       in case result of
         Right query -> limitPerSource query @?= Just 1
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "defaults orderBy to filename descending" $
       let json = "{\"from\": [\"x\"], \"limit\": 3}"
           result = parseContextQuery json
       in case result of
         Right query -> orderBy query @?= OrderBy Filename Descending
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "accepts no limit and no limitPerSource" $
       let json = "{\"from\": [\"x\"]}"
@@ -118,14 +118,14 @@ jsonParsingTests = testGroup "JSON parsing"
         Right query -> do
           limit query @?= Nothing
           limitPerSource query @?= Nothing
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "parses where clause" $
       let json = "{\"from\": [\"x\"], \"where\": [{\"field\": \"date\", \"operator\": \">=\", \"value\": \"2026-04-01\"}], \"limit\": 5}"
           result = parseContextQuery json
       in case result of
         Right query -> conditions query @?= [WhereCondition Date GreaterOrEqual "2026-04-01"]
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "rejects invalid orderBy field" $
       let json = "{\"from\": [\"x\"], \"orderBy\": \"invalid\", \"limit\": 3}"
@@ -147,7 +147,7 @@ jsonParsingTests = testGroup "JSON parsing"
           result = parseContextQueryList json
       in case result of
         Right queries -> length queries @?= 2
-        Left err -> assertBool ("unexpected parse error: " <> err) False
+        Left failure -> assertBool ("unexpected parse error: " <> failure) False
 
   , testCase "parses empty array" $
       parseContextQueryList "[]" @?= Right []

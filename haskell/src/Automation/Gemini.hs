@@ -373,7 +373,7 @@ generateContent manager request = do
   case status of
     200 ->
       case (parseResponseText (responseBody response), Json.decode (responseBody response)) of
-        (Left err, _) -> pure $ Left err
+        (Left failure, _) -> pure $ Left failure
         (Right text, Nothing) -> pure $ Right Response
           { responseText             = T.strip text
           , responseModel            = model
@@ -401,8 +401,8 @@ generateContentWithFallback manager (model :| fallbacks) systemInstruction promp
     }
   case result of
     Right response -> pure $ Right response
-    Left err -> case fallbacks of
-      [] -> pure $ Left $ AllModelsFailed model err
+    Left failure -> case fallbacks of
+      [] -> pure $ Left $ AllModelsFailed model failure
       (next : rest) -> do
-        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed (" <> show err <> "), trying next fallback..."
+        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed (" <> show failure <> "), trying next fallback..."
         generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config

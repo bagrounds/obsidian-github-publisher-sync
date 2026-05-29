@@ -801,7 +801,7 @@ socialPostTests = testGroup "SocialPost"
       case mkTweet "Hello, world!" of
         Right (Tweet content) -> assertEqual "" "Hello, world!" content
         Right other -> assertBool ("expected Tweet, got: " <> show other) False
-        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+        Left failure -> assertBool ("unexpected rejection: " <> T.unpack failure) False
 
   , testCase "mkTweet rejects text over 280 chars" $
       let longText = T.replicate 281 "a"
@@ -813,7 +813,7 @@ socialPostTests = testGroup "SocialPost"
       case mkBlueskyPost "Hello from Bluesky!" of
         Right (BlueskyPost content) -> assertEqual "" "Hello from Bluesky!" content
         Right other -> assertBool ("expected BlueskyPost, got: " <> show other) False
-        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+        Left failure -> assertBool ("unexpected rejection: " <> T.unpack failure) False
 
   , testCase "mkBlueskyPost rejects text over 300 chars" $
       let longText = T.replicate 301 "b"
@@ -825,7 +825,7 @@ socialPostTests = testGroup "SocialPost"
       case mkMastodonPost "Hello from Mastodon!" of
         Right (MastodonPost content) -> assertEqual "" "Hello from Mastodon!" content
         Right other -> assertBool ("expected MastodonPost, got: " <> show other) False
-        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+        Left failure -> assertBool ("unexpected rejection: " <> T.unpack failure) False
 
   , testCase "mkMastodonPost rejects text over 500 chars" $
       let longText = T.replicate 501 "c"

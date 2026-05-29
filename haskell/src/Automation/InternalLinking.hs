@@ -209,8 +209,8 @@ processFile manager apiKey model filePath index = do
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
-                Left err -> do
-                  putStrLn $ "  ❌ " <> fileRelativePath <> ": Gemini error: " <> T.unpack err
+                Left failure -> do
+                  putStrLn $ "  ❌ " <> fileRelativePath <> ": Gemini error: " <> T.unpack failure
                   pure $ Just FileResult
                     { relativePath = relPath
                     , modified     = False

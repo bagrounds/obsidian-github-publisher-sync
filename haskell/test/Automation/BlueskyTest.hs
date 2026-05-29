@@ -76,24 +76,24 @@ parseSessionTests = testGroup "parseSession"
       let body = "{\"did\":\"did:plc:abc123\",\"accessJwt\":\"token123\"}"
       in case Bluesky.parseSession (toLBS body) of
            Right _ -> pure ()
-           Left err -> fail $ "Expected Right, got: " <> show err
+           Left failure -> fail $ "Expected Right, got: " <> show failure
 
   , testCase "returns JsonParseError for invalid JSON" $
       case Bluesky.parseSession (toLBS "not json") of
         Left (Bluesky.JsonParseError _) -> pure ()
-        Left err -> fail $ "Expected JsonParseError, got: " <> show err
+        Left failure -> fail $ "Expected JsonParseError, got: " <> show failure
         Right _ -> fail "Expected Left, got Right"
 
   , testCase "returns ExtractionError for missing did field" $
       case Bluesky.parseSession (toLBS "{\"accessJwt\":\"token\"}") of
         Left (Bluesky.ExtractionError _) -> pure ()
-        Left err -> fail $ "Expected ExtractionError, got: " <> show err
+        Left failure -> fail $ "Expected ExtractionError, got: " <> show failure
         Right _ -> fail "Expected Left, got Right"
 
   , testCase "returns ExtractionError for missing accessJwt field" $
       case Bluesky.parseSession (toLBS "{\"did\":\"did:plc:abc\"}") of
         Left (Bluesky.ExtractionError _) -> pure ()
-        Left err -> fail $ "Expected ExtractionError, got: " <> show err
+        Left failure -> fail $ "Expected ExtractionError, got: " <> show failure
         Right _ -> fail "Expected Left, got Right"
   ]
 
@@ -103,7 +103,7 @@ parsePostResponseTests = testGroup "parsePostResponse"
       let body = "{\"uri\":\"at://did:plc:abc/app.bsky.feed.post/xyz\",\"cid\":\"bafyabc\"}"
       in case Bluesky.parsePostResponse "hello" (toLBS body) of
            Right result -> Bluesky.postCid result @?= "bafyabc"
-           Left err -> fail $ "Expected Right, got: " <> show err
+           Left failure -> fail $ "Expected Right, got: " <> show failure
 
   , testCase "returns JsonParseError for invalid JSON" $
       case Bluesky.parsePostResponse "txt" (toLBS "garbage") of

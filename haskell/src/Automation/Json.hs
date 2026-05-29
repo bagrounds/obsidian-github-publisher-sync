@@ -181,7 +181,7 @@ eitherDecode :: FromValue a => LBS.ByteString -> Either String a
 eitherDecode bs = do
   txt <- case TLE.decodeUtf8' bs of
     Right t  -> Right (TL.toStrict t)
-    Left err -> Left $ "UTF-8 decode error: " <> show err
+    Left failure -> Left $ "UTF-8 decode error: " <> show failure
   value <- parseJsonText txt
   fromValue value
 
@@ -189,13 +189,13 @@ eitherDecodeStrict :: FromValue a => BS.ByteString -> Either String a
 eitherDecodeStrict bs = do
   txt <- case TE.decodeUtf8' bs of
     Right t  -> Right t
-    Left err -> Left $ "UTF-8 decode error: " <> show err
+    Left failure -> Left $ "UTF-8 decode error: " <> show failure
   value <- parseJsonText txt
   fromValue value
 
 parseJsonText :: Text -> Either String Value
 parseJsonText txt = case parse (jsonValue <* eof) "json" txt of
-  Left err -> Left $ show err
+  Left failure -> Left $ show failure
   Right v  -> Right v
 
 jsonValue :: Parser Value

@@ -204,15 +204,15 @@ post manager creds tweetText = do
         HttpCodeException status ("Twitter API error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right body -> parseTweetResponse tweetText body
 
 parseTweetResponse :: Text -> LBS.ByteString -> Either Error (Text, Text)
 parseTweetResponse fallbackText body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (JsonParseError (T.pack err))
+    Left failure -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case extractTweetData fallbackText jsonValue of
-      Left err -> Left (ExtractionError (T.pack err))
+      Left failure -> Left (ExtractionError (T.pack failure))
       Right r -> Right r
 
 extractTweetData :: Text -> Json.Value -> Either String (Text, Text)
@@ -244,7 +244,7 @@ deletePost manager creds tweetId = do
       throwIO $
         HttpCodeException status ("Twitter delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right () -> Right ()
 
 fetchOEmbed :: Manager -> Text -> IO (Either Error Text)
@@ -263,15 +263,15 @@ fetchOEmbed manager tweetUrl = do
         HttpCodeException status ("oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (classifyException err)
+    Left failure -> Left (classifyException failure)
     Right body -> parseOEmbedHtml body
 
 parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (JsonParseError (T.pack err))
+    Left failure -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case withObject "oembed" (.: "html") jsonValue of
-      Left err -> Left (ExtractionError (T.pack err))
+      Left failure -> Left (ExtractionError (T.pack failure))
       Right html -> Right html
 
 generateLocalEmbed :: Text -> Text -> Text -> Text -> Text

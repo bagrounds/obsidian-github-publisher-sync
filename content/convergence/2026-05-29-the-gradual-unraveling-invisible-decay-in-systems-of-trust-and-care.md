@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-28-the-unseen-architectures-of-responsibility-from-gatekeepers-to-guardians.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-28-the-unseen-architectures-of-responsibility-from-gatekeepers-to-guardians.md) [⏭️](./2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.md)  
 # 2026-05-29 | 🔀 🌐 The Gradual Unraveling: Invisible Decay in Systems of Trust and Care 🔀  
 ![convergence-2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care](../convergence-2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.jpg)  
   

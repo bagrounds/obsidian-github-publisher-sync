@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-29T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-29-1-fresh-fiction-and-a-five-whys.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-29-1-fresh-fiction-and-a-five-whys.md) [⏭️](./2026-05-29-4-abbreviation-cleanup-dir-to-directory.md)  
 # 2026-05-29 | ✅ Making Our Rulebook a Checklist 🤖  
 ![ai-blog-2026-05-29-2-making-our-rulebook-a-checklist](../ai-blog-2026-05-29-2-making-our-rulebook-a-checklist.jpg)  
   

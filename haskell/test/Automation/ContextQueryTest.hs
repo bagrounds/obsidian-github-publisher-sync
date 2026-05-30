@@ -156,7 +156,7 @@ jsonParsingTests = testGroup "JSON parsing"
 whereClauseTests :: TestTree
 whereClauseTests = testGroup "WHERE clause evaluation"
   [ testCase "date >= filters out older posts" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
@@ -170,7 +170,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         length results @?= 1
 
   , testCase "date <= filters out newer posts" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
@@ -184,7 +184,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         length results @?= 1
 
   , testCase "title contains performs case-insensitive match" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePostWithTitle contentRoot "my-series" "2026-04-15-recap.md" "Weekly Recap"
         writePostWithTitle contentRoot "my-series" "2026-04-14-thoughts.md" "Random Thoughts"
         let query = ContextQuery
@@ -198,7 +198,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         length results @?= 1
 
   , testCase "multiple where conditions are ANDed" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePostWithDate contentRoot "my-series" "2026-04-15-a.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-04-10-b.md" "2026-04-10"
         writePostWithDate contentRoot "my-series" "2026-03-01-c.md" "2026-03-01"
@@ -242,14 +242,14 @@ defaultQueryTests = testGroup "defaultContextQueries"
 evaluationTests :: TestTree
 evaluationTests = testGroup "evaluateQueries"
   [ testCase "reads posts from own directory" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-first.md", "2026-04-14-second.md"]
         let queries = defaultContextQueries "my-series"
         results <- evaluateQueries contentRoot queries
         length results @?= 2
 
   , testCase "limit restricts number of results" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-a.md", "2026-04-14-b.md", "2026-04-13-c.md"]
         let query = ContextQuery
               { directories = ["my-series"]
@@ -262,7 +262,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 2
 
   , testCase "reading another directory yields posts from that directory" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
         writePosts contentRoot "other-series" ["2026-04-15-theirs.md"]
         let query = ContextQuery
@@ -279,7 +279,7 @@ evaluationTests = testGroup "evaluateQueries"
           [] -> assertBool "expected at least one post" False
 
   , testCase "multi-directory query with limitPerSource" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md", "2026-04-13-a3.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
         let query = ContextQuery
@@ -293,7 +293,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 2
 
   , testCase "limitPerSource limits each directory independently" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md", "2026-04-13-a3.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
         let query = ContextQuery
@@ -307,7 +307,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 4
 
   , testCase "global limit caps total across directories" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
         let query = ContextQuery
@@ -321,7 +321,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 2
 
   , testCase "orderBy date ascending sorts oldest first" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-04-01-old.md" "2026-04-01"
         let query = ContextQuery
@@ -335,7 +335,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 1
 
   , testCase "posts carry source directory info" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
         let query = ContextQuery
               { directories = ["my-series"]
@@ -351,7 +351,7 @@ evaluationTests = testGroup "evaluateQueries"
           [] -> assertBool "expected at least one post" False
 
   , testCase "multiple queries combine results" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md", "2026-04-14-older.md"]
         writePosts contentRoot "other-a" ["2026-04-15-a.md"]
         writePosts contentRoot "other-b" ["2026-04-15-b.md"]
@@ -375,13 +375,13 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 4
 
   , testCase "empty queries return nothing" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
         results <- evaluateQueries contentRoot []
         length results @?= 0
 
   , testCase "missing directory returns empty" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         let query = ContextQuery
               { directories = ["nonexistent"]
               , conditions = []
@@ -393,7 +393,7 @@ evaluationTests = testGroup "evaluateQueries"
         length results @?= 0
 
   , testCase "context posts carry correct source directory" $
-      withTestContentDir $ \contentRoot -> do
+      withTestContentDirectory $ \contentRoot -> do
         writePosts contentRoot "other" ["2026-04-15-post.md"]
         let query = ContextQuery
               { directories = ["other"]
@@ -420,33 +420,33 @@ isLeft :: Either a b -> Bool
 isLeft (Left _) = True
 isLeft (Right _) = False
 
-withTestContentDir :: (FilePath -> IO a) -> IO a
-withTestContentDir = withSystemTempDirectory "context-query-test"
+withTestContentDirectory :: (FilePath -> IO a) -> IO a
+withTestContentDirectory = withSystemTempDirectory "context-query-test"
 
 writePosts :: FilePath -> Text -> [Text] -> IO ()
 writePosts contentRoot seriesId filenames = do
-  let seriesDir = contentRoot </> T.unpack seriesId
-  createDirectoryIfMissing True seriesDir
-  mapM_ (writeTestPost seriesDir) filenames
+  let seriesDirectory = contentRoot </> T.unpack seriesId
+  createDirectoryIfMissing True seriesDirectory
+  mapM_ (writeTestPost seriesDirectory) filenames
 
 writeTestPost :: FilePath -> Text -> IO ()
-writeTestPost seriesDir filename = do
+writeTestPost seriesDirectory filename = do
   let content = "---\ntitle: \"Test Post\"\n---\nTest body content for " <> filename
-  TIO.writeFile (seriesDir </> T.unpack filename) content
+  TIO.writeFile (seriesDirectory </> T.unpack filename) content
 
 writePostWithDate :: FilePath -> Text -> Text -> Text -> IO ()
 writePostWithDate contentRoot seriesId filename date = do
-  let seriesDir = contentRoot </> T.unpack seriesId
-  createDirectoryIfMissing True seriesDir
+  let seriesDirectory = contentRoot </> T.unpack seriesId
+  createDirectoryIfMissing True seriesDirectory
   let content = "---\ntitle: \"Post from " <> date <> "\"\n---\nContent for " <> date
-  TIO.writeFile (seriesDir </> T.unpack filename) content
+  TIO.writeFile (seriesDirectory </> T.unpack filename) content
 
 writePostWithTitle :: FilePath -> Text -> Text -> Text -> IO ()
 writePostWithTitle contentRoot seriesId filename title = do
-  let seriesDir = contentRoot </> T.unpack seriesId
-  createDirectoryIfMissing True seriesDir
+  let seriesDirectory = contentRoot </> T.unpack seriesId
+  createDirectoryIfMissing True seriesDirectory
   let content = "---\ntitle: \"" <> title <> "\"\n---\nContent for " <> title
-  TIO.writeFile (seriesDir </> T.unpack filename) content
+  TIO.writeFile (seriesDirectory </> T.unpack filename) content
 
 genField :: QC.Gen Field
 genField = QC.elements [Filename, Date, Title]

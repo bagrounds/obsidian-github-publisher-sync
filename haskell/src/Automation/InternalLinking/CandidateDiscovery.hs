@@ -3,7 +3,7 @@
 module Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
-  , linkableDirs
+  , linkableDirectories
   , escapeRegex
   , formatContentEntryWikilink
   , extractContext
@@ -35,8 +35,8 @@ import Text.Regex.TDFA ((=~))
 minTitleLength :: Int
 minTitleLength = 8
 
-linkableDirs :: [Text]
-linkableDirs = ["books"]
+linkableDirectories :: [Text]
+linkableDirectories = ["books"]
 
 data ContentEntry = ContentEntry
   { relativePath :: RelativePath
@@ -105,24 +105,24 @@ contentAlreadyLinksTo content contentEntry =
   || T.isInfixOf (pathNoMd <> ".") content
 
 buildContentIndex :: FilePath -> IO [ContentEntry]
-buildContentIndex contentDir =
-  concat <$> traverse (scanDir contentDir) linkableDirs
+buildContentIndex contentDirectory =
+  concat <$> traverse (scanDirectory contentDirectory) linkableDirectories
 
-scanDir :: FilePath -> Text -> IO [ContentEntry]
-scanDir contentDir dirName = do
-  let dirPath = contentDir </> T.unpack dirName
+scanDirectory :: FilePath -> Text -> IO [ContentEntry]
+scanDirectory contentDirectory dirName = do
+  let dirPath = contentDirectory </> T.unpack dirName
   exists <- doesDirectoryExist dirPath
   if exists
     then do
       files <- listDirectory dirPath
       let mdFiles = filter (\f -> hasSuffix ".md" f && f /= "index.md") files
-      catMaybes <$> traverse (readEntry contentDir dirName) mdFiles
+      catMaybes <$> traverse (readEntry contentDirectory dirName) mdFiles
     else pure []
 
 readEntry :: FilePath -> Text -> FilePath -> IO (Maybe ContentEntry)
-readEntry contentDir dirName file = do
+readEntry contentDirectory dirName file = do
   let entryRelativePath = dirName <> "/" <> T.pack file
-      filePath           = contentDir </> T.unpack entryRelativePath
+      filePath           = contentDirectory </> T.unpack entryRelativePath
   content <- TIO.readFile filePath
   let (frontmatter, _) = parseFrontmatter content
   pure $ do

@@ -207,11 +207,11 @@ isDateFile today f =
     && f < (today <> ".md")
 
 findPreviousReflectionDate :: FilePath -> Text -> IO (Maybe Text)
-findPreviousReflectionDate reflectionsDir today = do
-  exists <- doesDirectoryExist reflectionsDir
+findPreviousReflectionDate reflectionsDirectory today = do
+  exists <- doesDirectoryExist reflectionsDirectory
   if exists
     then do
-      entries <- listDirectory reflectionsDir
+      entries <- listDirectory reflectionsDirectory
       let candidates = sort $ filter (isDateFile today) $ fmap T.pack entries
       pure $ case candidates of
         [] -> Nothing
@@ -219,22 +219,22 @@ findPreviousReflectionDate reflectionsDir today = do
     else pure Nothing
 
 ensureDailyReflection :: FilePath -> Day -> IO EnsureReflectionResult
-ensureDailyReflection reflectionsDir today = do
+ensureDailyReflection reflectionsDirectory today = do
   let todayText = formatDay today
-      reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
+      reflectionPath = reflectionsDirectory </> T.unpack todayText <> ".md"
   exists <- doesFileExist reflectionPath
   if exists
     then pure EnsureReflectionResult
       { errCreated = False, errPreviousDate = Nothing, errForwardLinkAdded = False }
     else do
-      previousDate <- findPreviousReflectionDate reflectionsDir todayText
+      previousDate <- findPreviousReflectionDate reflectionsDirectory todayText
       let content = buildReflectionContent today previousDate
-      createDirectoryIfMissing True reflectionsDir
+      createDirectoryIfMissing True reflectionsDirectory
       TIO.writeFile reflectionPath content
       forwardLinkAdded <- case previousDate of
         Nothing -> pure False
         Just pd -> do
-          let prevPath = reflectionsDir </> T.unpack pd <> ".md"
+          let prevPath = reflectionsDirectory </> T.unpack pd <> ".md"
           prevExists <- doesFileExist prevPath
           if prevExists
             then do
@@ -248,11 +248,11 @@ ensureDailyReflection reflectionsDir today = do
         { errCreated = True, errPreviousDate = previousDate, errForwardLinkAdded = forwardLinkAdded }
 
 updateDailyReflection :: FilePath -> Day -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> IO UpdateReflectionResult
-updateDailyReflection vaultDir today series postFilename postTitle replacingFilename = do
+updateDailyReflection vaultDirectory today series postFilename postTitle replacingFilename = do
   let todayText = formatDay today
-      reflectionsDir = vaultDir </> "reflections"
-  EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDir today
-  let reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
+      reflectionsDirectory = vaultDirectory </> "reflections"
+  EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDirectory today
+  let reflectionPath = reflectionsDirectory </> T.unpack todayText <> ".md"
   content <- TIO.readFile reflectionPath
   let filenameNoExt = T.pack $ dropExtension $ T.unpack postFilename
       replacingFilenameNoExt = fmap (T.pack . dropExtension . T.unpack) replacingFilename

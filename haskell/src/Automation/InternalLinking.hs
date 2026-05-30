@@ -5,8 +5,8 @@ module Automation.InternalLinking
   , LinkingResult (..)
   , defaultLinkingModel
   , linkingAlgorithmVersion
-  , indexableDirs
-  , traversableDirs
+  , indexableDirectories
+  , traversableDirectories
   , extractBody
   , alreadyAnalyzed
   , applyReplacements
@@ -49,15 +49,15 @@ defaultLinkingModel = Gemini.Gemini31FlashLite
 linkingAlgorithmVersion :: Int
 linkingAlgorithmVersion = 2
 
-indexableDirs :: [Text]
-indexableDirs =
+indexableDirectories :: [Text]
+indexableDirectories =
   [ "books", "articles", "topics", "software", "people"
   , "products", "games", "videos", "presentations", "tools"
   ]
 
-traversableDirs :: [Text]
-traversableDirs =
-  indexableDirs
+traversableDirectories :: [Text]
+traversableDirectories =
+  indexableDirectories
     <> ["reflections", "chickie-loo", "auto-blog-zero", "systems-for-public-good"]
 
 
@@ -171,8 +171,8 @@ recordLinkAnalysis filePath model timestamp =
 
 processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
-  let contentDir      = takeDirectory (takeDirectory filePath)
-      fileRelativePath = makeRelPathFromContentDir contentDir filePath
+  let contentDirectory      = takeDirectory (takeDirectory filePath)
+      fileRelativePath = makeRelPathFromContentDirectory contentDirectory filePath
   case mkRelativePath (T.pack fileRelativePath) of
     Left reason -> do
       putStrLn $ "  ⚠️  Skipping " <> fileRelativePath <> ": invalid path: " <> T.unpack reason
@@ -255,9 +255,9 @@ processFile manager apiKey model filePath index = do
                             , usedInference = True
                             }
 
-makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
-makeRelPathFromContentDir contentDir filePath =
-  joinSlash $ drop (length (splitSlash contentDir)) (splitSlash filePath)
+makeRelPathFromContentDirectory :: FilePath -> FilePath -> FilePath
+makeRelPathFromContentDirectory contentDirectory filePath =
+  joinSlash $ drop (length (splitSlash contentDirectory)) (splitSlash filePath)
 
 nowIso :: IO Text
 nowIso = do
@@ -266,18 +266,18 @@ nowIso = do
 
 
 run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
-run manager model contentDir = do
+run manager model contentDirectory = do
   putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
     <> " version=" <> show linkingAlgorithmVersion
 
-  index <- CD.buildContentIndex contentDir
+  index <- CD.buildContentIndex contentDirectory
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"
 
-  filesToVisit <- bfsTraversal contentDir
+  filesToVisit <- bfsTraversal contentDirectory
   putStrLn $ "  🔍 BFS: " <> show (length filesToVisit) <> " files reachable"
 
   apiKey <- lookupSecret
-  results <- processFiles manager apiKey model contentDir index filesToVisit
+  results <- processFiles manager apiKey model contentDirectory index filesToVisit
 
   let modifiedCount      = length $ filter modified results
       totalLinks         = sum $ fmap linksAdded results
@@ -301,7 +301,7 @@ run manager model contentDir = do
   pure result
 
 processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> [Text] -> IO [FileResult]
-processFiles manager apiKey model contentDir index filesToVisit = do
+processFiles manager apiKey model contentDirectory index filesToVisit = do
   inferenceCount <- newIORef (0 :: Int)
   fileResults    <- newIORef ([] :: [FileResult])
   visitFiles inferenceCount fileResults filesToVisit
@@ -313,7 +313,7 @@ processFiles manager apiKey model contentDir index filesToVisit = do
     visitFiles :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
     visitFiles _ _ [] = pure ()
     visitFiles inferenceCount fileResults (relPath : rest) = do
-      let filePath = contentDir </> T.unpack relPath
+      let filePath = contentDirectory </> T.unpack relPath
       maybeFileResult <- processFile manager apiKey model filePath index
       case maybeFileResult of
         Nothing -> visitFiles inferenceCount fileResults rest

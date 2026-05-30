@@ -42,9 +42,9 @@ main = do
       TIO.putStrLn $ "{\"event\":\"static_giscus_mapped\",\"pathnames\":" <> T.pack (show pathnames) <> "}"
 
       args <- getArgs
-      let publicDir = case args of
+      let publicDirectory = case args of
             (d:_) -> d
             []    -> "public"
 
-      injectedFiles <- processHtmlFiles publicDir commentsMap
+      injectedFiles <- processHtmlFiles publicDirectory commentsMap
       TIO.putStrLn $ "{\"event\":\"static_giscus_done\",\"injectedPages\":" <> T.pack (show (length injectedFiles)) <> "}"

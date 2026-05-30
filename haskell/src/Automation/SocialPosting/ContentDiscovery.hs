@@ -81,11 +81,11 @@ data ContentToPost = ContentToPost
   } deriving (Show, Eq)
 
 data FindContentConfig = FindContentConfig
-  { contentDir             :: FilePath
+  { contentDirectory             :: FilePath
   , platforms              :: [Platform]
   , postingCutoff          :: TimeOfDay
   , publicationChecker     :: Maybe (Text -> IO Bool)
-  , imageBackfillContentDirs :: [ContentDirectory]
+  , imageBackfillContentDirectories :: [ContentDirectory]
   }
 
 defaultPostingCutoff :: TimeOfDay
@@ -107,15 +107,15 @@ detectPostedPlatforms content =
       | otherwise = Nothing
 
 readContentNote :: Text -> FilePath -> IO (Maybe ContentNote)
-readContentNote relativePath contentDir = do
-  let filePath = contentDir </> T.unpack relativePath
+readContentNote relativePath contentDirectory = do
+  let filePath = contentDirectory </> T.unpack relativePath
   exists <- doesFileExist filePath
   if exists
     then do
       content <- TIO.readFile filePath
       let (frontmatter, body) = parseFrontmatter content
           postedPlatforms = detectPostedPlatforms content
-          linkedPaths = extractMarkdownLinks body relativePath contentDir
+          linkedPaths = extractMarkdownLinks body relativePath contentDirectory
           noSocial = Map.lookup "no_social" frontmatter == Just "true"
           titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" frontmatter)
           urlText = urlFromFilePath relativePath
@@ -214,11 +214,11 @@ propagationDelay :: NominalDiffTime
 propagationDelay = 86400
 
 isAwaitingImageBackfill :: [ContentDirectory] -> UTCTime -> Text -> Text -> Maybe UTCTime -> Bool
-isAwaitingImageBackfill contentDirs now relativePath body imageDate =
+isAwaitingImageBackfill contentDirectories now relativePath body imageDate =
   let directoryName = T.pack (takeFileName (takeDirectory (T.unpack relativePath)))
       filename = T.pack (takeFileName (T.unpack relativePath))
       directory = contentDirectoryFromText directoryName
-      inBackfillDirectory = elem directory contentDirs && shouldHaveImage filename
+      inBackfillDirectory = elem directory contentDirectories && shouldHaveImage filename
   in inBackfillDirectory
        && (not (hasEmbeddedImage body) || isRecentlyBackfilled now imageDate)
 
@@ -244,7 +244,7 @@ data BfsState = BfsState
 
 bfsContentDiscovery :: FindContentConfig -> IO [ContentToPost]
 bfsContentDiscovery config = do
-  mStart <- findMostRecentReflection (contentDir config)
+  mStart <- findMostRecentReflection (contentDirectory config)
   case mStart of
     Nothing -> do
       putStrLn "  📭 No reflections found"
@@ -267,14 +267,14 @@ bfsLoop config state =
         pure (results state)
     ((currentPath, pathFromRoot) : rest) -> do
       let state' = state { queue = rest }
-      mNote <- readContentNote currentPath (contentDir config)
+      mNote <- readContentNote currentPath (contentDirectory config)
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
           eligible <- checkBfsEligibility (unRelativePath (noteRelativePath note)) (postingCutoff config)
           now <- getCurrentTime
           let awaitingImage = isAwaitingImageBackfill
-                (imageBackfillContentDirs config) now
+                (imageBackfillContentDirectories config) now
                 (unRelativePath (noteRelativePath note)) (noteBody note)
                 (noteImageDate note)
           mValidated <- case (isPostableContent note && eligible && not awaitingImage, publicationChecker config) of
@@ -318,7 +318,7 @@ discoverContentToPost :: FindContentConfig -> Bool -> IO [ContentToPost]
 discoverContentToPost config isPastPostingHour =
   if isPastPostingHour
     then do
-      mRefl <- findMostRecentReflection (contentDir config)
+      mRefl <- findMostRecentReflection (contentDirectory config)
       case mRefl of
         Nothing -> bfsContentDiscovery config
         Just reflPath -> do
@@ -329,10 +329,10 @@ discoverContentToPost config isPastPostingHour =
                   now (postingCutoff config) reflectionDate
           if eligible
             then do
-              mNote <- readContentNote reflPath (contentDir config)
+              mNote <- readContentNote reflPath (contentDirectory config)
               case mNote of
                 Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (imageBackfillContentDirs config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
+                          , not (isAwaitingImageBackfill (imageBackfillContentDirectories config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
                   mValidated <- case publicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)

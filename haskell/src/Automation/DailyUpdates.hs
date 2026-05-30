@@ -462,11 +462,11 @@ addChangesForwardLink :: Text -> Text -> Text
 addChangesForwardLink = insertForwardNavLink Changes
 
 findPreviousChangesDate :: FilePath -> Text -> IO (Maybe Text)
-findPreviousChangesDate changesDir today = do
-  exists <- doesDirectoryExist changesDir
+findPreviousChangesDate changesDirectory today = do
+  exists <- doesDirectoryExist changesDirectory
   if exists
     then do
-      entries <- listDirectory changesDir
+      entries <- listDirectory changesDirectory
       let candidates = sort $ filter (isChangesDateFile today) $ fmap T.pack entries
       pure $ case candidates of
         [] -> Nothing
@@ -483,27 +483,27 @@ isChangesDateFile today fileName =
     && fileName < (today <> ".md")
 
 ensureChangesDirectory :: FilePath -> IO ()
-ensureChangesDirectory changesDir = do
-  createDirectoryIfMissing True changesDir
-  let indexPath = changesDir </> "index.md"
+ensureChangesDirectory changesDirectory = do
+  createDirectoryIfMissing True changesDirectory
+  let indexPath = changesDirectory </> "index.md"
   indexExists <- doesFileExist indexPath
   unless indexExists $ do
     TIO.writeFile indexPath buildChangesIndexContent
     TIO.putStrLn "  \128193 Created changes directory index"
 
 ensureChangesPage :: FilePath -> Day -> IO ()
-ensureChangesPage changesDir date = do
+ensureChangesPage changesDirectory date = do
   let dateText = formatDay date
-      changesPath = changesDir </> T.unpack dateText <> ".md"
+      changesPath = changesDirectory </> T.unpack dateText <> ".md"
   pageExists <- doesFileExist changesPath
   unless pageExists $ do
-    previousDate <- findPreviousChangesDate changesDir dateText
+    previousDate <- findPreviousChangesDate changesDirectory dateText
     TIO.writeFile changesPath (buildChangesPageContent date previousDate)
     TIO.putStrLn ("  \128221 Created changes page for " <> dateText)
     case previousDate of
       Nothing -> pure ()
       Just pd -> do
-        let prevPath = changesDir </> T.unpack pd <> ".md"
+        let prevPath = changesDirectory </> T.unpack pd <> ".md"
         prevExists <- doesFileExist prevPath
         when prevExists $ do
           prevContent <- TIO.readFile prevPath
@@ -533,19 +533,19 @@ extractTitleFromFile filePath = do
 
 addUpdateLinksToReflection :: FilePath -> Day -> [UpdateLink] -> IO Bool
 addUpdateLinksToReflection _ _ [] = pure False
-addUpdateLinksToReflection vaultDir date links = do
+addUpdateLinksToReflection vaultDirectory date links = do
   let dateText = formatDay date
-      reflectionsDir = vaultDir </> "reflections"
-      changesDir = vaultDir </> "changes"
-      reflectionPath = reflectionsDir </> T.unpack dateText <> ".md"
-      changesPath = changesDir </> T.unpack dateText <> ".md"
+      reflectionsDirectory = vaultDirectory </> "reflections"
+      changesDirectory = vaultDirectory </> "changes"
+      reflectionPath = reflectionsDirectory </> T.unpack dateText <> ".md"
+      changesPath = changesDirectory </> T.unpack dateText <> ".md"
   reflectionExists <- doesFileExist reflectionPath
   unless reflectionExists $ do
-    result <- ensureDailyReflection reflectionsDir date
+    result <- ensureDailyReflection reflectionsDirectory date
     when (errCreated result) $
       TIO.putStrLn ("  \128221 Created daily reflection for " <> dateText)
-  ensureChangesDirectory changesDir
-  ensureChangesPage changesDir date
+  ensureChangesDirectory changesDirectory
+  ensureChangesPage changesDirectory date
   changesContent <- TIO.readFile changesPath
 
   let existingText = extractSectionText changesContent

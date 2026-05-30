@@ -87,6 +87,15 @@ unless a rename surfaces a latent bug.
    were intentionally excluded from this step due to their breadth (75+ `vaultDir`
    occurrences alone across 10+ files including app entry points and config records). A
    separate follow-up issue has been filed to rename these systematically.
+5. ✅ **Compound `*Dir` → `*Directory`** (done): renamed every compound `*Dir` identifier
+   (e.g. `vaultDir`, `contentDir`, `reflectionsDir`, `seriesDir`, `aiBlogDir`,
+   `backfillContentDirs`, `linkableDirs`, `scanDir`, `publicDir`, `srcDir`, `dstDir`,
+   `tmpDir`, and 20+ others) across `haskell/src`, `haskell/app`, and `haskell/test`.
+   Plural forms (`*Dirs`) became `*Directories`. Double abbreviations (`srcDir`,
+   `dstDir`) were expanded in full (`sourceDirectory`, `destinationDirectory`). The
+   `vaultDir` record field on `AppContext` propagated through every construction and
+   destructuring site across 10+ files. Pure rename — all 2021 Haskell tests still pass,
+   hlint reports zero hints, and the `-Werror` build is clean.
 
 ## Definition of Done Per Step
 

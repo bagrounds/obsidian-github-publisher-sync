@@ -5,7 +5,7 @@ module Automation.InternalLinking.CandidateDiscoveryTest (tests) where
 import Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
-  , linkableDirs
+  , linkableDirectories
   , escapeRegex
   , formatContentEntryWikilink
   , extractContext
@@ -36,11 +36,11 @@ tests = testGroup "InternalLinking.CandidateDiscovery"
   ]
 
 linkableDirsTests :: TestTree
-linkableDirsTests = testGroup "linkableDirs"
+linkableDirsTests = testGroup "linkableDirectories"
   [ testCase "contains books" $
-      assertBool "books in linkableDirs" ("books" `elem` linkableDirs)
+      assertBool "books in linkableDirectories" ("books" `elem` linkableDirectories)
   , testCase "has expected count" $
-      assertEqual "one entry" 1 (length linkableDirs)
+      assertEqual "one entry" 1 (length linkableDirectories)
   ]
 
 stripEmojisTests :: TestTree

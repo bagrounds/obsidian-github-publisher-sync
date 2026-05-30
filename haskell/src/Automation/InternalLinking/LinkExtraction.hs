@@ -22,11 +22,11 @@ import System.FilePath (takeBaseName, (</>))
 import Text.Regex.TDFA ((=~))
 
 extractLinkedPaths :: Text -> Text -> FilePath -> [Text]
-extractLinkedPaths body noteRelativePath contentDir =
-  let noteDir = takeDirectory (contentDir </> T.unpack noteRelativePath)
+extractLinkedPaths body noteRelativePath contentDirectory =
+  let noteDirectory = takeDirectory (contentDirectory </> T.unpack noteRelativePath)
       seen    = Set.empty :: Set.Set Text
   in snd $ foldl' collectLink (seen, [])
-       (markdownLinks body noteDir contentDir <> wikiLinks body noteDir contentDir)
+       (markdownLinks body noteDirectory contentDirectory <> wikiLinks body noteDirectory contentDirectory)
 
 collectLink :: (Set.Set Text, [Text]) -> Text -> (Set.Set Text, [Text])
 collectLink (seen, accumulated) rel
@@ -35,32 +35,32 @@ collectLink (seen, accumulated) rel
   | otherwise             = (Set.insert rel seen, accumulated <> [rel])
 
 markdownLinks :: Text -> FilePath -> FilePath -> [Text]
-markdownLinks body noteDir contentDir = parseLinks (T.unpack body)
+markdownLinks body noteDirectory contentDirectory = parseLinks (T.unpack body)
   where
     parseLinks :: String -> [Text]
     parseLinks s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
       (_, _, after, [target])
         | not ("http://" `isPrefixOfS` target) && not ("https://" `isPrefixOfS` target) ->
-            let absTarget  = normalizeFilePath (noteDir </> target)
-                relPath    = makeRelativeTo contentDir absTarget
+            let absTarget  = normalizeFilePath (noteDirectory </> target)
+                relPath    = makeRelativeTo contentDirectory absTarget
             in T.pack relPath : parseLinks after
         | otherwise -> parseLinks after
       _ -> []
 
 wikiLinks :: Text -> FilePath -> FilePath -> [Text]
-wikiLinks body noteDir contentDir =
+wikiLinks body noteDirectory contentDirectory =
   let targets = parseWikiLinks (T.unpack body)
-  in fmap (resolveWikiTarget noteDir contentDir) targets
+  in fmap (resolveWikiTarget noteDirectory contentDirectory) targets
 
 resolveWikiTarget :: FilePath -> FilePath -> String -> Text
-resolveWikiTarget noteDir contentDir target =
+resolveWikiTarget noteDirectory contentDirectory target =
   let trimmed = strip target
       withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
   in if '/' `elem` withMd
     then T.pack withMd
     else
-      let absTarget = normalizeFilePath (noteDir </> withMd)
-      in T.pack (makeRelativeTo contentDir absTarget)
+      let absTarget = normalizeFilePath (noteDirectory </> withMd)
+      in T.pack (makeRelativeTo contentDirectory absTarget)
 
 parseWikiLinks :: String -> [String]
 parseWikiLinks [] = []
@@ -128,25 +128,25 @@ takeDirectory = joinSlash . safeInit . splitSlash
     safeInit xs = init xs
 
 bfsTraversal :: FilePath -> IO [Text]
-bfsTraversal contentDir = do
-  mStart <- findMostRecentReflection contentDir
+bfsTraversal contentDirectory = do
+  mStart <- findMostRecentReflection contentDirectory
   case mStart of
     Nothing    -> pure []
     Just start -> do
       visitedRef <- newIORef (Set.singleton start)
       queueRef   <- newIORef [start]
       resultRef  <- newIORef ([] :: [Text])
-      bfsLoop contentDir visitedRef queueRef resultRef
+      bfsLoop contentDirectory visitedRef queueRef resultRef
       reverse <$> readIORef resultRef
 
 bfsLoop :: FilePath -> IORef (Set.Set Text) -> IORef [Text] -> IORef [Text] -> IO ()
-bfsLoop contentDir visitedRef queueRef resultRef = do
+bfsLoop contentDirectory visitedRef queueRef resultRef = do
   queue <- readIORef queueRef
   case queue of
     [] -> pure ()
     (current : rest) -> do
       modifyIORef' queueRef (const rest)
-      let filePath = contentDir </> T.unpack current
+      let filePath = contentDirectory </> T.unpack current
       exists <- doesFileExist filePath
       let isIndex = takeBaseName (T.unpack current) == "index"
       if exists && not isIndex
@@ -154,10 +154,10 @@ bfsLoop contentDir visitedRef queueRef resultRef = do
           modifyIORef' resultRef (current :)
           content <- TIO.readFile filePath
           let (_, body) = parseFrontmatter content
-              linked    = extractLinkedPaths body current contentDir
+              linked    = extractLinkedPaths body current contentDirectory
           visited <- readIORef visitedRef
           let newLinks = filter (\l -> not (Set.member l visited)) linked
           modifyIORef' visitedRef (\s -> foldl' (flip Set.insert) s newLinks)
           modifyIORef' queueRef (<> newLinks)
-          bfsLoop contentDir visitedRef queueRef resultRef
-        else bfsLoop contentDir visitedRef queueRef resultRef
+          bfsLoop contentDirectory visitedRef queueRef resultRef
+        else bfsLoop contentDirectory visitedRef queueRef resultRef

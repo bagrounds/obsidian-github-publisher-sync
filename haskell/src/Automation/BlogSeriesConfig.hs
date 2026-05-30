@@ -1,9 +1,9 @@
 module Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
   , lookupSeriesIn
-  , extraContentDirs
+  , extraContentDirectories
   , backfillContentIdsFrom
-  , imageBackfillContentDirsFrom
+  , imageBackfillContentDirectoriesFrom
   ) where
 
 import Data.Map.Strict (Map)
@@ -33,21 +33,21 @@ lookupSeriesIn seriesMap seriesId =
     errorMessage = "Unknown blog series: " <> seriesId
       <> ". Available: " <> mconcat (fmap (<> " ") (Map.keys seriesMap))
 
-extraContentDirs :: [ContentDirectory]
-extraContentDirs = [Reflections, AiBlog]
+extraContentDirectories :: [ContentDirectory]
+extraContentDirectories = [Reflections, AiBlog]
 
 backfillContentIdsFrom :: [BlogSeriesConfig] -> [Text]
 backfillContentIdsFrom allSeries =
-  fmap contentDirectoryToText extraContentDirs <> fmap identifier allSeries
+  fmap contentDirectoryToText extraContentDirectories <> fmap identifier allSeries
 
-libraryContentDirs :: [ContentDirectory]
-libraryContentDirs =
+libraryContentDirectories :: [ContentDirectory]
+libraryContentDirectories =
   [ Articles, Books, BotChats, Games
   , Products, Software, Tools, Topics
   ]
 
-imageBackfillContentDirsFrom :: [BlogSeriesConfig] -> [ContentDirectory]
-imageBackfillContentDirsFrom allSeries =
-  extraContentDirs
+imageBackfillContentDirectoriesFrom :: [BlogSeriesConfig] -> [ContentDirectory]
+imageBackfillContentDirectoriesFrom allSeries =
+  extraContentDirectories
     <> fmap (contentDirectoryFromText . identifier) allSeries
-    <> libraryContentDirs
+    <> libraryContentDirectories

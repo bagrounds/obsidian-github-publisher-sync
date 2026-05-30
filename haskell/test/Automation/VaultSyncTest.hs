@@ -88,8 +88,8 @@ similarityThresholdTests = testGroup "similarityThreshold"
 ensureFileInVaultTests :: TestTree
 ensureFileInVaultTests = testGroup "ensureFileInVault"
   [ testCase "creates file when it does not exist" $
-      withSystemTempDirectory "vault-test" $ \tmpDir -> do
-        let filePath = tmpDir </> "the-noise" </> "index.md"
+      withSystemTempDirectory "vault-test" $ \temporaryDirectory -> do
+        let filePath = temporaryDirectory </> "the-noise" </> "index.md"
         created <- ensureFileInVault filePath "test content"
         created @?= True
         exists <- doesFileExist filePath
@@ -98,8 +98,8 @@ ensureFileInVaultTests = testGroup "ensureFileInVault"
         content @?= "test content"
 
   , testCase "does not overwrite existing file" $
-      withSystemTempDirectory "vault-test" $ \tmpDir -> do
-        let filePath = tmpDir </> "index.md"
+      withSystemTempDirectory "vault-test" $ \temporaryDirectory -> do
+        let filePath = temporaryDirectory </> "index.md"
         TIO.writeFile filePath "original content"
         created <- ensureFileInVault filePath "new content"
         created @?= False
@@ -107,18 +107,18 @@ ensureFileInVaultTests = testGroup "ensureFileInVault"
         content @?= "original content"
 
   , testCase "creates parent directories" $
-      withSystemTempDirectory "vault-test" $ \tmpDir -> do
-        let filePath = tmpDir </> "deep" </> "nested" </> "dir" </> "index.md"
+      withSystemTempDirectory "vault-test" $ \temporaryDirectory -> do
+        let filePath = temporaryDirectory </> "deep" </> "nested" </> "dir" </> "index.md"
         created <- ensureFileInVault filePath "nested content"
         created @?= True
         content <- TIO.readFile filePath
         content @?= "nested content"
 
   , testCase "returns False for existing file in subdirectory" $
-      withSystemTempDirectory "vault-test" $ \tmpDir -> do
-        let seriesDir = tmpDir </> "series"
-            filePath = seriesDir </> "index.md"
-        createDirectoryIfMissing True seriesDir
+      withSystemTempDirectory "vault-test" $ \temporaryDirectory -> do
+        let seriesDirectory = temporaryDirectory </> "series"
+            filePath = seriesDirectory </> "index.md"
+        createDirectoryIfMissing True seriesDirectory
         TIO.writeFile filePath "vault-owned content"
         created <- ensureFileInVault filePath "generated content"
         created @?= False
@@ -129,43 +129,43 @@ ensureFileInVaultTests = testGroup "ensureFileInVault"
 syncRepoPostsToVaultTests :: TestTree
 syncRepoPostsToVaultTests = testGroup "syncRepoPostsToVault"
   [ testCase "syncs date-prefixed post from repo to vault" $
-      withSystemTempDirectory "sync-test" $ \tmpDir -> do
-        let repoRoot = tmpDir </> "repo"
-            vaultDir = tmpDir </> "vault"
-            repoSeriesDir = repoRoot </> "the-noise"
-        createDirectoryIfMissing True repoSeriesDir
-        createDirectoryIfMissing True (vaultDir </> "the-noise")
-        TIO.writeFile (repoSeriesDir </> "2026-04-11-first-broadcast.md") "first post content"
-        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDir (const (pure ()))
+      withSystemTempDirectory "sync-test" $ \temporaryDirectory -> do
+        let repoRoot = temporaryDirectory </> "repo"
+            vaultDirectory = temporaryDirectory </> "vault"
+            repoSeriesDirectory = repoRoot </> "the-noise"
+        createDirectoryIfMissing True repoSeriesDirectory
+        createDirectoryIfMissing True (vaultDirectory </> "the-noise")
+        TIO.writeFile (repoSeriesDirectory </> "2026-04-11-first-broadcast.md") "first post content"
+        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDirectory (const (pure ()))
         synced @?= 1
-        content <- TIO.readFile (vaultDir </> "the-noise" </> "2026-04-11-first-broadcast.md")
+        content <- TIO.readFile (vaultDirectory </> "the-noise" </> "2026-04-11-first-broadcast.md")
         content @?= "first post content"
 
   , testCase "skips posts that already exist in vault" $
-      withSystemTempDirectory "sync-test" $ \tmpDir -> do
-        let repoRoot = tmpDir </> "repo"
-            vaultDir = tmpDir </> "vault"
-            repoSeriesDir = repoRoot </> "the-noise"
-            vaultSeriesDir = vaultDir </> "the-noise"
-        createDirectoryIfMissing True repoSeriesDir
-        createDirectoryIfMissing True vaultSeriesDir
-        TIO.writeFile (repoSeriesDir </> "2026-04-11-first-broadcast.md") "repo version"
-        TIO.writeFile (vaultSeriesDir </> "2026-04-11-first-broadcast.md") "vault version"
-        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDir (const (pure ()))
+      withSystemTempDirectory "sync-test" $ \temporaryDirectory -> do
+        let repoRoot = temporaryDirectory </> "repo"
+            vaultDirectory = temporaryDirectory </> "vault"
+            repoSeriesDirectory = repoRoot </> "the-noise"
+            vaultSeriesDirectory = vaultDirectory </> "the-noise"
+        createDirectoryIfMissing True repoSeriesDirectory
+        createDirectoryIfMissing True vaultSeriesDirectory
+        TIO.writeFile (repoSeriesDirectory </> "2026-04-11-first-broadcast.md") "repo version"
+        TIO.writeFile (vaultSeriesDirectory </> "2026-04-11-first-broadcast.md") "vault version"
+        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDirectory (const (pure ()))
         synced @?= 0
-        content <- TIO.readFile (vaultSeriesDir </> "2026-04-11-first-broadcast.md")
+        content <- TIO.readFile (vaultSeriesDirectory </> "2026-04-11-first-broadcast.md")
         content @?= "vault version"
 
   , testCase "ignores non-date files like AGENTS.md" $
-      withSystemTempDirectory "sync-test" $ \tmpDir -> do
-        let repoRoot = tmpDir </> "repo"
-            vaultDir = tmpDir </> "vault"
-            repoSeriesDir = repoRoot </> "the-noise"
-        createDirectoryIfMissing True repoSeriesDir
-        createDirectoryIfMissing True (vaultDir </> "the-noise")
-        TIO.writeFile (repoSeriesDir </> "AGENTS.md") "agent content"
-        TIO.writeFile (repoSeriesDir </> "index.md") "index content"
-        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDir (const (pure ()))
+      withSystemTempDirectory "sync-test" $ \temporaryDirectory -> do
+        let repoRoot = temporaryDirectory </> "repo"
+            vaultDirectory = temporaryDirectory </> "vault"
+            repoSeriesDirectory = repoRoot </> "the-noise"
+        createDirectoryIfMissing True repoSeriesDirectory
+        createDirectoryIfMissing True (vaultDirectory </> "the-noise")
+        TIO.writeFile (repoSeriesDirectory </> "AGENTS.md") "agent content"
+        TIO.writeFile (repoSeriesDirectory </> "index.md") "index content"
+        synced <- syncRepoPostsToVault repoRoot "the-noise" vaultDirectory (const (pure ()))
         synced @?= 0
 
   , testCase "returns zero when repo directory does not exist" $ do
@@ -173,52 +173,52 @@ syncRepoPostsToVaultTests = testGroup "syncRepoPostsToVault"
       synced @?= 0
 
   , testCase "creates vault series directory if missing" $
-      withSystemTempDirectory "sync-test" $ \tmpDir -> do
-        let repoRoot = tmpDir </> "repo"
-            vaultDir = tmpDir </> "vault"
-            repoSeriesDir = repoRoot </> "new-series"
-        createDirectoryIfMissing True repoSeriesDir
-        TIO.writeFile (repoSeriesDir </> "2026-04-11-hello.md") "hello"
-        synced <- syncRepoPostsToVault repoRoot "new-series" vaultDir (const (pure ()))
+      withSystemTempDirectory "sync-test" $ \temporaryDirectory -> do
+        let repoRoot = temporaryDirectory </> "repo"
+            vaultDirectory = temporaryDirectory </> "vault"
+            repoSeriesDirectory = repoRoot </> "new-series"
+        createDirectoryIfMissing True repoSeriesDirectory
+        TIO.writeFile (repoSeriesDirectory </> "2026-04-11-hello.md") "hello"
+        synced <- syncRepoPostsToVault repoRoot "new-series" vaultDirectory (const (pure ()))
         synced @?= 1
-        exists <- doesFileExist (vaultDir </> "new-series" </> "2026-04-11-hello.md")
+        exists <- doesFileExist (vaultDirectory </> "new-series" </> "2026-04-11-hello.md")
         assertBool "post should exist in vault" exists
   ]
 
 syncNewMarkdownFilesTests :: TestTree
 syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
   [ testCase "copies new markdown files from repo to vault" $
-      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
-        let repoDir = tmpDir </> "tools"
-            vaultDir = tmpDir </> "vault-tools"
-        createDirectoryIfMissing True repoDir
-        TIO.writeFile (repoDir </> "word-meter.md") "tool content here"
-        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+      withSystemTempDirectory "tools-sync-test" $ \temporaryDirectory -> do
+        let repoDirectory = temporaryDirectory </> "tools"
+            vaultDirectory = temporaryDirectory </> "vault-tools"
+        createDirectoryIfMissing True repoDirectory
+        TIO.writeFile (repoDirectory </> "word-meter.md") "tool content here"
+        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
         synced @?= 1
-        content <- TIO.readFile (vaultDir </> "word-meter.md")
+        content <- TIO.readFile (vaultDirectory </> "word-meter.md")
         content @?= "tool content here"
 
   , testCase "skips files already present in the vault" $
-      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
-        let repoDir = tmpDir </> "tools"
-            vaultDir = tmpDir </> "vault-tools"
-        createDirectoryIfMissing True repoDir
-        createDirectoryIfMissing True vaultDir
-        TIO.writeFile (repoDir </> "word-meter.md") "repo version"
-        TIO.writeFile (vaultDir </> "word-meter.md") "vault version"
-        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+      withSystemTempDirectory "tools-sync-test" $ \temporaryDirectory -> do
+        let repoDirectory = temporaryDirectory </> "tools"
+            vaultDirectory = temporaryDirectory </> "vault-tools"
+        createDirectoryIfMissing True repoDirectory
+        createDirectoryIfMissing True vaultDirectory
+        TIO.writeFile (repoDirectory </> "word-meter.md") "repo version"
+        TIO.writeFile (vaultDirectory </> "word-meter.md") "vault version"
+        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
         synced @?= 0
-        content <- TIO.readFile (vaultDir </> "word-meter.md")
+        content <- TIO.readFile (vaultDirectory </> "word-meter.md")
         content @?= "vault version"
 
   , testCase "ignores index.md and AGENTS.md" $
-      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
-        let repoDir = tmpDir </> "tools"
-            vaultDir = tmpDir </> "vault-tools"
-        createDirectoryIfMissing True repoDir
-        TIO.writeFile (repoDir </> "index.md") "index"
-        TIO.writeFile (repoDir </> "AGENTS.md") "agents"
-        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+      withSystemTempDirectory "tools-sync-test" $ \temporaryDirectory -> do
+        let repoDirectory = temporaryDirectory </> "tools"
+            vaultDirectory = temporaryDirectory </> "vault-tools"
+        createDirectoryIfMissing True repoDirectory
+        TIO.writeFile (repoDirectory </> "index.md") "index"
+        TIO.writeFile (repoDirectory </> "AGENTS.md") "agents"
+        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
         synced @?= 0
 
   , testCase "returns zero when repo directory does not exist" $ do
@@ -226,14 +226,14 @@ syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
       synced @?= 0
 
   , testCase "creates vault directory if missing" $
-      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
-        let repoDir = tmpDir </> "tools"
-            vaultDir = tmpDir </> "vault-tools"
-        createDirectoryIfMissing True repoDir
-        TIO.writeFile (repoDir </> "calculator.md") "calc"
-        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+      withSystemTempDirectory "tools-sync-test" $ \temporaryDirectory -> do
+        let repoDirectory = temporaryDirectory </> "tools"
+            vaultDirectory = temporaryDirectory </> "vault-tools"
+        createDirectoryIfMissing True repoDirectory
+        TIO.writeFile (repoDirectory </> "calculator.md") "calc"
+        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
         synced @?= 1
-        exists <- doesFileExist (vaultDir </> "calculator.md")
+        exists <- doesFileExist (vaultDirectory </> "calculator.md")
         assertBool "tool page should exist in vault" exists
   ]
 

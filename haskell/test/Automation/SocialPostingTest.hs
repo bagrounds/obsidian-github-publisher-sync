@@ -17,7 +17,7 @@ import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
 
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
-import Automation.BlogSeriesConfig (imageBackfillContentDirsFrom)
+import Automation.BlogSeriesConfig (imageBackfillContentDirectoriesFrom)
 import Automation.Platform (Platform (..))
 import Automation.Reflection (findMostRecentReflection, selectMostRecentReflection)
 import Automation.SocialPosting
@@ -55,8 +55,8 @@ import Automation.SocialPosting.LinkExtraction
 import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 
 
-defaultContentDirs :: [ContentDirectory]
-defaultContentDirs = imageBackfillContentDirsFrom []
+defaultContentDirectories :: [ContentDirectory]
+defaultContentDirectories = imageBackfillContentDirectoriesFrom []
 
 testNow :: UTCTime
 testNow = UTCTime (fromGregorian 2026 4 10) (secondsToDiffTime (12 * 3600))
@@ -282,81 +282,81 @@ imageBackfillFilterTests :: TestTree
 imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentDirs testNow "books/great-book.md" "Some text about a great book" Nothing
+        isAwaitingImageBackfill defaultContentDirectories testNow "books/great-book.md" "Some text about a great book" Nothing
 
   , testCase "note with embedded image and old date is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just (UTCTime (fromGregorian 2026 4 1) (secondsToDiffTime (12 * 3600)))))
 
   , testCase "note with markdown image and old date is not awaiting" $
       assertBool "has markdown image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "books/great-book.md"
           "![cover](attachments/books-great-book.png)\nSome text"
           (Just (UTCTime (fromGregorian 2026 4 1) (secondsToDiffTime (12 * 3600)))))
 
   , testCase "reflection without image is awaiting" $
       assertBool "reflection without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentDirs testNow "reflections/2026-04-07.md" "Today was a good day" Nothing
+        isAwaitingImageBackfill defaultContentDirectories testNow "reflections/2026-04-07.md" "Today was a good day" Nothing
 
   , testCase "reflection with image and old date is not awaiting" $
       assertBool "reflection with image should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "reflections/2026-04-07.md"
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "reflections/2026-04-07.md"
           "![[attachments/reflections-2026-04-07.jpg]]\nToday was a good day"
           (Just (UTCTime (fromGregorian 2026 4 1) (secondsToDiffTime (12 * 3600)))))
 
   , testCase "ai-blog post without image is awaiting" $
       assertBool "ai-blog without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentDirs testNow "ai-blog/2026-04-05-cool-post.md" "A cool blog post" Nothing
+        isAwaitingImageBackfill defaultContentDirectories testNow "ai-blog/2026-04-05-cool-post.md" "A cool blog post" Nothing
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "books/index.md" "Browse all books" Nothing)
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "books/index.md" "Browse all books" Nothing)
 
   , testCase "non-md file is not awaiting" $
       assertBool "non-md file should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "books/great-book.txt" "Some text" Nothing)
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "books/great-book.txt" "Some text" Nothing)
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "people/john-doe.md" "A person page" Nothing)
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "people/john-doe.md" "A person page" Nothing)
 
   , testCase "topics directory note without image is awaiting" $
       assertBool "topics note without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentDirs testNow "topics/machine-learning.md" "A topic about ML" Nothing
+        isAwaitingImageBackfill defaultContentDirectories testNow "topics/machine-learning.md" "A topic about ML" Nothing
 
   , testCase "software directory note with image and old date is not awaiting" $
       assertBool "software note with image should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs testNow "software/cool-tool.md"
+        not (isAwaitingImageBackfill defaultContentDirectories testNow "software/cool-tool.md"
           "![[attachments/software-cool-tool.png]]\nA great tool"
           (Just (UTCTime (fromGregorian 2026 4 1) (secondsToDiffTime (12 * 3600)))))
 
   , testCase "note with image generated today is still awaiting" $
       assertBool "recently generated image should defer posting" $
-        isAwaitingImageBackfill defaultContentDirs testNow "books/great-book.md"
+        isAwaitingImageBackfill defaultContentDirectories testNow "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just testNow)
 
   , testCase "BFS skips notes awaiting image but follows their links" $ do
       withSystemTempDirectory "social-image-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (reflDir </> "2020-01-01.md")
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (reflectionsDirectory </> "2020-01-01.md")
           ("---\ntitle: \"2020-01-01\"\n---\n" <>
            "See [[books/no-image-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "no-image-book.md")
+        TIO.writeFile (booksDirectory </> "no-image-book.md")
           ("---\ntitle: Book Without Image\nURL: https://example.com/books/no-image-book\n---\n" <>
            "Read [[books/has-image-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "has-image-book.md")
+        TIO.writeFile (booksDirectory </> "has-image-book.md")
           ("---\ntitle: Book With Image\nURL: https://example.com/books/has-image-book\n---\n" <>
            "![[attachments/books-has-image-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should skip book without image"
@@ -461,19 +461,19 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
 
   , testCase "bfsContentDiscovery skips ineligible reflections and finds linked content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (reflDir </> "2099-12-31.md")
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (reflectionsDirectory </> "2099-12-31.md")
           ("---\ntitle: Future Reflection\n---\n" <>
            "Today I read [[books/linked-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "linked-book.md")
+        TIO.writeFile (booksDirectory </> "linked-book.md")
           ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
            "![[attachments/books-linked-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should find linked book, not the ineligible reflection"
@@ -486,24 +486,24 @@ bfsTraversalTests :: TestTree
 bfsTraversalTests = testGroup "BFS traversal"
   [ testCase "BFS traverses through index pages to reach postable content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
         -- Untitled reflection (date-only title) so BFS must traverse through it
-        TIO.writeFile (reflDir </> "2020-01-01.md")
+        TIO.writeFile (reflectionsDirectory </> "2020-01-01.md")
           ("---\ntitle: \"2020-01-01\"\n---\n" <>
            "See [[books/index]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "index.md")
+        TIO.writeFile (booksDirectory </> "index.md")
           ("---\ntitle: Book Index\n---\n" <>
            "Browse [[books/hidden-gem]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "hidden-gem.md")
+        TIO.writeFile (booksDirectory </> "hidden-gem.md")
           ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
            "![[attachments/books-hidden-gem.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post index page"
@@ -513,26 +513,26 @@ bfsTraversalTests = testGroup "BFS traversal"
 
   , testCase "BFS traverses through no_social content to reach postable content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            topicsDir = directory </> "topics"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True topicsDir
-        createDirectoryIfMissing True booksDir
+        let reflectionsDirectory = directory </> "reflections"
+            topicsDirectory = directory </> "topics"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True topicsDirectory
+        createDirectoryIfMissing True booksDirectory
         -- Untitled reflection (date-only title) so BFS must traverse through it
-        TIO.writeFile (reflDir </> "2020-01-01.md")
+        TIO.writeFile (reflectionsDirectory </> "2020-01-01.md")
           ("---\ntitle: \"2020-01-01\"\n---\n" <>
            "About [[topics/private-topic]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (topicsDir </> "private-topic.md")
+        TIO.writeFile (topicsDirectory </> "private-topic.md")
           ("---\ntitle: Private Topic\nno_social: true\n---\n" <>
            "See also [[books/public-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "public-book.md")
+        TIO.writeFile (booksDirectory </> "public-book.md")
           ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
            "![[attachments/books-public-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post private topic"
@@ -542,23 +542,23 @@ bfsTraversalTests = testGroup "BFS traversal"
 
   , testCase "BFS traverses through short-body content to reach postable content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
         -- Untitled reflection (date-only title) so BFS must traverse through it
-        TIO.writeFile (reflDir </> "2020-01-01.md")
+        TIO.writeFile (reflectionsDirectory </> "2020-01-01.md")
           ("---\ntitle: \"2020-01-01\"\n---\n" <>
            "See [[books/stub]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "stub.md")
+        TIO.writeFile (booksDirectory </> "stub.md")
           ("---\ntitle: Stub Note\n---\n" <>
            "Short.\nSee [[books/real-book]]\n")
-        TIO.writeFile (booksDir </> "real-book.md")
+        TIO.writeFile (booksDirectory </> "real-book.md")
           ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
            "![[attachments/books-real-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post stub"
@@ -577,19 +577,19 @@ bfsTests = testGroup "BFS discovery"
 
   , testCase "findMostRecentReflection finds latest" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-        createDirectoryIfMissing True reflDir
-        TIO.writeFile (reflDir </> "2025-01-01.md") "---\ntitle: Day 1\n---\nbody"
-        TIO.writeFile (reflDir </> "2025-01-15.md") "---\ntitle: Day 15\n---\nbody"
-        TIO.writeFile (reflDir </> "2025-01-10.md") "---\ntitle: Day 10\n---\nbody"
+        let reflectionsDirectory = directory </> "reflections"
+        createDirectoryIfMissing True reflectionsDirectory
+        TIO.writeFile (reflectionsDirectory </> "2025-01-01.md") "---\ntitle: Day 1\n---\nbody"
+        TIO.writeFile (reflectionsDirectory </> "2025-01-15.md") "---\ntitle: Day 15\n---\nbody"
+        TIO.writeFile (reflectionsDirectory </> "2025-01-10.md") "---\ntitle: Day 10\n---\nbody"
         result <- findMostRecentReflection directory
         assertEqual "" (Just "reflections/2025-01-15.md") result
 
   , testCase "readContentNote reads a note" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let noteDir = directory </> "books"
-        createDirectoryIfMissing True noteDir
-        TIO.writeFile (noteDir </> "my-book.md")
+        let noteDirectory = directory </> "books"
+        createDirectoryIfMissing True noteDirectory
+        TIO.writeFile (noteDirectory </> "my-book.md")
           "---\ntitle: My Book\nURL: https://example.com/books/my-book\n---\nThis is a great book about many things."
         result <- readContentNote "books/my-book.md" directory
         case result of
@@ -601,25 +601,25 @@ bfsTests = testGroup "BFS discovery"
 
   , testCase "bfsContentDiscovery with empty dir returns empty" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let config = FindContentConfig directory [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         assertEqual "" [] result
 
   , testCase "bfsContentDiscovery finds postable linked content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (reflDir </> "2025-01-15.md")
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (reflectionsDirectory </> "2025-01-15.md")
           ("---\ntitle: My Creative Day\n---\n" <>
            "Today I read [[books/great-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "great-book.md")
+        TIO.writeFile (booksDirectory </> "great-book.md")
           ("---\ntitle: A Great Book\nURL: https://example.com/books/great-book\n---\n" <>
            "![[attachments/books-great-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig directory [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing defaultContentDirs
+        let config = FindContentConfig directory [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         assertBool "should find content to post" (not (null result))
   ]
@@ -656,13 +656,13 @@ urlValidationTests = testGroup "URL validation"
 
   , testCase "validateNoteUrl updates stale frontmatter URL to canonical URL when live" $ do
       withSystemTempDirectory "url-test" $ \directory -> do
-        let booksDir = directory </> "books"
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (booksDir </> "renamed-book.md")
+        let booksDirectory = directory </> "books"
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (booksDirectory </> "renamed-book.md")
           "---\ntitle: My Book\nURL: \"https://bagrounds.org/books/old-name\"\n---\nContent here."
         let checker url = pure (url == "https://bagrounds.org/books/renamed-book")
             note = ContentNote
-              { noteFilePath = booksDir </> "renamed-book.md"
+              { noteFilePath = booksDirectory </> "renamed-book.md"
               , noteRelativePath = testRelativePath "books/renamed-book.md"
               , noteTitle = testTitle "My Book"
               , noteUrl = testUrl "https://bagrounds.org/books/renamed-book"
@@ -678,7 +678,7 @@ urlValidationTests = testGroup "URL validation"
           Just n  -> assertEqual "url should be the canonical one"
             (testUrl "https://bagrounds.org/books/renamed-book") (noteUrl n)
         -- Verify the stale frontmatter URL was replaced with the canonical URL
-        updatedContent <- TIO.readFile (booksDir </> "renamed-book.md")
+        updatedContent <- TIO.readFile (booksDirectory </> "renamed-book.md")
         assertBool "file should contain canonical URL"
           (T.isInfixOf "https://bagrounds.org/books/renamed-book" updatedContent)
         assertBool "file should not contain stale URL"
@@ -693,9 +693,9 @@ urlValidationTests = testGroup "URL validation"
 
   , testCase "readContentNote derives URL from file path ignoring frontmatter URL" $ do
       withSystemTempDirectory "read-test" $ \directory -> do
-        let booksDir = directory </> "books"
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (booksDir </> "my-book.md")
+        let booksDirectory = directory </> "books"
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (booksDirectory </> "my-book.md")
           ("---\ntitle: My Book\nURL: \"https://bagrounds.org/wrong-url\"\n---\n" <> T.replicate 60 "x")
         result <- readContentNote "books/my-book.md" directory
         case result of
@@ -705,25 +705,25 @@ urlValidationTests = testGroup "URL validation"
 
   , testCase "BFS skips notes with dead URLs but still follows links" $ do
       withSystemTempDirectory "url-test" $ \directory -> do
-        let reflDir = directory </> "reflections"
-            booksDir = directory </> "books"
-        createDirectoryIfMissing True reflDir
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (reflDir </> "2020-01-01.md")
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (reflectionsDirectory </> "2020-01-01.md")
           ("---\ntitle: \"2020-01-01\"\n---\n" <>
            "See [[books/dead-link]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "dead-link.md")
+        TIO.writeFile (booksDirectory </> "dead-link.md")
           ("---\ntitle: Dead Link Book\nURL: \"https://bagrounds.org/books/dead-link\"\n---\n" <>
            "![[attachments/books-dead-link.jpg]]\n" <>
            "Read [[books/live-book]]\n" <>
            T.replicate 60 "x")
-        TIO.writeFile (booksDir </> "live-book.md")
+        TIO.writeFile (booksDirectory </> "live-book.md")
           ("---\ntitle: Live Book\nURL: \"https://bagrounds.org/books/live-book\"\n---\n" <>
            "![[attachments/books-live-book.jpg]]\n" <>
            T.replicate 60 "x")
         let checker url = pure (url == "https://bagrounds.org/books/live-book")
-            config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) (Just checker) defaultContentDirs
+            config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) (Just checker) defaultContentDirectories
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not include dead-link book"
@@ -872,19 +872,19 @@ socialPostTests = testGroup "SocialPost"
 readContentNoteTests :: TestTree
 readContentNoteTests = testGroup "readContentNote"
   [ testCase "returns Nothing for empty relative path" $
-      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
-        result <- readContentNote "" tmpDir
+      withSystemTempDirectory "social-posting-test" $ \temporaryDirectory -> do
+        result <- readContentNote "" temporaryDirectory
         result @?= Nothing
 
   , testCase "returns Nothing for nonexistent file" $
-      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
-        result <- readContentNote "nonexistent/file.md" tmpDir
+      withSystemTempDirectory "social-posting-test" $ \temporaryDirectory -> do
+        result <- readContentNote "nonexistent/file.md" temporaryDirectory
         result @?= Nothing
 
   , testCase "returns Nothing for whitespace-only title" $
-      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+      withSystemTempDirectory "social-posting-test" $ \temporaryDirectory -> do
         let relativePath = "books/test-book.md"
-            filePath = tmpDir </> "books" </> "test-book.md"
+            filePath = temporaryDirectory </> "books" </> "test-book.md"
             content = T.unlines
               [ "---"
               , "title: \"  \""
@@ -892,15 +892,15 @@ readContentNoteTests = testGroup "readContentNote"
               , "---"
               , "This is a sufficiently long body of text for content note testing purposes."
               ]
-        createDirectoryIfMissing True (tmpDir </> "books")
+        createDirectoryIfMissing True (temporaryDirectory </> "books")
         TIO.writeFile filePath content
-        result <- readContentNote relativePath tmpDir
+        result <- readContentNote relativePath temporaryDirectory
         result @?= Nothing
 
   , testCase "succeeds with valid content note" $
-      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+      withSystemTempDirectory "social-posting-test" $ \temporaryDirectory -> do
         let relativePath = "books/valid-book.md"
-            filePath = tmpDir </> "books" </> "valid-book.md"
+            filePath = temporaryDirectory </> "books" </> "valid-book.md"
             content = T.unlines
               [ "---"
               , "title: \"A Valid Book Title\""
@@ -908,9 +908,9 @@ readContentNoteTests = testGroup "readContentNote"
               , "---"
               , "This book has enough content to be a valid note for social posting."
               ]
-        createDirectoryIfMissing True (tmpDir </> "books")
+        createDirectoryIfMissing True (temporaryDirectory </> "books")
         TIO.writeFile filePath content
-        result <- readContentNote relativePath tmpDir
+        result <- readContentNote relativePath temporaryDirectory
         assertBool "should return Just for valid content note" $ isJust result
   ]
 

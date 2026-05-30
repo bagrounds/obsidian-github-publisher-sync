@@ -92,11 +92,11 @@ data NavLinkResult = NavLinkResult
   } deriving (Show, Eq)
 
 readAiBlogPostFiles :: FilePath -> IO [Text]
-readAiBlogPostFiles aiBlogDir = do
-  exists <- doesDirectoryExist aiBlogDir
+readAiBlogPostFiles aiBlogDirectory = do
+  exists <- doesDirectoryExist aiBlogDirectory
   if exists
     then do
-      entries <- listDirectory aiBlogDir
+      entries <- listDirectory aiBlogDirectory
       let mdFiles = sort $ filter isPostFile $ fmap T.pack entries
       pure mdFiles
     else pure []
@@ -106,17 +106,17 @@ isPostFile f =
   T.isSuffixOf ".md" f && f /= "index.md" && f /= "AGENTS.md"
 
 ensureAllNavLinks :: FilePath -> IO [NavLinkResult]
-ensureAllNavLinks aiBlogDir = do
-  files <- readAiBlogPostFiles aiBlogDir
+ensureAllNavLinks aiBlogDirectory = do
+  files <- readAiBlogPostFiles aiBlogDirectory
   let indexed = zip [0..] files
       fileCount = length files
-  traverse (processFile aiBlogDir files fileCount) indexed
+  traverse (processFile aiBlogDirectory files fileCount) indexed
 
 processFile :: FilePath -> [Text] -> Int -> (Int, Text) -> IO NavLinkResult
-processFile aiBlogDir files fileCount (index, filename) = do
+processFile aiBlogDirectory files fileCount (index, filename) = do
   let prevFilename = if index > 0 then Just (files !! (index - 1)) else Nothing
       nextFilename = if index < fileCount - 1 then Just (files !! (index + 1)) else Nothing
-      filePath = aiBlogDir </> T.unpack filename
+      filePath = aiBlogDirectory </> T.unpack filename
   content <- TIO.readFile filePath
   if navLinksMatch content prevFilename nextFilename
     then pure NavLinkResult { filename = filename, modified = False }
@@ -129,8 +129,8 @@ processFile aiBlogDir files fileCount (index, filename) = do
            pure NavLinkResult { filename = filename, modified = True }
 
 extractAiBlogTitle :: FilePath -> Text -> IO Text
-extractAiBlogTitle aiBlogDir filename = do
-  let filePath = aiBlogDir </> T.unpack filename
+extractAiBlogTitle aiBlogDirectory filename = do
+  let filePath = aiBlogDirectory </> T.unpack filename
   exists <- doesFileExist filePath
   if exists
     then do
@@ -142,13 +142,13 @@ extractAiBlogTitle aiBlogDir filename = do
     else pure (fromMaybe filename (T.stripSuffix ".md" filename))
 
 buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Title, Text)]
-buildReflectionLinks aiBlogDir results = do
-  entries <- traverse (buildEntry aiBlogDir) results
+buildReflectionLinks aiBlogDirectory results = do
+  entries <- traverse (buildEntry aiBlogDirectory) results
   pure $ catMaybes entries
 
 buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
-buildEntry aiBlogDir result = do
-  titleText <- extractAiBlogTitle aiBlogDir (filename result)
+buildEntry aiBlogDirectory result = do
+  titleText <- extractAiBlogTitle aiBlogDirectory (filename result)
   let relPath = "ai-blog/" <> filename result
   pure $ do
     date <- extractPostDate (filename result)

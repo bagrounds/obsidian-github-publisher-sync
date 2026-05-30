@@ -161,9 +161,9 @@ tests = testGroup "Frontmatter"
 readReflectionTests :: TestTree
 readReflectionTests = testGroup "readReflection"
   [ testCase "returns Nothing for whitespace-only title" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
         let date = "2026-06-01" :: T.Text
-            filePath = tmpDir </> "2026-06-01.md"
+            filePath = temporaryDirectory </> "2026-06-01.md"
             content = T.unlines
               [ "---"
               , "title: \"  \""
@@ -172,13 +172,13 @@ readReflectionTests = testGroup "readReflection"
               , "Some body text"
               ]
         TIO.writeFile filePath content
-        result <- readReflection date tmpDir
+        result <- readReflection date temporaryDirectory
         result @?= Nothing
 
   , testCase "returns Nothing for empty title" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
         let date = "2026-06-02" :: T.Text
-            filePath = tmpDir </> "2026-06-02.md"
+            filePath = temporaryDirectory </> "2026-06-02.md"
             content = T.unlines
               [ "---"
               , "title: \"\""
@@ -187,13 +187,13 @@ readReflectionTests = testGroup "readReflection"
               , "Body content"
               ]
         TIO.writeFile filePath content
-        result <- readReflection date tmpDir
+        result <- readReflection date temporaryDirectory
         result @?= Nothing
 
   , testCase "succeeds with valid frontmatter" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
         let date = "2026-06-03" :: T.Text
-            filePath = tmpDir </> "2026-06-03.md"
+            filePath = temporaryDirectory </> "2026-06-03.md"
             content = T.unlines
               [ "---"
               , "title: \"Valid Reflection Title\""
@@ -202,12 +202,12 @@ readReflectionTests = testGroup "readReflection"
               , "Reflection body text"
               ]
         TIO.writeFile filePath content
-        result <- readReflection date tmpDir
+        result <- readReflection date temporaryDirectory
         assertBool "should return Just for valid data" $ isJust result
 
   , testCase "returns Nothing for nonexistent file" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
-        result <- readReflection ("2026-01-01" :: T.Text) tmpDir
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
+        result <- readReflection ("2026-01-01" :: T.Text) temporaryDirectory
         result @?= Nothing
   ]
 
@@ -218,9 +218,9 @@ readReflectionTests = testGroup "readReflection"
 readNoteTests :: TestTree
 readNoteTests = testGroup "readNote"
   [ testCase "returns Nothing when URL is invalid" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
         let relativePath = "notes/test-note.md" :: T.Text
-            filePath = tmpDir </> "notes" </> "test-note.md"
+            filePath = temporaryDirectory </> "notes" </> "test-note.md"
             content = T.unlines
               [ "---"
               , "title: \"A Valid Title\""
@@ -228,15 +228,15 @@ readNoteTests = testGroup "readNote"
               , "---"
               , "Note body"
               ]
-        createDirectoryIfMissing True (tmpDir </> "notes")
+        createDirectoryIfMissing True (temporaryDirectory </> "notes")
         TIO.writeFile filePath content
-        result <- readNote relativePath tmpDir
+        result <- readNote relativePath temporaryDirectory
         result @?= Nothing
 
   , testCase "succeeds with valid note data" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
         let relativePath = "reflections/2026-06-04.md" :: T.Text
-            filePath = tmpDir </> "reflections" </> "2026-06-04.md"
+            filePath = temporaryDirectory </> "reflections" </> "2026-06-04.md"
             content = T.unlines
               [ "---"
               , "title: \"My Note Title\""
@@ -244,13 +244,13 @@ readNoteTests = testGroup "readNote"
               , "---"
               , "Note body text"
               ]
-        createDirectoryIfMissing True (tmpDir </> "reflections")
+        createDirectoryIfMissing True (temporaryDirectory </> "reflections")
         TIO.writeFile filePath content
-        result <- readNote relativePath tmpDir
+        result <- readNote relativePath temporaryDirectory
         assertBool "should return Just for valid note" $ isJust result
 
   , testCase "returns Nothing for nonexistent file" $
-      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
-        result <- readNote ("nonexistent/file.md" :: T.Text) tmpDir
+      withSystemTempDirectory "frontmatter-test" $ \temporaryDirectory -> do
+        result <- readNote ("nonexistent/file.md" :: T.Text) temporaryDirectory
         result @?= Nothing
   ]

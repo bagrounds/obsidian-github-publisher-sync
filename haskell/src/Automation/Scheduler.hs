@@ -137,25 +137,25 @@ blogPostMatchesToday today =
   any (T.isPrefixOf today . T.pack)
 
 blogPostExistsForToday :: FilePath -> Text -> IO Bool
-blogPostExistsForToday seriesDir today = do
-  exists <- doesDirectoryExist seriesDir
+blogPostExistsForToday seriesDirectory today = do
+  exists <- doesDirectoryExist seriesDirectory
   if exists
-    then blogPostMatchesToday today <$> listDirectory seriesDir
+    then blogPostMatchesToday today <$> listDirectory seriesDirectory
     else pure False
 
 findPostToRegenerate :: FilePath -> Text -> IO (Maybe FilePath)
-findPostToRegenerate seriesDir today = do
-  exists <- doesDirectoryExist seriesDir
+findPostToRegenerate seriesDirectory today = do
+  exists <- doesDirectoryExist seriesDirectory
   if exists
     then do
-      files <- listDirectory seriesDir
+      files <- listDirectory seriesDirectory
       findM isRegenerable (filter isTodayMarkdown files)
     else pure Nothing
   where
     isTodayMarkdown f =
       T.isPrefixOf today (T.pack f) && takeExtension f == ".md"
     isRegenerable f = do
-      content <- TIO.readFile (seriesDir </> f)
+      content <- TIO.readFile (seriesDirectory </> f)
       pure (hasRegenerateMarker content)
 
 findM :: Monad m => (a -> m Bool) -> [a] -> m (Maybe a)

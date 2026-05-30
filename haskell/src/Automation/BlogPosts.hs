@@ -40,8 +40,8 @@ extractDate filename =
      else ""
 
 parsePostFile :: FilePath -> Text -> IO BlogPost
-parsePostFile seriesDir filename = do
-  content <- TIO.readFile (seriesDir </> T.unpack filename)
+parsePostFile seriesDirectory filename = do
+  content <- TIO.readFile (seriesDirectory </> T.unpack filename)
   let (frontmatter, body) = parseFrontmatter content
       title = fromMaybe (T.pack $ dropExtension $ T.unpack filename) (Map.lookup "title" frontmatter)
   pure BlogPost
@@ -52,19 +52,19 @@ parsePostFile seriesDir filename = do
     }
 
 readSeriesPosts :: FilePath -> IO [BlogPost]
-readSeriesPosts seriesDir = do
-  exists <- doesDirectoryExist seriesDir
+readSeriesPosts seriesDirectory = do
+  exists <- doesDirectoryExist seriesDirectory
   if exists
     then do
-      entries <- listDirectory seriesDir
+      entries <- listDirectory seriesDirectory
       let mdFiles = filter isPostFile $ fmap T.pack entries
-      posts <- traverse (parsePostFile seriesDir) mdFiles
+      posts <- traverse (parsePostFile seriesDirectory) mdFiles
       pure $ sortOn (Down . filename) posts
     else pure []
 
 readAgentsMd :: FilePath -> IO Text
-readAgentsMd seriesDir = do
-  let agentsPath = seriesDir </> "AGENTS.md"
+readAgentsMd seriesDirectory = do
+  let agentsPath = seriesDirectory </> "AGENTS.md"
   exists <- doesFileExist agentsPath
   if exists
     then do

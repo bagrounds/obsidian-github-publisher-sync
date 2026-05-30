@@ -171,13 +171,13 @@ extractPostDateTests = testGroup "extractPostDate"
 buildReflectionLinksTests :: TestTree
 buildReflectionLinksTests = testGroup "buildReflectionLinks"
   [ testCase "includes unmodified posts in reflection links" $
-      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
-        let postFile = tmpDir </> "2026-04-03-1-my-post.md"
+      withSystemTempDirectory "ai-blog-test" $ \temporaryDirectory -> do
+        let postFile = temporaryDirectory </> "2026-04-03-1-my-post.md"
         TIO.writeFile postFile "---\ntitle: \"My Post Title\"\n---\n[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]\n# My Post"
         let results =
               [ NavLinkResult { filename = "2026-04-03-1-my-post.md", modified = False }
               ]
-        links <- buildReflectionLinks tmpDir results
+        links <- buildReflectionLinks temporaryDirectory results
         assertBool "should include unmodified post" (length links == 1)
         case links of
           ((relPath, title, date):_) -> do
@@ -186,22 +186,22 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
             date @?= "2026-04-03"
           [] -> assertBool "should have at least one link" False
   , testCase "includes both modified and unmodified posts" $
-      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
-        TIO.writeFile (tmpDir </> "2026-04-01-1-old.md") "---\ntitle: \"Old Post\"\n---\nContent"
-        TIO.writeFile (tmpDir </> "2026-04-03-1-new.md") "---\ntitle: \"New Post\"\n---\nContent"
+      withSystemTempDirectory "ai-blog-test" $ \temporaryDirectory -> do
+        TIO.writeFile (temporaryDirectory </> "2026-04-01-1-old.md") "---\ntitle: \"Old Post\"\n---\nContent"
+        TIO.writeFile (temporaryDirectory </> "2026-04-03-1-new.md") "---\ntitle: \"New Post\"\n---\nContent"
         let results =
               [ NavLinkResult { filename = "2026-04-01-1-old.md", modified = True }
               , NavLinkResult { filename = "2026-04-03-1-new.md", modified = False }
               ]
-        links <- buildReflectionLinks tmpDir results
+        links <- buildReflectionLinks temporaryDirectory results
         assertBool "should include both posts" (length links == 2)
   , testCase "still filters out posts without valid dates" $
-      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
-        TIO.writeFile (tmpDir </> "no-date.md") "---\ntitle: \"No Date\"\n---\nContent"
+      withSystemTempDirectory "ai-blog-test" $ \temporaryDirectory -> do
+        TIO.writeFile (temporaryDirectory </> "no-date.md") "---\ntitle: \"No Date\"\n---\nContent"
         let results =
               [ NavLinkResult { filename = "no-date.md", modified = False }
               ]
-        links <- buildReflectionLinks tmpDir results
+        links <- buildReflectionLinks temporaryDirectory results
         assertBool "should exclude posts without valid dates" (null links)
   ]
 

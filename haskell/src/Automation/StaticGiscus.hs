@@ -251,12 +251,12 @@ fetchAllDiscussions manager token owner repo categoryId =
              else pure updatedDiscussions
 
 walkHtmlFiles :: FilePath -> IO [FilePath]
-walkHtmlFiles dir = do
-  exists <- doesDirectoryExist dir
+walkHtmlFiles directory = do
+  exists <- doesDirectoryExist directory
   if exists
     then do
-      entries <- listDirectory dir
-      let paths = fmap (dir </>) entries
+      entries <- listDirectory directory
+      let paths = fmap (directory </>) entries
       files <- filterM doesFileExist paths
       dirs  <- filterM doesDirectoryExist paths
       let htmlFiles = filter (\f -> takeExtension f == ".html") files
@@ -265,8 +265,8 @@ walkHtmlFiles dir = do
     else pure []
 
 processHtmlFiles :: FilePath -> CommentsMap -> IO [FilePath]
-processHtmlFiles dir commentsMap = do
-  htmlFiles <- walkHtmlFiles dir
+processHtmlFiles directory commentsMap = do
+  htmlFiles <- walkHtmlFiles directory
   catMaybes <$> traverse (processOneFile commentsMap) htmlFiles
 
 processOneFile :: CommentsMap -> FilePath -> IO (Maybe FilePath)

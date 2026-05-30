@@ -34,27 +34,27 @@ countVaultFilesTests = testGroup "countVaultFiles"
       assertEqual "should be 0" 0 count
 
   , testCase "counts files excluding hidden entries" $
-      withSystemTempDirectory "vault-count" $ \dir -> do
-        writeFile (dir </> "note1.md") "content"
-        writeFile (dir </> "note2.md") "content"
-        writeFile (dir </> ".hidden") "hidden"
-        count <- countVaultFiles dir
+      withSystemTempDirectory "vault-count" $ \directory -> do
+        writeFile (directory </> "note1.md") "content"
+        writeFile (directory </> "note2.md") "content"
+        writeFile (directory </> ".hidden") "hidden"
+        count <- countVaultFiles directory
         assertEqual "should count 2 visible files" 2 count
 
   , testCase "counts files recursively in subdirectories" $
-      withSystemTempDirectory "vault-count" $ \dir -> do
-        createDirectoryIfMissing True (dir </> "sub")
-        writeFile (dir </> "top.md") "content"
-        writeFile (dir </> "sub" </> "nested.md") "content"
-        count <- countVaultFiles dir
+      withSystemTempDirectory "vault-count" $ \directory -> do
+        createDirectoryIfMissing True (directory </> "sub")
+        writeFile (directory </> "top.md") "content"
+        writeFile (directory </> "sub" </> "nested.md") "content"
+        count <- countVaultFiles directory
         assertEqual "should count 2 files across dirs" 2 count
 
   , testCase "ignores hidden subdirectories" $
-      withSystemTempDirectory "vault-count" $ \dir -> do
-        createDirectoryIfMissing True (dir </> ".obsidian")
-        writeFile (dir </> "note.md") "content"
-        writeFile (dir </> ".obsidian" </> "config.json") "{}"
-        count <- countVaultFiles dir
+      withSystemTempDirectory "vault-count" $ \directory -> do
+        createDirectoryIfMissing True (directory </> ".obsidian")
+        writeFile (directory </> "note.md") "content"
+        writeFile (directory </> ".obsidian" </> "config.json") "{}"
+        count <- countVaultFiles directory
         assertEqual "should count only visible file" 1 count
   ]
 
@@ -65,37 +65,37 @@ countVaultFilesTests = testGroup "countVaultFiles"
 validatePrePushTests :: TestTree
 validatePrePushTests = testGroup "validatePrePushFileCount"
   [ testCase "passes when no baseline and count above minimum" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        result <- try (validatePrePushFileCount dir 100) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        result <- try (validatePrePushFileCount directory 100) :: IO (Either SomeException ())
         assertBool "should pass" (isRight result)
 
   , testCase "fails when no baseline and count below minimum" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        result <- try (validatePrePushFileCount dir 10) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        result <- try (validatePrePushFileCount directory 10) :: IO (Either SomeException ())
         assertBool "should fail (circuit breaker)" (isLeft result)
 
   , testCase "passes when current count matches baseline" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        writeFile (vaultFileCountPath dir) "200"
-        result <- try (validatePrePushFileCount dir 200) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        writeFile (vaultFileCountPath directory) "200"
+        result <- try (validatePrePushFileCount directory 200) :: IO (Either SomeException ())
         assertBool "should pass (no file loss)" (isRight result)
 
   , testCase "passes when current count exceeds baseline" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        writeFile (vaultFileCountPath dir) "200"
-        result <- try (validatePrePushFileCount dir 205) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        writeFile (vaultFileCountPath directory) "200"
+        result <- try (validatePrePushFileCount directory 205) :: IO (Either SomeException ())
         assertBool "should pass (files added)" (isRight result)
 
   , testCase "fails when current count below baseline" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        writeFile (vaultFileCountPath dir) "200"
-        result <- try (validatePrePushFileCount dir 195) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        writeFile (vaultFileCountPath directory) "200"
+        result <- try (validatePrePushFileCount directory 195) :: IO (Either SomeException ())
         assertBool "should fail (files lost)" (isLeft result)
 
   , testCase "circuit breaker message mentions file loss" $
-      withSystemTempDirectory "vault-push" $ \dir -> do
-        writeFile (vaultFileCountPath dir) "200"
-        result <- try (validatePrePushFileCount dir 195) :: IO (Either SomeException ())
+      withSystemTempDirectory "vault-push" $ \directory -> do
+        writeFile (vaultFileCountPath directory) "200"
+        result <- try (validatePrePushFileCount directory 195) :: IO (Either SomeException ())
         case result of
           Left failure -> assertBool "error mentions CIRCUIT BREAKER"
             (T.isInfixOf "CIRCUIT BREAKER" (T.pack (show failure)))
@@ -114,8 +114,8 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
       assertBool "should not throw" True
 
   , testCase "appends section when header not present" $
-      withSystemTempDirectory "vault-embed" $ \dir -> do
-        let notePath = dir </> "note.md"
+      withSystemTempDirectory "vault-embed" $ \directory -> do
+        let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\nSome content\n"
         writeEmbedsToNote notePath
           [("## Embed", "<blockquote>post</blockquote>",
@@ -127,8 +127,8 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
           T.isInfixOf "<blockquote>post</blockquote>" result
 
   , testCase "does not duplicate section when header already present" $
-      withSystemTempDirectory "vault-embed" $ \dir -> do
-        let notePath = dir </> "note.md"
+      withSystemTempDirectory "vault-embed" $ \directory -> do
+        let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\n## Embed\n<blockquote>old</blockquote>\n"
         writeEmbedsToNote notePath
           [("## Embed", "<blockquote>new</blockquote>",
@@ -138,8 +138,8 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
         assertEqual "should have exactly one embed header" 1 occurrences
 
   , testCase "handles multiple sections independently" $
-      withSystemTempDirectory "vault-embed" $ \dir -> do
-        let notePath = dir </> "note.md"
+      withSystemTempDirectory "vault-embed" $ \directory -> do
+        let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\n"
         writeEmbedsToNote notePath
           [ ("## Section A", "<a/>", \_ html -> "\n## Section A\n" <> html)

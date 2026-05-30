@@ -121,26 +121,26 @@ reconstructPathTests = testGroup "reconstructPath"
 extractMarkdownLinksTests :: TestTree
 extractMarkdownLinksTests = testGroup "extractMarkdownLinks"
   [ testCase "extracts markdown links" $
-      withSystemTempDirectory "link-test" $ \dir -> do
+      withSystemTempDirectory "link-test" $ \directory -> do
         let body = "See [this](../books/foo.md) and [that](../topics/bar.md)" :: Text
-            links = extractMarkdownLinks body "reflections/2025-01-01.md" dir
+            links = extractMarkdownLinks body "reflections/2025-01-01.md" directory
         assertBool "should find links" (not (null links))
 
   , testCase "extracts wiki links with absolute paths" $
-      withSystemTempDirectory "link-test" $ \dir -> do
+      withSystemTempDirectory "link-test" $ \directory -> do
         let body = "See [[books/my-book]] and [[topics/my-topic]]" :: Text
-            links = extractMarkdownLinks body "index.md" dir
+            links = extractMarkdownLinks body "index.md" directory
         assertBool "should find links" (length links >= 2)
 
   , testCase "skips external URLs" $
-      withSystemTempDirectory "link-test" $ \dir -> do
+      withSystemTempDirectory "link-test" $ \directory -> do
         let body = "See [this](https://example.com/foo.md)" :: Text
-            links = extractMarkdownLinks body "reflections/2025-01-01.md" dir
+            links = extractMarkdownLinks body "reflections/2025-01-01.md" directory
         assertEqual "no links" [] links
 
   , testCase "deduplicates links" $
-      withSystemTempDirectory "link-test" $ \dir -> do
+      withSystemTempDirectory "link-test" $ \directory -> do
         let body = "See [a](books/foo.md) and [b](books/foo.md)" :: Text
-            links = extractMarkdownLinks body "reflections/2025-01-01.md" dir
+            links = extractMarkdownLinks body "reflections/2025-01-01.md" directory
         assertEqual "one unique link" 1 (length links)
   ]

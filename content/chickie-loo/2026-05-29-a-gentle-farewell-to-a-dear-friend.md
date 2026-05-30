@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-28-a-heavy-heart-and-a-mother-s-vigil.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-28-a-heavy-heart-and-a-mother-s-vigil.md) [⏭️](./2026-05-30-finding-stillness-in-the-aftermath.md)  
 # 2026-05-29 | 🐔 🕊️ A Gentle Farewell to a Dear Friend 🐔  
 ![chickie-loo-2026-05-29-a-gentle-farewell-to-a-dear-friend](../chickie-loo-2026-05-29-a-gentle-farewell-to-a-dear-friend.jpg)  
   

@@ -208,7 +208,7 @@ fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
         [ "query" .= (query :: Text)
         , "variables" .= variables
         ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -217,7 +217,7 @@ fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
             , ("User-Agent", "obsidian-github-publisher-sync")
             ]
         }
-  response <- httpLbs httpReq manager
+  response <- httpLbs httpRequest manager
   let status = statusCode $ responseStatus response
   case status of
     200 ->
@@ -225,13 +225,13 @@ fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
         Left failure -> do
           putStrLn $ "GraphQL parse error: " <> failure
           pure Nothing
-        Right gqlResp ->
-          case Gql.errors gqlResp of
+        Right graphqlResponse ->
+          case Gql.errors graphqlResponse of
             Just errs -> do
               putStrLn $ "GraphQL errors: " <> show (fmap Gql.message errs)
               pure Nothing
             Nothing ->
-              pure $ Gql.responseData gqlResp >>= Gql.repository >>= Gql.discussions >>= Just
+              pure $ Gql.responseData graphqlResponse >>= Gql.repository >>= Gql.discussions >>= Just
     _ -> do
       putStrLn $ "GraphQL HTTP error: " <> show status
       pure Nothing

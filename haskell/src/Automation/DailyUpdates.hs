@@ -113,7 +113,7 @@ emojiToColumnRepresentative "🐦"  = Just (PostedTo Twitter)
 emojiToColumnRepresentative _     = Nothing
 
 parseCellToDetail :: UpdateDetail -> Text -> Maybe UpdateDetail
-parseCellToDetail (InternalLinksAdded _) num = InternalLinksAdded <$> readMaybe (T.unpack num)
+parseCellToDetail (InternalLinksAdded _) numberText = InternalLinksAdded <$> readMaybe (T.unpack numberText)
 parseCellToDetail column cell
   | cell == cellText column = Just column
   | cell == "✓"             = Just column

@@ -143,12 +143,12 @@ createSession manager Credentials{..} = do
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialRequest <- parseRequest url
-    let req = initialRequest
+    let request = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS bodyJson
           , requestHeaders = [("Content-Type", "application/json")]
           }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $ HttpCodeException status ("Bluesky login error: " <> show status)
@@ -276,7 +276,7 @@ uploadBlob manager AtpSession{..} contentType imageData = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.repo.uploadBlob")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialRequest <- parseRequest url
-    let req = initialRequest
+    let request = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS imageData
           , requestHeaders =
@@ -284,7 +284,7 @@ uploadBlob manager AtpSession{..} contentType imageData = do
               , ("Content-Type", contentType)
               ]
           }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $ HttpCodeException status ("Bluesky blob upload error: " <> show status)
@@ -342,7 +342,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
           url = T.unpack (atpBaseUrl <> "com.atproto.repo.createRecord")
       result <- try @SomeException $ withRetry defaultRetryOptions $ do
         initialRequest <- parseRequest url
-        let req = initialRequest
+        let request = initialRequest
               { method = "POST"
               , requestBody = RequestBodyLBS bodyJson
               , requestHeaders =
@@ -350,7 +350,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
                   , ("Content-Type", "application/json")
                   ]
               }
-        response <- httpLbs req manager
+        response <- httpLbs request manager
         let status = statusCode (responseStatus response)
         when (status < 200 || status >= 300) $
           throwIO $ HttpCodeException status ("Bluesky create post error: " <> show status)
@@ -427,7 +427,7 @@ deleteRecord manager AtpSession{..} uri = do
       url = T.unpack (atpBaseUrl <> "com.atproto.repo.deleteRecord")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialRequest <- parseRequest url
-    let req = initialRequest
+    let request = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS bodyJson
           , requestHeaders =
@@ -435,7 +435,7 @@ deleteRecord manager AtpSession{..} uri = do
               , ("Content-Type", "application/json")
               ]
           }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $ HttpCodeException status ("Bluesky delete error: " <> show status)

@@ -187,7 +187,7 @@ post manager creds tweetText = do
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     authHeader <- buildOAuthHeader creds "POST" tweetsApiUrl
     initialRequest <- parseRequest (T.unpack tweetsApiUrl)
-    let req =
+    let request =
           initialRequest
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
@@ -197,7 +197,7 @@ post manager creds tweetText = do
                 , ("X-Idempotency-Key", TE.encodeUtf8 idempotencyKey)
                 ]
             }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $
@@ -232,13 +232,13 @@ deletePost manager creds tweetId = do
   result <- try @SomeException $ do
     authHeader <- buildOAuthHeader creds "DELETE" url
     initialRequest <- parseRequest (T.unpack url)
-    let req =
+    let request =
           initialRequest
             { method = "DELETE"
             , requestHeaders =
                 [("Authorization", TE.encodeUtf8 authHeader)]
             }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $

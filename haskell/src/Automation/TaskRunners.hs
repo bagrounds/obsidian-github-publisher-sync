@@ -89,7 +89,7 @@ import Automation.Scheduler
   )
 import qualified Automation.Scheduler as Scheduler
 import Automation.SocialPosting (autoPost)
-import Automation.TaskRunner (logMsg, failTask)
+import Automation.TaskRunner (logMessage, failTask)
 import Automation.Text (stripCodeFences)
 import Automation.Title (mkTitle)
 import Automation.VaultSync (syncFileToVault, syncNewMarkdownFiles, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
@@ -125,7 +125,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       repoRoot = Context.repoRoot context
       vaultDir = Context.vaultDir context
       apiKey = Context.geminiApiKey context
-  logMsg $ "▶️  " <> taskName
+  logMessage $ "▶️  " <> taskName
 
   runConfig <- case Map.lookup seriesId runConfigs of
     Just config -> pure config
@@ -140,19 +140,19 @@ runBlogSeries context seriesMap runConfigs seriesId = do
   _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
   let vaultIndexPath = vaultDir </> T.unpack seriesId </> "index.md"
   indexCreated <- ensureFileInVault vaultIndexPath (generateSeriesIndex series)
-  when indexCreated $ logMsg $ "  📋 Created index.md for " <> seriesId
-  _ <- syncRepoPostsToVault repoRoot seriesId vaultDir logMsg
+  when indexCreated $ logMessage $ "  📋 Created index.md for " <> seriesId
+  _ <- syncRepoPostsToVault repoRoot seriesId vaultDir logMessage
 
   let seriesDir = repoRoot </> T.unpack seriesId
   maybeRegenPost <- findPostToRegenerate seriesDir todayText
   case maybeRegenPost of
     Just postToRegen -> do
-      logMsg $ "  ♻️  Regeneration requested for " <> T.pack postToRegen <> " — removing old post"
+      logMessage $ "  ♻️  Regeneration requested for " <> T.pack postToRegen <> " — removing old post"
       removeFile (seriesDir </> postToRegen)
     Nothing -> do
       existsForToday <- blogPostExistsForToday seriesDir todayText
       when existsForToday $
-        logMsg $ "  ⏭️  Already generated for " <> todayText
+        logMessage $ "  ⏭️  Already generated for " <> todayText
 
   existsNow <- blogPostExistsForToday seriesDir todayText
   case (maybeRegenPost, existsNow) of
@@ -164,7 +164,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       priorityUser <- lookupEnvText (T.unpack (Scheduler.priorityUserEnvVar runConfig))
 
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
-      logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
+      logMessage $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       blogContextResult <- buildBlogContext seriesMap seriesId repoRoot comments today
       case blogContextResult of
@@ -209,12 +209,12 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       bodyWithSig = appendModelSignature body usedModel
                   if null groundingSources
                     then when (Scheduler.searchGrounding runConfig) $
-                      logMsg $ "  ⚠️  Grounding was requested but " <> usedModel <> " returned no sources"
-                    else logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
+                      logMessage $ "  ⚠️  Grounding was requested but " <> usedModel <> " returned no sources"
+                    else logMessage $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
                   let postPath = seriesDir </> T.unpack newPostFilename
                   TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> fromMaybe "" maybeSourcesSection <> "\n")
-                  logMsg $ "  ✅ Written: " <> newPostFilename <> " [" <> usedModel <> "]"
+                  logMessage $ "  ✅ Written: " <> newPostFilename <> " [" <> usedModel <> "]"
 
                   let attachmentsDir = repoRoot </> "attachments"
                   imageEnvMap <- buildEnvMap
@@ -225,12 +225,12 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                     ]
                   let imageProviders = resolveImageProviders imageEnvMap
                   case imageProviders of
-                    [] -> logMsg "  ⚠️  No image providers configured, skipping image generation"
+                    [] -> logMessage "  ⚠️  No image providers configured, skipping image generation"
                     (provider : _) -> do
                       imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
                       case imageResult of
-                        Right _ -> logMsg $ "  🖼️  Image generated for " <> newPostFilename
-                        Left failure -> logMsg $ "  ⚠️  Image generation failed for " <> newPostFilename <> ": " <> T.pack (show failure)
+                        Right _ -> logMessage $ "  🖼️  Image generated for " <> newPostFilename
+                        Left failure -> logMessage $ "  ⚠️  Image generation failed for " <> newPostFilename <> ": " <> T.pack (show failure)
 
                   case previousPost of
                     Just post -> updatePreviousPost (vaultDir </> T.unpack seriesId) post series newPostFilename
@@ -256,14 +256,14 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                   syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
                   pure ()
 
-  logMsg $ "✅ " <> taskName
+  logMessage $ "✅ " <> taskName
 
 runBackfillImages :: Context.AppContext -> [ContentDirectory] -> IO ()
 runBackfillImages context contentDirs = do
   let manager = Context.httpManager context
       repoRoot = Context.repoRoot context
       vaultDir = Context.vaultDir context
-  logMsg "▶️  backfill-blog-images"
+  logMessage "▶️  backfill-blog-images"
 
   today <- todayPacificDay
   let todayText = formatDay today
@@ -272,14 +272,14 @@ runBackfillImages context contentDirs = do
       vaultAiBlogDir = vaultDir </> "ai-blog"
       repoToolsDir = repoRoot </> "tools"
       vaultToolsDir = vaultDir </> "tools"
-  newPostCount <- syncNewMarkdownFiles repoAiBlogDir vaultAiBlogDir logMsg
+  newPostCount <- syncNewMarkdownFiles repoAiBlogDir vaultAiBlogDir logMessage
   case newPostCount of
     0 -> pure ()
-    count -> logMsg $ "  📝 Synced " <> T.pack (show count) <> " new AI blog post(s) to vault"
-  newToolCount <- syncNewMarkdownFiles repoToolsDir vaultToolsDir logMsg
+    count -> logMessage $ "  📝 Synced " <> T.pack (show count) <> " new AI blog post(s) to vault"
+  newToolCount <- syncNewMarkdownFiles repoToolsDir vaultToolsDir logMessage
   case newToolCount of
     0 -> pure ()
-    count -> logMsg $ "  🧰 Synced " <> T.pack (show count) <> " new tool page(s) to vault"
+    count -> logMessage $ "  🧰 Synced " <> T.pack (show count) <> " new tool page(s) to vault"
 
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
@@ -290,10 +290,10 @@ runBackfillImages context contentDirs = do
   let providers = resolveImageProviders envMap
   imageModifiedFiles <- case providers of
     [] -> do
-      logMsg "  ⚠️  No image providers configured, skipping image backfill"
+      logMessage "  ⚠️  No image providers configured, skipping image backfill"
       pure []
     _  -> do
-      logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
+      logMessage $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let backfillConfig = BackfillConfig
             { backfillRepoRoot = vaultDir
             , backfillContentDirs = contentDirs
@@ -302,19 +302,19 @@ runBackfillImages context contentDirs = do
             , backfillMaxImages = 2
             }
       result <- backfillImages manager backfillConfig
-      logMsg $ "  🖼️  Images: " <> T.pack (show (imagesGenerated result))
+      logMessage $ "  🖼️  Images: " <> T.pack (show (imagesGenerated result))
             <> "/" <> T.pack (show (backfillMaxImages backfillConfig))
             <> " generated, " <> T.pack (show (filesUpdated result))
             <> " files updated, " <> T.pack (show (filesSkipped result)) <> " skipped"
       case errors result of
         [] -> pure ()
-        errs -> logMsg $ "  ⚠️  Errors: " <> T.intercalate "; " errs
+        errs -> logMessage $ "  ⚠️  Errors: " <> T.intercalate "; " errs
       pure (modifiedFiles result)
 
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
   let modifiedCount = length (filter modified navResults)
-  logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
+  logMessage $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   imageUpdateLinks <- catMaybes <$> traverse (\filePath -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
@@ -322,10 +322,10 @@ runBackfillImages context contentDirs = do
           (Right relativePath, Right validTitle) ->
             pure (Just (UpdateLink relativePath validTitle [ImageAdded]))
           (Left pathError, _) -> do
-            logMsg $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> pathError
+            logMessage $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> pathError
             pure Nothing
           (_, Left titleError) -> do
-            logMsg $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> titleError
+            logMessage $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> titleError
             pure Nothing
         ) imageModifiedFiles
   case imageUpdateLinks of
@@ -338,28 +338,28 @@ runBackfillImages context contentDirs = do
   let todayLinks = filter (\(_, _, dateText) -> dateText <= todayText) aiBlogLinks
   mapM_ (\(relPath, title, dateText) -> do
     case parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack dateText) of
-      Nothing -> logMsg $ "  ⚠️  Skipping AI blog link with unparseable date (expected YYYY-MM-DD): " <> dateText
+      Nothing -> logMessage $ "  ⚠️  Skipping AI blog link with unparseable date (expected YYYY-MM-DD): " <> dateText
       Just day -> do
         let filename = T.drop (T.length "ai-blog/") relPath
         result <- updateDailyReflection vaultDir day aiBlogConfig filename title Nothing
         case result of
           _ | urrLinkInserted result ->
-                logMsg $ "  🤖 Added AI blog link to " <> dateText <> " reflection: " <> relPath
+                logMessage $ "  🤖 Added AI blog link to " <> dateText <> " reflection: " <> relPath
             | otherwise -> pure ()
     ) todayLinks
 
-  logMsg "✅ backfill-blog-images"
+  logMessage "✅ backfill-blog-images"
 
 runInternalLinking :: Context.AppContext -> IO ()
 runInternalLinking context = do
   let manager = Context.httpManager context
       vaultDir = Context.vaultDir context
-  logMsg "▶️  internal-linking"
+  logMessage "▶️  internal-linking"
 
   envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
   let model = maybe IL.defaultLinkingModel Gemini.modelFromText envModel
   result <- IL.run manager model vaultDir
-  logMsg $ "  🔗 Internal linking: "
+  logMessage $ "  🔗 Internal linking: "
         <> T.pack (show (IL.filesVisited result)) <> " visited, "
         <> T.pack (show (IL.filesModified result)) <> " modified, "
         <> T.pack (show (IL.totalLinksAdded result)) <> " links added"
@@ -374,33 +374,33 @@ runInternalLinking context = do
         case mkTitle title of
           Right validTitle -> pure (Just (UpdateLink (IL.relativePath fr) validTitle [InternalLinksAdded (IL.linksAdded fr)]))
           Left titleError -> do
-            logMsg $ "  ⚠️  Skipping update link: " <> titleError
+            logMessage $ "  ⚠️  Skipping update link: " <> titleError
             pure Nothing
         ) modifiedResults
       _ <- addUpdateLinksToReflection vaultDir today links
       pure ()
 
-  logMsg "✅ internal-linking"
+  logMessage "✅ internal-linking"
 
 runSocialPosting :: Context.AppContext -> [ContentDirectory] -> IO ()
 runSocialPosting context contentDirs = do
-  logMsg "▶️  social-posting"
+  logMessage "▶️  social-posting"
   autoPost (Context.httpManager context) (Context.vaultDir context) contentDirs
-  logMsg "✅ social-posting"
+  logMessage "✅ social-posting"
 
 runAiFiction :: Context.AppContext -> IO ()
 runAiFiction context = do
-  logMsg "▶️  ai-fiction"
+  logMessage "▶️  ai-fiction"
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
       eligibleDays = eligibleReflectionDays localNow fictionEligibilityCutoff
 
-  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
+  logMessage $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 
   mapM_ (tryFictionForDate context) eligibleDays
 
-  logMsg "✅ ai-fiction"
+  logMessage "✅ ai-fiction"
 
 tryFictionForDate :: Context.AppContext -> Day -> IO ()
 tryFictionForDate context day = do
@@ -411,11 +411,11 @@ tryFictionForDate context day = do
 
   exists <- doesFileExist reflectionPath
   if not exists
-    then logMsg $ "  ⏭️  No reflection note for " <> dateText
+    then logMessage $ "  ⏭️  No reflection note for " <> dateText
     else do
       noteContent <- TIO.readFile reflectionPath
       if not (reflectionNeedsFiction noteContent)
-        then logMsg $ "  ⏭️  AI fiction already present for " <> dateText
+        then logMessage $ "  ⏭️  AI fiction already present for " <> dateText
         else do
           envModel <- lookupEnvText "FICTION_MODEL"
           let dayChain = AiFiction.selectFictionModelChain day AiFiction.fictionModelPool
@@ -429,24 +429,24 @@ tryFictionForDate context day = do
           result <- generateFiction config (callGeminiForGenerator context)
 
           let wordCount = length (T.words (AiFiction.fiction result))
-          logMsg $ "  🤖🐲 Generated fiction (model=" <> AiFiction.model result <> ", " <> T.pack (show wordCount) <> " words)"
+          logMessage $ "  🤖🐲 Generated fiction (model=" <> AiFiction.model result <> ", " <> T.pack (show wordCount) <> " words)"
 
           TIO.writeFile reflectionPath (AiFiction.updatedContent result)
-          logMsg $ "  ✏️  Updated " <> dateText <> ".md with AI fiction"
+          logMessage $ "  ✏️  Updated " <> dateText <> ".md with AI fiction"
 
 runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do
-  logMsg "▶️  reflection-title"
+  logMessage "▶️  reflection-title"
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
       eligibleDays = eligibleReflectionDays localNow reflectionTitleCutoff
 
-  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
+  logMessage $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 
   mapM_ (tryTitleForDate context . formatDay) eligibleDays
 
-  logMsg "✅ reflection-title"
+  logMessage "✅ reflection-title"
 
 tryTitleForDate :: Context.AppContext -> Text -> IO Bool
 tryTitleForDate context date = do
@@ -456,17 +456,17 @@ tryTitleForDate context date = do
   exists <- doesFileExist reflectionPath
   if not exists
     then do
-      logMsg $ "  ⏭️  No reflection note for " <> date
+      logMessage $ "  ⏭️  No reflection note for " <> date
       pure False
     else do
       content <- TIO.readFile reflectionPath
       if not (reflectionNeedsTitle content date)
         then do
-          logMsg $ "  ⏭️  Reflection title already set for " <> date
+          logMessage $ "  ⏭️  Reflection title already set for " <> date
           pure False
         else do
           recentTitles <- extractRecentCreativeTitles reflectionsDir date
-          logMsg $ "  📋 Found " <> T.pack (show (length recentTitles)) <> " recent titles for style reference"
+          logMessage $ "  📋 Found " <> T.pack (show (length recentTitles)) <> " recent titles for style reference"
 
           envModel <- lookupEnvText "REFLECTION_TITLE_MODEL"
           let defaultChain = defaultTitleModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
@@ -481,97 +481,97 @@ tryTitleForDate context date = do
 
           result <- generateReflectionTitle config (callGeminiForGenerator context)
 
-          logMsg $ "  🏷️  Generated title: " <> ReflectionTitle.fullTitle result <> " [" <> ReflectionTitle.model result <> "]"
+          logMessage $ "  🏷️  Generated title: " <> ReflectionTitle.fullTitle result <> " [" <> ReflectionTitle.model result <> "]"
 
           TIO.writeFile reflectionPath (ReflectionTitle.updatedContent result)
-          logMsg $ "  🏷️  Title written for " <> date
+          logMessage $ "  🏷️  Title written for " <> date
           pure True
 
 runDailyAnalytics :: Context.AppContext -> IO ()
 runDailyAnalytics context = do
   let manager = Context.httpManager context
       vaultDir = Context.vaultDir context
-  logMsg "▶️  daily-analytics"
+  logMessage "▶️  daily-analytics"
 
   maybePropertyId <- lookupEnvText "GA_PROPERTY_ID"
   maybeServiceAccountJson <- lookupEnvText "GCP_SERVICE_ACCOUNT_KEY"
 
   case (maybePropertyId, maybeServiceAccountJson) of
     (Nothing, _) -> do
-      logMsg "  ⚠️  GA_PROPERTY_ID not set — daily analytics disabled"
-      logMsg "✅ daily-analytics (disabled)"
+      logMessage "  ⚠️  GA_PROPERTY_ID not set — daily analytics disabled"
+      logMessage "✅ daily-analytics (disabled)"
     (_, Nothing) -> do
-      logMsg "  ⚠️  GCP_SERVICE_ACCOUNT_KEY not set — daily analytics disabled"
-      logMsg "✅ daily-analytics (disabled)"
+      logMessage "  ⚠️  GCP_SERVICE_ACCOUNT_KEY not set — daily analytics disabled"
+      logMessage "✅ daily-analytics (disabled)"
     (Just propertyId, Just serviceAccountJson) -> do
       case GcpAuth.parseServiceAccountKey serviceAccountJson of
         Left failure -> do
-          logMsg $ "  ❌ Failed to parse service account key: " <> failure
-          logMsg "✅ daily-analytics (error)"
+          logMessage $ "  ❌ Failed to parse service account key: " <> failure
+          logMessage "✅ daily-analytics (error)"
         Right serviceAccount -> do
-          logMsg $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
+          logMessage $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
           tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
           case tokenResult of
             Left failure -> do
-              logMsg $ "  ❌ Failed to get access token: " <> failure
-              logMsg "✅ daily-analytics (error)"
+              logMessage $ "  ❌ Failed to get access token: " <> failure
+              logMessage "✅ daily-analytics (error)"
             Right accessToken -> do
-              logMsg "  🔓 Access token obtained"
+              logMessage "  🔓 Access token obtained"
               yesterday <- yesterdayPacificDay
               let yesterdayText = formatDay yesterday
                   reflectionsDir = vaultDir </> "reflections"
                   reflectionPath = reflectionsDir </> T.unpack yesterdayText <> ".md"
                   endpoint = GA.analyticsApiEndpoint propertyId
 
-              logMsg $ "  📅 Fetching analytics for: " <> yesterdayText
-              logMsg $ "  🔗 GA4 property: " <> propertyId
-              logMsg $ "  🌐 API endpoint: " <> endpoint
+              logMessage $ "  📅 Fetching analytics for: " <> yesterdayText
+              logMessage $ "  🔗 GA4 property: " <> propertyId
+              logMessage $ "  🌐 API endpoint: " <> endpoint
 
               exists <- doesFileExist reflectionPath
               if not exists
                 then do
-                  logMsg $ "  📭 No reflection for " <> yesterdayText <> ", skipping analytics"
-                  logMsg "✅ daily-analytics (skipped)"
+                  logMessage $ "  📭 No reflection for " <> yesterdayText <> ", skipping analytics"
+                  logMessage "✅ daily-analytics (skipped)"
                 else do
                   noteContent <- TIO.readFile reflectionPath
                   if not (GA.reflectionNeedsAnalytics noteContent)
                     then do
-                      logMsg $ "  ✅ Reflection " <> yesterdayText <> " already has analytics"
-                      logMsg "✅ daily-analytics (already done)"
+                      logMessage $ "  ✅ Reflection " <> yesterdayText <> " already has analytics"
+                      logMessage "✅ daily-analytics (already done)"
                     else do
-                      logMsg "  📡 Calling GA4 Data API for summary metrics..."
+                      logMessage "  📡 Calling GA4 Data API for summary metrics..."
                       summaryResult <- fetchAnalytics manager accessToken endpoint (GA.buildSummaryRequestBody yesterdayText)
-                      logMsg "  📡 Calling GA4 Data API for top pages..."
+                      logMessage "  📡 Calling GA4 Data API for top pages..."
                       pagesResult <- fetchAnalytics manager accessToken endpoint (GA.buildTopPagesRequestBody yesterdayText)
 
                       case (summaryResult, pagesResult) of
                         (Left failure, _) -> do
-                          logMsg $ "  ❌ Summary API error: " <> failure
-                          logMsg "✅ daily-analytics (error)"
+                          logMessage $ "  ❌ Summary API error: " <> failure
+                          logMessage "✅ daily-analytics (error)"
                         (_, Left failure) -> do
-                          logMsg $ "  ❌ Top pages API error: " <> failure
-                          logMsg "✅ daily-analytics (error)"
+                          logMessage $ "  ❌ Top pages API error: " <> failure
+                          logMessage "✅ daily-analytics (error)"
                         (Right summaryJson, Right pagesJson) -> do
-                          logMsg $ "  📦 Summary response rows: " <> T.pack (show (GA.extractRowCount summaryJson))
-                          logMsg $ "  📦 Pages response rows: " <> T.pack (show (GA.extractRowCount pagesJson))
+                          logMessage $ "  📦 Summary response rows: " <> T.pack (show (GA.extractRowCount summaryJson))
+                          logMessage $ "  📦 Pages response rows: " <> T.pack (show (GA.extractRowCount pagesJson))
                           case (GA.parseSummaryResponse summaryJson, GA.parseAnalyticsResponse pagesJson) of
                             (Left failure, _) -> do
-                              logMsg $ "  ❌ Parse summary error: " <> failure
-                              logMsg "✅ daily-analytics (error)"
+                              logMessage $ "  ❌ Parse summary error: " <> failure
+                              logMessage "✅ daily-analytics (error)"
                             (_, Left failure) -> do
-                              logMsg $ "  ❌ Parse pages error: " <> failure
-                              logMsg "✅ daily-analytics (error)"
+                              logMessage $ "  ❌ Parse pages error: " <> failure
+                              logMessage "✅ daily-analytics (error)"
                             (Right summary, Right pages) -> do
                               enrichedPages <- traverse (enrichPageMetricWithTitle vaultDir) pages
                               let report = GA.AnalyticsReport summary enrichedPages
                                   updatedContent = GA.applyAnalyticsSection noteContent report
                               TIO.writeFile reflectionPath updatedContent
-                              logMsg $ "  📊 Analytics for " <> yesterdayText <> ": "
+                              logMessage $ "  📊 Analytics for " <> yesterdayText <> ": "
                                     <> T.pack (show (GA.pageViews summary)) <> " views, "
                                     <> T.pack (show (GA.visitors summary)) <> " visitors, "
                                     <> GA.formatPercentage (GA.bounceRate summary) <> " bounce"
-                              logMsg $ "  📊 Top pages: " <> T.pack (show (length enrichedPages))
-                              logMsg "✅ daily-analytics"
+                              logMessage $ "  📊 Top pages: " <> T.pack (show (length enrichedPages))
+                              logMessage "✅ daily-analytics"
 
 enrichPageMetricWithTitle :: FilePath -> GA.PageMetric -> IO GA.PageMetric
 enrichPageMetricWithTitle vaultDir metric = do
@@ -589,7 +589,7 @@ fetchAnalytics :: HTTP.Manager -> Text -> Text -> Json.Value -> IO (Either Text 
 fetchAnalytics manager accessToken endpoint body = do
   let bodyBytes = Json.encode body
   parsedRequest <- HTTP.parseRequest (T.unpack endpoint)
-  let httpReq = parsedRequest
+  let httpRequest = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = HTTP.RequestBodyLBS bodyBytes
         , HTTP.requestHeaders =
@@ -597,10 +597,10 @@ fetchAnalytics manager accessToken endpoint body = do
             , ("Content-Type", "application/json")
             ]
         }
-  response <- HTTP.httpLbs httpReq manager
+  response <- HTTP.httpLbs httpRequest manager
   let responseBytes = HTTP.responseBody response
       status = statusCode (HTTP.responseStatus response)
-  logMsg $ "  📬 GA4 API response: HTTP " <> T.pack (show status) <> ", " <> T.pack (show (LBS.length responseBytes)) <> " bytes"
+  logMessage $ "  📬 GA4 API response: HTTP " <> T.pack (show status) <> ", " <> T.pack (show (LBS.length responseBytes)) <> " bytes"
   case status of
     200 ->
       case Json.eitherDecode responseBytes of

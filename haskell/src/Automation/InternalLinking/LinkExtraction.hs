@@ -119,7 +119,7 @@ joinSlash [x]    = x
 joinSlash (x:xs) = x </> joinSlash xs
 
 hasSuffix :: String -> String -> Bool
-hasSuffix suf str = drop (length str - length suf) str == suf
+hasSuffix suffix string = drop (length string - length suffix) string == suffix
 
 takeDirectory :: FilePath -> FilePath
 takeDirectory = joinSlash . safeInit . splitSlash

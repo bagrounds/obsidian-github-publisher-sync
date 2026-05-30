@@ -40,7 +40,7 @@ import Automation.Scheduler
   , taskIdToText
   )
 import Automation.Secret (Secret (..))
-import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg)
+import Automation.TaskRunner (inferenceDashboards, runTasks, logMessage)
 import Automation.TaskRunners (taskRunners)
 
 main :: IO ()
@@ -58,7 +58,7 @@ main = do
   manager <- newManager tlsManagerSettings
 
   let discovered = allSeries
-  logMsg $ "📋 " <> T.pack (show (length discovered)) <> " blog series: "
+  logMessage $ "📋 " <> T.pack (show (length discovered)) <> " blog series: "
     <> T.intercalate ", " (fmap seriesId discovered)
 
   let seriesConfigs = fmap deriveBlogSeriesConfig discovered
@@ -82,20 +82,20 @@ main = do
     Nothing -> pure $ getScheduledTasks fullSchedule hourPacific
 
   let taskNames = T.intercalate ", " (fmap taskIdToText tasks)
-  logMsg $ "Scheduler start — hour " <> T.pack (show hourPacific) <> " Pacific, "
+  logMessage $ "Scheduler start — hour " <> T.pack (show hourPacific) <> " Pacific, "
     <> T.pack (show (length tasks)) <> " task(s): " <> taskNames
   TIO.putStrLn "📊 Inference dashboards:"
   mapM_ (\(name, url) -> TIO.putStrLn $ "   " <> name <> ": " <> url) inferenceDashboards
 
   case tasks of
     [] -> do
-      logMsg "  ⏭️  No tasks scheduled for this hour"
+      logMessage "  ⏭️  No tasks scheduled for this hour"
       pure ()
     _ -> do
       creds <- getObsidianCreds
-      logMsg "📥 Pulling Obsidian vault..."
+      logMessage "📥 Pulling Obsidian vault..."
       vaultDir <- syncObsidianVault creds
-      logMsg $ "📂 Vault ready at " <> T.pack vaultDir
+      logMessage $ "📂 Vault ready at " <> T.pack vaultDir
 
       geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
       context <- case Context.mkAppContext manager vaultDir repoRoot geminiApiKey creds of
@@ -106,9 +106,9 @@ main = do
       let runners = taskRunners context seriesMap runConfigs contentDirs discovered
       results <- runTasks runners tasks
 
-      logMsg "📤 Pushing Obsidian vault..."
+      logMessage "📤 Pushing Obsidian vault..."
       pushObsidianVault vaultDir (ocAuthToken creds)
-      logMsg "📤 Vault pushed"
+      logMessage "📤 Vault pushed"
 
       let succeeded = length (filter (\(_, success, _) -> success) results)
           total = length results

@@ -146,7 +146,7 @@ post manager Credentials{..} statusText = do
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialRequest <- parseRequest (T.unpack apiUrl)
-    let req =
+    let request =
           initialRequest
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
@@ -156,7 +156,7 @@ post manager Credentials{..} statusText = do
                 , ("Idempotency-Key", TE.encodeUtf8 idempotencyKey)
                 ]
             }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $
@@ -191,13 +191,13 @@ deletePost manager Credentials{..} statusId = do
   let apiUrl = unUrl instanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
     initialRequest <- parseRequest (T.unpack apiUrl)
-    let req =
+    let request =
           initialRequest
             { method = "DELETE"
             , requestHeaders =
                 [("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret accessToken))]
             }
-    response <- httpLbs req manager
+    response <- httpLbs request manager
     let status = statusCode (responseStatus response)
     when (status < 200 || status >= 300) $
       throwIO $

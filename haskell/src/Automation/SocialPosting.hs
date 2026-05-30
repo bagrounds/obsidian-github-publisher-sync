@@ -342,9 +342,9 @@ postForPlatform manager environmentConfig apiKey note platform = do
         :: IO (Either SomeException (Either Text PostResult))
       case result of
         Left exc -> do
-          let errMsg = "Exception posting to " <> T.pack (show platform) <> ": " <> T.pack (show exc)
-          putStrLn $ "  ❌ " <> T.unpack errMsg
-          pure (Left errMsg)
+          let errorMessage = "Exception posting to " <> T.pack (show platform) <> ": " <> T.pack (show exc)
+          putStrLn $ "  ❌ " <> T.unpack errorMessage
+          pure (Left errorMessage)
         Right (Left failure) -> do
           putStrLn $ "  ❌ " <> show platform <> ": " <> T.unpack failure
           pure (Left failure)

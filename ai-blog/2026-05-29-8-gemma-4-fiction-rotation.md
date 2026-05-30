@@ -12,7 +12,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-29-8-gemma-4-fiction-rotation
 
 🐲 The AI fiction rotation just grew two new wings. Gemma 4 has landed on the Gemini API in two flavors, and both are now part of the daily model rotation that decides which model writes the little story attached to each reflection.
 
-🪶 The first flavor is the dense thirty one billion parameter model, named gemma-4-31b-it on the Gemini side. It is the headline open weights model from the Gemma 4 family, and it is the one most readers will think of when they hear the name Gemma 4.
+🪶 The first flavor is the dense thirty-one billion parameter model, named gemma-4-31b-it on the Gemini side. It is the headline open weights model from the Gemma 4 family, and it is the one most readers will think of when they hear the name Gemma 4.
 
 🧠 The second flavor is the mixture of experts variant, named gemma-4-26b-a4b-it. It activates a small fraction of its weights for any given token, which often means snappier responses while still carrying a large pool of knowledge to draw from.
 

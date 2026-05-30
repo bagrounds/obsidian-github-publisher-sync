@@ -39,6 +39,12 @@ modelTests = testGroup "Model"
   [ testCase "modelToText Gemma3" $
       Gemini.modelToText Gemini.Gemma3 @?= "gemma-3-27b-it"
 
+  , testCase "modelToText Gemma4" $
+      Gemini.modelToText Gemini.Gemma4 @?= "gemma-4-31b-it"
+
+  , testCase "modelToText Gemma4MixtureOfExperts" $
+      Gemini.modelToText Gemini.Gemma4MixtureOfExperts @?= "gemma-4-26b-a4b-it"
+
   , testCase "modelToText Gemini31FlashLite" $
       Gemini.modelToText Gemini.Gemini31FlashLite @?= "gemini-3.1-flash-lite-preview"
 
@@ -420,6 +426,12 @@ supportsSystemInstructionTests :: TestTree
 supportsSystemInstructionTests = testGroup "supportsSystemInstruction"
   [ testCase "Gemma3 does not support system instruction" $
       Gemini.supportsSystemInstruction Gemini.Gemma3 @?= False
+
+  , testCase "Gemma4 does not support system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemma4 @?= False
+
+  , testCase "Gemma4MixtureOfExperts does not support system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemma4MixtureOfExperts @?= False
 
   , testCase "Gemini25Flash supports system instruction" $
       Gemini.supportsSystemInstruction Gemini.Gemini25Flash @?= True

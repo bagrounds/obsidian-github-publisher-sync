@@ -89,6 +89,8 @@ parseApiStatus other                = UnknownStatus other
 -- use @Custom@ to preserve arbitrary model strings from the API.
 data Model
   = Gemma3
+  | Gemma4
+  | Gemma4MixtureOfExperts
   | Gemini31FlashLite
   | Gemini3Flash
   | Gemini25Flash
@@ -99,17 +101,21 @@ data Model
   deriving (Show, Eq, Ord)
 
 modelToText :: Model -> Text
-modelToText Gemma3              = "gemma-3-27b-it"
-modelToText Gemini31FlashLite   = "gemini-3.1-flash-lite-preview"
-modelToText Gemini3Flash        = "gemini-3-flash-preview"
-modelToText Gemini25Flash       = "gemini-2.5-flash"
-modelToText Gemini25FlashLite   = "gemini-2.5-flash-lite"
-modelToText Gemini20Flash       = "gemini-2.0-flash"
-modelToText Gemini31FlashImage  = "gemini-3.1-flash-image-preview"
-modelToText (Custom t)          = t
+modelToText Gemma3                  = "gemma-3-27b-it"
+modelToText Gemma4                  = "gemma-4-31b-it"
+modelToText Gemma4MixtureOfExperts  = "gemma-4-26b-a4b-it"
+modelToText Gemini31FlashLite       = "gemini-3.1-flash-lite-preview"
+modelToText Gemini3Flash            = "gemini-3-flash-preview"
+modelToText Gemini25Flash           = "gemini-2.5-flash"
+modelToText Gemini25FlashLite       = "gemini-2.5-flash-lite"
+modelToText Gemini20Flash           = "gemini-2.0-flash"
+modelToText Gemini31FlashImage      = "gemini-3.1-flash-image-preview"
+modelToText (Custom t)              = t
 
 modelFromText :: Text -> Model
 modelFromText "gemma-3-27b-it"                 = Gemma3
+modelFromText "gemma-4-31b-it"                 = Gemma4
+modelFromText "gemma-4-26b-a4b-it"             = Gemma4MixtureOfExperts
 modelFromText "gemini-3.1-flash-lite-preview"  = Gemini31FlashLite
 modelFromText "gemini-3-flash-preview"         = Gemini3Flash
 modelFromText "gemini-2.5-flash"               = Gemini25Flash
@@ -122,6 +128,8 @@ modelFromText t                                = Custom t
 knownModels :: [Model]
 knownModels =
   [ Gemma3
+  , Gemma4
+  , Gemma4MixtureOfExperts
   , Gemini31FlashLite
   , Gemini3Flash
   , Gemini25Flash
@@ -138,8 +146,10 @@ overrideModelChain envValue defaultChain = case envValue of
   _ -> defaultChain
 
 supportsSystemInstruction :: Model -> Bool
-supportsSystemInstruction Gemma3 = False
-supportsSystemInstruction _      = True
+supportsSystemInstruction Gemma3                 = False
+supportsSystemInstruction Gemma4                 = False
+supportsSystemInstruction Gemma4MixtureOfExperts = False
+supportsSystemInstruction _                      = True
 
 -- | Domain-specific error type for Gemini API operations.
 -- Structured constructors preserve error context and enable typed pattern

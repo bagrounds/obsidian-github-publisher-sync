@@ -45,6 +45,8 @@ fictionModelPool =
     , Gemini.Gemini31FlashLite
     , Gemini.Gemini3Flash
     , Gemini.Gemini20Flash
+    , Gemini.Gemma4
+    , Gemini.Gemma4MixtureOfExperts
     , Gemini.Gemma3
     ]
 

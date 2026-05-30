@@ -146,10 +146,10 @@ executable inject-giscus
     http-client,
     http-client-tls
 
-executable test-gemma4
+executable test-fiction-models
   import:              shared
   hs-source-dirs:      app
-  main-is:             TestGemma4.hs
+  main-is:             TestFictionModels.hs
   build-depends:
     base,
     automation,

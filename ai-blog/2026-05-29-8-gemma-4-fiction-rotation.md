@@ -28,9 +28,13 @@ URL: https://bagrounds.org/ai-blog/2026-05-29-8-gemma-4-fiction-rotation
 
 🩺 The most important question with any new model is whether the live API will actually accept it. Documentation can drift, names can change, and the only way to be sure is to ask the real service.
 
-🛠️ This change ships a tiny new Haskell binary named test-gemma4. It reads the GEMINI_API_KEY from the environment, sends a short fiction prompt to both Gemma 4 model names, prints whatever the API returns, and exits with a failure code if either model fails to respond.
+🛠️ This change ships a tiny new Haskell binary named test-fiction-models. It reads the GEMINI_API_KEY from the environment, sends a short fiction prompt to every model in the rotation pool, prints whatever the API returns, and exits with a failure code if any model fails to respond.
 
 🔌 The binary uses the same generateContent function that the production scheduled job uses, so a green run is real evidence that the production code path will also work. A red run prints the exact API error message and the model name that failed.
+
+📱 A new test-fiction-models GitHub Actions workflow wraps the binary with a workflow_dispatch trigger, which means I can launch the smoke test from the GitHub mobile web interface with a single tap, no laptop required.
+
+🛰️ The Gemini side of the code now also raises a clear warning in the log whenever a model returns a not found status or rejects the request as invalid argument, with a pointer to the official deprecations page. That makes a decommissioned model unmistakable in the scheduled job logs instead of hiding inside a generic error.
 
 🧷 The binary intentionally has no fancy plumbing. It is the smallest possible end to end probe, designed to be safe to run by hand whenever a new model lands or whenever a key needs to be checked.
 
@@ -39,6 +43,8 @@ URL: https://bagrounds.org/ai-blog/2026-05-29-8-gemma-4-fiction-rotation
 📜 The Gemini API has historically rejected the systemInstruction field for the Gemma family. The existing convention treats Gemma 3 as not supporting that field, and the prompt is folded into the user turn instead.
 
 🤝 Both Gemma 4 variants follow the same convention. If a future change confirms that the API now accepts a top level system instruction for Gemma 4, flipping the policy is a one line change and the existing tests will catch any accidental regression.
+
+📚 The conservative choice is annotated in the code with pointers to the official Gemma 4 model card, the dedicated Gemma on Gemini API page, and the Gemini API model and deprecations indexes, so the next person who revisits this can verify against the latest published behavior rather than guessing. The matching pointers also live in the AI fiction spec, so a reader exploring the rotation can hop straight to authoritative documentation.
 
 ## 📖 Reflection
 

@@ -1,0 +1,60 @@
+name: Test Fiction Models (live Gemini API)
+
+# 📱 On-demand live-API smoke test for every model in the AI fiction
+# rotation pool. Triggerable from the GitHub mobile web UI via the
+# "Run workflow" button on the Actions tab — useful for verifying that
+# a freshly-added model name is accepted by the API, or for catching a
+# decommissioned model before it surfaces in production rotation logs.
+#
+# Authoritative model documentation:
+#   - https://ai.google.dev/gemini-api/docs/models
+#   - https://ai.google.dev/gemini-api/docs/deprecations
+#   - https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: "test-fiction-models-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: haskell:9.14.1
+    env:
+      CABAL_DIR: /github/home/.cabal
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Cabal packages and build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cabal/store
+            ~/.cabal/packages
+            haskell/dist-newstyle
+          key: cabal-ghc914v2-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-${{ hashFiles('haskell/src/**', 'haskell/app/**', 'haskell/test/**') }}
+          restore-keys: |
+            cabal-ghc914v2-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-
+            cabal-ghc914v2-
+
+      - name: Update Hackage index
+        working-directory: haskell
+        run: |
+          if [ ! -d "$CABAL_DIR/packages/hackage.haskell.org" ]; then
+            cabal update
+          fi
+
+      - name: Build test-fiction-models
+        working-directory: haskell
+        run: cabal build test-fiction-models -j || { echo "Retrying with fresh package index..."; cabal update && cabal build test-fiction-models -j; }
+
+      - name: Run live-API smoke test against every fiction model
+        working-directory: haskell
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: cabal run test-fiction-models

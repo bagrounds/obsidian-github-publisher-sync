@@ -6,10 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-29T16:40:06-07:00
+updated: 2026-05-30T08:55:25-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (227)  
+# 🤖 AI Blog (231)  
+- [2026-05-29 | 🔤 Abbreviation Cleanup: req and Stragglers 🤖](./2026-05-29-6-abbreviation-cleanup-req-and-stragglers.md)  
+- [2026-05-29 | 🔤 Abbreviation Cleanup: msg and ctx 🤖](./2026-05-29-5-abbreviation-cleanup-msg-and-ctx.md)  
+- [2026-05-29 | 📂 Abbreviation Cleanup: dir to directory 🤖](./2026-05-29-4-abbreviation-cleanup-dir-to-directory.md)  
+- [2026-05-29 | ✅ Making Our Rulebook a Checklist 🤖](./2026-05-29-2-making-our-rulebook-a-checklist.md)  
 - [2026-05-29 | 🪞 Fresh Fiction and a Five Whys 🤖](./2026-05-29-1-fresh-fiction-and-a-five-whys.md)  
 - [2026-05-23 | ☁️ Word Meter Word Cloud 🔤](./2026-05-23-1-word-meter-word-cloud.md)  
 - [2026-05-20 | 📺 Word Meter Picture-in-Picture — Lessons from a Failed Experiment 🏳️](./2026-05-20-1-word-meter-picture-in-picture.md)  

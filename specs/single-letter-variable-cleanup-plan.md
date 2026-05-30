@@ -67,6 +67,8 @@ runs the linter and the full test suite, and ships its own AI blog post. Pure re
 not change behavior, so the existing tests are the safety net — no new tests are required
 unless a rename surfaces a latent bug.
 
+Steps 2 through 7 are tracked in GitHub issue #7088.
+
 1. ✅ **`l` → `line` (and `linkPath`/`linkedPath` for links, `left`/`right` for an
    operator)** (done): renamed every single-letter `l` binding across `haskell/src` —
    lambda parameters as well as recursive-helper and pattern arguments — to a descriptive

@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-05-29T16:40:06-07:00
+updated: 2026-05-30T08:55:25-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (69)  
+# 🏛️ Systems for Public Good (70)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-05-30 | 🏛️ Digital Sovereignty: Defining a Nation's Digital Destiny 🏛️](./2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md)  
 - [2026-05-29 | 🏛️ 🤝 The Unseen Architects: Non-State Actors in the Digital Commons 🏛️](./2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons.md)  
 - [2026-05-28 | 🏛️ 🌐 The Global Digital Commons: A Shared Responsibility 🏛️](./2026-05-28-the-global-digital-commons-a-shared-responsibility.md)  
 - [2026-05-27 | 🏛️ 🕰️ The Long View: Sustaining Investment in Digital Citizenship 🏛️](./2026-05-27-the-long-view-sustaining-investment-in-digital-citizenship.md)  

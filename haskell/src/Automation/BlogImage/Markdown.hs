@@ -29,9 +29,9 @@ insertImageEmbed content imageName =
   let contentLines = T.splitOn "\n" content
       embed = "![[attachments/" <> imageName <> "]]"
       insertAfterH1 [] = []
-      insertAfterH1 (l : rest)
-        | "# " `T.isPrefixOf` l = l : embed : rest
-        | otherwise              = l : insertAfterH1 rest
+      insertAfterH1 (line : rest)
+        | "# " `T.isPrefixOf` line = line : embed : rest
+        | otherwise              = line : insertAfterH1 rest
   in T.intercalate "\n" (insertAfterH1 contentLines)
 
 removeImageEmbed :: Text -> (Text, Maybe Text)
@@ -78,14 +78,14 @@ stripMarkdownSyntax =
 removeHeadings :: Text -> Text
 removeHeadings = T.unlines . fmap stripHeading . T.lines
   where
-    stripHeading l
-      | "######" `T.isPrefixOf` l = T.stripStart (T.drop 6 l)
-      | "#####" `T.isPrefixOf` l  = T.stripStart (T.drop 5 l)
-      | "####" `T.isPrefixOf` l   = T.stripStart (T.drop 4 l)
-      | "###" `T.isPrefixOf` l    = T.stripStart (T.drop 3 l)
-      | "##" `T.isPrefixOf` l     = T.stripStart (T.drop 2 l)
-      | "#" `T.isPrefixOf` l      = T.stripStart (T.drop 1 l)
-      | otherwise                 = l
+    stripHeading line
+      | "######" `T.isPrefixOf` line = T.stripStart (T.drop 6 line)
+      | "#####" `T.isPrefixOf` line  = T.stripStart (T.drop 5 line)
+      | "####" `T.isPrefixOf` line   = T.stripStart (T.drop 4 line)
+      | "###" `T.isPrefixOf` line    = T.stripStart (T.drop 3 line)
+      | "##" `T.isPrefixOf` line     = T.stripStart (T.drop 2 line)
+      | "#" `T.isPrefixOf` line      = T.stripStart (T.drop 1 line)
+      | otherwise                 = line
 
 removeObsidianEmbeds :: Text -> Text
 removeObsidianEmbeds t =
@@ -112,11 +112,11 @@ removeCodeBlocks :: Text -> Text
 removeCodeBlocks content = T.intercalate "\n" (processLines (T.lines content) False)
   where
     processLines [] _ = []
-    processLines (l : rest) inBlock
-      | "```" `T.isPrefixOf` l && inBlock = processLines rest False
-      | "```" `T.isPrefixOf` l            = processLines rest True
+    processLines (line : rest) inBlock
+      | "```" `T.isPrefixOf` line && inBlock = processLines rest False
+      | "```" `T.isPrefixOf` line            = processLines rest True
       | inBlock                            = processLines rest True
-      | otherwise                          = l : processLines rest False
+      | otherwise                          = line : processLines rest False
 
 removeInlineCode :: Text -> Text
 removeInlineCode t =
@@ -130,11 +130,11 @@ removeEmphasis = T.filter (`notElem` ['*', '_', '~'])
 removeUnorderedLists :: Text -> Text
 removeUnorderedLists = T.unlines . fmap stripBullet . T.lines
   where
-    stripBullet l
-      | matchesBullet l = T.stripStart (T.drop 2 (T.stripStart l))
-      | otherwise       = l
-    matchesBullet l =
-      let stripped = T.stripStart l
+    stripBullet line
+      | matchesBullet line = T.stripStart (T.drop 2 (T.stripStart line))
+      | otherwise       = line
+    matchesBullet line =
+      let stripped = T.stripStart line
       in case T.uncons stripped of
            Just (c, rest) | c `elem` ['-', '*', '+'] -> case T.uncons rest of
              Just (' ', _) -> True
@@ -144,25 +144,25 @@ removeUnorderedLists = T.unlines . fmap stripBullet . T.lines
 removeOrderedLists :: Text -> Text
 removeOrderedLists = T.unlines . fmap stripOrdered . T.lines
   where
-    stripOrdered l =
-      let stripped = T.stripStart l
+    stripOrdered line =
+      let stripped = T.stripStart line
           (digits, rest) = T.span isDigit stripped
       in if not (T.null digits)
          then case T.uncons rest of
            Just ('.', afterDot) -> case T.uncons afterDot of
              Just (' ', content') -> T.stripStart content'
-             _                    -> l
-           _ -> l
-         else l
+             _                    -> line
+           _ -> line
+         else line
 
 removeBlockquotes :: Text -> Text
 removeBlockquotes = T.unlines . fmap stripQuote . T.lines
   where
-    stripQuote l =
-      let stripped = T.stripStart l
+    stripQuote line =
+      let stripped = T.stripStart line
       in case T.uncons stripped of
            Just ('>', rest) -> T.stripStart rest
-           _                -> l
+           _                -> line
 
 removeTableCells :: Text -> Text
 removeTableCells t =
@@ -173,9 +173,9 @@ removeTableCells t =
 removeTableSeparators :: Text -> Text
 removeTableSeparators = T.unlines . filter (not . isTableSep) . T.lines
   where
-    isTableSep l = T.all (\c -> c == '-' || c == '|' || c == ':' || c == ' ') (T.strip l)
-                   && T.length (T.strip l) > 2
-                   && T.isInfixOf "-" l
+    isTableSep line = T.all (\c -> c == '-' || c == '|' || c == ':' || c == ' ') (T.strip line)
+                   && T.length (T.strip line) > 2
+                   && T.isInfixOf "-" line
 
 collapseTripleNewlines :: Text -> Text
 collapseTripleNewlines t =

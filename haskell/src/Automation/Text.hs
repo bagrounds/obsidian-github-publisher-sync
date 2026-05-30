@@ -78,14 +78,14 @@ fitPostToLimit text maxGraphemes
 
 fitWithStrategies :: [Text] -> Int -> Text
 fitWithStrategies contentLines maxGraphemes =
-  let urlLineIndex = findLastIndex (\l _ -> urlPattern l) contentLines
+  let urlLineIndex = findLastIndex (\line _ -> urlPattern line) contentLines
   in case urlLineIndex of
     i | i < 0 -> truncateToGraphemeLimit (T.intercalate "\n" contentLines) maxGraphemes
     urlIndex ->
       let urlLine     = contentLines !! urlIndex
           preUrlLines = take urlIndex contentLines
           trailingLines = drop (urlIndex + 1) contentLines
-          topicIndex    = findLastIndex (\l i -> i > 0 && " | " `T.isInfixOf` l) preUrlLines
+          topicIndex    = findLastIndex (\line index -> index > 0 && " | " `T.isInfixOf` line) preUrlLines
       in tryStrategies preUrlLines topicIndex urlLine trailingLines maxGraphemes
 
 tryStrategies :: [Text] -> Int -> Text -> [Text] -> Int -> Text
@@ -187,8 +187,8 @@ safeHead def []    = def
 safeHead _ (x:_) = x
 
 (<|>) :: Maybe a -> Maybe a -> Maybe a
-Nothing <|> r = r
-l@(Just _) <|> _ = l
+Nothing <|> right = right
+left@(Just _) <|> _ = left
 infixl 3 <|>
 
 -- | Word-based Jaccard similarity between two texts.

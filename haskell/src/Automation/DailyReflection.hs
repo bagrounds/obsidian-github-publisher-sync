@@ -190,7 +190,7 @@ insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt 
               in if T.isInfixOf oldLinkTarget content
                 then
                   let contentLines = T.splitOn "\n" content
-                  in T.intercalate "\n" $ fmap (\l -> if T.isPrefixOf oldLinkTarget l then postLink else l) contentLines
+                  in T.intercalate "\n" $ fmap (\line -> if T.isPrefixOf oldLinkTarget line then postLink else line) contentLines
                 else content
             Nothing -> content
           sectionHeading = buildSeriesSectionHeading series

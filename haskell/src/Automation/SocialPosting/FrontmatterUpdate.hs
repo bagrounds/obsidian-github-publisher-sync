@@ -26,7 +26,7 @@ updateFrontmatterTimestamp filePath = do
     case contentLines of
       (first : rest)
         | T.strip first == "---" ->
-            case break (\l -> T.strip l == "---") rest of
+            case break (\line -> T.strip line == "---") rest of
               (_, []) -> pure ()
               (frontmatterLines, closingDash : bodyLines) ->
                 let updatedFrontmatter = upsertFrontmatterField frontmatterLines "updated" (quoteYamlValue timestamp)
@@ -47,7 +47,7 @@ updateFrontmatterUrl filePath newUrl = do
     case contentLines of
       (first : rest)
         | T.strip first == "---" ->
-            case break (\l -> T.strip l == "---") rest of
+            case break (\line -> T.strip line == "---") rest of
               (_, []) -> pure ()
               (frontmatterLines, closingDash : bodyLines) ->
                 let updatedFrontmatter = upsertFrontmatterField frontmatterLines "URL" (quoteYamlValue newUrl)
@@ -60,5 +60,5 @@ upsertFrontmatterField contentLines key renderedValue =
   let newLine = key <> ": " <> renderedValue
       keyPattern = key <> ":"
       hasKey = any (T.isPrefixOf keyPattern . T.stripStart) contentLines
-      replaced = fmap (\l -> if T.isPrefixOf keyPattern (T.stripStart l) then newLine else l) contentLines
+      replaced = fmap (\line -> if T.isPrefixOf keyPattern (T.stripStart line) then newLine else line) contentLines
   in if hasKey then replaced else contentLines <> [newLine]

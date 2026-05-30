@@ -87,8 +87,8 @@ stripForPrompt content =
 
 findClosingDash :: [Text] -> Int -> Maybe Int
 findClosingDash [] _ = Nothing
-findClosingDash (l:rest) index =
-  if T.strip l == "---" then Just index else findClosingDash rest (index + 1)
+findClosingDash (line:rest) index =
+  if T.strip line == "---" then Just index else findClosingDash rest (index + 1)
 
 findFirstIndex :: [Text] -> Text -> Int
 findFirstIndex headers body =

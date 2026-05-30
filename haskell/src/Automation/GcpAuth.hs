@@ -121,7 +121,7 @@ parseRSAPrivateKey pemText = do
 decodePem :: Text -> Either Text ByteString
 decodePem pemText =
   let textLines = T.lines pemText
-      bodyLines = filter (\l -> not (T.isPrefixOf "-----" l) && not (T.null (T.strip l))) textLines
+      bodyLines = filter (\line -> not (T.isPrefixOf "-----" line) && not (T.null (T.strip line))) textLines
       body = TE.encodeUtf8 (T.concat bodyLines)
   in case B64.decode body of
     Left failure -> Left $ "PEM base64 decode error: " <> T.pack failure

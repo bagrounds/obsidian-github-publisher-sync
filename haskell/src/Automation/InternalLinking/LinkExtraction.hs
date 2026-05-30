@@ -156,7 +156,7 @@ bfsLoop contentDirectory visitedRef queueRef resultRef = do
           let (_, body) = parseFrontmatter content
               linked    = extractLinkedPaths body current contentDirectory
           visited <- readIORef visitedRef
-          let newLinks = filter (\l -> not (Set.member l visited)) linked
+          let newLinks = filter (\linkPath -> not (Set.member linkPath visited)) linked
           modifyIORef' visitedRef (\s -> foldl' (flip Set.insert) s newLinks)
           modifyIORef' queueRef (<> newLinks)
           bfsLoop contentDirectory visitedRef queueRef resultRef

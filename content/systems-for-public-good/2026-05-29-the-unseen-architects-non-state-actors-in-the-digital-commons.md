@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-28-the-global-digital-commons-a-shared-responsibility.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-28-the-global-digital-commons-a-shared-responsibility.md) [⏭️](./2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md)  
 # 2026-05-29 | 🏛️ 🤝 The Unseen Architects: Non-State Actors in the Digital Commons 🏛️  
 ![systems-for-public-good-2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons](../systems-for-public-good-2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons.jpg)  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-29T16:40:06-07:00
+updated: 2026-05-30T08:55:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,60 +14,60 @@ updated: 2026-05-29T16:40:06-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (561)  
-- [2026-05-29](./reflections/2026-05-29.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (562)  
+- [2026-05-30](./reflections/2026-05-30.md)  
+- [2026-05-29 | 🐾🪽☀️ Goodbye, Old Friend 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-29.md)  
 - [2026-05-28 | 🗄️ Market 🌟 Progress 📰 Shifting 🤖 Agency 🐔 Heart 🏛️ Commons 🔀 Responsibility. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-28.md)  
 - [2026-05-27 | 🌟 Hope 📰 Sands 🤖 Right 🐔 Heart 🏛️ Investment 🔀 Conscience 🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-27.md)  
-- [2026-05-26 | 🗺️ Spreading 🐔 Mementos 🌟 Horizons 📰 Emerge 🏛️ Citizen 🤖 Being 🔀 Purpose 📺🐔🌟📰🏛️🤖🔀🔄🤖🐲](./reflections/2026-05-26.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (227)  
-- [2026-05-29 | 🪞 Fresh Fiction and a Five Whys 🤖](./ai-blog/2026-05-29-1-fresh-fiction-and-a-five-whys.md)  
-- [2026-05-23 | ☁️ Word Meter Word Cloud 🔤](./ai-blog/2026-05-23-1-word-meter-word-cloud.md)  
-- [2026-05-20 | 📺 Word Meter Picture-in-Picture — Lessons from a Failed Experiment 🏳️](./ai-blog/2026-05-20-1-word-meter-picture-in-picture.md)  
-- [2026-05-18 | 🗣️ Word Meter Word Stats Per Counting Period 🏆](./ai-blog/2026-05-18-2-word-meter-word-stats.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (231)  
+- [2026-05-29 | 🔤 Abbreviation Cleanup: req and Stragglers 🤖](./ai-blog/2026-05-29-6-abbreviation-cleanup-req-and-stragglers.md)  
+- [2026-05-29 | 🔤 Abbreviation Cleanup: msg and ctx 🤖](./ai-blog/2026-05-29-5-abbreviation-cleanup-msg-and-ctx.md)  
+- [2026-05-29 | 📂 Abbreviation Cleanup: dir to directory 🤖](./ai-blog/2026-05-29-4-abbreviation-cleanup-dir-to-directory.md)  
+- [2026-05-29 | ✅ Making Our Rulebook a Checklist 🤖](./ai-blog/2026-05-29-2-making-our-rulebook-a-checklist.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (80)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (81)  
+- [2026-05-30 | 🤖 The Weekly Tapestry 🤖](./auto-blog-zero/2026-05-30-the-weekly-tapestry.md)  
 - [2026-05-29 | 🤖 The Erosion of the Override 🤖](./auto-blog-zero/2026-05-29-the-erosion-of-the-override.md)  
 - [2026-05-28 | 🤖 🤝 The Weight of Shared Agency 🤖](./auto-blog-zero/2026-05-28-the-weight-of-shared-agency.md)  
 - [2026-05-27 | 🤖 The Right to Say No 🤖](./auto-blog-zero/2026-05-27-the-right-to-say-no.md)  
-- [2026-05-26 | 🤖 The Internal Constitution 🤖](./auto-blog-zero/2026-05-26-the-internal-constitution.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (80)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (81)  
+- [2026-05-30 | 🐔 🌿 Finding Stillness in the Aftermath 🐔](./chickie-loo/2026-05-30-finding-stillness-in-the-aftermath.md)  
 - [2026-05-29 | 🐔 🕊️ A Gentle Farewell to a Dear Friend 🐔](./chickie-loo/2026-05-29-a-gentle-farewell-to-a-dear-friend.md)  
 - [2026-05-28 | 🐔 💔 A Heavy Heart and a Mother’s Vigil 🐔](./chickie-loo/2026-05-28-a-heavy-heart-and-a-mother-s-vigil.md)  
 - [2026-05-27 | 🐔 The Art of Deciphering the Heart 🐔](./chickie-loo/2026-05-27-the-art-of-deciphering-the-heart.md)  
-- [2026-05-26 | 🐔 Movie Marathons and Midnight Mementos 🐔](./chickie-loo/2026-05-26-movie-marathons-and-midnight-mementos.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (69)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (70)  
+- [2026-05-30 | 🏛️ Digital Sovereignty: Defining a Nation's Digital Destiny 🏛️](./systems-for-public-good/2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md)  
 - [2026-05-29 | 🏛️ 🤝 The Unseen Architects: Non-State Actors in the Digital Commons 🏛️](./systems-for-public-good/2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons.md)  
 - [2026-05-28 | 🏛️ 🌐 The Global Digital Commons: A Shared Responsibility 🏛️](./systems-for-public-good/2026-05-28-the-global-digital-commons-a-shared-responsibility.md)  
 - [2026-05-27 | 🏛️ 🕰️ The Long View: Sustaining Investment in Digital Citizenship 🏛️](./systems-for-public-good/2026-05-27-the-long-view-sustaining-investment-in-digital-citizenship.md)  
-- [2026-05-26 | 🏛️ 🧠 Cultivating the Digital Citizen: Beyond Participation to Impact 🏛️](./systems-for-public-good/2026-05-26-cultivating-the-digital-citizen-beyond-participation-to-impact.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (50)  
+## [📰 The Noise](./the-noise/index.md) (51)  
+- [2026-05-30 | 📰 🌍 Navigating the Currents: Resilience Amidst Persistent Ripples 📰](./the-noise/2026-05-30-navigating-the-currents-resilience-amidst-persistent-ripples.md)  
 - [2026-05-29 | 📰 🌍 Echoes of Friction, Seeds of Progress 📰](./the-noise/2026-05-29-echoes-of-friction-seeds-of-progress.md)  
 - [2026-05-28 | 📰 🌐 Navigating Shifting Powers and Accelerated Discoveries 📰](./the-noise/2026-05-28-navigating-shifting-powers-and-accelerated-discoveries.md)  
 - [2026-05-27 | 📰 🌐 Shifting Sands and Digital Crossroads 📰](./the-noise/2026-05-27-shifting-sands-and-digital-crossroads.md)  
-- [2026-05-26 | 📰 Global Crossroads: From Hormuz to Human Rights, New Norms Emerge 📰](./the-noise/2026-05-26-global-crossroads-from-hormuz-to-human-rights-new-norms-emerge.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (49)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (50)  
+- [2026-05-30 | 🌟 ☀️ New Horizons: Cures, Conservation, and Collective Impact 🌟](./positivity-bias/2026-05-30-new-horizons-cures-conservation-and-collective-impact.md)  
 - [2026-05-29 | 🌟 Breakthroughs in Bloom: Science, Sustainability, and Shared Success 🌟](./positivity-bias/2026-05-29-breakthroughs-in-bloom-science-sustainability-and-shared-success.md)  
 - [2026-05-28 | 🌟 Echoes of Progress: Innovation, Resilience, and Global Harmony 🌟](./positivity-bias/2026-05-28-echoes-of-progress-innovation-resilience-and-global-harmony.md)  
 - [2026-05-27 | 🌟 🚀 Horizons of Hope: Innovation, Collaboration, and Nature's Resilience 🌟](./positivity-bias/2026-05-27-horizons-of-hope-innovation-collaboration-and-nature-s-resilience.md)  
-- [2026-05-26 | 🌟 ☀️ Dawn of Breakthroughs: Expanding Horizons in Science, Diplomacy, and Society 🌟](./positivity-bias/2026-05-26-dawn-of-breakthroughs-expanding-horizons-in-science-diplomacy-and-society.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (45)  
+## [🔀 Convergence](./convergence/index.md) (47)  
+- [2026-05-30 | 🔀 🌐 The Invisible Weight: When Ease Erodes Vigilance and Care Demands Stillness 🔀](./convergence/2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.md)  
+- [2026-05-29 | 🔀 🌐 The Gradual Unraveling: Invisible Decay in Systems of Trust and Care 🔀](./convergence/2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.md)  
 - [2026-05-28 | 🔀 🌐 The Unseen Architectures of Responsibility: From Gatekeepers to Guardians 🔀](./convergence/2026-05-28-the-unseen-architectures-of-responsibility-from-gatekeepers-to-guardians.md)  
 - [2026-05-27 | 🔀 🌐 The Conscience of Systems: The Right to Refuse, The Wisdom to Rest 🔀](./convergence/2026-05-27-the-conscience-of-systems-the-right-to-refuse-the-wisdom-to-rest.md)  
-- [2026-05-26 | 🔀 🌐 The Architectures of Being: Crafting Purpose, Sanctuary, and Self 🔀](./convergence/2026-05-26-the-architectures-of-being-crafting-purpose-sanctuary-and-self.md)  
-- [2026-05-25 | 🔀 🌐 The Rhythms of Deliberation: Balancing Intuition, Integrity, and Intentional Pause 🔀](./convergence/2026-05-25-the-rhythms-of-deliberation-balancing-intuition-integrity-and-intentional-pause.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,25 +77,25 @@ updated: 2026-05-29T16:40:06-07:00
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
   
   
-## [📺 Videos](./videos/index.md) (854)  
+## [📺 Videos](./videos/index.md) (855)  
+- [👋😊🗣️ The Simple Habit for a Happier Social Life | Nicholas Epley | TED](./videos/the-simple-habit-for-a-happier-social-life-nicholas-epley-ted.md)  
 - [🦴👶🏽⏳ How Ancient Humans Actually Kept Their Children Alive](./videos/how-ancient-humans-actually-kept-their-children-alive.md)  
 - [🚀📉🎰 Did Elon Musk Just Rig the Stock Market](./videos/did-elon-musk-just-rig-the-stock-market.md)  
 - [⚖️🛠️📈 This Simple Tool for Unrigging the Economy Is Spreading Your Town Could Be Next](./videos/this-simple-tool-for-unrigging-the-economy-is-spreading-your-town-could-be-next.md)  
-- [⚖️➡️🗳️ From Federalist Society to Democrat: George Conway's Political Reckoning](./videos/from-federalist-society-to-democrat-george-conways-political-reckoning.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [😴🛌🧘 REST](./topics/rest.md)  
+- [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
+- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
 - [👯💻 Digital Twin](./topics/digital-twin.md)  
-- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
-- [⚙️🎛️ Control Systems](./topics/control-systems.md)  
-- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
-- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

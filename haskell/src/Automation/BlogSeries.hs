@@ -38,10 +38,10 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
   case lookupSeriesIn seriesMap seriesId of
     Left reason -> pure (Left reason)
     Right series -> do
-      let seriesDir = contentRoot </> T.unpack seriesId
+      let seriesDirectory = contentRoot </> T.unpack seriesId
       contextPosts <- evaluateQueries contentRoot (contextQueries series)
       let (selfPosts, crossPosts) = partitionContextPosts seriesId seriesMap contextPosts
-      agentsMd <- readAgentsMd seriesDir
+      agentsMd <- readAgentsMd seriesDirectory
       let filteredComments = filterCommentsAfterLastPost series selfPosts comments
       pure $ Right BlogContext
         { series           = series
@@ -123,8 +123,8 @@ appendModelSignature :: Text -> Text -> Text
 appendModelSignature body model = body <> "\n\n✍️ Written by " <> model
 
 updatePreviousPost :: FilePath -> BlogPost -> BlogSeriesConfig -> Text -> IO ()
-updatePreviousPost seriesDir prevPost series newFilename = do
-  let filePath = seriesDir </> T.unpack (filename prevPost)
+updatePreviousPost seriesDirectory prevPost series newFilename = do
+  let filePath = seriesDirectory </> T.unpack (filename prevPost)
   exists <- doesFileExist filePath
   when exists $ do
     content <- TIO.readFile filePath

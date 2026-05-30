@@ -3,7 +3,7 @@ module Automation.BlogImage
   , BackfillResult (..)
   , processNote
   , backfillImages
-  , syncAttachmentsDir
+  , syncAttachmentsDirectory
   , updateFrontmatterFields
   , applyField
   , notePathToImageBaseName
@@ -73,8 +73,8 @@ import Automation.BlogImage.Provider
 
 data BackfillConfig = BackfillConfig
   { backfillRepoRoot       :: FilePath
-  , backfillContentDirs    :: [ContentDirectory]
-  , backfillAttachmentsDir :: FilePath
+  , backfillContentDirectories    :: [ContentDirectory]
+  , backfillAttachmentsDirectory :: FilePath
   , backfillProviders      :: [ImageProviderConfig]
   , backfillMaxImages      :: Int
   }
@@ -158,24 +158,24 @@ extractFrontmatterValue content key =
   in Map.lookup key frontmatter
 
 resolveUniqueImageName :: Text -> Text -> FilePath -> IO Text
-resolveUniqueImageName baseName extension attachmentsDir = do
+resolveUniqueImageName baseName extension attachmentsDirectory = do
   let candidate = baseName <> extension
-  exists <- doesFileExist (attachmentsDir </> T.unpack candidate)
+  exists <- doesFileExist (attachmentsDirectory </> T.unpack candidate)
   if not exists
     then pure candidate
     else findUnique (2 :: Int)
   where
     findUnique n = do
       let name = baseName <> "-" <> T.pack (show n) <> extension
-      exists <- doesFileExist (attachmentsDir </> T.unpack name)
+      exists <- doesFileExist (attachmentsDirectory </> T.unpack name)
       if not exists
         then pure name
         else findUnique (n + 1)
 
 processNote :: Manager -> ImageProviderConfig -> FilePath -> FilePath -> IO ImageGenerationResult
-processNote manager provider notePath attachmentsDir = do
+processNote manager provider notePath attachmentsDirectory = do
   rawContent <- TIO.readFile notePath
-  content <- handleRegeneration notePath attachmentsDir rawContent
+  content <- handleRegeneration notePath attachmentsDirectory rawContent
   let skippedResult = ImageGenerationResult True Nothing Nothing Nothing
   if hasEmbeddedImage content
     then pure skippedResult
@@ -187,7 +187,7 @@ processNote manager provider notePath attachmentsDir = do
           let baseName = notePathToImageBaseName notePath
           if T.null baseName
             then pure skippedResult
-            else generateAndSaveImage manager provider notePath attachmentsDir content baseName
+            else generateAndSaveImage manager provider notePath attachmentsDirectory content baseName
 
 handleRegeneration :: FilePath -> FilePath -> Text -> IO Text
 handleRegeneration notePath _attachmentsDir content =
@@ -202,7 +202,7 @@ handleRegeneration notePath _attachmentsDir content =
 
 generateAndSaveImage
   :: Manager -> ImageProviderConfig -> FilePath -> FilePath -> Text -> Text -> IO ImageGenerationResult
-generateAndSaveImage manager provider notePath attachmentsDir content baseName = do
+generateAndSaveImage manager provider notePath attachmentsDirectory content baseName = do
   promptResult <- resolvePrompt manager provider content
   case promptResult of
     Left failure -> do
@@ -216,9 +216,9 @@ generateAndSaveImage manager provider notePath attachmentsDir content baseName =
           pure $ ImageGenerationResult True Nothing Nothing Nothing
         Right (imageData, mimeType) -> do
           let extension = mimeTypeToExtension mimeType
-          imageName <- resolveUniqueImageName baseName extension attachmentsDir
-          let imagePath = attachmentsDir </> T.unpack imageName
-          createDirectoryIfMissing True attachmentsDir
+          imageName <- resolveUniqueImageName baseName extension attachmentsDirectory
+          let imagePath = attachmentsDirectory </> T.unpack imageName
+          createDirectoryIfMissing True attachmentsDirectory
           LBS.writeFile imagePath imageData
           let withEmbed = insertImageEmbed content imageName
           now <- formatTimestamp
@@ -247,7 +247,7 @@ formatTimestamp =
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
   today <- todayPacificDay
-  candidates <- collectCandidates (backfillRepoRoot config) (backfillContentDirs config) today
+  candidates <- collectCandidates (backfillRepoRoot config) (backfillContentDirectories config) today
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
          <> " | providers: " <> show (length (backfillProviders config))
          <> " | max: " <> show (backfillMaxImages config)
@@ -350,7 +350,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
           <> directoryLabel <> "/" <> T.unpack (filename candidate)
           <> " via " <> T.unpack (providerName (ipcProvider provider))
-  genResult <- tryGenerate manager provider candidate (backfillAttachmentsDir config)
+  genResult <- tryGenerate manager provider candidate (backfillAttachmentsDirectory config)
   case genResult of
     Right imgResult
       | not (igrSkipped imgResult) -> do
@@ -394,8 +394,8 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
 tryGenerate
   :: Manager -> ImageProviderConfig -> BackfillCandidate -> FilePath
   -> IO (Either Text ImageGenerationResult)
-tryGenerate manager provider candidate attachmentsDir =
-  safeIO $ processNote manager provider (filePath candidate) attachmentsDir
+tryGenerate manager provider candidate attachmentsDirectory =
+  safeIO $ processNote manager provider (filePath candidate) attachmentsDirectory
 
 safeIO :: IO a -> IO (Either Text a)
 safeIO action =
@@ -404,22 +404,22 @@ safeIO action =
     handler :: SomeException -> IO (Either Text a)
     handler e = pure $ Left $ T.pack (show e)
 
-syncAttachmentsDir :: FilePath -> FilePath -> IO ()
-syncAttachmentsDir srcDir dstDir = do
-  srcExists <- doesDirectoryExist srcDir
+syncAttachmentsDirectory :: FilePath -> FilePath -> IO ()
+syncAttachmentsDirectory sourceDirectory destinationDirectory = do
+  srcExists <- doesDirectoryExist sourceDirectory
   when srcExists $ do
-    createDirectoryIfMissing True dstDir
-    entries <- listDirectory srcDir
+    createDirectoryIfMissing True destinationDirectory
+    entries <- listDirectory sourceDirectory
     let imageFiles = filter isImageFile entries
-    mapM_ (syncIfMissing srcDir dstDir) imageFiles
+    mapM_ (syncIfMissing sourceDirectory destinationDirectory) imageFiles
 
 syncIfMissing :: FilePath -> FilePath -> FilePath -> IO ()
-syncIfMissing srcDir dstDir filename = do
-  let dst = dstDir </> filename
+syncIfMissing sourceDirectory destinationDirectory filename = do
+  let dst = destinationDirectory </> filename
   exists <- doesFileExist dst
   if exists
     then pure ()
-    else copyFile (srcDir </> filename) dst
+    else copyFile (sourceDirectory </> filename) dst
 
 isImageFile :: FilePath -> Bool
 isImageFile f =

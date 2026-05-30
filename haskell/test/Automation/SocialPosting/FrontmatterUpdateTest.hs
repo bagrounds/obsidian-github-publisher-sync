@@ -105,15 +105,15 @@ updatePathTimestampsTests :: TestTree
 updatePathTimestampsTests = testGroup "updatePathTimestamps"
   [ testCase "updates timestamps for multiple paths" $
       withSystemTempDirectory "fm-paths-test" $ \directory -> do
-        let booksDir = directory </> "books"
-        createDirectoryIfMissing True booksDir
-        TIO.writeFile (booksDir </> "book-a.md")
+        let booksDirectory = directory </> "books"
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (booksDirectory </> "book-a.md")
           "---\ntitle: Book A\n---\nContent A"
-        TIO.writeFile (booksDir </> "book-b.md")
+        TIO.writeFile (booksDirectory </> "book-b.md")
           "---\ntitle: Book B\n---\nContent B"
         updatePathTimestamps directory ["books/book-a.md", "books/book-b.md"]
-        contentA <- TIO.readFile (booksDir </> "book-a.md")
-        contentB <- TIO.readFile (booksDir </> "book-b.md")
+        contentA <- TIO.readFile (booksDirectory </> "book-a.md")
+        contentB <- TIO.readFile (booksDirectory </> "book-b.md")
         assertBool "book A should have updated field"
           (T.isInfixOf "updated:" contentA)
         assertBool "book B should have updated field"

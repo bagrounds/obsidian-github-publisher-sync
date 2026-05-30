@@ -149,13 +149,13 @@ pureTests = testGroup "Pure functions"
 ioTests :: TestTree
 ioTests = testGroup "IO (file system)"
   [ testCase "walkHtmlFiles finds files in subdirectories" $
-      withSystemTempDirectory "giscus-test" $ \tmpDir -> do
-        let subDir = tmpDir </> "reflections"
-        createDirectoryIfMissing True subDir
-        TIO.writeFile (tmpDir </> "index.html") "<html></html>"
-        TIO.writeFile (subDir </> "page.html") "<html></html>"
-        TIO.writeFile (subDir </> "image.png") "binary"
-        files <- walkHtmlFiles tmpDir
+      withSystemTempDirectory "giscus-test" $ \temporaryDirectory -> do
+        let subDirectory = temporaryDirectory </> "reflections"
+        createDirectoryIfMissing True subDirectory
+        TIO.writeFile (temporaryDirectory </> "index.html") "<html></html>"
+        TIO.writeFile (subDirectory </> "page.html") "<html></html>"
+        TIO.writeFile (subDirectory </> "image.png") "binary"
+        files <- walkHtmlFiles temporaryDirectory
         assertBool "should find top-level html" $
           any (isSuffixOf' "index.html") files
         assertBool "should find nested html" $
@@ -165,11 +165,11 @@ ioTests = testGroup "IO (file system)"
         length files @?= 2
 
   , testCase "walkHtmlFiles finds deeply nested files" $
-      withSystemTempDirectory "giscus-test" $ \tmpDir -> do
-        let deepDir = tmpDir </> "a" </> "b" </> "c"
-        createDirectoryIfMissing True deepDir
-        TIO.writeFile (deepDir </> "deep.html") "<html></html>"
-        files <- walkHtmlFiles tmpDir
+      withSystemTempDirectory "giscus-test" $ \temporaryDirectory -> do
+        let deepDirectory = temporaryDirectory </> "a" </> "b" </> "c"
+        createDirectoryIfMissing True deepDirectory
+        TIO.writeFile (deepDirectory </> "deep.html") "<html></html>"
+        files <- walkHtmlFiles temporaryDirectory
         assertBool "should find deeply nested html" $
           any (isSuffixOf' "deep.html") files
         length files @?= 1
@@ -180,27 +180,27 @@ ioTests = testGroup "IO (file system)"
         files @?= []
 
   , testCase "processHtmlFiles injects into nested files" $
-      withSystemTempDirectory "giscus-test" $ \tmpDir -> do
-        let subDir = tmpDir </> "reflections"
-        createDirectoryIfMissing True subDir
-        TIO.writeFile (subDir </> "2026-03-28.html") sampleHtml
+      withSystemTempDirectory "giscus-test" $ \temporaryDirectory -> do
+        let subDirectory = temporaryDirectory </> "reflections"
+        createDirectoryIfMissing True subDirectory
+        TIO.writeFile (subDirectory </> "2026-03-28.html") sampleHtml
         let sc = mkStaticComment "bob" "<p>Awesome!</p>"
             cmap = Map.singleton "/reflections/2026-03-28" [sc]
-        injected <- processHtmlFiles tmpDir cmap
+        injected <- processHtmlFiles temporaryDirectory cmap
         length injected @?= 1
-        modified <- TIO.readFile (subDir </> "2026-03-28.html")
+        modified <- TIO.readFile (subDirectory </> "2026-03-28.html")
         assertBool "modified file should contain data-static-giscus" $
           T.isInfixOf "data-static-giscus" modified
         assertBool "modified file should contain author" $
           T.isInfixOf "bob" modified
 
   , testCase "processHtmlFiles leaves non-matching files unchanged" $
-      withSystemTempDirectory "giscus-test" $ \tmpDir -> do
-        TIO.writeFile (tmpDir </> "about.html") sampleHtml
+      withSystemTempDirectory "giscus-test" $ \temporaryDirectory -> do
+        TIO.writeFile (temporaryDirectory </> "about.html") sampleHtml
         let cmap = Map.singleton "/other-page" [mkStaticComment "eve" "<p>Hi!</p>"]
-        injected <- processHtmlFiles tmpDir cmap
+        injected <- processHtmlFiles temporaryDirectory cmap
         length injected @?= 0
-        content <- TIO.readFile (tmpDir </> "about.html")
+        content <- TIO.readFile (temporaryDirectory </> "about.html")
         content @?= sampleHtml
   ]
 

@@ -2,8 +2,8 @@ module Automation.InternalLinkingTest (tests) where
 
 import Automation.InternalLinking
   ( defaultLinkingModel
-  , indexableDirs
-  , traversableDirs
+  , indexableDirectories
+  , traversableDirectories
   , extractBody
   , alreadyAnalyzed
   , applyReplacements
@@ -11,7 +11,7 @@ import Automation.InternalLinking
 import Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
-  , linkableDirs
+  , linkableDirectories
   , escapeRegex
   , formatContentEntryWikilink
   , extractContext
@@ -56,15 +56,15 @@ constantsTests :: TestTree
 constantsTests = testGroup "constants"
   [ testCase "defaultLinkingModel" $
       assertEqual "" Gemini.Gemini31FlashLite defaultLinkingModel
-  , testCase "linkableDirs contains books" $
-      assertBool "books in linkableDirs" ("books" `elem` linkableDirs)
-  , testCase "indexableDirs has 10 entries" $
-      assertEqual "" 10 (length indexableDirs)
-  , testCase "traversableDirs includes reflections" $
-      assertBool "reflections in traversableDirs" ("reflections" `elem` traversableDirs)
-  , testCase "traversableDirs includes systems-for-public-good" $
-      assertBool "systems-for-public-good in traversableDirs"
-        ("systems-for-public-good" `elem` traversableDirs)
+  , testCase "linkableDirectories contains books" $
+      assertBool "books in linkableDirectories" ("books" `elem` linkableDirectories)
+  , testCase "indexableDirectories has 10 entries" $
+      assertEqual "" 10 (length indexableDirectories)
+  , testCase "traversableDirectories includes reflections" $
+      assertBool "reflections in traversableDirectories" ("reflections" `elem` traversableDirectories)
+  , testCase "traversableDirectories includes systems-for-public-good" $
+      assertBool "systems-for-public-good in traversableDirectories"
+        ("systems-for-public-good" `elem` traversableDirectories)
   ]
 
 stripEmojisTests :: TestTree

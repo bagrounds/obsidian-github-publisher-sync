@@ -52,7 +52,7 @@ data ObsidianCredentials = ObsidianCredentials
   } deriving (Show, Eq)
 
 data SyncResult = SyncResult
-  { srVaultDir :: FilePath
+  { srVaultDirectory :: FilePath
   , srSuccess  :: Bool
   } deriving (Show, Eq)
 
@@ -74,17 +74,17 @@ runObCommand args mCwd extraEnv = do
     joinLines = foldr (\a b -> a <> "\n" <> b) ""
 
 removeSyncLock :: FilePath -> IO ()
-removeSyncLock vaultDir = do
-  let lockPath = vaultDir </> ".obsidian" </> ".sync.lock"
+removeSyncLock vaultDirectory = do
+  let lockPath = vaultDirectory </> ".obsidian" </> ".sync.lock"
   exists <- doesDirectoryExist lockPath
   when exists $ do
     putStrLn "🔓 Removing stale .sync.lock from vault"
     removeDirectoryRecursive lockPath
 
 findObProcesses :: Maybe FilePath -> IO [String]
-findObProcesses mVaultDir = do
+findObProcesses mVaultDirectory = do
   myPid <- show <$> getProcessID
-  let patterns = ["obsidian-headless"] <> maybe [] pure mVaultDir
+  let patterns = ["obsidian-headless"] <> maybe [] pure mVaultDirectory
       grepPattern = intercalate "|" patterns
   result <- try $ readProcess "bash" ["-c",
     "ps -u $(id -u) -o pid,args 2>/dev/null | grep -E '" <> grepPattern <> "' | grep -v grep | awk '{print $1}'"
@@ -94,8 +94,8 @@ findObProcesses mVaultDir = do
     Right pids -> filter (\p -> not (null p) && p /= myPid) $ lines pids
 
 killObProcesses :: Maybe FilePath -> IO ()
-killObProcesses mVaultDir = do
-  pids <- findObProcesses mVaultDir
+killObProcesses mVaultDirectory = do
+  pids <- findObProcesses mVaultDirectory
   case pids of
     [] -> pure ()
     _  -> do
@@ -111,17 +111,17 @@ killObProcesses mVaultDir = do
         (\(_ :: SomeException) -> pure ())
 
 ensureSyncClean :: FilePath -> IO ()
-ensureSyncClean vaultDir = do
-  killObProcesses (Just vaultDir)
-  removeSyncLock vaultDir
-  let lockPath = vaultDir </> ".obsidian" </> ".sync.lock"
+ensureSyncClean vaultDirectory = do
+  killObProcesses (Just vaultDirectory)
+  removeSyncLock vaultDirectory
+  let lockPath = vaultDirectory </> ".obsidian" </> ".sync.lock"
   stillExists <- doesDirectoryExist lockPath
   when stillExists $ do
     putStrLn "⚠️ Lock still exists after cleanup, removing again"
     removeDirectoryRecursive lockPath
 
 runObSyncWithRetry :: [String] -> [(String, String)] -> FilePath -> Int -> IO ()
-runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
+runObSyncWithRetry args env vaultDirectory maxRetries = runAttempt 0
   where
     runAttempt attempt = do
       result <- try $ runObCommand args Nothing env :: IO (Either SomeException (String, String))
@@ -136,7 +136,7 @@ runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
               let delayMs = 2000 * (2 ^ attempt)
               putStrLn $ "⚠️ Sync lock contention (retry " <> show (attempt + 1) <> "/" <> show maxRetries
                 <> "), retrying in " <> show (delayMs `div` 1000) <> "s..."
-              ensureSyncClean vaultDir
+              ensureSyncClean vaultDirectory
               threadDelay (delayMs * 1000)
               runAttempt (attempt + 1)
             _ -> throwIO failure
@@ -144,40 +144,40 @@ runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
 syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do
   pid <- show <$> getProcessID
-  let vaultDir = "/tmp/obsidian-vault-" <> pid
+  let vaultDirectory = "/tmp/obsidian-vault-" <> pid
       env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ unSecret $ ocAuthToken creds)]
-  coldCacheSync creds vaultDir env
+  coldCacheSync creds vaultDirectory env
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
-coldCacheSync creds vaultDir env = do
-  createDirectoryIfMissing True vaultDir
-  let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDir]
+coldCacheSync creds vaultDirectory env = do
+  createDirectoryIfMissing True vaultDirectory
+  let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDirectory]
         <> maybe [] (\pw -> ["--password", T.unpack (unSecret pw)]) (ocVaultPassword creds)
   putStrLn $ "🔧 Setting up Obsidian Sync for vault: " <> T.unpack (ocVaultName creds)
   _ <- runObCommand setupArgs Nothing env
-  removeSyncLock vaultDir
+  removeSyncLock vaultDirectory
   putStrLn "📥 Pulling latest vault content..."
-  runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5
-  fileCount <- countVaultFiles vaultDir
+  runObSyncWithRetry ["sync", "--path", vaultDirectory] env vaultDirectory 5
+  fileCount <- countVaultFiles vaultDirectory
   putStrLn $ "📊 Vault file count after pull: " <> show fileCount
-  writeFile (vaultFileCountPath vaultDir) (show fileCount)
-  pure vaultDir
+  writeFile (vaultFileCountPath vaultDirectory) (show fileCount)
+  pure vaultDirectory
 
 pushObsidianVault :: FilePath -> Secret -> IO ()
-pushObsidianVault vaultDir authToken = do
+pushObsidianVault vaultDirectory authToken = do
   let env = [("OBSIDIAN_AUTH_TOKEN", T.unpack (unSecret authToken))]
-  prePushFileCount <- countVaultFiles vaultDir
+  prePushFileCount <- countVaultFiles vaultDirectory
   putStrLn $ "📊 Pre-push file count: " <> show prePushFileCount
-  validatePrePushFileCount vaultDir prePushFileCount
-  ensureSyncClean vaultDir
+  validatePrePushFileCount vaultDirectory prePushFileCount
+  ensureSyncClean vaultDirectory
   putStrLn "📤 Pushing changes to Obsidian Sync..."
-  runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5
+  runObSyncWithRetry ["sync", "--path", vaultDirectory] env vaultDirectory 5
   threadDelay 1000000
-  ensureSyncClean vaultDir
+  ensureSyncClean vaultDirectory
 
 validatePrePushFileCount :: FilePath -> Int -> IO ()
-validatePrePushFileCount vaultDir currentCount = do
-  let markerPath = vaultFileCountPath vaultDir
+validatePrePushFileCount vaultDirectory currentCount = do
+  let markerPath = vaultFileCountPath vaultDirectory
   markerExists <- doesFileExist markerPath
   if markerExists
     then do
@@ -232,7 +232,7 @@ countFilesRecursive directory = do
   pure (sum counts)
 
 vaultFileCountPath :: FilePath -> FilePath
-vaultFileCountPath vaultDir = vaultDir </> ".vault-sync-file-count"
+vaultFileCountPath vaultDirectory = vaultDirectory </> ".vault-sync-file-count"
 
 writeEmbedsToNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO ()
 writeEmbedsToNote filePath sections = do
@@ -253,6 +253,6 @@ writeEmbedsToNote filePath sections = do
 
 appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
 appendEmbedsToObsidianNote notePath sections creds = do
-  vaultDir <- syncObsidianVault creds
-  writeEmbedsToNote (vaultDir </> notePath) sections
-  pushObsidianVault vaultDir (ocAuthToken creds)
+  vaultDirectory <- syncObsidianVault creds
+  writeEmbedsToNote (vaultDirectory </> notePath) sections
+  pushObsidianVault vaultDirectory (ocAuthToken creds)

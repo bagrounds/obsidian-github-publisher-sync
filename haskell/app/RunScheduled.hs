@@ -12,7 +12,7 @@ import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , imageBackfillContentDirsFrom
+  , imageBackfillContentDirectoriesFrom
   )
 import Automation.BlogSeriesDiscovery
   ( AutoBlogSeries (..)
@@ -66,7 +66,7 @@ main = do
       runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
       dynamicScheduleEntries = fmap deriveScheduleEntry discovered
       fullSchedule = buildSchedule dynamicScheduleEntries
-      contentDirs = imageBackfillContentDirsFrom seriesConfigs
+      contentDirectories = imageBackfillContentDirectoriesFrom seriesConfigs
 
   tasks <- case cliTaskOverride args of
     Just taskStr ->
@@ -94,20 +94,20 @@ main = do
     _ -> do
       creds <- getObsidianCreds
       logMessage "📥 Pulling Obsidian vault..."
-      vaultDir <- syncObsidianVault creds
-      logMessage $ "📂 Vault ready at " <> T.pack vaultDir
+      vaultDirectory <- syncObsidianVault creds
+      logMessage $ "📂 Vault ready at " <> T.pack vaultDirectory
 
       geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
-      context <- case Context.mkAppContext manager vaultDir repoRoot geminiApiKey creds of
+      context <- case Context.mkAppContext manager vaultDirectory repoRoot geminiApiKey creds of
         Right context -> pure context
         Left failure -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack failure
           exitFailure
-      let runners = taskRunners context seriesMap runConfigs contentDirs discovered
+      let runners = taskRunners context seriesMap runConfigs contentDirectories discovered
       results <- runTasks runners tasks
 
       logMessage "📤 Pushing Obsidian vault..."
-      pushObsidianVault vaultDir (ocAuthToken creds)
+      pushObsidianVault vaultDirectory (ocAuthToken creds)
       logMessage "📤 Vault pushed"
 
       let succeeded = length (filter (\(_, success, _) -> success) results)

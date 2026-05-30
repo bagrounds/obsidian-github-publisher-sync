@@ -17,11 +17,11 @@ import System.FilePath (takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
 
 extractMarkdownLinks :: Text -> Text -> FilePath -> [Text]
-extractMarkdownLinks body noteRelativePath contentDir =
-  let noteDir = takeDirectory (contentDir </> T.unpack noteRelativePath)
+extractMarkdownLinks body noteRelativePath contentDirectory =
+  let noteDirectory = takeDirectory (contentDirectory </> T.unpack noteRelativePath)
       seen    = Set.empty :: Set Text
   in snd $ foldl collectLink (seen, [])
-       (mdLinks body noteDir contentDir <> wikiLinksFromBody body noteDir contentDir)
+       (mdLinks body noteDirectory contentDirectory <> wikiLinksFromBody body noteDirectory contentDirectory)
 
 collectLink :: (Set Text, [Text]) -> Text -> (Set Text, [Text])
 collectLink (seen, accumulated) rel
@@ -30,32 +30,32 @@ collectLink (seen, accumulated) rel
   | otherwise             = (Set.insert rel seen, accumulated <> [rel])
 
 mdLinks :: Text -> FilePath -> FilePath -> [Text]
-mdLinks body noteDir contentDir = parseLinks (T.unpack body)
+mdLinks body noteDirectory contentDirectory = parseLinks (T.unpack body)
   where
     parseLinks :: String -> [Text]
     parseLinks s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
       (_, _, after, [target])
         | not ("http://" `isPrefixOf` target) && not ("https://" `isPrefixOf` target) ->
-            let absTarget  = normalizeFilePath (noteDir </> target)
-                relPath    = makeRelativeTo contentDir absTarget
+            let absTarget  = normalizeFilePath (noteDirectory </> target)
+                relPath    = makeRelativeTo contentDirectory absTarget
             in T.pack relPath : parseLinks after
         | otherwise -> parseLinks after
       _ -> []
 
 wikiLinksFromBody :: Text -> FilePath -> FilePath -> [Text]
-wikiLinksFromBody body noteDir contentDir =
+wikiLinksFromBody body noteDirectory contentDirectory =
   let targets = parseWikiLinks (T.unpack body)
-  in fmap (resolveWikiLinkTarget noteDir contentDir) targets
+  in fmap (resolveWikiLinkTarget noteDirectory contentDirectory) targets
 
 resolveWikiLinkTarget :: FilePath -> FilePath -> String -> Text
-resolveWikiLinkTarget noteDir contentDir target =
+resolveWikiLinkTarget noteDirectory contentDirectory target =
   let trimmed = dropWhile isSpace (dropWhileEnd isSpace target)
       withMd  = if ".md" `isSuffixOf` trimmed then trimmed else trimmed <> ".md"
   in if '/' `elem` withMd
     then T.pack withMd
     else
-      let absTarget = normalizeFilePath (noteDir </> withMd)
-      in T.pack (makeRelativeTo contentDir absTarget)
+      let absTarget = normalizeFilePath (noteDirectory </> withMd)
+      in T.pack (makeRelativeTo contentDirectory absTarget)
 
 parseWikiLinks :: String -> [String]
 parseWikiLinks [] = []

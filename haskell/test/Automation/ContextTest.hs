@@ -8,7 +8,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.Context (AppContext (vaultDir, repoRoot, geminiApiKey, obsidianCredentials), mkAppContext)
+import Automation.Context (AppContext (vaultDirectory, repoRoot, geminiApiKey, obsidianCredentials), mkAppContext)
 import Automation.ObsidianSync (ObsidianCredentials (..))
 import Automation.Secret (Secret (..))
 
@@ -34,7 +34,7 @@ mkAppContextTests = testGroup "mkAppContext"
   [ testCase "succeeds with valid inputs" $
       case mkAppContext testManager "/vault" "/repo" (Secret "key") testObsidianCredentials of
         Right context -> do
-          vaultDir context @?= "/vault"
+          vaultDirectory context @?= "/vault"
           repoRoot context @?= "/repo"
           geminiApiKey context @?= Secret "key"
           obsidianCredentials context @?= testObsidianCredentials
@@ -59,7 +59,7 @@ mkAppContextTests = testGroup "mkAppContext"
       QC.forAll genNonEmptyPath $ \vault ->
         QC.forAll genNonEmptyPath $ \repo ->
           case mkAppContext testManager vault repo (Secret "key") testObsidianCredentials of
-            Right context -> vaultDir context == vault && repoRoot context == repo
+            Right context -> vaultDirectory context == vault && repoRoot context == repo
             Left _ -> False
   ]
 
@@ -69,7 +69,7 @@ showTests = testGroup "Show"
       case mkAppContext testManager "/vault" "/repo" (Secret "super-secret-key") testObsidianCredentials of
         Right context -> do
           let shown = show context
-          assertBool "Should contain vaultDir" ("vaultDir" `isInfixOf` shown)
+          assertBool "Should contain vaultDirectory" ("vaultDirectory" `isInfixOf` shown)
           assertBool "Should contain repoRoot" ("repoRoot" `isInfixOf` shown)
           assertBool "Should contain <redacted>" ("<redacted>" `isInfixOf` shown)
           assertBool "Should contain obsidianCredentials" ("obsidianCredentials" `isInfixOf` shown)

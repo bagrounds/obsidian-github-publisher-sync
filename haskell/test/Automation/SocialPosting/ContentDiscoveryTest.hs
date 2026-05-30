@@ -10,12 +10,12 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
-import Automation.BlogSeriesConfig (imageBackfillContentDirsFrom)
+import Automation.BlogSeriesConfig (imageBackfillContentDirectoriesFrom)
 import Automation.Platform (Platform (..))
 import Automation.SocialPosting.ContentDiscovery
 
-defaultContentDirs :: [ContentDirectory]
-defaultContentDirs = imageBackfillContentDirsFrom []
+defaultContentDirectories :: [ContentDirectory]
+defaultContentDirectories = imageBackfillContentDirectoriesFrom []
 
 now :: UTCTime
 now = mkUTC 2026 4 10 12
@@ -87,11 +87,11 @@ contentFilterTests = testGroup "content filtering"
 
   , testCase "isAwaitingImageBackfill detects note without image in backfill directory" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentDirs now "books/great-book.md" "Some text about a great book" Nothing
+        isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md" "Some text about a great book" Nothing
 
   , testCase "isAwaitingImageBackfill rejects note with old image" $
       assertBool "has image from long ago, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs now "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just (mkUTC 2026 4 1 12)))
   ]
@@ -180,21 +180,21 @@ imageBackfillTests :: TestTree
 imageBackfillTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentDirs now "books/great-book.md" "Some text about a great book" Nothing
+        isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md" "Some text about a great book" Nothing
 
   , testCase "note with embedded image and old date is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs now "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just (mkUTC 2026 4 1 12)))
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs now "books/index.md" "Browse all books" Nothing)
+        not (isAwaitingImageBackfill defaultContentDirectories now "books/index.md" "Browse all books" Nothing)
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentDirs now "people/john-doe.md" "A person page" Nothing)
+        not (isAwaitingImageBackfill defaultContentDirectories now "people/john-doe.md" "A person page" Nothing)
   ]
 
 
@@ -223,13 +223,13 @@ imageDateTests = testGroup "image date propagation delay"
 
   , testCase "note with image generated 1 hour ago is still awaiting" $
       assertBool "recently generated image should defer posting" $
-        isAwaitingImageBackfill defaultContentDirs now "books/great-book.md"
+        isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just (mkUTC 2026 4 10 11))
 
   , testCase "note with image generated 2 days ago is not awaiting" $
       assertBool "image from 2 days ago should be propagated" $
-        not (isAwaitingImageBackfill defaultContentDirs now "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentDirectories now "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book"
           (Just (mkUTC 2026 4 8 12)))
   ]

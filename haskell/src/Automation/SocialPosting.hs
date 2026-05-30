@@ -265,7 +265,7 @@ data PostedNote = PostedNote
   } deriving (Show, Eq)
 
 runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> [ContentDirectory] -> IO [PostedNote]
-runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillContentDirs = do
+runPostingPipeline manager environmentConfig apiKey vaultDirectory imageBackfillContentDirectories = do
   let platforms = getConfiguredPlatforms environmentConfig
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
 
@@ -273,11 +273,11 @@ runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillConten
   tlsManager <- TLS.newTlsManager
   let currentTime = timeToTimeOfDay (utctDayTime now)
       config = FindContentConfig
-        { contentDir = vaultDir
+        { contentDirectory = vaultDirectory
         , platforms = platforms
         , postingCutoff = defaultPostingCutoff
         , publicationChecker = Just (checkUrlPublished tlsManager)
-        , imageBackfillContentDirs = imageBackfillContentDirs
+        , imageBackfillContentDirectories = imageBackfillContentDirectories
         }
       isPastHour = currentTime >= defaultPostingCutoff
 
@@ -289,7 +289,7 @@ runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillConten
     items -> do
       putStrLn $ "  📋 Found " <> show (length items) <> " items to post"
       let grouped = groupByNote items
-      results <- mapM (processNoteGroup manager environmentConfig apiKey vaultDir) grouped
+      results <- mapM (processNoteGroup manager environmentConfig apiKey vaultDirectory) grouped
       pure (catMaybes results)
 
 groupByNote :: [CD.ContentToPost] -> [([Platform], ContentNote, [Text])]
@@ -305,11 +305,11 @@ groupByNote items =
 
 processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
-processNoteGroup manager environmentConfig apiKey vaultDir (platforms, note, pathFromRoot) = do
+processNoteGroup manager environmentConfig apiKey vaultDirectory (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (noteTitle note))
   putStrLn $ "     Platforms: " <> show platforms
 
-  updatePathTimestamps vaultDir pathFromRoot
+  updatePathTimestamps vaultDirectory pathFromRoot
 
   results <- mapConcurrently (postForPlatform manager environmentConfig apiKey note) platforms
 
@@ -357,36 +357,36 @@ eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
 
 autoPost :: Manager -> FilePath -> [ContentDirectory] -> IO ()
-autoPost manager vaultDir imageBackfillContentDirs = do
+autoPost manager vaultDirectory imageBackfillContentDirectories = do
   environmentConfig <- validateEnvironment
   let apiKey = Gemini.apiKey (gemini environmentConfig)
 
-  regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
+  regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDirectory)
     :: IO (Either SomeException ())
   case regenerateResult of
     Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  mastodonRegenerateResult <- try (regenerateMastodonEmbeds vaultDir)
+  mastodonRegenerateResult <- try (regenerateMastodonEmbeds vaultDirectory)
     :: IO (Either SomeException ())
   case mastodonRegenerateResult of
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  postedNotes <- runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillContentDirs
+  postedNotes <- runPostingPipeline manager environmentConfig apiKey vaultDirectory imageBackfillContentDirectories
 
   today <- todayPacificDay
   let updateLinks = fmap (\pn ->
         let details = fmap platformUpdateDetail (platforms pn)
         in UpdateLink (noteRelativePath (note pn)) (noteTitle (note pn)) details
         ) postedNotes
-  _ <- addUpdateLinksToReflection vaultDir today updateLinks
+  _ <- addUpdateLinksToReflection vaultDirectory today updateLinks
   pure ()
 
 regenerateBlueskyEmbeds :: Manager -> FilePath -> IO ()
-regenerateBlueskyEmbeds manager vaultDir = do
+regenerateBlueskyEmbeds manager vaultDirectory = do
   putStrLn "  🔄 Scanning for Bluesky placeholder embeds to regenerate..."
-  files <- findMarkdownFiles vaultDir
+  files <- findMarkdownFiles vaultDirectory
   regenerated <- mapM (tryRegenerateFile manager) files
   let count = sum regenerated
   if count > 0
@@ -458,9 +458,9 @@ extractSectionContent header content =
     isNextSection line = "## " `T.isPrefixOf` T.stripStart line
 
 regenerateMastodonEmbeds :: FilePath -> IO ()
-regenerateMastodonEmbeds vaultDir = do
+regenerateMastodonEmbeds vaultDirectory = do
   putStrLn "  🔄 Scanning for Mastodon embeds needing dark mode update..."
-  files <- findMarkdownFiles vaultDir
+  files <- findMarkdownFiles vaultDirectory
   regenerated <- mapM tryDarkenMastodonFile files
   let count = sum regenerated
   if count > 0

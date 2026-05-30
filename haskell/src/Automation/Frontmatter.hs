@@ -98,7 +98,7 @@ detectSections content =
   )
 
 getReflectionPath :: Text -> FilePath -> FilePath
-getReflectionPath date contentDir = contentDir </> T.unpack date <> ".md"
+getReflectionPath date contentDirectory = contentDirectory </> T.unpack date <> ".md"
 
 isValidDatePrefix :: Text -> Bool
 isValidDatePrefix t =
@@ -122,8 +122,8 @@ deriveUrl frontmatter relativePath =
   in fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" frontmatter)
 
 readReflection :: Text -> FilePath -> IO (Maybe ReflectionData)
-readReflection date contentDir = do
-  let filePath = getReflectionPath date contentDir
+readReflection date contentDirectory = do
+  let filePath = getReflectionPath date contentDirectory
   exists <- doesFileExist filePath
   if exists
     then do
@@ -153,8 +153,8 @@ readReflection date contentDir = do
     else pure Nothing
 
 readNote :: Text -> FilePath -> IO (Maybe ReflectionData)
-readNote relativePath contentDir = do
-  let filePath = contentDir </> T.unpack relativePath
+readNote relativePath contentDirectory = do
+  let filePath = contentDirectory </> T.unpack relativePath
   exists <- doesFileExist filePath
   if exists
     then do

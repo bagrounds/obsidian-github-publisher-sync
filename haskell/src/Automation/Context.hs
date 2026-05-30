@@ -2,7 +2,7 @@ module Automation.Context
   ( AppContext
       ( AppContext
       , httpManager
-      , vaultDir
+      , vaultDirectory
       , repoRoot
       , geminiApiKey
       , obsidianCredentials
@@ -17,14 +17,14 @@ import Automation.Secret (Secret)
 
 data AppContext = AppContext
   { httpManager          :: Manager
-  , vaultDir             :: FilePath
+  , vaultDirectory             :: FilePath
   , repoRoot             :: FilePath
   , geminiApiKey         :: Secret
   , obsidianCredentials  :: ObsidianCredentials
   }
 
 instance Show AppContext where
-  show context = "AppContext { vaultDir = " <> show (vaultDir context)
+  show context = "AppContext { vaultDirectory = " <> show (vaultDirectory context)
     <> ", repoRoot = " <> show (repoRoot context)
     <> ", geminiApiKey = " <> show (geminiApiKey context)
     <> ", obsidianCredentials = " <> show (obsidianCredentials context)
@@ -36,7 +36,7 @@ mkAppContext manager vault repo gemini obsidian
   | null repo = Left "Repository root path cannot be empty"
   | otherwise = Right AppContext
       { httpManager = manager
-      , vaultDir = vault
+      , vaultDirectory = vault
       , repoRoot = repo
       , geminiApiKey = gemini
       , obsidianCredentials = obsidian

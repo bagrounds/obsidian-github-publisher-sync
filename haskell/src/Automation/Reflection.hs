@@ -37,11 +37,11 @@ selectMostRecentReflection files =
     []      -> Nothing
 
 findMostRecentReflection :: FilePath -> IO (Maybe Text)
-findMostRecentReflection contentDir = do
-  let reflDir = contentDir </> "reflections"
-  exists <- doesDirectoryExist reflDir
+findMostRecentReflection contentDirectory = do
+  let reflectionsDirectory = contentDirectory </> "reflections"
+  exists <- doesDirectoryExist reflectionsDirectory
   if exists
-    then selectMostRecentReflection <$> listDirectory reflDir
+    then selectMostRecentReflection <$> listDirectory reflectionsDirectory
     else pure Nothing
 
 eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]

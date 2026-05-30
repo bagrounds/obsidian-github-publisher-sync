@@ -28,9 +28,9 @@ data BlogSeriesConfig = BlogSeriesConfig
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig
 lookupSeriesIn seriesMap seriesId =
-  maybe (Left errMsg) Right (Map.lookup seriesId seriesMap)
+  maybe (Left errorMessage) Right (Map.lookup seriesId seriesMap)
   where
-    errMsg = "Unknown blog series: " <> seriesId
+    errorMessage = "Unknown blog series: " <> seriesId
       <> ". Available: " <> mconcat (fmap (<> " ") (Map.keys seriesMap))
 
 extraContentDirs :: [ContentDirectory]

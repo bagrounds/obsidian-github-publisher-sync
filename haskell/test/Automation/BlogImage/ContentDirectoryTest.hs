@@ -51,7 +51,7 @@ tests = testGroup "BlogImage.ContentDirectory"
             all (\directory -> contentDirectoryFromText (contentDirectoryToText directory) == directory)
               knownDirectories
       , testProperty "toText produces non-empty text for known directories" $
-          \idx -> not (T.null (contentDirectoryToText (knownDirectories !! (idx `mod` length knownDirectories))))
+          \index -> not (T.null (contentDirectoryToText (knownDirectories !! (index `mod` length knownDirectories))))
       , testCase "AutoBlogSeries round-trips" $
           contentDirectoryFromText (contentDirectoryToText (AutoBlogSeries "my-series")) @?= AutoBlogSeries "my-series"
       ]

@@ -270,17 +270,17 @@ getAccessTokenWithScope scope manager serviceAccountKey = do
         Left failure -> pure $ Left failure
         Right jwt -> do
           initialRequest <- parseRequest tokenEndpoint
-          let httpReq = urlEncodedBody
+          let httpRequest = urlEncodedBody
                 [ ("grant_type", "urn:ietf:params:oauth:grant-type:jwt-bearer")
                 , ("assertion", jwt)
                 ] initialRequest
-          response <- httpLbs httpReq manager
+          response <- httpLbs httpRequest manager
           let status = statusCode $ responseStatus response
           case status of
             200 ->
               case Json.eitherDecode (responseBody response) of
                 Left failure -> pure $ Left $ "Token response parse error: " <> T.pack failure
-                Right tokenResp -> pure $ Right $ accessToken tokenResp
+                Right tokenResponse -> pure $ Right $ accessToken tokenResponse
             code -> pure $ Left $
               "Token endpoint returned status " <> T.pack (show code)
                 <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)

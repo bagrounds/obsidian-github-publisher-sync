@@ -73,7 +73,7 @@ searchDiscussions manager token searchQuery maxResults maxComments = do
         [ "query" .= buildQuery maxResults maxComments
         , "variables" .= object [ "searchQuery" .= searchQuery ]
         ]
-  let httpReq = initialRequest
+  let httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS requestBody'
         , requestHeaders =
@@ -82,7 +82,7 @@ searchDiscussions manager token searchQuery maxResults maxComments = do
             , ("User-Agent", "obsidian-github-publisher-sync")
             ]
         }
-  response <- httpLbs httpReq manager
+  response <- httpLbs httpRequest manager
   let status = statusCode $ responseStatus response
   case status of
     200 ->
@@ -90,13 +90,13 @@ searchDiscussions manager token searchQuery maxResults maxComments = do
         Left failure -> do
           putStrLn $ "GraphQL parse error: " <> failure
           pure []
-        Right gqlResp ->
-          case Gql.errors (gqlResp :: GqlResponse) of
+        Right graphqlResponse ->
+          case Gql.errors (graphqlResponse :: GqlResponse) of
             Just errs -> do
               putStrLn $ "GraphQL errors: " <> show (fmap Gql.message errs)
               pure []
             Nothing ->
-              pure $ maybe [] (Gql.searchNodes . Gql.search) (Gql.responseData gqlResp)
+              pure $ maybe [] (Gql.searchNodes . Gql.search) (Gql.responseData graphqlResponse)
     _ -> do
       putStrLn $ "GraphQL HTTP error: " <> show status
       pure []

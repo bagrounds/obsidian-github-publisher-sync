@@ -151,10 +151,10 @@ parseImageDate value =
 checkUrlPublished :: Manager -> Text -> IO Bool
 checkUrlPublished manager url = do
   result <- try (do
-    req <- HTTP.parseRequest (T.unpack url)
-    let headReq = req { HTTP.method = "HEAD", HTTP.redirectCount = 10 }
-    resp <- HTTP.httpLbs headReq manager
-    pure (statusIsSuccessful (HTTP.responseStatus resp))
+    request <- HTTP.parseRequest (T.unpack url)
+    let headRequest = request { HTTP.method = "HEAD", HTTP.redirectCount = 10 }
+    response <- HTTP.httpLbs headRequest manager
+    pure (statusIsSuccessful (HTTP.responseStatus response))
     ) :: IO (Either SomeException Bool)
   case result of
     Left _  -> pure False

@@ -72,7 +72,21 @@ unless a rename surfaces a latent bug.
    to `message` (or a domain-specific name like `responseMessage` where `message` was
    already in scope). Renamed every `ctx` binding to `context`. Pure rename — zero
    whole-word `msg` or `ctx` identifiers remain as variable names.
-4. **`req` → `request`** and remaining stragglers (`tmp`, `idx`, `num`, `str`).
+4. ✅ **`req` → `request`** and remaining stragglers (`tmp`, `idx`, `num`, `str`) (done):
+   renamed every standalone `req`/`resp` parameter and binding across `haskell/src` and
+   `haskell/app` to `request`/`response`, including compound forms (`httpReq` →
+   `httpRequest`, `headReq` → `headRequest`, `fallbackReq` → `fallbackRequest`,
+   `gqlResp` → `graphqlResponse`, `tokenResp` → `tokenResponse`). Also renamed compound
+   `Msg` forms (`logMsg` → `logMessage`, `errMsg` → `errorMessage`), `suf` → `suffix`,
+   `str` → `string`, `idx` → `index`, `num` → `numberText`, and `_err` → `_failure`.
+   No `tmp` variable names were found — all five occurrences were string literals
+   (filesystem paths), not identifiers. Pure rename — all 2021 Haskell tests still pass,
+   hlint reports zero hints, and the `-Werror` build is clean.
+
+   **Note:** Compound `Dir` identifiers (`vaultDir`, `contentDir`, `obsidianDir`, etc.)
+   were intentionally excluded from this step due to their breadth (75+ `vaultDir`
+   occurrences alone across 10+ files including app entry points and config records). A
+   separate follow-up issue has been filed to rename these systematically.
 
 ## Definition of Done Per Step
 

@@ -6,7 +6,7 @@ module Automation.TaskRunner
   , inferenceDashboards
   , runTasks
   , runTasksWithDelay
-  , logMsg
+  , logMessage
   , formatTimestamp
   ) where
 
@@ -48,8 +48,8 @@ inferenceDashboards =
 formatTimestamp :: IO Text
 formatTimestamp = T.pack . formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S%QZ" <$> getCurrentTime
 
-logMsg :: Text -> IO ()
-logMsg message = do
+logMessage :: Text -> IO ()
+logMessage message = do
   timestamp <- formatTimestamp
   TIO.putStrLn $ "[" <> timestamp <> "] " <> message
 
@@ -70,7 +70,7 @@ runTasksWithDelay delayMicroseconds runners taskIdentifiers = runTask taskIdenti
       let mRunner = Map.lookup taskIdentifier runners
       case mRunner of
         Nothing -> do
-          logMsg $ "  ⚠️  Unknown task: " <> taskIdToText taskIdentifier
+          logMessage $ "  ⚠️  Unknown task: " <> taskIdToText taskIdentifier
           runTask rest ((taskIdentifier, False, Just "no runner registered") : accumulator)
         Just runner -> do
           result <- try runner :: IO (Either SomeException ())
@@ -78,5 +78,5 @@ runTasksWithDelay delayMicroseconds runners taskIdentifiers = runTask taskIdenti
             Right () -> runTask rest ((taskIdentifier, True, Nothing) : accumulator)
             Left exception -> do
               let errorMessage = T.pack (show exception)
-              logMsg $ "❌ " <> taskIdToText taskIdentifier <> " — " <> errorMessage
+              logMessage $ "❌ " <> taskIdToText taskIdentifier <> " — " <> errorMessage
               runTask rest ((taskIdentifier, False, Just errorMessage) : accumulator)

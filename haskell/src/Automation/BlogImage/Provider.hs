@@ -132,7 +132,7 @@ generateWithCloudflare manager apiToken accountId model prompt = do
         [ "prompt" Json..= prompt
         , "steps"  Json..= (4 :: Int)
         ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -140,13 +140,13 @@ generateWithCloudflare manager apiToken accountId model prompt = do
             , ("Content-Type", "application/json")
             ]
         }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs httpRequest manager
+  let status = statusCode (responseStatus response)
   case status of
-    200 -> pure $ parseCloudflareResponse (responseBody resp)
+    200 -> pure $ parseCloudflareResponse (responseBody response)
     code -> pure $ Left $
       "Cloudflare API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 parseCloudflareResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseCloudflareResponse body =
@@ -173,7 +173,7 @@ generateWithHuggingFace manager apiToken model prompt = do
   let url = "https://router.huggingface.co/hf-inference/models/" <> T.unpack model
   initialRequest <- parseRequest url
   let body = Json.encode $ Json.object [ "inputs" Json..= prompt ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -181,19 +181,19 @@ generateWithHuggingFace manager apiToken model prompt = do
             , ("Content-Type", "application/json")
             ]
         }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs httpRequest manager
+  let status = statusCode (responseStatus response)
   case status of
     200 ->
       let contentType = maybe "image/jpeg" (T.takeWhile (/= ';') . TE.decodeUtf8)
-                          (lookup hContentType (responseHeaders resp))
+                          (lookup hContentType (responseHeaders response))
       in if "image/" `T.isPrefixOf` contentType
-         then pure $ Right (responseBody resp, contentType)
+         then pure $ Right (responseBody response, contentType)
          else pure $ Left $ "HuggingFace returned non-image response: "
-                <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+                <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
     code -> pure $ Left $
       "HuggingFace API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 generateWithTogether
   :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
@@ -206,7 +206,7 @@ generateWithTogether manager apiKey model prompt = do
         , "n"               Json..= (1 :: Int)
         , "response_format" Json..= ("b64_json" :: Text)
         ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -214,13 +214,13 @@ generateWithTogether manager apiKey model prompt = do
             , ("Content-Type", "application/json")
             ]
         }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs httpRequest manager
+  let status = statusCode (responseStatus response)
   case status of
-    200 -> pure $ parseTogetherResponse (responseBody resp)
+    200 -> pure $ parseTogetherResponse (responseBody response)
     code -> pure $ Left $
       "Together API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 parseTogetherResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseTogetherResponse body =
@@ -247,19 +247,19 @@ generateWithPollinations manager model prompt = do
             <> "?model=" <> T.unpack encodedModel
             <> "&width=1024&height=1024&nologo=true"
   initialRequest <- parseRequest url
-  resp <- httpLbs initialRequest manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs initialRequest manager
+  let status = statusCode (responseStatus response)
   case status of
     200 ->
       let contentType = maybe "image/jpeg" (T.takeWhile (/= ';') . TE.decodeUtf8)
-                          (lookup hContentType (responseHeaders resp))
+                          (lookup hContentType (responseHeaders response))
       in if "image/" `T.isPrefixOf` contentType
-         then pure $ Right (responseBody resp, contentType)
+         then pure $ Right (responseBody response, contentType)
          else pure $ Left $ "Pollinations returned non-image response: "
-                <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+                <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
     code -> pure $ Left $
       "Pollinations API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 isImagenModel :: Text -> Bool
 isImagenModel = T.isPrefixOf "imagen-"
@@ -280,18 +280,18 @@ generateWithImagen manager apiKey model prompt = do
         [ "instances"  Json..= [ Json.object [ "prompt" Json..= prompt ] ]
         , "parameters" Json..= Json.object [ "sampleCount" Json..= (1 :: Int) ]
         ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders = [("Content-Type", "application/json")]
         }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs httpRequest manager
+  let status = statusCode (responseStatus response)
   case status of
-    200 -> pure $ parseImagenResponse (responseBody resp)
+    200 -> pure $ parseImagenResponse (responseBody response)
     code -> pure $ Left $
       "Imagen API returned status " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 parseImagenResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseImagenResponse body =
@@ -325,18 +325,18 @@ generateWithGeminiContent manager apiKey model prompt = do
         , "generationConfig" Json..= Json.object
             [ "responseModalities" Json..= (["IMAGE"] :: [Text]) ]
         ]
-      httpReq = initialRequest
+      httpRequest = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders = [("Content-Type", "application/json")]
         }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
+  response <- httpLbs httpRequest manager
+  let status = statusCode (responseStatus response)
   case status of
-    200 -> pure $ parseGeminiImageResponse (responseBody resp)
+    200 -> pure $ parseGeminiImageResponse (responseBody response)
     code -> pure $ Left $
       "Gemini image API returned status " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
+        <> TE.decodeUtf8 (LBS.toStrict (responseBody response))
 
 parseGeminiImageResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
 parseGeminiImageResponse body =
@@ -375,21 +375,21 @@ findInlineData (_ : rest) = findInlineData rest
 describeImageWithGemini
   :: Manager -> Text -> Gemini.Model -> Text -> IO (Either Text Text)
 describeImageWithGemini manager apiKey model content = do
-  let req = Gemini.Request
+  let request = Gemini.Request
         { Gemini.requestPrompt = content
         , Gemini.requestSystemInstruction = Just imageDescriptionSystemPrompt
         , Gemini.requestModel = model
         , Gemini.requestApiKey = Secret apiKey
         , Gemini.requestGenerationConfig = Gemini.defaultGenerationConfig
         }
-  result <- Gemini.generateContent manager req
+  result <- Gemini.generateContent manager request
   case result of
     Right response -> pure $ Right (Gemini.responseText response)
-    Left _err  -> do
+    Left _failure  -> do
       putStrLn $ "⚠️ " <> T.unpack (Gemini.modelToText model) <> " failed for image description, trying fallback..."
       let fallbackModel = geminiModelFallback model
-      let fallbackReq = req { Gemini.requestModel = fallbackModel }
-      fallbackResult <- Gemini.generateContent manager fallbackReq
+      let fallbackRequest = request { Gemini.requestModel = fallbackModel }
+      fallbackResult <- Gemini.generateContent manager fallbackRequest
       case fallbackResult of
         Right response -> pure $ Right (Gemini.responseText response)
         Left failure   -> pure $ Left (T.pack (show failure))

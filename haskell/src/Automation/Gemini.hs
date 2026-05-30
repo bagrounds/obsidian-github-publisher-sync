@@ -358,7 +358,7 @@ generateContent manager request = do
   let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig request)
   putStrLn $ "📤 Gemini request (" <> T.unpack (modelToText model) <> "): "
     <> T.unpack (TE.decodeUtf8 (LBS.toStrict body))
-  let httpReq = parsedRequest
+  let httpRequest = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
         , HTTP.requestHeaders =
@@ -366,7 +366,7 @@ generateContent manager request = do
             ]
         , HTTP.responseTimeout = responseTimeoutMicro (120 * 1000000)  -- 120 seconds for Gemini API
         }
-  response <- httpLbs httpReq manager
+  response <- httpLbs httpRequest manager
   let status = statusCode $ responseStatus response
   putStrLn $ "📥 Gemini response (" <> T.unpack (modelToText model) <> ", status " <> show status <> "): "
     <> T.unpack (TE.decodeUtf8 (LBS.toStrict (responseBody response)))

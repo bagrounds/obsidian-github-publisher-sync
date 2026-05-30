@@ -146,6 +146,17 @@ executable inject-giscus
     http-client,
     http-client-tls
 
+executable test-fiction-models
+  import:              shared
+  hs-source-dirs:      app
+  main-is:             TestFictionModels.hs
+  build-depends:
+    base,
+    automation,
+    text,
+    http-client,
+    http-client-tls
+
 test-suite automation-tests
   import:              shared
   type:                exitcode-stdio-1.0

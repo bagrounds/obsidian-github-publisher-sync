@@ -87,8 +87,18 @@ parseApiStatus other                = UnknownStatus other
 -- | Typed representation of Gemini API models.
 -- Known models have dedicated constructors; environment variable overrides
 -- use @Custom@ to preserve arbitrary model strings from the API.
+--
+-- Authoritative documentation per model is linked next to its
+-- @modelToText@ entry below. Cross-cutting references:
+--
+--   * Gemini API model index: https://ai.google.dev/gemini-api/docs/models
+--   * Gemini API deprecations / shutdown dates: https://ai.google.dev/gemini-api/docs/deprecations
+--   * Gemma on the Gemini API:   https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api
+--   * Gemma 4 model card:        https://ai.google.dev/gemma/docs/core
 data Model
   = Gemma3
+  | Gemma4
+  | Gemma4MixtureOfExperts
   | Gemini31FlashLite
   | Gemini3Flash
   | Gemini25Flash
@@ -99,17 +109,31 @@ data Model
   deriving (Show, Eq, Ord)
 
 modelToText :: Model -> Text
-modelToText Gemma3              = "gemma-3-27b-it"
-modelToText Gemini31FlashLite   = "gemini-3.1-flash-lite-preview"
-modelToText Gemini3Flash        = "gemini-3-flash-preview"
-modelToText Gemini25Flash       = "gemini-2.5-flash"
-modelToText Gemini25FlashLite   = "gemini-2.5-flash-lite"
-modelToText Gemini20Flash       = "gemini-2.0-flash"
-modelToText Gemini31FlashImage  = "gemini-3.1-flash-image-preview"
-modelToText (Custom t)          = t
+-- https://ai.google.dev/gemma/docs/core (Gemma 3 27B IT — open-weight; older Gemma generation).
+modelToText Gemma3                  = "gemma-3-27b-it"
+-- https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api (Gemma 4 31B IT, dense, served on the Gemini API).
+modelToText Gemma4                  = "gemma-4-31b-it"
+-- https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api (Gemma 4 26B A4B IT, mixture-of-experts variant).
+modelToText Gemma4MixtureOfExperts  = "gemma-4-26b-a4b-it"
+-- https://ai.google.dev/gemini-api/docs/models (Gemini 3.1 Flash-Lite preview; preview alias of @gemini-3.1-flash-lite@).
+-- Per https://ai.google.dev/gemini-api/docs/deprecations the @-preview@ alias has a published shutdown date — the live test executable surfaces a 404 if it has been turned off.
+modelToText Gemini31FlashLite       = "gemini-3.1-flash-lite-preview"
+-- https://ai.google.dev/gemini-api/docs/models (Gemini 3 Flash preview).
+modelToText Gemini3Flash            = "gemini-3-flash-preview"
+-- https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash (Gemini 2.5 Flash, stable).
+modelToText Gemini25Flash           = "gemini-2.5-flash"
+-- https://ai.google.dev/gemini-api/docs/models (Gemini 2.5 Flash-Lite, stable).
+modelToText Gemini25FlashLite       = "gemini-2.5-flash-lite"
+-- https://ai.google.dev/gemini-api/docs/models/gemini-2.0-flash (Gemini 2.0 Flash; see deprecations page for shutdown date).
+modelToText Gemini20Flash           = "gemini-2.0-flash"
+-- https://ai.google.dev/gemini-api/docs/image-generation (Gemini 3.1 Flash Image preview — image-generation model, not used for fiction).
+modelToText Gemini31FlashImage      = "gemini-3.1-flash-image-preview"
+modelToText (Custom t)              = t
 
 modelFromText :: Text -> Model
 modelFromText "gemma-3-27b-it"                 = Gemma3
+modelFromText "gemma-4-31b-it"                 = Gemma4
+modelFromText "gemma-4-26b-a4b-it"             = Gemma4MixtureOfExperts
 modelFromText "gemini-3.1-flash-lite-preview"  = Gemini31FlashLite
 modelFromText "gemini-3-flash-preview"         = Gemini3Flash
 modelFromText "gemini-2.5-flash"               = Gemini25Flash
@@ -122,6 +146,8 @@ modelFromText t                                = Custom t
 knownModels :: [Model]
 knownModels =
   [ Gemma3
+  , Gemma4
+  , Gemma4MixtureOfExperts
   , Gemini31FlashLite
   , Gemini3Flash
   , Gemini25Flash
@@ -137,9 +163,23 @@ overrideModelChain envValue defaultChain = case envValue of
     in parsed :| filter (/= parsed) (NE.toList defaultChain)
   _ -> defaultChain
 
+-- | Whether this model accepts a top-level @systemInstruction@ field on the
+-- Gemini @generateContent@ endpoint.
+--
+-- The Gemma family is treated as not supporting it because the public Gemini
+-- API has historically rejected @systemInstruction@ for Gemma (the prompt is
+-- folded into the user turn instead). Note that the Gemma 4 model card at
+-- https://ai.google.dev/gemma/docs/core advertises native system-prompt
+-- support in the underlying weights, and
+-- https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api is the place to
+-- re-check whether the Gemini API has started exposing it. The conservative
+-- @False@ here keeps us safe today; flipping it to @True@ is a one-line
+-- change once the API documents support.
 supportsSystemInstruction :: Model -> Bool
-supportsSystemInstruction Gemma3 = False
-supportsSystemInstruction _      = True
+supportsSystemInstruction Gemma3                 = False
+supportsSystemInstruction Gemma4                 = False
+supportsSystemInstruction Gemma4MixtureOfExperts = False
+supportsSystemInstruction _                      = True
 
 -- | Domain-specific error type for Gemini API operations.
 -- Structured constructors preserve error context and enable typed pattern
@@ -255,6 +295,30 @@ geminiEndpoint model =
   "https://generativelanguage.googleapis.com/v1beta/models/"
     <> modelToText model
     <> ":generateContent"
+
+-- | Surface high-signal warnings for failure modes that usually mean a model
+-- has been decommissioned or no longer accepts our request shape, so they are
+-- easy to spot in scheduled-job logs without having to inspect the full
+-- request/response dump.
+--
+-- See https://ai.google.dev/gemini-api/docs/deprecations for the official list
+-- of shutdown dates and recommended replacements.
+logModelHealth :: Model -> Int -> ApiStatus -> Text -> IO ()
+logModelHealth model code apiStatus message =
+  let modelName = T.unpack (modelToText model)
+      messageStr = T.unpack message
+  in case (code, apiStatus) of
+    (404, _) -> putStrLn $
+      "🛑 Gemini model " <> modelName <> " returned 404 NOT_FOUND — it may have been decommissioned. "
+      <> "Check https://ai.google.dev/gemini-api/docs/deprecations for the recommended replacement. "
+      <> "API message: " <> messageStr
+    (_, NotFound) -> putStrLn $
+      "🛑 Gemini model " <> modelName <> " reported NOT_FOUND status — it may have been decommissioned. "
+      <> "Check https://ai.google.dev/gemini-api/docs/deprecations. API message: " <> messageStr
+    (_, InvalidArgument) -> putStrLn $
+      "⚠️ Gemini model " <> modelName <> " rejected the request as INVALID_ARGUMENT — the request shape may no longer be supported. "
+      <> "Check https://ai.google.dev/gemini-api/docs/models for current capabilities. API message: " <> messageStr
+    _ -> pure ()
 
 buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Value
 buildRequestBody systemInstruction prompt config =
@@ -388,7 +452,9 @@ generateContent manager request = do
             }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
-      in pure $ Left $ HttpError code apiStatus message
+      in do
+        logModelHealth model code apiStatus message
+        pure $ Left $ HttpError code apiStatus message
 
 generateContentWithFallback :: Manager -> NonEmpty Model -> Maybe Text -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
 generateContentWithFallback manager (model :| fallbacks) systemInstruction prompt apiKey config = do

@@ -258,7 +258,7 @@ checkForApiError value =
       case lookup "error" fields of
         Just (Json.Object errFields) ->
           let message = case lookup "message" errFields of
-                Just (Json.String msg) -> msg
+                Just (Json.String responseMessage) -> responseMessage
                 _ -> "unknown error"
               status = case lookup "status" errFields of
                 Just (Json.String s) -> " (" <> s <> ")"

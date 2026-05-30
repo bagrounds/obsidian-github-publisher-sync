@@ -67,7 +67,11 @@ unless a rename surfaces a latent bug.
    binding across `haskell/src` and `haskell/test`, including `isDir` → `isDirectory`
    in `SocialPosting.hs` and `ObsidianSync.hs`. Pure rename — all Haskell tests still
    pass and the `-Werror` build is clean. Zero whole-word `dir` identifiers remain.
-3. **`msg` → `message`** and **`ctx` → `context`**: rename across source and tests.
+3. ✅ **`msg` → `message`** and **`ctx` → `context`** (done): renamed every standalone
+   `msg` parameter and binding across `haskell/src`, `haskell/app`, and `haskell/test`
+   to `message` (or a domain-specific name like `responseMessage` where `message` was
+   already in scope). Renamed every `ctx` binding to `context`. Pure rename — zero
+   whole-word `msg` or `ctx` identifiers remain as variable names.
 4. **`req` → `request`** and remaining stragglers (`tmp`, `idx`, `num`, `str`).
 
 ## Definition of Done Per Step

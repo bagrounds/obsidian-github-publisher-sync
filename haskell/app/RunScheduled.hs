@@ -99,7 +99,7 @@ main = do
 
       geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
       context <- case Context.mkAppContext manager vaultDir repoRoot geminiApiKey creds of
-        Right ctx -> pure ctx
+        Right context -> pure context
         Left failure -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack failure
           exitFailure

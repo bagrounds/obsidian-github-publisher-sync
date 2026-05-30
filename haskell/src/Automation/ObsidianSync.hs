@@ -128,8 +128,8 @@ runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
       case result of
         Right _ -> pure ()
         Left failure ->
-          let msg = show failure
-              isLockContention = "Another sync instance" `T.isInfixOf` T.pack msg
+          let message = show failure
+              isLockContention = "Another sync instance" `T.isInfixOf` T.pack message
               canRetry = attempt < maxRetries
           in case (isLockContention, canRetry) of
             (True, True) -> do
@@ -192,21 +192,21 @@ validatePrePushFileCount vaultDir currentCount = do
           putStrLn $ "📊 Baseline: " <> show baseline <> ", Current: " <> show currentCount
             <> " (delta: " <> show (currentCount - baseline) <> ")"
           when (currentCount < baseline) $ do
-            let msg = "🛑 CIRCUIT BREAKER: Vault lost " <> show lost
+            let message = "🛑 CIRCUIT BREAKER: Vault lost " <> show lost
                   <> " file(s) (baseline: " <> show baseline <> ", current: "
                   <> show currentCount <> ")."
                   <> " This system only creates or edits files — any deletion is anomalous."
                   <> " Refusing to push to prevent catastrophic data loss."
-            putStrLn msg
-            throwIO $ userError msg
+            putStrLn message
+            throwIO $ userError message
     else do
       putStrLn "⚠️ No baseline file count marker found — skipping circuit breaker (first sync)"
       when (currentCount < minSafeFileCount) $ do
-        let msg = "🛑 CIRCUIT BREAKER: Vault has only " <> show currentCount
+        let message = "🛑 CIRCUIT BREAKER: Vault has only " <> show currentCount
               <> " files (minimum safe threshold: " <> show minSafeFileCount
               <> "). Refusing to push to prevent potential data loss."
-        putStrLn msg
-        throwIO $ userError msg
+        putStrLn message
+        throwIO $ userError message
 
 minSafeFileCount :: Int
 minSafeFileCount = 50

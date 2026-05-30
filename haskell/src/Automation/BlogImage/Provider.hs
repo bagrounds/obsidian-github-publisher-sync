@@ -92,23 +92,23 @@ mimeTypeToExtension mime = case T.takeWhile (/= ';') (T.strip mime) of
   _            -> ".jpg"
 
 isQuotaError :: Text -> Bool
-isQuotaError msg =
-  T.isInfixOf "429" msg
-    || T.isInfixOf "RESOURCE_EXHAUSTED" msg
-    || T.isInfixOf "quota" msg
+isQuotaError message =
+  T.isInfixOf "429" message
+    || T.isInfixOf "RESOURCE_EXHAUSTED" message
+    || T.isInfixOf "quota" message
 
 isDailyQuotaError :: Text -> Bool
-isDailyQuotaError msg =
-  T.isInfixOf "quota" msg
-    && (T.isInfixOf "daily" msg || T.isInfixOf "per day" msg || T.isInfixOf "PerDay" msg)
+isDailyQuotaError message =
+  T.isInfixOf "quota" message
+    && (T.isInfixOf "daily" message || T.isInfixOf "per day" message || T.isInfixOf "PerDay" message)
 
 isProviderUnavailableError :: Text -> Bool
-isProviderUnavailableError msg =
-  T.isInfixOf "410" msg
-    || T.isInfixOf "401" msg
-    || T.isInfixOf "403" msg
-    || T.isInfixOf "no longer supported" msg
-    || T.isInfixOf "deprecated" msg
+isProviderUnavailableError message =
+  T.isInfixOf "410" message
+    || T.isInfixOf "401" message
+    || T.isInfixOf "403" message
+    || T.isInfixOf "no longer supported" message
+    || T.isInfixOf "deprecated" message
 
 defaultDescriberModel :: Gemini.Model
 defaultDescriberModel = Gemini.Gemini31FlashLite

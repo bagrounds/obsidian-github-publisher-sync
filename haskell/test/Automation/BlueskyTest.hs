@@ -149,9 +149,9 @@ classifyExceptionTests = testGroup "classifyException"
   , testCase "classifies other exception as NetworkError" $
       let exception = toException (userError "DNS resolution failed")
       in case Bluesky.classifyException exception of
-           Bluesky.NetworkError msg ->
+           Bluesky.NetworkError message ->
              assertBool "should contain error message" $
-               "DNS resolution failed" `T.isInfixOf` msg
+               "DNS resolution failed" `T.isInfixOf` message
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
@@ -470,13 +470,13 @@ propertyTests = testGroup "properties"
       \code -> not (null (show (Bluesky.HttpError code "msg")))
 
   , testProperty "show Error is non-empty for JsonParseError" $
-      \msg -> not (null (show (Bluesky.JsonParseError (T.pack msg))))
+      \message -> not (null (show (Bluesky.JsonParseError (T.pack message))))
 
   , testProperty "show Error is non-empty for ExtractionError" $
-      \msg -> not (null (show (Bluesky.ExtractionError (T.pack msg))))
+      \message -> not (null (show (Bluesky.ExtractionError (T.pack message))))
 
   , testProperty "show Error is non-empty for NetworkError" $
-      \msg -> not (null (show (Bluesky.NetworkError (T.pack msg))))
+      \message -> not (null (show (Bluesky.NetworkError (T.pack message))))
 
   , testProperty "parsePostResponse returns Left for non-object JSON input" $
       \input ->

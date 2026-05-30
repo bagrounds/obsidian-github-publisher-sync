@@ -88,9 +88,9 @@ classifyExceptionTests = testGroup "Twitter.classifyException"
   , testCase "classifies other exception as NetworkError" $
       let exception = toException (userError "connection refused")
       in case Twitter.classifyException exception of
-           Twitter.NetworkError msg ->
+           Twitter.NetworkError message ->
              assertBool "should contain error message" $
-               "connection refused" `T.isInfixOf` msg
+               "connection refused" `T.isInfixOf` message
            other -> fail $ "Expected NetworkError, got: " <> show other
 
   , testCase "preserves HTTP status code" $
@@ -133,13 +133,13 @@ propertyTests = testGroup "properties"
       \code -> not (null (show (Twitter.HttpError code "msg")))
 
   , testProperty "show Twitter.Error is non-empty for JsonParseError" $
-      \msg -> not (null (show (Twitter.JsonParseError (T.pack msg))))
+      \message -> not (null (show (Twitter.JsonParseError (T.pack message))))
 
   , testProperty "show Twitter.Error is non-empty for ExtractionError" $
-      \msg -> not (null (show (Twitter.ExtractionError (T.pack msg))))
+      \message -> not (null (show (Twitter.ExtractionError (T.pack message))))
 
   , testProperty "show Twitter.Error is non-empty for NetworkError" $
-      \msg -> not (null (show (Twitter.NetworkError (T.pack msg))))
+      \message -> not (null (show (Twitter.NetworkError (T.pack message))))
 
   , testProperty "parseTweetResponse returns Left for non-object JSON input" $
       \input ->

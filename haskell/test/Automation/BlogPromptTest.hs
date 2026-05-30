@@ -209,7 +209,7 @@ tests = testGroup "BlogPrompt"
 
   , testCase "buildBlogPrompt user prompt includes human-readable date" $
       let series = unsafeLookupSeries "chickie-loo"
-          ctx = BlogContext
+          context = BlogContext
             { series = series
             , agentsMd = ""
             , previousPosts = []
@@ -217,13 +217,13 @@ tests = testGroup "BlogPrompt"
             , today = fromGregorian 2026 4 11
             , crossSeriesPosts = []
             }
-          (_, userPrompt) = buildBlogPrompt ctx
+          (_, userPrompt) = buildBlogPrompt context
       in assertBool "should include human-readable date" $
            "Today is Saturday, April 11, 2026." `T.isInfixOf` userPrompt
 
   , testCase "buildBlogPrompt user prompt includes YYYY-MM-DD date" $
       let series = unsafeLookupSeries "chickie-loo"
-          ctx = BlogContext
+          context = BlogContext
             { series = series
             , agentsMd = ""
             , previousPosts = []
@@ -231,7 +231,7 @@ tests = testGroup "BlogPrompt"
             , today = fromGregorian 2026 4 11
             , crossSeriesPosts = []
             }
-          (_, userPrompt) = buildBlogPrompt ctx
+          (_, userPrompt) = buildBlogPrompt context
       in assertBool "should include YYYY-MM-DD date" $
            "2026-04-11" `T.isInfixOf` userPrompt
 
@@ -347,7 +347,7 @@ crossSeriesTests = testGroup "crossSeries"
   , testCase "buildBlogPrompt includes cross-series section when posts provided" $
       let series = unsafeLookupSeries "chickie-loo"
           crossPost = CrossSeriesPost "The Noise" "📰" (BlogPost "a.md" "2026-04-15" "News" "Content")
-          ctx = BlogContext
+          context = BlogContext
             { series = series
             , agentsMd = ""
             , previousPosts = []
@@ -355,13 +355,13 @@ crossSeriesTests = testGroup "crossSeries"
             , today = fromGregorian 2026 4 15
             , crossSeriesPosts = [crossPost]
             }
-          (_, userPrompt) = buildBlogPrompt ctx
+          (_, userPrompt) = buildBlogPrompt context
       in assertBool "user prompt should include cross-series section" $
            "Today Across the Blog" `T.isInfixOf` userPrompt
 
   , testCase "buildBlogPrompt omits cross-series section when no posts" $
       let series = unsafeLookupSeries "chickie-loo"
-          ctx = BlogContext
+          context = BlogContext
             { series = series
             , agentsMd = ""
             , previousPosts = []
@@ -369,7 +369,7 @@ crossSeriesTests = testGroup "crossSeries"
             , today = fromGregorian 2026 4 15
             , crossSeriesPosts = []
             }
-          (_, userPrompt) = buildBlogPrompt ctx
+          (_, userPrompt) = buildBlogPrompt context
       in assertBool "user prompt should not include cross-series section" $
            not ("Today Across the Blog" `T.isInfixOf` userPrompt)
 

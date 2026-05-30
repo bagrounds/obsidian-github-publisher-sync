@@ -196,9 +196,9 @@ classifyExceptionTests = testGroup "Mastodon.classifyException"
   , testCase "classifies other exception as NetworkError" $
       let exception = toException (userError "timeout")
       in case Mastodon.classifyException exception of
-           Mastodon.NetworkError msg ->
+           Mastodon.NetworkError message ->
              assertBool "should contain error message" $
-               "timeout" `T.isInfixOf` msg
+               "timeout" `T.isInfixOf` message
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
@@ -350,13 +350,13 @@ propertyTests = testGroup "properties"
       \code -> not (null (show (Mastodon.HttpError code "msg")))
 
   , testProperty "show Mastodon.Error is non-empty for JsonParseError" $
-      \msg -> not (null (show (Mastodon.JsonParseError (T.pack msg))))
+      \message -> not (null (show (Mastodon.JsonParseError (T.pack message))))
 
   , testProperty "show Mastodon.Error is non-empty for ExtractionError" $
-      \msg -> not (null (show (Mastodon.ExtractionError (T.pack msg))))
+      \message -> not (null (show (Mastodon.ExtractionError (T.pack message))))
 
   , testProperty "show Mastodon.Error is non-empty for NetworkError" $
-      \msg -> not (null (show (Mastodon.NetworkError (T.pack msg))))
+      \message -> not (null (show (Mastodon.NetworkError (T.pack message))))
 
   , testProperty "parseMastodonResponse returns Left for non-object JSON input" $
       \input ->

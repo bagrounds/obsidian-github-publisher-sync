@@ -244,7 +244,7 @@ withObjectTests = testGroup "withObject"
   , testCase "fails for non-Object value" $
       let result = withObject "test" (\_ -> Right (42 :: Int)) (String "oops")
       in case result of
-        Left msg -> assertBool "mentions test" (T.isInfixOf "test" (T.pack msg))
+        Left message -> assertBool "mentions test" (T.isInfixOf "test" (T.pack message))
         Right _  -> assertBool "should be Left" False
   , testCase "fails for Array" $
       let result = withObject "arr" (\_ -> Right (0 :: Int)) (Array [])

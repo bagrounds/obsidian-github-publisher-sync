@@ -87,12 +87,12 @@ stripEmbedSections content =
     ps -> T.strip (T.take (minimum ps) content)
 
 buildBlogPrompt :: BlogContext -> (Text, Text)
-buildBlogPrompt ctx =
+buildBlogPrompt context =
   let systemPrompt =
-        if T.null (T.strip (agentsMd ctx))
+        if T.null (T.strip (agentsMd context))
           then defaultSystemPrompt
-          else agentsMd ctx
-      userPrompt = buildUserPrompt ctx
+          else agentsMd context
+      userPrompt = buildUserPrompt context
   in (systemPrompt, userPrompt)
 
 filterCommentsAfterLastPost :: BlogSeriesConfig -> [BlogPost] -> [BlogComment] -> [BlogComment]

@@ -165,12 +165,12 @@ findLinkCandidates index content masked selfPath =
         []             -> tryPatterns ranges candidates contentEntry rest
         ((pos, matchLength):_) ->
           let matched = T.take matchLength (T.drop pos content)
-              ctx     = extractContext content pos matchLength
+              context     = extractContext content pos matchLength
               candidate = LinkCandidate
                 { entry       = contentEntry
                 , matchedText = matched
                 , position    = pos
-                , context     = ctx
+                , context     = context
                 }
           in ((pos, pos + matchLength) : ranges, candidates <> [candidate])
 

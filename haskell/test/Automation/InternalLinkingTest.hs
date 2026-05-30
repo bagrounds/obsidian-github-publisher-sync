@@ -104,15 +104,15 @@ formatContentEntryWikilinkTests = testGroup "formatContentEntryWikilink"
 extractContextTests :: TestTree
 extractContextTests = testGroup "extractContext"
   [ testCase "extracts context around position" $
-      let ctx = extractContext "Hello World" 6 5
-      in assertBool "contains World" (T.isInfixOf "World" ctx)
+      let context = extractContext "Hello World" 6 5
+      in assertBool "contains World" (T.isInfixOf "World" context)
   , testCase "handles start of text" $
-      let ctx = extractContext "Hello" 0 5
-      in assertEqual "" "Hello" ctx
+      let context = extractContext "Hello" 0 5
+      in assertEqual "" "Hello" context
   , testCase "adds ellipsis for long text" $
       let content = T.replicate 300 "x"
-          ctx = extractContext content 150 5
-      in assertBool "has leading ellipsis" (T.isPrefixOf "..." ctx)
+          context = extractContext content 150 5
+      in assertBool "has leading ellipsis" (T.isPrefixOf "..." context)
   ]
 
 extractMainTitleTests :: TestTree

@@ -120,7 +120,7 @@ percentEncode = T.pack . concatMap encodeByte . BS.unpack . TE.encodeUtf8
     hexUpper = toUpper . intToDigit . fromIntegral
 
 hmacSHA1 :: BS.ByteString -> BS.ByteString -> BS.ByteString
-hmacSHA1 key msg = convert (hmac key msg :: HMAC SHA1)
+hmacSHA1 key message = convert (hmac key message :: HMAC SHA1)
 
 generateNonce :: IO Text
 generateNonce = T.pack <$> traverse (const randomAlphaNum) [1 :: Int .. 32]

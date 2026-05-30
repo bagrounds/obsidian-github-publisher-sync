@@ -63,8 +63,10 @@ unless a rename surfaces a latent bug.
    arm and every `err`-named binding across `haskell/src`, `haskell/app`, and
    `haskell/test` to `failure`. Pure rename — all 2021 Haskell tests still pass and the
    `-Werror` build is clean. Zero whole-word `err` identifiers remain.
-2. **`dir` → `directory`**: rename parameters and bindings such as `findMarkdownFiles dir`
-   and `walkHtmlFiles dir`.
+2. ✅ **`dir` → `directory`** (done): renamed every standalone `dir` parameter and
+   binding across `haskell/src` and `haskell/test`, including `isDir` → `isDirectory`
+   in `SocialPosting.hs` and `ObsidianSync.hs`. Pure rename — all Haskell tests still
+   pass and the `-Werror` build is clean. Zero whole-word `dir` identifiers remain.
 3. **`msg` → `message`** and **`ctx` → `context`**: rename across source and tests.
 4. **`req` → `request`** and remaining stragglers (`tmp`, `idx`, `num`, `str`).
 

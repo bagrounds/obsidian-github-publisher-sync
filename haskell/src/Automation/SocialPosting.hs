@@ -394,10 +394,10 @@ regenerateBlueskyEmbeds manager vaultDir = do
     else putStrLn "  📭 No Bluesky placeholder embeds found"
 
 findMarkdownFiles :: FilePath -> IO [FilePath]
-findMarkdownFiles dir = do
-  entries <- listDirectory dir
+findMarkdownFiles directory = do
+  entries <- listDirectory directory
   let visible = filter (not . isHidden) entries
-  paths <- mapM (processEntry dir) visible
+  paths <- mapM (processEntry directory) visible
   pure (concat paths)
   where
     isHidden name = case name of
@@ -409,8 +409,8 @@ findMarkdownFiles dir = do
       if isFile && takeExtension name == ".md"
         then pure [fullPath]
         else do
-          isDir <- doesDirectoryExist fullPath
-          if isDir
+          isDirectory <- doesDirectoryExist fullPath
+          if isDirectory
             then findMarkdownFiles fullPath
             else pure []
 

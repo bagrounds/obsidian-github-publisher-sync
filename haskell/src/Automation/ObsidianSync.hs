@@ -212,20 +212,20 @@ minSafeFileCount :: Int
 minSafeFileCount = 50
 
 countVaultFiles :: FilePath -> IO Int
-countVaultFiles dir = do
-  exists <- doesDirectoryExist dir
+countVaultFiles directory = do
+  exists <- doesDirectoryExist directory
   if exists
-    then countFilesRecursive dir
+    then countFilesRecursive directory
     else pure 0
 
 countFilesRecursive :: FilePath -> IO Int
-countFilesRecursive dir = do
-  entries <- listDirectory dir
+countFilesRecursive directory = do
+  entries <- listDirectory directory
   let visible = filter (\case '.':_ -> False; _ -> True) entries
   counts <- mapM (\entry -> do
-    let fullPath = dir </> entry
-    isDir <- doesDirectoryExist fullPath
-    if isDir
+    let fullPath = directory </> entry
+    isDirectory <- doesDirectoryExist fullPath
+    if isDirectory
       then countFilesRecursive fullPath
       else pure 1
     ) visible

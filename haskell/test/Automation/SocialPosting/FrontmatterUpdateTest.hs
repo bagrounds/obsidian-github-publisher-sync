@@ -44,8 +44,8 @@ upsertFrontmatterFieldTests = testGroup "upsertFrontmatterField"
 updateFrontmatterUrlTests :: TestTree
 updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
   [ testCase "updates existing URL field" $
-      withSystemTempDirectory "fm-url-test" $ \dir -> do
-        let notePath = dir </> "test-note.md"
+      withSystemTempDirectory "fm-url-test" $ \directory -> do
+        let notePath = directory </> "test-note.md"
         TIO.writeFile notePath
           "---\ntitle: Test Note\nURL: \"https://bagrounds.org/old-path\"\n---\nBody content"
         updateFrontmatterUrl notePath "https://bagrounds.org/new-path"
@@ -56,8 +56,8 @@ updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
           (not (T.isInfixOf "https://bagrounds.org/old-path" content))
 
   , testCase "adds URL field when missing" $
-      withSystemTempDirectory "fm-url-test" $ \dir -> do
-        let notePath = dir </> "no-url-note.md"
+      withSystemTempDirectory "fm-url-test" $ \directory -> do
+        let notePath = directory </> "no-url-note.md"
         TIO.writeFile notePath
           "---\ntitle: No URL Note\n---\nBody content"
         updateFrontmatterUrl notePath "https://bagrounds.org/new-url"
@@ -74,8 +74,8 @@ updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
 updateFrontmatterTimestampTests :: TestTree
 updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
   [ testCase "adds updated timestamp to frontmatter" $
-      withSystemTempDirectory "fm-ts-test" $ \dir -> do
-        let notePath = dir </> "test-note.md"
+      withSystemTempDirectory "fm-ts-test" $ \directory -> do
+        let notePath = directory </> "test-note.md"
         TIO.writeFile notePath
           "---\ntitle: Test Note\n---\nBody content"
         updateFrontmatterTimestamp notePath
@@ -84,8 +84,8 @@ updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
           (T.isInfixOf "updated:" content)
 
   , testCase "updates existing timestamp" $
-      withSystemTempDirectory "fm-ts-test" $ \dir -> do
-        let notePath = dir </> "test-note.md"
+      withSystemTempDirectory "fm-ts-test" $ \directory -> do
+        let notePath = directory </> "test-note.md"
         TIO.writeFile notePath
           "---\ntitle: Test Note\nupdated: \"2020-01-01T00:00:00\"\n---\nBody content"
         updateFrontmatterTimestamp notePath
@@ -104,14 +104,14 @@ updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
 updatePathTimestampsTests :: TestTree
 updatePathTimestampsTests = testGroup "updatePathTimestamps"
   [ testCase "updates timestamps for multiple paths" $
-      withSystemTempDirectory "fm-paths-test" $ \dir -> do
-        let booksDir = dir </> "books"
+      withSystemTempDirectory "fm-paths-test" $ \directory -> do
+        let booksDir = directory </> "books"
         createDirectoryIfMissing True booksDir
         TIO.writeFile (booksDir </> "book-a.md")
           "---\ntitle: Book A\n---\nContent A"
         TIO.writeFile (booksDir </> "book-b.md")
           "---\ntitle: Book B\n---\nContent B"
-        updatePathTimestamps dir ["books/book-a.md", "books/book-b.md"]
+        updatePathTimestamps directory ["books/book-a.md", "books/book-b.md"]
         contentA <- TIO.readFile (booksDir </> "book-a.md")
         contentB <- TIO.readFile (booksDir </> "book-b.md")
         assertBool "book A should have updated field"

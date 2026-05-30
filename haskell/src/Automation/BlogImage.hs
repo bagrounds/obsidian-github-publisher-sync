@@ -89,9 +89,9 @@ data BackfillResult = BackfillResult
 
 notePathToImageBaseName :: FilePath -> Text
 notePathToImageBaseName notePath =
-  let dir = T.pack (takeBaseName (takeDirectory notePath))
+  let directory = T.pack (takeBaseName (takeDirectory notePath))
       stem = T.pack (takeBaseName notePath)
-      raw = T.toLower (dir <> "-" <> stem)
+      raw = T.toLower (directory <> "-" <> stem)
   in trimDashes (collapseDashes (replaceNonAlphaNumDash raw))
 
 replaceNonAlphaNumDash :: Text -> Text

@@ -169,9 +169,26 @@ remaining steps 6 and 7 are tracked in a follow-up ticket.
    untouched. Letters inside string literals, character literals, regex fixtures, and
    sample paths are data and were left untouched. Pure rename — the `-Werror` build is
    clean and all 2025 Haskell tests still pass.
-7. ⬜ **PureScript (`purs-ps/src`)**: rename the remaining single-letter bindings (for
-   example the `\s ->` lambdas) to descriptive names. Tracked in its own follow-up
-   ticket.
+7. ✅ **PureScript (`purs-ps/src`)** (done): renamed every remaining single-letter
+   lambda parameter, function-argument binding, and case-arm pattern binding across
+   `purs-ps/src` and `purs-ps/test`. The `\s ->` lambdas in `TestHook.purs` that read
+   the live session through `readSession` became `\session ->`. The
+   `millisecondsBetween a b` formula in `Recording/Math.purs` became
+   `millisecondsBetween later earlier` (and its docstring was updated to match);
+   `takeEndArray n xs` in `Recording/Reducer.purs` became
+   `takeEndArray count items`. The reducer's start branch `Just t -> Just t` for the
+   sticky `firstStartedAt` became `Just existingStart -> Just existingStart`. In the
+   test suite, `stuffEntries n entry entries` became `stuffEntries count …`, the
+   property-test helpers `containsDigit s = Array.any (\d -> …)` became
+   `containsDigit text = Array.any (\digit -> …)`, and the `Just t`/`Just e`/`Just c`
+   pattern binds for the persisted-session round-trip and caption assertions became
+   `Just startedAt`/`Just environment`/`Just caption`. Type variables in `forall`
+   signatures (`forall m. Clock m =>`, `forall a. Int -> Array a -> Array a`,
+   `newtype AppM a = …`) are abstract per AGENTS.md and were left untouched. Single
+   letters inside string literals, regex fixtures, and digit/character sample data
+   are data, not bindings, and were left untouched. Pure rename — `npm run test:ps`
+   reports zero errors and all 900 PureScript unit tests still pass; the Word Meter
+   bundle builds clean.
 
 ## Definition of Done Per Step
 

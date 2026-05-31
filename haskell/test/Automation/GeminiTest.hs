@@ -11,7 +11,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.Json (Value (Object, Array, String, Number), encode)
+import Automation.Json (Value (Object, Array, String, Number, Bool), encode)
 import qualified Automation.Gemini as Gemini
 import Automation.Url (mkUrl)
 
@@ -26,6 +26,7 @@ tests = testGroup "Gemini"
   , parseErrorBodyTests
   , parseResponseTextTests
   , extractTextTests
+  , extractNonThoughtTextTests
   , overrideModelChainTests
   , supportsSystemInstructionTests
   , buildRequestBodyTests
@@ -376,6 +377,71 @@ extractTextTests = testGroup "extractText"
             ]
       in Gemini.extractText val
         @?= Right "extracted"
+  ]
+
+extractNonThoughtTextTests :: TestTree
+extractNonThoughtTextTests = testGroup "extractNonThoughtText"
+  [ testCase "empty parts returns ExtractionError" $
+      Gemini.extractNonThoughtText []
+        @?= Left (Gemini.ExtractionError "no text in part")
+
+  , testCase "single non-thought text part returns text" $
+      Gemini.extractNonThoughtText [Object [("text", String "hello")]]
+        @?= Right "hello"
+
+  , testCase "skips thought parts and returns non-thought text" $
+      Gemini.extractNonThoughtText
+        [ Object [("text", String "thinking out loud..."), ("thought", Bool True)]
+        , Object [("text", String "final answer")]
+        ]
+        @?= Right "final answer"
+
+  , testCase "multiple thought parts followed by output" $
+      Gemini.extractNonThoughtText
+        [ Object [("text", String "step 1 reasoning"), ("thought", Bool True)]
+        , Object [("text", String "step 2 reasoning"), ("thought", Bool True)]
+        , Object [("text", String "the actual fiction")]
+        ]
+        @?= Right "the actual fiction"
+
+  , testCase "falls back to last thought text when all parts are thoughts" $
+      Gemini.extractNonThoughtText
+        [ Object [("text", String "only thinking"), ("thought", Bool True)]
+        ]
+        @?= Right "only thinking"
+
+  , testCase "non-text parts are ignored" $
+      Gemini.extractNonThoughtText
+        [ Object [("image", String "data")]
+        , Object [("text", String "the text")]
+        ]
+        @?= Right "the text"
+
+  , testCase "thought false is treated as non-thought" $
+      Gemini.extractNonThoughtText
+        [ Object [("text", String "thinking"), ("thought", Bool True)]
+        , Object [("text", String "output"), ("thought", Bool False)]
+        ]
+        @?= Right "output"
+
+  , testCase "extractText skips thought parts in full response structure" $
+      let val = Object
+            [ ("candidates", Array
+                [ Object
+                    [ ("content", Object
+                        [ ("parts", Array
+                            [ Object [("text", String "internal reasoning"), ("thought", Bool True)]
+                            , Object [("text", String "final output")]
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                ]
+              )
+            ]
+      in Gemini.extractText val
+        @?= Right "final output"
   ]
 
 overrideModelChainTests :: TestTree

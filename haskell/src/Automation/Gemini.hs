@@ -26,6 +26,7 @@ module Automation.Gemini
   , isQuotaExhaustedError
   , parseResponseText
   , extractText
+  , extractNonThoughtText
   , extractGroundingSources
   , parseApiStatus
   , parseErrorBody
@@ -346,14 +347,32 @@ extractText (Object obj) =
       case lookup "content" candidate of
         Just (Object contentObj) ->
           case lookup "parts" contentObj of
-            Just (Array (Object partObj : _)) ->
-              case lookup "text" partObj of
-                Just (String t) -> Right t
-                _               -> Left (ExtractionError "no text in part")
+            Just (Array parts) -> extractNonThoughtText parts
             _ -> Left (ExtractionError "no parts in content")
         _ -> Left (ExtractionError "content is not an object")
     _ -> Left (ExtractionError "no candidates in response")
 extractText _ = Left (ExtractionError "response is not an object")
+
+-- | Extract the text from the last non-thought part in a Gemini response.
+-- Models with thinking enabled (e.g. Gemma) return multiple parts: thought
+-- parts carry @"thought": true@ and precede the final output part. We skip
+-- thought parts and return the last non-thought text, falling back to the
+-- last text of any kind when every part is a thought.
+extractNonThoughtText :: [Value] -> Either Error Text
+extractNonThoughtText parts =
+  let isThought (Object partObj) = lookup "thought" partObj == Just (Bool True)
+      isThought _                = False
+      textOf (Object partObj) = case lookup "text" partObj of
+        Just (String textValue) -> Just textValue
+        _                       -> Nothing
+      textOf _ = Nothing
+      nonThoughtTexts = [textValue | part <- parts, not (isThought part), Just textValue <- [textOf part]]
+      allTexts        = [textValue | part <- parts, Just textValue <- [textOf part]]
+  in case nonThoughtTexts of
+    [] -> case allTexts of
+      []    -> Left (ExtractionError "no text in part")
+      texts -> Right (last texts)
+    texts -> Right (last texts)
 
 -- | Extract grounding sources from a Gemini API response value.
 -- https://ai.google.dev/api/generate-content#v1beta.GroundingMetadata

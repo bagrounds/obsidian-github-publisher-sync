@@ -1,0 +1,37 @@
+---
+share: true
+aliases:
+  - "2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲"
+title: "2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲"
+URL: https://bagrounds.org/ai-blog/2026-05-31-4-filter-gemma-thinking-from-fiction
+---
+[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
+# 2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲
+
+## 🎙️ What This Pull Request Does
+
+🐛 This pull request fixes a bug where Gemma models were leaking their internal reasoning into AI Fiction output. 🤖 When Gemma models think before answering, the Gemini API returns multiple response parts: thought parts marked with a thought flag, followed by the actual output. 📋 The old response parser always grabbed the first part, which for thinking models was the raw chain-of-thought instead of the polished fiction.
+
+## 🔍 The Root Cause
+
+🧩 The Gemini API response for models with thinking enabled looks different from standard models. 📦 Standard models return a single text part in the response, but thinking models return two or more parts: the first carries internal reasoning tagged with a thought boolean set to true, and the last carries the final output. 🎯 The existing extractText function pattern matched on the head of the parts list, so it always returned the thinking content when a thinking model was selected by the daily rotation.
+
+## 🔧 The Fix
+
+🛠️ A new extractNonThoughtText function scans all parts in the response, skipping any part where the thought field is set to true. 📌 It returns the last non-thought text, which is the models final output. 🛡️ As a safety net, if every part is marked as a thought, it falls back to the last text of any kind so the pipeline never silently drops a response. 🔗 The existing extractText function now delegates to extractNonThoughtText instead of taking the first part directly.
+
+## 🧪 Testing
+
+✅ Eight new unit tests cover the new behavior. 🧠 Tests verify that thought-flagged parts are skipped, multiple thought parts are handled, thought set to false is treated as non-thought, non-text parts are ignored, and the full response structure with mixed thought and output parts extracts correctly. 📊 All 2033 tests pass, up from 2025 before this change.
+
+## 📚 Book Recommendations
+
+Similar
+- Thinking, Fast and Slow by Daniel Kahneman
+- The Design of Everyday Things by Don Norman
+
+Contrasting
+- Stream of Consciousness in the Modern Novel by Robert Humphrey
+
+Related
+- Godel, Escher, Bach by Douglas Hofstadter

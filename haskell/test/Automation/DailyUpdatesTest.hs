@@ -469,14 +469,14 @@ existingTableContent :: [(Text, Text, [UpdateDetail])] -> Text
 existingTableContent entries =
   let allDetails = concatMap (\(_, _, details) -> details) entries
       columns = filter (\column -> any (matchesColumn column) allDetails) canonicalOrder
-      header = "| Page | " <> T.intercalate " | " (fmap columnEmojiHelper columns) <> " |"
+      header = "| Page | " <> T.intercalate " | " (fmap columnEmoji columns) <> " |"
       separator = "|---|" <> T.concat (replicate (length columns) "---|")
-      rows = fmap (buildRowHelper columns) entries
+      rows = fmap (buildRow columns) entries
       statsLine = "📊 " <> T.pack (show (length entries)) <> " "
         <> (if length entries == 1 then "page" else "pages")
         <> T.concat (fmap (\column ->
-            let count = computeStatHelper entries column
-            in if count > 0 then " · " <> T.pack (show count) <> " " <> columnEmojiHelper column <> " " <> columnLabelHelper column else ""
+            let count = computeStat entries column
+            in if count > 0 then " · " <> T.pack (show count) <> " " <> columnEmoji column <> " " <> columnLabel column else ""
           ) canonicalOrder)
       table = T.intercalate "\n" (header : separator : rows)
   in "# Reflection\n\n## 🔄 Updates\n" <> statsLine <> "\n\n" <> table <> "\n"
@@ -488,31 +488,31 @@ existingTableContent entries =
     matchesColumn (InternalLinksAdded _) (InternalLinksAdded _) = True
     matchesColumn (PostedTo a) (PostedTo b) = a == b
     matchesColumn _ _ = False
-    columnEmojiHelper :: UpdateDetail -> Text
-    columnEmojiHelper ImageAdded = "🖼️"
-    columnEmojiHelper (InternalLinksAdded _) = "🔗"
-    columnEmojiHelper (PostedTo Bluesky) = "🦋"
-    columnEmojiHelper (PostedTo Mastodon) = "🐘"
-    columnEmojiHelper (PostedTo Twitter) = "🐦"
-    columnLabelHelper :: UpdateDetail -> Text
-    columnLabelHelper ImageAdded = "images"
-    columnLabelHelper (InternalLinksAdded _) = "links"
-    columnLabelHelper (PostedTo Bluesky) = "Bluesky"
-    columnLabelHelper (PostedTo Mastodon) = "Mastodon"
-    columnLabelHelper (PostedTo Twitter) = "Twitter"
-    cellHelper :: UpdateDetail -> Text
-    cellHelper (InternalLinksAdded n) = T.pack (show n)
-    cellHelper detail = columnEmojiHelper detail
-    buildRowHelper :: [UpdateDetail] -> (Text, Text, [UpdateDetail]) -> Text
-    buildRowHelper columns (path, title, details) =
+    columnEmoji :: UpdateDetail -> Text
+    columnEmoji ImageAdded = "🖼️"
+    columnEmoji (InternalLinksAdded _) = "🔗"
+    columnEmoji (PostedTo Bluesky) = "🦋"
+    columnEmoji (PostedTo Mastodon) = "🐘"
+    columnEmoji (PostedTo Twitter) = "🐦"
+    columnLabel :: UpdateDetail -> Text
+    columnLabel ImageAdded = "images"
+    columnLabel (InternalLinksAdded _) = "links"
+    columnLabel (PostedTo Bluesky) = "Bluesky"
+    columnLabel (PostedTo Mastodon) = "Mastodon"
+    columnLabel (PostedTo Twitter) = "Twitter"
+    cellText :: UpdateDetail -> Text
+    cellText (InternalLinksAdded n) = T.pack (show n)
+    cellText detail = columnEmoji detail
+    buildRow :: [UpdateDetail] -> (Text, Text, [UpdateDetail]) -> Text
+    buildRow columns (path, title, details) =
       let escapedPath = T.replace "|" "\\|" path
           escapedTitle = T.replace "|" "\\|" title
           pageLink = "[[" <> escapedPath <> "\\|" <> escapedTitle <> "]]"
-          cells = fmap (\column -> maybe "" cellHelper (find (matchesColumn column) details)) columns
+          cells = fmap (\column -> maybe "" cellText (find (matchesColumn column) details)) columns
       in "| " <> pageLink <> " | " <> T.intercalate " | " cells <> " |"
-    computeStatHelper :: [(Text, Text, [UpdateDetail])] -> UpdateDetail -> Int
-    computeStatHelper es (InternalLinksAdded _) = sum [n | (_, _, ds) <- es, InternalLinksAdded n <- ds]
-    computeStatHelper es column = length (filter (\(_, _, ds) -> any (matchesColumn column) ds) es)
+    computeStat :: [(Text, Text, [UpdateDetail])] -> UpdateDetail -> Int
+    computeStat es (InternalLinksAdded _) = sum [n | (_, _, ds) <- es, InternalLinksAdded n <- ds]
+    computeStat es column = length (filter (\(_, _, ds) -> any (matchesColumn column) ds) es)
 
 addUpdateLinksToReflectionTests :: TestTree
 addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"

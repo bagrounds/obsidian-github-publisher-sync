@@ -20,13 +20,14 @@
 --   * https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api
 module Main where
 
+import Control.Exception (bracket_)
 import Control.Monad (forM)
 import Data.Foldable (for_)
 import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import GHC.IO.Handle (hDuplicate, hDuplicateTo)
+import GHC.IO.Handle (hDuplicate, hDuplicateTo, hClose)
 import Network.HTTP.Client (newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Environment (lookupEnv)
@@ -44,7 +45,7 @@ prompt =
 resolveModels :: Maybe String -> [Gemini.Model]
 resolveModels Nothing = NE.toList AiFiction.fictionModelPool
 resolveModels (Just raw)
-  | all (\character -> character == ' ' || character == ',') raw = NE.toList AiFiction.fictionModelPool
+  | all (`elem` (" ," :: String)) raw = NE.toList AiFiction.fictionModelPool
   | otherwise = fmap (Gemini.modelFromText . T.strip) $ filter (not . T.null) $ T.splitOn "," (T.pack raw)
 
 -- | Run an IO action with stdout silenced (redirected to /dev/null).
@@ -53,10 +54,12 @@ withSilencedStdout :: IO a -> IO a
 withSilencedStdout action = do
   savedStdout <- hDuplicate stdout
   devNull <- openFile "/dev/null" WriteMode
-  hDuplicateTo devNull stdout
-  result <- action
-  hDuplicateTo savedStdout stdout
-  pure result
+  bracket_
+    (hDuplicateTo devNull stdout)
+    (do hDuplicateTo savedStdout stdout
+        hClose devNull
+        hClose savedStdout)
+    action
 
 main :: IO ()
 main = do

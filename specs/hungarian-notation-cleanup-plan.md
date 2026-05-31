@@ -80,7 +80,7 @@ behavior, so the existing tests are the safety net.
    `Gemini.hs` can be inlined entirely since it merely unpacks the already-named
    `message` parameter.
 
-2. [ ] **`*Text` / `*Array` / `*List` → concept-level name** (4 occurrences across
+2. [x] **`*Text` / `*Array` / `*List` → concept-level name** (4 occurrences across
    3 files): rename `numberText` → `digits`, `metricsArray` → `metrics`,
    `dimsArray` → `dimensions`, `modelsList` → `models`.
 

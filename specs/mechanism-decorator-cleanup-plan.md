@@ -75,12 +75,18 @@ Steps 2 and 3 are tracked in GitHub issue #7102.
    into a non-negative count of milliseconds stay as is. Pure rename — the
    PureScript bundle still builds clean and every QuickCheck property still
    passes.
-3. ⏳ **`Impl` → concept-level wrapper/import names** in
+3. ✅ **`Impl` → concept-level wrapper/import names** in
    `purs-ps/src/WordMeter/FFI/Confirm.purs`, `…/Storage.purs`, and
-   `…/Recognition.purs`: give the foreign imports concept-level names that
-   describe the JavaScript-side capability they expose, and let the PureScript
-   wrapper keep the public domain name (or merge the two when no interpretation
-   is happening). The companion `.js` FFI files stay in lockstep.
+   `…/Recognition.purs`: every `*Impl` foreign import was renamed to a
+   concept-level name that describes the JavaScript-side capability it
+   exposes, while the PureScript wrapper kept the public domain name.
+   `askForConfirmationImpl` → `runWindowConfirm`,
+   `readPersistedStringImpl` / `writePersistedStringImpl` /
+   `clearPersistedStringImpl` → `readJsRawString` / `writeJsRawString` /
+   `clearJsRawKey`, and `ensureOnDeviceLanguagePackImpl` →
+   `runOnDeviceLanguagePackPreflight`. The companion `.js` FFI exports were
+   updated in lockstep. Pure rename — `npm run test:ps` builds clean and all
+   PureScript unit tests pass.
 
 ## Definition of Done Per Step
 

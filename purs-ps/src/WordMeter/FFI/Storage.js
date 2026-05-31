@@ -11,7 +11,7 @@ const tryStorage = () => {
 
 const describeError = (error) => (error == null ? "" : String(error))
 
-export const readPersistedStringImpl = (key) => () => {
+export const readJsRawString = (key) => () => {
   const probe = tryStorage()
   if (!probe.available) {
     return { tag: "unavailable", detail: probe.detail, value: "" }
@@ -27,7 +27,7 @@ export const readPersistedStringImpl = (key) => () => {
   }
 }
 
-export const writePersistedStringImpl = (key) => (payload) => () => {
+export const writeJsRawString = (key) => (payload) => () => {
   const probe = tryStorage()
   if (!probe.available) {
     return { tag: "unavailable", detail: probe.detail, value: undefined }
@@ -40,7 +40,7 @@ export const writePersistedStringImpl = (key) => (payload) => () => {
   }
 }
 
-export const clearPersistedStringImpl = (key) => () => {
+export const clearJsRawKey = (key) => () => {
   const probe = tryStorage()
   if (!probe.available) {
     return { tag: "unavailable", detail: probe.detail, value: undefined }

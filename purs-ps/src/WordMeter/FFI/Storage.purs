@@ -16,25 +16,25 @@ type StorageOutcome a =
   , value :: a
   }
 
-foreign import readPersistedStringImpl
+foreign import readJsRawString
   :: String -> Effect (StorageOutcome String)
 
-foreign import writePersistedStringImpl
+foreign import writeJsRawString
   :: String -> String -> Effect (StorageOutcome Unit)
 
-foreign import clearPersistedStringImpl
+foreign import clearJsRawKey
   :: String -> Effect (StorageOutcome Unit)
 
 readPersistedString :: String -> Effect (Either StorageError String)
-readPersistedString key = interpretRead key <$> readPersistedStringImpl key
+readPersistedString key = interpretRead key <$> readJsRawString key
 
 writePersistedString :: String -> String -> Effect (Either StorageError Unit)
 writePersistedString key payload =
-  interpretMutation <$> writePersistedStringImpl key payload
+  interpretMutation <$> writeJsRawString key payload
 
 clearPersistedString :: String -> Effect (Either StorageError Unit)
 clearPersistedString key =
-  interpretMutation <$> clearPersistedStringImpl key
+  interpretMutation <$> clearJsRawKey key
 
 interpretRead :: String -> StorageOutcome String -> Either StorageError String
 interpretRead key outcome = case outcome.tag of

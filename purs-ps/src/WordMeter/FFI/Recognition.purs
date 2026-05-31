@@ -165,12 +165,12 @@ ensureOnDeviceLanguagePack
   -> (Either OnDeviceUnavailable OnDeviceAvailable -> Effect Unit)
   -> Effect Unit
 ensureOnDeviceLanguagePack locale onProgress onDone =
-  ensureOnDeviceLanguagePackImpl locale onProgress
+  runOnDeviceLanguagePackPreflight locale onProgress
     (onDone (Right OnDeviceAvailable))
     ( \kind detail -> onDone (Left (classifyOnDeviceUnavailable kind detail))
     )
 
-foreign import ensureOnDeviceLanguagePackImpl
+foreign import runOnDeviceLanguagePackPreflight
   :: String
   -> Effect Unit
   -> Effect Unit

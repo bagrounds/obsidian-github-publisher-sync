@@ -1,6 +1,6 @@
 const describeError = (error) => (error == null ? "" : String(error))
 
-export const askForConfirmationImpl = (prompt) => () => {
+export const runWindowConfirm = (prompt) => () => {
   if (typeof window === "undefined" || typeof window.confirm !== "function") {
     return { tag: "unavailable", detail: "", accepted: false }
   }

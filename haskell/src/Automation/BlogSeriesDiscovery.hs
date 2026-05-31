@@ -78,4 +78,4 @@ derivePriorityUserEnvVar seriesId =
   T.map toEnvChar (T.toUpper seriesId) <> "_PRIORITY_USER"
   where
     toEnvChar '-' = '_'
-    toEnvChar c   = c
+    toEnvChar character   = character

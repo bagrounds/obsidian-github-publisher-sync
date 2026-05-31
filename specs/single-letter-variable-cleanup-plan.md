@@ -69,7 +69,8 @@ runs the linter and the full test suite, and ships its own AI blog post. Pure re
 not change behavior, so the existing tests are the safety net — no new tests are required
 unless a rename surfaces a latent bug.
 
-Steps 2 through 7 are tracked in GitHub issue #7088.
+Steps 2 through 4 were tracked in GitHub issue #7088. The remaining steps 5 through 7 are
+tracked in a follow-up ticket. 
 
 1. ✅ **`l` → `line` (and `linkPath`/`linkedPath` for links, `left`/`right` for an
    operator)** (done): renamed every single-letter `l` binding across `haskell/src` —
@@ -97,8 +98,22 @@ Steps 2 through 7 are tracked in GitHub issue #7088.
    throughout. `v` characters inside string literals (sample JSON keys, a shell `grep -v`
    flag, a `?v=1` query parameter) are data, not bindings, and were left untouched. Pure
    rename — the `-Werror` build is clean and all 2025 Haskell tests still pass.
-4. ⬜ **`c` → `character`/`comment`**: rename the `Char`-predicate lambdas and comment
-   bindings.
+4. ✅ **`c` → `character`/`comment`/`candidate`/`value`** (done): renamed every
+   single-letter `c` binding across `haskell/src` and `haskell/test` (the `haskell/app`
+   tree had none). The dominant case was `Char` predicates and folds — the `\c ->`
+   lambdas, `(c : characters)` recursive arguments, and `escapeChar`/`isEmoji`-style
+   helpers in `Text.hs`, `Json.hs`, `Frontmatter.hs`, `BlogImage.hs`, `ReflectionTitle.hs`,
+   `Html.hs`, `Bluesky.hs`, and the link/markdown parsers — all became `character`. Comment
+   records became `comment` (`toStaticComment`/`renderStaticComment` in `StaticGiscus.hs`,
+   `formatComment` in `BlogPrompt.hs`). Link-match records became `candidate`
+   (`sortByDateDesc` in `BlogImage.hs`, the `CandidateDiscovery` self-link filter, and the
+   `(candidate:_)` case arms across `InternalLinkingTest.hs` and
+   `CandidateDiscoveryTest.hs`). The polymorphic right-hand value of the `mapLeft` helpers
+   in `BlogImage/Provider.hs` and `GoogleAnalytics.hs` became `value`. `c` characters inside
+   string literals (sample paths such as `a/b/c`, `?v=1`-style fixtures, the `-c` bash flag)
+   and the abstract `c` type variables in the `mapLeft` signatures are data and abstract
+   parameters, not bindings, and were left untouched. Pure rename — the `-Werror` build is
+   clean, `hlint src/ app/ test/` reports no hints, and all 2025 Haskell tests still pass.
 5. ⬜ **`s` → `string`/`set`/`state`** and **`p` → `path`/`post`/`platform`**: rename per
    call-site meaning.
 6. ⬜ **Remaining stragglers** (`r`, `f`, `e`, `t`, `n`, `i`, `u`, `m`, `h`, `a`): rename

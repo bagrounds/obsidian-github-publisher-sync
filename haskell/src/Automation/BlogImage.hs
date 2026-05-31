@@ -95,7 +95,7 @@ notePathToImageBaseName notePath =
   in trimDashes (collapseDashes (replaceNonAlphaNumDash raw))
 
 replaceNonAlphaNumDash :: Text -> Text
-replaceNonAlphaNumDash = T.map (\c -> if isAlphaNum c || c == '-' then c else '-')
+replaceNonAlphaNumDash = T.map (\character -> if isAlphaNum character || character == '-' then character else '-')
 
 collapseDashes :: Text -> Text
 collapseDashes = T.intercalate "-" . filter (not . T.null) . T.splitOn "-"
@@ -108,7 +108,7 @@ sanitizeForYaml =
   T.strip
     . collapseSpaces
     . T.filter (`notElem` ['\"', '\'', '\\', '`'])
-    . T.map (\c -> if c == '\n' || c == '\r' || c == '\t' then ' ' else c)
+    . T.map (\character -> if character == '\n' || character == '\r' || character == '\t' then ' ' else character)
 
 collapseSpaces :: Text -> Text
 collapseSpaces = T.intercalate " " . filter (not . T.null) . T.splitOn " "
@@ -308,10 +308,10 @@ undatedFileFallback = fromGregorian 1970 1 1
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []
   where
-    insertSorted [] c = [c]
-    insertSorted (x : xs) c
-      | date c >= date x = c : x : xs
-      | otherwise        = x : insertSorted xs c
+    insertSorted [] candidate = [candidate]
+    insertSorted (x : xs) candidate
+      | date candidate >= date x = candidate : x : xs
+      | otherwise        = x : insertSorted xs candidate
 
 sortByTextDesc :: [Text] -> [Text]
 sortByTextDesc = foldl' ins []

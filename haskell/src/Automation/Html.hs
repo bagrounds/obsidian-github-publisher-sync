@@ -25,7 +25,7 @@ escapeHtml = T.concatMap escapeChar
     escapeChar '>'  = "&gt;"
     escapeChar '"'  = "&quot;"
     escapeChar '\'' = "&#39;"
-    escapeChar c    = T.singleton c
+    escapeChar character    = T.singleton character
 
 textToHtml :: Text -> Text
 textToHtml = T.replace "\n" "<br>" . escapeHtml

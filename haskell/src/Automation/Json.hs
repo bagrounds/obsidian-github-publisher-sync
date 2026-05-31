@@ -168,9 +168,9 @@ encodeString t = "\"" <> T.concatMap escapeChar t <> "\""
     escapeChar '\t' = "\\t"
     escapeChar '\b' = "\\b"
     escapeChar '\f' = "\\f"
-    escapeChar c
-      | c < '\x20' = "\\u" <> T.justifyRight 4 '0' (T.pack (showHex (fromEnum c) ""))
-      | otherwise   = T.singleton c
+    escapeChar character
+      | character < '\x20' = "\\u" <> T.justifyRight 4 '0' (T.pack (showHex (fromEnum character) ""))
+      | otherwise   = T.singleton character
 
 decode :: FromValue a => LBS.ByteString -> Maybe a
 decode bs = case eitherDecode bs of
@@ -246,7 +246,7 @@ jsonStringLiteral = do
   pure (T.pack cs)
 
 stringChar :: Parser Char
-stringChar = (char '\\' *> escapedChar) <|> satisfy (\c -> c /= '"' && c /= '\\')
+stringChar = (char '\\' *> escapedChar) <|> satisfy (\character -> character /= '"' && character /= '\\')
 
 escapedChar :: Parser Char
 escapedChar =

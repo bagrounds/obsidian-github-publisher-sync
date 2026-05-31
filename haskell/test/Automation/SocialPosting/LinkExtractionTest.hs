@@ -87,7 +87,7 @@ normalizeFilePathTests = testGroup "normalizeFilePath"
 
   , testProperty "normalizing a normalized path is idempotent" $
       \(QC.ASCIIString s) ->
-        let cleaned = filter (\c -> c /= '.' && c /= ' ' && c /= '\0') s
+        let cleaned = filter (\character -> character /= '.' && character /= ' ' && character /= '\0') s
             normalized = normalizeFilePath cleaned
         in normalizeFilePath normalized == normalized
   ]

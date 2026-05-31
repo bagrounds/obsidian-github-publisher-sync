@@ -56,9 +56,9 @@ escapeRegex = T.concatMap escChar
   where
     specials :: Set.Set Char
     specials = Set.fromList ".*+?^${}()|[]\\"
-    escChar c
-      | Set.member c specials = "\\" <> T.singleton c
-      | otherwise             = T.singleton c
+    escChar character
+      | Set.member character specials = "\\" <> T.singleton character
+      | otherwise             = T.singleton character
 
 formatContentEntryWikilink :: ContentEntry -> Text
 formatContentEntryWikilink contentEntry =
@@ -151,7 +151,7 @@ findLinkCandidates index content masked selfPath =
     findForEntry (ranges, candidates) contentEntry
       | relativePath contentEntry == selfPath = (ranges, candidates)
       | contentAlreadyLinksTo content contentEntry = (ranges, candidates)
-      | any (\c -> relativePath (entry c) == relativePath contentEntry) candidates = (ranges, candidates)
+      | any (\candidate -> relativePath (entry candidate) == relativePath contentEntry) candidates = (ranges, candidates)
       | otherwise =
           let titleTexts = unTitle (plainTitle contentEntry) : maybeToList (extractMainTitle (unTitle (plainTitle contentEntry)))
           in tryPatterns ranges candidates contentEntry titleTexts

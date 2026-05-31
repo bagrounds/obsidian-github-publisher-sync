@@ -247,7 +247,7 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           masked  = content
           candidates = findLinkCandidates [short, long] content masked (testRelativePath "reflections/test.md")
       in case candidates of
-        (c:_) -> assertEqual "longer match wins" (testRelativePath "books/thinking-fast.md") (relativePath (entry c))
+        (candidate:_) -> assertEqual "longer match wins" (testRelativePath "books/thinking-fast.md") (relativePath (entry candidate))
         []    -> assertBool "should have found candidates" False
   , testCase "returns empty for no matches" $
       let content = "This has nothing to do with any book"
@@ -274,7 +274,7 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
       in do
         assertEqual "only non-self entry matches" 1 (length candidates)
         case candidates of
-          (c:_) -> assertEqual "matched entry is book-b" (testRelativePath "books/book-b.md") (relativePath (entry c))
+          (candidate:_) -> assertEqual "matched entry is book-b" (testRelativePath "books/book-b.md") (relativePath (entry candidate))
           [] -> assertBool "should have found one candidate" False
   ]
 
@@ -293,9 +293,9 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> do
-              assertEqual "matched main title" "Domain-Driven Design" (matchedText c)
-              assertEqual "correct entry" (testRelativePath "books/domain-driven-design.md") (relativePath (entry c))
+            (candidate:_) -> do
+              assertEqual "matched main title" "Domain-Driven Design" (matchedText candidate)
+              assertEqual "correct entry" (testRelativePath "books/domain-driven-design.md") (relativePath (entry candidate))
             [] -> assertBool "should have candidates" False
   , testCase "prefers full title over main title" $
       let content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent"
@@ -304,8 +304,8 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertBool "matched full title"
-              (T.isInfixOf "Tackling Complexity" (matchedText c))
+            (candidate:_) -> assertBool "matched full title"
+              (T.isInfixOf "Tackling Complexity" (matchedText candidate))
             [] -> assertBool "should have candidates" False
   , testCase "does not match subtitle prefix for entries without subtitles" $
       let content = "I read Thinking yesterday"
@@ -323,7 +323,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched" "A Pattern Language" (matchedText c)
+            (candidate:_) -> assertEqual "matched" "A Pattern Language" (matchedText candidate)
             [] -> assertBool "should have candidates" False
   , testCase "respects protected regions for main title matches" $
       let content = "## Domain-Driven Design\nBody text without any book references"
@@ -348,7 +348,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched text" "Refactoring" (matchedText c)
+            (candidate:_) -> assertEqual "matched text" "Refactoring" (matchedText candidate)
             [] -> assertBool "should have candidates" False
   , testCase "matches single-word Antifragile via main title" $
       let antifragileEntry = ContentEntry
@@ -361,7 +361,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched text" "Antifragile" (matchedText c)
+            (candidate:_) -> assertEqual "matched text" "Antifragile" (matchedText candidate)
             [] -> assertBool "should have candidates" False
   , testCase "matches dash-separated subtitle via main title" $
       let systemDesignEntry = ContentEntry
@@ -374,7 +374,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched text" "System Design Interview" (matchedText c)
+            (candidate:_) -> assertEqual "matched text" "System Design Interview" (matchedText candidate)
             [] -> assertBool "should have candidates" False
   ]
 
@@ -484,8 +484,8 @@ applyReplacementsTests = testGroup "applyReplacements"
   , testCase "applies replacement with all-true validations" $
       let entry = ContentEntry (testRelativePath "books/test.md") (testTitle "📖 Test") (testTitle "Test")
           content = "I love Test here"
-          c = LinkCandidate entry "Test" 7 ""
-          result = applyReplacements content [c] [True]
+          candidate = LinkCandidate entry "Test" 7 ""
+          result = applyReplacements content [candidate] [True]
       in assertBool "should have wikilink" (T.isInfixOf "[[books/test|" result)
   ]
 

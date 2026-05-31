@@ -75,11 +75,11 @@ titleToPathname title
   | otherwise = "/" <> title
 
 toStaticComment :: GqlComment -> StaticComment
-toStaticComment c = StaticComment
-  { author    = maybe "unknown" Gql.login (Gql.author c)
-  , authorUrl = maybe "https://github.com" Gql.url (Gql.author c)
-  , bodyHtml  = Gql.bodyHtml c
-  , createdAt = Gql.createdAt c
+toStaticComment comment = StaticComment
+  { author    = maybe "unknown" Gql.login (Gql.author comment)
+  , authorUrl = maybe "https://github.com" Gql.url (Gql.author comment)
+  , bodyHtml  = Gql.bodyHtml comment
+  , createdAt = Gql.createdAt comment
   }
 
 buildCommentsMap :: [GqlDiscussion] -> CommentsMap
@@ -121,15 +121,15 @@ staticGiscusCss = "<style>\n\
   \</style>"
 
 renderStaticComment :: StaticComment -> Text
-renderStaticComment c =
+renderStaticComment comment =
   "<article class=\"static-giscus-comment\">\n\
   \<header class=\"static-giscus-comment-header\">\n\
-  \<a href=\"" <> escapeHtml (authorUrl c) <> "\" rel=\"nofollow\" class=\"static-giscus-author\">"
-  <> escapeHtml (author c) <> "</a>\n\
-  \<time datetime=\"" <> createdAt c <> "\" class=\"static-giscus-time\">"
-  <> formatDisplayDate (T.take 10 (createdAt c)) <> "</time>\n\
+  \<a href=\"" <> escapeHtml (authorUrl comment) <> "\" rel=\"nofollow\" class=\"static-giscus-author\">"
+  <> escapeHtml (author comment) <> "</a>\n\
+  \<time datetime=\"" <> createdAt comment <> "\" class=\"static-giscus-time\">"
+  <> formatDisplayDate (T.take 10 (createdAt comment)) <> "</time>\n\
   \</header>\n\
-  \<div class=\"static-giscus-body\">" <> bodyHtml c <> "</div>\n\
+  \<div class=\"static-giscus-body\">" <> bodyHtml comment <> "</div>\n\
   \</article>"
 
 renderStaticCommentsHtml :: [StaticComment] -> Text

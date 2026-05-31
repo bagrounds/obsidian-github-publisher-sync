@@ -55,7 +55,7 @@ newtype DisplayTitle = DisplayTitle { unDisplayTitle :: Text } deriving (Show, E
 mkSlug :: Text -> Either Text Slug
 mkSlug t
   | T.null t = Left "Empty slug"
-  | T.any (\c -> c == ' ' || c == '\n') t = Left ("Slug contains whitespace: " <> t)
+  | T.any (\character -> character == ' ' || character == '\n') t = Left ("Slug contains whitespace: " <> t)
   | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
   | otherwise = Right (Slug t)
 
@@ -242,9 +242,9 @@ formatCrossSeriesPost CrossSeriesPost{..} =
     <> " (" <> date crossSeriesPost <> ")\n\n" <> T.strip excerpt
 
 formatComment :: BlogComment -> Text
-formatComment c =
-  let priority = if Comments.isPriority c then " ⭐" else ""
-  in "**" <> Comments.author c <> "**" <> priority <> " (" <> Comments.createdAt c <> "):\n" <> Comments.body c
+formatComment comment =
+  let priority = if Comments.isPriority comment then " ⭐" else ""
+  in "**" <> Comments.author comment <> "**" <> priority <> " (" <> Comments.createdAt comment <> "):\n" <> Comments.body comment
 
 parseDate :: Text -> Maybe Day
 parseDate t =
@@ -280,9 +280,9 @@ generateSlug :: Text -> Text
 generateSlug title =
   let cleaned = T.filter (not . isEmoji) title
       lowered = T.toLower (T.strip cleaned)
-      alphanum = T.map (\c -> if isAlphaNumOrSpace c then c else ' ') lowered
+      alphanum = T.map (\character -> if isAlphaNumOrSpace character then character else ' ') lowered
       dashed = T.intercalate "-" (T.words alphanum)
       trimmed = T.dropWhile (== '-') (T.dropWhileEnd (== '-') dashed)
   in trimmed
   where
-    isAlphaNumOrSpace c = isAsciiLower c || isDigit c || c == ' ' || c == '-'
+    isAlphaNumOrSpace character = isAsciiLower character || isDigit character || character == ' ' || character == '-'

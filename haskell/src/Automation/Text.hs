@@ -226,26 +226,26 @@ stripCodeFences text =
 -- Consolidated ranges from emoji-data.txt (Unicode 17.0, 2025-07-25).
 -- Source: https://www.unicode.org/Public/UCD/latest/ucd/emoji/emoji-data.txt
 isEmoji :: Char -> Bool
-isEmoji c =
-  c == '\x00A9' || c == '\x00AE'
-    || c == '\x203C' || c == '\x2049'
-    || c == '\x2122' || c == '\x2139'
-    || (c >= '\x2194' && c <= '\x21AA')
-    || (c >= '\x231A' && c <= '\x23FA')
-    || c == '\x24C2'
-    || (c >= '\x25AA' && c <= '\x25FE')
-    || (c >= '\x2600' && c <= '\x27BF')
-    || (c >= '\x2934' && c <= '\x2935')
-    || (c >= '\x2B05' && c <= '\x2B55')
-    || c == '\x3030' || c == '\x303D' || c == '\x3297' || c == '\x3299'
-    || (c >= '\x1F000' && c <= '\x1FFFD')
+isEmoji character =
+  character == '\x00A9' || character == '\x00AE'
+    || character == '\x203C' || character == '\x2049'
+    || character == '\x2122' || character == '\x2139'
+    || (character >= '\x2194' && character <= '\x21AA')
+    || (character >= '\x231A' && character <= '\x23FA')
+    || character == '\x24C2'
+    || (character >= '\x25AA' && character <= '\x25FE')
+    || (character >= '\x2600' && character <= '\x27BF')
+    || (character >= '\x2934' && character <= '\x2935')
+    || (character >= '\x2B05' && character <= '\x2B55')
+    || character == '\x3030' || character == '\x303D' || character == '\x3297' || character == '\x3299'
+    || (character >= '\x1F000' && character <= '\x1FFFD')
 
 isEmojiOrSpace :: Char -> Bool
-isEmojiOrSpace c =
-  c == ' '
-    || c == '\x200D'
-    || c == '\xFE0F'
-    || isEmoji c
+isEmojiOrSpace character =
+  character == ' '
+    || character == '\x200D'
+    || character == '\xFE0F'
+    || isEmoji character
 
 stripEmojis :: Text -> Text
 stripEmojis =

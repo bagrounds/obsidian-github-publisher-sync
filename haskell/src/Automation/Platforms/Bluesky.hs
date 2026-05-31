@@ -182,7 +182,7 @@ extractDid :: Text -> Maybe Text
 extractDid uri =
   case T.breakOn "did:" uri of
     (_, rest) | not (T.null rest) ->
-      Just (T.takeWhile (\c -> c /= '/' && c /= '"' && c /= ' ') rest)
+      Just (T.takeWhile (\character -> character /= '/' && character /= '"' && character /= ' ') rest)
     _ -> case T.splitOn "/profile/" uri of
       [_, rest'] -> case T.splitOn "/post/" rest' of
         (did : _) -> Just did

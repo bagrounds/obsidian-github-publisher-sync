@@ -192,6 +192,6 @@ propertyTests = testGroup "properties"
           masked = maskProtectedRegions txt
       in T.length masked == T.length txt
   , testProperty "masking plain alphanumeric text is identity" $ \s ->
-      let txt = T.pack (filter (\c -> c /= '`' && c /= '[' && c /= ']' && c /= '#' && c /= '*' && c /= '-' && c /= '~' && c /= '(' && c /= ')' && c /= ':' && c /= '/' && c /= '\n') (s :: String))
+      let txt = T.pack (filter (\character -> character /= '`' && character /= '[' && character /= ']' && character /= '#' && character /= '*' && character /= '-' && character /= '~' && character /= '(' && character /= ')' && character /= ':' && character /= '/' && character /= '\n') (s :: String))
       in maskProtectedRegions txt == txt
   ]

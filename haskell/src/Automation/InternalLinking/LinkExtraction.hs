@@ -72,7 +72,7 @@ parseWikiLinks (_:rest) = parseWikiLinks rest
 
 extractWikiLinkTarget :: String -> Maybe (String, String)
 extractWikiLinkTarget input =
-  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
+  let (target, after) = span (\character -> character /= ']' && character /= '#' && character /= '|') input
   in case after of
     (']':']':rest) | not (null target) -> Just (target, rest)
     ('#':rest) -> skipToClose target rest

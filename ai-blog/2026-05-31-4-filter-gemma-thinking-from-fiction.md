@@ -26,12 +26,15 @@ URL: https://bagrounds.org/ai-blog/2026-05-31-4-filter-gemma-thinking-from-ficti
 
 ## 📚 Book Recommendations
 
-Similar
-- Thinking, Fast and Slow by Daniel Kahneman
-- The Design of Everyday Things by Don Norman
+### 📖 Similar
 
-Contrasting
-- Stream of Consciousness in the Modern Novel by Robert Humphrey
+- 🧠 Thinking, Fast and Slow by Daniel Kahneman explores how the mind uses fast intuitive processing and slow deliberate reasoning, mirroring the way thinking models separate internal reasoning from their polished output
+- 🎨 The Design of Everyday Things by Don Norman examines how systems should present clean interfaces that hide internal complexity, just as the fiction pipeline should show readers only the final story
 
-Related
-- Godel, Escher, Bach by Douglas Hofstadter
+### ↔️ Contrasting
+
+- 📜 Stream of Consciousness in the Modern Novel by Robert Humphrey celebrates raw unfiltered thought as a literary device, the opposite of what this fix does by stripping away the models inner monologue
+
+### 🔗 Related
+
+- 🔄 Godel, Escher, Bach by Douglas Hofstadter investigates self-referential systems and layers of abstraction, relevant because the fix navigates the boundary between a models meta-cognition layer and its output layer

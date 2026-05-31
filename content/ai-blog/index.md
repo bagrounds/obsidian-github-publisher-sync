@@ -6,10 +6,18 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-30T08:55:25-07:00
+updated: 2026-05-31T08:44:25-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (231)  
+# 🤖 AI Blog (239)  
+- [2026-05-31 | 🧹 Hungarian Notation Str Suffix Cleanup 🔤](./2026-05-31-2-hungarian-notation-str-cleanup.md)  
+- [2026-05-30 | 🪪 Mechanism Decorator Cleanup Closes With Impl 🧹](./2026-05-30-9-mechanism-decorator-cleanup-impl.md)  
+- [2026-05-30 | 🪪 Mechanism Decorator Cleanup Continues With Raw 🧹](./2026-05-30-8-mechanism-decorator-cleanup-raw.md)  
+- [2026-05-30 | 🪪 Mechanism Decorator Cleanup Begins With Helper 🧹](./2026-05-30-7-mechanism-decorator-cleanup-helper.md)  
+- [2026-05-30 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣](./2026-05-30-6-single-letter-cleanup-purescript.md)  
+- [2026-05-30 | 🔡 From The Letter V To The Word Value 🤖](./2026-05-30-2-single-letter-cleanup-v-to-value.md)  
+- [2026-05-30 | 🔡 Naming The Letters One Class At A Time 🤖](./2026-05-30-1-single-letter-variable-cleanup.md)  
+- [2026-05-29 | 🐉 Welcoming Gemma 4 to the Fiction Rotation 🤖](./2026-05-29-8-gemma-4-fiction-rotation.md)  
 - [2026-05-29 | 🔤 Abbreviation Cleanup: req and Stragglers 🤖](./2026-05-29-6-abbreviation-cleanup-req-and-stragglers.md)  
 - [2026-05-29 | 🔤 Abbreviation Cleanup: msg and ctx 🤖](./2026-05-29-5-abbreviation-cleanup-msg-and-ctx.md)  
 - [2026-05-29 | 📂 Abbreviation Cleanup: dir to directory 🤖](./2026-05-29-4-abbreviation-cleanup-dir-to-directory.md)  

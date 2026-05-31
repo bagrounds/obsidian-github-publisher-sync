@@ -88,6 +88,12 @@ Steps 2 and 3 are tracked in GitHub issue #7102.
    updated in lockstep. Pure rename — `npm run test:ps` builds clean and all
    PureScript unit tests pass.
 
+## Campaign Complete
+
+All three steps shipped. A fresh compliance audit confirms zero mechanism decorator
+violations across the active source code. The next engineering excellence campaign
+targets [Hungarian notation](hungarian-notation-cleanup-plan.md).
+
 ## Definition of Done Per Step
 
 * Zero occurrences of the targeted decorator as an identifier suffix in the

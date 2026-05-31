@@ -306,18 +306,17 @@ geminiEndpoint model =
 logModelHealth :: Model -> Int -> ApiStatus -> Text -> IO ()
 logModelHealth model code apiStatus message =
   let modelName = T.unpack (modelToText model)
-      messageStr = T.unpack message
   in case (code, apiStatus) of
     (404, _) -> putStrLn $
       "🛑 Gemini model " <> modelName <> " returned 404 NOT_FOUND — it may have been decommissioned. "
       <> "Check https://ai.google.dev/gemini-api/docs/deprecations for the recommended replacement. "
-      <> "API message: " <> messageStr
+      <> "API message: " <> T.unpack message
     (_, NotFound) -> putStrLn $
       "🛑 Gemini model " <> modelName <> " reported NOT_FOUND status — it may have been decommissioned. "
-      <> "Check https://ai.google.dev/gemini-api/docs/deprecations. API message: " <> messageStr
+      <> "Check https://ai.google.dev/gemini-api/docs/deprecations. API message: " <> T.unpack message
     (_, InvalidArgument) -> putStrLn $
       "⚠️ Gemini model " <> modelName <> " rejected the request as INVALID_ARGUMENT — the request shape may no longer be supported. "
-      <> "Check https://ai.google.dev/gemini-api/docs/models for current capabilities. API message: " <> messageStr
+      <> "Check https://ai.google.dev/gemini-api/docs/models for current capabilities. API message: " <> T.unpack message
     _ -> pure ()
 
 buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Value

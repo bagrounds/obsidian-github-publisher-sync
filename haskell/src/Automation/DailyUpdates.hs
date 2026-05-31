@@ -375,8 +375,8 @@ parseStatsPageCount sectionText =
     (_, "") -> 0
     (_, rest) ->
       let afterEmoji = T.drop (T.length "📊 ") rest
-          numberStr = T.takeWhile isDigit afterEmoji
-      in fromMaybe 0 (readMaybe (T.unpack numberStr))
+          digits = T.takeWhile isDigit afterEmoji
+      in fromMaybe 0 (readMaybe (T.unpack digits))
 
 extractStatsLine :: Text -> Maybe Text
 extractStatsLine content =

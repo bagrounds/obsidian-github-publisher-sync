@@ -230,10 +230,10 @@ jsonNumber = do
     exponentSign <- option "" (string "+" <|> string "-")
     ds <- many1 digit
     pure (e : exponentSign <> ds)
-  let numStr = sign <> intPart <> fracPart <> expPart
-  case (reads numStr :: [(Double, String)]) of
+  let numberLiteral = sign <> intPart <> fracPart <> expPart
+  case (reads numberLiteral :: [(Double, String)]) of
     [(d, "")] -> pure (Number d)
-    _         -> fail $ "Invalid number: " <> numStr
+    _         -> fail $ "Invalid number: " <> numberLiteral
 
 jsonString :: Parser Value
 jsonString = String <$> jsonStringLiteral

@@ -54,7 +54,7 @@ toComment priorityUser graphqlComment = BlogComment
   , body       = Gql.body graphqlComment
   , createdAt  = Gql.createdAt graphqlComment
   , isPriority = case priorityUser of
-      Just pu -> maybe False (\a -> Gql.login a == pu) (Gql.author graphqlComment)
+      Just pu -> maybe False (\author -> Gql.login author == pu) (Gql.author graphqlComment)
       Nothing -> False
   }
 

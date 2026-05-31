@@ -135,11 +135,43 @@ remaining steps 6 and 7 are tracked in a follow-up ticket.
    literals (sample paths, slugs, regex fixtures, shell flags) are data, not bindings, and were
    left untouched. Pure rename — the `-Werror` build is clean, `hlint src/ app/ test/` reports
    no hints, and all 2025 Haskell tests still pass.
-6. ⬜ **Remaining stragglers** (`r`, `f`, `e`, `t`, `n`, `i`, `u`, `m`, `h`, `a`): rename
-   every remaining single-letter lambda parameter and binding across `haskell/src`,
-   `haskell/app`, and `haskell/test`.
+6. ✅ **Remaining stragglers** (`r`, `f`, `e`, `t`, `n`, `i`, `u`, `m`, `h`, `a`) (done):
+   renamed every remaining single-letter lambda parameter, function-argument binding, and
+   `let`/`where` binding across `haskell/src`, `haskell/app`, and `haskell/test`. Text
+   parameters in stripping/parsing helpers became `text` (the dominant case, across
+   `BlogImage/Markdown.hs`, `ReflectionTitle.hs`, `Frontmatter.hs`, `BlogPrompt.hs`,
+   `BlogSeries.hs`, `BlogImage/Eligibility.hs`, `BlogImage/TitleExtraction.hs`,
+   `Gemini.hs`, `Html.hs`, `Json.hs`, `Platforms/Bluesky.hs`, the
+   `InternalLinking/CandidateDiscovery.hs` and `InternalLinking/Gemini.hs` helpers, both
+   `LinkExtraction.hs` modules, `Text.hs`, and the matching test helpers). File-path
+   predicates became `file` (`isPostFile`, `isImageFile`, `isDateFile`, `isTodayMarkdown`,
+   `isRegenerable`, the `htmlFiles`/`mdFiles`/`dateFiles` filter lambdas in
+   `StaticGiscus.hs`, `InternalLinking/CandidateDiscovery.hs`, `Reflection.hs`). The
+   `withObject`/`parseMaybe` parser functions in `Json.hs` became `parser`. The two
+   `mapLeft` value equations in `BlogImage/Provider.hs` and `GoogleAnalytics.hs` became
+   `mapLeft transform (Left leftValue)` while keeping their type-variable signatures
+   intact. The Aeson-style `\e -> failTask $ "Invalid display title: " <> e` lambda in
+   `TaskRunners.hs` became `\failure ->` per the repo rule that `err` must NOT be renamed
+   to `error` (Prelude clash). Index-style integer parameters in `AiBlogLinks.hs`,
+   `Text.hs`, `ReflectionTitle.hs`, and `InternalLinking/Gemini.hs` became `index`. The
+   `n` parameter in `GcpAuth.integerBitLength` became `value`, and the `n` in
+   `GcpAuth.hexChar` became `nibble`. Sort-comparator lambdas in `InternalLinking.hs` and
+   `InternalLinking/CandidateDiscovery.hs` became `\leftCandidate rightCandidate`. Other
+   per-call-site renames: `\a -> Gql.login a == pu` → `\author`, `\h -> ... breakOn h
+   content` → `\heading`, `foldr (\a b -> a <> "\n" <> b)` → `\first rest`, `\u -> if
+   T.null u then Nothing` → `\user`, `\m -> ... Gemini.modelToText m` → `\model`,
+   `dropWhile (\r -> T.isPrefixOf "  -" r)` → `\aliasLine`, `let t = T.strip title` →
+   `stripped` (matching step 5 precedent), `case ... of n -> intersectionSize / n` →
+   `nonZeroUnion`, `let h = pacificHour utc; in h >= 0 && h <= 23` → `hour`, plus the
+   collapseStep helper's `t'` became `collapsed`. Type variables in signatures, class
+   heads, and instance heads (for example `safeIO :: IO a -> IO (Either Text a)`,
+   `class FromValue a where`, `Monad m => ...`) are abstract per AGENTS.md and were left
+   untouched. Letters inside string literals, character literals, regex fixtures, and
+   sample paths are data and were left untouched. Pure rename — the `-Werror` build is
+   clean and all 2025 Haskell tests still pass.
 7. ⬜ **PureScript (`purs-ps/src`)**: rename the remaining single-letter bindings (for
-   example the `\s ->` lambdas) to descriptive names.
+   example the `\s ->` lambdas) to descriptive names. Tracked in its own follow-up
+   ticket.
 
 ## Definition of Done Per Step
 

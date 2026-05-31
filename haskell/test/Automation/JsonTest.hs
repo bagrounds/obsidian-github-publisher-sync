@@ -312,8 +312,8 @@ propertyTests = testGroup "properties"
         let val = String (T.pack string)
         in roundTrip val == Right val
   , testProperty "integer Value round-trips" $
-      \(n :: Int) ->
-        let val = Number (fromIntegral n)
+      \(value :: Int) ->
+        let val = Number (fromIntegral value)
         in roundTrip val == Right val
   , testProperty "bool Value round-trips" $
       \(b :: Bool) ->

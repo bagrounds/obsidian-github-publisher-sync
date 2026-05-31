@@ -137,20 +137,20 @@ updatePreviousPost seriesDirectory prevPost series newFilename = do
       TIO.writeFile filePath updated
 
 stripDatePrefix :: Text -> Text
-stripDatePrefix t
-  | T.length t >= 10 && isDatePrefix (T.take 10 t) =
-      case T.uncons (T.drop 10 t) of
+stripDatePrefix text
+  | T.length text >= 10 && isDatePrefix (T.take 10 text) =
+      case T.uncons (T.drop 10 text) of
         Just ('-', rest) -> rest
-        _                -> T.drop 10 t
-  | otherwise = t
+        _                -> T.drop 10 text
+  | otherwise = text
 
 isDatePrefix :: Text -> Bool
-isDatePrefix t =
-  T.all isDigit (T.take 4 t)
-    && T.index t 4 == '-'
-    && T.all isDigit (T.take 2 (T.drop 5 t))
-    && T.index t 7 == '-'
-    && T.all isDigit (T.take 2 (T.drop 8 t))
+isDatePrefix text =
+  T.all isDigit (T.take 4 text)
+    && T.index text 4 == '-'
+    && T.all isDigit (T.take 2 (T.drop 5 text))
+    && T.index text 7 == '-'
+    && T.all isDigit (T.take 2 (T.drop 8 text))
 
 isHeading :: Text -> Bool
 isHeading line =

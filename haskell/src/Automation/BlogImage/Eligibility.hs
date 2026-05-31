@@ -72,13 +72,13 @@ isPostFile filename =
     && hasDatePrefix filename
 
 hasDatePrefix :: Text -> Bool
-hasDatePrefix t =
-  T.length t >= 10
-    && T.all isDigit (T.take 4 t)
-    && T.index t 4 == '-'
-    && T.all isDigit (T.take 2 (T.drop 5 t))
-    && T.index t 7 == '-'
-    && T.all isDigit (T.take 2 (T.drop 8 t))
+hasDatePrefix text =
+  T.length text >= 10
+    && T.all isDigit (T.take 4 text)
+    && T.index text 4 == '-'
+    && T.all isDigit (T.take 2 (T.drop 5 text))
+    && T.index text 7 == '-'
+    && T.all isDigit (T.take 2 (T.drop 8 text))
 
 parseDateFromFilename :: Text -> Maybe Day
 parseDateFromFilename filename =

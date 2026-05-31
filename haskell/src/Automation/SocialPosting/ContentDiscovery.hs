@@ -207,8 +207,8 @@ isReflectionPath = T.isPrefixOf "reflections/"
 
 looksLikeDateTitle :: Text -> Bool
 looksLikeDateTitle title =
-  let t = T.strip title
-  in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
+  let stripped = T.strip title
+  in (stripped :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
 
 propagationDelay :: NominalDiffTime
 propagationDelay = 86400
@@ -293,7 +293,7 @@ bfsLoop config state =
               neighbors = filter (\linkedPath -> not (Set.member linkedPath (visited state')))
                             (fmap unRelativePath (noteLinkedNotePaths note))
               newVisited = foldl (flip Set.insert) (visited state') neighbors
-              newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors
+              newQueue = rest <> fmap (\neighbor -> (neighbor, pathFromRoot <> [neighbor])) neighbors
               state'' = state'
                 { visited = newVisited
                 , queue   = newQueue

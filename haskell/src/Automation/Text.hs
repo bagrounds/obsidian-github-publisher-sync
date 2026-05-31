@@ -30,7 +30,7 @@ truncateToGraphemeLimit text maxGraphemes
   | otherwise = T.take (maxGraphemes - 1) text <> "…"
 
 urlPattern :: Text -> Bool
-urlPattern t = "http://" `T.isPrefixOf` t || "https://" `T.isPrefixOf` t
+urlPattern text = "http://" `T.isPrefixOf` text || "https://" `T.isPrefixOf` text
 
 extractUrls :: Text -> [Text]
 extractUrls = concatMap (takeWhile (not . T.null) . extractFromWord) . T.words
@@ -57,9 +57,9 @@ findLastIndex :: (a -> Int -> Bool) -> [a] -> Int
 findLastIndex predicate elements = searchBackward (length elements - 1) (reverse elements)
   where
     searchBackward _ []     = -1
-    searchBackward i (y:ys)
-      | predicate y i = i
-      | otherwise     = searchBackward (i - 1) ys
+    searchBackward index (y:ys)
+      | predicate y index = index
+      | otherwise     = searchBackward (index - 1) ys
 
 rebuildPost :: [Text] -> Int -> Text -> Text -> [Text] -> Text
 rebuildPost contentLines topicIndex newTopicLine urlLine trailingLines =
@@ -80,7 +80,7 @@ fitWithStrategies :: [Text] -> Int -> Text
 fitWithStrategies contentLines maxGraphemes =
   let urlLineIndex = findLastIndex (\line _ -> urlPattern line) contentLines
   in case urlLineIndex of
-    i | i < 0 -> truncateToGraphemeLimit (T.intercalate "\n" contentLines) maxGraphemes
+    negativeIndex | negativeIndex < 0 -> truncateToGraphemeLimit (T.intercalate "\n" contentLines) maxGraphemes
     urlIndex ->
       let urlLine     = contentLines !! urlIndex
           preUrlLines = take urlIndex contentLines
@@ -201,14 +201,14 @@ infixl 3 <|>
 --     modified/renamed versions score ≥ 0.39
 --   Threshold of 0.25 sits in the middle of a 0.29-wide gap.
 wordJaccardSimilarity :: Text -> Text -> Double
-wordJaccardSimilarity a b =
-  let wordsA = wordSet a
-      wordsB = wordSet b
+wordJaccardSimilarity leftText rightText =
+  let wordsA = wordSet leftText
+      wordsB = wordSet rightText
       intersectionSize = Set.size (Set.intersection wordsA wordsB)
       unionSize = Set.size (Set.union wordsA wordsB)
   in case unionSize of
        0 -> 1.0
-       n -> fromIntegral intersectionSize / fromIntegral n
+       nonZeroUnion -> fromIntegral intersectionSize / fromIntegral nonZeroUnion
 
 wordSet :: Text -> Set Text
 wordSet = Set.fromList . T.words . T.toCaseFold

@@ -156,7 +156,7 @@ findFirstSectionIndex headers content =
   case filter (`T.isInfixOf` content) headers of
     [] -> Nothing
     found ->
-      let positions = fmap (\h -> T.length $ fst $ T.breakOn h content) found
+      let positions = fmap (\heading -> T.length $ fst $ T.breakOn heading content) found
       in Just $ minimum positions
 
 appendLinkToExistingSection :: Text -> Text -> Text -> Text
@@ -199,12 +199,12 @@ insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt 
         else insertNewSection replacedContent sectionHeading postLink
 
 isDateFile :: Text -> Text -> Bool
-isDateFile today f =
-  T.length f >= 13
-    && T.isSuffixOf ".md" f
-    && T.index f 4 == '-'
-    && T.index f 7 == '-'
-    && f < (today <> ".md")
+isDateFile today file =
+  T.length file >= 13
+    && T.isSuffixOf ".md" file
+    && T.index file 4 == '-'
+    && T.index file 7 == '-'
+    && file < (today <> ".md")
 
 findPreviousReflectionDate :: FilePath -> Text -> IO (Maybe Text)
 findPreviousReflectionDate reflectionsDirectory today = do

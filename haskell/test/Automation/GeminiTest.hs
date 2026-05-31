@@ -67,7 +67,7 @@ modelTests = testGroup "Model"
       Gemini.modelToText (Gemini.Custom "my-custom-model") @?= "my-custom-model"
 
   , testCase "modelFromText round-trips known models" $
-      mapM_ (\m -> Gemini.modelFromText (Gemini.modelToText m) @?= m) Gemini.knownModels
+      mapM_ (\model -> Gemini.modelFromText (Gemini.modelToText model) @?= model) Gemini.knownModels
 
   , testCase "modelFromText unknown text returns Custom" $
       Gemini.modelFromText "totally-new-model" @?= Gemini.Custom "totally-new-model"

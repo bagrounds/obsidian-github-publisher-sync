@@ -85,7 +85,7 @@ extractTitlesFromLine line =
   extractWikiLinkTitles line <> extractMarkdownLinkTitles line
 
 extractWikiLinkTitles :: Text -> [Text]
-extractWikiLinkTitles t = case T.breakOn "[[" t of
+extractWikiLinkTitles text = case T.breakOn "[[" text of
   (_, rest) | not (T.null rest) ->
     let afterOpen = T.drop 2 rest
         (content, remainder) = T.breakOn "]]" afterOpen
@@ -96,7 +96,7 @@ extractWikiLinkTitles t = case T.breakOn "[[" t of
   _ -> []
 
 extractMarkdownLinkTitles :: Text -> [Text]
-extractMarkdownLinkTitles t = case T.breakOn "](" t of
+extractMarkdownLinkTitles text = case T.breakOn "](" text of
   (before, rest) | not (T.null rest) ->
     let (_, afterRemainder) = T.breakOn ")" (T.drop 2 rest)
         titlePart = case T.breakOnEnd "[" before of
@@ -151,7 +151,7 @@ buildReflectionTitlePrompt linkedTitles recentTitles =
                \\n\
                \GOOD TITLE EXAMPLES (for style reference):\n" <> examplesBlock
       titlesBlock = T.intercalate "\n" $
-        zipWith (\i t -> T.pack (show i) <> ". " <> t) [(1::Int)..] linkedTitles
+        zipWith (\index title -> T.pack (show index) <> ". " <> title) [(1::Int)..] linkedTitles
       user = "Build a coherent emoji-enriched sentence using one word from each of these content titles:\n\n" <> titlesBlock
   in (system, user)
 
@@ -166,8 +166,8 @@ parseReflectionTitle raw =
   in normalizeEmojiSpacing selected
 
 selectTitleLine :: Text -> Text
-selectTitleLine t =
-  let nonEmptyLines = filter (not . T.null . T.strip) (T.lines t)
+selectTitleLine text =
+  let nonEmptyLines = filter (not . T.null . T.strip) (T.lines text)
       emojiLine = find (startsWithEmoji . T.stripStart) nonEmptyLines
   in case emojiLine of
     Just line -> T.strip line
@@ -176,21 +176,21 @@ selectTitleLine t =
       [] -> ""
 
 startsWithEmoji :: Text -> Bool
-startsWithEmoji t = case T.uncons t of
+startsWithEmoji text = case T.uncons text of
   Just (character, _) -> isEmoji character
   Nothing -> False
 
 stripInlinePreamble :: Text -> Text
-stripInlinePreamble t =
-  case T.findIndex isEmoji t of
-    Just index | index > 0 -> T.strip (T.drop index t)
-    _ -> t
+stripInlinePreamble text =
+  case T.findIndex isEmoji text of
+    Just index | index > 0 -> T.strip (T.drop index text)
+    _ -> text
 
 stripDatePrefix :: Text -> Text
-stripDatePrefix t = case T.unpack (T.take 13 t) of
+stripDatePrefix text = case T.unpack (T.take 13 text) of
   (y1:y2:y3:y4:'-':m1:m2:'-':d1:d2:' ':'|':' ':_)
-    | all isDigit [y1,y2,y3,y4,m1,m2,d1,d2] -> T.drop 13 t
-  _ -> t
+    | all isDigit [y1,y2,y3,y4,m1,m2,d1,d2] -> T.drop 13 text
+  _ -> text
 
 normalizeEmojiSpacing :: Text -> Text
 normalizeEmojiSpacing = id
@@ -228,7 +228,7 @@ updateFrontmatterFields frontmatterLines fullTitle =
       updateAliases [] = []
       updateAliases (line:rest)
         | T.isPrefixOf "aliases:" line =
-          line : ("  - " <> quoted) : dropWhile (\r -> T.isPrefixOf "  -" r || T.isPrefixOf "  - " r) rest
+          line : ("  - " <> quoted) : dropWhile (\aliasLine -> T.isPrefixOf "  -" aliasLine || T.isPrefixOf "  - " aliasLine) rest
         | otherwise = line : updateAliases rest
   in if hasAliases
     then updateAliases withTitle

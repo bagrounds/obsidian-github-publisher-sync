@@ -70,7 +70,7 @@ findIndex :: (a -> Bool) -> [a] -> Maybe Int
 findIndex predicate = findAt 0
   where
     findAt _ []     = Nothing
-    findAt i (y:ys) = if predicate y then Just i else findAt (i + 1) ys
+    findAt index (y:ys) = if predicate y then Just index else findAt (index + 1) ys
 
 navLinksMatch :: Text -> Maybe Text -> Maybe Text -> Bool
 navLinksMatch content prevFilename nextFilename =
@@ -102,8 +102,8 @@ readAiBlogPostFiles aiBlogDirectory = do
     else pure []
 
 isPostFile :: Text -> Bool
-isPostFile f =
-  T.isSuffixOf ".md" f && f /= "index.md" && f /= "AGENTS.md"
+isPostFile file =
+  T.isSuffixOf ".md" file && file /= "index.md" && file /= "AGENTS.md"
 
 ensureAllNavLinks :: FilePath -> IO [NavLinkResult]
 ensureAllNavLinks aiBlogDirectory = do

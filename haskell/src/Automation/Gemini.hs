@@ -140,7 +140,7 @@ modelFromText "gemini-2.5-flash"               = Gemini25Flash
 modelFromText "gemini-2.5-flash-lite"          = Gemini25FlashLite
 modelFromText "gemini-2.0-flash"               = Gemini20Flash
 modelFromText "gemini-3.1-flash-image-preview" = Gemini31FlashImage
-modelFromText t                                = Custom t
+modelFromText text                             = Custom text
 
 -- | All known model constructors (excludes @Custom@).
 knownModels :: [Model]

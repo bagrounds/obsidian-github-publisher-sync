@@ -39,11 +39,11 @@ defaultRetryOptions = RetryOptions
   }
 
 extractHttpCode :: SomeException -> Maybe Int
-extractHttpCode e = hceCode <$> fromException @HttpCodeException e
+extractHttpCode exception = hceCode <$> fromException @HttpCodeException exception
 
 isTransientError :: SomeException -> Bool
-isTransientError e =
-  case extractHttpCode e of
+isTransientError exception =
+  case extractHttpCode exception of
     Just code -> Set.member code transientHttpCodes
     Nothing   -> False
 

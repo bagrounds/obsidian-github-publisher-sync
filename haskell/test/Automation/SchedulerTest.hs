@@ -98,8 +98,8 @@ pacificHourTests :: TestTree
 pacificHourTests = testGroup "pacificHour"
   [ testProperty "result is always 0-23" $
       QC.forAll genUTCTime $ \utc ->
-        let h = pacificHour utc
-        in h >= 0 && h <= 23
+        let hour = pacificHour utc
+        in hour >= 0 && hour <= 23
 
   , testCase "PST: midnight UTC on Jan 1 is 4pm previous day" $
       pacificHour (UTCTime (fromGregorian 2026 1 1) 0) @?= 16

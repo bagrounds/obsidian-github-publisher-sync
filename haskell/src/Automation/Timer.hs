@@ -61,10 +61,10 @@ formatPercent part whole
   | otherwise = "0.0"
 
 padEnd :: Int -> Text -> Text
-padEnd n t = t <> T.replicate (max 0 (n - T.length t)) " "
+padEnd width text = text <> T.replicate (max 0 (width - T.length text)) " "
 
 padStart :: Int -> Text -> Text
-padStart n t = T.replicate (max 0 (n - T.length t)) " " <> t
+padStart width text = T.replicate (max 0 (width - T.length text)) " " <> text
 
 printTimerSummary :: PipelineTimer -> IO ()
 printTimerSummary timer = do

@@ -30,11 +30,11 @@ maxBackoffMicroseconds = 60_000_000
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
-  let formatBookLine e =
-        let mainNote = case extractMainTitle (unTitle (plainTitle e)) of
+  let formatBookLine entry =
+        let mainNote = case extractMainTitle (unTitle (plainTitle entry)) of
               Just mt -> " (also known as \"" <> mt <> "\")"
               Nothing -> ""
-        in "- \"" <> unTitle (plainTitle e) <> "\"" <> mainNote <> " (" <> unRelativePath (relativePath e) <> ")"
+        in "- \"" <> unTitle (plainTitle entry) <> "\"" <> mainNote <> " (" <> unRelativePath (relativePath entry) <> ")"
       bookList = T.intercalate "\n" $ fmap formatBookLine bookEntries
       systemPrompt = T.intercalate "\n"
         [ "You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document."
@@ -99,7 +99,7 @@ parseGeminiBookPaths raw =
     Nothing    -> Left ("Failed to parse Gemini response as JSON array: " <> raw)
   where
     encodeToLbs :: Text -> LBS.ByteString
-    encodeToLbs t = LBS.fromStrict (TE.encodeUtf8 t)
+    encodeToLbs text = LBS.fromStrict (TE.encodeUtf8 text)
 
 extractJsonArrayText :: Text -> Text
 extractJsonArrayText txt =
@@ -119,6 +119,6 @@ findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
 findLastIndex predicate txt = searchForward Nothing 0 (T.unpack txt)
   where
     searchForward accumulated _ [] = accumulated
-    searchForward accumulated i (character : cs)
-      | predicate character = searchForward (Just i) (i + 1) cs
-      | otherwise   = searchForward accumulated (i + 1) cs
+    searchForward accumulated index (character : cs)
+      | predicate character = searchForward (Just index) (index + 1) cs
+      | otherwise   = searchForward accumulated (index + 1) cs

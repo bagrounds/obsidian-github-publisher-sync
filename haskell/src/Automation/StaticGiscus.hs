@@ -259,7 +259,7 @@ walkHtmlFiles directory = do
       let paths = fmap (directory </>) entries
       files <- filterM doesFileExist paths
       dirs  <- filterM doesDirectoryExist paths
-      let htmlFiles = filter (\f -> takeExtension f == ".html") files
+      let htmlFiles = filter (\file -> takeExtension file == ".html") files
       nested <- traverse walkHtmlFiles dirs
       pure (htmlFiles <> concat nested)
     else pure []

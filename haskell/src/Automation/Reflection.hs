@@ -30,7 +30,7 @@ data ReflectionData = ReflectionData
 selectMostRecentReflection :: [String] -> Maybe Text
 selectMostRecentReflection files =
   let datePattern = "^[0-9]{4}-[0-9]{2}-[0-9]{2}\\.md$" :: String
-      dateFiles   = filter (\f -> (f :: String) =~ datePattern) files
+      dateFiles   = filter (\file -> (file :: String) =~ datePattern) files
       sorted      = sortBy (flip compare) dateFiles
   in case sorted of
     (f : _) -> Just ("reflections/" <> T.pack f)

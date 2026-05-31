@@ -80,8 +80,8 @@ extractWikiLinkTarget input =
     _ -> Nothing
   where
     skipToClose _ [] = Nothing
-    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
-    skipToClose t (_:rest) = skipToClose t rest
+    skipToClose text (']':']':rest) | not (null text) = Just (text, rest)
+    skipToClose text (_:rest) = skipToClose text rest
 
 isPrefixOfS :: String -> String -> Bool
 isPrefixOfS [] _          = True

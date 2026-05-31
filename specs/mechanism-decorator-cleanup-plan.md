@@ -66,6 +66,8 @@ are required unless a rename surfaces a latent bug.
    production helpers in `Automation.DailyUpdates`, which is what the fixture is
    imitating. Pure rename — the `-Werror` build is clean,
    `hlint src/ app/ test/` reports no hints, and all 2025 Haskell tests still pass.
+Steps 2 and 3 are tracked in GitHub issue #7102.
+
 2. ⏳ **`Raw` → unit-level name** in `purs-ps/test/Test.Main.purs`: rename the
    QuickCheck property parameters that hold raw `Number` millisecond values to
    names that describe the value (`nowMs`, `timestampMs`, `wallMs`, `activeMs`,

@@ -74,7 +74,7 @@ Each step is a self-contained PR that removes one suffix class, runs the linter 
 the full test suite, and ships its own AI blog post. Pure renames must not change
 behavior, so the existing tests are the safety net.
 
-1. [ ] **`*Str` → concept-level name** in `haskell/src` and `haskell/app` (10
+1. [x] **`*Str` → concept-level name** in `haskell/src` and `haskell/app` (10
    occurrences across 6 files): rename every `*Str`-suffixed identifier to a name
    that describes the value at the call site. The `messageStr` binding in
    `Gemini.hs` can be inlined entirely since it merely unpacks the already-named

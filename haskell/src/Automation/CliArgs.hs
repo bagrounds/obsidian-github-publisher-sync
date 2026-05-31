@@ -16,6 +16,6 @@ parseCliArgs :: [String] -> CliArgs
 parseCliArgs = processArgs (CliArgs Nothing Nothing)
   where
     processArgs accumulator [] = accumulator
-    processArgs accumulator ("--hour" : hourStr : rest) = processArgs (accumulator { cliHourOverride = readMaybe hourStr }) rest
-    processArgs accumulator ("--task" : taskStr : rest) = processArgs (accumulator { cliTaskOverride = Just (T.pack taskStr) }) rest
+    processArgs accumulator ("--hour" : hour : rest) = processArgs (accumulator { cliHourOverride = readMaybe hour }) rest
+    processArgs accumulator ("--task" : task : rest) = processArgs (accumulator { cliTaskOverride = Just (T.pack task) }) rest
     processArgs accumulator (_ : rest) = processArgs accumulator rest

@@ -181,8 +181,8 @@ validatePrePushFileCount vaultDirectory currentCount = do
   markerExists <- doesFileExist markerPath
   if markerExists
     then do
-      baselineStr <- readFile markerPath
-      let mBaseline = case reads baselineStr of
+      baselineContent <- readFile markerPath
+      let mBaseline = case reads baselineContent of
             [(n, _)] -> Just (n :: Int)
             _        -> Nothing
       case mBaseline of

@@ -69,15 +69,15 @@ main = do
       contentDirectories = imageBackfillContentDirectoriesFrom seriesConfigs
 
   tasks <- case cliTaskOverride args of
-    Just taskStr ->
-      if isValidTaskId fullSchedule taskStr
-        then case taskIdFromText (fmap taskId dynamicScheduleEntries) taskStr of
+    Just task ->
+      if isValidTaskId fullSchedule task
+        then case taskIdFromText (fmap taskId dynamicScheduleEntries) task of
           Just tid -> pure [tid]
           Nothing  -> do
-            TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
+            TIO.hPutStrLn stderr $ "❌ Unknown task: " <> task
             exitFailure
         else do
-          TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
+          TIO.hPutStrLn stderr $ "❌ Unknown task: " <> task
           exitFailure
     Nothing -> pure $ getScheduledTasks fullSchedule hourPacific
 

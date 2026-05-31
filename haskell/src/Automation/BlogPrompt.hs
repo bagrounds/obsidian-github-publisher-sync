@@ -249,11 +249,11 @@ formatComment comment =
 parseDate :: Text -> Maybe Day
 parseDate text =
   case T.splitOn "-" text of
-    [yStr, mStr, dStr] ->
+    [yearPart, monthPart, dayPart] ->
       fromGregorian
-        <$> readMaybe (T.unpack yStr)
-        <*> readMaybe (T.unpack mStr)
-        <*> readMaybe (T.unpack dStr)
+        <$> readMaybe (T.unpack yearPart)
+        <*> readMaybe (T.unpack monthPart)
+        <*> readMaybe (T.unpack dayPart)
     _ -> Nothing
 
 weeklyRecap :: Text

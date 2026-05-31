@@ -1312,15 +1312,15 @@ formatDurationContainsDigit :: Number -> Boolean
 formatDurationContainsDigit ms = containsDigit (formatDurationMs (abs ms))
 
 captionOpacityIsInRange :: Number -> Number -> Boolean
-captionOpacityIsInRange nowRaw captionRaw =
+captionOpacityIsInRange nowMs captionMs =
   let
-    opacity = captionOpacity (testInstant (abs nowRaw)) (testInstant (abs captionRaw))
+    opacity = captionOpacity (testInstant (abs nowMs)) (testInstant (abs captionMs))
   in
     opacity >= minimumCaptionOpacity && opacity <= 1.0
 
 captionOpacityAtSameTimestampIsOne :: Number -> Boolean
-captionOpacityAtSameTimestampIsOne tsRaw =
-  let ts = testInstant (abs tsRaw)
+captionOpacityAtSameTimestampIsOne timestampMs =
+  let ts = testInstant (abs timestampMs)
   in captionOpacity ts ts == 1.0
 
 wordsPerMinuteIsZeroWhenNoWords :: Number -> Boolean
@@ -1335,15 +1335,13 @@ wordsPerMinuteAtOneMinuteEqualsWordCount wordCount =
   wordsPerMinute (abs wordCount) 60000.0 == Int.toNumber (abs wordCount)
 
 sampleFractionIsBetweenZeroAndOne :: Number -> Number -> Boolean
-sampleFractionIsBetweenZeroAndOne wallRaw activeRaw =
+sampleFractionIsBetweenZeroAndOne wallMs activeMs =
   let
-    wallMs = abs wallRaw
-    activeMs = abs activeRaw
     session =
       initialSession
         { firstStartedAt = Just (testInstant 0.0)
-        , now = testInstant wallMs
-        , completedActiveMs = Milliseconds activeMs
+        , now = testInstant (abs wallMs)
+        , completedActiveMs = Milliseconds (abs activeMs)
         }
     fraction = sampleFraction session
   in

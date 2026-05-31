@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-30T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-31T09:11:01
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-29-a-gentle-farewell-to-a-dear-friend.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-29-a-gentle-farewell-to-a-dear-friend.md) [⏭️](./2026-05-31-a-sunday-of-healing-and-new-beginnings.md)  
 # 2026-05-30 | 🐔 🌿 Finding Stillness in the Aftermath 🐔  
 ![chickie-loo-2026-05-30-finding-stillness-in-the-aftermath](../chickie-loo-2026-05-30-finding-stillness-in-the-aftermath.jpg)  
   

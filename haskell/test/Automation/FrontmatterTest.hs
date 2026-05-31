@@ -127,8 +127,8 @@ tests = testGroup "Frontmatter"
   , testGroup "quoteYamlValue properties"
       [ testProperty "output always starts and ends with double quotes" $
           \(QC.ASCIIString string) ->
-            let t = T.pack string
-                result = quoteYamlValue t
+            let text = T.pack string
+                result = quoteYamlValue text
             in T.head result == '"' && T.last result == '"'
       , testProperty "output never contains unescaped newlines" $
           \(QC.ASCIIString string) ->

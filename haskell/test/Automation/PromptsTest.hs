@@ -157,7 +157,7 @@ propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "calculateQuestionBudget always at least 30" $
       \(QC.ASCIIString title) (QC.ASCIIString url) ->
-        let titleText = let t = T.pack title in if T.null (T.strip t) then "x" else t
+        let titleText = let packed = T.pack title in if T.null (T.strip packed) then "x" else packed
             urlSuffix = filter isUnreservedUrlChar url
             urlText = "https://example.com/" <> T.pack urlSuffix
             rd = sampleReflection { title = testTitle titleText, url = testUrl urlText }

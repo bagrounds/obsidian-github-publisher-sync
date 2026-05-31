@@ -50,13 +50,13 @@ removeImageEmbed content =
     [] -> (content, Nothing)
 
 stripAttachmentsPrefix :: Text -> Text
-stripAttachmentsPrefix t = fromMaybe t (T.stripPrefix "attachments/" t)
+stripAttachmentsPrefix text = fromMaybe text (T.stripPrefix "attachments/" text)
 
 collapseNewlines :: Text -> Text
 collapseNewlines = collapseStep
   where
-    collapseStep t = let t' = T.replace "\n\n\n" "\n\n" t
-                     in if t' == t then t else collapseStep t'
+    collapseStep text = let collapsed = T.replace "\n\n\n" "\n\n" text
+                        in if collapsed == text then text else collapseStep collapsed
 
 stripMarkdownSyntax :: Text -> Text
 stripMarkdownSyntax =
@@ -88,20 +88,20 @@ removeHeadings = T.unlines . fmap stripHeading . T.lines
       | otherwise                 = line
 
 removeObsidianEmbeds :: Text -> Text
-removeObsidianEmbeds t =
-  let string = T.unpack t
+removeObsidianEmbeds text =
+  let string = T.unpack text
       result = replaceAll string "!\\[\\[[^]]*\\]\\]" ""
   in T.pack result
 
 removeMarkdownImages :: Text -> Text
-removeMarkdownImages t =
-  let string = T.unpack t
+removeMarkdownImages text =
+  let string = T.unpack text
       result = replaceAll string "!\\[[^]]*\\]\\([^)]*\\)" ""
   in T.pack result
 
 removeMarkdownLinks :: Text -> Text
-removeMarkdownLinks t =
-  let string = T.unpack t
+removeMarkdownLinks text =
+  let string = T.unpack text
       result = replaceAllWith string "\\[([^]]*)\\]\\([^)]*\\)" (\case
         (_full : captured : _) -> captured
         [full]                 -> full
@@ -119,8 +119,8 @@ removeCodeBlocks content = T.intercalate "\n" (processLines (T.lines content) Fa
       | otherwise                          = line : processLines rest False
 
 removeInlineCode :: Text -> Text
-removeInlineCode t =
-  let string = T.unpack t
+removeInlineCode text =
+  let string = T.unpack text
       result = replaceAll string "`[^`]*`" ""
   in T.pack result
 
@@ -165,8 +165,8 @@ removeBlockquotes = T.unlines . fmap stripQuote . T.lines
            _                -> line
 
 removeTableCells :: Text -> Text
-removeTableCells t =
-  let string = T.unpack t
+removeTableCells text =
+  let string = T.unpack text
       result = replaceAll string "\\|[^|\\n]*\\|" ""
   in T.pack result
 
@@ -178,9 +178,9 @@ removeTableSeparators = T.unlines . filter (not . isTableSep) . T.lines
                    && T.isInfixOf "-" line
 
 collapseTripleNewlines :: Text -> Text
-collapseTripleNewlines t =
-  let t' = T.replace "\n\n\n" "\n\n" t
-  in if t' == t then t else collapseTripleNewlines t'
+collapseTripleNewlines text =
+  let collapsed = T.replace "\n\n\n" "\n\n" text
+  in if collapsed == text then text else collapseTripleNewlines collapsed
 
 cleanContentForPrompt :: Text -> Text
 cleanContentForPrompt rawContent =

@@ -171,9 +171,9 @@ parsePkcs1Key derBytes = do
     }
 
 integerBitLength :: Integer -> Int
-integerBitLength n
-  | n <= 0 = 0
-  | otherwise = countBits n 0
+integerBitLength value
+  | value <= 0 = 0
+  | otherwise = countBits value 0
   where
     countBits 0 bitCount = bitCount
     countBits x bitCount = countBits (x `div` 2) (bitCount + 1)
@@ -224,9 +224,9 @@ showHexByte :: Word8 -> String
 showHexByte byte =
   let hi = byte `div` 16
       lo = byte `mod` 16
-      hexChar n
-        | n < 10 = toEnum (fromIntegral n + fromEnum '0')
-        | otherwise = toEnum (fromIntegral n - 10 + fromEnum 'a')
+      hexChar nibble
+        | nibble < 10 = toEnum (fromIntegral nibble + fromEnum '0')
+        | otherwise = toEnum (fromIntegral nibble - 10 + fromEnum 'a')
   in [hexChar hi, hexChar lo]
 
 encodeJwtPayload :: JwtClaims -> ByteString

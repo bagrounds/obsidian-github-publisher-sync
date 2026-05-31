@@ -163,7 +163,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
       priorityUser <- lookupEnvText (T.unpack (Scheduler.priorityUserEnvVar runConfig))
 
-      comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
+      comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\user -> if T.null user then Nothing else Just user))
       logMessage $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       blogContextResult <- buildBlogContext seriesMap seriesId repoRoot comments today
@@ -246,7 +246,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       regenFilenameNoExt = case maybeRegenPost of
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
-                  postTitle <- either (\e -> failTask $ "Invalid display title: " <> e) pure (mkTitle displayTitle)
+                  postTitle <- either (\failure -> failTask $ "Invalid display title: " <> failure) pure (mkTitle displayTitle)
                   _ <- updateDailyReflection vaultDirectory today series filenameNoExt postTitle regenFilenameNoExt
 
                   let postRelPath = T.unpack seriesId </> T.unpack newPostFilename

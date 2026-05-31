@@ -308,7 +308,7 @@ extractValue = Json.withObject "metricValue" $ \obj ->
   obj Json..: "value"
 
 mapLeft :: (a -> b) -> Either a c -> Either b c
-mapLeft f (Left a) = Left (f a)
+mapLeft transform (Left leftValue) = Left (transform leftValue)
 mapLeft _ (Right value) = Right value
 
 parseIntMetric :: Text -> Text -> Either Text Int

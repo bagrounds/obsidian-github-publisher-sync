@@ -120,8 +120,8 @@ isScheduled hourPacific ScheduleEntry{..}
   | otherwise                        = hourPacific `elem` hoursPacific
 
 isValidTaskId :: [ScheduleEntry] -> Text -> Bool
-isValidTaskId fullSchedule t =
-  maybe False (`Set.member` validTaskIds fullSchedule) (taskIdFromText (blogSeriesTaskIds fullSchedule) t)
+isValidTaskId fullSchedule text =
+  maybe False (`Set.member` validTaskIds fullSchedule) (taskIdFromText (blogSeriesTaskIds fullSchedule) text)
 
 blogSeriesTaskIds :: [ScheduleEntry] -> [TaskId]
 blogSeriesTaskIds = filter isBlogSeries . fmap taskId
@@ -152,10 +152,10 @@ findPostToRegenerate seriesDirectory today = do
       findM isRegenerable (filter isTodayMarkdown files)
     else pure Nothing
   where
-    isTodayMarkdown f =
-      T.isPrefixOf today (T.pack f) && takeExtension f == ".md"
-    isRegenerable f = do
-      content <- TIO.readFile (seriesDirectory </> f)
+    isTodayMarkdown file =
+      T.isPrefixOf today (T.pack file) && takeExtension file == ".md"
+    isRegenerable file = do
+      content <- TIO.readFile (seriesDirectory </> file)
       pure (hasRegenerateMarker content)
 
 findM :: Monad m => (a -> m Bool) -> [a] -> m (Maybe a)

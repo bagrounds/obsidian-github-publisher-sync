@@ -57,9 +57,9 @@ selectFictionModelChainTests = testGroup "selectFictionModelChain"
       in nub (NE.toList chain) `sameElements` NE.toList fictionModelPool
   , testCase "selection is deterministic for a given day" $
       let day = fromGregorian 2026 5 27
-          a = selectFictionModelChain day fictionModelPool
-          b = selectFictionModelChain day fictionModelPool
-      in NE.head a @?= NE.head b
+          firstResult = selectFictionModelChain day fictionModelPool
+          secondResult = selectFictionModelChain day fictionModelPool
+      in NE.head firstResult @?= NE.head secondResult
   , testCase "consecutive days rotate to a different primary model" $
       let d0 = fromGregorian 2026 5 27
           d1 = fromGregorian 2026 5 28

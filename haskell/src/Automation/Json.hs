@@ -129,11 +129,11 @@ infixl 5 .:
 infixl 5 .:?
 
 withObject :: String -> ([(Text, Value)] -> Either String a) -> Value -> Either String a
-withObject _ f (Object obj) = f obj
+withObject _ parser (Object obj) = parser obj
 withObject label _ value = Left $ "Expected object at " <> label <> ", got: " <> take 50 (show value)
 
 parseMaybe :: (Value -> Either String a) -> Value -> Maybe a
-parseMaybe f value = case f value of
+parseMaybe parser value = case parser value of
   Right a -> Just a
   Left _  -> Nothing
 
@@ -159,7 +159,7 @@ encodeText = \case
     encodePair (k, value) = encodeString k <> ":" <> encodeText value
 
 encodeString :: Text -> Text
-encodeString t = "\"" <> T.concatMap escapeChar t <> "\""
+encodeString text = "\"" <> T.concatMap escapeChar text <> "\""
   where
     escapeChar '"'  = "\\\""
     escapeChar '\\' = "\\\\"

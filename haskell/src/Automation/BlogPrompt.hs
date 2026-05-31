@@ -53,11 +53,11 @@ newtype Slug = Slug { unSlug :: Text } deriving (Show, Eq)
 newtype DisplayTitle = DisplayTitle { unDisplayTitle :: Text } deriving (Show, Eq)
 
 mkSlug :: Text -> Either Text Slug
-mkSlug t
-  | T.null t = Left "Empty slug"
-  | T.any (\character -> character == ' ' || character == '\n') t = Left ("Slug contains whitespace: " <> t)
-  | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
-  | otherwise = Right (Slug t)
+mkSlug text
+  | T.null text = Left "Empty slug"
+  | T.any (\character -> character == ' ' || character == '\n') text = Left ("Slug contains whitespace: " <> text)
+  | T.head text == '-' || T.last text == '-' = Left ("Slug has leading/trailing hyphens: " <> text)
+  | otherwise = Right (Slug text)
 
 -- | A post from another blog series, carrying metadata for prompt formatting.
 data CrossSeriesPost = CrossSeriesPost
@@ -119,16 +119,16 @@ sanitizeTitle :: BlogSeriesConfig -> Text -> Text
 sanitizeTitle series raw =
   T.strip $ stripTrailingIcon $ stripLeadingIcon $ stripDatePipe $ stripLeadingIcon $ T.strip raw
   where
-    stripLeadingIcon t =
-      maybe (T.stripStart t) T.stripStart
-        (T.stripPrefix (icon series) (T.stripStart t))
+    stripLeadingIcon text =
+      maybe (T.stripStart text) T.stripStart
+        (T.stripPrefix (icon series) (T.stripStart text))
 
-    stripTrailingIcon t =
-      maybe (T.stripEnd t) T.stripEnd
-        (T.stripSuffix (icon series) (T.stripEnd t))
+    stripTrailingIcon text =
+      maybe (T.stripEnd text) T.stripEnd
+        (T.stripSuffix (icon series) (T.stripEnd text))
 
-    stripDatePipe t =
-      let stripped = T.stripStart t
+    stripDatePipe text =
+      let stripped = T.stripStart text
       in case parseDate (T.take 10 stripped) of
         Just _ ->
           let afterDate = T.drop 10 stripped
@@ -247,8 +247,8 @@ formatComment comment =
   in "**" <> Comments.author comment <> "**" <> priority <> " (" <> Comments.createdAt comment <> "):\n" <> Comments.body comment
 
 parseDate :: Text -> Maybe Day
-parseDate t =
-  case T.splitOn "-" t of
+parseDate text =
+  case T.splitOn "-" text of
     [yStr, mStr, dStr] ->
       fromGregorian
         <$> readMaybe (T.unpack yStr)

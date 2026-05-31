@@ -81,15 +81,15 @@ extractMainTitle title =
   splitOnColonSpace title <|> splitOnSurroundedDash title
   where
     splitOnColonSpace :: Text -> Maybe Text
-    splitOnColonSpace t =
-      case T.breakOn ": " t of
+    splitOnColonSpace text =
+      case T.breakOn ": " text of
         (main, rest)
           | T.null rest                  -> Nothing
           | T.length main < minTitleLength -> Nothing
           | otherwise                     -> Just main
     splitOnSurroundedDash :: Text -> Maybe Text
-    splitOnSurroundedDash t =
-      case T.breakOn " - " t of
+    splitOnSurroundedDash text =
+      case T.breakOn " - " text of
         (main, rest)
           | T.null rest                  -> Nothing
           | T.length main < minTitleLength -> Nothing
@@ -115,7 +115,7 @@ scanDirectory contentDirectory dirName = do
   if exists
     then do
       files <- listDirectory dirPath
-      let mdFiles = filter (\f -> hasSuffix ".md" f && f /= "index.md") files
+      let mdFiles = filter (\file -> hasSuffix ".md" file && file /= "index.md") files
       catMaybes <$> traverse (readEntry contentDirectory dirName) mdFiles
     else pure []
 
@@ -142,10 +142,10 @@ readEntry contentDirectory dirName file = do
 
 findLinkCandidates :: [ContentEntry] -> Text -> Text -> RelativePath -> [LinkCandidate]
 findLinkCandidates index content masked selfPath =
-  let sortedIndex = sortBy (\a b -> compare (Down (T.length (unTitle (plainTitle a))))
-                                            (Down (T.length (unTitle (plainTitle b))))) index
+  let sortedIndex = sortBy (\leftCandidate rightCandidate -> compare (Down (T.length (unTitle (plainTitle leftCandidate))))
+                                            (Down (T.length (unTitle (plainTitle rightCandidate))))) index
       (_, candidates) = foldl' findForEntry ([], []) sortedIndex
-  in sortBy (\a b -> compare (position a) (position b)) candidates
+  in sortBy (\leftCandidate rightCandidate -> compare (position leftCandidate) (position rightCandidate)) candidates
   where
     findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
     findForEntry (ranges, candidates) contentEntry

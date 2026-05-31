@@ -99,7 +99,7 @@ alreadyAnalyzed currentVersion content =
 applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text
 applyReplacements content candidates validations =
   let validPairs = filter snd (zip candidates validations)
-      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (CD.position a)) (Down (CD.position b)))
+      sorted     = sortBy (\(leftCandidate, _) (rightCandidate, _) -> compare (Down (CD.position leftCandidate)) (Down (CD.position rightCandidate)))
                      validPairs
   in foldl' applyOne content (fmap fst sorted)
   where
@@ -189,8 +189,8 @@ processFile manager apiKey model filePath index = do
         else do
           let body = extractBody content
               eligibleBooks = filter
-                (\e -> CD.relativePath e /= relPath
-                    && not (CD.contentAlreadyLinksTo content e))
+                (\entry -> CD.relativePath entry /= relPath
+                    && not (CD.contentAlreadyLinksTo content entry))
                 index
           case eligibleBooks of
             [] -> do
@@ -230,7 +230,7 @@ processFile manager apiKey model filePath index = do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
                       let masked          = maskProtectedRegions contentAfterFm
-                          identifiedIndex = filter (\e -> Set.member (unRelativePath (CD.relativePath e)) identifiedSet) index
+                          identifiedIndex = filter (\entry -> Set.member (unRelativePath (CD.relativePath entry)) identifiedSet) index
                           candidates      = CD.findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
                         [] -> do
@@ -281,9 +281,9 @@ run manager model contentDirectory = do
 
   let modifiedCount      = length $ filter modified results
       totalLinks         = sum $ fmap linksAdded results
-      alreadyAnalyzedCount = length $ filter (\r -> not (modified r) && not (usedInference r)) results
+      alreadyAnalyzedCount = length $ filter (\result -> not (modified result) && not (usedInference result)) results
       inferenceCount     = length $ filter usedInference results
-      skippedCount       = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
+      skippedCount       = length $ filter (\result -> not (modified result) && linksAdded result == 0) results
 
   let result = LinkingResult
         { filesVisited    = length filesToVisit

@@ -165,12 +165,12 @@ resolveUniqueImageName baseName extension attachmentsDirectory = do
     then pure candidate
     else findUnique (2 :: Int)
   where
-    findUnique n = do
-      let name = baseName <> "-" <> T.pack (show n) <> extension
+    findUnique attempt = do
+      let name = baseName <> "-" <> T.pack (show attempt) <> extension
       exists <- doesFileExist (attachmentsDirectory </> T.unpack name)
       if not exists
         then pure name
-        else findUnique (n + 1)
+        else findUnique (attempt + 1)
 
 processNote :: Manager -> ImageProviderConfig -> FilePath -> FilePath -> IO ImageGenerationResult
 processNote manager provider notePath attachmentsDirectory = do
@@ -316,10 +316,10 @@ sortByDateDesc = foldl' insertSorted []
 sortByTextDesc :: [Text] -> [Text]
 sortByTextDesc = foldl' ins []
   where
-    ins [] t = [t]
-    ins (x : xs) t
-      | t >= x    = t : x : xs
-      | otherwise  = x : ins xs t
+    ins [] item = [item]
+    ins (x : xs) item
+      | item >= x    = item : x : xs
+      | otherwise  = x : ins xs item
 
 processWithProviders
   :: Manager -> BackfillConfig -> [BackfillCandidate]
@@ -402,7 +402,7 @@ safeIO action =
   fmap Right action `catch` handler
   where
     handler :: SomeException -> IO (Either Text a)
-    handler e = pure $ Left $ T.pack (show e)
+    handler exception = pure $ Left $ T.pack (show exception)
 
 syncAttachmentsDirectory :: FilePath -> FilePath -> IO ()
 syncAttachmentsDirectory sourceDirectory destinationDirectory = do
@@ -422,6 +422,6 @@ syncIfMissing sourceDirectory destinationDirectory filename = do
     else copyFile (sourceDirectory </> filename) dst
 
 isImageFile :: FilePath -> Bool
-isImageFile f =
-  let ext = fmap toLower (takeExtension f)
+isImageFile file =
+  let ext = fmap toLower (takeExtension file)
   in ext `elem` [".jpg", ".jpeg", ".png", ".gif", ".webp"]

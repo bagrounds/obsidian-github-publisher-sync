@@ -266,9 +266,9 @@ isUrlTerminator character =
   character == ' ' || character == '\n' || character == '\r' || character == '\t'
 
 normalizeUrl :: Text -> Text
-normalizeUrl t
-  | T.isPrefixOf "http://" t || T.isPrefixOf "https://" t = t
-  | otherwise = "https://" <> t
+normalizeUrl text
+  | T.isPrefixOf "http://" text || T.isPrefixOf "https://" text = text
+  | otherwise = "https://" <> text
 
 
 uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Either Error Json.Value)

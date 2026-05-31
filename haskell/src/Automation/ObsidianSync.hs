@@ -71,7 +71,7 @@ runObCommand args mCwd extraEnv = do
       , "Stderr: " <> stderr
       ]
   where
-    joinLines = foldr (\a b -> a <> "\n" <> b) ""
+    joinLines = foldr (\first rest -> first <> "\n" <> rest) ""
 
 removeSyncLock :: FilePath -> IO ()
 removeSyncLock vaultDirectory = do

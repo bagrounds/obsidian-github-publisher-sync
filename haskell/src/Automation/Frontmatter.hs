@@ -51,12 +51,12 @@ parseLine line =
 stripQuotes :: Text -> Text
 stripQuotes = stripTrailing . stripLeading
   where
-    stripLeading t = case T.uncons t of
+    stripLeading text = case T.uncons text of
       Just (character, rest) | character == '"' || character == '\'' -> rest
-      _ -> t
-    stripTrailing t = case T.unsnoc t of
+      _ -> text
+    stripTrailing text = case T.unsnoc text of
       Just (init', character) | character == '"' || character == '\'' -> init'
-      _ -> t
+      _ -> text
 
 -- | A typed YAML scalar, mirroring TypeScript's @string | boolean | null@.
 --
@@ -101,13 +101,13 @@ getReflectionPath :: Text -> FilePath -> FilePath
 getReflectionPath date contentDirectory = contentDirectory </> T.unpack date <> ".md"
 
 isValidDatePrefix :: Text -> Bool
-isValidDatePrefix t =
-  T.length t >= 10
-    && T.index t 4 == '-'
-    && T.index t 7 == '-'
-    && T.all isDigit (T.take 4 t)
-    && T.all isDigit (T.take 2 (T.drop 5 t))
-    && T.all isDigit (T.take 2 (T.drop 8 t))
+isValidDatePrefix text =
+  T.length text >= 10
+    && T.index text 4 == '-'
+    && T.index text 7 == '-'
+    && T.all isDigit (T.take 4 text)
+    && T.all isDigit (T.take 2 (T.drop 5 text))
+    && T.all isDigit (T.take 2 (T.drop 8 text))
 
 extractDateFromFilename :: Text -> IO Text
 extractDateFromFilename filename =

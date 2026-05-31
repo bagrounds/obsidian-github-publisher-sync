@@ -41,7 +41,7 @@ formatDisplayDate date =
     _ -> date
 
 readMonth :: Text -> Text
-readMonth t =
-  case reads (T.unpack t) :: [(Int, String)] of
+readMonth text =
+  case reads (T.unpack text) :: [(Int, String)] of
     [(n, "")] | n >= 1 && n <= 12 -> monthNames !! (n - 1)
     _                              -> "Unknown"

@@ -55,7 +55,9 @@ at that call site, not a mechanical one-to-one mapping. Common cases:
 | `i` | `index` |
 | `n` | a name describing the value (`neighborPath`, `count`, ...) |
 
-Aeson `withObject "Name" $ \v -> ...` parameters count as violations: name them `object`.
+Aeson `withObject "Name" $ \v -> ...` parameters count as violations: name them `value`
+(or `object` where that name is free — note `Json.hs` already exports an `object` smart
+constructor, so modules importing it must use `value` to avoid shadowing under `-Werror`).
 Truly abstract mathematical parameters (for example a formula argument) may remain single
 letters, but text lines, paths, posts, platforms, and JSON values are domain values and
 must be named.
@@ -79,10 +81,22 @@ Steps 2 through 7 are tracked in GitHub issue #7088.
    `accumulated` in `BlogImage/TitleExtraction.hs`). Pure rename — the `-Werror` build is
    clean and all 2025 Haskell tests still pass. Zero whole-word `l` bindings remain in
    `haskell/src`.
-2. ⬜ **`l` in `haskell/app` and `haskell/test`**: extend the `l` → `line` rename to the
-   application entry points and test suites so zero `l` lambda parameters remain anywhere.
-3. ⬜ **`v` → `object`/`value`**: rename Aeson `withObject "..." $ \v ->` parameters and
-   other `v` bindings, heaviest in `StaticGiscus/GraphQL.hs` and `BlogComments/GraphQL.hs`.
+2. ✅ **`l` in `haskell/app` and `haskell/test`** (done): the audit found that no
+   single-letter `l` lambda parameter or binding remained in `haskell/app` or
+   `haskell/test` once step 1 finished, so this step was already satisfied. Confirmed and
+   recorded — zero whole-word `l` bindings remain anywhere in the Haskell sources, app, or
+   tests.
+3. ✅ **`v` → `value`** (done): renamed every single-letter `v` binding across `haskell/src`
+   and `haskell/test` to `value` — the Aeson `withObject "..." $ \v ->` parameters in
+   `BlogComments/GraphQL.hs`, `StaticGiscus/GraphQL.hs`, and `GcpAuth.hs`, the `FromValue`
+   instance arguments and combinator helpers in `Json.hs`, and the key/value-pair lambdas
+   in `BlogImage.hs`, `InternalLinking.hs`, `Platforms/Twitter.hs`, `Frontmatter.hs`, and
+   `BlogImage/Eligibility.hs`. The plan's first choice of `object` for the Aeson parameters
+   would have shadowed the existing `object` smart constructor exported from `Json.hs`
+   (a `-Wname-shadowing`/`-Werror` build error), so the equally honest `value` was used
+   throughout. `v` characters inside string literals (sample JSON keys, a shell `grep -v`
+   flag, a `?v=1` query parameter) are data, not bindings, and were left untouched. Pure
+   rename — the `-Werror` build is clean and all 2025 Haskell tests still pass.
 4. ⬜ **`c` → `character`/`comment`**: rename the `Char`-predicate lambdas and comment
    bindings.
 5. ⬜ **`s` → `string`/`set`/`state`** and **`p` → `path`/`post`/`platform`**: rename per

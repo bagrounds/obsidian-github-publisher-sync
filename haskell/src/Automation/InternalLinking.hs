@@ -129,7 +129,7 @@ updateFrontmatterFields filePath fields = do
                 in TIO.writeFile filePath
                      (T.intercalate "\n" (first : updatedFrontmatter <> [closingDash] <> bodyLines))
       _ -> do
-        let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+        let entries = T.intercalate "\n" $ fmap (\(k, value) -> k <> ": " <> renderYamlValue value) fields
         TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]

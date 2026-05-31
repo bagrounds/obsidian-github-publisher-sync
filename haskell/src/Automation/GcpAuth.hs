@@ -55,11 +55,11 @@ data ServiceAccountKey = ServiceAccountKey
   } deriving (Show, Eq)
 
 instance FromValue ServiceAccountKey where
-  fromValue = withObject "ServiceAccountKey" $ \v ->
+  fromValue = withObject "ServiceAccountKey" $ \value ->
     ServiceAccountKey
-      <$> v .: "project_id"
-      <*> v .: "client_email"
-      <*> v .: "private_key"
+      <$> value .: "project_id"
+      <*> value .: "client_email"
+      <*> value .: "private_key"
 
 data JwtClaims = JwtClaims
   { issuer     :: Text
@@ -76,11 +76,11 @@ data TokenResponse = TokenResponse
   } deriving (Show, Eq)
 
 instance FromValue TokenResponse where
-  fromValue = withObject "TokenResponse" $ \v ->
+  fromValue = withObject "TokenResponse" $ \value ->
     TokenResponse
-      <$> v .: "access_token"
-      <*> v .: "token_type"
-      <*> v .: "expires_in"
+      <$> value .: "access_token"
+      <*> value .: "token_type"
+      <*> value .: "expires_in"
 
 tokenEndpoint :: String
 tokenEndpoint = "https://oauth2.googleapis.com/token"

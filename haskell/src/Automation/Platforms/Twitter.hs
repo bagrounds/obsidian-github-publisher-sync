@@ -168,7 +168,7 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
         ]
       paramString =
         T.intercalate "&" $
-          fmap (\(k, v) -> percentEncode k <> "=" <> percentEncode v) (sort oauthParams)
+          fmap (\(k, value) -> percentEncode k <> "=" <> percentEncode value) (sort oauthParams)
       signatureBase =
         httpMethod <> "&" <> percentEncode baseUrl <> "&" <> percentEncode paramString
       signingKey =
@@ -177,7 +177,7 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
         TE.decodeUtf8 $ B64.encode $ hmacSHA1 signingKey (TE.encodeUtf8 signatureBase)
       allParams = sort $ ("oauth_signature", signature) : oauthParams
       headerParts =
-        fmap (\(k, v) -> percentEncode k <> "=\"" <> percentEncode v <> "\"") allParams
+        fmap (\(k, value) -> percentEncode k <> "=\"" <> percentEncode value <> "\"") allParams
   pure $ "OAuth " <> T.intercalate ", " headerParts
 
 post :: Manager -> Credentials -> Text -> IO (Either Error (Text, Text))

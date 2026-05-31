@@ -25,8 +25,8 @@ data GqlAuthor = GqlAuthor
   } deriving (Show, Eq)
 
 instance FromValue GqlAuthor where
-  fromValue = withObject "GqlAuthor" $ \v ->
-    GqlAuthor <$> v .: "login" <*> v .: "url"
+  fromValue = withObject "GqlAuthor" $ \value ->
+    GqlAuthor <$> value .: "login" <*> value .: "url"
 
 data GqlComment = GqlComment
   { bodyHtml  :: Text
@@ -35,19 +35,19 @@ data GqlComment = GqlComment
   } deriving (Show, Eq)
 
 instance FromValue GqlComment where
-  fromValue = withObject "GqlComment" $ \v ->
+  fromValue = withObject "GqlComment" $ \value ->
     GqlComment
-      <$> v .: "bodyHTML"
-      <*> v .:? "author"
-      <*> v .: "createdAt"
+      <$> value .: "bodyHTML"
+      <*> value .:? "author"
+      <*> value .: "createdAt"
 
 newtype GqlCommentsNode = GqlCommentsNode
   { nodes :: [GqlComment]
   } deriving (Show, Eq)
 
 instance FromValue GqlCommentsNode where
-  fromValue = withObject "GqlCommentsNode" $ \v ->
-    GqlCommentsNode <$> v .: "nodes"
+  fromValue = withObject "GqlCommentsNode" $ \value ->
+    GqlCommentsNode <$> value .: "nodes"
 
 data GqlDiscussion = GqlDiscussion
   { title    :: Text
@@ -55,10 +55,10 @@ data GqlDiscussion = GqlDiscussion
   } deriving (Show, Eq)
 
 instance FromValue GqlDiscussion where
-  fromValue = withObject "GqlDiscussion" $ \v ->
+  fromValue = withObject "GqlDiscussion" $ \value ->
     GqlDiscussion
-      <$> v .: "title"
-      <*> v .: "comments"
+      <$> value .: "title"
+      <*> value .: "comments"
 
 data GqlPageInfo = GqlPageInfo
   { hasNextPage :: Bool
@@ -66,8 +66,8 @@ data GqlPageInfo = GqlPageInfo
   } deriving (Show, Eq)
 
 instance FromValue GqlPageInfo where
-  fromValue = withObject "GqlPageInfo" $ \v ->
-    GqlPageInfo <$> v .: "hasNextPage" <*> v .:? "endCursor"
+  fromValue = withObject "GqlPageInfo" $ \value ->
+    GqlPageInfo <$> value .: "hasNextPage" <*> value .:? "endCursor"
 
 data GqlDiscussionsPage = GqlDiscussionsPage
   { discussionNodes :: [GqlDiscussion]
@@ -75,32 +75,32 @@ data GqlDiscussionsPage = GqlDiscussionsPage
   } deriving (Show, Eq)
 
 instance FromValue GqlDiscussionsPage where
-  fromValue = withObject "GqlDiscussionsPage" $ \v ->
-    GqlDiscussionsPage <$> v .: "nodes" <*> v .: "pageInfo"
+  fromValue = withObject "GqlDiscussionsPage" $ \value ->
+    GqlDiscussionsPage <$> value .: "nodes" <*> value .: "pageInfo"
 
 newtype GqlRepository = GqlRepository
   { discussions :: Maybe GqlDiscussionsPage
   } deriving (Show, Eq)
 
 instance FromValue GqlRepository where
-  fromValue = withObject "GqlRepository" $ \v ->
-    GqlRepository <$> v .:? "discussions"
+  fromValue = withObject "GqlRepository" $ \value ->
+    GqlRepository <$> value .:? "discussions"
 
 newtype GqlData = GqlData
   { repository :: Maybe GqlRepository
   } deriving (Show, Eq)
 
 instance FromValue GqlData where
-  fromValue = withObject "GqlData" $ \v ->
-    GqlData <$> v .:? "repository"
+  fromValue = withObject "GqlData" $ \value ->
+    GqlData <$> value .:? "repository"
 
 newtype GqlError = GqlError
   { message :: Text
   } deriving (Show, Eq)
 
 instance FromValue GqlError where
-  fromValue = withObject "GqlError" $ \v ->
-    GqlError <$> v .: "message"
+  fromValue = withObject "GqlError" $ \value ->
+    GqlError <$> value .: "message"
 
 data GqlResponse = GqlResponse
   { responseData :: Maybe GqlData
@@ -108,7 +108,7 @@ data GqlResponse = GqlResponse
   } deriving (Show, Eq)
 
 instance FromValue GqlResponse where
-  fromValue = withObject "GqlResponse" $ \v ->
+  fromValue = withObject "GqlResponse" $ \value ->
     GqlResponse
-      <$> v .:? "data"
-      <*> v .:? "errors"
+      <$> value .:? "data"
+      <*> value .:? "errors"

@@ -64,27 +64,27 @@ instance FromValue Value where
 
 instance FromValue Text where
   fromValue (String t) = Right t
-  fromValue v = Left $ "Expected string, got: " <> take 50 (show v)
+  fromValue value = Left $ "Expected string, got: " <> take 50 (show value)
 
 instance FromValue Int where
   fromValue (Number d) = Right (round d)
-  fromValue v = Left $ "Expected number, got: " <> take 50 (show v)
+  fromValue value = Left $ "Expected number, got: " <> take 50 (show value)
 
 instance FromValue Double where
   fromValue (Number d) = Right d
-  fromValue v = Left $ "Expected number, got: " <> take 50 (show v)
+  fromValue value = Left $ "Expected number, got: " <> take 50 (show value)
 
 instance FromValue Bool where
   fromValue (Bool b) = Right b
-  fromValue v = Left $ "Expected bool, got: " <> take 50 (show v)
+  fromValue value = Left $ "Expected bool, got: " <> take 50 (show value)
 
 instance FromValue a => FromValue [a] where
   fromValue (Array xs) = traverse fromValue xs
-  fromValue v = Left $ "Expected array, got: " <> take 50 (show v)
+  fromValue value = Left $ "Expected array, got: " <> take 50 (show value)
 
 instance FromValue a => FromValue (Maybe a) where
   fromValue Null = Right Nothing
-  fromValue v = Just <$> fromValue v
+  fromValue value = Just <$> fromValue value
 
 instance ToValue Value where
   toValue = id
@@ -118,22 +118,22 @@ infixr 8 .=
 (.:) :: FromValue a => [(Text, Value)] -> Text -> Either String a
 (.:) obj key = case lookup key obj of
   Nothing -> Left $ "Key not found: " <> T.unpack key
-  Just v  -> fromValue v
+  Just value  -> fromValue value
 infixl 5 .:
 
 (.:?) :: FromValue a => [(Text, Value)] -> Text -> Either String (Maybe a)
 (.:?) obj key = case lookup key obj of
   Nothing   -> Right Nothing
   Just Null -> Right Nothing
-  Just v    -> Just <$> fromValue v
+  Just value    -> Just <$> fromValue value
 infixl 5 .:?
 
 withObject :: String -> ([(Text, Value)] -> Either String a) -> Value -> Either String a
 withObject _ f (Object obj) = f obj
-withObject label _ v = Left $ "Expected object at " <> label <> ", got: " <> take 50 (show v)
+withObject label _ value = Left $ "Expected object at " <> label <> ", got: " <> take 50 (show value)
 
 parseMaybe :: (Value -> Either String a) -> Value -> Maybe a
-parseMaybe f v = case f v of
+parseMaybe f value = case f value of
   Right a -> Just a
   Left _  -> Nothing
 
@@ -156,7 +156,7 @@ encodeText = \case
   Array xs -> "[" <> T.intercalate "," (fmap encodeText xs) <> "]"
   Object kvs -> "{" <> T.intercalate "," (fmap encodePair kvs) <> "}"
   where
-    encodePair (k, v) = encodeString k <> ":" <> encodeText v
+    encodePair (k, value) = encodeString k <> ":" <> encodeText value
 
 encodeString :: Text -> Text
 encodeString t = "\"" <> T.concatMap escapeChar t <> "\""
@@ -196,7 +196,7 @@ eitherDecodeStrict bs = do
 parseJsonText :: Text -> Either String Value
 parseJsonText txt = case parse (jsonValue <* eof) "json" txt of
   Left failure -> Left $ show failure
-  Right v  -> Right v
+  Right value  -> Right value
 
 jsonValue :: Parser Value
 jsonValue = spaces *> jsonValueInner <* spaces

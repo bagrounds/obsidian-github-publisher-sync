@@ -57,7 +57,7 @@ shouldRegenerateImage :: Text -> Bool
 shouldRegenerateImage content =
   let (frontmatter, _) = parseFrontmatter content
   in case Map.lookup "regenerate_image" frontmatter of
-    Just v  -> T.strip (T.toLower v) `elem` ["true", "yes"]
+    Just value  -> T.strip (T.toLower value) `elem` ["true", "yes"]
     Nothing -> False
 
 shouldHaveImage :: Text -> Bool

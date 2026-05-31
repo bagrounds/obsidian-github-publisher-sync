@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - "2026-05-31 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣"
-title: "2026-05-31 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣"
-URL: https://bagrounds.org/ai-blog/2026-05-31-1-single-letter-cleanup-purescript
+  - "2026-05-30 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣"
+title: "2026-05-30 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣"
+URL: https://bagrounds.org/ai-blog/2026-05-30-6-single-letter-cleanup-purescript
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
-# 2026-05-31 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣
+# 2026-05-30 | 🔡 Closing Out Single-Letter Cleanup In PureScript 🟣
 
 ## 🎙️ What This Pull Request Does
 

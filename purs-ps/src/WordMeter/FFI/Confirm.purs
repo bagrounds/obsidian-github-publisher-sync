@@ -30,10 +30,10 @@ type ConfirmOutcome =
   , accepted :: Boolean
   }
 
-foreign import askForConfirmationImpl :: String -> Effect ConfirmOutcome
+foreign import runWindowConfirm :: String -> Effect ConfirmOutcome
 
 askForConfirmation :: String -> Effect (Either ConfirmError Boolean)
-askForConfirmation prompt = interpretConfirm <$> askForConfirmationImpl prompt
+askForConfirmation prompt = interpretConfirm <$> runWindowConfirm prompt
 
 interpretConfirm :: ConfirmOutcome -> Either ConfirmError Boolean
 interpretConfirm outcome = case outcome.tag of

@@ -65,7 +65,7 @@ export const onDeviceLanguagePackApiAvailable = () => {
   return supportsOnDeviceLanguagePackApi(recognitionConstructor())
 }
 
-export const ensureOnDeviceLanguagePackImpl =
+export const runOnDeviceLanguagePackPreflight =
   (locale) => (onProgress) => (onAvailable) => (onUnavailable) => () => {
     const finishUnavailable = (kind, detail) =>
       onUnavailable(kind)(detail || "")()

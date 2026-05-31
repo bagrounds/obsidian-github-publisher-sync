@@ -49,12 +49,12 @@ extractHeadingEmojis heading =
   in T.strip emojiChars
 
 isUpdatesSectionHeading :: Text -> Bool
-isUpdatesSectionHeading l = T.stripEnd l == updatesSectionHeader
+isUpdatesSectionHeading line = T.stripEnd line == updatesSectionHeader
 
 extractTrailingEmojis :: Text -> Text
 extractTrailingEmojis noteContent =
   let contentLines = T.lines noteContent
-      h2Lines = filter (\l -> T.isPrefixOf "## " l && not (isUpdatesSectionHeading l)) contentLines
+      h2Lines = filter (\line -> T.isPrefixOf "## " line && not (isUpdatesSectionHeading line)) contentLines
       extracted = fmap extractHeadingEmojis h2Lines
       deduped = nub $ filter (not . T.null) extracted
   in T.concat deduped
@@ -118,7 +118,7 @@ reflectionNeedsTitle content date =
       in unquoted == date
 
 findTitleLine :: [Text] -> Maybe Text
-findTitleLine = foldr (\l found -> if T.isPrefixOf "title:" l then Just l else found) Nothing
+findTitleLine = foldr (\line found -> if T.isPrefixOf "title:" line then Just line else found) Nothing
 
 buildReflectionTitlePrompt :: [Text] -> [Text] -> (Text, Text)
 buildReflectionTitlePrompt linkedTitles recentTitles =
@@ -170,7 +170,7 @@ selectTitleLine t =
   let nonEmptyLines = filter (not . T.null . T.strip) (T.lines t)
       emojiLine = find (startsWithEmoji . T.stripStart) nonEmptyLines
   in case emojiLine of
-    Just l -> T.strip l
+    Just line -> T.strip line
     Nothing -> case nonEmptyLines of
       (first:_) -> stripInlinePreamble (T.strip first)
       [] -> ""
@@ -207,7 +207,7 @@ updateTitleFrontmatter content fullTitle =
   in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
-        case break (\l -> T.strip l == "---") rest of
+        case break (\line -> T.strip line == "---") rest of
           (frontmatterLines, closingDash : body) ->
             let updatedFrontmatter = updateFrontmatterFields frontmatterLines fullTitle
             in T.unlines (["---"] <> updatedFrontmatter <> [closingDash] <> body)
@@ -219,17 +219,17 @@ updateFrontmatterFields frontmatterLines fullTitle =
   let quoted = "\"" <> T.replace "\\" "\\\\" (T.replace "\"" "\\\"" fullTitle) <> "\""
       hasTitle = any (T.isPrefixOf "title:") frontmatterLines
       hasAliases = any (T.isPrefixOf "aliases:") frontmatterLines
-      updateLine l
-        | T.isPrefixOf "title:" l = "title: " <> quoted
-        | otherwise = l
+      updateLine line
+        | T.isPrefixOf "title:" line = "title: " <> quoted
+        | otherwise = line
       withTitle = if hasTitle
         then fmap updateLine frontmatterLines
         else frontmatterLines <> ["title: " <> quoted]
       updateAliases [] = []
-      updateAliases (l:rest)
-        | T.isPrefixOf "aliases:" l =
-          l : ("  - " <> quoted) : dropWhile (\r -> T.isPrefixOf "  -" r || T.isPrefixOf "  - " r) rest
-        | otherwise = l : updateAliases rest
+      updateAliases (line:rest)
+        | T.isPrefixOf "aliases:" line =
+          line : ("  - " <> quoted) : dropWhile (\r -> T.isPrefixOf "  -" r || T.isPrefixOf "  - " r) rest
+        | otherwise = line : updateAliases rest
   in if hasAliases
     then updateAliases withTitle
     else withTitle <> ["aliases:", "  - " <> quoted]
@@ -237,10 +237,10 @@ updateFrontmatterFields frontmatterLines fullTitle =
 updateH1Heading :: Text -> Text -> Text -> Text
 updateH1Heading content date fullTitle =
   let contentLines = T.lines content
-      updatedLines = fmap (\l ->
-        if T.isPrefixOf "# " l && T.isInfixOf date l
+      updatedLines = fmap (\line ->
+        if T.isPrefixOf "# " line && T.isInfixOf date line
         then "# " <> fullTitle
-        else l) contentLines
+        else line) contentLines
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig

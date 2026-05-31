@@ -83,7 +83,7 @@ extractBody content =
   in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
-          case break (\l -> T.strip l == "---") rest of
+          case break (\line -> T.strip line == "---") rest of
             (_, [])          -> content
             (_, _ : bodyLs)  -> T.intercalate "\n" bodyLs
     _ -> content
@@ -122,7 +122,7 @@ updateFrontmatterFields filePath fields = do
     case contentLines of
       (first : rest)
         | T.strip first == "---" ->
-            case break (\l -> T.strip l == "---") rest of
+            case break (\line -> T.strip line == "---") rest of
               (_, []) -> pure ()
               (frontmatterLines, closingDash : bodyLines) ->
                 let updatedFrontmatter = foldl' upsertField frontmatterLines fields
@@ -145,19 +145,19 @@ upsertField contentLines (key, yamlValue) =
 
 replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
 replaceWithContinuation _ _ [] = []
-replaceWithContinuation keyPrefix newLine (l : rest)
-  | keyPrefix `T.isPrefixOf` T.stripStart l =
+replaceWithContinuation keyPrefix newLine (line : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart line =
       newLine : dropContinuationLines rest
-  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+  | otherwise = line : replaceWithContinuation keyPrefix newLine rest
 
 dropContinuationLines :: [Text] -> [Text]
 dropContinuationLines [] = []
-dropContinuationLines (l : rest)
-  | isContinuationLine l = dropContinuationLines rest
-  | otherwise = l : rest
+dropContinuationLines (line : rest)
+  | isContinuationLine line = dropContinuationLines rest
+  | otherwise = line : rest
 
 isContinuationLine :: Text -> Bool
-isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
+isContinuationLine line = not (T.null line) && T.isPrefixOf " " line
 
 recordLinkAnalysis :: FilePath -> Gemini.Model -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =

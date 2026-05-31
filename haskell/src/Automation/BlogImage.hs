@@ -119,7 +119,7 @@ updateFrontmatterFields content fields =
   in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
-          case break (\l -> T.strip l == "---") rest of
+          case break (\line -> T.strip line == "---") rest of
             (_, []) -> content
             (frontmatterLines, _ : body) ->
               let updatedFrontmatter = foldl' applyField frontmatterLines fields
@@ -132,25 +132,25 @@ applyField :: [Text] -> (Text, YamlValue) -> [Text]
 applyField frontmatterLines (key, value) =
   let keyPrefix = key <> ":"
       newLine = key <> ": " <> renderYamlValue value
-      keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) frontmatterLines
+      keyExists = any (\line -> keyPrefix `T.isPrefixOf` T.stripStart line) frontmatterLines
       replaced = replaceWithContinuation keyPrefix newLine frontmatterLines
   in if keyExists then replaced else frontmatterLines <> [newLine]
 
 replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
 replaceWithContinuation _ _ [] = []
-replaceWithContinuation keyPrefix newLine (l : rest)
-  | keyPrefix `T.isPrefixOf` T.stripStart l =
+replaceWithContinuation keyPrefix newLine (line : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart line =
       newLine : dropContinuationLines rest
-  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+  | otherwise = line : replaceWithContinuation keyPrefix newLine rest
 
 dropContinuationLines :: [Text] -> [Text]
 dropContinuationLines [] = []
-dropContinuationLines (l : rest)
-  | isContinuationLine l = dropContinuationLines rest
-  | otherwise = l : rest
+dropContinuationLines (line : rest)
+  | isContinuationLine line = dropContinuationLines rest
+  | otherwise = line : rest
 
 isContinuationLine :: Text -> Bool
-isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
+isContinuationLine line = not (T.null line) && T.isPrefixOf " " line
 
 extractFrontmatterValue :: Text -> Text -> Maybe Text
 extractFrontmatterValue content key =

@@ -290,7 +290,7 @@ bfsLoop config state =
                 Nothing    -> []
               newFilled = Set.union (filled state') $
                 Set.fromList (fmap platform newResults)
-              neighbors = filter (\l -> not (Set.member l (visited state')))
+              neighbors = filter (\linkedPath -> not (Set.member linkedPath (visited state')))
                             (fmap unRelativePath (noteLinkedNotePaths note))
               newVisited = foldl (flip Set.insert) (visited state') neighbors
               newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors

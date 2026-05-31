@@ -22,15 +22,15 @@ extractTitle content =
 
 extractTitleFromFrontmatter :: [Text] -> Bool -> Maybe Text
 extractTitleFromFrontmatter [] _ = Nothing
-extractTitleFromFrontmatter (l : rest) inFm
-  | T.strip l == "---" = if inFm then Nothing else extractTitleFromFrontmatter rest True
-  | inFm = case T.stripPrefix "title:" l of
+extractTitleFromFrontmatter (line : rest) inFm
+  | T.strip line == "---" = if inFm then Nothing else extractTitleFromFrontmatter rest True
+  | inFm = case T.stripPrefix "title:" line of
       Just val -> Just (stripQuotes (T.strip val))
       Nothing  -> extractTitleFromFrontmatter rest True
   | otherwise = Nothing
 
 findH1Title :: [Text] -> Maybe Text
-findH1Title = foldr (\l acc -> if "# " `T.isPrefixOf` l then Just (T.strip (T.drop 2 l)) else acc) Nothing
+findH1Title = foldr (\line accumulated -> if "# " `T.isPrefixOf` line then Just (T.strip (T.drop 2 line)) else accumulated) Nothing
 
 stripQuotes :: Text -> Text
 stripQuotes t =

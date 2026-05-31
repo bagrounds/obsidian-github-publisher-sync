@@ -32,7 +32,7 @@ parseFrontmatter content =
   in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
-          case break (\l -> T.strip l == "---") rest of
+          case break (\line -> T.strip line == "---") rest of
             (_, [])              -> (Map.empty, content)
             (frontmatterLines, _ : body) ->
               ( Map.fromList $ concatMap parseLine frontmatterLines

@@ -52,10 +52,10 @@ fictionModelPool =
 
 selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model
 selectFictionModelChain day pool =
-  let modelsList = NE.toList pool
-      count = length modelsList
+  let models = NE.toList pool
+      count = length models
       offset = fromInteger (toModifiedJulianDay day `mod` toInteger count)
-      rotated = drop offset modelsList <> take offset modelsList
+      rotated = drop offset models <> take offset models
   in case rotated of
     (m : ms) -> m :| ms
     []       -> pool

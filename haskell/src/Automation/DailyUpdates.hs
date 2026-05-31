@@ -101,8 +101,8 @@ detailFromText text
   where
     parseInternalLinks source =
       let stripped = T.drop (T.length "🔗 added ") source
-          numberText = T.takeWhile (/= ' ') stripped
-      in InternalLinksAdded <$> readMaybe (T.unpack numberText)
+          digits = T.takeWhile (/= ' ') stripped
+      in InternalLinksAdded <$> readMaybe (T.unpack digits)
 
 emojiToColumnRepresentative :: Text -> Maybe UpdateDetail
 emojiToColumnRepresentative "🖼️" = Just ImageAdded
@@ -113,7 +113,7 @@ emojiToColumnRepresentative "🐦"  = Just (PostedTo Twitter)
 emojiToColumnRepresentative _     = Nothing
 
 parseCellToDetail :: UpdateDetail -> Text -> Maybe UpdateDetail
-parseCellToDetail (InternalLinksAdded _) numberText = InternalLinksAdded <$> readMaybe (T.unpack numberText)
+parseCellToDetail (InternalLinksAdded _) digits = InternalLinksAdded <$> readMaybe (T.unpack digits)
 parseCellToDetail column cell
   | cell == cellText column = Just column
   | cell == "✓"             = Just column

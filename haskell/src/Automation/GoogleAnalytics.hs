@@ -290,16 +290,16 @@ extractRows value =
 extractMetricValues :: Json.Value -> Either Text [Text]
 extractMetricValues value =
   mapLeft T.pack $ Json.withObject "row" (\obj -> do
-    metricsArray <- obj Json..: "metricValues"
-    case metricsArray of
+    metrics <- obj Json..: "metricValues"
+    case metrics of
       Json.Array values -> traverse extractValue values
       _ -> Left "metricValues is not an array") value
 
 extractDimensionValues :: Json.Value -> Either Text [Text]
 extractDimensionValues value =
   mapLeft T.pack $ Json.withObject "row" (\obj -> do
-    dimsArray <- obj Json..: "dimensionValues"
-    case dimsArray of
+    dimensions <- obj Json..: "dimensionValues"
+    case dimensions of
       Json.Array values -> traverse extractValue values
       _ -> Left "dimensionValues is not an array") value
 

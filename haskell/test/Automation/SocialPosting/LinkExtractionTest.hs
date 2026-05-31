@@ -58,7 +58,7 @@ parseWikiLinksTests = testGroup "parseWikiLinks"
         (parseWikiLinks "[[a]][[b]]")
 
   , testProperty "never crashes on arbitrary input" $
-      \(QC.ASCIIString s) -> seq (parseWikiLinks s) True
+      \(QC.ASCIIString string) -> seq (parseWikiLinks string) True
   ]
 
 -- normalizeFilePath
@@ -86,8 +86,8 @@ normalizeFilePathTests = testGroup "normalizeFilePath"
         (normalizeFilePath "reflections/2025/../topics/./bar.md")
 
   , testProperty "normalizing a normalized path is idempotent" $
-      \(QC.ASCIIString s) ->
-        let cleaned = filter (\character -> character /= '.' && character /= ' ' && character /= '\0') s
+      \(QC.ASCIIString string) ->
+        let cleaned = filter (\character -> character /= '.' && character /= ' ' && character /= '\0') string
             normalized = normalizeFilePath cleaned
         in normalizeFilePath normalized == normalized
   ]

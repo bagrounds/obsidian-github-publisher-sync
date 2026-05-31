@@ -108,9 +108,9 @@ tests = testGroup "BlogImage.Markdown"
       [ testProperty "buildImagePrompt never exceeds max length" $
           \content -> T.length (buildImagePrompt (T.pack content)) <= 2048
       , testProperty "insertImageEmbed is idempotent on content without H1" $
-          \s -> let t = T.pack s
-                    noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
-                in noH1 ==> (insertImageEmbed t "test.jpg" == t)
+          \string -> let t = T.pack string
+                         noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
+                     in noH1 ==> (insertImageEmbed t "test.jpg" == t)
       ]
   ]
   where

@@ -156,8 +156,8 @@ replaceAllRegex pat = replaceMatches
     replaceMatches txt
       | T.null txt = txt
       | otherwise  =
-          let s = T.unpack txt
-          in case (s =~ pat :: (String, String, String)) of
+          let string = T.unpack txt
+          in case (string =~ pat :: (String, String, String)) of
             (_, "", _)      -> txt
             (before, match, after) ->
               T.pack before

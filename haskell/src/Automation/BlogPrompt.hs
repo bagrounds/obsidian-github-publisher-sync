@@ -128,14 +128,14 @@ sanitizeTitle series raw =
         (T.stripSuffix (icon series) (T.stripEnd t))
 
     stripDatePipe t =
-      let s = T.stripStart t
-      in case parseDate (T.take 10 s) of
+      let stripped = T.stripStart t
+      in case parseDate (T.take 10 stripped) of
         Just _ ->
-          let afterDate = T.drop 10 s
+          let afterDate = T.drop 10 stripped
               tryStrip = T.stripPrefix " | " afterDate
                      >>= Just . T.stripStart
           in fromMaybe (T.stripStart afterDate) tryStrip
-        Nothing -> s
+        Nothing -> stripped
 
 assembleFrontmatter :: BlogSeriesConfig -> Day -> Text -> Slug -> Text
 assembleFrontmatter series day title slug =

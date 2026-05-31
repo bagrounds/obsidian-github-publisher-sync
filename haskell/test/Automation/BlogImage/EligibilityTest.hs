@@ -119,7 +119,7 @@ tests = testGroup "BlogImage.Eligibility"
           forAll (fmap T.pack $ listOf1 $ elements (['a'..'z'] <> ['0'..'9'] <> [' ', '\n'])) $
             \t -> not (hasEmbeddedImage t)
       , testProperty "parseDateFromFilename returns Nothing for text shorter than 10 chars" $
-          \s -> let t = T.pack (take 9 s)
+          \string -> let t = T.pack (take 9 string)
                 in (T.length t < 10) ==> isNothing (parseDateFromFilename t)
       ]
   ]

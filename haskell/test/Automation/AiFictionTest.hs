@@ -237,8 +237,8 @@ applyFictionTests = testGroup "applyFiction"
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "parseFictionResponse never contains double quotes" $
-      \(QC.ASCIIString s) ->
-        not (T.any (== '"') (parseFictionResponse (T.pack s)))
+      \(QC.ASCIIString string) ->
+        not (T.any (== '"') (parseFictionResponse (T.pack string)))
   , testProperty "applyFiction always includes fiction section header" $
       \(QC.ASCIIString body) (QC.ASCIIString fiction) ->
         let content = T.pack body

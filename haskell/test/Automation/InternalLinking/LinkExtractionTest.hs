@@ -130,10 +130,10 @@ propertyTests = testGroup "properties"
           noSlashes = filter (notElem '/') nonEmpty
       in not (null noSlashes) QC.==>
         splitSlash (joinSlash noSlashes) == noSlashes
-  , testProperty "normalizeFilePath is idempotent" $ \s ->
-      let path = filter (\character -> character /= '\0' && character /= '\n') (s :: String)
+  , testProperty "normalizeFilePath is idempotent" $ \string ->
+      let path = filter (\character -> character /= '\0' && character /= '\n') (string :: String)
           normalized = normalizeFilePath path
       in normalizeFilePath normalized == normalized
-  , testProperty "hasSuffix with full string is always true" $ \s ->
-      hasSuffix (s :: String) s
+  , testProperty "hasSuffix with full string is always true" $ \string ->
+      hasSuffix (string :: String) string
   ]

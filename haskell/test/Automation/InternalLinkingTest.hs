@@ -522,21 +522,21 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "maskProtectedRegions preserves length" $ \s ->
-      let txt = T.pack (s :: String)
+  [ testProperty "maskProtectedRegions preserves length" $ \string ->
+      let txt = T.pack (string :: String)
           masked = maskProtectedRegions txt
       in T.length masked == T.length txt
-  , testProperty "stripEmojis never increases length beyond original" $ \s ->
-      let txt = T.pack (s :: String)
+  , testProperty "stripEmojis never increases length beyond original" $ \string ->
+      let txt = T.pack (string :: String)
       in T.length (stripEmojis txt) <= T.length txt
-  , testProperty "formatContentEntryWikilink contains entry title" $ \s ->
-      let title = T.pack (s :: String)
+  , testProperty "formatContentEntryWikilink contains entry title" $ \string ->
+      let title = T.pack (string :: String)
       in not (T.null (T.strip title)) QC.==>
         let entry = ContentEntry (testRelativePath "books/test.md") (testTitle title) (testTitle title)
             wl = formatContentEntryWikilink entry
         in T.isInfixOf title wl
-  , testProperty "applyReplacements with all-false validations returns original" $ \s ->
-      let content = T.pack (s :: String)
+  , testProperty "applyReplacements with all-false validations returns original" $ \string ->
+      let content = T.pack (string :: String)
           candidates = [LinkCandidate sampleEntry "test" 0 ""]
           result = applyReplacements content candidates [False]
       in result == content

@@ -36,9 +36,9 @@ insertImageEmbed content imageName =
 
 removeImageEmbed :: Text -> (Text, Maybe Text)
 removeImageEmbed content =
-  let s = T.unpack content
+  let string = T.unpack content
       pat = "^!\\[\\[(attachments/)?([^]]+\\.(jpg|jpeg|png|gif|webp))\\]\\]" :: String
-      matches = s =~ pat :: [[String]]
+      matches = string =~ pat :: [[String]]
   in case matches of
     (fullMatch : _) ->
       let matchText = T.pack (case fullMatch of { (x:_) -> x; [] -> "" })
@@ -89,20 +89,20 @@ removeHeadings = T.unlines . fmap stripHeading . T.lines
 
 removeObsidianEmbeds :: Text -> Text
 removeObsidianEmbeds t =
-  let s = T.unpack t
-      result = replaceAll s "!\\[\\[[^]]*\\]\\]" ""
+  let string = T.unpack t
+      result = replaceAll string "!\\[\\[[^]]*\\]\\]" ""
   in T.pack result
 
 removeMarkdownImages :: Text -> Text
 removeMarkdownImages t =
-  let s = T.unpack t
-      result = replaceAll s "!\\[[^]]*\\]\\([^)]*\\)" ""
+  let string = T.unpack t
+      result = replaceAll string "!\\[[^]]*\\]\\([^)]*\\)" ""
   in T.pack result
 
 removeMarkdownLinks :: Text -> Text
 removeMarkdownLinks t =
-  let s = T.unpack t
-      result = replaceAllWith s "\\[([^]]*)\\]\\([^)]*\\)" (\case
+  let string = T.unpack t
+      result = replaceAllWith string "\\[([^]]*)\\]\\([^)]*\\)" (\case
         (_full : captured : _) -> captured
         [full]                 -> full
         _                      -> "")
@@ -120,8 +120,8 @@ removeCodeBlocks content = T.intercalate "\n" (processLines (T.lines content) Fa
 
 removeInlineCode :: Text -> Text
 removeInlineCode t =
-  let s = T.unpack t
-      result = replaceAll s "`[^`]*`" ""
+  let string = T.unpack t
+      result = replaceAll string "`[^`]*`" ""
   in T.pack result
 
 removeEmphasis :: Text -> Text
@@ -166,8 +166,8 @@ removeBlockquotes = T.unlines . fmap stripQuote . T.lines
 
 removeTableCells :: Text -> Text
 removeTableCells t =
-  let s = T.unpack t
-      result = replaceAll s "\\|[^|\\n]*\\|" ""
+  let string = T.unpack t
+      result = replaceAll string "\\|[^|\\n]*\\|" ""
   in T.pack result
 
 removeTableSeparators :: Text -> Text

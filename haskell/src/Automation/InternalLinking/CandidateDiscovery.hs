@@ -183,8 +183,8 @@ findAllMatches pat = findMatch 0
   where
     findMatch :: Int -> String -> [(Int, Int)]
     findMatch _offset [] = []
-    findMatch offset s =
-      case (s =~ pat :: (String, String, String)) of
+    findMatch offset string =
+      case (string =~ pat :: (String, String, String)) of
         (_, "", _)      -> []
         (before, match, after) ->
           let pos         = offset + length before

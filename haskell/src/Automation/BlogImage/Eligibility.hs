@@ -48,9 +48,9 @@ excludedFiles = ["index.md", "AGENTS.md", "IDEAS.md"]
 
 hasEmbeddedImage :: Text -> Bool
 hasEmbeddedImage content =
-  let s = T.unpack content
-      obsidianMatch = s =~ ("!\\[\\[([^]]*/)?" <> "[^]]+\\.(jpg|jpeg|png|gif|webp)\\]\\]" :: String) :: Bool
-      markdownMatch = s =~ ("!\\[[^]]*\\]\\([^)]+\\.(jpg|jpeg|png|gif|webp)\\)" :: String) :: Bool
+  let string = T.unpack content
+      obsidianMatch = string =~ ("!\\[\\[([^]]*/)?" <> "[^]]+\\.(jpg|jpeg|png|gif|webp)\\]\\]" :: String) :: Bool
+      markdownMatch = string =~ ("!\\[[^]]*\\]\\([^)]+\\.(jpg|jpeg|png|gif|webp)\\)" :: String) :: Bool
   in obsidianMatch || markdownMatch
 
 shouldRegenerateImage :: Text -> Bool

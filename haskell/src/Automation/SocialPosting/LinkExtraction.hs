@@ -33,7 +33,7 @@ mdLinks :: Text -> FilePath -> FilePath -> [Text]
 mdLinks body noteDirectory contentDirectory = parseLinks (T.unpack body)
   where
     parseLinks :: String -> [Text]
-    parseLinks s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
+    parseLinks string = case (string =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
       (_, _, after, [target])
         | not ("http://" `isPrefixOf` target) && not ("https://" `isPrefixOf` target) ->
             let absTarget  = normalizeFilePath (noteDirectory </> target)

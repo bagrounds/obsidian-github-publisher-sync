@@ -126,28 +126,28 @@ tests = testGroup "Frontmatter"
       ]
   , testGroup "quoteYamlValue properties"
       [ testProperty "output always starts and ends with double quotes" $
-          \(QC.ASCIIString s) ->
-            let t = T.pack s
+          \(QC.ASCIIString string) ->
+            let t = T.pack string
                 result = quoteYamlValue t
             in T.head result == '"' && T.last result == '"'
       , testProperty "output never contains unescaped newlines" $
-          \(QC.ASCIIString s) ->
-            let result = quoteYamlValue (T.pack s)
+          \(QC.ASCIIString string) ->
+            let result = quoteYamlValue (T.pack string)
                 inner = T.drop 1 (T.dropEnd 1 result)
             in not (T.isInfixOf "\n" inner)
       , testProperty "output never contains unescaped carriage returns" $
-          \(QC.ASCIIString s) ->
-            let result = quoteYamlValue (T.pack s)
+          \(QC.ASCIIString string) ->
+            let result = quoteYamlValue (T.pack string)
                 inner = T.drop 1 (T.dropEnd 1 result)
             in not (T.isInfixOf "\r" inner)
       , testProperty "output never contains unescaped tabs" $
-          \(QC.ASCIIString s) ->
-            let result = quoteYamlValue (T.pack s)
+          \(QC.ASCIIString string) ->
+            let result = quoteYamlValue (T.pack string)
                 inner = T.drop 1 (T.dropEnd 1 result)
             in not (T.isInfixOf "\t" inner)
       , testProperty "output never contains null bytes" $
-          \(QC.ASCIIString s) ->
-            let result = quoteYamlValue (T.pack s)
+          \(QC.ASCIIString string) ->
+            let result = quoteYamlValue (T.pack string)
             in not (T.isInfixOf "\0" result)
       ]
   , readReflectionTests

@@ -44,13 +44,13 @@ tests = testGroup "BlogSeriesConfig"
   [ testCase "lookupSeriesIn finds chickie-loo" $
       assertBool "should find chickie-loo" $
         case lookupSeriesIn testSeriesMap "chickie-loo" of
-          Right s -> identifier s == "chickie-loo"
+          Right series -> identifier series == "chickie-loo"
           Left _  -> False
 
   , testCase "lookupSeriesIn finds auto-blog-zero" $
       assertBool "should find auto-blog-zero" $
         case lookupSeriesIn testSeriesMap "auto-blog-zero" of
-          Right s -> identifier s == "auto-blog-zero"
+          Right series -> identifier series == "auto-blog-zero"
           Left _  -> False
 
   , testCase "lookupSeriesIn returns Left for unknown" $
@@ -68,6 +68,6 @@ tests = testGroup "BlogSeriesConfig"
 
   , testCase "chickie-loo has correct icon" $
       case lookupSeriesIn testSeriesMap "chickie-loo" of
-        Right s -> icon s @?= "🐔"
+        Right series -> icon series @?= "🐔"
         Left _  -> assertBool "should find series" False
   ]

@@ -227,9 +227,9 @@ jsonNumber = do
     pure (d : ds)
   expPart <- option "" $ do
     e <- oneOf "eE"
-    s <- option "" (string "+" <|> string "-")
+    exponentSign <- option "" (string "+" <|> string "-")
     ds <- many1 digit
-    pure (e : s <> ds)
+    pure (e : exponentSign <> ds)
   let numStr = sign <> intPart <> fracPart <> expPart
   case (reads numStr :: [(Double, String)]) of
     [(d, "")] -> pure (Number d)

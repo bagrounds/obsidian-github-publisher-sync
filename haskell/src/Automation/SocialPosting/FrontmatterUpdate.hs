@@ -36,7 +36,7 @@ updateFrontmatterTimestamp filePath = do
 
 updatePathTimestamps :: FilePath -> [Text] -> IO ()
 updatePathTimestamps contentDirectory =
-  mapM_ (\p -> updateFrontmatterTimestamp (contentDirectory </> T.unpack p))
+  mapM_ (\path -> updateFrontmatterTimestamp (contentDirectory </> T.unpack path))
 
 updateFrontmatterUrl :: FilePath -> Text -> IO ()
 updateFrontmatterUrl filePath newUrl = do

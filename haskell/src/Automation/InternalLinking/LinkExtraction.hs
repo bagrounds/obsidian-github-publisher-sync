@@ -38,7 +38,7 @@ markdownLinks :: Text -> FilePath -> FilePath -> [Text]
 markdownLinks body noteDirectory contentDirectory = parseLinks (T.unpack body)
   where
     parseLinks :: String -> [Text]
-    parseLinks s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
+    parseLinks string = case (string =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
       (_, _, after, [target])
         | not ("http://" `isPrefixOfS` target) && not ("https://" `isPrefixOfS` target) ->
             let absTarget  = normalizeFilePath (noteDirectory </> target)
@@ -157,7 +157,7 @@ bfsLoop contentDirectory visitedRef queueRef resultRef = do
               linked    = extractLinkedPaths body current contentDirectory
           visited <- readIORef visitedRef
           let newLinks = filter (\linkPath -> not (Set.member linkPath visited)) linked
-          modifyIORef' visitedRef (\s -> foldl' (flip Set.insert) s newLinks)
+          modifyIORef' visitedRef (\visitedSet -> foldl' (flip Set.insert) visitedSet newLinks)
           modifyIORef' queueRef (<> newLinks)
           bfsLoop contentDirectory visitedRef queueRef resultRef
         else bfsLoop contentDirectory visitedRef queueRef resultRef

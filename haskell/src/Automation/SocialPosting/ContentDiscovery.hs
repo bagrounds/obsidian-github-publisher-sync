@@ -190,7 +190,7 @@ isIndexPage :: ContentNote -> Bool
 isIndexPage = isIndexPath . unRelativePath . noteRelativePath
 
 isIndexPath :: Text -> Bool
-isIndexPath p = takeBaseName (T.unpack p) == "index"
+isIndexPath path = takeBaseName (T.unpack path) == "index"
 
 isChangesPage :: ContentNote -> Bool
 isChangesPage = isChangesPath . unRelativePath . noteRelativePath
@@ -282,11 +282,11 @@ bfsLoop config state =
             (True, Nothing)      -> pure (Just note)
             (False, _)           -> pure Nothing
           let neededPlatforms = filter
-                (\p -> not (Set.member p (filled state'))
-                       && not (Set.member p (notePostedPlatforms note)))
+                (\targetPlatform -> not (Set.member targetPlatform (filled state'))
+                       && not (Set.member targetPlatform (notePostedPlatforms note)))
                 (platforms config)
               newResults = case mValidated of
-                Just vNote -> fmap (\p -> ContentToPost p vNote pathFromRoot) neededPlatforms
+                Just vNote -> fmap (\targetPlatform -> ContentToPost targetPlatform vNote pathFromRoot) neededPlatforms
                 Nothing    -> []
               newFilled = Set.union (filled state') $
                 Set.fromList (fmap platform newResults)
@@ -342,11 +342,11 @@ discoverContentToPost config isPastPostingHour =
                       bfsContentDiscovery config
                     Just vNote -> do
                       let neededPlatforms = filter
-                            (\p -> not (Set.member p (notePostedPlatforms vNote)))
+                            (\targetPlatform -> not (Set.member targetPlatform (notePostedPlatforms vNote)))
                             (platforms config)
                       case neededPlatforms of
                         [] -> bfsContentDiscovery config
-                        _  -> pure $ fmap (\p -> ContentToPost p vNote [reflPath]) neededPlatforms
+                        _  -> pure $ fmap (\targetPlatform -> ContentToPost targetPlatform vNote [reflPath]) neededPlatforms
                 _ -> bfsContentDiscovery config
             else bfsContentDiscovery config
     else bfsContentDiscovery config

@@ -171,8 +171,8 @@ propertyTests = testGroup "properties"
         let result = assemblePost (T.pack modelOutput) sampleReflection
         in T.isInfixOf (unTitle (title sampleReflection)) result
   , testProperty "stripSubtitle result is never longer than input" $
-      \(QC.ASCIIString s) ->
-        let txt = T.pack s
+      \(QC.ASCIIString string) ->
+        let txt = T.pack string
         in T.length (stripSubtitle txt) <= T.length txt
   ]
 

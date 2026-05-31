@@ -114,7 +114,7 @@ reflectionNeedsTitle content date =
     Nothing -> True
     Just titleLine ->
       let titleValue = T.strip $ T.drop 6 titleLine
-          unquoted = T.dropAround (\c -> c == '"' || c == '\'') titleValue
+          unquoted = T.dropAround (\character -> character == '"' || character == '\'') titleValue
       in unquoted == date
 
 findTitleLine :: [Text] -> Maybe Text
@@ -159,7 +159,7 @@ parseReflectionTitle :: Text -> Text
 parseReflectionTitle raw =
   let cleaned = raw
         & stripCodeFences
-        & T.dropAround (\c -> c == '"' || c == '\'')
+        & T.dropAround (\character -> character == '"' || character == '\'')
         & T.replace "`" ""
         & stripDatePrefix
       selected = selectTitleLine cleaned
@@ -177,7 +177,7 @@ selectTitleLine t =
 
 startsWithEmoji :: Text -> Bool
 startsWithEmoji t = case T.uncons t of
-  Just (c, _) -> isEmoji c
+  Just (character, _) -> isEmoji character
   Nothing -> False
 
 stripInlinePreamble :: Text -> Text
@@ -295,7 +295,7 @@ extractCreativeTitle content =
   case find (T.isPrefixOf "title:") (T.lines content) of
     Just matched ->
       let value = T.strip (T.drop 6 matched)
-          unquoted = T.dropAround (\c -> c == '"' || c == '\'') value
+          unquoted = T.dropAround (\character -> character == '"' || character == '\'') value
       in case T.breakOn " | " unquoted of
            (_, rest) | not (T.null rest) -> T.drop 3 rest
            _ -> ""

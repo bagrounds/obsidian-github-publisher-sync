@@ -180,13 +180,13 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
       let content = "prefix Thinking, Fast and Slow suffix"
           candidates = findLinkCandidates [sampleEntry] content content (testRelativePath "reflections/r.md")
       in case candidates of
-        (c:_) -> assertEqual "position after prefix" 7 (position c)
+        (candidate:_) -> assertEqual "position after prefix" 7 (position candidate)
         [] -> assertBool "should have candidates" False
   , testCase "candidate has matched text" $
       let content = "I read Thinking, Fast and Slow recently"
           candidates = findLinkCandidates [sampleEntry] content content (testRelativePath "reflections/r.md")
       in case candidates of
-        (c:_) -> assertEqual "matched text" "Thinking, Fast and Slow" (matchedText c)
+        (candidate:_) -> assertEqual "matched text" "Thinking, Fast and Slow" (matchedText candidate)
         [] -> assertBool "should have candidates" False
   , testCase "avoids duplicate entries for same path" $
       let entry1 = sampleEntry
@@ -204,7 +204,7 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched text" "Debugging" (matchedText c)
+            (candidate:_) -> assertEqual "matched text" "Debugging" (matchedText candidate)
             [] -> assertBool "should have candidates" False
   , testCase "matches dash-separated subtitle" $
       let dashEntry = ContentEntry

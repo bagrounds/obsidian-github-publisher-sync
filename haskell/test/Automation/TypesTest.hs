@@ -241,4 +241,4 @@ relativePathTests = testGroup "RelativePath"
   ]
 
 isAsciiAlphaNum :: Char -> Bool
-isAsciiAlphaNum c = isAscii c && isAlphaNum c
+isAsciiAlphaNum character = isAscii character && isAlphaNum character

@@ -213,15 +213,15 @@ propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "buildNavLine always starts with aiBlogNavPrefix" $
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
-        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
-            next' = filter (\c -> c /= '\n' && c /= '\r') next
+        let prev' = filter (\character -> character /= '\n' && character /= '\r') prev
+            next' = filter (\character -> character /= '\n' && character /= '\r') next
             prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
             nextM = if null next' then Nothing else Just (T.pack next' <> ".md")
         in T.isPrefixOf aiBlogNavPrefix (buildNavLine prevM nextM)
   , testProperty "navLinksMatch agrees with buildNavLine" $
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
-        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
-            next' = filter (\c -> c /= '\n' && c /= '\r') next
+        let prev' = filter (\character -> character /= '\n' && character /= '\r') prev
+            next' = filter (\character -> character /= '\n' && character /= '\r') next
             prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
             nextM = if null next' then Nothing else Just (T.pack next' <> ".md")
             navLine = buildNavLine prevM nextM
@@ -229,7 +229,7 @@ propertyTests = testGroup "properties"
         in navLinksMatch content prevM nextM
   , testProperty "updateNavLinks is idempotent" $
       \(QC.ASCIIString prev) ->
-        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
+        let prev' = filter (\character -> character /= '\n' && character /= '\r') prev
             prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
             content = aiBlogNavPrefix <> "\n# Post\n\nBody"
             once = updateNavLinks content prevM Nothing

@@ -425,5 +425,5 @@ generateSlugTests = testGroup "generateSlug"
   , testProperty "result contains only lowercase alphanumeric and hyphens" $
       QC.forAll (QC.listOf1 QC.arbitraryASCIIChar) $ \chars ->
         let slug = generateSlug (T.pack chars)
-        in T.all (\c -> isAsciiLower c || isDigit c || c == '-') slug
+        in T.all (\character -> isAsciiLower character || isDigit character || character == '-') slug
   ]

@@ -177,4 +177,4 @@ propertyTests = testGroup "properties"
   ]
 
 isUnreservedUrlChar :: Char -> Bool
-isUnreservedUrlChar c = isAscii c && (isAlphaNum c || c `elem` ("-._~" :: String))
+isUnreservedUrlChar character = isAscii character && (isAlphaNum character || character `elem` ("-._~" :: String))

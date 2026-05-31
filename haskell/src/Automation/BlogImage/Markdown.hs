@@ -136,7 +136,7 @@ removeUnorderedLists = T.unlines . fmap stripBullet . T.lines
     matchesBullet line =
       let stripped = T.stripStart line
       in case T.uncons stripped of
-           Just (c, rest) | c `elem` ['-', '*', '+'] -> case T.uncons rest of
+           Just (character, rest) | character `elem` ['-', '*', '+'] -> case T.uncons rest of
              Just (' ', _) -> True
              _             -> False
            _ -> False
@@ -173,7 +173,7 @@ removeTableCells t =
 removeTableSeparators :: Text -> Text
 removeTableSeparators = T.unlines . filter (not . isTableSep) . T.lines
   where
-    isTableSep line = T.all (\c -> c == '-' || c == '|' || c == ':' || c == ' ') (T.strip line)
+    isTableSep line = T.all (\character -> character == '-' || character == '|' || character == ':' || character == ' ') (T.strip line)
                    && T.length (T.strip line) > 2
                    && T.isInfixOf "-" line
 

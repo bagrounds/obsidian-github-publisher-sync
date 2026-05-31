@@ -141,10 +141,10 @@ parseFictionResponse raw =
   in T.strip t3
 
 removeQuotationMarks :: Text -> Text
-removeQuotationMarks = T.filter (\c ->
-  c /= '"' && c /= '\'' && c /= '`'
-  && c /= '\x2018' && c /= '\x2019'
-  && c /= '\x201c' && c /= '\x201d')
+removeQuotationMarks = T.filter (\character ->
+  character /= '"' && character /= '\'' && character /= '`'
+  && character /= '\x2018' && character /= '\x2019'
+  && character /= '\x201c' && character /= '\x201d')
 
 buildFictionSignature :: Text -> Text
 buildFictionSignature model = "\n\n✍️ Written by " <> model

@@ -577,7 +577,7 @@ tests = testGroup "BlogImage"
           \content -> T.length (buildImagePrompt (T.pack content)) <= 2048
       , testProperty "sanitizeForYaml removes quotes" $
           \s -> let sanitized = sanitizeForYaml (T.pack s)
-                in not (T.any (\c -> c == '"' || c == '\'' || c == '\\' || c == '`') sanitized)
+                in not (T.any (\character -> character == '"' || character == '\'' || character == '\\' || character == '`') sanitized)
       , testProperty "mimeTypeToExtension always starts with dot" $
           \s -> T.isPrefixOf "." (mimeTypeToExtension (T.pack s))
       , testProperty "hasEmbeddedImage returns False for alphanumeric text" $

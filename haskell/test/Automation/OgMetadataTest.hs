@@ -144,7 +144,7 @@ propertyTests = testGroup "properties"
 
   , testProperty "extractOgProperty roundtrips embedded values" $
       \rawValue ->
-        let value = T.pack (filter (\c -> c /= '"' && c /= '\n' && c /= '\r') rawValue)
+        let value = T.pack (filter (\character -> character /= '"' && character /= '\n' && character /= '\r') rawValue)
             html = "<meta property=\"og:test\" content=\"" <> value <> "\"/>"
         in extractOgProperty "test" html == Just value
 

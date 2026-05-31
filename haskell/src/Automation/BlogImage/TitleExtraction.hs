@@ -35,8 +35,8 @@ findH1Title = foldr (\line accumulated -> if "# " `T.isPrefixOf` line then Just 
 stripQuotes :: Text -> Text
 stripQuotes t =
   let stripped = case T.uncons t of
-        Just (c, rest) | c == '"' || c == '\'' -> rest
+        Just (character, rest) | character == '"' || character == '\'' -> rest
         _ -> t
   in case T.unsnoc stripped of
-    Just (init', c) | c == '"' || c == '\'' -> init'
+    Just (init', character) | character == '"' || character == '\'' -> init'
     _ -> stripped

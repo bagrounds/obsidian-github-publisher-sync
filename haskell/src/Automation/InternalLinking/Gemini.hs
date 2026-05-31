@@ -119,6 +119,6 @@ findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
 findLastIndex predicate txt = searchForward Nothing 0 (T.unpack txt)
   where
     searchForward accumulated _ [] = accumulated
-    searchForward accumulated i (c : cs)
-      | predicate c = searchForward (Just i) (i + 1) cs
+    searchForward accumulated i (character : cs)
+      | predicate character = searchForward (Just i) (i + 1) cs
       | otherwise   = searchForward accumulated (i + 1) cs

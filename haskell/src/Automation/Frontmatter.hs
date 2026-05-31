@@ -42,7 +42,7 @@ parseFrontmatter content =
 
 parseLine :: Text -> [(Text, Text)]
 parseLine line =
-  let (key, rest) = T.span (\c -> c == '_' || isAlphaNum c) line
+  let (key, rest) = T.span (\character -> character == '_' || isAlphaNum character) line
   in case T.uncons rest of
     Just (':', value) | not (T.null key) ->
       [(key, stripQuotes (T.stripStart value))]
@@ -52,10 +52,10 @@ stripQuotes :: Text -> Text
 stripQuotes = stripTrailing . stripLeading
   where
     stripLeading t = case T.uncons t of
-      Just (c, rest) | c == '"' || c == '\'' -> rest
+      Just (character, rest) | character == '"' || character == '\'' -> rest
       _ -> t
     stripTrailing t = case T.unsnoc t of
-      Just (init', c) | c == '"' || c == '\'' -> init'
+      Just (init', character) | character == '"' || character == '\'' -> init'
       _ -> t
 
 -- | A typed YAML scalar, mirroring TypeScript's @string | boolean | null@.
@@ -85,7 +85,7 @@ escapeYamlString = T.concatMap escapeChar
     escapeChar '\r' = "\\r"
     escapeChar '\t' = "\\t"
     escapeChar '\0' = ""
-    escapeChar c    = T.singleton c
+    escapeChar character    = T.singleton character
 
 hasSectionHeader :: Text -> Text -> Bool
 hasSectionHeader content header = T.isInfixOf header content

@@ -63,9 +63,9 @@ main = do
       manager <- newManager tlsManagerSettings
       TIO.putStrLn $ "🐉 Testing " <> T.pack (show (length modelsUnderTest)) <> " model(s)...\n"
       results <- forM modelsUnderTest $ \model -> do
-        TIO.putStrLn $ "═══════════════════════════════════════════════════════════════"
+        TIO.putStrLn "═══════════════════════════════════════════════════════════════"
         TIO.putStrLn $ "🔄 " <> Gemini.modelToText model
-        TIO.putStrLn $ "═══════════════════════════════════════════════════════════════"
+        TIO.putStrLn "═══════════════════════════════════════════════════════════════"
         result <- Gemini.generateContent manager Gemini.Request
           { Gemini.requestPrompt            = userPrompt
           , Gemini.requestSystemInstruction = Just systemInstruction
@@ -75,16 +75,16 @@ main = do
           }
         case result of
           Right response -> do
-            TIO.putStrLn $ "───────────────────────────────────────────────────────────────"
+            TIO.putStrLn "───────────────────────────────────────────────────────────────"
             TIO.putStrLn $ "✅ " <> Gemini.modelToText model <> " output:"
-            TIO.putStrLn $ "───────────────────────────────────────────────────────────────"
+            TIO.putStrLn "───────────────────────────────────────────────────────────────"
             TIO.putStrLn $ Gemini.responseText response
             TIO.putStrLn ""
             pure True
           Left failure -> do
-            TIO.putStrLn $ "───────────────────────────────────────────────────────────────"
+            TIO.putStrLn "───────────────────────────────────────────────────────────────"
             TIO.putStrLn $ "❌ " <> Gemini.modelToText model <> " failed:"
-            TIO.putStrLn $ "───────────────────────────────────────────────────────────────"
+            TIO.putStrLn "───────────────────────────────────────────────────────────────"
             TIO.putStrLn $ T.pack (show failure)
             TIO.putStrLn ""
             pure False

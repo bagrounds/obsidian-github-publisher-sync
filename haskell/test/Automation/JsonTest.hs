@@ -308,8 +308,8 @@ roundTripTests = testGroup "round-trip"
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "string Value round-trips" $
-      \(QC.ASCIIString s) ->
-        let val = String (T.pack s)
+      \(QC.ASCIIString string) ->
+        let val = String (T.pack string)
         in roundTrip val == Right val
   , testProperty "integer Value round-trips" $
       \(n :: Int) ->
@@ -319,11 +319,11 @@ propertyTests = testGroup "properties"
       \(b :: Bool) ->
         roundTrip (Bool b) == Right (Bool b)
   , testProperty "encodeText of String always starts with quote" $
-      \(QC.ASCIIString s) ->
-        T.isPrefixOf "\"" (encodeText (String (T.pack s)))
+      \(QC.ASCIIString string) ->
+        T.isPrefixOf "\"" (encodeText (String (T.pack string)))
   , testProperty ".= then .: round-trips for Text" $
-      \(QC.ASCIIString s) ->
-        let txt = T.pack s
+      \(QC.ASCIIString string) ->
+        let txt = T.pack string
             pairs = ["k" .= txt]
         in (pairs .: "k" :: Either String Text) == Right txt
   , testProperty ".:? returns Right Nothing for missing key" $

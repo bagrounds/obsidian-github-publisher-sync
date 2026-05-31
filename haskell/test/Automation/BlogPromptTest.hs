@@ -158,7 +158,7 @@ tests = testGroup "BlogPrompt"
 
   , testCase "mkSlug accepts valid slug" $
       case mkSlug "my-great-post" of
-        Right (Slug s) -> s @?= "my-great-post"
+        Right (Slug string) -> string @?= "my-great-post"
         Left _ -> assertBool "valid slug should be accepted" False
 
   , testCase "formatDay formats Day as YYYY-MM-DD" $

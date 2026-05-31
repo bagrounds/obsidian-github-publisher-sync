@@ -91,7 +91,7 @@ findObProcesses mVaultDirectory = do
     ] "" :: IO (Either SomeException String)
   pure $ case result of
     Left _     -> []
-    Right pids -> filter (\p -> not (null p) && p /= myPid) $ lines pids
+    Right pids -> filter (\pid -> not (null pid) && pid /= myPid) $ lines pids
 
 killObProcesses :: Maybe FilePath -> IO ()
 killObProcesses mVaultDirectory = do

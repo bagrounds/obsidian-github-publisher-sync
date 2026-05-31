@@ -261,7 +261,7 @@ checkForApiError value =
                 Just (Json.String responseMessage) -> responseMessage
                 _ -> "unknown error"
               status = case lookup "status" errFields of
-                Just (Json.String s) -> " (" <> s <> ")"
+                Just (Json.String string) -> " (" <> string <> ")"
                 _ -> ""
           in Left $ "GA4 API error: " <> message <> status
         _ -> Right ()

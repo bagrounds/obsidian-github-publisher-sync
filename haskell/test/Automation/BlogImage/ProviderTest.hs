@@ -118,19 +118,19 @@ tests = testGroup "BlogImage.Provider"
                 , ("HUGGINGFACE_API_TOKEN", "hf-key")
                 ]
               providers = resolveImageProviders env
-              huggingFaceProviders = filter (\p -> ipcProvider p == HuggingFace) providers
+              huggingFaceProviders = filter (\provider -> ipcProvider provider == HuggingFace) providers
           in case huggingFaceProviders of
-            [p] -> assertBool "should have describer" $ isJust (ipcDescriber p)
+            [provider] -> assertBool "should have describer" $ isJust (ipcDescriber provider)
             _   -> assertBool "expected one HuggingFace provider" False
       , testCase "configs without Gemini key have no describer" $
           let env = Map.fromList [("HUGGINGFACE_API_TOKEN", "hf-key")]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcDescriber p @?= Nothing
+            [provider] -> ipcDescriber provider @?= Nothing
             _   -> assertBool "expected one provider" False
       ]
   , testGroup "properties"
       [ testProperty "mimeTypeToExtension always starts with dot" $
-          \s -> T.isPrefixOf "." (mimeTypeToExtension (T.pack s))
+          \string -> T.isPrefixOf "." (mimeTypeToExtension (T.pack string))
       ]
   ]

@@ -193,7 +193,7 @@ wikiLinkParserTests = testGroup "parseWikiLinks"
         (parseWikiLinks "[[a]][[b]]")
 
   , testProperty "never crashes on arbitrary input" $
-      \(QC.ASCIIString s) -> seq (parseWikiLinks s) True
+      \(QC.ASCIIString string) -> seq (parseWikiLinks string) True
   ]
 
 
@@ -360,9 +360,9 @@ imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should skip book without image"
-          (all (\p -> p /= testRelativePath "books/no-image-book.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "books/no-image-book.md") resultPaths)
         assertBool "should find book with image through no-image book"
-          (any (\p -> p == testRelativePath "books/has-image-book.md") resultPaths)
+          (any (\resultPath -> resultPath == testRelativePath "books/has-image-book.md") resultPaths)
   ]
 
 
@@ -477,7 +477,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should find linked book, not the ineligible reflection"
-          (all (\p -> p /= testRelativePath "reflections/2099-12-31.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "reflections/2099-12-31.md") resultPaths)
         assertBool "should find the linked book" (not (null result))
   ]
 
@@ -507,9 +507,9 @@ bfsTraversalTests = testGroup "BFS traversal"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post index page"
-          (all (\p -> p /= testRelativePath "books/index.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "books/index.md") resultPaths)
         assertBool "should find hidden gem through index page"
-          (any (\p -> p == testRelativePath "books/hidden-gem.md") resultPaths)
+          (any (\resultPath -> resultPath == testRelativePath "books/hidden-gem.md") resultPaths)
 
   , testCase "BFS traverses through no_social content to reach postable content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
@@ -536,9 +536,9 @@ bfsTraversalTests = testGroup "BFS traversal"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post private topic"
-          (all (\p -> p /= testRelativePath "topics/private-topic.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "topics/private-topic.md") resultPaths)
         assertBool "should find public book through private topic"
-          (any (\p -> p == testRelativePath "books/public-book.md") resultPaths)
+          (any (\resultPath -> resultPath == testRelativePath "books/public-book.md") resultPaths)
 
   , testCase "BFS traverses through short-body content to reach postable content" $ do
       withSystemTempDirectory "social-test" $ \directory -> do
@@ -562,9 +562,9 @@ bfsTraversalTests = testGroup "BFS traversal"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post stub"
-          (all (\p -> p /= testRelativePath "books/stub.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "books/stub.md") resultPaths)
         assertBool "should find real book through stub"
-          (any (\p -> p == testRelativePath "books/real-book.md") resultPaths)
+          (any (\resultPath -> resultPath == testRelativePath "books/real-book.md") resultPaths)
   ]
 
 
@@ -727,9 +727,9 @@ urlValidationTests = testGroup "URL validation"
         result <- bfsContentDiscovery config
         let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not include dead-link book"
-          (all (\p -> p /= testRelativePath "books/dead-link.md") resultPaths)
+          (all (\resultPath -> resultPath /= testRelativePath "books/dead-link.md") resultPaths)
         assertBool "should find live book through dead-link book"
-          (any (\p -> p == testRelativePath "books/live-book.md") resultPaths)
+          (any (\resultPath -> resultPath == testRelativePath "books/live-book.md") resultPaths)
 
   , testCase "updateFrontmatterUrl updates existing URL field" $ do
       withSystemTempDirectory "url-test" $ \directory -> do

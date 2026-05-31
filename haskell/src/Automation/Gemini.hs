@@ -207,7 +207,7 @@ parseErrorBody body =
       case lookup "error" topLevel of
         Just (Object errObj) ->
           let status = case lookup "status" errObj of
-                Just (String s) -> parseApiStatus s
+                Just (String string) -> parseApiStatus string
                 _               -> UnknownStatus rawText
               message = case lookup "message" errObj of
                 Just (String m) -> m
@@ -401,7 +401,7 @@ deduplicateByUrl :: [GroundingSource] -> [GroundingSource]
 deduplicateByUrl = foldl' addIfNew []
   where
     addIfNew accumulated source =
-      if any (\s -> groundingSourceUrl s == groundingSourceUrl source) accumulated
+      if any (\existing -> groundingSourceUrl existing == groundingSourceUrl source) accumulated
         then accumulated
         else accumulated <> [source]
 

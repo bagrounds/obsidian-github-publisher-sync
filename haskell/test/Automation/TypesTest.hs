@@ -144,7 +144,7 @@ urlTests = testGroup "Url"
            Left _ -> True
 
   , testProperty "mkUrl rejects non-http input" $
-      QC.forAll (QC.arbitrary `QC.suchThat` (\s -> not (null s) && take 4 s /= "http")) $ \raw ->
+      QC.forAll (QC.arbitrary `QC.suchThat` (\string -> not (null string) && take 4 string /= "http")) $ \raw ->
         let text = T.pack raw
         in case mkUrl text of
              Left _ -> True

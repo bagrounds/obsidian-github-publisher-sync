@@ -160,7 +160,7 @@ findPostToRegenerate seriesDirectory today = do
 
 findM :: Monad m => (a -> m Bool) -> [a] -> m (Maybe a)
 findM _ []     = pure Nothing
-findM p (x:xs) = p x >>= \found -> if found then pure (Just x) else findM p xs
+findM predicate (x:xs) = predicate x >>= \found -> if found then pure (Just x) else findM predicate xs
 
 hasRegenerateMarker :: Text -> Bool
 hasRegenerateMarker content =

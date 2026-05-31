@@ -187,11 +187,11 @@ compositionTests = testGroup "composition"
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "masking preserves text length" $ \s ->
-      let txt = T.pack (s :: String)
+  [ testProperty "masking preserves text length" $ \string ->
+      let txt = T.pack (string :: String)
           masked = maskProtectedRegions txt
       in T.length masked == T.length txt
-  , testProperty "masking plain alphanumeric text is identity" $ \s ->
-      let txt = T.pack (filter (\character -> character /= '`' && character /= '[' && character /= ']' && character /= '#' && character /= '*' && character /= '-' && character /= '~' && character /= '(' && character /= ')' && character /= ':' && character /= '/' && character /= '\n') (s :: String))
+  , testProperty "masking plain alphanumeric text is identity" $ \string ->
+      let txt = T.pack (filter (\character -> character /= '`' && character /= '[' && character /= ']' && character /= '#' && character /= '*' && character /= '-' && character /= '~' && character /= '(' && character /= ')' && character /= ':' && character /= '/' && character /= '\n') (string :: String))
       in maskProtectedRegions txt == txt
   ]

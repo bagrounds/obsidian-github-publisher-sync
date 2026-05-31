@@ -163,7 +163,7 @@ parseSession body =
     Left failure  -> Left (JsonParseError (T.pack failure))
     Right jsonValue -> case extractSession jsonValue of
       Left failure  -> Left (ExtractionError (T.pack failure))
-      Right s   -> Right s
+      Right session   -> Right session
 
 extractSession :: Json.Value -> Either String AtpSession
 extractSession = withObject "session response" $ \obj -> do

@@ -171,8 +171,8 @@ urlFromFilePathTests = testGroup "urlFromFilePath"
         (urlFromFilePath "books/my-book")
 
   , testProperty "always starts with https://bagrounds.org/" $
-      \(QC.ASCIIString s) ->
-        T.isPrefixOf "https://bagrounds.org/" (urlFromFilePath (T.pack s))
+      \(QC.ASCIIString string) ->
+        T.isPrefixOf "https://bagrounds.org/" (urlFromFilePath (T.pack string))
   ]
 
 

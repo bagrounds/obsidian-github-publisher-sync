@@ -60,9 +60,9 @@ data StaticComment = StaticComment
 type CommentsMap = Map Text [StaticComment]
 
 normalizePathname :: Text -> Text
-normalizePathname p
-  | p == "/" = "/"
-  | otherwise = T.dropWhileEnd (== '/') p
+normalizePathname pathname
+  | pathname == "/" = "/"
+  | otherwise = T.dropWhileEnd (== '/') pathname
 
 slugToPathname :: Text -> Text
 slugToPathname slug

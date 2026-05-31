@@ -195,7 +195,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
                   posts <- readSeriesPosts seriesDirectory
                   let previousPost = case posts of
-                        (p:_) -> Just p
+                        (mostRecentPost:_) -> Just mostRecentPost
                         []    -> Nothing
 
                   let frontmatter = assembleFrontmatter series today title slug

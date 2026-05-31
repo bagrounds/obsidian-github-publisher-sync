@@ -69,8 +69,8 @@ runs the linter and the full test suite, and ships its own AI blog post. Pure re
 not change behavior, so the existing tests are the safety net — no new tests are required
 unless a rename surfaces a latent bug.
 
-Steps 2 through 4 were tracked in GitHub issue #7090. The remaining steps 5 through 7 are
-tracked in a follow-up ticket. 
+Steps 2 through 4 were tracked in GitHub issue #7090. Step 5 followed in its own PR. The
+remaining steps 6 and 7 are tracked in a follow-up ticket. 
 
 1. ✅ **`l` → `line` (and `linkPath`/`linkedPath` for links, `left`/`right` for an
    operator)** (done): renamed every single-letter `l` binding across `haskell/src` —
@@ -114,8 +114,27 @@ tracked in a follow-up ticket.
    and the abstract `c` type variables in the `mapLeft` signatures are data and abstract
    parameters, not bindings, and were left untouched. Pure rename — the `-Werror` build is
    clean, `hlint src/ app/ test/` reports no hints, and all 2025 Haskell tests still pass.
-5. ⬜ **`s` → `string`/`set`/`state`** and **`p` → `path`/`post`/`platform`**: rename per
-   call-site meaning.
+5. ✅ **`s` → `string`/`set`/`state`** and **`p` → `path`/`post`/`platform`** (done):
+   renamed every single-letter `s` and `p` binding across `haskell/src`, `haskell/app`, and
+   `haskell/test` to a descriptive name chosen per call-site meaning. The dominant `s` cases
+   were unpacked `String` values fed to regex matches (`T.unpack` bindings in `Markdown.hs`,
+   `Eligibility.hs`, `Masking.hs`, the `findMatch`/`parseLinks` helpers in
+   `CandidateDiscovery.hs` and the two `LinkExtraction.hs` modules) and the `QC.ASCIIString`
+   QuickCheck lambdas across the test suite — all became `string`; the trimmed-title binding
+   in `BlogPrompt.hs` became `stripped`, the JSON exponent sign in `Json.hs` became
+   `exponentSign`, the parsed Bluesky session became `session`, the deduplicating grounding
+   source in `Gemini.hs` became `existing`, the visited-link accumulator in `LinkExtraction.hs`
+   became `visitedSet`, and the `BlogSeriesConfig` records in `BlogSeriesConfigTest.hs` became
+   `series`. The `p` cases became `path` (file paths), `pid` (a process id in `ObsidianSync.hs`),
+   `predicate` (the `findM` callback in `Scheduler.hs`), `pathname` (`normalizePathname` in
+   `StaticGiscus.hs`), `mostRecentPost` (the latest series post in `TaskRunners.hs`),
+   `targetPlatform` (the platform-filter lambdas in `ContentDiscovery.hs`, where `platform` is
+   already a record accessor and would shadow under `-Werror`), `provider` (the
+   `ImageProviderConfig` lambdas and pattern binds in the BlogImage tests), and `resultPath`
+   (the result-path predicates in `SocialPostingTest.hs`). `s` and `p` characters inside string
+   literals (sample paths, slugs, regex fixtures, shell flags) are data, not bindings, and were
+   left untouched. Pure rename — the `-Werror` build is clean, `hlint src/ app/ test/` reports
+   no hints, and all 2025 Haskell tests still pass.
 6. ⬜ **Remaining stragglers** (`r`, `f`, `e`, `t`, `n`, `i`, `u`, `m`, `h`, `a`): rename
    every remaining single-letter lambda parameter and binding across `haskell/src`,
    `haskell/app`, and `haskell/test`.

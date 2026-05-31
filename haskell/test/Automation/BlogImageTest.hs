@@ -297,7 +297,7 @@ tests = testGroup "BlogImage"
           let env = Map.fromList [("GEMINI_API_KEY", "key")]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcModel p @?= "gemini-3.1-flash-image-preview"
+            [provider] -> ipcModel provider @?= "gemini-3.1-flash-image-preview"
             _   -> assertBool "expected exactly one provider" False
       , testCase "uses custom model from env" $
           let env = Map.fromList
@@ -306,7 +306,7 @@ tests = testGroup "BlogImage"
                 ]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcModel p @?= "custom-model"
+            [provider] -> ipcModel provider @?= "custom-model"
             _   -> assertBool "expected exactly one provider" False
       ]
   , testGroup "cleanContentForPrompt (extended)"
@@ -546,15 +546,15 @@ tests = testGroup "BlogImage"
                 , ("HUGGINGFACE_API_TOKEN", "hf-key")
                 ]
               providers = resolveImageProviders env
-              huggingFaceProviders = filter (\p -> ipcProvider p == HuggingFace) providers
+              huggingFaceProviders = filter (\provider -> ipcProvider provider == HuggingFace) providers
           in case huggingFaceProviders of
-            [p] -> assertBool "should have describer" $ isJust (ipcDescriber p)
+            [provider] -> assertBool "should have describer" $ isJust (ipcDescriber provider)
             _   -> assertBool "expected one HuggingFace provider" False
       , testCase "configs without Gemini key have no describer" $
           let env = Map.fromList [("HUGGINGFACE_API_TOKEN", "hf-key")]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcDescriber p @?= Nothing
+            [provider] -> ipcDescriber provider @?= Nothing
             _   -> assertBool "expected one provider" False
       , testCase "resolved Cloudflare provider carries account ID" $
           let env = Map.fromList
@@ -563,30 +563,30 @@ tests = testGroup "BlogImage"
                 ]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcProvider p @?= Cloudflare "my-account"
+            [provider] -> ipcProvider provider @?= Cloudflare "my-account"
             _   -> assertBool "expected one provider" False
       , testCase "resolved Gemini provider has GeminiImage type" $
           let env = Map.fromList [("GEMINI_API_KEY", "key")]
               providers = resolveImageProviders env
           in case providers of
-            [p] -> ipcProvider p @?= GeminiImage
+            [provider] -> ipcProvider provider @?= GeminiImage
             _   -> assertBool "expected one provider" False
       ]
   , testGroup "properties"
       [ testProperty "buildImagePrompt never exceeds max length" $
           \content -> T.length (buildImagePrompt (T.pack content)) <= 2048
       , testProperty "sanitizeForYaml removes quotes" $
-          \s -> let sanitized = sanitizeForYaml (T.pack s)
+          \string -> let sanitized = sanitizeForYaml (T.pack string)
                 in not (T.any (\character -> character == '"' || character == '\'' || character == '\\' || character == '`') sanitized)
       , testProperty "mimeTypeToExtension always starts with dot" $
-          \s -> T.isPrefixOf "." (mimeTypeToExtension (T.pack s))
+          \string -> T.isPrefixOf "." (mimeTypeToExtension (T.pack string))
       , testProperty "hasEmbeddedImage returns False for alphanumeric text" $
           forAll (fmap T.pack $ listOf1 $ elements (['a'..'z'] <> ['0'..'9'] <> [' ', '\n'])) $
             \t -> not (hasEmbeddedImage t)
       , testProperty "insertImageEmbed is idempotent on content without H1" $
-          \s -> let t = T.pack s
-                    noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
-                in noH1 ==> insertImageEmbed t "test.jpg" == t
+          \string -> let t = T.pack string
+                         noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
+                     in noH1 ==> insertImageEmbed t "test.jpg" == t
       ]
   , parseDateFromFilenameTests
   , checkCandidateEligibilityTests

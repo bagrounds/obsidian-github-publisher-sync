@@ -218,19 +218,19 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "stripEmojis never increases length" $ \s ->
-      let txt = T.pack (s :: String)
+  [ testProperty "stripEmojis never increases length" $ \string ->
+      let txt = T.pack (string :: String)
       in T.length (stripEmojis txt) <= T.length txt
-  , testProperty "escapeRegex output is never shorter" $ \s ->
-      let txt = T.pack (s :: String)
+  , testProperty "escapeRegex output is never shorter" $ \string ->
+      let txt = T.pack (string :: String)
       in T.length (escapeRegex txt) >= T.length txt
-  , testProperty "formatContentEntryWikilink contains entry title" $ \s ->
-      let title = T.pack (s :: String)
+  , testProperty "formatContentEntryWikilink contains entry title" $ \string ->
+      let title = T.pack (string :: String)
       in not (T.null (T.strip title)) QC.==>
         let entry = ContentEntry (testRelativePath "books/test.md") (testTitle title) (testTitle title)
         in T.isInfixOf title (formatContentEntryWikilink entry)
-  , testProperty "extractContext result length bounded by radius" $ \s ->
-      let content = T.pack (s :: String)
+  , testProperty "extractContext result length bounded by radius" $ \string ->
+      let content = T.pack (string :: String)
       in not (T.null content) QC.==>
         T.length (extractContext content 0 1) <= T.length content + 6
   ]

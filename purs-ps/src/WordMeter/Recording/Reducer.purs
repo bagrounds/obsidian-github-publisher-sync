@@ -102,7 +102,7 @@ reduce (Toggle timestamp) session
           , currentIntervalStart = Just timestamp
           , currentIntervalWords = 0
           , firstStartedAt = case rolled.firstStartedAt of
-              Just t -> Just t
+              Just existingStart -> Just existingStart
               Nothing -> Just timestamp
           , wordEvents = pruneWordEvents timestamp rolled.wordEvents
           , captions = pruneCaptions timestamp rolled.captions
@@ -440,15 +440,15 @@ rehydrateMostFrequent maybeWord maybeCount = case maybeWord, maybeCount of
   Just word, Just count -> Just { word, count }
   _, _ -> Nothing
 
--- | Keep the last `n` elements of an array. Local helper named to
+-- | Keep the last `count` elements of an array. Local helper named to
 -- | avoid colliding with `Data.Array.takeEnd` already imported above.
 takeEndArray :: forall a. Int -> Array a -> Array a
-takeEndArray n xs =
+takeEndArray count items =
   let
-    total = length xs
-    start = total - max 0 n
+    total = length items
+    start = total - max 0 count
   in
-    Array.drop (max 0 start) xs
+    Array.drop (max 0 start) items
 
 joinWithSpace :: Array String -> String
 joinWithSpace = joinWith " "

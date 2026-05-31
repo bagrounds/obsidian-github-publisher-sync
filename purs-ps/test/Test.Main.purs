@@ -230,7 +230,7 @@ runReducerStatsTests = do
 
   -- firstStartedAt is sticky across stops.
   case s4.firstStartedAt of
-    Just t -> assertEqualNumber "firstStartedAt preserved on stop" (instantMs t) 0.0
+    Just startedAt -> assertEqualNumber "firstStartedAt preserved on stop" (instantMs startedAt) 0.0
     Nothing -> throw "firstStartedAt should remain set after stop"
 
 assertEqualNumber :: String -> Number -> Number -> Effect Unit
@@ -426,9 +426,9 @@ stuffEntries
   -> { timestamp :: Instant, label :: String, detail :: String }
   -> Array { timestamp :: Instant, label :: String, detail :: String }
   -> Array { timestamp :: Instant, label :: String, detail :: String }
-stuffEntries n entry entries
-  | n <= 0 = entries
-  | otherwise = stuffEntries (n - 1) entry (recordEntry entry entries)
+stuffEntries count entry entries
+  | count <= 0 = entries
+  | otherwise = stuffEntries (count - 1) entry (recordEntry entry entries)
 
 containsSubstring :: String -> String -> Boolean
 containsSubstring needle haystack = String.contains (String.Pattern needle) haystack
@@ -496,8 +496,8 @@ runPersistenceTests = do
   assertEqualInt "toPersistedData preserves eventLog length"
     (Array.length projected.eventLog) 1
   case projected.firstStartedAt of
-    Just t -> assertEqualNumber "toPersistedData preserves firstStartedAt"
-      t 1000.0
+    Just startedAt -> assertEqualNumber "toPersistedData preserves firstStartedAt"
+      startedAt 1000.0
     Nothing -> throw "toPersistedData should have preserved firstStartedAt"
 
   let
@@ -512,8 +512,8 @@ runPersistenceTests = do
       assertEqualInt "round-trip preserves eventLog length"
         (Array.length decoded.eventLog) (Array.length projected.eventLog)
       case decoded.firstStartedAt of
-        Just t -> assertEqualNumber "round-trip preserves firstStartedAt"
-          t 1000.0
+        Just startedAt -> assertEqualNumber "round-trip preserves firstStartedAt"
+          startedAt 1000.0
         Nothing -> throw "round-trip should have preserved firstStartedAt"
     Left _ -> throw "round-trip failed: expected Right PersistedData"
 
@@ -564,7 +564,7 @@ runPersistenceTests = do
   assertEqualBoolean "Reset turns listening off" resetted.listening false
   assertEqualBoolean "Reset preserves environment"
     (case resetted.environment of
-      Just e -> e.version == "9.9.9"
+      Just environment -> environment.version == "9.9.9"
       Nothing -> false)
     true
   assertEqualBoolean "Reset records a diagnostic entry"
@@ -579,8 +579,8 @@ runPersistenceTests = do
   assertEqualInt "LoadSession restores eventLog length"
     (Array.length loaded.eventLog) (Array.length projected.eventLog)
   case loaded.firstStartedAt of
-    Just t -> assertEqualNumber "LoadSession restores firstStartedAt"
-      (instantMs t) 1000.0
+    Just startedAt -> assertEqualNumber "LoadSession restores firstStartedAt"
+      (instantMs startedAt) 1000.0
     Nothing -> throw "LoadSession should have restored firstStartedAt"
   assertEqualBoolean "LoadSession leaves listening off"
     loaded.listening false
@@ -993,8 +993,8 @@ runIntegrateFinalizedTranscriptReducerTests = do
   assertEqualInt "extension does NOT add a new caption"
     (Array.length afterExtension.captions) 1
   case Array.head afterExtension.captions of
-    Just c -> assertEqualString "extension replaces the last caption transcript"
-      c.transcript "hello there general kenobi"
+    Just caption -> assertEqualString "extension replaces the last caption transcript"
+      caption.transcript "hello there general kenobi"
     Nothing -> throw "extension should keep one caption"
   assertEqualString "extension updates lastRawFinalizedTranscript"
     afterExtension.lastRawFinalizedTranscript "hello there general kenobi"
@@ -1008,8 +1008,8 @@ runIntegrateFinalizedTranscriptReducerTests = do
   assertEqualInt "duplicate leaves totalWords alone"
     afterDuplicate.totalWords 4
   case Array.head afterDuplicate.captions of
-    Just c -> assertEqualNumber "duplicate refreshes caption timestamp"
-      (instantMs c.timestamp) 3500.0
+    Just caption -> assertEqualNumber "duplicate refreshes caption timestamp"
+      (instantMs caption.timestamp) 3500.0
     Nothing -> throw "duplicate should keep one caption"
 
   -- IgnoreEarlierSnapshot: the recognizer re-emitting an earlier
@@ -1290,7 +1290,7 @@ digits :: Array String
 digits = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
 
 containsDigit :: String -> Boolean
-containsDigit s = Array.any (\d -> String.contains (String.Pattern d) s) digits
+containsDigit text = Array.any (\digit -> String.contains (String.Pattern digit) text) digits
 
 runPropertyTests :: Effect Unit
 runPropertyTests = sequence_

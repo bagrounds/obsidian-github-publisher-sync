@@ -43,13 +43,13 @@ millisecondsPerSecond = 1000.0
 millisecondsPerDay :: Number
 millisecondsPerDay = 86400000.0
 
--- | Compute the signed difference `a - b` in milliseconds.
+-- | Compute the signed difference `later - earlier` in milliseconds.
 -- | Wraps `Data.DateTime.Instant.diff` and unwraps the result so
 -- | arithmetic expressions remain readable without reintroducing raw
 -- | `Number` timestamps.
 millisecondsBetween :: Instant -> Instant -> Number
-millisecondsBetween a b =
-  let Milliseconds ms = (diff a b :: Milliseconds)
+millisecondsBetween later earlier =
+  let Milliseconds ms = (diff later earlier :: Milliseconds)
   in ms
 
 activeListeningMs :: Session -> Number

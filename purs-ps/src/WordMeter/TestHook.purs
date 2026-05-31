@@ -142,10 +142,10 @@ install
     , getRateOverall: overallRate <$> readSession
     , getDurationMs: activeListeningMs <$> readSession
     , getFirstStartedAt: firstStartedOrNaN <$> readSession
-    , getEventLogLength: (\s -> Array.length s.eventLog) <$> readSession
+    , getEventLogLength: (\session -> Array.length session.eventLog) <$> readSession
     , getEventLogLimit: pure eventLogLimit
     , getDiagnosticsText: diagnosticsText <$> readSession
-    , getDiagnosticsLength: (\s -> Array.length s.diagnostics) <$> readSession
+    , getDiagnosticsLength: (\session -> Array.length session.diagnostics) <$> readSession
     , getDiagnosticsLimit: pure diagnosticsLimit
     , getCopyStatus: _.copyStatus <$> readSession
     , requestCopyDiagnostics
@@ -154,8 +154,8 @@ install
     , persistNow
     , getKeepAwake: _.keepAwake <$> readSession
     , setKeepAwake: requestSetKeepAwake
-    , getKeepAwakeStatus: (\s -> renderWakeLockStatus s.wakeLockState) <$> readSession
-    , getWakeLockHeld: (\s -> s.wakeLockState == WakeLockHeld) <$> readSession
+    , getKeepAwakeStatus: (\session -> renderWakeLockStatus session.wakeLockState) <$> readSession
+    , getWakeLockHeld: (\session -> session.wakeLockState == WakeLockHeld) <$> readSession
     , simulateVisibilityVisible
     , simulateRecognitionError
     , getErrorBanner: _.errorBanner <$> readSession

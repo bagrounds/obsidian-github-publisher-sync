@@ -267,7 +267,7 @@ parseMaybeTests = testGroup "parseMaybe"
   [ testCase "returns Just on success" $
       parseMaybe fromValue (String "ok") @?= (Just "ok" :: Maybe Text)
   , testCase "returns Nothing on failure" $
-      parseMaybe (\v -> fromValue v :: Either String Text) (Number 42) @?= Nothing
+      parseMaybe (\value -> fromValue value :: Either String Text) (Number 42) @?= Nothing
   ]
 
 --------------------------------------------------------------------------------

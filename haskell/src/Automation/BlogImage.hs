@@ -125,7 +125,7 @@ updateFrontmatterFields content fields =
               let updatedFrontmatter = foldl' applyField frontmatterLines fields
               in T.intercalate "\n" (["---"] <> updatedFrontmatter <> ["---"] <> body)
     _ ->
-      let frontmatterLines = fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+      let frontmatterLines = fmap (\(k, value) -> k <> ": " <> renderYamlValue value) fields
       in T.intercalate "\n" (["---"] <> frontmatterLines <> ["---", content])
 
 applyField :: [Text] -> (Text, YamlValue) -> [Text]

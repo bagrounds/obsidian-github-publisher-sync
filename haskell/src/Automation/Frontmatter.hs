@@ -74,7 +74,7 @@ renderYamlValue (YamlBool False) = "false"
 renderYamlValue (YamlText t)     = quoteYamlValue t
 
 quoteYamlValue :: Text -> Text
-quoteYamlValue v = "\"" <> escapeYamlString v <> "\""
+quoteYamlValue value = "\"" <> escapeYamlString value <> "\""
 
 escapeYamlString :: Text -> Text
 escapeYamlString = T.concatMap escapeChar

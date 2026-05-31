@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-29T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-29-5-abbreviation-cleanup-msg-and-ctx.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-29-5-abbreviation-cleanup-msg-and-ctx.md) [⏭️](./2026-05-29-8-gemma-4-fiction-rotation.md)  
 # 2026-05-29 | 🔤 Abbreviation Cleanup: req and Stragglers 🤖  
 ![ai-blog-2026-05-29-6-abbreviation-cleanup-req-and-stragglers](../ai-blog-2026-05-29-6-abbreviation-cleanup-req-and-stragglers.jpg)  
   

@@ -75,7 +75,7 @@ the full test suite, and ships its own AI blog post. Pure renames must not chang
 behavior, so the existing tests are the safety net.
 
 1. [x] **`*Str` → concept-level name** in `haskell/src` and `haskell/app` (10
-   occurrences across 6 files): rename every `*Str`-suffixed identifier to a name
+   occurrences across 7 files): rename every `*Str`-suffixed identifier to a name
    that describes the value at the call site. The `messageStr` binding in
    `Gemini.hs` can be inlined entirely since it merely unpacks the already-named
    `message` parameter.

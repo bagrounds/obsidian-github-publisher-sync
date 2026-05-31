@@ -12,7 +12,13 @@ name: Test Fiction Models (live Gemini API)
 #   - https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      models:
+        description: 'Comma-separated model identifiers to test (e.g. "gemini-2.5-flash,gemma-4-31b-it"). Leave empty to test all models in the fiction pool.'
+        required: false
+        default: ''
+        type: string
 
 concurrency:
   group: "test-fiction-models-${{ github.ref }}"
@@ -53,8 +59,9 @@ jobs:
         working-directory: haskell
         run: cabal build test-fiction-models -j || { echo "Retrying with fresh package index..."; cabal update && cabal build test-fiction-models -j; }
 
-      - name: Run live-API smoke test against every fiction model
+      - name: Run live-API smoke test against fiction models
         working-directory: haskell
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODELS: ${{ inputs.models }}
         run: cabal run test-fiction-models

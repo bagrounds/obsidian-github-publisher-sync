@@ -44,10 +44,8 @@ fictionModelPool =
     [ Gemini.Gemini25FlashLite
     , Gemini.Gemini31FlashLite
     , Gemini.Gemini3Flash
-    , Gemini.Gemini20Flash
     , Gemini.Gemma4
     , Gemini.Gemma4MixtureOfExperts
-    , Gemini.Gemma3
     ]
 
 selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model

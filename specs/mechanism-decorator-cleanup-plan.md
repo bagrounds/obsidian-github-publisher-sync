@@ -68,11 +68,13 @@ are required unless a rename surfaces a latent bug.
    `hlint src/ app/ test/` reports no hints, and all 2025 Haskell tests still pass.
 Steps 2 and 3 are tracked in GitHub issue #7102.
 
-2. ⏳ **`Raw` → unit-level name** in `purs-ps/test/Test.Main.purs`: rename the
+2. ✅ **`Raw` → unit-level name** in `purs-ps/test/Test.Main.purs`: renamed the
    QuickCheck property parameters that hold raw `Number` millisecond values to
-   names that describe the value (`nowMs`, `timestampMs`, `wallMs`, `activeMs`,
-   `captionMs`). The `abs ...` calls that turn the QuickCheck-generated `Number`
-   into a non-negative count of milliseconds stay as is.
+   names that describe the value (`nowMs`, `captionMs`, `timestampMs`, `wallMs`,
+   `activeMs`). The `abs ...` calls that turn the QuickCheck-generated `Number`
+   into a non-negative count of milliseconds stay as is. Pure rename — the
+   PureScript bundle still builds clean and every QuickCheck property still
+   passes.
 3. ⏳ **`Impl` → concept-level wrapper/import names** in
    `purs-ps/src/WordMeter/FFI/Confirm.purs`, `…/Storage.purs`, and
    `…/Recognition.purs`: give the foreign imports concept-level names that

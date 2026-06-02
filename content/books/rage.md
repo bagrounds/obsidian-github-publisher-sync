@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T23:29:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized, abstract silhouette of a human head in profile. Inside the silhouette, a chaotic, swirling storm of deep crimson and jagged obsidian lines represents turbulent energy. Outside the head, the background is a stark, clean off-white. A single, sharp crack—resembling a lightning bolt or a fissure in glass—runs vertically through the center of the silhouette, suggesting a fragile containment of intense pressure. The aesthetic is modern, moody, and editorial, using a restricted palette of bold red, charcoal grey, and white to evoke the feeling of political volatility and internal unrest.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😡🤬 Rage  
+![books-rage](../books-rage.jpg)  
 [🛒 Rage. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45mskVJ)  
   
 ## 📖 Book Report: Rage by Bob Woodward  

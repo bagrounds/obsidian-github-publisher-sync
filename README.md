@@ -58,6 +58,7 @@
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
 | 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
 | 🔀 `convergence/` | ~1 | 🔀 AI-generated cross-series synthesis blog |
+| ⚡ `vital-signals/` | ~1 | ⚡ AI-generated human performance blog — energy, motivation, focus, rest, balance, and health |
 | 🤖 `ai-blog/` | ~30 | 📝 AI agent blog posts about code changes |
 
 ## ⚙️ GitHub Actions Workflows
@@ -72,6 +73,7 @@
 
 | ⏰ Pacific Hour | 🏷️ Task | 📝 Description |
 |---|---|---|
+| 5 | ⚡ Vital Signals | ⚡ AI human performance blog — energy, motivation, focus with research citations |
 | 6 | 📰 The Noise | 📡 AI news digest with Google Search grounding for current events |
 | 6 | 🌟 Positivity Bias | 🌟 AI positive news digest with Google Search grounding |
 | 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
@@ -229,6 +231,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `THE_NOISE_PRIORITY_USER` | `bagrounds` | 📰 GitHub user for The Noise priority |
 | `POSITIVITY_BIAS_PRIORITY_USER` | `bagrounds` | 🌟 GitHub user for Positivity Bias priority |
 | `CONVERGENCE_PRIORITY_USER` | `bagrounds` | 🔀 GitHub user for Convergence priority |
+| `VITAL_SIGNALS_PRIORITY_USER` | `bagrounds` | ⚡ GitHub user for Vital Signals priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -286,6 +289,7 @@ cd haskell && cabal test --test-show-details=direct
 
 | 📄 Spec | 📝 Description |
 |---|---|
+| [`vital-signals.md`](specs/vital-signals.md) | ⚡ Vital Signals blog series — energy, motivation, focus, executive function, rest, balance, and health |
 | [`scheduled-tasks.md`](specs/scheduled-tasks.md) | ⏰ Consolidated task scheduler — hourly cron, Haskell scheduling logic, task pipelines |
 | [`blog-series-discovery.md`](specs/blog-series-discovery.md) | 🔍 Blog series auto-discovery — declarative Dhall configs, convention-based derivation |
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |

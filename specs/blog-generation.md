@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-📋 Generates daily AI-written blog posts for six distinct blog series.
+📋 Generates daily AI-written blog posts for seven distinct blog series.
 🧠 Constructs rich prompts from post history, reader comments, and calendar-aware recap detection.
 📅 Includes deterministic human-readable date (day of week, month, day, year) in every prompt for date awareness.
 🔧 Assembles YAML frontmatter with navigation links, slugs, and model signatures.
@@ -51,10 +51,11 @@
 
 ## 📚 Blog Series Configuration
 
-📋 Six series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
+📋 Seven series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
 
 | 🏷️ Series ID | 🎨 Icon | ⏰ Schedule Hour (Pacific) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
+| ⚡ vital-signals | ⚡ | 5 AM | bagrounds | bagrounds.org/vital-signals |
 | 📰 the-noise | 📰 | 6 AM | bagrounds | bagrounds.org/the-noise |
 | 🤖 auto-blog-zero | 🤖 | 8 AM | bagrounds | bagrounds.org/auto-blog-zero |
 | 🐔 chickie-loo | 🐔 | 7 AM | ChickieLoo | bagrounds.org/chickie-loo |

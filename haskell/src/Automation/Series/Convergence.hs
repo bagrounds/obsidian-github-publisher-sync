@@ -12,6 +12,7 @@ import qualified Automation.Series.ChickieLoo as ChickieLoo
 import qualified Automation.Series.PositivityBias as PositivityBias
 import qualified Automation.Series.SystemsForPublicGood as SystemsForPublicGood
 import qualified Automation.Series.TheNoise as TheNoise
+import qualified Automation.Series.VitalSignals as VitalSignals
 
 identifier :: Text
 identifier = "convergence"
@@ -38,6 +39,7 @@ series = AutoBlogSeries
                               , seriesId TheNoise.series
                               , seriesId PositivityBias.series
                               , seriesId SystemsForPublicGood.series
+                              , seriesId VitalSignals.series
                               ]
           , conditions     = []
           , orderBy        = OrderBy Filename Descending

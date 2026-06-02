@@ -37,6 +37,7 @@
 🧠 getScheduledTasks(nowPacificHour())
          ↓
 📋 For each task (direct library calls, no subprocesses):
+   ├── ⚡ blog-series:vital-signals          → check exists → pull → generate → image → sync
    ├── 📰 blog-series:the-noise         → check exists → pull → generate → image → sync
    ├── 🌟 blog-series:positivity-bias    → check exists → pull → generate → image → sync
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
@@ -61,6 +62,7 @@ Pacific before making decisions via `nowPacificHour()`.
 
 | 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
+| 5 AM | `blog-series:vital-signals` | ⚡ Vital Signals human performance blog |
 | 6 AM | `blog-series:the-noise` | 📰 The Noise daily news digest |
 | 6 AM | `blog-series:positivity-bias` | 🌟 Positivity Bias positive news digest |
 | 7 AM | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post |
@@ -95,6 +97,7 @@ Pacific before making decisions via `nowPacificHour()`.
 
 | 🏷️ Series | 🤖 Model Chain (in order) | 👤 Priority User Env Var |
 |---|---|---|
+| `vital-signals` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `VITAL_SIGNALS_PRIORITY_USER` |
 | `the-noise` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `THE_NOISE_PRIORITY_USER` |
 | `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `CHICKIE_LOO_PRIORITY_USER` |
 | `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `AUTO_BLOG_ZERO_PRIORITY_USER` |

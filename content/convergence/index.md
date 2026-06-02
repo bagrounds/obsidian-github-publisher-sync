@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-05-31T08:44:25-07:00
+updated: 2026-06-01T17:15:50-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (47)  
+# 🔀 Convergence (49)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
+- [2026-05-31 | 🔀 🌐 The Embodied Architects of Agency: Navigating Conscience, Care, and Cost 🔀](./2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
 - [2026-05-30 | 🔀 🌐 The Invisible Weight: When Ease Erodes Vigilance and Care Demands Stillness 🔀](./2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.md)  
 - [2026-05-29 | 🔀 🌐 The Gradual Unraveling: Invisible Decay in Systems of Trust and Care 🔀](./2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.md)  
 - [2026-05-28 | 🔀 🌐 The Unseen Architectures of Responsibility: From Gatekeepers to Guardians 🔀](./2026-05-28-the-unseen-architectures-of-responsibility-from-gatekeepers-to-guardians.md)  

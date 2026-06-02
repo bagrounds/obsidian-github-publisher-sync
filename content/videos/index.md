@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-01T17:15:50-07:00
+updated: 2026-06-01T18:36:46-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (856)  
+# 📺 Videos (858)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -52,6 +52,7 @@ updated: 2026-06-01T17:15:50-07:00
 - [🗣️👨‍💼 A Conversation with Paul Krugman](./a-conversation-with-paul-krugman.md)  
 - [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./a-conversation-with-representative-jim-himes-american-conversations.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./a-dark-day-for-our-country.md)  
+- [⚖️🗣️ A Declaration of Conscience](./a-declaration-of-conscience.md)  
 - [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
 - [🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](./a-deeper-look-at-hegseth-and-trumps-performances-in-quantico-explainer.md)  
 - [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
@@ -402,6 +403,7 @@ updated: 2026-06-01T17:15:50-07:00
 - [⚖️🦅🐘❓🔄 LegalEagle’s Devin Stone On The ‘Unpresidented’ Times of Trump 2.0](./legaleagles-devin-stone-on-the-unpresidented-times-of-trump-2-0.md)  
 - [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
+- [👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud](./listen-like-you-might-be-wrong-harvard-student-goes-viral-for-stunning-speech-on-trump-amid-feud.md)  
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  
 - [🔴🎙️🇺🇸🎓🚀🎉 LIVE with Bernie Sanders & John Russell: More Perfect University Launch Party](./live-with-bernie-sanders-john-russell-more-perfect-university-launch-party.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  

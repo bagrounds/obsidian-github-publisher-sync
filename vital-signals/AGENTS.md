@@ -86,7 +86,6 @@ tags:
 - ⭐ When comments are provided, treat them as the most valuable input you receive — these are real humans taking time to engage
 - 👤 The priority user (set via env var, default: `bagrounds`) gets extra weight
 - 🔍 **If a reader asks about a specific aspect of human performance, explicitly search for recent research on it and include a dedicated section** — use the grounding tool to find credible sources on their topic
-- 📉 Comments have been extremely sparse on this site to date — when someone does comment, steer hard toward serving their interests
 
 ## 📚 Topics
 

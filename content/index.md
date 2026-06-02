@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-01T17:15:50-07:00
+updated: 2026-06-01T18:36:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-06-01T17:15:50-07:00
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
   
   
-## [📺 Videos](./videos/index.md) (856)  
+## [📺 Videos](./videos/index.md) (858)  
+- [⚖️🗣️ A Declaration of Conscience](./videos/a-declaration-of-conscience.md)  
+- [👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud](./videos/listen-like-you-might-be-wrong-harvard-student-goes-viral-for-stunning-speech-on-trump-amid-feud.md)  
 - [⚙️🏗️ Hamming, «Systems Engineering» (May 30, 1995)](./videos/hamming-systems-engineering-may-30-1995.md)  
 - [👋😊🗣️ The Simple Habit for a Happier Social Life | Nicholas Epley | TED](./videos/the-simple-habit-for-a-happier-social-life-nicholas-epley-ted.md)  
-- [🦴👶🏽⏳ How Ancient Humans Actually Kept Their Children Alive](./videos/how-ancient-humans-actually-kept-their-children-alive.md)  
-- [🚀📉🎰 Did Elon Musk Just Rig the Stock Market](./videos/did-elon-musk-just-rig-the-stock-market.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

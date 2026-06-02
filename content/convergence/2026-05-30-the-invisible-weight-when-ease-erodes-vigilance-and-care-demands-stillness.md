@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-30T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-31T11:43:01
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.md) [⏭️](./2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
 # 2026-05-30 | 🔀 🌐 The Invisible Weight: When Ease Erodes Vigilance and Care Demands Stillness 🔀  
 ![convergence-2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness](../convergence-2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.jpg)  
   

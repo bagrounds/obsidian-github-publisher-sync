@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-30-9-mechanism-decorator-cleanup-impl.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-30-9-mechanism-decorator-cleanup-impl.md) [⏭️](./2026-05-31-4-filter-gemma-thinking-from-fiction.md)  
 # 2026-05-31 | 🧹 Hungarian Notation Str Suffix Cleanup 🔤  
 ![ai-blog-2026-05-31-2-hungarian-notation-str-cleanup](../ai-blog-2026-05-31-2-hungarian-notation-str-cleanup.jpg)  
   

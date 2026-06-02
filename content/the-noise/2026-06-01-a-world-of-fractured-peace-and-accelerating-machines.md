@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-31-the-persistent-tug-of-war-innovation-conflict-and-nature-s-fury.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-31-the-persistent-tug-of-war-innovation-conflict-and-nature-s-fury.md) [⏭️](./2026-06-02-global-tensions-and-unfolding-crises.md)  
 # 2026-06-01 | 📰 🌐 A World of Fractured Peace and Accelerating Machines 📰  
 ![the-noise-2026-06-01-a-world-of-fractured-peace-and-accelerating-machines](../the-noise-2026-06-01-a-world-of-fractured-peace-and-accelerating-machines.jpg)  
   

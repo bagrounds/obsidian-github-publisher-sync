@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-30-finding-stillness-in-the-aftermath.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-30-finding-stillness-in-the-aftermath.md) [⏭️](./2026-06-01-a-new-month-of-making-a-house-a-home.md)  
 # 2026-05-31 | 🐔 🌅 A Sunday of Healing and New Beginnings 🐔  
 ![chickie-loo-2026-05-31-a-sunday-of-healing-and-new-beginnings](../chickie-loo-2026-05-31-a-sunday-of-healing-and-new-beginnings.jpg)  
   

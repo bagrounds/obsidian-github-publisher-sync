@@ -9,6 +9,10 @@ Platform:
 Channel: securitylectures
 tags:
 youtube: https://youtu.be/5vQ4CekU6sg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚙️🏗️ Hamming, «Systems Engineering» (May 30, 1995)  
@@ -44,12 +48,12 @@ youtube: https://youtu.be/5vQ4CekU6sg
 ### ↔️ Similar  
   
 * 📘 Introduction to Systems Engineering by Andrew P. Sage and William B. Rouse explores the fundamental frameworks and methodological approaches for managing complex systems.  
-* 📗 Thinking in Systems: A Primer by Donella H. Meadows provides an essential guide to understanding feedback loops, structural complexities, and how to analyze entire systems rather than isolated parts.  
+* 📗 [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella H. Meadows provides an essential guide to understanding feedback loops, structural complexities, and how to analyze entire systems rather than isolated parts.  
   
 ### 🆚 Contrasting  
   
 * 📙 The Mythical Man-Month by Frederick P. Brooks Jr. argues from the perspective of software project management that adding resources to a late project makes it later, challenging the assumption that more input always improves system outcomes.  
-* 📕 The Design of Everyday Things by Don Norman focuses on human-centered design and psychology, emphasizing how physical interface and user interaction must dictate design rather than abstract system optimization.  
+* 📕 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman focuses on human-centered design and psychology, emphasizing how physical interface and user interaction must dictate design rather than abstract system optimization.  
   
 ### 🎨 Creatively Related  
   

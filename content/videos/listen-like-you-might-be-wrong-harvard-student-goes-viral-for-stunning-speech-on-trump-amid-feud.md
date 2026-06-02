@@ -9,6 +9,10 @@ Platform:
 Channel: Hook Global
 tags:
 youtube: https://youtu.be/HzIGNWDWBSk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud  
@@ -41,15 +45,15 @@ A: Agreement is fragile and lasts only as long as parties remain in consensus, w
   
 ### ↔️ Similar  
   
-* 🤝 The Righteous Mind by Jonathan Haidt explores how moral intuitions drive our political and social divisions and how we can better understand those with whom we disagree.  
-* 🗨️ Difficult Conversations by Douglas Stone, Bruce Patton, and Sheila Heen provides practical tools for navigating interpersonal conflicts by shifting from combat to learning.  
+* 🤝 [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt explores how moral intuitions drive our political and social divisions and how we can better understand those with whom we disagree.  
+* 🗨️ [💬😬 Difficult Conversations: How to Discuss What Matters Most](../books/difficult-conversations-how-to-discuss-what-matters-most.md) by Douglas Stone, Bruce Patton, and Sheila Heen provides practical tools for navigating interpersonal conflicts by shifting from combat to learning.  
   
 ### 🆚 Contrasting  
   
-* ⚔️ The Origins of Totalitarianism by Hannah Arendt examines how political ideologies can be used to divide societies and dehumanize opponents in ways that make dialogue impossible.  
+* ⚔️ [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt examines how political ideologies can be used to divide societies and dehumanize opponents in ways that make dialogue impossible.  
 * 🛡️ On Tyranny by Timothy Snyder offers a perspective on maintaining critical thinking and personal responsibility when society is pressured by extreme political forces.  
   
 ### 🎨 Creatively Related  
   
 * 🧬 The Better Angels of Our Nature by Steven Pinker analyzes the long-term decline of violence and the growth of empathy as foundational elements of human progress.  
-* 📖 Meditations by Marcus Aurelius provides stoic guidance on maintaining internal composure and rational empathy when dealing with difficult people in a complex world.
+* 📖 [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius provides stoic guidance on maintaining internal composure and rational empathy when dealing with difficult people in a complex world.

@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/zK5yB0UTFNE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚖️🗣️ A Declaration of Conscience  
@@ -48,4 +52,4 @@ youtube: https://youtu.be/zK5yB0UTFNE
 ### 🎨 Creatively Related  
   
 * 📖 It Can't Happen Here by Sinclair Lewis is a classic novel that explores the fragility of democracy when subjected to populist demagoguery and authoritarian rhetoric.  
-* ⚖️ The Origins of Totalitarianism by Hannah Arendt provides an analytical framework for understanding how fear and propaganda are used to manipulate populations and dismantle political institutions.
+* ⚖️ [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt provides an analytical framework for understanding how fear and propaganda are used to manipulate populations and dismantle political institutions.

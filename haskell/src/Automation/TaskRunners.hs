@@ -97,7 +97,7 @@ import Automation.Wikilink (buildBackLink)
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
-  let config = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 2048 }
+  let config = AiFiction.fictionGenerationConfig
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
   case result of
     Left failure -> failTask $ "Gemini API error: " <> T.pack (show failure)

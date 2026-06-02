@@ -2,6 +2,7 @@ module Automation.AiFiction
   ( fictionSectionHeader
   , defaultFictionModel
   , fictionModelPool
+  , fictionGenerationConfig
   , selectFictionModelChain
   , fictionEligibilityCutoff
   , stripForPrompt
@@ -44,11 +45,22 @@ fictionModelPool =
     [ Gemini.Gemini25FlashLite
     , Gemini.Gemini31FlashLite
     , Gemini.Gemini3Flash
-    , Gemini.Gemini20Flash
     , Gemini.Gemma4
     , Gemini.Gemma4MixtureOfExperts
-    , Gemini.Gemma3
     ]
+
+-- | Generation config the daily fiction run sends to Gemini (shared with the
+-- daily title generator through @callGeminiForGenerator@). Thinking-capable
+-- models (and Gemma, which streams its planning as plain output text) spend a
+-- large share of the output-token budget on internal reasoning before emitting
+-- the story, so the budget sits well above the under-100-word story length to
+-- leave room for the final text. The @test-fiction-models@ binary uses this
+-- same config so its output matches what the daily run would actually publish.
+fictionGenerationConfig :: Gemini.GenerationConfig
+fictionGenerationConfig = Gemini.defaultGenerationConfig
+  { Gemini.temperature     = 0.9
+  , Gemini.maxOutputTokens = 2048
+  }
 
 selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model
 selectFictionModelChain day pool =

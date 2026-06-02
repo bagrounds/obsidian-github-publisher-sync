@@ -17,6 +17,7 @@ tests :: TestTree
 tests = testGroup "AiFiction"
   [ constantTests
   , fictionModelPoolTests
+  , fictionGenerationConfigTests
   , selectFictionModelChainTests
   , fictionEligibilityCutoffTests
   , stripForPromptTests
@@ -48,6 +49,19 @@ fictionModelPoolTests = testGroup "fictionModelPool"
   , testCase "does not include the image-generation model" $
       assertBool "no image model in pool" $
         Gemini.Gemini31FlashImage `notElem` NE.toList fictionModelPool
+  ]
+
+fictionGenerationConfigTests :: TestTree
+fictionGenerationConfigTests = testGroup "fictionGenerationConfig"
+  [ testCase "uses the daily-run creative temperature" $
+      Gemini.temperature fictionGenerationConfig @?= 0.9
+  , testCase "budgets enough output tokens for thinking models to reach the story" $
+      assertBool "maxOutputTokens is well above the default to leave room past internal reasoning"
+        (Gemini.maxOutputTokens fictionGenerationConfig >= 2048)
+  , testCase "raises the output budget above the Gemini default" $
+      assertBool "fiction budget exceeds the default generation config"
+        (Gemini.maxOutputTokens fictionGenerationConfig
+           > Gemini.maxOutputTokens Gemini.defaultGenerationConfig)
   ]
 
 selectFictionModelChainTests :: TestTree

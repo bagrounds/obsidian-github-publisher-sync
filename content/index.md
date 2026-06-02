@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-01T23:16:55-07:00
+updated: 2026-06-02T12:14:15-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-06-01T23:16:55-07:00
 - [2026-05-31 | 🔤 Cleanup 🌟 Progress 📰 Innovation 🐔 Beginnings 🤖 Agency 🏛️ Public 🔀 Navigating. 🤖🌟📰🐔🏛️🔀🔄📊🤖🐲](./reflections/2026-05-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (241)  
+## [🤖 AI Blog](./ai-blog/index.md) (242)  
+- [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./ai-blog/2026-06-02-1-vital-signals-series-launch.md)  
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
 - [2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲](./ai-blog/2026-05-31-4-filter-gemma-thinking-from-fiction.md)  
-- [2026-05-31 | 🧹 Hungarian Notation Str Suffix Cleanup 🔤](./ai-blog/2026-05-31-2-hungarian-notation-str-cleanup.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (84)  
@@ -38,10 +38,10 @@ updated: 2026-06-01T23:16:55-07:00
 - [2026-05-31 | 🐔 🌅 A Sunday of Healing and New Beginnings 🐔](./chickie-loo/2026-05-31-a-sunday-of-healing-and-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (72)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (73)  
+- [2026-06-02 | 🏛️ 🤝 Forging a Global Compact for Digital Accountability 🏛️](./systems-for-public-good/2026-06-02-forging-a-global-compact-for-digital-accountability.md)  
 - [2026-06-01 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-01-the-human-operating-system-for-digital-democracy.md)  
 - [2026-05-31 | 🏛️ 🌉 The Digital Crossroads: Private Power and Public Good 🏛️](./systems-for-public-good/2026-05-31-the-digital-crossroads-private-power-and-public-good.md)  
-- [2026-05-30 | 🏛️ Digital Sovereignty: Defining a Nation's Digital Destiny 🏛️](./systems-for-public-good/2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (54)  
@@ -56,7 +56,8 @@ updated: 2026-06-01T23:16:55-07:00
 - [2026-05-31 | 🌟 ☀️ Resilient Progress: Cures, Quantum Leaps, and Global Unity 🌟](./positivity-bias/2026-05-31-resilient-progress-cures-quantum-leaps-and-global-unity.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (0)  
+## [⚡ Vital Signals](./vital-signals/index.md) (2)  
+- [2026-06-02 | ⚡ Inaugural Edition — The Energy Budget You Were Never Taught ⚡](./vital-signals/2026-06-02-inaugural-the-energy-budget.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (49)  

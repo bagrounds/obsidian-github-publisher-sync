@@ -1,10 +1,12 @@
 -- | Live-API smoke test for the AI fiction model rotation pool.
 --
 -- Iterates over every model in 'Automation.AiFiction.fictionModelPool',
--- sends the same fiction prompt the production scheduler uses through
--- 'Gemini.generateContent', prints the result, and exits non-zero if
--- any model fails. Designed to surface decommissioned models and
--- request-shape regressions before they hit the daily rotation.
+-- sends the same fiction prompt and generation config the production
+-- scheduler uses through 'Gemini.generateContent', applies the same
+-- 'AiFiction.parseFictionResponse' post-processing the daily run applies,
+-- prints the published result, and exits non-zero if any model fails.
+-- Designed to surface decommissioned models and request-shape regressions
+-- before they hit the daily rotation.
 --
 -- Run from CI via the test-fiction-models GitHub Actions workflow
 -- (workflow_dispatch — triggerable from the GitHub mobile web UI), or
@@ -71,14 +73,14 @@ main = do
           , Gemini.requestSystemInstruction = Just systemInstruction
           , Gemini.requestModel             = model
           , Gemini.requestApiKey            = Secret (T.pack key)
-          , Gemini.requestGenerationConfig  = Gemini.defaultGenerationConfig
+          , Gemini.requestGenerationConfig  = AiFiction.fictionGenerationConfig
           }
         case result of
           Right response -> do
             TIO.putStrLn "───────────────────────────────────────────────────────────────"
             TIO.putStrLn $ "✅ " <> Gemini.modelToText model <> " output:"
             TIO.putStrLn "───────────────────────────────────────────────────────────────"
-            TIO.putStrLn $ Gemini.responseText response
+            TIO.putStrLn $ AiFiction.parseFictionResponse (Gemini.responseText response)
             TIO.putStrLn ""
             pure True
           Left failure -> do

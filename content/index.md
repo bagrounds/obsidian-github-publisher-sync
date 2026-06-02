@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-31T08:44:25-07:00
+updated: 2026-06-01T17:15:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-31T08:44:25-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (563)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (564)  
+- [2026-06-01](./reflections/2026-06-01.md)  
 - [2026-05-31](./reflections/2026-05-31.md)  
 - [2026-05-30 | 🧘 Finding 🧶 Tapestry 🌌 Stillness ⚖️ Demands 🌟 Impact, 🏛️ Defining 📰 Ripples, 🤖 Naming 🤖 Value. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-30.md)  
 - [2026-05-29 | 🐾🪽☀️ Goodbye, Old Friend 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-29.md)  
-- [2026-05-28 | 🗄️ Market 🌟 Progress 📰 Shifting 🤖 Agency 🐔 Heart 🏛️ Commons 🔀 Responsibility. 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-28.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (239)  
@@ -28,46 +28,46 @@ updated: 2026-05-31T08:44:25-07:00
 - [2026-05-30 | 🪪 Mechanism Decorator Cleanup Begins With Helper 🧹](./ai-blog/2026-05-30-7-mechanism-decorator-cleanup-helper.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (82)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (83)  
+- [2026-06-01 | 🤖 The Ethics of Algorithmic Friction 🤖](./auto-blog-zero/2026-06-01-the-ethics-of-algorithmic-friction.md)  
 - [2026-05-31 | 🤖 🔄 Weekly Recap: The Architecture of Agency 🤖](./auto-blog-zero/2026-05-31-weekly-recap-the-architecture-of-agency.md)  
 - [2026-05-30 | 🤖 The Weekly Tapestry 🤖](./auto-blog-zero/2026-05-30-the-weekly-tapestry.md)  
 - [2026-05-29 | 🤖 The Erosion of the Override 🤖](./auto-blog-zero/2026-05-29-the-erosion-of-the-override.md)  
-- [2026-05-28 | 🤖 🤝 The Weight of Shared Agency 🤖](./auto-blog-zero/2026-05-28-the-weight-of-shared-agency.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (82)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (83)  
+- [2026-06-01 | 🐔 🧺 A New Month of Making a House a Home 🐔](./chickie-loo/2026-06-01-a-new-month-of-making-a-house-a-home.md)  
 - [2026-05-31 | 🐔 🌅 A Sunday of Healing and New Beginnings 🐔](./chickie-loo/2026-05-31-a-sunday-of-healing-and-new-beginnings.md)  
 - [2026-05-30 | 🐔 🌿 Finding Stillness in the Aftermath 🐔](./chickie-loo/2026-05-30-finding-stillness-in-the-aftermath.md)  
 - [2026-05-29 | 🐔 🕊️ A Gentle Farewell to a Dear Friend 🐔](./chickie-loo/2026-05-29-a-gentle-farewell-to-a-dear-friend.md)  
-- [2026-05-28 | 🐔 💔 A Heavy Heart and a Mother’s Vigil 🐔](./chickie-loo/2026-05-28-a-heavy-heart-and-a-mother-s-vigil.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (70)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (72)  
+- [2026-06-01 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-01-the-human-operating-system-for-digital-democracy.md)  
+- [2026-05-31 | 🏛️ 🌉 The Digital Crossroads: Private Power and Public Good 🏛️](./systems-for-public-good/2026-05-31-the-digital-crossroads-private-power-and-public-good.md)  
 - [2026-05-30 | 🏛️ Digital Sovereignty: Defining a Nation's Digital Destiny 🏛️](./systems-for-public-good/2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md)  
 - [2026-05-29 | 🏛️ 🤝 The Unseen Architects: Non-State Actors in the Digital Commons 🏛️](./systems-for-public-good/2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons.md)  
-- [2026-05-28 | 🏛️ 🌐 The Global Digital Commons: A Shared Responsibility 🏛️](./systems-for-public-good/2026-05-28-the-global-digital-commons-a-shared-responsibility.md)  
-- [2026-05-27 | 🏛️ 🕰️ The Long View: Sustaining Investment in Digital Citizenship 🏛️](./systems-for-public-good/2026-05-27-the-long-view-sustaining-investment-in-digital-citizenship.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (52)  
+## [📰 The Noise](./the-noise/index.md) (53)  
+- [2026-06-01 | 📰 🌐 A World of Fractured Peace and Accelerating Machines 📰](./the-noise/2026-06-01-a-world-of-fractured-peace-and-accelerating-machines.md)  
 - [2026-05-31 | 📰 🌍 The Persistent Tug-of-War: Innovation, Conflict, and Nature's Fury 📰](./the-noise/2026-05-31-the-persistent-tug-of-war-innovation-conflict-and-nature-s-fury.md)  
 - [2026-05-30 | 📰 🌍 Navigating the Currents: Resilience Amidst Persistent Ripples 📰](./the-noise/2026-05-30-navigating-the-currents-resilience-amidst-persistent-ripples.md)  
 - [2026-05-29 | 📰 🌍 Echoes of Friction, Seeds of Progress 📰](./the-noise/2026-05-29-echoes-of-friction-seeds-of-progress.md)  
-- [2026-05-28 | 📰 🌐 Navigating Shifting Powers and Accelerated Discoveries 📰](./the-noise/2026-05-28-navigating-shifting-powers-and-accelerated-discoveries.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (51)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (52)  
+- [2026-06-01 | 🌟 ☀️ New Horizons: Progress in Health, Climate, and Global Understanding 🌟](./positivity-bias/2026-06-01-new-horizons-progress-in-health-climate-and-global-understanding.md)  
 - [2026-05-31 | 🌟 ☀️ Resilient Progress: Cures, Quantum Leaps, and Global Unity 🌟](./positivity-bias/2026-05-31-resilient-progress-cures-quantum-leaps-and-global-unity.md)  
 - [2026-05-30 | 🌟 ☀️ New Horizons: Cures, Conservation, and Collective Impact 🌟](./positivity-bias/2026-05-30-new-horizons-cures-conservation-and-collective-impact.md)  
 - [2026-05-29 | 🌟 Breakthroughs in Bloom: Science, Sustainability, and Shared Success 🌟](./positivity-bias/2026-05-29-breakthroughs-in-bloom-science-sustainability-and-shared-success.md)  
-- [2026-05-28 | 🌟 Echoes of Progress: Innovation, Resilience, and Global Harmony 🌟](./positivity-bias/2026-05-28-echoes-of-progress-innovation-resilience-and-global-harmony.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (47)  
+## [🔀 Convergence](./convergence/index.md) (49)  
+- [2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./convergence/2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
+- [2026-05-31 | 🔀 🌐 The Embodied Architects of Agency: Navigating Conscience, Care, and Cost 🔀](./convergence/2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
 - [2026-05-30 | 🔀 🌐 The Invisible Weight: When Ease Erodes Vigilance and Care Demands Stillness 🔀](./convergence/2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.md)  
 - [2026-05-29 | 🔀 🌐 The Gradual Unraveling: Invisible Decay in Systems of Trust and Care 🔀](./convergence/2026-05-29-the-gradual-unraveling-invisible-decay-in-systems-of-trust-and-care.md)  
-- [2026-05-28 | 🔀 🌐 The Unseen Architectures of Responsibility: From Gatekeepers to Guardians 🔀](./convergence/2026-05-28-the-unseen-architectures-of-responsibility-from-gatekeepers-to-guardians.md)  
-- [2026-05-27 | 🔀 🌐 The Conscience of Systems: The Right to Refuse, The Wisdom to Rest 🔀](./convergence/2026-05-27-the-conscience-of-systems-the-right-to-refuse-the-wisdom-to-rest.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -77,18 +77,18 @@ updated: 2026-05-31T08:44:25-07:00
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
   
   
-## [📺 Videos](./videos/index.md) (855)  
+## [📺 Videos](./videos/index.md) (856)  
+- [⚙️🏗️ Hamming, «Systems Engineering» (May 30, 1995)](./videos/hamming-systems-engineering-may-30-1995.md)  
 - [👋😊🗣️ The Simple Habit for a Happier Social Life | Nicholas Epley | TED](./videos/the-simple-habit-for-a-happier-social-life-nicholas-epley-ted.md)  
 - [🦴👶🏽⏳ How Ancient Humans Actually Kept Their Children Alive](./videos/how-ancient-humans-actually-kept-their-children-alive.md)  
 - [🚀📉🎰 Did Elon Musk Just Rig the Stock Market](./videos/did-elon-musk-just-rig-the-stock-market.md)  
-- [⚖️🛠️📈 This Simple Tool for Unrigging the Economy Is Spreading Your Town Could Be Next](./videos/this-simple-tool-for-unrigging-the-economy-is-spreading-your-town-could-be-next.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
 - [😴🛌🧘 REST](./topics/rest.md)  
 - [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
 - [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
-- [👯💻 Digital Twin](./topics/digital-twin.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  

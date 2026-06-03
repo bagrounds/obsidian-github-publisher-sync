@@ -9,6 +9,10 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/crzxR8enx6o
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)  
@@ -47,7 +51,7 @@ youtube: https://youtu.be/crzxR8enx6o
   
 ### 🆚 Contrasting  
   
-* 📘 The Federalist Papers by Alexander Hamilton, James Madison, and John Jay lays out the foundational constitutional arguments regarding the necessity of checks and balances on executive authority.  
+* 📘 [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay lays out the foundational constitutional arguments regarding the necessity of checks and balances on executive authority.  
 * 📘 Locked In by John Pfaff investigates the systemic drivers of mass incarceration in America and offers an objective analysis of why the criminal justice system behaves the way it does.  
   
 ### 🎨 Creatively Related  

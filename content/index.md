@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-02T12:14:15-07:00
+updated: 2026-06-02T17:03:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -60,10 +60,10 @@ updated: 2026-06-02T12:14:15-07:00
 - [2026-06-02 | ⚡ Inaugural Edition — The Energy Budget You Were Never Taught ⚡](./vital-signals/2026-06-02-inaugural-the-energy-budget.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (49)  
+## [🔀 Convergence](./convergence/index.md) (50)  
+- [2026-06-02 | 🔀 🌐 The Invisible Architectures of Resilience: Metabolic Limits, Principled Friction, and the Cost of Care 🔀](./convergence/2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.md)  
 - [2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./convergence/2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
 - [2026-05-31 | 🔀 🌐 The Embodied Architects of Agency: Navigating Conscience, Care, and Cost 🔀](./convergence/2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
-- [2026-05-30 | 🔀 🌐 The Invisible Weight: When Ease Erodes Vigilance and Care Demands Stillness 🔀](./convergence/2026-05-30-the-invisible-weight-when-ease-erodes-vigilance-and-care-demands-stillness.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -72,10 +72,10 @@ updated: 2026-06-02T12:14:15-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (858)  
+## [📺 Videos](./videos/index.md) (859)  
+- [⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)](./videos/trumps-pardons-last-week-tonight-with-john-oliver-hbo.md)  
 - [⚖️🗣️ A Declaration of Conscience](./videos/a-declaration-of-conscience.md)  
 - [👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud](./videos/listen-like-you-might-be-wrong-harvard-student-goes-viral-for-stunning-speech-on-trump-amid-feud.md)  
-- [⚙️🏗️ Hamming, «Systems Engineering» (May 30, 1995)](./videos/hamming-systems-engineering-may-30-1995.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

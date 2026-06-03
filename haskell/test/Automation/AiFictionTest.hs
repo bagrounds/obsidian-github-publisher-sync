@@ -23,6 +23,7 @@ tests = testGroup "AiFiction"
   , stripForPromptTests
   , reflectionNeedsFictionTests
   , parseFictionResponseTests
+  , extractFinalFictionTests
   , buildFictionSignatureTests
   , applyFictionTests
   , propertyTests
@@ -199,6 +200,86 @@ parseFictionResponseTests = testGroup "parseFictionResponse"
       parseFictionResponse "Clean fiction text" @?= "Clean fiction text"
   , testCase "handles empty input" $
       parseFictionResponse "" @?= ""
+  , testCase "strips inline thinking and extracts final fiction" $
+      let input = T.unlines
+            [ "*   Themes: green growth, energy budget."
+            , "*   Selection: metabolic limits."
+            , ""
+            , "*Draft 1:*"
+            , "\x1F50B The gauge dips into the red."
+            , "\x1F33F The terrarium needs more light."
+            , ""
+            , "*Wait, lets refine.*"
+            , ""
+            , "\x1F50B The crimson indicator stutters in the dark."
+            , "\x1F33F I scrape the condensation from the glass."
+            , "\x1F4A7 Each drop of recycled moisture is a calculated expense."
+            , "\x1F4C9 My pulse slows as I dim my own lamp to power the nursery."
+            , "\x2696 The system demands a sacrifice of warmth to keep the green alive."
+            , "\x1F56F I wrap my threadbare coat tighter and wait for the morning."
+            ]
+          expected = T.intercalate "\n"
+            [ "\x1F50B The crimson indicator stutters in the dark."
+            , "\x1F33F I scrape the condensation from the glass."
+            , "\x1F4A7 Each drop of recycled moisture is a calculated expense."
+            , "\x1F4C9 My pulse slows as I dim my own lamp to power the nursery."
+            , "\x2696 The system demands a sacrifice of warmth to keep the green alive."
+            , "\x1F56F I wrap my threadbare coat tighter and wait for the morning."
+            ]
+      in parseFictionResponse input @?= expected
+  ]
+
+extractFinalFictionTests :: TestTree
+extractFinalFictionTests = testGroup "extractFinalFiction"
+  [ testCase "returns clean fiction unchanged" $
+      let fiction = T.intercalate "\n"
+            [ "\x1F50B The red light pulses."
+            , "\x1F33F I press my thumb against the sensor."
+            , "\x1F4C9 My pulse slows."
+            ]
+      in extractFinalFiction fiction @?= fiction
+  , testCase "extracts last emoji block from thinking output" $
+      let input = T.unlines
+            [ "* Themes: pardons, green growth."
+            , "* Selection: metabolic limits."
+            , ""
+            , "\x1F50B Draft line one."
+            , "\x1F33F Draft line two."
+            , ""
+            , "*Wait, lets try again.*"
+            , ""
+            , "\x1F50B Final line one."
+            , "\x1F33F Final line two."
+            , "\x1F4A7 Final line three."
+            ]
+      in extractFinalFiction input @?= T.intercalate "\n"
+            [ "\x1F50B Final line one."
+            , "\x1F33F Final line two."
+            , "\x1F4A7 Final line three."
+            ]
+  , testCase "handles single emoji line with thinking (returns unchanged)" $
+      let input = "Some thinking\n\x1F50B One line."
+      in extractFinalFiction input @?= input
+  , testCase "returns empty input unchanged" $
+      extractFinalFiction "" @?= ""
+  , testCase "returns non-emoji text unchanged" $
+      extractFinalFiction "Just plain text" @?= "Just plain text"
+  , testCase "handles multiple drafts with blank lines between final block lines" $
+      let input = T.unlines
+            [ "*Draft 1:*"
+            , "\x1F50B First draft."
+            , "\x1F33F First draft continued."
+            , ""
+            , "*Final:*"
+            , "\x1F50B Final fiction line one."
+            , ""
+            , "\x1F33F Final fiction line two."
+            ]
+      in extractFinalFiction input @?= T.intercalate "\n"
+            [ "\x1F50B Final fiction line one."
+            , ""
+            , "\x1F33F Final fiction line two."
+            ]
   ]
 
 buildFictionSignatureTests :: TestTree

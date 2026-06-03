@@ -9,6 +9,7 @@ module Automation.AiFiction
   , reflectionNeedsFiction
   , buildFictionPrompt
   , parseFictionResponse
+  , extractFinalFiction
   , buildFictionSignature
   , applyFiction
   , generateFiction
@@ -27,7 +28,7 @@ import Automation.Platform
   ( updatesSectionHeader
   )
 
-import Automation.Text (stripCodeFences)
+import Automation.Text (isEmoji, stripCodeFences)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -150,7 +151,53 @@ parseFictionResponse raw =
   let t1 = stripCodeFences raw
       t2 = T.replace fictionSectionHeader "" t1
       t3 = removeQuotationMarks t2
-  in T.strip t3
+      t4 = extractFinalFiction t3
+  in T.strip t4
+
+-- | Extract the final fiction from a response that may contain inline thinking.
+-- Some models (e.g. Gemma) emit their chain-of-thought reasoning as plain text
+-- before the final fiction output. The fiction prompt requires every sentence to
+-- start with an emoji, so this function finds the last contiguous block of
+-- non-empty lines beginning with an emoji character. If fewer than two such
+-- lines exist in the last block, or every non-empty line already starts with an
+-- emoji, the input is returned unchanged.
+extractFinalFiction :: Text -> Text
+extractFinalFiction text =
+  let allLines = T.lines text
+      nonEmptyCount = length (filter (not . T.null . T.strip) allLines)
+      lastBlock = takeLastEmojiBlock allLines
+      blockNonEmpty = filter (not . T.null . T.strip) lastBlock
+  in if length blockNonEmpty >= 2 && length blockNonEmpty < nonEmptyCount
+     then T.intercalate "\n" lastBlock
+     else text
+
+-- | Walk the lines in reverse, collecting the trailing contiguous run of
+-- emoji-starting lines (plus any blank lines interspersed among them).
+-- Stops as soon as a non-blank, non-emoji-starting line is reached.
+-- Leading and trailing blank lines are trimmed from the result.
+takeLastEmojiBlock :: [Text] -> [Text]
+takeLastEmojiBlock allLines =
+  let reversed = reverse allLines
+      -- Drop trailing blank lines (they appear first in the reversed list)
+      withoutTrailingBlanks = dropWhile (T.null . T.strip) reversed
+      -- Collect emoji lines and interspersed blanks
+      collected = takeEmojiRun withoutTrailingBlanks
+      -- Reverse back and drop any leading blanks that crept in
+  in dropWhile (T.null . T.strip) (reverse collected)
+
+-- | From a reversed list of lines, take lines while they start with an emoji
+-- or are blank (interspersed blank lines within a fiction block).
+takeEmojiRun :: [Text] -> [Text]
+takeEmojiRun [] = []
+takeEmojiRun (line:rest)
+  | T.null (T.strip line) = line : takeEmojiRun rest
+  | startsWithEmoji line   = line : takeEmojiRun rest
+  | otherwise              = []
+
+startsWithEmoji :: Text -> Bool
+startsWithEmoji text = case T.uncons (T.strip text) of
+  Just (character, _) -> isEmoji character
+  Nothing             -> False
 
 removeQuotationMarks :: Text -> Text
 removeQuotationMarks = T.filter (\character ->

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md) [⏭️](./2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.md)  
 # 2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀  
 ![convergence-2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings](../convergence-2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.jpg)  
   

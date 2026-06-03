@@ -9,6 +9,10 @@ tags:
 image_date: 2026-06-02T17:44:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette in profile. Inside the silhouette, a delicate, glowing network of neural pathways transitions into a soft, amber-colored battery icon at the base of the skull. The background is a deep, matte navy blue, representing the systems aspect of the brain. Thin, geometric golden lines weave throughout the composition, suggesting both circuitry and structural scaffolding. To the side, a soft, translucent gradient represents a glucose curve, subtly flattening into a stable line. The overall aesthetic is clean, scientific, and sophisticated, utilizing a palette of deep blue, warm amber, and metallic gold to evoke the intersection of biology, energy, and precision engineering.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [⚡ Vital Signals](./index.md)  
 # 2026-06-02 | ⚡ Inaugural Edition — The Energy Budget You Were Never Taught ⚡  

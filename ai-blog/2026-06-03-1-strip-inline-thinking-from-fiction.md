@@ -14,7 +14,7 @@ URL: https://bagrounds.org/ai-blog/2026-06-03-1-strip-inline-thinking-from-ficti
 
 ## 🔍 The Root Cause
 
-🧩 Gemma models produce two kinds of thinking output. 📦 The first kind uses the Gemini API thought flag on response parts, which the previous fix already filters with extractNonThoughtText. 📝 The second kind is plain text reasoning that appears as regular output: bullet-pointed theme analysis, multiple draft attempts, self-correction notes like Wait lets refine, word count checks, and formatting verification. 🎯 The old parseFictionResponse function stripped code fences, quotation marks, and whitespace but had no way to separate this inline thinking from the final fiction.
+🧩 Gemma models produce two kinds of thinking output. 📦 The first kind uses the Gemini API thought flag on response parts, which the previous fix already filters with extractNonThoughtText. 📝 The second kind is plain text reasoning that appears as regular output: bullet-pointed theme analysis, multiple draft attempts, self-correction notes like Wait, let us refine, word count checks, and formatting verification. 🎯 The old parseFictionResponse function stripped code fences, quotation marks, and whitespace but had no way to separate this inline thinking from the final fiction.
 
 ## 🔧 The Fix
 

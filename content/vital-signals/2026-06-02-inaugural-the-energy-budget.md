@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) [⏭️](./2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md)  
 # 2026-06-02 | ⚡ Inaugural Edition — The Energy Budget You Were Never Taught ⚡  
 ![vital-signals-2026-06-02-inaugural-the-energy-budget](../vital-signals-2026-06-02-inaugural-the-energy-budget.jpg)  
   

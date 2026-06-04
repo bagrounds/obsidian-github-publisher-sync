@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-02T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-06-01-1-fiction-test-config-drift-rca.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-06-01-1-fiction-test-config-drift-rca.md) [⏭️](./2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.md)  
 # 2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡  
 ![ai-blog-2026-06-02-1-vital-signals-series-launch](../ai-blog-2026-06-02-1-vital-signals-series-launch.jpg)  
   

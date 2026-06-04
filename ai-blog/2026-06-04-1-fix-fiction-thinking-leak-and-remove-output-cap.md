@@ -26,15 +26,7 @@ URL: https://bagrounds.org/ai-blog/2026-06-04-1-fix-fiction-thinking-leak-and-re
 
 ## 📚 Book Recommendations
 
-### 📖 Similar
-
-- 🔒 The Pragmatic Programmer by David Thomas and Andrew Hunt argues that a program should fail loudly rather than silently propagate bad data, exactly the principle this fix applies by surfacing a missing final output as an error instead of publishing the thinking trace
-- 🧱 Clean Code by Robert Martin emphasizes that functions should do one thing and do it clearly, which motivated separating the no-text case from the thought-only case into distinct error messages
-
-### ↔️ Contrasting
-
-- 🌊 The Art of Thinking Clearly by Rolf Dobelli catalogues cognitive biases we accept rather than reject, whereas this fix rejects thinking output rather than accepting it as a usable result
-
-### 🔗 Related
-
-- 🔄 Designing Data-Intensive Applications by Martin Kleppmann covers failure modes in distributed systems and why partial results should not be treated as complete ones, mirroring the situation where a truncated token stream should not be treated as a finished story
+* The Pragmatic Programmer by David Thomas and Andrew Hunt
+* Clean Code by Robert Martin
+* The Art of Thinking Clearly by Rolf Dobelli
+* Designing Data-Intensive Applications by Martin Kleppmann

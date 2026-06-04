@@ -143,7 +143,7 @@ generateSocialPostText manager apiKey note platform = do
       tagsCombined = system tagsPrompt <> "\n\n" <> user tagsPrompt
       questionCombined = system questionPrompt <> "\n\n" <> user questionPrompt
       maxLen = platformMaxCharacters (platformLimits platform)
-      genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.8, Gemini.maxOutputTokens = 512 }
+      genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.8, Gemini.maxOutputTokens = Just 512 }
 
   tagsResult <- Gemini.generateContentWithFallback manager (Gemini.defaultModel :| [Gemini.gemini3Flash, Gemini.flashFallback]) Nothing tagsCombined apiKey genConfig
   questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing questionCombined apiKey genConfig

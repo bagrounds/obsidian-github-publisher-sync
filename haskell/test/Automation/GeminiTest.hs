@@ -404,11 +404,18 @@ extractNonThoughtTextTests = testGroup "extractNonThoughtText"
         ]
         @?= Right "the actual fiction"
 
-  , testCase "falls back to last thought text when all parts are thoughts" $
+  , testCase "returns ExtractionError when all parts are thoughts (no final output)" $
       Gemini.extractNonThoughtText
         [ Object [("text", String "only thinking"), ("thought", Bool True)]
         ]
-        @?= Right "only thinking"
+        @?= Left (Gemini.ExtractionError "no final output — model returned only thinking parts")
+
+  , testCase "returns ExtractionError when multiple thought-only parts (truncated budget)" $
+      Gemini.extractNonThoughtText
+        [ Object [("text", String "step 1 reasoning"), ("thought", Bool True)]
+        , Object [("text", String "step 2 reasoning"), ("thought", Bool True)]
+        ]
+        @?= Left (Gemini.ExtractionError "no final output — model returned only thinking parts")
 
   , testCase "non-text parts are ignored" $
       Gemini.extractNonThoughtText

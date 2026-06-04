@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-04T06:42:34-07:00
+updated: 2026-06-04T07:10:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-04T06:42:34-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (859)  
+## [📺 Videos](./videos/index.md) (860)  
+- [🧠📉📈 Neuroscience Confirms - Why Doing Less Helps You Achieve More](./videos/neuroscience-confirms-why-doing-less-helps-you-achieve-more.md)  
 - [⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)](./videos/trumps-pardons-last-week-tonight-with-john-oliver-hbo.md)  
 - [⚖️🗣️ A Declaration of Conscience](./videos/a-declaration-of-conscience.md)  
-- [👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud](./videos/listen-like-you-might-be-wrong-harvard-student-goes-viral-for-stunning-speech-on-trump-amid-feud.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

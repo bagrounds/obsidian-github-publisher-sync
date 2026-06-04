@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md) [⏭️](./2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
 # 2026-06-02 | 🔀 🌐 The Invisible Architectures of Resilience: Metabolic Limits, Principled Friction, and the Cost of Care 🔀  
 ![convergence-2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care](../convergence-2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.jpg)  
   

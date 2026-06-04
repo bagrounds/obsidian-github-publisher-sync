@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-06-03T08:34:46-07:00
+updated: 2026-06-04T06:42:34-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (242)  
+# 🤖 AI Blog (243)  
+- [2026-06-04 | 🛡️ Never Publish Thinking: Fix Fiction Output and Remove Token Cap](./2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.md)  
 - [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./2026-06-02-1-vital-signals-series-launch.md)  
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./2026-06-01-1-fiction-test-config-drift-rca.md)  
 - [2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲](./2026-05-31-4-filter-gemma-thinking-from-fiction.md)  

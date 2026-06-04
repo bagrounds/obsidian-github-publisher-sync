@@ -55,13 +55,8 @@ fictionGenerationConfigTests :: TestTree
 fictionGenerationConfigTests = testGroup "fictionGenerationConfig"
   [ testCase "uses the daily-run creative temperature" $
       Gemini.temperature fictionGenerationConfig @?= 0.9
-  , testCase "budgets enough output tokens for thinking models to reach the story" $
-      assertBool "maxOutputTokens is well above the default to leave room past internal reasoning"
-        (Gemini.maxOutputTokens fictionGenerationConfig >= 2048)
-  , testCase "raises the output budget above the Gemini default" $
-      assertBool "fiction budget exceeds the default generation config"
-        (Gemini.maxOutputTokens fictionGenerationConfig
-           > Gemini.maxOutputTokens Gemini.defaultGenerationConfig)
+  , testCase "has no output token cap so thinking models can always reach the story" $
+      Gemini.maxOutputTokens fictionGenerationConfig @?= Nothing
   ]
 
 selectFictionModelChainTests :: TestTree

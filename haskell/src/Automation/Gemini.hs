@@ -252,20 +252,19 @@ modelFallback _                 = Nothing
 
 data GenerationConfig = GenerationConfig
   { temperature     :: Double
-  , maxOutputTokens :: Int
+  , maxOutputTokens :: Maybe Int
   , searchGrounding :: Bool
   } deriving (Show, Eq)
 
 instance ToValue GenerationConfig where
-  toValue config = object
+  toValue config = object $
     [ "temperature" .= temperature config
-    , "maxOutputTokens" .= maxOutputTokens config
-    ]
+    ] ++ maybe [] (\maxTokens -> ["maxOutputTokens" .= maxTokens]) (maxOutputTokens config)
 
 defaultGenerationConfig :: GenerationConfig
 defaultGenerationConfig = GenerationConfig
   { temperature     = 0.7
-  , maxOutputTokens = 1024
+  , maxOutputTokens = Just 1024
   , searchGrounding = False
   }
 
@@ -356,8 +355,10 @@ extractText _ = Left (ExtractionError "response is not an object")
 -- | Extract the text from the last non-thought part in a Gemini response.
 -- Models with thinking enabled (e.g. Gemma) return multiple parts: thought
 -- parts carry @"thought": true@ and precede the final output part. We skip
--- thought parts and return the last non-thought text, falling back to the
--- last text of any kind when every part is a thought.
+-- thought parts and return the last non-thought text. If the response
+-- contains no non-thought parts we return an error rather than falling back
+-- to thinking text — a truncated response (e.g. budget exhausted mid-think)
+-- must be surfaced as a failure so the caller can retry or report it.
 extractNonThoughtText :: [Value] -> Either Error Text
 extractNonThoughtText parts =
   let isThought (Object partObj) = lookup "thought" partObj == Just (Bool True)
@@ -368,11 +369,10 @@ extractNonThoughtText parts =
       textOf _ = Nothing
       nonThoughtTexts = [textValue | part <- parts, not (isThought part), Just textValue <- [textOf part]]
       allTexts        = [textValue | part <- parts, Just textValue <- [textOf part]]
-  in case nonThoughtTexts of
-    [] -> case allTexts of
-      []    -> Left (ExtractionError "no text in part")
-      texts -> Right (last texts)
-    texts -> Right (last texts)
+  in case (nonThoughtTexts, allTexts) of
+    ([], []) -> Left (ExtractionError "no text in part")
+    ([], _)  -> Left (ExtractionError "no final output — model returned only thinking parts")
+    (texts, _) -> Right (last texts)
 
 -- | Extract grounding sources from a Gemini API response value.
 -- https://ai.google.dev/api/generate-content#v1beta.GroundingMetadata

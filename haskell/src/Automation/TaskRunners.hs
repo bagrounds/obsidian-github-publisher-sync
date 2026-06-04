@@ -172,7 +172,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               genConfig = Gemini.defaultGenerationConfig
-                { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192
+                { Gemini.temperature = 0.9, Gemini.maxOutputTokens = Just 8192
                 , Gemini.searchGrounding = Scheduler.searchGrounding runConfig
                 }
 

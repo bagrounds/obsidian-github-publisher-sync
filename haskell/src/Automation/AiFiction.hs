@@ -51,15 +51,16 @@ fictionModelPool =
 
 -- | Generation config the daily fiction run sends to Gemini (shared with the
 -- daily title generator through @callGeminiForGenerator@). Thinking-capable
--- models (and Gemma, which streams its planning as plain output text) spend a
--- large share of the output-token budget on internal reasoning before emitting
--- the story, so the budget sits well above the under-100-word story length to
--- leave room for the final text. The @test-fiction-models@ binary uses this
--- same config so its output matches what the daily run would actually publish.
+-- models (and Gemma, which streams its planning as plain output text) spend
+-- an unbounded share of their output-token budget on internal reasoning before
+-- emitting the story. We therefore omit @maxOutputTokens@ entirely and let
+-- each model use its own maximum, so a long thinking trace never truncates the
+-- final fiction text. The @test-fiction-models@ binary uses this same config
+-- so its output matches what the daily run would actually publish.
 fictionGenerationConfig :: Gemini.GenerationConfig
 fictionGenerationConfig = Gemini.defaultGenerationConfig
   { Gemini.temperature     = 0.9
-  , Gemini.maxOutputTokens = 2048
+  , Gemini.maxOutputTokens = Nothing
   }
 
 selectFictionModelChain :: Day -> NonEmpty Gemini.Model -> NonEmpty Gemini.Model

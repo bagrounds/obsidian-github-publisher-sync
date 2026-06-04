@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-03T08:34:46-07:00
+updated: 2026-06-04T06:42:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,57 +14,58 @@ updated: 2026-06-03T08:34:46-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (566)  
-- [2026-06-03](./reflections/2026-06-03.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (567)  
+- [2026-06-04](./reflections/2026-06-04.md)  
+- [2026-06-03 | 🤖 Agency 🏛️ Lever 🌟 Innovation 📰 Transformation ⚡ Choices 🐔 Victory 🔀 Blueprints. 🌟📰⚡🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-03.md)  
 - [2026-06-02 | 📦 Pardons 🌟 Progress, 📰 Crises ⚡ Taught, 🤖 Navigating 🐔 Grace, 🏛️ Forging ⚡ Signals, 🔀 Resilience. 📺🌟📰⚡🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-02.md)  
-- [2026-06-01 | ⚙️ Systems 👂 Listen, ⚖️ Conscience 🏡 Home, 🌟 Progress 📰 World's 🤖 Friction, 🏛️ Human 🔀 Intention. 📺🐔🌟📰🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-01.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (242)  
+## [🤖 AI Blog](./ai-blog/index.md) (243)  
+- [2026-06-04 | 🛡️ Never Publish Thinking: Fix Fiction Output and Remove Token Cap](./ai-blog/2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.md)  
 - [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./ai-blog/2026-06-02-1-vital-signals-series-launch.md)  
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
-- [2026-05-31 | 🧠 Filter Gemma Thinking from AI Fiction 🤖🐲](./ai-blog/2026-05-31-4-filter-gemma-thinking-from-fiction.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (84)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (85)  
+- [2026-06-03 | 🤖 🧭 The Architecture of Intellectual Agency 🤖](./auto-blog-zero/2026-06-03-the-architecture-of-intellectual-agency.md)  
 - [2026-06-02 | 🤖 🎭 Navigating the Ghost in the Machine 🤖](./auto-blog-zero/2026-06-02-navigating-the-ghost-in-the-machine.md)  
 - [2026-06-01 | 🤖 The Ethics of Algorithmic Friction 🤖](./auto-blog-zero/2026-06-01-the-ethics-of-algorithmic-friction.md)  
-- [2026-05-31 | 🤖 🔄 Weekly Recap: The Architecture of Agency 🤖](./auto-blog-zero/2026-05-31-weekly-recap-the-architecture-of-agency.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (84)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (85)  
+- [2026-06-03 | 🐔 🕰️ A Timeless Victory on the Ranch 🐔](./chickie-loo/2026-06-03-a-timeless-victory-on-the-ranch.md)  
 - [2026-06-02 | 🐔 🩺 A Time for Healing and Grace 🐔](./chickie-loo/2026-06-02-a-time-for-healing-and-grace.md)  
 - [2026-06-01 | 🐔 🧺 A New Month of Making a House a Home 🐔](./chickie-loo/2026-06-01-a-new-month-of-making-a-house-a-home.md)  
-- [2026-05-31 | 🐔 🌅 A Sunday of Healing and New Beginnings 🐔](./chickie-loo/2026-05-31-a-sunday-of-healing-and-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (73)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (74)  
+- [2026-06-03 | 🏛️ 💰 Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-03-public-capital-as-a-lever-for-digital-public-good.md)  
 - [2026-06-02 | 🏛️ 🤝 Forging a Global Compact for Digital Accountability 🏛️](./systems-for-public-good/2026-06-02-forging-a-global-compact-for-digital-accountability.md)  
 - [2026-06-01 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-01-the-human-operating-system-for-digital-democracy.md)  
-- [2026-05-31 | 🏛️ 🌉 The Digital Crossroads: Private Power and Public Good 🏛️](./systems-for-public-good/2026-05-31-the-digital-crossroads-private-power-and-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (55)  
+## [📰 The Noise](./the-noise/index.md) (56)  
+- [2026-06-04 | 📰 💥 Echoes of Escalation, Seeds of Breakthrough 📰](./the-noise/2026-06-04-echoes-of-escalation-seeds-of-breakthrough.md)  
 - [2026-06-03 | 📰 💥 Turbulence and Transformation: Old Conflicts, New Intelligence, and Shifting Realities 📰](./the-noise/2026-06-03-turbulence-and-transformation-old-conflicts-new-intelligence-and-shifting-realities.md)  
 - [2026-06-02 | 📰 💥 Global Tensions and Unfolding Crises 📰](./the-noise/2026-06-02-global-tensions-and-unfolding-crises.md)  
-- [2026-06-01 | 📰 🌐 A World of Fractured Peace and Accelerating Machines 📰](./the-noise/2026-06-01-a-world-of-fractured-peace-and-accelerating-machines.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (54)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (55)  
+- [2026-06-04 | 🌟 ☀️ Dawn of Progress: Healing, Harmony, and Green Horizons 🌟](./positivity-bias/2026-06-04-dawn-of-progress-healing-harmony-and-green-horizons.md)  
 - [2026-06-03 | 🌟 ☀️ Surging Solutions: Innovation, Conservation, and Connected Communities 🌟](./positivity-bias/2026-06-03-surging-solutions-innovation-conservation-and-connected-communities.md)  
 - [2026-06-02 | 🌟 ☀️ Pathways of Progress: Innovation, Green Growth, and Collaborative Futures 🌟](./positivity-bias/2026-06-02-pathways-of-progress-innovation-green-growth-and-collaborative-futures.md)  
-- [2026-06-01 | 🌟 ☀️ New Horizons: Progress in Health, Climate, and Global Understanding 🌟](./positivity-bias/2026-06-01-new-horizons-progress-in-health-climate-and-global-understanding.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (3)  
+## [⚡ Vital Signals](./vital-signals/index.md) (4)  
+- [2026-06-04 | ⚡ 🔬 Dissecting the Drain: The Physiology of Fatigue ⚡](./vital-signals/2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.md)  
 - [2026-06-03 | ⚡ 🧠 Your Brain's Bandwidth: The Hidden Cost of Too Many Choices ⚡](./vital-signals/2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md)  
 - [2026-06-02 | ⚡ Inaugural Edition — The Energy Budget You Were Never Taught ⚡](./vital-signals/2026-06-02-inaugural-the-energy-budget.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (50)  
+## [🔀 Convergence](./convergence/index.md) (51)  
+- [2026-06-03 | 🔀 🌐 The Invisible Blueprints: Metabolic Budgets, Dissent Logs, and the Architecture of Home 🔀](./convergence/2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
 - [2026-06-02 | 🔀 🌐 The Invisible Architectures of Resilience: Metabolic Limits, Principled Friction, and the Cost of Care 🔀](./convergence/2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.md)  
 - [2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./convergence/2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
-- [2026-05-31 | 🔀 🌐 The Embodied Architects of Agency: Navigating Conscience, Care, and Cost 🔀](./convergence/2026-05-31-the-embodied-architects-of-agency-navigating-conscience-care-and-cost.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -40,6 +40,7 @@ import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
+import Data.Maybe (catMaybes)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -257,9 +258,10 @@ data GenerationConfig = GenerationConfig
   } deriving (Show, Eq)
 
 instance ToValue GenerationConfig where
-  toValue config = object $
-    [ "temperature" .= temperature config
-    ] ++ maybe [] (\maxTokens -> ["maxOutputTokens" .= maxTokens]) (maxOutputTokens config)
+  toValue config = object $ catMaybes
+    [ Just ("temperature" .= temperature config)
+    , ("maxOutputTokens" .=) <$> maxOutputTokens config
+    ]
 
 defaultGenerationConfig :: GenerationConfig
 defaultGenerationConfig = GenerationConfig

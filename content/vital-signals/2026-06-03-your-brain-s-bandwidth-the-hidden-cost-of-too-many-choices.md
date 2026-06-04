@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-02-inaugural-the-energy-budget.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-02-inaugural-the-energy-budget.md) [⏭️](./2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.md)  
 # 2026-06-03 | ⚡ 🧠 Your Brain's Bandwidth: The Hidden Cost of Too Many Choices ⚡  
 ![vital-signals-2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices](../vital-signals-2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.jpg)  
   

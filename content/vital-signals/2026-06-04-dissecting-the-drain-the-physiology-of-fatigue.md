@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md) [⏭️](./2026-06-05-the-second-brain-how-your-gut-shapes-your-energy-and-focus.md)  
 # 2026-06-04 | ⚡ 🔬 Dissecting the Drain: The Physiology of Fatigue ⚡  
 ![vital-signals-2026-06-04-dissecting-the-drain-the-physiology-of-fatigue](../vital-signals-2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.jpg)  
   

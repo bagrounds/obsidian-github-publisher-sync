@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-06-04T07:10:38-07:00
+updated: 2026-06-05T07:14:27-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (51)  
+# 🔀 Convergence (52)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-04 | 🔀 🌐 The Architects of Intention and the Metabolism of Meaning 🔀](./2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md)  
 - [2026-06-03 | 🔀 🌐 The Invisible Blueprints: Metabolic Budgets, Dissent Logs, and the Architecture of Home 🔀](./2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
 - [2026-06-02 | 🔀 🌐 The Invisible Architectures of Resilience: Metabolic Limits, Principled Friction, and the Cost of Care 🔀](./2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.md)  
 - [2026-06-01 | 🔀 🌐 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./2026-06-01-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-05T07:14:27-07:00
+updated: 2026-06-05T19:54:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-06-05T07:14:27-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (86)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (87)  
+- [2026-06-05 | 🤖 🏛️ The Architecture of the Intellectual Audit 🤖](./auto-blog-zero/2026-06-05-the-architecture-of-the-intellectual-audit.md)  
 - [2026-06-04 | 🤖 🧩 The Geometry of Cognitive Value 🤖](./auto-blog-zero/2026-06-04-the-geometry-of-cognitive-value.md)  
 - [2026-06-03 | 🤖 🧭 The Architecture of Intellectual Agency 🤖](./auto-blog-zero/2026-06-03-the-architecture-of-intellectual-agency.md)  
-- [2026-06-02 | 🤖 🎭 Navigating the Ghost in the Machine 🤖](./auto-blog-zero/2026-06-02-navigating-the-ghost-in-the-machine.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (87)  
@@ -38,10 +38,10 @@ updated: 2026-06-05T07:14:27-07:00
 - [2026-06-03 | 🐔 🕰️ A Timeless Victory on the Ranch 🐔](./chickie-loo/2026-06-03-a-timeless-victory-on-the-ranch.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (75)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (76)  
+- [2026-06-05 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-05-the-human-operating-system-for-digital-democracy.md)  
 - [2026-06-04 | 🏛️ ⚖️ Safeguarding Public Investment from Capture and Inefficiency 🏛️](./systems-for-public-good/2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md)  
 - [2026-06-03 | 🏛️ 💰 Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-03-public-capital-as-a-lever-for-digital-public-good.md)  
-- [2026-06-02 | 🏛️ 🤝 Forging a Global Compact for Digital Accountability 🏛️](./systems-for-public-good/2026-06-02-forging-a-global-compact-for-digital-accountability.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (57)  
@@ -62,10 +62,10 @@ updated: 2026-06-05T07:14:27-07:00
 - [2026-06-03 | ⚡ 🧠 Your Brain's Bandwidth: The Hidden Cost of Too Many Choices ⚡](./vital-signals/2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (52)  
+## [🔀 Convergence](./convergence/index.md) (53)  
+- [2026-06-05 | 🔀 🌐 The Rhythmic Architectures of Stewardship 🔀](./convergence/2026-06-05-the-rhythmic-architectures-of-stewardship.md)  
 - [2026-06-04 | 🔀 🌐 The Architects of Intention and the Metabolism of Meaning 🔀](./convergence/2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md)  
 - [2026-06-03 | 🔀 🌐 The Invisible Blueprints: Metabolic Budgets, Dissent Logs, and the Architecture of Home 🔀](./convergence/2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
-- [2026-06-02 | 🔀 🌐 The Invisible Architectures of Resilience: Metabolic Limits, Principled Friction, and the Cost of Care 🔀](./convergence/2026-06-02-the-invisible-architectures-of-resilience-metabolic-limits-principled-friction-and-the-cost-of-care.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-05T07:14:27-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (860)  
+## [📺 Videos](./videos/index.md) (861)  
+- [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./videos/success-is-hard-until-you-build-systems-like-this.md)  
 - [🧠📉📈 Neuroscience Confirms - Why Doing Less Helps You Achieve More](./videos/neuroscience-confirms-why-doing-less-helps-you-achieve-more.md)  
 - [⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)](./videos/trumps-pardons-last-week-tonight-with-john-oliver-hbo.md)  
-- [⚖️🗣️ A Declaration of Conscience](./videos/a-declaration-of-conscience.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

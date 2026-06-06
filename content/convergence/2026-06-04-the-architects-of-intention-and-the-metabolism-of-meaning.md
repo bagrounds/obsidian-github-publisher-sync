@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md) [⏭️](./2026-06-05-the-rhythmic-architectures-of-stewardship.md)  
 # 2026-06-04 | 🔀 🌐 The Architects of Intention and the Metabolism of Meaning 🔀  
 ![convergence-2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning](../convergence-2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.jpg)  
   

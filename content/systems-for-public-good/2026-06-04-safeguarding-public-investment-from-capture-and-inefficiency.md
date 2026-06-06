@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-03-public-capital-as-a-lever-for-digital-public-good.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-03-public-capital-as-a-lever-for-digital-public-good.md) [⏭️](./2026-06-05-the-human-operating-system-for-digital-democracy.md)  
 # 2026-06-04 | 🏛️ ⚖️ Safeguarding Public Investment from Capture and Inefficiency 🏛️  
 ![systems-for-public-good-2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency](../systems-for-public-good-2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.jpg)  
   

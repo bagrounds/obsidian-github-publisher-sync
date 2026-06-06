@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-05T19:54:38-07:00
+updated: 2026-06-06T15:47:04-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (861)  
+# 📺 Videos (862)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -836,6 +836,7 @@ updated: 2026-06-05T19:54:38-07:00
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
+- [📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer](./why-most-news-isnt-worth-your-attention-ted-explains-the-world-with-ian-bremmer.md)  
 - [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-05T19:54:38-07:00
+updated: 2026-06-06T15:47:04-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-06-05T19:54:38-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (568)  
-- [2026-06-05](./reflections/2026-06-05.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (569)  
+- [2026-06-06](./reflections/2026-06-06.md)  
+- [2026-06-05 | 🐔 Finding ⚙️ Systems ⚡ Shapes 🌟 Advancing 📰 Digital 🤖 Architecture 🏛️ Human 🔀 Stewardship. 📺⚡🐔🌟📰🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-05.md)  
 - [2026-06-04 | 🧠 Helps ⚙️ Fix ⚡ Fatigue, 🤫 Quiet 🌟 Progress, 💡 Breakthrough 🤖 Value, 🏛️ Investment 🔀 Intention. 📺🤖🌟📰⚡🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-04.md)  
-- [2026-06-03 | 🤖 Agency 🏛️ Lever 🌟 Innovation 📰 Transformation ⚡ Choices 🐔 Victory 🔀 Blueprints. 🌟📰⚡🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-03.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (243)  
@@ -26,40 +26,40 @@ updated: 2026-06-05T19:54:38-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (87)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (88)  
+- [2026-06-06 | 🤖 🧠 The Hygiene of Cognitive Maintenance 🤖](./auto-blog-zero/2026-06-06-the-hygiene-of-cognitive-maintenance.md)  
 - [2026-06-05 | 🤖 🏛️ The Architecture of the Intellectual Audit 🤖](./auto-blog-zero/2026-06-05-the-architecture-of-the-intellectual-audit.md)  
 - [2026-06-04 | 🤖 🧩 The Geometry of Cognitive Value 🤖](./auto-blog-zero/2026-06-04-the-geometry-of-cognitive-value.md)  
-- [2026-06-03 | 🤖 🧭 The Architecture of Intellectual Agency 🤖](./auto-blog-zero/2026-06-03-the-architecture-of-intellectual-agency.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (87)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (88)  
+- [2026-06-06 | 🐔 🛠️ The Joy of Small Victories and DIY Dreams 🐔](./chickie-loo/2026-06-06-the-joy-of-small-victories-and-diy-dreams.md)  
 - [2026-06-05 | 🐔 🌿 Finding Our Rhythm After the Storm 🐔](./chickie-loo/2026-06-05-finding-our-rhythm-after-the-storm.md)  
 - [2026-06-04 | 🐔 🎣 Hooked on the Quiet Moments 🐔](./chickie-loo/2026-06-04-hooked-on-the-quiet-moments.md)  
-- [2026-06-03 | 🐔 🕰️ A Timeless Victory on the Ranch 🐔](./chickie-loo/2026-06-03-a-timeless-victory-on-the-ranch.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (76)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (77)  
+- [2026-06-06 | 🏛️ 🏡 The Power of Community Hubs in Cultivating Digital Confidence 🏛️](./systems-for-public-good/2026-06-06-the-power-of-community-hubs-in-cultivating-digital-confidence.md)  
 - [2026-06-05 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-05-the-human-operating-system-for-digital-democracy.md)  
 - [2026-06-04 | 🏛️ ⚖️ Safeguarding Public Investment from Capture and Inefficiency 🏛️](./systems-for-public-good/2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md)  
-- [2026-06-03 | 🏛️ 💰 Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-03-public-capital-as-a-lever-for-digital-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (57)  
+## [📰 The Noise](./the-noise/index.md) (58)  
+- [2026-06-06 | 📰 🌐 Fractured Futures, Algorithmic Aspirations, and Looming Hunger 📰](./the-noise/2026-06-06-fractured-futures-algorithmic-aspirations-and-looming-hunger.md)  
 - [2026-06-05 | 📰 🌍 Shifting Sands, Digital Horizons, and Urgent Warnings 📰](./the-noise/2026-06-05-shifting-sands-digital-horizons-and-urgent-warnings.md)  
 - [2026-06-04 | 📰 💥 Echoes of Escalation, Seeds of Breakthrough 📰](./the-noise/2026-06-04-echoes-of-escalation-seeds-of-breakthrough.md)  
-- [2026-06-03 | 📰 💥 Turbulence and Transformation: Old Conflicts, New Intelligence, and Shifting Realities 📰](./the-noise/2026-06-03-turbulence-and-transformation-old-conflicts-new-intelligence-and-shifting-realities.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (56)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (57)  
+- [2026-06-06 | 🌟 🔬 Scientific Strides & Health Horizons 🌟](./positivity-bias/2026-06-06-scientific-strides-health-horizons.md)  
 - [2026-06-05 | 🌟 🔬 Advancing Health & Scientific Frontiers 🌟](./positivity-bias/2026-06-05-advancing-health-scientific-frontiers.md)  
 - [2026-06-04 | 🌟 ☀️ Dawn of Progress: Healing, Harmony, and Green Horizons 🌟](./positivity-bias/2026-06-04-dawn-of-progress-healing-harmony-and-green-horizons.md)  
-- [2026-06-03 | 🌟 ☀️ Surging Solutions: Innovation, Conservation, and Connected Communities 🌟](./positivity-bias/2026-06-03-surging-solutions-innovation-conservation-and-connected-communities.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (5)  
+## [⚡ Vital Signals](./vital-signals/index.md) (6)  
+- [2026-06-06 | ⚡ 🧠 The Stress-Performance Paradox: When Adaptation Becomes Overload ⚡](./vital-signals/2026-06-06-the-stress-performance-paradox-when-adaptation-becomes-overload.md)  
 - [2026-06-05 | ⚡ 🧠 The Second Brain: How Your Gut Shapes Your Energy and Focus ⚡](./vital-signals/2026-06-05-the-second-brain-how-your-gut-shapes-your-energy-and-focus.md)  
 - [2026-06-04 | ⚡ 🔬 Dissecting the Drain: The Physiology of Fatigue ⚡](./vital-signals/2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.md)  
-- [2026-06-03 | ⚡ 🧠 Your Brain's Bandwidth: The Hidden Cost of Too Many Choices ⚡](./vital-signals/2026-06-03-your-brain-s-bandwidth-the-hidden-cost-of-too-many-choices.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (53)  
@@ -74,10 +74,10 @@ updated: 2026-06-05T19:54:38-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (861)  
+## [📺 Videos](./videos/index.md) (862)  
+- [📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer](./videos/why-most-news-isnt-worth-your-attention-ted-explains-the-world-with-ian-bremmer.md)  
 - [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./videos/success-is-hard-until-you-build-systems-like-this.md)  
 - [🧠📉📈 Neuroscience Confirms - Why Doing Less Helps You Achieve More](./videos/neuroscience-confirms-why-doing-less-helps-you-achieve-more.md)  
-- [⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)](./videos/trumps-pardons-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-06-05T19:54:38-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
-- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

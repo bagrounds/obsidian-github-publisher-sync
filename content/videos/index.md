@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-05T07:14:27-07:00
+updated: 2026-06-05T19:54:38-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (860)  
+# 📺 Videos (861)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -570,6 +570,7 @@ updated: 2026-06-05T07:14:27-07:00
 - [🏆🚀🛠️🤯🚫💻 Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a no code option too!)](./stop-competing-with-400-applicants-build-this-in-one-weekend-yes-theres-a-no-code-option-too.md)  
 - [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
 - [💰📉📺 Structured Settlements & Factoring Companies: Last Week Tonight with John Oliver (HBO)](./structured-settlements-factoring-companies-last-week-tonight-with-john-oliver-hbo.md)  
+- [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./success-is-hard-until-you-build-systems-like-this.md)  
 - [Supreme Court clears way for deportations under Alien Enemies Act](./supreme-court-clears-way-for-deportations-under-alien-enemies-act.md)  
 - [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  

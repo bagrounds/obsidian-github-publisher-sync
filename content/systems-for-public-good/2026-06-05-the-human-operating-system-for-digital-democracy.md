@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md) [⏭️](./2026-06-06-the-power-of-community-hubs-in-cultivating-digital-confidence.md)  
 # 2026-06-05 | 🏛️ The Human Operating System for Digital Democracy 🏛️  
 ![systems-for-public-good-2026-06-05-the-human-operating-system-for-digital-democracy](../systems-for-public-good-2026-06-05-the-human-operating-system-for-digital-democracy.jpg)  
   

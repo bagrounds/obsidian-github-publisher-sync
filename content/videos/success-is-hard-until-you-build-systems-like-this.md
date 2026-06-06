@@ -9,6 +9,10 @@ Platform:
 Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/Vyc8VwwLz9k
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This  
@@ -61,4 +65,4 @@ A: Instead of confining tasks to a single sacred time block, an unconditional sy
 ### 🎨 Creatively Related  
   
 * Antifragile by Nassim Nicholas Taleb explores systems that actually thrive and improve when exposed to stressors, disorder, and volatility.  
-* Deep Work by Cal Newport investigates the ability to focus without distraction on a cognitively demanding task, offering a different perspective on managing productivity within a busy life.
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport investigates the ability to focus without distraction on a cognitively demanding task, offering a different perspective on managing productivity within a busy life.

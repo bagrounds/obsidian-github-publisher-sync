@@ -9,6 +9,10 @@ Platform:
 Channel: The Ezra Klein Show
 tags:
 youtube: https://youtu.be/syl9OLNSm4k
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸⚠️🌍 Ian Bremmer on the Risks America Poses to the World | The Ezra Klein Show  
@@ -56,5 +60,5 @@ youtube: https://youtu.be/syl9OLNSm4k
   
 ### 🎨 Creatively Related  
   
-* 🛸 The Hitchhiker's Guide to the Galaxy by Douglas Adams presents a satirical, human-centric view of a complex, indifferent, and often absurd universe.  
-* 🍄 How to Change Your Mind by Michael Pollan investigates the nature of consciousness and identity, encouraging deeper reflection on what it means to be human in a rapidly changing world.
+* 🛸 [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams presents a satirical, human-centric view of a complex, indifferent, and often absurd universe.  
+* 🍄 [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](../books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md) by Michael Pollan investigates the nature of consciousness and identity, encouraging deeper reflection on what it means to be human in a rapidly changing world.

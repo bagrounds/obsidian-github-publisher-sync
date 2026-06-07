@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-06T15:47:04-07:00
+updated: 2026-06-06T18:11:46-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (862)  
+# 📺 Videos (863)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -334,6 +334,7 @@ updated: 2026-06-06T15:47:04-07:00
 - [How Trump's tariffs and trade war are impacting U.S. and global economies](./how-trumps-tariffs-and-trade-war-are-impacting-us-and-global-economies.md)  
 - [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [🇭🇺👑🏆🗣️🇪🇺🇺🇦🇷🇺🇺🇸 Hungary’s New Leader Breaks Silence on EU, Ukraine, Trump, Russia After Historic Victory | AC1G](./hungarys-new-leader-breaks-silence-on-eu-ukraine-trump-russia-after-historic-victory-ac1g.md)  
+- [🇺🇸⚠️🌍 Ian Bremmer on the Risks America Poses to the World | The Ezra Klein Show](./ian-bremmer-on-the-risks-america-poses-to-the-world-the-ezra-klein-show.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
 - [⚙️💨🧘 I built a system that makes work feel easy](./i-built-a-system-that-makes-work-feel-easy.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./ice-agents-everywhere-are-secretly-revolting-against-trump.md)  

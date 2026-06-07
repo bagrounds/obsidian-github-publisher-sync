@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-06T15:47:04-07:00
+updated: 2026-06-06T18:11:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-06-06T15:47:04-07:00
 - [2026-06-04 | ⚡ 🔬 Dissecting the Drain: The Physiology of Fatigue ⚡](./vital-signals/2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (53)  
+## [🔀 Convergence](./convergence/index.md) (54)  
+- [2026-06-06 | 🔀 🌐 The Micro-Architectures of Sustained Flourishing 🔀](./convergence/2026-06-06-the-micro-architectures-of-sustained-flourishing.md)  
 - [2026-06-05 | 🔀 🌐 The Rhythmic Architectures of Stewardship 🔀](./convergence/2026-06-05-the-rhythmic-architectures-of-stewardship.md)  
 - [2026-06-04 | 🔀 🌐 The Architects of Intention and the Metabolism of Meaning 🔀](./convergence/2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md)  
-- [2026-06-03 | 🔀 🌐 The Invisible Blueprints: Metabolic Budgets, Dissent Logs, and the Architecture of Home 🔀](./convergence/2026-06-03-the-invisible-blueprints-metabolic-budgets-dissent-logs-and-the-architecture-of-home.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-06T15:47:04-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (862)  
+## [📺 Videos](./videos/index.md) (863)  
+- [🇺🇸⚠️🌍 Ian Bremmer on the Risks America Poses to the World | The Ezra Klein Show](./videos/ian-bremmer-on-the-risks-america-poses-to-the-world-the-ezra-klein-show.md)  
 - [📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer](./videos/why-most-news-isnt-worth-your-attention-ted-explains-the-world-with-ian-bremmer.md)  
 - [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./videos/success-is-hard-until-you-build-systems-like-this.md)  
-- [🧠📉📈 Neuroscience Confirms - Why Doing Less Helps You Achieve More](./videos/neuroscience-confirms-why-doing-less-helps-you-achieve-more.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

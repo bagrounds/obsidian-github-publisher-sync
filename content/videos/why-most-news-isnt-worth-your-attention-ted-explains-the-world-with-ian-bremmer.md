@@ -9,6 +9,10 @@ Platform:
 Channel: TED
 tags:
 youtube: https://youtu.be/BR7xdT_Xi5U
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer  
@@ -47,9 +51,9 @@ A: Building trust is a long-term process that requires providing consistent valu
 ### 🆚 Contrasting  
   
 * The Age of Surveillance Capitalism by Shoshana Zuboff provides a critical perspective on how data-driven technologies shape human behavior and challenge the traditional understanding of objective information access.  
-* Manufacturing Consent by Edward S. Herman and Noam Chomsky argues that media organizations inherently reflect the biases and interests of power structures, contrasting with the reliance on professional journalism for objective truth.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky argues that media organizations inherently reflect the biases and interests of power structures, contrasting with the reliance on professional journalism for objective truth.  
   
 ### 🎨 Creatively Related  
   
-* Thinking, Fast and Slow by Daniel Kahneman investigates the cognitive biases that influence decision-making and helps readers understand why they react emotionally to information.  
-* Deep Work by Cal Newport details the necessity of focused, distraction-free work to master complicated information and achieve professional success in an increasingly fragmented digital environment.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman investigates the cognitive biases that influence decision-making and helps readers understand why they react emotionally to information.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport details the necessity of focused, distraction-free work to master complicated information and achieve professional success in an increasingly fragmented digital environment.

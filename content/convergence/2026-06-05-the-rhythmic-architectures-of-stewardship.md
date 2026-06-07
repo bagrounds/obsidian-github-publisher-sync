@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md) [⏭️](./2026-06-06-the-micro-architectures-of-sustained-flourishing.md)  
 # 2026-06-05 | 🔀 🌐 The Rhythmic Architectures of Stewardship 🔀  
 ![convergence-2026-06-05-the-rhythmic-architectures-of-stewardship](../convergence-2026-06-05-the-rhythmic-architectures-of-stewardship.jpg)  
   

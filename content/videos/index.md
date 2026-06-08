@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-06T18:11:46-07:00
+updated: 2026-06-07T18:45:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (863)  
+# 📺 Videos (865)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -118,6 +118,7 @@ updated: 2026-06-06T18:11:46-07:00
 - [💻🇨🇳📦贸易 Big Tech & China: Supply Chains, Trade Wars & Industry's Future | The Weekly Show with Jon Stewart](./big-tech-china-supply-chains-trade-wars-industrys-future-the-weekly-show-with-jon-stewart.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
+- [🫵🗣️✨ Body language expert: 7 cues that make you instantly more likable | Full Interview](./body-language-expert-7-cues-that-make-you-instantly-more-likable-full-interview.md)  
 - [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
 - [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./brooks-and-bouie-on-economic-warning-signs.md)  
@@ -689,6 +690,7 @@ updated: 2026-06-06T18:11:46-07:00
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
 - [🧏🎭📖 The Untold Story of Deaf Theater](./the-untold-story-of-deaf-theater.md)  
 - [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
+- [✊⚒️🚩 The Working Class Uprising They Don't Teach You About](./the-working-class-uprising-they-dont-teach-you-about.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [⚔️⚖️🗣️🧩 They Championed D.E.I. Now They’re Divided. | NYT Opinion](./they-championed-dei-now-theyre-divided-nyt-opinion.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  

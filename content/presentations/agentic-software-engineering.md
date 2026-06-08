@@ -10,6 +10,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+updated: 2026-06-07T11:45:52
 ---
 [Home](../index.md) > [🎤 Presentations](./index.md)  
 # 🤖 Agentic Software Engineering  
@@ -98,3 +99,11 @@ link_analysis_version: "2"
 * [Simon Willison's Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)  
 * [arXiv Papers](https://arxiv.org/abs/2509.06216)  
 * [OWASP Agentic Top 10](https://genai.owasp.org/)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mnp3sdgiov2h" data-bluesky-cid="bafyreiguus3zbpn5t3ysrdysijscmzqnwqkod27iqpxc5fw6yg25lmjdre"><p>🤖 Agentic Software Engineering  
+  
+#AI Q: 🤖 Would you trust an AI agent to ship your production code solo?  
+  
+🧠 LLM Orchestration | 🧪 Test-Driven Development | 🔒 Security Guard  
+https://bagrounds.org/presentations/agentic-software-engineering</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mnp3sdgiov2h?ref_src=embed">2026-06-07T11:46:07.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

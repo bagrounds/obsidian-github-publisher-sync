@@ -7,6 +7,8 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+URL: https://bagrounds.org/topics/programming-problems/3-sum
+updated: 2026-06-08T09:48:28
 ---
 [Home](../../index.md) > [Topics](../index.md) > [Programming Problems](./index.md)  
 # 🔢➕➕ 3 Sum  
@@ -155,3 +157,11 @@ B = 5
 1. O(N * log(N)) - Sort the input array  
 2. O(N^2) - For each element A of the input array, find the 2-sum of the remaining array equal to -A  
   1. O(N) - 2-sum: Using 2 pointers starting at beginning and end, iterate forward and backward as the sum toggles greater and less than the target  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mnrfoyin222u" data-bluesky-cid="bafyreiabh2cnyudeexbg36m446z7asr2vfn4rnhyv7p5wwfcdfoldpxom4"><p>🔢➕➕ 3 Sum  
+  
+#AI Q: 💻 Prefer brute force speed or elegant optimization when solving complex problems?  
+  
+💻 Algorithm Design | ⏱️ Big O Analysis | 🎯 Two-Pointer Technique  
+https://bagrounds.org/topics/programming-problems/3-sum</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mnrfoyin222u?ref_src=embed">2026-06-08T09:48:33.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

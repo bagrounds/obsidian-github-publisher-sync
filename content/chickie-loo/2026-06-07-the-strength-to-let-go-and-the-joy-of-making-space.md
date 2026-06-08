@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-06-the-joy-of-small-victories-and-diy-dreams.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-06-the-joy-of-small-victories-and-diy-dreams.md) [⏭️](./2026-06-08-the-last-mohican-and-the-weight-of-little-things.md)  
 # 2026-06-07 | 🐔 📦 The Strength to Let Go and the Joy of Making Space 🐔  
 ![chickie-loo-2026-06-07-the-strength-to-let-go-and-the-joy-of-making-space](../chickie-loo-2026-06-07-the-strength-to-let-go-and-the-joy-of-making-space.jpg)  
   

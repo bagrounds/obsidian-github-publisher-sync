@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-05-the-rhythmic-architectures-of-stewardship.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-05-the-rhythmic-architectures-of-stewardship.md) [⏭️](./2026-06-07-the-architects-of-refinement-curating-space-thought-and-energy.md)  
 # 2026-06-06 | 🔀 🌐 The Micro-Architectures of Sustained Flourishing 🔀  
 ![convergence-2026-06-06-the-micro-architectures-of-sustained-flourishing](../convergence-2026-06-06-the-micro-architectures-of-sustained-flourishing.jpg)  
   

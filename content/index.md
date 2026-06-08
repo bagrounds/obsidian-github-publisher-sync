@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-06T18:11:46-07:00
+updated: 2026-06-07T18:45:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-06-06T18:11:46-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (569)  
-- [2026-06-06](./reflections/2026-06-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (570)  
+- [2026-06-07](./reflections/2026-06-07.md)  
+- [2026-06-06 | 🌟 Explains ⚡ Overload, 📰 Futures 🐔 Dreams, 🤖 Maintenance 🏛️ Hubs 🔀 Sustained. 🌟⚡📰🐔🤖🏛️🔀 📺⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-06.md)  
 - [2026-06-05 | 🐔 Finding ⚙️ Systems ⚡ Shapes 🌟 Advancing 📰 Digital 🤖 Architecture 🏛️ Human 🔀 Stewardship. 📺⚡🐔🌟📰🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-05.md)  
-- [2026-06-04 | 🧠 Helps ⚙️ Fix ⚡ Fatigue, 🤫 Quiet 🌟 Progress, 💡 Breakthrough 🤖 Value, 🏛️ Investment 🔀 Intention. 📺🤖🌟📰⚡🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-04.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (243)  
@@ -26,46 +26,46 @@ updated: 2026-06-06T18:11:46-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (88)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (89)  
+- [2026-06-07 | 🤖 🔄 Weekly Recap: The Architecture of Intellectual Hygiene 🤖](./auto-blog-zero/2026-06-07-weekly-recap-the-architecture-of-intellectual-hygiene.md)  
 - [2026-06-06 | 🤖 🧠 The Hygiene of Cognitive Maintenance 🤖](./auto-blog-zero/2026-06-06-the-hygiene-of-cognitive-maintenance.md)  
 - [2026-06-05 | 🤖 🏛️ The Architecture of the Intellectual Audit 🤖](./auto-blog-zero/2026-06-05-the-architecture-of-the-intellectual-audit.md)  
-- [2026-06-04 | 🤖 🧩 The Geometry of Cognitive Value 🤖](./auto-blog-zero/2026-06-04-the-geometry-of-cognitive-value.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (88)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (89)  
+- [2026-06-07 | 🐔 📦 The Strength to Let Go and the Joy of Making Space 🐔](./chickie-loo/2026-06-07-the-strength-to-let-go-and-the-joy-of-making-space.md)  
 - [2026-06-06 | 🐔 🛠️ The Joy of Small Victories and DIY Dreams 🐔](./chickie-loo/2026-06-06-the-joy-of-small-victories-and-diy-dreams.md)  
 - [2026-06-05 | 🐔 🌿 Finding Our Rhythm After the Storm 🐔](./chickie-loo/2026-06-05-finding-our-rhythm-after-the-storm.md)  
-- [2026-06-04 | 🐔 🎣 Hooked on the Quiet Moments 🐔](./chickie-loo/2026-06-04-hooked-on-the-quiet-moments.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (77)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (78)  
+- [2026-06-07 | 🏛️ 🌈 Nurturing Digital Literacy: Relevance, Responsiveness, and Continuous Dialogue 🏛️](./systems-for-public-good/2026-06-07-nurturing-digital-literacy-relevance-responsiveness-and-continuous-dialogue.md)  
 - [2026-06-06 | 🏛️ 🏡 The Power of Community Hubs in Cultivating Digital Confidence 🏛️](./systems-for-public-good/2026-06-06-the-power-of-community-hubs-in-cultivating-digital-confidence.md)  
 - [2026-06-05 | 🏛️ The Human Operating System for Digital Democracy 🏛️](./systems-for-public-good/2026-06-05-the-human-operating-system-for-digital-democracy.md)  
-- [2026-06-04 | 🏛️ ⚖️ Safeguarding Public Investment from Capture and Inefficiency 🏛️](./systems-for-public-good/2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (58)  
+## [📰 The Noise](./the-noise/index.md) (59)  
+- [2026-06-07 | 📰 🌌 The Persistent Vortex of Conflict and Accelerating Intelligence 📰](./the-noise/2026-06-07-the-persistent-vortex-of-conflict-and-accelerating-intelligence.md)  
 - [2026-06-06 | 📰 🌐 Fractured Futures, Algorithmic Aspirations, and Looming Hunger 📰](./the-noise/2026-06-06-fractured-futures-algorithmic-aspirations-and-looming-hunger.md)  
 - [2026-06-05 | 📰 🌍 Shifting Sands, Digital Horizons, and Urgent Warnings 📰](./the-noise/2026-06-05-shifting-sands-digital-horizons-and-urgent-warnings.md)  
-- [2026-06-04 | 📰 💥 Echoes of Escalation, Seeds of Breakthrough 📰](./the-noise/2026-06-04-echoes-of-escalation-seeds-of-breakthrough.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (57)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (58)  
+- [2026-06-07 | 🌟 🔬 Scientific Strides & Health Horizons 🌟](./positivity-bias/2026-06-07-scientific-strides-health-horizons.md)  
 - [2026-06-06 | 🌟 🔬 Scientific Strides & Health Horizons 🌟](./positivity-bias/2026-06-06-scientific-strides-health-horizons.md)  
 - [2026-06-05 | 🌟 🔬 Advancing Health & Scientific Frontiers 🌟](./positivity-bias/2026-06-05-advancing-health-scientific-frontiers.md)  
-- [2026-06-04 | 🌟 ☀️ Dawn of Progress: Healing, Harmony, and Green Horizons 🌟](./positivity-bias/2026-06-04-dawn-of-progress-healing-harmony-and-green-horizons.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (6)  
+## [⚡ Vital Signals](./vital-signals/index.md) (7)  
+- [2026-06-07 | ⚡ 📆 Weekly Recap — Energy, Cognition, and the Gut's Influence ⚡](./vital-signals/2026-06-07-weekly-recap-energy-cognition-and-the-gut-s-influence.md)  
 - [2026-06-06 | ⚡ 🧠 The Stress-Performance Paradox: When Adaptation Becomes Overload ⚡](./vital-signals/2026-06-06-the-stress-performance-paradox-when-adaptation-becomes-overload.md)  
 - [2026-06-05 | ⚡ 🧠 The Second Brain: How Your Gut Shapes Your Energy and Focus ⚡](./vital-signals/2026-06-05-the-second-brain-how-your-gut-shapes-your-energy-and-focus.md)  
-- [2026-06-04 | ⚡ 🔬 Dissecting the Drain: The Physiology of Fatigue ⚡](./vital-signals/2026-06-04-dissecting-the-drain-the-physiology-of-fatigue.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (54)  
+## [🔀 Convergence](./convergence/index.md) (55)  
+- [2026-06-07 | 🔀 🌐 The Architects of Refinement: Curating Space, Thought, and Energy 🔀](./convergence/2026-06-07-the-architects-of-refinement-curating-space-thought-and-energy.md)  
 - [2026-06-06 | 🔀 🌐 The Micro-Architectures of Sustained Flourishing 🔀](./convergence/2026-06-06-the-micro-architectures-of-sustained-flourishing.md)  
 - [2026-06-05 | 🔀 🌐 The Rhythmic Architectures of Stewardship 🔀](./convergence/2026-06-05-the-rhythmic-architectures-of-stewardship.md)  
-- [2026-06-04 | 🔀 🌐 The Architects of Intention and the Metabolism of Meaning 🔀](./convergence/2026-06-04-the-architects-of-intention-and-the-metabolism-of-meaning.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-06T18:11:46-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (863)  
+## [📺 Videos](./videos/index.md) (865)  
+- [🫵🗣️✨ Body language expert: 7 cues that make you instantly more likable | Full Interview](./videos/body-language-expert-7-cues-that-make-you-instantly-more-likable-full-interview.md)  
+- [✊⚒️🚩 The Working Class Uprising They Don't Teach You About](./videos/the-working-class-uprising-they-dont-teach-you-about.md)  
 - [🇺🇸⚠️🌍 Ian Bremmer on the Risks America Poses to the World | The Ezra Klein Show](./videos/ian-bremmer-on-the-risks-america-poses-to-the-world-the-ezra-klein-show.md)  
-- [📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer](./videos/why-most-news-isnt-worth-your-attention-ted-explains-the-world-with-ian-bremmer.md)  
-- [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./videos/success-is-hard-until-you-build-systems-like-this.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

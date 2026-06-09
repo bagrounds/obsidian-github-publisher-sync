@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-07-weekly-recap-energy-cognition-and-the-gut-s-influence.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-07-weekly-recap-energy-cognition-and-the-gut-s-influence.md) [⏭️](./2026-06-09-the-brain-s-stressful-sculpting-how-chronic-pressure-reshapes-our-minds.md)  
 # 2026-06-08 | ⚡ 🧠 The Brain's Shifting Architecture: How Stress Remodels Our Cognitive Landscape ⚡  
 ![vital-signals-2026-06-08-the-brain-s-shifting-architecture-how-stress-remodels-our-cognitive-landscape](../vital-signals-2026-06-08-the-brain-s-shifting-architecture-how-stress-remodels-our-cognitive-landscape.jpg)  
   

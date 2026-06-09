@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-07-the-persistent-vortex-of-conflict-and-accelerating-intelligence.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-07-the-persistent-vortex-of-conflict-and-accelerating-intelligence.md) [⏭️](./2026-06-09-the-algorithmic-divide.md)  
 # 2026-06-08 | 📰 ⚔️ Geopolitical Tensions and Regional Flashpoints 📰  
 ![the-noise-2026-06-08-geopolitical-tensions-and-regional-flashpoints](../the-noise-2026-06-08-geopolitical-tensions-and-regional-flashpoints.jpg)  
   

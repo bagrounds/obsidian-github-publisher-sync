@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-09T21:39:47-07:00
+updated: 2026-06-09T21:56:09-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-09T21:39:47-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (868)  
+## [📺 Videos](./videos/index.md) (869)  
+- [🐘🤝🗽 I Took AOC to Deep Trump Country. They Agreed On One Thing.](./videos/i-took-aoc-to-deep-trump-country-they-agreed-on-one-thing.md)  
 - [🔴🎙️🇺🇸 LIVE: Bernie Discusses the Future of American Politics at the National Press Club](./videos/live-bernie-discusses-the-future-of-american-politics-at-the-national-press-club.md)  
 - [🗂️🎨🔓 David Epstein: Discipline sets creativity free | Full Interview](./videos/david-epstein-discipline-sets-creativity-free-full-interview.md)  
-- [🫂❤️🔐 Dr Sue Johnson Hold Me Tight Conversations for a Lifetime of Love](./videos/dr-sue-johnson-hold-me-tight-conversations-for-a-lifetime-of-love.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

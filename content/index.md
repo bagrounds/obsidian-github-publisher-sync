@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-09T21:16:02-07:00
+updated: 2026-06-09T21:39:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-09T21:16:02-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (865)  
-- [🫵🗣️✨ Body language expert: 7 cues that make you instantly more likable | Full Interview](./videos/body-language-expert-7-cues-that-make-you-instantly-more-likable-full-interview.md)  
-- [✊⚒️🚩 The Working Class Uprising They Don't Teach You About](./videos/the-working-class-uprising-they-dont-teach-you-about.md)  
-- [🇺🇸⚠️🌍 Ian Bremmer on the Risks America Poses to the World | The Ezra Klein Show](./videos/ian-bremmer-on-the-risks-america-poses-to-the-world-the-ezra-klein-show.md)  
+## [📺 Videos](./videos/index.md) (868)  
+- [🔴🎙️🇺🇸 LIVE: Bernie Discusses the Future of American Politics at the National Press Club](./videos/live-bernie-discusses-the-future-of-american-politics-at-the-national-press-club.md)  
+- [🗂️🎨🔓 David Epstein: Discipline sets creativity free | Full Interview](./videos/david-epstein-discipline-sets-creativity-free-full-interview.md)  
+- [🫂❤️🔐 Dr Sue Johnson Hold Me Tight Conversations for a Lifetime of Love](./videos/dr-sue-johnson-hold-me-tight-conversations-for-a-lifetime-of-love.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

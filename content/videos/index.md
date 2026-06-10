@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-09T21:16:02-07:00
+updated: 2026-06-09T21:39:47-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (865)  
+# 📺 Videos (868)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -167,6 +167,7 @@ updated: 2026-06-09T21:16:02-07:00
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./critical-thinking-book-recommendations-my-top-5-must-reads.md)  
+- [🗂️🎨🔓 David Epstein: Discipline sets creativity free | Full Interview](./david-epstein-discipline-sets-creativity-free-full-interview.md)  
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./dear-americans-we-saved-you-a-seat.md)  
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./defying-gravity-kevin-hou-google-deepmind.md)  
 - [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
@@ -187,6 +188,7 @@ updated: 2026-06-09T21:16:02-07:00
 - [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
 - [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
 - [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
+- [🫂❤️🔐 Dr Sue Johnson Hold Me Tight Conversations for a Lifetime of Love](./dr-sue-johnson-hold-me-tight-conversations-for-a-lifetime-of-love.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
@@ -406,6 +408,7 @@ updated: 2026-06-09T21:16:02-07:00
 - [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [👂🤔🇺🇸 Listen Like You Might Be Wrong: Harvard Student Goes Viral For Stunning Speech On Trump Amid Feud](./listen-like-you-might-be-wrong-harvard-student-goes-viral-for-stunning-speech-on-trump-amid-feud.md)  
+- [🔴🎙️🇺🇸 LIVE: Bernie Discusses the Future of American Politics at the National Press Club](./live-bernie-discusses-the-future-of-american-politics-at-the-national-press-club.md)  
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  
 - [🔴🎙️🇺🇸🎓🚀🎉 LIVE with Bernie Sanders & John Russell: More Perfect University Launch Party](./live-with-bernie-sanders-john-russell-more-perfect-university-launch-party.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  

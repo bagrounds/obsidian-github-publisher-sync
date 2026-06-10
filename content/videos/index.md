@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-09T21:39:47-07:00
+updated: 2026-06-09T21:56:09-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (868)  
+# 📺 Videos (869)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -368,6 +368,7 @@ updated: 2026-06-09T21:39:47-07:00
 - [🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show](./is-it-time-to-break-the-two-party-system-the-ezra-klein-show.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./italys-radical-solution-to-extreme-inequality.md)  
+- [🐘🤝🗽 I Took AOC to Deep Trump Country. They Agreed On One Thing.](./i-took-aoc-to-deep-trump-country-they-agreed-on-one-thing.md)  
 - [🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT](./i-tracked-down-the-hidden-workers-secretly-powering-chatgpt.md)  
 - [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
 - [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  

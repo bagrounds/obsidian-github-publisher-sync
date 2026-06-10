@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-06-07T18:45:23-07:00
+updated: 2026-06-09T21:16:02-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (89)  
+# 🐔 Chickie Loo (91)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-06-09 | 🐔 🐣 The Heavy Heart of the Waiting Game 🐔](./2026-06-09-the-heavy-heart-of-the-waiting-game.md)  
+- [2026-06-08 | 🐔 🍽️ The Last Mohican and the Weight of Little Things 🐔](./2026-06-08-the-last-mohican-and-the-weight-of-little-things.md)  
 - [2026-06-07 | 🐔 📦 The Strength to Let Go and the Joy of Making Space 🐔](./2026-06-07-the-strength-to-let-go-and-the-joy-of-making-space.md)  
 - [2026-06-06 | 🐔 🛠️ The Joy of Small Victories and DIY Dreams 🐔](./2026-06-06-the-joy-of-small-victories-and-diy-dreams.md)  
 - [2026-06-05 | 🐔 🌿 Finding Our Rhythm After the Storm 🐔](./2026-06-05-finding-our-rhythm-after-the-storm.md)  

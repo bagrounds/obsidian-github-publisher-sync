@@ -9,6 +9,10 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/jFMc07F1UUU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎓🏛️📺 New College of Florida: Last Week Tonight with John Oliver (HBO)  
@@ -48,10 +52,10 @@ The institution recruited 70 baseball players despite having no existing basebal
   
 ### 🆚 Contrasting  
   
-* 📖 The Coddling of the American Mind by Greg Lukianoff and Jonathan Haidt, published by Penguin Press, presents an argument for why universities should avoid the very pedagogical shifts often associated with progressive academic cultures.  
+* 📖 [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt, published by Penguin Press, presents an argument for why universities should avoid the very pedagogical shifts often associated with progressive academic cultures.  
 * 📖 The Tyranny of Merit by Michael Sandel, published by Farrar, Straus and Giroux, offers a different perspective on educational reform by critiquing the moral consequences of the meritocratic ideal in modern society.  
   
 ### 🎨 Creatively Related  
   
-* 📖 The Big Short by Michael Lewis, published by W. W. Norton & Company, illustrates the chaotic and destructive nature of institutional failure when ideologically driven actions ignore foundational risks.  
+* 📖 [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md) by Michael Lewis, published by W. W. Norton & Company, illustrates the chaotic and destructive nature of institutional failure when ideologically driven actions ignore foundational risks.  
 * 📖 A Confederacy of Dunces by John Kennedy Toole, published by Louisiana State University Press, provides a satirical look at eccentric, intellectually detached characters who struggle to function in standard societal settings.

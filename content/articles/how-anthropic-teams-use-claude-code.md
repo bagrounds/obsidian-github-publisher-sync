@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T22:30:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, isometric digital illustration featuring a sleek, glowing terminal interface at the center, emitting soft light onto a clean, modern workspace. Floating around the terminal are abstract, interconnected nodes representing data flow, code snippets, and security shields in a palette of deep navy, electric blue, and warm amber. A stylized, minimalist robotic hand gently touches a holographic branch of code, symbolizing human-AI collaboration. The background is a subtle, dark grid pattern that suggests a professional software architecture environment. The overall aesthetic is clean, sophisticated, and futuristic, emphasizing the seamless integration of intelligent automation into complex technical workflows.
+updated: 2026-06-10T11:26:05
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf)  
@@ -34,3 +35,10 @@ Claude Code was used by Anthropic's 📊 Data Infrastructure, 🚀 Product Devel
 * 🧱 Building Microservices by Sam Newman (for API Knowledge Team)  
 * [🦠 Contagious: Why Things Catch On](../books/contagious.md) by Jonah Berger (for Growth Marketing)  
 * [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman (for Product Design)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mnwm52gcye2h" data-bluesky-cid="bafyreiaindtptigowpbn44wi6a23emle6cmmu43wwkphpkiivm3ykoj4hm"><p>🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code  
+  
+#AI Q: 🤖 Which routine task should AI handle for you first?  
+  
+https://bagrounds.org/articles/how-anthropic-teams-use-claude-code</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mnwm52gcye2h?ref_src=embed">2026-06-10T11:27:05.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -9,6 +9,10 @@ Platform:
 Channel: Big Think
 tags:
 youtube: https://youtu.be/0barY2A6dpU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗂️🎨🔓 David Epstein: Discipline sets creativity free | Full Interview  
@@ -55,10 +59,10 @@ youtube: https://youtu.be/0barY2A6dpU
   
 ### 🆚 Contrasting  
   
-* Deep Work: Rules for Focused Success in a Distracted World by Cal Newport argues that extreme, intense focus - rather than structural constraints - is the primary driver of high-value professional output.  
-* Originals: How Non-Conformists Move the World by Adam Grant challenges the idea of incremental, problem-focused innovation, suggesting instead that disruptive thinkers often break rules to create entirely new paradigms.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport argues that extreme, intense focus - rather than structural constraints - is the primary driver of high-value professional output.  
+* [💡🎨 Originals: How Non-Conformists Move the World](../books/originals.md) by Adam Grant challenges the idea of incremental, problem-focused innovation, suggesting instead that disruptive thinkers often break rules to create entirely new paradigms.  
   
 ### 🎨 Creatively Related  
   
-* The War of Art by Steven Pressfield focuses on the internal resistance and discipline required to create, complementing the idea that creativity thrives within a box of established habits.  
-* Essentialism: The Disciplined Pursuit of Less by Greg McKeown provides a framework for ruthlessly prioritizing the vital few tasks while eliminating the trivial many.
+* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield focuses on the internal resistance and discipline required to create, complementing the idea that creativity thrives within a box of established habits.  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown provides a framework for ruthlessly prioritizing the vital few tasks while eliminating the trivial many.

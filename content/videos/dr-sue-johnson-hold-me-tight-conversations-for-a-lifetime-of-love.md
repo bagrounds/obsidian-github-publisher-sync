@@ -9,6 +9,10 @@ Platform:
 Channel: Banyen Books & Sound
 tags:
 youtube: https://youtu.be/bHa9_hYSSBQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🫂❤️🔐 Dr Sue Johnson Hold Me Tight Conversations for a Lifetime of Love  
@@ -53,5 +57,5 @@ Emotionally focused therapy posits that secure emotional bonding and fulfilling 
   
 ### 🎨 Creatively Related  
   
-* The Body Keeps the Score by Bessel van der Kolk explains how trauma impacts the nervous system and the necessity of somatic healing, which relates to the importance of physical safety in attachment.  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](../books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk explains how trauma impacts the nervous system and the necessity of somatic healing, which relates to the importance of physical safety in attachment.  
 * Braving the Wilderness by Brene Brown explores the necessity of true belonging and vulnerability, connecting to the idea that humans are inherently wired for connection rather than isolated self-sufficiency.

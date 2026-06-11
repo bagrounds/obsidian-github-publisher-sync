@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-11T11:18:04-07:00
+updated: 2026-06-11T12:08:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -98,10 +98,10 @@ updated: 2026-06-11T11:18:04-07:00
 - [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
   
   
-## [💾 Software](./software/index.md) (33)  
+## [💾 Software](./software/index.md) (34)  
+- [📈🏭💰 Sim Companies](./software/sim-companies.md)  
 - [⚛️🔄 React](./software/react.md)  
 - [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
-- [💎🔬🔍📈 Quartz](./software/quartz.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

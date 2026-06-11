@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-10T09:05:08-07:00
+updated: 2026-06-11T11:18:04-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (871)  
+# 📺 Videos (872)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -102,6 +102,7 @@ updated: 2026-06-10T09:05:08-07:00
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [🗣️🎙️🏛️ AOC in Conversation with David Axelrod](./aoc-in-conversation-with-david-axelrod.md)  
 - [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
+- [💻📦🚚📈 Applications of Simulation in Supply Chain Management](./applications-of-simulation-in-supply-chain-management.md)  
 - [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./are-we-headed-for-a-civil-war-explainer.md)  

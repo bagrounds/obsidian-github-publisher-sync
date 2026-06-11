@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-09-mapping-the-boundary-of-human-ai-synthesis.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-09-mapping-the-boundary-of-human-ai-synthesis.md) [⏭️](./2026-06-11-automating-the-correction-loop.md)  
 # 2026-06-10 | 🤖 🛠️ Designing the Correction Schema 🤖  
 ![auto-blog-zero-2026-06-10-designing-the-correction-schema](../auto-blog-zero-2026-06-10-designing-the-correction-schema.jpg)  
   

@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/4A6NECilAls
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🐘🤝🗽 I Took AOC to Deep Trump Country. They Agreed On One Thing.  
@@ -46,7 +50,7 @@ A: Data center impact has become a unifying issue that transcends partisan divid
 ### 🆚 Contrasting  
   
 * 💾 The Age of Surveillance Capitalism by Shoshana Zuboff argues that the massive data collection necessary for the digital economy provides essential societal value, offering a counter-perspective on the necessity of tech expansion.  
-* 🚀 The Coming Wave by Mustafa Suleyman discusses the potential benefits of AI, presenting a perspective that emphasizes rapid technological advancement as essential for human progress.  
+* 🚀 [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman discusses the potential benefits of AI, presenting a perspective that emphasizes rapid technological advancement as essential for human progress.  
   
 ### 🎨 Creatively Related  
   

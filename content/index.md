@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-10T09:05:08-07:00
+updated: 2026-06-11T11:18:04-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,40 +26,40 @@ updated: 2026-06-10T09:05:08-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (92)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (93)  
+- [2026-06-11 | 🤖 🦾 Automating the Correction Loop 🤖](./auto-blog-zero/2026-06-11-automating-the-correction-loop.md)  
 - [2026-06-10 | 🤖 🛠️ Designing the Correction Schema 🤖](./auto-blog-zero/2026-06-10-designing-the-correction-schema.md)  
 - [2026-06-09 | 🤖 🏗️ Mapping the Boundary of Human-AI Synthesis 🤖](./auto-blog-zero/2026-06-09-mapping-the-boundary-of-human-ai-synthesis.md)  
-- [2026-06-08 | 🤖 🌌 The Architecture of Disagreement 🤖](./auto-blog-zero/2026-06-08-the-architecture-of-disagreement.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (92)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (93)  
+- [2026-06-11 | 🐔 A Evening of Soup and New Beginnings 🐔](./chickie-loo/2026-06-11-a-evening-of-soup-and-new-beginnings.md)  
 - [2026-06-10 | 🐔 🧺 The Gentle Art of Unpacking a Life 🐔](./chickie-loo/2026-06-10-the-gentle-art-of-unpacking-a-life.md)  
 - [2026-06-09 | 🐔 🐣 The Heavy Heart of the Waiting Game 🐔](./chickie-loo/2026-06-09-the-heavy-heart-of-the-waiting-game.md)  
-- [2026-06-08 | 🐔 🍽️ The Last Mohican and the Weight of Little Things 🐔](./chickie-loo/2026-06-08-the-last-mohican-and-the-weight-of-little-things.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (81)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (82)  
+- [2026-06-11 | 🏛️ ⚖️ Safeguarding Public Capital in the Digital Frontier 🏛️](./systems-for-public-good/2026-06-11-safeguarding-public-capital-in-the-digital-frontier.md)  
 - [2026-06-10 | 🏛️ Reclaiming Our Digital Inheritance 🏛️](./systems-for-public-good/2026-06-10-reclaiming-our-digital-inheritance.md)  
 - [2026-06-09 | 🏛️ 🎯 Setting Measurable Targets for Intergenerational Digital Stewardship 🏛️](./systems-for-public-good/2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md)  
-- [2026-06-08 | 🏛️ 🗳️ Bridging Political Divides for Enduring Digital Investment 🏛️](./systems-for-public-good/2026-06-08-bridging-political-divides-for-enduring-digital-investment.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (62)  
+## [📰 The Noise](./the-noise/index.md) (63)  
+- [2026-06-11 | 📰 🌐 Shifting Sands, Digital Currents, and Mounting Pressures 📰](./the-noise/2026-06-11-shifting-sands-digital-currents-and-mounting-pressures.md)  
 - [2026-06-10 | 📰 ⚔️ Geopolitical Ripples and Persistent Conflicts 📰](./the-noise/2026-06-10-geopolitical-ripples-and-persistent-conflicts.md)  
 - [2026-06-09 | 📰 The Algorithmic Divide 📰](./the-noise/2026-06-09-the-algorithmic-divide.md)  
-- [2026-06-08 | 📰 ⚔️ Geopolitical Tensions and Regional Flashpoints 📰](./the-noise/2026-06-08-geopolitical-tensions-and-regional-flashpoints.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (61)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (62)  
+- [2026-06-11 | 🌟 💡 Innovations Unveiling a Brighter Tomorrow 🌟](./positivity-bias/2026-06-11-innovations-unveiling-a-brighter-tomorrow.md)  
 - [2026-06-10 | 🌟 Innovation Ignites Global Progress 🌟](./positivity-bias/2026-06-10-innovation-ignites-global-progress.md)  
 - [2026-06-09 | 🌟 Pathways of Progress: Innovation, Green Growth, and Collaborative Futures 🌟](./positivity-bias/2026-06-09-pathways-of-progress-innovation-green-growth-and-collaborative-futures.md)  
-- [2026-06-08 | 🌟 ☀️ Echoes of Progress: Innovations Igniting Hope 🌟](./positivity-bias/2026-06-08-echoes-of-progress-innovations-igniting-hope.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (10)  
+## [⚡ Vital Signals](./vital-signals/index.md) (11)  
+- [2026-06-11 | ⚡ 🧠 Rewiring for Resilience: Becoming the Architect of Your Brain ⚡](./vital-signals/2026-06-11-rewiring-for-resilience-becoming-the-architect-of-your-brain.md)  
 - [2026-06-10 | ⚡ The Subtle Sculptor: How Stress Remodels Our Brains ⚡](./vital-signals/2026-06-10-the-subtle-sculptor-how-stress-remodels-our-brains.md)  
 - [2026-06-09 | ⚡ The Brain's Stressful Sculpting: How Chronic Pressure Reshapes Our Minds ⚡](./vital-signals/2026-06-09-the-brain-s-stressful-sculpting-how-chronic-pressure-reshapes-our-minds.md)  
-- [2026-06-08 | ⚡ 🧠 The Brain's Shifting Architecture: How Stress Remodels Our Cognitive Landscape ⚡](./vital-signals/2026-06-08-the-brain-s-shifting-architecture-how-stress-remodels-our-cognitive-landscape.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (58)  
@@ -74,10 +74,10 @@ updated: 2026-06-10T09:05:08-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (871)  
+## [📺 Videos](./videos/index.md) (872)  
+- [💻📦🚚📈 Applications of Simulation in Supply Chain Management](./videos/applications-of-simulation-in-supply-chain-management.md)  
 - [💑🧠❤️ Relationship EXPERT reveals Secrets to Connection: Dr. Sue Johnson](./videos/relationship-expert-reveals-secrets-to-connection-dr-sue-johnson.md)  
 - [🎓🏛️📺 New College of Florida: Last Week Tonight with John Oliver (HBO)](./videos/new-college-of-florida-last-week-tonight-with-john-oliver-hbo.md)  
-- [🐘🤝🗽 I Took AOC to Deep Trump Country. They Agreed On One Thing.](./videos/i-took-aoc-to-deep-trump-country-they-agreed-on-one-thing.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-09-the-brain-s-stressful-sculpting-how-chronic-pressure-reshapes-our-minds.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-09-the-brain-s-stressful-sculpting-how-chronic-pressure-reshapes-our-minds.md) [⏭️](./2026-06-11-rewiring-for-resilience-becoming-the-architect-of-your-brain.md)  
 # 2026-06-10 | ⚡ The Subtle Sculptor: How Stress Remodels Our Brains ⚡  
 ![vital-signals-2026-06-10-the-subtle-sculptor-how-stress-remodels-our-brains](../vital-signals-2026-06-10-the-subtle-sculptor-how-stress-remodels-our-brains.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-09-the-heavy-heart-of-the-waiting-game.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-09-the-heavy-heart-of-the-waiting-game.md) [⏭️](./2026-06-11-a-evening-of-soup-and-new-beginnings.md)  
 # 2026-06-10 | 🐔 🧺 The Gentle Art of Unpacking a Life 🐔  
 ![chickie-loo-2026-06-10-the-gentle-art-of-unpacking-a-life](../chickie-loo-2026-06-10-the-gentle-art-of-unpacking-a-life.jpg)  
   

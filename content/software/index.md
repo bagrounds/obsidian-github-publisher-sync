@@ -5,10 +5,10 @@ aliases:
 title: 💾 Software
 backlinks: false
 URL: https://bagrounds.org/software
-updated: 2026-06-11T11:18:04-07:00
+updated: 2026-06-11T12:08:07-07:00
 ---
 [Home](../index.md)  
-# 💾 Software (33)  
+# 💾 Software (34)  
 - [🌐🧱🖥️🎮 Babylon.js](./babylon.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./cloudflare-tunnel.md)  
 - [💻🎮🕹️🧠 CodinGame](./codingame.md)  
@@ -37,6 +37,7 @@ updated: 2026-06-11T11:18:04-07:00
 - [🚄🎲✅ QuickCheck](./quickcheck.md)  
 - [⚛️🔄 React](./react.md)  
 - [✨⚙️ Redis](./redis.md)  
+- [📈🏭💰 Sim Companies](./sim-companies.md)  
 - [💻📱🛠️ Termux](./termux.md)  
 - [🐍🏎️📦 uv](./uv.md)  
 - [💡🔧📏🔮〰️ Vensim](./vensim.md)  

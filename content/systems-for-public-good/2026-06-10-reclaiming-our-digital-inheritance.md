@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md) [⏭️](./2026-06-11-safeguarding-public-capital-in-the-digital-frontier.md)  
 # 2026-06-10 | 🏛️ Reclaiming Our Digital Inheritance 🏛️  
 ![systems-for-public-good-2026-06-10-reclaiming-our-digital-inheritance](../systems-for-public-good-2026-06-10-reclaiming-our-digital-inheritance.jpg)  
   

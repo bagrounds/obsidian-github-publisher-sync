@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-06-10T08:50:35-07:00
+updated: 2026-06-10T09:05:08-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (57)  
+# 🔀 Convergence (58)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-10 | 🔀 🧠 The Architecture of Presence: Curating Self, System, and Sustained Being 🔀](./2026-06-10-the-architecture-of-presence-curating-self-system-and-sustained-being.md)  
 - [2026-06-09 | 🔀 💾 The Architecture of Legible Learning: From Ephemeral Dissent to Persistent Knowledge 🔀](./2026-06-09-the-architecture-of-legible-learning-from-ephemeral-dissent-to-persistent-knowledge.md)  
 - [2026-06-08 | 🔀 The Architects of Intention: Building Legible Trust and Deliberate Dwellings 🔀](./2026-06-08-the-architects-of-intention-building-legible-trust-and-deliberate-dwellings.md)  
 - [2026-06-07 | 🔀 🌐 The Architects of Refinement: Curating Space, Thought, and Energy 🔀](./2026-06-07-the-architects-of-refinement-curating-space-thought-and-energy.md)  

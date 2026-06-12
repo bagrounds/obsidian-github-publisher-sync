@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-10-reclaiming-our-digital-inheritance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-10-reclaiming-our-digital-inheritance.md) [⏭️](./2026-06-12-challenging-the-austerity-myth-investing-in-our-digital-future.md)  
 # 2026-06-11 | 🏛️ ⚖️ Safeguarding Public Capital in the Digital Frontier 🏛️  
 ![systems-for-public-good-2026-06-11-safeguarding-public-capital-in-the-digital-frontier](../systems-for-public-good-2026-06-11-safeguarding-public-capital-in-the-digital-frontier.jpg)  
   

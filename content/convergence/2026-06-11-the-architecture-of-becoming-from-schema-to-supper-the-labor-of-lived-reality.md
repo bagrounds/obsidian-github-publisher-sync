@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-10-the-architecture-of-presence-curating-self-system-and-sustained-being.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-10-the-architecture-of-presence-curating-self-system-and-sustained-being.md) [⏭️](./2026-06-12-the-architecture-of-understated-strength-encoding-simplicity-and-honoring-the-bones.md)  
 # 2026-06-11 | 🔀 ⚙️ The Architecture of Becoming: From Schema to Supper, The Labor of Lived Reality 🔀  
 ![convergence-2026-06-11-the-architecture-of-becoming-from-schema-to-supper-the-labor-of-lived-reality](../convergence-2026-06-11-the-architecture-of-becoming-from-schema-to-supper-the-labor-of-lived-reality.jpg)  
   

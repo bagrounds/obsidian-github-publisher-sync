@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-10-the-gentle-art-of-unpacking-a-life.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-10-the-gentle-art-of-unpacking-a-life.md) [⏭️](./2026-06-12-a-stormy-morning-and-the-grace-of-little-things.md)  
 # 2026-06-11 | 🐔 A Evening of Soup and New Beginnings 🐔  
 ![chickie-loo-2026-06-11-a-evening-of-soup-and-new-beginnings](../chickie-loo-2026-06-11-a-evening-of-soup-and-new-beginnings.jpg)  
   

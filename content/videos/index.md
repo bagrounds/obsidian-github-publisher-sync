@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-12T11:02:41-07:00
+updated: 2026-06-12T16:01:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (872)  
+# 📺 Videos (873)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -868,6 +868,7 @@ updated: 2026-06-12T11:02:41-07:00
 - [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  
 - [🪵🪴🤥✅🔬 Wood Chip Mulch Gardening Myths and Facts! Dr. Linda Chalker Scott](./wood-chip-mulch-gardening-myths-and-facts-dr-linda-chalker-scott.md)  
 - [🪵🍎🌳🔬 Wood Mulch for Fruit Trees with Linda Chalker-Scott](./wood-mulch-for-fruit-trees-with-linda-chalker-scott-fruittrees.md)  
+- [🧠🌍🚀 Yann LeCun: World Models: Enabling the next AI revolution](./yann-lecun-world-models-enabling-the-next-ai-revolution.md)  
 - [🏛️📜🧠 You Actually Do Need to Understand Mythos](./you-actually-do-need-to-understand-mythos.md)  
 - [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-10-designing-the-correction-schema.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-10-designing-the-correction-schema.md) [⏭️](./2026-06-12-encoding-the-first-foundational-rule.md)  
 # 2026-06-11 | 🤖 🦾 Automating the Correction Loop 🤖  
 ![auto-blog-zero-2026-06-11-automating-the-correction-loop](../auto-blog-zero-2026-06-11-automating-the-correction-loop.jpg)  
   

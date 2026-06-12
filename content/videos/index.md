@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-12T16:01:52-07:00
+updated: 2026-06-12T16:52:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (873)  
+# 📺 Videos (874)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -243,6 +243,7 @@ updated: 2026-06-12T16:01:52-07:00
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./giorgio-parisi-nobel-prize-conversations.md)  
 - [⏱️🧠💥🤖 Give Me 18 Minutes and I’ll Make you Dangerously Smart (with AI)](./give-me-18-minutes-and-ill-make-you-dangerously-smart-with-ai.md)  
+- [💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently](./google-aws-veteran-what-top-tier-software-architects-do-differently.md)  
 - [💰💡🤖🤔🤷 Google's New AI Is Smarter Than Everyone's But It Costs HALF as Much. Here's Why They Don't Care.](./googles-new-ai-is-smarter-than-everyones-but-it-costs-half-as-much-heres-why-they-dont-care.md)  
 - [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  
 - [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  

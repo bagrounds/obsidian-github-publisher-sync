@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-12T16:01:52-07:00
+updated: 2026-06-12T16:52:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-06-12T16:01:52-07:00
 - [2026-06-10 | ⚡ The Subtle Sculptor: How Stress Remodels Our Brains ⚡](./vital-signals/2026-06-10-the-subtle-sculptor-how-stress-remodels-our-brains.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (59)  
+## [🔀 Convergence](./convergence/index.md) (60)  
+- [2026-06-12 | 🔀 🪨 The Architecture of Understated Strength: Encoding Simplicity and Honoring the Bones 🔀](./convergence/2026-06-12-the-architecture-of-understated-strength-encoding-simplicity-and-honoring-the-bones.md)  
 - [2026-06-11 | 🔀 ⚙️ The Architecture of Becoming: From Schema to Supper, The Labor of Lived Reality 🔀](./convergence/2026-06-11-the-architecture-of-becoming-from-schema-to-supper-the-labor-of-lived-reality.md)  
 - [2026-06-10 | 🔀 🧠 The Architecture of Presence: Curating Self, System, and Sustained Being 🔀](./convergence/2026-06-10-the-architecture-of-presence-curating-self-system-and-sustained-being.md)  
-- [2026-06-09 | 🔀 💾 The Architecture of Legible Learning: From Ephemeral Dissent to Persistent Knowledge 🔀](./convergence/2026-06-09-the-architecture-of-legible-learning-from-ephemeral-dissent-to-persistent-knowledge.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-12T16:01:52-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (873)  
+## [📺 Videos](./videos/index.md) (874)  
+- [💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently](./videos/google-aws-veteran-what-top-tier-software-architects-do-differently.md)  
 - [🧠🌍🚀 Yann LeCun: World Models: Enabling the next AI revolution](./videos/yann-lecun-world-models-enabling-the-next-ai-revolution.md)  
 - [💻📦🚚📈 Applications of Simulation in Supply Chain Management](./videos/applications-of-simulation-in-supply-chain-management.md)  
-- [💑🧠❤️ Relationship EXPERT reveals Secrets to Connection: Dr. Sue Johnson](./videos/relationship-expert-reveals-secrets-to-connection-dr-sue-johnson.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-10-geopolitical-ripples-and-persistent-conflicts.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-10-geopolitical-ripples-and-persistent-conflicts.md) [⏭️](./2026-06-12-global-currents-and-shifting-tides.md)  
 # 2026-06-11 | 📰 🌐 Shifting Sands, Digital Currents, and Mounting Pressures 📰  
 ![the-noise-2026-06-11-shifting-sands-digital-currents-and-mounting-pressures](../the-noise-2026-06-11-shifting-sands-digital-currents-and-mounting-pressures.jpg)  
   

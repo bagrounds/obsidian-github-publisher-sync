@@ -4,9 +4,17 @@ aliases:
   - 📈🏭💰 Sim Companies
 title: 📈🏭💰 Sim Companies
 URL: https://bagrounds.org/software/sim-companies
+image_date: 2026-06-11T19:14:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-angle, isometric view of a stylized, low-poly industrial landscape. The scene features a clean, organized grid representing a modular factory floor. In the center, a futuristic factory building emits a subtle, glowing energy beam upward, symbolizing production. Surrounding the facility are smaller icons representing various industries: a shipping truck, a stack of raw material crates, and a rising line graph hovering in the air. The color palette uses professional shades of deep navy, vibrant teal, and gold accents. The background is a clean, minimalist off-white, emphasizing the organized, data-driven nature of the simulation. The composition is structured and balanced, evoking a sense of strategic growth and global commerce."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [📈🏭💰 Sim Companies](https://www.simcompanies.com/ref/4174388)  
+![software-sim-companies](../software-sim-companies.jpg)  
   
 ## 🤖 AI Summary  
   
@@ -114,7 +122,7 @@ URL: https://bagrounds.org/software/sim-companies
 ## 📖 Book Recommendations  
   
 * 📚 **Topical:** The Goal by Eliyahu M. Goldratt.  
-* 📚 **Tangentially Related:** Thinking, Fast and Slow by Daniel Kahneman.  
+* 📚 **Tangentially Related:** [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman.  
 * 📚 **Accessible:** The Personal MBA by Josh Kaufman.  
 * 📚 **Fictional:** Atlas Shrugged by Ayn Rand (for the themes of industrial struggle).  
 * 📚 **Rigorous:** Microeconomic Theory by Mas-Colell, Whinston, and Green.

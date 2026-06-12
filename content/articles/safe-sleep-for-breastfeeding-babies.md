@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T17:34:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, soft-focus illustration showing a peaceful, minimalist bedroom scene. A mother and her infant are resting comfortably on a firm, flat mattress with neutral-toned, breathable bedding. The lighting is gentle and dim, suggesting moonlight filtering through a nearby window, creating a serene and secure atmosphere. The focus is on the close, safe proximity between the two, highlighting a calm, clutter-free sleep environment. The color palette consists of soft pastels, creams, and warm grays to evoke a sense of tranquility, safety, and maternal care. No pillows or loose blankets are visible near the baby, emphasizing the focus on a safe sleep space.
+updated: 2026-06-12T11:31:00
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤱😴👶 Safe Sleep for Breastfeeding Babies](https://llli.org/breastfeeding-info/sleep-bedshare)  
@@ -91,4 +92,12 @@ The article offers guidance for breastfeeding mothers who choose to bedshare. It
 This summary and analysis should provide a well-rounded view of the article’s content, its methodological grounding, and its place within the broader discourse on infant sleep safety and breastfeeding.  
   
 ## 💬 [ChatGPT](https://chat.com) Prompt  
-> Summarize the article: [Safe Sleep For Breastfeeding Babies](https://llli.org/breastfeeding-info/sleep-bedshare). Catalogue the topics, methods, and research discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional recommendations: the best alternate resource on the same topic, the best resource that is tangentially related, the best resource that is diametrically opposed, and the best fiction that incorporates related ideas. Format your response in markdown, with all links in-line, ready to be copy/pasted.
+> Summarize the article: [Safe Sleep For Breastfeeding Babies](https://llli.org/breastfeeding-info/sleep-bedshare). Catalogue the topics, methods, and research discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional recommendations: the best alternate resource on the same topic, the best resource that is tangentially related, the best resource that is diametrically opposed, and the best fiction that incorporates related ideas. Format your response in markdown, with all links in-line, ready to be copy/pasted.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mo3nczwpmc2t" data-bluesky-cid="bafyreigsr24c3q4o3sbxvmjwcgeut2afwyxm6cps2ua7wio6boxf2lyfku"><p>🤱😴👶 Safe Sleep for Breastfeeding Babies  
+  
+#AI Q: 🤱 Bedsharing or separate sleep: how did you decide what was best for your baby?  
+  
+🛌 Bedsharing | 🫂 Maternal Bonding | 🛡️ Risk Mitigation | 🤱  
+https://bagrounds.org/articles/safe-sleep-for-breastfeeding-babies</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mo3nczwpmc2t?ref_src=embed">2026-06-12T11:31:39.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -9,6 +9,10 @@ Platform:
 Channel: Computer Vision and Geometry Group, ETH Zurich
 tags:
 youtube: https://youtu.be/72Xj8k5WQX4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🌍🚀 Yann LeCun: World Models: Enabling the next AI revolution  
@@ -57,5 +61,5 @@ youtube: https://youtu.be/72Xj8k5WQX4
   
 ### 🎨 Creatively Related  
   
-* 📘 The Society of Mind by Marvin Minsky explores how intelligent behavior emerges from the coordinated actions of simple, specialized cognitive processes.  
+* 📘 [🧠👥 The Society of Mind](../books/the-society-of-mind.md) by Marvin Minsky explores how intelligent behavior emerges from the coordinated actions of simple, specialized cognitive processes.  
 * 📘 On Intelligence by Jeff Hawkins develops a theory of how the human brain functions as a prediction engine, closely aligning with the necessity of world-based modeling.

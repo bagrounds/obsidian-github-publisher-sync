@@ -9,6 +9,10 @@ Platform:
 Channel: MIT Center for Transportation & Logistics
 tags:
 youtube: https://youtu.be/ZAU4YQMakUY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻📦🚚📈 Applications of Simulation in Supply Chain Management  
@@ -53,9 +57,9 @@ youtube: https://youtu.be/ZAU4YQMakUY
 ### 🆚 Contrasting  
   
 * The Goal by Eliyahu Goldratt presents the theory of constraints, which offers a framework for identifying and managing bottlenecks through focused logical analysis rather than complex simulation.  
-* Superforecasting The Art and Science of Prediction by Philip Tetlock argues for improving human judgment and probabilistic thinking as a primary method for navigating uncertainty rather than relying solely on computational models.  
+* [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](../books/superforecasting-the-art-and-science-of-prediction.md) The Art and Science of Prediction by Philip Tetlock argues for improving human judgment and probabilistic thinking as a primary method for navigating uncertainty rather than relying solely on computational models.  
   
 ### 🎨 Creatively Related  
   
-* The Fifth Discipline by Peter Senge examines the principles of system dynamics and mental models, which underpin the conceptual approach to understanding complex, interconnected organizational behaviors.  
-* Thinking in Systems by Donella Meadows introduces the fundamental concepts of systems thinking, essential for anyone designing simulations that accurately reflect feedback loops and systemic dependencies.
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](../books/the-fifth-discipline.md) by Peter Senge examines the principles of system dynamics and mental models, which underpin the conceptual approach to understanding complex, interconnected organizational behaviors.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows introduces the fundamental concepts of systems thinking, essential for anyone designing simulations that accurately reflect feedback loops and systemic dependencies.

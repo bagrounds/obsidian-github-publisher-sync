@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-13T08:14:21-07:00
+updated: 2026-06-13T08:31:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-13T08:14:21-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (874)  
+## [📺 Videos](./videos/index.md) (875)  
+- [👶❤️👩‍❤️‍👨 Love Sense: from Infant to Adult (Sue Johnson and Ed Tronick)](./videos/love-sense-from-infant-to-adult-sue-johnson-and-ed-tronick.md)  
 - [💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently](./videos/google-aws-veteran-what-top-tier-software-architects-do-differently.md)  
 - [🧠🌍🚀 Yann LeCun: World Models: Enabling the next AI revolution](./videos/yann-lecun-world-models-enabling-the-next-ai-revolution.md)  
-- [💻📦🚚📈 Applications of Simulation in Supply Chain Management](./videos/applications-of-simulation-in-supply-chain-management.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-13T08:14:21-07:00
+updated: 2026-06-13T08:31:34-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (874)  
+# 📺 Videos (875)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -415,6 +415,7 @@ updated: 2026-06-13T08:14:21-07:00
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  
 - [🔴🎙️🇺🇸🎓🚀🎉 LIVE with Bernie Sanders & John Russell: More Perfect University Launch Party](./live-with-bernie-sanders-john-russell-more-perfect-university-launch-party.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
+- [👶❤️👩‍❤️‍👨 Love Sense: from Infant to Adult (Sue Johnson and Ed Tronick)](./love-sense-from-infant-to-adult-sue-johnson-and-ed-tronick.md)  
 - [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./l-randall-wray-modern-money-theory-for-beginners.md)  
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  

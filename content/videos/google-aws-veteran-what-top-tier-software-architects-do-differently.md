@@ -9,6 +9,10 @@ Platform:
 Channel: Beyond Coding
 tags:
 youtube: https://youtu.be/F8X9_Dp3ZUk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently  
@@ -57,4 +61,4 @@ A: View influence as a form of political capital that must be earned through del
 ### 🎨 Creatively Related  
   
 * Think in Systems by Donella Meadows introduces systems thinking as a way to understand complex interconnections in any domain.  
-* The Design of Everyday Things by Don Norman explains how intuitive design principles can reduce cognitive load and improve user interaction with complex systems.
+* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman explains how intuitive design principles can reduce cognitive load and improve user interaction with complex systems.

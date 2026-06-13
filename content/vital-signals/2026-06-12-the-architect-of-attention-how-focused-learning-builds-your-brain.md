@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-11-rewiring-for-resilience-becoming-the-architect-of-your-brain.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-11-rewiring-for-resilience-becoming-the-architect-of-your-brain.md) [⏭️](./2026-06-13-the-brain-s-growth-engine-fueling-neuroplasticity-with-curiosity-and-novelty.md)  
 # 2026-06-12 | ⚡ The Architect of Attention: How Focused Learning Builds Your Brain ⚡  
 ![vital-signals-2026-06-12-the-architect-of-attention-how-focused-learning-builds-your-brain](../vital-signals-2026-06-12-the-architect-of-attention-how-focused-learning-builds-your-brain.jpg)  
   

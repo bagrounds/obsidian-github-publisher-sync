@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-11-shifting-sands-digital-currents-and-mounting-pressures.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-11-shifting-sands-digital-currents-and-mounting-pressures.md) [⏭️](./2026-06-13-crossroads-of-conflict-and-breakthroughs.md)  
 # 2026-06-12 | 📰 Global Currents and Shifting Tides 📰  
 ![the-noise-2026-06-12-global-currents-and-shifting-tides](../the-noise-2026-06-12-global-currents-and-shifting-tides.jpg)  
   

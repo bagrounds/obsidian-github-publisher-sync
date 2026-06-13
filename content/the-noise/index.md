@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-06-12T16:52:23-07:00
+updated: 2026-06-13T08:14:21-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (64)  
+# 📰 The Noise (65)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-06-13 | 📰 🌪️ Crossroads of Conflict and Breakthroughs 📰](./2026-06-13-crossroads-of-conflict-and-breakthroughs.md)  
 - [2026-06-12 | 📰 Global Currents and Shifting Tides 📰](./2026-06-12-global-currents-and-shifting-tides.md)  
 - [2026-06-11 | 📰 🌐 Shifting Sands, Digital Currents, and Mounting Pressures 📰](./2026-06-11-shifting-sands-digital-currents-and-mounting-pressures.md)  
 - [2026-06-10 | 📰 ⚔️ Geopolitical Ripples and Persistent Conflicts 📰](./2026-06-10-geopolitical-ripples-and-persistent-conflicts.md)  

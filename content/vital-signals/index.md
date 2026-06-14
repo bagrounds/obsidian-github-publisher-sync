@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-06-13T08:31:34-07:00
+updated: 2026-06-14T13:43:43-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (13)  
+# ⚡ Vital Signals (14)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-06-14 | ⚡ 📆 The Brain's Dynamic Canvas: Sculpting Resilience and Growth ⚡](./2026-06-14-the-brain-s-dynamic-canvas-sculpting-resilience-and-growth.md)  
 - [2026-06-13 | ⚡ 🧠 The Brain's Growth Engine: Fueling Neuroplasticity with Curiosity and Novelty ⚡](./2026-06-13-the-brain-s-growth-engine-fueling-neuroplasticity-with-curiosity-and-novelty.md)  
 - [2026-06-12 | ⚡ The Architect of Attention: How Focused Learning Builds Your Brain ⚡](./2026-06-12-the-architect-of-attention-how-focused-learning-builds-your-brain.md)  
 - [2026-06-11 | ⚡ 🧠 Rewiring for Resilience: Becoming the Architect of Your Brain ⚡](./2026-06-11-rewiring-for-resilience-becoming-the-architect-of-your-brain.md)  

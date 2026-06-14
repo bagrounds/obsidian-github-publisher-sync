@@ -5,11 +5,13 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-06-13T08:31:34-07:00
+updated: 2026-06-14T13:43:43-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (83)  
+# 🏛️ Systems for Public Good (85)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-06-14 | 🏛️ ⚖️ Beyond Profit: Redefining Private Finance for Public Good 🏛️](./2026-06-14-beyond-profit-redefining-private-finance-for-public-good.md)  
+- [2026-06-13 | 🏛️ 💡 Cultivating Agility: Public Finance for a Dynamic Digital Future 🏛️](./2026-06-13-cultivating-agility-public-finance-for-a-dynamic-digital-future.md)  
 - [2026-06-12 | 🏛️ 🌊 Challenging the Austerity Myth: Investing in Our Digital Future 🏛️](./2026-06-12-challenging-the-austerity-myth-investing-in-our-digital-future.md)  
 - [2026-06-11 | 🏛️ ⚖️ Safeguarding Public Capital in the Digital Frontier 🏛️](./2026-06-11-safeguarding-public-capital-in-the-digital-frontier.md)  
 - [2026-06-10 | 🏛️ Reclaiming Our Digital Inheritance 🏛️](./2026-06-10-reclaiming-our-digital-inheritance.md)  

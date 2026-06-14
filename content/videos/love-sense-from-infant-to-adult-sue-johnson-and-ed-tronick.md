@@ -9,6 +9,10 @@ Platform:
 Channel: Dr. Sue Johnson
 tags:
 youtube: https://youtu.be/OyCHT9AbD_Y
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-13T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👶❤️👩‍❤️‍👨 Love Sense: from Infant to Adult (Sue Johnson and Ed Tronick)  
@@ -42,12 +46,12 @@ A: The differentiator between lasting love and constant conflict is the ability 
 ### ↔️ Similar  
   
 * 🔗 Attached by Amir Levine and Rachel Heller explores the science of adult attachment theory and how it dictates emotional responses in relationships.  
-* 🛡️ Hold Me Tight by Sue Johnson provides a detailed guide on using Emotionally Focused Therapy to repair and strengthen romantic bonds.  
+* 🛡️ [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](../books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson provides a detailed guide on using Emotionally Focused Therapy to repair and strengthen romantic bonds.  
   
 ### 🆚 Contrasting  
   
 * 🧩 The 5 Love Languages by Gary Chapman focuses on practical expressions of affection and personal preferences rather than the underlying neurological basis of attachment.  
-* 🧗 Man's Search for Meaning by Viktor Frankl discusses the human drive for purpose as a survival strategy, emphasizing internal psychological fortitude rather than interpersonal bonding.  
+* 🧗 [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl discusses the human drive for purpose as a survival strategy, emphasizing internal psychological fortitude rather than interpersonal bonding.  
   
 ### 🎨 Creatively Related  
   

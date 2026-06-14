@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-06-13T08:31:34-07:00
+updated: 2026-06-14T13:43:43-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (95)  
+# 🐔 Chickie Loo (96)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-06-14 | 🐔 🍼 A Crimson Miracle and the Art of the Find 🐔](./2026-06-14-a-crimson-miracle-and-the-art-of-the-find.md)  
 - [2026-06-13 | 🐔 🌻 A Sweet Milestone and the Road Ahead 🐔](./2026-06-13-a-sweet-milestone-and-the-road-ahead.md)  
 - [2026-06-12 | 🐔 🌧️ A Stormy Morning and the Grace of Little Things 🐔](./2026-06-12-a-stormy-morning-and-the-grace-of-little-things.md)  
 - [2026-06-11 | 🐔 A Evening of Soup and New Beginnings 🐔](./2026-06-11-a-evening-of-soup-and-new-beginnings.md)  

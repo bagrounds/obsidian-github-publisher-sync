@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-14-the-delicate-dance-of-designed-order-and-wild-emergence.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-14-the-delicate-dance-of-designed-order-and-wild-emergence.md) [⏭️](./2026-06-16-the-resonance-of-stillness-integrating-intuition-and-rest-for-systemic-health.md)  
 # 2026-06-15 | 🔀 🌿 The Unseen Pulse: Reading the Metabolism of Care and Systems 🔀  
 ![convergence-2026-06-15-the-unseen-pulse-reading-the-metabolism-of-care-and-systems](../convergence-2026-06-15-the-unseen-pulse-reading-the-metabolism-of-care-and-systems.jpg)  
   

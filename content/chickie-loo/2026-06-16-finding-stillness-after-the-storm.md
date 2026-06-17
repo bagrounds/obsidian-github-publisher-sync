@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-15-a-time-for-healing-and-the-simple-magic-of-eggs.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-15-a-time-for-healing-and-the-simple-magic-of-eggs.md) [⏭️](./2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.md)  
 # 2026-06-16 | 🐔 ☕ Finding Stillness After the Storm 🐔  
 ![chickie-loo-2026-06-16-finding-stillness-after-the-storm](../chickie-loo-2026-06-16-finding-stillness-after-the-storm.jpg)  
   

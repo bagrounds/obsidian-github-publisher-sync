@@ -5,11 +5,14 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-06-14T13:43:43-07:00
+updated: 2026-06-17T07:23:23-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (61)  
+# 🔀 Convergence (64)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-16 | 🔀 🧘 The Resonance of Stillness: Integrating Intuition and Rest for Systemic Health 🔀](./2026-06-16-the-resonance-of-stillness-integrating-intuition-and-rest-for-systemic-health.md)  
+- [2026-06-15 | 🔀 🌿 The Unseen Pulse: Reading the Metabolism of Care and Systems 🔀](./2026-06-15-the-unseen-pulse-reading-the-metabolism-of-care-and-systems.md)  
+- [2026-06-14 | 🔀 ⚖️ The Delicate Dance of Designed Order and Wild Emergence 🔀](./2026-06-14-the-delicate-dance-of-designed-order-and-wild-emergence.md)  
 - [2026-06-13 | 🔀 🪨 The Deep Roots of Simplicity: Cultivating Foundations for Flourishing 🔀](./2026-06-13-the-deep-roots-of-simplicity-cultivating-foundations-for-flourishing.md)  
 - [2026-06-12 | 🔀 🪨 The Architecture of Understated Strength: Encoding Simplicity and Honoring the Bones 🔀](./2026-06-12-the-architecture-of-understated-strength-encoding-simplicity-and-honoring-the-bones.md)  
 - [2026-06-11 | 🔀 ⚙️ The Architecture of Becoming: From Schema to Supper, The Labor of Lived Reality 🔀](./2026-06-11-the-architecture-of-becoming-from-schema-to-supper-the-labor-of-lived-reality.md)  

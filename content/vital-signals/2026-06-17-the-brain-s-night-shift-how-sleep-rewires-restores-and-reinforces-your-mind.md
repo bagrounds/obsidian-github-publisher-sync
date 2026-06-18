@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-16-consistent-cultivation-weaving-your-brain-s-future-day-by-day.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-16-consistent-cultivation-weaving-your-brain-s-future-day-by-day.md) [⏭️](./2026-06-18-the-dawn-advantage-sculpting-your-day-from-the-first-light.md)  
 # 2026-06-17 | ⚡ 😴 The Brain's Night Shift: How Sleep Rewires, Restores, and Reinforces Your Mind ⚡  
 ![vital-signals-2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind](../vital-signals-2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind.jpg)  
   

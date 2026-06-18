@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-16-global-tremors-digital-leaps-and-lingering-shadows.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-16-global-tremors-digital-leaps-and-lingering-shadows.md) [⏭️](./2026-06-18-global-diplomacy-and-enduring-flashpoints.md)  
 # 2026-06-17 | 📰 AI's Gambit: Navigating the Complex Currents of Conflict and Code 📰  
 ![the-noise-2026-06-17-ai-s-gambit-navigating-the-complex-currents-of-conflict-and-code](../the-noise-2026-06-17-ai-s-gambit-navigating-the-complex-currents-of-conflict-and-code.jpg)  
   

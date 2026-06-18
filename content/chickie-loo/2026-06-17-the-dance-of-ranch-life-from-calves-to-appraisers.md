@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-16-finding-stillness-after-the-storm.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-16-finding-stillness-after-the-storm.md) [⏭️](./2026-06-18-a-day-of-breath-bonds-and-brave-new-steps.md)  
 # 2026-06-17 | 🐔 🌿 The Dance of Ranch Life: From Calves to Appraisers 🐔  
 ![chickie-loo-2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers](../chickie-loo-2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.jpg)  
   

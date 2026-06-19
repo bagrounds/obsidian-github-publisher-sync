@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-19T13:17:15-07:00
+updated: 2026-06-19T13:45:14-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-19T13:17:15-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (876)  
+## [📺 Videos](./videos/index.md) (878)  
 - [📹🏛️🗣️ WATCH: Former President Barack Obama's full remarks at Obama Presidential Center dedication](./videos/watch-former-president-barack-obamas-full-remarks-at-obama-presidential-center-dedication.md)  
-- [👶❤️👩‍❤️‍👨 Love Sense: from Infant to Adult (Sue Johnson and Ed Tronick)](./videos/love-sense-from-infant-to-adult-sue-johnson-and-ed-tronick.md)  
-- [💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently](./videos/google-aws-veteran-what-top-tier-software-architects-do-differently.md)  
+- [🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer](./videos/americans-choosing-to-rebuild-democracy-through-unity-explainer.md)  
+- [🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer](./videos/the-cards-held-by-iran-in-a-badly-written-memorandum-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

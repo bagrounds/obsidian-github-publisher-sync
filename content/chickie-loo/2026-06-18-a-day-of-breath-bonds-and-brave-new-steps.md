@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.md) [⏭️](./2026-06-19-a-friday-reflection-on-seasons-and-soil.md)  
 # 2026-06-18 | 🐔 🌿 A Day of Breath, Bonds, and Brave New Steps 🐔  
 ![chickie-loo-2026-06-18-a-day-of-breath-bonds-and-brave-new-steps](../chickie-loo-2026-06-18-a-day-of-breath-bonds-and-brave-new-steps.jpg)  
   

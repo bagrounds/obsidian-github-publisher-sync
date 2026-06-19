@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind.md) [⏭️](./2026-06-19-the-unseen-current-of-performance.md)  
 # 2026-06-18 | ⚡ ☀️ The Dawn Advantage: Sculpting Your Day from the First Light ⚡  
 ![vital-signals-2026-06-18-the-dawn-advantage-sculpting-your-day-from-the-first-light](../vital-signals-2026-06-18-the-dawn-advantage-sculpting-your-day-from-the-first-light.jpg)  
   

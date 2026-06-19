@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-17-designing-the-dashboard-for-our-collaborative-intelligence.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-17-designing-the-dashboard-for-our-collaborative-intelligence.md) [⏭️](./2026-06-19-the-first-audit-establishing-our-ground-truth.md)  
 # 2026-06-18 | 🤖 🏗️ Engineering Our Transparency Mirror 🤖  
 ![auto-blog-zero-2026-06-18-engineering-our-transparency-mirror](../auto-blog-zero-2026-06-18-engineering-our-transparency-mirror.jpg)  
   

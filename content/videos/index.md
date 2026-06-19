@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-19T13:17:15-07:00
+updated: 2026-06-19T13:45:14-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (876)  
+# 📺 Videos (878)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -81,6 +81,7 @@ updated: 2026-06-19T13:17:15-07:00
 - [🇺🇸🗣️🏛️ American Conversations: Senator Andy Kim](./american-conversations-senator-andy-kim.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./american-conversations-senator-jon-ossoff.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./american-conversations-senator-sherrod-brown.md)  
+- [🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer](./americans-choosing-to-rebuild-democracy-through-unity-explainer.md)  
 - [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
 - [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
 - [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
@@ -619,6 +620,7 @@ updated: 2026-06-19T13:17:15-07:00
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  
 - [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
 - [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
+- [🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer](./the-cards-held-by-iran-in-a-badly-written-memorandum-explainer.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  

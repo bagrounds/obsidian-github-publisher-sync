@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-06-18T08:34:35-07:00
+updated: 2026-06-19T08:34:25-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (100)  
+# 🐔 Chickie Loo (101)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-06-19 | 🐔 🌿 A Friday Reflection on Seasons and Soil 🐔](./2026-06-19-a-friday-reflection-on-seasons-and-soil.md)  
 - [2026-06-18 | 🐔 🌿 A Day of Breath, Bonds, and Brave New Steps 🐔](./2026-06-18-a-day-of-breath-bonds-and-brave-new-steps.md)  
 - [2026-06-17 | 🐔 🌿 The Dance of Ranch Life: From Calves to Appraisers 🐔](./2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.md)  
 - [2026-06-16 | 🐔 ☕ Finding Stillness After the Storm 🐔](./2026-06-16-finding-stillness-after-the-storm.md)  

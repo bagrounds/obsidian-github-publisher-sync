@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-19T08:34:25-07:00
+updated: 2026-06-19T13:17:15-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (875)  
+# 📺 Videos (876)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -786,6 +786,7 @@ updated: 2026-06-19T08:34:25-07:00
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./war-with-iran-pbs-news-special-report.md)  
+- [📹🏛️🗣️ WATCH: Former President Barack Obama's full remarks at Obama Presidential Center dedication](./watch-former-president-barack-obamas-full-remarks-at-obama-presidential-center-dedication.md)  
 - [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
 - [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](./watch-sen-merkley-concludes-marathon-22-hour-speech-protesting-trump-amid-shutdown.md)  

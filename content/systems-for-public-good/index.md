@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-06-19T08:34:25-07:00
+updated: 2026-06-19T13:17:15-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (89)  
+# 🏛️ Systems for Public Good (90)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-06-19 | 🏛️ Public Capital as a Lever for Digital Public Good 🏛️](./2026-06-19-public-capital-as-a-lever-for-digital-public-good.md)  
 - [2026-06-18 | 🏛️ 🧭 Steering the Digital Ship with Young Hands 🏛️](./2026-06-18-steering-the-digital-ship-with-young-hands.md)  
 - [2026-06-17 | 🏛️ 🌠 Cultivating a Digital Inheritance for All Generations 🏛️](./2026-06-17-cultivating-a-digital-inheritance-for-all-generations.md)  
 - [2026-06-16 | 🏛️ Bridging Political Divides for Enduring Digital Investment 🏛️](./2026-06-16-bridging-political-divides-for-enduring-digital-investment.md)  

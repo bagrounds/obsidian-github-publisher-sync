@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-19T08:34:25-07:00
+updated: 2026-06-19T13:17:15-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -38,10 +38,10 @@ updated: 2026-06-19T08:34:25-07:00
 - [2026-06-17 | 🐔 🌿 The Dance of Ranch Life: From Calves to Appraisers 🐔](./chickie-loo/2026-06-17-the-dance-of-ranch-life-from-calves-to-appraisers.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (89)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (90)  
+- [2026-06-19 | 🏛️ Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-19-public-capital-as-a-lever-for-digital-public-good.md)  
 - [2026-06-18 | 🏛️ 🧭 Steering the Digital Ship with Young Hands 🏛️](./systems-for-public-good/2026-06-18-steering-the-digital-ship-with-young-hands.md)  
 - [2026-06-17 | 🏛️ 🌠 Cultivating a Digital Inheritance for All Generations 🏛️](./systems-for-public-good/2026-06-17-cultivating-a-digital-inheritance-for-all-generations.md)  
-- [2026-06-16 | 🏛️ Bridging Political Divides for Enduring Digital Investment 🏛️](./systems-for-public-good/2026-06-16-bridging-political-divides-for-enduring-digital-investment.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (71)  
@@ -74,10 +74,10 @@ updated: 2026-06-19T08:34:25-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (875)  
+## [📺 Videos](./videos/index.md) (876)  
+- [📹🏛️🗣️ WATCH: Former President Barack Obama's full remarks at Obama Presidential Center dedication](./videos/watch-former-president-barack-obamas-full-remarks-at-obama-presidential-center-dedication.md)  
 - [👶❤️👩‍❤️‍👨 Love Sense: from Infant to Adult (Sue Johnson and Ed Tronick)](./videos/love-sense-from-infant-to-adult-sue-johnson-and-ed-tronick.md)  
 - [💻☁️🏗️ Google & AWS Veteran: What Top Tier Software Architects Do Differently](./videos/google-aws-veteran-what-top-tier-software-architects-do-differently.md)  
-- [🧠🌍🚀 Yann LeCun: World Models: Enabling the next AI revolution](./videos/yann-lecun-world-models-enabling-the-next-ai-revolution.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -9,6 +9,10 @@ Platform:
 Channel: Ryan Peterman
 tags:
 youtube: https://youtu.be/xcB_LF3cdqw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones  

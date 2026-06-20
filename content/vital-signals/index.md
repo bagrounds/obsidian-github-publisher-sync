@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-06-19T18:16:14-07:00
+updated: 2026-06-20T08:24:44-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (19)  
+# ⚡ Vital Signals (20)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-06-20 | ⚡ 🧠 The Integrated Mind: Weaving Performance from Daily Rhythms ⚡](./2026-06-20-the-integrated-mind-weaving-performance-from-daily-rhythms.md)  
 - [2026-06-19 | ⚡ 💡 The Unseen Current of Performance ⚡](./2026-06-19-the-unseen-current-of-performance.md)  
 - [2026-06-18 | ⚡ ☀️ The Dawn Advantage: Sculpting Your Day from the First Light ⚡](./2026-06-18-the-dawn-advantage-sculpting-your-day-from-the-first-light.md)  
 - [2026-06-17 | ⚡ 😴 The Brain's Night Shift: How Sleep Rewires, Restores, and Reinforces Your Mind ⚡](./2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind.md)  

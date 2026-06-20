@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-19T23:27:13
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md) [⏭️](./2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 # 2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️  

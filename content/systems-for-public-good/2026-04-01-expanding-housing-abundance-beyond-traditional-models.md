@@ -11,7 +11,7 @@ image_prompt: A stylized, isometric illustration of a vibrant, modern neighborho
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-01T23:19:38
+updated: 2026-06-20T09:16:29
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md) [⏭️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  

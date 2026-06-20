@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-29T17:44:07
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-27-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md) [⏭️](./2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
 # 2026-04-28 | 🏛️ The Architecture of Engagement: Civic Infrastructure 🏛️  

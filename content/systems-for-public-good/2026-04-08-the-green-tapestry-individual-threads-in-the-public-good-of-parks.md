@@ -11,7 +11,7 @@ image_prompt: "An intricate, top-down illustration of a vibrant public park, des
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-08T21:27:58
+updated: 2026-06-20T09:16:29
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md) [⏭️](./2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  

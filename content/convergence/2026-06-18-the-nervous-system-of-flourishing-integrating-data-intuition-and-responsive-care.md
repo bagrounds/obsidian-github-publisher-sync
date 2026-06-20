@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-17-the-mirrors-of-being-reflecting-system-health-across-code-critter-and-collective.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-17-the-mirrors-of-being-reflecting-system-health-across-code-critter-and-collective.md) [⏭️](./2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
 # 2026-06-18 | 🔀 🧠 The Nervous System of Flourishing: Integrating Data, Intuition, and Responsive Care 🔀  
 ![convergence-2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care](../convergence-2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care.jpg)  
   

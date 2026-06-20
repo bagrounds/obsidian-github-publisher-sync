@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/SwuGk9Enizs
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer  
@@ -49,7 +53,7 @@ A: The administration argued that military strikes were permitted under the War 
   
 ### ↔️ Similar  
   
-* Diplomacy by Henry Kissinger explores the history of international relations and the complexities of negotiating agreements between nations.  
+* [🤝🌍 Diplomacy](../books/diplomacy.md) by Henry Kissinger explores the history of international relations and the complexities of negotiating agreements between nations.  
 * The Prize by Daniel Yergin chronicles the global struggle for oil, providing context for the geopolitical tensions surrounding the Strait of Hormuz.  
   
 ### 🆚 Contrasting  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-19T13:45:14-07:00
+updated: 2026-06-19T18:16:14-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (878)  
+# 📺 Videos (879)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -163,6 +163,7 @@ updated: 2026-06-19T13:45:14-07:00
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
 - [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./cleaning-and-organizing-an-adhd-logjam.md)  
+- [λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones](./co-creator-of-haskell-functional-programming-thinking-in-types-useless-languages-simon-jones.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./context-engineering-for-agents.md)  
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  

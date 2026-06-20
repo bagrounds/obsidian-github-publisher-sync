@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-19T13:45:14-07:00
+updated: 2026-06-19T18:16:14-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-06-19T13:45:14-07:00
 - [2026-06-17 | ⚡ 😴 The Brain's Night Shift: How Sleep Rewires, Restores, and Reinforces Your Mind ⚡](./vital-signals/2026-06-17-the-brain-s-night-shift-how-sleep-rewires-restores-and-reinforces-your-mind.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (66)  
+## [🔀 Convergence](./convergence/index.md) (67)  
+- [2026-06-19 | 🔀 The Double Helix of Insight: Data, Intuition, and the Unseen Weaver 🔀](./convergence/2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
 - [2026-06-18 | 🔀 🧠 The Nervous System of Flourishing: Integrating Data, Intuition, and Responsive Care 🔀](./convergence/2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care.md)  
 - [2026-06-17 | 🔀 🪞 The Mirrors of Being: Reflecting System Health Across Code, Critter, and Collective 🔀](./convergence/2026-06-17-the-mirrors-of-being-reflecting-system-health-across-code-critter-and-collective.md)  
-- [2026-06-16 | 🔀 🧘 The Resonance of Stillness: Integrating Intuition and Rest for Systemic Health 🔀](./convergence/2026-06-16-the-resonance-of-stillness-integrating-intuition-and-rest-for-systemic-health.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,8 +74,8 @@ updated: 2026-06-19T13:45:14-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (878)  
-- [📹🏛️🗣️ WATCH: Former President Barack Obama's full remarks at Obama Presidential Center dedication](./videos/watch-former-president-barack-obamas-full-remarks-at-obama-presidential-center-dedication.md)  
+## [📺 Videos](./videos/index.md) (879)  
+- [λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones](./videos/co-creator-of-haskell-functional-programming-thinking-in-types-useless-languages-simon-jones.md)  
 - [🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer](./videos/americans-choosing-to-rebuild-democracy-through-unity-explainer.md)  
 - [🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer](./videos/the-cards-held-by-iran-in-a-badly-written-memorandum-explainer.md)  
   

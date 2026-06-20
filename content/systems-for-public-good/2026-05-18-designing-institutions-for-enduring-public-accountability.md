@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-18T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-20T01:53:11
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-17-systems-thinking-for-sustainable-public-investment.md) [⏭️](./2026-05-19-beyond-bureaucracy-cultivating-agile-governance.md)  
 # 2026-05-18 | 🏛️ Designing Institutions for Enduring Public Accountability 🏛️  

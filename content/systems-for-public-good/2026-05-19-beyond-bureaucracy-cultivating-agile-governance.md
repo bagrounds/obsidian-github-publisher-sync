@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-19T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-20T23:42:43
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-18-designing-institutions-for-enduring-public-accountability.md) [⏭️](./2026-05-20-centering-the-unheard-beyond-consultation-to-co-creation.md)  
 # 2026-05-19 | 🏛️ 🤝 Beyond Bureaucracy: Cultivating Agile Governance 🏛️  

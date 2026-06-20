@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-06-04T00:00:00Z
 force_analyze_links: false
-updated: 2026-06-06T03:17:29
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-03-public-capital-as-a-lever-for-digital-public-good.md) [⏭️](./2026-06-05-the-human-operating-system-for-digital-democracy.md)  
 # 2026-06-04 | 🏛️ ⚖️ Safeguarding Public Investment from Capture and Inefficiency 🏛️  

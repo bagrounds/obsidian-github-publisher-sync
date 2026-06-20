@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer  
 ![The Cards Held by Iran in a Badly Written Memorandum | Explainer](https://youtu.be/SwuGk9Enizs)  
   

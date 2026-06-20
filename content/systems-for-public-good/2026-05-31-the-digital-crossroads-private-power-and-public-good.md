@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-31T00:00:00Z
 force_analyze_links: false
-updated: 2026-06-02T07:44:35
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-30-digital-sovereignty-defining-a-nation-s-digital-destiny.md) [⏭️](./2026-06-01-the-human-operating-system-for-digital-democracy.md)  
 # 2026-05-31 | 🏛️ 🌉 The Digital Crossroads: Private Power and Public Good 🏛️  

@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-06-05T00:00:00Z
 force_analyze_links: false
-updated: 2026-06-06T23:38:56
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-04-safeguarding-public-investment-from-capture-and-inefficiency.md) [⏭️](./2026-06-06-the-power-of-community-hubs-in-cultivating-digital-confidence.md)  
 # 2026-06-05 | 🏛️ The Human Operating System for Digital Democracy 🏛️  

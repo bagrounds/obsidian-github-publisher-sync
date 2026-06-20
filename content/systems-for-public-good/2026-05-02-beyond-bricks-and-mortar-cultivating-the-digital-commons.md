@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-02T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-03T21:31:24
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md) [⏭️](./2026-05-03-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
 # 2026-05-02 | 🏛️ 🌐 Beyond Bricks and Mortar: Cultivating the Digital Commons 🏛️  

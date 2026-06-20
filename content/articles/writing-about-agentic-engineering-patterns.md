@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-17T07:14:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist workspace featuring a clean, light-colored desk. On the desk sits a sleek, modern laptop displaying a complex, glowing flow-chart of interconnected nodes and logic loops. Beside the laptop, a human hand holds a mechanical drafting pencil over a blueprint, symbolizing the bridge between human architectural oversight and digital execution. A stylized, translucent geometric brain made of interconnected silver gears and glowing circuitry hovers slightly above the keyboard, representing the synergy between human cognition and autonomous agentic processing. The lighting is soft and professional, utilizing a palette of deep navy, slate gray, and electric blue accents to convey a sense of disciplined, high-tech engineering.
+updated: 2026-06-20T11:48:26
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🧠 Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns)  
@@ -70,4 +71,12 @@ image_prompt: A high-angle, minimalist workspace featuring a clean, light-colore
 ### 🎨 Creatively Related  
   
 * 🏗️ Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma and others serves as the original inspiration for documenting repeatable software engineering solutions.  
-* [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White provides the foundation for the concise and economical communication style required for managing complex systems.
+* [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White provides the foundation for the concise and economical communication style required for managing complex systems.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3moprykqr7g2y" data-bluesky-cid="bafyreiaa76agov36vkvgt2fbizxw4ogzbwvtbeouph2irnj74a5vpk6uii"><p>🤖⚙️🧠 Writing about Agentic Engineering Patterns  
+  
+#AI Q: 🏗️ Does AI coding make architectural skills more or less important?  
+  
+🧪 Test Driven Development | 🏛️ Software Architecture | ⚙️ Development Workflows | 💻 Senior  
+https://bagrounds.org/articles/writing-about-agentic-engineering-patterns</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3moprykqr7g2y?ref_src=embed">2026-06-20T11:48:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

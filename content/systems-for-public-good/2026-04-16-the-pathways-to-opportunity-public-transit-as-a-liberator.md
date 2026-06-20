@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-17T23:25:32
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md) [⏭️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 # 2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️  

@@ -11,7 +11,7 @@ image_prompt: An illustration featuring a stylized, isometric landscape where di
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-03T21:17:31
+updated: 2026-06-20T09:16:29
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md) [⏭️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  

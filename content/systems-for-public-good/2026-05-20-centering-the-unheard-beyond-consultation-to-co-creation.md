@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-20T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-21T23:41:05
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-19-beyond-bureaucracy-cultivating-agile-governance.md) [⏭️](./2026-05-21-funding-a-future-of-deep-inclusion-beyond-budgetary-myths.md)  
 # 2026-05-20 | 🏛️ 👂 Centering the Unheard: Beyond Consultation to Co-Creation 🏛️  

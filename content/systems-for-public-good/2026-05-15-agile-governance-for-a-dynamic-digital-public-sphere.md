@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-15T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-16T21:31:26
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-14-agile-governance-for-a-dynamic-digital-public-sphere.md) [⏭️](./2026-05-16-the-real-wealth-of-adaptive-governance-beyond-the-budgetary-myth.md)  
 # 2026-05-15 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️  

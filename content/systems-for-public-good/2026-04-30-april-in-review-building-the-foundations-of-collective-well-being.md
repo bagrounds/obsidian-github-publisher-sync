@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-30T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-01T15:38:32
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md) [⏭️](./2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
 # 2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️  

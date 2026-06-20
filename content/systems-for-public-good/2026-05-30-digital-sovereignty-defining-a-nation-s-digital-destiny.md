@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-30T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-31T17:35:10
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-29-the-unseen-architects-non-state-actors-in-the-digital-commons.md) [⏭️](./2026-05-31-the-digital-crossroads-private-power-and-public-good.md)  
 # 2026-05-30 | 🏛️ Digital Sovereignty: Defining a Nation's Digital Destiny 🏛️  

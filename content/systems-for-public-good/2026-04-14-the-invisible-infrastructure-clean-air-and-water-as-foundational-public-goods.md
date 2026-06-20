@@ -12,7 +12,7 @@ force_analyze_links: false
 image_date: 2026-04-14T18:32:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, layered illustration. The bottom half features a deep, clear aquatic blue, subtly revealing a network of interconnected, glowing pipes and filtration elements beneath the surface. This transitions smoothly into the top half, a lighter, ethereal sky blue with gentle, swirling currents of fresh air. Delicate, almost invisible, data streams or energy lines subtly weave through both air and water, hinting at monitoring and protection systems. The overall image evokes purity, essential flow, and a sense of calm, fundamental well-being, with a soft, inviting glow emanating from within the elements.
-updated: 2026-04-16T19:40:31
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md) [⏭️](./2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
 # 2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️  

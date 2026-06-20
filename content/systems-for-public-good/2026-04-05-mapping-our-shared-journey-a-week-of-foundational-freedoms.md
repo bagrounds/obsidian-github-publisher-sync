@@ -11,7 +11,7 @@ image_prompt: "A top-down, isometric illustration of a vibrant, interconnected c
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-06T07:56:54
+updated: 2026-06-20T09:16:29
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md) [⏭️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  

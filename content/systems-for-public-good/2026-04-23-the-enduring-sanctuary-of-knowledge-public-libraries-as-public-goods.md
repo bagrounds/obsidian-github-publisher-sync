@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-25T01:46:49
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md) [⏭️](./2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 # 2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️  

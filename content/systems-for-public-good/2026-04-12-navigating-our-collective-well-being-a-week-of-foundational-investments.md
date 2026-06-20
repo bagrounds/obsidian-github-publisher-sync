@@ -11,7 +11,7 @@ image_prompt: "A high-angle, isometric illustration of a lush, interconnected mo
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-12T20:09:09
+updated: 2026-06-20T09:16:29
 link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md) [⏭️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  

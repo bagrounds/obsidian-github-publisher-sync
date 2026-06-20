@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
-updated: 2026-04-15T09:46:46
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md) [⏭️](./2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 # 2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️  

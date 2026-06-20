@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-12T00:00:00Z
 force_analyze_links: false
-updated: 2026-05-13T18:02:44
+updated: 2026-06-20T09:16:29
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-11-cultivating-the-informed-citizen-the-bedrock-of-our-shared-future.md) [⏭️](./2026-05-13-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 # 2026-05-12 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️  

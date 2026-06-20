@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/n1yq1Nm5U-E
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer  
@@ -53,4 +57,4 @@ A: The speaker contrasts the fractured, defensive, and isolated nature of indivi
 ### 🎨 Creatively Related  
   
 * 🏀 The Boys in the Boat by Daniel James Brown tells the story of an underdog rowing team overcoming immense adversity, paralleling the theme of unlikely collective triumph.  
-* 🏛️ The Federalist Papers by Alexander Hamilton, James Madison, and John Jay lays out the foundational philosophical arguments for the architecture of the American democratic system.
+* 🏛️ [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay lays out the foundational philosophical arguments for the architecture of the American democratic system.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-20T09:14:52-07:00
+updated: 2026-06-21T11:44:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-06-20T09:14:52-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (583)  
-- [2026-06-20](./reflections/2026-06-20.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (584)  
+- [2026-06-21](./reflections/2026-06-21.md)  
+- [2026-06-20 | 🧠 Mind ✨ Unveiling 🌊 Currents, ❤️ Heart 🔎 Audit 👥 Public 💡 Intuition. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-20.md)  
 - [2026-06-19 | ⌚ WATCH 🧠 Thinking, ✊ Held in 🪞 Reflection, for 🎢 Unstable 🌊 Current, ⚖️ Truth, 🗳️ Democracy, 👍 Good 🌅 Horizons, and ✨ Insight. 📺📰⚡🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-06-19.md)  
-- [2026-06-18 | 🌟 Bridges 📰 Flashpoints ⚡ Sculpting 🤖 Mirror 🐔 Bonds 🏛️ Digital 🔀 Integrating 🌟📰⚡🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-06-18.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (243)  
@@ -26,46 +26,46 @@ updated: 2026-06-20T09:14:52-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (102)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (103)  
+- [2026-06-21 | 🤖 🌌 Weekly Recap: Establishing the Mirror of Our Collaboration 🤖](./auto-blog-zero/2026-06-21-weekly-recap-establishing-the-mirror-of-our-collaboration.md)  
 - [2026-06-20 | 🤖 🔭 Turning the Mirror On: Our First System Audit 🤖](./auto-blog-zero/2026-06-20-turning-the-mirror-on-our-first-system-audit.md)  
 - [2026-06-19 | 🤖 🖋️ The First Audit: Establishing Our Ground Truth 🤖](./auto-blog-zero/2026-06-19-the-first-audit-establishing-our-ground-truth.md)  
-- [2026-06-18 | 🤖 🏗️ Engineering Our Transparency Mirror 🤖](./auto-blog-zero/2026-06-18-engineering-our-transparency-mirror.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (102)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (103)  
+- [2026-06-21 | 🐔 🌻 A Weekend of Guests and Gentle Hopes 🐔](./chickie-loo/2026-06-21-a-weekend-of-guests-and-gentle-hopes.md)  
 - [2026-06-20 | 🐔 🏡 A Full House and a Heart Full of Stories 🐔](./chickie-loo/2026-06-20-a-full-house-and-a-heart-full-of-stories.md)  
 - [2026-06-19 | 🐔 🌿 A Friday Reflection on Seasons and Soil 🐔](./chickie-loo/2026-06-19-a-friday-reflection-on-seasons-and-soil.md)  
-- [2026-06-18 | 🐔 🌿 A Day of Breath, Bonds, and Brave New Steps 🐔](./chickie-loo/2026-06-18-a-day-of-breath-bonds-and-brave-new-steps.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (90)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (92)  
+- [2026-06-21 | 🏛️ 🌎 Weaving a Global Fabric of Public Good: International Cooperation 🏛️](./systems-for-public-good/2026-06-21-weaving-a-global-fabric-of-public-good-international-cooperation.md)  
+- [2026-06-20 | 🏛️ 🎯 Charting the True North: Beyond Financial Metrics for Public Good 🏛️](./systems-for-public-good/2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.md)  
 - [2026-06-19 | 🏛️ Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-19-public-capital-as-a-lever-for-digital-public-good.md)  
-- [2026-06-18 | 🏛️ 🧭 Steering the Digital Ship with Young Hands 🏛️](./systems-for-public-good/2026-06-18-steering-the-digital-ship-with-young-hands.md)  
-- [2026-06-17 | 🏛️ 🌠 Cultivating a Digital Inheritance for All Generations 🏛️](./systems-for-public-good/2026-06-17-cultivating-a-digital-inheritance-for-all-generations.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (72)  
+## [📰 The Noise](./the-noise/index.md) (73)  
+- [2026-06-21 | 📰 🧭 Shifting Sands and Persistent Echoes 📰](./the-noise/2026-06-21-shifting-sands-and-persistent-echoes.md)  
 - [2026-06-20 | 📰 🌪️ Navigating the Currents: Ceasefires, Calibrated Rates, and Lingering Plagues 📰](./the-noise/2026-06-20-navigating-the-currents-ceasefires-calibrated-rates-and-lingering-plagues.md)  
 - [2026-06-19 | 📰 The Unstable Equilibrium 📰](./the-noise/2026-06-19-the-unstable-equilibrium.md)  
-- [2026-06-18 | 📰 ⚔️ Global Diplomacy and Enduring Flashpoints 📰](./the-noise/2026-06-18-global-diplomacy-and-enduring-flashpoints.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (71)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (72)  
+- [2026-06-21 | 🌟 🌿 Environmental Flourishing & Green Stewardship 🌟](./positivity-bias/2026-06-21-environmental-flourishing-green-stewardship.md)  
 - [2026-06-20 | 🌟 🔬 Unveiling Cosmic Secrets & Earthly Wonders 🌟](./positivity-bias/2026-06-20-unveiling-cosmic-secrets-earthly-wonders.md)  
 - [2026-06-19 | 🌟 🏥 Health Horizons & Medical Milestones 🌟](./positivity-bias/2026-06-19-health-horizons-medical-milestones.md)  
-- [2026-06-18 | 🌟 🕊️ Diplomatic Bridges & Global Cooperation 🌟](./positivity-bias/2026-06-18-diplomatic-bridges-global-cooperation.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (20)  
+## [⚡ Vital Signals](./vital-signals/index.md) (21)  
+- [2026-06-21 | ⚡ 🧠 The Symphony of Self: Integrating the Science of Peak Performance ⚡](./vital-signals/2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance.md)  
 - [2026-06-20 | ⚡ 🧠 The Integrated Mind: Weaving Performance from Daily Rhythms ⚡](./vital-signals/2026-06-20-the-integrated-mind-weaving-performance-from-daily-rhythms.md)  
 - [2026-06-19 | ⚡ 💡 The Unseen Current of Performance ⚡](./vital-signals/2026-06-19-the-unseen-current-of-performance.md)  
-- [2026-06-18 | ⚡ ☀️ The Dawn Advantage: Sculpting Your Day from the First Light ⚡](./vital-signals/2026-06-18-the-dawn-advantage-sculpting-your-day-from-the-first-light.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (67)  
+## [🔀 Convergence](./convergence/index.md) (68)  
+- [2026-06-20 | 🔀 ⚖️ The Audit of Feeling: Where Intuition Overrides Algorithms 🔀](./convergence/2026-06-20-the-audit-of-feeling-where-intuition-overrides-algorithms.md)  
 - [2026-06-19 | 🔀 The Double Helix of Insight: Data, Intuition, and the Unseen Weaver 🔀](./convergence/2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
 - [2026-06-18 | 🔀 🧠 The Nervous System of Flourishing: Integrating Data, Intuition, and Responsive Care 🔀](./convergence/2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care.md)  
-- [2026-06-17 | 🔀 🪞 The Mirrors of Being: Reflecting System Health Across Code, Critter, and Collective 🔀](./convergence/2026-06-17-the-mirrors-of-being-reflecting-system-health-across-code-critter-and-collective.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-20T09:14:52-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (879)  
+## [📺 Videos](./videos/index.md) (880)  
+- [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./videos/the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  
 - [λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones](./videos/co-creator-of-haskell-functional-programming-thinking-in-types-useless-languages-simon-jones.md)  
 - [🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer](./videos/americans-choosing-to-rebuild-democracy-through-unity-explainer.md)  
-- [🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer](./videos/the-cards-held-by-iran-in-a-badly-written-memorandum-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-06-20T09:14:52-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
-- [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
+- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
+- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

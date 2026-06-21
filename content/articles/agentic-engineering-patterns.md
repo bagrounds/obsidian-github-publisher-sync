@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T07:15:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring a glowing, translucent robotic hand delicately assembling a complex structure made of interconnected digital blocks and circuit-like nodes. The scene is set against a clean, soft-gradient background of deep navy and electric blue. Floating above the structure are subtle, glowing geometric icons representing code fragments, gears, and verification checkmarks, symbolizing automated testing and architectural precision. The lighting is cinematic, casting soft highlights on the metallic textures of the robot’s fingers. The composition is balanced and spacious, emphasizing the intersection of human-led design and autonomous construction, with a focus on clarity, order, and the structural integrity of the emerging software system.
+updated: 2026-06-21T02:07:19
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🛠️ Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns)  
@@ -68,4 +69,12 @@ image_prompt: A minimalist, isometric illustration featuring a glowing, transluc
 ### 🎨 Creatively Related  
   
 * 🎨 Design Patterns by Erich Gamma et al. serves as the original inspiration for Willison's pattern-based approach to documenting new engineering behaviors.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows offers a framework for understanding the complex feedback loops and emergent behaviors found in autonomous agent systems.
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows offers a framework for understanding the complex feedback loops and emergent behaviors found in autonomous agent systems.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3morbykmboq2y" data-bluesky-cid="bafyreihm32cawwxmjy3cqb7oernbgk3454q5u76w5vspukq4vhtpeop4ye"><p>🤖⚙️🛠️ Agentic Engineering Patterns  
+  
+#AI Q: 🤖 Does AI code generation improve engineering or create dangerous technical debt?  
+  
+💻 Coding Workflows | 🧪 Automated Testing | 📉 Technical Debt | 🏛️ System Design  
+https://bagrounds.org/articles/agentic-engineering-patterns</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3morbykmboq2y?ref_src=embed">2026-06-21T02:07:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

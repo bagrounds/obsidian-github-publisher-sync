@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-19-public-capital-as-a-lever-for-digital-public-good.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-19-public-capital-as-a-lever-for-digital-public-good.md) [⏭️](./2026-06-21-weaving-a-global-fabric-of-public-good-international-cooperation.md)  
 # 2026-06-20 | 🏛️ 🎯 Charting the True North: Beyond Financial Metrics for Public Good 🏛️  
 ![systems-for-public-good-2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good](../systems-for-public-good-2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.jpg)  
   

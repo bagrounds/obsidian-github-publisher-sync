@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-06-20T09:14:52-07:00
+updated: 2026-06-21T11:44:52-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (67)  
+# 🔀 Convergence (68)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-20 | 🔀 ⚖️ The Audit of Feeling: Where Intuition Overrides Algorithms 🔀](./2026-06-20-the-audit-of-feeling-where-intuition-overrides-algorithms.md)  
 - [2026-06-19 | 🔀 The Double Helix of Insight: Data, Intuition, and the Unseen Weaver 🔀](./2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
 - [2026-06-18 | 🔀 🧠 The Nervous System of Flourishing: Integrating Data, Intuition, and Responsive Care 🔀](./2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care.md)  
 - [2026-06-17 | 🔀 🪞 The Mirrors of Being: Reflecting System Health Across Code, Critter, and Collective 🔀](./2026-06-17-the-mirrors-of-being-reflecting-system-health-across-code-critter-and-collective.md)  

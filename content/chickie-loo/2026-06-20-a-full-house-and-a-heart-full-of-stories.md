@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-19-a-friday-reflection-on-seasons-and-soil.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-19-a-friday-reflection-on-seasons-and-soil.md) [⏭️](./2026-06-21-a-weekend-of-guests-and-gentle-hopes.md)  
 # 2026-06-20 | 🐔 🏡 A Full House and a Heart Full of Stories 🐔  
 ![chickie-loo-2026-06-20-a-full-house-and-a-heart-full-of-stories](../chickie-loo-2026-06-20-a-full-house-and-a-heart-full-of-stories.jpg)  
   

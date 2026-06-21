@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-20T09:14:52-07:00
+updated: 2026-06-21T11:44:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (879)  
+# 📺 Videos (880)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -680,6 +680,7 @@ updated: 2026-06-20T09:14:52-07:00
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🗣️🧠⬆️📈 The Science Behind Dramatically Better Conversations | Charles Duhigg | TED](./the-science-behind-dramatically-better-conversations-charles-duhigg-ted.md)  
 - [📈🤏💡 The science behind small wins](./the-science-behind-small-wins.md)  
+- [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./the-scientifically-proven-best-night-routine-ever.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [🤫🌱🗣️ The Secret Form of Resistance No One Talks About](./the-secret-form-of-resistance-no-one-talks-about.md)  

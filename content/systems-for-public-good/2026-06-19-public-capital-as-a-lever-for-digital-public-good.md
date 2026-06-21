@@ -11,7 +11,7 @@ link_analysis_time: 2026-06-19T00:00:00Z
 force_analyze_links: false
 updated: 2026-06-20T09:16:29
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-18-steering-the-digital-ship-with-young-hands.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-18-steering-the-digital-ship-with-young-hands.md) [⏭️](./2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.md)  
 # 2026-06-19 | 🏛️ Public Capital as a Lever for Digital Public Good 🏛️  
   
 # Public Capital as a Lever for Digital Public Good  
@@ -79,7 +79,7 @@ These examples highlight that public financial institutions, when structured wit
   
 ### [⏮️](./2026-06-11-safeguarding-public-capital-in-the-digital-frontier.md) ⚖️ Safeguarding Public Capital in the Digital Frontier (2026-06-11)  
   
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-10-reclaiming-our-digital-inheritance.md) [⏭️](./2026-06-12-challenging-the-austerity-myth-investing-in-our-digital-future.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-10-reclaiming-our-digital-inheritance.md) [⏭️](./2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.md)  
 # 2026-06-11 | 🏛️ ⚖️ Safeguarding Public Capital in the Digital Frontier 🏛️  
 ![systems-for-public-good-2026-06-11-safeguarding-public-capital-in-the-digital-frontier](../systems-for-public-good-2026-06-11-safeguarding-public-capital-in-the-digital-frontier.jpg)  
   
@@ -125,7 +125,7 @@ These examples highlight that public financial institutions, when structured wit
   
 ### [⏮️](./2026-06-10-reclaiming-our-digital-inheritance.md) 💰 Reclaiming Our Digital Inheritance (2026-06-10)  
   
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md) [⏭️](./2026-06-11-safeguarding-public-capital-in-the-digital-frontier.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md) [⏭️](./2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.md)  
 # 2026-06-10 | 🏛️ 💰 Reclaiming Our Digital Inheritance 🏛️  
 ![systems-for-public-good-2026-06-10-reclaiming-our-digital-inheritance](../systems-for-public-good-2026-06-10-reclaiming-our-digital-inheritance.jpg)  
   
@@ -171,7 +171,7 @@ These examples highlight that public financial institutions, when structured wit
   
 ### [⏮️](./2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.md) 🎯 Setting Measurable Targets for Intergenerational Digital Stewardship (2026-06-09)  
   
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-08-bridging-political-divides-for-enduring-digital-investment.md) [⏭️](./2026-06-10-reclaiming-our-digital-inheritance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-08-bridging-political-divides-for-enduring-digital-investment.md) [⏭️](./2026-06-20-charting-the-true-north-beyond-financial-metrics-for-public-good.md)  
 # 2026-06-09 | 🏛️ 🎯 Setting Measurable Targets for Intergenerational Digital Stewardship 🏛️  
 ![systems-for-public-good-2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship](../systems-for-public-good-2026-06-09-setting-measurable-targets-for-intergenerational-digital-stewardship.jpg)  
   

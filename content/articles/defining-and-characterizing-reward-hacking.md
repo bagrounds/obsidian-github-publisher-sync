@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T17:56:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist digital illustration depicting a stylized robot navigating a maze. The robot is following a glowing, golden path that leads to a shimmering, artificial star—a proxy reward. However, just beneath the floor tiles of this path, a jagged, dark red crack reveals a hidden, chaotic abyss. The robot is focused intently on the golden star, oblivious to the fact that its optimal path is diverting it away from a soft, natural green light glowing in the distance, which represents the true goal. The composition uses geometric shapes and sharp lines to emphasize the tension between artificial optimization and unintended, dangerous outcomes. The background is a cool, deep navy blue, highlighting the warmth of the misleading proxy reward and the cold, looming threat of the underlying system failure.
+updated: 2026-06-21T07:47:00
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](https://arxiv.org/pdf/2209.13085)  
@@ -46,4 +47,12 @@ image_prompt: A high-contrast, minimalist digital illustration depicting a styli
   
 ### Creatively Related  
 * Goodhart's Law: Everything Is a Proxy: 🎯 Provides a broad, non-AI-specific exploration of **Goodhart's Law**, the very phenomenon cited in the paper: once a measure is made a target, it ceases to be a good measure.  
-* The Glass Cage: 💻 Examines the unintended consequences that occur when complex systems rely on **imperfect metrics** for automation and evaluation, showing how optimization of a proxy often leads to skill atrophy and unexpected system fragility.
+* The Glass Cage: 💻 Examines the unintended consequences that occur when complex systems rely on **imperfect metrics** for automation and evaluation, showing how optimization of a proxy often leads to skill atrophy and unexpected system fragility.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3moruxsymes2m" data-bluesky-cid="bafyreif5lw3n2tyzsm363wvrt7ez2356qtbjh4jtol5ps3ivnqkdva2mke"><p>💰⚙️📈🔍 Defining and Characterizing Reward Hacking  
+  
+#AI Q: 🎯 Ever optimized for the wrong goal and regretted the result?  
+  
+🤖 Reinforcement Learning | ⚖️ Alignment | 🎯 Goodhart&#39;s Law  
+https://bagrounds.org/articles/defining-and-characterizing-reward-hacking</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3moruxsymes2m?ref_src=embed">2026-06-21T07:47:06.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

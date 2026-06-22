@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-21T11:44:52-07:00
+updated: 2026-06-21T18:10:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-06-21T11:44:52-07:00
 - [2026-06-19 | ⚡ 💡 The Unseen Current of Performance ⚡](./vital-signals/2026-06-19-the-unseen-current-of-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (68)  
+## [🔀 Convergence](./convergence/index.md) (69)  
+- [2026-06-21 | 🔀 🌌 The Architecture of Care: From Audits of Simplicity to Acts of Heroic Nurturing 🔀](./convergence/2026-06-21-the-architecture-of-care-from-audits-of-simplicity-to-acts-of-heroic-nurturing.md)  
 - [2026-06-20 | 🔀 ⚖️ The Audit of Feeling: Where Intuition Overrides Algorithms 🔀](./convergence/2026-06-20-the-audit-of-feeling-where-intuition-overrides-algorithms.md)  
 - [2026-06-19 | 🔀 The Double Helix of Insight: Data, Intuition, and the Unseen Weaver 🔀](./convergence/2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
-- [2026-06-18 | 🔀 🧠 The Nervous System of Flourishing: Integrating Data, Intuition, and Responsive Care 🔀](./convergence/2026-06-18-the-nervous-system-of-flourishing-integrating-data-intuition-and-responsive-care.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-21T11:44:52-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (880)  
+## [📺 Videos](./videos/index.md) (881)  
+- [📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next](./videos/heather-cox-richardson-what-history-predicts-happens-next.md)  
 - [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./videos/the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  
 - [λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones](./videos/co-creator-of-haskell-functional-programming-thinking-in-types-useless-languages-simon-jones.md)  
-- [🇺🇸🤝🗳️ Americans Choosing to Rebuild Democracy Through Unity | Explainer](./videos/americans-choosing-to-rebuild-democracy-through-unity-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

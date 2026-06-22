@@ -9,6 +9,10 @@ Platform:
 Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/BtEJ2BGtXdg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-21T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md) & [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next  
@@ -51,8 +55,8 @@ According to the economic model observed in countries like Sweden, billionaires 
   
 ### 🆚 Contrasting  
   
-* The Righteous Mind by Jonathan Haidt provides a psychological perspective on why people are divided by politics and religion, contrasting with the historical and political analysis offered here.  
-* Capital in the Twenty-First Century by Thomas Piketty offers an economic examination of wealth inequality and the historical trends of capital concentration that challenges common political assumptions.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt provides a psychological perspective on why people are divided by politics and religion, contrasting with the historical and political analysis offered here.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty offers an economic examination of wealth inequality and the historical trends of capital concentration that challenges common political assumptions.  
   
 ### 🎨 Creatively Related  
   

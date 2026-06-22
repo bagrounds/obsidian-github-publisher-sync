@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-21T11:44:52-07:00
+updated: 2026-06-21T18:10:12-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (880)  
+# 📺 Videos (881)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -260,6 +260,7 @@ updated: 2026-06-21T11:44:52-07:00
 - [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
+- [📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next](./heather-cox-richardson-what-history-predicts-happens-next.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
 - [🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning](./historian-timothy-snyder-on-orbans-defeat-christian-nationalism-and-what-trump-is-really-planning.md)  

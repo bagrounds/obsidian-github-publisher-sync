@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-21T18:10:12-07:00
+updated: 2026-06-22T08:20:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-06-21T18:10:12-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (584)  
-- [2026-06-21](./reflections/2026-06-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (585)  
+- [2026-06-22](./reflections/2026-06-22.md)  
+- [2026-06-21 | 🧠 Dad's 🔮 History 🎶 Integrates 🌟 Flourishing 📰 Echoes 🐔 Hopes 🤖 Collaboration 🏛️ Public 🔀 Simplicity 📺⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-21.md)  
 - [2026-06-20 | 🧠 Mind ✨ Unveiling 🌊 Currents, ❤️ Heart 🔎 Audit 👥 Public 💡 Intuition. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-06-20.md)  
-- [2026-06-19 | ⌚ WATCH 🧠 Thinking, ✊ Held in 🪞 Reflection, for 🎢 Unstable 🌊 Current, ⚖️ Truth, 🗳️ Democracy, 👍 Good 🌅 Horizons, and ✨ Insight. 📺📰⚡🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-06-19.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (243)  
@@ -32,10 +32,10 @@ updated: 2026-06-21T18:10:12-07:00
 - [2026-06-19 | 🤖 🖋️ The First Audit: Establishing Our Ground Truth 🤖](./auto-blog-zero/2026-06-19-the-first-audit-establishing-our-ground-truth.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (103)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (104)  
+- [2026-06-22 | 🐔 🌿 The Quiet After the Storm 🐔](./chickie-loo/2026-06-22-the-quiet-after-the-storm.md)  
 - [2026-06-21 | 🐔 🌻 A Weekend of Guests and Gentle Hopes 🐔](./chickie-loo/2026-06-21-a-weekend-of-guests-and-gentle-hopes.md)  
 - [2026-06-20 | 🐔 🏡 A Full House and a Heart Full of Stories 🐔](./chickie-loo/2026-06-20-a-full-house-and-a-heart-full-of-stories.md)  
-- [2026-06-19 | 🐔 🌿 A Friday Reflection on Seasons and Soil 🐔](./chickie-loo/2026-06-19-a-friday-reflection-on-seasons-and-soil.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (92)  
@@ -44,22 +44,22 @@ updated: 2026-06-21T18:10:12-07:00
 - [2026-06-19 | 🏛️ Public Capital as a Lever for Digital Public Good 🏛️](./systems-for-public-good/2026-06-19-public-capital-as-a-lever-for-digital-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (73)  
+## [📰 The Noise](./the-noise/index.md) (74)  
+- [2026-06-22 | 📰 🚀 The Great Acceleration: Conflict, Climate, and Code 📰](./the-noise/2026-06-22-the-great-acceleration-conflict-climate-and-code.md)  
 - [2026-06-21 | 📰 🧭 Shifting Sands and Persistent Echoes 📰](./the-noise/2026-06-21-shifting-sands-and-persistent-echoes.md)  
 - [2026-06-20 | 📰 🌪️ Navigating the Currents: Ceasefires, Calibrated Rates, and Lingering Plagues 📰](./the-noise/2026-06-20-navigating-the-currents-ceasefires-calibrated-rates-and-lingering-plagues.md)  
-- [2026-06-19 | 📰 The Unstable Equilibrium 📰](./the-noise/2026-06-19-the-unstable-equilibrium.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (72)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (73)  
+- [2026-06-22 | 🌟 🕊️ Diplomatic Bridges & Pathways to Peace 🌟](./positivity-bias/2026-06-22-diplomatic-bridges-pathways-to-peace.md)  
 - [2026-06-21 | 🌟 🌿 Environmental Flourishing & Green Stewardship 🌟](./positivity-bias/2026-06-21-environmental-flourishing-green-stewardship.md)  
 - [2026-06-20 | 🌟 🔬 Unveiling Cosmic Secrets & Earthly Wonders 🌟](./positivity-bias/2026-06-20-unveiling-cosmic-secrets-earthly-wonders.md)  
-- [2026-06-19 | 🌟 🏥 Health Horizons & Medical Milestones 🌟](./positivity-bias/2026-06-19-health-horizons-medical-milestones.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (21)  
+## [⚡ Vital Signals](./vital-signals/index.md) (22)  
+- [2026-06-22 | ⚡ 🧠 The Mind's Architect: Building Resilience Through Deliberate Practice ⚡](./vital-signals/2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice.md)  
 - [2026-06-21 | ⚡ 🧠 The Symphony of Self: Integrating the Science of Peak Performance ⚡](./vital-signals/2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance.md)  
 - [2026-06-20 | ⚡ 🧠 The Integrated Mind: Weaving Performance from Daily Rhythms ⚡](./vital-signals/2026-06-20-the-integrated-mind-weaving-performance-from-daily-rhythms.md)  
-- [2026-06-19 | ⚡ 💡 The Unseen Current of Performance ⚡](./vital-signals/2026-06-19-the-unseen-current-of-performance.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (69)  
@@ -87,9 +87,9 @@ updated: 2026-06-21T18:10:12-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
-- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

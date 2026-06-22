@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-20-a-full-house-and-a-heart-full-of-stories.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-20-a-full-house-and-a-heart-full-of-stories.md) [⏭️](./2026-06-22-the-quiet-after-the-storm.md)  
 # 2026-06-21 | 🐔 🌻 A Weekend of Guests and Gentle Hopes 🐔  
 ![chickie-loo-2026-06-21-a-weekend-of-guests-and-gentle-hopes](../chickie-loo-2026-06-21-a-weekend-of-guests-and-gentle-hopes.jpg)  
   

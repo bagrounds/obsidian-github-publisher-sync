@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-06-19-the-double-helix-of-insight-data-intuition-and-the-unseen-weaver.md) [⏭️](./2026-06-21-the-architecture-of-care-from-audits-of-simplicity-to-acts-of-heroic-nurturing.md)  
 # 2026-06-20 | 🔀 ⚖️ The Audit of Feeling: Where Intuition Overrides Algorithms 🔀  
 ![convergence-2026-06-20-the-audit-of-feeling-where-intuition-overrides-algorithms](../convergence-2026-06-20-the-audit-of-feeling-where-intuition-overrides-algorithms.jpg)  
   

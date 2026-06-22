@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-20-the-integrated-mind-weaving-performance-from-daily-rhythms.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-20-the-integrated-mind-weaving-performance-from-daily-rhythms.md) [⏭️](./2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice.md)  
 # 2026-06-21 | ⚡ 🧠 The Symphony of Self: Integrating the Science of Peak Performance ⚡  
 ![vital-signals-2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance](../vital-signals-2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance.jpg)  
   

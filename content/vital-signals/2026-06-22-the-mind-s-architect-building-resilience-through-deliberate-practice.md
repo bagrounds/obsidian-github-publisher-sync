@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-21-the-symphony-of-self-integrating-the-science-of-peak-performance.md) [⏭️](./2026-06-23-the-fuel-of-forward-motion-reclaiming-your-dopamine-drive.md)  
 # 2026-06-22 | ⚡ 🧠 The Mind's Architect: Building Resilience Through Deliberate Practice ⚡  
 ![vital-signals-2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice](../vital-signals-2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice.jpg)  
   

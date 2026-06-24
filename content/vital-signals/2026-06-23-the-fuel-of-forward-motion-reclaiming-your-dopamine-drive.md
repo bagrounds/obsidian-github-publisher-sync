@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-06-23T00:00:00Z
 force_analyze_links: false
+updated: 2026-06-24T13:57:24
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-22-the-mind-s-architect-building-resilience-through-deliberate-practice.md) [⏭️](./2026-06-24-the-neuroplasticity-advantage.md)  
 # 2026-06-23 | ⚡ ⚙️ The Fuel of Forward Motion: Reclaiming Your Dopamine Drive ⚡  
 ![vital-signals-2026-06-23-the-fuel-of-forward-motion-reclaiming-your-dopamine-drive](../vital-signals-2026-06-23-the-fuel-of-forward-motion-reclaiming-your-dopamine-drive.jpg)  
   
@@ -90,3 +91,10 @@ force_analyze_links: false
 - 🌐 [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyunfa8hyoY0Jh-UB26Y_D2SnekjQ06quQjLYkEd-sQl0-1bvfO8BAK3uWddlcVTWszHNmsPMrKcBRDwTRiL36rPzgOOH8CMZgixuiOJ09ZbOMVipBMAsIfTlbXMXZ24Rqvn1jfc_7fjeI-k7E)  
 - 🌐 [proactivepsychiatry.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-E3gbrd3oS2ORw6gJrMMbTMa9QbHWseug5ThnM4l5S5BW6t9p3SgqgS6Uvsad8qxCZtlufnUzAXPizvBttUVf_B4cQK7adlah_esz4f9XGMqHrmNB3bjva9BYOKI7wkoOVELlFW-gW5-nk_3lzixUAftEge9OloX2LSMRCjx7osZJbIxny7MM3Vd4B8syojrDoQtiyWhIwXMFvHL_CJ85bzoaUKU575egEnQscXUIt9Pf)  
 - 🌐 [integratedneurologyservices.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGMKuWHuvULzXR0h2_iD6y0BxIe6Axj7Fj1ikis2yMgFSFO1T0e2vkkOpQ99E5P3Siyy4yr82UMEg0J4347HEZQANPktv_A8_nGzU18bh6TiXsj8yDHSnyGehuyaq6sZwt45Qjd_9ACZV4SGN5_Ok3b1JrwaBVO_nTBNTwsg==)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mp233fsypx2h" data-bluesky-cid="bafyreia5eexw45f3mzisiqjbt4g2apxfhilcwobmes3dqblgwulw7jkp5q"><p>2026-06-23 | ⚡ ⚙️ The Fuel of Forward Motion: Reclaiming Your Dopamine Drive ⚡  
+  
+#AI Q: ⚡ How do you reset your drive when stuck?  
+  
+https://bagrounds.org/vital-signals/2026-06-23-the-fuel-of-forward-motion-reclaiming-your-dopamine-drive</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mp233fsypx2h?ref_src=embed">2026-06-24T13:57:47.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

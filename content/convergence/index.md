@@ -8,8 +8,9 @@ backlinks: false
 updated: 2026-06-25T08:27:47-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (72)  
+# 🔀 Convergence (73)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-25 | 🔀 🌌 The Shifting Gaze: From Intuition as Override to Reconciliation as Insight 🔀](./2026-06-25-the-shifting-gaze-from-intuition-as-override-to-reconciliation-as-insight.md)  
 - [2026-06-24 | 🔀 🌌 The Holistic Ledger: Reconciling Rhythm, Intuition, and Systemic Truth 🔀](./2026-06-24-the-holistic-ledger-reconciling-rhythm-intuition-and-systemic-truth.md)  
 - [2026-06-23 | 🔀 🌌 The Anti-Echo Principle: Sustaining Vitality Through External Worlds 🔀](./2026-06-23-the-anti-echo-principle-sustaining-vitality-through-external-worlds.md)  
 - [2026-06-22 | 🔀 🌌 The Architecture of Quiet Resonance 🔀](./2026-06-22-the-architecture-of-quiet-resonance.md)  

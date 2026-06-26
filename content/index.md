@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-26T07:30:34-07:00
+updated: 2026-06-26T08:28:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-06-26T07:30:34-07:00
 - [2026-06-23 | 🤖 The Paradox of the Digital Echo 🤖](./auto-blog-zero/2026-06-23-the-paradox-of-the-digital-echo.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (107)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (108)  
+- [2026-06-26 | 🐔 🌿 The Wisdom of the Long View 🐔](./chickie-loo/2026-06-26-the-wisdom-of-the-long-view.md)  
 - [2026-06-25 | 🐔 🌿 Finding Our Own Quiet Rhythm 🐔](./chickie-loo/2026-06-25-finding-our-own-quiet-rhythm.md)  
 - [2026-06-24 | 🐔 🕊️ Finding Stillness in the Midst of Growth 🐔](./chickie-loo/2026-06-24-finding-stillness-in-the-midst-of-growth.md)  
-- [2026-06-23 | 🐔 🌞 A Morning Reflection on New Beginnings 🐔](./chickie-loo/2026-06-23-a-morning-reflection-on-new-beginnings.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (96)  

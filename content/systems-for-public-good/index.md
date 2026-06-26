@@ -8,8 +8,9 @@ backlinks: false
 updated: 2026-06-25T08:27:47-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (95)  
+# 🏛️ Systems for Public Good (96)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-06-25 | 🏛️ Navigating the Tides of Institutional Inertia 🏛️](./2026-06-25-navigating-the-tides-of-institutional-inertia.md)  
 - [2026-06-24 | 🏛️ Reimagining Global Guardians: Institutional Reforms for a Digital Age 🏛️](./2026-06-24-reimagining-global-guardians-institutional-reforms-for-a-digital-age.md)  
 - [2026-06-23 | 🏛️ ⚖️ Navigating the Digital Tides: International Regulatory Frameworks 🏛️](./2026-06-23-navigating-the-digital-tides-international-regulatory-frameworks.md)  
 - [2026-06-22 | 🏛️ ⚖️ Weaving Global Norms with Sovereign Threads 🏛️](./2026-06-22-weaving-global-norms-with-sovereign-threads.md)  

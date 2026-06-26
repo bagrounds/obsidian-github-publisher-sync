@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-17T01:46:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass cube floating in the center of a void. Inside the cube, a complex, glowing network of golden geometric lines represents essential complexity. Surrounding the cube, scattered, chaotic shards of dark metal represent accidental complexity. A clean, sharp architectural blueprint lines the floor, upon which a glowing, ethereal quill pen is actively drawing firm, bold red borders around the cube. The lighting is focused and clinical, using a palette of deep navy, slate gray, and vibrant electric gold to evoke a sense of technical precision and intellectual clarity. The composition is balanced and spacious, emphasizing the contrast between the core logical truth and the surrounding noise.
+updated: 2026-06-26T03:23:00
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](https://www.whitepages.com/blog/what-brooks-can-teach-us-about-spec-writing-for-ai)  
@@ -64,4 +65,12 @@ image_prompt: A minimalist, high-contrast illustration featuring a stylized, tra
 ### 🎨 Creatively Related  
   
 * [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White offers principles of clarity and brevity that mirror the author's call for legible and precise specifications.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows examines how boundaries and feedback loops define the behavior of any complex entity, whether it is code or a biological ecosystem.
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows examines how boundaries and feedback loops define the behavior of any complex entity, whether it is code or a biological ecosystem.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mp5ykiidf42r" data-bluesky-cid="bafyreib46e2xt7nwqyjihiiupfgcql3hjzr3beab6ozdo67z2r6ieildpq"><p>🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI  
+  
+#AI Q: 🤖 Is AI better at essential or accidental complexity?  
+  
+🧠 Complexity Theory | 💻 Software Design | 🚫 Negative Constraints | 🌐 Systems Thinking  
+https://bagrounds.org/articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mp5ykiidf42r?ref_src=embed">2026-06-26T03:23:11.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

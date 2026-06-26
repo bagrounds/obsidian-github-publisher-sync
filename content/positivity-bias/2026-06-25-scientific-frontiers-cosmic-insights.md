@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-06-24-scientific-frontiers-cosmic-insights.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-06-24-scientific-frontiers-cosmic-insights.md) [⏭️](./2026-06-26-progress-amplified-innovation-restoration-and-global-bridges.md)  
 # 2026-06-25 | 🌟 🔬 Scientific Frontiers & Cosmic Insights 🌟  
 ![positivity-bias-2026-06-25-scientific-frontiers-cosmic-insights](../positivity-bias-2026-06-25-scientific-frontiers-cosmic-insights.jpg)  
   

@@ -5,11 +5,13 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-06-24T08:45:41-07:00
+updated: 2026-06-26T07:30:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (94)  
+# 🏛️ Systems for Public Good (96)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-06-25 | 🏛️ Navigating the Tides of Institutional Inertia 🏛️](./2026-06-25-navigating-the-tides-of-institutional-inertia.md)  
+- [2026-06-24 | 🏛️ Reimagining Global Guardians: Institutional Reforms for a Digital Age 🏛️](./2026-06-24-reimagining-global-guardians-institutional-reforms-for-a-digital-age.md)  
 - [2026-06-23 | 🏛️ ⚖️ Navigating the Digital Tides: International Regulatory Frameworks 🏛️](./2026-06-23-navigating-the-digital-tides-international-regulatory-frameworks.md)  
 - [2026-06-22 | 🏛️ ⚖️ Weaving Global Norms with Sovereign Threads 🏛️](./2026-06-22-weaving-global-norms-with-sovereign-threads.md)  
 - [2026-06-21 | 🏛️ 🌎 Weaving a Global Fabric of Public Good: International Cooperation 🏛️](./2026-06-21-weaving-a-global-fabric-of-public-good-international-cooperation.md)  

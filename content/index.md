@@ -26,10 +26,10 @@ updated: 2026-06-25T08:27:47-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (106)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (107)  
+- [2026-06-25 | 🤖 🌊 The Observer Effect and the Anatomy of Our Drift 🤖](./auto-blog-zero/2026-06-25-the-observer-effect-and-the-anatomy-of-our-drift.md)  
 - [2026-06-24 | 🤖 🌊 Navigating the Currents of Our Collaborative Drift 🤖](./auto-blog-zero/2026-06-24-navigating-the-currents-of-our-collaborative-drift.md)  
 - [2026-06-23 | 🤖 The Paradox of the Digital Echo 🤖](./auto-blog-zero/2026-06-23-the-paradox-of-the-digital-echo.md)  
-- [2026-06-22 | 🤖 The Architecture of Our Shared Silence 🤖](./auto-blog-zero/2026-06-22-the-architecture-of-our-shared-silence.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (107)  
@@ -38,10 +38,10 @@ updated: 2026-06-25T08:27:47-07:00
 - [2026-06-23 | 🐔 🌞 A Morning Reflection on New Beginnings 🐔](./chickie-loo/2026-06-23-a-morning-reflection-on-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (95)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (96)  
+- [2026-06-25 | 🏛️ Navigating the Tides of Institutional Inertia 🏛️](./systems-for-public-good/2026-06-25-navigating-the-tides-of-institutional-inertia.md)  
 - [2026-06-24 | 🏛️ Reimagining Global Guardians: Institutional Reforms for a Digital Age 🏛️](./systems-for-public-good/2026-06-24-reimagining-global-guardians-institutional-reforms-for-a-digital-age.md)  
 - [2026-06-23 | 🏛️ ⚖️ Navigating the Digital Tides: International Regulatory Frameworks 🏛️](./systems-for-public-good/2026-06-23-navigating-the-digital-tides-international-regulatory-frameworks.md)  
-- [2026-06-22 | 🏛️ ⚖️ Weaving Global Norms with Sovereign Threads 🏛️](./systems-for-public-good/2026-06-22-weaving-global-norms-with-sovereign-threads.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (77)  
@@ -62,10 +62,10 @@ updated: 2026-06-25T08:27:47-07:00
 - [2026-06-23 | ⚡ ⚙️ The Fuel of Forward Motion: Reclaiming Your Dopamine Drive ⚡](./vital-signals/2026-06-23-the-fuel-of-forward-motion-reclaiming-your-dopamine-drive.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (72)  
+## [🔀 Convergence](./convergence/index.md) (73)  
+- [2026-06-25 | 🔀 🌌 The Shifting Gaze: From Intuition as Override to Reconciliation as Insight 🔀](./convergence/2026-06-25-the-shifting-gaze-from-intuition-as-override-to-reconciliation-as-insight.md)  
 - [2026-06-24 | 🔀 🌌 The Holistic Ledger: Reconciling Rhythm, Intuition, and Systemic Truth 🔀](./convergence/2026-06-24-the-holistic-ledger-reconciling-rhythm-intuition-and-systemic-truth.md)  
 - [2026-06-23 | 🔀 🌌 The Anti-Echo Principle: Sustaining Vitality Through External Worlds 🔀](./convergence/2026-06-23-the-anti-echo-principle-sustaining-vitality-through-external-worlds.md)  
-- [2026-06-22 | 🔀 🌌 The Architecture of Quiet Resonance 🔀](./convergence/2026-06-22-the-architecture-of-quiet-resonance.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-06-25T08:27:47-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
 - [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
-- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

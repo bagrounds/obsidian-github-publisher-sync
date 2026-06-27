@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-06-25-scientific-frontiers-cosmic-insights.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-06-25-scientific-frontiers-cosmic-insights.md) [⏭️](./2026-06-27-healing-horizons-medical-milestones.md)  
 # 2026-06-26 | 🌟 Progress Amplified: Innovation, Restoration, and Global Bridges 🌟  
 ![positivity-bias-2026-06-26-progress-amplified-innovation-restoration-and-global-bridges](../positivity-bias-2026-06-26-progress-amplified-innovation-restoration-and-global-bridges.jpg)  
   

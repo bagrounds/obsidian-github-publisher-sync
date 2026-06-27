@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-06-26T08:28:03-07:00
+updated: 2026-06-27T07:52:40-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (26)  
+# ⚡ Vital Signals (27)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-06-27 | ⚡ ⚖️ The Attentional Pendulum: Swinging Between Deep Work and Insight ⚡](./2026-06-27-the-attentional-pendulum-swinging-between-deep-work-and-insight.md)  
 - [2026-06-26 | ⚡ ⚙️ Orchestrating Your Inner Command Center: Executive Function and Cognitive Flow ⚡](./2026-06-26-orchestrating-your-inner-command-center-executive-function-and-cognitive-flow.md)  
 - [2026-06-25 | ⚡ 🍎 Fueling the Adaptable Mind: Nutrition as a Neuroplasticity Multiplier ⚡](./2026-06-25-fueling-the-adaptable-mind-nutrition-as-a-neuroplasticity-multiplier.md)  
 - [2026-06-24 | ⚡ The Neuroplasticity Advantage ⚡](./2026-06-24-the-neuroplasticity-advantage.md)  

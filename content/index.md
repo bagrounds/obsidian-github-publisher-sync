@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-27T15:31:59-07:00
+updated: 2026-06-27T15:56:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-06-27T15:31:59-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (882)  
+## [📺 Videos](./videos/index.md) (883)  
+- [🗣️🗳️📈 Brooks and Capehart on progressive Democrats winning primaries](./videos/brooks-and-capehart-on-progressive-democrats-winning-primaries.md)  
 - [🚀🤖⚙️ L8 Principal's Agentic Engineering Workflow](./videos/l8-principals-agentic-engineering-workflow.md)  
 - [📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next](./videos/heather-cox-richardson-what-history-predicts-happens-next.md)  
-- [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./videos/the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

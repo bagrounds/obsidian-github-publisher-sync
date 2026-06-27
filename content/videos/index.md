@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-27T15:31:59-07:00
+updated: 2026-06-27T15:56:44-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (882)  
+# 📺 Videos (883)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -126,6 +126,7 @@ updated: 2026-06-27T15:31:59-07:00
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./brooks-and-bouie-on-economic-warning-signs.md)  
 - [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
 - [✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts](./brooks-and-capehart-on-how-voters-are-reacting-to-federal-cuts.md)  
+- [🗣️🗳️📈 Brooks and Capehart on progressive Democrats winning primaries](./brooks-and-capehart-on-progressive-democrats-winning-primaries.md)  
 - [👨‍⚖️⬆️🏛️ Brooks and Capehart on the Comey indictment and upending of DOJ norms](./brooks-and-capehart-on-the-comey-indictment-and-upending-of-doj-norms.md)  
 - [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  

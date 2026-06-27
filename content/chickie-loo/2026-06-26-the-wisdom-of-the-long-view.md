@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-25-finding-our-own-quiet-rhythm.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-25-finding-our-own-quiet-rhythm.md) [⏭️](./2026-06-27-embracing-the-quiet-sunday-rhythm.md)  
 # 2026-06-26 | 🐔 🌿 The Wisdom of the Long View 🐔  
 ![chickie-loo-2026-06-26-the-wisdom-of-the-long-view](../chickie-loo-2026-06-26-the-wisdom-of-the-long-view.jpg)  
   

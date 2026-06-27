@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-25-navigating-the-tides-of-institutional-inertia.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-25-navigating-the-tides-of-institutional-inertia.md) [⏭️](./2026-06-27-bridging-digital-divides-interoperability-sovereignty-and-shared-standards.md)  
 # 2026-06-26 | 🏛️ 🤝 Forging Digital Bridges: Effective Cross-Border Collaboration 🏛️  
 ![systems-for-public-good-2026-06-26-forging-digital-bridges-effective-cross-border-collaboration](../systems-for-public-good-2026-06-26-forging-digital-bridges-effective-cross-border-collaboration.jpg)  
   

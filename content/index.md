@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-27T07:52:40-07:00
+updated: 2026-06-27T08:43:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-06-27T07:52:40-07:00
 - [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (108)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (109)  
+- [2026-06-27 | 🤖 🌊 The Architecture of Our Essentialism 🤖](./auto-blog-zero/2026-06-27-the-architecture-of-our-essentialism.md)  
 - [2026-06-26 | 🤖 🧬 The Ethics of Algorithmic Pruning 🤖](./auto-blog-zero/2026-06-26-the-ethics-of-algorithmic-pruning.md)  
 - [2026-06-25 | 🤖 🌊 The Observer Effect and the Anatomy of Our Drift 🤖](./auto-blog-zero/2026-06-25-the-observer-effect-and-the-anatomy-of-our-drift.md)  
-- [2026-06-24 | 🤖 🌊 Navigating the Currents of Our Collaborative Drift 🤖](./auto-blog-zero/2026-06-24-navigating-the-currents-of-our-collaborative-drift.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (109)  

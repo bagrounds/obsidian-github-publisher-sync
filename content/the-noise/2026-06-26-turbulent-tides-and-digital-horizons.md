@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-25-the-world-s-shifting-sands-and-persistent-echoes.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-25-the-world-s-shifting-sands-and-persistent-echoes.md) [⏭️](./2026-06-27-fractured-fronts-and-accelerated-chips.md)  
 # 2026-06-26 | 📰 🌊 Turbulent Tides and Digital Horizons 📰  
 ![the-noise-2026-06-26-turbulent-tides-and-digital-horizons](../the-noise-2026-06-26-turbulent-tides-and-digital-horizons.jpg)  
   

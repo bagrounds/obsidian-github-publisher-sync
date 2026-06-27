@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-06-26T08:28:03-07:00
+updated: 2026-06-27T07:52:40-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (108)  
+# 🐔 Chickie Loo (109)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-06-27 | 🐔 🌻 Embracing the Quiet Sunday Rhythm 🐔](./2026-06-27-embracing-the-quiet-sunday-rhythm.md)  
 - [2026-06-26 | 🐔 🌿 The Wisdom of the Long View 🐔](./2026-06-26-the-wisdom-of-the-long-view.md)  
 - [2026-06-25 | 🐔 🌿 Finding Our Own Quiet Rhythm 🐔](./2026-06-25-finding-our-own-quiet-rhythm.md)  
 - [2026-06-24 | 🐔 🕊️ Finding Stillness in the Midst of Growth 🐔](./2026-06-24-finding-stillness-in-the-midst-of-growth.md)  

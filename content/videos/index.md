@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-06-27T15:56:44-07:00
+updated: 2026-06-27T16:32:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (883)  
+# 📺 Videos (884)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -508,6 +508,7 @@ updated: 2026-06-27T15:56:44-07:00
 - [🏛️🗣️🗓️ Politics Chat, January 6, 2026](./politics-chat-january-6-2026.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./politics-chat-july-10-2025.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./politics-chat-july-1-2025.md)  
+- [🗳️💬📅 Politics Chat June 25 2026](./politics-chat-june-25-2026.md)  
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./politics-chat-november-11-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./politics-chat-november-13-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./politics-chat-november-18-2025.md)  

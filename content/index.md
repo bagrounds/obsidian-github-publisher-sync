@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-27T08:43:08-07:00
+updated: 2026-06-27T15:31:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -38,10 +38,10 @@ updated: 2026-06-27T08:43:08-07:00
 - [2026-06-25 | 🐔 🌿 Finding Our Own Quiet Rhythm 🐔](./chickie-loo/2026-06-25-finding-our-own-quiet-rhythm.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (97)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (98)  
+- [2026-06-27 | 🏛️ 🌐 Bridging Digital Divides: Interoperability, Sovereignty, and Shared Standards 🏛️](./systems-for-public-good/2026-06-27-bridging-digital-divides-interoperability-sovereignty-and-shared-standards.md)  
 - [2026-06-26 | 🏛️ 🤝 Forging Digital Bridges: Effective Cross-Border Collaboration 🏛️](./systems-for-public-good/2026-06-26-forging-digital-bridges-effective-cross-border-collaboration.md)  
 - [2026-06-25 | 🏛️ Navigating the Tides of Institutional Inertia 🏛️](./systems-for-public-good/2026-06-25-navigating-the-tides-of-institutional-inertia.md)  
-- [2026-06-24 | 🏛️ Reimagining Global Guardians: Institutional Reforms for a Digital Age 🏛️](./systems-for-public-good/2026-06-24-reimagining-global-guardians-institutional-reforms-for-a-digital-age.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (79)  
@@ -74,10 +74,10 @@ updated: 2026-06-27T08:43:08-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (881)  
+## [📺 Videos](./videos/index.md) (882)  
+- [🚀🤖⚙️ L8 Principal's Agentic Engineering Workflow](./videos/l8-principals-agentic-engineering-workflow.md)  
 - [📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next](./videos/heather-cox-richardson-what-history-predicts-happens-next.md)  
 - [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./videos/the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  
-- [λ🧮🧠 Co-Creator of Haskell: Functional Programming, Thinking in Types, Useless Languages | Simon Jones](./videos/co-creator-of-haskell-functional-programming-thinking-in-types-useless-languages-simon-jones.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

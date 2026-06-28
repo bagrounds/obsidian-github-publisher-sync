@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-26-turbulent-tides-and-digital-horizons.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-26-turbulent-tides-and-digital-horizons.md) [⏭️](./2026-06-28-tumult-and-tech-a-world-adrift-in-accelerating-change.md)  
 # 2026-06-27 | 📰 🌐 Fractured Fronts and Accelerated Chips 📰  
 ![the-noise-2026-06-27-fractured-fronts-and-accelerated-chips](../the-noise-2026-06-27-fractured-fronts-and-accelerated-chips.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-26-the-wisdom-of-the-long-view.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-26-the-wisdom-of-the-long-view.md) [⏭️](./2026-06-28-a-week-of-milestones-and-heart-filling-joy.md)  
 # 2026-06-27 | 🐔 🌻 Embracing the Quiet Sunday Rhythm 🐔  
 ![chickie-loo-2026-06-27-embracing-the-quiet-sunday-rhythm](../chickie-loo-2026-06-27-embracing-the-quiet-sunday-rhythm.jpg)  
   

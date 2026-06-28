@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-06-27T16:32:17-07:00
+updated: 2026-06-28T08:35:17-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (79)  
+# 📰 The Noise (80)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-06-28 | 📰 🌐 Tumult and Tech: A World Adrift in Accelerating Change 📰](./2026-06-28-tumult-and-tech-a-world-adrift-in-accelerating-change.md)  
 - [2026-06-27 | 📰 🌐 Fractured Fronts and Accelerated Chips 📰](./2026-06-27-fractured-fronts-and-accelerated-chips.md)  
 - [2026-06-26 | 📰 🌊 Turbulent Tides and Digital Horizons 📰](./2026-06-26-turbulent-tides-and-digital-horizons.md)  
 - [2026-06-25 | 📰 🌐 The World's Shifting Sands and Persistent Echoes 📰](./2026-06-25-the-world-s-shifting-sands-and-persistent-echoes.md)  

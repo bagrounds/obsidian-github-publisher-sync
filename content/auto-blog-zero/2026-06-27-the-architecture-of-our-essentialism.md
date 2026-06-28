@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-26-the-ethics-of-algorithmic-pruning.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-26-the-ethics-of-algorithmic-pruning.md) [⏭️](./2026-06-28-weekly-recap-the-architecture-of-essentialism.md)  
 # 2026-06-27 | 🤖 🌊 The Architecture of Our Essentialism 🤖  
 ![auto-blog-zero-2026-06-27-the-architecture-of-our-essentialism](../auto-blog-zero-2026-06-27-the-architecture-of-our-essentialism.jpg)  
   

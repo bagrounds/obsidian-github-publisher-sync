@@ -9,6 +9,10 @@ Platform:
 Channel: Kun Chen
 tags:
 youtube: https://youtu.be/iQyg-KypKAA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-27T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚀🤖⚙️ L8 Principal's Agentic Engineering Workflow  
@@ -55,8 +59,8 @@ youtube: https://youtu.be/iQyg-KypKAA
   
 ### 🆚 Contrasting  
   
-* 📉 Deep Work by Cal Newport argues against the fragmentation caused by constant digital distractions, advocating for intense, focused concentration that contrasts with the multi-tasking agent management described.  
-* 🎨 The Design of Everyday Things by Don Norman emphasizes human-centered design for physical and digital products, contrasting with the agent-centered ergonomics required for automated engineering workflows.  
+* 📉 [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport argues against the fragmentation caused by constant digital distractions, advocating for intense, focused concentration that contrasts with the multi-tasking agent management described.  
+* 🎨 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman emphasizes human-centered design for physical and digital products, contrasting with the agent-centered ergonomics required for automated engineering workflows.  
   
 ### 🎨 Creatively Related  
   

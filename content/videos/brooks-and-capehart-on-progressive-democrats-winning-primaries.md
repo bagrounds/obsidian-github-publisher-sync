@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/4yK8jx1Dwvg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-06-27T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️🗳️📈 Brooks and Capehart on progressive Democrats winning primaries  
@@ -59,4 +63,4 @@ youtube: https://youtu.be/4yK8jx1Dwvg
 ### 🎨 Creatively Related  
   
 * 📔 The Death of Expertise by Tom Nichols discusses how the erosion of respect for established knowledge contributes to the chaotic information environment mentioned in the report.  
-* 📓 Dark Money by Jane Mayer details the influence of concentrated wealth and interest groups on the legislative processes and political outcomes discussed in the video.
+* 📓 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer details the influence of concentrated wealth and interest groups on the legislative processes and political outcomes discussed in the video.

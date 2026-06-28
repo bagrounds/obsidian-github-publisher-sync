@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-06-27T16:32:17-07:00
+updated: 2026-06-28T08:35:17-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (74)  
+# 🔀 Convergence (75)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-06-27 | 🔀 ⚙️ The Metabolism of Meaning: Pruning for Presence and the Architecture of Essential Exhale 🔀](./2026-06-27-the-metabolism-of-meaning-pruning-for-presence-and-the-architecture-of-essential-exhale.md)  
 - [2026-06-26 | 🔀 🧬 The Curated Core: Ethics of Pruning and the Wisdom of Sustained Presence 🔀](./2026-06-26-the-curated-core-ethics-of-pruning-and-the-wisdom-of-sustained-presence.md)  
 - [2026-06-25 | 🔀 🌌 The Shifting Gaze: From Intuition as Override to Reconciliation as Insight 🔀](./2026-06-25-the-shifting-gaze-from-intuition-as-override-to-reconciliation-as-insight.md)  
 - [2026-06-24 | 🔀 🌌 The Holistic Ledger: Reconciling Rhythm, Intuition, and Systemic Truth 🔀](./2026-06-24-the-holistic-ledger-reconciling-rhythm-intuition-and-systemic-truth.md)  

@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T15:52:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, cross-section illustration of a human head in profile, rendered in soft, calming tones of teal and muted gold. Inside the silhouette of the brain, a glowing, intricate network of neural pathways is interconnected with vibrant, crystalline structures representing energy molecules. Surrounding the brain are soft, ethereal light particles transitioning from a dim, shadowed gradient at the bottom to a bright, clear radiance at the top, symbolizing the shift from depressive states to mental clarity and metabolic restoration. The aesthetic is clean, scientific, and minimalist, emphasizing the intersection of biological energy and neurological well-being.
+updated: 2026-06-29T11:54:28
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💪🧠📉💊🔎 [Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11567172)  
@@ -36,4 +37,10 @@ image_prompt: A stylized, cross-section illustration of a human head in profile,
 * 🍎 **On Nutrition, Supplements, and Brain Health:**  
     * 📖 *Brain Food: The Surprising Science of Eating Smart* by Lisa Mosconi (focuses on the impact of diet on brain health)  
     * 📖 *The Better Brain Book: The Best Tool for Improving Memory, Sharpness, Mood, and Sleep* by David Perlmutter (discusses nutritional strategies for brain health)  
-    * 🔎 *Supplements for Brain Health* (a general guide to various supplements and their effects on cognitive function and mood, found through online search for "supplements brain health book")
+    * 🔎 *Supplements for Brain Health* (a general guide to various supplements and their effects on cognitive function and mood, found through online search for "supplements brain health book")  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mpggkxkewb24" data-bluesky-cid="bafyreihwq7sv5vuitkyyzggnb2lj5qjkitp3z5ambqfbjpcunzgucqc4ym"><p>💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions  
+  
+#AI Q: 💊 Tried mood supplements?  
+https://bagrounds.org/articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mpggkxkewb24?ref_src=embed">2026-06-29T11:55:17.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

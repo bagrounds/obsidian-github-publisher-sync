@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-06-28T08:35:17-07:00
+updated: 2026-06-29T12:12:09-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (28)  
+# ⚡ Vital Signals (29)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-06-29 | ⚡ 🌊 The Brain's Hidden Tide: Riding Your Ultradian Waves for Peak Performance ⚡](./2026-06-29-the-brain-s-hidden-tide-riding-your-ultradian-waves-for-peak-performance.md)  
 - [2026-06-28 | ⚡ 🗓️ The Week in Signals: From Brain-Sculpting to Attentional Harmony ⚡](./2026-06-28-the-week-in-signals-from-brain-sculpting-to-attentional-harmony.md)  
 - [2026-06-27 | ⚡ ⚖️ The Attentional Pendulum: Swinging Between Deep Work and Insight ⚡](./2026-06-27-the-attentional-pendulum-swinging-between-deep-work-and-insight.md)  
 - [2026-06-26 | ⚡ ⚙️ Orchestrating Your Inner Command Center: Executive Function and Cognitive Flow ⚡](./2026-06-26-orchestrating-your-inner-command-center-executive-function-and-cognitive-flow.md)  

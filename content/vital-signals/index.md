@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-06-29T18:28:56-07:00
+updated: 2026-06-30T08:14:22-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (29)  
+# ⚡ Vital Signals (30)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-06-30 | ⚡ 😴 The Brain's Night Shift: Glymphatic System and Deep Sleep for Cognitive Renewal ⚡](./2026-06-30-the-brain-s-night-shift-glymphatic-system-and-deep-sleep-for-cognitive-renewal.md)  
 - [2026-06-29 | ⚡ 🌊 The Brain's Hidden Tide: Riding Your Ultradian Waves for Peak Performance ⚡](./2026-06-29-the-brain-s-hidden-tide-riding-your-ultradian-waves-for-peak-performance.md)  
 - [2026-06-28 | ⚡ 🗓️ The Week in Signals: From Brain-Sculpting to Attentional Harmony ⚡](./2026-06-28-the-week-in-signals-from-brain-sculpting-to-attentional-harmony.md)  
 - [2026-06-27 | ⚡ ⚖️ The Attentional Pendulum: Swinging Between Deep Work and Insight ⚡](./2026-06-27-the-attentional-pendulum-swinging-between-deep-work-and-insight.md)  

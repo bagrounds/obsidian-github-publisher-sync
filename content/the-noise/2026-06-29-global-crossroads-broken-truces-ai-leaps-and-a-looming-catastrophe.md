@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-28-tumult-and-tech-a-world-adrift-in-accelerating-change.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-28-tumult-and-tech-a-world-adrift-in-accelerating-change.md) [⏭️](./2026-06-30-global-tremors-ai-surges-and-a-planet-under-pressure.md)  
 # 2026-06-29 | 📰 🌐 Global Crossroads: Broken Truces, AI Leaps, and a Looming Catastrophe 📰  
 ![the-noise-2026-06-29-global-crossroads-broken-truces-ai-leaps-and-a-looming-catastrophe](../the-noise-2026-06-29-global-crossroads-broken-truces-ai-leaps-and-a-looming-catastrophe.jpg)  
   

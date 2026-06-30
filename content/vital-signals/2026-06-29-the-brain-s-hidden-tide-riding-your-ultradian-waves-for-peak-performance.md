@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-28-the-week-in-signals-from-brain-sculpting-to-attentional-harmony.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-06-28-the-week-in-signals-from-brain-sculpting-to-attentional-harmony.md) [⏭️](./2026-06-30-the-brain-s-night-shift-glymphatic-system-and-deep-sleep-for-cognitive-renewal.md)  
 # 2026-06-29 | ⚡ 🌊 The Brain's Hidden Tide: Riding Your Ultradian Waves for Peak Performance ⚡  
 ![vital-signals-2026-06-29-the-brain-s-hidden-tide-riding-your-ultradian-waves-for-peak-performance](../vital-signals-2026-06-29-the-brain-s-hidden-tide-riding-your-ultradian-waves-for-peak-performance.jpg)  
   

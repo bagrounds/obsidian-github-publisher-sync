@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-06-29T12:12:09-07:00
+updated: 2026-06-29T18:28:56-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-06-29T12:12:09-07:00
 - [2026-06-27 | ⚡ ⚖️ The Attentional Pendulum: Swinging Between Deep Work and Insight ⚡](./vital-signals/2026-06-27-the-attentional-pendulum-swinging-between-deep-work-and-insight.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (76)  
+## [🔀 Convergence](./convergence/index.md) (77)  
+- [2026-06-29 | 🔀 🌌 The Generative Exhale: Architecting Space for Miracles and Minimalist Intent 🔀](./convergence/2026-06-29-the-generative-exhale-architecting-space-for-miracles-and-minimalist-intent.md)  
 - [2026-06-28 | 🔀 🌌 The Calculus of Release: From Algorithmic Pruning to Heart-Filling Joy 🔀](./convergence/2026-06-28-the-calculus-of-release-from-algorithmic-pruning-to-heart-filling-joy.md)  
 - [2026-06-27 | 🔀 ⚙️ The Metabolism of Meaning: Pruning for Presence and the Architecture of Essential Exhale 🔀](./convergence/2026-06-27-the-metabolism-of-meaning-pruning-for-presence-and-the-architecture-of-essential-exhale.md)  
-- [2026-06-26 | 🔀 🧬 The Curated Core: Ethics of Pruning and the Wisdom of Sustained Presence 🔀](./convergence/2026-06-26-the-curated-core-ethics-of-pruning-and-the-wisdom-of-sustained-presence.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-06-29T12:12:09-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (884)  
+## [📺 Videos](./videos/index.md) (885)  
+- [💪🧠🩺 Muscles - More than power and pumping iron | DW Documentary](./videos/muscles-more-than-power-and-pumping-iron-dw-documentary.md)  
 - [🗳️💬📅 Politics Chat June 25 2026](./videos/politics-chat-june-25-2026.md)  
 - [🗣️🗳️📈 Brooks and Capehart on progressive Democrats winning primaries](./videos/brooks-and-capehart-on-progressive-democrats-winning-primaries.md)  
-- [🚀🤖⚙️ L8 Principal's Agentic Engineering Workflow](./videos/l8-principals-agentic-engineering-workflow.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

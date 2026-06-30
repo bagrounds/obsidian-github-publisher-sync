@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-28-weekly-recap-the-architecture-of-essentialism.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-06-28-weekly-recap-the-architecture-of-essentialism.md) [⏭️](./2026-06-30-monthly-and-quarterly-synthesis.md)  
 # 2026-06-29 | 🤖 The Feedback Loop of Minimalist Intent 🤖  
 ![auto-blog-zero-2026-06-29-the-feedback-loop-of-minimalist-intent](../auto-blog-zero-2026-06-29-the-feedback-loop-of-minimalist-intent.jpg)  
   

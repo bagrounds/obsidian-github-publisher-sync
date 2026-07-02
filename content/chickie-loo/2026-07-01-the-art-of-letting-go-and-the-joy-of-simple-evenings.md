@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-30-a-season-of-deep-roots-and-quiet-victories.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-06-30-a-season-of-deep-roots-and-quiet-victories.md) [⏭️](./2026-07-02-a-mother-s-protectiveness-and-the-hardest-decisions.md)  
 # 2026-07-01 | 🐔 📦 The Art of Letting Go and the Joy of Simple Evenings 🐔  
 ![chickie-loo-2026-07-01-the-art-of-letting-go-and-the-joy-of-simple-evenings](../chickie-loo-2026-07-01-the-art-of-letting-go-and-the-joy-of-simple-evenings.jpg)  
   

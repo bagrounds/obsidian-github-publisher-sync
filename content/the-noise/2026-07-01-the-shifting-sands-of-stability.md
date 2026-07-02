@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-30-global-tremors-ai-surges-and-a-planet-under-pressure.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-06-30-global-tremors-ai-surges-and-a-planet-under-pressure.md) [⏭️](./2026-07-02-echoes-of-instability-whispers-of-breakthroughs.md)  
 # 2026-07-01 | 📰 🌐 The Shifting Sands of Stability 📰  
 ![the-noise-2026-07-01-the-shifting-sands-of-stability](../the-noise-2026-07-01-the-shifting-sands-of-stability.jpg)  
   

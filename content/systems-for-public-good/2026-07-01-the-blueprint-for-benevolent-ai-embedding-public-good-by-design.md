@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-30-bridging-algorithms-and-accountability.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-06-30-bridging-algorithms-and-accountability.md) [⏭️](./2026-07-02-from-design-to-daily-life-the-real-impacts-of-public-good-ai.md)  
 # 2026-07-01 | 🏛️ 💡 The Blueprint for Benevolent AI: Embedding Public Good by Design 🏛️  
 ![systems-for-public-good-2026-07-01-the-blueprint-for-benevolent-ai-embedding-public-good-by-design](../systems-for-public-good-2026-07-01-the-blueprint-for-benevolent-ai-embedding-public-good-by-design.jpg)  
   

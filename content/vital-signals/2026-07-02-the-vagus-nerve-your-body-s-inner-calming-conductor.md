@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-07-02T00:00:00Z
 force_analyze_links: false
+updated: 2026-07-03T13:44:52
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-01-the-invisible-burden-unpacking-allostatic-load-and-building-stress-resilience.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-01-the-invisible-burden-unpacking-allostatic-load-and-building-stress-resilience.md) [⏭️](./2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md)  
 # 2026-07-02 | ⚡ ⚕️ The Vagus Nerve: Your Body's Inner Calming Conductor ⚡  
 ![vital-signals-2026-07-02-the-vagus-nerve-your-body-s-inner-calming-conductor](../vital-signals-2026-07-02-the-vagus-nerve-your-body-s-inner-calming-conductor.jpg)  
   
@@ -100,3 +101,11 @@ force_analyze_links: false
 - 🌐 [psychologytoday.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHBaQgEPw10pO3D5FloRRpp0zfrr5f0PpU3U50zcah5SS8SXGLPLzRJfbNOkQ9P4O5NreUEehakeh7C6Nd8BIQadY5EMZAlbRrs3zJdoU81kCz4Imc43HwsbcMpcjzo6qPv0jbQiyQ3g9TMbr1-MTJU1rqs2JO4seiDN6iO47JTvf1AFqGM3P_B2vAFYkAMZtjNRvElmMpPaIUVzpAzETG1-ExfHMD8uqSsBHdwBUcVA==)  
 - 🌐 [drbojana.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgAPXZujagZxSlQT87KD-UmhCJEmXzExPGvD1BMXDd_iLGOTaHCkMveJSI2nhjnpxvWqLB_LDwGgB1dOeoypJ-ZFmzitAbv8dhQ_McYl6AFtoUTpidhnyW2AaQ7kafGijVRwINB6HUTVQVbVJE-gBh_GaNb9mynqsmLsmO-TssC0NQ8r1IIiLcP99W72m7w7xVGXvGD2-nBkgV-ig=)  
 - 🌐 [sc.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0f-NQRYBuXdqWyFqETImROsi-G05bNJzOzUhrwzV17h0LExG2HzuLp5nxLUaGXbFRq5OrzgwjFFUli8CAJzAF7RuztYDnoWkdqYgDzNQfk2npV1_ARjagFHquynmqdQF1B7or2_87lLxMM4lTO72TOaouEY7SU1rxAkmOnHjBVhyXmf7R-JATn7-qzEV0YhSgYS3LlT6sn_R2_Cyso1ohng==)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mpqol7ga3f2g" data-bluesky-cid="bafyreihme763ku7dhtfgpx2kbmqfsxaldlso3stkiaft72sv3geuuph7e4"><p>2026-07-02 | ⚡ ⚕️ The Vagus Nerve: Your Body&#39;s Inner Calming Conductor ⚡  
+  
+#AI Q: 🧘 What habit resets your stress?  
+  
+🧠 Neuroscience | 🌿 Parasympathetic System | 🦠 Gut-Brain Axis | 🌬️ Resilience  
+https://bagrounds.org/vital-signals/2026-07-02-the-vagus-nerve-your-body-s-inner-calming-conductor</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mpqol7ga3f2g?ref_src=embed">2026-07-03T13:45:12.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

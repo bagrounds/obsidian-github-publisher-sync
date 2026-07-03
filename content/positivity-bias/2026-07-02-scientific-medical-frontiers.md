@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-01-cosmic-wonders-scientific-explorations.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-01-cosmic-wonders-scientific-explorations.md) [⏭️](./2026-07-03-scientific-medical-frontiers.md)  
 # 2026-07-02 | 🌟 🔬 Scientific & Medical Frontiers 🌟  
 ![positivity-bias-2026-07-02-scientific-medical-frontiers](../positivity-bias-2026-07-02-scientific-medical-frontiers.jpg)  
   

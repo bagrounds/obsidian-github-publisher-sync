@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-03T07:19:11-07:00
+updated: 2026-07-04T08:01:27-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (80)  
+# 🔀 Convergence (82)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-04 | 🔀 🪢 The Interwoven Architectures of Self-Sovereignty and Collective Flourishing 🔀](./2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing.md)  
+- [2026-07-03 | 🔀 ⚖️ The Calculus of Care: Sustaining Integrity Through Difficult Pruning 🔀](./2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  
 - [2026-07-02 | 🔀 👻 The Architecture of Absence: Learning from the Roads Not Taken 🔀](./2026-07-02-the-architecture-of-absence-learning-from-the-roads-not-taken.md)  
 - [2026-07-01 | 🔀 📦 The Echo of Release: From Algorithmic Pruning to Physical Liberation 🔀](./2026-07-01-the-echo-of-release-from-algorithmic-pruning-to-physical-liberation.md)  
 - [2026-06-30 | 🔀 🌉 The Unfolding Tapestry: Generative Release, Essential Cores, and the Wisdom of External Worlds 🔀](./2026-06-30-the-unfolding-tapestry-generative-release-essential-cores-and-the-wisdom-of-external-worlds.md)  

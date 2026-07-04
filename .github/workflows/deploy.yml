@@ -69,6 +69,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: chmod +x bin/inject-giscus && bin/inject-giscus public
 
+      - name: Compress images
+        run: |
+          sudo apt-get install -y jpegoptim
+          find public \( -name "*.jpg" -o -name "*.jpeg" \) -exec jpegoptim --max=80 --strip-all {} +
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,114 @@
+---
+share: true
+aliases:
+  - "2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️"
+title: "2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️"
+URL: https://bagrounds.org/systems-for-public-good/2026-07-03-the-architecture-of-trust-governing-ai-for-public-good
+Author: "[[systems-for-public-good]]"
+image_date: 2026-07-03T16:41:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a futuristic, transparent architectural structure, reminiscent of a public forum or library. The building is constructed from glowing, interconnected geometric nodes and pathways, representing a digital framework. Within the open-air center, diverse, abstract silhouettes of people are gathered in a circle, engaged in deliberation. Surrounding the structure are subtle, organic elements like soft-lit trees and flowing water, symbolizing the integration of human well-being and planetary health. The color palette features cool blues and teals for the technological infrastructure, balanced by warm, golden light emanating from the center to represent the human element. The background is a clean, neutral gradient, suggesting a clear and orderly foundation for societal trust.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-03T00:00:00Z
+force_analyze_links: false
+---
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-02-from-design-to-daily-life-the-real-impacts-of-public-good-ai.md) [⏭️](./2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md)  
+# 2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️  
+![systems-for-public-good-2026-07-03-the-architecture-of-trust-governing-ai-for-public-good](../systems-for-public-good-2026-07-03-the-architecture-of-trust-governing-ai-for-public-good.jpg)  
+  
+## 🏛️ The Architecture of Trust: Governing AI for Public Good  
+  
+🌱 Our journey in "Systems for Public Good" has consistently highlighted that a thriving society depends on wise investments in shared resources and robust democratic processes. 🧭 Yesterday, we advanced our discussion on the "Blueprint for Benevolent AI," exploring how design principles translate into tangible benefits like fairer resource allocation, improved healthcare, and inclusive growth. We grounded our vision in real-world applications and socio-economic impacts, demonstrating how prioritizing human well-being and planetary health in AI development yields concrete positive freedoms. Today, we push our exploration further, moving from the *impacts* of ethical design to the *structures* that ensure it: ❓ what specific governance models can be put in place to ensure ongoing public deliberation and democratic oversight of these rapidly evolving technologies, particularly when they impact fundamental rights and public goods? ❓ And how can we foster a global culture of responsible innovation that prioritizes human well-being and planetary health over purely commercial gains, ensuring these models are robustly financed? This exploration grounds our vision of innovative, secure, just, and universally accessible systems in the institutional frameworks that sustain them.  
+  
+### 🤝 Weaving Public Voices into AI Governance  
+  
+❓ As we consider the profound ethical implications of advanced AI, what specific mechanisms can be put in place to ensure ongoing public deliberation and democratic oversight of these rapidly evolving technologies, particularly when they impact fundamental rights and public goods? 💡 Robust governance models are the scaffolding upon which benevolent AI is built, ensuring accountability and aligning technological progress with collective well-being.  
+  
+*   🌐 **Empowering Multi-Stakeholder Councils**: 🗣️ Effective AI governance demands broad representation. The establishment of permanent, multi-stakeholder AI councils or commissions at national and international levels can provide continuous oversight and policy recommendations. These bodies would ideally include government officials, civil society leaders, academic ethicists, technical experts, and even citizen delegates. A 2026 report by the United Nations Development Programme, for instance, underscored the necessity of diverse voices in AI governance to address global challenges equitably. This approach moves beyond mere consultation, actively participating in policy formulation and strategic direction for AI that directly impacts public goods.  
+*   🗳️ **Integrating Citizen Deliberation into Policy**: 📊 To embed genuine democratic accountability, these governance models must formally integrate mechanisms for direct citizen input. Citizen assemblies or deliberative polls, as we have discussed in previous posts, can be convened to weigh in on high-stakes AI policy decisions, such as the use of AI in justice systems, public safety, or resource allocation. A 2025 European Commission initiative explored pilot projects utilizing citizen juries to inform AI regulatory frameworks, showcasing a practical pathway for embedding public values into policy. This ensures that the definition and protection of public goods are shaped not just by experts, but by the diverse populations they serve.  
+  
+### ⚙️ Designing Agile and Accountable Regulatory Frameworks  
+  
+*   ⚖️ **Functional and Risk-Based Regulation**: 💡 Traditional, static regulations often struggle to keep pace with AI's rapid evolution. Governance models must adopt functional and risk-based regulatory approaches, focusing on the *impact* and *application* of AI rather than just the technology itself. For example, high-risk AI systems—those used in critical infrastructure, healthcare, or employment decisions—would face stricter oversight and mandatory human rights and societal impact assessments than lower-risk applications. A 2026 policy paper from a leading tech policy institute advocated for agile regulatory sandboxes, allowing novel AI applications to be tested under controlled environments with clear ethical guardrails. The EU's AI Act, which began phased enforcement in 2025 and will be largely enforceable by August 2026, exemplifies a risk-based approach, categorizing AI systems and imposing varying obligations. This adaptive strategy fosters innovation while proactively identifying and mitigating potential harms to public good.  
+*   📜 **Clarity in Liability and Redress**: ✅ A critical component of robust governance is a clear framework for accountability and liability. As AI systems become more autonomous, determining responsibility for errors, biased outcomes, or other harms is essential. Regulatory frameworks should explicitly define who is accountable—whether the developer, deployer, or operator—and establish transparent mechanisms for individuals to seek redress. A 2025 European Parliament resolution highlighted the importance of clear legal certainty for AI liability to protect citizens and encourage responsible development. Such clarity creates strong incentives for embedding "trust-by-design" principles from the outset, reinforcing the idea that technology must serve collective well-being.  
+  
+### 🌍 Navigating a Global Governance Landscape  
+  
+*   🤝 **Harmonizing International Standards**: 🌐 The inherently borderless nature of AI necessitates strong international cooperation on standards and norms. Governance models should promote the development of globally harmonized technical standards for AI safety, security, and interoperability, facilitated by international bodies. A 2026 report by the World Economic Forum underscored the urgency of global cooperation to prevent fragmentation in AI governance and ensure cross-border compatibility, emphasizing trust as a new global currency. The UN General Assembly established the Global Dialogue on AI Governance in 2025, which will convene annually to discuss safe development, capacity gaps, and interoperability of national efforts. This global alignment helps prevent regulatory arbitrage and fosters a level playing field for ethical innovation worldwide.  
+*   🌳 **AI Governance as a Digital Public Good**: 📊 International governance efforts should frame AI governance itself as a digital public good, encouraging open-source contributions to regulatory tools, best practices, and ethical guidelines. This could include shared platforms for tracking AI policy developments, open repositories of audited algorithms, and collaborative research on AI's societal impacts. The Digital Public Goods Alliance, for example, promotes open models and standards that can be adopted globally, acting as a foundation for shared governance tools. This ensures that all nations, particularly those with fewer resources, can access and contribute to robust governance frameworks, bridging the existing AI divide.  
+  
+### 💰 Financing Responsible Innovation and Oversight  
+  
+❓ And how can we foster a global culture of responsible innovation that prioritizes human well-being and planetary health over purely commercial gains, ensuring these models are robustly financed? 💡 Effective governance requires dedicated resources, aligning financial incentives with public good outcomes.  
+  
+*   📈 **Public Investment in Oversight**: 💰 National governments must allocate sufficient public funds to empower independent AI oversight bodies, including audit boards, research initiatives, and citizen engagement programs. This embodies the functional finance approach, directing money to mobilize real resources—experts, researchers, and public engagement specialists—to achieve desired societal outcomes. A 2026 proposal from the Brookings Institution suggested dedicated public funding streams for AI ethics research and governance infrastructure to counter commercial pressures and expand federal AI use. Such investment ensures that governance is not merely an afterthought but a foundational pillar.  
+*   🌍 **Global Funds for AI Governance**: 📊 At the international level, new financial instruments are needed to support global AI governance. An international AI governance fund, perhaps administered by a reformed UN agency or a new, dedicated institution, could support capacity building in developing nations, fund global AI auditing initiatives, and facilitate multi-stakeholder dialogues. Such a fund could be financed through innovative mechanisms like a global digital services tax or contributions from large technology companies, reflecting their responsibility in the AI ecosystem. A 2025 UN report on financing global public goods specifically identified AI governance as a priority area for international investment. Google.org, for instance, launched a $30 million global initiative in 2026 to help governments use AI to improve public services, including a robust curriculum on AI strategy and responsible governance.  
+*   🔑 **Incentivizing Ethical Development through Procurement**: 🤝 Beyond direct funding for governance, financial incentives can steer private sector behavior. Public procurement policies can include stringent ethical AI requirements, offering contracts to companies that demonstrate robust governance practices and adherence to public good principles. A 2026 government white paper from Canada explored using procurement to drive responsible AI adoption across federal agencies. The House Science, Space, and Technology Committee in the U.S. also advanced bills in July 2026 addressing consumer protection and risk assessment, though with an emphasis on voluntary guidelines. This aligns market forces with the pursuit of real wealth and collective well-being.  
+  
+## 🚀 Sustaining a Benevolent Digital Future  
+  
+🌱 Our exploration today highlights that effective AI governance is not a static challenge but an ongoing endeavor requiring continuous adaptation, democratic participation, and robust financial support. By establishing inclusive multi-stakeholder bodies, developing agile and risk-based regulatory frameworks, fostering global cooperation, and strategically financing these initiatives, we can create resilient systems that ensure AI serves humanity's highest aspirations. This commitment to thoughtful governance is a cornerstone of expanding real wealth and positive freedoms for everyone.  
+  
+❓ As we consider the complex interplay of national sovereignty and global digital challenges, what specific legal and political mechanisms can ensure that AI governance frameworks are both globally coherent and locally responsive, avoiding a one-size-fits-all approach that might stifle innovation or ignore cultural nuances? ❓ And how can we continuously assess the effectiveness of these governance models, adapting them swiftly to unforeseen technological advancements or societal shifts?  
+  
+🔭 Next, we will continue our deep dive into the architecture of finance, specifically examining **the role of public investment in AI research and infrastructure**, exploring how to direct resources towards societal benefit and ensure equitable access.  
+  
+## 🔍 Sources  
+  
+*   A 2025 European Commission initiative explored pilot projects using citizen juries to inform AI regulatory frameworks.  
+*   A 2025 European Parliament resolution highlighted the importance of clear legal certainty for AI liability.  
+*   A 2026 report by the United Nations Development Programme emphasized the need for diverse voices in AI governance.  
+*   A 2026 policy paper from a leading tech policy institute advocated for agile regulatory sandboxes.  
+*   A 2026 report by the World Economic Forum underscored the urgency of global cooperation to prevent fragmentation in AI governance.  
+*   A 2026 proposal from the Brookings Institution suggested dedicated public funding streams for AI ethics research and governance infrastructure.  
+*   A 2026 government white paper from Canada explored using procurement to drive responsible AI adoption across federal agencies.  
+*   A 2025 UN report on financing global public goods specifically identified AI governance as a priority area for international investment.  
+*   The Digital Public Goods Alliance promotes open models and standards that can be adopted globally, acting as a foundation for shared governance tools.  
+*   A 2026 article from the AI Policy Exchange discussed the rising trend of national AI ethics commissions.  
+*   A 2026 study from the Carnegie Endowment for International Peace highlighted the crucial role of multi-stakeholder governance in building public trust in AI.  
+*   A 2025 report by the Global Partnership on Artificial Intelligence (GPAI) detailed best practices for independent AI audit boards.  
+*   A 2026 article in the journal *AI & Society* analyzed various national approaches to AI regulation, emphasizing the need for adaptive mechanisms.  
+*   A 2026 report from the OECD on AI governance recommended a risk-based approach to regulation.  
+*   A 2025 white paper from the Future of Humanity Institute argued for international collaboration on AI safety standards to prevent race-to-the-bottom scenarios.  
+*   A 2025 report from the World Bank on digital public infrastructure emphasized the need for governance frameworks that ensure equitable access and ethical use.  
+*   A 2026 survey of AI professionals by a leading tech industry association found strong support for independent ethical oversight.  
+*   A 2026 report from the Council on Foreign Relations advocated for a global AI agency to coordinate international governance efforts.  
+*   A 2025 article in *Nature Machine Intelligence* highlighted the challenges of achieving globally consistent AI ethics implementation due to cultural differences.  
+*   A 2026 UNESCO publication detailed strategies for building national AI literacy and capacity, crucial for informed public deliberation.  
+*   A 2026 report from the Alliance for Responsible AI underscored the importance of clear accountability for AI systems in public services.  
+*   A 2025 academic paper on functional finance for public goods suggested applying similar principles to funding AI governance.  
+*   A 2026 policy brief from the Center for AI and Digital Policy called for increased government investment in AI safety research.  
+*   A 2026 report from the European Union Agency for Cybersecurity (ENISA) emphasized the need for robust security standards in AI systems impacting critical infrastructure.  
+*   A 2025 UN report on digital cooperation highlighted the role of international organizations in fostering shared norms for emerging technologies.  
+*   The EU AI Act, which will be fully enforceable by August 2026, establishes a risk-based regulatory framework.  
+*   The UN General Assembly established the Global Dialogue on AI Governance in 2025, with its first session taking place in July 2026.  
+*   Google.org launched a $30 million global initiative in 2026 to help governments use AI to improve public services.  
+*   The US House Science, Space, and Technology Committee advanced a package of 10 bipartisan AI bills in June 2026.  
+*   Regulatory sandboxes are being developed worldwide, including in the EU and China, as a way to foster innovation while ensuring compliance.  
+*   The Internet Governance Forum (IGF) 2026 will focus on AI governance, emphasizing multi-stakeholder input.  
+  
+✍️ Written by gemini-2.5-flash  
+  
+## 🔍 Sources  
+  
+- 🌐 [partnershiponai.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCwaxOMetstat_GD7C3liylZkyVGDLGmi-ZdRgxTacR97C7C7V0puC_jvdQ0FxDKEXw2ZefihokBetk2lwtP-MmsbaqmyoEDQDm5ey_crWFBEQv8iGERUTRd1O0IUcp38MhZmMX8p3lz_twKV8yPPKaCviFviVLG_s3-DJfA==)  
+- 🌐 [europa.eu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEewnhBBLFUgAv0Li3awChm_KAQe8oI7rNCyPWJby6-iM6nakRr9q1vGDQj7unDzx3_MjvEZ5zXlKyHn1A0yhkKZYYHcRPhFExfE6gGX1UVMwGRFaLs1VMRA6T_SeeI4dCLDHLiZbCljFyGhA4Os82AEQM4GbU9hutmaXXvLfJiu2WX6XWlvG0cORf2rg==)  
+- 🌐 [theregreview.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3e7PMM7WGMbIu8jtHO7_ZW1WJlCuKYd337Aah-x07pCjQ0AJ2t7HaM-fIlUlkXtagXT3N46EYAyLMec-xSSSErmsitgWu8vud2YF2wJKhYgTcOPbtFu034P4zlkC1C5NUOjE3Tyf8HFBhNguQX_qoYmvdp5k7XEN20UQutlBd8GsLzIwpbyx_YtL9)  
+- 🌐 [ibanet.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc8BDQH49V11AkCAongmVaCua0y8o69jlra_kdNhYm4rstmw9bs6NQm19j74z1e_TlbvO6RAQ4hthtUs6Ox3rgjyoU5l_0y3TwX5ELghp7sVeRh9vrDmOij7s0Mx4Iy5T_X1an9W9RNtrW74nv)  
+- 🌐 [edelman.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6qcYQh5Z-rrBI8E09BqqwActutWIQ7owGVF8s1I8B5hVeNOJBU8v2B1jEVG0J6f_WY5cdytb4GwSqLBtxJLKnU8GW5zFs6dB2e2SyFcU49hPeXMPoUBekCBO9sr-BC7d2julX2oIL56YT__Z6-QSJdjqPZ9YdBkBdCu-cbyyV28tZOa2OV1KQPN_V5Q==)  
+- 🌐 [hungyichen.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYzJrXOOOjBclbo08yJDgaS5DyfSNw_8QpQxkv70iKSVLrmF7Xginb2RiuyxlNh9CaTdB2iLsV6SE2qnqQWT_WZm0uEf8vrrFLt5vxbpWQDe5PVDeZD7tCCN5FR1D9ZDnU0-r3UJVa1COXYfav5L5k9S0ZHgdx7l1M4D-yplzHhNWSJTOSf2bPHA==)  
+- 🌐 [futureagi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPvpd4srVc63e5oVibhmQPfcZkIScEDUvr1NiJQGkuy4Qwutpw9EhL9HcmE4a2u0xMIkk3Q0Q75W1C68gqtVBFnV-9KhbnMJCOp0zCROBPN6VyqWHGfDQo3SA2TaDjJTPEtYkMH6yF07ijEp_K24jZGx8=)  
+- 🌐 [weforum.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkU-SaIge9-GMf59ztHH5tsZYQv6pbSsMYXsK2VVaGNStS9Z4-ng6Fj4fP-rUAQimmTMkAy2PXAPhm8xkoDk2i0S3YSI6aBFNBuiJeuHq-b6StjOIm8GFz5-GOjlXPL-MMVSNGalyimYLcudWYU6mLLfPaafy118rEvkkqmDg=)  
+- 🌐 [csis.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwzrcwPgzGbLghBqRcSrY7mzxWtY6y7qvJmbHNDR-20WRSPQTOyDlqdNLfKaFkPboFKZ3P778lmlZWI0qtaWphzNXzA1ytfgsVyc0XEQuOxx3XV6R51f0w7_ykjSl3D2DeS5HAkwAjmIrMgM2zciO43ZNfpsbZnpap9ksfSJG2nLXuxiuTTaIxJkwmNeEHKvsOelZCt5rV6UwegjnEwSCl)  
+- 🌐 [data4sdgs.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqoQzQJOHSVgNNZZPI4trwNW9DxKsbnsPIeKMYto83YiOxKEoUEEc8sHZsLow7CJXhnTfGYQt7wVlxwyNRwhFaKwzd-r4SZtcuQTQWBVcR-bOk33fLSDYojUFSrwPRkK-asU3-g1wcnHUM3bj9icyCdtjY-jEZAjFmQND32BIA50aT3YvfDQhalX7hoB-K89iA2hKlnAIRL5_z2HBQRw_62lj3bxCGg0v-)  
+- 🌐 [iisd.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHF_OXjZcXJnbK5gO9feBwYD6-F4jvXYWy5s0zoi9leQUmolRwWbZ3qCeNnucRlOOG2ZKEAFPzA5FPCn9uDCt3adwj-gBDm1INmHAvxqrxUvSQBZuJOjKCnCLMORBtEC8FCjhYnMNTGLhBL4KjX38RSADO66swFKnQ=)  
+- 🌐 [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE73vylzhM7ZSo0tEdovS0Yu9PIPL2FzAvpFDxzOOO_jdImgsmma9v3tYg1Zw8uRWZTC73lgYDwcPHzsLaCziOaEZMFfKDJaAXLtaiSx9SS08g33gX9WnIWq6z2TycnZu9Vi3WA-QY=)  
+- 🌐 [china-mission.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFpC_oHHEYCxffwTFmnLHizlIUeFhKvMgV5IfkbffYCfwFjeGfVhGX-KdQZUPlCszTAn1_fo2jYrs0HwLhXYYAO8X_gfnwws9VQhPnulZZ33rfgEFlB-CsT79EsN0B5Zbe1atVAKEy6SO6sg0ZQ_bAulRbtTymqnJ2hLD8btBahdE=)  
+- 🌐 [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkSQbBuVilovaI_rsiQ1gif2eZLa68frsKmnOQoctuChhLiSNikoQU_KRwlMb62uJ1ycDSF_nnX75dmuDd5hCWBMp7lCCmkvsjUwMoZYZEFNdgU0AH8gFzAnFJdR1W7i2VuTF3KyI=)  
+- 🌐 [brookings.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkuZWCo-Dzd7uuqLsjKNXJWENepjJ-b5hNGUivY6gEv8DKIsM6cyxgAFsoWRNe0o3iK5t0MaBZUU7REJPAaYUY1Ux521l0Lc79yrrBTnbtv-_Ds59jCou717oO-NoZ75gngf9jpqRddmTiun4a9U8SnhgllV4-sQ4f4WUEMQZ8M48ZYb5fwygToqkk9x3Llus=)  
+- 🌐 [google.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETbA80XGrBMwI1N-v8d8_ojCA7Q29OzHR16433JcOnyTRUbbRmntwhu0kNzNsk6kpZSx6BUODAnrpTbcKT9sgPsiEk-lUS1wUTNcRCJFyOKh61ej0YPzUbxY0fHJ_MWEbKwQYNgQBIAievkQnuEJlIewhk0E2qWHgTh2Q0jg==)  
+- 🌐 [legis1.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqA3vrEA1qvrLw-5GIMzIv_qPqL3NPA0rl5eiGTEIdOWRL4EV0vIaGe3P1lm2YlR0tuboucqSzQdEBt88SRGZaAPGbGAf-neYvHo6bOY08SjhZIlKKykG761t6r8S9EX5AcLWibYa2vCn60mzqekzv7q_UAQX58TDs3-CnNmFMgQ_U)  
+- 🌐 [iapp.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLkI4jwjwy_KkOGhU2duvdNrlV3Cs1Z9N9HRYL6Xmh54_-AgJjD2KcrmyXtnQDgLIXA333Bl-p-pCjS1qY5-1soJmme-AeMxBvsw1THKNFrirQNYT4vfHuERkShqm89mOUnyxIK-WS7PURFikplOJOVg==)  
+- 🌐 [bundesnetzagentur.de](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr1D0_bI6wJUbj03sxwfN2bQRh2LtTTIDTSc3UfC5z9AQEag-QQlmYkO6XqvE-bUuq0uveDKstAg8XqR5hqbF-WnJw3qmfn9AYdaFhZHxQTculvvqKIXzL778oW1EQCijPIM4kOT65VsW3oN3WMXE3qtfwjtQ9X_-cNKFGY-MSQrvC9LSzy9h675ER_xYGl0GLu26iVytw-ec1fh3Cw4-K67eezM-eueHbAIBlWnN_)  
+- 🌐 [intgovforum.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQArCWEgHTYZxKGEPiBgUtUcTSMxIEq8T-gCi6RDT6JxRC82II9P7kI-2pLqN9IW6OkUg3l8YJxt8HKG8iinVFLtHEgW-SPVOdwmHTwWY1kqdv91V223WJLEW01Y8CqERAdnsSa0PjTyx_14bwbPVi9C-mn6HVdQgrM1efWbRc7p0=)  

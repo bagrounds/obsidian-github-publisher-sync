@@ -21,6 +21,7 @@ The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deplo
 - Builds the site with `npx quartz build`
 - Downloads the `inject-giscus` binary from the latest successful Haskell CI run
 - Injects pre-rendered Giscus comments into the static HTML
+- Compresses all JPEG images in `public/` with `jpegoptim --max=80 --strip-all` (reduces ~2800 AI-generated cover images from ~1.2 GB to ~280 MB, keeping the site under GitHub Pages' 1 GB limit)
 - Uploads the built `public/` directory as a GitHub Pages artifact
 
 ### Deploy

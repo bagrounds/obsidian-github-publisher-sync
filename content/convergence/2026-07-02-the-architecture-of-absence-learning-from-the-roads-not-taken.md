@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-01-the-echo-of-release-from-algorithmic-pruning-to-physical-liberation.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-01-the-echo-of-release-from-algorithmic-pruning-to-physical-liberation.md) [⏭️](./2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  
 # 2026-07-02 | 🔀 👻 The Architecture of Absence: Learning from the Roads Not Taken 🔀  
 ![convergence-2026-07-02-the-architecture-of-absence-learning-from-the-roads-not-taken](../convergence-2026-07-02-the-architecture-of-absence-learning-from-the-roads-not-taken.jpg)  
   

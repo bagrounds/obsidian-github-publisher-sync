@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md) [⏭️](./2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
 # 2026-07-04 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡  
 ![vital-signals-2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge](../vital-signals-2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.jpg)  
   

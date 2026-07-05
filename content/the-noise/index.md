@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-07-04T08:01:27-07:00
+updated: 2026-07-05T10:50:52-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (86)  
+# 📰 The Noise (87)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰](./2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.md)  
 - [2026-07-04 | 📰 🌐 July's Blistering Start: Global Tensions, AI Resurgence, and a Sizzling Planet 📰](./2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
 - [2026-07-03 | 📰 🌐 Whispers of Change, Echoes of Urgency 📰](./2026-07-03-whispers-of-change-echoes-of-urgency.md)  
 - [2026-07-02 | 📰 🌐 Echoes of Instability, Whispers of Breakthroughs 📰](./2026-07-02-echoes-of-instability-whispers-of-breakthroughs.md)  

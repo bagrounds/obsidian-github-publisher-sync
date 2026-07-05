@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-06-03T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-06-02-1-vital-signals-series-launch.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-06-02-1-vital-signals-series-launch.md) [⏭️](./2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
 # 2026-06-04 | 🛡️ Never Publish Thinking: Fix Fiction Output and Remove Token Cap  
 ![ai-blog-2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap](../ai-blog-2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.jpg)  
   

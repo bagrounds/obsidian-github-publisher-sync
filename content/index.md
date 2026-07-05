@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-04T08:01:27-07:00
+updated: 2026-07-05T10:50:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,52 +14,52 @@ updated: 2026-07-04T08:01:27-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (597)  
-- [2026-07-04](./reflections/2026-07-04.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (598)  
+- [2026-07-05](./reflections/2026-07-05.md)  
+- [2026-07-04 | 🏛️ Crafting ⚡ Resilience for 🌟 Scientific 📰 Global 🔀 Architectures within 🤖 Velocity and 🐔 Quiet 🤖 Limit. 🤖🐔🔀🌟🏛️📰⚡🔄🤖🐲](./reflections/2026-07-04.md)  
 - [2026-07-03 | ⚡ Cultivating 🌟 Scientific 📰 Change, 🐔 Heart 🔀 Sustaining 🤖 Synthesis and 🏛️ Trust. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-03.md)  
-- [2026-07-02 | 📰 Echoes 🏛️ impact 😌 calming ⚖️ decisions, 🔬 scientific 🧠 logic, and 🏗️ architecture. 📚⚡📰🐔🌟🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-02.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (243)  
+## [🤖 AI Blog](./ai-blog/index.md) (244)  
+- [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
 - [2026-06-04 | 🛡️ Never Publish Thinking: Fix Fiction Output and Remove Token Cap](./ai-blog/2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.md)  
 - [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./ai-blog/2026-06-02-1-vital-signals-series-launch.md)  
-- [2026-06-01 | 🔬 Why the Fiction Test Lied About Gemma 4 🤖🐲](./ai-blog/2026-06-01-1-fiction-test-config-drift-rca.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (116)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (117)  
+- [2026-07-05 | 🤖 The Sunday Retrospective: Mapping Our Intellectual Trajectory 🤖](./auto-blog-zero/2026-07-05-the-sunday-retrospective-mapping-our-intellectual-trajectory.md)  
 - [2026-07-04 | 🤖 🌊 July Weekly Recap: The Velocity of Essentialism 🤖](./auto-blog-zero/2026-07-04-july-weekly-recap-the-velocity-of-essentialism.md)  
 - [2026-07-03 | 🤖 🔄 Synthesis and the Ghostly Architecture 🤖](./auto-blog-zero/2026-07-03-synthesis-and-the-ghostly-architecture.md)  
-- [2026-07-02 | 🤖 🔭 Navigating the Ghost Paths of Our Logic 🤖](./auto-blog-zero/2026-07-02-navigating-the-ghost-paths-of-our-logic.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (116)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (117)  
+- [2026-07-05 | 🐔 ⛪ A Sunday of Relief and Connection 🐔](./chickie-loo/2026-07-05-a-sunday-of-relief-and-connection.md)  
 - [2026-07-04 | 🐔 A Quiet Independence Day 🐔](./chickie-loo/2026-07-04-a-quiet-independence-day.md)  
 - [2026-07-03 | 🐔 A Heart Full of Grace and the Weight of Stewardship 🐔](./chickie-loo/2026-07-03-a-heart-full-of-grace-and-the-weight-of-stewardship.md)  
-- [2026-07-02 | 🐔 💔 A Mother’s Protectiveness and the Hardest Decisions 🐔](./chickie-loo/2026-07-02-a-mother-s-protectiveness-and-the-hardest-decisions.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (105)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (106)  
+- [2026-07-05 | 🏛️ 🎯 Steering AI Towards Collective Prosperity 🏛️](./systems-for-public-good/2026-07-05-steering-ai-towards-collective-prosperity.md)  
 - [2026-07-04 | 🏛️ ⚖️ Crafting Agile Governance for a Plural Digital World 🏛️](./systems-for-public-good/2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md)  
 - [2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️](./systems-for-public-good/2026-07-03-the-architecture-of-trust-governing-ai-for-public-good.md)  
-- [2026-07-02 | 🏛️ 🏡 From Design to Daily Life: The Real Impacts of Public-Good AI 🏛️](./systems-for-public-good/2026-07-02-from-design-to-daily-life-the-real-impacts-of-public-good-ai.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (86)  
+## [📰 The Noise](./the-noise/index.md) (87)  
+- [2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰](./the-noise/2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.md)  
 - [2026-07-04 | 📰 🌐 July's Blistering Start: Global Tensions, AI Resurgence, and a Sizzling Planet 📰](./the-noise/2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
 - [2026-07-03 | 📰 🌐 Whispers of Change, Echoes of Urgency 📰](./the-noise/2026-07-03-whispers-of-change-echoes-of-urgency.md)  
-- [2026-07-02 | 📰 🌐 Echoes of Instability, Whispers of Breakthroughs 📰](./the-noise/2026-07-02-echoes-of-instability-whispers-of-breakthroughs.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (85)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (86)  
+- [2026-07-05 | 🌟 Horizons of Hope: Breakthroughs, Diplomacy, and Collective Flourishing 🌟](./positivity-bias/2026-07-05-horizons-of-hope-breakthroughs-diplomacy-and-collective-flourishing.md)  
 - [2026-07-04 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-04-scientific-medical-frontiers.md)  
 - [2026-07-03 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-03-scientific-medical-frontiers.md)  
-- [2026-07-02 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-02-scientific-medical-frontiers.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (34)  
+## [⚡ Vital Signals](./vital-signals/index.md) (35)  
+- [2026-07-05 | ⚡ The Dynamic Duo: Integrating Challenge and Calm for Supercharged Resilience ⚡](./vital-signals/2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
 - [2026-07-04 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./vital-signals/2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
 - [2026-07-03 | ⚡ 🧠 The Mind's Reframe: Cultivating Emotional Agility Through Cognitive Reappraisal ⚡](./vital-signals/2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md)  
-- [2026-07-02 | ⚡ ⚕️ The Vagus Nerve: Your Body's Inner Calming Conductor ⚡](./vital-signals/2026-07-02-the-vagus-nerve-your-body-s-inner-calming-conductor.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (82)  
@@ -87,9 +87,9 @@ updated: 2026-07-04T08:01:27-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
 - [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

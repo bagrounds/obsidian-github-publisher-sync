@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md) [⏭️](./2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
 # 2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰  
 ![the-noise-2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit](../the-noise-2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.jpg)  
   

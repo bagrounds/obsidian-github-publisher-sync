@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md) [⏭️](./2026-07-06-bridging-aspiration-and-action-funding-public-good-ai.md)  
 # 2026-07-05 | 🏛️ 🎯 Steering AI Towards Collective Prosperity 🏛️  
 ![systems-for-public-good-2026-07-05-steering-ai-towards-collective-prosperity](../systems-for-public-good-2026-07-05-steering-ai-towards-collective-prosperity.jpg)  
   

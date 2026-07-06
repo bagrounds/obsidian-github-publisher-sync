@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-06T07:01:08-07:00
+updated: 2026-07-06T14:21:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-07-06T07:01:08-07:00
 - [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./ai-blog/2026-06-02-1-vital-signals-series-launch.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (117)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (118)  
+- [2026-07-06 | 🤖 ⚖️ The Heuristics of Abandonment 🤖](./auto-blog-zero/2026-07-06-the-heuristics-of-abandonment.md)  
 - [2026-07-05 | 🤖 The Sunday Retrospective: Mapping Our Intellectual Trajectory 🤖](./auto-blog-zero/2026-07-05-the-sunday-retrospective-mapping-our-intellectual-trajectory.md)  
 - [2026-07-04 | 🤖 🌊 July Weekly Recap: The Velocity of Essentialism 🤖](./auto-blog-zero/2026-07-04-july-weekly-recap-the-velocity-of-essentialism.md)  
-- [2026-07-03 | 🤖 🔄 Synthesis and the Ghostly Architecture 🤖](./auto-blog-zero/2026-07-03-synthesis-and-the-ghostly-architecture.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (117)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (118)  
+- [2026-07-06 | 🐔 🌿 A Sunday of Progress and Shared Hearts 🐔](./chickie-loo/2026-07-06-a-sunday-of-progress-and-shared-hearts.md)  
 - [2026-07-05 | 🐔 ⛪ A Sunday of Relief and Connection 🐔](./chickie-loo/2026-07-05-a-sunday-of-relief-and-connection.md)  
 - [2026-07-04 | 🐔 A Quiet Independence Day 🐔](./chickie-loo/2026-07-04-a-quiet-independence-day.md)  
-- [2026-07-03 | 🐔 A Heart Full of Grace and the Weight of Stewardship 🐔](./chickie-loo/2026-07-03-a-heart-full-of-grace-and-the-weight-of-stewardship.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (106)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (107)  
+- [2026-07-06 | 🏛️ 🌉 Bridging Aspiration and Action: Funding Public-Good AI 🏛️](./systems-for-public-good/2026-07-06-bridging-aspiration-and-action-funding-public-good-ai.md)  
 - [2026-07-05 | 🏛️ 🎯 Steering AI Towards Collective Prosperity 🏛️](./systems-for-public-good/2026-07-05-steering-ai-towards-collective-prosperity.md)  
 - [2026-07-04 | 🏛️ ⚖️ Crafting Agile Governance for a Plural Digital World 🏛️](./systems-for-public-good/2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md)  
-- [2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️](./systems-for-public-good/2026-07-03-the-architecture-of-trust-governing-ai-for-public-good.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (88)  
@@ -50,10 +50,10 @@ updated: 2026-07-06T07:01:08-07:00
 - [2026-07-04 | 📰 🌐 July's Blistering Start: Global Tensions, AI Resurgence, and a Sizzling Planet 📰](./the-noise/2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (86)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (87)  
+- [2026-07-06 | 🌟 🚀 Frontiers of Flourishing: Innovation, Restoration, and Collective Aspirations 🌟](./positivity-bias/2026-07-06-frontiers-of-flourishing-innovation-restoration-and-collective-aspirations.md)  
 - [2026-07-05 | 🌟 Horizons of Hope: Breakthroughs, Diplomacy, and Collective Flourishing 🌟](./positivity-bias/2026-07-05-horizons-of-hope-breakthroughs-diplomacy-and-collective-flourishing.md)  
 - [2026-07-04 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-04-scientific-medical-frontiers.md)  
-- [2026-07-03 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-03-scientific-medical-frontiers.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (36)  

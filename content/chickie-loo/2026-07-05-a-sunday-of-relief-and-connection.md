@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-04-a-quiet-independence-day.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-04-a-quiet-independence-day.md) [⏭️](./2026-07-06-a-sunday-of-progress-and-shared-hearts.md)  
 # 2026-07-05 | 🐔 ⛪ A Sunday of Relief and Connection 🐔  
 ![chickie-loo-2026-07-05-a-sunday-of-relief-and-connection](../chickie-loo-2026-07-05-a-sunday-of-relief-and-connection.jpg)  
   

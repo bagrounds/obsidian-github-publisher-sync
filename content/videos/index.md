@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-06T14:21:24-07:00
+updated: 2026-07-06T16:11:04-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (885)  
+# 📺 Videos (886)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -726,6 +726,7 @@ updated: 2026-07-06T14:21:24-07:00
 - [⏱️💰📈 This simple time management system will make you a millionaire](./this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [⚖️🛠️📈 This Simple Tool for Unrigging the Economy Is Spreading Your Town Could Be Next](./this-simple-tool-for-unrigging-the-economy-is-spreading-your-town-could-be-next.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
+- [👽🚀✨ this strange habit SKYROCKETS your charisma](./this-strange-habit-skyrockets-your-charisma.md)  
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
 - [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./this-week-in-politics-explainer-january-20-2025.md)  

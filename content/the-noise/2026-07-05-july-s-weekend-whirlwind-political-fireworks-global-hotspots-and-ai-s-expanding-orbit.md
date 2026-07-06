@@ -12,6 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-07-05T00:00:00Z
 force_analyze_links: false
+updated: 2026-07-06T19:51:42
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md) [⏭️](./2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
 # 2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰  

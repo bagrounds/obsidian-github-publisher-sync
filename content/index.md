@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-05T10:50:52-07:00
+updated: 2026-07-06T07:01:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-05T10:50:52-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (598)  
-- [2026-07-05](./reflections/2026-07-05.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (599)  
+- [2026-07-06](./reflections/2026-07-06.md)  
+- [2026-07-05 | 🤖 Trajectory 🏛️ Steering 🌟 Horizons, ⚡ Integrating 📰 Global 🐔 Connection, 🔀 Clarity. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-05.md)  
 - [2026-07-04 | 🏛️ Crafting ⚡ Resilience for 🌟 Scientific 📰 Global 🔀 Architectures within 🤖 Velocity and 🐔 Quiet 🤖 Limit. 🤖🐔🔀🌟🏛️📰⚡🔄🤖🐲](./reflections/2026-07-04.md)  
-- [2026-07-03 | ⚡ Cultivating 🌟 Scientific 📰 Change, 🐔 Heart 🔀 Sustaining 🤖 Synthesis and 🏛️ Trust. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-03.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (244)  
@@ -44,10 +44,10 @@ updated: 2026-07-05T10:50:52-07:00
 - [2026-07-03 | 🏛️ The Architecture of Trust: Governing AI for Public Good 🏛️](./systems-for-public-good/2026-07-03-the-architecture-of-trust-governing-ai-for-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (87)  
+## [📰 The Noise](./the-noise/index.md) (88)  
+- [2026-07-06 | 📰 🌐 Geopolitical Chessboard and Shifting Sands 📰](./the-noise/2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
 - [2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰](./the-noise/2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.md)  
 - [2026-07-04 | 📰 🌐 July's Blistering Start: Global Tensions, AI Resurgence, and a Sizzling Planet 📰](./the-noise/2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
-- [2026-07-03 | 📰 🌐 Whispers of Change, Echoes of Urgency 📰](./the-noise/2026-07-03-whispers-of-change-echoes-of-urgency.md)  
   
   
 ## [🌟 Positivity Bias](./positivity-bias/index.md) (86)  
@@ -56,16 +56,16 @@ updated: 2026-07-05T10:50:52-07:00
 - [2026-07-03 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-03-scientific-medical-frontiers.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (35)  
+## [⚡ Vital Signals](./vital-signals/index.md) (36)  
+- [2026-07-06 | ⚡ 🎯 The Engine of Consistency: Dopamine, Habits, and Lasting Resilience ⚡](./vital-signals/2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience.md)  
 - [2026-07-05 | ⚡ The Dynamic Duo: Integrating Challenge and Calm for Supercharged Resilience ⚡](./vital-signals/2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
 - [2026-07-04 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./vital-signals/2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
-- [2026-07-03 | ⚡ 🧠 The Mind's Reframe: Cultivating Emotional Agility Through Cognitive Reappraisal ⚡](./vital-signals/2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (82)  
+## [🔀 Convergence](./convergence/index.md) (83)  
+- [2026-07-05 | 🔀 The Convergent Currents of Care and Clarity 🔀](./convergence/2026-07-05-the-convergent-currents-of-care-and-clarity.md)  
 - [2026-07-04 | 🔀 🪢 The Interwoven Architectures of Self-Sovereignty and Collective Flourishing 🔀](./convergence/2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing.md)  
 - [2026-07-03 | 🔀 ⚖️ The Calculus of Care: Sustaining Integrity Through Difficult Pruning 🔀](./convergence/2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  
-- [2026-07-02 | 🔀 👻 The Architecture of Absence: Learning from the Roads Not Taken 🔀](./convergence/2026-07-02-the-architecture-of-absence-learning-from-the-roads-not-taken.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-07-05T10:50:52-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
 - [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
 - [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

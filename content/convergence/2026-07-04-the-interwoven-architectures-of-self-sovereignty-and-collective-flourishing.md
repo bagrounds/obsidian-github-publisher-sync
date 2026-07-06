@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-04T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-05T13:43:05
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md) [⏭️](./2026-07-05-the-convergent-currents-of-care-and-clarity.md)  
 # 2026-07-04 | 🔀 🪢 The Interwoven Architectures of Self-Sovereignty and Collective Flourishing 🔀  
 ![convergence-2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing](../convergence-2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-05T10:50:52-07:00
+updated: 2026-07-06T07:01:08-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (35)  
+# ⚡ Vital Signals (36)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-06 | ⚡ 🎯 The Engine of Consistency: Dopamine, Habits, and Lasting Resilience ⚡](./2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience.md)  
 - [2026-07-05 | ⚡ The Dynamic Duo: Integrating Challenge and Calm for Supercharged Resilience ⚡](./2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
 - [2026-07-04 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
 - [2026-07-03 | ⚡ 🧠 The Mind's Reframe: Cultivating Emotional Agility Through Cognitive Reappraisal ⚡](./2026-07-03-the-mind-s-reframe-cultivating-emotional-agility-through-cognitive-reappraisal.md)  

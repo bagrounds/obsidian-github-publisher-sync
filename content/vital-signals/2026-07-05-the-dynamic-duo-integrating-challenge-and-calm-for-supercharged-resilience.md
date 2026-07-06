@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-07-05T00:00:00Z
 force_analyze_links: false
+updated: 2026-07-06T13:25:47
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md) [⏭️](./2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience.md)  
 # 2026-07-05 | ⚡ The Dynamic Duo: Integrating Challenge and Calm for Supercharged Resilience ⚡  
 ![vital-signals-2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience](../vital-signals-2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.jpg)  
   

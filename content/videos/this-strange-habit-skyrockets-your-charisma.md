@@ -9,6 +9,10 @@ Platform:
 Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/Em_jfpIFGQ8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👽🚀✨ this strange habit SKYROCKETS your charisma  
@@ -48,7 +52,7 @@ youtube: https://youtu.be/Em_jfpIFGQ8
   
 ### ↔️ Similar  
   
-* 🧠 Deep Work by Cal Newport explores how to cultivate the ability to focus without distraction on cognitively demanding tasks.  
+* 🧠 [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport explores how to cultivate the ability to focus without distraction on cognitively demanding tasks.  
 * 🧘 The Mind Illuminated by John Yates and Matthew Immergut provides a comprehensive, systematic guide to developing laser-like focus and mental clarity through meditation.  
   
 ### 🆚 Contrasting  
@@ -59,4 +63,4 @@ youtube: https://youtu.be/Em_jfpIFGQ8
 ### 🎨 Creatively Related  
   
 * 🎨 The Art of Looking by Lance Esplund discusses how to train the eye to truly see and appreciate art, which mirrors the concept of viewing every moment as a unique painting.  
-* 🎭 Thinking, Fast and Slow by Daniel Kahneman explains the two systems that drive the way we think, offering a foundational perspective on the cognitive processes mentioned in the video.
+* 🎭 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman explains the two systems that drive the way we think, offering a foundational perspective on the cognitive processes mentioned in the video.

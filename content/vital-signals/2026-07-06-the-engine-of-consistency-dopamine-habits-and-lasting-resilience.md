@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md) [⏭️](./2026-07-07-the-architecture-of-automaticity-designing-your-environment-for-effortless-habits.md)  
 # 2026-07-06 | ⚡ 🎯 The Engine of Consistency: Dopamine, Habits, and Lasting Resilience ⚡  
 ![vital-signals-2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience](../vital-signals-2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience.jpg)  
   

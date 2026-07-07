@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T14:37:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized schoolhouse icon at the center, rendered in muted, professional tones like slate blue and charcoal. The building is partially obscured by a series of translucent, overlapping geometric shapes in warning colors like amber and deep red, suggesting fragmentation and structural instability. Faint, abstract lines representing documents or policy papers are scattered and drifting away from the building, symbolizing the dismantling of federal oversight. The background is a clean, textured off-white, emphasizing a sense of academic gravity and systemic shift. The composition is balanced but conveys a sense of tension, transition, and complex change without using any text or literal symbols.
+updated: 2026-07-07T11:12:32
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](https://www.brookings.edu/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others)  
@@ -57,4 +58,12 @@ Project 2025's education proposals represent a significant and comprehensive shi
 * The emphasis on parental rights could lead to increased conflicts between parents and schools. 💥🤝  
 * The rollback of civil rights protections could create a hostile environment for LGBTQ+ students. 🏳️‍🌈💔  
   
-It's important to note that the implementation of these proposals would have far-reaching consequences for the American education system. 🇺🇸⚠️
+It's important to note that the implementation of these proposals would have far-reaching consequences for the American education system. 🇺🇸⚠️  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mq2hwetcoa24" data-bluesky-cid="bafyreiavyqg4qmxoff5accco4zpb6kiyfsjqc7hons2bdsxenzcu3cq4t4"><p>🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others  
+  
+#AI Q: 🏫 Should schools be local?  
+  
+🏛️ Federal Governance | 🏫 School Choice | ⚖️ Civil Rights | 👨‍  
+https://bagrounds.org/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mq2hwetcoa24?ref_src=embed">2026-07-07T11:12:48.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

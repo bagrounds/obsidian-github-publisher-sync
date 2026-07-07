@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-06T16:11:04-07:00
+updated: 2026-07-07T07:04:51-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (83)  
+# 🔀 Convergence (84)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-06 | 🔀 ⚖️ The Architecture of Deliberate Choice: Valuing the Unchosen and the Cultivated 🔀](./2026-07-06-the-architecture-of-deliberate-choice-valuing-the-unchosen-and-the-cultivated.md)  
 - [2026-07-05 | 🔀 The Convergent Currents of Care and Clarity 🔀](./2026-07-05-the-convergent-currents-of-care-and-clarity.md)  
 - [2026-07-04 | 🔀 🪢 The Interwoven Architectures of Self-Sovereignty and Collective Flourishing 🔀](./2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing.md)  
 - [2026-07-03 | 🔀 ⚖️ The Calculus of Care: Sustaining Integrity Through Difficult Pruning 🔀](./2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  

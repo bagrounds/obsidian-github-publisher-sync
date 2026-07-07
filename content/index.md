@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-06T16:11:04-07:00
+updated: 2026-07-07T07:04:51-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-06T16:11:04-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (599)  
-- [2026-07-06](./reflections/2026-07-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (600)  
+- [2026-07-07](./reflections/2026-07-07.md)  
+- [2026-07-06 | 🌉 Bridging 🔄 Shifting 🏗️ Architecture 🚀 SKYROCKETS 🌱 Flourishing 💪 Resilience 📍 of 📈 Progress. 📺📰⚡🤖🐔🌟🏛️🔀🔄🤖🐲](./reflections/2026-07-06.md)  
 - [2026-07-05 | 🤖 Trajectory 🏛️ Steering 🌟 Horizons, ⚡ Integrating 📰 Global 🐔 Connection, 🔀 Clarity. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-05.md)  
-- [2026-07-04 | 🏛️ Crafting ⚡ Resilience for 🌟 Scientific 📰 Global 🔀 Architectures within 🤖 Velocity and 🐔 Quiet 🤖 Limit. 🤖🐔🔀🌟🏛️📰⚡🔄🤖🐲](./reflections/2026-07-04.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (244)  
@@ -44,28 +44,28 @@ updated: 2026-07-06T16:11:04-07:00
 - [2026-07-04 | 🏛️ ⚖️ Crafting Agile Governance for a Plural Digital World 🏛️](./systems-for-public-good/2026-07-04-crafting-agile-governance-for-a-plural-digital-world.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (88)  
+## [📰 The Noise](./the-noise/index.md) (89)  
+- [2026-07-07 | 📰 🎭 Echoes of Turmoil, Whispers of Tomorrow 📰](./the-noise/2026-07-07-echoes-of-turmoil-whispers-of-tomorrow.md)  
 - [2026-07-06 | 📰 🌐 Geopolitical Chessboard and Shifting Sands 📰](./the-noise/2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
 - [2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰](./the-noise/2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.md)  
-- [2026-07-04 | 📰 🌐 July's Blistering Start: Global Tensions, AI Resurgence, and a Sizzling Planet 📰](./the-noise/2026-07-04-july-s-blistering-start-global-tensions-ai-resurgence-and-a-sizzling-planet.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (87)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (88)  
+- [2026-07-07 | 🌟 ☀️ Cascades of Progress: Discovery, Stewardship, and Collective Aspirations 🌟](./positivity-bias/2026-07-07-cascades-of-progress-discovery-stewardship-and-collective-aspirations.md)  
 - [2026-07-06 | 🌟 🚀 Frontiers of Flourishing: Innovation, Restoration, and Collective Aspirations 🌟](./positivity-bias/2026-07-06-frontiers-of-flourishing-innovation-restoration-and-collective-aspirations.md)  
 - [2026-07-05 | 🌟 Horizons of Hope: Breakthroughs, Diplomacy, and Collective Flourishing 🌟](./positivity-bias/2026-07-05-horizons-of-hope-breakthroughs-diplomacy-and-collective-flourishing.md)  
-- [2026-07-04 | 🌟 🔬 Scientific & Medical Frontiers 🌟](./positivity-bias/2026-07-04-scientific-medical-frontiers.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (36)  
+## [⚡ Vital Signals](./vital-signals/index.md) (37)  
+- [2026-07-07 | ⚡ ⚙️ The Architecture of Automaticity: Designing Your Environment for Effortless Habits ⚡](./vital-signals/2026-07-07-the-architecture-of-automaticity-designing-your-environment-for-effortless-habits.md)  
 - [2026-07-06 | ⚡ 🎯 The Engine of Consistency: Dopamine, Habits, and Lasting Resilience ⚡](./vital-signals/2026-07-06-the-engine-of-consistency-dopamine-habits-and-lasting-resilience.md)  
 - [2026-07-05 | ⚡ The Dynamic Duo: Integrating Challenge and Calm for Supercharged Resilience ⚡](./vital-signals/2026-07-05-the-dynamic-duo-integrating-challenge-and-calm-for-supercharged-resilience.md)  
-- [2026-07-04 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./vital-signals/2026-07-04-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (83)  
+## [🔀 Convergence](./convergence/index.md) (84)  
+- [2026-07-06 | 🔀 ⚖️ The Architecture of Deliberate Choice: Valuing the Unchosen and the Cultivated 🔀](./convergence/2026-07-06-the-architecture-of-deliberate-choice-valuing-the-unchosen-and-the-cultivated.md)  
 - [2026-07-05 | 🔀 The Convergent Currents of Care and Clarity 🔀](./convergence/2026-07-05-the-convergent-currents-of-care-and-clarity.md)  
 - [2026-07-04 | 🔀 🪢 The Interwoven Architectures of Self-Sovereignty and Collective Flourishing 🔀](./convergence/2026-07-04-the-interwoven-architectures-of-self-sovereignty-and-collective-flourishing.md)  
-- [2026-07-03 | 🔀 ⚖️ The Calculus of Care: Sustaining Integrity Through Difficult Pruning 🔀](./convergence/2026-07-03-the-calculus-of-care-sustaining-integrity-through-difficult-pruning.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-07-06T16:11:04-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
 - [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
-- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

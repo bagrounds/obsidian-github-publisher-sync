@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-07-07T07:04:51-07:00
+updated: 2026-07-08T07:47:57-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (89)  
+# 📰 The Noise (90)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-07-08 | 📰 🌐 Shifting Sands, Digital Horizons 📰](./2026-07-08-shifting-sands-digital-horizons.md)  
 - [2026-07-07 | 📰 🎭 Echoes of Turmoil, Whispers of Tomorrow 📰](./2026-07-07-echoes-of-turmoil-whispers-of-tomorrow.md)  
 - [2026-07-06 | 📰 🌐 Geopolitical Chessboard and Shifting Sands 📰](./2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
 - [2026-07-05 | 📰 🌐 July's Weekend Whirlwind: Political Fireworks, Global Hotspots, and AI's Expanding Orbit 📰](./2026-07-05-july-s-weekend-whirlwind-political-fireworks-global-hotspots-and-ai-s-expanding-orbit.md)  

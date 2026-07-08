@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-06-geopolitical-chessboard-and-shifting-sands.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-06-geopolitical-chessboard-and-shifting-sands.md) [⏭️](./2026-07-08-shifting-sands-digital-horizons.md)  
 # 2026-07-07 | 📰 🎭 Echoes of Turmoil, Whispers of Tomorrow 📰  
 ![the-noise-2026-07-07-echoes-of-turmoil-whispers-of-tomorrow](../the-noise-2026-07-07-echoes-of-turmoil-whispers-of-tomorrow.jpg)  
   

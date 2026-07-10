@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-09T08:31:48-07:00
+updated: 2026-07-10T12:24:47-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (886)  
+# 📺 Videos (887)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -819,6 +819,7 @@ updated: 2026-07-09T08:31:48-07:00
 - [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
+- [📈💎🧠 What I Learned From Being Around The Top 0.01%](./what-i-learned-from-being-around-the-top-0-01.md)  
 - [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./what-is-understanding-geoffrey-hinton-iaseai-2025.md)  
 - [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  

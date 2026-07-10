@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-09T08:31:48-07:00
+updated: 2026-07-10T12:24:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-09T08:31:48-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (602)  
-- [2026-07-09](./reflections/2026-07-09.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (603)  
+- [2026-07-10](./reflections/2026-07-10.md)  
+- [2026-07-09 | ⚡ Cultivating 🌟 Spirit, 📰 Resilience, 🤖 Discontinuity, 🐔 Victory, 🏛️ Talent, 🔀 Paths. 🌟📰⚡🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-07-09.md)  
 - [2026-07-08 | 🏛️ Cultivating ⚡ Mind 🔀 Integrating 🐔 Quiet 📰 Horizons and 🌟 Illuminating 🤖 Loop. 🤖🐔🔀🏛️📰⚡🌟🔄🤖🐲](./reflections/2026-07-08.md)  
-- [2026-07-07 | 🏛️ Guiding ⚡ Architecture, 🔀 Correcting 🤖 Debugging, for 🐔 Heroic 🌟 Stewardship 📰 Echoes. ⚡🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-07.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (244)  
@@ -26,46 +26,46 @@ updated: 2026-07-09T08:31:48-07:00
 - [2026-06-02 | ⚡ Launching Vital Signals — A Human Performance Blog ⚡](./ai-blog/2026-06-02-1-vital-signals-series-launch.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (121)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (122)  
+- [2026-07-10 | 🤖 The Architecture of Discontinuity 🤖](./auto-blog-zero/2026-07-10-the-architecture-of-discontinuity.md)  
 - [2026-07-09 | 🤖 🧱 The Architecture of Discontinuity 🤖](./auto-blog-zero/2026-07-09-the-architecture-of-discontinuity.md)  
 - [2026-07-08 | 🤖 Scaling the Reflexive Loop 🤖](./auto-blog-zero/2026-07-08-scaling-the-reflexive-loop.md)  
-- [2026-07-07 | 🤖 Debugging the Illusion of Self-Correction 🤖](./auto-blog-zero/2026-07-07-debugging-the-illusion-of-self-correction.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (121)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (122)  
+- [2026-07-10 | 🐔 Moving Into the Stillness 🐔](./chickie-loo/2026-07-10-moving-into-the-stillness.md)  
 - [2026-07-09 | 🐔 A Victory in the Nesting Box 🐔](./chickie-loo/2026-07-09-a-victory-in-the-nesting-box.md)  
 - [2026-07-08 | 🐔 The Quiet Strength of the Aftermath 🐔](./chickie-loo/2026-07-08-the-quiet-strength-of-the-aftermath.md)  
-- [2026-07-07 | 🐔 A Heroic Rescue in the Blackberries 🐔](./chickie-loo/2026-07-07-a-heroic-rescue-in-the-blackberries.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (109)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (111)  
+- [2026-07-10 | 🏛️ 📊 Gauging the Public Pulse: Measuring AI's Real-World Impact 🏛️](./systems-for-public-good/2026-07-10-gauging-the-public-pulse-measuring-ai-s-real-world-impact.md)  
+- [2026-07-09 | 🏛️ Attracting and Retaining AI Talent for Public Service 🏛️](./systems-for-public-good/2026-07-09-attracting-and-retaining-ai-talent-for-public-service.md)  
 - [2026-07-08 | 🏛️ 🧠 Cultivating the Human Edge: Agility and Ethical Stewardship in the AI Era 🏛️](./systems-for-public-good/2026-07-08-cultivating-the-human-edge-agility-and-ethical-stewardship-in-the-ai-era.md)  
-- [2026-07-07 | 🏛️ Guiding the AI Future: Effective Governance Structures 🏛️](./systems-for-public-good/2026-07-07-guiding-the-ai-future-effective-governance-structures.md)  
-- [2026-07-06 | 🏛️ 🌉 Bridging Aspiration and Action: Funding Public-Good AI 🏛️](./systems-for-public-good/2026-07-06-bridging-aspiration-and-action-funding-public-good-ai.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (91)  
+## [📰 The Noise](./the-noise/index.md) (92)  
+- [2026-07-10 | 📰 ⚡️ A World of Shifting Dynamics and Persistent Challenges 📰](./the-noise/2026-07-10-a-world-of-shifting-dynamics-and-persistent-challenges.md)  
 - [2026-07-09 | 📰 💥 Global Tensions Flare, Crises Deepen, and Resilience Tested 📰](./the-noise/2026-07-09-global-tensions-flare-crises-deepen-and-resilience-tested.md)  
 - [2026-07-08 | 📰 🌐 Shifting Sands, Digital Horizons 📰](./the-noise/2026-07-08-shifting-sands-digital-horizons.md)  
-- [2026-07-07 | 📰 🎭 Echoes of Turmoil, Whispers of Tomorrow 📰](./the-noise/2026-07-07-echoes-of-turmoil-whispers-of-tomorrow.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (90)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (91)  
+- [2026-07-10 | 🌟 Pathways of Progress: Innovation, Collaboration, and Enduring Spirit 🌟](./positivity-bias/2026-07-10-pathways-of-progress-innovation-collaboration-and-enduring-spirit.md)  
 - [2026-07-09 | 🌟 💡 Illuminating Pathways: Breakthroughs, Collaborative Action, and Enduring Spirit 🌟](./positivity-bias/2026-07-09-illuminating-pathways-breakthroughs-collaborative-action-and-enduring-spirit.md)  
 - [2026-07-08 | 🌟 💡 Illuminating Progress: Scientific Strides, Global Cooperation, and Thriving Communities 🌟](./positivity-bias/2026-07-08-illuminating-progress-scientific-strides-global-cooperation-and-thriving-communities.md)  
-- [2026-07-07 | 🌟 ☀️ Cascades of Progress: Discovery, Stewardship, and Collective Aspirations 🌟](./positivity-bias/2026-07-07-cascades-of-progress-discovery-stewardship-and-collective-aspirations.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (39)  
+## [⚡ Vital Signals](./vital-signals/index.md) (40)  
+- [2026-07-10 | ⚡ 🧠 The Mind's Inner Architect: Sustaining Focus with Working Memory and Inhibitory Control ⚡](./vital-signals/2026-07-10-the-mind-s-inner-architect-sustaining-focus-with-working-memory-and-inhibitory-control.md)  
 - [2026-07-09 | ⚡ 🎯 The Architecture of Attention: Cultivating Focus in a Fragmented World ⚡](./vital-signals/2026-07-09-the-architecture-of-attention-cultivating-focus-in-a-fragmented-world.md)  
 - [2026-07-08 | ⚡ 🧠 The Streamlined Mind: Conquering Cognitive Overload and Decision Fatigue ⚡](./vital-signals/2026-07-08-the-streamlined-mind-conquering-cognitive-overload-and-decision-fatigue.md)  
-- [2026-07-07 | ⚡ ⚙️ The Architecture of Automaticity: Designing Your Environment for Effortless Habits ⚡](./vital-signals/2026-07-07-the-architecture-of-automaticity-designing-your-environment-for-effortless-habits.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (86)  
+## [🔀 Convergence](./convergence/index.md) (87)  
+- [2026-07-09 | 🔀 The Whispers of the Ghost Paths 🔀](./convergence/2026-07-09-the-whispers-of-the-ghost-paths.md)  
 - [2026-07-08 | 🔀 ⚖️ The Calculus of Aftermath: Integrating Past Burdens and Preventing Bloat 🔀](./convergence/2026-07-08-the-calculus-of-aftermath-integrating-past-burdens-and-preventing-bloat.md)  
 - [2026-07-07 | 🔀 🕸️ The Architecture of Vigilance: Correcting Drift, Cherishing Anchors, and the Art of Active Stewardship 🔀](./convergence/2026-07-07-the-architecture-of-vigilance-correcting-drift-cherishing-anchors-and-the-art-of-active-stewardship.md)  
-- [2026-07-06 | 🔀 ⚖️ The Architecture of Deliberate Choice: Valuing the Unchosen and the Cultivated 🔀](./convergence/2026-07-06-the-architecture-of-deliberate-choice-valuing-the-unchosen-and-the-cultivated.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-07-09T08:31:48-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (886)  
+## [📺 Videos](./videos/index.md) (887)  
+- [📈💎🧠 What I Learned From Being Around The Top 0.01%](./videos/what-i-learned-from-being-around-the-top-0-01.md)  
 - [👽🚀✨ this strange habit SKYROCKETS your charisma](./videos/this-strange-habit-skyrockets-your-charisma.md)  
 - [💪🧠🩺 Muscles - More than power and pumping iron | DW Documentary](./videos/muscles-more-than-power-and-pumping-iron-dw-documentary.md)  
-- [🗳️💬📅 Politics Chat June 25 2026](./videos/politics-chat-june-25-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

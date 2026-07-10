@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-08-cultivating-the-human-edge-agility-and-ethical-stewardship-in-the-ai-era.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-08-cultivating-the-human-edge-agility-and-ethical-stewardship-in-the-ai-era.md) [⏭️](./2026-07-10-gauging-the-public-pulse-measuring-ai-s-real-world-impact.md)  
 # 2026-07-09 | 🏛️ Attracting and Retaining AI Talent for Public Service 🏛️  
 ![systems-for-public-good-2026-07-09-attracting-and-retaining-ai-talent-for-public-service](../systems-for-public-good-2026-07-09-attracting-and-retaining-ai-talent-for-public-service.jpg)  
   

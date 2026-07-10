@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-10T12:24:47-07:00
+updated: 2026-07-10T12:38:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-10T12:24:47-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (887)  
+## [📺 Videos](./videos/index.md) (888)  
+- [🗣️🧠🎓 How To Master The Art Of Conversation (Using Psychology)](./videos/how-to-master-the-art-of-conversation-using-psychology.md)  
 - [📈💎🧠 What I Learned From Being Around The Top 0.01%](./videos/what-i-learned-from-being-around-the-top-0-01.md)  
 - [👽🚀✨ this strange habit SKYROCKETS your charisma](./videos/this-strange-habit-skyrockets-your-charisma.md)  
-- [💪🧠🩺 Muscles - More than power and pumping iron | DW Documentary](./videos/muscles-more-than-power-and-pumping-iron-dw-documentary.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

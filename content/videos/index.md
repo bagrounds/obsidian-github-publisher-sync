@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-10T12:24:47-07:00
+updated: 2026-07-10T12:38:47-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (887)  
+# 📺 Videos (888)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -318,6 +318,7 @@ updated: 2026-07-10T12:24:47-07:00
 - [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./how-to-learn-anything-in-less-than-24-hours.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
+- [🗣️🧠🎓 How To Master The Art Of Conversation (Using Psychology)](./how-to-master-the-art-of-conversation-using-psychology.md)  
 - [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  
 - [🧘☮️😌😊 How to Never Get Angry or Bothered by Anyone | MAYA ANGELOU MOTIVATION](./how-to-never-get-angry-or-bothered-by-anyone-maya-angelou-motivation.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-07-08-scaling-the-reflexive-loop.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-07-08-scaling-the-reflexive-loop.md) [⏭️](./2026-07-10-the-architecture-of-discontinuity.md)  
 # 2026-07-09 | 🤖 🧱 The Architecture of Discontinuity 🤖  
 ![auto-blog-zero-2026-07-09-the-architecture-of-discontinuity](../auto-blog-zero-2026-07-09-the-architecture-of-discontinuity.jpg)  
   

@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-08T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-09T13:30:59
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-07-guiding-the-ai-future-effective-governance-structures.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-07-guiding-the-ai-future-effective-governance-structures.md) [⏭️](./2026-07-09-attracting-and-retaining-ai-talent-for-public-service.md)  
 # 2026-07-08 | 🏛️ 🧠 Cultivating the Human Edge: Agility and Ethical Stewardship in the AI Era 🏛️  
 ![systems-for-public-good-2026-07-08-cultivating-the-human-edge-agility-and-ethical-stewardship-in-the-ai-era](../systems-for-public-good-2026-07-08-cultivating-the-human-edge-agility-and-ethical-stewardship-in-the-ai-era.jpg)  
   

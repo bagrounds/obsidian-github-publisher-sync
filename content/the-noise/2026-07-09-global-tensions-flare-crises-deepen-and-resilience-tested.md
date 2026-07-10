@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-08-shifting-sands-digital-horizons.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-08-shifting-sands-digital-horizons.md) [⏭️](./2026-07-10-a-world-of-shifting-dynamics-and-persistent-challenges.md)  
 # 2026-07-09 | 📰 💥 Global Tensions Flare, Crises Deepen, and Resilience Tested 📰  
 ![the-noise-2026-07-09-global-tensions-flare-crises-deepen-and-resilience-tested](../the-noise-2026-07-09-global-tensions-flare-crises-deepen-and-resilience-tested.jpg)  
   

@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-08T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-09T11:10:18
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-07-the-architecture-of-vigilance-correcting-drift-cherishing-anchors-and-the-art-of-active-stewardship.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-07-the-architecture-of-vigilance-correcting-drift-cherishing-anchors-and-the-art-of-active-stewardship.md) [⏭️](./2026-07-09-the-whispers-of-the-ghost-paths.md)  
 # 2026-07-08 | 🔀 ⚖️ The Calculus of Aftermath: Integrating Past Burdens and Preventing Bloat 🔀  
 ![convergence-2026-07-08-the-calculus-of-aftermath-integrating-past-burdens-and-preventing-bloat](../convergence-2026-07-08-the-calculus-of-aftermath-integrating-past-burdens-and-preventing-bloat.jpg)  
   

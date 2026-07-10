@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-08-the-streamlined-mind-conquering-cognitive-overload-and-decision-fatigue.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-08-the-streamlined-mind-conquering-cognitive-overload-and-decision-fatigue.md) [⏭️](./2026-07-10-the-mind-s-inner-architect-sustaining-focus-with-working-memory-and-inhibitory-control.md)  
 # 2026-07-09 | ⚡ 🎯 The Architecture of Attention: Cultivating Focus in a Fragmented World ⚡  
 ![vital-signals-2026-07-09-the-architecture-of-attention-cultivating-focus-in-a-fragmented-world](../vital-signals-2026-07-09-the-architecture-of-attention-cultivating-focus-in-a-fragmented-world.jpg)  
   

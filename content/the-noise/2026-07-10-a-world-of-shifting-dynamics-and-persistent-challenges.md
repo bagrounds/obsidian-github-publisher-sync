@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-09-global-tensions-flare-crises-deepen-and-resilience-tested.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-09-global-tensions-flare-crises-deepen-and-resilience-tested.md) [⏭️](./2026-07-11-shifting-tides-emerging-powers.md)  
 # 2026-07-10 | 📰 ⚡️ A World of Shifting Dynamics and Persistent Challenges 📰  
 ![the-noise-2026-07-10-a-world-of-shifting-dynamics-and-persistent-challenges](../the-noise-2026-07-10-a-world-of-shifting-dynamics-and-persistent-challenges.jpg)  
   

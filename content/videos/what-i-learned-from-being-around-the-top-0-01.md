@@ -9,6 +9,10 @@ Platform:
 Channel: Daniel Priestley
 tags:
 youtube: https://youtu.be/fymfTFftN-g
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📈💎🧠 What I Learned From Being Around The Top 0.01%  
@@ -58,7 +62,7 @@ youtube: https://youtu.be/fymfTFftN-g
 ### 🆚 Contrasting  
   
 * 🆚 The Millionaire Next Door by Thomas J. Stanley explores the habits of the wealthy from a grounded, frugal perspective in depth.  
-* 🆚 Essentialism by Greg McKeown explores the value of focus and doing less but better in contrast to high-velocity scaling in depth.  
+* 🆚 [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown explores the value of focus and doing less but better in contrast to high-velocity scaling in depth.  
   
 ### 🎨 Creatively Related  
   

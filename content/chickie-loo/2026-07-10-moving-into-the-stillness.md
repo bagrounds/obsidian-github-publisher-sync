@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-09-a-victory-in-the-nesting-box.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-09-a-victory-in-the-nesting-box.md) [⏭️](./2026-07-11-a-week-of-victories-and-newfound-grace.md)  
 # 2026-07-10 | 🐔 Moving Into the Stillness 🐔  
 ![chickie-loo-2026-07-10-moving-into-the-stillness](../chickie-loo-2026-07-10-moving-into-the-stillness.jpg)  
   

@@ -9,6 +9,10 @@ Platform:
 Channel: Ryan Peterman
 tags:
 youtube: https://youtu.be/Iw65FD4MGgs
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚀💻🛠️ Creator of uv, ty, Ruff: How Software Engineering Is Changing | Charlie Marsh  
@@ -49,9 +53,9 @@ A: While agents can automate large portions of code translation, automated rewri
 ### 🆚 Contrasting  
   
 * The Mythical Man-Month by Frederick Brooks explores the human and organizational complexities of software engineering, providing a necessary counterpoint to the idea that automation alone solves scale and productivity challenges.  
-* Code Complete by Steve McConnell focuses on the craft of software construction, emphasizing human-centric design, readability, and maintainability, which remain vital in an era of AI-generated code.  
+* [✅💻 Code Complete](../books/code-complete.md) by Steve McConnell focuses on the craft of software construction, emphasizing human-centric design, readability, and maintainability, which remain vital in an era of AI-generated code.  
   
 ### 🎨 Creatively Related  
   
 * Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi explores the deep engagement of working with complex systems, which relates to the satisfaction found in manual, high-level problem-solving and architectural design.  
-* The Design of Everyday Things by Don Norman explains how user-centric design principles apply to all technical tools, reminding engineers that the ultimate goal of any tool is to be useful, discoverable, and understandable to humans.
+* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman explains how user-centric design principles apply to all technical tools, reminding engineers that the ultimate goal of any tool is to be useful, discoverable, and understandable to humans.

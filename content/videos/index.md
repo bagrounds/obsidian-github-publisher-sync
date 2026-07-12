@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-12T13:03:47-07:00
+updated: 2026-07-12T15:07:40-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (891)  
+# 📺 Videos (893)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -89,6 +89,7 @@ updated: 2026-07-12T13:03:47-07:00
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./an-analysis-of-modern-republicanism-explainer.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./andrej-karpathy-software-is-changing-again.md)  
+- [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
 - [🤖🚀📈 Andrew Ng: Building Faster with AI](./andrew-ng-building-faster-with-ai.md)  
 - [⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](./an-engineers-guide-to-preventing-burnout-jacquelyn-maccoon-tedxuoft.md)  
 - [🆕🧱🗣️ A New Theory of Compositionality](./a-new-theory-of-compositionality.md)  
@@ -168,6 +169,7 @@ updated: 2026-07-12T13:03:47-07:00
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./context-engineering-for-agents.md)  
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
+- [💩📉⚖️ Cory Doctorow Discusses Ensh*ttification with Lina M. Khan](./cory-doctorow-discusses-enshttification-with-lina-m-khan.md)  
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [💻🔔⚙️ Creator of C++: Bell Labs, Negative Overhead Abstraction, Mistakes | Bjarne Stroustrup](./creator-of-c-bell-labs-negative-overhead-abstraction-mistakes-bjarne-stroustrup.md)  
 - [🚀💻🛠️ Creator of uv, ty, Ruff: How Software Engineering Is Changing | Charlie Marsh](./creator-of-uv-ty-ruff-how-software-engineering-is-changing-charlie-marsh.md)  

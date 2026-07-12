@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-12T08:57:46-07:00
+updated: 2026-07-12T09:54:43-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (888)  
+# 📺 Videos (889)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -794,6 +794,7 @@ updated: 2026-07-12T08:57:46-07:00
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./vibe-coding-is-the-only-future-steve-yegge.md)  
 - [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
+- [📊⚙️💻 Walter Shewhart and the Philosophy of Software](./walter-shewhart-and-the-philosophy-of-software.md)  
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./war-with-iran-pbs-news-special-report.md)  

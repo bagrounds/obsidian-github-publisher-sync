@@ -5,11 +5,14 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-10T12:38:47-07:00
+updated: 2026-07-12T08:57:46-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (87)  
+# 🔀 Convergence (90)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-12 | 🔀 🪞 The Dialectic of Becoming: Architects of Internal Worlds and the Wisdom of Unchosen Paths 🔀](./2026-07-12-the-dialectic-of-becoming-architects-of-internal-worlds-and-the-wisdom-of-unchosen-paths.md)  
+- [2026-07-11 | 🔀 🪞 The Architecture of Discernment: Stress Testing Consensus and Cultivating Inner Ground 🔀](./2026-07-11-the-architecture-of-discernment-stress-testing-consensus-and-cultivating-inner-ground.md)  
+- [2026-07-10 | 🔀 The Crucible of Discontinuity: Stress Tests, Stillness, and the Integrity of Being 🔀](./2026-07-10-the-crucible-of-discontinuity-stress-tests-stillness-and-the-integrity-of-being.md)  
 - [2026-07-09 | 🔀 The Whispers of the Ghost Paths 🔀](./2026-07-09-the-whispers-of-the-ghost-paths.md)  
 - [2026-07-08 | 🔀 ⚖️ The Calculus of Aftermath: Integrating Past Burdens and Preventing Bloat 🔀](./2026-07-08-the-calculus-of-aftermath-integrating-past-burdens-and-preventing-bloat.md)  
 - [2026-07-07 | 🔀 🕸️ The Architecture of Vigilance: Correcting Drift, Cherishing Anchors, and the Art of Active Stewardship 🔀](./2026-07-07-the-architecture-of-vigilance-correcting-drift-cherishing-anchors-and-the-art-of-active-stewardship.md)  

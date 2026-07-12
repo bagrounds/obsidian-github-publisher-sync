@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-10-moving-into-the-stillness.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-10-moving-into-the-stillness.md) [⏭️](./2026-07-12-a-sunday-of-reflection-and-roots.md)  
 # 2026-07-11 | 🐔 A Week of Victories and Newfound Grace 🐔  
 ![chickie-loo-2026-07-11-a-week-of-victories-and-newfound-grace](../chickie-loo-2026-07-11-a-week-of-victories-and-newfound-grace.jpg)  
   

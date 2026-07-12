@@ -5,11 +5,13 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-10T12:38:47-07:00
+updated: 2026-07-12T08:57:46-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (40)  
+# ⚡ Vital Signals (42)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-12 | ⚡ 🗓️ The Resilience Engineer's Toolkit: Weekly Synthesis (July 6 - July 11, 2026) ⚡](./2026-07-12-the-resilience-engineer-s-toolkit-weekly-synthesis-july-6---july-11-2026.md)  
+- [2026-07-11 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./2026-07-11-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
 - [2026-07-10 | ⚡ 🧠 The Mind's Inner Architect: Sustaining Focus with Working Memory and Inhibitory Control ⚡](./2026-07-10-the-mind-s-inner-architect-sustaining-focus-with-working-memory-and-inhibitory-control.md)  
 - [2026-07-09 | ⚡ 🎯 The Architecture of Attention: Cultivating Focus in a Fragmented World ⚡](./2026-07-09-the-architecture-of-attention-cultivating-focus-in-a-fragmented-world.md)  
 - [2026-07-08 | ⚡ 🧠 The Streamlined Mind: Conquering Cognitive Overload and Decision Fatigue ⚡](./2026-07-08-the-streamlined-mind-conquering-cognitive-overload-and-decision-fatigue.md)  

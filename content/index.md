@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-12T11:36:00-07:00
+updated: 2026-07-12T13:03:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-12T11:36:00-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (890)  
+## [📺 Videos](./videos/index.md) (891)  
+- [📉🏢📉 Why Google, Apple & Big Tech Keep Making Everything Worse | Cory Doctorow and Trevor Noah](./videos/why-google-apple-big-tech-keep-making-everything-worse-cory-doctorow-and-trevor-noah.md)  
 - [🚀💻🛠️ Creator of uv, ty, Ruff: How Software Engineering Is Changing | Charlie Marsh](./videos/creator-of-uv-ty-ruff-how-software-engineering-is-changing-charlie-marsh.md)  
 - [📊⚙️💻 Walter Shewhart and the Philosophy of Software](./videos/walter-shewhart-and-the-philosophy-of-software.md)  
-- [🗣️🧠🎓 How To Master The Art Of Conversation (Using Psychology)](./videos/how-to-master-the-art-of-conversation-using-psychology.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

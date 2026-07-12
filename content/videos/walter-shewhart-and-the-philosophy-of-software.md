@@ -9,6 +9,10 @@ Platform:
 Channel: David Alan Grier
 tags:
 youtube: https://youtu.be/MAFhpCMDwEE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📊⚙️💻 Walter Shewhart and the Philosophy of Software  
@@ -52,4 +56,4 @@ A: Although axiomatic methods sought to prove code correctness through formal lo
 ### 🎨 Creatively Related  
   
 * 🏍️ Zen and the Art of Motorcycle Maintenance by Robert Pirsig offers a deep philosophical inquiry into the nature of quality and the synthesis of technology with human understanding.  
-* 🌌 The Structure of Scientific Revolutions by Thomas Kuhn explains how paradigms shift across disciplines, providing a framework to understand why software development methodologies evolved through distinct eras of thought.
+* 🌌 [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas Kuhn explains how paradigms shift across disciplines, providing a framework to understand why software development methodologies evolved through distinct eras of thought.

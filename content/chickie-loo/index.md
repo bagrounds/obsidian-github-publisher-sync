@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-07-10T12:38:47-07:00
+updated: 2026-07-12T08:57:46-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (122)  
+# 🐔 Chickie Loo (124)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-07-12 | 🐔 🌿 A Sunday of Reflection and Roots 🐔](./2026-07-12-a-sunday-of-reflection-and-roots.md)  
+- [2026-07-11 | 🐔 A Week of Victories and Newfound Grace 🐔](./2026-07-11-a-week-of-victories-and-newfound-grace.md)  
 - [2026-07-10 | 🐔 Moving Into the Stillness 🐔](./2026-07-10-moving-into-the-stillness.md)  
 - [2026-07-09 | 🐔 A Victory in the Nesting Box 🐔](./2026-07-09-a-victory-in-the-nesting-box.md)  
 - [2026-07-08 | 🐔 The Quiet Strength of the Aftermath 🐔](./2026-07-08-the-quiet-strength-of-the-aftermath.md)  

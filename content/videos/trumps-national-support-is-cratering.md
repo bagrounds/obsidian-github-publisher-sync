@@ -9,6 +9,10 @@ Platform:
 Channel: New York Times Podcasts
 tags:
 youtube: https://youtu.be/Uau9rVpTjPU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-13T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📉📉📉 Trump’s National Support Is Cratering  
@@ -51,9 +55,9 @@ A: The majority of these voters are not dissatisfied with the party's ideologica
 ### 🆚 Contrasting  
   
 * The Once and Future Liberal by Mark Lilla, published by HarperCollins, argues for a shift in political strategy that moves away from identity-based messaging to focus on broader, national commonality.  
-* The Righteous Mind by Jonathan Haidt, published by Pantheon, provides a psychological framework for understanding how different moral foundations drive political beliefs and actions.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt, published by Pantheon, provides a psychological framework for understanding how different moral foundations drive political beliefs and actions.  
   
 ### 🎨 Creatively Related  
   
 * The Age of Turbulence by Alan Greenspan, published by Penguin Press, offers an in-depth look at the intersection of economic policy and political stability.  
-* Thinking, Fast and Slow by Daniel Kahneman, published by Farrar, Straus and Giroux, explains the cognitive biases that influence voter behavior and public perception.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman, published by Farrar, Straus and Giroux, explains the cognitive biases that influence voter behavior and public perception.

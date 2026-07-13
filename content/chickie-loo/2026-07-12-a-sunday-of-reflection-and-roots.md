@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-12T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-13T09:19:31
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-11-a-week-of-victories-and-newfound-grace.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-11-a-week-of-victories-and-newfound-grace.md) [⏭️](./2026-07-13-the-quiet-rhythm-of-rest-and-reaping.md)  
 # 2026-07-12 | 🐔 🌿 A Sunday of Reflection and Roots 🐔  
 ![chickie-loo-2026-07-12-a-sunday-of-reflection-and-roots](../chickie-loo-2026-07-12-a-sunday-of-reflection-and-roots.jpg)  
   

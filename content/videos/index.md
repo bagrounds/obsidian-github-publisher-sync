@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-13T08:37:53-07:00
+updated: 2026-07-13T11:42:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (893)  
+# 📺 Videos (894)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -770,6 +770,7 @@ updated: 2026-07-13T08:37:53-07:00
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+- [📉📉📉 Trump’s National Support Is Cratering](./trumps-national-support-is-cratering.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [⚖️🖋️ Trump’s Pardons: Last Week Tonight with John Oliver (HBO)](./trumps-pardons-last-week-tonight-with-john-oliver-hbo.md)  
 - [🌀🍽️🔫📺 Trump Spins Dinner Shooting for Ballroom Agenda & Blitzer Is CNN's One-Shoed Hero | The Daily Show](./trump-spins-dinner-shooting-for-ballroom-agenda-blitzer-is-cnns-one-shoed-hero-the-daily-show.md)  

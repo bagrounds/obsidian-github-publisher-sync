@@ -9,6 +9,10 @@ Platform:
 Channel: ChimiChanga
 tags:
 youtube: https://youtu.be/IroPQ150F6c
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)  
@@ -51,7 +55,7 @@ youtube: https://youtu.be/IroPQ150F6c
 ### 🆚 Contrasting  
   
 * 📙 Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma et al. presents the classic object-oriented approach that favors abstraction over the hardware-centric view advocated in the video.  
-* 📕 Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin focuses on software maintainability and readability, often prioritizing developer ergonomics over raw hardware-level optimization.  
+* 📕 [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin focuses on software maintainability and readability, often prioritizing developer ergonomics over raw hardware-level optimization.  
   
 ### 🎨 Creatively Related  
   

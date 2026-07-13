@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-13T11:42:52-07:00
+updated: 2026-07-13T12:45:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-13T11:42:52-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (894)  
+## [📺 Videos](./videos/index.md) (895)  
+- [💻♾️🤔 Is There Anything Computers Can't Do - Computation as a Universal Concept (Lecture 1)](./videos/is-there-anything-computers-cant-do-computation-as-a-universal-concept-lecture-1.md)  
 - [📉📉📉 Trump’s National Support Is Cratering](./videos/trumps-national-support-is-cratering.md)  
 - [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./videos/andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
-- [💩📉⚖️ Cory Doctorow Discusses Ensh*ttification with Lina M. Khan](./videos/cory-doctorow-discusses-enshttification-with-lina-m-khan.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-12T15:07:40-07:00
+updated: 2026-07-13T07:47:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-12T15:07:40-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (605)  
-- [2026-07-12](./reflections/2026-07-12.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (606)  
+- [2026-07-13](./reflections/2026-07-13.md)  
+- [2026-07-12 | ⚙️ Engineering 🗣️ discusses 💻 Software 📱 Tech while 💡 applying 💾 Archive 🤔 Reflection on 🗺️ Paths to 🎶 Harmony, 💰 funding 🌐 Digital ✨ Synthesis. 📺🤖🐔🔀🌟🏛️📰⚡🔄🤖🐲](./reflections/2026-07-12.md)  
 - [2026-07-11 | 🔀 Cultivating 📰 Emerging ⚡ Resilience, 🌟 Horizons, 🐔 Grace, 🤖 Consensus, and 🏛️ Governance. 📰⚡🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-11.md)  
-- [2026-07-10 | 🧠 Learned 🏆 Master 🎯 Focus 🌟 Spirit 📰 Challenges 🧘 Stillness ⚖️ Integrity. 📺⚡🌟📰🐔🔀🔄🤖🐲](./reflections/2026-07-10.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (244)  
@@ -44,22 +44,22 @@ updated: 2026-07-12T15:07:40-07:00
 - [2026-07-10 | 🏛️ 📊 Gauging the Public Pulse: Measuring AI's Real-World Impact 🏛️](./systems-for-public-good/2026-07-10-gauging-the-public-pulse-measuring-ai-s-real-world-impact.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (94)  
+## [📰 The Noise](./the-noise/index.md) (95)  
+- [2026-07-13 | 📰 🌐 Global Tremors and Accelerating Frontiers 📰](./the-noise/2026-07-13-global-tremors-and-accelerating-frontiers.md)  
 - [2026-07-12 | 📰 🌐 Shifting Sands and Digital Revolutions 📰](./the-noise/2026-07-12-shifting-sands-and-digital-revolutions.md)  
 - [2026-07-11 | 📰 Shifting Tides, Emerging Powers 📰](./the-noise/2026-07-11-shifting-tides-emerging-powers.md)  
-- [2026-07-10 | 📰 ⚡️ A World of Shifting Dynamics and Persistent Challenges 📰](./the-noise/2026-07-10-a-world-of-shifting-dynamics-and-persistent-challenges.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (93)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (94)  
+- [2026-07-13 | 🌟 ✨ Progress Illuminates: Breakthroughs, Shared Stewardship, and Collective Aspirations 🌟](./positivity-bias/2026-07-13-progress-illuminates-breakthroughs-shared-stewardship-and-collective-aspirations.md)  
 - [2026-07-12 | 🌟 💡 The Unfolding Tapestry: Discovery, Regeneration, and Global Harmony 🌟](./positivity-bias/2026-07-12-the-unfolding-tapestry-discovery-regeneration-and-global-harmony.md)  
 - [2026-07-11 | 🌟 💡 Illuminating Progress: Science, Collaboration, and Green Horizons 🌟](./positivity-bias/2026-07-11-illuminating-progress-science-collaboration-and-green-horizons.md)  
-- [2026-07-10 | 🌟 Pathways of Progress: Innovation, Collaboration, and Enduring Spirit 🌟](./positivity-bias/2026-07-10-pathways-of-progress-innovation-collaboration-and-enduring-spirit.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (42)  
+## [⚡ Vital Signals](./vital-signals/index.md) (43)  
+- [2026-07-13 | ⚡ 🌊 The Undulating Mind: Riding Your Ultradian Waves for Sustained Focus ⚡](./vital-signals/2026-07-13-the-undulating-mind-riding-your-ultradian-waves-for-sustained-focus.md)  
 - [2026-07-12 | ⚡ 🗓️ The Resilience Engineer's Toolkit: Weekly Synthesis (July 6 - July 11, 2026) ⚡](./vital-signals/2026-07-12-the-resilience-engineer-s-toolkit-weekly-synthesis-july-6---july-11-2026.md)  
 - [2026-07-11 | ⚡ 🔥 The Adaptive Edge: Forging Resilience with Controlled Challenge ⚡](./vital-signals/2026-07-11-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
-- [2026-07-10 | ⚡ 🧠 The Mind's Inner Architect: Sustaining Focus with Working Memory and Inhibitory Control ⚡](./vital-signals/2026-07-10-the-mind-s-inner-architect-sustaining-focus-with-working-memory-and-inhibitory-control.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (90)  
@@ -75,8 +75,8 @@ updated: 2026-07-12T15:07:40-07:00
   
   
 ## [📺 Videos](./videos/index.md) (893)  
-- [💩📉⚖️ Cory Doctorow Discusses Ensh*ttification with Lina M. Khan](./videos/cory-doctorow-discusses-enshttification-with-lina-m-khan.md)  
 - [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./videos/andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
+- [💩📉⚖️ Cory Doctorow Discusses Ensh*ttification with Lina M. Khan](./videos/cory-doctorow-discusses-enshttification-with-lina-m-khan.md)  
 - [📉🏢📉 Why Google, Apple & Big Tech Keep Making Everything Worse | Cory Doctorow and Trevor Noah](./videos/why-google-apple-big-tech-keep-making-everything-worse-cory-doctorow-and-trevor-noah.md)  
   
   

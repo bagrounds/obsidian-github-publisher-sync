@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-11-the-adaptive-edge-forging-resilience-with-controlled-challenge.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-11-the-adaptive-edge-forging-resilience-with-controlled-challenge.md) [⏭️](./2026-07-13-the-undulating-mind-riding-your-ultradian-waves-for-sustained-focus.md)  
 # 2026-07-12 | ⚡ 🗓️ The Resilience Engineer's Toolkit: Weekly Synthesis (July 6 - July 11, 2026) ⚡  
 ![vital-signals-2026-07-12-the-resilience-engineer-s-toolkit-weekly-synthesis-july-6-july-11-2026](../vital-signals-2026-07-12-the-resilience-engineer-s-toolkit-weekly-synthesis-july-6-july-11-2026.jpg)  
   

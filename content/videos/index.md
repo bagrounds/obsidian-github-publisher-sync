@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-13T11:42:52-07:00
+updated: 2026-07-13T12:45:46-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (894)  
+# 📺 Videos (895)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -376,6 +376,7 @@ updated: 2026-07-13T11:42:52-07:00
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
 - [🗳️🔓🤔 Is it easy to steal an election?](./is-it-easy-to-steal-an-election.md)  
 - [🗳️🔄❌ Is It Time to Break the Two-Party System | The Ezra Klein Show](./is-it-time-to-break-the-two-party-system-the-ezra-klein-show.md)  
+- [💻♾️🤔 Is There Anything Computers Can't Do - Computation as a Universal Concept (Lecture 1)](./is-there-anything-computers-cant-do-computation-as-a-universal-concept-lecture-1.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./italys-radical-solution-to-extreme-inequality.md)  
 - [🐘🤝🗽 I Took AOC to Deep Trump Country. They Agreed On One Thing.](./i-took-aoc-to-deep-trump-country-they-agreed-on-one-thing.md)  

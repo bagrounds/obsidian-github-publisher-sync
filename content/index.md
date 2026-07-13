@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-13T08:37:53-07:00
+updated: 2026-07-13T11:42:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -38,10 +38,10 @@ updated: 2026-07-13T08:37:53-07:00
 - [2026-07-11 | 🐔 A Week of Victories and Newfound Grace 🐔](./chickie-loo/2026-07-11-a-week-of-victories-and-newfound-grace.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (113)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (114)  
+- [2026-07-13 | 🏛️ Steering the Ship: National Governance for Public AI Investment 🏛️](./systems-for-public-good/2026-07-13-steering-the-ship-national-governance-for-public-ai-investment.md)  
 - [2026-07-12 | 🏛️ Bridging Aspiration and Action: Funding Public-Good AI 🏛️](./systems-for-public-good/2026-07-12-bridging-aspiration-and-action-funding-public-good-ai.md)  
 - [2026-07-11 | 🏛️ 💰 Fueling the Watchdogs: Resourcing AI Governance for the Long Haul 🏛️](./systems-for-public-good/2026-07-11-fueling-the-watchdogs-resourcing-ai-governance-for-the-long-haul.md)  
-- [2026-07-10 | 🏛️ 📊 Gauging the Public Pulse: Measuring AI's Real-World Impact 🏛️](./systems-for-public-good/2026-07-10-gauging-the-public-pulse-measuring-ai-s-real-world-impact.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (95)  
@@ -74,10 +74,10 @@ updated: 2026-07-13T08:37:53-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (893)  
+## [📺 Videos](./videos/index.md) (894)  
+- [📉📉📉 Trump’s National Support Is Cratering](./videos/trumps-national-support-is-cratering.md)  
 - [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./videos/andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
 - [💩📉⚖️ Cory Doctorow Discusses Ensh*ttification with Lina M. Khan](./videos/cory-doctorow-discusses-enshttification-with-lina-m-khan.md)  
-- [📉🏢📉 Why Google, Apple & Big Tech Keep Making Everything Worse | Cory Doctorow and Trevor Noah](./videos/why-google-apple-big-tech-keep-making-everything-worse-cory-doctorow-and-trevor-noah.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

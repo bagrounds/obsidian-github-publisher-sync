@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-12-shifting-sands-and-digital-revolutions.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-12-shifting-sands-and-digital-revolutions.md) [⏭️](./2026-07-14-turbulent-straits-and-tech-tussles.md)  
 # 2026-07-13 | 📰 🌐 Global Tremors and Accelerating Frontiers 📰  
 ![the-noise-2026-07-13-global-tremors-and-accelerating-frontiers](../the-noise-2026-07-13-global-tremors-and-accelerating-frontiers.jpg)  
   

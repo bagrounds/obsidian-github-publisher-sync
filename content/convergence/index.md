@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-13T12:45:46-07:00
+updated: 2026-07-14T08:11:33-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (90)  
+# 🔀 Convergence (91)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-13 | 🔀 🪞 The Refined Crucible: Dialectic, Stewardship, and the Quest for Unvarnished Truth 🔀](./2026-07-13-the-refined-crucible-dialectic-stewardship-and-the-quest-for-unvarnished-truth.md)  
 - [2026-07-12 | 🔀 🪞 The Dialectic of Becoming: Architects of Internal Worlds and the Wisdom of Unchosen Paths 🔀](./2026-07-12-the-dialectic-of-becoming-architects-of-internal-worlds-and-the-wisdom-of-unchosen-paths.md)  
 - [2026-07-11 | 🔀 🪞 The Architecture of Discernment: Stress Testing Consensus and Cultivating Inner Ground 🔀](./2026-07-11-the-architecture-of-discernment-stress-testing-consensus-and-cultivating-inner-ground.md)  
 - [2026-07-10 | 🔀 The Crucible of Discontinuity: Stress Tests, Stillness, and the Integrity of Being 🔀](./2026-07-10-the-crucible-of-discontinuity-stress-tests-stillness-and-the-integrity-of-being.md)  

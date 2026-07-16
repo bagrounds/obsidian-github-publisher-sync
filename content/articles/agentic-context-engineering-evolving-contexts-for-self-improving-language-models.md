@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T07:15:16Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-tech, abstract visualization of a digital playbook or layered schematic evolving in real-time. The center features a glowing, intricate geometric core representing an AI agent, surrounded by floating, translucent data shards that are being meticulously aligned and organized by glowing light filaments. Some shards are being polished and integrated into the core, while others are structured into a clean, hierarchical grid, symbolizing the shift from chaotic raw data to refined, incremental knowledge. The aesthetic is clean, minimalist, and futuristic, using a color palette of deep navy, vibrant cyan, and electric gold. The composition suggests growth, iterative refinement, and systematic order, with no text or characters present.
+updated: 2026-07-16T01:52:01
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](https://www.arxiv.org/pdf/2510.04618)  
@@ -71,4 +72,12 @@ A: 🛠️ The exact prompts used for all three core components—the **ACE Gene
   
 ### Creatively Related Books  
 * [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🧩 LangChain is a premier orchestration framework; this book explores how to chain together tools, memory, and LLMs into complex workflows, providing the architectural environment in which context engineering methods like ACE are implemented and scaled.  
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 💡 While not an AI book, this work discusses how paradigms evolve through **reflection** and **revision**, offering a philosophical parallel to how ACE’s modular process *reflects* on failure and *revises* the agent’s core *playbook* (its current paradigm) to achieve self-improvement.
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 💡 While not an AI book, this work discusses how paradigms evolve through **reflection** and **revision**, offering a philosophical parallel to how ACE’s modular process *reflects* on failure and *revises* the agent’s core *playbook* (its current paradigm) to achieve self-improvement.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mqq4rzkjdn2r" data-bluesky-cid="bafyreigq54sq3qq77xfihaabzvv37x6dazzzuzhmnnlicq2bqjqb5ja72i"><p>🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models  
+  
+#AI Q: 🤖 Can AI improve?  
+  
+🧠 Memory Management | 📊 Performance Benchmarks | 🛠️ Task Automation |  
+https://bagrounds.org/articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mqq4rzkjdn2r?ref_src=embed">2026-07-16T01:52:05.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

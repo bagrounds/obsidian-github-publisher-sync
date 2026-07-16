@@ -5,11 +5,13 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-14T08:11:33-07:00
+updated: 2026-07-16T07:26:38-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (44)  
+# ⚡ Vital Signals (46)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-16 | ⚡ 😴 The Mind's Deep Clean: Sleep as Your Ultimate Performance Enhancer ⚡](./2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer.md)  
+- [2026-07-15 | ⚡ 🍽️ Fueling Your Inner Fire: Strategic Eating for Sustained Cognitive Power ⚡](./2026-07-15-fueling-your-inner-fire-strategic-eating-for-sustained-cognitive-power.md)  
 - [2026-07-14 | ⚡ 🔋 The Brain's Power Plants: How Cellular Energy Drives Your Focus ⚡](./2026-07-14-the-brain-s-power-plants-how-cellular-energy-drives-your-focus.md)  
 - [2026-07-13 | ⚡ 🌊 The Undulating Mind: Riding Your Ultradian Waves for Sustained Focus ⚡](./2026-07-13-the-undulating-mind-riding-your-ultradian-waves-for-sustained-focus.md)  
 - [2026-07-12 | ⚡ 🗓️ The Resilience Engineer's Toolkit: Weekly Synthesis (July 6 - July 11, 2026) ⚡](./2026-07-12-the-resilience-engineer-s-toolkit-weekly-synthesis-july-6---july-11-2026.md)  

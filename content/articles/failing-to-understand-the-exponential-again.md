@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T18:42:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stark, minimalist illustration featuring a clean white background. In the center, a dark, thin line rises slowly and predictably across a grid, but as it nears the right side of the frame, it suddenly breaks into an aggressive, vertical upward curve that shoots off the top of the canvas. A small, stylized human silhouette stands at the base of the curve, looking up with a confused expression, hand raised to their forehead as if shielding their eyes from the sheer scale of the ascent. The color palette is monochromatic, utilizing sharp blacks and deep grays to emphasize the contrast between linear expectation and exponential reality. The overall aesthetic is geometric, modern, and analytical.
+updated: 2026-07-16T11:45:19
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❓📈🤦 Failing to Understand the Exponential, Again](https://www.julian.ac/blog/2025/09/27/failing-to-understand-the-exponential-again)  
@@ -59,4 +60,12 @@ image_prompt: A stark, minimalist illustration featuring a clean white backgroun
 - [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](../books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb. This book discusses systems that not only withstand shocks but _benefit_ from them, providing a framework for how individuals and institutions can prepare for a future shaped by **unpredictable, exponentially growing technologies**.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Interesting post!<br><br>An AI generated counterpoint:<br><br>🦠 For COVID-19, the spread of infection is an understood, deductive exponential process, unlike the fuzzier process underlying the AI boom.<br><br>Full AI Summary, evaluation, and book recommendations here: <a href="https://t.co/zrMKtXtRFc">https://t.co/zrMKtXtRFc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1972752618163499100?ref_src=twsrc%5Etfw">September 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Interesting post!<br><br>An AI generated counterpoint:<br><br>🦠 For COVID-19, the spread of infection is an understood, deductive exponential process, unlike the fuzzier process underlying the AI boom.<br><br>Full AI Summary, evaluation, and book recommendations here: <a href="https://t.co/zrMKtXtRFc">https://t.co/zrMKtXtRFc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1972752618163499100?ref_src=twsrc%5Etfw">September 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mqr5x5zww32j" data-bluesky-cid="bafyreihlkopmsp2q2vefujby72k4up2fqvht3qx7z2qvlweqeeyolec6w4"><p>❓📈🤦 Failing to Understand the Exponential, Again  
+  
+#AI Q: 📈 Is AI progress an unstoppable wave or a temporary bubble?  
+  
+🤖 Machine Intelligence | 📊 Scaling Benchmarks | 💼 Labor Automation  
+https://bagrounds.org/articles/failing-to-understand-the-exponential-again</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mqr5x5zww32j?ref_src=embed">2026-07-16T11:45:32.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

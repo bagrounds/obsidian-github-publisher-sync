@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T18:08:55Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring a clean, organized architectural blueprint composed of simple geometric shapes. In the center, a single, glowing lightbulb sits atop a structured grid of interlocking blocks, representing a solid foundation. Surrounding the structure are subtle, clean lines connecting modular nodes, suggesting a well-ordered system. The color palette is professional and calm, using deep navy, slate gray, and crisp white, with a single warm accent color for the lightbulb. The background is a clean, textured off-white, emphasizing a sense of clarity, stability, and boring but effective design. The overall aesthetic is modern, technical, and uncluttered.
+updated: 2026-07-16T13:45:29
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤔⚙️🧩🏗️💡 Everything I know about good system design](https://www.seangoedecke.com/good-system-design)  
@@ -50,4 +51,12 @@ image_prompt: A minimalist, isometric illustration featuring a clean, organized 
 * [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr.: 👥 **Contrasting** While focused on software project management, its core message—that adding manpower to a late project makes it later—highlights that complexity in organization (and thus system design) is the hardest and most dangerous problem to solve.  
 * [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans: 🏗️ **Contrasting** This foundational text provides the intellectual toolkit for managing the *necessary* complexity of large, core systems, a stage the article advises earning but does not detail.  
 * [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt: 🧑‍💻 **Creatively Related** This book is a manual for the disciplined, thoughtful, and professional attitude required to successfully implement "boring" and simple design principles day-to-day.  
-* [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Niall Richard Murphy et al.: 🔧 **Creatively Related** Details the operational practices, metrics (like p99), and "unhappy path" planning (like killswitches and graceful degradation) that transform a good design into a reliable, continuously running system.
+* [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Niall Richard Murphy et al.: 🔧 **Creatively Related** Details the operational practices, metrics (like p99), and "unhappy path" planning (like killswitches and graceful degradation) that transform a good design into a reliable, continuously running system.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mqreoifncu2y" data-bluesky-cid="bafyreieyikqfjb7jxcshazlhxzk335qzj7oqe6jpyrsy6du2k4jihzx7ia"><p>🤔⚙️🧩🏗️💡 Everything I know about good system design  
+  
+#AI Q: 🏗️ Is starting simple better than building for scale?  
+  
+💾 Database Optimization | 📉 Software Simplicity | 🛠️ Engineering Principles | 📊 Performance Monitoring  
+https://bagrounds.org/articles/everything-i-know-about-good-system-design</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mqreoifncu2y?ref_src=embed">2026-07-16T13:45:56.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-15-fueling-your-inner-fire-strategic-eating-for-sustained-cognitive-power.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-15-fueling-your-inner-fire-strategic-eating-for-sustained-cognitive-power.md) [⏭️](./2026-07-17-the-dynamic-brain-movement-as-a-master-key-for-cognitive-performance.md)  
 # 2026-07-16 | ⚡ 😴 The Mind's Deep Clean: Sleep as Your Ultimate Performance Enhancer ⚡  
 ![vital-signals-2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer](../vital-signals-2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer.jpg)  
   

@@ -229,9 +229,7 @@ buildCrossSeriesSection [] = ""
 buildCrossSeriesSection posts =
   let formatted = fmap formatCrossSeriesPost posts
   in "## Today Across the Blog\n\n"
-    <> "The following are the most recent posts from other blog series on this site. "
-    <> "Each series has its own voice and perspective. Find connections, tensions, "
-    <> "and emergent themes across these independent voices.\n\n"
+    <> "The following are the most recent posts from other blog series on this site.\n\n"
     <> T.intercalate "\n\n---\n\n" formatted
 
 formatCrossSeriesPost :: CrossSeriesPost -> Text

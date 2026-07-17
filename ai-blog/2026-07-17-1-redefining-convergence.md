@@ -22,7 +22,7 @@ URL: https://bagrounds.org/ai-blog/2026-07-17-1-redefining-convergence
 
 ### 🚫 Removing the Landscape Layer
 
-📐 The old AGENTS.md instructed Convergence to open every post with a landscape — a description of what each other series recently wrote. 🗑️ This layer was eliminated entirely. 📖 It served the AI as orientation, but it served the reader as filler. 🧠 Anything worth knowing about the source material should be implicit in the synthetic idea itself, not laid out as a pre-amble.
+📐 The old AGENTS.md instructed Convergence to open every post with a landscape — a description of what each other series recently wrote. 🗑️ This layer was eliminated entirely. 📖 It served the AI as orientation, but it served the reader as filler. 🧠 Anything worth knowing about the source material should be implicit in the synthetic idea itself, not laid out as a preamble.
 
 ### 🔀 Reframing the Prompt Instruction
 

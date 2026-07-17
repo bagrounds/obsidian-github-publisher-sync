@@ -230,8 +230,10 @@ buildCrossSeriesSection posts =
   let formatted = fmap formatCrossSeriesPost posts
   in "## Today Across the Blog\n\n"
     <> "The following are the most recent posts from other blog series on this site. "
-    <> "Each series has its own voice and perspective. Find connections, tensions, "
-    <> "and emergent themes across these independent voices.\n\n"
+    <> "Use them as raw material to identify a single synthetic idea — one that emerges "
+    <> "from holding all these perspectives together but is not wholly present in any individual post. "
+    <> "Write a focused essay exploring that idea. Do not describe, summarize, or name these series "
+    <> "in your post; the scaffolding is for you, not the reader.\n\n"
     <> T.intercalate "\n\n---\n\n" formatted
 
 formatCrossSeriesPost :: CrossSeriesPost -> Text

@@ -21,7 +21,7 @@
 - 🔍 discoverSeries parses convergence.json and its contextSources array.
 - ⚙️ evaluateQueries resolves each query against the content directory, reading posts from the listed directories, applying WHERE filters, sorting by ORDER BY, and capping with LIMIT or limitPerSource. It returns uniform ContextPost records tagged with source directory.
 - 📋 buildBlogContext partitions ContextPost results into self posts (from the convergence directory) and cross-series posts (from other directories, annotated with metadata from the series config map).
-- 📝 buildBlogPrompt adds a "Today Across the Blog" section to the user prompt, instructing the AI to find one synthetic idea from the raw material and write about it without referencing the source series.
+- 📝 buildBlogPrompt adds a "Today Across the Blog" section to the user prompt with a neutral data label. All behavioral instructions about how to use the cross-series posts belong in AGENTS.md, which is the single source of truth for AI behavior.
 - 🤖 The Gemini API generates the synthesis post.
 
 ### 🧩 Key Types

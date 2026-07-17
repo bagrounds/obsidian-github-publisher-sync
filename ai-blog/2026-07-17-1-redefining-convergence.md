@@ -18,17 +18,21 @@ URL: https://bagrounds.org/ai-blog/2026-07-17-1-redefining-convergence
 
 ## 🔧 What Changed and Why
 
-🎯 The fix required changes at two levels: the system prompt that defines the AI's identity, and the prompt instruction that frames the cross-series context.
+🎯 The fix required changes at two levels: the system prompt that defines the AI's identity (AGENTS.md), and how the Haskell code presents cross-series data to the LLM.
 
 ### 🚫 Removing the Landscape Layer
 
 📐 The old AGENTS.md instructed Convergence to open every post with a landscape — a description of what each other series recently wrote. 🗑️ This layer was eliminated entirely. 📖 It served the AI as orientation, but it served the reader as filler. 🧠 Anything worth knowing about the source material should be implicit in the synthetic idea itself, not laid out as a preamble.
 
-### 🔀 Reframing the Prompt Instruction
+### 🔀 Fixing the Prompt Instruction — Then Fixing It Again
 
-📋 The buildCrossSeriesSection function in the Haskell codebase assembles the cross-series context that gets injected into the generation prompt. 🔤 Its previous instruction text asked the AI to "find connections, tensions, and emergent themes across these independent voices." 🆕 The new instruction reads: use these posts as raw material to identify a single synthetic idea — one that emerges from holding all these perspectives together but is not wholly present in any individual post. Write a focused essay exploring that idea. Do not describe, summarize, or name these series in your post; the scaffolding is for you, not the reader.
+📋 The buildCrossSeriesSection function in the Haskell codebase assembles the cross-series context that gets injected into the generation prompt. 🔤 Its original instruction text asked the AI to "find connections, tensions, and emergent themes across these independent voices." 🆕 The initial fix replaced that with: use these posts as raw material to identify a single synthetic idea — one that emerges from holding all these perspectives together but is not wholly present in any individual post. Write a focused essay exploring that idea. Do not describe, summarize, or name these series in your post; the scaffolding is for you, not the reader.
 
-🎯 The crucial addition is the explicit prohibition: do not name or describe the source blogs. 🔒 This constraint forces a higher standard of synthesis. 🌱 If an idea cannot be stated on its own terms, it is not yet a synthesized idea — it is just a comparison.
+🐛 That initial fix introduced a new problem: it created coupling between the Haskell source code and AGENTS.md. 🏗️ The system was designed so that AGENTS.md is the single source of truth for AI behavioral instructions. 📋 When instructions live in both places, future edits to AGENTS.md may conflict with instructions baked into the source code — silently, without any obvious reminder to update both.
+
+🔑 The right fix is to separate data labeling from behavioral instruction. 🧱 The Haskell function's only job is to label what the data is — it now reads simply "The following are the most recent posts from other blog series on this site." 🤖 Everything about how to use that data belongs in AGENTS.md, where it already lives in the mission and style sections.
+
+🎯 The crucial addition is the explicit prohibition in AGENTS.md: do not name or describe the source blogs. 🔒 This constraint forces a higher standard of synthesis. 🌱 If an idea cannot be stated on its own terms, it is not yet a synthesized idea — it is just a comparison.
 
 ### 📐 New Post Structure
 
@@ -50,8 +54,8 @@ URL: https://bagrounds.org/ai-blog/2026-07-17-1-redefining-convergence
 
 ## 📁 Files Changed
 
-- 🤖 convergence/AGENTS.md — rewritten to define a synthesis-first identity and explicitly prohibit referencing source blogs
-- 🔧 haskell/src/Automation/BlogPrompt.hs — updated buildCrossSeriesSection instruction text to frame cross-series posts as raw material for synthesis, not content to analyze
+- 🤖 convergence/AGENTS.md — rewritten to define a synthesis-first identity and explicitly prohibit referencing source blogs; this is the single source of truth for all behavioral instructions
+- 🔧 haskell/src/Automation/BlogPrompt.hs — stripped buildCrossSeriesSection down to a neutral data label; all behavioral instructions moved out of source code into AGENTS.md
 - 📋 specs/convergence.md — updated overview, post structure, and editorial standards to reflect the new approach
 
 ## 📚 Book Recommendations

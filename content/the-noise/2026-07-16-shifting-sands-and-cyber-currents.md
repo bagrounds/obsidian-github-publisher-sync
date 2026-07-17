@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-15-the-global-grid-under-strain.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-15-the-global-grid-under-strain.md) [⏭️](./2026-07-17-tumultuous-currents-and-accelerating-ai.md)  
 # 2026-07-16 | 📰 🌍 Shifting Sands and Cyber Currents 📰  
 ![the-noise-2026-07-16-shifting-sands-and-cyber-currents](../the-noise-2026-07-16-shifting-sands-and-cyber-currents.jpg)  
   

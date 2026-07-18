@@ -1,6 +1,7 @@
 module Automation.Series.Convergence (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
@@ -10,6 +11,7 @@ import Automation.ContextQuery (ContextQuery (..), OrderBy (..), Field (..), Sor
 import qualified Automation.Series.AutoBlogZero as AutoBlogZero
 import qualified Automation.Series.ChickieLoo as ChickieLoo
 import qualified Automation.Series.PositivityBias as PositivityBias
+import qualified Automation.Series.RelationshipMiniseries as RelationshipMiniseries
 import qualified Automation.Series.SystemsForPublicGood as SystemsForPublicGood
 import qualified Automation.Series.TheNoise as TheNoise
 import qualified Automation.Series.VitalSignals as VitalSignals
@@ -38,6 +40,7 @@ series = AutoBlogSeries
                               , seriesId ChickieLoo.series
                               , seriesId TheNoise.series
                               , seriesId PositivityBias.series
+                              , seriesId RelationshipMiniseries.series
                               , seriesId SystemsForPublicGood.series
                               , seriesId VitalSignals.series
                               ]
@@ -48,4 +51,5 @@ series = AutoBlogSeries
           }
       ]
   , searchGrounding = True
+  , dayOverrides    = Map.empty
   }

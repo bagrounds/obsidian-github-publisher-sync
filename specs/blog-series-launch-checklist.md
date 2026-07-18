@@ -17,6 +17,7 @@
 
 - [ ] **`haskell/src/Automation/Series.hs`** — Add a qualified import for the new module and include `{PascalCaseId}.series` in the `allSeries` list
 - [ ] **`haskell/automation.cabal`** — Add `Automation.Series.{PascalCaseId}` to `exposed-modules` in the library stanza
+- [ ] **Existing series** — Check whether any existing series (especially Convergence) should be updated to read posts from the new series. If Convergence cross-reads all other series, add the new series to its context query list.
 
 ### 📝 Required Documentation Updates
 

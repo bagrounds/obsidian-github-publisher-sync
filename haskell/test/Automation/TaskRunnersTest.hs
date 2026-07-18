@@ -41,6 +41,7 @@ mkTestSeries seriesIdValue = AutoBlogSeries
   , modelChain = Gemini.Gemini25Flash :| []
   , contextQueries = []
   , searchGrounding = False
+  , dayOverrides = Map.empty
   }
 
 tests :: TestTree

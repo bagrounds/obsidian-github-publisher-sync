@@ -89,6 +89,7 @@ library
     Automation.Series.ChickieLoo
     Automation.Series.Convergence
     Automation.Series.PositivityBias
+    Automation.Series.RelationshipMiniseries
     Automation.Series.SystemsForPublicGood
     Automation.Series.TheNoise
     Automation.Series.VitalSignals

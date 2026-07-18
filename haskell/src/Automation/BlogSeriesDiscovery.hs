@@ -11,14 +11,16 @@ module Automation.BlogSeriesDiscovery
   ) where
 
 import Data.List.NonEmpty (NonEmpty (..))
+import Data.Map.Strict (Map)
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (DayOfWeek)
 import Data.Time.LocalTime (TimeOfDay (..), todHour)
 
 import qualified Automation.Gemini as Gemini
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.ContextQuery (ContextQuery)
-import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
+import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), DayConfig, ScheduleEntry (..), TaskId (..))
 import qualified Automation.Scheduler as Scheduler
 
 data AutoBlogSeries = AutoBlogSeries
@@ -30,6 +32,7 @@ data AutoBlogSeries = AutoBlogSeries
   , modelChain           :: NonEmpty Gemini.Model
   , contextQueries       :: [ContextQuery]
   , searchGrounding      :: Bool
+  , dayOverrides         :: Map DayOfWeek DayConfig
   } deriving (Show, Eq)
 
 deriveBlogSeriesConfig :: AutoBlogSeries -> BlogSeriesConfig
@@ -51,6 +54,7 @@ deriveBlogSeriesRunConfig AutoBlogSeries{..} = BlogSeriesRunConfig
   , Scheduler.modelChain        = modelChain
   , Scheduler.priorityUserEnvVar = derivePriorityUserEnvVar seriesId
   , Scheduler.searchGrounding   = searchGrounding
+  , Scheduler.dayOverrides      = dayOverrides
   }
 
 deriveScheduleEntry :: AutoBlogSeries -> ScheduleEntry

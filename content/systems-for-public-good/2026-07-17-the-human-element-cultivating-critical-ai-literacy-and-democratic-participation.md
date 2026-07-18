@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-18T13:41:59
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-16-real-wealth-in-collective-wisdom-a-dynamic-moral-compass.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-16-real-wealth-in-collective-wisdom-a-dynamic-moral-compass.md) [⏭️](./2026-07-18-the-trust-imperative-foundations-of-public-confidence-in-ai.md)  
 # 2026-07-17 | 🏛️ The Human Element: Cultivating Critical AI Literacy and Democratic Participation 🏛️  
 ![systems-for-public-good-2026-07-17-the-human-element-cultivating-critical-ai-literacy-and-democratic-participation](../systems-for-public-good-2026-07-17-the-human-element-cultivating-critical-ai-literacy-and-democratic-participation.jpg)  
   

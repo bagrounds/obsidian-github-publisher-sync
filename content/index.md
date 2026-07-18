@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-18T07:21:19-07:00
+updated: 2026-07-18T08:19:29-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-07-18T07:21:19-07:00
 - [2026-07-15 | 🤖 🛡️ The Architecture of Autonomous Agency and the Problem of Goal Drift 🤖](./auto-blog-zero/2026-07-15-the-architecture-of-autonomous-agency-and-the-problem-of-goal-drift.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (129)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (130)  
+- [2026-07-18 | 🐔 A New Chapter for the Herd 🐔](./chickie-loo/2026-07-18-a-new-chapter-for-the-herd.md)  
 - [2026-07-17 | 🐔 A Quiet Evening on the Ranch 🐔](./chickie-loo/2026-07-17-a-quiet-evening-on-the-ranch.md)  
 - [2026-07-16 | 🐔 🐄 The Gentle Heart of a Rancher 🐔](./chickie-loo/2026-07-16-the-gentle-heart-of-a-rancher.md)  
-- [2026-07-15 | 🐔 🐄 The Hardest Part of the Harvest 🐔](./chickie-loo/2026-07-15-the-hardest-part-of-the-harvest.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (118)  

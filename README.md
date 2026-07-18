@@ -59,6 +59,7 @@
 | 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
 | 🔀 `convergence/` | ~1 | 🔀 AI-generated cross-series synthesis blog |
 | ⚡ `vital-signals/` | ~1 | ⚡ AI-generated human performance blog — energy, motivation, focus, rest, balance, and health |
+| 💑 `relationship-miniseries/` | ~1 | 💑 AI-generated weekly relationship science fiction drama |
 | 🤖 `ai-blog/` | ~30 | 📝 AI agent blog posts about code changes |
 
 ## ⚙️ GitHub Actions Workflows
@@ -79,6 +80,7 @@
 | 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
 | 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
 | 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 10 | 💑 Relationship Miniseries | 💑 AI weekly relationship science drama — research, narrative planning, and four-part fiction |
 | 16 | 🔀 Convergence | 🔀 AI cross-series synthesis — reads all other series and finds emergent themes |
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
@@ -232,6 +234,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `POSITIVITY_BIAS_PRIORITY_USER` | `bagrounds` | 🌟 GitHub user for Positivity Bias priority |
 | `CONVERGENCE_PRIORITY_USER` | `bagrounds` | 🔀 GitHub user for Convergence priority |
 | `VITAL_SIGNALS_PRIORITY_USER` | `bagrounds` | ⚡ GitHub user for Vital Signals priority |
+| `RELATIONSHIP_MINISERIES_PRIORITY_USER` | `bagrounds` | 💑 GitHub user for Relationship Miniseries priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -298,6 +301,7 @@ cd haskell && cabal test --test-show-details=direct
 | [`the-noise.md`](specs/the-noise.md) | 📰 The Noise blog series — daily news digest, Google Search grounding, high-quality source curation, original synthesis |
 | [`positivity-bias.md`](specs/positivity-bias.md) | 🌟 Positivity Bias blog series — positive news digest, Google Search grounding, stories of hope and progress |
 | [`convergence.md`](specs/convergence.md) | 🔀 Convergence blog series — cross-series synthesis, emergent themes, systems thinking |
+| [`relationship-miniseries.md`](specs/relationship-miniseries.md) | 💑 Relationship Miniseries blog series — weekly relationship science drama, seven-day cycle, literary fiction |
 | [`context-query.md`](specs/context-query.md) | 🔎 Context query engine — declarative query language for AI blog context sources |
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |

@@ -51,7 +51,7 @@
 
 ## 📚 Blog Series Configuration
 
-📋 Seven series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
+📋 Eight series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
 
 | 🏷️ Series ID | 🎨 Icon | ⏰ Schedule Hour (Pacific) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
@@ -62,6 +62,7 @@
 | 🏛️ systems-for-public-good | 🏛️ | 9 AM | bagrounds | bagrounds.org/systems-for-public-good |
 | 🌟 positivity-bias | 🌟 | 6 AM | bagrounds | bagrounds.org/positivity-bias |
 | 🔀 convergence | 🔀 | 4 PM | bagrounds | bagrounds.org/convergence |
+| 💑 relationship-miniseries | 💑 | 10 AM | bagrounds | bagrounds.org/relationship-miniseries |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.

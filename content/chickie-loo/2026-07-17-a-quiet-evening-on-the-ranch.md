@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-18T09:40:06
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-16-the-gentle-heart-of-a-rancher.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-16-the-gentle-heart-of-a-rancher.md) [⏭️](./2026-07-18-a-new-chapter-for-the-herd.md)  
 # 2026-07-17 | 🐔 A Quiet Evening on the Ranch 🐔  
 ![chickie-loo-2026-07-17-a-quiet-evening-on-the-ranch](../chickie-loo-2026-07-17-a-quiet-evening-on-the-ranch.jpg)  
   

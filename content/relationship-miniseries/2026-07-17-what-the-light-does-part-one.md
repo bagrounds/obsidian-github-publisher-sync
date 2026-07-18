@@ -9,6 +9,10 @@ tags:
 image_date: 2026-07-18T01:50:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A sun-drenched, minimalist living room during the early morning. A single, sharp beam of golden light cuts across the room, illuminating a patch of wood grain on a coffee table with a warm, ethereal glow. In the background, out of focus, two figures are silhouetted: a woman standing by a kitchen counter and a man seated on a couch, both positioned in a way that suggests a quiet, domestic atmosphere. The composition emphasizes the physical distance between them, with the bright, focal point of the light on the table acting as a bridge that is currently unshared. The color palette is composed of soft morning neutrals—pale creams, warm woods, and long, soft shadows."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [💑 Relationship Miniseries](./index.md)  
 # 2026-07-17 | 💑 What the Light Does — Part One 💑  

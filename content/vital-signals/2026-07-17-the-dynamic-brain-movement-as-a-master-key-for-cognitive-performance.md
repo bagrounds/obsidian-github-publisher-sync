@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer.md) [⏭️](./2026-07-18-the-unseen-current-how-hydration-fuels-your-brain-and-body.md)  
 # 2026-07-17 | ⚡ 🏃‍♀️ The Dynamic Brain: Movement as a Master Key for Cognitive Performance ⚡  
 ![vital-signals-2026-07-17-the-dynamic-brain-movement-as-a-master-key-for-cognitive-performance](../vital-signals-2026-07-17-the-dynamic-brain-movement-as-a-master-key-for-cognitive-performance.jpg)  
   

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md) [⏭️](./2026-07-17-2-relationship-miniseries-launch.md)  
 # 2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖  
 ![ai-blog-2026-07-17-1-redefining-convergence](../ai-blog-2026-07-17-1-redefining-convergence.jpg)  
   

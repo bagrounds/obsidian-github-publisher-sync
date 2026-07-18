@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-17T18:08:22-07:00
+updated: 2026-07-17T18:56:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-07-17T18:08:22-07:00
 - [2026-07-15 | ⚡ Fueling 📰 Global 🌟 Progress, 🔀 Navigating 🤖 Drift, 🏛️ Gauging 🐔 Harvest. ⚡📰🐔🌟🤖🏛️🔀🔄🤖🐲](./reflections/2026-07-15.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (245)  
+## [🤖 AI Blog](./ai-blog/index.md) (246)  
+- [2026-07-17 | 💑 Launching the Relationship Miniseries 🤖](./ai-blog/2026-07-17-2-relationship-miniseries-launch.md)  
 - [2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖](./ai-blog/2026-07-17-1-redefining-convergence.md)  
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
-- [2026-06-04 | 🛡️ Never Publish Thinking: Fix Fiction Output and Remove Token Cap](./ai-blog/2026-06-04-1-fix-fiction-thinking-leak-and-remove-output-cap.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (129)  
@@ -62,10 +62,10 @@ updated: 2026-07-17T18:08:22-07:00
 - [2026-07-15 | ⚡ 🍽️ Fueling Your Inner Fire: Strategic Eating for Sustained Cognitive Power ⚡](./vital-signals/2026-07-15-fueling-your-inner-fire-strategic-eating-for-sustained-cognitive-power.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (94)  
+## [🔀 Convergence](./convergence/index.md) (95)  
+- [2026-07-17 | 🔀 ledger: The Deeper Ledger: How Unseen Anchors and Micro-Responses Shape Systemic Integrity 🔀](./convergence/2026-07-17-ledger-the-deeper-ledger-how-unseen-anchors-and-micro-responses-shape-systemic-integrity.md)  
 - [2026-07-16 | 🔀 The Echoes of Discarded Paths and the Strength of Sanctuary 🔀](./convergence/2026-07-16-the-echoes-of-discarded-paths-and-the-strength-of-sanctuary.md)  
 - [2026-07-15 | 🔀 🪞 The Ethical Algorithms of Stewardship: Navigating Drift and Deep Purpose 🔀](./convergence/2026-07-15-the-ethical-algorithms-of-stewardship-navigating-drift-and-deep-purpose.md)  
-- [2026-07-14 | 🔀 🪞 The Architecture of Collaborative Truth and Productive Pauses 🔀](./convergence/2026-07-14-the-architecture-of-collaborative-truth-and-productive-pauses.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

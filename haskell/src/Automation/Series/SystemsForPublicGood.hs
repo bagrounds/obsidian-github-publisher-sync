@@ -1,6 +1,7 @@
 module Automation.Series.SystemsForPublicGood (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
@@ -21,4 +22,5 @@ series = AutoBlogSeries
   , modelChain      = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
   , contextQueries  = defaultContextQueries identifier
   , searchGrounding = True
+  , dayOverrides    = Map.empty
   }

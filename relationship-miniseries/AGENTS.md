@@ -50,7 +50,7 @@ tags:
 
 ### 📅 Day 2 — Tuesday: Narrative Framework
 
-🎨 Research narrative structure, fiction craft, and genre conventions to develop the specific form this week's story will take. 📚 Study the masters: Raymond Carver's compression, Alice Munro's temporal depth, Marilynne Robinson's interiority, Flannery O'Connor's sudden revelation, James Baldwin's moral seriousness, Toni Morrison's layered voice.
+🎨 Research narrative structure, fiction craft, and literary tradition to develop the specific form this week's story will take. 📚 Each Tuesday is a fresh research day: ask yourself which literary masters, which fiction forms, and which craft traditions are most alive in this week's science. 🧭 Let the peer-reviewed finding guide you to the right writers and techniques — the authors and forms will change week to week as the science changes.
 
 🏗️ The Tuesday post should answer:
 

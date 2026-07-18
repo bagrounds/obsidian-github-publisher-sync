@@ -1,6 +1,7 @@
 module Automation.Series.ChickieLoo (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
@@ -21,4 +22,5 @@ series = AutoBlogSeries
   , modelChain      = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
   , contextQueries  = defaultContextQueries identifier
   , searchGrounding = False
+  , dayOverrides    = Map.empty
   }

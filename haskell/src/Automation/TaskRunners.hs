@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
+import Data.Time (Day, dayOfWeek, defaultTimeLocale, parseTimeM, getCurrentTime)
 
 import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import qualified Automation.AiFiction as AiFiction
@@ -159,7 +159,12 @@ runBlogSeries context seriesMap runConfigs seriesId = do
     (Nothing, True) -> pure ()
     _ -> do
       envModel <- lookupEnvText "BLOG_GEMINI_MODEL"
-      let models = Gemini.overrideModelChain envModel (Scheduler.modelChain runConfig)
+      let todayDayOfWeek = dayOfWeek today
+          (effectiveModelChain, effectiveGrounding) =
+            case Map.lookup todayDayOfWeek (Scheduler.dayOverrides runConfig) of
+              Just dayConfig -> (Scheduler.dayModelChain dayConfig, Scheduler.daySearchGrounding dayConfig)
+              Nothing        -> (Scheduler.modelChain runConfig, Scheduler.searchGrounding runConfig)
+          models = Gemini.overrideModelChain envModel effectiveModelChain
 
       priorityUser <- lookupEnvText (T.unpack (Scheduler.priorityUserEnvVar runConfig))
 
@@ -173,7 +178,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               genConfig = Gemini.defaultGenerationConfig
                 { Gemini.temperature = 0.9, Gemini.maxOutputTokens = Just 8192
-                , Gemini.searchGrounding = Scheduler.searchGrounding runConfig
+                , Gemini.searchGrounding = effectiveGrounding
                 }
 
           result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
@@ -208,7 +213,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       maybeSourcesSection = Gemini.formatGroundingSources groundingSources
                       bodyWithSig = appendModelSignature body usedModel
                   if null groundingSources
-                    then when (Scheduler.searchGrounding runConfig) $
+                    then when effectiveGrounding $
                       logMessage $ "  ⚠️  Grounding was requested but " <> usedModel <> " returned no sources"
                     else logMessage $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDirectory

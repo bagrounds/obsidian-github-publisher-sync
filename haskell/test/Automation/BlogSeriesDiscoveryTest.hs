@@ -1,6 +1,7 @@
 module Automation.BlogSeriesDiscoveryTest (tests) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.Map.Strict as Map
 import qualified Data.Text as T
 import Data.Time.LocalTime (TimeOfDay (..))
 import Test.Tasty (TestTree, testGroup)
@@ -78,6 +79,10 @@ derivationTests = testGroup "derivation functions"
   , testCase "deriveBlogSeriesRunConfig passes searchGrounding true when set" $ do
       let config = deriveBlogSeriesRunConfig sampleSeries { searchGrounding = True }
       Scheduler.searchGrounding config @?= True
+
+  , testCase "deriveBlogSeriesRunConfig passes dayOverrides through" $ do
+      let config = deriveBlogSeriesRunConfig sampleSeries
+      Scheduler.dayOverrides config @?= Map.empty
 
   , testCase "deriveScheduleEntry sets correct task ID" $ do
       let entry = deriveScheduleEntry sampleSeries
@@ -159,6 +164,7 @@ sampleSeries = AutoBlogSeries
   , modelChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
   , contextQueries = []
   , searchGrounding = False
+  , dayOverrides = Map.empty
   }
 
 genSeriesId :: QC.Gen T.Text
@@ -186,4 +192,5 @@ genAutoBlogSeries = do
     , modelChain = Gemini.Gemini25Flash :| []
     , contextQueries = contextQueriesValue
     , searchGrounding = searchGroundingValue
+    , dayOverrides = Map.empty
     }

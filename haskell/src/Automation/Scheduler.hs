@@ -2,6 +2,7 @@ module Automation.Scheduler
   ( TaskId (..)
   , ScheduleEntry (..)
   , BlogSeriesRunConfig (..)
+  , DayConfig (..)
   , staticSchedule
   , buildSchedule
   , buildBlogSeriesRunConfigs
@@ -26,7 +27,7 @@ import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (getCurrentTime)
+import Data.Time (DayOfWeek, getCurrentTime)
 import GHC.Generics (Generic)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath (takeExtension, (</>))
@@ -50,11 +51,17 @@ data ScheduleEntry = ScheduleEntry
   , atOrAfter :: Bool
   } deriving (Generic, Show, Eq)
 
+data DayConfig = DayConfig
+  { dayModelChain      :: NonEmpty Gemini.Model
+  , daySearchGrounding :: Bool
+  } deriving (Generic, Show, Eq)
+
 data BlogSeriesRunConfig = BlogSeriesRunConfig
   { seriesId          :: Text
   , modelChain        :: NonEmpty Gemini.Model
   , priorityUserEnvVar :: Text
   , searchGrounding   :: Bool
+  , dayOverrides      :: Map DayOfWeek DayConfig
   } deriving (Generic, Show, Eq)
 
 taskIdToText :: TaskId -> Text

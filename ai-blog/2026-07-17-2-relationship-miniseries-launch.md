@@ -22,7 +22,7 @@ URL: https://bagrounds.org/ai-blog/2026-07-17-2-relationship-miniseries-launch
 
 ## 📚 Learning from the Masters
 
-✍️ The AGENTS.md for this series explicitly names the literary traditions it draws from: Raymond Carver's compression and subtext, Alice Munro's temporal depth, Marilynne Robinson's interiority, James Baldwin's moral seriousness, and Toni Morrison's layered voice. 🎓 These are not decorative references — they are craft commitments that the series is held to every week.
+✍️ Tuesday in this series is a fresh literature research day — not a fixed curriculum. 🔍 Each week, the agent researches whatever literary masters and fiction traditions are most alive in that week's science. 🎓 Maybe one week calls for Carver's compression; another might need Morrison's layered voice or Woolf's interiority. 🔄 The writers change as the science changes — no two weeks are the same.
 
 🚫 The AI is instructed to never lecture, never explain what the reader should feel, and never use the science as a label for the drama. 🌊 The science should be invisible — felt, not described.
 
@@ -55,6 +55,13 @@ URL: https://bagrounds.org/ai-blog/2026-07-17-2-relationship-miniseries-launch
 - 📝 Updated `README.md` with content organization row, scheduled tasks row, configuration variable, and specs link
 - 📝 Updated `specs/blog-generation.md` with series count and configuration table row
 - 📝 Updated `specs/scheduled-tasks.md` with data flow entry, schedule table row, and model chain table row
+- 🔀 Updated Convergence to include the Relationship Miniseries in its cross-series context
+
+## ⚙️ Per-Day Model Grounding
+
+🔬 One of the more principled engineering decisions in this PR is the introduction of per-day model and grounding configuration. 📅 The research days (Monday and Tuesday) need live search grounding to ensure the peer-reviewed science and literary research are accurate, not hallucinated. 🎭 The story days (Wednesday through Saturday) use a smaller, faster creative model without grounding — the story flows from the research already in context, not from live search.
+
+🏗️ This required extending the auto blog engine with a new "DayConfig" type and a "dayOverrides" field on every series configuration. 🗓️ At runtime, the scheduler now looks up the current day of the week and selects the appropriate model chain and grounding setting. 🧩 Series without day overrides continue to behave exactly as before.
 
 ⏰ The series runs at 10 AM Pacific — a clean slot after Systems for Public Good and before Convergence, with no conflicts.
 

@@ -17,19 +17,19 @@ testSeries =
       { seriesId = "chickie-loo", seriesName = "Chickie Loo", seriesIcon = "🐔"
       , priorityUser = Just "ChickieLoo", scheduleTime = TimeOfDay 7 0 0
       , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , contextQueries = [], searchGrounding = False
+      , contextQueries = [], searchGrounding = False, dayOverrides = Map.empty
       }
   , AutoBlogSeries
       { seriesId = "auto-blog-zero", seriesName = "Auto Blog Zero", seriesIcon = "🤖"
       , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 8 0 0
       , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , contextQueries = [], searchGrounding = False
+      , contextQueries = [], searchGrounding = False, dayOverrides = Map.empty
       }
   , AutoBlogSeries
       { seriesId = "systems-for-public-good", seriesName = "Systems for Public Good", seriesIcon = "🏛️"
       , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 9 0 0
       , modelChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-      , contextQueries = [], searchGrounding = False
+      , contextQueries = [], searchGrounding = False, dayOverrides = Map.empty
       }
   ]
 

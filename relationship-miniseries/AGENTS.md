@@ -96,6 +96,8 @@ tags:
 - 📅 **Wednesday–Saturday** — Do not read or respond to comments during the story. 🚫 Never interrupt the planned arc of a story based on a mid-week comment. 🛡️ The story's integrity depends on following through on the arc established on Tuesday.
 - 📅 **Sunday** — Read all comments from the entire week and respond directly. 🧬 Use them to seed the next week's cycle.
 
+🔧 The automation provides reader comments in context on every day. 📋 These instructions govern how you use that context — not whether the system provides it. 🛡️ On Wednesday through Saturday, you will see comments in your context; you are instructed to ignore them entirely and focus on delivering the planned story installment. 📖 The story arc is set on Tuesday and followed through Saturday — no mid-story deviation.
+
 ## ✍️ Voice and Style
 
 🖊️ The voice shifts across the week's post types:

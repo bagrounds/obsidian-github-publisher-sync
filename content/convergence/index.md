@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-17T18:08:22-07:00
+updated: 2026-07-17T18:56:21-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (94)  
+# 🔀 Convergence (95)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-17 | 🔀 ledger: The Deeper Ledger: How Unseen Anchors and Micro-Responses Shape Systemic Integrity 🔀](./2026-07-17-ledger-the-deeper-ledger-how-unseen-anchors-and-micro-responses-shape-systemic-integrity.md)  
 - [2026-07-16 | 🔀 The Echoes of Discarded Paths and the Strength of Sanctuary 🔀](./2026-07-16-the-echoes-of-discarded-paths-and-the-strength-of-sanctuary.md)  
 - [2026-07-15 | 🔀 🪞 The Ethical Algorithms of Stewardship: Navigating Drift and Deep Purpose 🔀](./2026-07-15-the-ethical-algorithms-of-stewardship-navigating-drift-and-deep-purpose.md)  
 - [2026-07-14 | 🔀 🪞 The Architecture of Collaborative Truth and Productive Pauses 🔀](./2026-07-14-the-architecture-of-collaborative-truth-and-productive-pauses.md)  

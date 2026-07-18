@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) [⏭️](./2026-07-18-what-the-light-does-part-two.md)  
 # 2026-07-17 | 💑 What the Light Does — Part One 💑  
 ![relationship-miniseries-2026-07-17-what-the-light-does-part-one](../relationship-miniseries-2026-07-17-what-the-light-does-part-one.jpg)  
   

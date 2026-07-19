@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-07-17-what-the-light-does-part-one.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-07-17-what-the-light-does-part-one.md) [⏭️](./2026-07-19-sunday-reflection-the-architecture-of-neglect.md)  
 # 2026-07-18 | 💑 What the Light Does — Part Two 💑  
 ![relationship-miniseries-2026-07-18-what-the-light-does-part-two](../relationship-miniseries-2026-07-18-what-the-light-does-part-two.jpg)  
   

@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T15:02:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette centered against a soft, neutral background. Inside the silhouette’s head, a tangled, chaotic cluster of glowing, multi-colored geometric shapes—representing complex, shallow code modules—is being streamlined into a single, clean, glowing line that flows smoothly outward. The aesthetic is modern and clean, utilizing a muted color palette of slate blue, charcoal, and soft white, with the central streamlined path highlighted in a vibrant, warm amber to signify clarity and reduced cognitive effort. The composition emphasizes the transition from mental clutter to straightforward, logical flow.
+updated: 2026-07-18T21:32:39
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠📈🔑 Cognitive load is what matters](https://minds.md/zakirullin/cognitive#long)  
@@ -50,4 +51,12 @@ image_prompt: A minimalist, high-contrast illustration featuring a stylized huma
     * [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md): 🏰 Focuses on managing the *intrinsic* complexity of a domain through modeling, potentially increasing *extraneous* cognitive load initially, but promising long-term clarity within bounded contexts.  
 * 🔭 **Creatively Related**  
     * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): 🧠 Explores the two systems of thought in the brain, providing a psychological basis for why code should be designed to minimize effortful, high cognitive load (System 2) thinking.  
-    * [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md): 🛠️ Discusses how good design minimizes the cognitive effort required to use physical objects, a principle directly applicable to designing software interfaces and codebases for human consumption.
+    * [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md): 🛠️ Discusses how good design minimizes the cognitive effort required to use physical objects, a principle directly applicable to designing software interfaces and codebases for human consumption.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mqx7p2tvth24" data-bluesky-cid="bafyreicgzyurobxzpikim3da6boil6u7fjbq4gbdnlqophdlnriumg7pgq"><p>🧠📈🔑 Cognitive load is what matters  
+  
+#AI Q: 🧠 Is boring and straightforward code always better than elegant complexity?  
+  
+💻 Software Engineering | 🧠 Working Memory | 🏗️ Architecture Design | 🛠️ Programming Best Practices  
+https://bagrounds.org/articles/cognitive-load-is-what-matters</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mqx7p2tvth24?ref_src=embed">2026-07-18T21:32:46.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

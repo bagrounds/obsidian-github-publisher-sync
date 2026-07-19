@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-18T10:48:58-07:00
+updated: 2026-07-18T19:42:56-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-07-18T10:48:58-07:00
 - [2026-07-16 | ⚡ 😴 The Mind's Deep Clean: Sleep as Your Ultimate Performance Enhancer ⚡](./vital-signals/2026-07-16-the-mind-s-deep-clean-sleep-as-your-ultimate-performance-enhancer.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (95)  
+## [🔀 Convergence](./convergence/index.md) (96)  
+- [2026-07-18 | 🔀 🪢 The Micro-Audits of Emergent Coherence: Weaving Integrity Through Distributed Responsiveness 🔀](./convergence/2026-07-18-the-micro-audits-of-emergent-coherence-weaving-integrity-through-distributed-responsiveness.md)  
 - [2026-07-17 | 🔀 ledger: The Deeper Ledger: How Unseen Anchors and Micro-Responses Shape Systemic Integrity 🔀](./convergence/2026-07-17-ledger-the-deeper-ledger-how-unseen-anchors-and-micro-responses-shape-systemic-integrity.md)  
 - [2026-07-16 | 🔀 The Echoes of Discarded Paths and the Strength of Sanctuary 🔀](./convergence/2026-07-16-the-echoes-of-discarded-paths-and-the-strength-of-sanctuary.md)  
-- [2026-07-15 | 🔀 🪞 The Ethical Algorithms of Stewardship: Navigating Drift and Deep Purpose 🔀](./convergence/2026-07-15-the-ethical-algorithms-of-stewardship-navigating-drift-and-deep-purpose.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-07-18T10:48:58-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
+- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
+- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

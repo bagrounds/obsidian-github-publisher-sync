@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-20T12:38:23-07:00
+updated: 2026-07-20T15:39:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-20T12:38:23-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (895)  
+## [📺 Videos](./videos/index.md) (896)  
+- [🤖📉⚠️ Researchers studied AI layoffs. Here's their warning.](./videos/researchers-studied-ai-layoffs-heres-their-warning.md)  
 - [💻♾️🤔 Is There Anything Computers Can't Do - Computation as a Universal Concept (Lecture 1)](./videos/is-there-anything-computers-cant-do-computation-as-a-universal-concept-lecture-1.md)  
 - [📉📉📉 Trump’s National Support Is Cratering](./videos/trumps-national-support-is-cratering.md)  
-- [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./videos/andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-07-20T12:38:23-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
-- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

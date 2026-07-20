@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-19T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-20T07:15:45
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-07-18-what-the-light-does-part-two.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-07-18-what-the-light-does-part-two.md) [⏭️](./2026-07-20-the-shared-burden.md)  
 # 2026-07-19 | 💑 Sunday Reflection: The Architecture of Neglect 💑  
 ![relationship-miniseries-2026-07-19-sunday-reflection-the-architecture-of-neglect](../relationship-miniseries-2026-07-19-sunday-reflection-the-architecture-of-neglect.jpg)  
   

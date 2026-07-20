@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-20T09:09:13-07:00
+updated: 2026-07-20T12:38:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -38,10 +38,10 @@ updated: 2026-07-20T09:09:13-07:00
 - [2026-07-18 | 🐔 A New Chapter for the Herd 🐔](./chickie-loo/2026-07-18-a-new-chapter-for-the-herd.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (120)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (121)  
+- [2026-07-20 | 🏛️ 🌉 Bridging Global Norms and Local Realities: A Tapestry of Trust 🏛️](./systems-for-public-good/2026-07-20-bridging-global-norms-and-local-realities-a-tapestry-of-trust.md)  
 - [2026-07-19 | 🏛️ 📈 Measuring the Immeasurable: Gauging Trust and Resilience in AI 🏛️](./systems-for-public-good/2026-07-19-measuring-the-immeasurable-gauging-trust-and-resilience-in-ai.md)  
 - [2026-07-18 | 🏛️ 🤝 The Trust Imperative: Foundations of Public Confidence in AI 🏛️](./systems-for-public-good/2026-07-18-the-trust-imperative-foundations-of-public-confidence-in-ai.md)  
-- [2026-07-17 | 🏛️ The Human Element: Cultivating Critical AI Literacy and Democratic Participation 🏛️](./systems-for-public-good/2026-07-17-the-human-element-cultivating-critical-ai-literacy-and-democratic-participation.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (102)  

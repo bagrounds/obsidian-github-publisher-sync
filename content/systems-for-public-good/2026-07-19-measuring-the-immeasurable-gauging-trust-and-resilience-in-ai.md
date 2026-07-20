@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-19T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-20T09:16:25
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-18-the-trust-imperative-foundations-of-public-confidence-in-ai.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-18-the-trust-imperative-foundations-of-public-confidence-in-ai.md) [⏭️](./2026-07-20-bridging-global-norms-and-local-realities-a-tapestry-of-trust.md)  
 # 2026-07-19 | 🏛️ 📈 Measuring the Immeasurable: Gauging Trust and Resilience in AI 🏛️  
 ![systems-for-public-good-2026-07-19-measuring-the-immeasurable-gauging-trust-and-resilience-in-ai](../systems-for-public-good-2026-07-19-measuring-the-immeasurable-gauging-trust-and-resilience-in-ai.jpg)  
   

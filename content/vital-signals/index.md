@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-20T16:16:08-07:00
+updated: 2026-07-21T07:46:55-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (50)  
+# ⚡ Vital Signals (51)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-21 | ⚡ The Inertia Breaker: Activating Your Brain's Start Button ⚡](./2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md)  
 - [2026-07-20 | ⚡ 🧠 The Strain of Too Much Thinking: Defeating Cognitive Overload and Decision Fatigue ⚡](./2026-07-20-the-strain-of-too-much-thinking-defeating-cognitive-overload-and-decision-fatigue.md)  
 - [2026-07-19 | ⚡ 💧 The Hydration Blueprint: Precision, Electrolytes, and Avoiding the Extremes ⚡](./2026-07-19-the-hydration-blueprint-precision-electrolytes-and-avoiding-the-extremes.md)  
 - [2026-07-18 | ⚡ 💧 The Unseen Current: How Hydration Fuels Your Brain and Body ⚡](./2026-07-18-the-unseen-current-how-hydration-fuels-your-brain-and-body.md)  

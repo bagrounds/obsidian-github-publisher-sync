@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-20T16:16:08-07:00
+updated: 2026-07-21T07:46:55-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (97)  
+# 🔀 Convergence (99)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-21 | 🔀 🧱 The Cost of Deleting Old Code: Why Adaptive Integrity Demands Metabolic and Emotional Refactoring 🔀](./2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md)  
+- [2026-07-20 | 🔀 ⚓ The Ephemeral Anchor: Why Stability Resides in Dynamic Re-Calibration 🔀](./2026-07-20-the-ephemeral-anchor-why-stability-resides-in-dynamic-re-calibration.md)  
 - [2026-07-19 | 🔀 🌱 The Exoskeleton of Integrity: How Purpose is Forged in Distributed Friction 🔀](./2026-07-19-the-exoskeleton-of-integrity-how-purpose-is-forged-in-distributed-friction.md)  
 - [2026-07-18 | 🔀 🪢 The Micro-Audits of Emergent Coherence: Weaving Integrity Through Distributed Responsiveness 🔀](./2026-07-18-the-micro-audits-of-emergent-coherence-weaving-integrity-through-distributed-responsiveness.md)  
 - [2026-07-17 | 🔀 ledger: The Deeper Ledger: How Unseen Anchors and Micro-Responses Shape Systemic Integrity 🔀](./2026-07-17-ledger-the-deeper-ledger-how-unseen-anchors-and-micro-responses-shape-systemic-integrity.md)  

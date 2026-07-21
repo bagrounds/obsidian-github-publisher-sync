@@ -9,6 +9,10 @@ Platform:
 Channel: BBC Global
 tags:
 youtube: https://youtu.be/O3gYyCB2n9o
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖📉⚠️ Researchers studied AI layoffs. Here's their warning.  
@@ -44,7 +48,7 @@ A: Economists suggest implementing taxes on companies that fully replace human w
   
 ### ↔️ Similar  
   
-* The Second Machine Age by Erik Brynjolfsson and Andrew McAfee explores how digital technologies, including AI, are reshaping the economy and labor market.  
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee explores how digital technologies, including AI, are reshaping the economy and labor market.  
 * Automation and Inequality by Nathan Wilmers examines how technological shifts and corporate strategy contribute to the widening gap between capital and labor.  
   
 ### 🆚 Contrasting  

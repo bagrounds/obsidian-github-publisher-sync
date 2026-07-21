@@ -9,6 +9,10 @@ Platform:
 Channel: The Pragmatic Engineer
 tags:
 youtube: https://youtu.be/5wks1W-auKY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🐢🚀🤖 Slow down to speed up: AI and software engineering  
@@ -56,10 +60,10 @@ A: Technical judgment and domain expertise are currently the most critical skill
   
 ### 🆚 Contrasting  
   
-* Deep Work by Cal Newport argues for the necessity of focused, distraction-free cognitive effort to master hard things, directly countering the trend of constant AI-assisted multitasking.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport argues for the necessity of focused, distraction-free cognitive effort to master hard things, directly countering the trend of constant AI-assisted multitasking.  
 * The Mythical Man-Month by Frederick Brooks explains why adding more resources or automation to complex software projects often leads to delays rather than acceleration.  
   
 ### 🎨 Creatively Related  
   
 * Domain-Driven Design by Eric Evans details techniques for tackling complexity in the heart of software by aligning code structures with business requirements.  
-* Thinking, Fast and Slow by Daniel Kahneman explores the dual systems of human cognition, providing context on why humans struggle to effectively supervise automated systems.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman explores the dual systems of human cognition, providing context on why humans struggle to effectively supervise automated systems.

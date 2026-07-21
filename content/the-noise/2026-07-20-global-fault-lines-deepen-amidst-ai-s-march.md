@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-19-shifting-sands-and-digital-echoes.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-19-shifting-sands-and-digital-echoes.md) [⏭️](./2026-07-21-weathering-the-storms-of-a-restless-world.md)  
 # 2026-07-20 | 📰 🌐 Global Fault Lines Deepen Amidst AI's March 📰  
 ![the-noise-2026-07-20-global-fault-lines-deepen-amidst-ai-s-march](../the-noise-2026-07-20-global-fault-lines-deepen-amidst-ai-s-march.jpg)  
   

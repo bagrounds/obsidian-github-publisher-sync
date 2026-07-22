@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-20-bridging-global-norms-and-local-realities-a-tapestry-of-trust.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-20-bridging-global-norms-and-local-realities-a-tapestry-of-trust.md) [⏭️](./2026-07-22-navigating-the-tensions-national-security-and-ethical-ai-principles.md)  
 # 2026-07-21 | 🏛️ 🛡️ Navigating the Tensions: National Security and Ethical AI Principles 🏛️  
 ![systems-for-public-good-2026-07-21-navigating-the-tensions-national-security-and-ethical-ai-principles](../systems-for-public-good-2026-07-21-navigating-the-tensions-national-security-and-ethical-ai-principles.jpg)  
   

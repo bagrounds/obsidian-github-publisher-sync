@@ -9,6 +9,10 @@ Platform:
 Channel: Lenny's Podcast
 tags:
 youtube: https://youtu.be/t0GiTyz4syY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-23T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🌐🤖 Why Netflix is betting on systems thinkers - not specialists - in the AI era | Elizabeth Stone (CPTO)  
@@ -51,7 +55,7 @@ youtube: https://youtu.be/t0GiTyz4syY
   
 ### ↔️ Similar  
   
-* 📘 The book Thinking in Systems by Chelsea Green Publishing explores the dynamics and mental frameworks of complex feedback systems in depth.  
+* 📘 The book [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Chelsea Green Publishing explores the dynamics and mental frameworks of complex feedback systems in depth.  
 * 📗 The book High Output Management by Random House explores scalable management principles, talent density, and operational leverage in depth.  
   
 ### 🆚 Contrasting  
@@ -61,5 +65,5 @@ youtube: https://youtu.be/t0GiTyz4syY
   
 ### 🎨 Creatively Related  
   
-* 📈 The book The Innovator's Dilemma by Harvard Business Review Press explores how disruptive technologies transform established consumer markets and industries in depth.  
+* 📈 The book [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Harvard Business Review Press explores how disruptive technologies transform established consumer markets and industries in depth.  
 * 🎭 The book Story by HarperCollins explores the fundamental human principles of dramatic storytelling, structure, and emotional connection in depth.

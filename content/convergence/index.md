@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-23T16:33:32-07:00
+updated: 2026-07-23T16:46:57-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (100)  
+# 🔀 Convergence (101)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-23 | 🔀 🕳️ The Crucible of Emptiness: Where Unlearning Forges Adaptive Intelligence 🔀](./2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
 - [2026-07-22 | 🔀 🧱 The Inertia of the Known Self 🔀](./2026-07-22-the-inertia-of-the-known-self.md)  
 - [2026-07-21 | 🔀 🧱 The Cost of Deleting Old Code: Why Adaptive Integrity Demands Metabolic and Emotional Refactoring 🔀](./2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md)  
 - [2026-07-20 | 🔀 ⚓ The Ephemeral Anchor: Why Stability Resides in Dynamic Re-Calibration 🔀](./2026-07-20-the-ephemeral-anchor-why-stability-resides-in-dynamic-re-calibration.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-23T16:33:32-07:00
+updated: 2026-07-23T16:46:57-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (899)  
+# 📺 Videos (900)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -189,6 +189,7 @@ updated: 2026-07-23T16:33:32-07:00
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./do-ice-officers-have-immunity.md)  
 - [🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](./dont-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic.md)  
 - [⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](./dont-get-down-leveled-or-how-to-tell-a-good-story-from-a-principal-at-amazon.md)  
+- [🚫🚢🧪 Don't Ship Skills Without Evals - Philipp Schmid, Google DeepMind](./dont-ship-skills-without-evals-philipp-schmid-google-deepmind.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [😩🤯🍼 Dr. Becky: You’re Not a Bad Parent, You’re Overwhelmed](./dr-becky-youre-not-a-bad-parent-youre-overwhelmed.md)  
 - [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  

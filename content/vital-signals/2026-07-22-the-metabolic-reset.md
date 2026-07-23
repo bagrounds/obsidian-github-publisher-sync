@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md) [⏭️](./2026-07-23-the-adaptive-advantage-mastering-your-body-s-stress-response.md)  
 # 2026-07-22 | ⚡ The Metabolic Reset ⚡  
 ![vital-signals-2026-07-22-the-metabolic-reset](../vital-signals-2026-07-22-the-metabolic-reset.jpg)  
   

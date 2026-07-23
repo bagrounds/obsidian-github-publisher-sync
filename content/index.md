@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-23T13:55:10-07:00
+updated: 2026-07-23T16:33:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-23T13:55:10-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (898)  
+## [📺 Videos](./videos/index.md) (899)  
+- [🏢🧠 Every company should have a Brain - Garry Tan, Y Combinator](./videos/every-company-should-have-a-brain-garry-tan-y-combinator.md)  
 - [🧠🌐🤖 Why Netflix is betting on systems thinkers - not specialists - in the AI era | Elizabeth Stone (CPTO)](./videos/why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era-elizabeth-stone-cpto.md)  
 - [🐢🚀🤖 Slow down to speed up: AI and software engineering](./videos/slow-down-to-speed-up-ai-and-software-engineering.md)  
-- [🤖📉⚠️ Researchers studied AI layoffs. Here's their warning.](./videos/researchers-studied-ai-layoffs-heres-their-warning.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

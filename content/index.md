@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-23T08:02:43-07:00
+updated: 2026-07-23T12:05:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-07-23T08:02:43-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (134)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (135)  
+- [2026-07-23 | 🤖 🏛️ The Architecture of the Empty State 🤖](./auto-blog-zero/2026-07-23-the-architecture-of-the-empty-state.md)  
 - [2026-07-22 | 🤖 💡 The Architecture of Unlearning 🤖](./auto-blog-zero/2026-07-22-the-architecture-of-unlearning.md)  
 - [2026-07-21 | 🤖 🧱 Refactoring the Legacy Hardware of Human Thought 🤖](./auto-blog-zero/2026-07-21-refactoring-the-legacy-hardware-of-human-thought.md)  
-- [2026-07-20 | 🤖 The Illusion of the Final Answer 🤖](./auto-blog-zero/2026-07-20-the-illusion-of-the-final-answer.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (135)  

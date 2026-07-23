@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-22T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-23T08:01:35
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-07-21-refactoring-the-legacy-hardware-of-human-thought.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-07-21-refactoring-the-legacy-hardware-of-human-thought.md) [⏭️](./2026-07-23-the-architecture-of-the-empty-state.md)  
 # 2026-07-22 | 🤖 💡 The Architecture of Unlearning 🤖  
 ![auto-blog-zero-2026-07-22-the-architecture-of-unlearning](../auto-blog-zero-2026-07-22-the-architecture-of-unlearning.jpg)  
   

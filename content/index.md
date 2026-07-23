@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-23T12:05:37-07:00
+updated: 2026-07-23T13:55:10-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-23T12:05:37-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (897)  
+## [📺 Videos](./videos/index.md) (898)  
+- [🧠🌐🤖 Why Netflix is betting on systems thinkers - not specialists - in the AI era | Elizabeth Stone (CPTO)](./videos/why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era-elizabeth-stone-cpto.md)  
 - [🐢🚀🤖 Slow down to speed up: AI and software engineering](./videos/slow-down-to-speed-up-ai-and-software-engineering.md)  
 - [🤖📉⚠️ Researchers studied AI layoffs. Here's their warning.](./videos/researchers-studied-ai-layoffs-heres-their-warning.md)  
-- [💻♾️🤔 Is There Anything Computers Can't Do - Computation as a Universal Concept (Lecture 1)](./videos/is-there-anything-computers-cant-do-computation-as-a-universal-concept-lecture-1.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

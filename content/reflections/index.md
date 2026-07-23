@@ -5,11 +5,12 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-07-22T07:54:56-07:00
+updated: 2026-07-23T08:02:43-07:00
 ---
 [Home](../index.md)  
-# 🪞 Reflections (615)  
-- [2026-07-22](./2026-07-22.md)  
+# 🪞 Reflections (616)  
+- [2026-07-23](./2026-07-23.md)  
+- [2026-07-22 | 🤖 Unlearning 🔀 Inertia, 🐔 Stillness, and 💑 Weight; 🏛️ Navigating 📰 Crises ⚡ Resets 🌟 Progress. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./2026-07-22.md)  
 - [2026-07-21 | ⚡ Activating 🐔 Gentle 🤖 Thought 🔀 Demands 🌟 Brighter 💑 Connection, 🏛️ Navigating 📰 World. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./2026-07-21.md)  
 - [2026-07-20 | 🌐 Global ⚡ Strain, 🐢 Slow 📈 Progress, ⚖️ Burden 🌱 Growth; ⚠️ Warning, 💭 Illusion 🤝 Trust 🏠 Resides. 📺⚡📰🐔🌟🤖🏛️💑🔀🔄🤖🐲](./2026-07-20.md)  
 - [2026-07-19 | 🌟 Cultivating 🐔 Gentle 🤖 Mind, 🏛️ Gauging 🔀 Purpose, 💑 Reflection 📰 Echoes ⚡ Extremes. 💑🏛️📰⚡🌟🐔🤖🔀🔄🤖🐲](./2026-07-19.md)  

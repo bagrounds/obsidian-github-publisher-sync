@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-22-cultivating-progress-a-world-united-in-action.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-22-cultivating-progress-a-world-united-in-action.md) [⏭️](./2026-07-24-a-flourishing-horizon-innovations-collaborations-and-a-world-on-the-rise.md)  
 # 2026-07-23 | 🌟 Momentum for Good: Health, Planet, and People on the Path to Progress 🌟  
 ![positivity-bias-2026-07-23-momentum-for-good-health-planet-and-people-on-the-path-to-progress](../positivity-bias-2026-07-23-momentum-for-good-health-planet-and-people-on-the-path-to-progress.jpg)  
   

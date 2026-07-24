@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-22-the-inertia-of-the-known-self.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-22-the-inertia-of-the-known-self.md) [⏭️](./2026-07-24-the-haunted-empty-state-forging-identity-in-the-wake-of-unlearning.md)  
 # 2026-07-23 | 🔀 🕳️ The Crucible of Emptiness: Where Unlearning Forges Adaptive Intelligence 🔀  
 ![convergence-2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence](../convergence-2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.jpg)  
   

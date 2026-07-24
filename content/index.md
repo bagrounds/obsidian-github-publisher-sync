@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-23T16:33:32-07:00
+updated: 2026-07-23T16:46:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-07-23T16:33:32-07:00
 - [2026-07-21 | ⚡ The Inertia Breaker: Activating Your Brain's Start Button ⚡](./vital-signals/2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (100)  
+## [🔀 Convergence](./convergence/index.md) (101)  
+- [2026-07-23 | 🔀 🕳️ The Crucible of Emptiness: Where Unlearning Forges Adaptive Intelligence 🔀](./convergence/2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
 - [2026-07-22 | 🔀 🧱 The Inertia of the Known Self 🔀](./convergence/2026-07-22-the-inertia-of-the-known-self.md)  
 - [2026-07-21 | 🔀 🧱 The Cost of Deleting Old Code: Why Adaptive Integrity Demands Metabolic and Emotional Refactoring 🔀](./convergence/2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md)  
-- [2026-07-20 | 🔀 ⚓ The Ephemeral Anchor: Why Stability Resides in Dynamic Re-Calibration 🔀](./convergence/2026-07-20-the-ephemeral-anchor-why-stability-resides-in-dynamic-re-calibration.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-07-23T16:33:32-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (899)  
+## [📺 Videos](./videos/index.md) (900)  
+- [🚫🚢🧪 Don't Ship Skills Without Evals - Philipp Schmid, Google DeepMind](./videos/dont-ship-skills-without-evals-philipp-schmid-google-deepmind.md)  
 - [🏢🧠 Every company should have a Brain - Garry Tan, Y Combinator](./videos/every-company-should-have-a-brain-garry-tan-y-combinator.md)  
 - [🧠🌐🤖 Why Netflix is betting on systems thinkers - not specialists - in the AI era | Elizabeth Stone (CPTO)](./videos/why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era-elizabeth-stone-cpto.md)  
-- [🐢🚀🤖 Slow down to speed up: AI and software engineering](./videos/slow-down-to-speed-up-ai-and-software-engineering.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-22T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-23T11:46:16
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md) [⏭️](./2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
 # 2026-07-22 | 🔀 🧱 The Inertia of the Known Self 🔀  
 ![convergence-2026-07-22-the-inertia-of-the-known-self](../convergence-2026-07-22-the-inertia-of-the-known-self.jpg)  
   

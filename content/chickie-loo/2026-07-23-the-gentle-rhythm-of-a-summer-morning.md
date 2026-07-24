@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-22-finding-stillness-after-the-storm.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-22-finding-stillness-after-the-storm.md) [⏭️](./2026-07-24-holding-the-quiet-moments.md)  
 # 2026-07-23 | 🐔 ☀️ The Gentle Rhythm of a Summer Morning 🐔  
 ![chickie-loo-2026-07-23-the-gentle-rhythm-of-a-summer-morning](../chickie-loo-2026-07-23-the-gentle-rhythm-of-a-summer-morning.jpg)  
   

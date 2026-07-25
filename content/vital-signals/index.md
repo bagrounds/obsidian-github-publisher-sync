@@ -5,11 +5,13 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-23T16:46:57-07:00
+updated: 2026-07-25T08:33:29-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (53)  
+# ⚡ Vital Signals (55)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-25 | ⚡ 🧘‍♀️ The Mind's Calming Command Center: Cultivating Inner Stillness for Peak Performance ⚡](./2026-07-25-the-mind-s-calming-command-center-cultivating-inner-stillness-for-peak-performance.md)  
+- [2026-07-24 | ⚡ 🔬 The Body's Internal Regulators: Sympathetic, Parasympathetic, and the Vagus Nerve ⚡](./2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve.md)  
 - [2026-07-23 | ⚡ ⚖️ The Adaptive Advantage: Mastering Your Body's Stress Response ⚡](./2026-07-23-the-adaptive-advantage-mastering-your-body-s-stress-response.md)  
 - [2026-07-22 | ⚡ The Metabolic Reset ⚡](./2026-07-22-the-metabolic-reset.md)  
 - [2026-07-21 | ⚡ The Inertia Breaker: Activating Your Brain's Start Button ⚡](./2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md)  

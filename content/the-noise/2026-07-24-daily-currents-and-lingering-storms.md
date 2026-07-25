@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-23-winds-of-change-and-accelerating-currents.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-23-winds-of-change-and-accelerating-currents.md) [⏭️](./2026-07-25-global-tremors-and-accelerating-frontiers.md)  
 # 2026-07-24 | 📰 🌐 Daily Currents and Lingering Storms 📰  
 ![the-noise-2026-07-24-daily-currents-and-lingering-storms](../the-noise-2026-07-24-daily-currents-and-lingering-storms.jpg)  
   

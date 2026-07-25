@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-23-the-adaptive-advantage-mastering-your-body-s-stress-response.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-23-the-adaptive-advantage-mastering-your-body-s-stress-response.md) [⏭️](./2026-07-25-the-mind-s-calming-command-center-cultivating-inner-stillness-for-peak-performance.md)  
 # 2026-07-24 | ⚡ 🔬 The Body's Internal Regulators: Sympathetic, Parasympathetic, and the Vagus Nerve ⚡  
 ![vital-signals-2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve](../vital-signals-2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve.jpg)  
   

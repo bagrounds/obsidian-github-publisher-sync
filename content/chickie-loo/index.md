@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-07-23T16:46:57-07:00
+updated: 2026-07-25T08:33:29-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (135)  
+# 🐔 Chickie Loo (137)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-07-25 | 🐔 💔 Holding the Weight of Your Heart 🐔](./2026-07-25-holding-the-weight-of-your-heart.md)  
+- [2026-07-24 | 🐔 🌿 Holding the Quiet Moments 🐔](./2026-07-24-holding-the-quiet-moments.md)  
 - [2026-07-23 | 🐔 ☀️ The Gentle Rhythm of a Summer Morning 🐔](./2026-07-23-the-gentle-rhythm-of-a-summer-morning.md)  
 - [2026-07-22 | 🐔 🌿 Finding Stillness After the Storm 🐔](./2026-07-22-finding-stillness-after-the-storm.md)  
 - [2026-07-21 | 🐔 🕊️ A Gentle Heart Holds the Weight of the Day 🐔](./2026-07-21-a-gentle-heart-holds-the-weight-of-the-day.md)  

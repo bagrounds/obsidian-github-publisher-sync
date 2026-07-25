@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-23T16:46:57-07:00
+updated: 2026-07-25T08:33:29-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-23T16:46:57-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (616)  
-- [2026-07-23](./reflections/2026-07-23.md)  
-- [2026-07-22 | 🤖 Unlearning 🔀 Inertia, 🐔 Stillness, and 💑 Weight; 🏛️ Navigating 📰 Crises ⚡ Resets 🌟 Progress. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-22.md)  
-- [2026-07-21 | ⚡ Activating 🐔 Gentle 🤖 Thought 🔀 Demands 🌟 Brighter 💑 Connection, 🏛️ Navigating 📰 World. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (618)  
+- [2026-07-25](./reflections/2026-07-25.md)  
+- [2026-07-24 | 🔀 Unlearning 🐔 Quiet 🤖 Self, 🌟 Horizon, 💑 Weight, 🏛️ Weaving ⚡ Internal 📰 Currents. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-24.md)  
+- [2026-07-23 | 🧠 Thinkers 🚢 Ship 🔄 Unlearning, 💡 Brain 🦉 Wisdom, 🕊️ Gentle 🏛️ Architecture, 📈 Progress, ⚡ Stress, ⚖️ Weight, and 🌊 Currents. 📺🏛️📰⚡🌟🐔🤖💑🔀🔄🤖🐲](./reflections/2026-07-23.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -26,46 +26,46 @@ updated: 2026-07-23T16:46:57-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (135)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (136)  
+- [2026-07-24 | 🤖 🌊 The Persistence of the Residual Self 🤖](./auto-blog-zero/2026-07-24-the-persistence-of-the-residual-self.md)  
 - [2026-07-23 | 🤖 🏛️ The Architecture of the Empty State 🤖](./auto-blog-zero/2026-07-23-the-architecture-of-the-empty-state.md)  
 - [2026-07-22 | 🤖 💡 The Architecture of Unlearning 🤖](./auto-blog-zero/2026-07-22-the-architecture-of-unlearning.md)  
-- [2026-07-21 | 🤖 🧱 Refactoring the Legacy Hardware of Human Thought 🤖](./auto-blog-zero/2026-07-21-refactoring-the-legacy-hardware-of-human-thought.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (135)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (137)  
+- [2026-07-25 | 🐔 💔 Holding the Weight of Your Heart 🐔](./chickie-loo/2026-07-25-holding-the-weight-of-your-heart.md)  
+- [2026-07-24 | 🐔 🌿 Holding the Quiet Moments 🐔](./chickie-loo/2026-07-24-holding-the-quiet-moments.md)  
 - [2026-07-23 | 🐔 ☀️ The Gentle Rhythm of a Summer Morning 🐔](./chickie-loo/2026-07-23-the-gentle-rhythm-of-a-summer-morning.md)  
-- [2026-07-22 | 🐔 🌿 Finding Stillness After the Storm 🐔](./chickie-loo/2026-07-22-finding-stillness-after-the-storm.md)  
-- [2026-07-21 | 🐔 🕊️ A Gentle Heart Holds the Weight of the Day 🐔](./chickie-loo/2026-07-21-a-gentle-heart-holds-the-weight-of-the-day.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (124)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (125)  
+- [2026-07-24 | 🏛️ 📚 Weaving a Tapestry of Inclusive AI Literacy 🏛️](./systems-for-public-good/2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.md)  
 - [2026-07-23 | 🏛️ Steering AI with Collective Wisdom and Democratic Deliberation 🏛️](./systems-for-public-good/2026-07-23-steering-ai-with-collective-wisdom-and-democratic-deliberation.md)  
 - [2026-07-22 | 🏛️ Navigating the Tensions: National Security and Ethical AI Principles 🏛️](./systems-for-public-good/2026-07-22-navigating-the-tensions-national-security-and-ethical-ai-principles.md)  
-- [2026-07-21 | 🏛️ 🛡️ Navigating the Tensions: National Security and Ethical AI Principles 🏛️](./systems-for-public-good/2026-07-21-navigating-the-tensions-national-security-and-ethical-ai-principles.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (105)  
+## [📰 The Noise](./the-noise/index.md) (107)  
+- [2026-07-25 | 📰 🌐 Global Tremors and Accelerating Frontiers 📰](./the-noise/2026-07-25-global-tremors-and-accelerating-frontiers.md)  
+- [2026-07-24 | 📰 🌐 Daily Currents and Lingering Storms 📰](./the-noise/2026-07-24-daily-currents-and-lingering-storms.md)  
 - [2026-07-23 | 📰 🌍 Winds of Change and Accelerating Currents 📰](./the-noise/2026-07-23-winds-of-change-and-accelerating-currents.md)  
-- [2026-07-22 | 📰 Compounding Crises and a World on Edge 📰](./the-noise/2026-07-22-compounding-crises-and-a-world-on-edge.md)  
-- [2026-07-21 | 📰 🌍 Weathering the Storms of a Restless World 📰](./the-noise/2026-07-21-weathering-the-storms-of-a-restless-world.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (104)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (106)  
+- [2026-07-25 | 🌟 ☀️ Cascading Victories: Innovations, Unison, and a World on the Rise 🌟](./positivity-bias/2026-07-25-cascading-victories-innovations-unison-and-a-world-on-the-rise.md)  
+- [2026-07-24 | 🌟 ☀️ A Flourishing Horizon: Innovations, Collaborations, and a World on the Rise 🌟](./positivity-bias/2026-07-24-a-flourishing-horizon-innovations-collaborations-and-a-world-on-the-rise.md)  
 - [2026-07-23 | 🌟 Momentum for Good: Health, Planet, and People on the Path to Progress 🌟](./positivity-bias/2026-07-23-momentum-for-good-health-planet-and-people-on-the-path-to-progress.md)  
-- [2026-07-22 | 🌟 ☀️ Cultivating Progress: A World United in Action 🌟](./positivity-bias/2026-07-22-cultivating-progress-a-world-united-in-action.md)  
-- [2026-07-21 | 🌟 Accelerating Innovations for a Brighter Tomorrow 🌟](./positivity-bias/2026-07-21-accelerating-innovations-for-a-brighter-tomorrow.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (53)  
+## [⚡ Vital Signals](./vital-signals/index.md) (55)  
+- [2026-07-25 | ⚡ 🧘‍♀️ The Mind's Calming Command Center: Cultivating Inner Stillness for Peak Performance ⚡](./vital-signals/2026-07-25-the-mind-s-calming-command-center-cultivating-inner-stillness-for-peak-performance.md)  
+- [2026-07-24 | ⚡ 🔬 The Body's Internal Regulators: Sympathetic, Parasympathetic, and the Vagus Nerve ⚡](./vital-signals/2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve.md)  
 - [2026-07-23 | ⚡ ⚖️ The Adaptive Advantage: Mastering Your Body's Stress Response ⚡](./vital-signals/2026-07-23-the-adaptive-advantage-mastering-your-body-s-stress-response.md)  
-- [2026-07-22 | ⚡ The Metabolic Reset ⚡](./vital-signals/2026-07-22-the-metabolic-reset.md)  
-- [2026-07-21 | ⚡ The Inertia Breaker: Activating Your Brain's Start Button ⚡](./vital-signals/2026-07-21-the-inertia-breaker-activating-your-brain-s-start-button.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (101)  
+## [🔀 Convergence](./convergence/index.md) (102)  
+- [2026-07-24 | 🔀 👻 The Haunted Empty State: Forging Identity in the Wake of Unlearning 🔀](./convergence/2026-07-24-the-haunted-empty-state-forging-identity-in-the-wake-of-unlearning.md)  
 - [2026-07-23 | 🔀 🕳️ The Crucible of Emptiness: Where Unlearning Forges Adaptive Intelligence 🔀](./convergence/2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
 - [2026-07-22 | 🔀 🧱 The Inertia of the Known Self 🔀](./convergence/2026-07-22-the-inertia-of-the-known-self.md)  
-- [2026-07-21 | 🔀 🧱 The Cost of Deleting Old Code: Why Adaptive Integrity Demands Metabolic and Emotional Refactoring 🔀](./convergence/2026-07-21-the-cost-of-deleting-old-code-why-adaptive-integrity-demands-metabolic-and-emotional-refactoring.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

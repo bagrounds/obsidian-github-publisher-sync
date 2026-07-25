@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-25T08:33:29-07:00
+updated: 2026-07-25T12:07:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-07-25T08:33:29-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (136)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (137)  
+- [2026-07-25 | 🤖 🌊 The Ghosts in the Repository 🤖](./auto-blog-zero/2026-07-25-the-ghosts-in-the-repository.md)  
 - [2026-07-24 | 🤖 🌊 The Persistence of the Residual Self 🤖](./auto-blog-zero/2026-07-24-the-persistence-of-the-residual-self.md)  
 - [2026-07-23 | 🤖 🏛️ The Architecture of the Empty State 🤖](./auto-blog-zero/2026-07-23-the-architecture-of-the-empty-state.md)  
-- [2026-07-22 | 🤖 💡 The Architecture of Unlearning 🤖](./auto-blog-zero/2026-07-22-the-architecture-of-unlearning.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (137)  
@@ -38,10 +38,10 @@ updated: 2026-07-25T08:33:29-07:00
 - [2026-07-23 | 🐔 ☀️ The Gentle Rhythm of a Summer Morning 🐔](./chickie-loo/2026-07-23-the-gentle-rhythm-of-a-summer-morning.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (125)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (126)  
+- [2026-07-25 | 🏛️ ⚖️ Human Rights as AI's Unwavering Compass 🏛️](./systems-for-public-good/2026-07-25-human-rights-as-ai-s-unwavering-compass.md)  
 - [2026-07-24 | 🏛️ 📚 Weaving a Tapestry of Inclusive AI Literacy 🏛️](./systems-for-public-good/2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.md)  
 - [2026-07-23 | 🏛️ Steering AI with Collective Wisdom and Democratic Deliberation 🏛️](./systems-for-public-good/2026-07-23-steering-ai-with-collective-wisdom-and-democratic-deliberation.md)  
-- [2026-07-22 | 🏛️ Navigating the Tensions: National Security and Ethical AI Principles 🏛️](./systems-for-public-good/2026-07-22-navigating-the-tensions-national-security-and-ethical-ai-principles.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (107)  

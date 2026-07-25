@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-23-steering-ai-with-collective-wisdom-and-democratic-deliberation.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-23-steering-ai-with-collective-wisdom-and-democratic-deliberation.md) [⏭️](./2026-07-25-human-rights-as-ai-s-unwavering-compass.md)  
 # 2026-07-24 | 🏛️ 📚 Weaving a Tapestry of Inclusive AI Literacy 🏛️  
 ![systems-for-public-good-2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy](../systems-for-public-good-2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.jpg)  
   

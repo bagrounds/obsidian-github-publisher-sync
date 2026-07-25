@@ -5,11 +5,13 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-07-23T16:46:57-07:00
+updated: 2026-07-25T08:33:29-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (105)  
+# 📰 The Noise (107)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-07-25 | 📰 🌐 Global Tremors and Accelerating Frontiers 📰](./2026-07-25-global-tremors-and-accelerating-frontiers.md)  
+- [2026-07-24 | 📰 🌐 Daily Currents and Lingering Storms 📰](./2026-07-24-daily-currents-and-lingering-storms.md)  
 - [2026-07-23 | 📰 🌍 Winds of Change and Accelerating Currents 📰](./2026-07-23-winds-of-change-and-accelerating-currents.md)  
 - [2026-07-22 | 📰 Compounding Crises and a World on Edge 📰](./2026-07-22-compounding-crises-and-a-world-on-edge.md)  
 - [2026-07-21 | 📰 🌍 Weathering the Storms of a Restless World 📰](./2026-07-21-weathering-the-storms-of-a-restless-world.md)  

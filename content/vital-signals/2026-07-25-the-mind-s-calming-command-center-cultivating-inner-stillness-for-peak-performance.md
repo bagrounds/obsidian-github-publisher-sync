@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-24-the-body-s-internal-regulators-sympathetic-parasympathetic-and-the-vagus-nerve.md) [⏭️](./2026-07-26-the-play-imperative-rekindling-curiosity-for-cognitive-vitality.md)  
 # 2026-07-25 | ⚡ 🧘‍♀️ The Mind's Calming Command Center: Cultivating Inner Stillness for Peak Performance ⚡  
 ![vital-signals-2026-07-25-the-mind-s-calming-command-center-cultivating-inner-stillness-for-peak-performance](../vital-signals-2026-07-25-the-mind-s-calming-command-center-cultivating-inner-stillness-for-peak-performance.jpg)  
   

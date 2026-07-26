@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-24-holding-the-quiet-moments.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-24-holding-the-quiet-moments.md) [⏭️](./2026-07-26-searching-for-peace-in-the-pasture.md)  
 # 2026-07-25 | 🐔 💔 Holding the Weight of Your Heart 🐔  
 ![chickie-loo-2026-07-25-holding-the-weight-of-your-heart](../chickie-loo-2026-07-25-holding-the-weight-of-your-heart.jpg)  
   

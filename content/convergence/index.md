@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-25T12:07:21-07:00
+updated: 2026-07-26T09:02:26-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (102)  
+# 🔀 Convergence (104)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-26 | 🔀 👻 The Architectonics of Absence: Designing with Latent Echoes 🔀](./2026-07-26-the-architectonics-of-absence-designing-with-latent-echoes.md)  
+- [2026-07-25 | 🔀 👻 The Preconditioned Void: When Ghosts Design the Future 🔀](./2026-07-25-the-preconditioned-void-when-ghosts-design-the-future.md)  
 - [2026-07-24 | 🔀 👻 The Haunted Empty State: Forging Identity in the Wake of Unlearning 🔀](./2026-07-24-the-haunted-empty-state-forging-identity-in-the-wake-of-unlearning.md)  
 - [2026-07-23 | 🔀 🕳️ The Crucible of Emptiness: Where Unlearning Forges Adaptive Intelligence 🔀](./2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
 - [2026-07-22 | 🔀 🧱 The Inertia of the Known Self 🔀](./2026-07-22-the-inertia-of-the-known-self.md)  

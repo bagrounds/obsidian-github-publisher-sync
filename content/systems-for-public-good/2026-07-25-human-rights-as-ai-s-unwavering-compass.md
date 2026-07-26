@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.md) [⏭️](./2026-07-26-embedding-human-rights-by-design-in-ai.md)  
 # 2026-07-25 | 🏛️ ⚖️ Human Rights as AI's Unwavering Compass 🏛️  
 ![systems-for-public-good-2026-07-25-human-rights-as-ai-s-unwavering-compass](../systems-for-public-good-2026-07-25-human-rights-as-ai-s-unwavering-compass.jpg)  
   

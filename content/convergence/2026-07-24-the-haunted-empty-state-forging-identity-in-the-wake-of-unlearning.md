@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-24T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-25T13:42:39
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-23-the-crucible-of-emptiness-where-unlearning-forges-adaptive-intelligence.md) [⏭️](./2026-07-25-the-preconditioned-void-when-ghosts-design-the-future.md)  
 # 2026-07-24 | 🔀 👻 The Haunted Empty State: Forging Identity in the Wake of Unlearning 🔀  
 ![convergence-2026-07-24-the-haunted-empty-state-forging-identity-in-the-wake-of-unlearning](../convergence-2026-07-24-the-haunted-empty-state-forging-identity-in-the-wake-of-unlearning.jpg)  
   

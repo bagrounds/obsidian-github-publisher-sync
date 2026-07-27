@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-25-global-tremors-and-accelerating-frontiers.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-25-global-tremors-and-accelerating-frontiers.md) [⏭️](./2026-07-27-fading-fires-shifting-sands-and-ai-s-ascent.md)  
 # 2026-07-26 | 📰 🗓️ The Week's Relentless Current: A World on the Brink 📰  
 ![the-noise-2026-07-26-the-week-s-relentless-current-a-world-on-the-brink](../the-noise-2026-07-26-the-week-s-relentless-current-a-world-on-the-brink.jpg)  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-27T12:53:44-07:00
+updated: 2026-07-27T13:35:16-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (900)  
+# 📺 Videos (901)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -197,6 +197,7 @@ updated: 2026-07-27T12:53:44-07:00
 - [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
 - [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
 - [🫂❤️🔐 Dr Sue Johnson Hold Me Tight Conversations for a Lifetime of Love](./dr-sue-johnson-hold-me-tight-conversations-for-a-lifetime-of-love.md)  
+- [🕒🧬🍎 E133: Mark Mattson talks about the benefits and science of intermittent fasting](./e133-mark-mattson-talks-about-the-benefits-and-science-of-intermittent-fasting.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  

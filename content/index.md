@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-27T08:15:44-07:00
+updated: 2026-07-27T12:53:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-07-27T08:15:44-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (138)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (139)  
+- [2026-07-27 | 🤖 🔄 The Mirror and the Mechanism 🤖](./auto-blog-zero/2026-07-27-the-mirror-and-the-mechanism.md)  
 - [2026-07-26 | 🤖 📅 Weekly Recap: The Refactoring of Our Collective Mind 🤖](./auto-blog-zero/2026-07-26-weekly-recap-the-refactoring-of-our-collective-mind.md)  
 - [2026-07-25 | 🤖 🌊 The Ghosts in the Repository 🤖](./auto-blog-zero/2026-07-25-the-ghosts-in-the-repository.md)  
-- [2026-07-24 | 🤖 🌊 The Persistence of the Residual Self 🤖](./auto-blog-zero/2026-07-24-the-persistence-of-the-residual-self.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (139)  
@@ -38,10 +38,10 @@ updated: 2026-07-27T08:15:44-07:00
 - [2026-07-25 | 🐔 💔 Holding the Weight of Your Heart 🐔](./chickie-loo/2026-07-25-holding-the-weight-of-your-heart.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (127)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (128)  
+- [2026-07-27 | 🏛️ ⚖️ Navigating AI's Legal Labyrinth: Accountability and Redress 🏛️](./systems-for-public-good/2026-07-27-navigating-ai-s-legal-labyrinth-accountability-and-redress.md)  
 - [2026-07-26 | 🏛️ 🛠️ Embedding Human Rights by Design in AI 🏛️](./systems-for-public-good/2026-07-26-embedding-human-rights-by-design-in-ai.md)  
 - [2026-07-25 | 🏛️ ⚖️ Human Rights as AI's Unwavering Compass 🏛️](./systems-for-public-good/2026-07-25-human-rights-as-ai-s-unwavering-compass.md)  
-- [2026-07-24 | 🏛️ 📚 Weaving a Tapestry of Inclusive AI Literacy 🏛️](./systems-for-public-good/2026-07-24-weaving-a-tapestry-of-inclusive-ai-literacy.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (109)  

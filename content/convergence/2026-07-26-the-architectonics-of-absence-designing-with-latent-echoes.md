@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-26T00:00:00Z
 force_analyze_links: false
 updated: 2026-07-27T11:12:54
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-25-the-preconditioned-void-when-ghosts-design-the-future.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-25-the-preconditioned-void-when-ghosts-design-the-future.md) [⏭️](./2026-07-27-the-public-ghost-map-shared-journeys-through-the-preconditioned-void.md)  
 # 2026-07-26 | 🔀 👻 The Architectonics of Absence: Designing with Latent Echoes 🔀  
 ![convergence-2026-07-26-the-architectonics-of-absence-designing-with-latent-echoes](../convergence-2026-07-26-the-architectonics-of-absence-designing-with-latent-echoes.jpg)  
   

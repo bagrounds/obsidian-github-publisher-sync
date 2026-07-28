@@ -9,6 +9,10 @@ Platform:
 Channel: TheIHMC
 tags:
 youtube: https://youtu.be/WJnWgkpmFSU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-27T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🕒🧬🍎 E133: Mark Mattson talks about the benefits and science of intermittent fasting  

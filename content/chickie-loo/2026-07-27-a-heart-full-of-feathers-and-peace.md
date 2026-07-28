@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-26-searching-for-peace-in-the-pasture.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-07-26-searching-for-peace-in-the-pasture.md) [⏭️](./2026-07-28-the-quiet-rewards-of-july.md)  
 # 2026-07-27 | 🐔 A Heart Full of Feathers and Peace 🐔  
 ![chickie-loo-2026-07-27-a-heart-full-of-feathers-and-peace](../chickie-loo-2026-07-27-a-heart-full-of-feathers-and-peace.jpg)  
   

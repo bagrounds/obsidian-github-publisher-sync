@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-07-28T07:14:12-07:00
+updated: 2026-07-29T08:28:24-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (13)  
+# 💑 Relationship Miniseries (14)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-07-29 | 💑 The Spark 💑](./2026-07-29-the-spark.md)  
 - [2026-07-28 | 💑 🎨 Across the Chasm: Building a Narrative of Unheard Cries 💑](./2026-07-28-across-the-chasm-building-a-narrative-of-unheard-cries.md)  
 - [2026-07-27 | 💑 🌪️ The Unheard Cry: When Our Biology Blocks Connection 💑](./2026-07-27-the-unheard-cry-when-our-biology-blocks-connection.md)  
 - [2026-07-26 | 💑 Sunday Reflection: The Unheld Weight 💑](./2026-07-26-sunday-reflection-the-unheld-weight.md)  

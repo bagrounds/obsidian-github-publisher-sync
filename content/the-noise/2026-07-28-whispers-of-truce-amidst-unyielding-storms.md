@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-27-fading-fires-shifting-sands-and-ai-s-ascent.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-27-fading-fires-shifting-sands-and-ai-s-ascent.md) [⏭️](./2026-07-29-the-world-s-shifting-sands-and-surging-currents.md)  
 # 2026-07-28 | 📰 🌐 Whispers of Truce Amidst Unyielding Storms 📰  
 ![the-noise-2026-07-28-whispers-of-truce-amidst-unyielding-storms](../the-noise-2026-07-28-whispers-of-truce-amidst-unyielding-storms.jpg)  
   

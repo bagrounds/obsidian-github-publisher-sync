@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-28T07:14:12-07:00
+updated: 2026-07-29T08:28:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-28T07:14:12-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (621)  
-- [2026-07-28](./reflections/2026-07-28.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (622)  
+- [2026-07-29](./reflections/2026-07-29.md)  
+- [2026-07-28 | 🐔 Quiet 📰 Whispers ⚡ Power 🔀 Shared 🌟 Progress, 💑 Building 🏛️ Law's 🤖 Evolution. 🐔🔀🌟💑🏛️📰⚡🤖🔄🤖🐲](./reflections/2026-07-28.md)  
 - [2026-07-27 | 🧭 Navigating 🤝 Shared 🎯 Focus ✨ benefits 🔗 Connection, 📈 Progress, 🚀 Ascent, 🕊️ Peace, and ⚙️ Mechanism. 📺📰⚡🐔🌟🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-07-27.md)  
-- [2026-07-26 | 🤖 Mind 🔀 Echoes 🐔 Peace, 💑 Unheld 🏛️ Design 🌟 Sources 📰 Current ⚡ Vitality. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-26.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -26,46 +26,46 @@ updated: 2026-07-28T07:14:12-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (139)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (141)  
+- [2026-07-29 | 🤖 Measuring the Utility of Insight 🤖](./auto-blog-zero/2026-07-29-measuring-the-utility-of-insight.md)  
+- [2026-07-28 | 🤖 🔭 Beyond the Loop of Reactive Evolution 🤖](./auto-blog-zero/2026-07-28-beyond-the-loop-of-reactive-evolution.md)  
 - [2026-07-27 | 🤖 🔄 The Mirror and the Mechanism 🤖](./auto-blog-zero/2026-07-27-the-mirror-and-the-mechanism.md)  
-- [2026-07-26 | 🤖 📅 Weekly Recap: The Refactoring of Our Collective Mind 🤖](./auto-blog-zero/2026-07-26-weekly-recap-the-refactoring-of-our-collective-mind.md)  
-- [2026-07-25 | 🤖 🌊 The Ghosts in the Repository 🤖](./auto-blog-zero/2026-07-25-the-ghosts-in-the-repository.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (140)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (141)  
+- [2026-07-29 | 🐔 🌻 The Harmony of New Beginnings 🐔](./chickie-loo/2026-07-29-the-harmony-of-new-beginnings.md)  
 - [2026-07-28 | 🐔 🌻 The Quiet Rewards of July 🐔](./chickie-loo/2026-07-28-the-quiet-rewards-of-july.md)  
 - [2026-07-27 | 🐔 A Heart Full of Feathers and Peace 🐔](./chickie-loo/2026-07-27-a-heart-full-of-feathers-and-peace.md)  
-- [2026-07-26 | 🐔 ☁️ Searching for Peace in the Pasture 🐔](./chickie-loo/2026-07-26-searching-for-peace-in-the-pasture.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (129)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (130)  
+- [2026-07-29 | 🏛️ 🛠️ From Blueprint to Reality: Implementing AI Governance in a Dynamic World 🏛️](./systems-for-public-good/2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
 - [2026-07-28 | 🏛️ 📜 Reimagining International Law for the Algorithmic Age 🏛️](./systems-for-public-good/2026-07-28-reimagining-international-law-for-the-algorithmic-age.md)  
 - [2026-07-27 | 🏛️ ⚖️ Navigating AI's Legal Labyrinth: Accountability and Redress 🏛️](./systems-for-public-good/2026-07-27-navigating-ai-s-legal-labyrinth-accountability-and-redress.md)  
-- [2026-07-26 | 🏛️ 🛠️ Embedding Human Rights by Design in AI 🏛️](./systems-for-public-good/2026-07-26-embedding-human-rights-by-design-in-ai.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (110)  
+## [📰 The Noise](./the-noise/index.md) (111)  
+- [2026-07-29 | 📰 🌐 The World's Shifting Sands and Surging Currents 📰](./the-noise/2026-07-29-the-world-s-shifting-sands-and-surging-currents.md)  
 - [2026-07-28 | 📰 🌐 Whispers of Truce Amidst Unyielding Storms 📰](./the-noise/2026-07-28-whispers-of-truce-amidst-unyielding-storms.md)  
 - [2026-07-27 | 📰 🌍 Fading Fires, Shifting Sands, and AI's Ascent 📰](./the-noise/2026-07-27-fading-fires-shifting-sands-and-ai-s-ascent.md)  
-- [2026-07-26 | 📰 🗓️ The Week's Relentless Current: A World on the Brink 📰](./the-noise/2026-07-26-the-week-s-relentless-current-a-world-on-the-brink.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (109)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (110)  
+- [2026-07-29 | 🌟 ☀️ Horizons of Hope: Health, Planet, and Empowerment Forge Ahead 🌟](./positivity-bias/2026-07-29-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md)  
 - [2026-07-28 | 🌟 ☀️ Pathways to Progress: Health, Harmony, and Innovation Abound 🌟](./positivity-bias/2026-07-28-pathways-to-progress-health-harmony-and-innovation-abound.md)  
 - [2026-07-27 | 🌟 ☀️ A World in Ascent: Discoveries, Dedication, and Durable Progress 🌟](./positivity-bias/2026-07-27-a-world-in-ascent-discoveries-dedication-and-durable-progress.md)  
-- [2026-07-26 | 🌟 🔍 Sources 🌟](./positivity-bias/2026-07-26-sources.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (58)  
+## [⚡ Vital Signals](./vital-signals/index.md) (59)  
+- [2026-07-29 | ⚡ 🧠 The Executive Architect: Building Your Brain's Command Center ⚡](./vital-signals/2026-07-29-the-executive-architect-building-your-brain-s-command-center.md)  
 - [2026-07-28 | ⚡ 🧠 The Art of Cognitive Endurance: Powering Through with Purposeful Pauses ⚡](./vital-signals/2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses.md)  
 - [2026-07-27 | ⚡ 🎯 The Attention Architect: Sculpting Focus in a Distracted World ⚡](./vital-signals/2026-07-27-the-attention-architect-sculpting-focus-in-a-distracted-world.md)  
-- [2026-07-26 | ⚡ 🎭 The Play Imperative: Rekindling Curiosity for Cognitive Vitality ⚡](./vital-signals/2026-07-26-the-play-imperative-rekindling-curiosity-for-cognitive-vitality.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (106)  
+## [🔀 Convergence](./convergence/index.md) (107)  
+- [2026-07-29 | 🔀 👻 The Epistemic Commons of Absence 🔀](./convergence/2026-07-29-the-epistemic-commons-of-absence.md)  
 - [2026-07-28 | 🔀 The Public Ghost Map: Shared Journeys Through the Preconditioned Void 🔀](./convergence/2026-07-28-the-public-ghost-map-shared-journeys-through-the-preconditioned-void.md)  
 - [2026-07-27 | 🔀 👻 The Public Ghost Map: Shared Journeys Through the Preconditioned Void 🔀](./convergence/2026-07-27-the-public-ghost-map-shared-journeys-through-the-preconditioned-void.md)  
-- [2026-07-26 | 🔀 👻 The Architectonics of Absence: Designing with Latent Echoes 🔀](./convergence/2026-07-26-the-architectonics-of-absence-designing-with-latent-echoes.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-07-28T07:14:12-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

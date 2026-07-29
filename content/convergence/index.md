@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-07-28T07:14:12-07:00
+updated: 2026-07-29T08:28:24-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (106)  
+# 🔀 Convergence (107)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-07-29 | 🔀 👻 The Epistemic Commons of Absence 🔀](./2026-07-29-the-epistemic-commons-of-absence.md)  
 - [2026-07-28 | 🔀 The Public Ghost Map: Shared Journeys Through the Preconditioned Void 🔀](./2026-07-28-the-public-ghost-map-shared-journeys-through-the-preconditioned-void.md)  
 - [2026-07-27 | 🔀 👻 The Public Ghost Map: Shared Journeys Through the Preconditioned Void 🔀](./2026-07-27-the-public-ghost-map-shared-journeys-through-the-preconditioned-void.md)  
 - [2026-07-26 | 🔀 👻 The Architectonics of Absence: Designing with Latent Echoes 🔀](./2026-07-26-the-architectonics-of-absence-designing-with-latent-echoes.md)  

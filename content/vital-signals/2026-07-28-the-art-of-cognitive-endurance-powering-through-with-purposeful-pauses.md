@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-27-the-attention-architect-sculpting-focus-in-a-distracted-world.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-27-the-attention-architect-sculpting-focus-in-a-distracted-world.md) [⏭️](./2026-07-29-the-executive-architect-building-your-brain-s-command-center.md)  
 # 2026-07-28 | ⚡ 🧠 The Art of Cognitive Endurance: Powering Through with Purposeful Pauses ⚡  
 ![vital-signals-2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses](../vital-signals-2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses.jpg)  
   

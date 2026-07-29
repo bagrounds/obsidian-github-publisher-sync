@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-17T00:46:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist map of the United States, focusing on the Pacific coastline. The three states of Washington, Oregon, and California are highlighted in a vibrant, unified color, standing out against the rest of the country in a muted, neutral tone. Above the coastline, three distinct, glowing geometric icons—representing science, medicine, and regional cooperation—float in the sky. The background is a clean, modern gradient that transitions from a soft dawn orange to a cool, professional blue, symbolizing a shift in perspective. The overall aesthetic is clean, editorial, and sophisticated, using sharp lines and a high-contrast palette to convey a sense of institutional independence and regional alignment.
+updated: 2026-07-29T05:21:16
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC  
@@ -44,4 +45,12 @@ For a better understanding, it would be beneficial to explore:
 * 📜 **The Politics of Public Health** by David L. Perlin provides an in-depth look at how political systems and policy decisions impact public health outcomes.  
 - 😷 [🦠🌍💀 The Great Influenza](../books/the-great-influenza.md) by John M. Barry details the history of a major public health crisis and the response of authorities.  
 - 🦠 The Power of Plagues by Irwin W. Sherman explores how epidemics and pandemics have shaped human history and society.  
-* 🏃‍♂️ **The Story of the Human Body** by Daniel E. Lieberman offers a different perspective by exploring the evolutionary origins of modern health problems and diseases, highlighting the conflict between our ancient bodies and our modern environment.
+* 🏃‍♂️ **The Story of the Human Body** by Daniel E. Lieberman offers a different perspective by exploring the evolutionary origins of modern health problems and diseases, highlighting the conflict between our ancient bodies and our modern environment.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mrr6k6ba2g24" data-bluesky-cid="bafyreigfgqqao53jkn6zzbg5dall7p447d3rkxgivqgts3q3esxdfblmnm"><p>🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC  
+  
+#AI Q: 🏥 State or federal?  
+  
+🏛️ State Governance  
+https://bagrounds.org/articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mrr6k6ba2g24?ref_src=embed">2026-07-29T05:21:21.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

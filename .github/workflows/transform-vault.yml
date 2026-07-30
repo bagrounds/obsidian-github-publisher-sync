@@ -1,0 +1,43 @@
+name: Transform Vault Content
+
+on:
+  push:
+    paths: ["vault/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  transform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        id: cache-deps
+        with:
+          path: node_modules
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Transform vault content
+        run: |
+          npx tsx scripts/transform-vault.ts \
+            --vault vault/ \
+            --output content-ci/
+
+      - name: Compare with existing content
+        run: diff -r content/ content-ci/

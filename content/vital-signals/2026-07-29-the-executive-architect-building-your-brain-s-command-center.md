@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses.md) [⏭️](./2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.md)  
 # 2026-07-29 | ⚡ 🧠 The Executive Architect: Building Your Brain's Command Center ⚡  
 ![vital-signals-2026-07-29-the-executive-architect-building-your-brain-s-command-center](../vital-signals-2026-07-29-the-executive-architect-building-your-brain-s-command-center.jpg)  
   

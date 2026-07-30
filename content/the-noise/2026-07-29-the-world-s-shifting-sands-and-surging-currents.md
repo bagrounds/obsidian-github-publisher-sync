@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-28-whispers-of-truce-amidst-unyielding-storms.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-28-whispers-of-truce-amidst-unyielding-storms.md) [⏭️](./2026-07-30-echoes-of-conflict-and-ai-s-reckoning.md)  
 # 2026-07-29 | 📰 🌐 The World's Shifting Sands and Surging Currents 📰  
 ![the-noise-2026-07-29-the-world-s-shifting-sands-and-surging-currents](../the-noise-2026-07-29-the-world-s-shifting-sands-and-surging-currents.jpg)  
   

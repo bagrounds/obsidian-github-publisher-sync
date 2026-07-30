@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-28-reimagining-international-law-for-the-algorithmic-age.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-28-reimagining-international-law-for-the-algorithmic-age.md) [⏭️](./2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms.md)  
 # 2026-07-29 | 🏛️ 🛠️ From Blueprint to Reality: Implementing AI Governance in a Dynamic World 🏛️  
 ![systems-for-public-good-2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world](../systems-for-public-good-2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.jpg)  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-30T09:05:21-07:00
+updated: 2026-07-30T16:10:54-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (901)  
+# 📺 Videos (902)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -872,6 +872,7 @@ updated: 2026-07-30T09:05:21-07:00
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [📉🏢📉 Why Google, Apple & Big Tech Keep Making Everything Worse | Cory Doctorow and Trevor Noah](./why-google-apple-big-tech-keep-making-everything-worse-cory-doctorow-and-trevor-noah.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
+- [📉🤖🤏 Why Large? Tiny LMs & Agents on Edge/Robotics - Cormac Brick, Google](./why-large-tiny-lms-agents-on-edgerobotics-cormac-brick-google.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
 - [📰🚫🧠 Why Most News Isn't Worth Your Attention | TED Explains the World with Ian Bremmer](./why-most-news-isnt-worth-your-attention-ted-explains-the-world-with-ian-bremmer.md)  
 - [🧠🌐🤖 Why Netflix is betting on systems thinkers - not specialists - in the AI era | Elizabeth Stone (CPTO)](./why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era-elizabeth-stone-cpto.md)  

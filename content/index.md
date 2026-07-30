@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-30T09:05:21-07:00
+updated: 2026-07-30T16:10:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-30T09:05:21-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (901)  
+## [📺 Videos](./videos/index.md) (902)  
+- [📉🤖🤏 Why Large? Tiny LMs & Agents on Edge/Robotics - Cormac Brick, Google](./videos/why-large-tiny-lms-agents-on-edgerobotics-cormac-brick-google.md)  
 - [🕒🧬🍎 E133: Mark Mattson talks about the benefits and science of intermittent fasting](./videos/e133-mark-mattson-talks-about-the-benefits-and-science-of-intermittent-fasting.md)  
 - [🚫🚢🧪 Don't Ship Skills Without Evals - Philipp Schmid, Google DeepMind](./videos/dont-ship-skills-without-evals-philipp-schmid-google-deepmind.md)  
-- [🏢🧠 Every company should have a Brain - Garry Tan, Y Combinator](./videos/every-company-should-have-a-brain-garry-tan-y-combinator.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

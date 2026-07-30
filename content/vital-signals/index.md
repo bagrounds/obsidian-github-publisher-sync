@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-07-29T08:28:24-07:00
+updated: 2026-07-30T09:05:21-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (59)  
+# ⚡ Vital Signals (60)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-07-30 | ⚡ 😴 The Mind's Night Shift: Sculpting Brilliance Through Rest ⚡](./2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.md)  
 - [2026-07-29 | ⚡ 🧠 The Executive Architect: Building Your Brain's Command Center ⚡](./2026-07-29-the-executive-architect-building-your-brain-s-command-center.md)  
 - [2026-07-28 | ⚡ 🧠 The Art of Cognitive Endurance: Powering Through with Purposeful Pauses ⚡](./2026-07-28-the-art-of-cognitive-endurance-powering-through-with-purposeful-pauses.md)  
 - [2026-07-27 | ⚡ 🎯 The Attention Architect: Sculpting Focus in a Distracted World ⚡](./2026-07-27-the-attention-architect-sculpting-focus-in-a-distracted-world.md)  

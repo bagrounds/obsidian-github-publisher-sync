@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-31T05:04:55-07:00
+updated: 2026-07-31T14:12:51-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (902)  
+# 📺 Videos (903)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -462,6 +462,7 @@ updated: 2026-07-31T05:04:55-07:00
 - [🧠💾⚡️ My system for memorizing everything INSTANTLY](./my-system-for-memorizing-everything-instantly.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
+- [🧠⚡🔄 Neuroscience confirms: This simple habit rewires your brain](./neuroscience-confirms-this-simple-habit-rewires-your-brain.md)  
 - [🧠📉📈 Neuroscience Confirms - Why Doing Less Helps You Achieve More](./neuroscience-confirms-why-doing-less-helps-you-achieve-more.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-29-the-executive-architect-building-your-brain-s-command-center.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-29-the-executive-architect-building-your-brain-s-command-center.md) [⏭️](./2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.md)  
 # 2026-07-30 | ⚡ 😴 The Mind's Night Shift: Sculpting Brilliance Through Rest ⚡  
 ![vital-signals-2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest](../vital-signals-2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.jpg)  
   

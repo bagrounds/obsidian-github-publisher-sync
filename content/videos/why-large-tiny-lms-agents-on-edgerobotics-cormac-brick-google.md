@@ -9,6 +9,10 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://youtu.be/hacEQHHhu2Q
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-30T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📉🤖🤏 Why Large? Tiny LMs & Agents on Edge/Robotics - Cormac Brick, Google  

@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T23:32:37Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, cinematic shot of a modern university campus courtyard. In the foreground, a stack of leather-bound doctoral theses sits on a stone bench, partially obscured by a sharp, red geometric shape—like a digital target or a censor bar—that slices across the frame. In the background, blurred silhouettes of diverse students walk across a plaza toward neoclassical academic buildings. The lighting is dramatic, with long, cool-toned shadows stretching across the pavement, contrasting with a single, harsh spotlight focused on the center of the scene. The atmosphere is tense and contemplative, blending the traditional aesthetic of higher education with a sense of modern bureaucratic scrutiny.
+updated: 2026-07-31T01:56:54
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](https://www.npr.org/2025/03/24/nx-s1-5330715/trump-phd-college-university-investigation-dei-diversity)  
@@ -27,3 +28,11 @@ image_prompt: A high-angle, cinematic shot of a modern university campus courtya
 • 🌟 Alumni praise 🙏 the program's impact 💥 on their lives and careers, emphasizing the importance of seeing 👀 and interacting with individuals 🧑‍🤝‍🧑 who share similar backgrounds and experiences.  
   
 • ⏳ While the long-term consequences of the investigation remain uncertain ❓, the current climate 🌡️ of heightened scrutiny and potential ✂️ funding cuts creates significant challenges 😓 for the Ph.D. Project and similar diversity 🌈 initiatives.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mrvu2kmj5w2g" data-bluesky-cid="bafyreihd32zx6amz6dalr3scueh4bvjgqh2mqnlknunqyqj3cc2fblty6e"><p>👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration  
+  
+#AI Q: 🎓 Should colleges prioritize DEI?  
+  
+🏛️ Federal Investigation | 🌈 Diversity Initiatives  
+https://bagrounds.org/articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mrvu2kmj5w2g?ref_src=embed">2026-07-31T01:56:58.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

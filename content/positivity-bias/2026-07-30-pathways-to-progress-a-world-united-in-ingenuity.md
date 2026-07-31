@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-29-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-07-29-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md) [⏭️](./2026-07-31-a-world-united-innovations-compassion-and-a-month-of-milestones.md)  
 # 2026-07-30 | 🌟 ☀️ Pathways to Progress: A World United in Ingenuity 🌟  
 ![positivity-bias-2026-07-30-pathways-to-progress-a-world-united-in-ingenuity](../positivity-bias-2026-07-30-pathways-to-progress-a-world-united-in-ingenuity.jpg)  
   

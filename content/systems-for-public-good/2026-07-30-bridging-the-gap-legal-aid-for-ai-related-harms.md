@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md) [⏭️](./2026-07-31-fueling-ethical-ai-public-funding-as-a-foundation.md)  
 # 2026-07-30 | 🏛️ 🗣️ Bridging the Gap: Legal Aid for AI-Related Harms 🏛️  
 ![systems-for-public-good-2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms](../systems-for-public-good-2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms.jpg)  
   

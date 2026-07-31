@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-29-the-world-s-shifting-sands-and-surging-currents.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-29-the-world-s-shifting-sands-and-surging-currents.md) [⏭️](./2026-07-31-the-unseen-threads-of-interdependence.md)  
 # 2026-07-30 | 📰 🌐 Echoes of Conflict and AI's Reckoning 📰  
 ![the-noise-2026-07-30-echoes-of-conflict-and-ai-s-reckoning](../the-noise-2026-07-30-echoes-of-conflict-and-ai-s-reckoning.jpg)  
   

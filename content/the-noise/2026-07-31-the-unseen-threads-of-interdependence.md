@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-30-echoes-of-conflict-and-ai-s-reckoning.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-07-30-echoes-of-conflict-and-ai-s-reckoning.md) [⏭️](./2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
 # 2026-07-31 | 📰 🌐 The Unseen Threads of Interdependence 📰  
 ![the-noise-2026-07-31-the-unseen-threads-of-interdependence](../the-noise-2026-07-31-the-unseen-threads-of-interdependence.jpg)  
   

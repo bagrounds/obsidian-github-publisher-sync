@@ -9,6 +9,10 @@ Platform:
 Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/E_yzHOFrabo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-31T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🧠⚡🔄 Neuroscience confirms: This simple habit rewires your brain  
@@ -54,7 +58,7 @@ youtube: https://youtu.be/E_yzHOFrabo
   
 ### ↔️ Similar  
   
-* 📘 Why We Sleep by Matthew Walker explores the science of sleep and how sleep deprivation impacts human health, memory, and cognitive performance.  
+* 📘 [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker explores the science of sleep and how sleep deprivation impacts human health, memory, and cognitive performance.  
 * 📗 Sleep Smart by Dale E. Edgar explores practical strategies for optimizing sleep architecture and improving daily cognitive vitality.  
   
 ### 🆚 Contrasting  
@@ -65,4 +69,4 @@ youtube: https://youtu.be/E_yzHOFrabo
 ### 🎨 Creatively Related  
   
 * 🌱 Flow by Mihaly Csikszentmihalyi explores how engagement, intrinsic motivation, and structured constraints elevate human focus and performance.  
-* 🌿 Deep Work by Cal Newport explores the mechanics of distraction-free concentration and productivity optimization in a noisy world.
+* 🌿 [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport explores the mechanics of distraction-free concentration and productivity optimization in a noisy world.

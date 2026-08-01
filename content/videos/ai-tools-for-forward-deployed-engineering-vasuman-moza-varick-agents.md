@@ -9,6 +9,10 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://youtu.be/l0FLhNqBOic
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-07-31T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🛠️🚀 AI tools for Forward Deployed Engineering - Vasuman Moza, Varick Agents  
@@ -55,7 +59,7 @@ youtube: https://youtu.be/l0FLhNqBOic
 ### ↔️ Similar  
   
 * 📘 The book Competing in the Age of AI by Harvard Business School Publishing explores how traditional operating models must be fundamentally redesigned around scalable digital algorithms.  
-* 📙 The book Prediction Machines by Harvard Business Review Press explores how artificial intelligence lowers the cost of prediction and transforms business decision-making.  
+* 📙 The book [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Harvard Business Review Press explores how artificial intelligence lowers the cost of prediction and transforms business decision-making.  
   
 ### 🆚 Contrasting  
   

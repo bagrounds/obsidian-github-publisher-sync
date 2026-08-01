@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms.md) [⏭️](./2026-08-01-laying-the-digital-commons-public-ai-infrastructure.md)  
 # 2026-07-31 | 🏛️ 💰 Fueling Ethical AI: Public Funding as a Foundation 🏛️  
 ![systems-for-public-good-2026-07-31-fueling-ethical-ai-public-funding-as-a-foundation](../systems-for-public-good-2026-07-31-fueling-ethical-ai-public-funding-as-a-foundation.jpg)  
   

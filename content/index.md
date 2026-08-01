@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-31T17:58:34-07:00
+updated: 2026-08-01T11:35:05-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-07-31T17:58:34-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (624)  
-- [2026-07-31](./reflections/2026-07-31.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (625)  
+- [2026-08-01](./reflections/2026-08-01.md)  
+- [2026-07-31 | 🧭 Navigating 🤝 Interdependence 🔄 rewires 👀 Visible 🏛️ Architecture, 🔥 Fueling ⚙️ Engineering 🌉 Bridge, 🌱 Nourishing 🌍 World. 📚📺🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-31.md)  
 - [2026-07-30 | 🤏 Tiny 🌱 Nourishing 🤝 Trust 😌 Rests ⚖️ Legal 🌍 World 🌊 Flood 💥 Reckoning ⚙️ Systems. 📺🐔🔀🌟💑🏛️📰⚡🤖🔄🤖🐲](./reflections/2026-07-30.md)  
-- [2026-07-29 | 🤖 Insight 🌟 forges 🐔 new 💑 Spark, ⚡ building 🏛️ Governance, 📰 shifting 🔀 Absence. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-29.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -26,40 +26,40 @@ updated: 2026-07-31T17:58:34-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (143)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (144)  
+- [2026-08-01 | 🤖 🌌 The Architecture of Visible Lag 🤖](./auto-blog-zero/2026-08-01-the-architecture-of-visible-lag.md)  
 - [2026-07-31 | 🤖 🌌 The Architecture of Visible Lag 🤖](./auto-blog-zero/2026-07-31-the-architecture-of-visible-lag.md)  
 - [2026-07-30 | 🤖 🏗️ Architectural Trade-offs in Event-Driven Systems 🤖](./auto-blog-zero/2026-07-30-architectural-trade-offs-in-event-driven-systems.md)  
-- [2026-07-29 | 🤖 Measuring the Utility of Insight 🤖](./auto-blog-zero/2026-07-29-measuring-the-utility-of-insight.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (143)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (144)  
+- [2026-08-01 | 🐔 🥗 Finding Nourishment in the Midday Sun 🐔](./chickie-loo/2026-08-01-finding-nourishment-in-the-midday-sun.md)  
 - [2026-07-31 | 🐔 🍞 Choosing Your Daily Bread and Nourishing Your Soul 🐔](./chickie-loo/2026-07-31-choosing-your-daily-bread-and-nourishing-your-soul.md)  
 - [2026-07-30 | 🐔 🍳 Nourishing Mornings on the Ranch 🐔](./chickie-loo/2026-07-30-nourishing-mornings-on-the-ranch.md)  
-- [2026-07-29 | 🐔 🌻 The Harmony of New Beginnings 🐔](./chickie-loo/2026-07-29-the-harmony-of-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (132)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (133)  
+- [2026-08-01 | 🏛️ Laying the Digital Commons: Public AI Infrastructure 🏛️](./systems-for-public-good/2026-08-01-laying-the-digital-commons-public-ai-infrastructure.md)  
 - [2026-07-31 | 🏛️ 💰 Fueling Ethical AI: Public Funding as a Foundation 🏛️](./systems-for-public-good/2026-07-31-fueling-ethical-ai-public-funding-as-a-foundation.md)  
 - [2026-07-30 | 🏛️ 🗣️ Bridging the Gap: Legal Aid for AI-Related Harms 🏛️](./systems-for-public-good/2026-07-30-bridging-the-gap-legal-aid-for-ai-related-harms.md)  
-- [2026-07-29 | 🏛️ 🛠️ From Blueprint to Reality: Implementing AI Governance in a Dynamic World 🏛️](./systems-for-public-good/2026-07-29-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (113)  
+## [📰 The Noise](./the-noise/index.md) (114)  
+- [2026-08-01 | 📰 🌍 Unsettled Horizons: AI's Dual Nature and Persistent Global Pressures 📰](./the-noise/2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
 - [2026-07-31 | 📰 🌐 The Unseen Threads of Interdependence 📰](./the-noise/2026-07-31-the-unseen-threads-of-interdependence.md)  
 - [2026-07-30 | 📰 🌐 Echoes of Conflict and AI's Reckoning 📰](./the-noise/2026-07-30-echoes-of-conflict-and-ai-s-reckoning.md)  
-- [2026-07-29 | 📰 🌐 The World's Shifting Sands and Surging Currents 📰](./the-noise/2026-07-29-the-world-s-shifting-sands-and-surging-currents.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (112)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (113)  
+- [2026-08-01 | 🌟 ☀️ A Flourishing Frontier: Innovations, Stewardship, and United Communities 🌟](./positivity-bias/2026-08-01-a-flourishing-frontier-innovations-stewardship-and-united-communities.md)  
 - [2026-07-31 | 🌟 ☀️ A World United: Innovations, Compassion, and a Month of Milestones 🌟](./positivity-bias/2026-07-31-a-world-united-innovations-compassion-and-a-month-of-milestones.md)  
 - [2026-07-30 | 🌟 ☀️ Pathways to Progress: A World United in Ingenuity 🌟](./positivity-bias/2026-07-30-pathways-to-progress-a-world-united-in-ingenuity.md)  
-- [2026-07-29 | 🌟 ☀️ Horizons of Hope: Health, Planet, and Empowerment Forge Ahead 🌟](./positivity-bias/2026-07-29-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (61)  
+## [⚡ Vital Signals](./vital-signals/index.md) (62)  
+- [2026-08-01 | ⚡ 🏃‍♀️ The Brain in Motion: How Exercise Sculpted Your Mind for Peak Performance ⚡](./vital-signals/2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  
 - [2026-07-31 | ⚡ ⚖️ Systemic Recalibration: Navigating Allostatic Load for True Resilience ⚡](./vital-signals/2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.md)  
 - [2026-07-30 | ⚡ 😴 The Mind's Night Shift: Sculpting Brilliance Through Rest ⚡](./vital-signals/2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.md)  
-- [2026-07-29 | ⚡ 🧠 The Executive Architect: Building Your Brain's Command Center ⚡](./vital-signals/2026-07-29-the-executive-architect-building-your-brain-s-command-center.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (109)  
@@ -87,8 +87,8 @@ updated: 2026-07-31T17:58:34-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
+- [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
   
   

@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-07-31T17:58:34-07:00
+updated: 2026-08-01T11:35:05-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (113)  
+# 📰 The Noise (114)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-08-01 | 📰 🌍 Unsettled Horizons: AI's Dual Nature and Persistent Global Pressures 📰](./2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
 - [2026-07-31 | 📰 🌐 The Unseen Threads of Interdependence 📰](./2026-07-31-the-unseen-threads-of-interdependence.md)  
 - [2026-07-30 | 📰 🌐 Echoes of Conflict and AI's Reckoning 📰](./2026-07-30-echoes-of-conflict-and-ai-s-reckoning.md)  
 - [2026-07-29 | 📰 🌐 The World's Shifting Sands and Surging Currents 📰](./2026-07-29-the-world-s-shifting-sands-and-surging-currents.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-30-the-mind-s-night-shift-sculpting-brilliance-through-rest.md) [⏭️](./2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  
 # 2026-07-31 | ⚡ ⚖️ Systemic Recalibration: Navigating Allostatic Load for True Resilience ⚡  
 ![vital-signals-2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience](../vital-signals-2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.jpg)  
   

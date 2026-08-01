@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-07-31T14:12:51-07:00
+updated: 2026-07-31T17:58:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-07-31T14:12:51-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (903)  
+## [📺 Videos](./videos/index.md) (904)  
+- [🤖🛠️🚀 AI tools for Forward Deployed Engineering - Vasuman Moza, Varick Agents](./videos/ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents.md)  
 - [🧠⚡🔄 Neuroscience confirms: This simple habit rewires your brain](./videos/neuroscience-confirms-this-simple-habit-rewires-your-brain.md)  
 - [📉🤖🤏 Why Large? Tiny LMs & Agents on Edge/Robotics - Cormac Brick, Google](./videos/why-large-tiny-lms-agents-on-edgerobotics-cormac-brick-google.md)  
-- [🕒🧬🍎 E133: Mark Mattson talks about the benefits and science of intermittent fasting](./videos/e133-mark-mattson-talks-about-the-benefits-and-science-of-intermittent-fasting.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

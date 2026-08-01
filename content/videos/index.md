@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-07-31T14:12:51-07:00
+updated: 2026-07-31T17:58:34-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (903)  
+# 📺 Videos (904)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -66,6 +66,7 @@ updated: 2026-07-31T14:12:51-07:00
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
+- [🤖🛠️🚀 AI tools for Forward Deployed Engineering - Vasuman Moza, Varick Agents](./ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents.md)  
 - [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./a-look-at-50-years-of-the-news-hour.md)  

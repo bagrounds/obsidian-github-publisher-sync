@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.md) [⏭️](./2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md)  
 # 2026-08-01 | ⚡ 🏃‍♀️ The Brain in Motion: How Exercise Sculpted Your Mind for Peak Performance ⚡  
 ![vital-signals-2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance](../vital-signals-2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.jpg)  
   

@@ -14,7 +14,7 @@ link_analysis_time: 2026-07-31T00:00:00Z
 force_analyze_links: false
 updated: 2026-08-01T13:47:32
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-30-the-ghost-architects-of-trust.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-07-30-the-ghost-architects-of-trust.md) [⏭️](./2026-08-01-the-architecture-of-collective-unlearning.md)  
 # 2026-07-31 | 🔀 👻 The Architecture of Visible Lag 🔀  
 ![convergence-2026-07-31-the-architecture-of-visible-lag](../convergence-2026-07-31-the-architecture-of-visible-lag.jpg)  
   

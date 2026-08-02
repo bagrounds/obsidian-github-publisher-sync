@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-01T11:35:05-07:00
+updated: 2026-08-02T09:40:05-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (109)  
+# 🔀 Convergence (111)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-02 | 🔀 👻 The Architecture of Responsive Becoming 🔀](./2026-08-02-the-architecture-of-responsive-becoming.md)  
+- [2026-08-01 | 🔀 👻 The Architecture of Collective Unlearning 🔀](./2026-08-01-the-architecture-of-collective-unlearning.md)  
 - [2026-07-31 | 🔀 👻 The Architecture of Visible Lag 🔀](./2026-07-31-the-architecture-of-visible-lag.md)  
 - [2026-07-30 | 🔀 👻 The Ghost Architects of Trust 🔀](./2026-07-30-the-ghost-architects-of-trust.md)  
 - [2026-07-29 | 🔀 👻 The Epistemic Commons of Absence 🔀](./2026-07-29-the-epistemic-commons-of-absence.md)  

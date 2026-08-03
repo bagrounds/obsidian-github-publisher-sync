@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md) [⏭️](./2026-08-03-currents-of-control-and-cascading-consequences.md)  
 # 2026-08-02 | 📰 🌍 Echoes of Instability: From Battlefields to Boardrooms 📰  
 ![the-noise-2026-08-02-echoes-of-instability-from-battlefields-to-boardrooms](../the-noise-2026-08-02-echoes-of-instability-from-battlefields-to-boardrooms.jpg)  
   

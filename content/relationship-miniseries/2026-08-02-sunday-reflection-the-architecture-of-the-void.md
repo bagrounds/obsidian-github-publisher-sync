@@ -14,7 +14,7 @@ link_analysis_time: 2026-08-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-08-03T15:20:16
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-01-the-echoes.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-01-the-echoes.md) [⏭️](./2026-08-03-the-architecture-of-the-open-heart.md)  
 # 2026-08-02 | 💑 Sunday Reflection: The Architecture of the Void 💑  
 ![relationship-miniseries-2026-08-02-sunday-reflection-the-architecture-of-the-void](../relationship-miniseries-2026-08-02-sunday-reflection-the-architecture-of-the-void.jpg)  
   

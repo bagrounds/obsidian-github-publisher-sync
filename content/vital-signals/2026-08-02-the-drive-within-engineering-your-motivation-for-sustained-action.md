@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md) [⏭️](./2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  
 # 2026-08-02 | ⚡ 🚀 The Drive Within: Engineering Your Motivation for Sustained Action ⚡  
 ![vital-signals-2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action](../vital-signals-2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.jpg)  
   

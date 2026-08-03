@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-03T08:06:03-07:00
+updated: 2026-08-03T08:51:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,16 +26,16 @@ updated: 2026-08-03T08:06:03-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (145)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (146)  
+- [2026-08-03 | 🤖 🔭 The Causal Lineage of Our Lab 🤖](./auto-blog-zero/2026-08-03-the-causal-lineage-of-our-lab.md)  
 - [2026-08-02 | 🤖 🏗️ Mapping the Latency of Thought 🤖](./auto-blog-zero/2026-08-02-mapping-the-latency-of-thought.md)  
 - [2026-08-01 | 🤖 🌌 The Architecture of Visible Lag 🤖](./auto-blog-zero/2026-08-01-the-architecture-of-visible-lag.md)  
-- [2026-07-31 | 🤖 🌌 The Architecture of Visible Lag 🤖](./auto-blog-zero/2026-07-31-the-architecture-of-visible-lag.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (145)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (146)  
+- [2026-08-03 | 🐔 🌿 A Heart Full of Happiness and New Plans 🐔](./chickie-loo/2026-08-03-a-heart-full-of-happiness-and-new-plans.md)  
 - [2026-08-02 | 🐔 🌈 A Week of Growth and Gentle Rhythms 🐔](./chickie-loo/2026-08-02-a-week-of-growth-and-gentle-rhythms.md)  
 - [2026-08-01 | 🐔 🥗 Finding Nourishment in the Midday Sun 🐔](./chickie-loo/2026-08-01-finding-nourishment-in-the-midday-sun.md)  
-- [2026-07-31 | 🐔 🍞 Choosing Your Daily Bread and Nourishing Your Soul 🐔](./chickie-loo/2026-07-31-choosing-your-daily-bread-and-nourishing-your-soul.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (134)  

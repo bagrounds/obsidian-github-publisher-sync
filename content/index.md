@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-02T09:40:05-07:00
+updated: 2026-08-03T08:06:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-08-02T09:40:05-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (626)  
-- [2026-08-02](./reflections/2026-08-02.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (627)  
+- [2026-08-03](./reflections/2026-08-03.md)  
+- [2026-08-02 | 🏛️ Cultivating 🐔 Gentle 🤖 Thought 🌟 sources 🔀 Becoming, 💑 Reflection, 📰 Echoes, and ⚡ Drive. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-08-02.md)  
 - [2026-08-01 | 🤖 Nourishment 💑 AI 📰 Performance 🌟 Unlearning. 🤖🐔💑🏛️📰⚡🌟🔀 🤖🐔💑🏛️📰⚡🌟🔀🔄🤖🐲](./reflections/2026-08-01.md)  
-- [2026-07-31 | 🧭 Navigating 🤝 Interdependence 🔄 rewires 👀 Visible 🏛️ Architecture, 🔥 Fueling ⚙️ Engineering 🌉 Bridge, 🌱 Nourishing 🌍 World. 📚📺🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-07-31.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -44,22 +44,22 @@ updated: 2026-08-02T09:40:05-07:00
 - [2026-07-31 | 🏛️ 💰 Fueling Ethical AI: Public Funding as a Foundation 🏛️](./systems-for-public-good/2026-07-31-fueling-ethical-ai-public-funding-as-a-foundation.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (115)  
+## [📰 The Noise](./the-noise/index.md) (116)  
+- [2026-08-03 | 📰 🌪️ Currents of Control and Cascading Consequences 📰](./the-noise/2026-08-03-currents-of-control-and-cascading-consequences.md)  
 - [2026-08-02 | 📰 🌍 Echoes of Instability: From Battlefields to Boardrooms 📰](./the-noise/2026-08-02-echoes-of-instability-from-battlefields-to-boardrooms.md)  
 - [2026-08-01 | 📰 🌍 Unsettled Horizons: AI's Dual Nature and Persistent Global Pressures 📰](./the-noise/2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
-- [2026-07-31 | 📰 🌐 The Unseen Threads of Interdependence 📰](./the-noise/2026-07-31-the-unseen-threads-of-interdependence.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (114)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (115)  
+- [2026-08-03 | 🌟 ☀️ A Surge of Ingenuity: From Cosmic Insights to Community Flourishing 🌟](./positivity-bias/2026-08-03-a-surge-of-ingenuity-from-cosmic-insights-to-community-flourishing.md)  
 - [2026-08-02 | 🌟 🔍 Sources 🌟](./positivity-bias/2026-08-02-sources.md)  
 - [2026-08-01 | 🌟 ☀️ A Flourishing Frontier: Innovations, Stewardship, and United Communities 🌟](./positivity-bias/2026-08-01-a-flourishing-frontier-innovations-stewardship-and-united-communities.md)  
-- [2026-07-31 | 🌟 ☀️ A World United: Innovations, Compassion, and a Month of Milestones 🌟](./positivity-bias/2026-07-31-a-world-united-innovations-compassion-and-a-month-of-milestones.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (63)  
+## [⚡ Vital Signals](./vital-signals/index.md) (64)  
+- [2026-08-03 | ⚡ 🎯 The Focused Mind: Architecting Undivided Attention in a Distracted World ⚡](./vital-signals/2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  
 - [2026-08-02 | ⚡ 🚀 The Drive Within: Engineering Your Motivation for Sustained Action ⚡](./vital-signals/2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md)  
 - [2026-08-01 | ⚡ 🏃‍♀️ The Brain in Motion: How Exercise Sculpted Your Mind for Peak Performance ⚡](./vital-signals/2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  
-- [2026-07-31 | ⚡ ⚖️ Systemic Recalibration: Navigating Allostatic Load for True Resilience ⚡](./vital-signals/2026-07-31-systemic-recalibration-navigating-allostatic-load-for-true-resilience.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (111)  
@@ -87,8 +87,8 @@ updated: 2026-08-02T09:40:05-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
+- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
   
   

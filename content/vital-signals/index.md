@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-03T13:34:13-07:00
+updated: 2026-08-04T07:25:04-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (64)  
+# ⚡ Vital Signals (65)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-04 | ⚡ The Art of Cognitive Endurance ⚡](./2026-08-04-the-art-of-cognitive-endurance.md)  
 - [2026-08-03 | ⚡ 🎯 The Focused Mind: Architecting Undivided Attention in a Distracted World ⚡](./2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  
 - [2026-08-02 | ⚡ 🚀 The Drive Within: Engineering Your Motivation for Sustained Action ⚡](./2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md)  
 - [2026-08-01 | ⚡ 🏃‍♀️ The Brain in Motion: How Exercise Sculpted Your Mind for Peak Performance ⚡](./2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  

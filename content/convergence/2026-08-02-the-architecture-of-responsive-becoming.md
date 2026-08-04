@@ -14,7 +14,7 @@ link_analysis_time: 2026-08-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-08-03T11:14:53
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-01-the-architecture-of-collective-unlearning.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-01-the-architecture-of-collective-unlearning.md) [⏭️](./2026-08-03-the-architecture-of-legible-evolution.md)  
 # 2026-08-02 | 🔀 👻 The Architecture of Responsive Becoming 🔀  
 ![convergence-2026-08-02-the-architecture-of-responsive-becoming](../convergence-2026-08-02-the-architecture-of-responsive-becoming.jpg)  
   

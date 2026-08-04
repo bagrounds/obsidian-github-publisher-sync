@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-03T13:34:13-07:00
+updated: 2026-08-04T07:25:04-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (904)  
+# 📺 Videos (905)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -591,6 +591,7 @@ updated: 2026-08-03T13:34:13-07:00
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./something-interesting-happened-today-explainer.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
+- [🎓🤖📈 Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview](./stanford-cs329a-self-improving-ai-agents-part-1-course-overview.md)  
 - [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
 - [🧱🔨 Starting to Crack](./starting-to-crack.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  

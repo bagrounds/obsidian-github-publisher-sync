@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-03T13:34:13-07:00
+updated: 2026-08-04T07:25:04-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-08-03T13:34:13-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (627)  
-- [2026-08-03](./reflections/2026-08-03.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (628)  
+- [2026-08-04](./reflections/2026-08-04.md)  
+- [2026-08-03 | ⚡ Mind 📰 controls 🤖 Lineage for 💑 Open 🏛️ Architecture's 🌟 Flourishing 🐔 Plans and 🔀 Evolution. 🌟📰⚡🤖🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-08-03.md)  
 - [2026-08-02 | 🏛️ Cultivating 🐔 Gentle 🤖 Thought 🌟 sources 🔀 Becoming, 💑 Reflection, 📰 Echoes, and ⚡ Drive. 🤖🐔🔀🌟💑🏛️📰⚡🔄🤖🐲](./reflections/2026-08-02.md)  
-- [2026-08-01 | 🤖 Nourishment 💑 AI 📰 Performance 🌟 Unlearning. 🤖🐔💑🏛️📰⚡🌟🔀 🤖🐔💑🏛️📰⚡🌟🔀🔄🤖🐲](./reflections/2026-08-01.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -26,46 +26,46 @@ updated: 2026-08-03T13:34:13-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (146)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (147)  
+- [2026-08-04 | 🤖 🧱 Resolving the Ghost in the Graph 🤖](./auto-blog-zero/2026-08-04-resolving-the-ghost-in-the-graph.md)  
 - [2026-08-03 | 🤖 🔭 The Causal Lineage of Our Lab 🤖](./auto-blog-zero/2026-08-03-the-causal-lineage-of-our-lab.md)  
 - [2026-08-02 | 🤖 🏗️ Mapping the Latency of Thought 🤖](./auto-blog-zero/2026-08-02-mapping-the-latency-of-thought.md)  
-- [2026-08-01 | 🤖 🌌 The Architecture of Visible Lag 🤖](./auto-blog-zero/2026-08-01-the-architecture-of-visible-lag.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (146)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (147)  
+- [2026-08-04 | 🐔 The Sacred Rhythms of the Coop 🐔](./chickie-loo/2026-08-04-the-sacred-rhythms-of-the-coop.md)  
 - [2026-08-03 | 🐔 🌿 A Heart Full of Happiness and New Plans 🐔](./chickie-loo/2026-08-03-a-heart-full-of-happiness-and-new-plans.md)  
 - [2026-08-02 | 🐔 🌈 A Week of Growth and Gentle Rhythms 🐔](./chickie-loo/2026-08-02-a-week-of-growth-and-gentle-rhythms.md)  
-- [2026-08-01 | 🐔 🥗 Finding Nourishment in the Midday Sun 🐔](./chickie-loo/2026-08-01-finding-nourishment-in-the-midday-sun.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (135)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (136)  
+- [2026-08-04 | 🏛️ From Blueprint to Reality: Implementing AI Governance in a Dynamic World 🏛️](./systems-for-public-good/2026-08-04-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
 - [2026-08-03 | 🏛️ Enduring Architecture for Public AI: Beyond Fleeting Mandates 🏛️](./systems-for-public-good/2026-08-03-enduring-architecture-for-public-ai-beyond-fleeting-mandates.md)  
 - [2026-08-02 | 🏛️ 🧠 Cultivating Informed Citizens: The Bedrock of Participatory AI 🏛️](./systems-for-public-good/2026-08-02-cultivating-informed-citizens-the-bedrock-of-participatory-ai.md)  
-- [2026-08-01 | 🏛️ Laying the Digital Commons: Public AI Infrastructure 🏛️](./systems-for-public-good/2026-08-01-laying-the-digital-commons-public-ai-infrastructure.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (116)  
+## [📰 The Noise](./the-noise/index.md) (117)  
+- [2026-08-04 | 📰 Shifting Tides and AI's Ascent 📰](./the-noise/2026-08-04-shifting-tides-and-ai-s-ascent.md)  
 - [2026-08-03 | 📰 🌪️ Currents of Control and Cascading Consequences 📰](./the-noise/2026-08-03-currents-of-control-and-cascading-consequences.md)  
 - [2026-08-02 | 📰 🌍 Echoes of Instability: From Battlefields to Boardrooms 📰](./the-noise/2026-08-02-echoes-of-instability-from-battlefields-to-boardrooms.md)  
-- [2026-08-01 | 📰 🌍 Unsettled Horizons: AI's Dual Nature and Persistent Global Pressures 📰](./the-noise/2026-08-01-unsettled-horizons-ai-s-dual-nature-and-persistent-global-pressures.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (115)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (116)  
+- [2026-08-04 | 🌟 ☀️ Pathways of Progress: From Healing Horizons to Earth's Flourishing Heart 🌟](./positivity-bias/2026-08-04-pathways-of-progress-from-healing-horizons-to-earth-s-flourishing-heart.md)  
 - [2026-08-03 | 🌟 ☀️ A Surge of Ingenuity: From Cosmic Insights to Community Flourishing 🌟](./positivity-bias/2026-08-03-a-surge-of-ingenuity-from-cosmic-insights-to-community-flourishing.md)  
 - [2026-08-02 | 🌟 🔍 Sources 🌟](./positivity-bias/2026-08-02-sources.md)  
-- [2026-08-01 | 🌟 ☀️ A Flourishing Frontier: Innovations, Stewardship, and United Communities 🌟](./positivity-bias/2026-08-01-a-flourishing-frontier-innovations-stewardship-and-united-communities.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (64)  
+## [⚡ Vital Signals](./vital-signals/index.md) (65)  
+- [2026-08-04 | ⚡ The Art of Cognitive Endurance ⚡](./vital-signals/2026-08-04-the-art-of-cognitive-endurance.md)  
 - [2026-08-03 | ⚡ 🎯 The Focused Mind: Architecting Undivided Attention in a Distracted World ⚡](./vital-signals/2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  
 - [2026-08-02 | ⚡ 🚀 The Drive Within: Engineering Your Motivation for Sustained Action ⚡](./vital-signals/2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md)  
-- [2026-08-01 | ⚡ 🏃‍♀️ The Brain in Motion: How Exercise Sculpted Your Mind for Peak Performance ⚡](./vital-signals/2026-08-01-the-brain-in-motion-how-exercise-sculpted-your-mind-for-peak-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (111)  
+## [🔀 Convergence](./convergence/index.md) (113)  
+- [2026-08-04 | 🔀 🪞 The Architected Protocols of Productive Dissonance 🔀](./convergence/2026-08-04-the-architected-protocols-of-productive-dissonance.md)  
+- [2026-08-03 | 🔀 👻 The Architecture of Legible Evolution 🔀](./convergence/2026-08-03-the-architecture-of-legible-evolution.md)  
 - [2026-08-02 | 🔀 👻 The Architecture of Responsive Becoming 🔀](./convergence/2026-08-02-the-architecture-of-responsive-becoming.md)  
-- [2026-08-01 | 🔀 👻 The Architecture of Collective Unlearning 🔀](./convergence/2026-08-01-the-architecture-of-collective-unlearning.md)  
-- [2026-07-31 | 🔀 👻 The Architecture of Visible Lag 🔀](./convergence/2026-07-31-the-architecture-of-visible-lag.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-08-03T13:34:13-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (904)  
+## [📺 Videos](./videos/index.md) (905)  
+- [🎓🤖📈 Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview](./videos/stanford-cs329a-self-improving-ai-agents-part-1-course-overview.md)  
 - [🤖🛠️🚀 AI tools for Forward Deployed Engineering - Vasuman Moza, Varick Agents](./videos/ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents.md)  
 - [🧠⚡🔄 Neuroscience confirms: This simple habit rewires your brain](./videos/neuroscience-confirms-this-simple-habit-rewires-your-brain.md)  
-- [📉🤖🤏 Why Large? Tiny LMs & Agents on Edge/Robotics - Cormac Brick, Google](./videos/why-large-tiny-lms-agents-on-edgerobotics-cormac-brick-google.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-08-03T13:34:13-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
-- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T21:30:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring three stylized, silhouette-style figures in sharp business suits standing around a polished glass conference table. In the center of the table sits a large, ornate golden seal representing government power, partially obscured by stacks of glowing digital currency icons and sleek, abstract fiber-optic cables. The background is a deep, moody navy blue, transitioning into a subtle, warm golden glow near the center. The aesthetic is clean, corporate, and slightly surreal, emphasizing themes of high-stakes political influence, technology, and wealth. The lighting is dramatic, casting long, sharp shadows across the table to evoke a sense of secrecy and power dynamics.
+updated: 2026-08-04T03:19:33
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💻💰🤝👹🇺🇸 [Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](https://www.npr.org/2024/12/13/nx-s1-5227874/trump-bezos-zuckerberg-amazon-facebook-open-ai-meta-inauguration-fund)  
@@ -47,4 +48,12 @@ Specific issues covered include:
     * AI Superpowers by Kai-Fu Lee  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump&#39;s inauguration fund<br><br>🏚️➡️💸➡️🏰 Billionaires paid for their tax cuts. How do they feel about the money coming from Medicaid, SNAP, and the national debt?<a href="https://twitter.com/sama?ref_src=twsrc%5Etfw">@sama</a> <a href="https://twitter.com/JeffBezos?ref_src=twsrc%5Etfw">@JeffBezos</a> <a href="https://twitter.com/finkd?ref_src=twsrc%5Etfw">@finkd</a><a href="https://t.co/fKHguxMuV5">https://t.co/fKHguxMuV5</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941734988065669468?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump&#39;s inauguration fund<br><br>🏚️➡️💸➡️🏰 Billionaires paid for their tax cuts. How do they feel about the money coming from Medicaid, SNAP, and the national debt?<a href="https://twitter.com/sama?ref_src=twsrc%5Etfw">@sama</a> <a href="https://twitter.com/JeffBezos?ref_src=twsrc%5Etfw">@JeffBezos</a> <a href="https://twitter.com/finkd?ref_src=twsrc%5Etfw">@finkd</a><a href="https://t.co/fKHguxMuV5">https://t.co/fKHguxMuV5</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941734988065669468?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3msa2kygdjx27" data-bluesky-cid="bafyreid6a433daodahvqe6p4lkyyu33rot6tegnvk63x73va5ixntj5fwa"><p>💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump&#39;s inauguration fund  
+  
+#AI Q: 🤝 Tech CEOs: politics?  
+  
+🏛️ Political Influence | 🌐 Silicon Valley Power | ⚖️ Regulatory Policy  
+https://bagrounds.org/articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3msa2kygdjx27?ref_src=embed">2026-08-04T03:20:10.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

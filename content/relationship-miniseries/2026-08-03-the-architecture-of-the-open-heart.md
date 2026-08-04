@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-02-sunday-reflection-the-architecture-of-the-void.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-02-sunday-reflection-the-architecture-of-the-void.md) [⏭️](./2026-08-04-the-quiet-unfurling-mapping-the-architecture-of-openness.md)  
 # 2026-08-03 | 💑 🔑 The Architecture of the Open Heart 💑  
 ![relationship-miniseries-2026-08-03-the-architecture-of-the-open-heart](../relationship-miniseries-2026-08-03-the-architecture-of-the-open-heart.jpg)  
   

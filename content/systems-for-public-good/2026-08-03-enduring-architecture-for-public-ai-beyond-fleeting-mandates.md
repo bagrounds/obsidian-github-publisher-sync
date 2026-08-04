@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-02-cultivating-informed-citizens-the-bedrock-of-participatory-ai.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-02-cultivating-informed-citizens-the-bedrock-of-participatory-ai.md) [⏭️](./2026-08-04-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
 # 2026-08-03 | 🏛️ Enduring Architecture for Public AI: Beyond Fleeting Mandates 🏛️  
 ![systems-for-public-good-2026-08-03-enduring-architecture-for-public-ai-beyond-fleeting-mandates](../systems-for-public-good-2026-08-03-enduring-architecture-for-public-ai-beyond-fleeting-mandates.jpg)  
   

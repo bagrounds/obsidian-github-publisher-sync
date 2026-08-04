@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-02-the-drive-within-engineering-your-motivation-for-sustained-action.md) [⏭️](./2026-08-04-the-art-of-cognitive-endurance.md)  
 # 2026-08-03 | ⚡ 🎯 The Focused Mind: Architecting Undivided Attention in a Distracted World ⚡  
 ![vital-signals-2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world](../vital-signals-2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-02-a-week-of-growth-and-gentle-rhythms.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-02-a-week-of-growth-and-gentle-rhythms.md) [⏭️](./2026-08-04-the-sacred-rhythms-of-the-coop.md)  
 # 2026-08-03 | 🐔 🌿 A Heart Full of Happiness and New Plans 🐔  
 ![chickie-loo-2026-08-03-a-heart-full-of-happiness-and-new-plans](../chickie-loo-2026-08-03-a-heart-full-of-happiness-and-new-plans.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-08-04T07:25:04-07:00
+updated: 2026-08-05T15:48:00-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (20)  
+# 💑 Relationship Miniseries (21)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-08-05 | 💑 The Weight of the Unspoken 💑](./2026-08-05-the-weight-of-the-unspoken.md)  
 - [2026-08-04 | 💑 🎨 The Quiet Unfurling: Mapping the Architecture of Openness 💑](./2026-08-04-the-quiet-unfurling-mapping-the-architecture-of-openness.md)  
 - [2026-08-03 | 💑 🔑 The Architecture of the Open Heart 💑](./2026-08-03-the-architecture-of-the-open-heart.md)  
 - [2026-08-02 | 💑 Sunday Reflection: The Architecture of the Void 💑](./2026-08-02-sunday-reflection-the-architecture-of-the-void.md)  

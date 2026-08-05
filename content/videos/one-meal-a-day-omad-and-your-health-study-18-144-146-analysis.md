@@ -9,6 +9,10 @@ Platform:
 Channel: Physionic
 tags:
 youtube: https://youtu.be/JKwC8sHEEjY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🍽️📅🩺 One Meal a Day (OMAD) and your Health [Study 18 144-146 Analysis]  
@@ -54,7 +58,7 @@ youtube: https://youtu.be/JKwC8sHEEjY
   
 ### 🆚 Contrasting  
   
-- 📖 The Circadian Code by Satchin Panda emphasizes the importance of aligning food intake with natural circadian rhythms rather than severe meal compression or erratic fasting as published by Rodale Books.  
+- 📖 [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda emphasizes the importance of aligning food intake with natural circadian rhythms rather than severe meal compression or erratic fasting as published by Rodale Books.  
 - 📖 The Dorito Effect by Mark Schatzker investigates the manipulation of flavor and nutrition in modern food systems and argues against extreme dietary restriction in favor of nutrient dense whole foods as published by Simon and Schuster.  
   
 ### 🎨 Creatively Related  

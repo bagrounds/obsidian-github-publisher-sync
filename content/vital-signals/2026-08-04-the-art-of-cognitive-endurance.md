@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-08-04T00:00:00Z
 force_analyze_links: false
+updated: 2026-08-05T21:39:10
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md) [⏭️](./2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks.md)  
 # 2026-08-04 | ⚡ The Art of Cognitive Endurance ⚡  
 ![vital-signals-2026-08-04-the-art-of-cognitive-endurance](../vital-signals-2026-08-04-the-art-of-cognitive-endurance.jpg)  
   

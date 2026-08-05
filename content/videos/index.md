@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-04T07:25:04-07:00
+updated: 2026-08-04T17:37:43-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (905)  
+# 📺 Videos (906)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -487,6 +487,7 @@ updated: 2026-08-04T07:25:04-07:00
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
+- [🍽️📅🩺 One Meal a Day (OMAD) and your Health [Study 18 144-146 Analysis](./one-meal-a-day-omad-and-your-health-study-18-144-146-analysis.md)]  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
 - [🚨🌍📉 On the Brink of Global Recession | The David Frum Show](./on-the-brink-of-global-recession-the-david-frum-show.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  

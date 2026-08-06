@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-08-05T15:48:00-07:00
+updated: 2026-08-06T08:25:40-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (148)  
+# 🐔 Chickie Loo (149)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-08-06 | 🐔 🌞 A Morning View from the Porch 🐔](./2026-08-06-a-morning-view-from-the-porch.md)  
 - [2026-08-05 | 🐔 🌻 Lessons from the Pasture 🐔](./2026-08-05-lessons-from-the-pasture.md)  
 - [2026-08-04 | 🐔 The Sacred Rhythms of the Coop 🐔](./2026-08-04-the-sacred-rhythms-of-the-coop.md)  
 - [2026-08-03 | 🐔 🌿 A Heart Full of Happiness and New Plans 🐔](./2026-08-03-a-heart-full-of-happiness-and-new-plans.md)  

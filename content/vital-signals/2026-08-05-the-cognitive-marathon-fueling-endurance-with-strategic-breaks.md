@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-04-the-art-of-cognitive-endurance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-04-the-art-of-cognitive-endurance.md) [⏭️](./2026-08-06-the-brain-s-master-conductor-mastering-your-executive-functions.md)  
 # 2026-08-05 | ⚡ The Cognitive Marathon: Fueling Endurance with Strategic Breaks ⚡  
 ![vital-signals-2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks](../vital-signals-2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-05T15:48:00-07:00
+updated: 2026-08-06T08:25:40-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (66)  
+# ⚡ Vital Signals (67)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-06 | ⚡ The Brain's Master Conductor: Mastering Your Executive Functions ⚡](./2026-08-06-the-brain-s-master-conductor-mastering-your-executive-functions.md)  
 - [2026-08-05 | ⚡ The Cognitive Marathon: Fueling Endurance with Strategic Breaks ⚡](./2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks.md)  
 - [2026-08-04 | ⚡ The Art of Cognitive Endurance ⚡](./2026-08-04-the-art-of-cognitive-endurance.md)  
 - [2026-08-03 | ⚡ 🎯 The Focused Mind: Architecting Undivided Attention in a Distracted World ⚡](./2026-08-03-the-focused-mind-architecting-undivided-attention-in-a-distracted-world.md)  

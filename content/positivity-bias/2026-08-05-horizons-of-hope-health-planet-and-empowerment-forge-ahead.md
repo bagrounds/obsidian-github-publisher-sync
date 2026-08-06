@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-08-04-pathways-of-progress-from-healing-horizons-to-earth-s-flourishing-heart.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-08-04-pathways-of-progress-from-healing-horizons-to-earth-s-flourishing-heart.md) [⏭️](./2026-08-06-pathways-to-progress-ingenuity-and-collective-action-define-our-moment.md)  
 # 2026-08-05 | 🌟 ☀️ Horizons of Hope: Health, Planet, and Empowerment Forge Ahead 🌟  
 ![positivity-bias-2026-08-05-horizons-of-hope-health-planet-and-empowerment-forge-ahead](../positivity-bias-2026-08-05-horizons-of-hope-health-planet-and-empowerment-forge-ahead.jpg)  
   

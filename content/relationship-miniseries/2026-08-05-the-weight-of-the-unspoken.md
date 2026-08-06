@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-04-the-quiet-unfurling-mapping-the-architecture-of-openness.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-04-the-quiet-unfurling-mapping-the-architecture-of-openness.md) [⏭️](./2026-08-06-a-thread-pulled.md)  
 # 2026-08-05 | 💑 The Weight of the Unspoken 💑  
 ![relationship-miniseries-2026-08-05-the-weight-of-the-unspoken](../relationship-miniseries-2026-08-05-the-weight-of-the-unspoken.jpg)  
   

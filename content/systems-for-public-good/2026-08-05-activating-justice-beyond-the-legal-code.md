@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-04-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-04-from-blueprint-to-reality-implementing-ai-governance-in-a-dynamic-world.md) [⏭️](./2026-08-06-weaving-a-global-digital-commons-the-interplay-of-national-ai-and-international-cooperation.md)  
 # 2026-08-05 | 🏛️ Activating Justice: Beyond the Legal Code 🏛️  
 ![systems-for-public-good-2026-08-05-activating-justice-beyond-the-legal-code](../systems-for-public-good-2026-08-05-activating-justice-beyond-the-legal-code.jpg)  
   

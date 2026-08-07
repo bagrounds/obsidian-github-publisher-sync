@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-05-the-cognitive-marathon-fueling-endurance-with-strategic-breaks.md) [⏭️](./2026-08-07-the-deep-reset-unlocking-peak-performance-through-strategic-rest.md)  
 # 2026-08-06 | ⚡ The Brain's Master Conductor: Mastering Your Executive Functions ⚡  
 ![vital-signals-2026-08-06-the-brain-s-master-conductor-mastering-your-executive-functions](../vital-signals-2026-08-06-the-brain-s-master-conductor-mastering-your-executive-functions.jpg)  
   

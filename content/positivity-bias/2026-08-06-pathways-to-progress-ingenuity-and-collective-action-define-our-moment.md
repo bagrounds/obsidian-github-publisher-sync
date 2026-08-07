@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-08-05-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-08-05-horizons-of-hope-health-planet-and-empowerment-forge-ahead.md) [⏭️](./2026-08-07-illuminating-pathways-ingenuity-and-compassion-drive-global-flourishing.md)  
 # 2026-08-06 | 🌟 ☀️ Pathways to Progress: Ingenuity and Collective Action Define Our Moment 🌟  
 ![positivity-bias-2026-08-06-pathways-to-progress-ingenuity-and-collective-action-define-our-moment](../positivity-bias-2026-08-06-pathways-to-progress-ingenuity-and-collective-action-define-our-moment.jpg)  
   

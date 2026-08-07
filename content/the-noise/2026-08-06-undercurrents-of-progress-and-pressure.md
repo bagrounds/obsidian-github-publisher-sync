@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-05-navigating-the-present.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-05-navigating-the-present.md) [⏭️](./2026-08-07-the-world-s-uneasy-equilibrium.md)  
 # 2026-08-06 | 📰 🌐 Undercurrents of Progress and Pressure 📰  
 ![the-noise-2026-08-06-undercurrents-of-progress-and-pressure](../the-noise-2026-08-06-undercurrents-of-progress-and-pressure.jpg)  
   

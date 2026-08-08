@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-06-a-morning-view-from-the-porch.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-06-a-morning-view-from-the-porch.md) [⏭️](./2026-08-08-a-gentle-farewell-to-a-feathered-friend.md)  
 # 2026-08-07 | 🐔 🐓 A Symphony of Trust and Tower Hunting 🐔  
 ![chickie-loo-2026-08-07-a-symphony-of-trust-and-tower-hunting](../chickie-loo-2026-08-07-a-symphony-of-trust-and-tower-hunting.jpg)  
   

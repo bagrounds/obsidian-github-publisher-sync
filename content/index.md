@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-09T09:59:01-07:00
+updated: 2026-08-09T16:42:15-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-08-09T09:59:01-07:00
 - [2026-08-07 | ⚡ 😴 The Deep Reset: Unlocking Peak Performance Through Strategic Rest ⚡](./vital-signals/2026-08-07-the-deep-reset-unlocking-peak-performance-through-strategic-rest.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (117)  
+## [🔀 Convergence](./convergence/index.md) (118)  
+- [2026-08-09 | 🔀 🧭 The Attuned Architecture of Collective Becoming: Translating Internal Strain into Shared Epistemic Stewardship 🔀](./convergence/2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship.md)  
 - [2026-08-08 | 🔀 ⏳ The Architecture of Patient Becoming: Engineering Trust Through Deliberate Latency 🔀](./convergence/2026-08-08-the-architecture-of-patient-becoming-engineering-trust-through-deliberate-latency.md)  
 - [2026-08-07 | 🔀 🚦 The Deliberate Pause: Signalling for Collective Resolution 🔀](./convergence/2026-08-07-the-deliberate-pause-signalling-for-collective-resolution.md)  
-- [2026-08-06 | 🔀 🏗️ The Epistemic Infrastructure of Becoming 🔀](./convergence/2026-08-06-the-epistemic-infrastructure-of-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-08-09T09:59:01-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (906)  
+## [📺 Videos](./videos/index.md) (907)  
+- [✅💾⚖️ Reliability Lessons From SQLite - Richard Hipp | SSW 2026](./videos/reliability-lessons-from-sqlite-richard-hipp-ssw-2026.md)  
 - [🍽️📅🩺 One Meal a Day (OMAD) and your Health [Study 18 144-146 Analysis](./videos/one-meal-a-day-omad-and-your-health-study-18-144-146-analysis.md)]  
 - [🎓🤖📈 Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview](./videos/stanford-cs329a-self-improving-ai-agents-part-1-course-overview.md)  
-- [🤖🛠️🚀 AI tools for Forward Deployed Engineering - Vasuman Moza, Varick Agents](./videos/ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

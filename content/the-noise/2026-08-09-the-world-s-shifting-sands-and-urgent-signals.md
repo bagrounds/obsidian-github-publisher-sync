@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-08-the-world-s-shifting-sands-and-urgent-signals.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-08-the-world-s-shifting-sands-and-urgent-signals.md) [⏭️](./2026-08-10-a-world-of-compounding-crises-and-cautious-innovation.md)  
 # 2026-08-09 | 📰 🌐 The World's Shifting Sands and Urgent Signals 📰  
 ![the-noise-2026-08-09-the-world-s-shifting-sands-and-urgent-signals](../the-noise-2026-08-09-the-world-s-shifting-sands-and-urgent-signals.jpg)  
   

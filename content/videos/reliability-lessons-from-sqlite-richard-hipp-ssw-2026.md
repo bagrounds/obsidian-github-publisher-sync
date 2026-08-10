@@ -9,6 +9,10 @@ Platform:
 Channel: Software Should Work
 tags:
 youtube: https://youtu.be/V_qzqY1bb7I
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✅💾⚖️ Reliability Lessons From SQLite - Richard Hipp | SSW 2026  
@@ -54,7 +58,7 @@ youtube: https://youtu.be/V_qzqY1bb7I
   
 ### 🆚 Contrasting  
   
-* 📖 Clean Code by Robert C. Martin argues for self-documenting code which provides an alternative perspective to the SQLite approach of heavy reliance on explicit comments and asserts.  
+* 📖 [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin argues for self-documenting code which provides an alternative perspective to the SQLite approach of heavy reliance on explicit comments and asserts.  
 * 📖 The Mythical Man-Month by Frederick Brooks offers a management-focused look at large software engineering projects that contrasts with the minimalist, small-team approach utilized by the SQLite project.  
   
 ### 🎨 Creatively Related  

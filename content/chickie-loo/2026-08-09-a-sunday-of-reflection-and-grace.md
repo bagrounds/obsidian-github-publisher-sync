@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-08-a-gentle-farewell-to-a-feathered-friend.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-08-a-gentle-farewell-to-a-feathered-friend.md) [⏭️](./2026-08-10-a-day-of-sun-serenity-and-sore-muscles.md)  
 # 2026-08-09 | 🐔 🐣 A Sunday of Reflection and Grace 🐔  
 ![chickie-loo-2026-08-09-a-sunday-of-reflection-and-grace](../chickie-loo-2026-08-09-a-sunday-of-reflection-and-grace.jpg)  
   

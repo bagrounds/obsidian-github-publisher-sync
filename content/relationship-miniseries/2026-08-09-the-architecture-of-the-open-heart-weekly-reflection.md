@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-08-the-space-between-breaths.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-08-the-space-between-breaths.md) [⏭️](./2026-08-10-the-architecture-of-the-open-heart.md)  
 # 2026-08-09 | 💑 The Architecture of the Open Heart: Weekly Reflection 💑  
 ![relationship-miniseries-2026-08-09-the-architecture-of-the-open-heart-weekly-reflection](../relationship-miniseries-2026-08-09-the-architecture-of-the-open-heart-weekly-reflection.jpg)  
   

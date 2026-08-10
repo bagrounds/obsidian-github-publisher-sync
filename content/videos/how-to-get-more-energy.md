@@ -9,6 +9,10 @@ Platform:
 Channel: Medcan
 tags:
 youtube: https://youtu.be/USUr5XUJEyw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🔋⚡📈 How to Get More Energy  
@@ -53,7 +57,7 @@ youtube: https://youtu.be/USUr5XUJEyw
   
 ### 🆚 Contrasting  
   
-* 📖 Why We Sleep by Scribner details how sleep acts as the primary restorative mechanism for brain and body health, shifting focus from energy metabolism to neurological recovery.  
+* 📖 [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Scribner details how sleep acts as the primary restorative mechanism for brain and body health, shifting focus from energy metabolism to neurological recovery.  
 * 📖 The Stress-Proof Brain by New Harbinger Publications offers cognitive and psychological tools to manage stress-induced physiological responses, approaching energy through a mental-first lens.  
   
 ### 🎨 Creatively Related  

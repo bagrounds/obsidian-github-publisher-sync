@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-10T13:11:15-07:00
+updated: 2026-08-10T14:12:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (908)  
+# 📺 Videos (909)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -819,6 +819,7 @@ updated: 2026-08-10T13:11:15-07:00
 - [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](./watch-sen-merkley-concludes-marathon-22-hour-speech-protesting-trump-amid-shutdown.md)  
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
+- [🗺️📍🚀 /wayfinder Nothing is too big to plan anymore](./wayfinder-nothing-is-too-big-to-plan-anymore.md)  
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
 - [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  

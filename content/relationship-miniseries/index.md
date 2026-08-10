@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-08-09T09:59:01-07:00
+updated: 2026-08-09T16:42:15-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (24)  
+# 💑 Relationship Miniseries (25)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-08-09 | 💑 The Architecture of the Open Heart: Weekly Reflection 💑](./2026-08-09-the-architecture-of-the-open-heart-weekly-reflection.md)  
 - [2026-08-08 | 💑 The Space Between Breaths 💑](./2026-08-08-the-space-between-breaths.md)  
 - [2026-08-07 | 💑 The Echo and the Hold 💑](./2026-08-07-the-echo-and-the-hold.md)  
 - [2026-08-06 | 💑 A Thread Pulled 💑](./2026-08-06-a-thread-pulled.md)  

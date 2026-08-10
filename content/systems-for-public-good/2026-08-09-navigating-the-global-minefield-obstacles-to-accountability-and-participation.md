@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-08-forging-accountability-in-global-ai-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-08-forging-accountability-in-global-ai-governance.md) [⏭️](./2026-08-10-forging-shared-pathways-international-cooperation-to-bridge-the-digital-divide.md)  
 # 2026-08-09 | 🏛️ 🚧 Navigating the Global Minefield: Obstacles to Accountability and Participation 🏛️  
 ![systems-for-public-good-2026-08-09-navigating-the-global-minefield-obstacles-to-accountability-and-participation](../systems-for-public-good-2026-08-09-navigating-the-global-minefield-obstacles-to-accountability-and-participation.jpg)  
   

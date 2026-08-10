@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-10T07:35:33-07:00
+updated: 2026-08-10T13:11:15-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (907)  
+# 📺 Videos (908)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -319,6 +319,7 @@ updated: 2026-08-10T07:35:33-07:00
 - [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./how-to-fix-your-addicted-brain-permanently-science-based.md)  
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
+- [🔋⚡📈 How to Get More Energy](./how-to-get-more-energy.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
 - [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./how-to-have-more-energy-sean-hall-tedxunsw.md)  

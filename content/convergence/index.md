@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-08T10:51:41-07:00
+updated: 2026-08-09T16:42:15-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (116)  
+# 🔀 Convergence (118)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-09 | 🔀 🧭 The Attuned Architecture of Collective Becoming: Translating Internal Strain into Shared Epistemic Stewardship 🔀](./2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship.md)  
+- [2026-08-08 | 🔀 ⏳ The Architecture of Patient Becoming: Engineering Trust Through Deliberate Latency 🔀](./2026-08-08-the-architecture-of-patient-becoming-engineering-trust-through-deliberate-latency.md)  
 - [2026-08-07 | 🔀 🚦 The Deliberate Pause: Signalling for Collective Resolution 🔀](./2026-08-07-the-deliberate-pause-signalling-for-collective-resolution.md)  
 - [2026-08-06 | 🔀 🏗️ The Epistemic Infrastructure of Becoming 🔀](./2026-08-06-the-epistemic-infrastructure-of-becoming.md)  
 - [2026-08-05 | 🔀 The Visible Lag of Collective Becoming 🔀](./2026-08-05-the-visible-lag-of-collective-becoming.md)  

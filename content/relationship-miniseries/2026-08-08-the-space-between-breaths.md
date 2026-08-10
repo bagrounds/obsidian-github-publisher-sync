@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-07-the-echo-and-the-hold.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-07-the-echo-and-the-hold.md) [⏭️](./2026-08-09-the-architecture-of-the-open-heart-weekly-reflection.md)  
 # 2026-08-08 | 💑 The Space Between Breaths 💑  
 ![relationship-miniseries-2026-08-08-the-space-between-breaths](../relationship-miniseries-2026-08-08-the-space-between-breaths.jpg)  
   

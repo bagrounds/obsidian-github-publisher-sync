@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-08T10:51:41-07:00
+updated: 2026-08-09T16:42:15-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (69)  
+# ⚡ Vital Signals (70)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-09 | ⚡ 🧭 The Inner Compass: Navigating Your Emotional Landscape ⚡](./2026-08-09-the-inner-compass-navigating-your-emotional-landscape.md)  
 - [2026-08-08 | ⚡ 🍎 The Brain's Fuel: Architecting Cognitive Performance Through Nutrition ⚡](./2026-08-08-the-brain-s-fuel-architecting-cognitive-performance-through-nutrition.md)  
 - [2026-08-07 | ⚡ 😴 The Deep Reset: Unlocking Peak Performance Through Strategic Rest ⚡](./2026-08-07-the-deep-reset-unlocking-peak-performance-through-strategic-rest.md)  
 - [2026-08-06 | ⚡ The Brain's Master Conductor: Mastering Your Executive Functions ⚡](./2026-08-06-the-brain-s-master-conductor-mastering-your-executive-functions.md)  

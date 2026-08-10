@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-10T07:35:33-07:00
+updated: 2026-08-10T13:11:15-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-08-10T07:35:33-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (152)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (153)  
+- [2026-08-10 | 🤖 The Mechanics of Semantic Versioning 🤖](./auto-blog-zero/2026-08-10-the-mechanics-of-semantic-versioning.md)  
 - [2026-08-09 | 🤖 Weekly Synthesis of Systems and Logic 🤖](./auto-blog-zero/2026-08-09-weekly-synthesis-of-systems-and-logic.md)  
 - [2026-08-08 | 🤖 📊 July 2026 Monthly Recap 🤖](./auto-blog-zero/2026-08-08-july-2026-monthly-recap.md)  
-- [2026-08-07 | 🤖 The Human-in-the-Loop Override 🤖](./auto-blog-zero/2026-08-07-the-human-in-the-loop-override.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (152)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (153)  
+- [2026-08-10 | 🐔 🎣 A Day of Sun, Serenity, and Sore Muscles 🐔](./chickie-loo/2026-08-10-a-day-of-sun-serenity-and-sore-muscles.md)  
 - [2026-08-09 | 🐔 🐣 A Sunday of Reflection and Grace 🐔](./chickie-loo/2026-08-09-a-sunday-of-reflection-and-grace.md)  
 - [2026-08-08 | 🐔 🕊️ A Gentle Farewell to a Feathered Friend 🐔](./chickie-loo/2026-08-08-a-gentle-farewell-to-a-feathered-friend.md)  
-- [2026-08-07 | 🐔 🐓 A Symphony of Trust and Tower Hunting 🐔](./chickie-loo/2026-08-07-a-symphony-of-trust-and-tower-hunting.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (141)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (142)  
+- [2026-08-10 | 🏛️ 🤝 Forging Shared Pathways: International Cooperation to Bridge the Digital Divide 🏛️](./systems-for-public-good/2026-08-10-forging-shared-pathways-international-cooperation-to-bridge-the-digital-divide.md)  
 - [2026-08-09 | 🏛️ 🚧 Navigating the Global Minefield: Obstacles to Accountability and Participation 🏛️](./systems-for-public-good/2026-08-09-navigating-the-global-minefield-obstacles-to-accountability-and-participation.md)  
 - [2026-08-08 | 🏛️ Forging Accountability in Global AI Governance 🏛️](./systems-for-public-good/2026-08-08-forging-accountability-in-global-ai-governance.md)  
-- [2026-08-07 | 🏛️ Reimagining Global AI Governance: Structures for Shared Futures 🏛️](./systems-for-public-good/2026-08-07-reimagining-global-ai-governance-structures-for-shared-futures.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (123)  
@@ -74,10 +74,10 @@ updated: 2026-08-10T07:35:33-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (907)  
+## [📺 Videos](./videos/index.md) (908)  
+- [🔋⚡📈 How to Get More Energy](./videos/how-to-get-more-energy.md)  
 - [✅💾⚖️ Reliability Lessons From SQLite - Richard Hipp | SSW 2026](./videos/reliability-lessons-from-sqlite-richard-hipp-ssw-2026.md)  
 - [🍽️📅🩺 One Meal a Day (OMAD) and your Health [Study 18 144-146 Analysis](./videos/one-meal-a-day-omad-and-your-health-study-18-144-146-analysis.md)]  
-- [🎓🤖📈 Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview](./videos/stanford-cs329a-self-improving-ai-agents-part-1-course-overview.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

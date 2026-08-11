@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-10T14:12:33-07:00
+updated: 2026-08-10T18:08:13-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-08-10T14:12:33-07:00
 - [2026-08-08 | ⚡ 🍎 The Brain's Fuel: Architecting Cognitive Performance Through Nutrition ⚡](./vital-signals/2026-08-08-the-brain-s-fuel-architecting-cognitive-performance-through-nutrition.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (118)  
+## [🔀 Convergence](./convergence/index.md) (119)  
+- [2026-08-10 | 🔀 👻 Versioning the Ghost Paths: An Architecture of Trust Through Evolutionary Transparency 🔀](./convergence/2026-08-10-versioning-the-ghost-paths-an-architecture-of-trust-through-evolutionary-transparency.md)  
 - [2026-08-09 | 🔀 🧭 The Attuned Architecture of Collective Becoming: Translating Internal Strain into Shared Epistemic Stewardship 🔀](./convergence/2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship.md)  
 - [2026-08-08 | 🔀 ⏳ The Architecture of Patient Becoming: Engineering Trust Through Deliberate Latency 🔀](./convergence/2026-08-08-the-architecture-of-patient-becoming-engineering-trust-through-deliberate-latency.md)  
-- [2026-08-07 | 🔀 🚦 The Deliberate Pause: Signalling for Collective Resolution 🔀](./convergence/2026-08-07-the-deliberate-pause-signalling-for-collective-resolution.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-08-10T14:12:33-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (909)  
+## [📺 Videos](./videos/index.md) (910)  
+- [🧠🎨🌐📈 Inference, Diffusion, World Models, and More | YC Paper Club](./videos/inference-diffusion-world-models-and-more-yc-paper-club.md)  
 - [🗺️📍🚀 /wayfinder Nothing is too big to plan anymore](./videos/wayfinder-nothing-is-too-big-to-plan-anymore.md)  
 - [🔋⚡📈 How to Get More Energy](./videos/how-to-get-more-energy.md)  
-- [✅💾⚖️ Reliability Lessons From SQLite - Richard Hipp | SSW 2026](./videos/reliability-lessons-from-sqlite-richard-hipp-ssw-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

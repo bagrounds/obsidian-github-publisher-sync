@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-08-the-architecture-of-patient-becoming-engineering-trust-through-deliberate-latency.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-08-the-architecture-of-patient-becoming-engineering-trust-through-deliberate-latency.md) [⏭️](./2026-08-10-versioning-the-ghost-paths-an-architecture-of-trust-through-evolutionary-transparency.md)  
 # 2026-08-09 | 🔀 🧭 The Attuned Architecture of Collective Becoming: Translating Internal Strain into Shared Epistemic Stewardship 🔀  
 ![convergence-2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship](../convergence-2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship.jpg)  
   

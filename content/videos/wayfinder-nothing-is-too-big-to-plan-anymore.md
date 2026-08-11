@@ -9,6 +9,10 @@ Platform:
 Channel: Matt Pocock
 tags:
 youtube: https://youtu.be/F3lL98Pj90o
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗺️📍🚀 /wayfinder Nothing is too big to plan anymore  
@@ -54,5 +58,5 @@ A: In this workflow, specifications function solely as a destination document to
   
 ### 🎨 Creatively Related  
   
-* 🧠 Thinking, Fast and Slow by Daniel Kahneman examines the cognitive biases and mental models that influence how humans make decisions under uncertainty, much like navigating the fog of war in software planning.  
+* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman examines the cognitive biases and mental models that influence how humans make decisions under uncertainty, much like navigating the fog of war in software planning.  
 * 🗺️ The Art of Strategy by Avinash Dixit and Barry Nalebuff analyzes game theory to help individuals navigate competitive environments and dependent decision-making scenarios.

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-09-a-sunday-of-reflection-and-grace.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-09-a-sunday-of-reflection-and-grace.md) [⏭️](./2026-08-11-a-tuesday-afternoon-reflection.md)  
 # 2026-08-10 | 🐔 🎣 A Day of Sun, Serenity, and Sore Muscles 🐔  
 ![chickie-loo-2026-08-10-a-day-of-sun-serenity-and-sore-muscles](../chickie-loo-2026-08-10-a-day-of-sun-serenity-and-sore-muscles.jpg)  
   

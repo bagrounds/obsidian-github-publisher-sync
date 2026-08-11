@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-10T18:08:13-07:00
+updated: 2026-08-10T18:13:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-08-10T18:08:13-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (910)  
+## [📺 Videos](./videos/index.md) (911)  
+- [🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li](./videos/using-ai-to-increase-your-intelligence-enrich-humanity-dr-fei-fei-li.md)  
 - [🧠🎨🌐📈 Inference, Diffusion, World Models, and More | YC Paper Club](./videos/inference-diffusion-world-models-and-more-yc-paper-club.md)  
 - [🗺️📍🚀 /wayfinder Nothing is too big to plan anymore](./videos/wayfinder-nothing-is-too-big-to-plan-anymore.md)  
-- [🔋⚡📈 How to Get More Energy](./videos/how-to-get-more-energy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

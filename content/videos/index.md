@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-10T18:08:13-07:00
+updated: 2026-08-10T18:13:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (910)  
+# 📺 Videos (911)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -805,6 +805,7 @@ updated: 2026-08-10T18:08:13-07:00
 - [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS](./us-deportees-in-el-salvador-stuck-in-legal-limbo-lawyers-say-reuters.md)  
 - [✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](./use-the-triple-check-method-to-jumpstart-your-brain-anne-laure-le-cunff.md)  
+- [🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li](./using-ai-to-increase-your-intelligence-enrich-humanity-dr-fei-fei-li.md)  
 - [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
 - [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  

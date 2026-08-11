@@ -9,6 +9,10 @@ Platform:
 Channel: Y Combinator
 tags:
 youtube: https://youtu.be/wE1ZgJdt4uM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🎨🌐📈 Inference, Diffusion, World Models, and More | YC Paper Club  
@@ -58,10 +62,10 @@ Ensembling combines multiple models trained on limited data, creating a joint sc
   
 ### 🆚 Contrasting  
   
-* Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville approaches intelligence through the lens of pure neural network architecture and optimization rather than explicit world modeling.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville approaches intelligence through the lens of pure neural network architecture and optimization rather than explicit world modeling.  
 * Human Compatible: Artificial Intelligence and the Problem of Control by Stuart Russell critiques current AI development paradigms, arguing for an approach centered on human-centric objective alignment rather than just scaling inference capability.  
   
 ### 🎨 Creatively Related  
   
-* Thinking, Fast and Slow by Daniel Kahneman examines the dual-system cognitive architecture that mirrors the technical trade-offs between fast speculative drafting and slow, deliberate reasoning.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman examines the dual-system cognitive architecture that mirrors the technical trade-offs between fast speculative drafting and slow, deliberate reasoning.  
 * Gödel, Escher, Bach: An Eternal Golden Braid by Douglas Hofstadter investigates the emergence of intelligence and self-referential systems, offering profound conceptual parallels to the training of world models and representations.

@@ -9,6 +9,10 @@ Platform:
 Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/N5AQFYtqx8Q
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li  
@@ -42,15 +46,15 @@ youtube: https://youtu.be/N5AQFYtqx8Q
   
 ### ↔️ Similar  
   
-* 📘 Life 3.0 by Max Tegmark explores how artificial intelligence will shape the future of life on Earth and beyond.  
-* 📗 The Coming Wave by Mustafa Suleyman examines the dual-use nature of AI and biotechnology and the imperative to contain their risks.  
+* 📘 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark explores how artificial intelligence will shape the future of life on Earth and beyond.  
+* 📗 [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman examines the dual-use nature of AI and biotechnology and the imperative to contain their risks.  
   
 ### 🆚 Contrasting  
   
 * 📙 Human Compatible by Stuart Russell argues that we need to rebuild AI from the ground up to ensure it is aligned with human values rather than merely optimizing for tasks.  
-* 📕 The Age of AI by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher discusses how AI will fundamentally change human experience, identity, and our relationship with knowledge.  
+* 📕 [🔮🤖 The Age of AI](../books/the-age-of-ai.md) by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher discusses how AI will fundamentally change human experience, identity, and our relationship with knowledge.  
   
 ### 🎨 Creatively Related  
   
-* 📔 The Brain That Changes Itself by Norman Doidge explores the plasticity of the human brain, offering a biological counterpoint to the rigid algorithms of artificial intelligence.  
-* 📓 A Brief History of Time by Stephen Hawking provides a deep perspective on the nature of the universe that contextualizes the long-term arc of human discovery and intelligence.
+* 📔 [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](../books/the-brain-that-changes-itself.md) by Norman Doidge explores the plasticity of the human brain, offering a biological counterpoint to the rigid algorithms of artificial intelligence.  
+* 📓 [🤏📜⏳ A Brief History of Time](../books/a-brief-history-of-time.md) by Stephen Hawking provides a deep perspective on the nature of the universe that contextualizes the long-term arc of human discovery and intelligence.

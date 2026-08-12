@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-10-a-world-of-compounding-crises-and-cautious-innovation.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-10-a-world-of-compounding-crises-and-cautious-innovation.md) [⏭️](./2026-08-12-shifting-sands-and-cyber-shadows.md)  
 # 2026-08-11 | 📰 🌐 Digital Leaps and Deepening Crises 📰  
 ![the-noise-2026-08-11-digital-leaps-and-deepening-crises](../the-noise-2026-08-11-digital-leaps-and-deepening-crises.jpg)  
   

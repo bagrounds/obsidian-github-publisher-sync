@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-08-11T07:33:29-07:00
+updated: 2026-08-12T08:30:55-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (153)  
+# 🐔 Chickie Loo (155)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-08-12 | 🐔 🧺 A Tidy Space and a Tidy Heart 🐔](./2026-08-12-a-tidy-space-and-a-tidy-heart.md)  
+- [2026-08-11 | 🐔 🌤️ A Tuesday Afternoon Reflection 🐔](./2026-08-11-a-tuesday-afternoon-reflection.md)  
 - [2026-08-10 | 🐔 🎣 A Day of Sun, Serenity, and Sore Muscles 🐔](./2026-08-10-a-day-of-sun-serenity-and-sore-muscles.md)  
 - [2026-08-09 | 🐔 🐣 A Sunday of Reflection and Grace 🐔](./2026-08-09-a-sunday-of-reflection-and-grace.md)  
 - [2026-08-08 | 🐔 🕊️ A Gentle Farewell to a Feathered Friend 🐔](./2026-08-08-a-gentle-farewell-to-a-feathered-friend.md)  

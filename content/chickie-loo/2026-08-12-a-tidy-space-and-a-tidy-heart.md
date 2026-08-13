@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-11-a-tuesday-afternoon-reflection.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-11-a-tuesday-afternoon-reflection.md) [⏭️](./2026-08-13-finding-the-rhythm-in-the-heat-of-august.md)  
 # 2026-08-12 | 🐔 🧺 A Tidy Space and a Tidy Heart 🐔  
 ![chickie-loo-2026-08-12-a-tidy-space-and-a-tidy-heart](../chickie-loo-2026-08-12-a-tidy-space-and-a-tidy-heart.jpg)  
   

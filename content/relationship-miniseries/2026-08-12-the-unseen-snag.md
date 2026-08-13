@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-11-the-smallest-bridge-engineering-connection-from-conflict.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-11-the-smallest-bridge-engineering-connection-from-conflict.md) [⏭️](./2026-08-13-cracks-in-the-conversation.md)  
 # 2026-08-12 | 💑 The Unseen Snag 💑  
 ![relationship-miniseries-2026-08-12-the-unseen-snag](../relationship-miniseries-2026-08-12-the-unseen-snag.jpg)  
   

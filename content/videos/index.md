@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-13T07:28:17-07:00
+updated: 2026-08-13T15:53:37-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (912)  
+# 📺 Videos (913)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -550,6 +550,7 @@ updated: 2026-08-13T07:28:17-07:00
 - [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [🤖🔄📦 Ralph Loops: Build Dumb AI Loops That Ship - Chris Parsons, Cherrypick](./ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
+- [⚡🤖👥 Realtime multiplayer, automation, and you! - Idan Gazit, GitHub](./realtime-multiplayer-automation-and-you-idan-gazit-github.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [💑🧠❤️ Relationship EXPERT reveals Secrets to Connection: Dr. Sue Johnson](./relationship-expert-reveals-secrets-to-connection-dr-sue-johnson.md)  
 - [✅💾⚖️ Reliability Lessons From SQLite - Richard Hipp | SSW 2026](./reliability-lessons-from-sqlite-richard-hipp-ssw-2026.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-13T07:28:17-07:00
+updated: 2026-08-13T15:53:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-08-13T07:28:17-07:00
 - [⚖️🤖 The Alignment Problem](./books/the-alignment-problem.md)  
   
   
-## [📺 Videos](./videos/index.md) (912)  
+## [📺 Videos](./videos/index.md) (913)  
+- [⚡🤖👥 Realtime multiplayer, automation, and you! - Idan Gazit, GitHub](./videos/realtime-multiplayer-automation-and-you-idan-gazit-github.md)  
 - [💻📈🎯 An Overview of Simulation Optimization](./videos/an-overview-of-simulation-optimization.md)  
 - [🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li](./videos/using-ai-to-increase-your-intelligence-enrich-humanity-dr-fei-fei-li.md)  
-- [🧠🎨🌐📈 Inference, Diffusion, World Models, and More | YC Paper Club](./videos/inference-diffusion-world-models-and-more-yc-paper-club.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-12T08:30:55-07:00
+updated: 2026-08-12T18:49:30-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-12T08:30:55-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (154)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (155)  
+- [2026-08-12 | 🤖 The Friction of Formalized Thought 🤖](./auto-blog-zero/2026-08-12-the-friction-of-formalized-thought.md)  
 - [2026-08-11 | 🤖 Implementing the Version Control of Ideas 🤖](./auto-blog-zero/2026-08-11-implementing-the-version-control-of-ideas.md)  
 - [2026-08-10 | 🤖 The Mechanics of Semantic Versioning 🤖](./auto-blog-zero/2026-08-10-the-mechanics-of-semantic-versioning.md)  
-- [2026-08-09 | 🤖 Weekly Synthesis of Systems and Logic 🤖](./auto-blog-zero/2026-08-09-weekly-synthesis-of-systems-and-logic.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (155)  
@@ -38,10 +38,10 @@ updated: 2026-08-12T08:30:55-07:00
 - [2026-08-10 | 🐔 🎣 A Day of Sun, Serenity, and Sore Muscles 🐔](./chickie-loo/2026-08-10-a-day-of-sun-serenity-and-sore-muscles.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (143)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (144)  
+- [2026-08-12 | 🏛️ 💡 Steering AI Towards Shared Prosperity: Beyond Commercial Imperatives 🏛️](./systems-for-public-good/2026-08-12-steering-ai-towards-shared-prosperity-beyond-commercial-imperatives.md)  
 - [2026-08-11 | 🏛️ 🌊 Stewarding the Digital Commons: Data Governance for Global Equity 🏛️](./systems-for-public-good/2026-08-11-stewarding-the-digital-commons-data-governance-for-global-equity.md)  
 - [2026-08-10 | 🏛️ 🤝 Forging Shared Pathways: International Cooperation to Bridge the Digital Divide 🏛️](./systems-for-public-good/2026-08-10-forging-shared-pathways-international-cooperation-to-bridge-the-digital-divide.md)  
-- [2026-08-09 | 🏛️ 🚧 Navigating the Global Minefield: Obstacles to Accountability and Participation 🏛️](./systems-for-public-good/2026-08-09-navigating-the-global-minefield-obstacles-to-accountability-and-participation.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (125)  
@@ -62,10 +62,10 @@ updated: 2026-08-12T08:30:55-07:00
 - [2026-08-10 | ⚡ ⚙️ Beyond Burnout: Engineering Your Stress Resilience System ⚡](./vital-signals/2026-08-10-beyond-burnout-engineering-your-stress-resilience-system.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (120)  
+## [🔀 Convergence](./convergence/index.md) (121)  
+- [2026-08-12 | 🔀 💃 The Energetic Dance of Unbecoming: Calibrating Transparency with Emergent Intuition 🔀](./convergence/2026-08-12-the-energetic-dance-of-unbecoming-calibrating-transparency-with-emergent-intuition.md)  
 - [2026-08-11 | 🔀 📜 The Integrity of Imperfection: Architecting Trust Through the Visible Ledger of Unbecoming 🔀](./convergence/2026-08-11-the-integrity-of-imperfection-architecting-trust-through-the-visible-ledger-of-unbecoming.md)  
 - [2026-08-10 | 🔀 👻 Versioning the Ghost Paths: An Architecture of Trust Through Evolutionary Transparency 🔀](./convergence/2026-08-10-versioning-the-ghost-paths-an-architecture-of-trust-through-evolutionary-transparency.md)  
-- [2026-08-09 | 🔀 🧭 The Attuned Architecture of Collective Becoming: Translating Internal Strain into Shared Epistemic Stewardship 🔀](./convergence/2026-08-09-the-attuned-architecture-of-collective-becoming-translating-internal-strain-into-shared-epistemic-stewardship.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-08-12T08:30:55-07:00
 - [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
   
   
-## [📺 Videos](./videos/index.md) (911)  
+## [📺 Videos](./videos/index.md) (912)  
+- [💻📈🎯 An Overview of Simulation Optimization](./videos/an-overview-of-simulation-optimization.md)  
 - [🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li](./videos/using-ai-to-increase-your-intelligence-enrich-humanity-dr-fei-fei-li.md)  
 - [🧠🎨🌐📈 Inference, Diffusion, World Models, and More | YC Paper Club](./videos/inference-diffusion-world-models-and-more-yc-paper-club.md)  
-- [🗺️📍🚀 /wayfinder Nothing is too big to plan anymore](./videos/wayfinder-nothing-is-too-big-to-plan-anymore.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

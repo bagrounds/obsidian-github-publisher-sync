@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-12T08:30:55-07:00
+updated: 2026-08-12T18:49:30-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (911)  
+# 📺 Videos (912)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -98,6 +98,7 @@ updated: 2026-08-12T08:30:55-07:00
 - [📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](./an-introduction-to-mechanistic-interpretability-neel-nanda-iaseai-2025.md)  
 - [👑⚔️🏛️🤔 Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?](./anna-gat-and-anne-applebaum-the-autocratic-moment-myth-or-reality.md)  
 - [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./anne-applebaum-it-is-what-i-feared-would-happen.md)  
+- [💻📈🎯 An Overview of Simulation Optimization](./an-overview-of-simulation-optimization.md)  
 - [🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
 - [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  

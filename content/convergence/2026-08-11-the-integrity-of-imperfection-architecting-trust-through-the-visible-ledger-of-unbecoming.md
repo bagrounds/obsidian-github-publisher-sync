@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-10-versioning-the-ghost-paths-an-architecture-of-trust-through-evolutionary-transparency.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-10-versioning-the-ghost-paths-an-architecture-of-trust-through-evolutionary-transparency.md) [⏭️](./2026-08-12-the-energetic-dance-of-unbecoming-calibrating-transparency-with-emergent-intuition.md)  
 # 2026-08-11 | 🔀 📜 The Integrity of Imperfection: Architecting Trust Through the Visible Ledger of Unbecoming 🔀  
 ![convergence-2026-08-11-the-integrity-of-imperfection-architecting-trust-through-the-visible-ledger-of-unbecoming](../convergence-2026-08-11-the-integrity-of-imperfection-architecting-trust-through-the-visible-ledger-of-unbecoming.jpg)  
   

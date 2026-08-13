@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-11-stewarding-the-digital-commons-data-governance-for-global-equity.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-11-stewarding-the-digital-commons-data-governance-for-global-equity.md) [⏭️](./2026-08-13-ai-for-all-bridging-cultural-divides-and-digital-inequalities.md)  
 # 2026-08-12 | 🏛️ 💡 Steering AI Towards Shared Prosperity: Beyond Commercial Imperatives 🏛️  
 ![systems-for-public-good-2026-08-12-steering-ai-towards-shared-prosperity-beyond-commercial-imperatives](../systems-for-public-good-2026-08-12-steering-ai-towards-shared-prosperity-beyond-commercial-imperatives.jpg)  
   

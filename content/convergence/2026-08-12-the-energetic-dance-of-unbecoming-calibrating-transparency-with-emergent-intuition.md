@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-11-the-integrity-of-imperfection-architecting-trust-through-the-visible-ledger-of-unbecoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-11-the-integrity-of-imperfection-architecting-trust-through-the-visible-ledger-of-unbecoming.md) [⏭️](./2026-08-13-the-strategic-visibility-of-unbecoming.md)  
 # 2026-08-12 | 🔀 💃 The Energetic Dance of Unbecoming: Calibrating Transparency with Emergent Intuition 🔀  
 ![convergence-2026-08-12-the-energetic-dance-of-unbecoming-calibrating-transparency-with-emergent-intuition](../convergence-2026-08-12-the-energetic-dance-of-unbecoming-calibrating-transparency-with-emergent-intuition.jpg)  
   

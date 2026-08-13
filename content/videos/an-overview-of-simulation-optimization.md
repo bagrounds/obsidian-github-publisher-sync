@@ -9,6 +9,10 @@ Platform:
 Channel: Institute for Systems Research
 tags:
 youtube: https://youtu.be/hqiNrYCUg6M
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻📈🎯 An Overview of Simulation Optimization  
@@ -49,9 +53,9 @@ Infinitesimal perturbation analysis allows for the estimation of gradients direc
 ### 🆚 Contrasting  
   
 * Convex Optimization by Stephen Boyd and Lieven Vandenberghe details deterministic optimization techniques for problems where the objective and constraints are mathematically defined and differentiable.  
-* Numerical Optimization by Jorge Nocedal and Stephen Wright provides a comprehensive reference for solving deterministic continuous optimization problems using gradient-based and second-order methods.  
+* [🔢🎯 Numerical Optimization](../books/numerical-optimization.md) by Jorge Nocedal and Stephen Wright provides a comprehensive reference for solving deterministic continuous optimization problems using gradient-based and second-order methods.  
   
 ### 🎨 Creatively Related  
   
 * The Art of Statistics: How to Learn from Data by David Spiegelhalter examines the core concepts of statistical thinking, variation, and uncertainty that underpin robust decision-making.  
-* Thinking, Fast and Slow by Daniel Kahneman explores the cognitive biases and systematic errors in human judgment that often influence how people perceive probability and make decisions under uncertainty.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman explores the cognitive biases and systematic errors in human judgment that often influence how people perceive probability and make decisions under uncertainty.

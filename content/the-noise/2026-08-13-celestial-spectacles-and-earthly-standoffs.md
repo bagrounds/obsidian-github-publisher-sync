@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-12-shifting-sands-and-cyber-shadows.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-12-shifting-sands-and-cyber-shadows.md) [⏭️](./2026-08-14-global-tensions-and-shifting-planetary-balances.md)  
 # 2026-08-13 | 📰 🌑 Celestial Spectacles and Earthly Standoffs 📰  
 ![the-noise-2026-08-13-celestial-spectacles-and-earthly-standoffs](../the-noise-2026-08-13-celestial-spectacles-and-earthly-standoffs.jpg)  
   

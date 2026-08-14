@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-13T15:53:37-07:00
+updated: 2026-08-14T07:36:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (913)  
+# 📺 Videos (914)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -586,6 +586,7 @@ updated: 2026-08-13T15:53:37-07:00
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./session-4-part-1-presenting-your-venture.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
+- [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
 - [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./site-analysis-choosing-the-right-spot.md)  

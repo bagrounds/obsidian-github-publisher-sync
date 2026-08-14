@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-12-the-cultivated-space-engineering-your-environment-for-peak-cognitive-flow.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-12-the-cultivated-space-engineering-your-environment-for-peak-cognitive-flow.md) [⏭️](./2026-08-14-the-inner-narrative-sculpting-reality-through-mindset.md)  
 # 2026-08-13 | ⚡ 🧠 The Algorithmic Echo: Navigating Your Digital Landscape ⚡  
 ![vital-signals-2026-08-13-the-algorithmic-echo-navigating-your-digital-landscape](../vital-signals-2026-08-13-the-algorithmic-echo-navigating-your-digital-landscape.jpg)  
   

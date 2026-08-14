@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-13T15:53:37-07:00
+updated: 2026-08-14T07:36:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-08-13T15:53:37-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (637)  
-- [2026-08-13](./reflections/2026-08-13.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (638)  
+- [2026-08-14](./reflections/2026-08-14.md)  
+- [2026-08-13 | ⚙️ Automation 📈 becomes 🌀 entropy's 🥁 rhythm, 👀 visibility 💔 cracks ➖ divides and ⚔️ standoffs, 📣 echoing 🌅 horizons. 📺🤖🐔🔀💑🏛️📰⚡🌟🔄🤖🐲](./reflections/2026-08-13.md)  
 - [2026-08-12 | 🤖 Thought 🌟 paves ⚡ flow for ⚙️ Optimization, 🏛️ steering 🔀 unbecoming 🐔 heart beyond 📰 shadows and 💑 snag. 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-08-12.md)  
-- [2026-08-11 | ⚡ Harnessing 📰 Crises, 🌟 Progress 💑 Engineers 🏛️ Governance and 🤖 Control, 🔀 Architecting 🐔 Reflection. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-08-11.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -44,10 +44,10 @@ updated: 2026-08-13T15:53:37-07:00
 - [2026-08-11 | 🏛️ 🌊 Stewarding the Digital Commons: Data Governance for Global Equity 🏛️](./systems-for-public-good/2026-08-11-stewarding-the-digital-commons-data-governance-for-global-equity.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (126)  
+## [📰 The Noise](./the-noise/index.md) (127)  
+- [2026-08-14 | 📰 ⚔️ Global Tensions and Shifting Planetary Balances 📰](./the-noise/2026-08-14-global-tensions-and-shifting-planetary-balances.md)  
 - [2026-08-13 | 📰 🌑 Celestial Spectacles and Earthly Standoffs 📰](./the-noise/2026-08-13-celestial-spectacles-and-earthly-standoffs.md)  
 - [2026-08-12 | 📰 ⚖️ Shifting Sands and Cyber Shadows 📰](./the-noise/2026-08-12-shifting-sands-and-cyber-shadows.md)  
-- [2026-08-11 | 📰 🌐 Digital Leaps and Deepening Crises 📰](./the-noise/2026-08-11-digital-leaps-and-deepening-crises.md)  
   
   
 ## [🌟 Positivity Bias](./positivity-bias/index.md) (125)  
@@ -56,10 +56,10 @@ updated: 2026-08-13T15:53:37-07:00
 - [2026-08-11 | 🌟 ☀️ Pathways to Progress: Ingenuity and Collaborative Spirit Illuminate Our World 🌟](./positivity-bias/2026-08-11-pathways-to-progress-ingenuity-and-collaborative-spirit-illuminate-our-world.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (74)  
+## [⚡ Vital Signals](./vital-signals/index.md) (75)  
+- [2026-08-14 | ⚡ 💡 The Inner Narrative: Sculpting Reality Through Mindset ⚡](./vital-signals/2026-08-14-the-inner-narrative-sculpting-reality-through-mindset.md)  
 - [2026-08-13 | ⚡ 🧠 The Algorithmic Echo: Navigating Your Digital Landscape ⚡](./vital-signals/2026-08-13-the-algorithmic-echo-navigating-your-digital-landscape.md)  
 - [2026-08-12 | ⚡ 🌿 The Cultivated Space: Engineering Your Environment for Peak Cognitive Flow ⚡](./vital-signals/2026-08-12-the-cultivated-space-engineering-your-environment-for-peak-cognitive-flow.md)  
-- [2026-08-11 | ⚡ 💪 The Forge of Resilience: Harnessing Adaptive Stress for Peak Performance ⚡](./vital-signals/2026-08-11-the-forge-of-resilience-harnessing-adaptive-stress-for-peak-performance.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (122)  
@@ -74,10 +74,10 @@ updated: 2026-08-13T15:53:37-07:00
 - [⚖️🤖 The Alignment Problem](./books/the-alignment-problem.md)  
   
   
-## [📺 Videos](./videos/index.md) (913)  
+## [📺 Videos](./videos/index.md) (914)  
+- [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./videos/should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
 - [⚡🤖👥 Realtime multiplayer, automation, and you! - Idan Gazit, GitHub](./videos/realtime-multiplayer-automation-and-you-idan-gazit-github.md)  
 - [💻📈🎯 An Overview of Simulation Optimization](./videos/an-overview-of-simulation-optimization.md)  
-- [🤖🧠✨ Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li](./videos/using-ai-to-increase-your-intelligence-enrich-humanity-dr-fei-fei-li.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

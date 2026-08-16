@@ -5,11 +5,13 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-14T07:36:52-07:00
+updated: 2026-08-16T11:08:30-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (75)  
+# ⚡ Vital Signals (77)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-16 | ⚡ 🗓️ The Resilience Engineer's Blueprint: A Week of Architecting Peak Performance ⚡](./2026-08-16-the-resilience-engineer-s-blueprint-a-week-of-architecting-peak-performance.md)  
+- [2026-08-15 | ⚡ 👂 The Sensory Filter: How Your Brain Sculpts Your Reality ⚡](./2026-08-15-the-sensory-filter-how-your-brain-sculpts-your-reality.md)  
 - [2026-08-14 | ⚡ 💡 The Inner Narrative: Sculpting Reality Through Mindset ⚡](./2026-08-14-the-inner-narrative-sculpting-reality-through-mindset.md)  
 - [2026-08-13 | ⚡ 🧠 The Algorithmic Echo: Navigating Your Digital Landscape ⚡](./2026-08-13-the-algorithmic-echo-navigating-your-digital-landscape.md)  
 - [2026-08-12 | ⚡ 🌿 The Cultivated Space: Engineering Your Environment for Peak Cognitive Flow ⚡](./2026-08-12-the-cultivated-space-engineering-your-environment-for-peak-cognitive-flow.md)  

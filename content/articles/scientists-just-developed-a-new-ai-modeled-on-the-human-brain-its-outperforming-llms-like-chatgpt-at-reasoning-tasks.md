@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T19:38:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, high-contrast illustration featuring a translucent human brain silhouette glowing with soft, bioluminescent blue light. Within the brain, intricate, golden circuitry and geometric neural pathways converge into two distinct layers: a dense, rapid-fire mesh of nodes at the base and a sleek, elegant lattice of interconnected spheres at the top, representing hierarchical reasoning. The background is a deep, moody charcoal, accented by subtle, floating particles of light that suggest digital data streams or synapses firing. The overall aesthetic is clean, minimalist, and futuristic, emphasizing the bridge between biological complexity and efficient, high-performance computational intelligence."
+updated: 2026-08-15T11:18:10
 ---
 [Home](../index.md) > [Articles](./index.md) | [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 # [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](https://www.livescience.com/technology/artificial-intelligence/scientists-just-developed-an-ai-modeled-on-the-human-brain-and-its-outperforming-llms-like-chatgpt-at-reasoning-tasks)  
@@ -53,4 +54,8 @@ The ⚖️ HRM presents a compelling alternative to current **large language mod
   
 - **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: An insider's look at the immense power and societal risks of AI, this book puts new model developments into a real-world, geopolitical context.  
   
-- **Grokking Deep Learning** by Andrew W. Trask: This is a technical but accessible guide on building neural networks, providing a foundational understanding of the underlying principles behind brain-inspired models. It's a great "creatively related" choice as it teaches the reader to build the concepts themselves.
+- **Grokking Deep Learning** by Andrew W. Trask: This is a technical but accessible guide on building neural networks, providing a foundational understanding of the underlying principles behind brain-inspired models. It's a great "creatively related" choice as it teaches the reader to build the concepts themselves.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mt4kgizwwm2p" data-bluesky-cid="bafyreig7js5rfdrdjbi6ebabr3wmlrkokd5pckchirn4rltlgojri5mjge"><p>#AI Q: 🧠 Can machines outthink us?  
+https://bagrounds.org/articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mt4kgizwwm2p?ref_src=embed">2026-08-15T11:18:32.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

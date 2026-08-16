@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T20:36:10Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, cross-sectional illustration of a mammalian brain silhouette rendered in a deep navy and charcoal gradient. Inside the brain, luminous, translucent topographical layers transition from cool blues at the sensory-perceptual regions to warm, vibrant golds at the executive cortical areas. Emanating from these layers are flowing, rhythmic wave patterns of varying frequencies—tight, rapid oscillations near the base and long, sweeping, fluid waves across the higher cortical surface. The background is a clean, minimalist off-white, emphasizing the organic complexity of the neural gradients. The overall aesthetic is scientific yet artistic, utilizing soft neon glows to represent neural activity, with a subtle depth-of-field effect that highlights the hierarchical structure without any clutter.
+updated: 2026-08-16T11:17:09
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](https://pmc.ncbi.nlm.nih.gov/articles/PMC11665873)  
@@ -36,4 +37,12 @@ image_prompt: A stylized, cross-sectional illustration of a mammalian brain silh
 - 📖 **Principles of Neural Science** by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell: A comprehensive textbook for a deeper understanding of the foundational principles of neuroscience, including neural circuits and brain organization.  
 - 🧠 **The Brain: The Story of You** by David Eagleman: A more accessible look at the brain's complex workings, offering a broad perspective on how neural activity gives rise to consciousness and behavior.  
 - **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: This book explores the two systems that drive how we think and make decisions, which relates to the concept of different processing speeds and timescales in the brain.  
-- **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](../books/the-embodied-mind-cognitive-science-and-human-experience.md)** by Francisco Varela, Evan Thompson, and Eleanor Rosch: A contrasting perspective that moves beyond a purely neural focus, examining how the brain, body, and environment are interconnected in shaping cognition.
+- **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](../books/the-embodied-mind-cognitive-science-and-human-experience.md)** by Francisco Varela, Evan Thompson, and Eleanor Rosch: A contrasting perspective that moves beyond a purely neural focus, examining how the brain, body, and environment are interconnected in shaping cognition.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mt72t4lflz2m" data-bluesky-cid="bafyreigvjmnrhptrudxrwcpj6zugqjbapmrrvub5lqznbc33zttem43sni"><p>🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain  
+  
+#AI Q: 🧠 Brain speeds vary?  
+  
+🔬 Neuroscience | 🧠 Cerebral Cortex | 🐭 Comparative Biology | ⚙️ Neural Circuits  
+https://bagrounds.org/articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mt72t4lflz2m?ref_src=embed">2026-08-16T11:17:14.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

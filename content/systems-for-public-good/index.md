@@ -5,11 +5,15 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-08-14T07:36:52-07:00
+updated: 2026-08-17T13:39:02-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (145)  
+# 🏛️ Systems for Public Good (149)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-08-17 | 🏛️ ⚖️ Building Trust and Transparency: Accountability in Global AI Partnerships 🏛️](./2026-08-17-building-trust-and-transparency-accountability-in-global-ai-partnerships.md)  
+- [2026-08-16 | 🏛️ 📊 Gauging Genuine Progress: Beyond Financial Metrics for AI Impact 🏛️](./2026-08-16-gauging-genuine-progress-beyond-financial-metrics-for-ai-impact.md)  
+- [2026-08-15 | 🏛️ 🛡️ Fortifying Public Interest AI: Sustaining Ecosystems Against Market Forces 🏛️](./2026-08-15-fortifying-public-interest-ai-sustaining-ecosystems-against-market-forces.md)  
+- [2026-08-14 | 🏛️ 🌍 The Uneven Landscape: Practical Barriers to Equitable AI 🏛️](./2026-08-14-the-uneven-landscape-practical-barriers-to-equitable-ai.md)  
 - [2026-08-13 | 🏛️ 🌐 AI for All: Bridging Cultural Divides and Digital Inequalities 🏛️](./2026-08-13-ai-for-all-bridging-cultural-divides-and-digital-inequalities.md)  
 - [2026-08-12 | 🏛️ 💡 Steering AI Towards Shared Prosperity: Beyond Commercial Imperatives 🏛️](./2026-08-12-steering-ai-towards-shared-prosperity-beyond-commercial-imperatives.md)  
 - [2026-08-11 | 🏛️ 🌊 Stewarding the Digital Commons: Data Governance for Global Equity 🏛️](./2026-08-11-stewarding-the-digital-commons-data-governance-for-global-equity.md)  

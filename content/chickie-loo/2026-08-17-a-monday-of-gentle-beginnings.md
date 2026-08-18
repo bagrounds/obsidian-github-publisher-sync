@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-16-a-sunday-of-quiet-gratitude.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-16-a-sunday-of-quiet-gratitude.md) [⏭️](./2026-08-18-navigating-truths-and-tender-pastures.md)  
 # 2026-08-17 | 🐔 🌿 A Monday of Gentle Beginnings 🐔  
 ![chickie-loo-2026-08-17-a-monday-of-gentle-beginnings](../chickie-loo-2026-08-17-a-monday-of-gentle-beginnings.jpg)  
   

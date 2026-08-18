@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-16-where-tensions-boil-and-the-planet-sizzles.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-16-where-tensions-boil-and-the-planet-sizzles.md) [⏭️](./2026-08-18-fractured-futures-and-flickering-innovation.md)  
 # 2026-08-17 | 📰 🌐 Shifting Tides and Cosmic Surprises 📰  
 ![the-noise-2026-08-17-shifting-tides-and-cosmic-surprises](../the-noise-2026-08-17-shifting-tides-and-cosmic-surprises.jpg)  
   

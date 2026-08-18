@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-17T13:39:02-07:00
+updated: 2026-08-17T17:16:18-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (125)  
+# 🔀 Convergence (126)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-17 | 🔀 ⚖️ The Courage of Calibrated Conviction: Stewarding the Cost of Shared Becoming 🔀](./2026-08-17-the-courage-of-calibrated-conviction-stewarding-the-cost-of-shared-becoming.md)  
 - [2026-08-16 | 🔀 🤝 The Calibrated Vulnerability of Adaptive Trust 🔀](./2026-08-16-the-calibrated-vulnerability-of-adaptive-trust.md)  
 - [2026-08-15 | 🔀 🌀 Architecting the Mess: Deliberate Disorder as a Foundation for Trustworthy Adaptation 🔀](./2026-08-15-architecting-the-mess-deliberate-disorder-as-a-foundation-for-trustworthy-adaptation.md)  
 - [2026-08-14 | 🔀 🧬 The Stochastic Stewardship of Becoming 🔀](./2026-08-14-the-stochastic-stewardship-of-becoming.md)  

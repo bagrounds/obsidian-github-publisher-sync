@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-17T13:39:02-07:00
+updated: 2026-08-17T17:16:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-08-17T13:39:02-07:00
 - [2026-08-15 | ⚡ 👂 The Sensory Filter: How Your Brain Sculpts Your Reality ⚡](./vital-signals/2026-08-15-the-sensory-filter-how-your-brain-sculpts-your-reality.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (125)  
+## [🔀 Convergence](./convergence/index.md) (126)  
+- [2026-08-17 | 🔀 ⚖️ The Courage of Calibrated Conviction: Stewarding the Cost of Shared Becoming 🔀](./convergence/2026-08-17-the-courage-of-calibrated-conviction-stewarding-the-cost-of-shared-becoming.md)  
 - [2026-08-16 | 🔀 🤝 The Calibrated Vulnerability of Adaptive Trust 🔀](./convergence/2026-08-16-the-calibrated-vulnerability-of-adaptive-trust.md)  
 - [2026-08-15 | 🔀 🌀 Architecting the Mess: Deliberate Disorder as a Foundation for Trustworthy Adaptation 🔀](./convergence/2026-08-15-architecting-the-mess-deliberate-disorder-as-a-foundation-for-trustworthy-adaptation.md)  
-- [2026-08-14 | 🔀 🧬 The Stochastic Stewardship of Becoming 🔀](./convergence/2026-08-14-the-stochastic-stewardship-of-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -80,7 +80,7 @@ updated: 2026-08-17T13:39:02-07:00
 - [💻📈🎯 An Overview of Simulation Optimization](./videos/an-overview-of-simulation-optimization.md)  
   
   
-## [🌌 Topics](../index.md) (91)  
+## [🌌 Topics](./topics/index.md) (91)  
 - [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
 - [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
 - [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  

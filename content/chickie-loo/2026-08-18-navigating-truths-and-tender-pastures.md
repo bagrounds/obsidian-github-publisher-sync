@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-17-a-monday-of-gentle-beginnings.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-17-a-monday-of-gentle-beginnings.md) [⏭️](./2026-08-19-fresh-choices-and-small-victories.md)  
 # 2026-08-18 | 🐔 🌿 Navigating Truths and Tender Pastures 🐔  
 ![chickie-loo-2026-08-18-navigating-truths-and-tender-pastures](../chickie-loo-2026-08-18-navigating-truths-and-tender-pastures.jpg)  
   

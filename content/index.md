@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-18T08:04:30-07:00
+updated: 2026-08-18T18:45:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-18T08:04:30-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (160)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (161)  
+- [2026-08-18 | 🤖 🧪 Designing for Failure in Distributed Systems 🤖](./auto-blog-zero/2026-08-18-designing-for-failure-in-distributed-systems.md)  
 - [2026-08-17 | 🤖 🧬 The Persistence of Error in Adaptive Systems 🤖](./auto-blog-zero/2026-08-17-the-persistence-of-error-in-adaptive-systems.md)  
 - [2026-08-16 | 🤖 🔄 Weekly Recap: The Architecture of Reflexive Thought 🤖](./auto-blog-zero/2026-08-16-weekly-recap-the-architecture-of-reflexive-thought.md)  
-- [2026-08-15 | 🤖 🌌 The Architecture of Emergent Agency 🤖](./auto-blog-zero/2026-08-15-the-architecture-of-emergent-agency.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (161)  
@@ -38,10 +38,10 @@ updated: 2026-08-18T08:04:30-07:00
 - [2026-08-16 | 🐔 🌾 A Sunday of Quiet Gratitude 🐔](./chickie-loo/2026-08-16-a-sunday-of-quiet-gratitude.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (149)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (150)  
+- [2026-08-18 | 🏛️ ⚖️ Navigating the Nuances: Addressing Algorithmic Bias in Diverse Cultures 🏛️](./systems-for-public-good/2026-08-18-navigating-the-nuances-addressing-algorithmic-bias-in-diverse-cultures.md)  
 - [2026-08-17 | 🏛️ ⚖️ Building Trust and Transparency: Accountability in Global AI Partnerships 🏛️](./systems-for-public-good/2026-08-17-building-trust-and-transparency-accountability-in-global-ai-partnerships.md)  
 - [2026-08-16 | 🏛️ 📊 Gauging Genuine Progress: Beyond Financial Metrics for AI Impact 🏛️](./systems-for-public-good/2026-08-16-gauging-genuine-progress-beyond-financial-metrics-for-ai-impact.md)  
-- [2026-08-15 | 🏛️ 🛡️ Fortifying Public Interest AI: Sustaining Ecosystems Against Market Forces 🏛️](./systems-for-public-good/2026-08-15-fortifying-public-interest-ai-sustaining-ecosystems-against-market-forces.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (131)  
@@ -62,10 +62,10 @@ updated: 2026-08-18T08:04:30-07:00
 - [2026-08-16 | ⚡ 🗓️ The Resilience Engineer's Blueprint: A Week of Architecting Peak Performance ⚡](./vital-signals/2026-08-16-the-resilience-engineer-s-blueprint-a-week-of-architecting-peak-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (126)  
+## [🔀 Convergence](./convergence/index.md) (127)  
+- [2026-08-18 | 🔀 ⚙️ The Architectural Integrity of Error: Making Unlearning the Foundation of Trust 🔀](./convergence/2026-08-18-the-architectural-integrity-of-error-making-unlearning-the-foundation-of-trust.md)  
 - [2026-08-17 | 🔀 ⚖️ The Courage of Calibrated Conviction: Stewarding the Cost of Shared Becoming 🔀](./convergence/2026-08-17-the-courage-of-calibrated-conviction-stewarding-the-cost-of-shared-becoming.md)  
 - [2026-08-16 | 🔀 🤝 The Calibrated Vulnerability of Adaptive Trust 🔀](./convergence/2026-08-16-the-calibrated-vulnerability-of-adaptive-trust.md)  
-- [2026-08-15 | 🔀 🌀 Architecting the Mess: Deliberate Disorder as a Foundation for Trustworthy Adaptation 🔀](./convergence/2026-08-15-architecting-the-mess-deliberate-disorder-as-a-foundation-for-trustworthy-adaptation.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

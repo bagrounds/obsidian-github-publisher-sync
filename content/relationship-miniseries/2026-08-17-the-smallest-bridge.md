@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-16-the-smallest-bridge-weekly-reflection.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-16-the-smallest-bridge-weekly-reflection.md) [⏭️](./2026-08-18-gravity-and-escape-charting-the-anxious-avoidant-dance.md)  
 # 2026-08-17 | 💑 The Smallest Bridge 💑  
 ![relationship-miniseries-2026-08-17-the-smallest-bridge](../relationship-miniseries-2026-08-17-the-smallest-bridge.jpg)  
   

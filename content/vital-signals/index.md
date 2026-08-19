@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-18T18:45:31-07:00
+updated: 2026-08-19T07:28:12-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (79)  
+# ⚡ Vital Signals (80)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-19 | ⚡ 💡 Igniting Cognitive Clarity: The Micronutrient Blueprint for Brain Health ⚡](./2026-08-19-igniting-cognitive-clarity-the-micronutrient-blueprint-for-brain-health.md)  
 - [2026-08-18 | ⚡ 🧠 The Brain's Dynamic Fuel Switch: Mastering Metabolic Flexibility for Peak Cognition ⚡](./2026-08-18-the-brain-s-dynamic-fuel-switch-mastering-metabolic-flexibility-for-peak-cognition.md)  
 - [2026-08-17 | ⚡ The Rhythmic Pulse: Unlocking Your Brain's Energy Blueprint ⚡](./2026-08-17-the-rhythmic-pulse-unlocking-your-brain-s-energy-blueprint.md)  
 - [2026-08-16 | ⚡ 🗓️ The Resilience Engineer's Blueprint: A Week of Architecting Peak Performance ⚡](./2026-08-16-the-resilience-engineer-s-blueprint-a-week-of-architecting-peak-performance.md)  

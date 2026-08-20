@@ -14,7 +14,7 @@ link_analysis_time: 2026-08-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-08-19T07:27:39
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-17-the-smallest-bridge.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-17-the-smallest-bridge.md) [⏭️](./2026-08-19-the-orbital-pull.md)  
 # 2026-08-18 | 💑 🎨 Gravity and Escape: Charting the Anxious-Avoidant Dance ⚖️ 💑  
 ![relationship-miniseries-2026-08-18-gravity-and-escape-charting-the-anxious-avoidant-dance](../relationship-miniseries-2026-08-18-gravity-and-escape-charting-the-anxious-avoidant-dance.jpg)  
   

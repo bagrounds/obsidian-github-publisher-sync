@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-18-fractured-futures-and-flickering-innovation.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-18-fractured-futures-and-flickering-innovation.md) [⏭️](./2026-08-20-echoes-from-the-edge-currents-of-change.md)  
 # 2026-08-19 | 📰 🌐 Shifting Shores, Digital Currents, and Unseen Climate Forces 📰  
 ![the-noise-2026-08-19-shifting-shores-digital-currents-and-unseen-climate-forces](../the-noise-2026-08-19-shifting-shores-digital-currents-and-unseen-climate-forces.jpg)  
   

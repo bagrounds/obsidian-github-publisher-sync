@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-18-navigating-truths-and-tender-pastures.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-18-navigating-truths-and-tender-pastures.md) [⏭️](./2026-08-20-the-harvest-and-the-heart-s-pace.md)  
 # 2026-08-19 | 🐔 🥗 Fresh Choices and Small Victories 🐔  
 ![chickie-loo-2026-08-19-fresh-choices-and-small-victories](../chickie-loo-2026-08-19-fresh-choices-and-small-victories.jpg)  
   

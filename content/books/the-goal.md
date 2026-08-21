@@ -27,6 +27,11 @@ link_analysis_version: "2"
     - 📦 Inventory - 💵 money spent on 🏭 products to sell  
     - ⚙️ Operational Expense - 💸 money spent turning 📦 inventory into 📈 throughout  
 - 📊 Statistical fluctuations and 🔗 dependent events  
+- Bottleneck - a resource with less capacity than market demand  
+- Non-bottleneck - a resource with more capacity than market demand  
+- Find bottlenecks by looking for excess inventory waiting for a resource  
+- Balanced plant - capacity equals market demand - bad  
+    - better: balance production flow with market demand (or slightly less to avoid decreasing prices)  
   
 ## 🤖 AI Summary  
 - [Original deep research report exported to Google doc](https://docs.google.com/document/d/1QPatFi-DbbCqdu8nBqVodTvUg3W_uXOCj3A2czlVUME/edit?usp=drivesdk)  

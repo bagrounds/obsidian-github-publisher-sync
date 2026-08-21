@@ -21,6 +21,13 @@ link_analysis_version: "2"
 ![books-the-goal](../books-the-goal.jpg)  
 [🛒 The Goal: A Process of Ongoing Improvement. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459fwBT)  
   
+## 📝🐒 Human Notes  
+- 🎯 The Goal: 💰 To make money. 📈 To increase throughput while 📉 reducing 📦 inventory and 💸 operating expense.  
+    - 🚀 Throughput - the 💹 rate of money made from 🛒 sales  
+    - 📦 Inventory - 💵 money spent on 🏭 products to sell  
+    - ⚙️ Operational Expense - 💸 money spent turning 📦 inventory into 📈 throughout  
+- 📊 Statistical fluctuations and 🔗 dependent events  
+  
 ## 🤖 AI Summary  
 - [Original deep research report exported to Google doc](https://docs.google.com/document/d/1QPatFi-DbbCqdu8nBqVodTvUg3W_uXOCj3A2czlVUME/edit?usp=drivesdk)  
 ### The Goal: A Summary and Analysis of Eliyahu M. Goldratt's Groundbreaking Business Novel  

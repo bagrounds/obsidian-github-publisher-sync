@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-19-cultivating-collaborative-intelligence-enabling-local-ai-leadership.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-19-cultivating-collaborative-intelligence-enabling-local-ai-leadership.md) [⏭️](./2026-08-21-forging-new-social-contracts-for-the-ai-era.md)  
 # 2026-08-20 | 🏛️ 🤖 The Shifting Tides of Work: AI and the Future of Employment 🏛️  
 ![systems-for-public-good-2026-08-20-the-shifting-tides-of-work-ai-and-the-future-of-employment](../systems-for-public-good-2026-08-20-the-shifting-tides-of-work-ai-and-the-future-of-employment.jpg)  
   

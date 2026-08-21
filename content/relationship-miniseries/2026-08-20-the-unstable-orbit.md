@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-19-the-orbital-pull.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-19-the-orbital-pull.md) [⏭️](./2026-08-21-gravitational-collapse.md)  
 # 2026-08-20 | 💑 The Unstable Orbit 💑  
 ![relationship-miniseries-2026-08-20-the-unstable-orbit](../relationship-miniseries-2026-08-20-the-unstable-orbit.jpg)  
   

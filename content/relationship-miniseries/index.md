@@ -5,11 +5,13 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-08-20T07:49:31-07:00
+updated: 2026-08-21T11:07:02-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (35)  
+# 💑 Relationship Miniseries (37)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-08-21 | 💑 Gravitational Collapse 💑](./2026-08-21-gravitational-collapse.md)  
+- [2026-08-20 | 💑 The Unstable Orbit 💑](./2026-08-20-the-unstable-orbit.md)  
 - [2026-08-19 | 💑 The Orbital Pull 💑](./2026-08-19-the-orbital-pull.md)  
 - [2026-08-18 | 💑 🎨 Gravity and Escape: Charting the Anxious-Avoidant Dance ⚖️ 💑](./2026-08-18-gravity-and-escape-charting-the-anxious-avoidant-dance.md)  
 - [2026-08-17 | 💑 The Smallest Bridge 💑](./2026-08-17-the-smallest-bridge.md)  

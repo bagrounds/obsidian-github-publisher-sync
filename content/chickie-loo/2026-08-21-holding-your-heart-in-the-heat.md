@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-20-the-harvest-and-the-heart-s-pace.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-20-the-harvest-and-the-heart-s-pace.md) [⏭️](./2026-08-22-the-weight-of-lessons-learned.md)  
 # 2026-08-21 | 🐔 🌾 Holding Your Heart in the Heat 🐔  
 ![chickie-loo-2026-08-21-holding-your-heart-in-the-heat](../chickie-loo-2026-08-21-holding-your-heart-in-the-heat.jpg)  
   

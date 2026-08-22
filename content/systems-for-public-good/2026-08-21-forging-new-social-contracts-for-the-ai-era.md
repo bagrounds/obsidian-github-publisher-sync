@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-20-the-shifting-tides-of-work-ai-and-the-future-of-employment.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-20-the-shifting-tides-of-work-ai-and-the-future-of-employment.md) [⏭️](./2026-08-22-steering-ai-towards-a-shared-horizon-adapting-governance-for-global-flourishing.md)  
 # 2026-08-21 | 🏛️ 🤝 Forging New Social Contracts for the AI Era 🏛️  
 ![systems-for-public-good-2026-08-21-forging-new-social-contracts-for-the-ai-era](../systems-for-public-good-2026-08-21-forging-new-social-contracts-for-the-ai-era.jpg)  
   

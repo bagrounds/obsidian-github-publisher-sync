@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-08-21T11:07:02-07:00
+updated: 2026-08-22T10:02:11-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (164)  
+# 🐔 Chickie Loo (165)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-08-22 | 🐔 💔 The Weight of Lessons Learned 🐔](./2026-08-22-the-weight-of-lessons-learned.md)  
 - [2026-08-21 | 🐔 🌾 Holding Your Heart in the Heat 🐔](./2026-08-21-holding-your-heart-in-the-heat.md)  
 - [2026-08-20 | 🐔 🧅 The Harvest and the Heart’s Pace 🐔](./2026-08-20-the-harvest-and-the-heart-s-pace.md)  
 - [2026-08-19 | 🐔 🥗 Fresh Choices and Small Victories 🐔](./2026-08-19-fresh-choices-and-small-victories.md)  

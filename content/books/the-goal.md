@@ -32,6 +32,9 @@ link_analysis_version: "2"
 - Find bottlenecks by looking for excess inventory waiting for a resource  
 - Balanced plant - capacity equals market demand - bad  
     - better: balance production flow with market demand (or slightly less to avoid decreasing prices)  
+- Keeping non-bottlenecks busy more than necessary creates excess inventory  
+- synchronize the plant to the bottlenecks  
+- reduce batch sizes to reduce inventory  
   
 ## 🤖 AI Summary  
 - [Original deep research report exported to Google doc](https://docs.google.com/document/d/1QPatFi-DbbCqdu8nBqVodTvUg3W_uXOCj3A2czlVUME/edit?usp=drivesdk)  

@@ -22,19 +22,28 @@ link_analysis_version: "2"
 [🛒 The Goal: A Process of Ongoing Improvement. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459fwBT)  
   
 ## 📝🐒 Human Notes  
-- 🎯 The Goal: 💰 To make money. 📈 To increase throughput while 📉 reducing 📦 inventory and 💸 operating expense.  
-    - 🚀 Throughput - the 💹 rate of money made from 🛒 sales  
-    - 📦 Inventory - 💵 money spent on 🏭 products to sell  
-    - ⚙️ Operational Expense - 💸 money spent turning 📦 inventory into 📈 throughout  
-- 📊 Statistical fluctuations and 🔗 dependent events  
-- Bottleneck - a resource with less capacity than market demand  
-- Non-bottleneck - a resource with more capacity than market demand  
-- Find bottlenecks by looking for excess inventory waiting for a resource  
-- Balanced plant - capacity equals market demand - bad  
-    - better: balance production flow with market demand (or slightly less to avoid decreasing prices)  
-- Keeping non-bottlenecks busy more than necessary creates excess inventory  
-- synchronize the plant to the bottlenecks  
-- reduce batch sizes to reduce inventory  
+- 🎯 The Goal: To make money. To increase throughput while reducing inventory and operating expense.  
+    - 🚀 Throughput - the rate of money made from sales  
+    - 📦 Inventory - money spent on products to sell  
+    - ⚙️ Operational Expense - money spent turning inventory into throughout  
+- 📊 Statistical fluctuations and dependent events  
+- 🍾 Bottleneck - a resource with less capacity than market demand  
+- 🟢 Non-bottleneck - a resource with more capacity than market demand  
+- 🔍 Find bottlenecks by looking for excess inventory waiting for a resource  
+- ⚖️ Balanced plant - capacity equals market demand - bad  
+    - ✅ better: balance production flow with market demand (or slightly less to avoid decreasing prices)  
+- 🏃 Keeping non-bottlenecks busy more than necessary creates excess inventory  
+- 🔄 synchronize the plant to the bottlenecks  
+- 📉 reduce batch sizes to reduce inventory  
+- 👔 management  
+    - ❓ what to change  
+    - 🎯 what to change it to  
+    - ⚙️ how to change it  
+- 🎯 The 5 focusing steps  
+- 🔄 Continuous improvement  
+- 🧗 Standing on the shoulders of giants  
+    - 🚗 Toyota  
+    - 🚙 Ford  
   
 ## 🤖 AI Summary  
 - [Original deep research report exported to Google doc](https://docs.google.com/document/d/1QPatFi-DbbCqdu8nBqVodTvUg3W_uXOCj3A2czlVUME/edit?usp=drivesdk)  

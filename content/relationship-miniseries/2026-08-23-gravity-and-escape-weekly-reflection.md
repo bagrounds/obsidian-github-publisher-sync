@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-22-escape-velocity.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-22-escape-velocity.md) [⏭️](./2026-08-24-the-architecture-of-the-heart-vulnerability-and-shame.md)  
 # 2026-08-23 | 💑 Gravity and Escape: Weekly Reflection 💑  
 ![relationship-miniseries-2026-08-23-gravity-and-escape-weekly-reflection](../relationship-miniseries-2026-08-23-gravity-and-escape-weekly-reflection.jpg)  
   

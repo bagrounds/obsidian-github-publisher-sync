@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-23T08:33:16-07:00
+updated: 2026-08-24T08:26:04-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (84)  
+# ⚡ Vital Signals (85)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-24 | ⚡ 💡 The Spark of Drive: Engineering Your Inner Motivation System ⚡](./2026-08-24-the-spark-of-drive-engineering-your-inner-motivation-system.md)  
 - [2026-08-23 | ⚡ 🗓️ The Performance Compass: Navigating Your Internal Ecosystem ⚡](./2026-08-23-the-performance-compass-navigating-your-internal-ecosystem.md)  
 - [2026-08-22 | ⚡ 🧠 The Unwired Mind: Harnessing Deliberate Downtime for Cognitive Renewal ⚡](./2026-08-22-the-unwired-mind-harnessing-deliberate-downtime-for-cognitive-renewal.md)  
 - [2026-08-21 | ⚡ 🏃 The Moving Mind: Sculpting Your Brain Through Movement ⚡](./2026-08-21-the-moving-mind-sculpting-your-brain-through-movement.md)  

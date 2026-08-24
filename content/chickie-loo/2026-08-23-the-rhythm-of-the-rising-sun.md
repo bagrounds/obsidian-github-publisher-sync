@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-22-the-weight-of-lessons-learned.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-22-the-weight-of-lessons-learned.md) [⏭️](./2026-08-24-a-day-of-sweet-relief-and-steady-growth.md)  
 # 2026-08-23 | 🐔 🌈 The Rhythm of the Rising Sun 🐔  
 ![chickie-loo-2026-08-23-the-rhythm-of-the-rising-sun](../chickie-loo-2026-08-23-the-rhythm-of-the-rising-sun.jpg)  
   

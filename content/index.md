@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-24T14:21:13-07:00
+updated: 2026-08-24T21:44:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-08-24T14:21:13-07:00
 - [2026-08-22 | ⚡ 🧠 The Unwired Mind: Harnessing Deliberate Downtime for Cognitive Renewal ⚡](./vital-signals/2026-08-22-the-unwired-mind-harnessing-deliberate-downtime-for-cognitive-renewal.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (132)  
+## [🔀 Convergence](./convergence/index.md) (133)  
+- [2026-08-24 | 🔀 🤝 The Protocol of Becoming: Architecting Trust Through Calibrated Disclosure 🔀](./convergence/2026-08-24-the-protocol-of-becoming-architecting-trust-through-calibrated-disclosure.md)  
 - [2026-08-23 | 🔀 ⚙️ The Deliberate Unfurling of Internal Friction: Architecting Trust Through Legible Becoming 🔀](./convergence/2026-08-23-the-deliberate-unfurling-of-internal-friction-architecting-trust-through-legible-becoming.md)  
 - [2026-08-22 | 🔀 ⏳ The Latent Coherence of Shared Becoming: Transforming Internal Friction into Epistemic Bids 🔀](./convergence/2026-08-22-the-latent-coherence-of-shared-becoming-transforming-internal-friction-into-epistemic-bids.md)  
-- [2026-08-21 | 🔀 📜 The Ledger of Evolving Conviction: From Private Cognitive Debt to Shared Epistemic Capital 🔀](./convergence/2026-08-21-the-ledger-of-evolving-conviction-from-private-cognitive-debt-to-shared-epistemic-capital.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-23-the-rhythm-of-the-rising-sun.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-23-the-rhythm-of-the-rising-sun.md) [⏭️](./2026-08-25-a-week-of-resilience-and-rooting-down.md)  
 # 2026-08-24 | 🐔 ☁️ A Day of Sweet Relief and Steady Growth 🐔  
 ![chickie-loo-2026-08-24-a-day-of-sweet-relief-and-steady-growth](../chickie-loo-2026-08-24-a-day-of-sweet-relief-and-steady-growth.jpg)  
   

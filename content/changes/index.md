@@ -4,11 +4,12 @@ aliases:
   - 🔄 Changes
 title: 🔄 Changes
 URL: https://bagrounds.org/changes
-updated: 2026-08-24T21:44:54-07:00
+updated: 2026-08-25T07:06:49-07:00
 ---
 [Home](../index.md)  
 # 🔄 Changes  
   
+- [2026-08-25](./2026-08-25.md)  
 - [2026-08-24](./2026-08-24.md)  
 - [2026-08-23](./2026-08-23.md)  
 - [2026-08-22](./2026-08-22.md)  

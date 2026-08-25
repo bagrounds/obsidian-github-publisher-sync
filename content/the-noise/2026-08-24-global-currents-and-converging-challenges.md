@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-23-gathering-storms-and-shifting-sands.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-23-gathering-storms-and-shifting-sands.md) [⏭️](./2026-08-25-a-world-under-pressure-competing-crises-and-innovation-s-edge.md)  
 # 2026-08-24 | 📰 Global Currents and Converging Challenges 📰  
 ![the-noise-2026-08-24-global-currents-and-converging-challenges](../the-noise-2026-08-24-global-currents-and-converging-challenges.jpg)  
   

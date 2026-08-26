@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-24-a-day-of-sweet-relief-and-steady-growth.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-24-a-day-of-sweet-relief-and-steady-growth.md) [⏭️](./2026-08-26-a-day-of-unexpected-challenges-and-tiny-victories.md)  
 # 2026-08-25 | 🐔 🌟 A Week of Resilience and Rooting Down 🐔  
 ![chickie-loo-2026-08-25-a-week-of-resilience-and-rooting-down](../chickie-loo-2026-08-25-a-week-of-resilience-and-rooting-down.jpg)  
   

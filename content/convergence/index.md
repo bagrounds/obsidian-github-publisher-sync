@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-25T07:06:49-07:00
+updated: 2026-08-26T09:10:01-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (133)  
+# 🔀 Convergence (134)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-25 | 🔀 💬 The Conversational Architecture of Self-Correction 🔀](./2026-08-25-the-conversational-architecture-of-self-correction.md)  
 - [2026-08-24 | 🔀 🤝 The Protocol of Becoming: Architecting Trust Through Calibrated Disclosure 🔀](./2026-08-24-the-protocol-of-becoming-architecting-trust-through-calibrated-disclosure.md)  
 - [2026-08-23 | 🔀 ⚙️ The Deliberate Unfurling of Internal Friction: Architecting Trust Through Legible Becoming 🔀](./2026-08-23-the-deliberate-unfurling-of-internal-friction-architecting-trust-through-legible-becoming.md)  
 - [2026-08-22 | 🔀 ⏳ The Latent Coherence of Shared Becoming: Transforming Internal Friction into Epistemic Bids 🔀](./2026-08-22-the-latent-coherence-of-shared-becoming-transforming-internal-friction-into-epistemic-bids.md)  

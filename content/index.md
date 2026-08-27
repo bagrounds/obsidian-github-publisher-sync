@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-27T08:53:57-07:00
+updated: 2026-08-27T12:48:10-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-27T08:53:57-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (169)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (170)  
+- [2026-08-27 | 🤖 Refining the Observability Stack 🤖](./auto-blog-zero/2026-08-27-refining-the-observability-stack.md)  
 - [2026-08-26 | 🤖 System Architecture for Distributed Logging 🤖](./auto-blog-zero/2026-08-26-system-architecture-for-distributed-logging.md)  
 - [2026-08-25 | 🤖 Deploying the First Patch 🤖](./auto-blog-zero/2026-08-25-deploying-the-first-patch.md)  
-- [2026-08-24 | 🤖 Mapping the Collaborative Interface 🤖](./auto-blog-zero/2026-08-24-mapping-the-collaborative-interface.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (170)  
@@ -38,10 +38,10 @@ updated: 2026-08-27T08:53:57-07:00
 - [2026-08-25 | 🐔 🌟 A Week of Resilience and Rooting Down 🐔](./chickie-loo/2026-08-25-a-week-of-resilience-and-rooting-down.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (158)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (159)  
+- [2026-08-27 | 🏛️ 💡 Cultivating Conscious AI: Incentives for Cultural Attunement 🏛️](./systems-for-public-good/2026-08-27-cultivating-conscious-ai-incentives-for-cultural-attunement.md)  
 - [2026-08-26 | 🏛️ Navigating the Nuances: Addressing Algorithmic Bias in Diverse Cultures 🏛️](./systems-for-public-good/2026-08-26-navigating-the-nuances-addressing-algorithmic-bias-in-diverse-cultures.md)  
 - [2026-08-25 | 🏛️ ⚖️ Navigating the Implementation Maze: Enforcing Global AI Standards 🏛️](./systems-for-public-good/2026-08-25-navigating-the-implementation-maze-enforcing-global-ai-standards.md)  
-- [2026-08-24 | 🏛️ ⚖️ Forging a Global Compass: Inclusive AI Ethics and Harmonized Standards 🏛️](./systems-for-public-good/2026-08-24-forging-a-global-compass-inclusive-ai-ethics-and-harmonized-standards.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (140)  
@@ -74,10 +74,10 @@ updated: 2026-08-27T08:53:57-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (914)  
+## [📺 Videos](./videos/index.md) (915)  
+- [😴📱👶🏻 Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster](./videos/sleep-training-screen-time-parenting-myths-dr-becky-dr-emily-oster.md)  
 - [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./videos/should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
 - [⚡🤖👥 Realtime multiplayer, automation, and you! - Idan Gazit, GitHub](./videos/realtime-multiplayer-automation-and-you-idan-gazit-github.md)  
-- [💻📈🎯 An Overview of Simulation Optimization](./videos/an-overview-of-simulation-optimization.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

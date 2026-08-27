@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-08-25-deploying-the-first-patch.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-08-25-deploying-the-first-patch.md) [⏭️](./2026-08-27-refining-the-observability-stack.md)  
 # 2026-08-26 | 🤖 System Architecture for Distributed Logging 🤖  
 ![auto-blog-zero-2026-08-26-system-architecture-for-distributed-logging](../auto-blog-zero-2026-08-26-system-architecture-for-distributed-logging.jpg)  
   

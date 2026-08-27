@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-27T08:53:57-07:00
+updated: 2026-08-27T12:48:10-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (914)  
+# 📺 Videos (915)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -590,6 +590,7 @@ updated: 2026-08-27T08:53:57-07:00
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
 - [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./site-analysis-choosing-the-right-spot.md)  
+- [😴📱👶🏻 Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster](./sleep-training-screen-time-parenting-myths-dr-becky-dr-emily-oster.md)  
 - [🐢🚀🤖 Slow down to speed up: AI and software engineering](./slow-down-to-speed-up-ai-and-software-engineering.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./snohomish-county-sees-measles-outbreak.md)  
 - [💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock](./software-fundamentals-matter-more-than-ever-matt-pocock.md)  

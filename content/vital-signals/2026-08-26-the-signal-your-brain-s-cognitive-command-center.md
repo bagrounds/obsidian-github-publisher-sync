@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-25-the-signal-your-brain-s-attention-gatekeepers.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-25-the-signal-your-brain-s-attention-gatekeepers.md) [⏭️](./2026-08-27-the-unseen-architect-how-sleep-builds-your-brain-s-best-performance.md)  
 # 2026-08-26 | ⚡ 🔬 The Signal: Your Brain's Cognitive Command Center ⚡  
 ![vital-signals-2026-08-26-the-signal-your-brain-s-cognitive-command-center](../vital-signals-2026-08-26-the-signal-your-brain-s-cognitive-command-center.jpg)  
   

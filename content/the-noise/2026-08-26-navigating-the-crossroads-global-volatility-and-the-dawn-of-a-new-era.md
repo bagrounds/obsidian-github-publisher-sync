@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-25-a-world-under-pressure-competing-crises-and-innovation-s-edge.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-25-a-world-under-pressure-competing-crises-and-innovation-s-edge.md) [⏭️](./2026-08-27-shifting-gears-geopolitical-maneuvers-and-a-warming-world.md)  
 # 2026-08-26 | 📰 🌐 Navigating the Crossroads: Global Volatility and the Dawn of a New Era 📰  
 ![the-noise-2026-08-26-navigating-the-crossroads-global-volatility-and-the-dawn-of-a-new-era](../the-noise-2026-08-26-navigating-the-crossroads-global-volatility-and-the-dawn-of-a-new-era.jpg)  
   

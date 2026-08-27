@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-25-a-week-of-resilience-and-rooting-down.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-25-a-week-of-resilience-and-rooting-down.md) [⏭️](./2026-08-27-a-day-of-celebration-and-deep-gratitude.md)  
 # 2026-08-26 | 🐔 A Day of Unexpected Challenges and Tiny Victories 🐔  
 ![chickie-loo-2026-08-26-a-day-of-unexpected-challenges-and-tiny-victories](../chickie-loo-2026-08-26-a-day-of-unexpected-challenges-and-tiny-victories.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-08-26T09:10:01-07:00
+updated: 2026-08-27T08:53:57-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (87)  
+# ⚡ Vital Signals (88)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-08-27 | ⚡ 😴 The Unseen Architect: How Sleep Builds Your Brain's Best Performance ⚡](./2026-08-27-the-unseen-architect-how-sleep-builds-your-brain-s-best-performance.md)  
 - [2026-08-26 | ⚡ 🔬 The Signal: Your Brain's Cognitive Command Center ⚡](./2026-08-26-the-signal-your-brain-s-cognitive-command-center.md)  
 - [2026-08-25 | ⚡ 🔬 The Signal: Your Brain's Attention Gatekeepers ⚡](./2026-08-25-the-signal-your-brain-s-attention-gatekeepers.md)  
 - [2026-08-24 | ⚡ 💡 The Spark of Drive: Engineering Your Inner Motivation System ⚡](./2026-08-24-the-spark-of-drive-engineering-your-inner-motivation-system.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-28T14:57:04-07:00
+updated: 2026-08-28T15:32:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-08-28T14:57:04-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (915)  
+## [📺 Videos](./videos/index.md) (916)  
+- [🤖🧠🎓 This 1-Hour Andrej Karpathy Lecture Explains Modern AI Better Than Most Courses](./videos/this-1-hour-andrej-karpathy-lecture-explains-modern-ai-better-than-most-courses.md)  
 - [😴📱👶🏻 Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster](./videos/sleep-training-screen-time-parenting-myths-dr-becky-dr-emily-oster.md)  
 - [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./videos/should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
-- [⚡🤖👥 Realtime multiplayer, automation, and you! - Idan Gazit, GitHub](./videos/realtime-multiplayer-automation-and-you-idan-gazit-github.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

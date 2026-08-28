@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-28T14:57:04-07:00
+updated: 2026-08-28T15:32:12-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (915)  
+# 📺 Videos (916)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -734,6 +734,7 @@ updated: 2026-08-28T14:57:04-07:00
 - [⚔️⚖️🗣️🧩 They Championed D.E.I. Now They’re Divided. | NYT Opinion](./they-championed-dei-now-theyre-divided-nyt-opinion.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
+- [🤖🧠🎓 This 1-Hour Andrej Karpathy Lecture Explains Modern AI Better Than Most Courses](./this-1-hour-andrej-karpathy-lecture-explains-modern-ai-better-than-most-courses.md)  
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💥🇺🇸🏛️ This Could Change American Politics.](./this-could-change-american-politics.md)  
 - [📊👀🌍 This graph will change how you see the world](./this-graph-will-change-how-you-see-the-world.md)  

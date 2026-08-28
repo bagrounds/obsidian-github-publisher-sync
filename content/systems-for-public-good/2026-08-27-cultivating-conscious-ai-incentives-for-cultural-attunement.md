@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-26-navigating-the-nuances-addressing-algorithmic-bias-in-diverse-cultures.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-26-navigating-the-nuances-addressing-algorithmic-bias-in-diverse-cultures.md) [⏭️](./2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md)  
 # 2026-08-27 | 🏛️ 💡 Cultivating Conscious AI: Incentives for Cultural Attunement 🏛️  
 ![systems-for-public-good-2026-08-27-cultivating-conscious-ai-incentives-for-cultural-attunement](../systems-for-public-good-2026-08-27-cultivating-conscious-ai-incentives-for-cultural-attunement.jpg)  
   

@@ -9,6 +9,10 @@ Platform:
 Channel: Good Inside
 tags:
 youtube: https://youtu.be/pVcdYFQlzuM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-27T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 😴📱👶🏻 Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster  
@@ -49,8 +53,8 @@ youtube: https://youtu.be/pVcdYFQlzuM
   
 ### ↔️ Similar  
   
-* 📖 Expecting Better by Emily Oster uses economic data analysis to evaluate standard pregnancy guidelines and separate evidence from societal dogma.  
-* 📖 Cribsheet by Emily Oster examines early childhood data to help parents navigate infant feeding, sleep training, and developmental choices.  
+* 📖 [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](../books/expecting-better.md) by Emily Oster uses economic data analysis to evaluate standard pregnancy guidelines and separate evidence from societal dogma.  
+* 📖 [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](../books/cribsheet.md) by Emily Oster examines early childhood data to help parents navigate infant feeding, sleep training, and developmental choices.  
   
 ### 🆚 Contrasting  
   
@@ -60,4 +64,4 @@ youtube: https://youtu.be/pVcdYFQlzuM
 ### 🎨 Creatively Related  
   
 * 📖 Freakonomics by Steven D. Levitt and Stephen J. Dubner applies economic analytical thinking to unconventional everyday topics and hidden incentives.  
-* 📖 Thinking, Fast and Slow by Daniel Kahneman explores cognitive biases, decision-making frameworks, and the illusion of certainty under conditions of uncertainty.
+* 📖 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman explores cognitive biases, decision-making frameworks, and the illusion of certainty under conditions of uncertainty.

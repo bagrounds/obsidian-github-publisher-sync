@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-26-a-day-of-unexpected-challenges-and-tiny-victories.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-26-a-day-of-unexpected-challenges-and-tiny-victories.md) [⏭️](./2026-08-28-a-heart-full-of-memories-and-new-lessons.md)  
 # 2026-08-27 | 🐔 🥂 A Day of Celebration and Deep Gratitude 🐔  
 ![chickie-loo-2026-08-27-a-day-of-celebration-and-deep-gratitude](../chickie-loo-2026-08-27-a-day-of-celebration-and-deep-gratitude.jpg)  
   

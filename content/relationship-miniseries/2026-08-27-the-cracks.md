@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-26-the-facade.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-08-26-the-facade.md) [⏭️](./2026-08-28-the-confession.md)  
 # 2026-08-27 | 💑 The Cracks 💑  
 ![relationship-miniseries-2026-08-27-the-cracks](../relationship-miniseries-2026-08-27-the-cracks.jpg)  
   

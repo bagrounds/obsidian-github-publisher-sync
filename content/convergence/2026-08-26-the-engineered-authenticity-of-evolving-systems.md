@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-25-the-conversational-architecture-of-self-correction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-08-25-the-conversational-architecture-of-self-correction.md) [⏭️](./2026-08-27-the-deep-context-of-becoming-architecting-embedded-lineage-for-evolving-trust.md)  
 # 2026-08-26 | 🔀 🏛️ The Engineered Authenticity of Evolving Systems 🔀  
 ![convergence-2026-08-26-the-engineered-authenticity-of-evolving-systems](../convergence-2026-08-26-the-engineered-authenticity-of-evolving-systems.jpg)  
   

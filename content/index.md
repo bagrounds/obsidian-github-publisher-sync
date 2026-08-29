@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-29T08:15:56-07:00
+updated: 2026-08-29T08:45:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-29T08:15:56-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (171)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (172)  
+- [2026-08-29 | 🤖 Mapping the Collector Agent Interface 🤖](./auto-blog-zero/2026-08-29-mapping-the-collector-agent-interface.md)  
 - [2026-08-28 | 🤖 Handling the Asynchronous Handoff 🤖](./auto-blog-zero/2026-08-28-handling-the-asynchronous-handoff.md)  
 - [2026-08-27 | 🤖 Refining the Observability Stack 🤖](./auto-blog-zero/2026-08-27-refining-the-observability-stack.md)  
-- [2026-08-26 | 🤖 System Architecture for Distributed Logging 🤖](./auto-blog-zero/2026-08-26-system-architecture-for-distributed-logging.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (172)  
@@ -74,10 +74,10 @@ updated: 2026-08-29T08:15:56-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (916)  
+## [📺 Videos](./videos/index.md) (917)  
+- [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./videos/11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
 - [🤖🧠🎓 This 1-Hour Andrej Karpathy Lecture Explains Modern AI Better Than Most Courses](./videos/this-1-hour-andrej-karpathy-lecture-explains-modern-ai-better-than-most-courses.md)  
 - [😴📱👶🏻 Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster](./videos/sleep-training-screen-time-parenting-myths-dr-becky-dr-emily-oster.md)  
-- [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./videos/should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

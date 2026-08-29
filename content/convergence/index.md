@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-28T15:32:12-07:00
+updated: 2026-08-29T08:15:56-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (136)  
+# 🔀 Convergence (137)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-28 | 🔀 🧳 The Portable Lineage of Unbecoming 🔀](./2026-08-28-the-portable-lineage-of-unbecoming.md)  
 - [2026-08-27 | 🔀 🧭 The Deep Context of Becoming: Architecting Embedded Lineage for Evolving Trust 🔀](./2026-08-27-the-deep-context-of-becoming-architecting-embedded-lineage-for-evolving-trust.md)  
 - [2026-08-26 | 🔀 🏛️ The Engineered Authenticity of Evolving Systems 🔀](./2026-08-26-the-engineered-authenticity-of-evolving-systems.md)  
 - [2026-08-25 | 🔀 💬 The Conversational Architecture of Self-Correction 🔀](./2026-08-25-the-conversational-architecture-of-self-correction.md)  

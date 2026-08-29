@@ -5,7 +5,7 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-08-29T08:15:56-07:00
+updated: 2026-08-29T08:45:57-07:00
 ---
 [🏡 Home](../index.md)  
 # 📰 The Noise (142)  

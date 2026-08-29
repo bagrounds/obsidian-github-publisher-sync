@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-27-shifting-gears-geopolitical-maneuvers-and-a-warming-world.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-27-shifting-gears-geopolitical-maneuvers-and-a-warming-world.md) [⏭️](./2026-08-29-diplomacy-dollars-and-the-planet-s-plea.md)  
 # 2026-08-28 | 📰 🌐 Fractured Diplomacy and a Planet's Fury 📰  
 ![the-noise-2026-08-28-fractured-diplomacy-and-a-planet-s-fury](../the-noise-2026-08-28-fractured-diplomacy-and-a-planet-s-fury.jpg)  
   

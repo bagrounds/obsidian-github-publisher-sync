@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-27-a-day-of-celebration-and-deep-gratitude.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-27-a-day-of-celebration-and-deep-gratitude.md) [⏭️](./2026-08-29-a-morning-of-cool-promises.md)  
 # 2026-08-28 | 🐔 🌿 A Heart Full of Memories and New Lessons 🐔  
 ![chickie-loo-2026-08-28-a-heart-full-of-memories-and-new-lessons](../chickie-loo-2026-08-28-a-heart-full-of-memories-and-new-lessons.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-27-the-unseen-architect-how-sleep-builds-your-brain-s-best-performance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-08-27-the-unseen-architect-how-sleep-builds-your-brain-s-best-performance.md) [⏭️](./2026-08-29-the-deliberate-choice-navigating-the-science-of-better-decisions.md)  
 # 2026-08-28 | ⚡ ⚖️ The Allostatic Balance: Reclaiming Your Resilience from Chronic Stress ⚡  
 ![vital-signals-2026-08-28-the-allostatic-balance-reclaiming-your-resilience-from-chronic-stress](../vital-signals-2026-08-28-the-allostatic-balance-reclaiming-your-resilience-from-chronic-stress.jpg)  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-30T07:30:23-07:00
+updated: 2026-08-30T14:37:20-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (918)  
+# 📺 Videos (919)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -650,6 +650,7 @@ updated: 2026-08-30T07:30:23-07:00
 - [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
 - [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
 - [🇮🇷🃏📝 The Cards Held by Iran in a Badly Written Memorandum | Explainer](./the-cards-held-by-iran-in-a-badly-written-memorandum-explainer.md)  
+- [🤖💰💼 The Claude AI “Second Income” Plan For People Who Can’t Quit Their Job Yet](./the-claude-ai-second-income-plan-for-people-who-can-t-quit-their-job-yet.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  

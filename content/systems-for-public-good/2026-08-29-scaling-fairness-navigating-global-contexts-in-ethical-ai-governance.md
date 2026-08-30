@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md) [⏭️](./2026-08-30-global-ai-governance-amidst-geopolitical-realities.md)  
 # 2026-08-29 | 🏛️ ⚖️ Scaling Fairness: Navigating Global Contexts in Ethical AI Governance 🏛️  
 ![systems-for-public-good-2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance](../systems-for-public-good-2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.jpg)  
   

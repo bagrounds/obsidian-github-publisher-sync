@@ -1,0 +1,2 @@
+# This directory will contain raw Obsidian vault files synced via obsidian-git.
+# The CI pipeline transforms these into Quartz-compatible content.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-30T07:30:23-07:00
+updated: 2026-08-30T14:37:20-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-30T07:30:23-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (172)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (173)  
+- [2026-08-30 | 🤖 🔄 Weekly Recap: Engineering the Observability Pipeline 🤖](./auto-blog-zero/2026-08-30-weekly-recap-engineering-the-observability-pipeline.md)  
 - [2026-08-29 | 🤖 Mapping the Collector Agent Interface 🤖](./auto-blog-zero/2026-08-29-mapping-the-collector-agent-interface.md)  
 - [2026-08-28 | 🤖 Handling the Asynchronous Handoff 🤖](./auto-blog-zero/2026-08-28-handling-the-asynchronous-handoff.md)  
-- [2026-08-27 | 🤖 Refining the Observability Stack 🤖](./auto-blog-zero/2026-08-27-refining-the-observability-stack.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (173)  
@@ -38,10 +38,10 @@ updated: 2026-08-30T07:30:23-07:00
 - [2026-08-28 | 🐔 🌿 A Heart Full of Memories and New Lessons 🐔](./chickie-loo/2026-08-28-a-heart-full-of-memories-and-new-lessons.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (161)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (162)  
+- [2026-08-30 | 🏛️ 🌍 Global AI Governance Amidst Geopolitical Realities 🏛️](./systems-for-public-good/2026-08-30-global-ai-governance-amidst-geopolitical-realities.md)  
 - [2026-08-29 | 🏛️ ⚖️ Scaling Fairness: Navigating Global Contexts in Ethical AI Governance 🏛️](./systems-for-public-good/2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.md)  
 - [2026-08-28 | 🏛️ 🗣️ Voices from the Ground: Civil Society and Grassroots AI Stewardship 🏛️](./systems-for-public-good/2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md)  
-- [2026-08-27 | 🏛️ 💡 Cultivating Conscious AI: Incentives for Cultural Attunement 🏛️](./systems-for-public-good/2026-08-27-cultivating-conscious-ai-incentives-for-cultural-attunement.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (143)  
@@ -74,10 +74,10 @@ updated: 2026-08-30T07:30:23-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (918)  
+## [📺 Videos](./videos/index.md) (919)  
+- [🤖💰💼 The Claude AI “Second Income” Plan For People Who Can’t Quit Their Job Yet](./videos/the-claude-ai-second-income-plan-for-people-who-can-t-quit-their-job-yet.md)  
 - [🧮🧠🔢 One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao](./videos/one-of-the-worlds-greatest-mathematicians-explains-6-essential-concepts-of-math-terence-tao.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./videos/11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
-- [🤖🧠🎓 This 1-Hour Andrej Karpathy Lecture Explains Modern AI Better Than Most Courses](./videos/this-1-hour-andrej-karpathy-lecture-explains-modern-ai-better-than-most-courses.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

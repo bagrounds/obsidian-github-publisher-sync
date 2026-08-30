@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-28-fractured-diplomacy-and-a-planet-s-fury.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-28-fractured-diplomacy-and-a-planet-s-fury.md) [⏭️](./2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier.md)  
 # 2026-08-29 | 📰 🌐 Diplomacy, Dollars, and the Planet's Plea 📰  
 ![the-noise-2026-08-29-diplomacy-dollars-and-the-planet-s-plea](../the-noise-2026-08-29-diplomacy-dollars-and-the-planet-s-plea.jpg)  
   

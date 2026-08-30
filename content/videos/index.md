@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-29T08:45:57-07:00
+updated: 2026-08-30T07:30:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (917)  
+# 📺 Videos (918)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -492,6 +492,7 @@ updated: 2026-08-29T08:45:57-07:00
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
 - [🍽️📅🩺 One Meal a Day (OMAD) and your Health [Study 18 144-146 Analysis](./one-meal-a-day-omad-and-your-health-study-18-144-146-analysis.md)]  
+- [🧮🧠🔢 One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao](./one-of-the-worlds-greatest-mathematicians-explains-6-essential-concepts-of-math-terence-tao.md)  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
 - [🚨🌍📉 On the Brink of Global Recession | The David Frum Show](./on-the-brink-of-global-recession-the-david-frum-show.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  

@@ -9,6 +9,10 @@ Platform:
 Channel: The Japanese Method
 tags:
 youtube: https://youtu.be/dbXVUgSU2z4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-29T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy  
@@ -54,4 +58,4 @@ A: Undivided compartments lack specific addresses for items, causing miscellaneo
   
 ### 🎨 Creatively Related  
   
-* 📖 The Design of Everyday Things by Don Norman examines cognitive psychology and usability principles in physical object design and placement.
+* 📖 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman examines cognitive psychology and usability principles in physical object design and placement.

@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-08-31T07:49:43-07:00
+updated: 2026-08-31T11:40:07-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (162)  
+# 🏛️ Systems for Public Good (163)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-08-31 | 🏛️ ⚖️ Forging Pathways for Global Accountability in AI 🏛️](./2026-08-31-forging-pathways-for-global-accountability-in-ai.md)  
 - [2026-08-30 | 🏛️ 🌍 Global AI Governance Amidst Geopolitical Realities 🏛️](./2026-08-30-global-ai-governance-amidst-geopolitical-realities.md)  
 - [2026-08-29 | 🏛️ ⚖️ Scaling Fairness: Navigating Global Contexts in Ethical AI Governance 🏛️](./2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.md)  
 - [2026-08-28 | 🏛️ 🗣️ Voices from the Ground: Civil Society and Grassroots AI Stewardship 🏛️](./2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md)  

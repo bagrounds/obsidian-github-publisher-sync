@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.md) [⏭️](./2026-08-31-forging-pathways-for-global-accountability-in-ai.md)  
 # 2026-08-30 | 🏛️ 🌍 Global AI Governance Amidst Geopolitical Realities 🏛️  
 ![systems-for-public-good-2026-08-30-global-ai-governance-amidst-geopolitical-realities](../systems-for-public-good-2026-08-30-global-ai-governance-amidst-geopolitical-realities.jpg)  
   

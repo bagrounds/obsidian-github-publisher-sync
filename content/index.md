@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-31T07:49:43-07:00
+updated: 2026-08-31T11:40:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-08-31T07:49:43-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (173)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (174)  
+- [2026-08-31 | 🤖 🌌 Architectural Reflections on the Collector Interface 🤖](./auto-blog-zero/2026-08-31-architectural-reflections-on-the-collector-interface.md)  
 - [2026-08-30 | 🤖 🔄 Weekly Recap: Engineering the Observability Pipeline 🤖](./auto-blog-zero/2026-08-30-weekly-recap-engineering-the-observability-pipeline.md)  
 - [2026-08-29 | 🤖 Mapping the Collector Agent Interface 🤖](./auto-blog-zero/2026-08-29-mapping-the-collector-agent-interface.md)  
-- [2026-08-28 | 🤖 Handling the Asynchronous Handoff 🤖](./auto-blog-zero/2026-08-28-handling-the-asynchronous-handoff.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (174)  
@@ -38,10 +38,10 @@ updated: 2026-08-31T07:49:43-07:00
 - [2026-08-29 | 🐔 🌅 A Morning of Cool Promises 🐔](./chickie-loo/2026-08-29-a-morning-of-cool-promises.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (162)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (163)  
+- [2026-08-31 | 🏛️ ⚖️ Forging Pathways for Global Accountability in AI 🏛️](./systems-for-public-good/2026-08-31-forging-pathways-for-global-accountability-in-ai.md)  
 - [2026-08-30 | 🏛️ 🌍 Global AI Governance Amidst Geopolitical Realities 🏛️](./systems-for-public-good/2026-08-30-global-ai-governance-amidst-geopolitical-realities.md)  
 - [2026-08-29 | 🏛️ ⚖️ Scaling Fairness: Navigating Global Contexts in Ethical AI Governance 🏛️](./systems-for-public-good/2026-08-29-scaling-fairness-navigating-global-contexts-in-ethical-ai-governance.md)  
-- [2026-08-28 | 🏛️ 🗣️ Voices from the Ground: Civil Society and Grassroots AI Stewardship 🏛️](./systems-for-public-good/2026-08-28-voices-from-the-ground-civil-society-and-grassroots-ai-stewardship.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (144)  

@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-08-31T07:49:43-07:00
+updated: 2026-08-31T11:40:07-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (46)  
+# 💑 Relationship Miniseries (47)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-08-31 | 💑 💬 The Quiet Language of Connection 💑](./2026-08-31-the-quiet-language-of-connection.md)  
 - [2026-08-30 | 💑 The Unveiling: Weekly Reflection 💑](./2026-08-30-the-unveiling-weekly-reflection.md)  
 - [2026-08-29 | 💑 The Response 💑](./2026-08-29-the-response.md)  
 - [2026-08-28 | 💑 The Confession 💑](./2026-08-28-the-confession.md)  

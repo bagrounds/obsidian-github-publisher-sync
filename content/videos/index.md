@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-08-31T11:40:07-07:00
+updated: 2026-08-31T13:57:20-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (919)  
+# 📺 Videos (920)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -720,6 +720,7 @@ updated: 2026-08-31T11:40:07-07:00
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
 - [⚡💰🗳️🕵️ The Shocking Billionaire Plot To Steal The Election](./the-shocking-billionaire-plot-to-steal-the-election.md)  
+- [📡🏗️🛠️ The Signal Layer: What to Build When Anything Can Be Built - Lena Hall, Akamai](./the-signal-layer-what-to-build-when-anything-can-be-built-lena-hall-akamai.md)  
 - [👋😊🗣️ The Simple Habit for a Happier Social Life | Nicholas Epley | TED](./the-simple-habit-for-a-happier-social-life-nicholas-epley-ted.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./the-smartest-way-to-turn-your-expertise-into-1m.md)  

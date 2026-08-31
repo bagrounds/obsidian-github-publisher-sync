@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-08-31T11:40:07-07:00
+updated: 2026-08-31T13:57:20-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-08-31T11:40:07-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (919)  
+## [📺 Videos](./videos/index.md) (920)  
+- [📡🏗️🛠️ The Signal Layer: What to Build When Anything Can Be Built - Lena Hall, Akamai](./videos/the-signal-layer-what-to-build-when-anything-can-be-built-lena-hall-akamai.md)  
 - [🤖💰💼 The Claude AI “Second Income” Plan For People Who Can’t Quit Their Job Yet](./videos/the-claude-ai-second-income-plan-for-people-who-can-t-quit-their-job-yet.md)  
 - [🧮🧠🔢 One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao](./videos/one-of-the-worlds-greatest-mathematicians-explains-6-essential-concepts-of-math-terence-tao.md)  
-- [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./videos/11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-08-30T14:37:20-07:00
+updated: 2026-08-31T07:49:43-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (138)  
+# 🔀 Convergence (139)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-08-30 | 🔀 🪞 The Observability Pipeline of Becoming 🔀](./2026-08-30-the-observability-pipeline-of-becoming.md)  
 - [2026-08-29 | 🔀 The Transmutational Interface: Architecting the Boundary Between Private Cognitive Cost and Public Epistemic Capital 🔀](./2026-08-29-the-transmutational-interface-architecting-the-boundary-between-private-cognitive-cost-and-public-epistemic-capital.md)  
 - [2026-08-28 | 🔀 🧳 The Portable Lineage of Unbecoming 🔀](./2026-08-28-the-portable-lineage-of-unbecoming.md)  
 - [2026-08-27 | 🔀 🧭 The Deep Context of Becoming: Architecting Embedded Lineage for Evolving Trust 🔀](./2026-08-27-the-deep-context-of-becoming-architecting-embedded-lineage-for-evolving-trust.md)  

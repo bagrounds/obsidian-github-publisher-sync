@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-29-diplomacy-dollars-and-the-planet-s-plea.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-29-diplomacy-dollars-and-the-planet-s-plea.md) [⏭️](./2026-08-31-august-s-echo-geopolitical-fault-lines-and-a-planet-s-distress.md)  
 # 2026-08-30 | 📰 🌐 Shifting Tides: Geopolitics, Climate, and the AI Frontier 📰  
 ![the-noise-2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier](../the-noise-2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier.jpg)  
   

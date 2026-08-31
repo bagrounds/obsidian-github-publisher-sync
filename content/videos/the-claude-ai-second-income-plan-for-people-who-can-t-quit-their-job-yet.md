@@ -9,6 +9,10 @@ Platform:
 Channel: Shane Hummus
 tags:
 youtube: https://youtu.be/qmostTcgp0E
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-08-30T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖💰💼 The Claude AI “Second Income” Plan For People Who Can’t Quit Their Job Yet  
@@ -55,4 +59,4 @@ youtube: https://youtu.be/qmostTcgp0E
   
 ### 🎨 Creatively Related  
   
-* 🧠 Thinking, Fast and Slow by Daniel Kahneman examines the cognitive biases and mental processes that influence human decision-making and economic behavior.
+* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman examines the cognitive biases and mental processes that influence human decision-making and economic behavior.

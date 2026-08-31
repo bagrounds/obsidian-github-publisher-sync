@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-29-a-morning-of-cool-promises.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-29-a-morning-of-cool-promises.md) [⏭️](./2026-08-31-reflections-on-a-month-of-settling-in.md)  
 # 2026-08-30 | 🐔 🌟 A Productive Harvest of Time and Peace 🐔  
 ![chickie-loo-2026-08-30-a-productive-harvest-of-time-and-peace](../chickie-loo-2026-08-30-a-productive-harvest-of-time-and-peace.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-08-31T13:57:20-07:00
+updated: 2026-09-01T08:19:47-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (144)  
+# 📰 The Noise (145)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-09-01 | 📰 🌐 A Deluge of Discord and Data: September's Urgent Opening 📰](./2026-09-01-a-deluge-of-discord-and-data-september-s-urgent-opening.md)  
 - [2026-08-31 | 📰 🌐 August's Echo: Geopolitical Fault Lines and a Planet's Distress 📰](./2026-08-31-august-s-echo-geopolitical-fault-lines-and-a-planet-s-distress.md)  
 - [2026-08-30 | 📰 🌐 Shifting Tides: Geopolitics, Climate, and the AI Frontier 📰](./2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier.md)  
 - [2026-08-29 | 📰 🌐 Diplomacy, Dollars, and the Planet's Plea 📰](./2026-08-29-diplomacy-dollars-and-the-planet-s-plea.md)  

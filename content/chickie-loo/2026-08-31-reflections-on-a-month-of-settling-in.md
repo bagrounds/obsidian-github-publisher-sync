@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-30-a-productive-harvest-of-time-and-peace.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-08-30-a-productive-harvest-of-time-and-peace.md) [⏭️](./2026-09-01-stepping-into-september-with-clarity-and-grace.md)  
 # 2026-08-31 | 🐔 🌤️ Reflections on a Month of Settling In 🐔  
 ![chickie-loo-2026-08-31-reflections-on-a-month-of-settling-in](../chickie-loo-2026-08-31-reflections-on-a-month-of-settling-in.jpg)  
   

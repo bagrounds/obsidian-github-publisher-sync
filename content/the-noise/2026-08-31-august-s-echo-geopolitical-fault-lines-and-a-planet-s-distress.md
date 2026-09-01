@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-08-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-08-30-shifting-tides-geopolitics-climate-and-the-ai-frontier.md) [⏭️](./2026-09-01-a-deluge-of-discord-and-data-september-s-urgent-opening.md)  
 # 2026-08-31 | 📰 🌐 August's Echo: Geopolitical Fault Lines and a Planet's Distress 📰  
 ![the-noise-2026-08-31-august-s-echo-geopolitical-fault-lines-and-a-planet-s-distress](../the-noise-2026-08-31-august-s-echo-geopolitical-fault-lines-and-a-planet-s-distress.jpg)  
   

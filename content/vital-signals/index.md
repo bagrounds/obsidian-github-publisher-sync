@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-02T07:24:38-07:00
+updated: 2026-09-03T07:10:46-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (94)  
+# ⚡ Vital Signals (95)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-03 | ⚡ The Deep Well of Potential: Harnessing Ultradian Rhythms for Peak Performance ⚡](./2026-09-03-the-deep-well-of-potential-harnessing-ultradian-rhythms-for-peak-performance.md)  
 - [2026-09-02 | ⚡ 🌊 The Ebbing Tide of Focus: Mastering Your Ultradian Rhythms ⚡](./2026-09-02-the-ebbing-tide-of-focus-mastering-your-ultradian-rhythms.md)  
 - [2026-09-01 | ⚡ 🏃 The Moving Mind: How Exercise Rewires Your Brain ⚡](./2026-09-01-the-moving-mind-how-exercise-rewires-your-brain.md)  
 - [2026-08-31 | ⚡ 🍎 The Brain's Fuel: How Nutrition Architects Your Performance ⚡](./2026-08-31-the-brain-s-fuel-how-nutrition-architects-your-performance.md)  

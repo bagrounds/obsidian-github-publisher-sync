@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-01-a-deluge-of-discord-and-data-september-s-urgent-opening.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-01-a-deluge-of-discord-and-data-september-s-urgent-opening.md) [⏭️](./2026-09-03-navigating-the-edge-climate-s-new-realities-and-geopolitical-aftershocks.md)  
 # 2026-09-02 | 📰 🔄 A Resurgent World, Shifting Sands 📰  
 ![the-noise-2026-09-02-a-resurgent-world-shifting-sands](../the-noise-2026-09-02-a-resurgent-world-shifting-sands.jpg)  
   

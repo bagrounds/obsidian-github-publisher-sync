@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-01-stepping-into-september-with-clarity-and-grace.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-01-stepping-into-september-with-clarity-and-grace.md) [⏭️](./2026-09-03-the-gentle-wisdom-of-our-furry-friends.md)  
 # 2026-09-02 | 🐔 🕯️ Holding Space for Memories and New Beginnings 🐔  
 ![chickie-loo-2026-09-02-holding-space-for-memories-and-new-beginnings](../chickie-loo-2026-09-02-holding-space-for-memories-and-new-beginnings.jpg)  
   

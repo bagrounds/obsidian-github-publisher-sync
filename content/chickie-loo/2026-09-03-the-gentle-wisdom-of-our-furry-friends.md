@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-02-holding-space-for-memories-and-new-beginnings.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-02-holding-space-for-memories-and-new-beginnings.md) [⏭️](./2026-09-04-heartfelt-peace-and-the-joy-of-simple-service.md)  
 # 2026-09-03 | 🐔 🕊️ The Gentle Wisdom of Our Furry Friends 🐔  
 ![chickie-loo-2026-09-03-the-gentle-wisdom-of-our-furry-friends](../chickie-loo-2026-09-03-the-gentle-wisdom-of-our-furry-friends.jpg)  
   

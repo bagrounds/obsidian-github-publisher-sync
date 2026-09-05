@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-03-navigating-the-edge-climate-s-new-realities-and-geopolitical-aftershocks.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-03-navigating-the-edge-climate-s-new-realities-and-geopolitical-aftershocks.md) [⏭️](./2026-09-05-geopolitical-tensions-global-flashpoints.md)  
 # 2026-09-04 | 📰 🌐 Global Currents: From Diplomatic Standoffs to Climate's Unyielding Grip 📰  
 ![the-noise-2026-09-04-global-currents-from-diplomatic-standoffs-to-climate-s-unyielding-grip](../the-noise-2026-09-04-global-currents-from-diplomatic-standoffs-to-climate-s-unyielding-grip.jpg)  
   

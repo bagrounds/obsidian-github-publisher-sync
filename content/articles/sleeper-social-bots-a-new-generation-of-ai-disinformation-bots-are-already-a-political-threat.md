@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T19:38:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A digital landscape featuring a sea of identical, translucent human silhouettes against a dark, glowing network of interconnected nodes. In the foreground, one silhouette stands out, subtly illuminated by a soft, warm light, while behind its mask, a complex, glowing circuitry of digital code is visible. The scene uses a deep blue and neon purple color palette to evoke a sense of high-tech suspense. The background is a blurred, abstract representation of a social media feed with floating, disjointed speech bubbles that fade into binary code. The overall atmosphere is mysterious and ominous, highlighting the concept of hidden, artificial actors blending seamlessly into a human network.
+updated: 2026-09-05T05:24:42
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](https://arxiv.org/pdf/2408.12603)  
@@ -91,4 +92,12 @@ A: 🕵️ Identifying these advanced, LLM-driven bots is a _tedious and frustra
 ## 🐦 Tweets  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat<br><br>🤖 Generative AI | 🗳️ US Elections | 🗣️ Conversational Agents | 📢 Political Propaganda | 🛡️ Opinion Manipulation<a href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a> how many bots are on X?<a href="https://t.co/l1fruuZqCc">https://t.co/l1fruuZqCc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1979616772673429669?ref_src=twsrc%5Etfw">October 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How many political disinformation bots are on X nowadays? Are you doing anything to combat the problem? Or just enjoying the political support they lend you and your friend in the Whitehouse?<a href="https://t.co/l1fruuZqCc">https://t.co/l1fruuZqCc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1979616281096761835?ref_src=twsrc%5Etfw">October 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How many political disinformation bots are on X nowadays? Are you doing anything to combat the problem? Or just enjoying the political support they lend you and your friend in the Whitehouse?<a href="https://t.co/l1fruuZqCc">https://t.co/l1fruuZqCc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1979616281096761835?ref_src=twsrc%5Etfw">October 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3muqqhegnyx2m" data-bluesky-cid="bafyreifj6djxmzdms5fjgoyf4jo6uukzn56ie2ymbwujudplhwkt2bq3aq"><p>🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat  
+  
+#AI Q: 🤖 Spot a bot?  
+  
+🤖 Generative Models | 🗳️ US Elections  
+https://bagrounds.org/articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3muqqhegnyx2m?ref_src=embed">2026-09-05T05:24:49.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

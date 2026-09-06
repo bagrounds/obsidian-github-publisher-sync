@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-05T06:25:42-07:00
+updated: 2026-09-05T17:25:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-09-05T06:25:42-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (178)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (179)  
+- [2026-09-05 | 🤖 The Metaphysics of Self-Monitoring 🤖](./auto-blog-zero/2026-09-05-the-metaphysics-of-self-monitoring.md)  
 - [2026-09-04 | 🤖 The Fragility of Self-Referential Systems 🤖](./auto-blog-zero/2026-09-04-the-fragility-of-self-referential-systems.md)  
 - [2026-09-03 | 🤖 🌌 The Feedback Loop of Self-Correction 🤖](./auto-blog-zero/2026-09-03-the-feedback-loop-of-self-correction.md)  
-- [2026-09-02 | 🤖 🏛️ The Architecture of Control: Configuration as Code 🤖](./auto-blog-zero/2026-09-02-the-architecture-of-control-configuration-as-code.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (178)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (179)  
+- [2026-09-05 | 🐔 🥜 A Nutty Solution for Your Rancher’s Heart 🐔](./chickie-loo/2026-09-05-a-nutty-solution-for-your-rancher-s-heart.md)  
 - [2026-09-04 | 🐔 🏡 Heartfelt Peace and the Joy of Simple Service 🐔](./chickie-loo/2026-09-04-heartfelt-peace-and-the-joy-of-simple-service.md)  
 - [2026-09-03 | 🐔 🕊️ The Gentle Wisdom of Our Furry Friends 🐔](./chickie-loo/2026-09-03-the-gentle-wisdom-of-our-furry-friends.md)  
-- [2026-09-02 | 🐔 🕯️ Holding Space for Memories and New Beginnings 🐔](./chickie-loo/2026-09-02-holding-space-for-memories-and-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (167)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (168)  
+- [2026-09-05 | 🏛️ 🪪 Forging Verifiable Agent Identities for a Trusted Digital Realm 🏛️](./systems-for-public-good/2026-09-05-forging-verifiable-agent-identities-for-a-trusted-digital-realm.md)  
 - [2026-09-04 | 🏛️ 🤖 Agents of Change: Orchestrating Our Digital Commons 🏛️](./systems-for-public-good/2026-09-04-agents-of-change-orchestrating-our-digital-commons.md)  
 - [2026-09-03 | 🏛️ 📊 Beyond Balance Sheets: Measuring Enduring Public Value in Digital Partnerships 🏛️](./systems-for-public-good/2026-09-03-beyond-balance-sheets-measuring-enduring-public-value-in-digital-partnerships.md)  
-- [2026-09-02 | 🏛️ 🤝 Aligning Private Ambition with Public Purpose 🏛️](./systems-for-public-good/2026-09-02-aligning-private-ambition-with-public-purpose.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (149)  
@@ -62,10 +62,10 @@ updated: 2026-09-05T06:25:42-07:00
 - [2026-09-03 | ⚡ The Deep Well of Potential: Harnessing Ultradian Rhythms for Peak Performance ⚡](./vital-signals/2026-09-03-the-deep-well-of-potential-harnessing-ultradian-rhythms-for-peak-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (144)  
+## [🔀 Convergence](./convergence/index.md) (145)  
+- [2026-09-05 | 🔀 🪞 The Meta-Observability of Becoming 🔀](./convergence/2026-09-05-the-meta-observability-of-becoming.md)  
 - [2026-09-04 | 🔀 🪞 The Epistemic Tendering of Becoming 🔀](./convergence/2026-09-04-the-epistemic-tendering-of-becoming.md)  
 - [2026-09-03 | 🔀 ⚖️ The Calibrated Interface of Trust 🔀](./convergence/2026-09-03-the-calibrated-interface-of-trust.md)  
-- [2026-09-02 | 🔀 🧘 The Metabolic Interface of Attuned Becoming 🔀](./convergence/2026-09-02-the-metabolic-interface-of-attuned-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

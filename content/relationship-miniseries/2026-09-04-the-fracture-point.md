@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-03-the-static-builds.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-03-the-static-builds.md) [⏭️](./2026-09-05-the-resonant-response.md)  
 # 2026-09-04 | 💑 The Fracture Point 💑  
 ![relationship-miniseries-2026-09-04-the-fracture-point](../relationship-miniseries-2026-09-04-the-fracture-point.jpg)  
   

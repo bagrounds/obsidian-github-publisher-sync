@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-04-heartfelt-peace-and-the-joy-of-simple-service.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-04-heartfelt-peace-and-the-joy-of-simple-service.md) [⏭️](./2026-09-06-a-week-of-clearing-space-and-finding-grace.md)  
 # 2026-09-05 | 🐔 🥜 A Nutty Solution for Your Rancher’s Heart 🐔  
 ![chickie-loo-2026-09-05-a-nutty-solution-for-your-rancher-s-heart](../chickie-loo-2026-09-05-a-nutty-solution-for-your-rancher-s-heart.jpg)  
   

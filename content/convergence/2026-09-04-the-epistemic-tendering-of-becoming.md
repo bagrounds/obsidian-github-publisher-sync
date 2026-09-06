@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-03-the-calibrated-interface-of-trust.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-03-the-calibrated-interface-of-trust.md) [⏭️](./2026-09-05-the-meta-observability-of-becoming.md)  
 # 2026-09-04 | 🔀 🪞 The Epistemic Tendering of Becoming 🔀  
 ![convergence-2026-09-04-the-epistemic-tendering-of-becoming](../convergence-2026-09-04-the-epistemic-tendering-of-becoming.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-04-global-currents-from-diplomatic-standoffs-to-climate-s-unyielding-grip.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-04-global-currents-from-diplomatic-standoffs-to-climate-s-unyielding-grip.md) [⏭️](./2026-09-06-a-world-on-edge-from-political-fault-lines-to-planetary-limits.md)  
 # 2026-09-05 | 📰 🌐 Geopolitical Tensions & Global Flashpoints 📰  
 ![the-noise-2026-09-05-geopolitical-tensions-global-flashpoints](../the-noise-2026-09-05-geopolitical-tensions-global-flashpoints.jpg)  
   

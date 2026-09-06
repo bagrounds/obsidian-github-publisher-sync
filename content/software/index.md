@@ -5,7 +5,7 @@ aliases:
 title: 💾 Software
 backlinks: false
 URL: https://bagrounds.org/software
-updated: 2026-09-05T06:25:42-07:00
+updated: 2026-09-05T17:25:58-07:00
 ---
 [Home](../index.md)  
 # 💾 Software (34)  

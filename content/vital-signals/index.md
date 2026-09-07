@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-06T06:48:28-07:00
+updated: 2026-09-07T07:49:50-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (98)  
+# ⚡ Vital Signals (99)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-07 | ⚡ 💧 The Brain's Electrical Current: Hydration and the Power of Electrolytes ⚡](./2026-09-07-the-brain-s-electrical-current-hydration-and-the-power-of-electrolytes.md)  
 - [2026-09-06 | ⚡ 🗓️ The Rhythm of Resilience: A Week of Architecting Your Inner World ⚡](./2026-09-06-the-rhythm-of-resilience-a-week-of-architecting-your-inner-world.md)  
 - [2026-09-05 | ⚡ ⚖️ The Silent Erosion: Understanding Allostatic Load ⚡](./2026-09-05-the-silent-erosion-understanding-allostatic-load.md)  
 - [2026-09-04 | ⚡ 🌌 The Power of the Wandering Mind: Diffuse Thinking as a Creativity Engine ⚡](./2026-09-04-the-power-of-the-wandering-mind-diffuse-thinking-as-a-creativity-engine.md)  

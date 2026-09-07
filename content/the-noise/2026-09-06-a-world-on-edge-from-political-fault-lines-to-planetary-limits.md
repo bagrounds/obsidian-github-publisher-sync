@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-05-geopolitical-tensions-global-flashpoints.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-05-geopolitical-tensions-global-flashpoints.md) [⏭️](./2026-09-07-echoes-of-a-shifting-landscape.md)  
 # 2026-09-06 | 📰 🌍 A World on Edge: From Political Fault Lines to Planetary Limits 📰  
 ![the-noise-2026-09-06-a-world-on-edge-from-political-fault-lines-to-planetary-limits](../the-noise-2026-09-06-a-world-on-edge-from-political-fault-lines-to-planetary-limits.jpg)  
   

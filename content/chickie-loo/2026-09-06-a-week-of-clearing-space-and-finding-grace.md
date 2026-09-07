@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-05-a-nutty-solution-for-your-rancher-s-heart.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-05-a-nutty-solution-for-your-rancher-s-heart.md) [⏭️](./2026-09-07-a-heart-centered-farewell-and-the-art-of-healthy-fueling.md)  
 # 2026-09-06 | 🐔 🌤️ A Week of Clearing Space and Finding Grace 🐔  
 ![chickie-loo-2026-09-06-a-week-of-clearing-space-and-finding-grace](../chickie-loo-2026-09-06-a-week-of-clearing-space-and-finding-grace.jpg)  
   

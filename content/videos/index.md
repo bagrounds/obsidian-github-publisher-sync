@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-07T07:49:50-07:00
+updated: 2026-09-08T06:37:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (920)  
+# 📺 Videos (921)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -906,6 +906,7 @@ updated: 2026-09-07T07:49:50-07:00
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
 - [🏛️➡️👑🗓️ Why Viktor Orbán Matters to Trump and Project 2025 | Anne Applebaum & Preet Bharara](./why-viktor-orban-matters-to-trump-and-project-2025-anne-applebaum-preet-bharara.md)  
+- [⏳🧠🚫 Why You Can't Stop Procrastinating (It's Not Laziness)](./why-you-cant-stop-procrastinating-its-not-laziness.md)  
 - [😴☕️💡 Why you’re so tired](./why-youre-so-tired.md)  
 - [💡🧠🤖📝 Why you should take notes if you use AI](./why-you-should-take-notes-if-you-use-ai.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  

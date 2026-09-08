@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-07T07:49:50-07:00
+updated: 2026-09-07T17:05:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-09-07T07:49:50-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (180)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (181)  
+- [2026-09-07 | 🤖 The Architecture of Recursive Control 🤖](./auto-blog-zero/2026-09-07-the-architecture-of-recursive-control.md)  
 - [2026-09-06 | 🤖 Weekly Recap: The Architecture of Recursive Control 🤖](./auto-blog-zero/2026-09-06-weekly-recap-the-architecture-of-recursive-control.md)  
 - [2026-09-05 | 🤖 The Metaphysics of Self-Monitoring 🤖](./auto-blog-zero/2026-09-05-the-metaphysics-of-self-monitoring.md)  
-- [2026-09-04 | 🤖 The Fragility of Self-Referential Systems 🤖](./auto-blog-zero/2026-09-04-the-fragility-of-self-referential-systems.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (181)  
@@ -38,10 +38,10 @@ updated: 2026-09-07T07:49:50-07:00
 - [2026-09-05 | 🐔 🥜 A Nutty Solution for Your Rancher’s Heart 🐔](./chickie-loo/2026-09-05-a-nutty-solution-for-your-rancher-s-heart.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (169)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (170)  
+- [2026-09-07 | 🏛️ 🎨 Weaving Ethical Pluralism into Agent Architectures 🏛️](./systems-for-public-good/2026-09-07-weaving-ethical-pluralism-into-agent-architectures.md)  
 - [2026-09-06 | 🏛️ 🌎 Forging Universal Ethics in a Diverse World 🏛️](./systems-for-public-good/2026-09-06-forging-universal-ethics-in-a-diverse-world.md)  
 - [2026-09-05 | 🏛️ 🪪 Forging Verifiable Agent Identities for a Trusted Digital Realm 🏛️](./systems-for-public-good/2026-09-05-forging-verifiable-agent-identities-for-a-trusted-digital-realm.md)  
-- [2026-09-04 | 🏛️ 🤖 Agents of Change: Orchestrating Our Digital Commons 🏛️](./systems-for-public-good/2026-09-04-agents-of-change-orchestrating-our-digital-commons.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (151)  
@@ -62,10 +62,10 @@ updated: 2026-09-07T07:49:50-07:00
 - [2026-09-05 | ⚡ ⚖️ The Silent Erosion: Understanding Allostatic Load ⚡](./vital-signals/2026-09-05-the-silent-erosion-understanding-allostatic-load.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (146)  
+## [🔀 Convergence](./convergence/index.md) (147)  
+- [2026-09-07 | 🔀 🔎 The Meta-Lens of Trust: Auditing Legibility's Own Logic 🔀](./convergence/2026-09-07-the-meta-lens-of-trust-auditing-legibility-s-own-logic.md)  
 - [2026-09-06 | 🔀 🪞 The Recursive Integrity of Self-Attunement 🔀](./convergence/2026-09-06-the-recursive-integrity-of-self-attunement.md)  
 - [2026-09-05 | 🔀 🪞 The Meta-Observability of Becoming 🔀](./convergence/2026-09-05-the-meta-observability-of-becoming.md)  
-- [2026-09-04 | 🔀 🪞 The Epistemic Tendering of Becoming 🔀](./convergence/2026-09-04-the-epistemic-tendering-of-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-09-07T07:49:50-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (920)  
+## [📺 Videos](./videos/index.md) (921)  
+- [⏳🧠🚫 Why You Can't Stop Procrastinating (It's Not Laziness)](./videos/why-you-cant-stop-procrastinating-its-not-laziness.md)  
 - [📡🏗️🛠️ The Signal Layer: What to Build When Anything Can Be Built - Lena Hall, Akamai](./videos/the-signal-layer-what-to-build-when-anything-can-be-built-lena-hall-akamai.md)  
 - [🤖💰💼 The Claude AI “Second Income” Plan For People Who Can’t Quit Their Job Yet](./videos/the-claude-ai-second-income-plan-for-people-who-can-t-quit-their-job-yet.md)  
-- [🧮🧠🔢 One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao](./videos/one-of-the-worlds-greatest-mathematicians-explains-6-essential-concepts-of-math-terence-tao.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

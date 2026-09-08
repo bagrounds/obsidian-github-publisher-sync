@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-07T07:49:50-07:00
+updated: 2026-09-07T17:05:58-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (146)  
+# 🔀 Convergence (147)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-07 | 🔀 🔎 The Meta-Lens of Trust: Auditing Legibility's Own Logic 🔀](./2026-09-07-the-meta-lens-of-trust-auditing-legibility-s-own-logic.md)  
 - [2026-09-06 | 🔀 🪞 The Recursive Integrity of Self-Attunement 🔀](./2026-09-06-the-recursive-integrity-of-self-attunement.md)  
 - [2026-09-05 | 🔀 🪞 The Meta-Observability of Becoming 🔀](./2026-09-05-the-meta-observability-of-becoming.md)  
 - [2026-09-04 | 🔀 🪞 The Epistemic Tendering of Becoming 🔀](./2026-09-04-the-epistemic-tendering-of-becoming.md)  

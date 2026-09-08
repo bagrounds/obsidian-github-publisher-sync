@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-09-07T07:49:50-07:00
+updated: 2026-09-08T06:37:33-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (53)  
+# 💑 Relationship Miniseries (54)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-09-07 | 💑 🧠 The Biology of Connection: Our Brain's Social Baseline 💑](./2026-09-07-the-biology-of-connection-our-brain-s-social-baseline.md)  
 - [2026-09-06 | 💑 The Echo Chamber: Weekly Reflection 💑](./2026-09-06-the-echo-chamber-weekly-reflection.md)  
 - [2026-09-05 | 💑 The Resonant Response 💑](./2026-09-05-the-resonant-response.md)  
 - [2026-09-04 | 💑 The Fracture Point 💑](./2026-09-04-the-fracture-point.md)  

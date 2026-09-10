@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-08-anchoring-accountability-in-human-agent-co-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-08-anchoring-accountability-in-human-agent-co-governance.md) [⏭️](./2026-09-10-fostering-systemic-accountability-in-multi-agent-ecosystems.md)  
 # 2026-09-09 | 🏛️ ⚖️ Distributing Agentic Power Equitably Across the Globe 🏛️  
 ![systems-for-public-good-2026-09-09-distributing-agentic-power-equitably-across-the-globe](../systems-for-public-good-2026-09-09-distributing-agentic-power-equitably-across-the-globe.jpg)  
   

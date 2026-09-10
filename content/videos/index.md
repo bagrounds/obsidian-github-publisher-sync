@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-10T06:33:06-07:00
+updated: 2026-09-10T13:14:48-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (923)  
+# 📺 Videos (924)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -251,6 +251,7 @@ updated: 2026-09-10T06:33:06-07:00
 - [🤖💻⚙️ Full Walkthrough: Workflow for AI Coding - Matt Pocock](./full-walkthrough-workflow-for-ai-coding-matt-pocock.md)  
 - [🪴🔬❌ Garden Science: Weeding Out the Myths](./garden-science-weeding-out-the-myths.md)  
 - [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
+- [📄⚡️💻 Geoffrey Litt: Dynamic Documents as Personal Software](./geoffrey-litt-dynamic-documents-as-personal-software.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./giorgio-parisi-nobel-prize-conversations.md)  

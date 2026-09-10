@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-08-unseen-tethers-unseen-weight-crafting-the-tether.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-08-unseen-tethers-unseen-weight-crafting-the-tether.md) [⏭️](./2026-09-10-the-invisible-burden.md)  
 # 2026-09-09 | 💑 The Echo Chamber 💑  
 ![relationship-miniseries-2026-09-09-the-echo-chamber](../relationship-miniseries-2026-09-09-the-echo-chamber.jpg)  
   

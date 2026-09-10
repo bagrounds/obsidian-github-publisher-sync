@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-08T06:37:33-07:00
+updated: 2026-09-09T18:14:08-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (921)  
+# 📺 Videos (923)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -900,6 +900,8 @@ updated: 2026-09-08T06:37:33-07:00
 - [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./why-the-constitution-separates-church-and-state-explainer.md)  
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
+- [Why The Harness Matters More Than The Model | YC Paper Club](./Why%20The%20Harness%20Matters%20More%20Than%20The%20Model%20%20YC%20Paper%20Club.md)  
+- [⚙️🏗️ Why The Harness Matters More Than The Model | YC Paper Club](./why-the-harness-matters-more-than-the-model-yc-paper-club.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [🛝📉🏚️ Why these playgrounds disappeared](./why-these-playgrounds-disappeared.md)  
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  

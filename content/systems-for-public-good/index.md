@@ -5,11 +5,13 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-09-08T06:37:33-07:00
+updated: 2026-09-09T18:14:08-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (170)  
+# 🏛️ Systems for Public Good (172)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-09-09 | 🏛️ ⚖️ Distributing Agentic Power Equitably Across the Globe 🏛️](./2026-09-09-distributing-agentic-power-equitably-across-the-globe.md)  
+- [2026-09-08 | 🏛️ Anchoring Accountability in Human-Agent Co-Governance 🏛️](./2026-09-08-anchoring-accountability-in-human-agent-co-governance.md)  
 - [2026-09-07 | 🏛️ 🎨 Weaving Ethical Pluralism into Agent Architectures 🏛️](./2026-09-07-weaving-ethical-pluralism-into-agent-architectures.md)  
 - [2026-09-06 | 🏛️ 🌎 Forging Universal Ethics in a Diverse World 🏛️](./2026-09-06-forging-universal-ethics-in-a-diverse-world.md)  
 - [2026-09-05 | 🏛️ 🪪 Forging Verifiable Agent Identities for a Trusted Digital Realm 🏛️](./2026-09-05-forging-verifiable-agent-identities-for-a-trusted-digital-realm.md)  

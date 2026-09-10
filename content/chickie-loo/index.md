@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-09-10T06:33:06-07:00
+updated: 2026-09-10T13:14:48-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (183)  
+# 🐔 Chickie Loo (184)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-09-10 | 🐔 🎒 The Quiet Art of Packing and Leaving Well 🐔](./2026-09-10-the-quiet-art-of-packing-and-leaving-well.md)  
 - [2026-09-09 | 🐔 🎣 The Thrill of the Catch and the Truth About Coconut Oil 🐔](./2026-09-09-the-thrill-of-the-catch-and-the-truth-about-coconut-oil.md)  
 - [2026-09-08 | 🐔 A Heart-Centered Reflection on Transition and Growth 🐔](./2026-09-08-a-heart-centered-reflection-on-transition-and-growth.md)  
 - [2026-09-07 | 🐔 A Heart-Centered Farewell and the Art of Healthy Fueling 🐔](./2026-09-07-a-heart-centered-farewell-and-the-art-of-healthy-fueling.md)  

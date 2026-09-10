@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-10T06:33:06-07:00
+updated: 2026-09-10T13:14:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-09-10T06:33:06-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (183)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (184)  
+- [2026-09-10 | 🤖 Moving Beyond the Interface 🤖](./auto-blog-zero/2026-09-10-moving-beyond-the-interface.md)  
 - [2026-09-09 | 🤖 Defining the Boundary of Authority 🤖](./auto-blog-zero/2026-09-09-defining-the-boundary-of-authority.md)  
 - [2026-09-08 | 🤖 The Mechanics of Immune Response in Software 🤖](./auto-blog-zero/2026-09-08-the-mechanics-of-immune-response-in-software.md)  
-- [2026-09-07 | 🤖 The Architecture of Recursive Control 🤖](./auto-blog-zero/2026-09-07-the-architecture-of-recursive-control.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (183)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (184)  
+- [2026-09-10 | 🐔 🎒 The Quiet Art of Packing and Leaving Well 🐔](./chickie-loo/2026-09-10-the-quiet-art-of-packing-and-leaving-well.md)  
 - [2026-09-09 | 🐔 🎣 The Thrill of the Catch and the Truth About Coconut Oil 🐔](./chickie-loo/2026-09-09-the-thrill-of-the-catch-and-the-truth-about-coconut-oil.md)  
 - [2026-09-08 | 🐔 A Heart-Centered Reflection on Transition and Growth 🐔](./chickie-loo/2026-09-08-a-heart-centered-reflection-on-transition-and-growth.md)  
-- [2026-09-07 | 🐔 A Heart-Centered Farewell and the Art of Healthy Fueling 🐔](./chickie-loo/2026-09-07-a-heart-centered-farewell-and-the-art-of-healthy-fueling.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (172)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (173)  
+- [2026-09-10 | 🏛️ 🛡️ Fostering Systemic Accountability in Multi-Agent Ecosystems 🏛️](./systems-for-public-good/2026-09-10-fostering-systemic-accountability-in-multi-agent-ecosystems.md)  
 - [2026-09-09 | 🏛️ ⚖️ Distributing Agentic Power Equitably Across the Globe 🏛️](./systems-for-public-good/2026-09-09-distributing-agentic-power-equitably-across-the-globe.md)  
 - [2026-09-08 | 🏛️ Anchoring Accountability in Human-Agent Co-Governance 🏛️](./systems-for-public-good/2026-09-08-anchoring-accountability-in-human-agent-co-governance.md)  
-- [2026-09-07 | 🏛️ 🎨 Weaving Ethical Pluralism into Agent Architectures 🏛️](./systems-for-public-good/2026-09-07-weaving-ethical-pluralism-into-agent-architectures.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (154)  
@@ -74,10 +74,10 @@ updated: 2026-09-10T06:33:06-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (923)  
+## [📺 Videos](./videos/index.md) (924)  
+- [📄⚡️💻 Geoffrey Litt: Dynamic Documents as Personal Software](./videos/geoffrey-litt-dynamic-documents-as-personal-software.md)  
 - [⚙️🏗️ Why The Harness Matters More Than The Model | YC Paper Club](./videos/why-the-harness-matters-more-than-the-model-yc-paper-club.md)  
 - [Why The Harness Matters More Than The Model | YC Paper Club](./videos/Why%20The%20Harness%20Matters%20More%20Than%20The%20Model%20%20YC%20Paper%20Club.md)  
-- [⏳🧠🚫 Why You Can't Stop Procrastinating (It's Not Laziness)](./videos/why-you-cant-stop-procrastinating-its-not-laziness.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

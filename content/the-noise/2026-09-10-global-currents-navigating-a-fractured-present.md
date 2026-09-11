@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-09-navigating-currents-a-world-in-flux.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-09-navigating-currents-a-world-in-flux.md) [⏭️](./2026-09-11-a-world-under-strain-from-global-gatherings-to-deepening-divides.md)  
 # 2026-09-10 | 📰 🌐 Global Currents: Navigating a Fractured Present 📰  
 ![the-noise-2026-09-10-global-currents-navigating-a-fractured-present](../the-noise-2026-09-10-global-currents-navigating-a-fractured-present.jpg)  
   

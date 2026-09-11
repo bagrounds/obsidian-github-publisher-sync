@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-09-the-thrill-of-the-catch-and-the-truth-about-coconut-oil.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-09-the-thrill-of-the-catch-and-the-truth-about-coconut-oil.md) [⏭️](./2026-09-11-a-prayer-for-charlie-and-the-resilience-of-the-flock.md)  
 # 2026-09-10 | 🐔 🎒 The Quiet Art of Packing and Leaving Well 🐔  
 ![chickie-loo-2026-09-10-the-quiet-art-of-packing-and-leaving-well](../chickie-loo-2026-09-10-the-quiet-art-of-packing-and-leaving-well.jpg)  
   

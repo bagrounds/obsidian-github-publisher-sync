@@ -5,11 +5,13 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-09-11T07:17:40-07:00
+updated: 2026-09-12T12:45:44-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (173)  
+# 🏛️ Systems for Public Good (175)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-09-12 | 🏛️ Agents Amplifying Democratic Deliberation 🏛️](./2026-09-12-agents-amplifying-democratic-deliberation.md)  
+- [2026-09-11 | 🏛️ 📚 Cultivating a Dynamic Culture of Agentic Learning 🏛️](./2026-09-11-cultivating-a-dynamic-culture-of-agentic-learning.md)  
 - [2026-09-10 | 🏛️ 🛡️ Fostering Systemic Accountability in Multi-Agent Ecosystems 🏛️](./2026-09-10-fostering-systemic-accountability-in-multi-agent-ecosystems.md)  
 - [2026-09-09 | 🏛️ ⚖️ Distributing Agentic Power Equitably Across the Globe 🏛️](./2026-09-09-distributing-agentic-power-equitably-across-the-globe.md)  
 - [2026-09-08 | 🏛️ Anchoring Accountability in Human-Agent Co-Governance 🏛️](./2026-09-08-anchoring-accountability-in-human-agent-co-governance.md)  

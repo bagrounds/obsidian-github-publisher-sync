@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-11T07:17:40-07:00
+updated: 2026-09-12T12:45:44-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (103)  
+# ⚡ Vital Signals (104)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-12 | ⚡ 🧠 The Art of Strategic Stillness: Reclaiming Your Cognitive Canvas ⚡](./2026-09-12-the-art-of-strategic-stillness-reclaiming-your-cognitive-canvas.md)  
 - [2026-09-11 | ⚡ 🔬 The Signal: Your Brain's Bandwidth Limit ⚡](./2026-09-11-the-signal-your-brain-s-bandwidth-limit.md)  
 - [2026-09-10 | ⚡ ✨ The Invisible Hand: Dopamine, Desire, and Your Drive ⚡](./2026-09-10-the-invisible-hand-dopamine-desire-and-your-drive.md)  
 - [2026-09-09 | ⚡ 🔬 The Signal: Your Brain's Versatile Fuel Tank ⚡](./2026-09-09-the-signal-your-brain-s-versatile-fuel-tank.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-11-a-world-under-strain-from-global-gatherings-to-deepening-divides.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-11-a-world-under-strain-from-global-gatherings-to-deepening-divides.md) [⏭️](./2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters.md)  
 # 2026-09-12 | 📰 🌐 A World in Perpetual Motion: Tech's Leap, Geopolitical Shifts, and Lingering Shadows 📰  
 ![the-noise-2026-09-12-a-world-in-perpetual-motion-tech-s-leap-geopolitical-shifts-and-lingering-shadows](../the-noise-2026-09-12-a-world-in-perpetual-motion-tech-s-leap-geopolitical-shifts-and-lingering-shadows.jpg)  
   

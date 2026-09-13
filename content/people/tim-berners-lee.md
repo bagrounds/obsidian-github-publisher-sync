@@ -7,6 +7,8 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+URL: https://bagrounds.org/people/tim-berners-lee
+updated: 2026-09-13T11:19:58
 ---
 [Home](../index.md) > [People](./index.md)  
 # 🕸️🌐👨‍💻 Tim Berners-Lee  

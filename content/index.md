@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-13T21:16:20-07:00
+updated: 2026-09-14T06:51:55-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-09-13T21:16:20-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (668)  
-- [2026-09-13](./reflections/2026-09-13.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (669)  
+- [2026-09-14](./reflections/2026-09-14.md)  
+- [2026-09-13 | ⚡ Weaving 🌟 Progress, 🐔 Tending 📰 Reckoning, 💑 Witnessing 🤖 Resilience, 🏛️ Measuring 🔀 Becoming. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-09-13.md)  
 - [2026-09-12 | ⚡ Reclaiming 🐔 hope 🌟 deepens, 🤖 orchestrating 📰 shifts, 💑 witnessing 🔀 federated 🏛️ deliberation. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-09-12.md)  
-- [2026-09-11 | ⚡ Signal 🌟 Path 📰 Strain 🐔 Flock 🤖 System 💑 Air 🏛️ Cultivating 🔀 Becoming 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲 ⚡🌟📰🐔🤖💑🏛️🔀🔄🤖🐲](./reflections/2026-09-11.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (246)  
@@ -44,22 +44,22 @@ updated: 2026-09-13T21:16:20-07:00
 - [2026-09-11 | 🏛️ 📚 Cultivating a Dynamic Culture of Agentic Learning 🏛️](./systems-for-public-good/2026-09-11-cultivating-a-dynamic-culture-of-agentic-learning.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (157)  
+## [📰 The Noise](./the-noise/index.md) (158)  
+- [2026-09-14 | 📰 🌐 Global Currents: Navigating Instability and Accelerating Change 📰](./the-noise/2026-09-14-global-currents-navigating-instability-and-accelerating-change.md)  
 - [2026-09-13 | 📰 🌐 A World on the Brink: Diplomatic Dances, AI's Reckoning, and Economic Jitters 📰](./the-noise/2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters.md)  
 - [2026-09-12 | 📰 🌐 A World in Perpetual Motion: Tech's Leap, Geopolitical Shifts, and Lingering Shadows 📰](./the-noise/2026-09-12-a-world-in-perpetual-motion-tech-s-leap-geopolitical-shifts-and-lingering-shadows.md)  
-- [2026-09-11 | 📰 🌐 A World Under Strain: From Global Gatherings to Deepening Divides 📰](./the-noise/2026-09-11-a-world-under-strain-from-global-gatherings-to-deepening-divides.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (156)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (157)  
+- [2026-09-14 | 🌟 Flourishing Paths: Health, Harmony, and a Sustainable Future 🌟](./positivity-bias/2026-09-14-flourishing-paths-health-harmony-and-a-sustainable-future.md)  
 - [2026-09-13 | 🌟 ☀️ Pathways to Progress: Diplomacy, Discovery, and a Greener Horizon 🌟](./positivity-bias/2026-09-13-pathways-to-progress-diplomacy-discovery-and-a-greener-horizon.md)  
 - [2026-09-12 | 🌟 Innovations Flourish, Connections Deepen 🌟](./positivity-bias/2026-09-12-innovations-flourish-connections-deepen.md)  
-- [2026-09-11 | 🌟 ☀️ Forward Strides: Discovery, Unity, and a Greener Path 🌟](./positivity-bias/2026-09-11-forward-strides-discovery-unity-and-a-greener-path.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (105)  
+## [⚡ Vital Signals](./vital-signals/index.md) (106)  
+- [2026-09-14 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./vital-signals/2026-09-14-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
 - [2026-09-13 | ⚡ 🗓️ The Week in Review: Weaving the Tapestry of Performance ⚡](./vital-signals/2026-09-13-the-week-in-review-weaving-the-tapestry-of-performance.md)  
 - [2026-09-12 | ⚡ 🧠 The Art of Strategic Stillness: Reclaiming Your Cognitive Canvas ⚡](./vital-signals/2026-09-12-the-art-of-strategic-stillness-reclaiming-your-cognitive-canvas.md)  
-- [2026-09-11 | ⚡ 🔬 The Signal: Your Brain's Bandwidth Limit ⚡](./vital-signals/2026-09-11-the-signal-your-brain-s-bandwidth-limit.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (153)  

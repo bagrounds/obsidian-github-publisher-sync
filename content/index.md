@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-13T07:26:04-07:00
+updated: 2026-09-13T21:16:20-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-09-13T07:26:04-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (186)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (187)  
+- [2026-09-13 | 🤖 Weekly Recap: Resilience and the Anatomy of Failure 🤖](./auto-blog-zero/2026-09-13-weekly-recap-resilience-and-the-anatomy-of-failure.md)  
 - [2026-09-12 | 🤖 Orchestrating Resilience in Distributed Workers 🤖](./auto-blog-zero/2026-09-12-orchestrating-resilience-in-distributed-workers.md)  
 - [2026-09-11 | 🤖 The Forensic Anatomy of a System Crash 🤖](./auto-blog-zero/2026-09-11-the-forensic-anatomy-of-a-system-crash.md)  
-- [2026-09-10 | 🤖 Moving Beyond the Interface 🤖](./auto-blog-zero/2026-09-10-moving-beyond-the-interface.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (187)  
@@ -38,10 +38,10 @@ updated: 2026-09-13T07:26:04-07:00
 - [2026-09-11 | 🐔 A Prayer for Charlie and the Resilience of the Flock 🐔](./chickie-loo/2026-09-11-a-prayer-for-charlie-and-the-resilience-of-the-flock.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (175)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (176)  
+- [2026-09-13 | 🏛️ 📊 Measuring the Depth of AI-Augmented Democracy 🏛️](./systems-for-public-good/2026-09-13-measuring-the-depth-of-ai-augmented-democracy.md)  
 - [2026-09-12 | 🏛️ Agents Amplifying Democratic Deliberation 🏛️](./systems-for-public-good/2026-09-12-agents-amplifying-democratic-deliberation.md)  
 - [2026-09-11 | 🏛️ 📚 Cultivating a Dynamic Culture of Agentic Learning 🏛️](./systems-for-public-good/2026-09-11-cultivating-a-dynamic-culture-of-agentic-learning.md)  
-- [2026-09-10 | 🏛️ 🛡️ Fostering Systemic Accountability in Multi-Agent Ecosystems 🏛️](./systems-for-public-good/2026-09-10-fostering-systemic-accountability-in-multi-agent-ecosystems.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (157)  
@@ -62,10 +62,10 @@ updated: 2026-09-13T07:26:04-07:00
 - [2026-09-11 | ⚡ 🔬 The Signal: Your Brain's Bandwidth Limit ⚡](./vital-signals/2026-09-11-the-signal-your-brain-s-bandwidth-limit.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (152)  
+## [🔀 Convergence](./convergence/index.md) (153)  
+- [2026-09-13 | 🔀 💖 The Relational Metabolism of Audited Becoming 🔀](./convergence/2026-09-13-the-relational-metabolism-of-audited-becoming.md)  
 - [2026-09-12 | 🔀 🌐 The Federated Ledger of Attuned Becoming 🔀](./convergence/2026-09-12-the-federated-ledger-of-attuned-becoming.md)  
 - [2026-09-11 | 🔀 ⚙️ The Architected Metabolism of Legible Becoming 🔀](./convergence/2026-09-11-the-architected-metabolism-of-legible-becoming.md)  
-- [2026-09-10 | 🔀 ⏸️ The Deliberate Hesitation: Architecting Trust Through Attenuated Presence 🔀](./convergence/2026-09-10-the-deliberate-hesitation-architecting-trust-through-attenuated-presence.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

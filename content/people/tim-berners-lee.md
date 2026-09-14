@@ -8,7 +8,7 @@ link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
 URL: https://bagrounds.org/people/tim-berners-lee
-updated: 2026-09-13T11:19:58
+updated: 2026-09-14T09:22:29
 ---
 [Home](../index.md) > [People](./index.md)  
 # 🕸️🌐👨‍💻 Tim Berners-Lee  
@@ -58,4 +58,12 @@ He continues to be a prominent advocate for the open and accessible nature of th
     * While not exclusively about Berners-Lee, this book provides a sweeping history of the digital revolution, including key figures and inventions that led to the internet and the web. It's a comprehensive and engaging read.  
   
 * **The Internet Is Not the Answer** by Andrew Keen (2015)  
-    * This book offers a more critical look at the internet's development and its negative consequences. While not directly focused on Berners-Lee's role, it provides a valuable counterpoint to purely celebratory narratives of technological progress.
+    * This book offers a more critical look at the internet's development and its negative consequences. While not directly focused on Berners-Lee's role, it provides a valuable counterpoint to purely celebratory narratives of technological progress.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mvhrxbny4z2m" data-bluesky-cid="bafyreigqwc7aw2rlf6jnwg2nvhbwatperebkbwyye5lqv3skhuupzqrnne"><p>🕸️🌐👨‍💻 Tim Berners-Lee  
+  
+#AI Q: 🌐 How would the world look today if the web remained a private, patented invention?  
+  
+🏗️ Internet Infrastructure | 🔓 Open Source History | 🏛️ Web Standards | 🌍  
+https://bagrounds.org/people/tim-berners-lee</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mvhrxbny4z2m?ref_src=embed">2026-09-14T09:22:51.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

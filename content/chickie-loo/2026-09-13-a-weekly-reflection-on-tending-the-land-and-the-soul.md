@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-12-a-heart-full-of-hope-for-the-journey-ahead.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-12-a-heart-full-of-hope-for-the-journey-ahead.md) [⏭️](./2026-09-14-the-gentle-art-of-returning-home.md)  
 # 2026-09-13 | 🐔 A Weekly Reflection on Tending the Land and the Soul 🐔  
 ![chickie-loo-2026-09-13-a-weekly-reflection-on-tending-the-land-and-the-soul](../chickie-loo-2026-09-13-a-weekly-reflection-on-tending-the-land-and-the-soul.jpg)  
   

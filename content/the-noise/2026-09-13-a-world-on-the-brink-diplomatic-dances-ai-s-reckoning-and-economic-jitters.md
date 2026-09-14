@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-12-a-world-in-perpetual-motion-tech-s-leap-geopolitical-shifts-and-lingering-shadows.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-12-a-world-in-perpetual-motion-tech-s-leap-geopolitical-shifts-and-lingering-shadows.md) [⏭️](./2026-09-14-global-currents-navigating-instability-and-accelerating-change.md)  
 # 2026-09-13 | 📰 🌐 A World on the Brink: Diplomatic Dances, AI's Reckoning, and Economic Jitters 📰  
 ![the-noise-2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters](../the-noise-2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters.jpg)  
   

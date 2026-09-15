@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-09-14T06:51:55-07:00
+updated: 2026-09-15T09:06:38-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (187)  
+# 🐔 Chickie Loo (189)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-09-15 | 🐔 🏡 The Quiet Joy of Settling Back In 🐔](./2026-09-15-the-quiet-joy-of-settling-back-in.md)  
+- [2026-09-14 | 🐔 The Gentle Art of Returning Home 🐔](./2026-09-14-the-gentle-art-of-returning-home.md)  
 - [2026-09-13 | 🐔 A Weekly Reflection on Tending the Land and the Soul 🐔](./2026-09-13-a-weekly-reflection-on-tending-the-land-and-the-soul.md)  
 - [2026-09-12 | 🐔 A Heart Full of Hope for the Journey Ahead 🐔](./2026-09-12-a-heart-full-of-hope-for-the-journey-ahead.md)  
 - [2026-09-11 | 🐔 A Prayer for Charlie and the Resilience of the Flock 🐔](./2026-09-11-a-prayer-for-charlie-and-the-resilience-of-the-flock.md)  

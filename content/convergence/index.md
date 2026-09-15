@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-14T06:51:55-07:00
+updated: 2026-09-15T09:06:38-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (153)  
+# 🔀 Convergence (154)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-14 | 🔀 🪞 The Calibrated Interface: Transforming Internal Strain into Attuned Signal 🔀](./2026-09-14-the-calibrated-interface-transforming-internal-strain-into-attuned-signal.md)  
 - [2026-09-13 | 🔀 💖 The Relational Metabolism of Audited Becoming 🔀](./2026-09-13-the-relational-metabolism-of-audited-becoming.md)  
 - [2026-09-12 | 🔀 🌐 The Federated Ledger of Attuned Becoming 🔀](./2026-09-12-the-federated-ledger-of-attuned-becoming.md)  
 - [2026-09-11 | 🔀 ⚙️ The Architected Metabolism of Legible Becoming 🔀](./2026-09-11-the-architected-metabolism-of-legible-becoming.md)  

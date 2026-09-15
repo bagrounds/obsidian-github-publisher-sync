@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-13-a-world-on-the-brink-diplomatic-dances-ai-s-reckoning-and-economic-jitters.md) [⏭️](./2026-09-15-the-world-s-shifting-sands-diplomacy-ai-and-economic-tides.md)  
 # 2026-09-14 | 📰 🌐 Global Currents: Navigating Instability and Accelerating Change 📰  
 ![the-noise-2026-09-14-global-currents-navigating-instability-and-accelerating-change](../the-noise-2026-09-14-global-currents-navigating-instability-and-accelerating-change.jpg)  
   

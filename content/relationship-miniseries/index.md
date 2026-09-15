@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-09-14T06:51:55-07:00
+updated: 2026-09-15T09:06:38-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (60)  
+# 💑 Relationship Miniseries (61)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-09-14 | 💑 💡 The Proximity Paradox 💑](./2026-09-14-the-proximity-paradox.md)  
 - [2026-09-13 | 💑 The Weight of Witnessing: Weekly Reflection 💑](./2026-09-13-the-weight-of-witnessing-weekly-reflection.md)  
 - [2026-09-12 | 💑 The Weight of Witnessing 💑](./2026-09-12-the-weight-of-witnessing.md)  
 - [2026-09-11 | 💑 The Ghost of Shared Air 💑](./2026-09-11-the-ghost-of-shared-air.md)  

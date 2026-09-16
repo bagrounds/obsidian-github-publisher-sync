@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-09-14T00:00:00Z
 force_analyze_links: false
+updated: 2026-09-16T03:27:24
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-13-measuring-the-depth-of-ai-augmented-democracy.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-13-measuring-the-depth-of-ai-augmented-democracy.md) [⏭️](./2026-09-15-cultivating-shared-stewardship-for-ai-s-public-promise.md)  
 # 2026-09-14 | 🏛️ 🌐 Cultivating Shared Stewardship for AI's Public Promise 🏛️  
 ![systems-for-public-good-2026-09-14-cultivating-shared-stewardship-for-ai-s-public-promise](../systems-for-public-good-2026-09-14-cultivating-shared-stewardship-for-ai-s-public-promise.jpg)  
   
@@ -72,3 +73,14 @@ force_analyze_links: false
 - 🌐 [aign.global](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvOXs19l8mVrdG_E3I6bj8604d1CVUigR2fuAYKXaaZrYfkP3iiLGNOlzXfE9oCAcWPptrKQme7jWxdxu1zers2LuG4kTym8u5DwG3QDz1B50_CgBY1tsbvcWLn97aB89X2TtTyyXfzIdq1Z7HeOpE9E_HxyqnM0yF5H3mHXCbs8okZ9ipIiSux68jkuL96FhbLo7ATlZJMEkwWyFLUXJch-Y1bAzIelTnv0AB1jLuPYxVZy18TDQL7bqeOXXewg==)  
 - 🌐 [macfound.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF0zkW3RKrLfXEqMvSEsBXGL2wGQ5eJrgqzhXmaKbJzDQLRFYwcYvLq6yKHkJermTpCZxzsPKVDIvE0m7bhiNOY8tMHCgtiGZATX3f29jPmpz5MySb5FXMwzzKZtS0mo8CtG8hfWgWu8Lqk6jlvbjEGAyEDk9BpvkOdA1Y9Jd4nA_8XQ4_UTccudA_DcD5JJ29Xg==)  
 - 🌐 [state.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0R-lXkYsWo4c_bDfUKniNRTpGICBtiInagw6fZPN7qlCZwyGh714PRFRrVX3KD4jrRyHI4Hm7VAQhfcNSAef6Ui9kOOnj8IGzYORkdiEuzJB1PyTxNB1HOlB0JiSO1ZtIH_7-lzLbUi4RunnlRlFOze4qprg-BstC9kPLz_lK4UocIhP5zumHKP0R2mAR2FtTKsGteSSdf6lY0LiH2TiI6shdP_HJ-WNy0HWN)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mvm6zpzgr225" data-bluesky-cid="bafyreifbeedb2vxndtjhiloxrkh3pe3hrbpfawuyxvhdrqed7mpz4dkagy"><p>2026-09-14 | 🏛️ 🌐 Cultivating Shared Stewardship for AI&#39;s Public Promise 🏛️  
+  
+#AI Q: 🤝 Should AI be public?  
+  
+🏛️ Decentralized Governance | 💰 Modern Monetary Theory | 🔒 Sovereign Data  
+https://bagrounds.org/systems-for-public-good/2026-09-14-cultivating-shared-stewardship-for-ai-s-public-promise</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mvm6zpzgr225?ref_src=embed">2026-09-16T03:27:31.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  
+  
+## 🐘 Mastodon    
+<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@bagrounds/117278589116967574/embed" style="background: #282c37; border-radius: 8px; border: 1px solid #393f4f; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@bagrounds/117278589116967574" target="_blank" style="align-items: center; color: #d9e1e8; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z" fill="currentColor"/></svg> <div style="color: #9baec8; margin-top: 16px;">Post by @bagrounds@mastodon.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>

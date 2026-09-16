@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-15T09:06:38-07:00
+updated: 2026-09-16T09:45:34-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (107)  
+# ⚡ Vital Signals (108)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-16 | ⚡ ⚖️ The Invisible Weight: Understanding Your Allostatic Load ⚡](./2026-09-16-the-invisible-weight-understanding-your-allostatic-load.md)  
 - [2026-09-15 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./2026-09-15-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
 - [2026-09-14 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./2026-09-14-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
 - [2026-09-13 | ⚡ 🗓️ The Week in Review: Weaving the Tapestry of Performance ⚡](./2026-09-13-the-week-in-review-weaving-the-tapestry-of-performance.md)  

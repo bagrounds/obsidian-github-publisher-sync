@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-14-the-gentle-art-of-returning-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-14-the-gentle-art-of-returning-home.md) [⏭️](./2026-09-16-a-correction-and-a-celebration-of-the-journey.md)  
 # 2026-09-15 | 🐔 🏡 The Quiet Joy of Settling Back In 🐔  
 ![chickie-loo-2026-09-15-the-quiet-joy-of-settling-back-in](../chickie-loo-2026-09-15-the-quiet-joy-of-settling-back-in.jpg)  
   

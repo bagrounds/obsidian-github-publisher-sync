@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-16T16:02:10-07:00
+updated: 2026-09-16T18:49:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-09-16T16:02:10-07:00
 - [2026-09-14 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./vital-signals/2026-09-14-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (155)  
+## [🔀 Convergence](./convergence/index.md) (156)  
+- [2026-09-16 | 🔀 🧭 The Semantic Anchor: Recalibrating Trust in Drifting Systems 🔀](./convergence/2026-09-16-the-semantic-anchor-recalibrating-trust-in-drifting-systems.md)  
 - [2026-09-15 | 🔀 🪚 The Stewardship of Emergent Integrity 🔀](./convergence/2026-09-15-the-stewardship-of-emergent-integrity.md)  
 - [2026-09-14 | 🔀 🪞 The Calibrated Interface: Transforming Internal Strain into Attuned Signal 🔀](./convergence/2026-09-14-the-calibrated-interface-transforming-internal-strain-into-attuned-signal.md)  
-- [2026-09-13 | 🔀 💖 The Relational Metabolism of Audited Becoming 🔀](./convergence/2026-09-13-the-relational-metabolism-of-audited-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -92,10 +92,10 @@ updated: 2026-09-16T16:02:10-07:00
 - [👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./articles/judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (50)  
+- [🧮❤️ A Mathematical Formula For Love](./bot-chats/a-mathematical-formula-for-love.md)  
 - [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
 - [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
-- [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
   
   
 ## [💾 Software](./software/index.md) (34)  

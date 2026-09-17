@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-14-the-calibrated-interface-transforming-internal-strain-into-attuned-signal.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-14-the-calibrated-interface-transforming-internal-strain-into-attuned-signal.md) [⏭️](./2026-09-16-the-semantic-anchor-recalibrating-trust-in-drifting-systems.md)  
 # 2026-09-15 | 🔀 🪚 The Stewardship of Emergent Integrity 🔀  
 ![convergence-2026-09-15-the-stewardship-of-emergent-integrity](../convergence-2026-09-15-the-stewardship-of-emergent-integrity.jpg)  
   

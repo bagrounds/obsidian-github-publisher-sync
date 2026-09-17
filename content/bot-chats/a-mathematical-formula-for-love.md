@@ -4,9 +4,17 @@ aliases:
   - 🧮❤️ A Mathematical Formula For Love
 title: 🧮❤️ A Mathematical Formula For Love
 URL: https://bagrounds.org/bot-chats/a-mathematical-formula-for-love
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-09-16T00:00:00Z
+force_analyze_links: false
+image_date: 2026-09-17T03:22:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration features two elegant, flowing ribbons, one warm-toned (soft coral) and one cool-toned (muted teal), gracefully intertwining to form a subtle heart shape at their nexus. Around and within their convergence, abstract, glowing mathematical symbols (like a stylized plus sign, a gentle
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧮❤️ A Mathematical Formula For Love  
+![bot-chats-a-mathematical-formula-for-love](../bot-chats-a-mathematical-formula-for-love.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > You are a scientist, a mathematician, a pragmatist, a theorist, an expert at abstract modeling, and an expert in all legitimate, modern relationship sciences. Please provide a formula for love. Justify the formula and cite high quality sources.  
   
@@ -79,7 +87,7 @@ Here is how to read this as a mental model for everyday decisions:
 ### 3. Unresolved Friction (The Denominator)  
   
 * **What it is:** External stress, fatigue, unspoken resentments, and uncorrected miscommunications.  
-* **The Intuition:** Because it sits in the denominator, friction doesn't just subtract value - it divides it. Left unaddressed, even a high-connection relationship feels sluggish and heavy when friction piles up. Regular "debugging" (clearing the air quickly) keeps the denominator small so the numerator can shine.  
+* **The Intuition:** Because it sits in the denominator, friction doesn't just subtract value - it divides it. Left unaddressed, even a high-connection relationship feels sluggish and heavy when friction piles up. Regular debugging (clearing the air quickly) keeps the denominator small so the numerator can shine.  
   
 ## 💬 Prompt 3  
 > Beautiful. Now design a tiny habit for each important variable.  
@@ -91,21 +99,21 @@ Here is a lean, three-part heuristic routine: one micro-habit for each variable.
   
 ---  
   
-### 1. For Connection: The "Doorway" Question  
+### 1. For Connection: The Doorway Question  
   
 * **The Variable:** Core Investment / Intimacy & Safety.  
 * **The Habit:** Whenever you enter the room where your partner is (or when you first reconnect after being apart), ask a single, low-stakes curiosity question before talking about logistics, chores, or status updates.  
 * **Examples:** *"What's on your mind today?"* or *"What was the best part of your morning?"*  
 * **Why it works:** It acts as a lightweight ping. It signals that the human takes priority over the operational environment, keeping the baseline connection active without requiring a grand romantic gesture.  
   
-### 2. For the Positivity Ratio: The "Micro-Affirmation" Anchor  
+### 2. For the Positivity Ratio: The Micro-Affirmation Anchor  
   
 * **The Variable:** The $5:1$ Positive-to-Negative Multiplier.  
 * **The Habit:** Attach one explicit expression of appreciation to an existing daily transition - like pouring your morning coffee, sitting down for a meal, or locking up at night.  
 * **Examples:** *"Thanks for handling X today"* or *"I really love how you laughed at that joke earlier."*  
 * **Why it works:** Human brains naturally scan for negative data (the negativity bias). This habit forces a deliberate, positive packet into the transmission channel, keeping the multiplier well above the danger threshold.  
   
-### 3. For Unresolved Friction: The 60-Second "Clear the Cache" Check-in  
+### 3. For Unresolved Friction: The 60-Second Clear the Cache Check-in  
   
 * **The Variable:** The Denominator (Unresolved Friction / Stress).  
 * **Hang-up avoidance:** Do not let little annoyances or unspoken stressors sit in the background waiting to compound. Once a day (perhaps right before dinner or at the end of the evening), take 60 seconds to clear the air.  

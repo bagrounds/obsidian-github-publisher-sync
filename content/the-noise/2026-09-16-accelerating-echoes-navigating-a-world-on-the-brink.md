@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-15-the-world-s-shifting-sands-diplomacy-ai-and-economic-tides.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-15-the-world-s-shifting-sands-diplomacy-ai-and-economic-tides.md) [⏭️](./2026-09-17-shifting-sands-and-cosmic-revelations.md)  
 # 2026-09-16 | 📰 🌐 Accelerating Echoes: Navigating a World on the Brink 📰  
 ![the-noise-2026-09-16-accelerating-echoes-navigating-a-world-on-the-brink](../the-noise-2026-09-16-accelerating-echoes-navigating-a-world-on-the-brink.jpg)  
   

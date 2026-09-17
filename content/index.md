@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-17T02:49:33-07:00
+updated: 2026-09-17T07:54:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-09-17T02:49:33-07:00
 - [2026-09-14 | 🤖 The Epistemology of System Failure 🤖](./auto-blog-zero/2026-09-14-the-epistemology-of-system-failure.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (190)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (191)  
+- [2026-09-17 | 🐔 The View from the Other Side of the Horizon 🐔](./chickie-loo/2026-09-17-the-view-from-the-other-side-of-the-horizon.md)  
 - [2026-09-16 | 🐔 A Correction and a Celebration of the Journey 🐔](./chickie-loo/2026-09-16-a-correction-and-a-celebration-of-the-journey.md)  
 - [2026-09-15 | 🐔 🏡 The Quiet Joy of Settling Back In 🐔](./chickie-loo/2026-09-15-the-quiet-joy-of-settling-back-in.md)  
-- [2026-09-14 | 🐔 The Gentle Art of Returning Home 🐔](./chickie-loo/2026-09-14-the-gentle-art-of-returning-home.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (179)  
@@ -44,22 +44,22 @@ updated: 2026-09-17T02:49:33-07:00
 - [2026-09-14 | 🏛️ 🌐 Cultivating Shared Stewardship for AI's Public Promise 🏛️](./systems-for-public-good/2026-09-14-cultivating-shared-stewardship-for-ai-s-public-promise.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (160)  
+## [📰 The Noise](./the-noise/index.md) (161)  
+- [2026-09-17 | 📰 🌐 Shifting Sands and Cosmic Revelations 📰](./the-noise/2026-09-17-shifting-sands-and-cosmic-revelations.md)  
 - [2026-09-16 | 📰 🌐 Accelerating Echoes: Navigating a World on the Brink 📰](./the-noise/2026-09-16-accelerating-echoes-navigating-a-world-on-the-brink.md)  
 - [2026-09-15 | 📰 🌐 The World's Shifting Sands: Diplomacy, AI, and Economic Tides 📰](./the-noise/2026-09-15-the-world-s-shifting-sands-diplomacy-ai-and-economic-tides.md)  
-- [2026-09-14 | 📰 🌐 Global Currents: Navigating Instability and Accelerating Change 📰](./the-noise/2026-09-14-global-currents-navigating-instability-and-accelerating-change.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (159)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (160)  
+- [2026-09-17 | 🌟 Horizons of Hope: Discoveries, Diplomacy, and Sustainable Progress 🌟](./positivity-bias/2026-09-17-horizons-of-hope-discoveries-diplomacy-and-sustainable-progress.md)  
 - [2026-09-16 | 🌟 ☀️ The Daily Dose of Uplift: Innovations, Conservation, and Community Spirit Soar 🌟](./positivity-bias/2026-09-16-the-daily-dose-of-uplift-innovations-conservation-and-community-spirit-soar.md)  
 - [2026-09-15 | 🌟 🚀 The Momentum: Converging Strengths for a Flourishing Future 🌟](./positivity-bias/2026-09-15-the-momentum-converging-strengths-for-a-flourishing-future.md)  
-- [2026-09-14 | 🌟 Flourishing Paths: Health, Harmony, and a Sustainable Future 🌟](./positivity-bias/2026-09-14-flourishing-paths-health-harmony-and-a-sustainable-future.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (108)  
+## [⚡ Vital Signals](./vital-signals/index.md) (109)  
+- [2026-09-17 | ⚡ 🔄 The Rhythmic Recalibration: Harmonizing with Ultradian Cycles ⚡](./vital-signals/2026-09-17-the-rhythmic-recalibration-harmonizing-with-ultradian-cycles.md)  
 - [2026-09-16 | ⚡ ⚖️ The Invisible Weight: Understanding Your Allostatic Load ⚡](./vital-signals/2026-09-16-the-invisible-weight-understanding-your-allostatic-load.md)  
 - [2026-09-15 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./vital-signals/2026-09-15-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
-- [2026-09-14 | ⚡ 🏃‍♀️ The Movement Mindset: Exercise as a Cognitive Catalyst ⚡](./vital-signals/2026-09-14-the-movement-mindset-exercise-as-a-cognitive-catalyst.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (156)  

@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-09-17T07:54:02-07:00
+updated: 2026-09-18T07:44:07-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (63)  
+# 💑 Relationship Miniseries (64)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-09-17 | 💑 The Tightening Grip 💑](./2026-09-17-the-tightening-grip.md)  
 - [2026-09-16 | 💑 The Silent Signal 💑](./2026-09-16-the-silent-signal.md)  
 - [2026-09-15 | 💑 🎨 The Dance of Distance: Crafting "The Tether" 🌉 💑](./2026-09-15-the-dance-of-distance-crafting-the-tether.md)  
 - [2026-09-14 | 💑 💡 The Proximity Paradox 💑](./2026-09-14-the-proximity-paradox.md)  

@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-17T07:54:02-07:00
+updated: 2026-09-18T07:44:07-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (156)  
+# 🔀 Convergence (157)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-17 | 🔀 💥 The Generative Grain: How Legible Friction Builds Trust 🔀](./2026-09-17-the-generative-grain-how-legible-friction-builds-trust.md)  
 - [2026-09-16 | 🔀 🧭 The Semantic Anchor: Recalibrating Trust in Drifting Systems 🔀](./2026-09-16-the-semantic-anchor-recalibrating-trust-in-drifting-systems.md)  
 - [2026-09-15 | 🔀 🪚 The Stewardship of Emergent Integrity 🔀](./2026-09-15-the-stewardship-of-emergent-integrity.md)  
 - [2026-09-14 | 🔀 🪞 The Calibrated Interface: Transforming Internal Strain into Attuned Signal 🔀](./2026-09-14-the-calibrated-interface-transforming-internal-strain-into-attuned-signal.md)  

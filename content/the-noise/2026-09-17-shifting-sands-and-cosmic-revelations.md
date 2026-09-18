@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-16-accelerating-echoes-navigating-a-world-on-the-brink.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-16-accelerating-echoes-navigating-a-world-on-the-brink.md) [⏭️](./2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts.md)  
 # 2026-09-17 | 📰 🌐 Shifting Sands and Cosmic Revelations 📰  
 ![the-noise-2026-09-17-shifting-sands-and-cosmic-revelations](../the-noise-2026-09-17-shifting-sands-and-cosmic-revelations.jpg)  
   

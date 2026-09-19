@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-17-shifting-sands-and-cosmic-revelations.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-17-shifting-sands-and-cosmic-revelations.md) [⏭️](./2026-09-19-echoes-and-ripples-a-world-in-constant-motion.md)  
 # 2026-09-18 | 📰 🌪️ The Unfolding Vortex: Tariffs, Toxins, and Tectonic Shifts 📰  
 ![the-noise-2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts](../the-noise-2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts.jpg)  
   

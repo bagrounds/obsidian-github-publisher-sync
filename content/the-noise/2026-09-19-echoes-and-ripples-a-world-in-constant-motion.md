@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts.md) [⏭️](./2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.md)  
 # 2026-09-19 | 📰 🌐 Echoes and Ripples: A World in Constant Motion 📰  
 ![the-noise-2026-09-19-echoes-and-ripples-a-world-in-constant-motion](../the-noise-2026-09-19-echoes-and-ripples-a-world-in-constant-motion.jpg)  
   

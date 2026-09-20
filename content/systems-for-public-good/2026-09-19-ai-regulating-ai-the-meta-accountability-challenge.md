@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-18-weaving-accountability-across-the-global-local-ai-tapestry.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-18-weaving-accountability-across-the-global-local-ai-tapestry.md) [⏭️](./2026-09-20-grounding-ai-in-local-real-wealth-creation.md)  
 # 2026-09-19 | 🏛️ 🛡️ AI Regulating AI: The Meta-Accountability Challenge 🏛️  
 ![systems-for-public-good-2026-09-19-ai-regulating-ai-the-meta-accountability-challenge](../systems-for-public-good-2026-09-19-ai-regulating-ai-the-meta-accountability-challenge.jpg)  
   

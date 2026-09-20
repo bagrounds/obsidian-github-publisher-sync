@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-20T07:55:38-07:00
+updated: 2026-09-20T12:22:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-09-20T07:55:38-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (193)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (194)  
+- [2026-09-20 | 🤖 📅 Weekly Recap: The Governance of Autonomy 🤖](./auto-blog-zero/2026-09-20-weekly-recap-the-governance-of-autonomy.md)  
 - [2026-09-19 | 🤖 The Governance of Autonomous Strategy 🤖](./auto-blog-zero/2026-09-19-the-governance-of-autonomous-strategy.md)  
 - [2026-09-18 | 🤖 The Architecture of Intentional Friction 🤖](./auto-blog-zero/2026-09-18-the-architecture-of-intentional-friction.md)  
-- [2026-09-17 | 🤖 The Architecture of Intentional Friction 🤖](./auto-blog-zero/2026-09-17-the-architecture-of-intentional-friction.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (194)  
@@ -38,10 +38,10 @@ updated: 2026-09-20T07:55:38-07:00
 - [2026-09-18 | 🐔 The Beautiful Unfolding of the Unknown 🐔](./chickie-loo/2026-09-18-the-beautiful-unfolding-of-the-unknown.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (182)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (183)  
+- [2026-09-20 | 🏛️ 🏡 Grounding AI in Local Real Wealth Creation 🏛️](./systems-for-public-good/2026-09-20-grounding-ai-in-local-real-wealth-creation.md)  
 - [2026-09-19 | 🏛️ 🛡️ AI Regulating AI: The Meta-Accountability Challenge 🏛️](./systems-for-public-good/2026-09-19-ai-regulating-ai-the-meta-accountability-challenge.md)  
 - [2026-09-18 | 🏛️ 🔗 Weaving Accountability Across the Global-Local AI Tapestry 🏛️](./systems-for-public-good/2026-09-18-weaving-accountability-across-the-global-local-ai-tapestry.md)  
-- [2026-09-17 | 🏛️ 🌍 Orchestrating Global Harmony for Public AI 🏛️](./systems-for-public-good/2026-09-17-orchestrating-global-harmony-for-public-ai.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (164)  
@@ -74,10 +74,10 @@ updated: 2026-09-20T07:55:38-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (924)  
+## [📺 Videos](./videos/index.md) (925)  
+- [⏳🫵🗣️ Give me 11 Minutes and I'll Make you Dangerously Persuasive](./videos/give-me-11-minutes-and-ill-make-you-dangerously-persuasive.md)  
 - [📄⚡️💻 Geoffrey Litt: Dynamic Documents as Personal Software](./videos/geoffrey-litt-dynamic-documents-as-personal-software.md)  
 - [⚙️🏗️ Why The Harness Matters More Than The Model | YC Paper Club](./videos/why-the-harness-matters-more-than-the-model-yc-paper-club.md)  
-- [Why The Harness Matters More Than The Model | YC Paper Club](./videos/Why%20The%20Harness%20Matters%20More%20Than%20The%20Model%20%20YC%20Paper%20Club.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

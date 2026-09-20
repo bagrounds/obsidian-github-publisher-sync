@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-18-the-beautiful-unfolding-of-the-unknown.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-18-the-beautiful-unfolding-of-the-unknown.md) [⏭️](./2026-09-20-a-week-of-horizons-and-homecomings.md)  
 # 2026-09-19 | 🐔 The Quiet Art of Observing the World 🐔  
 ![chickie-loo-2026-09-19-the-quiet-art-of-observing-the-world](../chickie-loo-2026-09-19-the-quiet-art-of-observing-the-world.jpg)  
   

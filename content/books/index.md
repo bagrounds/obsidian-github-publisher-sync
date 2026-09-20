@@ -5,7 +5,7 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-09-19T07:20:52-07:00
+updated: 2026-09-20T07:55:38-07:00
 book_report_pending: "Cradle to Cradle: Remaking the Way We Make Things"
 ---
 [Home](../index.md)  

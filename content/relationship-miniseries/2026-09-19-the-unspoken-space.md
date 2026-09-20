@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-18-the-retreat-line.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-18-the-retreat-line.md) [⏭️](./2026-09-20-the-tether-weekly-reflection.md)  
 # 2026-09-19 | 💑 The Unspoken Space 💑  
 ![relationship-miniseries-2026-09-19-the-unspoken-space](../relationship-miniseries-2026-09-19-the-unspoken-space.jpg)  
   

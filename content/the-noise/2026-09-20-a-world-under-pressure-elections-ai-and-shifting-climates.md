@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-19-echoes-and-ripples-a-world-in-constant-motion.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-19-echoes-and-ripples-a-world-in-constant-motion.md) [⏭️](./2026-09-21-shocks-and-echoes-a-world-on-the-precipice.md)  
 # 2026-09-20 | 📰 🌐 A World Under Pressure: Elections, AI, and Shifting Climates 📰  
 ![the-noise-2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates](../the-noise-2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.jpg)  
   

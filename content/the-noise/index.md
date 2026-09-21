@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-09-20T12:22:52-07:00
+updated: 2026-09-21T07:28:56-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (164)  
+# 📰 The Noise (165)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-09-21 | 📰 🌐 Shocks and Echoes: A World on the Precipice 📰](./2026-09-21-shocks-and-echoes-a-world-on-the-precipice.md)  
 - [2026-09-20 | 📰 🌐 A World Under Pressure: Elections, AI, and Shifting Climates 📰](./2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.md)  
 - [2026-09-19 | 📰 🌐 Echoes and Ripples: A World in Constant Motion 📰](./2026-09-19-echoes-and-ripples-a-world-in-constant-motion.md)  
 - [2026-09-18 | 📰 🌪️ The Unfolding Vortex: Tariffs, Toxins, and Tectonic Shifts 📰](./2026-09-18-the-unfolding-vortex-tariffs-toxins-and-tectonic-shifts.md)  

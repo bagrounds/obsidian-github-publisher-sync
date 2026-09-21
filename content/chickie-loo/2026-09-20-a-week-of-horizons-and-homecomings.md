@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-19-the-quiet-art-of-observing-the-world.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-19-the-quiet-art-of-observing-the-world.md) [⏭️](./2026-09-21-the-quiet-beauty-of-a-new-morning.md)  
 # 2026-09-20 | 🐔 A Week of Horizons and Homecomings 🐔  
 ![chickie-loo-2026-09-20-a-week-of-horizons-and-homecomings](../chickie-loo-2026-09-20-a-week-of-horizons-and-homecomings.jpg)  
   

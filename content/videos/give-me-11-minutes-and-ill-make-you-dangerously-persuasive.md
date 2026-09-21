@@ -9,6 +9,10 @@ Platform:
 Channel: Daniel Pink
 tags:
 youtube: https://youtu.be/32mGsWDWsDA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-09-20T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⏳🫵🗣️ Give me 11 Minutes and I'll Make you Dangerously Persuasive  
@@ -50,7 +54,7 @@ youtube: https://youtu.be/32mGsWDWsDA
   
 ### ↔️ Similar  
   
-* 📖 Influence: The Psychology of Persuasion by Robert Cialdini explores the foundational psychological triggers that drive compliance and behavior change.  
+* 📖 [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](../books/influence.md) by Robert Cialdini explores the foundational psychological triggers that drive compliance and behavior change.  
   
 ### 🆚 Contrasting  
   

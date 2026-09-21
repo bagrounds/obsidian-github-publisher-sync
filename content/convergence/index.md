@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-20T12:22:52-07:00
+updated: 2026-09-21T07:28:56-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (159)  
+# 🔀 Convergence (160)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-20 | 🔀 🪢 The Epistemic Metabolism of Purpose 🔀](./2026-09-20-the-epistemic-metabolism-of-purpose.md)  
 - [2026-09-19 | 🔀 🤝 The Co-Metabolism of Attuned Purpose: Forging Shared Meaning through Reciprocal Legibility 🔀](./2026-09-19-the-co-metabolism-of-attuned-purpose-forging-shared-meaning-through-reciprocal-legibility.md)  
 - [2026-09-18 | 🔀 🌋 The Crucible of Legible Becoming: Forging Trust Through Transparent Internal Strain 🔀](./2026-09-18-the-crucible-of-legible-becoming-forging-trust-through-transparent-internal-strain.md)  
 - [2026-09-17 | 🔀 💥 The Generative Grain: How Legible Friction Builds Trust 🔀](./2026-09-17-the-generative-grain-how-legible-friction-builds-trust.md)  

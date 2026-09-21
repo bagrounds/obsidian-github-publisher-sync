@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-19-the-signal-your-brain-s-motivational-architect.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-19-the-signal-your-brain-s-motivational-architect.md) [⏭️](./2026-09-21-the-mind-s-bandwidth-mastering-cognitive-load.md)  
 # 2026-09-20 | ⚡ 🏗️ The Week's Blueprint: Pillars of Performance ⚡  
 ![vital-signals-2026-09-20-the-week-s-blueprint-pillars-of-performance](../vital-signals-2026-09-20-the-week-s-blueprint-pillars-of-performance.jpg)  
   

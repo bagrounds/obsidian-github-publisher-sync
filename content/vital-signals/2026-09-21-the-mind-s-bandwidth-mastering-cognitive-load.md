@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-20-the-week-s-blueprint-pillars-of-performance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-20-the-week-s-blueprint-pillars-of-performance.md) [⏭️](./2026-09-22-directing-your-mental-spotlight-the-science-of-sustained-attention.md)  
 # 2026-09-21 | ⚡ 🧠 The Mind's Bandwidth: Mastering Cognitive Load ⚡  
 ![vital-signals-2026-09-21-the-mind-s-bandwidth-mastering-cognitive-load](../vital-signals-2026-09-21-the-mind-s-bandwidth-mastering-cognitive-load.jpg)  
   

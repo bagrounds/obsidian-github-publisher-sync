@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.md) [⏭️](./2026-09-22-boiling-points-and-shifting-tides.md)  
 # 2026-09-21 | 📰 🌐 Shocks and Echoes: A World on the Precipice 📰  
 ![the-noise-2026-09-21-shocks-and-echoes-a-world-on-the-precipice](../the-noise-2026-09-21-shocks-and-echoes-a-world-on-the-precipice.jpg)  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-22T06:28:28-07:00
+updated: 2026-09-22T19:25:45-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (925)  
+# 📺 Videos (926)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -302,6 +302,7 @@ updated: 2026-09-22T06:28:28-07:00
 - [How new job cuts at the nation’s leading health agency affect Americans](./how-new-job-cuts-at-the-nations-leading-health-agency-affect-americans.md)  
 - [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
+- [✨💡🧘 How the Most Creative People Get Their Breakthroughs (It Isn't Hard Work)](./how-the-most-creative-people-get-their-breakthroughs-it-isnt-hard-work.md)  
 - [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
 - [🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers](./how-the-supreme-court-ruling-on-nationwide-injunctions-affects-presidential-powers.md)  
 - [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  

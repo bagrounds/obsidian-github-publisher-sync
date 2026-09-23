@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-20-the-tether-weekly-reflection.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-20-the-tether-weekly-reflection.md) [⏭️](./2026-09-22-the-unseen-architects-of-ruin-crafting-the-unseen-scars.md)  
 # 2026-09-21 | 💑 💡 The Filter of Contempt: When Love Becomes War 💔 💑  
 ![relationship-miniseries-2026-09-21-the-filter-of-contempt-when-love-becomes-war](../relationship-miniseries-2026-09-21-the-filter-of-contempt-when-love-becomes-war.jpg)  
   

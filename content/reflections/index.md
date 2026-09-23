@@ -5,7 +5,7 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-09-22T06:28:28-07:00
+updated: 2026-09-22T18:13:02-07:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (677)  

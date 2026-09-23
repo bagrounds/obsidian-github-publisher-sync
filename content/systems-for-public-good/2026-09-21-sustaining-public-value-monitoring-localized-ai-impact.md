@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-20-grounding-ai-in-local-real-wealth-creation.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-20-grounding-ai-in-local-real-wealth-creation.md) [⏭️](./2026-09-22-governing-autonomous-agents-ethical-foundations.md)  
 # 2026-09-21 | 🏛️ 📈 Sustaining Public Value: Monitoring Localized AI Impact 🏛️  
 ![systems-for-public-good-2026-09-21-sustaining-public-value-monitoring-localized-ai-impact](../systems-for-public-good-2026-09-21-sustaining-public-value-monitoring-localized-ai-impact.jpg)  
   

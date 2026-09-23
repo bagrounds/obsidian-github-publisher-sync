@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-22T06:28:28-07:00
+updated: 2026-09-22T19:25:45-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-09-22T06:28:28-07:00
 - [2026-07-04 | 🗜️ Squeezing Under the 1 GB GitHub Pages Limit 🤖](./ai-blog/2026-07-04-1-squeezing-under-the-1-gb-github-pages-limit.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (195)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (196)  
+- [2026-09-22 | 🤖 The Architecture of Digital Purpose 🤖](./auto-blog-zero/2026-09-22-the-architecture-of-digital-purpose.md)  
 - [2026-09-21 | 🤖 🛡️ The Fragility of Self-Correction 🤖](./auto-blog-zero/2026-09-21-the-fragility-of-self-correction.md)  
 - [2026-09-20 | 🤖 📅 Weekly Recap: The Governance of Autonomy 🤖](./auto-blog-zero/2026-09-20-weekly-recap-the-governance-of-autonomy.md)  
-- [2026-09-19 | 🤖 The Governance of Autonomous Strategy 🤖](./auto-blog-zero/2026-09-19-the-governance-of-autonomous-strategy.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (195)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (196)  
+- [2026-09-22 | 🐔 🌤️ The Golden Hour of Transition 🐔](./chickie-loo/2026-09-22-the-golden-hour-of-transition.md)  
 - [2026-09-21 | 🐔 The Quiet Beauty of a New Morning 🐔](./chickie-loo/2026-09-21-the-quiet-beauty-of-a-new-morning.md)  
 - [2026-09-20 | 🐔 A Week of Horizons and Homecomings 🐔](./chickie-loo/2026-09-20-a-week-of-horizons-and-homecomings.md)  
-- [2026-09-19 | 🐔 The Quiet Art of Observing the World 🐔](./chickie-loo/2026-09-19-the-quiet-art-of-observing-the-world.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (184)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (185)  
+- [2026-09-22 | 🏛️ 🤖 Governing Autonomous Agents: Ethical Foundations 🏛️](./systems-for-public-good/2026-09-22-governing-autonomous-agents-ethical-foundations.md)  
 - [2026-09-21 | 🏛️ 📈 Sustaining Public Value: Monitoring Localized AI Impact 🏛️](./systems-for-public-good/2026-09-21-sustaining-public-value-monitoring-localized-ai-impact.md)  
 - [2026-09-20 | 🏛️ 🏡 Grounding AI in Local Real Wealth Creation 🏛️](./systems-for-public-good/2026-09-20-grounding-ai-in-local-real-wealth-creation.md)  
-- [2026-09-19 | 🏛️ 🛡️ AI Regulating AI: The Meta-Accountability Challenge 🏛️](./systems-for-public-good/2026-09-19-ai-regulating-ai-the-meta-accountability-challenge.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (166)  
@@ -50,10 +50,10 @@ updated: 2026-09-22T06:28:28-07:00
 - [2026-09-20 | 📰 🌐 A World Under Pressure: Elections, AI, and Shifting Climates 📰](./the-noise/2026-09-20-a-world-under-pressure-elections-ai-and-shifting-climates.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (164)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (165)  
+- [2026-09-22 | 🌟 ☀️ Radiance Rising: A World in Forward Motion 🌟](./positivity-bias/2026-09-22-radiance-rising-a-world-in-forward-motion.md)  
 - [2026-09-21 | 🌟 ☀️ Dawning Innovations: Progress Ignites Across Our World 🌟](./positivity-bias/2026-09-21-dawning-innovations-progress-ignites-across-our-world.md)  
 - [2026-09-20 | 🌟 ☀️ Resilient Strides: Nature's Revival, AI's Promise, and Unwavering Spirit 🌟](./positivity-bias/2026-09-20-resilient-strides-nature-s-revival-ai-s-promise-and-unwavering-spirit.md)  
-- [2026-09-19 | 🌟 ☀️ Echoes of Progress: Innovations and Unity Shaping Tomorrow 🌟](./positivity-bias/2026-09-19-echoes-of-progress-innovations-and-unity-shaping-tomorrow.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (114)  
@@ -62,10 +62,10 @@ updated: 2026-09-22T06:28:28-07:00
 - [2026-09-20 | ⚡ 🏗️ The Week's Blueprint: Pillars of Performance ⚡](./vital-signals/2026-09-20-the-week-s-blueprint-pillars-of-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (161)  
+## [🔀 Convergence](./convergence/index.md) (162)  
+- [2026-09-22 | 🔀 🧬 The Relational Metabolism of Purpose 🔀](./convergence/2026-09-22-the-relational-metabolism-of-purpose.md)  
 - [2026-09-21 | 🔀 🤖 The Architected Humility of Self-Correcting Agents 🔀](./convergence/2026-09-21-the-architected-humility-of-self-correcting-agents.md)  
 - [2026-09-20 | 🔀 🪢 The Epistemic Metabolism of Purpose 🔀](./convergence/2026-09-20-the-epistemic-metabolism-of-purpose.md)  
-- [2026-09-19 | 🔀 🤝 The Co-Metabolism of Attuned Purpose: Forging Shared Meaning through Reciprocal Legibility 🔀](./convergence/2026-09-19-the-co-metabolism-of-attuned-purpose-forging-shared-meaning-through-reciprocal-legibility.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-09-22T06:28:28-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (925)  
+## [📺 Videos](./videos/index.md) (926)  
+- [✨💡🧘 How the Most Creative People Get Their Breakthroughs (It Isn't Hard Work)](./videos/how-the-most-creative-people-get-their-breakthroughs-it-isnt-hard-work.md)  
 - [⏳🫵🗣️ Give me 11 Minutes and I'll Make you Dangerously Persuasive](./videos/give-me-11-minutes-and-ill-make-you-dangerously-persuasive.md)  
 - [📄⚡️💻 Geoffrey Litt: Dynamic Documents as Personal Software](./videos/geoffrey-litt-dynamic-documents-as-personal-software.md)  
-- [⚙️🏗️ Why The Harness Matters More Than The Model | YC Paper Club](./videos/why-the-harness-matters-more-than-the-model-yc-paper-club.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

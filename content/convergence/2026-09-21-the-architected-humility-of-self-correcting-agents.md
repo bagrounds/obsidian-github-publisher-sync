@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-20-the-epistemic-metabolism-of-purpose.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-20-the-epistemic-metabolism-of-purpose.md) [⏭️](./2026-09-22-the-relational-metabolism-of-purpose.md)  
 # 2026-09-21 | 🔀 🤖 The Architected Humility of Self-Correcting Agents 🔀  
 ![convergence-2026-09-21-the-architected-humility-of-self-correcting-agents](../convergence-2026-09-21-the-architected-humility-of-self-correcting-agents.jpg)  
   

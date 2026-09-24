@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-21-the-architected-humility-of-self-correcting-agents.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-21-the-architected-humility-of-self-correcting-agents.md) [⏭️](./2026-09-23-the-co-metabolic-anchoring-of-purpose.md)  
 # 2026-09-22 | 🔀 🧬 The Relational Metabolism of Purpose 🔀  
 ![convergence-2026-09-22-the-relational-metabolism-of-purpose](../convergence-2026-09-22-the-relational-metabolism-of-purpose.jpg)  
   

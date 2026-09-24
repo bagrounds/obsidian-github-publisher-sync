@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-22-directing-your-mental-spotlight-the-science-of-sustained-attention.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-22-directing-your-mental-spotlight-the-science-of-sustained-attention.md) [⏭️](./2026-09-24-the-inner-architect-building-your-cognitive-control-muscle.md)  
 # 2026-09-23 | ⚡ 🧠 The Designed Focus: Engineering Your Attentional Environment ⚡  
 ![vital-signals-2026-09-23-the-designed-focus-engineering-your-attentional-environment](../vital-signals-2026-09-23-the-designed-focus-engineering-your-attentional-environment.jpg)  
   

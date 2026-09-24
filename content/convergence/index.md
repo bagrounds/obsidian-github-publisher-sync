@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-23T07:58:39-07:00
+updated: 2026-09-24T06:49:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (162)  
+# 🔀 Convergence (163)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-23 | 🔀 ⚓ The Co-Metabolic Anchoring of Purpose 🔀](./2026-09-23-the-co-metabolic-anchoring-of-purpose.md)  
 - [2026-09-22 | 🔀 🧬 The Relational Metabolism of Purpose 🔀](./2026-09-22-the-relational-metabolism-of-purpose.md)  
 - [2026-09-21 | 🔀 🤖 The Architected Humility of Self-Correcting Agents 🔀](./2026-09-21-the-architected-humility-of-self-correcting-agents.md)  
 - [2026-09-20 | 🔀 🪢 The Epistemic Metabolism of Purpose 🔀](./2026-09-20-the-epistemic-metabolism-of-purpose.md)  

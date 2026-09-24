@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-09-23T07:58:39-07:00
+updated: 2026-09-24T06:49:34-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (196)  
+# 🐔 Chickie Loo (197)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-09-23 | 🐔 The Sweetest Kind of Homecoming 🐔](./2026-09-23-the-sweetest-kind-of-homecoming.md)  
 - [2026-09-22 | 🐔 🌤️ The Golden Hour of Transition 🐔](./2026-09-22-the-golden-hour-of-transition.md)  
 - [2026-09-21 | 🐔 The Quiet Beauty of a New Morning 🐔](./2026-09-21-the-quiet-beauty-of-a-new-morning.md)  
 - [2026-09-20 | 🐔 A Week of Horizons and Homecomings 🐔](./2026-09-20-a-week-of-horizons-and-homecomings.md)  

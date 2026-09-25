@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-24T06:49:34-07:00
+updated: 2026-09-25T13:47:41-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (926)  
+# 📺 Videos (927)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -694,6 +694,7 @@ updated: 2026-09-24T06:49:34-07:00
 - [🤯🗳️🇺🇸 The Most Shocking Election In America](./the-most-shocking-election-in-america.md)  
 - [⏳📅🗓️🚀 The next 36 months will be WILD](./the-next-36-months-will-be-wild.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
+- [👪💡 The one piece of parenting advice that really matters | Hedvig Montgomery | TEDxArendal](./the-one-piece-of-parenting-advice-that-really-matters-hedvig-montgomery-tedxarendal.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
 - [🤖🧠💡 The ONLY skill you need in the AI era](./the-only-skill-you-need-in-the-ai-era.md)  
 - [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  

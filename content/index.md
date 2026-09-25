@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-25T13:47:41-07:00
+updated: 2026-09-25T15:30:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-09-25T13:47:41-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (927)  
+## [📺 Videos](./videos/index.md) (928)  
+- [👁️📉🇺🇸 We’re Watching MAGA Collapse | Explainer](./videos/were-watching-maga-collapse-explainer.md)  
 - [👪💡 The one piece of parenting advice that really matters | Hedvig Montgomery | TEDxArendal](./videos/the-one-piece-of-parenting-advice-that-really-matters-hedvig-montgomery-tedxarendal.md)  
 - [✨💡🧘 How the Most Creative People Get Their Breakthroughs (It Isn't Hard Work)](./videos/how-the-most-creative-people-get-their-breakthroughs-it-isnt-hard-work.md)  
-- [⏳🫵🗣️ Give me 11 Minutes and I'll Make you Dangerously Persuasive](./videos/give-me-11-minutes-and-ill-make-you-dangerously-persuasive.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

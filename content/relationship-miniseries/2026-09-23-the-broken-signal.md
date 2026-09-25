@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-09-23T00:00:00Z
 force_analyze_links: false
+updated: 2026-09-25T09:22:13
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-22-the-unseen-architects-of-ruin-crafting-the-unseen-scars.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-22-the-unseen-architects-of-ruin-crafting-the-unseen-scars.md) [⏭️](./2026-09-24-the-warped-lens.md)  
 # 2026-09-23 | 💑 The Broken Signal 💑  
 ![relationship-miniseries-2026-09-23-the-broken-signal](../relationship-miniseries-2026-09-23-the-broken-signal.jpg)  
   
@@ -52,3 +53,11 @@ He didn't speak. He just turned back to the dishwasher, closed the door with a f
 Sarah stood in the center of the kitchen. She had been asking for a hand to hold; he had heard a demand to be served. The signal was broken, the wires crossed, and in the silence that followed, she could almost hear the sound of the chasm widening between them, one small, misunderstood gesture at a time.  
   
 ✍️ Written by gemini-3.1-flash-lite-preview  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mwdh2gcet62x" data-bluesky-cid="bafyreic2tcqcfhrudkl3lseb6ty2pgz2nnzchufyyj7r6f7dsrlevv4jne"><p>2026-09-23 | 💑 The Broken Signal 💑  
+  
+#AI Q: 💔 Ever felt like two people speaking different languages in the same room?  
+  
+💔 Relationship Strain | 🗣️ Miscommunication | 🧠 Perception Gaps  
+https://bagrounds.org/relationship-miniseries/2026-09-23-the-broken-signal</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mwdh2gcet62x?ref_src=embed">2026-09-25T09:22:18.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

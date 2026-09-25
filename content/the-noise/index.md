@@ -5,11 +5,13 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-09-24T06:49:34-07:00
+updated: 2026-09-25T13:47:41-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (167)  
+# 📰 The Noise (169)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-09-25 | 📰 🌍 A World in Flux: From Diplomatic Stages to Digital Frontiers 📰](./2026-09-25-a-world-in-flux-from-diplomatic-stages-to-digital-frontiers.md)  
+- [2026-09-24 | 📰 🌍 Echoes of Urgency: From Cosmic Launches to Climate's Roar 📰](./2026-09-24-echoes-of-urgency-from-cosmic-launches-to-climate-s-roar.md)  
 - [2026-09-23 | 📰 🌐 The Shifting Sands of Stability 📰](./2026-09-23-the-shifting-sands-of-stability.md)  
 - [2026-09-22 | 📰 🌐 Boiling Points and Shifting Tides 📰](./2026-09-22-boiling-points-and-shifting-tides.md)  
 - [2026-09-21 | 📰 🌐 Shocks and Echoes: A World on the Precipice 📰](./2026-09-21-shocks-and-echoes-a-world-on-the-precipice.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-25T13:47:41-07:00
+updated: 2026-09-25T15:30:12-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (927)  
+# 📺 Videos (928)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -842,6 +842,7 @@ updated: 2026-09-25T13:47:41-07:00
 - [🕵️‍♂️🔍🏢😱 We Investigated Social Security Offices What We Found Will Shock You](./we-investigated-social-security-offices-what-we-found-will-shock-you.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
+- [👁️📉🇺🇸 We’re Watching MAGA Collapse | Explainer](./were-watching-maga-collapse-explainer.md)  
 - [🕵️‍♂️💰🥗 We Uncovered a Multi-Million Dollar Plot to Change What You Eat](./we-uncovered-a-multi-million-dollar-plot-to-change-what-you-eat.md)  
 - [🇰🇾😲 We Went To Kentucky What We Found Will Shock You](./we-went-to-kentucky-what-we-found-will-shock-you.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  

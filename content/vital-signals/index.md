@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-25T16:05:08-07:00
+updated: 2026-09-26T08:05:28-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (117)  
+# ⚡ Vital Signals (118)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-26 | ⚡ 🧠 The Architect of Choice: Navigating Your Neural Crossroads ⚡](./2026-09-26-the-architect-of-choice-navigating-your-neural-crossroads.md)  
 - [2026-09-25 | ⚡ 🧠 The Mind's Secret Workshop: Harnessing the Default Mode Network ⚡](./2026-09-25-the-mind-s-secret-workshop-harnessing-the-default-mode-network.md)  
 - [2026-09-24 | ⚡ 🧠 The Inner Architect: Building Your Cognitive Control Muscle ⚡](./2026-09-24-the-inner-architect-building-your-cognitive-control-muscle.md)  
 - [2026-09-23 | ⚡ 🧠 The Designed Focus: Engineering Your Attentional Environment ⚡](./2026-09-23-the-designed-focus-engineering-your-attentional-environment.md)  

@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/ihIJZ8HHNhY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-09-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚖️🕵️💡 We Uncovered The Radical Solution To Our Rigged Tax Code  
@@ -39,7 +43,7 @@ youtube: https://youtu.be/ihIJZ8HHNhY
   
 ### ↔️ Similar  
   
-* 📖 Capital in the Twenty-First Century by Thomas Piketty explores the historical concentration of wealth and the systemic divergence of returns on capital versus economic growth.  
+* 📖 [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty explores the historical concentration of wealth and the systemic divergence of returns on capital versus economic growth.  
   
 ### 🆚 Contrasting  
   

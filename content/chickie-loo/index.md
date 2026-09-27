@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-09-27T06:49:21-07:00
+updated: 2026-09-27T09:13:31-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (200)  
+# 🐔 Chickie Loo (201)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-09-27 | 🐔 ⛪ The Sunday Song of Homecoming 🐔](./2026-09-27-the-sunday-song-of-homecoming.md)  
 - [2026-09-26 | 🐔 📦 The Lessons We Unpack 🐔](./2026-09-26-the-lessons-we-unpack.md)  
 - [2026-09-25 | 🐔 The Spirit of a New Beginning 🐔](./2026-09-25-the-spirit-of-a-new-beginning.md)  
 - [2026-09-24 | 🐔 The Golden Threads of Home 🐔](./2026-09-24-the-golden-threads-of-home.md)  

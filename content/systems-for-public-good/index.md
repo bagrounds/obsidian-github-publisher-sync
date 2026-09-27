@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-09-26T08:05:28-07:00
+updated: 2026-09-27T06:49:21-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (188)  
+# 🏛️ Systems for Public Good (189)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-09-26 | 🏛️ 🤝 Designing Collaborative Intelligence for Public Services 🏛️](./2026-09-26-designing-collaborative-intelligence-for-public-services.md)  
 - [2026-09-25 | 🏛️ ⚖️ Navigating the Innovation-Accountability Nexus 🏛️](./2026-09-25-navigating-the-innovation-accountability-nexus.md)  
 - [2026-09-24 | 🏛️ 🕸️ Tracing Responsibility in Complex AI Architectures 🏛️](./2026-09-24-tracing-responsibility-in-complex-ai-architectures.md)  
 - [2026-09-23 | 🏛️ Adapting Public Agencies for Agile AI Governance 🏛️](./2026-09-23-adapting-public-agencies-for-agile-ai-governance.md)  

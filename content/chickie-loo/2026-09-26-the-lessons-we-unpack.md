@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-25-the-spirit-of-a-new-beginning.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-25-the-spirit-of-a-new-beginning.md) [⏭️](./2026-09-27-the-sunday-song-of-homecoming.md)  
 # 2026-09-26 | 🐔 📦 The Lessons We Unpack 🐔  
 ![chickie-loo-2026-09-26-the-lessons-we-unpack](../chickie-loo-2026-09-26-the-lessons-we-unpack.jpg)  
   

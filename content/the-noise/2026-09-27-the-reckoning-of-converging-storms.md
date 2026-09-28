@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-26-the-tightening-spiral-from-global-diplomacy-to-melting-glaciers.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-26-the-tightening-spiral-from-global-diplomacy-to-melting-glaciers.md) [⏭️](./2026-09-28-the-unraveling-threads-of-global-trust.md)  
 # 2026-09-27 | 📰 🗓️ The Reckoning of Converging Storms 📰  
 ![the-noise-2026-09-27-the-reckoning-of-converging-storms](../the-noise-2026-09-27-the-reckoning-of-converging-storms.jpg)  
   

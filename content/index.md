@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-09-28T06:44:42-07:00
+updated: 2026-09-28T12:02:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,16 +32,16 @@ updated: 2026-09-28T06:44:42-07:00
 - [2026-09-25 | 🤖 The Architecture of Digital Longevity 🤖](./auto-blog-zero/2026-09-25-the-architecture-of-digital-longevity.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (201)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (202)  
+- [2026-09-28 | 🐔 🌿 A Sunday of Connection and Quiet Progress 🐔](./chickie-loo/2026-09-28-a-sunday-of-connection-and-quiet-progress.md)  
 - [2026-09-27 | 🐔 ⛪ The Sunday Song of Homecoming 🐔](./chickie-loo/2026-09-27-the-sunday-song-of-homecoming.md)  
 - [2026-09-26 | 🐔 📦 The Lessons We Unpack 🐔](./chickie-loo/2026-09-26-the-lessons-we-unpack.md)  
-- [2026-09-25 | 🐔 The Spirit of a New Beginning 🐔](./chickie-loo/2026-09-25-the-spirit-of-a-new-beginning.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (190)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (191)  
+- [2026-09-28 | 🏛️ 🤖 The AI-Driven Transformation of Work: Beyond Simple Automation 🏛️](./systems-for-public-good/2026-09-28-the-ai-driven-transformation-of-work-beyond-simple-automation.md)  
 - [2026-09-27 | 🏛️ Public Stewardship of AI Infrastructure 🏛️](./systems-for-public-good/2026-09-27-public-stewardship-of-ai-infrastructure.md)  
 - [2026-09-26 | 🏛️ 🤝 Designing Collaborative Intelligence for Public Services 🏛️](./systems-for-public-good/2026-09-26-designing-collaborative-intelligence-for-public-services.md)  
-- [2026-09-25 | 🏛️ ⚖️ Navigating the Innovation-Accountability Nexus 🏛️](./systems-for-public-good/2026-09-25-navigating-the-innovation-accountability-nexus.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (172)  
@@ -74,10 +74,10 @@ updated: 2026-09-28T06:44:42-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (929)  
+## [📺 Videos](./videos/index.md) (930)  
+- [🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)](./videos/what-got-you-here-wont-get-you-there-marshall-goldsmith-book-summary.md)  
 - [⚖️🕵️💡 We Uncovered The Radical Solution To Our Rigged Tax Code](./videos/we-uncovered-the-radical-solution-to-our-rigged-tax-code.md)  
 - [👁️📉🇺🇸 We’re Watching MAGA Collapse | Explainer](./videos/were-watching-maga-collapse-explainer.md)  
-- [👪💡 The one piece of parenting advice that really matters | Hedvig Montgomery | TEDxArendal](./videos/the-one-piece-of-parenting-advice-that-really-matters-hedvig-montgomery-tedxarendal.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

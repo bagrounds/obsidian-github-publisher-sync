@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-26-designing-collaborative-intelligence-for-public-services.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-26-designing-collaborative-intelligence-for-public-services.md) [⏭️](./2026-09-28-the-ai-driven-transformation-of-work-beyond-simple-automation.md)  
 # 2026-09-27 | 🏛️ Public Stewardship of AI Infrastructure 🏛️  
 ![systems-for-public-good-2026-09-27-public-stewardship-of-ai-infrastructure](../systems-for-public-good-2026-09-27-public-stewardship-of-ai-infrastructure.jpg)  
   

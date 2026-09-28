@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-09-28T06:44:42-07:00
+updated: 2026-09-28T12:02:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (929)  
+# 📺 Videos (930)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -850,6 +850,7 @@ updated: 2026-09-28T06:44:42-07:00
 - [What Are You?](./what-are-you.md)  
 - [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
+- [🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)](./what-got-you-here-wont-get-you-there-marshall-goldsmith-book-summary.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  
 - [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  

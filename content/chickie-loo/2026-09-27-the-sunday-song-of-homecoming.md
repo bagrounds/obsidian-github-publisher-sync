@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-26-the-lessons-we-unpack.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-09-26-the-lessons-we-unpack.md) [⏭️](./2026-09-28-a-sunday-of-connection-and-quiet-progress.md)  
 # 2026-09-27 | 🐔 ⛪ The Sunday Song of Homecoming 🐔  
 ![chickie-loo-2026-09-27-the-sunday-song-of-homecoming](../chickie-loo-2026-09-27-the-sunday-song-of-homecoming.jpg)  
   

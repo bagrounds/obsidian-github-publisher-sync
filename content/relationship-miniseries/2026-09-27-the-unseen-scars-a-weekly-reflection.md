@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-26-the-unseen-scars.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-26-the-unseen-scars.md) [⏭️](./2026-09-28-the-invisible-anchor-social-baseline-theory-and-the-brain-s-default-trust.md)  
 # 2026-09-27 | 💑 The Unseen Scars: A Weekly Reflection 💑  
 ![relationship-miniseries-2026-09-27-the-unseen-scars-a-weekly-reflection](../relationship-miniseries-2026-09-27-the-unseen-scars-a-weekly-reflection.jpg)  
   

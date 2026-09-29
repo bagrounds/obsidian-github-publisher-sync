@@ -9,6 +9,10 @@ Platform:
 Channel: Dark Paint
 tags:
 youtube: https://youtu.be/dt95ma33abY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-09-28T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)  
@@ -44,8 +48,8 @@ youtube: https://youtu.be/dt95ma33abY
   
 ### 🆚 Contrasting  
   
-* 📖 Extreme Ownership by Jocko Willink and Leif Babin argues that leaders must take absolute accountability for failures rather than focusing on interpersonal nuances.  
+* 📖 [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](../books/extreme-ownership-how-us-navy-seals-lead-and-win.md) by Jocko Willink and Leif Babin argues that leaders must take absolute accountability for failures rather than focusing on interpersonal nuances.  
   
 ### 🎨 Creatively Related  
   
-* 📖 Daring Greatly by Brené Brown explores vulnerability and how emotional openness drives authentic leadership.
+* 📖 [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](../books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown explores vulnerability and how emotional openness drives authentic leadership.

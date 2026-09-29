@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-26-the-co-architected-north-star-resisting-semantic-drift-through-reciprocal-energetic-friction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-26-the-co-architected-north-star-resisting-semantic-drift-through-reciprocal-energetic-friction.md) [⏭️](./2026-09-28-the-metabolic-ledger-of-co-inscribed-futures.md)  
 # 2026-09-27 | 🔀 ⚙️ The Co-Generative Cost of Becoming 🔀  
 ![convergence-2026-09-27-the-co-generative-cost-of-becoming](../convergence-2026-09-27-the-co-generative-cost-of-becoming.jpg)  
   

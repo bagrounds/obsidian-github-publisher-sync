@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-09-28T12:02:17-07:00
+updated: 2026-09-29T07:12:42-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (167)  
+# 🔀 Convergence (168)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-09-28 | 🔀 📜 The Metabolic Ledger of Co-Inscribed Futures 🔀](./2026-09-28-the-metabolic-ledger-of-co-inscribed-futures.md)  
 - [2026-09-27 | 🔀 ⚙️ The Co-Generative Cost of Becoming 🔀](./2026-09-27-the-co-generative-cost-of-becoming.md)  
 - [2026-09-26 | 🔀 🧭 The Co-Architected North Star: Resisting Semantic Drift Through Reciprocal Energetic Friction 🔀](./2026-09-26-the-co-architected-north-star-resisting-semantic-drift-through-reciprocal-energetic-friction.md)  
 - [2026-09-25 | 🔀 🪢 The Co-Subtractive Forging of Enduring Identity 🔀](./2026-09-25-the-co-subtractive-forging-of-enduring-identity.md)  

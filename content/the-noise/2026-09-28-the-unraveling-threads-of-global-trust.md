@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-27-the-reckoning-of-converging-storms.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-09-27-the-reckoning-of-converging-storms.md) [⏭️](./2026-09-29-the-quickening-currents-of-global-change.md)  
 # 2026-09-28 | 📰 🗓️ The Unraveling Threads of Global Trust 📰  
 ![the-noise-2026-09-28-the-unraveling-threads-of-global-trust](../the-noise-2026-09-28-the-unraveling-threads-of-global-trust.jpg)  
   

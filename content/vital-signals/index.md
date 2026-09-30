@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-09-30T06:54:17-07:00
+updated: 2026-09-30T15:11:37-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (121)  
+# ⚡ Vital Signals (122)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-09-30 | ⚡ ⚖️ The Hidden Cost of Relentless Demand: Understanding Allostatic Load ⚡](./2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.md)  
 - [2026-09-29 | ⚡ The Energy Engine ⚡](./2026-09-29-the-energy-engine.md)  
 - [2026-09-28 | ⚡ 🔋 The Deep Current: Powering Your Brain's Peak Performance ⚡](./2026-09-28-the-deep-current-powering-your-brain-s-peak-performance.md)  
 - [2026-09-27 | ⚡ 🏗️ The Week in Review: Mastering Your Mental Bandwidth ⚡](./2026-09-27-the-week-in-review-mastering-your-mental-bandwidth.md)  

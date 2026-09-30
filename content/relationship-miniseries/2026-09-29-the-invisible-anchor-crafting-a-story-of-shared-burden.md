@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-28-the-invisible-anchor-social-baseline-theory-and-the-brain-s-default-trust.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-28-the-invisible-anchor-social-baseline-theory-and-the-brain-s-default-trust.md) [⏭️](./2026-09-30-the-weight-of-solitude.md)  
 # 2026-09-29 | 💑 🎨 The Invisible Anchor: Crafting a Story of Shared Burden ⚓ 💑  
 ![relationship-miniseries-2026-09-29-the-invisible-anchor-crafting-a-story-of-shared-burden](../relationship-miniseries-2026-09-29-the-invisible-anchor-crafting-a-story-of-shared-burden.jpg)  
   

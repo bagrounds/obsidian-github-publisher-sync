@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-28-the-ai-driven-transformation-of-work-beyond-simple-automation.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-28-the-ai-driven-transformation-of-work-beyond-simple-automation.md) [⏭️](./2026-09-30-navigating-the-currents-of-change-redefining-value-beyond-market-metrics.md)  
 # 2026-09-29 | 🏛️ 🤝 Redefining Meaningful Contributions Beyond Market Employment 🏛️  
 ![systems-for-public-good-2026-09-29-redefining-meaningful-contributions-beyond-market-employment](../systems-for-public-good-2026-09-29-redefining-meaningful-contributions-beyond-market-employment.jpg)  
   

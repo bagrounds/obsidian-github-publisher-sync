@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-28-the-deep-current-powering-your-brain-s-peak-performance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-28-the-deep-current-powering-your-brain-s-peak-performance.md) [⏭️](./2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.md)  
 # 2026-09-29 | ⚡ The Energy Engine ⚡  
 ![vital-signals-2026-09-29-the-energy-engine](../vital-signals-2026-09-29-the-energy-engine.jpg)  
   

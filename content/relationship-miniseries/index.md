@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-09-29T07:12:42-07:00
+updated: 2026-09-30T06:54:17-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (75)  
+# 💑 Relationship Miniseries (76)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-09-29 | 💑 🎨 The Invisible Anchor: Crafting a Story of Shared Burden ⚓ 💑](./2026-09-29-the-invisible-anchor-crafting-a-story-of-shared-burden.md)  
 - [2026-09-28 | 💑 💡 The Invisible Anchor: Social Baseline Theory and the Brain's Default Trust 🤝 💑](./2026-09-28-the-invisible-anchor-social-baseline-theory-and-the-brain-s-default-trust.md)  
 - [2026-09-27 | 💑 The Unseen Scars: A Weekly Reflection 💑](./2026-09-27-the-unseen-scars-a-weekly-reflection.md)  
 - [2026-09-26 | 💑 The Unseen Scars 💑](./2026-09-26-the-unseen-scars.md)  

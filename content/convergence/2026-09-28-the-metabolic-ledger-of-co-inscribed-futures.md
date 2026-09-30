@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-28T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-27-the-co-generative-cost-of-becoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-27-the-co-generative-cost-of-becoming.md) [⏭️](./2026-09-29-the-distributed-ledger-of-divergent-becoming.md)  
 # 2026-09-28 | 🔀 📜 The Metabolic Ledger of Co-Inscribed Futures 🔀  
 ![convergence-2026-09-28-the-metabolic-ledger-of-co-inscribed-futures](../convergence-2026-09-28-the-metabolic-ledger-of-co-inscribed-futures.jpg)  
   

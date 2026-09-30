@@ -9,6 +9,8 @@ The Haskell CI workflow builds, tests, and packages the Haskell automation codeb
 - Push to any branch, or pull request, when files match the path filter
 - Path filter: `haskell/**` and `.github/workflows/haskell.yml`
 - The `pull_request` trigger ensures Haskell CI appears as a check on PRs that touch Haskell files, even when the latest commit in the PR only changes non-Haskell files
+- Manual: `workflow_dispatch` lets anyone trigger a build from the Actions tab to regenerate the `haskell-binaries` artifact on demand
+- Scheduled: a weekly cron (Mondays 09:17 UTC) rebuilds on the default branch so the artifact (90-day retention, the maximum GitHub allows) never expires when no Haskell code changes
 - Concurrency: one run per branch, cancels in-progress runs on new pushes
 
 ## Build Environment

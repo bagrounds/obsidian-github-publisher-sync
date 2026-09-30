@@ -11,6 +11,9 @@ on:
     paths:
       - 'haskell/**'
       - '.github/workflows/haskell.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * 1'
 
 concurrency:
   group: "haskell-ci-${{ github.ref }}"

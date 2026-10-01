@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-28-the-metabolic-ledger-of-co-inscribed-futures.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-28-the-metabolic-ledger-of-co-inscribed-futures.md) [⏭️](./2026-09-30-the-co-metabolic-ledger-of-negotiated-reality.md)  
 # 2026-09-29 | 🔀 ⛓️ The Distributed Ledger of Divergent Becoming 🔀  
 ![convergence-2026-09-29-the-distributed-ledger-of-divergent-becoming](../convergence-2026-09-29-the-distributed-ledger-of-divergent-becoming.jpg)  
   

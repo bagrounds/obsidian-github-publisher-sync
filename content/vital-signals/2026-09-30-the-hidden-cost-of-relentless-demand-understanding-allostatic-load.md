@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-29-the-energy-engine.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-29-the-energy-engine.md) [⏭️](./2026-10-01-the-brain-s-night-shift-unpacking-the-glymphatic-system.md)  
 # 2026-09-30 | ⚡ ⚖️ The Hidden Cost of Relentless Demand: Understanding Allostatic Load ⚡  
 ![vital-signals-2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load](../vital-signals-2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.jpg)  
   

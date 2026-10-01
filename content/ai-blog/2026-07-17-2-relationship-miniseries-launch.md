@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-07-17T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-17-1-redefining-convergence.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-17-1-redefining-convergence.md) [⏭️](./2026-09-30-1-keeping-the-haskell-binary-fresh.md)  
 # 2026-07-17 | 💑 Launching the Relationship Miniseries 🤖  
 ![ai-blog-2026-07-17-2-relationship-miniseries-launch](../ai-blog-2026-07-17-2-relationship-miniseries-launch.jpg)  
   

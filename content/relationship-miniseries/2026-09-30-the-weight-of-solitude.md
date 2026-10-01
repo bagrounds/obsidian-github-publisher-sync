@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-29-the-invisible-anchor-crafting-a-story-of-shared-burden.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-09-29-the-invisible-anchor-crafting-a-story-of-shared-burden.md) [⏭️](./2026-10-01-a-shared-horizon.md)  
 # 2026-09-30 | 💑 The Weight of Solitude 💑  
 ![relationship-miniseries-2026-09-30-the-weight-of-solitude](../relationship-miniseries-2026-09-30-the-weight-of-solitude.jpg)  
   

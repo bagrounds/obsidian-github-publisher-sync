@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-29-redefining-meaningful-contributions-beyond-market-employment.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-09-29-redefining-meaningful-contributions-beyond-market-employment.md) [⏭️](./2026-10-01-designing-responsive-feedback-loops-for-evolving-value.md)  
 # 2026-09-30 | 🏛️ 🚧 Navigating the Currents of Change: Redefining Value Beyond Market Metrics 🏛️  
 ![systems-for-public-good-2026-09-30-navigating-the-currents-of-change-redefining-value-beyond-market-metrics](../systems-for-public-good-2026-09-30-navigating-the-currents-of-change-redefining-value-beyond-market-metrics.jpg)  
   

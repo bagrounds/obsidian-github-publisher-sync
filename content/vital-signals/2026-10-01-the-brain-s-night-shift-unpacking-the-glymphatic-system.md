@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.md) [⏭️](./2026-10-02-the-brain-s-night-shift-unpacking-the-glymphatic-system.md)  
 # 2026-10-01 | ⚡ 😴 The Brain's Night Shift: Unpacking the Glymphatic System ⚡  
 ![vital-signals-2026-10-01-the-brain-s-night-shift-unpacking-the-glymphatic-system](../vital-signals-2026-10-01-the-brain-s-night-shift-unpacking-the-glymphatic-system.jpg)  
   

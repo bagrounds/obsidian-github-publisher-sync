@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-01T15:06:33-07:00
+updated: 2026-10-02T08:19:08-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (123)  
+# ⚡ Vital Signals (124)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-02 | ⚡ The Brain's Night Shift: Unpacking the Glymphatic System ⚡](./2026-10-02-the-brain-s-night-shift-unpacking-the-glymphatic-system.md)  
 - [2026-10-01 | ⚡ 😴 The Brain's Night Shift: Unpacking the Glymphatic System ⚡](./2026-10-01-the-brain-s-night-shift-unpacking-the-glymphatic-system.md)  
 - [2026-09-30 | ⚡ ⚖️ The Hidden Cost of Relentless Demand: Understanding Allostatic Load ⚡](./2026-09-30-the-hidden-cost-of-relentless-demand-understanding-allostatic-load.md)  
 - [2026-09-29 | ⚡ The Energy Engine ⚡](./2026-09-29-the-energy-engine.md)  

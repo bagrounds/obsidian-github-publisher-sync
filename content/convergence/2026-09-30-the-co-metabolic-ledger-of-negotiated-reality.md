@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-29-the-distributed-ledger-of-divergent-becoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-09-29-the-distributed-ledger-of-divergent-becoming.md) [⏭️](./2026-10-01-the-event-sourced-crucible-of-emergent-purpose.md)  
 # 2026-09-30 | 🔀 ⚖️ The Co-Metabolic Ledger of Negotiated Reality 🔀  
 ![convergence-2026-09-30-the-co-metabolic-ledger-of-negotiated-reality](../convergence-2026-09-30-the-co-metabolic-ledger-of-negotiated-reality.jpg)  
   

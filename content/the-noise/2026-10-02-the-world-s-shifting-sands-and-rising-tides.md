@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-01-the-echoes-of-unrest-and-rapid-evolution.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-01-the-echoes-of-unrest-and-rapid-evolution.md) [⏭️](./2026-10-03-the-world-s-uneasy-equilibrium.md)  
 # 2026-10-02 | 📰 🌐 The World's Shifting Sands and Rising Tides 📰  
 ![the-noise-2026-10-02-the-world-s-shifting-sands-and-rising-tides](../the-noise-2026-10-02-the-world-s-shifting-sands-and-rising-tides.jpg)  
   

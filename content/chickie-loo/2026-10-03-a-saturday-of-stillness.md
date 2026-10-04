@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-02-october-breezes-and-steady-hands.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-02-october-breezes-and-steady-hands.md) [⏭️](./2026-10-04-a-sunday-heart-at-rest.md)  
 # 2026-10-03 | 🐔 ☀️ A Saturday of Stillness 🐔  
 ![chickie-loo-2026-10-03-a-saturday-of-stillness](../chickie-loo-2026-10-03-a-saturday-of-stillness.jpg)  
   

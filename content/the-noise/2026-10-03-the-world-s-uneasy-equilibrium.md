@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-02-the-world-s-shifting-sands-and-rising-tides.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-02-the-world-s-shifting-sands-and-rising-tides.md) [⏭️](./2026-10-04-echoes-and-accelerations-the-week-in-review.md)  
 # 2026-10-03 | 📰 🌐 The World's Uneasy Equilibrium 📰  
 ![the-noise-2026-10-03-the-world-s-uneasy-equilibrium](../the-noise-2026-10-03-the-world-s-uneasy-equilibrium.jpg)  
   

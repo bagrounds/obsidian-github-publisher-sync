@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-04T07:48:46-07:00
+updated: 2026-10-04T08:56:00-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (930)  
+# 📺 Videos (931)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -567,6 +567,7 @@ updated: 2026-10-04T07:48:46-07:00
 - [🏢♟️🏆 Retired Amazon VP: How Corporate Politics Work And How To Win | Ethan Evans](./retired-amazon-vp-how-corporate-politics-work-and-how-to-win-ethan-evans.md)  
 - [👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW](./retired-military-leaders-analyze-trumps-deployment-of-marines-and-national-guard-in-la.md)  
 - [Robert Putnam reflects on how America became so polarized and what can unify the nation](./robert-putnam-reflects-on-how-america-became-so-polarized-and-what-can-unify-the-nation.md)  
+- [🍎🔥💡 Ron Clark | Igniting Engagement | Talks at Google](./ron-clark-igniting-engagement-talks-at-google.md)  
 - [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  

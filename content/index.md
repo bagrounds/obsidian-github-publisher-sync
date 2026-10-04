@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-04T07:48:46-07:00
+updated: 2026-10-04T08:56:00-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-10-04T07:48:46-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (930)  
+## [📺 Videos](./videos/index.md) (931)  
+- [🍎🔥💡 Ron Clark | Igniting Engagement | Talks at Google](./videos/ron-clark-igniting-engagement-talks-at-google.md)  
 - [🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)](./videos/what-got-you-here-wont-get-you-there-marshall-goldsmith-book-summary.md)  
 - [⚖️🕵️💡 We Uncovered The Radical Solution To Our Rigged Tax Code](./videos/we-uncovered-the-radical-solution-to-our-rigged-tax-code.md)  
-- [👁️📉🇺🇸 We’re Watching MAGA Collapse | Explainer](./videos/were-watching-maga-collapse-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

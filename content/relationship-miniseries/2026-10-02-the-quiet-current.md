@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-01-a-shared-horizon.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-01-a-shared-horizon.md) [⏭️](./2026-10-03-the-invisible-anchor.md)  
 # 2026-10-02 | 💑 The Quiet Current 💑  
 ![relationship-miniseries-2026-10-02-the-quiet-current](../relationship-miniseries-2026-10-02-the-quiet-current.jpg)  
   

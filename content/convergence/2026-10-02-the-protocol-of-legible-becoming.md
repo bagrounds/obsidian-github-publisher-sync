@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-01-the-event-sourced-crucible-of-emergent-purpose.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-01-the-event-sourced-crucible-of-emergent-purpose.md) [⏭️](./2026-10-03-the-metabolic-engine-of-dynamic-coherence.md)  
 # 2026-10-02 | 🔀 ⚙️ The Protocol of Legible Becoming 🔀  
 ![convergence-2026-10-02-the-protocol-of-legible-becoming](../convergence-2026-10-02-the-protocol-of-legible-becoming.jpg)  
   

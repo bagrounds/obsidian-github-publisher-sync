@@ -5,7 +5,7 @@ aliases:
 title: 🎤 Presentations
 URL: https://bagrounds.org/presentations
 backlinks: false
-updated: 2026-10-04T08:56:00-07:00
+updated: 2026-10-05T07:14:08-07:00
 ---
 [Home](../index.md)  
 # 🎤 Presentations (2)  

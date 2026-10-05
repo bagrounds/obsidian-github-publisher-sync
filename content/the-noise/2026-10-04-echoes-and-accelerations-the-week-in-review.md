@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-03-the-world-s-uneasy-equilibrium.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-03-the-world-s-uneasy-equilibrium.md) [⏭️](./2026-10-05-daily-currents-navigating-shifting-sands-and-accelerating-innovations.md)  
 # 2026-10-04 | 📰 🌐 Echoes and Accelerations: The Week in Review 📰  
 ![the-noise-2026-10-04-echoes-and-accelerations-the-week-in-review](../the-noise-2026-10-04-echoes-and-accelerations-the-week-in-review.jpg)  
   

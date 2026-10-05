@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-03-the-inner-garden-cultivating-your-gut-for-a-sharper-mind.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-03-the-inner-garden-cultivating-your-gut-for-a-sharper-mind.md) [⏭️](./2026-10-05-the-dopamine-compass-navigating-drive-and-desire.md)  
 # 2026-10-04 | ⚡ 🏗️ The Integrated Foundations: Fuel, Flow, and Inner Harmony ⚡  
 ![vital-signals-2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony](../vital-signals-2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony.jpg)  
   

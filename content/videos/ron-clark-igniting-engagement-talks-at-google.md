@@ -9,6 +9,10 @@ Platform:
 Channel: Talks at Google
 tags:
 youtube: https://youtu.be/LE8iaF8neSk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🍎🔥💡 Ron Clark | Igniting Engagement | Talks at Google  

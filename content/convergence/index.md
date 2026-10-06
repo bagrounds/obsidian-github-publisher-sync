@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-05T07:14:08-07:00
+updated: 2026-10-05T20:33:59-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (174)  
+# 🔀 Convergence (175)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-05 | 🔀 💖 The Metabolic Transubstantiation of Shared Reality 🔀](./2026-10-05-the-metabolic-transubstantiation-of-shared-reality.md)  
 - [2026-10-04 | 🔀 🌀 Epistemic Friction as an Organizing Principle 🔀](./2026-10-04-epistemic-friction-as-an-organizing-principle.md)  
 - [2026-10-03 | 🔀 ⚡ The Metabolic Engine of Dynamic Coherence 🔀](./2026-10-03-the-metabolic-engine-of-dynamic-coherence.md)  
 - [2026-10-02 | 🔀 ⚙️ The Protocol of Legible Becoming 🔀](./2026-10-02-the-protocol-of-legible-becoming.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-04-safeguarding-trust-ethical-data-and-privacy-in-localized-measurement.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-04-safeguarding-trust-ethical-data-and-privacy-in-localized-measurement.md) [⏭️](./2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  
 # 2026-10-05 | 🏛️ 🌐 Data as a Digital Common Good: Collective Stewardship for Public Benefit 🏛️  
 ![systems-for-public-good-2026-10-05-data-as-a-digital-common-good-collective-stewardship-for-public-benefit](../systems-for-public-good-2026-10-05-data-as-a-digital-common-good-collective-stewardship-for-public-benefit.jpg)  
   

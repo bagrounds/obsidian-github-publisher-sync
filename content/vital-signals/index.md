@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-05T20:33:59-07:00
+updated: 2026-10-06T06:53:52-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (127)  
+# ⚡ Vital Signals (128)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-06 | ⚡ 🧠 The Two Modes of Mind: Switching Between Laser Focus and Creative Wander ⚡](./2026-10-06-the-two-modes-of-mind-switching-between-laser-focus-and-creative-wander.md)  
 - [2026-10-05 | ⚡ 🎯 The Dopamine Compass: Navigating Drive and Desire ⚡](./2026-10-05-the-dopamine-compass-navigating-drive-and-desire.md)  
 - [2026-10-04 | ⚡ 🏗️ The Integrated Foundations: Fuel, Flow, and Inner Harmony ⚡](./2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony.md)  
 - [2026-10-03 | ⚡ 🐛 The Inner Garden: Cultivating Your Gut for a Sharper Mind ⚡](./2026-10-03-the-inner-garden-cultivating-your-gut-for-a-sharper-mind.md)  

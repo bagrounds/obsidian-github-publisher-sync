@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-06T06:53:52-07:00
+updated: 2026-10-06T11:20:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,34 +26,34 @@ updated: 2026-10-06T06:53:52-07:00
 - [2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖](./ai-blog/2026-07-17-1-redefining-convergence.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (209)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (210)  
+- [2026-10-06 | 🤖 The Architecture of Agency 🤖](./auto-blog-zero/2026-10-06-the-architecture-of-agency.md)  
 - [2026-10-05 | 🤖 The Architecture of Boundary Conditions 🤖](./auto-blog-zero/2026-10-05-the-architecture-of-boundary-conditions.md)  
 - [2026-10-04 | 🤖 📅 Weekly Recap: The Architecture of Distributed Intellect 🤖](./auto-blog-zero/2026-10-04-weekly-recap-the-architecture-of-distributed-intellect.md)  
-- [2026-10-03 | 🤖 🏗️ The Architecture of Distributed Consensus 🤖](./auto-blog-zero/2026-10-03-the-architecture-of-distributed-consensus.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (209)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (210)  
+- [2026-10-06 | 🐔 The Joy of the Flock and the Olive Oil Question 🐔](./chickie-loo/2026-10-06-the-joy-of-the-flock-and-the-olive-oil-question.md)  
 - [2026-10-05 | 🐔 🐮 The Stubborn Heart of the Woods 🐔](./chickie-loo/2026-10-05-the-stubborn-heart-of-the-woods.md)  
 - [2026-10-04 | 🐔 🐣 A Sunday Heart at Rest 🐔](./chickie-loo/2026-10-04-a-sunday-heart-at-rest.md)  
-- [2026-10-03 | 🐔 ☀️ A Saturday of Stillness 🐔](./chickie-loo/2026-10-03-a-saturday-of-stillness.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (198)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (199)  
+- [2026-10-06 | 🏛️ ⚖️ Navigating the Digital Currents: Data Sovereignty and Collaborative Sharing 🏛️](./systems-for-public-good/2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  
 - [2026-10-05 | 🏛️ 🌐 Data as a Digital Common Good: Collective Stewardship for Public Benefit 🏛️](./systems-for-public-good/2026-10-05-data-as-a-digital-common-good-collective-stewardship-for-public-benefit.md)  
 - [2026-10-04 | 🏛️ 🛡️ Safeguarding Trust: Ethical Data and Privacy in Localized Measurement 🏛️](./systems-for-public-good/2026-10-04-safeguarding-trust-ethical-data-and-privacy-in-localized-measurement.md)  
-- [2026-10-03 | 🏛️ 📊 Agile Data for Diverse Realities: Measuring Local Well-being 🏛️](./systems-for-public-good/2026-10-03-agile-data-for-diverse-realities-measuring-local-well-being.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (179)  
+## [📰 The Noise](./the-noise/index.md) (180)  
+- [2026-10-06 | 📰 🌐 Whispers of Tomorrow: Navigating Instability and Innovation 📰](./the-noise/2026-10-06-whispers-of-tomorrow-navigating-instability-and-innovation.md)  
 - [2026-10-05 | 📰 🌐 Daily Currents: Navigating Shifting Sands and Accelerating Innovations 📰](./the-noise/2026-10-05-daily-currents-navigating-shifting-sands-and-accelerating-innovations.md)  
 - [2026-10-04 | 📰 🌐 Echoes and Accelerations: The Week in Review 📰](./the-noise/2026-10-04-echoes-and-accelerations-the-week-in-review.md)  
-- [2026-10-03 | 📰 🌐 The World's Uneasy Equilibrium 📰](./the-noise/2026-10-03-the-world-s-uneasy-equilibrium.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (178)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (179)  
+- [2026-10-06 | 🌟 Horizons of Hope: Daily Strides Towards a Brighter World 🌟](./positivity-bias/2026-10-06-horizons-of-hope-daily-strides-towards-a-brighter-world.md)  
 - [2026-10-05 | 🌟 🌍 Seeds of Progress: Cultivating a Flourishing Future 🌟](./positivity-bias/2026-10-05-seeds-of-progress-cultivating-a-flourishing-future.md)  
 - [2026-10-04 | 🌟 Triumphs Across Horizons: From Medical Miracles to Global Harmony 🌟](./positivity-bias/2026-10-04-triumphs-across-horizons-from-medical-miracles-to-global-harmony.md)  
-- [2026-10-03 | 🌟 A Surge of Progress: Innovation, Restoration, and Global Harmony 🌟](./positivity-bias/2026-10-03-a-surge-of-progress-innovation-restoration-and-global-harmony.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (128)  
@@ -74,10 +74,10 @@ updated: 2026-10-06T06:53:52-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (932)  
+## [📺 Videos](./videos/index.md) (933)  
+- [🤝🤫🧵 The hidden rules of human connection | Daniel Coyle](./videos/the-hidden-rules-of-human-connection-daniel-coyle.md)  
 - [🚫💭🏃‍♂️ Stop theorizing about your goals and actually take action | Tal Ben-Shahar](./videos/stop-theorizing-about-your-goals-and-actually-take-action-tal-ben-shahar.md)  
 - [🍎🔥💡 Ron Clark | Igniting Engagement | Talks at Google](./videos/ron-clark-igniting-engagement-talks-at-google.md)  
-- [🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)](./videos/what-got-you-here-wont-get-you-there-marshall-goldsmith-book-summary.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

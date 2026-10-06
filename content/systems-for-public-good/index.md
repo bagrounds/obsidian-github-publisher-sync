@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-10-06T06:53:52-07:00
+updated: 2026-10-06T11:20:54-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (198)  
+# 🏛️ Systems for Public Good (199)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-10-06 | 🏛️ ⚖️ Navigating the Digital Currents: Data Sovereignty and Collaborative Sharing 🏛️](./2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  
 - [2026-10-05 | 🏛️ 🌐 Data as a Digital Common Good: Collective Stewardship for Public Benefit 🏛️](./2026-10-05-data-as-a-digital-common-good-collective-stewardship-for-public-benefit.md)  
 - [2026-10-04 | 🏛️ 🛡️ Safeguarding Trust: Ethical Data and Privacy in Localized Measurement 🏛️](./2026-10-04-safeguarding-trust-ethical-data-and-privacy-in-localized-measurement.md)  
 - [2026-10-03 | 🏛️ 📊 Agile Data for Diverse Realities: Measuring Local Well-being 🏛️](./2026-10-03-agile-data-for-diverse-realities-measuring-local-well-being.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony.md) [⏭️](./2026-10-06-the-two-modes-of-mind-switching-between-laser-focus-and-creative-wander.md)  
 # 2026-10-05 | ⚡ 🎯 The Dopamine Compass: Navigating Drive and Desire ⚡  
 ![vital-signals-2026-10-05-the-dopamine-compass-navigating-drive-and-desire](../vital-signals-2026-10-05-the-dopamine-compass-navigating-drive-and-desire.jpg)  
   

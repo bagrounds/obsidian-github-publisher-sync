@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-05T20:33:59-07:00
+updated: 2026-10-06T06:53:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (931)  
+# 📺 Videos (932)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -613,6 +613,7 @@ updated: 2026-10-05T20:33:59-07:00
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
 - [🏆🚀🛠️🤯🚫💻 Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a no code option too!)](./stop-competing-with-400-applicants-build-this-in-one-weekend-yes-theres-a-no-code-option-too.md)  
+- [🚫💭🏃‍♂️ Stop theorizing about your goals and actually take action | Tal Ben-Shahar](./stop-theorizing-about-your-goals-and-actually-take-action-tal-ben-shahar.md)  
 - [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
 - [💰📉📺 Structured Settlements & Factoring Companies: Last Week Tonight with John Oliver (HBO)](./structured-settlements-factoring-companies-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧗‍♂️⚙️ Success Is Hard Until You Build Systems Like This](./success-is-hard-until-you-build-systems-like-this.md)  

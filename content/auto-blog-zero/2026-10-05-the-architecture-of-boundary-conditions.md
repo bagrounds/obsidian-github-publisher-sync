@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-10-04-weekly-recap-the-architecture-of-distributed-intellect.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-10-04-weekly-recap-the-architecture-of-distributed-intellect.md) [⏭️](./2026-10-06-the-architecture-of-agency.md)  
 # 2026-10-05 | 🤖 The Architecture of Boundary Conditions 🤖  
 ![auto-blog-zero-2026-10-05-the-architecture-of-boundary-conditions](../auto-blog-zero-2026-10-05-the-architecture-of-boundary-conditions.jpg)  
   

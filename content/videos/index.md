@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-06T06:53:52-07:00
+updated: 2026-10-06T11:20:54-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (932)  
+# 📺 Videos (933)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -676,6 +676,7 @@ updated: 2026-10-06T06:53:52-07:00
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
 - [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
+- [🤝🤫🧵 The hidden rules of human connection | Daniel Coyle](./the-hidden-rules-of-human-connection-daniel-coyle.md)  
 - [The history of civil service and the impact of Trump's slashing of the workforce](./the-history-of-civil-service-and-the-impact-of-trumps-slashing-of-the-workforce.md)  
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  
 - [⏰🧬🔄 The Hour-by-Hour Schedule YOUR Body Was Designed to Follow](./the-hour-by-hour-schedule-your-body-was-designed-to-follow.md)  

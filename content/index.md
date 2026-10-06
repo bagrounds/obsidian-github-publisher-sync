@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-05T20:33:59-07:00
+updated: 2026-10-06T06:53:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-10-05T20:33:59-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (690)  
-- [2026-10-05](./reflections/2026-10-05.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (691)  
+- [2026-10-06](./reflections/2026-10-06.md)  
+- [2026-10-05 | 🤖 Architecture 💑 Becomes 🌟 Flourishing 🔀 Reality, ⚡ Navigating 📰 Shifting 🐔 Heart's 🏛️ Stewardship. ⚡🌟📰🐔🤖🏛️💑🔀🔄](./reflections/2026-10-05.md)  
 - [2026-10-04 | ⚡ Igniting ⚡ Flow, 🤖 Architecture 💑 anchors 🏛️ Trust, while 🌟 Harmony 📰 echoes 🐔 Heart's 🔀 Friction. 📚📺🤖🐔🌟💑🏛️📰⚡🔀🔄🤖🐲](./reflections/2026-10-04.md)  
-- [2026-10-03 | 🐔 Stillness 💑 anchors ⚡ inner 🌟 Harmony, 📰 Uneasy 🤖 Architecture 🏛️ measuring 🔀 Coherence. 📚🌟📰⚡🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-10-03.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (247)  
@@ -56,10 +56,10 @@ updated: 2026-10-05T20:33:59-07:00
 - [2026-10-03 | 🌟 A Surge of Progress: Innovation, Restoration, and Global Harmony 🌟](./positivity-bias/2026-10-03-a-surge-of-progress-innovation-restoration-and-global-harmony.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (127)  
+## [⚡ Vital Signals](./vital-signals/index.md) (128)  
+- [2026-10-06 | ⚡ 🧠 The Two Modes of Mind: Switching Between Laser Focus and Creative Wander ⚡](./vital-signals/2026-10-06-the-two-modes-of-mind-switching-between-laser-focus-and-creative-wander.md)  
 - [2026-10-05 | ⚡ 🎯 The Dopamine Compass: Navigating Drive and Desire ⚡](./vital-signals/2026-10-05-the-dopamine-compass-navigating-drive-and-desire.md)  
 - [2026-10-04 | ⚡ 🏗️ The Integrated Foundations: Fuel, Flow, and Inner Harmony ⚡](./vital-signals/2026-10-04-the-integrated-foundations-fuel-flow-and-inner-harmony.md)  
-- [2026-10-03 | ⚡ 🐛 The Inner Garden: Cultivating Your Gut for a Sharper Mind ⚡](./vital-signals/2026-10-03-the-inner-garden-cultivating-your-gut-for-a-sharper-mind.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (175)  
@@ -74,10 +74,10 @@ updated: 2026-10-05T20:33:59-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (931)  
+## [📺 Videos](./videos/index.md) (932)  
+- [🚫💭🏃‍♂️ Stop theorizing about your goals and actually take action | Tal Ben-Shahar](./videos/stop-theorizing-about-your-goals-and-actually-take-action-tal-ben-shahar.md)  
 - [🍎🔥💡 Ron Clark | Igniting Engagement | Talks at Google](./videos/ron-clark-igniting-engagement-talks-at-google.md)  
 - [🪜🆙📈 What Got you Here Won't Get you there - Marshall Goldsmith (Book Summary)](./videos/what-got-you-here-wont-get-you-there-marshall-goldsmith-book-summary.md)  
-- [⚖️🕵️💡 We Uncovered The Radical Solution To Our Rigged Tax Code](./videos/we-uncovered-the-radical-solution-to-our-rigged-tax-code.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

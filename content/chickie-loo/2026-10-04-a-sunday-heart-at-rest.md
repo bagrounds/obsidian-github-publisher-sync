@@ -14,7 +14,7 @@ link_analysis_time: 2026-10-04T00:00:00Z
 force_analyze_links: false
 updated: 2026-10-05T13:29:54
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-03-a-saturday-of-stillness.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-03-a-saturday-of-stillness.md) [⏭️](./2026-10-05-the-stubborn-heart-of-the-woods.md)  
 # 2026-10-04 | 🐔 🐣 A Sunday Heart at Rest 🐔  
 ![chickie-loo-2026-10-04-a-sunday-heart-at-rest](../chickie-loo-2026-10-04-a-sunday-heart-at-rest.jpg)  
   

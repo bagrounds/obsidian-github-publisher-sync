@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-03-the-metabolic-engine-of-dynamic-coherence.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-03-the-metabolic-engine-of-dynamic-coherence.md) [⏭️](./2026-10-05-the-metabolic-transubstantiation-of-shared-reality.md)  
 # 2026-10-04 | 🔀 🌀 Epistemic Friction as an Organizing Principle 🔀  
 ![convergence-2026-10-04-epistemic-friction-as-an-organizing-principle](../convergence-2026-10-04-epistemic-friction-as-an-organizing-principle.jpg)  
   

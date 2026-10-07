@@ -9,6 +9,10 @@ Platform:
 Channel: Big Think Clips
 tags:
 youtube: https://youtu.be/omb-p30DCt0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤝🤫🧵 The hidden rules of human connection | Daniel Coyle  
@@ -69,8 +73,8 @@ youtube: https://youtu.be/omb-p30DCt0
   
 ### 🆚 Contrasting  
   
-* 🚀 Deep Work: Rules for Focused Success in a Distracted World by Cal Newport argues that individual solitude and unbroken task attention are the primary drivers of high-value professional output.  
-* 📈 Essentialism: The Disciplined Pursuit of Less by Greg McKeown advocates for strict individual elimination of external obligations to focus exclusively on single, high-priority objectives.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport argues that individual solitude and unbroken task attention are the primary drivers of high-value professional output.  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown advocates for strict individual elimination of external obligations to focus exclusively on single, high-priority objectives.  
   
 ### 🎨 Creatively Related  
   

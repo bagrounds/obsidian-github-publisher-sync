@@ -9,6 +9,10 @@ Platform:
 Channel: Big Think
 tags:
 youtube: https://youtu.be/arte3arYBrU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎯📈 The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview  
@@ -47,7 +51,7 @@ youtube: https://youtu.be/arte3arYBrU
 ### 🆚 Contrasting  
   
 - 🧬 The Sports Gene by David Epstein examines the significant role of biological factors and genetics in elite human performance.  
-- 📈 Outliers by Malcolm Gladwell focuses on the roles of timing, opportunity, and cultural legacy in the success of exceptional individuals.  
+- 📈 [⭐ Outliers](../books/outliers.md) by Malcolm Gladwell focuses on the roles of timing, opportunity, and cultural legacy in the success of exceptional individuals.  
   
 ### 🎨 Creatively Related  
   

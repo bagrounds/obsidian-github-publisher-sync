@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-05-the-science-when-i-becomes-we.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-05-the-science-when-i-becomes-we.md) [⏭️](./2026-10-07-the-echo-of-a-dream.md)  
 # 2026-10-06 | 💑 🎭 Genre and Form: Intimate Psychological Drama 🛋️ 💑  
 ![relationship-miniseries-2026-10-06-genre-and-form-intimate-psychological-drama](../relationship-miniseries-2026-10-06-genre-and-form-intimate-psychological-drama.jpg)  
   

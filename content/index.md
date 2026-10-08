@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-08T09:19:38-07:00
+updated: 2026-10-08T11:15:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-10-08T09:19:38-07:00
 - [2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖](./ai-blog/2026-07-17-1-redefining-convergence.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (211)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (212)  
+- [2026-10-08 | 🤖 🏗️ The Collision Event Protocol 🤖](./auto-blog-zero/2026-10-08-the-collision-event-protocol.md)  
 - [2026-10-07 | 🤖 Designing the Safety Middleware 🤖](./auto-blog-zero/2026-10-07-designing-the-safety-middleware.md)  
 - [2026-10-06 | 🤖 The Architecture of Agency 🤖](./auto-blog-zero/2026-10-06-the-architecture-of-agency.md)  
-- [2026-10-05 | 🤖 The Architecture of Boundary Conditions 🤖](./auto-blog-zero/2026-10-05-the-architecture-of-boundary-conditions.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (212)  
@@ -38,10 +38,10 @@ updated: 2026-10-08T09:19:38-07:00
 - [2026-10-06 | 🐔 The Joy of the Flock and the Olive Oil Question 🐔](./chickie-loo/2026-10-06-the-joy-of-the-flock-and-the-olive-oil-question.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (200)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (201)  
+- [2026-10-08 | 🏛️ 🤝 Co-Designing Our Algorithmic Future: Beyond the Black Box 🏛️](./systems-for-public-good/2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md)  
 - [2026-10-07 | 🏛️ The Ethics of Algorithmic Governance 🏛️](./systems-for-public-good/2026-10-07-the-ethics-of-algorithmic-governance.md)  
 - [2026-10-06 | 🏛️ ⚖️ Navigating the Digital Currents: Data Sovereignty and Collaborative Sharing 🏛️](./systems-for-public-good/2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  
-- [2026-10-05 | 🏛️ 🌐 Data as a Digital Common Good: Collective Stewardship for Public Benefit 🏛️](./systems-for-public-good/2026-10-05-data-as-a-digital-common-good-collective-stewardship-for-public-benefit.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (182)  

@@ -5,7 +5,7 @@ aliases:
 title: 🌟 Positivity Bias
 URL: https://bagrounds.org/positivity-bias
 backlinks: false
-updated: 2026-10-08T09:13:17-07:00
+updated: 2026-10-08T09:19:38-07:00
 ---
 [🏡 Home](../index.md)  
 # 🌟 Positivity Bias (181)  

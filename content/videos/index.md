@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-08T09:13:17-07:00
+updated: 2026-10-08T09:19:38-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (933)  
+# 📺 Videos (934)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -714,6 +714,7 @@ updated: 2026-10-08T09:13:17-07:00
 - [😇😈💔 The Righteous Mind: Why Liberals and Conservatives Can't Get Along](./the-righteous-mind-why-liberals-and-conservatives-cant-get-along.md)  
 - [📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree](./the-rise-of-viral-debate-videos-and-their-impact-on-our-ability-to-disagree.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
+- [🎯📈 The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview](./the-rule-of-20-how-to-find-the-sweet-spot-for-improved-performance-daniel-coyle-full-interview.md)  
 - [🗣️🧠⬆️📈 The Science Behind Dramatically Better Conversations | Charles Duhigg | TED](./the-science-behind-dramatically-better-conversations-charles-duhigg-ted.md)  
 - [📈🤏💡 The science behind small wins](./the-science-behind-small-wins.md)  
 - [🧬🧠👨‍🍼 The science of 'Dad Brain' and how fatherhood changes men](./the-science-of-dad-brain-and-how-fatherhood-changes-men.md)  

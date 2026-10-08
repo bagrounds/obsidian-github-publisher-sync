@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-06T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-05-the-metabolic-transubstantiation-of-shared-reality.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-05-the-metabolic-transubstantiation-of-shared-reality.md) [⏭️](./2026-10-07-the-attested-trajectory-of-collective-trust.md)  
 # 2026-10-06 | 🔀 ⛏️ The Metabolic Mining of Collective Truth 🔀  
 ![convergence-2026-10-06-the-metabolic-mining-of-collective-truth](../convergence-2026-10-06-the-metabolic-mining-of-collective-truth.jpg)  
   

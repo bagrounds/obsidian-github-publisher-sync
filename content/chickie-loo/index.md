@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-10-06T11:20:54-07:00
+updated: 2026-10-08T09:13:17-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (210)  
+# 🐔 Chickie Loo (212)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-10-08 | 🐔 A Heart for Charlie and the Joy of a Tidy Space 🐔](./2026-10-08-a-heart-for-charlie-and-the-joy-of-a-tidy-space.md)  
+- [2026-10-07 | 🐔 🍂 A Mid-Week Pause and the Wisdom of the Herd 🐔](./2026-10-07-a-mid-week-pause-and-the-wisdom-of-the-herd.md)  
 - [2026-10-06 | 🐔 The Joy of the Flock and the Olive Oil Question 🐔](./2026-10-06-the-joy-of-the-flock-and-the-olive-oil-question.md)  
 - [2026-10-05 | 🐔 🐮 The Stubborn Heart of the Woods 🐔](./2026-10-05-the-stubborn-heart-of-the-woods.md)  
 - [2026-10-04 | 🐔 🐣 A Sunday Heart at Rest 🐔](./2026-10-04-a-sunday-heart-at-rest.md)  

@@ -5,11 +5,13 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-10-06T11:20:54-07:00
+updated: 2026-10-08T09:13:17-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (82)  
+# 💑 Relationship Miniseries (84)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-10-07 | 💑 The Echo of a Dream 💑](./2026-10-07-the-echo-of-a-dream.md)  
+- [2026-10-06 | 💑 🎭 Genre and Form: Intimate Psychological Drama 🛋️ 💑](./2026-10-06-genre-and-form-intimate-psychological-drama.md)  
 - [2026-10-05 | 💑 🔬 The Science: When "I" Becomes "We" 🪢 💑](./2026-10-05-the-science-when-i-becomes-we.md)  
 - [2026-10-04 | 💑 The Invisible Anchor 💑](./2026-10-04-the-invisible-anchor.md)  
 - [2026-10-03 | 💑 The Invisible Anchor 💑](./2026-10-03-the-invisible-anchor.md)  

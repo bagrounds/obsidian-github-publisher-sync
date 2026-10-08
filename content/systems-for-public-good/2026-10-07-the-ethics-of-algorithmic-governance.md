@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md) [⏭️](./2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md)  
 # 2026-10-07 | 🏛️ The Ethics of Algorithmic Governance 🏛️  
 ![systems-for-public-good-2026-10-07-the-ethics-of-algorithmic-governance](../systems-for-public-good-2026-10-07-the-ethics-of-algorithmic-governance.jpg)  
   

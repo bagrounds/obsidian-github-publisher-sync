@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-06-genre-and-form-intimate-psychological-drama.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-06-genre-and-form-intimate-psychological-drama.md) [⏭️](./2026-10-08-cracks-in-the-facade.md)  
 # 2026-10-07 | 💑 The Echo of a Dream 💑  
 ![relationship-miniseries-2026-10-07-the-echo-of-a-dream](../relationship-miniseries-2026-10-07-the-echo-of-a-dream.jpg)  
   

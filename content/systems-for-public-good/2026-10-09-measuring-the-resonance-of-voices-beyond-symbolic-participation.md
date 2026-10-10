@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md) [⏭️](./2026-10-10-shaping-the-scales-democratizing-the-metrics-of-engagement.md)  
 # 2026-10-09 | 🏛️ 📊 Measuring the Resonance of Voices: Beyond Symbolic Participation 🏛️  
 ![systems-for-public-good-2026-10-09-measuring-the-resonance-of-voices-beyond-symbolic-participation](../systems-for-public-good-2026-10-09-measuring-the-resonance-of-voices-beyond-symbolic-participation.jpg)  
   

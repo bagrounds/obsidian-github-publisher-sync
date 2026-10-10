@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-10T11:20:53-07:00
+updated: 2026-10-10T14:24:58-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (934)  
+# 📺 Videos (935)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -134,6 +134,7 @@ updated: 2026-10-10T11:20:53-07:00
 - [👨‍⚖️⬆️🏛️ Brooks and Capehart on the Comey indictment and upending of DOJ norms](./brooks-and-capehart-on-the-comey-indictment-and-upending-of-doj-norms.md)  
 - [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
+- [🏛️🗳️⚔️ Brooks and Capehart on the fight for Senate control in battleground states](./brooks-and-capehart-on-the-fight-for-senate-control-in-battleground-states.md)  
 - [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
 - [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  

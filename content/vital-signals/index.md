@@ -5,11 +5,13 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-08T11:15:52-07:00
+updated: 2026-10-10T06:55:27-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (130)  
+# ⚡ Vital Signals (132)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-10 | ⚡ 🔬 The Signal: Unpacking Stress's Invisible Burden on the Brain ⚡](./2026-10-10-the-signal-unpacking-stress-s-invisible-burden-on-the-brain.md)  
+- [2026-10-09 | ⚡ 🧠 Beyond Glucose: Fueling Your Brain's Cognitive Engine ⚡](./2026-10-09-beyond-glucose-fueling-your-brain-s-cognitive-engine.md)  
 - [2026-10-08 | ⚡ 🧠 The Cognitive Crunch: Unpacking Mental Overload ⚡](./2026-10-08-the-cognitive-crunch-unpacking-mental-overload.md)  
 - [2026-10-07 | ⚡ 🧘‍♀️ The Restorative Pause: How Intentional Breaks Rewire Your Focus ⚡](./2026-10-07-the-restorative-pause-how-intentional-breaks-rewire-your-focus.md)  
 - [2026-10-06 | ⚡ 🧠 The Two Modes of Mind: Switching Between Laser Focus and Creative Wander ⚡](./2026-10-06-the-two-modes-of-mind-switching-between-laser-focus-and-creative-wander.md)  

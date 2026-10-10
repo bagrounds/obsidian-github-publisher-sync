@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-08T11:15:52-07:00
+updated: 2026-10-10T06:55:27-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (177)  
+# 🔀 Convergence (179)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-09 | 🔀 ⚖️ The Co-Metabolic Calibration of Shared Intent 🔀](./2026-10-09-the-co-metabolic-calibration-of-shared-intent.md)  
+- [2026-10-08 | 🔀 ⚛️ The Co-Metabolic Crucible of Reciprocal Becoming 🔀](./2026-10-08-the-co-metabolic-crucible-of-reciprocal-becoming.md)  
 - [2026-10-07 | 🔀 🛤️ The Attested Trajectory of Collective Trust 🔀](./2026-10-07-the-attested-trajectory-of-collective-trust.md)  
 - [2026-10-06 | 🔀 ⛏️ The Metabolic Mining of Collective Truth 🔀](./2026-10-06-the-metabolic-mining-of-collective-truth.md)  
 - [2026-10-05 | 🔀 💖 The Metabolic Transubstantiation of Shared Reality 🔀](./2026-10-05-the-metabolic-transubstantiation-of-shared-reality.md)  

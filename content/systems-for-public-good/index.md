@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-10-08T11:15:52-07:00
+updated: 2026-10-10T06:55:27-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (201)  
+# 🏛️ Systems for Public Good (202)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-10-09 | 🏛️ 📊 Measuring the Resonance of Voices: Beyond Symbolic Participation 🏛️](./2026-10-09-measuring-the-resonance-of-voices-beyond-symbolic-participation.md)  
 - [2026-10-08 | 🏛️ 🤝 Co-Designing Our Algorithmic Future: Beyond the Black Box 🏛️](./2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md)  
 - [2026-10-07 | 🏛️ The Ethics of Algorithmic Governance 🏛️](./2026-10-07-the-ethics-of-algorithmic-governance.md)  
 - [2026-10-06 | 🏛️ ⚖️ Navigating the Digital Currents: Data Sovereignty and Collaborative Sharing 🏛️](./2026-10-06-navigating-the-digital-currents-data-sovereignty-and-collaborative-sharing.md)  

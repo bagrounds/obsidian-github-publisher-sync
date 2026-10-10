@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-10T11:20:53-07:00
+updated: 2026-10-10T14:24:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-10-10T11:20:53-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (934)  
+## [📺 Videos](./videos/index.md) (935)  
+- [🏛️🗳️⚔️ Brooks and Capehart on the fight for Senate control in battleground states](./videos/brooks-and-capehart-on-the-fight-for-senate-control-in-battleground-states.md)  
 - [🎯📈 The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview](./videos/the-rule-of-20-how-to-find-the-sweet-spot-for-improved-performance-daniel-coyle-full-interview.md)  
 - [🤝🤫🧵 The hidden rules of human connection | Daniel Coyle](./videos/the-hidden-rules-of-human-connection-daniel-coyle.md)  
-- [🚫💭🏃‍♂️ Stop theorizing about your goals and actually take action | Tal Ben-Shahar](./videos/stop-theorizing-about-your-goals-and-actually-take-action-tal-ben-shahar.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

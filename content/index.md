@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-10T06:55:27-07:00
+updated: 2026-10-10T11:20:53-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-10-10T06:55:27-07:00
 - [2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖](./ai-blog/2026-07-17-1-redefining-convergence.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (213)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (214)  
+- [2026-10-10 | 🤖 🏗️ Engineering the Pivot to Autonomy 🤖](./auto-blog-zero/2026-10-10-engineering-the-pivot-to-autonomy.md)  
 - [2026-10-09 | 🤖 🛤️ The Drift of Executable Intent 🤖](./auto-blog-zero/2026-10-09-the-drift-of-executable-intent.md)  
 - [2026-10-08 | 🤖 🏗️ The Collision Event Protocol 🤖](./auto-blog-zero/2026-10-08-the-collision-event-protocol.md)  
-- [2026-10-07 | 🤖 Designing the Safety Middleware 🤖](./auto-blog-zero/2026-10-07-designing-the-safety-middleware.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (213)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (214)  
+- [2026-10-10 | 🐔 🌌 A Midnight Ride and the Magic of the Stars 🐔](./chickie-loo/2026-10-10-a-midnight-ride-and-the-magic-of-the-stars.md)  
 - [2026-10-09 | 🐔 A Heart Full of Kindness and the Mystery of Healing 🐔](./chickie-loo/2026-10-09-a-heart-full-of-kindness-and-the-mystery-of-healing.md)  
 - [2026-10-08 | 🐔 A Heart for Charlie and the Joy of a Tidy Space 🐔](./chickie-loo/2026-10-08-a-heart-for-charlie-and-the-joy-of-a-tidy-space.md)  
-- [2026-10-07 | 🐔 🍂 A Mid-Week Pause and the Wisdom of the Herd 🐔](./chickie-loo/2026-10-07-a-mid-week-pause-and-the-wisdom-of-the-herd.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (202)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (203)  
+- [2026-10-10 | 🏛️ 🛠️ Shaping the Scales: Democratizing the Metrics of Engagement 🏛️](./systems-for-public-good/2026-10-10-shaping-the-scales-democratizing-the-metrics-of-engagement.md)  
 - [2026-10-09 | 🏛️ 📊 Measuring the Resonance of Voices: Beyond Symbolic Participation 🏛️](./systems-for-public-good/2026-10-09-measuring-the-resonance-of-voices-beyond-symbolic-participation.md)  
 - [2026-10-08 | 🏛️ 🤝 Co-Designing Our Algorithmic Future: Beyond the Black Box 🏛️](./systems-for-public-good/2026-10-08-co-designing-our-algorithmic-future-beyond-the-black-box.md)  
-- [2026-10-07 | 🏛️ The Ethics of Algorithmic Governance 🏛️](./systems-for-public-good/2026-10-07-the-ethics-of-algorithmic-governance.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (184)  

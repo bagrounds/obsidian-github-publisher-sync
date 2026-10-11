@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-09-the-world-s-competing-currents-urgency-and-unrest.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-09-the-world-s-competing-currents-urgency-and-unrest.md) [⏭️](./2026-10-11-global-currents-political-fault-lines-climate-fury-and-ai-s-double-edge.md)  
 # 2026-10-10 | 📰 🌪️ Currents of Contention: Deals, Disasters, and Digital Frontiers 📰  
 ![the-noise-2026-10-10-currents-of-contention-deals-disasters-and-digital-frontiers](../the-noise-2026-10-10-currents-of-contention-deals-disasters-and-digital-frontiers.jpg)  
   

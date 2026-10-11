@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/CgWIxbB8f28
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️🗳️⚔️ Brooks and Capehart on the fight for Senate control in battleground states  
@@ -41,7 +45,7 @@ youtube: https://youtu.be/CgWIxbB8f28
   
 ### ↔️ Similar  
   
-* 📖 The book Uncivil Agreement by Lilliana Mason explores how political polarization and partisanship have become deeply tied to social identity.  
+* 📖 The book [😠🎭 Uncivil Agreement: How Politics Became Our Identity](../books/uncivil-agreement-how-politics-became-our-identity.md) by Lilliana Mason explores how political polarization and partisanship have become deeply tied to social identity.  
   
 ### 🆚 Contrasting  
   

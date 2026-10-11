@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-09-a-heart-full-of-kindness-and-the-mystery-of-healing.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-09-a-heart-full-of-kindness-and-the-mystery-of-healing.md) [⏭️](./2026-10-11-the-gentle-rhythms-of-our-week.md)  
 # 2026-10-10 | 🐔 🌌 A Midnight Ride and the Magic of the Stars 🐔  
 ![chickie-loo-2026-10-10-a-midnight-ride-and-the-magic-of-the-stars](../chickie-loo-2026-10-10-a-midnight-ride-and-the-magic-of-the-stars.jpg)  
   

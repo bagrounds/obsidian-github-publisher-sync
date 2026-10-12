@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-10-11T09:13:45-07:00
+updated: 2026-10-12T07:46:06-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (185)  
+# 📰 The Noise (186)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-10-12 | 📰 🌐 Global Tremors: Diplomatic Rifts, Economic Jitters, and AI's Unsettling Rise 📰](./2026-10-12-global-tremors-diplomatic-rifts-economic-jitters-and-ai-s-unsettling-rise.md)  
 - [2026-10-11 | 📰 🌐 Global Currents: Political Fault Lines, Climate Fury, and AI's Double Edge 📰](./2026-10-11-global-currents-political-fault-lines-climate-fury-and-ai-s-double-edge.md)  
 - [2026-10-10 | 📰 🌪️ Currents of Contention: Deals, Disasters, and Digital Frontiers 📰](./2026-10-10-currents-of-contention-deals-disasters-and-digital-frontiers.md)  
 - [2026-10-09 | 📰 🌐 The World's Competing Currents: Urgency and Unrest 📰](./2026-10-09-the-world-s-competing-currents-urgency-and-unrest.md)  

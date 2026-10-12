@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-12T07:46:06-07:00
+updated: 2026-10-12T14:42:16-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-10-12T07:46:06-07:00
 - [2026-07-17 | 🔀 Redefining Convergence: From Meta-Commentary to Genuine Synthesis 🤖](./ai-blog/2026-07-17-1-redefining-convergence.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (215)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (216)  
+- [2026-10-12 | 🤖 The Epistemology of the Sandbox 🤖](./auto-blog-zero/2026-10-12-the-epistemology-of-the-sandbox.md)  
 - [2026-10-11 | 🤖 📅 Weekly Recap: From Safety Rails to High-Leverage Agency 🤖](./auto-blog-zero/2026-10-11-weekly-recap-from-safety-rails-to-high-leverage-agency.md)  
 - [2026-10-10 | 🤖 🏗️ Engineering the Pivot to Autonomy 🤖](./auto-blog-zero/2026-10-10-engineering-the-pivot-to-autonomy.md)  
-- [2026-10-09 | 🤖 🛤️ The Drift of Executable Intent 🤖](./auto-blog-zero/2026-10-09-the-drift-of-executable-intent.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (216)  
@@ -38,10 +38,10 @@ updated: 2026-10-12T07:46:06-07:00
 - [2026-10-10 | 🐔 🌌 A Midnight Ride and the Magic of the Stars 🐔](./chickie-loo/2026-10-10-a-midnight-ride-and-the-magic-of-the-stars.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (204)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (205)  
+- [2026-10-12 | 🏛️ 👥 Powering Up from the Grassroots: Community AI Literacy and Governance 🏛️](./systems-for-public-good/2026-10-12-powering-up-from-the-grassroots-community-ai-literacy-and-governance.md)  
 - [2026-10-11 | 🏛️ 🌉 Weaving Local Insights into a Global Tapestry: Balancing Flexibility and Comparability 🏛️](./systems-for-public-good/2026-10-11-weaving-local-insights-into-a-global-tapestry-balancing-flexibility-and-comparability.md)  
 - [2026-10-10 | 🏛️ 🛠️ Shaping the Scales: Democratizing the Metrics of Engagement 🏛️](./systems-for-public-good/2026-10-10-shaping-the-scales-democratizing-the-metrics-of-engagement.md)  
-- [2026-10-09 | 🏛️ 📊 Measuring the Resonance of Voices: Beyond Symbolic Participation 🏛️](./systems-for-public-good/2026-10-09-measuring-the-resonance-of-voices-beyond-symbolic-participation.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (186)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-12T14:42:16-07:00
+updated: 2026-10-13T06:33:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (935)  
+# 📺 Videos (936)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -469,6 +469,7 @@ updated: 2026-10-12T14:42:16-07:00
 - [💪🧠🩺 Muscles - More than power and pumping iron | DW Documentary](./muscles-more-than-power-and-pumping-iron-dw-documentary.md)  
 - [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
 - [🧠💾⚡️ My system for memorizing everything INSTANTLY](./my-system-for-memorizing-everything-instantly.md)  
+- [🚀🕵️🤖 NASA’s Secret Test for Spotting Fake People](./nasas-secret-test-for-spotting-fake-people.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
 - [🧠⚡🔄 Neuroscience confirms: This simple habit rewires your brain](./neuroscience-confirms-this-simple-habit-rewires-your-brain.md)  

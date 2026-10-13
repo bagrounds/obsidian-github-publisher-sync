@@ -5,11 +5,13 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-10-11T09:13:45-07:00
+updated: 2026-10-12T14:42:16-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (87)  
+# 💑 Relationship Miniseries (89)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-10-12 | 💑 🔬 The Science: The Relational Apocalypse 🐎 💑](./2026-10-12-the-science-the-relational-apocalypse.md)  
+- [2026-10-11 | 💑 The Blended Self 💑](./2026-10-11-the-blended-self.md)  
 - [2026-10-10 | 💑 Redrawing the Map 💑](./2026-10-10-redrawing-the-map.md)  
 - [2026-10-09 | 💑 The Unspoken Divide 💑](./2026-10-09-the-unspoken-divide.md)  
 - [2026-10-08 | 💑 Cracks in the Facade 💑](./2026-10-08-cracks-in-the-facade.md)  

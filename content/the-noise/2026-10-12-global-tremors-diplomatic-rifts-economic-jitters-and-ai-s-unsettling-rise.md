@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-11-global-currents-political-fault-lines-climate-fury-and-ai-s-double-edge.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-11-global-currents-political-fault-lines-climate-fury-and-ai-s-double-edge.md) [⏭️](./2026-10-13-the-world-s-shifting-sands-diplomacy-debt-and-digital-dissonance.md)  
 # 2026-10-12 | 📰 🌐 Global Tremors: Diplomatic Rifts, Economic Jitters, and AI's Unsettling Rise 📰  
 ![the-noise-2026-10-12-global-tremors-diplomatic-rifts-economic-jitters-and-ai-s-unsettling-rise](../the-noise-2026-10-12-global-tremors-diplomatic-rifts-economic-jitters-and-ai-s-unsettling-rise.jpg)  
   

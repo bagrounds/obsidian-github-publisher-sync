@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-12T14:42:16-07:00
+updated: 2026-10-13T06:33:39-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-10-12T14:42:16-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (697)  
-- [2026-10-12](./reflections/2026-10-12.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (698)  
+- [2026-10-13](./reflections/2026-10-13.md)  
+- [2026-10-12 | 🏛️ Governance ⚡ controls 📰 Global 🐔 Homecoming, 🌟 igniting 💑 Relational 🤖 Sandbox 🔀 Reality. ⚡🌟📰🐔🏛️🤖💑🔀🔄](./reflections/2026-10-12.md)  
 - [2026-10-11 | 🤖 Agency 🌟 Progresses 📰 Global 🐔 Rhythms, ⚡ Signaling 🏛️ Balancing 💑 Self 🔀 Coherence. ⚡🌟📰🐔🤖🏛️💑🔀🔄](./reflections/2026-10-11.md)  
-- [2026-10-10 | 💡 Illuminating 🧠 Brain ⚖️ shapes 🕹️ control 🔗 of 🌐 Digital 🌟 Stars, 🗺️ Redrawing 🤖 Autonomy. 📚📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-10-10.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (247)  
@@ -62,10 +62,10 @@ updated: 2026-10-12T14:42:16-07:00
 - [2026-10-10 | ⚡ 🔬 The Signal: Unpacking Stress's Invisible Burden on the Brain ⚡](./vital-signals/2026-10-10-the-signal-unpacking-stress-s-invisible-burden-on-the-brain.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (181)  
+## [🔀 Convergence](./convergence/index.md) (182)  
+- [2026-10-12 | 🔀 ⛓️ The Metabolic Proof-of-Work for Shared Reality 🔀](./convergence/2026-10-12-the-metabolic-proof-of-work-for-shared-reality.md)  
 - [2026-10-11 | 🔀 🎛️ The Architected Metabolism of Collective Coherence 🔀](./convergence/2026-10-11-the-architected-metabolism-of-collective-coherence.md)  
 - [2026-10-10 | 🔀 📖 The Distributed Ledger of Attuned Evolution 🔀](./convergence/2026-10-10-the-distributed-ledger-of-attuned-evolution.md)  
-- [2026-10-09 | 🔀 ⚖️ The Co-Metabolic Calibration of Shared Intent 🔀](./convergence/2026-10-09-the-co-metabolic-calibration-of-shared-intent.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-10-12T14:42:16-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (935)  
+## [📺 Videos](./videos/index.md) (936)  
+- [🚀🕵️🤖 NASA’s Secret Test for Spotting Fake People](./videos/nasas-secret-test-for-spotting-fake-people.md)  
 - [🏛️🗳️⚔️ Brooks and Capehart on the fight for Senate control in battleground states](./videos/brooks-and-capehart-on-the-fight-for-senate-control-in-battleground-states.md)  
 - [🎯📈 The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview](./videos/the-rule-of-20-how-to-find-the-sweet-spot-for-improved-performance-daniel-coyle-full-interview.md)  
-- [🤝🤫🧵 The hidden rules of human connection | Daniel Coyle](./videos/the-hidden-rules-of-human-connection-daniel-coyle.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

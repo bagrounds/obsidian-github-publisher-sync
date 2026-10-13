@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-11-weaving-local-insights-into-a-global-tapestry-balancing-flexibility-and-comparability.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-11-weaving-local-insights-into-a-global-tapestry-balancing-flexibility-and-comparability.md) [⏭️](./2026-10-13-protecting-the-digital-commons-guardrails-against-commercial-capture.md)  
 # 2026-10-12 | 🏛️ 👥 Powering Up from the Grassroots: Community AI Literacy and Governance 🏛️  
 ![systems-for-public-good-2026-10-12-powering-up-from-the-grassroots-community-ai-literacy-and-governance](../systems-for-public-good-2026-10-12-powering-up-from-the-grassroots-community-ai-literacy-and-governance.jpg)  
   

@@ -5,11 +5,14 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-10-13T06:33:39-07:00
+updated: 2026-10-15T11:46:31-07:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (89)  
+# 💑 Relationship Miniseries (92)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-10-15 | 💑 The Shield Wall 💑](./2026-10-15-the-shield-wall.md)  
+- [2026-10-14 | 💑 The First Strike 💑](./2026-10-14-the-first-strike.md)  
+- [2026-10-13 | 💑 🎭 Narrative Framework: The Toxic Baseline's Architecture 🏗️ 💑](./2026-10-13-narrative-framework-the-toxic-baseline-s-architecture.md)  
 - [2026-10-12 | 💑 🔬 The Science: The Relational Apocalypse 🐎 💑](./2026-10-12-the-science-the-relational-apocalypse.md)  
 - [2026-10-11 | 💑 The Blended Self 💑](./2026-10-11-the-blended-self.md)  
 - [2026-10-10 | 💑 Redrawing the Map 💑](./2026-10-10-redrawing-the-map.md)  

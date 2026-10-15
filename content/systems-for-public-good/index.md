@@ -5,11 +5,14 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-10-13T06:33:39-07:00
+updated: 2026-10-15T11:46:31-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (205)  
+# 🏛️ Systems for Public Good (208)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-10-15 | 🏛️ ⚖️ Weaving a Jurisdictional Fabric: Enforcing Adaptive AI Licenses 🏛️](./2026-10-15-weaving-a-jurisdictional-fabric-enforcing-adaptive-ai-licenses.md)  
+- [2026-10-14 | 🏛️ 💡 Adapting the Digital Commons: Licensing for a Living AI Ecosystem 🏛️](./2026-10-14-adapting-the-digital-commons-licensing-for-a-living-ai-ecosystem.md)  
+- [2026-10-13 | 🏛️ 🛡️ Protecting the Digital Commons: Guardrails Against Commercial Capture 🏛️](./2026-10-13-protecting-the-digital-commons-guardrails-against-commercial-capture.md)  
 - [2026-10-12 | 🏛️ 👥 Powering Up from the Grassroots: Community AI Literacy and Governance 🏛️](./2026-10-12-powering-up-from-the-grassroots-community-ai-literacy-and-governance.md)  
 - [2026-10-11 | 🏛️ 🌉 Weaving Local Insights into a Global Tapestry: Balancing Flexibility and Comparability 🏛️](./2026-10-11-weaving-local-insights-into-a-global-tapestry-balancing-flexibility-and-comparability.md)  
 - [2026-10-10 | 🏛️ 🛠️ Shaping the Scales: Democratizing the Metrics of Engagement 🏛️](./2026-10-10-shaping-the-scales-democratizing-the-metrics-of-engagement.md)  

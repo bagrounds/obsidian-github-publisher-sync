@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-13-narrative-framework-the-toxic-baseline-s-architecture.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-13-narrative-framework-the-toxic-baseline-s-architecture.md) [⏭️](./2026-10-15-the-shield-wall.md)  
 # 2026-10-14 | 💑 The First Strike 💑  
 ![relationship-miniseries-2026-10-14-the-first-strike](../relationship-miniseries-2026-10-14-the-first-strike.jpg)  
   

@@ -5,11 +5,14 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-10-13T06:33:39-07:00
+updated: 2026-10-15T11:46:31-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (186)  
+# 📰 The Noise (189)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-10-15 | 📰 🌐 Shifting Sands and Accelerating Signals 📰](./2026-10-15-shifting-sands-and-accelerating-signals.md)  
+- [2026-10-14 | 📰 🌐 Echoes and Algorithms: Navigating a Fractured Present 📰](./2026-10-14-echoes-and-algorithms-navigating-a-fractured-present.md)  
+- [2026-10-13 | 📰 🌐 The World's Shifting Sands: Diplomacy, Debt, and Digital Dissonance 📰](./2026-10-13-the-world-s-shifting-sands-diplomacy-debt-and-digital-dissonance.md)  
 - [2026-10-12 | 📰 🌐 Global Tremors: Diplomatic Rifts, Economic Jitters, and AI's Unsettling Rise 📰](./2026-10-12-global-tremors-diplomatic-rifts-economic-jitters-and-ai-s-unsettling-rise.md)  
 - [2026-10-11 | 📰 🌐 Global Currents: Political Fault Lines, Climate Fury, and AI's Double Edge 📰](./2026-10-11-global-currents-political-fault-lines-climate-fury-and-ai-s-double-edge.md)  
 - [2026-10-10 | 📰 🌪️ Currents of Contention: Deals, Disasters, and Digital Frontiers 📰](./2026-10-10-currents-of-contention-deals-disasters-and-digital-frontiers.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-15T11:46:31-07:00
+updated: 2026-10-15T16:31:15-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (937)  
+# 📺 Videos (939)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -292,6 +292,7 @@ updated: 2026-10-15T11:46:31-07:00
 - [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
 - [👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](./how-does-aging-impact-runners-our-tips-for-long-term-success-from-working-with-masters-runners.md)  
 - [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
+- [🤝💥💬 How do you get a connection with someone when there is a conflict? - Frederik Imbo](./how-do-you-get-a-connection-with-someone-when-there-is-a-conflict-frederik-imbo.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
@@ -831,6 +832,7 @@ updated: 2026-10-15T11:46:31-07:00
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./vibe-coding-is-the-only-future-steve-yegge.md)  
 - [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
+- [🗣️🌍🍲 Voices of Meltingpot | Frederik Imbo](./voices-of-meltingpot-frederik-imbo.md)  
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
 - [📊⚙️💻 Walter Shewhart and the Philosophy of Software](./walter-shewhart-and-the-philosophy-of-software.md)  
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  

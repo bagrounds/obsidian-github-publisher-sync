@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-13T06:33:39-07:00
+updated: 2026-10-15T11:46:31-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (182)  
+# 🔀 Convergence (184)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-14 | 🔀 💡 The Cognitive Crucible of Attested Internal Struggle 🔀](./2026-10-14-the-cognitive-crucible-of-attested-internal-struggle.md)  
+- [2026-10-13 | 🔀 💡 The Metabolic Circuit Breaker for Collective Truth 🔀](./2026-10-13-the-metabolic-circuit-breaker-for-collective-truth.md)  
 - [2026-10-12 | 🔀 ⛓️ The Metabolic Proof-of-Work for Shared Reality 🔀](./2026-10-12-the-metabolic-proof-of-work-for-shared-reality.md)  
 - [2026-10-11 | 🔀 🎛️ The Architected Metabolism of Collective Coherence 🔀](./2026-10-11-the-architected-metabolism-of-collective-coherence.md)  
 - [2026-10-10 | 🔀 📖 The Distributed Ledger of Attuned Evolution 🔀](./2026-10-10-the-distributed-ledger-of-attuned-evolution.md)  

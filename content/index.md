@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-15T11:46:31-07:00
+updated: 2026-10-15T16:31:15-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-10-15T11:46:31-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (937)  
+## [📺 Videos](./videos/index.md) (939)  
+- [🤝💥💬 How do you get a connection with someone when there is a conflict? - Frederik Imbo](./videos/how-do-you-get-a-connection-with-someone-when-there-is-a-conflict-frederik-imbo.md)  
+- [🗣️🌍🍲 Voices of Meltingpot | Frederik Imbo](./videos/voices-of-meltingpot-frederik-imbo.md)  
 - [🛡️🧘‍♂️ How not to take things personally? | Frederik Imbo | TEDxMechelen](./videos/how-not-to-take-things-personally-frederik-imbo-tedxmechelen.md)  
-- [🚀🕵️🤖 NASA’s Secret Test for Spotting Fake People](./videos/nasas-secret-test-for-spotting-fake-people.md)  
-- [🏛️🗳️⚔️ Brooks and Capehart on the fight for Senate control in battleground states](./videos/brooks-and-capehart-on-the-fight-for-senate-control-in-battleground-states.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

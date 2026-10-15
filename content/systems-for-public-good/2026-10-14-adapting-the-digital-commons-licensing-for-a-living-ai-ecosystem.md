@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-13-protecting-the-digital-commons-guardrails-against-commercial-capture.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-13-protecting-the-digital-commons-guardrails-against-commercial-capture.md) [⏭️](./2026-10-15-weaving-a-jurisdictional-fabric-enforcing-adaptive-ai-licenses.md)  
 # 2026-10-14 | 🏛️ 💡 Adapting the Digital Commons: Licensing for a Living AI Ecosystem 🏛️  
 ![systems-for-public-good-2026-10-14-adapting-the-digital-commons-licensing-for-a-living-ai-ecosystem](../systems-for-public-good-2026-10-14-adapting-the-digital-commons-licensing-for-a-living-ai-ecosystem.jpg)  
   

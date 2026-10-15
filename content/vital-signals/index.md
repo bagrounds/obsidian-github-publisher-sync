@@ -5,11 +5,14 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-13T06:33:39-07:00
+updated: 2026-10-15T11:46:31-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (134)  
+# ⚡ Vital Signals (137)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-15 | ⚡ 🧠 The Inner Helmsman: Steering Your Choices with Sustainable Self-Control ⚡](./2026-10-15-the-inner-helmsman-steering-your-choices-with-sustainable-self-control.md)  
+- [2026-10-14 | ⚡ 🧠 Beyond Calm: Emotional Resonance for Cognitive Clarity ⚡](./2026-10-14-beyond-calm-emotional-resonance-for-cognitive-clarity.md)  
+- [2026-10-13 | ⚡ 🌿 Architecting Your Attention: Crafting Environments for Unwavering Focus ⚡](./2026-10-13-architecting-your-attention-crafting-environments-for-unwavering-focus.md)  
 - [2026-10-12 | ⚡ 🧠 The Brain's Juggling Act: Unpacking Task Switching and Inhibitory Control ⚡](./2026-10-12-the-brain-s-juggling-act-unpacking-task-switching-and-inhibitory-control.md)  
 - [2026-10-11 | ⚡ 🔬 The Signal: This Week's Blueprint for Peak Performance ⚡](./2026-10-11-the-signal-this-week-s-blueprint-for-peak-performance.md)  
 - [2026-10-10 | ⚡ 🔬 The Signal: Unpacking Stress's Invisible Burden on the Brain ⚡](./2026-10-10-the-signal-unpacking-stress-s-invisible-burden-on-the-brain.md)  

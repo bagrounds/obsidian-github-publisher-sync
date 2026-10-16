@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-14-echoes-and-algorithms-navigating-a-fractured-present.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-14-echoes-and-algorithms-navigating-a-fractured-present.md) [⏭️](./2026-10-16-fractured-futures-navigating-shifting-grounds.md)  
 # 2026-10-15 | 📰 🌐 Shifting Sands and Accelerating Signals 📰  
 ![the-noise-2026-10-15-shifting-sands-and-accelerating-signals](../the-noise-2026-10-15-shifting-sands-and-accelerating-signals.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-14-a-night-of-celebration-and-a-new-name-for-luna.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-14-a-night-of-celebration-and-a-new-name-for-luna.md) [⏭️](./2026-10-16-the-breath-of-autumn-and-the-quiet-joy-of-home.md)  
 # 2026-10-15 | 🐔 🐄 A Day of Lessons, From the Pasture to the Pond 🐔  
 ![chickie-loo-2026-10-15-a-day-of-lessons-from-the-pasture-to-the-pond](../chickie-loo-2026-10-15-a-day-of-lessons-from-the-pasture-to-the-pond.jpg)  
   

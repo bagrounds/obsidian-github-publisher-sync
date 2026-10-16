@@ -9,6 +9,10 @@ Platform:
 Channel: Imboorling
 tags:
 youtube: https://youtu.be/NEivTMn5Tgw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-15T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤝💥💬 How do you get a connection with someone when there is a conflict? - Frederik Imbo  
@@ -53,10 +57,10 @@ youtube: https://youtu.be/NEivTMn5Tgw
   
 ### 🆚 Contrasting  
   
-* 📕 Crucial Conversations Tools for Talking When Stakes Are High by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler focuses on dialogue control and high stakes negotiation strategies in high pressure environments.  
+* 📕 [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](../books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) Tools for Talking When Stakes Are High by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler focuses on dialogue control and high stakes negotiation strategies in high pressure environments.  
 * 🎯 Getting to Yes Negotiating Agreement Without Giving In by Roger Fisher and William Ury outlines interest based bargaining and objective criteria to resolve disputes strategically.  
   
 ### 🎨 Creatively Related  
   
-* 📗 Difficult Conversations How to Discuss What Matters Most by Douglas Stone, Bruce Patton, and Sheila Heen analyzes the underlying structural layers, emotional assumptions, and identity threats present in difficult interactions.  
+* 📗 [💬😬 Difficult Conversations: How to Discuss What Matters Most](../books/difficult-conversations-how-to-discuss-what-matters-most.md) How to Discuss What Matters Most by Douglas Stone, Bruce Patton, and Sheila Heen analyzes the underlying structural layers, emotional assumptions, and identity threats present in difficult interactions.  
 * 🧠 Stone Age Rules Human Nature and the Evolution of Communication by Robin Dunbar examines how evolutionary social bonds and brain biology shape human verbal interaction.

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-13-the-metabolic-circuit-breaker-for-collective-truth.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-13-the-metabolic-circuit-breaker-for-collective-truth.md) [⏭️](./2026-10-15-the-calibrated-interface-of-co-metabolic-attunement.md)  
 # 2026-10-14 | 🔀 💡 The Cognitive Crucible of Attested Internal Struggle 🔀  
 ![convergence-2026-10-14-the-cognitive-crucible-of-attested-internal-struggle](../convergence-2026-10-14-the-cognitive-crucible-of-attested-internal-struggle.jpg)  
   

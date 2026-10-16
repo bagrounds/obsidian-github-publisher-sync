@@ -9,6 +9,10 @@ Platform:
 Channel: Meltingpot
 tags:
 youtube: https://youtu.be/3D_hXl9QxWA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-15T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️🌍🍲 Voices of Meltingpot | Frederik Imbo  
@@ -49,7 +53,7 @@ youtube: https://youtu.be/3D_hXl9QxWA
   
 ### 🆚 Contrasting  
   
-* 🏢 Crucial Conversations by Joseph Grenny, Kerry Patterson, Ron McMillan, Al Switzler, and Emily Gregory outlines tactical frameworks for managing high-stakes dialogue when emotions run strong and immediate external alignment is necessary.  
+* 🏢 [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](../books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Joseph Grenny, Kerry Patterson, Ron McMillan, Al Switzler, and Emily Gregory outlines tactical frameworks for managing high-stakes dialogue when emotions run strong and immediate external alignment is necessary.  
   
 ### 🎨 Creatively Related  
   

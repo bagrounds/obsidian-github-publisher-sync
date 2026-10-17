@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-15-a-day-of-lessons-from-the-pasture-to-the-pond.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-15-a-day-of-lessons-from-the-pasture-to-the-pond.md) [⏭️](./2026-10-17-chasing-the-chill-and-celebrating-small-victories.md)  
 # 2026-10-16 | 🐔 The Breath of Autumn and the Quiet Joy of Home 🐔  
 ![chickie-loo-2026-10-16-the-breath-of-autumn-and-the-quiet-joy-of-home](../chickie-loo-2026-10-16-the-breath-of-autumn-and-the-quiet-joy-of-home.jpg)  
   

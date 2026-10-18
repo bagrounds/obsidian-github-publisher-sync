@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-16-fractured-futures-navigating-shifting-grounds.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-16-fractured-futures-navigating-shifting-grounds.md) [⏭️](./2026-10-18-the-week-s-whirlwind-navigating-shifting-grounds-and-emerging-fault-lines.md)  
 # 2026-10-17 | 📰 The Daily Roar: Navigating Conflict, Climate, and the AI Frontier 📰  
 ![the-noise-2026-10-17-the-daily-roar-navigating-conflict-climate-and-the-ai-frontier](../the-noise-2026-10-17-the-daily-roar-navigating-conflict-climate-and-the-ai-frontier.jpg)  
   

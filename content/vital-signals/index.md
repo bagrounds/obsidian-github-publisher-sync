@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-18T08:30:10-07:00
+updated: 2026-10-19T07:12:00-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (140)  
+# ⚡ Vital Signals (141)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-19 | ⚡ The Brain's Natural Tides: Riding Ultradian Rhythms for Sustained Focus ⚡](./2026-10-19-the-brain-s-natural-tides-riding-ultradian-rhythms-for-sustained-focus.md)  
 - [2026-10-18 | ⚡ ⚙️ The Architecture of Attention: Building Systems for Effortless Focus and Discipline ⚡](./2026-10-18-the-architecture-of-attention-building-systems-for-effortless-focus-and-discipline.md)  
 - [2026-10-17 | ⚡ 🎢 Lowering the Launchpad: Architecting Habits for Zero Resistance ⚡](./2026-10-17-lowering-the-launchpad-architecting-habits-for-zero-resistance.md)  
 - [2026-10-16 | ⚡ ⚙️ The Autopilot Advantage: Building Unshakeable Routines for Effortless Discipline ⚡](./2026-10-16-the-autopilot-advantage-building-unshakeable-routines-for-effortless-discipline.md)  

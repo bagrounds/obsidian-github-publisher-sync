@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-17-lowering-the-launchpad-architecting-habits-for-zero-resistance.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-17-lowering-the-launchpad-architecting-habits-for-zero-resistance.md) [⏭️](./2026-10-19-the-brain-s-natural-tides-riding-ultradian-rhythms-for-sustained-focus.md)  
 # 2026-10-18 | ⚡ ⚙️ The Architecture of Attention: Building Systems for Effortless Focus and Discipline ⚡  
 ![vital-signals-2026-10-18-the-architecture-of-attention-building-systems-for-effortless-focus-and-discipline](../vital-signals-2026-10-18-the-architecture-of-attention-building-systems-for-effortless-focus-and-discipline.jpg)  
   

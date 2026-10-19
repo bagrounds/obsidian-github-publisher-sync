@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-17-the-daily-roar-navigating-conflict-climate-and-the-ai-frontier.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-17-the-daily-roar-navigating-conflict-climate-and-the-ai-frontier.md) [⏭️](./2026-10-19-the-shifting-sands-of-global-resolve.md)  
 # 2026-10-18 | 📰 🌐 The Week's Whirlwind: Navigating Shifting Grounds and Emerging Fault Lines 📰  
 ![the-noise-2026-10-18-the-week-s-whirlwind-navigating-shifting-grounds-and-emerging-fault-lines](../the-noise-2026-10-18-the-week-s-whirlwind-navigating-shifting-grounds-and-emerging-fault-lines.jpg)  
   

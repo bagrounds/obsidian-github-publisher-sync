@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-10-18T08:30:10-07:00
+updated: 2026-10-19T07:12:00-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (210)  
+# 🏛️ Systems for Public Good (211)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-10-18 | 🏛️ ✊ Safeguarding Digital Sovereignty: Preventing New Forms of Colonialism 🏛️](./2026-10-18-safeguarding-digital-sovereignty-preventing-new-forms-of-colonialism.md)  
 - [2026-10-17 | 🏛️ 🌉 Bridging the Digital Divide for Equitable AI Governance 🏛️](./2026-10-17-bridging-the-digital-divide-for-equitable-ai-governance.md)  
 - [2026-10-16 | 🏛️ 🔗 Forging Decentralized Foundations: Community-Driven Legal Infrastructure for AI 🏛️](./2026-10-16-forging-decentralized-foundations-community-driven-legal-infrastructure-for-ai.md)  
 - [2026-10-15 | 🏛️ ⚖️ Weaving a Jurisdictional Fabric: Enforcing Adaptive AI Licenses 🏛️](./2026-10-15-weaving-a-jurisdictional-fabric-enforcing-adaptive-ai-licenses.md)  

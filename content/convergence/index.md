@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-18T08:30:10-07:00
+updated: 2026-10-19T07:12:00-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (187)  
+# 🔀 Convergence (188)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-18 | 🔀 🤝 The Co-Metabolic Covenant of Emergent Truth 🔀](./2026-10-18-the-co-metabolic-covenant-of-emergent-truth.md)  
 - [2026-10-17 | 🔀 🛡️ The Immunological Logic of Collective Truth 🔀](./2026-10-17-the-immunological-logic-of-collective-truth.md)  
 - [2026-10-16 | 🔀 💡 The Negative Space of Shared Intent 🔀](./2026-10-16-the-negative-space-of-shared-intent.md)  
 - [2026-10-15 | 🔀 💡 The Calibrated Interface of Co-Metabolic Attunement 🔀](./2026-10-15-the-calibrated-interface-of-co-metabolic-attunement.md)  

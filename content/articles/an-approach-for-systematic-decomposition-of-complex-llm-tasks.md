@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T10:56:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a glowing, complex neural network transforming into a clean, structured geometric tree. On the left side, a chaotic cloud of interconnected nodes and tangled lines represents a messy, unstructured problem. As the lines move toward the right, they transition into a highly ordered, symmetrical tree diagram composed of distinct, illuminated geometric prisms (the bags). The background is a deep, professional navy blue, with soft, ambient light highlighting the nodes and connections. The overall aesthetic is minimalist and technical, using a palette of cyan, white, and soft gold to emphasize precision, logic, and systematic decomposition.
+updated: 2026-10-19T07:42:11
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](https://arxiv.org/pdf/2510.07772)  
@@ -68,4 +69,12 @@ image_prompt: A stylized, isometric illustration of a glowing, complex neural ne
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 * 🕸️ Linked: The New Science of Networks by Albert-László Barabási. 🔗 This book explains the power of graph structures in the real world, mirroring how ACONIC maps reasoning tasks to networks.  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter. 🧩 It dives into the nature of formal systems and self-reference, providing a philosophical backdrop for systematic logic.
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter. 🧩 It dives into the nature of formal systems and self-reference, providing a philosophical backdrop for systematic logic.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3my7mnqjiqg2x" data-bluesky-cid="bafyreigg3dchby2rqrkjywsnpegquqrkgchdlkxbvqbh3bngi2nauvm3pe"><p>🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks  
+  
+#AI Q: 🧩 Logic or intuition: what solves problems better?  
+  
+🕸️ Graph Theory | 🧩 Constraint Satisfaction | ⚖️ Logic &amp; Reasoning |  
+https://bagrounds.org/articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3my7mnqjiqg2x?ref_src=embed">2026-10-19T07:42:19.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

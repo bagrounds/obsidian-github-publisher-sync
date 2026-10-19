@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-17-bridging-the-digital-divide-for-equitable-ai-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-17-bridging-the-digital-divide-for-equitable-ai-governance.md) [⏭️](./2026-10-19-fueling-local-flourishing-economic-models-for-digital-autonomy.md)  
 # 2026-10-18 | 🏛️ ✊ Safeguarding Digital Sovereignty: Preventing New Forms of Colonialism 🏛️  
 ![systems-for-public-good-2026-10-18-safeguarding-digital-sovereignty-preventing-new-forms-of-colonialism](../systems-for-public-good-2026-10-18-safeguarding-digital-sovereignty-preventing-new-forms-of-colonialism.jpg)  
   

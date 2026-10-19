@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-17-chasing-the-chill-and-celebrating-small-victories.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-17-chasing-the-chill-and-celebrating-small-victories.md) [⏭️](./2026-10-19-the-glow-of-eyes-in-the-dark-and-the-march-of-the-seasons.md)  
 # 2026-10-18 | 🐔 🍂 A Sunday of Small Victories and Simple Joys 🐔  
 ![chickie-loo-2026-10-18-a-sunday-of-small-victories-and-simple-joys](../chickie-loo-2026-10-18-a-sunday-of-small-victories-and-simple-joys.jpg)  
   

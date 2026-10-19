@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-17-the-great-silence.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-17-the-great-silence.md) [⏭️](./2026-10-19-the-circuit-breaker.md)  
 # 2026-10-18 | 💑 The Toxic Baseline 💑  
 ![relationship-miniseries-2026-10-18-the-toxic-baseline](../relationship-miniseries-2026-10-18-the-toxic-baseline.jpg)  
   

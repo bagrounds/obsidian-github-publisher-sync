@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-17-the-immunological-logic-of-collective-truth.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-17-the-immunological-logic-of-collective-truth.md) [⏭️](./2026-10-19-the-distributed-ledger-of-attuned-agentic-investment.md)  
 # 2026-10-18 | 🔀 🤝 The Co-Metabolic Covenant of Emergent Truth 🔀  
 ![convergence-2026-10-18-the-co-metabolic-covenant-of-emergent-truth](../convergence-2026-10-18-the-co-metabolic-covenant-of-emergent-truth.jpg)  
   

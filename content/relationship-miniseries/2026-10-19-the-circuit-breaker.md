@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-18-the-toxic-baseline.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-18-the-toxic-baseline.md) [⏭️](./2026-10-20-narrative-framework-forging-the-lifeline.md)  
 # 2026-10-19 | 💑 🔬 The Circuit Breaker 🩹 💑  
 ![relationship-miniseries-2026-10-19-the-circuit-breaker](../relationship-miniseries-2026-10-19-the-circuit-breaker.jpg)  
   

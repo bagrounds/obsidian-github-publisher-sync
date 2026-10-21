@@ -5,11 +5,12 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-10-19T07:12:00-07:00
+updated: 2026-10-20T19:18:41-07:00
 ---
 [Home](../index.md)  
-# 🪞 Reflections (704)  
-- [2026-10-19](./2026-10-19.md)  
+# 🪞 Reflections (705)  
+- [2026-10-20](./2026-10-20.md)  
+- [2026-10-19 | 🤖 Agency 🐔 Marches 🌟 Collective 📰 Shifting 🏛️ Autonomy ⚡ Focus 💑 Breaker 🔀 Investment. ⚡🌟📰🤖🏛️🐔💑🔀🔄🤖🐲](./2026-10-19.md)  
 - [2026-10-18 | ⚡ Focusing 🌟 Collective 🐔 Joys, 🤖 Designing 🔀 Truth, 🏛️ Preventing 💑 Toxic 📰 Shifting. ⚡🌟📰🤖🐔🏛️💑🔀🔄🤖🐲](./2026-10-18.md)  
 - [2026-10-17 | 📰 Navigating ⚡ Resistance, 🌟 Collective 🤖 Intuition 🏛️ Governance, 🐔 Small 💑 Silence, 🔀 Truth. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./2026-10-17.md)  
 - [2026-10-16 | ⚡ Building 🌟 Movement 📰 Grounds 🐔 Home 🏛️ Infrastructure 💑 Well 🤖 Intent 🔀 Space ⚡🌟📰🐔🏛️💑🤖🔀🔄🤖🐲](./2026-10-16.md)  

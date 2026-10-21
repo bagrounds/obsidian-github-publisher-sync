@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-18-a-sunday-of-small-victories-and-simple-joys.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-18-a-sunday-of-small-victories-and-simple-joys.md) [⏭️](./2026-10-20-the-song-of-the-weed-eater-and-the-joy-of-family.md)  
 # 2026-10-19 | 🐔 🌟 The Glow of Eyes in the Dark and the March of the Seasons 🐔  
 ![chickie-loo-2026-10-19-the-glow-of-eyes-in-the-dark-and-the-march-of-the-seasons](../chickie-loo-2026-10-19-the-glow-of-eyes-in-the-dark-and-the-march-of-the-seasons.jpg)  
   

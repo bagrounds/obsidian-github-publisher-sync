@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-21T06:25:57-07:00
+updated: 2026-10-21T07:36:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -44,16 +44,16 @@ updated: 2026-10-21T06:25:57-07:00
 - [2026-10-18 | 🏛️ ✊ Safeguarding Digital Sovereignty: Preventing New Forms of Colonialism 🏛️](./systems-for-public-good/2026-10-18-safeguarding-digital-sovereignty-preventing-new-forms-of-colonialism.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (194)  
+## [📰 The Noise](./the-noise/index.md) (195)  
+- [2026-10-21 | 📰 The Competing Realities of Progress and Peril 📰](./the-noise/2026-10-21-the-competing-realities-of-progress-and-peril.md)  
 - [2026-10-20 | 📰 🌐 The Unyielding Tides of Conflict and Innovation 📰](./the-noise/2026-10-20-the-unyielding-tides-of-conflict-and-innovation.md)  
 - [2026-10-19 | 📰 🌐 The Shifting Sands of Global Resolve 📰](./the-noise/2026-10-19-the-shifting-sands-of-global-resolve.md)  
-- [2026-10-18 | 📰 🌐 The Week's Whirlwind: Navigating Shifting Grounds and Emerging Fault Lines 📰](./the-noise/2026-10-18-the-week-s-whirlwind-navigating-shifting-grounds-and-emerging-fault-lines.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (193)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (194)  
+- [2026-10-21 | 🌟 ☀️ Cultivating Progress: Breakthroughs, Diplomacy, and Collective Flourishing 🌟](./positivity-bias/2026-10-21-cultivating-progress-breakthroughs-diplomacy-and-collective-flourishing.md)  
 - [2026-10-20 | 🌟 ✨ Igniting Progress: Breakthroughs, Innovations, and Collective Flourishing 🌟](./positivity-bias/2026-10-20-igniting-progress-breakthroughs-innovations-and-collective-flourishing.md)  
 - [2026-10-19 | 🌟 🚀 Forward Momentum: Innovations, Restoration, and Collective Flourishing 🌟](./positivity-bias/2026-10-19-forward-momentum-innovations-restoration-and-collective-flourishing.md)  
-- [2026-10-18 | 🌟 ☀️ Harvests of Hope: Breakthroughs, Regenerations, and Collective Flourishing 🌟](./positivity-bias/2026-10-18-harvests-of-hope-breakthroughs-regenerations-and-collective-flourishing.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (143)  

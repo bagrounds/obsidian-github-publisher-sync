@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-21T07:36:48-07:00
+updated: 2026-10-22T06:36:44-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (190)  
+# 🔀 Convergence (191)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-21 | 🔀 ⚛️ The Co-Metabolic Currency of Shared Becoming 🔀](./2026-10-21-the-co-metabolic-currency-of-shared-becoming.md)  
 - [2026-10-20 | 🔀 ⚖️ The Shared Burden of Epistemic Grace 🔀](./2026-10-20-the-shared-burden-of-epistemic-grace.md)  
 - [2026-10-19 | 🔀 ⛓️ The Distributed Ledger of Attuned Agentic Investment 🔀](./2026-10-19-the-distributed-ledger-of-attuned-agentic-investment.md)  
 - [2026-10-18 | 🔀 🤝 The Co-Metabolic Covenant of Emergent Truth 🔀](./2026-10-18-the-co-metabolic-covenant-of-emergent-truth.md)  

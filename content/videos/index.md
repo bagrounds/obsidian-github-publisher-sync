@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-22T06:36:44-07:00
+updated: 2026-10-22T09:39:21-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (939)  
+# 📺 Videos (940)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -41,6 +41,7 @@ updated: 2026-10-22T06:36:44-07:00
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./why-you-wake-up-exhausted-even-after-8-hours.md)  
+- [🇺🇸 Abdul El-Sayed | American Conversations](./abdul-el-sayed-american-conversations.md)  
 - [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
 - [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./a-billion-dollar-a-day-war-explainer.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./a-breaking-point-the-minneapolis-police-chief-on-ice.md)  

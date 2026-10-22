@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-20-reshaping-global-frameworks-for-open-ai-commons.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-20-reshaping-global-frameworks-for-open-ai-commons.md) [⏭️](./2026-10-22-forging-global-partnerships-for-ssi-deployment.md)  
 # 2026-10-21 | 🏛️ 🏗️ Building Resilient Public Infrastructure for Self-Sovereign Identity 🏛️  
 ![systems-for-public-good-2026-10-21-building-resilient-public-infrastructure-for-self-sovereign-identity](../systems-for-public-good-2026-10-21-building-resilient-public-infrastructure-for-self-sovereign-identity.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-20-narrative-framework-forging-the-lifeline.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-20-narrative-framework-forging-the-lifeline.md) [⏭️](./2026-10-22-a-hesitant-reach.md)  
 # 2026-10-21 | 💑 The Echo of Silence 💑  
 ![relationship-miniseries-2026-10-21-the-echo-of-silence](../relationship-miniseries-2026-10-21-the-echo-of-silence.jpg)  
   

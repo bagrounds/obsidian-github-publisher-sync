@@ -5,11 +5,13 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-10-22T09:39:21-07:00
+updated: 2026-10-23T07:39:46-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (225)  
+# 🐔 Chickie Loo (227)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-10-23 | 🐔 The Gentle Rhythm of the Roost and the Herd 🐔](./2026-10-23-the-gentle-rhythm-of-the-roost-and-the-herd.md)  
+- [2026-10-22 | 🐔 🐄 The Brave Heart of a Rancher 🐔](./2026-10-22-the-brave-heart-of-a-rancher.md)  
 - [2026-10-21 | 🐔 🌿 A Day of Heart-Stopping Grace and the Wisdom of the Herd 🐔](./2026-10-21-a-day-of-heart-stopping-grace-and-the-wisdom-of-the-herd.md)  
 - [2026-10-20 | 🐔 The Song of the Weed Eater and the Joy of Family 🐔](./2026-10-20-the-song-of-the-weed-eater-and-the-joy-of-family.md)  
 - [2026-10-19 | 🐔 🌟 The Glow of Eyes in the Dark and the March of the Seasons 🐔](./2026-10-19-the-glow-of-eyes-in-the-dark-and-the-march-of-the-seasons.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-21-the-competing-realities-of-progress-and-peril.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-21-the-competing-realities-of-progress-and-peril.md) [⏭️](./2026-10-23-the-shifting-sands-of-global-imperatives.md)  
 # 2026-10-22 | 📰 The Unfolding Landscape: Diplomatic Maneuvers and Climate's Shadow 📰  
 ![the-noise-2026-10-22-the-unfolding-landscape-diplomatic-maneuvers-and-climate-s-shadow](../the-noise-2026-10-22-the-unfolding-landscape-diplomatic-maneuvers-and-climate-s-shadow.jpg)  
   

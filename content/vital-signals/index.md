@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-23T07:39:46-07:00
+updated: 2026-10-24T09:43:46-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (145)  
+# ⚡ Vital Signals (146)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-24 | ⚡ 🔬 The Signal: Your Brain on the Move ⚡](./2026-10-24-the-signal-your-brain-on-the-move.md)  
 - [2026-10-23 | ⚡ 🔬 The Signal: Decoding Your Cognitive Menu ⚡](./2026-10-23-the-signal-decoding-your-cognitive-menu.md)  
 - [2026-10-22 | ⚡ 🔬 The Signal: Your Gut, Your Second Brain, Your Cognitive Partner ⚡](./2026-10-22-the-signal-your-gut-your-second-brain-your-cognitive-partner.md)  
 - [2026-10-21 | ⚡ 🔋 The Invisible Engine: Fueling Your Brain's Cognitive Power ⚡](./2026-10-21-the-invisible-engine-fueling-your-brain-s-cognitive-power.md)  

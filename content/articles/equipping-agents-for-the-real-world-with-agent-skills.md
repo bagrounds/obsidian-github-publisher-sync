@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T18:08:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric digital illustration featuring a glowing, translucent folder icon floating in the center. Inside the folder, several neatly stacked, layered documents are fanning out, symbolizing progressive disclosure. Emerging from the folder are various modular, puzzle-piece icons representing specialized skills—such as a gear for code execution, a magnifying glass for analysis, and a scroll for instructions. The background is a soft, deep gradient of navy and cool grey, suggesting a professional technical workspace. Subtle, thin lines of light connect the modules to the main folder, implying a dynamic, interconnected system. The overall aesthetic is minimalist, sleek, and high-tech, using a palette of cyan, white, and slate to emphasize clarity and modularity.
+updated: 2026-10-25T01:39:20
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills  
@@ -79,4 +80,12 @@ image_prompt: A clean, isometric digital illustration featuring a glowing, trans
 * [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md) by Chip Heath and Dan Heath. ✨ This explores making ideas simple and concrete, which is key to effectively writing the instructions within the SKILL.md file so the agent reliably grasps the skill's purpose.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills<br><br>🤖 Agent Specialization | 📁 Skill Structure | 📄 Progressive Disclosure | ⚙️ Code Execution | 📚 Knowledge Organization | 🔐 Security Auditing<a href="https://twitter.com/AnthropicAI?ref_src=twsrc%5Etfw">@AnthropicAI</a><a href="https://t.co/uGjsBuY53J">https://t.co/uGjsBuY53J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980439570350239807?ref_src=twsrc%5Etfw">October 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills<br><br>🤖 Agent Specialization | 📁 Skill Structure | 📄 Progressive Disclosure | ⚙️ Code Execution | 📚 Knowledge Organization | 🔐 Security Auditing<a href="https://twitter.com/AnthropicAI?ref_src=twsrc%5Etfw">@AnthropicAI</a><a href="https://t.co/uGjsBuY53J">https://t.co/uGjsBuY53J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980439570350239807?ref_src=twsrc%5Etfw">October 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3myo36iyc342v" data-bluesky-cid="bafyreid6azpwoa4zmdftp235rgi5oi4lnjkboqr345mzq2bmqphhpjx7h4"><p>🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills  
+  
+#AI Q: 🚀 Which task to automate?  
+  
+📖 Progressive Disclosure | 📂 Knowledge Hierarchy | ⚙️ Tool Integration | 🛡️ Security Auditing  
+https://bagrounds.org/articles/equipping-agents-for-the-real-world-with-agent-skills</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3myo36iyc342v?ref_src=embed">2026-10-25T01:39:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

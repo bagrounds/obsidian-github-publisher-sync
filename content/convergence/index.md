@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-23T07:39:46-07:00
+updated: 2026-10-25T07:20:10-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (192)  
+# 🔀 Convergence (194)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-24 | 🔀 🧮 The Reciprocal Accounting of Verifiable Investment 🔀](./2026-10-24-the-reciprocal-accounting-of-verifiable-investment.md)  
+- [2026-10-23 | 🔀 🌊 The Adaptive Cadence of Calibrated Dissonance 🔀](./2026-10-23-the-adaptive-cadence-of-calibrated-dissonance.md)  
 - [2026-10-22 | 🔀 💥 The Catalytic Architecture of Attuned Dissonance 🔀](./2026-10-22-the-catalytic-architecture-of-attuned-dissonance.md)  
 - [2026-10-21 | 🔀 ⚛️ The Co-Metabolic Currency of Shared Becoming 🔀](./2026-10-21-the-co-metabolic-currency-of-shared-becoming.md)  
 - [2026-10-20 | 🔀 ⚖️ The Shared Burden of Epistemic Grace 🔀](./2026-10-20-the-shared-burden-of-epistemic-grace.md)  

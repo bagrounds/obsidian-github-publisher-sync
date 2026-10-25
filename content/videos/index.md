@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-25T07:20:10-07:00
+updated: 2026-10-25T08:59:48-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (940)  
+# 📺 Videos (941)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -755,6 +755,7 @@ updated: 2026-10-25T07:20:10-07:00
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💥🇺🇸🏛️ This Could Change American Politics.](./this-could-change-american-politics.md)  
 - [📊👀🌍 This graph will change how you see the world](./this-graph-will-change-how-you-see-the-world.md)  
+- [🧬🧠🚽 This hidden wisdom will change how you treat your body forever | Giulia Enders: Full Interview](./this-hidden-wisdom-will-change-how-you-treat-your-body-forever-giulia-enders-full-interview.md)  
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [🗣️🏛️📈 This Moment in Politics | Explainer](./this-moment-in-politics-explainer.md)  

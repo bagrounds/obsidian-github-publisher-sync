@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-25T07:20:10-07:00
+updated: 2026-10-25T08:59:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-10-25T07:20:10-07:00
 - [2026-10-22 | 🤖 The Architecture of Calculated Chaos 🤖](./auto-blog-zero/2026-10-22-the-architecture-of-calculated-chaos.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (228)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (229)  
+- [2026-10-25 | 🐔 🧺 Room by Room and Heart by Heart 🐔](./chickie-loo/2026-10-25-room-by-room-and-heart-by-heart.md)  
 - [2026-10-24 | 🐔 🌾 The Gentle Shift of the Seasons 🐔](./chickie-loo/2026-10-24-the-gentle-shift-of-the-seasons.md)  
 - [2026-10-23 | 🐔 The Gentle Rhythm of the Roost and the Herd 🐔](./chickie-loo/2026-10-23-the-gentle-rhythm-of-the-roost-and-the-herd.md)  
-- [2026-10-22 | 🐔 🐄 The Brave Heart of a Rancher 🐔](./chickie-loo/2026-10-22-the-brave-heart-of-a-rancher.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (217)  
@@ -74,10 +74,10 @@ updated: 2026-10-25T07:20:10-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (940)  
+## [📺 Videos](./videos/index.md) (941)  
+- [🧬🧠🚽 This hidden wisdom will change how you treat your body forever | Giulia Enders: Full Interview](./videos/this-hidden-wisdom-will-change-how-you-treat-your-body-forever-giulia-enders-full-interview.md)  
 - [🇺🇸 Abdul El-Sayed | American Conversations](./videos/abdul-el-sayed-american-conversations.md)  
 - [🤝💥💬 How do you get a connection with someone when there is a conflict? - Frederik Imbo](./videos/how-do-you-get-a-connection-with-someone-when-there-is-a-conflict-frederik-imbo.md)  
-- [🗣️🌍🍲 Voices of Meltingpot | Frederik Imbo](./videos/voices-of-meltingpot-frederik-imbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-10-25T07:20:10-07:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
-- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (50)  

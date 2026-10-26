@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-24-the-gentle-shift-of-the-seasons.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-24-the-gentle-shift-of-the-seasons.md) [⏭️](./2026-10-26-a-big-step-for-luna-and-a-treasure-trove-of-memories.md)  
 # 2026-10-25 | 🐔 🧺 Room by Room and Heart by Heart 🐔  
 ![chickie-loo-2026-10-25-room-by-room-and-heart-by-heart](../chickie-loo-2026-10-25-room-by-room-and-heart-by-heart.jpg)  
   

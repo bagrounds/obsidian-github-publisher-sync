@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-24-the-shifting-sands-of-global-resolve.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-24-the-shifting-sands-of-global-resolve.md) [⏭️](./2026-10-26-the-shifting-plates-of-global-influence.md)  
 # 2026-10-25 | 📰 🌍 Navigating the Currents of Consequence 📰  
 ![the-noise-2026-10-25-navigating-the-currents-of-consequence](../the-noise-2026-10-25-navigating-the-currents-of-consequence.jpg)  
   

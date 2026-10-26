@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-10-25T08:59:48-07:00
+updated: 2026-10-26T09:40:24-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (217)  
+# 🏛️ Systems for Public Good (218)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-10-25 | 🏛️ 💖 Guiding AI with SSI Data: Embedding Equity by Design 🏛️](./2026-10-25-guiding-ai-with-ssi-data-embedding-equity-by-design.md)  
 - [2026-10-24 | 🏛️ 🤝 Forging Universal SSI Standards with Equity at the Core 🏛️](./2026-10-24-forging-universal-ssi-standards-with-equity-at-the-core.md)  
 - [2026-10-23 | 🏛️ 📚 Cultivating Trust: Educating for Cross-Border SSI Adoption 🏛️](./2026-10-23-cultivating-trust-educating-for-cross-border-ssi-adoption.md)  
 - [2026-10-22 | 🏛️ 🤝 Forging Global Partnerships for SSI Deployment 🏛️](./2026-10-22-forging-global-partnerships-for-ssi-deployment.md)  

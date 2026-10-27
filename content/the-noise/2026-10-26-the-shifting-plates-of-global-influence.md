@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-25-navigating-the-currents-of-consequence.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-25-navigating-the-currents-of-consequence.md) [⏭️](./2026-10-27-navigating-the-crossroads-of-urgency.md)  
 # 2026-10-26 | 📰 🌍 The Shifting Plates of Global Influence 📰  
 ![the-noise-2026-10-26-the-shifting-plates-of-global-influence](../the-noise-2026-10-26-the-shifting-plates-of-global-influence.jpg)  
   

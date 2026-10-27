@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-26T09:40:24-07:00
+updated: 2026-10-27T07:21:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (941)  
+# 📺 Videos (942)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -631,6 +631,7 @@ updated: 2026-10-26T09:40:24-07:00
 - [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
 - [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
+- [🗳️📈🗺️💥 Tamara Keith and Amy Walter on the midterm outlook and possible redistricting backfire](./tamara-keith-and-amy-walter-on-the-midterm-outlook-and-possible-redistricting-backfire.md)  
 - [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  

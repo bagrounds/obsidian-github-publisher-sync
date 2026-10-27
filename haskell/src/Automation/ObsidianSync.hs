@@ -4,6 +4,9 @@
 module Automation.ObsidianSync
   ( ObsidianCredentials (..)
   , SyncResult (..)
+  , SyncFailure (..)
+  , RetryableSyncFailure (..)
+  , classifySyncFailure
   , runObCommand
   , removeSyncLock
   , killObProcesses
@@ -55,6 +58,37 @@ data SyncResult = SyncResult
   { srVaultDirectory :: FilePath
   , srSuccess  :: Bool
   } deriving (Show, Eq)
+
+data RetryableSyncFailure
+  = LockContention
+  | ConnectionLost
+  deriving (Show, Eq, Bounded, Enum)
+
+data SyncFailure
+  = Retryable RetryableSyncFailure
+  | Unrecoverable
+  deriving (Show, Eq)
+
+lockContentionSignature :: Text
+lockContentionSignature = "Another sync instance"
+
+connectionLostSignatures :: [Text]
+connectionLostSignatures =
+  [ "Error: Disconnected"
+  , "Unable to connect to server"
+  , "The connection to the server has encountered an error"
+  ]
+
+classifySyncFailure :: Text -> SyncFailure
+classifySyncFailure message
+  | lockContentionSignature `T.isInfixOf` message = Retryable LockContention
+  | any (`T.isInfixOf` message) connectionLostSignatures = Retryable ConnectionLost
+  | otherwise = Unrecoverable
+
+describeRetryableSyncFailure :: RetryableSyncFailure -> String
+describeRetryableSyncFailure = \case
+  LockContention -> "⚠️ Sync lock contention"
+  ConnectionLost -> "🔌 Obsidian Sync connection lost"
 
 runObCommand :: [String] -> Maybe FilePath -> [(String, String)] -> IO (String, String)
 runObCommand args mCwd extraEnv = do
@@ -125,21 +159,25 @@ runObSyncWithRetry args env vaultDirectory maxRetries = runAttempt 0
   where
     runAttempt attempt = do
       result <- try $ runObCommand args Nothing env :: IO (Either SomeException (String, String))
-      case result of
-        Right _ -> pure ()
-        Left failure ->
-          let message = show failure
-              isLockContention = "Another sync instance" `T.isInfixOf` T.pack message
-              canRetry = attempt < maxRetries
-          in case (isLockContention, canRetry) of
-            (True, True) -> do
-              let delayMs = 2000 * (2 ^ attempt)
-              putStrLn $ "⚠️ Sync lock contention (retry " <> show (attempt + 1) <> "/" <> show maxRetries
-                <> "), retrying in " <> show (delayMs `div` 1000) <> "s..."
-              ensureSyncClean vaultDirectory
-              threadDelay (delayMs * 1000)
-              runAttempt (attempt + 1)
-            _ -> throwIO failure
+      either (recover attempt) (const (pure ())) result
+
+    recover attempt failure = case classifySyncFailure (T.pack (show failure)) of
+      Unrecoverable -> throwIO failure
+      Retryable retryableFailure
+        | attempt >= maxRetries -> do
+            putStrLn $ "🛑 " <> describeRetryableSyncFailure retryableFailure
+              <> " — giving up after " <> show maxRetries <> " retries"
+            throwIO failure
+        | otherwise -> do
+            let delayMilliseconds = 2000 * (2 ^ attempt) :: Int
+            filesOnDisk <- countVaultFiles vaultDirectory
+            putStrLn $ describeRetryableSyncFailure retryableFailure
+              <> " (retry " <> show (attempt + 1) <> "/" <> show maxRetries
+              <> ", " <> show filesOnDisk <> " files on disk), resuming in "
+              <> show (delayMilliseconds `div` 1000) <> "s..."
+            ensureSyncClean vaultDirectory
+            threadDelay (delayMilliseconds * 1000)
+            runAttempt (attempt + 1)
 
 syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do

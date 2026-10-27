@@ -4,7 +4,7 @@
 
 📋 Synchronizes the Obsidian vault between the cloud and the local filesystem using the `ob` CLI tool.
 🔄 Uses a simple pull-edit-push flow: one pull at the start, local edits, one push at the end.
-🔒 Handles lock contention with retry logic and stale lock cleanup.
+🔒 Handles lock contention and dropped sync connections with retry logic and stale lock cleanup.
 📝 Provides embed appending to write social media embeds to Obsidian notes.
 🛡️ Pre-push circuit breaker prevents catastrophic data loss from anomalous file deletions.
 
@@ -76,12 +76,35 @@ main()
 | `MIN_SAFE_FILE_COUNT` | 50 | 🔒 Absolute minimum files for push without baseline |
 | Zero-deletion policy | currentCount >= baseline | 🔒 Any file loss blocks push — no tolerance for deletions |
 
-## 🔒 Lock Contention Retry
+## 🔁 Sync Failure Retry
 
-🔄 The `runObSyncWithRetry` function detects "Another sync instance" errors and retries with exponential backoff.
+🧭 The pure `classifySyncFailure` function turns the text of a failed `ob` command into a `SyncFailure`: either `Retryable` with a `RetryableSyncFailure` reason, or `Unrecoverable`.
+
+| 🏷️ Classification | 🔎 Signature in `ob` output | 🔧 Response |
+|---|---|---|
+| `Retryable LockContention` | `Another sync instance` | 🔁 Clean up and retry |
+| `Retryable ConnectionLost` | `Error: Disconnected`, `Unable to connect to server`, `The connection to the server has encountered an error` | 🔁 Clean up and resume |
+| `Unrecoverable` | ➖ anything else, such as an expired subscription or a missing vault | 🛑 Rethrow immediately |
+
+🔄 `runObSyncWithRetry` retries retryable failures with exponential backoff.
 ⏱️ Backoff follows a 2-second base multiplied by 2 raised to the attempt number.
-🔁 Retries up to a configurable maximum number of attempts before giving up.
-🧹 Between retries, lock cleanup is attempted to clear stale locks.
+🔁 Retries up to a configurable maximum number of attempts (5 for both pull and push) before logging that it is giving up and rethrowing.
+🧹 Between retries, `ensureSyncClean` kills lingering processes and removes the stale `.sync.lock` a crashed `ob` process leaves behind.
+📊 Each retry logs the reason, the attempt number, and how many vault files are already on disk, so resume progress is visible in the run log.
+🔎 Connection signatures are matched on the error text written by `ob` (such as `Error: Disconnected`), not on progress lines like `Disconnected from server`, so a vault file with a similar name cannot trigger a retry.
+
+### 🔌 Why Connection Loss Is Retried (2026-10-22 incident)
+
+⚠️ About one in five scheduled runs failed in October because the Obsidian Sync WebSocket closed in the middle of the cold vault pull, which downloads about 10,700 files over 10 to 15 minutes.
+📉 Failures happened at random points, from 44 seconds to 51 minutes in, with no rate limit or quota messages, which suggests transient connection drops rather than a fixed limit.
+🔁 The `ob` client already treats disconnects as routine in continuous mode by reconnecting and requesting another sync; the one-shot `ob sync` used here exits instead, so the retry loop supplies the reconnect.
+
+### 🛡️ Why Resuming a Partial Pull Is Safe
+
+📂 A retry reuses the same vault directory and the same `ob` state database (`~/.config/obsidian-headless/sync/<vault>/state.db`) that the interrupted attempt wrote.
+✅ `ob` records a server file only after the matching local file has been written, and keeps unprocessed server changes in a pending queue, so files that were not yet downloaded remain pending downloads, not apparent local deletions.
+🆚 This differs from the 2026-03-27 incident, where a stale cached directory from an earlier run was paired with fresh state; within a single run, the directory and state database stay consistent.
+🛑 The pre-push circuit breaker still compares the pushed file count against the post-pull baseline as a final guard.
 
 ## 🧹 Lock and Process Management
 
@@ -115,7 +138,8 @@ main()
 | `logSyncDiagnostics(vaultDir)` | 🔍 Log lock state and related processes |
 | `killObProcesses(vaultDir?)` | 💀 Kill lingering obsidian-headless processes |
 | `ensureSyncClean(vaultDir)` | 🧹 Kill processes and remove lock for clean state |
-| `runObSyncWithRetry(args, options, vaultDir, maxRetries)` | 🔄 Run ob sync with lock contention retry |
+| `classifySyncFailure(message)` | 🧭 Pure classification of `ob` failure output into retryable or unrecoverable |
+| `runObSyncWithRetry(args, options, vaultDir, maxRetries)` | 🔄 Run ob sync, retrying lock contention and lost connections |
 | `syncObsidianVault(credentials)` | 📥 Fresh vault pull — create directory, sync-setup, sync |
 | `pushObsidianVault(vaultDir, credentials)` | 📤 Push local changes with circuit breaker validation |
 | `writeEmbedsToNote(filePath, sections)` | ✏️ Write embed sections to a note file (no sync) |
@@ -128,6 +152,7 @@ main()
 
 ✅ Sync operations are safe to re-run:
 - 🔒 Lock cleanup prevents deadlocks from previous failed runs
+- 🔌 Dropped connections resume from the state `ob` already recorded instead of failing the run
 - 💀 Process cleanup prevents resource leaks
 - 📂 Every pull starts from an empty ephemeral directory — no stale state
 - 📝 Embed writing checks for existing sections before appending

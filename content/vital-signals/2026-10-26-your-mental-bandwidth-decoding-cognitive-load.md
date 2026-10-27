@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-25-the-week-s-vital-signals-foundations-of-flourishing.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-10-25-the-week-s-vital-signals-foundations-of-flourishing.md) [⏭️](./2026-10-27-reclaiming-your-focus-the-restorative-power-of-involuntary-attention.md)  
 # 2026-10-26 | ⚡ 🧠 Your Mental Bandwidth: Decoding Cognitive Load ⚡  
 ![vital-signals-2026-10-26-your-mental-bandwidth-decoding-cognitive-load](../vital-signals-2026-10-26-your-mental-bandwidth-decoding-cognitive-load.jpg)  
   

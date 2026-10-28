@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-26-a-big-step-for-luna-and-a-treasure-trove-of-memories.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-26-a-big-step-for-luna-and-a-treasure-trove-of-memories.md) [⏭️](./2026-10-28-a-piece-of-home-on-the-hearth.md)  
 # 2026-10-27 | 🐔 🛋️ Finding Beauty in the Middle of the Mess 🐔  
 ![chickie-loo-2026-10-27-finding-beauty-in-the-middle-of-the-mess](../chickie-loo-2026-10-27-finding-beauty-in-the-middle-of-the-mess.jpg)  
   

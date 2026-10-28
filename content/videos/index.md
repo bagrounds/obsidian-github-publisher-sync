@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-27T07:21:39-07:00
+updated: 2026-10-28T06:42:50-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (942)  
+# 📺 Videos (944)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -656,6 +656,7 @@ updated: 2026-10-27T07:21:39-07:00
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./the-art-of-befriending-trump-president-stubb.md)  
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
+- [🚫🧠🔥 The biggest lies about good sex and how to have it debunked | Emily Nagoski Full Interview](./the-biggest-lies-about-good-sex-and-how-to-have-it-debunked-emily-nagoski-full-interview.md)  
 - [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  
 - [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
@@ -943,6 +944,7 @@ updated: 2026-10-27T07:21:39-07:00
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  
 - [You Are Two](./you-are-two.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
+- [🧠✨ You have more power over reality than you think | Lisa Feldman Barrett](./you-have-more-power-over-reality-than-you-think-lisa-feldman-barrett.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
 - [🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books](./youre-not-stupid-how-to-learn-anything-with-books.md)  
 - [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./youre-not-stupid-how-to-never-lose-focus-again.md)  

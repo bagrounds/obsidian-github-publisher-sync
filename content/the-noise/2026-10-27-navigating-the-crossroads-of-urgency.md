@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-27T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-26-the-shifting-plates-of-global-influence.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-26-the-shifting-plates-of-global-influence.md) [⏭️](./2026-10-28-the-world-s-shifting-balance-new-fronts-old-fears.md)  
 # 2026-10-27 | 📰 🌐 Navigating the Crossroads of Urgency 📰  
 ![the-noise-2026-10-27-navigating-the-crossroads-of-urgency](../the-noise-2026-10-27-navigating-the-crossroads-of-urgency.jpg)  
   

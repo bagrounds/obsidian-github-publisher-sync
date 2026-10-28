@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-10-27T07:21:39-07:00
+updated: 2026-10-28T06:42:50-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (201)  
+# 📰 The Noise (202)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-10-28 | 📰 ⚖️ The World's Shifting Balance: New Fronts, Old Fears 📰](./2026-10-28-the-world-s-shifting-balance-new-fronts-old-fears.md)  
 - [2026-10-27 | 📰 🌐 Navigating the Crossroads of Urgency 📰](./2026-10-27-navigating-the-crossroads-of-urgency.md)  
 - [2026-10-26 | 📰 🌍 The Shifting Plates of Global Influence 📰](./2026-10-26-the-shifting-plates-of-global-influence.md)  
 - [2026-10-25 | 📰 🌍 Navigating the Currents of Consequence 📰](./2026-10-25-navigating-the-currents-of-consequence.md)  

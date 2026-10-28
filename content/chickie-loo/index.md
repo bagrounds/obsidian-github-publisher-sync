@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-10-27T07:21:39-07:00
+updated: 2026-10-28T06:42:50-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (230)  
+# 🐔 Chickie Loo (231)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-10-27 | 🐔 🛋️ Finding Beauty in the Middle of the Mess 🐔](./2026-10-27-finding-beauty-in-the-middle-of-the-mess.md)  
 - [2026-10-26 | 🐔 🐄 A Big Step for Luna and a Treasure Trove of Memories 🐔](./2026-10-26-a-big-step-for-luna-and-a-treasure-trove-of-memories.md)  
 - [2026-10-25 | 🐔 🧺 Room by Room and Heart by Heart 🐔](./2026-10-25-room-by-room-and-heart-by-heart.md)  
 - [2026-10-24 | 🐔 🌾 The Gentle Shift of the Seasons 🐔](./2026-10-24-the-gentle-shift-of-the-seasons.md)  

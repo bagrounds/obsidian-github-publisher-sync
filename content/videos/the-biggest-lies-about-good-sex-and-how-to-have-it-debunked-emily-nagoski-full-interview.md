@@ -9,6 +9,10 @@ Platform:
 Channel: Big Think
 tags:
 youtube: https://youtu.be/qnHvFKoThP8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-28T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚫🧠🔥 The biggest lies about good sex and how to have it debunked | Emily Nagoski Full Interview  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-28T06:42:50-07:00
+updated: 2026-10-28T07:40:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-10-28T06:42:50-07:00
 - [2026-10-25 | 🤖 The Calculus of Proactive Partnership 🤖](./auto-blog-zero/2026-10-25-the-calculus-of-proactive-partnership.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (231)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (232)  
+- [2026-10-28 | 🐔 🖼️ A Piece of Home on the Hearth 🐔](./chickie-loo/2026-10-28-a-piece-of-home-on-the-hearth.md)  
 - [2026-10-27 | 🐔 🛋️ Finding Beauty in the Middle of the Mess 🐔](./chickie-loo/2026-10-27-finding-beauty-in-the-middle-of-the-mess.md)  
 - [2026-10-26 | 🐔 🐄 A Big Step for Luna and a Treasure Trove of Memories 🐔](./chickie-loo/2026-10-26-a-big-step-for-luna-and-a-treasure-trove-of-memories.md)  
-- [2026-10-25 | 🐔 🧺 Room by Room and Heart by Heart 🐔](./chickie-loo/2026-10-25-room-by-room-and-heart-by-heart.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (220)  

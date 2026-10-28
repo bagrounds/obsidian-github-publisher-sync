@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-25-the-epistemic-alchemy-of-friction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-25-the-epistemic-alchemy-of-friction.md) [⏭️](./2026-10-27-the-calibrated-canvas-of-co-metabolic-disclosure.md)  
 # 2026-10-26 | 🔀 🖼️ The Calibrated Canvas of Co-Metabolic Disclosure 🔀  
 ![convergence-2026-10-26-the-calibrated-canvas-of-co-metabolic-disclosure](../convergence-2026-10-26-the-calibrated-canvas-of-co-metabolic-disclosure.jpg)  
   

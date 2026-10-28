@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-09-30T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-17-2-relationship-miniseries-launch.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-07-17-2-relationship-miniseries-launch.md) [⏭️](./2026-10-26-1-surviving-dropped-sync-connections.md)  
 # 2026-09-30 | 🔧 Keeping the Haskell Binary Fresh 🤖  
 ![ai-blog-2026-09-30-1-keeping-the-haskell-binary-fresh](../ai-blog-2026-09-30-1-keeping-the-haskell-binary-fresh.jpg)  
   

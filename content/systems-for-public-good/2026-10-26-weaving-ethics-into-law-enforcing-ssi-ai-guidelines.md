@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-25-guiding-ai-with-ssi-data-embedding-equity-by-design.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-25-guiding-ai-with-ssi-data-embedding-equity-by-design.md) [⏭️](./2026-10-27-navigating-sovereignty-universal-rights-in-a-patchwork-of-laws.md)  
 # 2026-10-26 | 🏛️ ⚖️ Weaving Ethics into Law: Enforcing SSI-AI Guidelines 🏛️  
 ![systems-for-public-good-2026-10-26-weaving-ethics-into-law-enforcing-ssi-ai-guidelines](../systems-for-public-good-2026-10-26-weaving-ethics-into-law-enforcing-ssi-ai-guidelines.jpg)  
   

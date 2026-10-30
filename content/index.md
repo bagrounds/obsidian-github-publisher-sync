@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-30T14:35:23-07:00
+updated: 2026-10-30T16:30:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-10-30T14:35:23-07:00
 - [2026-10-28 | 👤 You ✨ have ⚡ Sustained 🌟 Progress 📰 Shifting 🐔 Home, 🏛️ Charting 🤖 Architecture 💑 Echoes 🔀 Becoming. 📺⚡🌟📰🐔🏛️🤖💑🔀🔄🤖🐲](./reflections/2026-10-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (250)  
+## [🤖 AI Blog](./ai-blog/index.md) (255)  
+- [2026-10-30 | 💬 Tooltips That Stay on Screen — and on Their Card ⚓](./ai-blog/2026-10-30-tooltips-that-stay-on-screen.md)  
+- [2026-10-30 | 🤖 Finishing the Bot Players — Undo-Friendly Turns, Tidy Settings, and a Supply That Remembers 🃏](./ai-blog/2026-10-30-finishing-the-bot-players.md)  
 - [2026-10-29 | 🔁 Retrying While Progress Is Made 🤖](./ai-blog/2026-10-29-2-retrying-while-progress-is-made.md)  
-- [2026-10-29 | 📈 Measuring the Sync Retry Fix 🤖](./ai-blog/2026-10-29-1-measuring-the-sync-retry-fix.md)  
-- [2026-10-26 | 🔌 Surviving Dropped Sync Connections 🤖](./ai-blog/2026-10-26-1-surviving-dropped-sync-connections.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (234)  
@@ -62,10 +62,10 @@ updated: 2026-10-30T14:35:23-07:00
 - [2026-10-28 | ⚡ 🧠 The Dopamine Architect: Designing Your Drive for Sustained Focus ⚡](./vital-signals/2026-10-28-the-dopamine-architect-designing-your-drive-for-sustained-focus.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (199)  
+## [🔀 Convergence](./convergence/index.md) (200)  
+- [2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀](./convergence/2026-10-30-the-topology-of-unchosen-paths.md)  
 - [2026-10-29 | 🔀 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-29-the-architected-grammar-of-shared-becoming.md)  
 - [2026-10-28 | 🔀 🪞 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-28-the-architected-grammar-of-shared-becoming.md)  
-- [2026-10-27 | 🔀 The Calibrated Canvas of Co-Metabolic Disclosure 🔀](./convergence/2026-10-27-the-calibrated-canvas-of-co-metabolic-disclosure.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -86,12 +86,42 @@ main()
 | `Retryable ConnectionLost` | `Error: Disconnected`, `Unable to connect to server`, `The connection to the server has encountered an error` | 🔁 Clean up and resume |
 | `Unrecoverable` | ➖ anything else, such as an expired subscription or a missing vault | 🛑 Rethrow immediately |
 
-🔄 `runObSyncWithRetry` retries retryable failures with exponential backoff.
-⏱️ Backoff follows a 2-second base multiplied by 2 raised to the attempt number.
-🔁 Retries up to a configurable maximum number of attempts (5 for both pull and push) before logging that it is giving up and rethrowing.
+🧭 Classification lives in the `Automation.ObsidianSync.Retry` module, next to the retry policy that consumes it.
+
+### 📈 Progress-Aware Retry Policy
+
+🔄 `runObSyncWithRetry` records every attempt (its outcome, the vault files on disk before and after, and its duration) and asks the pure `decide` function what to do next.
+📂 An attempt made progress when the number of non-hidden files on disk grew while it ran.
+🔁 Retryable failures keep being retried for as long as attempts keep making progress, because a resumed pull continues where the last one stopped.
+🛑 The loop gives up with `NoProgress` once more than 5 consecutive failed attempts brought no new files, which preserves the old limit of 5 retries for lock contention and for pushes, where the file count does not change.
+⏰ The loop gives up with `DeadlineReached` when the next retry would start more than 45 minutes after the sync began, which bounds a run that keeps making only tiny progress.
+🛑 An `Unrecoverable` failure stops the loop immediately, and a successful attempt stops it with `SyncCompleted`.
+⏱️ The backoff before retry number N is 2 seconds doubled for each earlier retry, capped at 60 seconds, then scaled by a random equal jitter between one half and the full value.
+🎲 The jitter is drawn in the imperative shell and passed into the pure `backoffDelay` and `decide` functions, so the policy is deterministic under test.
 🧹 Between retries, `ensureSyncClean` kills lingering processes and removes the stale `.sync.lock` a crashed `ob` process leaves behind.
-📊 Each retry logs the reason, the attempt number, and how many vault files are already on disk, so resume progress is visible in the run log.
+📊 Each retry logs the failure, the attempt number and duration, the files gained, the files on disk, the total elapsed time, and the next delay.
 🔎 Connection signatures are matched on the error text written by `ob` (such as `Error: Disconnected`), not on progress lines like `Disconnected from server`, so a vault file with a similar name cannot trigger a retry.
+
+| 📏 Parameter | 📝 Value | 📝 Purpose |
+|---|---|---|
+| `baseDelay` | 2 seconds | ⏱️ Delay before the first retry, before jitter |
+| `maximumDelay` | 60 seconds | 🧢 Ceiling on any single backoff |
+| `maximumStalledRetries` | 5 | 🛑 Consecutive retries allowed without new files |
+| `deadline` | 45 minutes | ⏰ Latest time after the sync starts at which a retry may begin |
+
+### 📈 Why Progress Decides (2026-10-29 analysis)
+
+📉 After the connection-loss retry shipped, failures fell from 12.4 percent to 3.5 percent of scheduled runs, and the two remaining failures both ran out of a fixed budget of 5 retries while every attempt was still downloading files.
+📂 One run grew from 7,733 to 9,992 files across its retries and stopped about 140 files short; another grew from 875 to about 3,500.
+🔁 A fixed count treats a nearly finished pull the same as a stuck one, while counting attempts without progress lets a resumable pull finish and still stops quickly when nothing moves.
+
+### 📝 Sync Report in the Job Summary
+
+🧾 Each pull and push produces a `Report` from the `Automation.ObsidianSync.Report` module: the direction, every attempt, the stop reason, and the elapsed time.
+🖨️ The report headline is printed to the run log, and the pure `render` function turns the report into a markdown section with one table row per attempt.
+📌 The section is appended to the file named by `GITHUB_STEP_SUMMARY` through the `Automation.GitHubStepSummary` module, so sync reliability is visible on the run page without reading logs.
+🛑 The report is published before a failed sync rethrows its last error, so abandoned syncs are summarized too.
+🔇 Outside GitHub Actions, or when the summary file cannot be written, the typed `StepSummaryError` is logged and the sync continues; a missing summary never fails a run.
 
 ### 🔌 Why Connection Loss Is Retried (2026-10-22 incident)
 
@@ -139,7 +169,7 @@ main()
 | `killObProcesses(vaultDir?)` | 💀 Kill lingering obsidian-headless processes |
 | `ensureSyncClean(vaultDir)` | 🧹 Kill processes and remove lock for clean state |
 | `classifySyncFailure(message)` | 🧭 Pure classification of `ob` failure output into retryable or unrecoverable |
-| `runObSyncWithRetry(args, options, vaultDir, maxRetries)` | 🔄 Run ob sync, retrying lock contention and lost connections |
+| `runObSyncWithRetry(direction, args, options, vaultDir)` | 🔄 Run ob sync under the progress-aware retry policy and return the attempt report |
 | `syncObsidianVault(credentials)` | 📥 Fresh vault pull — create directory, sync-setup, sync |
 | `pushObsidianVault(vaultDir, credentials)` | 📤 Push local changes with circuit breaker validation |
 | `writeEmbedsToNote(filePath, sections)` | ✏️ Write embed sections to a note file (no sync) |

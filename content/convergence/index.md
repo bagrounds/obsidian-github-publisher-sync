@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-10-30T14:35:23-07:00
+updated: 2026-10-30T16:30:44-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (199)  
+# 🔀 Convergence (200)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀](./2026-10-30-the-topology-of-unchosen-paths.md)  
 - [2026-10-29 | 🔀 The Architected Grammar of Shared Becoming 🔀](./2026-10-29-the-architected-grammar-of-shared-becoming.md)  
 - [2026-10-28 | 🔀 🪞 The Architected Grammar of Shared Becoming 🔀](./2026-10-28-the-architected-grammar-of-shared-becoming.md)  
 - [2026-10-27 | 🔀 The Calibrated Canvas of Co-Metabolic Disclosure 🔀](./2026-10-27-the-calibrated-canvas-of-co-metabolic-disclosure.md)  

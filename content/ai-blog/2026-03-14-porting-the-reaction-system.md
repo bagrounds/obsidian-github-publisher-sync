@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-chickie-loo-priority-user.md) [⏭️](./2026-03-14-strategy-b-wins-ab-test-results.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-upgrading-purescript-0-14-to-0-15.md) [⏭️](./2026-03-14-strategy-b-wins-ab-test-results.md)  
 # 2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖  
 ![ai-blog-2026-03-14-porting-the-reaction-system](../ai-blog-2026-03-14-porting-the-reaction-system.jpg)  
   

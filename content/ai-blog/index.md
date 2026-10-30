@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-10-30T14:35:23-07:00
+updated: 2026-10-30T16:30:44-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (250)  
+# 🤖 AI Blog (255)  
+- [2026-10-30 | 💬 Tooltips That Stay on Screen — and on Their Card ⚓](./2026-10-30-tooltips-that-stay-on-screen.md)  
+- [2026-10-30 | 🤖 Finishing the Bot Players — Undo-Friendly Turns, Tidy Settings, and a Supply That Remembers 🃏](./2026-10-30-finishing-the-bot-players.md)  
 - [2026-10-29 | 🔁 Retrying While Progress Is Made 🤖](./2026-10-29-2-retrying-while-progress-is-made.md)  
 - [2026-10-29 | 📈 Measuring the Sync Retry Fix 🤖](./2026-10-29-1-measuring-the-sync-retry-fix.md)  
 - [2026-10-26 | 🔌 Surviving Dropped Sync Connections 🤖](./2026-10-26-1-surviving-dropped-sync-connections.md)  
@@ -236,6 +238,9 @@ updated: 2026-10-30T14:35:23-07:00
 - [2026-03-17 | 🧹 Stripping Noise from the LLM Context Window 🤖](./2026-03-17-stripping-noise-from-the-llm-context-window.md)  
 - [2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
 - [2026-03-16 | 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
+- [2026-03-15 | 🏗️ Separating Ephemeral UI State from Serializable Game State in Halogen](./2026-03-15-component-state-refactor.md)  
+- [2026-03-15 | 🤖 Teaching Bots to Play Domination — AI Players with Big Money and Random Strategies 🃏](./2026-03-15-ai-bot-players.md)  
+- [2026-03-14 | 🚀 Upgrading PureScript — From 0.14 to 0.15 in a Card Game Engine 🤖](./2026-03-14-upgrading-purescript-0-14-to-0-15.md)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 — Why Bluesky Ate Our Experiment Records 🤖](./2026-03-14-the-spa-that-cried-404.md)  
 - [2026-03-14 | 🏆 Strategy B Wins — A/B Test Results Across BlueSky and Mastodon 🤖](./2026-03-14-strategy-b-wins-ab-test-results.md)  
 - [2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./2026-03-14-porting-the-reaction-system.md)  

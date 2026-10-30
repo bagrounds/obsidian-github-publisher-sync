@@ -14,7 +14,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric-style digital illustration depicting a series of interconnected, glowing nodes floating in a dark, minimalist space. Each node represents a blog post, connected by thin, luminous lines of light that weave back and forth to symbolize the forward and backward navigation links. A single, stylized rewind symbol (⏮️) is subtly integrated into one of the glowing connections, while a fast-forward symbol (⏭️) sits on the opposite path. The color palette uses deep navy, cool grays, and vibrant electric blue or neon violet accents to reflect the technical, deterministic nature of the automation. The composition is structured and architectural, emphasizing the logic and precision of the linking system, with a soft, ethereal glow emanating from the data pathways.
 link_analysis_version: "2"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-the-spa-that-cried-404.md) [⏭️](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-15-component-state-refactor.md) [⏭️](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
 # 2026-03-16 | 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖  
 ![ai-blog-2026-03-16-back-links-to-previous-posts-in-auto-blog-series](../ai-blog-2026-03-16-back-links-to-previous-posts-in-auto-blog-series.jpg)  
   

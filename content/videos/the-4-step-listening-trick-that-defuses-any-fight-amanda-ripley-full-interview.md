@@ -9,6 +9,10 @@ Platform:
 Channel: Big Think
 tags:
 youtube: https://youtu.be/EE_MEu7xn8Y
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-29T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👂🤝🕊️✅ The 4-step listening trick that defuses any fight | Amanda Ripley: Full Interview  
@@ -83,12 +87,12 @@ youtube: https://youtu.be/EE_MEu7xn8Y
 ### ↔️ Similar  
   
 * 📖 High Conflict Why We Get Trapped and How We Get Out by Amanda Ripley explores how individuals and groups become ensnared in destructive feuds and details practical strategies for transitioning into healthy conflict.  
-* 📖 Difficult Conversations How to Discuss What Matters Most by Douglas Stone, Bruce Patton, and Sheila Heen provides a step-by-step framework for navigating high-stakes interpersonal disagreements by uncovering underlying emotional and identity dynamics.  
+* 📖 [💬😬 Difficult Conversations: How to Discuss What Matters Most](../books/difficult-conversations-how-to-discuss-what-matters-most.md) How to Discuss What Matters Most by Douglas Stone, Bruce Patton, and Sheila Heen provides a step-by-step framework for navigating high-stakes interpersonal disagreements by uncovering underlying emotional and identity dynamics.  
   
 ### 🆚 Contrasting  
   
-* 📖 The Righteous Mind Why Good People Are Divided by Politics and Religion by Jonathan Haidt argues that human morality is driven by innate, intuitive moral foundations rather than deliberate communication techniques or conscious reasoning.  
-* 📖 Thinking, Fast and Slow by Daniel Kahneman demonstrates how automatic System 1 cognitive biases inherently limit rational human deliberation and decision-making during high-stress conflicts and crises.  
+* 📖 [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) Why Good People Are Divided by Politics and Religion by Jonathan Haidt argues that human morality is driven by innate, intuitive moral foundations rather than deliberate communication techniques or conscious reasoning.  
+* 📖 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman demonstrates how automatic System 1 cognitive biases inherently limit rational human deliberation and decision-making during high-stress conflicts and crises.  
   
 ### 🎨 Creatively Related  
   

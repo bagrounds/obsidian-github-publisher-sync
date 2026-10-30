@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-29T17:59:39-07:00
+updated: 2026-10-30T11:38:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (945)  
+# 📺 Videos (946)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -154,6 +154,7 @@ updated: 2026-10-29T17:59:39-07:00
 - [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./building-a-better-economy-alex-pentland-tedxmit.md)  
 - [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./building-a-news-community-with-jim-acosta-explainer.md)  
+- [🏗️🤖🛠️ Building Great Agent Skills: The Missing Manual](./building-great-agent-skills-the-missing-manual.md)  
 - [📒 Bullet Journal](./bullet-journal.md)  
 - [🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt](./can-a-divided-america-heal-jonathan-haidt.md)  
 - [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  

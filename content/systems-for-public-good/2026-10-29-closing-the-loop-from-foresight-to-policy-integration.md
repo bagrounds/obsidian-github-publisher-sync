@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-28-charting-uncharted-waters-the-art-of-proactive-ai-foresight.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-28-charting-uncharted-waters-the-art-of-proactive-ai-foresight.md) [⏭️](./2026-10-30-beyond-tokenism-institutionalizing-citizen-power-in-ai-policy.md)  
 # 2026-10-29 | 🏛️ 🔄 Closing the Loop: From Foresight to Policy Integration 🏛️  
 ![systems-for-public-good-2026-10-29-closing-the-loop-from-foresight-to-policy-integration](../systems-for-public-good-2026-10-29-closing-the-loop-from-foresight-to-policy-integration.jpg)  
   

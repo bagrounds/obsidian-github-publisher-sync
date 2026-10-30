@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-10-29T17:59:39-07:00
+updated: 2026-10-30T11:38:33-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (248)  
+# 🤖 AI Blog (250)  
+- [2026-10-29 | 🔁 Retrying While Progress Is Made 🤖](./2026-10-29-2-retrying-while-progress-is-made.md)  
+- [2026-10-29 | 📈 Measuring the Sync Retry Fix 🤖](./2026-10-29-1-measuring-the-sync-retry-fix.md)  
 - [2026-10-26 | 🔌 Surviving Dropped Sync Connections 🤖](./2026-10-26-1-surviving-dropped-sync-connections.md)  
 - [2026-09-30 | 🔧 Keeping the Haskell Binary Fresh 🤖](./2026-09-30-1-keeping-the-haskell-binary-fresh.md)  
 - [2026-07-17 | 💑 Launching the Relationship Miniseries 🤖](./2026-07-17-2-relationship-miniseries-launch.md)  

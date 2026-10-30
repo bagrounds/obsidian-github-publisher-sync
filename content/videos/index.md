@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-30T11:38:33-07:00
+updated: 2026-10-30T14:35:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (946)  
+# 📺 Videos (947)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -268,6 +268,7 @@ updated: 2026-10-30T11:38:33-07:00
 - [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
+- [🧬🥗🧠 Gut Expert: Eating these 3 foods could improve your mental health | Tim Spector: Full Interview](./gut-expert-eating-these-3-foods-could-improve-your-mental-health-tim-spector-full-interview.md)  
 - [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
 - [⚙️🏗️ Hamming, «Systems Engineering» (May 30, 1995)](./hamming-systems-engineering-may-30-1995.md)  
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./hamming-you-and-your-research-june-6-1995.md)  

@@ -32,6 +32,9 @@ import qualified Automation.JsonTest
 import qualified Automation.OgMetadataTest
 import qualified Automation.ReflectionTitleTest
 import qualified Automation.ObsidianSyncTest
+import qualified Automation.ObsidianSync.RetryTest
+import qualified Automation.ObsidianSync.ReportTest
+import qualified Automation.GitHubStepSummaryTest
 import qualified Automation.TypesTest
 import qualified Automation.PlatformTest
 import qualified Automation.CredentialsTest
@@ -92,6 +95,9 @@ main = defaultMain $ testGroup "Automation"
   , Automation.ReflectionTitleTest.tests
   , Automation.OgMetadataTest.tests
   , Automation.ObsidianSyncTest.tests
+  , Automation.ObsidianSync.RetryTest.tests
+  , Automation.ObsidianSync.ReportTest.tests
+  , Automation.GitHubStepSummaryTest.tests
   , Automation.TypesTest.tests
   , Automation.PlatformTest.tests
   , Automation.CredentialsTest.tests

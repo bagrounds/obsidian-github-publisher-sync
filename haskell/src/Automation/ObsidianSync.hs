@@ -4,9 +4,6 @@
 module Automation.ObsidianSync
   ( ObsidianCredentials (..)
   , SyncResult (..)
-  , SyncFailure (..)
-  , RetryableSyncFailure (..)
-  , classifySyncFailure
   , runObCommand
   , removeSyncLock
   , killObProcesses
@@ -25,9 +22,12 @@ import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, catch, throwIO, try)
 import Control.Monad (void, when)
 import Data.List (intercalate)
+import Data.List.NonEmpty (NonEmpty (..))
+import qualified Data.List.NonEmpty as NonEmpty
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
+import Data.Time (NominalDiffTime, diffUTCTime, getCurrentTime)
 import System.Directory
   ( doesDirectoryExist
   , doesFileExist
@@ -39,6 +39,9 @@ import System.Environment (getEnvironment)
 import System.Exit (ExitCode (..))
 import System.FilePath ((</>))
 import Automation.Secret (Secret (..))
+import qualified Automation.GitHubStepSummary as StepSummary
+import qualified Automation.ObsidianSync.Report as Report
+import qualified Automation.ObsidianSync.Retry as Retry
 import System.Posix.Process (getProcessID)
 import System.Process
   ( proc
@@ -47,6 +50,7 @@ import System.Process
   , readProcessWithExitCode
   , CreateProcess (..)
   )
+import System.Random (randomRIO)
 
 data ObsidianCredentials = ObsidianCredentials
   { ocAuthToken     :: Secret
@@ -58,37 +62,6 @@ data SyncResult = SyncResult
   { srVaultDirectory :: FilePath
   , srSuccess  :: Bool
   } deriving (Show, Eq)
-
-data RetryableSyncFailure
-  = LockContention
-  | ConnectionLost
-  deriving (Show, Eq, Bounded, Enum)
-
-data SyncFailure
-  = Retryable RetryableSyncFailure
-  | Unrecoverable
-  deriving (Show, Eq)
-
-lockContentionSignature :: Text
-lockContentionSignature = "Another sync instance"
-
-connectionLostSignatures :: [Text]
-connectionLostSignatures =
-  [ "Error: Disconnected"
-  , "Unable to connect to server"
-  , "The connection to the server has encountered an error"
-  ]
-
-classifySyncFailure :: Text -> SyncFailure
-classifySyncFailure message
-  | lockContentionSignature `T.isInfixOf` message = Retryable LockContention
-  | any (`T.isInfixOf` message) connectionLostSignatures = Retryable ConnectionLost
-  | otherwise = Unrecoverable
-
-describeRetryableSyncFailure :: RetryableSyncFailure -> String
-describeRetryableSyncFailure = \case
-  LockContention -> "⚠️ Sync lock contention"
-  ConnectionLost -> "🔌 Obsidian Sync connection lost"
 
 runObCommand :: [String] -> Maybe FilePath -> [(String, String)] -> IO (String, String)
 runObCommand args mCwd extraEnv = do
@@ -154,30 +127,59 @@ ensureSyncClean vaultDirectory = do
     putStrLn "⚠️ Lock still exists after cleanup, removing again"
     removeDirectoryRecursive lockPath
 
-runObSyncWithRetry :: [String] -> [(String, String)] -> FilePath -> Int -> IO ()
-runObSyncWithRetry args env vaultDirectory maxRetries = runAttempt 0
+runObSyncWithRetry :: Report.Direction -> [String] -> [(String, String)] -> FilePath
+  -> IO (Either (Report.Report, SomeException) Report.Report)
+runObSyncWithRetry direction args env vaultDirectory = do
+  startedAt <- getCurrentTime
+  runAttempt startedAt []
   where
-    runAttempt attempt = do
+    runAttempt startedAt previousAttempts = do
+      attemptStartedAt <- getCurrentTime
+      filesBefore <- Retry.FileCount <$> countVaultFiles vaultDirectory
       result <- try $ runObCommand args Nothing env :: IO (Either SomeException (String, String))
-      either (recover attempt) (const (pure ())) result
+      filesAfter <- Retry.FileCount <$> countVaultFiles vaultDirectory
+      finishedAt <- getCurrentTime
+      jitter <- Retry.mkJitter <$> randomRIO (0, 1)
+      let attempt = Retry.Attempt
+            { Retry.outcome = either (Retry.Failed . Retry.classifySyncFailure . T.pack . show) (const Retry.Succeeded) result
+            , Retry.filesBefore
+            , Retry.filesAfter
+            , Retry.duration = diffUTCTime finishedAt attemptStartedAt
+            }
+          attempts = NonEmpty.prependList previousAttempts (attempt :| [])
+          elapsed = diffUTCTime finishedAt startedAt
+          report stopReason = Report.Report { Report.direction = direction, Report.attempts, Report.stopReason, Report.elapsed }
+      case Retry.decide Retry.syncPolicy jitter elapsed attempts of
+        Retry.RetryAfter delay -> do
+          TIO.putStrLn $ describeRetry attempt (NonEmpty.length attempts) elapsed delay
+          ensureSyncClean vaultDirectory
+          threadDelay (round (delay * 1000000))
+          runAttempt startedAt (NonEmpty.toList attempts)
+        Retry.Stop stopReason ->
+          pure $ either (\failure -> Left (report stopReason, failure)) (const (Right (report stopReason))) result
 
-    recover attempt failure = case classifySyncFailure (T.pack (show failure)) of
-      Unrecoverable -> throwIO failure
-      Retryable retryableFailure
-        | attempt >= maxRetries -> do
-            putStrLn $ "🛑 " <> describeRetryableSyncFailure retryableFailure
-              <> " — giving up after " <> show maxRetries <> " retries"
-            throwIO failure
-        | otherwise -> do
-            let delayMilliseconds = 2000 * (2 ^ attempt) :: Int
-            filesOnDisk <- countVaultFiles vaultDirectory
-            putStrLn $ describeRetryableSyncFailure retryableFailure
-              <> " (retry " <> show (attempt + 1) <> "/" <> show maxRetries
-              <> ", " <> show filesOnDisk <> " files on disk), resuming in "
-              <> show (delayMilliseconds `div` 1000) <> "s..."
-            ensureSyncClean vaultDirectory
-            threadDelay (delayMilliseconds * 1000)
-            runAttempt (attempt + 1)
+describeRetry :: Retry.Attempt -> Int -> NominalDiffTime -> NominalDiffTime -> Text
+describeRetry attempt@Retry.Attempt { Retry.outcome, Retry.filesAfter = Retry.FileCount filesOnDisk, Retry.duration } attemptNumber elapsed delay =
+  Report.describeOutcome outcome
+    <> " on attempt " <> Report.formatCount attemptNumber
+    <> " after " <> Report.formatDuration duration
+    <> " (" <> Report.formatGain (Retry.filesGained attempt) <> " files, "
+    <> Report.formatCount filesOnDisk <> " on disk, "
+    <> Report.formatDuration elapsed <> " elapsed), resuming in "
+    <> Report.formatDuration delay <> "..."
+
+publishSyncReport :: Report.Report -> IO ()
+publishSyncReport report = do
+  TIO.putStrLn (Report.headline report)
+  written <- StepSummary.locateSummaryFile
+    >>= either (pure . Left) (`StepSummary.appendMarkdown` Report.render report)
+  TIO.putStrLn $ either StepSummary.describeError (const "📝 Sync report appended to the job summary") written
+
+syncWithReport :: Report.Direction -> FilePath -> [(String, String)] -> IO ()
+syncWithReport direction vaultDirectory env = do
+  result <- runObSyncWithRetry direction ["sync", "--path", vaultDirectory] env vaultDirectory
+  publishSyncReport (either fst id result)
+  either (throwIO . snd) (const (pure ())) result
 
 syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do
@@ -195,7 +197,7 @@ coldCacheSync creds vaultDirectory env = do
   _ <- runObCommand setupArgs Nothing env
   removeSyncLock vaultDirectory
   putStrLn "📥 Pulling latest vault content..."
-  runObSyncWithRetry ["sync", "--path", vaultDirectory] env vaultDirectory 5
+  syncWithReport Report.Pull vaultDirectory env
   fileCount <- countVaultFiles vaultDirectory
   putStrLn $ "📊 Vault file count after pull: " <> show fileCount
   writeFile (vaultFileCountPath vaultDirectory) (show fileCount)
@@ -209,7 +211,7 @@ pushObsidianVault vaultDirectory authToken = do
   validatePrePushFileCount vaultDirectory prePushFileCount
   ensureSyncClean vaultDirectory
   putStrLn "📤 Pushing changes to Obsidian Sync..."
-  runObSyncWithRetry ["sync", "--path", vaultDirectory] env vaultDirectory 5
+  syncWithReport Report.Push vaultDirectory env
   threadDelay 1000000
   ensureSyncClean vaultDirectory
 

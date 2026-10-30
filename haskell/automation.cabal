@@ -52,6 +52,9 @@ library
     Automation.BlogComments.GraphQL
     Automation.GcpAuth
     Automation.ObsidianSync
+    Automation.ObsidianSync.Retry
+    Automation.ObsidianSync.Report
+    Automation.GitHubStepSummary
     Automation.StaticGiscus
     Automation.StaticGiscus.GraphQL
     Automation.BlogImage
@@ -199,6 +202,9 @@ test-suite automation-tests
     Automation.OgMetadataTest
     Automation.ReflectionTitleTest
     Automation.ObsidianSyncTest
+    Automation.ObsidianSync.RetryTest
+    Automation.ObsidianSync.ReportTest
+    Automation.GitHubStepSummaryTest
     Automation.TypesTest
     Automation.PlatformTest
     Automation.CredentialsTest

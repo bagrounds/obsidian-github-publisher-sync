@@ -8,13 +8,9 @@ import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, assertEqual, assertBool)
-import Test.Tasty.QuickCheck (testProperty, (==>))
 
 import Automation.ObsidianSync
-  ( RetryableSyncFailure (..)
-  , SyncFailure (..)
-  , classifySyncFailure
-  , countVaultFiles
+  ( countVaultFiles
   , validatePrePushFileCount
   , vaultFileCountPath
   , writeEmbedsToNote
@@ -22,90 +18,10 @@ import Automation.ObsidianSync
 
 tests :: TestTree
 tests = testGroup "ObsidianSync"
-  [ classifySyncFailureTests
-  , countVaultFilesTests
+  [ countVaultFilesTests
   , validatePrePushTests
   , writeEmbedsTests
   ]
-
-disconnectedDuringPull :: T.Text
-disconnectedDuringPull = T.unlines
-  [ "user error (Command: ob sync --path /tmp/obsidian-vault-2165"
-  , "Exit code: 1"
-  , "Stdout: Starting sync:"
-  , "Connection successful. Detecting changes..."
-  , "Downloading attachments/topics-spoonfedstudy.jpg"
-  , "Disconnected from server"
-  , ""
-  , "Stderr: Sync error: Error: Disconnected"
-  , "    at Zi.disconnect (/opt/hostedtoolcache/node/22.23.3/x64/lib/node_modules/obsidian-headless/cli.js:146:5845)"
-  , "Error: Disconnected"
-  , "Node.js v22.23.3"
-  , ")"
-  ]
-
-lockContention :: T.Text
-lockContention = T.unlines
-  [ "user error (Command: ob sync --path /tmp/obsidian-vault-42"
-  , "Exit code: 1"
-  , "Stderr: Another sync instance is already running for this vault."
-  , ")"
-  ]
-
-downloadedFileNamedLikeAnError :: T.Text
-downloadedFileNamedLikeAnError = T.unlines
-  [ "user error (Command: ob sync --path /tmp/obsidian-vault-7"
-  , "Exit code: 1"
-  , "Stdout: Downloading notes/Disconnected from server.md"
-  , "Stderr: Vault not found"
-  , ")"
-  ]
-
-classifySyncFailureTests :: TestTree
-classifySyncFailureTests = testGroup "classifySyncFailure"
-  [ testCase "WebSocket disconnect mid-pull is a lost connection" $
-      assertEqual "disconnect" (Retryable ConnectionLost) (classifySyncFailure disconnectedDuringPull)
-
-  , testCase "abnormal close with a status code is a lost connection" $
-      assertEqual "close code" (Retryable ConnectionLost)
-        (classifySyncFailure "Stderr: Sync error: Error: Disconnected. Code: 1001 Going Away")
-
-  , testCase "failure to connect is a lost connection" $
-      assertEqual "unable to connect" (Retryable ConnectionLost)
-        (classifySyncFailure "Stderr: Error: Unable to connect to server.")
-
-  , testCase "WebSocket error event is a lost connection" $
-      assertEqual "socket error" (Retryable ConnectionLost)
-        (classifySyncFailure "Stderr: Error: The connection to the server has encountered an error.")
-
-  , testCase "another sync instance is lock contention" $
-      assertEqual "lock" (Retryable LockContention) (classifySyncFailure lockContention)
-
-  , testCase "a file name resembling a disconnect log line is not a lost connection" $
-      assertEqual "file name" Unrecoverable
-        (classifySyncFailure downloadedFileNamedLikeAnError)
-
-  , testCase "expired subscription is unrecoverable" $
-      assertEqual "subscription" Unrecoverable
-        (classifySyncFailure "Stderr: Your subscription to Obsidian Sync has expired")
-
-  , testProperty "messages without a known signature are unrecoverable" $ \message ->
-      let text = T.pack message
-          knownSignatures =
-            [ "Another sync instance", "Error: Disconnected"
-            , "Unable to connect to server", "The connection to the server has encountered an error" ]
-      in not (any (`T.isInfixOf` text) knownSignatures)
-           ==> classifySyncFailure text == Unrecoverable
-
-  , testProperty "surrounding output never changes a lost connection classification" $ \prefix suffix ->
-      let surrounded = T.pack prefix <> "Stderr: Sync error: Error: Disconnected" <> T.pack suffix
-      in not ("Another sync instance" `T.isInfixOf` surrounded)
-           ==> classifySyncFailure surrounded == Retryable ConnectionLost
-  ]
-
---------------------------------------------------------------------------------
--- countVaultFiles
---------------------------------------------------------------------------------
 
 countVaultFilesTests :: TestTree
 countVaultFilesTests = testGroup "countVaultFiles"
@@ -137,10 +53,6 @@ countVaultFilesTests = testGroup "countVaultFiles"
         count <- countVaultFiles directory
         assertEqual "should count only visible file" 1 count
   ]
-
---------------------------------------------------------------------------------
--- validatePrePushFileCount
---------------------------------------------------------------------------------
 
 validatePrePushTests :: TestTree
 validatePrePushTests = testGroup "validatePrePushFileCount"
@@ -181,10 +93,6 @@ validatePrePushTests = testGroup "validatePrePushFileCount"
             (T.isInfixOf "CIRCUIT BREAKER" (T.pack (show failure)))
           Right _ -> assertBool "should have failed" False
   ]
-
---------------------------------------------------------------------------------
--- writeEmbedsToNote
---------------------------------------------------------------------------------
 
 writeEmbedsTests :: TestTree
 writeEmbedsTests = testGroup "writeEmbedsToNote"
@@ -229,10 +137,6 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
         assertBool "should contain Section A" $ T.isInfixOf "## Section A" result
         assertBool "should contain Section B" $ T.isInfixOf "## Section B" result
   ]
-
---------------------------------------------------------------------------------
--- Helpers
---------------------------------------------------------------------------------
 
 isRight :: Either a b -> Bool
 isRight (Right _) = True

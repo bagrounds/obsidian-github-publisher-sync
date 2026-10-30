@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-17T01:46:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A conceptual illustration featuring a minimalist, stylized Swedish landscape. In the foreground, a weathered, elderly person sits on a park bench, looking out over a town with a mix of traditional red wooden cottages and sleek, modern glass skyscrapers. A single, golden coin rests on the bench beside them, casting a long, sharp shadow that stretches toward the horizon. The sky transitions from a soft, nostalgic sunset glow on one side to a cool, sterile blue on the other, symbolizing the shift from the collective People’s Home era to modern individualistic wealth. The aesthetic is clean, slightly melancholic, and uses a muted Nordic color palette of deep blues, ochre, and slate grey to evoke a sense of transition and reflection.
+updated: 2026-10-30T11:19:27
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country  
@@ -59,4 +60,10 @@ image_prompt: A conceptual illustration featuring a minimalist, stylized Swedish
 ### 🎨 Creatively Related  
   
 * 📓 The Swedish Theory of Love by Henrik Berggren and Lars Trägårdh describes the Swedish model of statist individualism where the state supports individual autonomy to enable authentic relationships.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty provides the global theoretical framework for understanding the relationship between capital accumulation and modern inequality.
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty provides the global theoretical framework for understanding the relationship between capital accumulation and modern inequality.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mz3nws2jsj2h" data-bluesky-cid="bafyreiahlyej5f4rrs3hsokmqleckepf565prk2kp27e6bpyisks6sdzhq"><p>😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country  
+  
+#AI Q: 💰 Does wealth tax help?  
+https://bagrounds.org/articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mz3nws2jsj2h?ref_src=embed">2026-10-30T11:19:49.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

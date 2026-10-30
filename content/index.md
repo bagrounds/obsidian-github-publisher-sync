@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-29T16:09:50-07:00
+updated: 2026-10-29T17:59:39-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-10-29T16:09:50-07:00
 - [2026-10-27 | ⚡ 🌲 Reclaiming Your Focus: The Restorative Power of Involuntary Attention ⚡](./vital-signals/2026-10-27-reclaiming-your-focus-the-restorative-power-of-involuntary-attention.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (198)  
+## [🔀 Convergence](./convergence/index.md) (199)  
+- [2026-10-29 | 🔀 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-29-the-architected-grammar-of-shared-becoming.md)  
 - [2026-10-28 | 🔀 🪞 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-28-the-architected-grammar-of-shared-becoming.md)  
 - [2026-10-27 | 🔀 The Calibrated Canvas of Co-Metabolic Disclosure 🔀](./convergence/2026-10-27-the-calibrated-canvas-of-co-metabolic-disclosure.md)  
-- [2026-10-26 | 🔀 🖼️ The Calibrated Canvas of Co-Metabolic Disclosure 🔀](./convergence/2026-10-26-the-calibrated-canvas-of-co-metabolic-disclosure.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-10-29T16:09:50-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (944)  
+## [📺 Videos](./videos/index.md) (945)  
+- [👂🤝🕊️✅ The 4-step listening trick that defuses any fight | Amanda Ripley: Full Interview](./videos/the-4-step-listening-trick-that-defuses-any-fight-amanda-ripley-full-interview.md)  
 - [🚫🧠🔥 The biggest lies about good sex and how to have it debunked | Emily Nagoski Full Interview](./videos/the-biggest-lies-about-good-sex-and-how-to-have-it-debunked-emily-nagoski-full-interview.md)  
 - [🧠✨ You have more power over reality than you think | Lisa Feldman Barrett](./videos/you-have-more-power-over-reality-than-you-think-lisa-feldman-barrett.md)  
-- [🗳️📈🗺️💥 Tamara Keith and Amy Walter on the midterm outlook and possible redistricting backfire](./videos/tamara-keith-and-amy-walter-on-the-midterm-outlook-and-possible-redistricting-backfire.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

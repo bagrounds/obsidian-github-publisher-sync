@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-29T16:09:50-07:00
+updated: 2026-10-29T17:59:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (944)  
+# 📺 Videos (945)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -647,6 +647,7 @@ updated: 2026-10-29T16:09:50-07:00
 - [The 10 tactics of fascism | Jason Stanley | Big Think](./the-10-tactics-of-fascism-jason-stanley-big-think.md)  
 - [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./the-2025-nobel-prize-in-economics-explained.md)  
+- [👂🤝🕊️✅ The 4-step listening trick that defuses any fight | Amanda Ripley: Full Interview](./the-4-step-listening-trick-that-defuses-any-fight-amanda-ripley-full-interview.md)  
 - [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./the-529-plan-just-got-a-big-upgrade.md)  
 - [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./the-5-things-nobody-tells-you-about-opus-4-7.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  

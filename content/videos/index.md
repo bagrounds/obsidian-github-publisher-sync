@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-10-30T16:30:44-07:00
+updated: 2026-10-30T17:04:22-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (947)  
+# 📺 Videos (948)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -825,6 +825,7 @@ updated: 2026-10-30T16:30:44-07:00
 - [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
 - [🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS](./un-chief-says-us-bombing-of-iran-marks-perilous-turn-reuters.md)  
+- [🏛️🇺🇸🤝 Understanding the United States House and Senate | Explainer](./understanding-the-united-states-house-and-senate-explainer.md)  
 - [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./unit-6-tree-planting-and-care-planting-preparation.md)  
 - [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./unit-6-tree-planting-and-care-root-washing.md)  
 - [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  

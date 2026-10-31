@@ -14,14 +14,17 @@
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
 | 📚 Library | `haskell/src/Automation/AiBlogLinks.hs` | 🔧 Pure functions for building and inserting nav links |
-| 🧪 Tests | `haskell/test/Automation/AiBlogLinksTest.hs` | ✅ 42 tests covering all pure and I/O functions |
+| 🧪 Tests | `haskell/test/Automation/AiBlogLinksTest.hs` | ✅ Unit and property tests covering all pure and I/O functions, including nav line normalization |
+| 🔄 Vault sync | `haskell/src/Automation/VaultSync.hs` | 📥 Copies new posts from a source folder, applying a content transform to each new file |
+| 🔌 Runner | `haskell/src/Automation/TaskRunners.hs` | 🃏 Syncs the publisher repo and DOMINATION_AI_BLOG_DIR sources |
+| ⚙️ Workflow | `.github/workflows/scheduled.yml` | 📥 Sparse checkout of bagrounds/domination and DOMINATION_AI_BLOG_DIR export |
 | 🔌 Consumer | `haskell/app/RunScheduled.hs` | 🖼️ Integrated into backfill-blog-images task |
 
 ### 🔄 Data Flow
 
 The ai-blog sync runs as part of the backfill-blog-images task.
 
-Step 1: Sync new AI blog posts from repo to vault. Uses word-based Jaccard similarity (threshold 0.25) to distinguish genuinely new posts from renamed or modified versions of existing vault files. Never overwrites.
+Step 1: Sync new AI blog posts from each source repo to vault — first this publisher repo, then the domination repo (see External Sources below). Uses word-based Jaccard similarity (threshold 0.25) to distinguish genuinely new posts from renamed or modified versions of existing vault files. Never overwrites. Each newly copied post gets its nav line normalized (see Nav Line Normalization below).
 Step 2: Backfill blog images (max 4 per hour).
 Step 3: Scan ai-blog posts in vault and add missing navigation links (⏮️/⏭️).
 Step 4: Add update links from image backfill results to daily reflections.
@@ -40,6 +43,28 @@ For example, the nav prefix followed by a pipe, then the back link emoji pointin
 The first post in the series has no back link.
 The last post has no forward link.
 A single post has only the nav prefix with no additional links.
+
+### 🧹 Nav Line Normalization
+
+🧭 The nav updater only rewrites a line that already starts with the wiki nav prefix, so every post must carry one when it lands in the vault.
+✂️ At copy time, normalizeNavLine in AiBlogLinks prepares each new post:
+
+- ✅ A post that already has a wiki nav line is left untouched.
+- 🔁 A post whose first non-blank line after frontmatter is a markdown Home link, such as the domination format with a house emoji Home link pointing at the parent folder, has that line replaced by the wiki nav prefix.
+- ➕ Any other post gets the wiki nav prefix inserted directly after its frontmatter.
+- 📝 Nothing else changes — headings, frontmatter, and body are kept exactly as written, including the domination habit of putting the emoji before the date in the H1.
+
+🔗 Step 3 then fills in the ⏮️ and ⏭️ links on the next pass, exactly as for publisher-repo posts.
+♻️ Normalization is idempotent and only ever applies to newly copied files, so existing vault posts are never rewritten by it.
+
+### 🌐 External Sources
+
+🃏 The bagrounds/domination repo writes one AI blog post per PR into its own ai-blog folder.
+📥 The scheduled workflow makes a shallow, sparse checkout of that public repo (ai-blog folder only, no credentials persisted) into .external/domination and exports DOMINATION_AI_BLOG_DIR pointing at its ai-blog folder.
+🔄 The backfill-blog-images task syncs that folder into the vault ai-blog folder right after the publisher-repo sync, using the same filename dedup, Jaccard skip, and nav normalization.
+⏭️ When DOMINATION_AI_BLOG_DIR is unset or blank (for example in local runs), the task logs that it is skipping the domination sync and continues.
+⚠️ When the variable points at a missing directory (for example because the checkout step failed — it is marked continue-on-error so other tasks still run), the task logs a warning and continues.
+🖼️ Because the sync runs before image backfill, nav linking, and reflection linking, domination posts get images, ⏮️/⏭️ links, and daily reflection links in the same run.
 
 ### 🔍 Detection Mechanism
 
@@ -65,6 +90,7 @@ Descriptive sentences and lists are preferred over visual-only formatting.
 ## 📐 Design Decisions
 
 Integration with backfill was chosen over a standalone task to avoid redundant vault pull/push cycles.
+External sources piggyback on the same backfill run for the same reason, and are normalized at copy time rather than teaching the nav updater to insert or rewrite foreign nav lines across the whole vault, which keeps the blast radius limited to newly copied posts.
 Posts are linked by filename sort order rather than frontmatter dates for reliability and simplicity.
 Navigation links use the same ⏮️/⏭️ emoji convention as the blog series for consistency.
 Daily reflection links use the post's date (from filename), not the current date, so posts land in the correct reflection.

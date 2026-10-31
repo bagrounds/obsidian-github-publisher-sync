@@ -44,8 +44,8 @@ syncFileToVault localPath vaultRelativePath vaultDirectory = do
 similarityThreshold :: Double
 similarityThreshold = 0.25
 
-syncNewMarkdownFiles :: FilePath -> FilePath -> (Text -> IO ()) -> IO Int
-syncNewMarkdownFiles repoDirectory vaultDirectory logger = do
+syncNewMarkdownFiles :: (Text -> Text) -> FilePath -> FilePath -> (Text -> IO ()) -> IO Int
+syncNewMarkdownFiles prepareForVault repoDirectory vaultDirectory logger = do
   repoExists <- doesDirectoryExist repoDirectory
   if not repoExists
     then pure 0
@@ -57,18 +57,18 @@ syncNewMarkdownFiles repoDirectory vaultDirectory logger = do
       vaultContents <- traverse (\filename -> TIO.readFile (vaultDirectory </> filename)) vaultMarkdownFiles
       repoEntries <- listDirectory repoDirectory
       let repoMarkdownFiles = filter isSyncableMarkdownFile repoEntries
-      counts <- traverse (syncIfNew repoDirectory vaultDirectory vaultFilenames (zip vaultMarkdownFiles vaultContents) logger) repoMarkdownFiles
+      counts <- traverse (syncIfNew prepareForVault repoDirectory vaultDirectory vaultFilenames (zip vaultMarkdownFiles vaultContents) logger) repoMarkdownFiles
       pure (sum counts)
   where
     isSyncableMarkdownFile filename = takeExtension filename == ".md" && filename /= "index.md" && filename /= "AGENTS.md"
 
-syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> (Text -> IO ()) -> FilePath -> IO Int
-syncIfNew sourceDirectory destinationDirectory vaultFilenames vaultContents logger filename = do
+syncIfNew :: (Text -> Text) -> FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> (Text -> IO ()) -> FilePath -> IO Int
+syncIfNew prepareForVault sourceDirectory destinationDirectory vaultFilenames vaultContents logger filename = do
   let filenameText = T.pack filename
   if filenameText `elem` vaultFilenames
     then pure 0
     else do
-      repoContent <- TIO.readFile (sourceDirectory </> filename)
+      repoContent <- prepareForVault <$> TIO.readFile (sourceDirectory </> filename)
       let (bestScore, bestMatch) = findBestMatch repoContent vaultContents
       if bestScore >= similarityThreshold
         then do

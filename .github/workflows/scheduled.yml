@@ -34,6 +34,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Checkout domination AI blog posts
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: bagrounds/domination
+          path: .external/domination
+          fetch-depth: 1
+          sparse-checkout: ai-blog
+          persist-credentials: false
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -91,6 +101,7 @@ jobs:
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
           GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
           REPO_ROOT: ${{ github.workspace }}
+          DOMINATION_AI_BLOG_DIR: ${{ github.workspace }}/.external/domination/ai-blog
         run: >-
           bin/run-scheduled
           ${{ github.event.inputs.task && format('--task {0}', github.event.inputs.task) || '' }}

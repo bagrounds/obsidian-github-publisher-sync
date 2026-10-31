@@ -193,7 +193,7 @@ syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
             vaultDirectory = temporaryDirectory </> "vault-tools"
         createDirectoryIfMissing True repoDirectory
         TIO.writeFile (repoDirectory </> "word-meter.md") "tool content here"
-        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
+        synced <- syncNewMarkdownFiles id repoDirectory vaultDirectory (const (pure ()))
         synced @?= 1
         content <- TIO.readFile (vaultDirectory </> "word-meter.md")
         content @?= "tool content here"
@@ -206,7 +206,7 @@ syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
         createDirectoryIfMissing True vaultDirectory
         TIO.writeFile (repoDirectory </> "word-meter.md") "repo version"
         TIO.writeFile (vaultDirectory </> "word-meter.md") "vault version"
-        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
+        synced <- syncNewMarkdownFiles id repoDirectory vaultDirectory (const (pure ()))
         synced @?= 0
         content <- TIO.readFile (vaultDirectory </> "word-meter.md")
         content @?= "vault version"
@@ -218,11 +218,11 @@ syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
         createDirectoryIfMissing True repoDirectory
         TIO.writeFile (repoDirectory </> "index.md") "index"
         TIO.writeFile (repoDirectory </> "AGENTS.md") "agents"
-        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
+        synced <- syncNewMarkdownFiles id repoDirectory vaultDirectory (const (pure ()))
         synced @?= 0
 
   , testCase "returns zero when repo directory does not exist" $ do
-      synced <- syncNewMarkdownFiles "/nonexistent-tools" "/also-nonexistent" (const (pure ()))
+      synced <- syncNewMarkdownFiles id "/nonexistent-tools" "/also-nonexistent" (const (pure ()))
       synced @?= 0
 
   , testCase "creates vault directory if missing" $
@@ -231,10 +231,64 @@ syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
             vaultDirectory = temporaryDirectory </> "vault-tools"
         createDirectoryIfMissing True repoDirectory
         TIO.writeFile (repoDirectory </> "calculator.md") "calc"
-        synced <- syncNewMarkdownFiles repoDirectory vaultDirectory (const (pure ()))
+        synced <- syncNewMarkdownFiles id repoDirectory vaultDirectory (const (pure ()))
         synced @?= 1
         exists <- doesFileExist (vaultDirectory </> "calculator.md")
         assertBool "tool page should exist in vault" exists
+
+  , testCase "applies the content transform to newly copied files" $
+      withSystemTempDirectory "ai-blog-sync-test" $ \temporaryDirectory -> do
+        let sourceDirectory = temporaryDirectory </> "domination-ai-blog"
+            vaultDirectory = temporaryDirectory </> "vault-ai-blog"
+        createDirectoryIfMissing True sourceDirectory
+        TIO.writeFile (sourceDirectory </> "2026-10-30-tooltips.md") "tooltips anchor positioning css"
+        synced <- syncNewMarkdownFiles ("NAV\n" <>) sourceDirectory vaultDirectory (const (pure ()))
+        synced @?= 1
+        content <- TIO.readFile (vaultDirectory </> "2026-10-30-tooltips.md")
+        content @?= "NAV\ntooltips anchor positioning css"
+
+  , testCase "never transforms or overwrites a file already in the vault" $
+      withSystemTempDirectory "ai-blog-sync-test" $ \temporaryDirectory -> do
+        let sourceDirectory = temporaryDirectory </> "domination-ai-blog"
+            vaultDirectory = temporaryDirectory </> "vault-ai-blog"
+        createDirectoryIfMissing True sourceDirectory
+        createDirectoryIfMissing True vaultDirectory
+        TIO.writeFile (sourceDirectory </> "2026-10-30-tooltips.md") "source version"
+        TIO.writeFile (vaultDirectory </> "2026-10-30-tooltips.md") "hand edited vault version"
+        synced <- syncNewMarkdownFiles ("NAV\n" <>) sourceDirectory vaultDirectory (const (pure ()))
+        synced @?= 0
+        content <- TIO.readFile (vaultDirectory </> "2026-10-30-tooltips.md")
+        content @?= "hand edited vault version"
+
+  , testCase "skips a near-identical post saved under a different filename" $
+      withSystemTempDirectory "ai-blog-sync-test" $ \temporaryDirectory -> do
+        let sourceDirectory = temporaryDirectory </> "domination-ai-blog"
+            vaultDirectory = temporaryDirectory </> "vault-ai-blog"
+            post = "teaching bots to play domination with big money and random strategies"
+        createDirectoryIfMissing True sourceDirectory
+        createDirectoryIfMissing True vaultDirectory
+        TIO.writeFile (sourceDirectory </> "2026-03-15-ai-bot-players.md") post
+        TIO.writeFile (vaultDirectory </> "2026-03-15-1-ai-bot-players.md") ("NAV\n" <> post)
+        synced <- syncNewMarkdownFiles ("NAV\n" <>) sourceDirectory vaultDirectory (const (pure ()))
+        synced @?= 0
+        exists <- doesFileExist (vaultDirectory </> "2026-03-15-ai-bot-players.md")
+        assertBool "near-duplicate should not be copied" (not exists)
+
+  , testCase "a second source sees posts synced from the first source" $
+      withSystemTempDirectory "ai-blog-sync-test" $ \temporaryDirectory -> do
+        let publisherDirectory = temporaryDirectory </> "publisher-ai-blog"
+            dominationDirectory = temporaryDirectory </> "domination-ai-blog"
+            vaultDirectory = temporaryDirectory </> "vault-ai-blog"
+        createDirectoryIfMissing True publisherDirectory
+        createDirectoryIfMissing True dominationDirectory
+        TIO.writeFile (publisherDirectory </> "2026-10-30-1-sync.md") "publisher automation retries obsidian uploads"
+        TIO.writeFile (dominationDirectory </> "2026-10-30-1-sync.md") "anchored card tooltips stay visible"
+        TIO.writeFile (dominationDirectory </> "2026-10-30-tooltips.md") "anchored card tooltips stay visible"
+        publisherSynced <- syncNewMarkdownFiles id publisherDirectory vaultDirectory (const (pure ()))
+        dominationSynced <- syncNewMarkdownFiles id dominationDirectory vaultDirectory (const (pure ()))
+        (publisherSynced, dominationSynced) @?= (1, 1)
+        collided <- TIO.readFile (vaultDirectory </> "2026-10-30-1-sync.md")
+        collided @?= "publisher automation retries obsidian uploads"
   ]
 
 properties :: TestTree

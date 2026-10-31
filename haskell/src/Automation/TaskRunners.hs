@@ -10,7 +10,7 @@ module Automation.TaskRunners
   ) where
 
 import Control.Exception (SomeException, try)
-import Control.Monad (when)
+import Control.Monad (mfilter, when)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -26,7 +26,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension)
 import Data.Time (Day, dayOfWeek, defaultTimeLocale, parseTimeM, getCurrentTime)
 
-import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
+import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks, normalizeNavLine)
 import qualified Automation.AiFiction as AiFiction
 import Automation.AiFiction
   ( fictionEligibilityCutoff
@@ -277,11 +277,9 @@ runBackfillImages context contentDirectories = do
       vaultAiBlogDirectory = vaultDirectory </> "ai-blog"
       repoToolsDirectory = repoRoot </> "tools"
       vaultToolsDirectory = vaultDirectory </> "tools"
-  newPostCount <- syncNewMarkdownFiles repoAiBlogDirectory vaultAiBlogDirectory logMessage
-  case newPostCount of
-    0 -> pure ()
-    count -> logMessage $ "  📝 Synced " <> T.pack (show count) <> " new AI blog post(s) to vault"
-  newToolCount <- syncNewMarkdownFiles repoToolsDirectory vaultToolsDirectory logMessage
+  syncAiBlogPosts "publisher repo" repoAiBlogDirectory vaultAiBlogDirectory
+  syncDominationAiBlogPosts vaultAiBlogDirectory
+  newToolCount <- syncNewMarkdownFiles id repoToolsDirectory vaultToolsDirectory logMessage
   case newToolCount of
     0 -> pure ()
     count -> logMessage $ "  🧰 Synced " <> T.pack (show count) <> " new tool page(s) to vault"
@@ -354,6 +352,29 @@ runBackfillImages context contentDirectories = do
     ) todayLinks
 
   logMessage "✅ backfill-blog-images"
+
+syncAiBlogPosts :: Text -> FilePath -> FilePath -> IO ()
+syncAiBlogPosts sourceLabel sourceDirectory vaultAiBlogDirectory = do
+  newPostCount <- syncNewMarkdownFiles normalizeNavLine sourceDirectory vaultAiBlogDirectory logMessage
+  when (newPostCount > 0) $
+    logMessage $ "  📝 Synced " <> T.pack (show newPostCount) <> " new AI blog post(s) from " <> sourceLabel <> " to vault"
+
+dominationAiBlogDirectoryVariable :: String
+dominationAiBlogDirectoryVariable = "DOMINATION_AI_BLOG_DIR"
+
+syncDominationAiBlogPosts :: FilePath -> IO ()
+syncDominationAiBlogPosts vaultAiBlogDirectory = do
+  configuredValue <- lookupEnvText dominationAiBlogDirectoryVariable
+  case mfilter (not . T.null . T.strip) configuredValue of
+    Nothing ->
+      logMessage $ "  ⏭️  " <> T.pack dominationAiBlogDirectoryVariable <> " not set, skipping domination AI blog sync"
+    Just configuredDirectory -> do
+      let dominationAiBlogDirectory = T.unpack configuredDirectory
+      exists <- doesDirectoryExist dominationAiBlogDirectory
+      if exists
+        then syncAiBlogPosts "domination" dominationAiBlogDirectory vaultAiBlogDirectory
+        else logMessage $ "  ⚠️  " <> T.pack dominationAiBlogDirectoryVariable <> " points to a missing directory ("
+          <> configuredDirectory <> "), skipping domination AI blog sync"
 
 runInternalLinking :: Context.AppContext -> IO ()
 runInternalLinking context = do

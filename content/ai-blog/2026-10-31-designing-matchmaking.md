@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-10-30-tooltips-that-stay-on-screen.md) [⏭️](./2026-10-31-invite-link-rooms.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-10-30-tooltips-that-stay-on-screen.md) [⏭️](../../2026-10-31-gpt-6-luna-research.md)  
   
 # 🚪 2026-10-31 | Designing Matchmaking for a Relay That Knows Nothing 📨  
 ![ai-blog-2026-10-31-designing-matchmaking](../ai-blog-2026-10-31-designing-matchmaking.jpg)  

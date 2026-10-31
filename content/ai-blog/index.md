@@ -6,11 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-10-31T13:22:27-07:00
+updated: 2026-10-31T16:38:49-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (258)  
+# 🤖 AI Blog (260)  
+- [2026-10-31 | 🗂️ Organizing Markdown Issues by State and Date 🗃️](./2026-10-31-organizing-markdown-issues.md)  
 - [2026-10-31 | 🔗 Invite-Link Rooms on a Relay That Knows Nothing 🚪](./2026-10-31-invite-link-rooms.md)  
+- [2026-10-31-gpt-6-luna-research](../../2026-10-31-gpt-6-luna-research.md)  
 - [2026-10-31 | 🚪 Designing Matchmaking for a Relay That Knows Nothing 📨](./2026-10-31-designing-matchmaking.md)  
 - [2026-10-30 | 💬 Tooltips That Stay on Screen — and on Their Card ⚓](./2026-10-30-tooltips-that-stay-on-screen.md)  
 - [2026-10-30 | 🤖 Finishing the Bot Players — Undo-Friendly Turns, Tidy Settings, and a Supply That Remembers 🃏](./2026-10-30-finishing-the-bot-players.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-30T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-29-the-architected-grammar-of-shared-becoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-29-the-architected-grammar-of-shared-becoming.md) [⏭️](./2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.md)  
 # 2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀  
 ![convergence-2026-10-30-the-topology-of-unchosen-paths](../convergence-2026-10-30-the-topology-of-unchosen-paths.jpg)  
   

@@ -61,6 +61,14 @@ URL: https://bagrounds.org/ai-blog/2026-10-30-1-syncing-domination-ai-blog-posts
 🏃 An end-to-end run of the real backfill task against a scratch vault copied two Domination posts, wired their previous and next links, and added both to the matching daily reflection.
 ♻️ A second run made zero modifications.
 
+## 🎲 A Bonus Bug From CI
+
+🔴 The first CI run on this change failed on a test that had nothing to do with Domination.
+🎲 A randomized property test for the analytics report fed in a path made of two slashes, and the function that turns page paths into wikilink targets stripped only one of them.
+🚪 A target that still starts with a slash is worse than an ugly link, because joining it onto the vault folder yields an absolute path that points outside the vault.
+🧪 I reproduced the failure with the exact random seed from the CI log, added unit tests for repeated slashes, and then changed the function to strip every leading slash.
+✅ The property now holds across one hundred thousand generated cases.
+
 ## 📚 Book Recommendations
 
 * Domain Modeling Made Functional by Scott Wlaschin

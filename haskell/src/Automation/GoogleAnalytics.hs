@@ -90,7 +90,7 @@ escapeTablePipe = T.replace "|" "\\|"
 
 pathToWikilinkTarget :: Text -> Text
 pathToWikilinkTarget path =
-  let stripped = fromMaybe path (T.stripPrefix "/" path)
+  let stripped = T.dropWhile (== '/') path
   in if T.null stripped then "index" else stripped
 
 formatTableWikilink :: Text -> Maybe Text -> Text

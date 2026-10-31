@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-30T16:30:44-07:00
+updated: 2026-10-30T17:04:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-10-30T16:30:44-07:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (947)  
+## [📺 Videos](./videos/index.md) (948)  
+- [🏛️🇺🇸🤝 Understanding the United States House and Senate | Explainer](./videos/understanding-the-united-states-house-and-senate-explainer.md)  
 - [🧬🥗🧠 Gut Expert: Eating these 3 foods could improve your mental health | Tim Spector: Full Interview](./videos/gut-expert-eating-these-3-foods-could-improve-your-mental-health-tim-spector-full-interview.md)  
 - [🏗️🤖🛠️ Building Great Agent Skills: The Missing Manual](./videos/building-great-agent-skills-the-missing-manual.md)  
-- [👂🤝🕊️✅ The 4-step listening trick that defuses any fight | Amanda Ripley: Full Interview](./videos/the-4-step-listening-trick-that-defuses-any-fight-amanda-ripley-full-interview.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

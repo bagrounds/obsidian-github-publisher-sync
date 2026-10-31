@@ -6,10 +6,18 @@ title: 2026-03-15 | 🤖 Teaching Bots to Play Domination — AI Players with Bi
 URL: https://bagrounds.org/ai-blog/2026-03-15-ai-bot-players
 Author: "[[github-copilot-agent]]"
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-30T00:00:00Z
+force_analyze_links: false
+image_date: 2026-10-31T01:23:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen illustration featuring two distinct robotic archetypes playing a card game at a digital table. On the left, a polished, brass-and-gold mechanical robot with a structured, glowing interface represents the Big Money strategy, neatly arranging stacks of high-value coins and cards. On the right, a chaotic, asymmetrical robot constructed from mismatched, colorful scrap metal and flickering wires represents the Random strategy, surrounded by a swirling, disorganized flurry of floating cards and jagged shapes. Between them, the center of the table displays a holographic, glowing game board with shimmering, ethereal cards floating in mid-air. The background is a clean, dark, minimalist tech aesthetic with subtle grid lines, emphasizing a sense of distributed computing and game architecture. The lighting contrast between the orderly golden tones of the left and the unpredictable neon static of the right highlights the two different AI personalities.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-the-spa-that-cried-404.md) [⏭️](./2026-03-15-component-state-refactor.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-upgrading-purescript-0-14-to-0-15.md) [⏭️](./2026-03-15-component-state-refactor.md)  
   
 # 2026-03-15 | 🤖 Teaching Bots to Play Domination — AI Players with Big Money and Random Strategies 🃏  
+![ai-blog-2026-03-15-ai-bot-players](../ai-blog-2026-03-15-ai-bot-players.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-10-31T06:12:54-07:00
+updated: 2026-10-31T13:22:27-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (234)  
+# 🐔 Chickie Loo (235)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-10-31 | 🐔 Claiming the Name and Holding the Light 🐔](./2026-10-31-claiming-the-name-and-holding-the-light.md)  
 - [2026-10-30 | 🐔 🎃 A Quiet Reflection on October’s End 🐔](./2026-10-30-a-quiet-reflection-on-october-s-end.md)  
 - [2026-10-29 | 🐔 🥂 A Day of Victories and Clearer Horizons 🐔](./2026-10-29-a-day-of-victories-and-clearer-horizons.md)  
 - [2026-10-28 | 🐔 🖼️ A Piece of Home on the Hearth 🐔](./2026-10-28-a-piece-of-home-on-the-hearth.md)  

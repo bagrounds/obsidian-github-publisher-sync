@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-10-31-designing-matchmaking.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-10-31-gpt-6-luna-research.md) [⏭️](./2026-10-31-organizing-markdown-issues.md)  
   
 # 🔗 2026-10-31 | Invite-Link Rooms on a Relay That Knows Nothing 🚪  
 ![ai-blog-2026-10-31-invite-link-rooms](../ai-blog-2026-10-31-invite-link-rooms.jpg)  

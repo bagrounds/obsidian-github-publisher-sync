@@ -368,6 +368,10 @@ wikilinkTests = testGroup "wikilinks"
       pathToWikilinkTarget "/reflections/2026-04-17" @?= "reflections/2026-04-17"
   , testCase "pathToWikilinkTarget converts root to index" $
       pathToWikilinkTarget "/" @?= "index"
+  , testCase "pathToWikilinkTarget strips repeated leading slashes" $
+      pathToWikilinkTarget "//ai-blog/some-post" @?= "ai-blog/some-post"
+  , testCase "pathToWikilinkTarget converts a slash-only path to index" $
+      pathToWikilinkTarget "//" @?= "index"
   , testCase "pathToWikilinkTarget preserves path without slash" $
       pathToWikilinkTarget "ai-blog/some-post" @?= "ai-blog/some-post"
   , testCase "formatTableWikilink with title" $

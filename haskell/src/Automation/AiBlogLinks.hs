@@ -4,6 +4,7 @@ module Automation.AiBlogLinks
   , aiBlogConfig
   , buildNavLine
   , updateNavLinks
+  , normalizeNavLine
   , navLinksMatch
   , extractPostDate
   , readAiBlogPostFiles
@@ -65,6 +66,32 @@ updateNavLinks content prevFilename nextFilename =
       in if currentLine == navLine
          then content
          else T.unlines (take index contentLines <> [navLine] <> drop (index + 1) contentLines)
+
+normalizeNavLine :: Text -> Text
+normalizeNavLine content
+  | any (T.isPrefixOf aiBlogNavPrefix) (T.lines content) = content
+  | otherwise =
+      let (_, body) = parseFrontmatter content
+          frontmatterBlock = fromMaybe "" (T.stripSuffix body content)
+      in terminateLine frontmatterBlock <> T.intercalate "\n" (withNavPrefix (T.splitOn "\n" body))
+
+withNavPrefix :: [Text] -> [Text]
+withNavPrefix bodyLines =
+  case span (T.null . T.strip) bodyLines of
+    (blankLines, firstLine : remainingLines)
+      | isMarkdownHomeNavLine firstLine -> blankLines <> (aiBlogNavPrefix : remainingLines)
+    _ -> aiBlogNavPrefix : bodyLines
+
+markdownHomeLinkPrefixes :: [Text]
+markdownHomeLinkPrefixes = ["[🏠 Home](", "[🏡 Home]("]
+
+isMarkdownHomeNavLine :: Text -> Bool
+isMarkdownHomeNavLine line = any (`T.isPrefixOf` T.stripStart line) markdownHomeLinkPrefixes
+
+terminateLine :: Text -> Text
+terminateLine text
+  | T.null text || T.isSuffixOf "\n" text = text
+  | otherwise = text <> "\n"
 
 findIndex :: (a -> Bool) -> [a] -> Maybe Int
 findIndex predicate = findAt 0

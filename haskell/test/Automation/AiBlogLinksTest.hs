@@ -20,15 +20,12 @@ tests = testGroup "AiBlogLinks"
   , aiBlogConfigTests
   , buildNavLineTests
   , updateNavLinksTests
+  , normalizeNavLineTests
   , navLinksMatchTests
   , extractPostDateTests
   , buildReflectionLinksTests
   , propertyTests
   ]
-
---------------------------------------------------------------------------------
--- constants
---------------------------------------------------------------------------------
 
 constantTests :: TestTree
 constantTests = testGroup "constants"
@@ -37,10 +34,6 @@ constantTests = testGroup "constants"
   , testCase "aiBlogNavPrefix contains AI Blog link" $
       assertBool "contains AI Blog" (T.isInfixOf "AI Blog" aiBlogNavPrefix)
   ]
-
---------------------------------------------------------------------------------
--- aiBlogConfig
---------------------------------------------------------------------------------
 
 aiBlogConfigTests :: TestTree
 aiBlogConfigTests = testGroup "aiBlogConfig"
@@ -51,10 +44,6 @@ aiBlogConfigTests = testGroup "aiBlogConfig"
   , testCase "has AI Blog as name" $
       name aiBlogConfig @?= "AI Blog"
   ]
-
---------------------------------------------------------------------------------
--- buildNavLine
---------------------------------------------------------------------------------
 
 buildNavLineTests :: TestTree
 buildNavLineTests = testGroup "buildNavLine"
@@ -85,10 +74,6 @@ buildNavLineTests = testGroup "buildNavLine"
         assertBool "back link path" (T.isInfixOf "[[ai-blog/2026-01-01-1-a|⏮️]]" result)
         assertBool "forward link path" (T.isInfixOf "[[ai-blog/2026-01-03-1-c|⏭️]]" result)
   ]
-
---------------------------------------------------------------------------------
--- updateNavLinks
---------------------------------------------------------------------------------
 
 updateNavLinksTests :: TestTree
 updateNavLinksTests = testGroup "updateNavLinks"
@@ -123,9 +108,56 @@ updateNavLinksTests = testGroup "updateNavLinks"
         assertBool "preserves body" (T.isInfixOf "Body text here" result)
   ]
 
---------------------------------------------------------------------------------
--- navLinksMatch
---------------------------------------------------------------------------------
+dominationFrontmatter :: T.Text
+dominationFrontmatter = T.unlines
+  [ "---"
+  , "share: true"
+  , "title: 2026-10-30 | 💬 Tooltips That Stay on Screen ⚓"
+  , "URL: https://bagrounds.org/ai-blog/2026-10-30-tooltips-that-stay-on-screen"
+  , "tags:"
+  , "---"
+  ]
+
+normalizeNavLineTests :: TestTree
+normalizeNavLineTests = testGroup "normalizeNavLine"
+  [ testCase "replaces a markdown nav line with the wiki nav prefix" $
+      let content = dominationFrontmatter
+            <> "[🏠 Home](../) > [🤖 AI Blog](./) | [⏮️ 2026-10-30 | 🤖 Bots](./2026-10-30-finishing-the-bot-players)\n"
+            <> "\n# 💬 2026-10-30 | Tooltips That Stay on Screen ⚓\n\nBody\n"
+      in normalizeNavLine content @?= dominationFrontmatter
+            <> aiBlogNavPrefix <> "\n"
+            <> "\n# 💬 2026-10-30 | Tooltips That Stay on Screen ⚓\n\nBody\n"
+  , testCase "replaces a markdown nav line using the garden house emoji" $
+      let content = dominationFrontmatter <> "[🏡 Home](../index.md) > [🤖 AI Blog](./index.md)\n# Post\n"
+      in normalizeNavLine content @?= dominationFrontmatter <> aiBlogNavPrefix <> "\n# Post\n"
+  , testCase "inserts the nav prefix directly after frontmatter when missing" $
+      let content = dominationFrontmatter <> "# 2026-03-11 | 🏗️ From GitLab to GitHub 🤖\n\nBody\n"
+      in normalizeNavLine content @?= dominationFrontmatter
+            <> aiBlogNavPrefix <> "\n# 2026-03-11 | 🏗️ From GitLab to GitHub 🤖\n\nBody\n"
+  , testCase "inserts the nav prefix at the top when there is no frontmatter" $
+      normalizeNavLine "# Post\n\nBody" @?= aiBlogNavPrefix <> "\n# Post\n\nBody"
+  , testCase "inserts the nav prefix on its own line after frontmatter without a trailing newline" $
+      normalizeNavLine "---\ntitle: Test\n---" @?= "---\ntitle: Test\n---\n" <> aiBlogNavPrefix <> "\n"
+  , testCase "keeps blank lines that precede the replaced markdown nav line" $
+      let content = dominationFrontmatter <> "\n[🏠 Home](../) > [🤖 AI Blog](./)\n# Post"
+      in normalizeNavLine content @?= dominationFrontmatter <> "\n" <> aiBlogNavPrefix <> "\n# Post"
+  , testCase "leaves content with a wiki nav line unchanged" $
+      let content = dominationFrontmatter <> buildNavLine (Just "prev.md") Nothing <> "\n# Post\n"
+      in normalizeNavLine content @?= content
+  , testCase "does not replace a markdown Home link deeper in the body" $
+      let content = dominationFrontmatter <> "# Post\n\n[🏠 Home](../) is where the heart is\n"
+      in normalizeNavLine content @?= dominationFrontmatter <> aiBlogNavPrefix <> "\n" <> "# Post\n\n[🏠 Home](../) is where the heart is\n"
+  , testCase "keeps the reversed-emoji H1 of a domination post as-is" $
+      let heading = "# 💬 2026-10-30 | Tooltips That Stay on Screen ⚓"
+          content = dominationFrontmatter <> "[🏠 Home](../) > [🤖 AI Blog](./)\n\n" <> heading <> "\n"
+      in assertBool "heading preserved" (heading `elem` T.lines (normalizeNavLine content))
+  , testCase "normalized post gets full prev/next nav from updateNavLinks" $
+      let content = dominationFrontmatter <> "[🏠 Home](../) > [🤖 AI Blog](./) | [⏮️ Old](./old)\n# Post\n"
+          updated = updateNavLinks (normalizeNavLine content) (Just "2026-10-29-1-a.md") (Just "2026-10-31-1-b.md")
+      in do
+        navLinksMatch updated (Just "2026-10-29-1-a.md") (Just "2026-10-31-1-b.md") @?= True
+        assertBool "markdown nav removed" (not (T.isInfixOf "](./old)" updated))
+  ]
 
 navLinksMatchTests :: TestTree
 navLinksMatchTests = testGroup "navLinksMatch"
@@ -144,10 +176,6 @@ navLinksMatchTests = testGroup "navLinksMatch"
       navLinksMatch "no nav here" Nothing Nothing @?= False
   ]
 
---------------------------------------------------------------------------------
--- extractPostDate
---------------------------------------------------------------------------------
-
 extractPostDateTests :: TestTree
 extractPostDateTests = testGroup "extractPostDate"
   [ testCase "extracts date from standard filename" $
@@ -163,10 +191,6 @@ extractPostDateTests = testGroup "extractPostDate"
   , testCase "returns Nothing when dashes in wrong place" $
       extractPostDate "20260328ab.md" @?= Nothing
   ]
-
---------------------------------------------------------------------------------
--- buildReflectionLinks
---------------------------------------------------------------------------------
 
 buildReflectionLinksTests :: TestTree
 buildReflectionLinksTests = testGroup "buildReflectionLinks"
@@ -205,10 +229,6 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
         assertBool "should exclude posts without valid dates" (null links)
   ]
 
---------------------------------------------------------------------------------
--- property tests
---------------------------------------------------------------------------------
-
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "buildNavLine always starts with aiBlogNavPrefix" $
@@ -235,4 +255,39 @@ propertyTests = testGroup "properties"
             once = updateNavLinks content prevM Nothing
             twice = updateNavLinks once prevM Nothing
         in once == twice
+  , testProperty "normalizeNavLine is idempotent" $
+      QC.forAll genMarkdown $ \content ->
+        let once = normalizeNavLine content
+        in normalizeNavLine once == once
+  , testProperty "normalizeNavLine always yields a line starting with aiBlogNavPrefix" $
+      QC.forAll genMarkdown $ \content ->
+        any (T.isPrefixOf aiBlogNavPrefix) (T.lines (normalizeNavLine content))
+  , testProperty "normalizeNavLine never drops a heading line" $
+      QC.forAll genMarkdown $ \content ->
+        let headings = filter (T.isPrefixOf "# ") (T.lines content)
+        in all (`elem` T.lines (normalizeNavLine content)) headings
+  , testProperty "normalizeNavLine only prepends the nav line to a body that starts with a heading" $
+      QC.forAll (withoutWikiNavLines <$> genMarkdown) $ \body ->
+        let content = dominationFrontmatter <> "# Post\n" <> body
+        in normalizeNavLine content == dominationFrontmatter <> aiBlogNavPrefix <> "\n# Post\n" <> body
+  ]
+
+genMarkdown :: QC.Gen T.Text
+genMarkdown = T.intercalate "\n" <$> QC.listOf genMarkdownLine
+
+withoutWikiNavLines :: T.Text -> T.Text
+withoutWikiNavLines = T.intercalate "\n" . filter (not . T.isPrefixOf aiBlogNavPrefix) . T.splitOn "\n"
+
+genMarkdownLine :: QC.Gen T.Text
+genMarkdownLine = QC.oneof
+  [ T.pack . QC.getPrintableString <$> QC.arbitrary
+  , QC.elements
+      [ ""
+      , "---"
+      , "title: Example"
+      , "# 💬 2026-10-30 | Heading"
+      , "[🏠 Home](../) > [🤖 AI Blog](./)"
+      , "[🏡 Home](../index.md) > [🤖 AI Blog](./index.md)"
+      , aiBlogNavPrefix
+      ]
   ]

@@ -93,7 +93,7 @@ We chose these five metrics because they tell a complete story: how much content
 
 ### 🏆 Top Pages Today
 
-When available, the top 5 pages by page views are displayed in a markdown table with views in the first column (right-aligned, headed with 👁️ Views) and the page as a wikilink in the second column. Each page path is resolved against the vault to extract the note title for use as the wikilink alias. When a note file does not exist for a given path, the raw URL path is used as the alias instead. Pipe characters in titles are escaped with backslash for table compatibility.
+When available, the top 5 pages by page views are displayed in a markdown table with views in the first column (right-aligned, headed with 👁️ Views) and the page as a wikilink in the second column. All leading slashes are stripped from each page path to form the wikilink target, so a malformed path like a double-slash URL can never resolve to an absolute path outside the vault, and a slash-only path maps to index. Each page path is resolved against the vault to extract the note title for use as the wikilink alias. When a note file does not exist for a given path, the raw URL path is used as the alias instead. Pipe characters in titles are escaped with backslash for table compatibility.
 
 ### 📄 Example Output
 

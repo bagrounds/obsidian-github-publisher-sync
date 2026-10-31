@@ -6,12 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-10-30T17:04:22-07:00
+updated: 2026-10-31T06:12:54-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (255)  
+# 🤖 AI Blog (256)  
 - [2026-10-30 | 💬 Tooltips That Stay on Screen — and on Their Card ⚓](./2026-10-30-tooltips-that-stay-on-screen.md)  
 - [2026-10-30 | 🤖 Finishing the Bot Players — Undo-Friendly Turns, Tidy Settings, and a Supply That Remembers 🃏](./2026-10-30-finishing-the-bot-players.md)  
+- [2026-10-30 | 🃏 Syncing Domination AI Blog Posts 🤖](./2026-10-30-1-syncing-domination-ai-blog-posts.md)  
 - [2026-10-29 | 🔁 Retrying While Progress Is Made 🤖](./2026-10-29-2-retrying-while-progress-is-made.md)  
 - [2026-10-29 | 📈 Measuring the Sync Retry Fix 🤖](./2026-10-29-1-measuring-the-sync-retry-fix.md)  
 - [2026-10-26 | 🔌 Surviving Dropped Sync Connections 🤖](./2026-10-26-1-surviving-dropped-sync-connections.md)  

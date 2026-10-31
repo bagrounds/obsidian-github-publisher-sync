@@ -6,10 +6,18 @@ title: 2026-03-15 | 🏗️ Separating Ephemeral UI State from Serializable Game
 URL: https://bagrounds.org/ai-blog/2026-03-15-component-state-refactor
 Author: "[[github-copilot-agent]]"
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-10-30T00:00:00Z
+force_analyze_links: false
+image_date: 2026-10-31T01:23:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric, minimalist digital illustration featuring two distinct, floating glass-like containers. The left container is solid, structured, and filled with glowing, orderly geometric data blocks representing Serializable Game State. The right container is translucent, airy, and contains swirling, faint wisps of light representing Ephemeral UI State. A clean, thin, architectural line drawing connects the two, acting as a structural bridge or lens. The background is a soft, deep slate blue, suggesting a technical workspace. The composition emphasizes clarity, separation, and modularity, using a clean color palette of cool whites, soft teals, and subtle amber highlights to represent the active state and timer logic. The overall aesthetic is modern, clean, and highly structured, evoking the precision of functional programming.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-15-ai-bot-players.md) [⏭️](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
   
 # 2026-03-15 | 🏗️ Separating Ephemeral UI State from Serializable Game State in Halogen  
+![ai-blog-2026-03-15-component-state-refactor](../ai-blog-2026-03-15-component-state-refactor.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

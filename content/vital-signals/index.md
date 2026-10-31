@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-10-30T17:04:22-07:00
+updated: 2026-10-31T06:12:54-07:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (152)  
+# ⚡ Vital Signals (153)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-10-31 | ⚡ The Emotional Thermostat: Regulating Your Inner Climate for Peak Performance ⚡](./2026-10-31-the-emotional-thermostat-regulating-your-inner-climate-for-peak-performance.md)  
 - [2026-10-30 | ⚡ 🧠 The Brain's Mental Brake: Neural Foundations ⚡](./2026-10-30-the-brain-s-mental-brake-neural-foundations.md)  
 - [2026-10-29 | ⚡ 🔍 Your Mental Workbench: Building a Resilient Working Memory ⚡](./2026-10-29-your-mental-workbench-building-a-resilient-working-memory.md)  
 - [2026-10-28 | ⚡ 🧠 The Dopamine Architect: Designing Your Drive for Sustained Focus ⚡](./2026-10-28-the-dopamine-architect-designing-your-drive-for-sustained-focus.md)  

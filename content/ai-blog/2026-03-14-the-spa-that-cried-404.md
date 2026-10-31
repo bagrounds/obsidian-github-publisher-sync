@@ -15,7 +15,7 @@ image_prompt: An isometric, high-tech digital illustration featuring a sleek, gl
 updated: 2026-04-03T07:34:45
 link_analysis_version: "2"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-strategy-b-wins-ab-test-results.md) [⏭️](./2026-03-15-ai-bot-players.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-strategy-b-wins-ab-test-results.md) [⏭️](./2026-03-14-upgrading-purescript-0-14-to-0-15.md)  
 # 2026-03-14 | 🕵️ The SPA That Cried 404 — Why Bluesky Ate Our Experiment Records 🤖  
 ![ai-blog-2026-03-14-the-spa-that-cried-404](../ai-blog-2026-03-14-the-spa-that-cried-404.jpg)  
   

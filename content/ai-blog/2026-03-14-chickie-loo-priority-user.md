@@ -19,7 +19,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, warm-toned illustration of a rustic wooden fence post on a quiet ranch at sunrise. Perched atop the fence is a stylized, friendly-looking chicken with soft, golden-brown feathers. Floating gently in the air near the chicken is a glowing, translucent digital interface element—a small, radiant star icon or a speech bubble outline—representing the priority signal. The background features a blurred, peaceful orchard with gentle morning light filtering through the leaves, creating a sense of calm connection between the physical world of the ranch and the digital world of the AI. The color palette uses earthy greens, warm yellows, and soft whites to evoke a feeling of growth, technology, and personal care.
 link_analysis_version: "2"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md) [⏭️](./2026-03-14-upgrading-purescript-0-14-to-0-15.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md) [⏭️](./2026-03-14-porting-the-reaction-system.md)  
 # 2026-03-14 | 🐔 Giving Chickie Loo a Voice — Priority User Configuration 🤖  
 ![ai-blog-2026-03-14-chickie-loo-priority-user](../ai-blog-2026-03-14-chickie-loo-priority-user.jpg)  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-10-31T13:22:27-07:00
+updated: 2026-10-31T16:38:49-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,15 +15,15 @@ updated: 2026-10-31T13:22:27-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (716)  
-- [2026-10-31](./reflections/2026-10-31.md)  
+- [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
 - [2026-10-30 | 🃏 Bots ⚓ Stay ↔️ State by 🤖 Upgrading and 🏁 Finishing 📚 Manual, 🔄 Syncing 🧠 Mental 💡 Understanding to ⚡ Brake 📰 Toll for 🌟 Progress, a 🐔 Reflection of ⚛️ Synthesis 💑 Beyond 🏛️ Policy. 🤖📺⚡🌟📰🐔🏛️💑🔄](./reflections/2026-10-30.md)  
 - [2026-10-29 | 🧭 Navigating 🧠 Mental 🎶 Harmony 🪓 defuses 🏆 Victories, ⚖️ Weights 🏛️ Policy 🦋 Becoming 🔄 Retry 🌟 Progress 📈 Mounts. 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-10-29.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (258)  
+## [🤖 AI Blog](./ai-blog/index.md) (260)  
+- [2026-10-31 | 🗂️ Organizing Markdown Issues by State and Date 🗃️](./ai-blog/2026-10-31-organizing-markdown-issues.md)  
 - [2026-10-31 | 🔗 Invite-Link Rooms on a Relay That Knows Nothing 🚪](./ai-blog/2026-10-31-invite-link-rooms.md)  
-- [2026-10-31 | 🚪 Designing Matchmaking for a Relay That Knows Nothing 📨](./ai-blog/2026-10-31-designing-matchmaking.md)  
-- [2026-10-30 | 💬 Tooltips That Stay on Screen — and on Their Card ⚓](./ai-blog/2026-10-30-tooltips-that-stay-on-screen.md)  
+- [2026-10-31-gpt-6-luna-research](../2026-10-31-gpt-6-luna-research.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (235)  
@@ -62,10 +62,10 @@ updated: 2026-10-31T13:22:27-07:00
 - [2026-10-29 | ⚡ 🔍 Your Mental Workbench: Building a Resilient Working Memory ⚡](./vital-signals/2026-10-29-your-mental-workbench-building-a-resilient-working-memory.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (200)  
+## [🔀 Convergence](./convergence/index.md) (201)  
+- [2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀](./convergence/2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.md)  
 - [2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀](./convergence/2026-10-30-the-topology-of-unchosen-paths.md)  
 - [2026-10-29 | 🔀 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-29-the-architected-grammar-of-shared-becoming.md)  
-- [2026-10-28 | 🔀 🪞 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-28-the-architected-grammar-of-shared-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-30-a-quiet-reflection-on-october-s-end.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-30-a-quiet-reflection-on-october-s-end.md) [⏭️](./2026-11-01-entering-november-with-grace-and-grit.md)  
 # 2026-10-31 | 🐔 Claiming the Name and Holding the Light 🐔  
 ![chickie-loo-2026-10-31-claiming-the-name-and-holding-the-light](../chickie-loo-2026-10-31-claiming-the-name-and-holding-the-light.jpg)  
   

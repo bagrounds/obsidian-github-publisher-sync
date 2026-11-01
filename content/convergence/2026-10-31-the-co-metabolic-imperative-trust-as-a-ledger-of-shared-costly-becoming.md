@@ -12,6 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
+updated: 2026-11-01T03:21:23
 ---
 [Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-30-the-topology-of-unchosen-paths.md)  
 # 2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀  

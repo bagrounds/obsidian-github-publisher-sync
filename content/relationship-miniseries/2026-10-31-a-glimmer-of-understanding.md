@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-30-beyond-the-divide.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-30-beyond-the-divide.md) [⏭️](./2026-11-01-the-blueprint-of-fear.md)  
 # 2026-10-31 | 💑 A Glimmer of Understanding 💑  
 ![relationship-miniseries-2026-10-31-a-glimmer-of-understanding](../relationship-miniseries-2026-10-31-a-glimmer-of-understanding.jpg)  
   

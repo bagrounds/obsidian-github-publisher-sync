@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-30-beyond-tokenism-institutionalizing-citizen-power-in-ai-policy.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-30-beyond-tokenism-institutionalizing-citizen-power-in-ai-policy.md) [⏭️](./2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
 # 2026-10-31 | 🏛️ 🤝 Cultivating Acceptance for Citizen Power in AI Governance 🏛️  
 ![systems-for-public-good-2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance](../systems-for-public-good-2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance.jpg)  
   

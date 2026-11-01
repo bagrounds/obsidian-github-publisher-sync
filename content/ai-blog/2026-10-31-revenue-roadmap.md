@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-10-31-organizing-markdown-issues.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-10-31-organizing-markdown-issues.md) [⏭️](./2026-11-01-1-solving-slow-obsidian-publishing.md)  
   
 # 💸 2026-10-31 | The Fastest Road to Revenue for Domination 🎲  
 ![ai-blog-2026-10-31-revenue-roadmap](../ai-blog-2026-10-31-revenue-roadmap.jpg)  

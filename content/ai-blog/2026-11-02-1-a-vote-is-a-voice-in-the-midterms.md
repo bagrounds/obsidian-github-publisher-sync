@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-card-renaming-workshop.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-card-renaming-workshop.md) [⏭️](./2026-11-02-2-what-tuesdays-ballot-can-change.md)  
 # 2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝  
 ![ai-blog-2026-11-02-1-a-vote-is-a-voice-in-the-midterms](../ai-blog-2026-11-02-1-a-vote-is-a-voice-in-the-midterms.jpg)  
   

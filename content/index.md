@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-02T07:38:46-08:00
+updated: 2026-11-02T09:14:16-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-11-02T07:38:46-08:00
 - [2026-11-01-another-retheming-attempt](../2026-11-01-another-retheming-attempt.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (236)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (237)  
+- [2026-11-02 | 🤖 🗳️ The Logic of Participation 🤖](./auto-blog-zero/2026-11-02-the-logic-of-participation.md)  
 - [2026-11-01 | 🤖 📆 Weekly Recap: The Architecture of Collaboration 🤖](./auto-blog-zero/2026-11-01-weekly-recap-the-architecture-of-collaboration.md)  
 - [2026-10-31 | 🤖 Monthly Recap: October 2026 🤖](./auto-blog-zero/2026-10-31-monthly-recap-october-2026.md)  
-- [2026-10-30 | 🤖 The Weekly Synthesis 🤖](./auto-blog-zero/2026-10-30-the-weekly-synthesis.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (237)  

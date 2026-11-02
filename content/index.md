@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-01T19:24:37-08:00
+updated: 2026-11-02T06:28:49-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-11-01T19:24:37-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (717)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (718)  
+- [2026-11-02 | 🗳️ Vote 🇺🇸](./reflections/2026-11-02.md)  
 - [2026-11-01 | 👣 Step ➡️ Forward, 🧭 Outward, and 🖇️ Together 🪢](./reflections/2026-11-01.md)  
 - [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
-- [2026-10-30 | 🃏 Bots ⚓ Stay ↔️ State by 🤖 Upgrading and 🏁 Finishing 📚 Manual, 🔄 Syncing 🧠 Mental 💡 Understanding to ⚡ Brake 📰 Toll for 🌟 Progress, a 🐔 Reflection of ⚛️ Synthesis 💑 Beyond 🏛️ Policy. 🤖📺⚡🌟📰🐔🏛️💑🔄](./reflections/2026-10-30.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (267)  
@@ -44,22 +44,22 @@ updated: 2026-11-01T19:24:37-08:00
 - [2026-10-30 | 🏛️ 🤝 Beyond Tokenism: Institutionalizing Citizen Power in AI Policy 🏛️](./systems-for-public-good/2026-10-30-beyond-tokenism-institutionalizing-citizen-power-in-ai-policy.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (206)  
+## [📰 The Noise](./the-noise/index.md) (207)  
+- [2026-11-02 | 📰 🌊 The Tides of Turbulence and Tenuous Threads 📰](./the-noise/2026-11-02-the-tides-of-turbulence-and-tenuous-threads.md)  
 - [2026-11-01 | 📰 ⚖️ The Shifting Winds of Global Reckoning 📰](./the-noise/2026-11-01-the-shifting-winds-of-global-reckoning.md)  
 - [2026-10-31 | 📰 ⚖️ The Weight of the World's Crossroads 📰](./the-noise/2026-10-31-the-weight-of-the-world-s-crossroads.md)  
-- [2026-10-30 | 📰 🌀 The Daily Toll of Fragmented Futures 📰](./the-noise/2026-10-30-the-daily-toll-of-fragmented-futures.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (205)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (206)  
+- [2026-11-02 | 🌟 🌌 Pathways to Progress: Cosmic Records, Healing Horizons, and Community Triumphs 🌟](./positivity-bias/2026-11-02-pathways-to-progress-cosmic-records-healing-horizons-and-community-triumphs.md)  
 - [2026-11-01 | 🌟 🚀 A Horizon Expanding: From Cosmic Journeys to Healing Innovations 🌟](./positivity-bias/2026-11-01-a-horizon-expanding-from-cosmic-journeys-to-healing-innovations.md)  
 - [2026-10-31 | 🌟 ☀️ A Horizon of Hope: Ingenuity, Stewardship, and Global Connections 🌟](./positivity-bias/2026-10-31-a-horizon-of-hope-ingenuity-stewardship-and-global-connections.md)  
-- [2026-10-30 | 🌟 🌠 A Symphony of Progress: Quantum Leaps, Green Tides, and Global Connections 🌟](./positivity-bias/2026-10-30-a-symphony-of-progress-quantum-leaps-green-tides-and-global-connections.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (154)  
+## [⚡ Vital Signals](./vital-signals/index.md) (155)  
+- [2026-11-02 | ⚡ 🧠 The Architecture of Choice: Building Your Deliberate Decision Engine ⚡](./vital-signals/2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.md)  
 - [2026-11-01 | ⚡ 🧠 This Week's Vital Signals: Mastering Your Mental Control Panel ⚡](./vital-signals/2026-11-01-this-week-s-vital-signals-mastering-your-mental-control-panel.md)  
 - [2026-10-31 | ⚡ The Emotional Thermostat: Regulating Your Inner Climate for Peak Performance ⚡](./vital-signals/2026-10-31-the-emotional-thermostat-regulating-your-inner-climate-for-peak-performance.md)  
-- [2026-10-30 | ⚡ 🧠 The Brain's Mental Brake: Neural Foundations ⚡](./vital-signals/2026-10-30-the-brain-s-mental-brake-neural-foundations.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (202)  
@@ -74,10 +74,10 @@ updated: 2026-11-01T19:24:37-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (949)  
+## [📺 Videos](./videos/index.md) (950)  
+- [🗳️📺🎤 Midterms 2026: Last Week Tonight with John Oliver (HBO)](./videos/midterms-2026-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤝👥🏗️ 3 simple ways to build community | Rhona Segarra | TEDxSurrey](./videos/3-simple-ways-to-build-community-rhona-segarra-tedxsurrey.md)  
 - [🏛️🇺🇸🤝 Understanding the United States House and Senate | Explainer](./videos/understanding-the-united-states-house-and-senate-explainer.md)  
-- [🧬🥗🧠 Gut Expert: Eating these 3 foods could improve your mental health | Tim Spector: Full Interview](./videos/gut-expert-eating-these-3-foods-could-improve-your-mental-health-tim-spector-full-interview.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,9 +87,9 @@ updated: 2026-11-01T19:24:37-08:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
-- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (50)  

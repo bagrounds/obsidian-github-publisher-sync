@@ -4,6 +4,7 @@
 
 📋 When files are modified by automated tasks (image backfill, internal linking, auto-posting), a wiki link to each modified file is recorded in a daily changes page at `changes/YYYY-MM-DD.md`.
 🔁 Replaces the old approach of writing updates directly into the daily reflection note, reducing Enveloppe plugin link-checking overhead.
+🍞 Also replaces the older breadcrumb-trail approach, which stamped an `updated` timestamp on every note along the BFS path from the reflection to a modified note so that Enveloppe's link-following publish could reach it. The changes page gives publishing a two-hop route (reflection → changes page → modified note), so automations must not stamp timestamps on notes they did not change.
 📂 Each day gets its own changes page in the `changes/` directory, named after the date (matching the reflection page naming convention).
 🪞 Each reflection page links to its corresponding changes page at the bottom.
 📱 Optimized for Obsidian mobile — reflections stay lightweight while changes are a click away.

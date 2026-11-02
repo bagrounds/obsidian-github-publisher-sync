@@ -126,7 +126,6 @@
 | `identifyBooksWithGemini(body, entries, path, apiKey, model)` | 🤖 Use Gemini to identify genuine book references |
 | `processFile(relativePath, contentDir, index, config)` | 📄 Process single file through the full linking pipeline |
 | `updateFrontmatterFields(filePath, fields)` | 📝 Set frontmatter fields on file |
-| `updateFrontmatterTimestamp(filePath, timestamp)` | ⏰ Update "updated" field in frontmatter |
 | `recordLinkAnalysis(filePath, model, timestamp)` | 📋 Record analysis metadata in frontmatter |
 | `run(config)` | 🔄 Orchestrate full pipeline: index, BFS, process, report |
 

@@ -85,9 +85,8 @@
       ├─ Retry same candidate with new provider
       └─ If no providers remain → stop entirely
    c. ⏭️ Skip and continue on non-quota errors
-   d. 🔗 Update "chain" timestamps for all newer files in same directory
-   e. 💤 Proactive rate limit delay between successful generations
-   f. 🎯 Stop if maxImages limit reached (default: 2 per hourly run)
+   d. 💤 Proactive rate limit delay between successful generations
+   e. 🎯 Stop if maxImages limit reached (default: 2 per hourly run)
 ```
 
 ---
@@ -145,7 +144,6 @@ Provider 5 (Gemini) → quota exhausted → stop job
 | `image_model` | 🤖 String | Model used for generation | `processNote` |
 | `image_prompt` | 💬 String | Prompt/description sent to image generator (doubles as description cache) | `processNote` |
 | `regenerate_image` | ✅ Boolean (YAML native) | Flag to force image regeneration | User (manual), cleared by `processNote` |
-| `updated` | 📅 ISO 8601 timestamp | Last modification time | `backfillImages` (chain update) |
 
 ### 💾 Description Caching Strategy
 
@@ -256,18 +254,10 @@ Processing order (newest first, then undated):
 - **Combined free capacity: ~150–350+ images/day** (provider chain fallback maximizes utilization)
 - **At 96 images/day, we are within free tier limits** with headroom for further increases
 
-### 🔗 Chain Updates
+### 🚫 No Chain Updates
 
-🔄 When an image is generated for a post, all newer files in the **same directory** receive an `updated:` timestamp:
-
-```
-Directory: chickie-loo/
-  2026-03-22-newest.md  (has image) ← gets updated: timestamp
-  2026-03-21-middle.md  (has image) ← gets updated: timestamp
-  2026-03-20-target.md  (NO image)  ← image generated + updated: timestamp
-```
-
-🎯 This propagates "freshness" signals for content feeds and sort ordering.
+🧾 Image backfill only writes the note that receives the image; it never stamps `updated:` on neighboring or newer files.
+🔄 The modified note is recorded on the daily changes page (see [Daily Updates](daily-updates.md)), which is how publishing discovers it.
 
 ---
 
@@ -345,11 +335,10 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 🎯 Impact: Low — orphaned files waste storage but don't cause functional issues. The new image gets synced correctly.
 
-### 2️⃣ Chain Timestamp Updates May Cause Unnecessary Syncs
+### 2️⃣ ~~Chain Timestamp Updates May Cause Unnecessary Syncs~~ (Removed)
 
-📍 `backfillImages` updates `updated:` timestamps on ALL files in the chain, even if they haven't meaningfully changed. This triggers `syncMarkdownDir` to re-sync those files to the vault.
-
-🎯 Impact: Medium — increased sync bandwidth and potential write amplification on the Obsidian vault.
+📍 The former TypeScript `backfillImages` stamped `updated:` on every file in a directory chain, even when those files had not changed.
+✅ The Haskell implementation does not perform chain updates; the daily changes page replaced this breadcrumb signal.
 
 ### 3️⃣ ~~extractFrontmatterValue Limited to Simple Single-Line Values~~ (Fixed)
 
@@ -442,7 +431,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 | 📝 Content processing | 10 | Frontmatter stripping, embed removal, syntax cleaning |
 | 📋 Frontmatter operations | 23 | YAML parsing, updates, regeneration, sanitization, arrays, empty values, colons |
 | 🖼️ processNote | 11 | Generation, skipping, metadata, describer, prompt caching, sanitization |
-| 📦 backfillImages | 14 | Chain updates, missing dirs, errors, prioritization, rate limits |
+| 📦 backfillImages | 14 | Missing dirs, errors, prioritization, rate limits |
 | 🔌 Provider resolution | 18 | Cloudflare, Gemini, Imagen, HuggingFace, describer, multi-provider chain |
 | ⏱️ Rate limiting | 12 | isDailyQuotaError, parseRetryDelay, retry logic, proactive delays |
 | 🔗 Provider chain fallback | 7 | Quota switch, multi-provider chain, backward compat, progress events |

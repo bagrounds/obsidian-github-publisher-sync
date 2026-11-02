@@ -55,10 +55,18 @@
 
 🔗 When reading a note for social posting, the canonical URL is always derived from the file path using `urlFromFilePath` (format: `https://bagrounds.org/{relative-path-without-.md}`). The frontmatter `URL` field is never used as the source of truth for posting.
 🌐 Before posting, each candidate note's canonical URL is verified with an HTTP HEAD request via `checkUrlPublished`.
-✅ If the canonical URL returns a 2xx status, the frontmatter `URL` property is updated via `updateFrontmatterUrl` to ensure it matches the canonical URL, and the note proceeds to posting.
+✅ If the canonical URL returns a 2xx status, the frontmatter `URL` property is updated via `updateFrontmatterUrl` to ensure it matches the canonical URL, and the note proceeds to posting. When the existing `URL` value (quoted or unquoted) already equals the canonical URL, the file is not rewritten.
 🚫 If the canonical URL returns a 404, the note is skipped but BFS still follows its links to discover other content.
 📋 URL validation is injected into `FindContentConfig` via the optional `publicationChecker` callback.
-⚡ URL checks are only performed on notes that pass all other content filters (postable and eligible), avoiding unnecessary HTTP requests during BFS traversal.
+⚡ URL checks are only performed on notes that pass all other content filters (postable, eligible, and still missing at least one configured platform), avoiding unnecessary HTTP requests and frontmatter writes during BFS traversal.
+
+### 🧾 Frontmatter Writes
+
+🎯 Social posting only modifies notes whose content actually changes.
+🚫 Notes visited during BFS discovery are never stamped. The former breadcrumb trail, which stamped `updated` on every note from the reflection to the posted note, was removed because the daily changes page (see [Daily Updates](daily-updates.md)) already links every posted note from the reflection.
+✍️ After successful posts, `persistEmbeds` appends embed sections via `writeEmbedsToNote`, which reports `EmbedsAppended`, `NoNewEmbeds`, or `NoteMissing`.
+⏰ Only `EmbedsAppended` stamps `updated` on the posted note, using a time passed in by the caller.
+🪞 Every frontmatter writer (`updateFrontmatterUrl`, `updateFrontmatterTimestamp`) compares the new text with the old and skips the write when they are identical, so file modification times are not bumped.
 
 ## 🤖 Post Text Generation
 
@@ -237,7 +245,9 @@
 |---|---|
 | `checkUrlPublished(url)` | 🌐 HTTP HEAD request to verify a URL returns 2xx status |
 | `validateNoteUrl(checker, note)` | 🔧 Validate note URL, auto-fix stale frontmatter if file-path URL is live |
-| `updateFrontmatterUrl(filePath, newUrl)` | 📝 Update or insert the URL property in a note's YAML frontmatter |
+| `updateFrontmatterUrl(filePath, newUrl)` | 📝 Update or insert the URL property in a note's YAML frontmatter, skipping the write when the URL already matches |
+| `updateFrontmatterTimestamp(now, filePath)` | ⏰ Set the `updated` property, skipping the write when nothing changes |
+| `persistEmbeds(now, filePath, sections)` | ✍️ Append new embed sections and stamp `updated` only when sections were appended |
 | `postTweet(text, credentials)` | 🐦 Post tweet via v2 API with idempotency key |
 | `deleteTweet(tweetId, credentials)` | 🗑️ Delete tweet by ID |
 | `fetchOEmbed(tweetUrl, options?)` | 🖼️ Fetch Twitter oEmbed HTML |

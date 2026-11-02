@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-31-claiming-the-name-and-holding-the-light.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-10-31-claiming-the-name-and-holding-the-light.md) [⏭️](./2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
 # 2026-11-01 | 🐔 🌿 Entering November with Grace and Grit 🐔  
 ![chickie-loo-2026-11-01-entering-november-with-grace-and-grit](../chickie-loo-2026-11-01-entering-november-with-grace-and-grit.jpg)  
   

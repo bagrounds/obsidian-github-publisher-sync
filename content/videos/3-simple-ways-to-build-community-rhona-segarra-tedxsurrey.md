@@ -9,6 +9,10 @@ Platform:
 Channel: TEDx Talks
 tags:
 youtube: https://youtu.be/HeUVMcERvlM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤝👥🏗️ 3 simple ways to build community | Rhona Segarra | TEDxSurrey  

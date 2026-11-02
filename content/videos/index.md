@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-01T14:23:09-08:00
+updated: 2026-11-01T16:32:01-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (948)  
+# 📺 Videos (949)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -29,6 +29,7 @@ updated: 2026-11-01T14:23:09-08:00
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./session-3-part-1-legal-issues.md)  
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
+- [🤝👥🏗️ 3 simple ways to build community | Rhona Segarra | TEDxSurrey](./3-simple-ways-to-build-community-rhona-segarra-tedxsurrey.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
 - [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  

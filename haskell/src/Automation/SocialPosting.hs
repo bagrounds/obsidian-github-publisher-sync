@@ -11,10 +11,12 @@ module Automation.SocialPosting
   , runPostingPipeline
   , regenerateBlueskyEmbeds
   , regenerateMastodonEmbeds
+  , persistEmbeds
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
 import Control.Exception (SomeException, try)
+import Control.Monad (when)
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
@@ -22,7 +24,7 @@ import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (getCurrentTime, utctDayTime)
+import Data.Time (UTCTime, getCurrentTime, utctDayTime)
 import Data.Time.LocalTime (timeToTimeOfDay)
 import qualified Data.Map.Strict as Map
 import Network.HTTP.Client (Manager)
@@ -57,7 +59,7 @@ import Automation.SocialPosting.ContentDiscovery
   , defaultPostingCutoff
   , discoverContentToPost
   )
-import Automation.SocialPosting.FrontmatterUpdate (updatePathTimestamps)
+import Automation.SocialPosting.FrontmatterUpdate (updateFrontmatterTimestamp)
 import Automation.Text (calculatePostLength, fitPostToLimit)
 import Automation.Title (unTitle)
 import Automation.Url (unUrl)
@@ -289,27 +291,24 @@ runPostingPipeline manager environmentConfig apiKey vaultDirectory imageBackfill
     items -> do
       putStrLn $ "  📋 Found " <> show (length items) <> " items to post"
       let grouped = groupByNote items
-      results <- mapM (processNoteGroup manager environmentConfig apiKey vaultDirectory) grouped
+      results <- mapM (processNoteGroup manager environmentConfig apiKey) grouped
       pure (catMaybes results)
 
-groupByNote :: [CD.ContentToPost] -> [([Platform], ContentNote, [Text])]
+groupByNote :: [CD.ContentToPost] -> [([Platform], ContentNote)]
 groupByNote items =
   let noteMap = foldl addToGroup Map.empty items
   in Map.elems noteMap
   where
     addToGroup grouped ctp =
       let key = noteRelativePath (CD.note ctp)
-      in Map.insertWith merge key
-           ([CD.platform ctp], CD.note ctp, CD.pathFromRoot ctp) grouped
-    merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
+      in Map.insertWith merge key ([CD.platform ctp], CD.note ctp) grouped
+    merge (newPlatforms, groupedNote) (existingPlatforms, _) = (newPlatforms <> existingPlatforms, groupedNote)
 
-processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
-                 -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
-processNoteGroup manager environmentConfig apiKey vaultDirectory (platforms, note, pathFromRoot) = do
+processNoteGroup :: Manager -> EnvironmentConfig -> Secret
+                 -> ([Platform], ContentNote) -> IO (Maybe PostedNote)
+processNoteGroup manager environmentConfig apiKey (platforms, note) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (noteTitle note))
   putStrLn $ "     Platforms: " <> show platforms
-
-  updatePathTimestamps vaultDirectory pathFromRoot
 
   results <- mapConcurrently (postForPlatform manager environmentConfig apiKey note) platforms
 
@@ -324,9 +323,18 @@ processNoteGroup manager environmentConfig apiKey vaultDirectory (platforms, not
       putStrLn "  ⚠️  No successful posts"
       pure Nothing
     _  -> do
-      Sync.writeEmbedsToNote (noteFilePath note) embedSections
-      putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
+      now <- getCurrentTime
+      outcome <- persistEmbeds now (noteFilePath note) embedSections
+      putStrLn $ "  ✅ " <> show (length successes) <> " successful post(s), embed write: " <> show outcome
       pure (Just (PostedNote note postedPlatforms))
+
+persistEmbeds :: UTCTime -> FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO Sync.EmbedWriteOutcome
+persistEmbeds now notePath embedSections = do
+  outcome <- Sync.writeEmbedsToNote notePath embedSections
+  when (outcome == Sync.EmbedsAppended) $ do
+    updateFrontmatterTimestamp now notePath
+    putStrLn $ "  ⏰ Stamped updated timestamp on " <> notePath
+  pure outcome
 
 postForPlatform :: Manager -> EnvironmentConfig -> Secret -> ContentNote -> Platform
                 -> IO (Either Text PostResult)

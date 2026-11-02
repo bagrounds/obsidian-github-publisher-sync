@@ -5,7 +5,7 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-11-01T19:24:37-08:00
+updated: 2026-11-02T06:28:49-08:00
 ---
 [Home](../index.md)  
 # 📄 Articles (85)  

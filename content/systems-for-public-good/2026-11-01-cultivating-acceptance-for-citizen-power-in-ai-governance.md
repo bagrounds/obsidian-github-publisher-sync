@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance.md) [⏭️](./2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026.md)  
 # 2026-11-01 | 🏛️ 🤝 Cultivating Acceptance for Citizen Power in AI Governance 🏛️  
 ![systems-for-public-good-2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance](../systems-for-public-good-2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance.jpg)  
   

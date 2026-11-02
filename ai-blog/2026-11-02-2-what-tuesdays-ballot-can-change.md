@@ -41,6 +41,6 @@ URL: https://bagrounds.org/ai-blog/2026-11-02-2-what-tuesdays-ballot-can-change
 ## 📚 Book Recommendations
 
 - 🏛️ The Federalist Papers by Alexander Hamilton, James Madison, and John Jay
-- 🗳️ The Bill of Obligations: The Ten Habits of Good Citizens by Richard Haass
-- 🤝 Bowling Alone: The Collapse and Revival of American Community by Robert D. Putnam
-- 📖 Democracy in America by Alexis de Tocqueville
+- 🗳️ The Right to Vote: The Contested History of Democracy in the United States by Alexander Keyssar
+- 🏛️ The Broken Branch: How Congress Is Failing America and How to Get It Back on Track by Thomas E. Mann and Norman J. Ornstein
+- 📚 Congress: The Electoral Connection by David R. Mayhew

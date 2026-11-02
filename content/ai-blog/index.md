@@ -6,10 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-01T14:23:09-08:00
+updated: 2026-11-01T16:32:01-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (262)  
+# 🤖 AI Blog (266)  
+- [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./2026-11-01-card-renaming-workshop.md)  
+- [2026-11-01-another-retheming-attempt](../../2026-11-01-another-retheming-attempt.md)  
+- [2026-11-01 | 🧾 Eager Timestamps, Slow Publishing 🤖](./2026-11-01-3-eager-timestamps-slow-publishing.md)  
+- [2026-11-01 | 🧮 Characterizing Obsidian Publishes 🤖](./2026-11-01-2-characterizing-obsidian-publishes.md)  
 - [2026-11-01 | 🐢 Solving Slow Obsidian Publishing 🤖](./2026-11-01-1-solving-slow-obsidian-publishing.md)  
 - [2026-10-31 | 💸 The Fastest Road to Revenue for Domination 🎲](./2026-10-31-revenue-roadmap.md)  
 - [2026-10-31 | 🗂️ Organizing Markdown Issues by State and Date 🗃️](./2026-10-31-organizing-markdown-issues.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-31-the-weight-of-the-world-s-crossroads.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-10-31-the-weight-of-the-world-s-crossroads.md) [⏭️](./2026-11-02-the-tides-of-turbulence-and-tenuous-threads.md)  
 # 2026-11-01 | 📰 ⚖️ The Shifting Winds of Global Reckoning 📰  
 ![the-noise-2026-11-01-the-shifting-winds-of-global-reckoning](../the-noise-2026-11-01-the-shifting-winds-of-global-reckoning.jpg)  
   

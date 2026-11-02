@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-2-characterizing-obsidian-publishes.md) [⏭️](../../2026-11-01-another-retheming-attempt.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-2-characterizing-obsidian-publishes.md) [⏭️](./2026-11-01-4-sweeping-up-the-breadcrumbs.md)  
 # 2026-11-01 | 🧾 Eager Timestamps, Slow Publishing 🤖  
 ![ai-blog-2026-11-01-3-eager-timestamps-slow-publishing](../ai-blog-2026-11-01-3-eager-timestamps-slow-publishing.jpg)  
   

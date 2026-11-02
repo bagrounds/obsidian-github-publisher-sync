@@ -34,7 +34,7 @@ force_analyze_links: false
   
 ## 📚 Book Recommendations  
   
-* 🗳️ [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](../books/the-bill-of-obligations.md) by Richard Haass  
-* 🏛️ How Democracies Die by Steven Levitsky and Daniel Ziblatt  
-* 🤝 Bowling Alone: The Collapse and Revival of American Community by Robert D. Putnam  
-* 📖 Democracy in America by Alexis de Tocqueville  
+* [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](../books/the-bill-of-obligations.md) by Richard Haass  
+* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam  
+* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  

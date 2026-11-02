@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-02T06:28:49-08:00
+updated: 2026-11-02T07:38:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-02T06:28:49-08:00
 - [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (267)  
+## [🤖 AI Blog](./ai-blog/index.md) (268)  
+- [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./ai-blog/2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
 - [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./ai-blog/2026-11-01-card-renaming-workshop.md)  
 - [2026-11-01-another-retheming-attempt](../2026-11-01-another-retheming-attempt.md)  
-- [2026-11-01 | 🍞 Sweeping Up the Breadcrumbs 🤖](./ai-blog/2026-11-01-4-sweeping-up-the-breadcrumbs.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (236)  
@@ -32,10 +32,10 @@ updated: 2026-11-02T06:28:49-08:00
 - [2026-10-30 | 🤖 The Weekly Synthesis 🤖](./auto-blog-zero/2026-10-30-the-weekly-synthesis.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (236)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (237)  
+- [2026-11-02 | 🐔 🌻 Finding Peace in the Rhythm of Recovery 🐔](./chickie-loo/2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
 - [2026-11-01 | 🐔 🌿 Entering November with Grace and Grit 🐔](./chickie-loo/2026-11-01-entering-november-with-grace-and-grit.md)  
 - [2026-10-31 | 🐔 Claiming the Name and Holding the Light 🐔](./chickie-loo/2026-10-31-claiming-the-name-and-holding-the-light.md)  
-- [2026-10-30 | 🐔 🎃 A Quiet Reflection on October’s End 🐔](./chickie-loo/2026-10-30-a-quiet-reflection-on-october-s-end.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (225)  

@@ -1,5 +1,6 @@
 module Automation.SocialPostingTest (tests) where
 
+import Data.IORef (modifyIORef', newIORef, readIORef)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (isJust)
 import qualified Data.Set as Set
@@ -17,6 +18,7 @@ import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
 
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
+import Automation.ObsidianSync (EmbedWriteOutcome (..))
 import Automation.BlogSeriesConfig (imageBackfillContentDirectoriesFrom)
 import Automation.Platform (Platform (..))
 import Automation.Reflection (findMostRecentReflection, selectMostRecentReflection)
@@ -26,6 +28,7 @@ import Automation.SocialPosting
   , mkMastodonPost
   , mkSocialPost
   , mkTweet
+  , persistEmbeds
   , socialPostContent
   , socialPostPlatform
   )
@@ -78,6 +81,7 @@ tests = testGroup "SocialPosting"
   , bfsTraversalTests
   , bfsTests
   , urlValidationTests
+  , persistEmbedsTests
   , selectMostRecentReflectionTests
   , socialPostTests
   , readContentNoteTests
@@ -622,7 +626,69 @@ bfsTests = testGroup "BFS discovery"
         let config = FindContentConfig directory [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing defaultContentDirectories
         result <- bfsContentDiscovery config
         assertBool "should find content to post" (not (null result))
+
+  , testCase "bfsContentDiscovery neither validates nor rewrites notes already posted to every platform" $ do
+      withSystemTempDirectory "social-test" $ \directory -> do
+        let reflectionsDirectory = directory </> "reflections"
+            booksDirectory = directory </> "books"
+            postedBookPath = booksDirectory </> "posted-book.md"
+            postedBookContent =
+              "---\ntitle: A Posted Book\nURL: https://bagrounds.org/books/posted-book\n---\n"
+                <> "![[attachments/books-posted-book.jpg]]\n"
+                <> "Read [[books/fresh-book]]\n"
+                <> T.replicate 60 "x"
+                <> "\n## 🐦 Tweet\n<blockquote>tweet</blockquote>\n"
+        createDirectoryIfMissing True reflectionsDirectory
+        createDirectoryIfMissing True booksDirectory
+        TIO.writeFile (reflectionsDirectory </> "2025-01-15.md")
+          ("---\ntitle: My Creative Day\n---\n" <>
+           "Today I read [[books/posted-book]]\n" <>
+           T.replicate 60 "x" <>
+           "\n## 🐦 Tweet\n<blockquote>tweet</blockquote>\n")
+        TIO.writeFile postedBookPath postedBookContent
+        TIO.writeFile (booksDirectory </> "fresh-book.md")
+          ("---\ntitle: A Fresh Book\n---\n" <>
+           "![[attachments/books-fresh-book.jpg]]\n" <>
+           T.replicate 60 "x")
+        checkedUrls <- newIORef []
+        let recordingChecker url = modifyIORef' checkedUrls (<> [url]) >> pure True
+            config = FindContentConfig directory [Twitter] (TimeOfDay 0 0 0) (Just recordingChecker) defaultContentDirectories
+        result <- bfsContentDiscovery config
+        assertEqual "should post the fresh book"
+          [testRelativePath "books/fresh-book.md"] (fmap (noteRelativePath . note) result)
+        urls <- readIORef checkedUrls
+        assertBool "should not check publication of an already-posted note"
+          ("https://bagrounds.org/books/posted-book" `notElem` urls)
+        contentAfterDiscovery <- TIO.readFile postedBookPath
+        assertEqual "already-posted note should be left untouched" postedBookContent contentAfterDiscovery
   ]
+
+
+persistEmbedsTests :: TestTree
+persistEmbedsTests = testGroup "persistEmbeds"
+  [ testCase "stamps updated only on the posted note when new embeds are appended" $
+      withSystemTempDirectory "persist-embeds" $ \directory -> do
+        let notePath = directory </> "posted.md"
+        TIO.writeFile notePath "---\ntitle: Posted\n---\nBody"
+        outcome <- persistEmbeds testNow notePath [tweetSection]
+        content <- TIO.readFile notePath
+        assertEqual "should report appended embeds" EmbedsAppended outcome
+        assertBool "should contain the embed" (T.isInfixOf "<blockquote>tweet</blockquote>" content)
+        assertBool "should stamp updated with the injected time"
+          (T.isInfixOf "updated: \"2026-04-10T12:00:00\"" content)
+
+  , testCase "leaves the note untouched when every embed is already present" $
+      withSystemTempDirectory "persist-embeds" $ \directory -> do
+        let notePath = directory </> "already-posted.md"
+            original = "---\ntitle: Posted\nupdated: \"2020-01-01T00:00:00\"\n---\nBody\n## 🐦 Tweet\n<blockquote>old</blockquote>\n"
+        TIO.writeFile notePath original
+        outcome <- persistEmbeds testNow notePath [tweetSection]
+        content <- TIO.readFile notePath
+        assertEqual "should report no new embeds" NoNewEmbeds outcome
+        assertEqual "content should be unchanged" original content
+  ]
+  where
+    tweetSection = ("## 🐦 Tweet", "<blockquote>tweet</blockquote>", \_ html -> "\n## 🐦 Tweet\n" <> html)
 
 
 urlValidationTests :: TestTree

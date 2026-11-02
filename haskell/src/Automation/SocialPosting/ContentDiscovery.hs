@@ -75,9 +75,8 @@ data ContentNote = ContentNote
   } deriving (Show, Eq)
 
 data ContentToPost = ContentToPost
-  { platform     :: Platform
-  , note         :: ContentNote
-  , pathFromRoot :: [Text]
+  { platform :: Platform
+  , note     :: ContentNote
   } deriving (Show, Eq)
 
 data FindContentConfig = FindContentConfig
@@ -235,11 +234,10 @@ isReflectionEligibleForPosting now postingCutoff reflectionDate =
        || reflectionDate < yesterday
 
 data BfsState = BfsState
-  { visited   :: Set Text
-  , queue     :: [(Text, [Text])]
-  , results   :: [ContentToPost]
-  , filled    :: Set Platform
-  , parentMap :: Map.Map Text Text
+  { visited :: Set Text
+  , queue   :: [Text]
+  , results :: [ContentToPost]
+  , filled  :: Set Platform
   }
 
 bfsContentDiscovery :: FindContentConfig -> IO [ContentToPost]
@@ -251,11 +249,10 @@ bfsContentDiscovery config = do
       pure []
     Just startPath -> do
       let initialState = BfsState
-            { visited   = Set.singleton startPath
-            , queue     = [(startPath, [startPath])]
-            , results   = []
-            , filled    = Set.empty
-            , parentMap = Map.empty
+            { visited = Set.singleton startPath
+            , queue   = [startPath]
+            , results = []
+            , filled  = Set.empty
             }
       bfsLoop config initialState
 
@@ -265,7 +262,7 @@ bfsLoop config state =
     [] -> pure (results state)
     _ | Set.fromList (platforms config) == filled state ->
         pure (results state)
-    ((currentPath, pathFromRoot) : rest) -> do
+    (currentPath : rest) -> do
       let state' = state { queue = rest }
       mNote <- readContentNote currentPath (contentDirectory config)
       case mNote of
@@ -277,23 +274,24 @@ bfsLoop config state =
                 (imageBackfillContentDirectories config) now
                 (unRelativePath (noteRelativePath note)) (noteBody note)
                 (noteImageDate note)
-          mValidated <- case (isPostableContent note && eligible && not awaitingImage, publicationChecker config) of
-            (True, Just checker) -> validateNoteUrl checker note
-            (True, Nothing)      -> pure (Just note)
-            (False, _)           -> pure Nothing
           let neededPlatforms = filter
                 (\targetPlatform -> not (Set.member targetPlatform (filled state'))
                        && not (Set.member targetPlatform (notePostedPlatforms note)))
                 (platforms config)
-              newResults = case mValidated of
-                Just vNote -> fmap (\targetPlatform -> ContentToPost targetPlatform vNote pathFromRoot) neededPlatforms
+              isCandidate = isPostableContent note && eligible && not awaitingImage && not (null neededPlatforms)
+          mValidated <- case (isCandidate, publicationChecker config) of
+            (True, Just checker) -> validateNoteUrl checker note
+            (True, Nothing)      -> pure (Just note)
+            (False, _)           -> pure Nothing
+          let newResults = case mValidated of
+                Just vNote -> fmap (`ContentToPost` vNote) neededPlatforms
                 Nothing    -> []
               newFilled = Set.union (filled state') $
                 Set.fromList (fmap platform newResults)
               neighbors = filter (\linkedPath -> not (Set.member linkedPath (visited state')))
                             (fmap unRelativePath (noteLinkedNotePaths note))
               newVisited = foldl (flip Set.insert) (visited state') neighbors
-              newQueue = rest <> fmap (\neighbor -> (neighbor, pathFromRoot <> [neighbor])) neighbors
+              newQueue = rest <> neighbors
               state'' = state'
                 { visited = newVisited
                 , queue   = newQueue
@@ -332,7 +330,9 @@ discoverContentToPost config isPastPostingHour =
               mNote <- readContentNote reflPath (contentDirectory config)
               case mNote of
                 Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (imageBackfillContentDirectories config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
+                          , not (isAwaitingImageBackfill (imageBackfillContentDirectories config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note))
+                          , neededPlatforms <- filter (\targetPlatform -> not (Set.member targetPlatform (notePostedPlatforms note))) (platforms config)
+                          , not (null neededPlatforms) -> do
                   mValidated <- case publicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)
@@ -340,13 +340,7 @@ discoverContentToPost config isPastPostingHour =
                     Nothing -> do
                       putStrLn "  🚫 Prior day's reflection not yet published"
                       bfsContentDiscovery config
-                    Just vNote -> do
-                      let neededPlatforms = filter
-                            (\targetPlatform -> not (Set.member targetPlatform (notePostedPlatforms vNote)))
-                            (platforms config)
-                      case neededPlatforms of
-                        [] -> bfsContentDiscovery config
-                        _  -> pure $ fmap (\targetPlatform -> ContentToPost targetPlatform vNote [reflPath]) neededPlatforms
+                    Just vNote -> pure $ fmap (`ContentToPost` vNote) neededPlatforms
                 _ -> bfsContentDiscovery config
             else bfsContentDiscovery config
     else bfsContentDiscovery config

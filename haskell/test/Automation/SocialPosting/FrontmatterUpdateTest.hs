@@ -2,11 +2,14 @@ module Automation.SocialPosting.FrontmatterUpdateTest (tests) where
 
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import System.Directory (createDirectoryIfMissing)
+import Data.Time (UTCTime (..), fromGregorian)
+import System.Directory (getModificationTime, setModificationTime)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.SocialPosting.FrontmatterUpdate
 
@@ -15,7 +18,7 @@ tests = testGroup "SocialPosting.FrontmatterUpdate"
   [ upsertFrontmatterFieldTests
   , updateFrontmatterUrlTests
   , updateFrontmatterTimestampTests
-  , updatePathTimestampsTests
+  , pureTransformTests
   ]
 
 -- upsertFrontmatterField
@@ -67,9 +70,37 @@ updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
 
   , testCase "does nothing for nonexistent file" $
       updateFrontmatterUrl "/nonexistent/path/note.md" "https://example.com"
+
+  , testCase "leaves file untouched when unquoted URL already matches" $
+      withSystemTempDirectory "fm-url-test" $ \directory -> do
+        let notePath = directory </> "matching-note.md"
+            original = "---\ntitle: Matching Note\nURL: https://bagrounds.org/books/matching-note\n---\nBody content"
+        TIO.writeFile notePath original
+        setModificationTime notePath untouchedModificationTime
+        updateFrontmatterUrl notePath "https://bagrounds.org/books/matching-note"
+        content <- TIO.readFile notePath
+        modificationTime <- getModificationTime notePath
+        assertEqual "content should be unchanged" original content
+        assertEqual "file should not be rewritten" untouchedModificationTime modificationTime
+
+  , testCase "leaves file untouched when quoted URL already matches" $
+      withSystemTempDirectory "fm-url-test" $ \directory -> do
+        let notePath = directory </> "quoted-note.md"
+            original = "---\ntitle: Quoted Note\nURL: \"https://bagrounds.org/books/quoted-note\"\n---\nBody content"
+        TIO.writeFile notePath original
+        setModificationTime notePath untouchedModificationTime
+        updateFrontmatterUrl notePath "https://bagrounds.org/books/quoted-note"
+        modificationTime <- getModificationTime notePath
+        assertEqual "file should not be rewritten" untouchedModificationTime modificationTime
   ]
 
+untouchedModificationTime :: UTCTime
+untouchedModificationTime = UTCTime (fromGregorian 2020 1 1) 0
+
 -- updateFrontmatterTimestamp
+
+stampTime :: UTCTime
+stampTime = UTCTime (fromGregorian 2026 11 1) 45296
 
 updateFrontmatterTimestampTests :: TestTree
 updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
@@ -78,44 +109,64 @@ updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
         let notePath = directory </> "test-note.md"
         TIO.writeFile notePath
           "---\ntitle: Test Note\n---\nBody content"
-        updateFrontmatterTimestamp notePath
+        updateFrontmatterTimestamp stampTime notePath
         content <- TIO.readFile notePath
-        assertBool "should contain updated field"
-          (T.isInfixOf "updated:" content)
+        assertEqual "should contain injected timestamp"
+          "---\ntitle: Test Note\nupdated: \"2026-11-01T12:34:56\"\n---\nBody content" content
 
   , testCase "updates existing timestamp" $
       withSystemTempDirectory "fm-ts-test" $ \directory -> do
         let notePath = directory </> "test-note.md"
         TIO.writeFile notePath
           "---\ntitle: Test Note\nupdated: \"2020-01-01T00:00:00\"\n---\nBody content"
-        updateFrontmatterTimestamp notePath
+        updateFrontmatterTimestamp stampTime notePath
         content <- TIO.readFile notePath
         assertBool "should not contain old timestamp"
           (not (T.isInfixOf "2020-01-01T00:00:00" content))
-        assertBool "should contain updated field"
-          (T.isInfixOf "updated:" content)
+        assertBool "should contain injected timestamp"
+          (T.isInfixOf "updated: \"2026-11-01T12:34:56\"" content)
+
+  , testCase "does not rewrite a note whose timestamp already matches" $
+      withSystemTempDirectory "fm-ts-test" $ \directory -> do
+        let notePath = directory </> "test-note.md"
+        TIO.writeFile notePath
+          "---\ntitle: Test Note\nupdated: \"2026-11-01T12:34:56\"\n---\nBody content"
+        setModificationTime notePath untouchedModificationTime
+        updateFrontmatterTimestamp stampTime notePath
+        modificationTime <- getModificationTime notePath
+        assertEqual "file should not be rewritten" untouchedModificationTime modificationTime
 
   , testCase "does nothing for nonexistent file" $
-      updateFrontmatterTimestamp "/nonexistent/path/note.md"
+      updateFrontmatterTimestamp stampTime "/nonexistent/path/note.md"
   ]
 
--- updatePathTimestamps
+-- pure frontmatter transforms
 
-updatePathTimestampsTests :: TestTree
-updatePathTimestampsTests = testGroup "updatePathTimestamps"
-  [ testCase "updates timestamps for multiple paths" $
-      withSystemTempDirectory "fm-paths-test" $ \directory -> do
-        let booksDirectory = directory </> "books"
-        createDirectoryIfMissing True booksDirectory
-        TIO.writeFile (booksDirectory </> "book-a.md")
-          "---\ntitle: Book A\n---\nContent A"
-        TIO.writeFile (booksDirectory </> "book-b.md")
-          "---\ntitle: Book B\n---\nContent B"
-        updatePathTimestamps directory ["books/book-a.md", "books/book-b.md"]
-        contentA <- TIO.readFile (booksDirectory </> "book-a.md")
-        contentB <- TIO.readFile (booksDirectory </> "book-b.md")
-        assertBool "book A should have updated field"
-          (T.isInfixOf "updated:" contentA)
-        assertBool "book B should have updated field"
-          (T.isInfixOf "updated:" contentB)
+pureTransformTests :: TestTree
+pureTransformTests = testGroup "pure frontmatter transforms"
+  [ testCase "setUpdatedTimestamp leaves content without frontmatter unchanged" $
+      assertEqual "" "Just a body" (setUpdatedTimestamp stampTime "Just a body")
+
+  , testCase "setCanonicalUrl keeps an equal unquoted URL byte-for-byte" $
+      let content = "---\nURL: https://bagrounds.org/books/a\n---\nBody"
+      in assertEqual "" content (setCanonicalUrl "https://bagrounds.org/books/a" content)
+
+  , testCase "setCanonicalUrl replaces a stale URL" $
+      assertEqual ""
+        "---\nURL: \"https://bagrounds.org/books/new\"\n---\nBody"
+        (setCanonicalUrl "https://bagrounds.org/books/new" "---\nURL: https://bagrounds.org/books/old\n---\nBody")
+
+  , testProperty "setCanonicalUrl is idempotent" $
+      \(slug :: String) ->
+        let url = "https://bagrounds.org/" <> T.pack (filter (`notElem` ("\"\\\n\r" :: String)) slug)
+            content = "---\ntitle: Note\n---\nBody"
+            once = setCanonicalUrl url content
+        in setCanonicalUrl url once QC.=== once
+
+  , testProperty "setFrontmatterField is idempotent" $
+      \(value :: String) ->
+        let rendered = T.pack (filter (`notElem` ("\n\r" :: String)) value)
+            content = "---\ntitle: Note\n---\nBody"
+            once = setFrontmatterField "field" rendered content
+        in setFrontmatterField "field" rendered once QC.=== once
   ]

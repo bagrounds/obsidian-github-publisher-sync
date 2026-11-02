@@ -13,6 +13,7 @@ import Automation.ObsidianSync
   ( countVaultFiles
   , validatePrePushFileCount
   , vaultFileCountPath
+  , EmbedWriteOutcome (..)
   , writeEmbedsToNote
   )
 
@@ -96,18 +97,19 @@ validatePrePushTests = testGroup "validatePrePushFileCount"
 
 writeEmbedsTests :: TestTree
 writeEmbedsTests = testGroup "writeEmbedsToNote"
-  [ testCase "skips nonexistent file" $ do
-      writeEmbedsToNote "/tmp/nonexistent-note.md"
+  [ testCase "reports a missing note without creating it" $ do
+      outcome <- writeEmbedsToNote "/tmp/nonexistent-note.md"
         [("## Test", "<embed/>", \_content _html -> "\n\n## Test\n<embed/>")]
-      assertBool "should not throw" True
+      assertEqual "should report missing note" NoteMissing outcome
 
   , testCase "appends section when header not present" $
       withSystemTempDirectory "vault-embed" $ \directory -> do
         let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\nSome content\n"
-        writeEmbedsToNote notePath
+        outcome <- writeEmbedsToNote notePath
           [("## Embed", "<blockquote>post</blockquote>",
             \_ html -> "\n\n## Embed\n" <> html)]
+        assertEqual "should report appended embeds" EmbedsAppended outcome
         result <- TIO.readFile notePath
         assertBool "should contain embed header" $
           T.isInfixOf "## Embed" result
@@ -118,9 +120,10 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
       withSystemTempDirectory "vault-embed" $ \directory -> do
         let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\n## Embed\n<blockquote>old</blockquote>\n"
-        writeEmbedsToNote notePath
+        outcome <- writeEmbedsToNote notePath
           [("## Embed", "<blockquote>new</blockquote>",
             \_ html -> "\n\n## Embed\n" <> html)]
+        assertEqual "should report no new embeds" NoNewEmbeds outcome
         result <- TIO.readFile notePath
         let occurrences = length (T.splitOn "## Embed" result) - 1
         assertEqual "should have exactly one embed header" 1 occurrences
@@ -129,10 +132,11 @@ writeEmbedsTests = testGroup "writeEmbedsToNote"
       withSystemTempDirectory "vault-embed" $ \directory -> do
         let notePath = directory </> "note.md"
         TIO.writeFile notePath "# My Note\n"
-        writeEmbedsToNote notePath
+        outcome <- writeEmbedsToNote notePath
           [ ("## Section A", "<a/>", \_ html -> "\n## Section A\n" <> html)
           , ("## Section B", "<b/>", \_ html -> "\n## Section B\n" <> html)
           ]
+        assertEqual "should report appended embeds" EmbedsAppended outcome
         result <- TIO.readFile notePath
         assertBool "should contain Section A" $ T.isInfixOf "## Section A" result
         assertBool "should contain Section B" $ T.isInfixOf "## Section B" result

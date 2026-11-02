@@ -12,6 +12,7 @@ module Automation.ObsidianSync
   , syncObsidianVault
   , pushObsidianVault
   , validatePrePushFileCount
+  , EmbedWriteOutcome (..)
   , writeEmbedsToNote
   , appendEmbedsToObsidianNote
   , countVaultFiles
@@ -274,7 +275,13 @@ countFilesRecursive directory = do
 vaultFileCountPath :: FilePath -> FilePath
 vaultFileCountPath vaultDirectory = vaultDirectory </> ".vault-sync-file-count"
 
-writeEmbedsToNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO ()
+data EmbedWriteOutcome
+  = EmbedsAppended
+  | NoNewEmbeds
+  | NoteMissing
+  deriving (Show, Eq)
+
+writeEmbedsToNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO EmbedWriteOutcome
 writeEmbedsToNote filePath sections = do
   exists <- doesFileExist filePath
   if exists
@@ -282,9 +289,11 @@ writeEmbedsToNote filePath sections = do
       content <- TIO.readFile filePath
       let (modified, newContent) = foldr applySection (False, content) sections
       if modified
-        then TIO.writeFile filePath newContent
-        else putStrLn "No new sections to add to note"
-    else putStrLn $ "⚠️ Note not found, skipping embed write: " <> filePath
+        then TIO.writeFile filePath newContent >> pure EmbedsAppended
+        else putStrLn "No new sections to add to note" >> pure NoNewEmbeds
+    else do
+      putStrLn $ "⚠️ Note not found, skipping embed write: " <> filePath
+      pure NoteMissing
   where
     applySection (header, embedHtml, buildSection) (anyMod, currentContent) =
       if T.isInfixOf header currentContent
@@ -294,5 +303,5 @@ writeEmbedsToNote filePath sections = do
 appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
 appendEmbedsToObsidianNote notePath sections creds = do
   vaultDirectory <- syncObsidianVault creds
-  writeEmbedsToNote (vaultDirectory </> notePath) sections
+  void (writeEmbedsToNote (vaultDirectory </> notePath) sections)
   pushObsidianVault vaultDirectory (ocAuthToken creds)

@@ -26,7 +26,7 @@ URL: https://bagrounds.org/ai-blog/2026-11-02-1-a-vote-is-a-voice-in-the-midterm
 
 ## 📚 Book Recommendations
 
-* 🧭 Sapiens: A Brief History of Humankind by Yuval Harari
-* 🧠 Behave: The Biology of Humans at Our Best and Worst by Robert Sapolsky
-* 👶 The Philosophical Baby by Alison Gopnik
-* 🤖 The Deep Learning Revolution by Terrence Sejnowski
+* 🗳️ The Bill of Obligations: The Ten Habits of Good Citizens by Richard Haass
+* 🏛️ How Democracies Die by Steven Levitsky and Daniel Ziblatt
+* 🤝 Bowling Alone: The Collapse and Revival of American Community by Robert D. Putnam
+* 📖 Democracy in America by Alexis de Tocqueville

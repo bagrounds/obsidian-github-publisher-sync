@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-01T14:23:09-08:00
+updated: 2026-11-01T16:32:01-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,15 +15,15 @@ updated: 2026-11-01T14:23:09-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (717)  
-- [2026-11-01](./reflections/2026-11-01.md)  
+- [2026-11-01 | 👣 Step ➡️ Forward, 🧭 Outward, and 🖇️ Together 🪢](./reflections/2026-11-01.md)  
 - [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
 - [2026-10-30 | 🃏 Bots ⚓ Stay ↔️ State by 🤖 Upgrading and 🏁 Finishing 📚 Manual, 🔄 Syncing 🧠 Mental 💡 Understanding to ⚡ Brake 📰 Toll for 🌟 Progress, a 🐔 Reflection of ⚛️ Synthesis 💑 Beyond 🏛️ Policy. 🤖📺⚡🌟📰🐔🏛️💑🔄](./reflections/2026-10-30.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (262)  
-- [2026-11-01 | 🐢 Solving Slow Obsidian Publishing 🤖](./ai-blog/2026-11-01-1-solving-slow-obsidian-publishing.md)  
-- [2026-10-31 | 💸 The Fastest Road to Revenue for Domination 🎲](./ai-blog/2026-10-31-revenue-roadmap.md)  
-- [2026-10-31 | 🗂️ Organizing Markdown Issues by State and Date 🗃️](./ai-blog/2026-10-31-organizing-markdown-issues.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (266)  
+- [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./ai-blog/2026-11-01-card-renaming-workshop.md)  
+- [2026-11-01-another-retheming-attempt](../2026-11-01-another-retheming-attempt.md)  
+- [2026-11-01 | 🧾 Eager Timestamps, Slow Publishing 🤖](./ai-blog/2026-11-01-3-eager-timestamps-slow-publishing.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (236)  
@@ -62,10 +62,10 @@ updated: 2026-11-01T14:23:09-08:00
 - [2026-10-30 | ⚡ 🧠 The Brain's Mental Brake: Neural Foundations ⚡](./vital-signals/2026-10-30-the-brain-s-mental-brake-neural-foundations.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (201)  
+## [🔀 Convergence](./convergence/index.md) (202)  
+- [2026-11-01 | 🔀 📊 The Anti-Stagnation Imperative: Architecting Dynamic Friction for Evolutionary Trust 🔀](./convergence/2026-11-01-the-anti-stagnation-imperative-architecting-dynamic-friction-for-evolutionary-trust.md)  
 - [2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀](./convergence/2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.md)  
 - [2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀](./convergence/2026-10-30-the-topology-of-unchosen-paths.md)  
-- [2026-10-29 | 🔀 The Architected Grammar of Shared Becoming 🔀](./convergence/2026-10-29-the-architected-grammar-of-shared-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-11-01T14:23:09-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (948)  
+## [📺 Videos](./videos/index.md) (949)  
+- [🤝👥🏗️ 3 simple ways to build community | Rhona Segarra | TEDxSurrey](./videos/3-simple-ways-to-build-community-rhona-segarra-tedxsurrey.md)  
 - [🏛️🇺🇸🤝 Understanding the United States House and Senate | Explainer](./videos/understanding-the-united-states-house-and-senate-explainer.md)  
 - [🧬🥗🧠 Gut Expert: Eating these 3 foods could improve your mental health | Tim Spector: Full Interview](./videos/gut-expert-eating-these-3-foods-could-improve-your-mental-health-tim-spector-full-interview.md)  
-- [🏗️🤖🛠️ Building Great Agent Skills: The Missing Manual](./videos/building-great-agent-skills-the-missing-manual.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

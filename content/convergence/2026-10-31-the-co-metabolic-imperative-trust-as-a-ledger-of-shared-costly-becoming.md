@@ -14,7 +14,7 @@ link_analysis_time: 2026-10-31T00:00:00Z
 force_analyze_links: false
 updated: 2026-11-01T03:21:23
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-30-the-topology-of-unchosen-paths.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-10-30-the-topology-of-unchosen-paths.md) [⏭️](./2026-11-01-the-anti-stagnation-imperative-architecting-dynamic-friction-for-evolutionary-trust.md)  
 # 2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀  
 ![convergence-2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming](../convergence-2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.jpg)  
   

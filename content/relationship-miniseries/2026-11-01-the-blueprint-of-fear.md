@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-31-a-glimmer-of-understanding.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-10-31-a-glimmer-of-understanding.md) [⏭️](./2026-11-02-the-tinted-lens-of-history.md)  
 # 2026-11-01 | 💑 The Blueprint of Fear 💑  
 ![relationship-miniseries-2026-11-01-the-blueprint-of-fear](../relationship-miniseries-2026-11-01-the-blueprint-of-fear.jpg)  
   

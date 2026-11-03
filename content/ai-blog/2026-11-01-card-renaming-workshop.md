@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-11-01-another-retheming-attempt.md) [⏭️](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-another-retheming-attempt.md) [⏭️](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
   
 # 🃏 2026-11-01 | A Fresh Coat of Names for 60 Cards 🎨  
 ![ai-blog-2026-11-01-card-renaming-workshop](../ai-blog-2026-11-01-card-renaming-workshop.jpg)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-02T10:08:35-08:00
+updated: 2026-11-02T16:34:16-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-02T10:08:35-08:00
 - [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (268)  
+## [🤖 AI Blog](./ai-blog/index.md) (269)  
+- [2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️](./ai-blog/2026-11-02-2-what-tuesdays-ballot-can-change.md)  
 - [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./ai-blog/2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
 - [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./ai-blog/2026-11-01-card-renaming-workshop.md)  
-- [2026-11-01-another-retheming-attempt](../2026-11-01-another-retheming-attempt.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (237)  
@@ -62,10 +62,10 @@ updated: 2026-11-02T10:08:35-08:00
 - [2026-10-31 | ⚡ The Emotional Thermostat: Regulating Your Inner Climate for Peak Performance ⚡](./vital-signals/2026-10-31-the-emotional-thermostat-regulating-your-inner-climate-for-peak-performance.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (202)  
+## [🔀 Convergence](./convergence/index.md) (203)  
+- [2026-11-02 | 🔀 🗳️ The Metabolic Ledger of Civic Attunement 🔀](./convergence/2026-11-02-the-metabolic-ledger-of-civic-attunement.md)  
 - [2026-11-01 | 🔀 📊 The Anti-Stagnation Imperative: Architecting Dynamic Friction for Evolutionary Trust 🔀](./convergence/2026-11-01-the-anti-stagnation-imperative-architecting-dynamic-friction-for-evolutionary-trust.md)  
 - [2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀](./convergence/2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.md)  
-- [2026-10-30 | 🔀 🗺️ The Topology of Unchosen Paths 🔀](./convergence/2026-10-30-the-topology-of-unchosen-paths.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-01-the-blueprint-of-fear.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-01-the-blueprint-of-fear.md) [⏭️](./2026-11-03-through-a-glass-darkly.md)  
 # 2026-11-02 | 💑 🔬 The Tinted Lens of History 🧬 💑  
 ![relationship-miniseries-2026-11-02-the-tinted-lens-of-history](../relationship-miniseries-2026-11-02-the-tinted-lens-of-history.jpg)  
   

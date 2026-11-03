@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance.md) [⏭️](./2026-11-03-the-ballot-box-our-blueprint-for-the-future.md)  
 # 2026-11-02 | 🏛️ 🗳️ Voices of Democracy: Your Vote, Our Future (November 3, 2026) 🏛️  
 ![systems-for-public-good-2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026](../systems-for-public-good-2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026.jpg)  
   

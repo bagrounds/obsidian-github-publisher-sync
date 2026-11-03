@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-03T06:51:50-08:00
+updated: 2026-11-03T07:25:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-03T06:51:50-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (950)  
+## [📺 Videos](./videos/index.md) (951)  
+- [🌅🌊⚖️ Heather Cox Richardson: ‘VERY optimistic’ about a political TIDAL SHIFT and Trump accountability](./videos/heather-cox-richardson-very-optimistic-about-a-political-tidal-shift-and-trump-accountability.md)  
 - [🗳️📺🎤 Midterms 2026: Last Week Tonight with John Oliver (HBO)](./videos/midterms-2026-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤝👥🏗️ 3 simple ways to build community | Rhona Segarra | TEDxSurrey](./videos/3-simple-ways-to-build-community-rhona-segarra-tedxsurrey.md)  
-- [🏛️🇺🇸🤝 Understanding the United States House and Senate | Explainer](./videos/understanding-the-united-states-house-and-senate-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

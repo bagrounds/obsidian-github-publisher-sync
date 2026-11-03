@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-03T08:37:46-08:00
+updated: 2026-11-03T14:48:09-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -38,10 +38,10 @@ updated: 2026-11-03T08:37:46-08:00
 - [2026-11-01 | 🐔 🌿 Entering November with Grace and Grit 🐔](./chickie-loo/2026-11-01-entering-november-with-grace-and-grit.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (226)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (227)  
+- [2026-11-03 | 🏛️ 🗳️ The Ballot Box: Our Blueprint for the Future 🏛️](./systems-for-public-good/2026-11-03-the-ballot-box-our-blueprint-for-the-future.md)  
 - [2026-11-02 | 🏛️ 🗳️ Voices of Democracy: Your Vote, Our Future (November 3, 2026) 🏛️](./systems-for-public-good/2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026.md)  
 - [2026-11-01 | 🏛️ 🤝 Cultivating Acceptance for Citizen Power in AI Governance 🏛️](./systems-for-public-good/2026-11-01-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
-- [2026-10-31 | 🏛️ 🤝 Cultivating Acceptance for Citizen Power in AI Governance 🏛️](./systems-for-public-good/2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (208)  

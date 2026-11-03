@@ -5,7 +5,7 @@ aliases:
   - 👥 People
 backlinks: false
 URL: https://bagrounds.org/people
-updated: 2026-11-03T08:07:13-08:00
+updated: 2026-11-03T08:37:46-08:00
 ---
 [Home](../index.md)  
 # 👥 People (18)  

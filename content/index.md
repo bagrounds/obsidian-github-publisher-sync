@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-03T07:25:43-08:00
+updated: 2026-11-03T08:07:13-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-11-03T07:25:43-08:00
 - [2026-10-31 | 🤖 Monthly Recap: October 2026 🤖](./auto-blog-zero/2026-10-31-monthly-recap-october-2026.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (237)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (238)  
+- [2026-11-03 | 🐔 🗳️ A Day to Stand Tall and Be Heard 🐔](./chickie-loo/2026-11-03-a-day-to-stand-tall-and-be-heard.md)  
 - [2026-11-02 | 🐔 🌻 Finding Peace in the Rhythm of Recovery 🐔](./chickie-loo/2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
 - [2026-11-01 | 🐔 🌿 Entering November with Grace and Grit 🐔](./chickie-loo/2026-11-01-entering-november-with-grace-and-grit.md)  
-- [2026-10-31 | 🐔 Claiming the Name and Holding the Light 🐔](./chickie-loo/2026-10-31-claiming-the-name-and-holding-the-light.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (226)  
@@ -56,10 +56,10 @@ updated: 2026-11-03T07:25:43-08:00
 - [2026-11-01 | 🌟 🚀 A Horizon Expanding: From Cosmic Journeys to Healing Innovations 🌟](./positivity-bias/2026-11-01-a-horizon-expanding-from-cosmic-journeys-to-healing-innovations.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (155)  
+## [⚡ Vital Signals](./vital-signals/index.md) (156)  
+- [2026-11-03 | ⚡ 🧠 The Agile Mind: Updating Your Internal Map ⚡](./vital-signals/2026-11-03-the-agile-mind-updating-your-internal-map.md)  
 - [2026-11-02 | ⚡ 🧠 The Architecture of Choice: Building Your Deliberate Decision Engine ⚡](./vital-signals/2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.md)  
 - [2026-11-01 | ⚡ 🧠 This Week's Vital Signals: Mastering Your Mental Control Panel ⚡](./vital-signals/2026-11-01-this-week-s-vital-signals-mastering-your-mental-control-panel.md)  
-- [2026-10-31 | ⚡ The Emotional Thermostat: Regulating Your Inner Climate for Peak Performance ⚡](./vital-signals/2026-10-31-the-emotional-thermostat-regulating-your-inner-climate-for-peak-performance.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (203)  

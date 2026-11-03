@@ -14,7 +14,7 @@ link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-11-03T14:19:55
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-01-this-week-s-vital-signals-mastering-your-mental-control-panel.md) [⏭️](vital-signals/2026-11-03-the-architecture-of-choice-building-your-deliberate-decision-engine.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-01-this-week-s-vital-signals-mastering-your-mental-control-panel.md) [⏭️](./2026-11-03-the-agile-mind-updating-your-internal-map.md)  
 # 2026-11-02 | ⚡ 🧠 The Architecture of Choice: Building Your Deliberate Decision Engine ⚡  
 ![vital-signals-2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine](../vital-signals-2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.jpg)  
   

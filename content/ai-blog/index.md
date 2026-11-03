@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-02T20:19:50-08:00
+updated: 2026-11-03T06:11:18-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (269)  
+# 🤖 AI Blog (270)  
+- [2026-11-03 | ✏️ A Rename Form for Re-theming the Game 📋](./2026-11-03-rename-form.md)  
 - [2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️](./2026-11-02-2-what-tuesdays-ballot-can-change.md)  
 - [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
 - [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./2026-11-01-card-renaming-workshop.md)  

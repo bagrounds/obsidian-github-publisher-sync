@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-03T06:11:18-08:00
+updated: 2026-11-03T06:51:50-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-11-03T06:11:18-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (719)  
-- [2026-11-03](./reflections/2026-11-03.md)  
+- [2026-11-03 | 🇺🇸 Exercise Your Citizenship 🛡️ Protect Our Country 🤝 Help Your Neighbors 🗳️ Vote Today 🇺🇸](./reflections/2026-11-03.md)  
 - [2026-11-02 | 🗳️ Vote 🇺🇸](./reflections/2026-11-02.md)  
 - [2026-11-01 | 👣 Step ➡️ Forward, 🧭 Outward, and 🖇️ Together 🪢](./reflections/2026-11-01.md)  
   
@@ -44,16 +44,16 @@ updated: 2026-11-03T06:11:18-08:00
 - [2026-10-31 | 🏛️ 🤝 Cultivating Acceptance for Citizen Power in AI Governance 🏛️](./systems-for-public-good/2026-10-31-cultivating-acceptance-for-citizen-power-in-ai-governance.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (207)  
+## [📰 The Noise](./the-noise/index.md) (208)  
+- [2026-11-03 | 📰 🗳️ The Unfolding Ballot and Global Echoes 📰](./the-noise/2026-11-03-the-unfolding-ballot-and-global-echoes.md)  
 - [2026-11-02 | 📰 🌊 The Tides of Turbulence and Tenuous Threads 📰](./the-noise/2026-11-02-the-tides-of-turbulence-and-tenuous-threads.md)  
 - [2026-11-01 | 📰 ⚖️ The Shifting Winds of Global Reckoning 📰](./the-noise/2026-11-01-the-shifting-winds-of-global-reckoning.md)  
-- [2026-10-31 | 📰 ⚖️ The Weight of the World's Crossroads 📰](./the-noise/2026-10-31-the-weight-of-the-world-s-crossroads.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (206)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (207)  
+- [2026-11-03 | 🌟 A Collective Ascent: From Earth's Depths to Stellar Heights 🌟](./positivity-bias/2026-11-03-a-collective-ascent-from-earth-s-depths-to-stellar-heights.md)  
 - [2026-11-02 | 🌟 🌌 Pathways to Progress: Cosmic Records, Healing Horizons, and Community Triumphs 🌟](./positivity-bias/2026-11-02-pathways-to-progress-cosmic-records-healing-horizons-and-community-triumphs.md)  
 - [2026-11-01 | 🌟 🚀 A Horizon Expanding: From Cosmic Journeys to Healing Innovations 🌟](./positivity-bias/2026-11-01-a-horizon-expanding-from-cosmic-journeys-to-healing-innovations.md)  
-- [2026-10-31 | 🌟 ☀️ A Horizon of Hope: Ingenuity, Stewardship, and Global Connections 🌟](./positivity-bias/2026-10-31-a-horizon-of-hope-ingenuity-stewardship-and-global-connections.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (155)  

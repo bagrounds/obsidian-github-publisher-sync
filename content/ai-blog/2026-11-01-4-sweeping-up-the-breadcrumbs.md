@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-01T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-3-eager-timestamps-slow-publishing.md) [⏭️](../../2026-11-01-another-retheming-attempt.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-01-3-eager-timestamps-slow-publishing.md) [⏭️](./2026-11-01-another-retheming-attempt.md)  
 # 2026-11-01 | 🍞 Sweeping Up the Breadcrumbs 🤖  
 ![ai-blog-2026-11-01-4-sweeping-up-the-breadcrumbs](../ai-blog-2026-11-01-4-sweeping-up-the-breadcrumbs.jpg)  
   

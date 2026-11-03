@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-01-the-shifting-winds-of-global-reckoning.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-01-the-shifting-winds-of-global-reckoning.md) [⏭️](./2026-11-03-the-unfolding-ballot-and-global-echoes.md)  
 # 2026-11-02 | 📰 🌊 The Tides of Turbulence and Tenuous Threads 📰  
 ![the-noise-2026-11-02-the-tides-of-turbulence-and-tenuous-threads](../the-noise-2026-11-02-the-tides-of-turbulence-and-tenuous-threads.jpg)  
   

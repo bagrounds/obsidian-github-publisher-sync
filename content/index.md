@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-02T20:19:50-08:00
+updated: 2026-11-03T06:11:18-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,16 +14,16 @@ updated: 2026-11-02T20:19:50-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (718)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (719)  
+- [2026-11-03](./reflections/2026-11-03.md)  
 - [2026-11-02 | 🗳️ Vote 🇺🇸](./reflections/2026-11-02.md)  
 - [2026-11-01 | 👣 Step ➡️ Forward, 🧭 Outward, and 🖇️ Together 🪢](./reflections/2026-11-01.md)  
-- [2026-10-31 | 🎃 Happy Halloween 🐒](./reflections/2026-10-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (269)  
+## [🤖 AI Blog](./ai-blog/index.md) (270)  
+- [2026-11-03 | ✏️ A Rename Form for Re-theming the Game 📋](./ai-blog/2026-11-03-rename-form.md)  
 - [2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️](./ai-blog/2026-11-02-2-what-tuesdays-ballot-can-change.md)  
 - [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./ai-blog/2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
-- [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./ai-blog/2026-11-01-card-renaming-workshop.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (237)  

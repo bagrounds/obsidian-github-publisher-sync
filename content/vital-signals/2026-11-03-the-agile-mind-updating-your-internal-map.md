@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.md) [⏭️](./2026-11-04-the-architect-of-your-engagement-how-agency-and-purpose-build-a-resilient-mind.md)  
 # 2026-11-03 | ⚡ 🧠 The Agile Mind: Updating Your Internal Map ⚡  
 ![vital-signals-2026-11-03-the-agile-mind-updating-your-internal-map](../vital-signals-2026-11-03-the-agile-mind-updating-your-internal-map.jpg)  
   

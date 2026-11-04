@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-03T14:48:09-08:00
+updated: 2026-11-04T06:57:54-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (203)  
+# 🔀 Convergence (204)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-03 | 🔀 🗳️ The Calibrated Ballot: A Bid for Reciprocal Civic Attunement 🔀](./2026-11-03-the-calibrated-ballot-a-bid-for-reciprocal-civic-attunement.md)  
 - [2026-11-02 | 🔀 🗳️ The Metabolic Ledger of Civic Attunement 🔀](./2026-11-02-the-metabolic-ledger-of-civic-attunement.md)  
 - [2026-11-01 | 🔀 📊 The Anti-Stagnation Imperative: Architecting Dynamic Friction for Evolutionary Trust 🔀](./2026-11-01-the-anti-stagnation-imperative-architecting-dynamic-friction-for-evolutionary-trust.md)  
 - [2026-10-31 | 🔀 🤝 The Co-Metabolic Imperative: Trust as a Ledger of Shared, Costly Becoming 🔀](./2026-10-31-the-co-metabolic-imperative-trust-as-a-ledger-of-shared-costly-becoming.md)  

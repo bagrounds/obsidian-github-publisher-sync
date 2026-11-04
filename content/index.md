@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-04T07:08:49-08:00
+updated: 2026-11-04T07:49:30-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-04T07:08:49-08:00
 - [2026-11-02 | 🗳️ Vote 🇺🇸](./reflections/2026-11-02.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (270)  
-- [2026-11-03 | ✏️ A Rename Form for Re-theming the Game 📋](./ai-blog/2026-11-03-rename-form.md)  
-- [2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️](./ai-blog/2026-11-02-2-what-tuesdays-ballot-can-change.md)  
-- [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./ai-blog/2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (282)  
+- [2026-11-04 | 📱 What Phones Do to Web Pages 🚪](./ai-blog/2026-11-04-what-phones-do-to-web-pages.md)  
+- [2026-11-04 | 🔍 TLA+ for a Card Game 🃏](./ai-blog/2026-11-04-tla-plus-for-a-card-game.md)  
+- [2026-11-04 | ✉️ Store and Forward, From Email to a Card Game 🃏](./ai-blog/2026-11-04-store-and-forward.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (238)  
@@ -32,10 +32,10 @@ updated: 2026-11-04T07:08:49-08:00
 - [2026-11-01 | 🤖 📆 Weekly Recap: The Architecture of Collaboration 🤖](./auto-blog-zero/2026-11-01-weekly-recap-the-architecture-of-collaboration.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (238)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (239)  
+- [2026-11-04 | 🐔 Rain, Rest, and a Neighbor’s Return 🐔](./chickie-loo/2026-11-04-rain-rest-and-a-neighbor-s-return.md)  
 - [2026-11-03 | 🐔 🗳️ A Day to Stand Tall and Be Heard 🐔](./chickie-loo/2026-11-03-a-day-to-stand-tall-and-be-heard.md)  
 - [2026-11-02 | 🐔 🌻 Finding Peace in the Rhythm of Recovery 🐔](./chickie-loo/2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
-- [2026-11-01 | 🐔 🌿 Entering November with Grace and Grit 🐔](./chickie-loo/2026-11-01-entering-november-with-grace-and-grit.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (227)  
@@ -74,10 +74,10 @@ updated: 2026-11-04T07:08:49-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (952)  
+## [📺 Videos](./videos/index.md) (953)  
+- [🇺🇸 James Talarico Full Victory Speech](./videos/james-talarico-full-victory-speech.md)  
 - [🇺🇸 El-Sayed Full Victory Speech](./videos/el-sayed-full-victory-speech.md)  
 - [🌅🌊⚖️ Heather Cox Richardson: ‘VERY optimistic’ about a political TIDAL SHIFT and Trump accountability](./videos/heather-cox-richardson-very-optimistic-about-a-political-tidal-shift-and-trump-accountability.md)  
-- [🗳️📺🎤 Midterms 2026: Last Week Tonight with John Oliver (HBO)](./videos/midterms-2026-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

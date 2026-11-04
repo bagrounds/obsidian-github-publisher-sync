@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-04T07:08:49-08:00
+updated: 2026-11-04T07:49:30-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (952)  
+# 📺 Videos (953)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -407,6 +407,7 @@ updated: 2026-11-04T07:08:49-08:00
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
+- [🇺🇸 James Talarico Full Victory Speech](./james-talarico-full-victory-speech.md)  
 - [🏛️🤬 Jason Crow is really pissed](./jason-crow-is-really-pissed.md)  
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-02-finding-peace-in-the-rhythm-of-recovery.md) [⏭️](./2026-11-04-rain-rest-and-a-neighbor-s-return.md)  
 # 2026-11-03 | 🐔 🗳️ A Day to Stand Tall and Be Heard 🐔  
 ![chickie-loo-2026-11-03-a-day-to-stand-tall-and-be-heard](../chickie-loo-2026-11-03-a-day-to-stand-tall-and-be-heard.jpg)  
   

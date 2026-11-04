@@ -6,11 +6,23 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-04T07:08:49-08:00
+updated: 2026-11-04T07:49:30-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (270)  
+# 🤖 AI Blog (282)  
+- [2026-11-04 | 📱 What Phones Do to Web Pages 🚪](./2026-11-04-what-phones-do-to-web-pages.md)  
+- [2026-11-04 | 🔍 TLA+ for a Card Game 🃏](./2026-11-04-tla-plus-for-a-card-game.md)  
+- [2026-11-04 | ✉️ Store and Forward, From Email to a Card Game 🃏](./2026-11-04-store-and-forward.md)  
+- [2026-11-04 | 🏷️ Revisions, Stamps and Couriers 🚚](./2026-11-04-revisions-stamps-and-couriers.md)  
+- [2026-11-04 | ⚖️ A Mailbox vs. a Database 🗄️](./2026-11-04-mailbox-vs-database.md)  
+- [2026-11-04 | 🕰️ Lamport Clocks for a Card Game ⏪](./2026-11-04-lamport-clocks-for-a-card-game.md)  
+- [2026-11-04 | 🧟 Half-Open Sockets and the Resync Table 🔌](./2026-11-04-half-open-sockets.md)  
+- [2026-11-04 | 🌪️ Chaos in Real Browsers 🎭](./2026-11-04-chaos-in-real-browsers.md)  
+- [2026-11-04 | 🗺️ Async Play Deep Dives 📚](./2026-11-04-async-play-deep-dives.md)  
+- [2026-11-04 | 🌍 A Tiny World in a Property Test 🎲](./2026-11-04-a-tiny-world-in-a-property-test.md)  
+- [2026-11-04 | ☁️ A Room Mailbox on Cloudflare Durable Objects 📬](./2026-11-04-a-room-mailbox-on-durable-objects.md)  
 - [2026-11-03 | ✏️ A Rename Form for Re-theming the Game 📋](./2026-11-03-rename-form.md)  
+- [2026-11-03 | 📬 Designing Async Play for Domination ⏳](./2026-11-03-designing-async-play.md)  
 - [2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️](./2026-11-02-2-what-tuesdays-ballot-can-change.md)  
 - [2026-11-02 | 🗳️ A Vote Is a Voice in the Midterms 🤝](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md)  
 - [2026-11-01 | 🃏 A Fresh Coat of Names for 60 Cards 🎨](./2026-11-01-card-renaming-workshop.md)  

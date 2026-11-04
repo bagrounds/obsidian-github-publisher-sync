@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-02-2-what-tuesdays-ballot-can-change.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-03-designing-async-play.md) [⏭️](./2026-11-04-a-room-mailbox-on-durable-objects.md)  
   
 # ✏️ 2026-11-03 | A Rename Form for Re-theming the Game 📋  
 ![ai-blog-2026-11-03-rename-form](../ai-blog-2026-11-03-rename-form.jpg)  

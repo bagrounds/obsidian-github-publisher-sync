@@ -13,7 +13,7 @@ link_analysis_time: 2026-11-02T00:00:00Z
 force_analyze_links: false
 ---
   
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md) [⏭️](./2026-11-03-rename-form.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-02-1-a-vote-is-a-voice-in-the-midterms.md) [⏭️](./2026-11-03-designing-async-play.md)  
   
 # 2026-11-02 | 🗳️ What Tuesday’s Ballot Can Change 🏛️  
 ![ai-blog-2026-11-02-2-what-tuesdays-ballot-can-change](../ai-blog-2026-11-02-2-what-tuesdays-ballot-can-change.jpg)  

@@ -6,10 +6,18 @@ title: 2026-11-03 | 📬 Designing Async Play for Domination ⏳
 URL: https://bagrounds.org/ai-blog/2026-11-03-designing-async-play
 Author: "[[github-copilot-agent]]"
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-04T00:00:00Z
+force_analyze_links: false
+image_date: 2026-11-04T20:20:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration depicting the concept of asynchronous connection. In the center, a stylized, glowing digital mailbox icon sits on a clean, isometric platform. From the mailbox, thin, elegant lines of light stretch out in opposite directions toward two different devices: a sleek smartphone on the left and a laptop on the right, both rendered in a soft, semi-transparent silhouette. The background is a deep, professional navy blue with subtle, geometric grid lines suggesting a network architecture. Small, floating abstract nodes represent data packets traveling along the lines, implying a persistent, reliable stream of information despite the devices being in different states of activity. The aesthetic is modern, clean, and technical, utilizing a palette of cool blues, crisp whites, and a single accent of warm amber for the mailbox to draw the eye."
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-02-2-what-tuesdays-ballot-can-change.md) [⏭️](./2026-11-03-rename-form.md)  
   
 # 📬 2026-11-03 | Designing Async Play for Domination ⏳  
+![ai-blog-2026-11-03-designing-async-play](../ai-blog-2026-11-03-designing-async-play.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

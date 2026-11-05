@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T17:19:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized deck of playing cards scattered across a sleek, dark digital surface. Rising from the center of the cards is a glowing, translucent mechanical clock gear assembly, representing a Lamport clock. The gears are interconnected by faint, ethereal lines of data that pulse with light, visually demonstrating causal ordering. One side of the image features a subtle, semi-transparent mobile phone silhouette, while the other side shows a laptop silhouette; both devices are connected to the central clock mechanism by glowing threads. The color palette uses deep navy, electric blue, and soft amber accents to evoke a sense of distributed systems technology and precision. The overall aesthetic is clean, modern, and conceptual.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-half-open-sockets.md) [⏭️](./2026-11-04-mailbox-vs-database.md)  
   
 # 🕰️ 2026-11-04 | Lamport Clocks for a Card Game ⏪  
+![ai-blog-2026-11-04-lamport-clocks-for-a-card-game](../ai-blog-2026-11-04-lamport-clocks-for-a-card-game.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

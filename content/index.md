@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-04T18:58:09-08:00
+updated: 2026-11-05T06:32:33-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-11-04T18:58:09-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (720)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (721)  
+- [2026-11-05](./reflections/2026-11-05.md)  
 - [2026-11-04 | 🇺🇸 A Good Day for Americans 🇺🇸](./reflections/2026-11-04.md)  
 - [2026-11-03 | 🇺🇸 Exercise Your Citizenship 🛡️ Protect Our Country 🤝 Help Your Neighbors 🗳️ Vote Today 🇺🇸](./reflections/2026-11-03.md)  
-- [2026-11-02 | 🗳️ Vote 🇺🇸](./reflections/2026-11-02.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (282)  
@@ -44,22 +44,22 @@ updated: 2026-11-04T18:58:09-08:00
 - [2026-11-02 | 🏛️ 🗳️ Voices of Democracy: Your Vote, Our Future (November 3, 2026) 🏛️](./systems-for-public-good/2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (209)  
+## [📰 The Noise](./the-noise/index.md) (210)  
+- [2026-11-05 | 📰 📉 The Shifting Sands of Power and Progress 📰](./the-noise/2026-11-05-the-shifting-sands-of-power-and-progress.md)  
 - [2026-11-04 | 📰 🗳️ The Shifting Tides: A Post-Election Reckoning 📰](./the-noise/2026-11-04-the-shifting-tides-a-post-election-reckoning.md)  
 - [2026-11-03 | 📰 🗳️ The Unfolding Ballot and Global Echoes 📰](./the-noise/2026-11-03-the-unfolding-ballot-and-global-echoes.md)  
-- [2026-11-02 | 📰 🌊 The Tides of Turbulence and Tenuous Threads 📰](./the-noise/2026-11-02-the-tides-of-turbulence-and-tenuous-threads.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (208)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (209)  
+- [2026-11-05 | 🌟 🌍 Seeds of Progress: Cultivating a Greener, Healthier Tomorrow 🌟](./positivity-bias/2026-11-05-seeds-of-progress-cultivating-a-greener-healthier-tomorrow.md)  
 - [2026-11-04 | 🌟 🗳️ A Mandate for Progress: Civic Voices and Global Endeavors 🌟](./positivity-bias/2026-11-04-a-mandate-for-progress-civic-voices-and-global-endeavors.md)  
 - [2026-11-03 | 🌟 A Collective Ascent: From Earth's Depths to Stellar Heights 🌟](./positivity-bias/2026-11-03-a-collective-ascent-from-earth-s-depths-to-stellar-heights.md)  
-- [2026-11-02 | 🌟 🌌 Pathways to Progress: Cosmic Records, Healing Horizons, and Community Triumphs 🌟](./positivity-bias/2026-11-02-pathways-to-progress-cosmic-records-healing-horizons-and-community-triumphs.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (157)  
+## [⚡ Vital Signals](./vital-signals/index.md) (158)  
+- [2026-11-05 | ⚡ 🧠 The Quantum Leap: Translating Intention into Action ⚡](./vital-signals/2026-11-05-the-quantum-leap-translating-intention-into-action.md)  
 - [2026-11-04 | ⚡ 🧠 The Architect of Your Engagement: How Agency and Purpose Build a Resilient Mind ⚡](./vital-signals/2026-11-04-the-architect-of-your-engagement-how-agency-and-purpose-build-a-resilient-mind.md)  
 - [2026-11-03 | ⚡ 🧠 The Agile Mind: Updating Your Internal Map ⚡](./vital-signals/2026-11-03-the-agile-mind-updating-your-internal-map.md)  
-- [2026-11-02 | ⚡ 🧠 The Architecture of Choice: Building Your Deliberate Decision Engine ⚡](./vital-signals/2026-11-02-the-architecture-of-choice-building-your-deliberate-decision-engine.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (205)  
@@ -74,10 +74,10 @@ updated: 2026-11-04T18:58:09-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (953)  
+## [📺 Videos](./videos/index.md) (954)  
+- [💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub](./videos/microsoft-distinguished-eng-why-and-how-to-port-your-entire-codebase-to-rust-stephen-toub.md)  
 - [🇺🇸 James Talarico Full Victory Speech](./videos/james-talarico-full-victory-speech.md)  
 - [🇺🇸 El-Sayed Full Victory Speech](./videos/el-sayed-full-victory-speech.md)  
-- [🌅🌊⚖️ Heather Cox Richardson: ‘VERY optimistic’ about a political TIDAL SHIFT and Trump accountability](./videos/heather-cox-richardson-very-optimistic-about-a-political-tidal-shift-and-trump-accountability.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

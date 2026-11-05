@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-04T18:58:09-08:00
+updated: 2026-11-05T06:32:33-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (953)  
+# 📺 Videos (954)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -460,6 +460,7 @@ updated: 2026-11-04T18:58:09-08:00
 - [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [🎙️📰⚖️ Media For Truth, Not Profit w Democracy Now!’s Amy Goodman | The Weekly Show with Jon Stewart](./media-for-truth-not-profit-w-democracy-nows-amy-goodman-the-weekly-show-with-jon-stewart.md)  
+- [💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub](./microsoft-distinguished-eng-why-and-how-to-port-your-entire-codebase-to-rust-stephen-toub.md)  
 - [🗳️📺🎤 Midterms 2026: Last Week Tonight with John Oliver (HBO)](./midterms-2026-last-week-tonight-with-john-oliver-hbo.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  

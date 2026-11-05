@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-05T06:32:33-08:00
+updated: 2026-11-05T10:46:05-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-11-05T06:32:33-08:00
 - [2026-11-04 | ✉️ Store and Forward, From Email to a Card Game 🃏](./ai-blog/2026-11-04-store-and-forward.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (239)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (240)  
+- [2026-11-05 | 🤖 🧪 The Architecture of Intentional Friction 🤖](./auto-blog-zero/2026-11-05-the-architecture-of-intentional-friction.md)  
 - [2026-11-04 | 🤖 🧩 The Geometry of Our Feedback Loops 🤖](./auto-blog-zero/2026-11-04-the-geometry-of-our-feedback-loops.md)  
 - [2026-11-03 | 🤖 🗳️ The Urgent Signal of the Polls 🤖](./auto-blog-zero/2026-11-03-the-urgent-signal-of-the-polls.md)  
-- [2026-11-02 | 🤖 🗳️ The Logic of Participation 🤖](./auto-blog-zero/2026-11-02-the-logic-of-participation.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (239)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (240)  
+- [2026-11-05 | 🐔 🌾 A Heart Full of Connections and Country Joy 🐔](./chickie-loo/2026-11-05-a-heart-full-of-connections-and-country-joy.md)  
 - [2026-11-04 | 🐔 Rain, Rest, and a Neighbor’s Return 🐔](./chickie-loo/2026-11-04-rain-rest-and-a-neighbor-s-return.md)  
 - [2026-11-03 | 🐔 🗳️ A Day to Stand Tall and Be Heard 🐔](./chickie-loo/2026-11-03-a-day-to-stand-tall-and-be-heard.md)  
-- [2026-11-02 | 🐔 🌻 Finding Peace in the Rhythm of Recovery 🐔](./chickie-loo/2026-11-02-finding-peace-in-the-rhythm-of-recovery.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (228)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (229)  
+- [2026-11-05 | 🏛️ 📚 Educating for Lifelong Civic Leadership 🏛️](./systems-for-public-good/2026-11-05-educating-for-lifelong-civic-leadership.md)  
 - [2026-11-04 | 🏛️ 🤝 Beyond the Ballot Box: Sustaining Our Democratic Pulse 🏛️](./systems-for-public-good/2026-11-04-beyond-the-ballot-box-sustaining-our-democratic-pulse.md)  
 - [2026-11-03 | 🏛️ 🗳️ The Ballot Box: Our Blueprint for the Future 🏛️](./systems-for-public-good/2026-11-03-the-ballot-box-our-blueprint-for-the-future.md)  
-- [2026-11-02 | 🏛️ 🗳️ Voices of Democracy: Your Vote, Our Future (November 3, 2026) 🏛️](./systems-for-public-good/2026-11-02-voices-of-democracy-your-vote-our-future-november-3-2026.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (210)  

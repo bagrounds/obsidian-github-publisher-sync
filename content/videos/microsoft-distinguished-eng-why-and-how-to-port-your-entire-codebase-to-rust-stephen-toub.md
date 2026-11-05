@@ -9,6 +9,10 @@ Platform:
 Channel: Ryan Peterman
 tags:
 youtube: https://youtu.be/PLMOVlZC4eU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub  

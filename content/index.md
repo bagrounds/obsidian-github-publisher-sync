@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-05T10:46:05-08:00
+updated: 2026-11-05T10:53:54-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-05T10:46:05-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (954)  
+## [📺 Videos](./videos/index.md) (955)  
+- [🪜🛑📈 Video Review for What Got You Here Won't Get You There by Marshall Goldsmith](./videos/video-review-for-what-got-you-here-wont-get-you-there-by-marshall-goldsmith.md)  
 - [💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub](./videos/microsoft-distinguished-eng-why-and-how-to-port-your-entire-codebase-to-rust-stephen-toub.md)  
 - [🇺🇸 James Talarico Full Victory Speech](./videos/james-talarico-full-victory-speech.md)  
-- [🇺🇸 El-Sayed Full Victory Speech](./videos/el-sayed-full-victory-speech.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

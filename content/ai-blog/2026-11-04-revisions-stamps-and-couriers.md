@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T18:30:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, ascending timeline forms the backbone, implying revisions. From a central point, two parallel paths diverge. One is a fast, chaotic zigzag line with gaps, representing the unreliable relay. The other is a solid, smooth, direct line leading to a minimalist mailbox icon, signifying durability. Small, identical envelope icons travel along both paths. Some envelopes on the zigzag path bear small, distinct circular stamp markers. A dynamic, simplified courier figure, perhaps a robot or a person in motion, is actively directing an envelope from the chaotic path onto the sturdy mailbox path, ensuring its delivery. The scene conveys a sense of reliable order amidst potential chaos.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-mailbox-vs-database.md) [⏭️](./2026-11-04-store-and-forward.md)  
   
 # 🏷️ 2026-11-04 | Revisions, Stamps and Couriers 🚚  
+![ai-blog-2026-11-04-revisions-stamps-and-couriers](../ai-blog-2026-11-04-revisions-stamps-and-couriers.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

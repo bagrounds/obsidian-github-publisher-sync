@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-03-the-ballot-box-our-blueprint-for-the-future.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-03-the-ballot-box-our-blueprint-for-the-future.md) [⏭️](./2026-11-05-educating-for-lifelong-civic-leadership.md)  
 # 2026-11-04 | 🏛️ 🤝 Beyond the Ballot Box: Sustaining Our Democratic Pulse 🏛️  
 ![systems-for-public-good-2026-11-04-beyond-the-ballot-box-sustaining-our-democratic-pulse](../systems-for-public-good-2026-11-04-beyond-the-ballot-box-sustaining-our-democratic-pulse.jpg)  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-05T10:46:05-08:00
+updated: 2026-11-05T10:53:54-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (954)  
+# 📺 Videos (955)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -845,6 +845,7 @@ updated: 2026-11-05T10:46:05-08:00
 - [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./vibe-coding-is-the-only-future-steve-yegge.md)  
+- [🪜🛑📈 Video Review for What Got You Here Won't Get You There by Marshall Goldsmith](./video-review-for-what-got-you-here-wont-get-you-there-by-marshall-goldsmith.md)  
 - [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🗣️🌍🍲 Voices of Meltingpot | Frederik Imbo](./voices-of-meltingpot-frederik-imbo.md)  
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-03-a-day-to-stand-tall-and-be-heard.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-03-a-day-to-stand-tall-and-be-heard.md) [⏭️](./2026-11-05-a-heart-full-of-connections-and-country-joy.md)  
 # 2026-11-04 | 🐔 Rain, Rest, and a Neighbor’s Return 🐔  
 ![chickie-loo-2026-11-04-rain-rest-and-a-neighbor-s-return](../chickie-loo-2026-11-04-rain-rest-and-a-neighbor-s-return.jpg)  
   

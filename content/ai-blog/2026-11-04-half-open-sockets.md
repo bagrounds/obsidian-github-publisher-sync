@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T17:19:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist digital illustration featuring a stylized, glowing electric socket mounted on a dark, textured wall. One of the sockets circular receptacles is dark and cracked, while the other is emitting a faint, pulsing blue light. A tangled, frayed wire hangs loosely from the socket, disappearing into a shadow below. In the air around the socket, several translucent, spectral ghost icons—representing disconnected digital signals—drift away, fading into the background. The aesthetic is clean and modern, using a color palette of deep charcoal, electric blue, and a subtle hint of warning orange near the cracks to represent the half-open state. The composition focuses on the tension between the functional, glowing port and the decaying, disconnected nature of the socket.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-chaos-in-real-browsers.md) [⏭️](./2026-11-04-lamport-clocks-for-a-card-game.md)  
   
 # 🧟 2026-11-04 | Half-Open Sockets and the Resync Table 🔌  
+![ai-blog-2026-11-04-half-open-sockets](../ai-blog-2026-11-04-half-open-sockets.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

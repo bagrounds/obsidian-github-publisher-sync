@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-03-the-unfolding-ballot-and-global-echoes.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-03-the-unfolding-ballot-and-global-echoes.md) [⏭️](./2026-11-05-the-shifting-sands-of-power-and-progress.md)  
 # 2026-11-04 | 📰 🗳️ The Shifting Tides: A Post-Election Reckoning 📰  
 ![the-noise-2026-11-04-the-shifting-tides-a-post-election-reckoning](../the-noise-2026-11-04-the-shifting-tides-a-post-election-reckoning.jpg)  
   

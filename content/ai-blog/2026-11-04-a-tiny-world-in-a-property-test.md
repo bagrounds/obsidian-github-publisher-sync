@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T16:21:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a miniature digital ecosystem contained within a glass cube. Inside, several small, stylized mobile phone icons are connected by glowing, translucent lines to a central, rotating server node. Some lines are solid, while others are fraying or broken, representing unstable socket connections. Floating geometric shapes and clock-face icons hover around the devices, suggesting logical time and state transitions. The background is a soft, deep gradient, creating a clean, technical aesthetic. The composition emphasizes a complex network being put through a stress test, with subtle particle effects swirling around the components to suggest movement and random chaos being brought into a structured, organized state.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-a-room-mailbox-on-durable-objects.md) [⏭️](./2026-11-04-async-play-deep-dives.md)  
   
 # 🌍 2026-11-04 | A Tiny World in a Property Test 🎲  
+![ai-blog-2026-11-04-a-tiny-world-in-a-property-test](../ai-blog-2026-11-04-a-tiny-world-in-a-property-test.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

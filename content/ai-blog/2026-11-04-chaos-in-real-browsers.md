@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T16:22:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition depicting a digital stress test environment. On the left and right, two stylized, translucent browser windows float against a dark, tech-focused background. Inside each window, a colorful, abstract card game interface is fractured and glitching, with UI elements slightly misaligned as if struggling to sync. Between the windows, a central glowing relay node acts as a hub, represented by a series of interconnected, pulsating circuit lines. Some of these lines are severed or fraying into digital static, symbolizing the half-open and disconnected sockets. Small, floating icons—a padlock, a snowflake, a power button, and a clock—drift around the windows, representing the chaos variables like freezing, hiding, and offline states. The overall aesthetic is clean, modern, and technical, utilizing a palette of deep navy, electric blue, and vibrant magenta.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-async-play-deep-dives.md) [⏭️](./2026-11-04-half-open-sockets.md)  
   
 # 🌪️ 2026-11-04 | Chaos in Real Browsers 🎭  
+![ai-blog-2026-11-04-chaos-in-real-browsers](../ai-blog-2026-11-04-chaos-in-real-browsers.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

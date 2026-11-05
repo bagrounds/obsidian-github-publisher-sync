@@ -9,6 +9,10 @@ Platform:
 Channel: C-SPAN
 tags:
 youtube: https://www.youtube.com/embed/cK8wzjBpEoQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸 James Talarico Full Victory Speech  
@@ -57,7 +61,7 @@ youtube: https://www.youtube.com/embed/cK8wzjBpEoQ
   
 ### 🆚 Contrasting  
   
-* 📙 Dark Money by Jane Mayer, published by Anchor Books, offers an investigative account of how billionaire donor networks systematically construct, finance, and deploy political networks.  
+* 📙 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer, published by Anchor Books, offers an investigative account of how billionaire donor networks systematically construct, finance, and deploy political networks.  
 * 📗 The System by Robert B. Reich, published by Knopf, presents an analysis of how economic power concentrates wealth at the top and distorts democratic governance.  
   
 ### 🎨 Creatively Related  

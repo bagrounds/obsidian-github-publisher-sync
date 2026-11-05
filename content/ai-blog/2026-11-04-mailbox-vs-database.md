@@ -10,10 +10,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-11-04T18:30:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized balancing scale takes center stage. On the left pan rests a friendly, slightly open red mailbox, a single white envelope peeking out. On the right pan, a neat stack of three metallic, cylindrical database icons, suggesting structured data. The scale itself is perfectly level, symbolizing the comparison. Subtle, wavy lines emanate from the mailbox, indicating simple message transfer, while faint, grid-like patterns connect the database cylinders, hinting at organized storage. The overall aesthetic is clean and modern, with a clear distinction between the two concepts.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-lamport-clocks-for-a-card-game.md) [⏭️](./2026-11-04-revisions-stamps-and-couriers.md)  
   
 # ⚖️ 2026-11-04 | A Mailbox vs. a Database 🗄️  
+![ai-blog-2026-11-04-mailbox-vs-database](../ai-blog-2026-11-04-mailbox-vs-database.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

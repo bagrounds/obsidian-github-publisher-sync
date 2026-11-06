@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-04T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-03-the-calibrated-ballot-a-bid-for-reciprocal-civic-attunement.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-03-the-calibrated-ballot-a-bid-for-reciprocal-civic-attunement.md) [⏭️](./2026-11-05-the-generative-friction-hypothesis-architecting-resistance-for-collective-evolution.md)  
 # 2026-11-04 | 🔀 💥 The Co-Generative Cost: Forging Trust in Legible Friction 🔀  
 ![convergence-2026-11-04-the-co-generative-cost-forging-trust-in-legible-friction](../convergence-2026-11-04-the-co-generative-cost-forging-trust-in-legible-friction.jpg)  
   

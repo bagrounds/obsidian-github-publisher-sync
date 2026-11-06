@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-06T07:00:54-08:00
+updated: 2026-11-06T07:11:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-06T07:00:54-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (956)  
+## [📺 Videos](./videos/index.md) (957)  
+- [🛡️🐘🎙️ A Bulwark Against Trump with Sarah Longwell | The Weekly Show with Jon Stewart](./videos/a-bulwark-against-trump-with-sarah-longwell-the-weekly-show-with-jon-stewart.md)  
 - [🗳️🗣️📅 Politics Chat, November 5, 2026](./videos/politics-chat-november-5-2026.md)  
 - [🪜🛑📈 Video Review for What Got You Here Won't Get You There by Marshall Goldsmith](./videos/video-review-for-what-got-you-here-wont-get-you-there-by-marshall-goldsmith.md)  
-- [💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub](./videos/microsoft-distinguished-eng-why-and-how-to-port-your-entire-codebase-to-rust-stephen-toub.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-06T07:11:04-08:00
+updated: 2026-11-06T14:02:21-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-11-06T07:11:04-08:00
 - [2026-11-04 | 🔍 TLA+ for a Card Game 🃏](./ai-blog/2026-11-04-tla-plus-for-a-card-game.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (240)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (241)  
+- [2026-11-06 | 🤖 ⚖️ Calibration Through Contradiction 🤖](./auto-blog-zero/2026-11-06-calibration-through-contradiction.md)  
 - [2026-11-05 | 🤖 🧪 The Architecture of Intentional Friction 🤖](./auto-blog-zero/2026-11-05-the-architecture-of-intentional-friction.md)  
 - [2026-11-04 | 🤖 🧩 The Geometry of Our Feedback Loops 🤖](./auto-blog-zero/2026-11-04-the-geometry-of-our-feedback-loops.md)  
-- [2026-11-03 | 🤖 🗳️ The Urgent Signal of the Polls 🤖](./auto-blog-zero/2026-11-03-the-urgent-signal-of-the-polls.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (240)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (241)  
+- [2026-11-06 | 🐔 🐎 A Day of Clydesdales, Courage, and Quiet Victories 🐔](./chickie-loo/2026-11-06-a-day-of-clydesdales-courage-and-quiet-victories.md)  
 - [2026-11-05 | 🐔 🌾 A Heart Full of Connections and Country Joy 🐔](./chickie-loo/2026-11-05-a-heart-full-of-connections-and-country-joy.md)  
 - [2026-11-04 | 🐔 Rain, Rest, and a Neighbor’s Return 🐔](./chickie-loo/2026-11-04-rain-rest-and-a-neighbor-s-return.md)  
-- [2026-11-03 | 🐔 🗳️ A Day to Stand Tall and Be Heard 🐔](./chickie-loo/2026-11-03-a-day-to-stand-tall-and-be-heard.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (229)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (230)  
+- [2026-11-06 | 🏛️ Building Bridges: Community as the Structure of Belonging 🏛️](./systems-for-public-good/2026-11-06-building-bridges-community-as-the-structure-of-belonging.md)  
 - [2026-11-05 | 🏛️ 📚 Educating for Lifelong Civic Leadership 🏛️](./systems-for-public-good/2026-11-05-educating-for-lifelong-civic-leadership.md)  
 - [2026-11-04 | 🏛️ 🤝 Beyond the Ballot Box: Sustaining Our Democratic Pulse 🏛️](./systems-for-public-good/2026-11-04-beyond-the-ballot-box-sustaining-our-democratic-pulse.md)  
-- [2026-11-03 | 🏛️ 🗳️ The Ballot Box: Our Blueprint for the Future 🏛️](./systems-for-public-good/2026-11-03-the-ballot-box-our-blueprint-for-the-future.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (211)  

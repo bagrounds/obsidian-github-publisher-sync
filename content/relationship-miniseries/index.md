@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-11-06T07:00:54-08:00
+updated: 2026-11-06T14:02:21-08:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (113)  
+# 💑 Relationship Miniseries (114)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-11-06 | 💑 The Ghost in the Room 💑](./2026-11-06-the-ghost-in-the-room.md)  
 - [2026-11-05 | 💑 The Static Builds 💑](./2026-11-05-the-static-builds.md)  
 - [2026-11-04 | 💑 The Familiar Chord 💑](./2026-11-04-the-familiar-chord.md)  
 - [2026-11-03 | 💑 🎭 Through a Glass, Darkly 🪞 💑](./2026-11-03-through-a-glass-darkly.md)  

@@ -9,6 +9,10 @@ Platform:
 Channel: The Weekly Show with Jon Stewart
 tags:
 youtube: https://youtu.be/1bwcS8UgONo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🛡️🐘🎙️ A Bulwark Against Trump with Sarah Longwell | The Weekly Show with Jon Stewart  
@@ -60,4 +64,4 @@ youtube: https://youtu.be/1bwcS8UgONo
 ### 🎨 Creatively Related  
   
 * 🎭 Monsters: A Fan's Dilemma by Claire Dederer explores the ethical and personal complexities of engaging with culture and politics made by flawed individuals.  
-* 🐺 Autocracy, Inc.: The Dictators Who Want to Run the World by Anne Applebaum analyzes the international networks and media structures that support authoritarian regimes across the globe.
+* 🐺 [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum analyzes the international networks and media structures that support authoritarian regimes across the globe.

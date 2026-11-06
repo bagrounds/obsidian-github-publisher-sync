@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-06T07:00:54-08:00
+updated: 2026-11-06T07:11:04-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (956)  
+# 📺 Videos (957)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -47,6 +47,7 @@ updated: 2026-11-06T07:00:54-08:00
 - [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./a-billion-dollar-a-day-war-explainer.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./a-brittle-administration-inventing-a-crime-crisis-explainer.md)  
+- [🛡️🐘🎙️ A Bulwark Against Trump with Sarah Longwell | The Weekly Show with Jon Stewart](./a-bulwark-against-trump-with-sarah-longwell-the-weekly-show-with-jon-stewart.md)  
 - [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./acl-2025-large-language-model-agents-for-content-analysis.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
 - [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./a-conversation-with-california-governor-gavin-newsom.md)  

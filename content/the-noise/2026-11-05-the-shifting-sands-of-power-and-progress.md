@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-04-the-shifting-tides-a-post-election-reckoning.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-04-the-shifting-tides-a-post-election-reckoning.md) [⏭️](./2026-11-06-navigating-the-aftermath-ripples-of-change.md)  
 # 2026-11-05 | 📰 📉 The Shifting Sands of Power and Progress 📰  
 ![the-noise-2026-11-05-the-shifting-sands-of-power-and-progress](../the-noise-2026-11-05-the-shifting-sands-of-power-and-progress.jpg)  
   

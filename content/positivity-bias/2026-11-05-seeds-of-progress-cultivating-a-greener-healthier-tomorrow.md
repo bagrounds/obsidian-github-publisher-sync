@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-05T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-04-a-mandate-for-progress-civic-voices-and-global-endeavors.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-04-a-mandate-for-progress-civic-voices-and-global-endeavors.md) [⏭️](./2026-11-06-galactic-leaps-and-earthly-triumphs-a-week-of-boundless-progress.md)  
 # 2026-11-05 | 🌟 🌍 Seeds of Progress: Cultivating a Greener, Healthier Tomorrow 🌟  
 ![positivity-bias-2026-11-05-seeds-of-progress-cultivating-a-greener-healthier-tomorrow](../positivity-bias-2026-11-05-seeds-of-progress-cultivating-a-greener-healthier-tomorrow.jpg)  
   

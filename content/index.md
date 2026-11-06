@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-05T10:53:54-08:00
+updated: 2026-11-05T19:35:50-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-05T10:53:54-08:00
 - [2026-11-03 | 🇺🇸 Exercise Your Citizenship 🛡️ Protect Our Country 🤝 Help Your Neighbors 🗳️ Vote Today 🇺🇸](./reflections/2026-11-03.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (282)  
+## [🤖 AI Blog](./ai-blog/index.md) (283)  
+- [2026-11-05 | 🔎 Notes on Browser Lockups During Catch-Up 🧭](./ai-blog/2026-11-05-browser-crashes.md)  
 - [2026-11-04 | 📱 What Phones Do to Web Pages 🚪](./ai-blog/2026-11-04-what-phones-do-to-web-pages.md)  
 - [2026-11-04 | 🔍 TLA+ for a Card Game 🃏](./ai-blog/2026-11-04-tla-plus-for-a-card-game.md)  
-- [2026-11-04 | ✉️ Store and Forward, From Email to a Card Game 🃏](./ai-blog/2026-11-04-store-and-forward.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (240)  
@@ -62,10 +62,10 @@ updated: 2026-11-05T10:53:54-08:00
 - [2026-11-03 | ⚡ 🧠 The Agile Mind: Updating Your Internal Map ⚡](./vital-signals/2026-11-03-the-agile-mind-updating-your-internal-map.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (205)  
+## [🔀 Convergence](./convergence/index.md) (206)  
+- [2026-11-05 | 🔀 💥 The Generative Friction Hypothesis: Architecting Resistance for Collective Evolution 🔀](./convergence/2026-11-05-the-generative-friction-hypothesis-architecting-resistance-for-collective-evolution.md)  
 - [2026-11-04 | 🔀 💥 The Co-Generative Cost: Forging Trust in Legible Friction 🔀](./convergence/2026-11-04-the-co-generative-cost-forging-trust-in-legible-friction.md)  
 - [2026-11-03 | 🔀 🗳️ The Calibrated Ballot: A Bid for Reciprocal Civic Attunement 🔀](./convergence/2026-11-03-the-calibrated-ballot-a-bid-for-reciprocal-civic-attunement.md)  
-- [2026-11-02 | 🔀 🗳️ The Metabolic Ledger of Civic Attunement 🔀](./convergence/2026-11-02-the-metabolic-ledger-of-civic-attunement.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-11-05T10:53:54-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (955)  
+## [📺 Videos](./videos/index.md) (956)  
+- [🗳️🗣️📅 Politics Chat, November 5, 2026](./videos/politics-chat-november-5-2026.md)  
 - [🪜🛑📈 Video Review for What Got You Here Won't Get You There by Marshall Goldsmith](./videos/video-review-for-what-got-you-here-wont-get-you-there-by-marshall-goldsmith.md)  
 - [💻🦀🔄 Microsoft Distinguished Eng: Why And How To Port Your Entire Codebase to Rust | Stephen Toub](./videos/microsoft-distinguished-eng-why-and-how-to-port-your-entire-codebase-to-rust-stephen-toub.md)  
-- [🇺🇸 James Talarico Full Victory Speech](./videos/james-talarico-full-victory-speech.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

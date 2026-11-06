@@ -9,6 +9,10 @@ Platform:
 Channel: Callibrain
 tags:
 youtube: https://youtu.be/AIeZ95q2QvE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪜🛑📈 Video Review for What Got You Here Won't Get You There by Marshall Goldsmith  
@@ -82,4 +86,4 @@ DEL Leaders suffering from the success delusion attribute all of their achieveme
 ### 🎨 Creatively Related  
   
 * 🎯 Atomic Habits by James Clear explores the micro-mechanisms of habit formation, detailing how subtle cues and environment design automate behavioral changes over time.  
-* 🥋 The Art of Learning by Josh Waitzkin explores the psychological transitions required to shed beginner tactics and achieve mastery across competitive domains.
+* 🥋 [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](../books/the-art-of-learning.md) by Josh Waitzkin explores the psychological transitions required to shed beginner tactics and achieve mastery across competitive domains.

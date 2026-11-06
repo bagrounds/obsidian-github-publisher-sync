@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/OASkUEzZvM4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗳️🗣️📅 Politics Chat, November 5, 2026  
@@ -60,7 +64,7 @@ youtube: https://www.youtube.com/embed/OASkUEzZvM4
 ### ↔️ Similar  
   
 * 📚 Madison's Hand: Revising the Constitutional Convention by Mary Sarah Bilder examines the origins, debates, and structural mechanics surrounding early American constitutional design.  
-* 📚 Dark Money by Jane Mayer explores the hidden influence of concentrated wealth and corporate interests in shaping modern political outcomes.  
+* 📚 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer explores the hidden influence of concentrated wealth and corporate interests in shaping modern political outcomes.  
   
 ### 🆚 Contrasting  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-06T14:02:21-08:00
+updated: 2026-11-06T15:13:44-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (957)  
+# 📺 Videos (958)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -606,6 +606,7 @@ updated: 2026-11-06T14:02:21-08:00
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./session-4-part-1-presenting-your-venture.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
+- [🔦💡 Shining a Light](./shining-a-light.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻🤔🔮 Should You Still Become a Software Engineer in 2026? GitHub VP](./should-you-still-become-a-software-engineer-in-2026-github-vp.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  

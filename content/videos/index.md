@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-05T10:53:54-08:00
+updated: 2026-11-05T19:35:50-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (955)  
+# 📺 Videos (956)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -545,6 +545,7 @@ updated: 2026-11-05T10:53:54-08:00
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./politics-chat-november-11-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./politics-chat-november-13-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./politics-chat-november-18-2025.md)  
+- [🗳️🗣️📅 Politics Chat, November 5, 2026](./politics-chat-november-5-2026.md)  
 - [🏛️🗣️📅 Politics Chat, October 21, 2025](./politics-chat-october-21-2025.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./politics-chat-september-25-2025.md)  
 - [🐘✂️📉 PostgREST Deletes 80% of Your Backend Code](./postgrest-deletes-80-of-your-backend-code.md)  

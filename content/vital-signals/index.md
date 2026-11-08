@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-11-06T15:13:44-08:00
+updated: 2026-11-07T16:08:13-08:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (159)  
+# ⚡ Vital Signals (160)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-11-07 | ⚡ 🧠 The Deep Reset: Unlocking Your Brain's Nightly Rejuvenation Cycle ⚡](./2026-11-07-the-deep-reset-unlocking-your-brain-s-nightly-rejuvenation-cycle.md)  
 - [2026-11-06 | ⚡ 🧠 The Effort-Recovery Loop: Fueling Your Long Game ⚡](./2026-11-06-the-effort-recovery-loop-fueling-your-long-game.md)  
 - [2026-11-05 | ⚡ 🧠 The Quantum Leap: Translating Intention into Action ⚡](./2026-11-05-the-quantum-leap-translating-intention-into-action.md)  
 - [2026-11-04 | ⚡ 🧠 The Architect of Your Engagement: How Agency and Purpose Build a Resilient Mind ⚡](./2026-11-04-the-architect-of-your-engagement-how-agency-and-purpose-build-a-resilient-mind.md)  

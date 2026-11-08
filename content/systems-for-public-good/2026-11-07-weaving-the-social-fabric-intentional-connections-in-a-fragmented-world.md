@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-07T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-06-building-bridges-community-as-the-structure-of-belonging.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-06-building-bridges-community-as-the-structure-of-belonging.md) [⏭️](./2026-11-08-the-invisible-threads-measuring-and-valuing-social-capital.md)  
 # 2026-11-07 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️  
 ![systems-for-public-good-2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world](../systems-for-public-good-2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.jpg)  
   

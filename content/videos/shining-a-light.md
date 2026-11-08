@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/8YB479ZgfL0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🔦💡 Shining a Light  
@@ -54,8 +58,8 @@ youtube: https://youtu.be/8YB479ZgfL0
   
 ### ↔️ Similar  
   
-* 📖 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United by Zephyr Teachout examines the historical evolution of legal bribery and systemic political corruption within the American republic.  
-* 📖 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right by Jane Mayer documents how network funding by ultra-wealthy donors systematically influences American elections and public policy.  
+* 📖 [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout examines the historical evolution of legal bribery and systemic political corruption within the American republic.  
+* 📖 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer documents how network funding by ultra-wealthy donors systematically influences American elections and public policy.  
   
 ### 🆚 Contrasting  
   

@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-07T16:08:13-08:00
+updated: 2026-11-08T11:04:06-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (207)  
+# 🔀 Convergence (208)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-07 | 🔀 🥁 The Co-Metabolic Cadence: The Rhythmic Pulse of Collective Becoming 🔀](./2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md)  
 - [2026-11-06 | 🔀 🔥 The Crucible of Divergence 🔀](./2026-11-06-the-crucible-of-divergence.md)  
 - [2026-11-05 | 🔀 💥 The Generative Friction Hypothesis: Architecting Resistance for Collective Evolution 🔀](./2026-11-05-the-generative-friction-hypothesis-architecting-resistance-for-collective-evolution.md)  
 - [2026-11-04 | 🔀 💥 The Co-Generative Cost: Forging Trust in Legible Friction 🔀](./2026-11-04-the-co-generative-cost-forging-trust-in-legible-friction.md)  

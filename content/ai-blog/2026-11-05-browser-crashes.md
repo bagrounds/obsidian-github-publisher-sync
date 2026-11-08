@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-05T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-what-phones-do-to-web-pages.md) [⏭️](./2026-11-07-browser-crash-tools.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-04-what-phones-do-to-web-pages.md) [⏭️](./2026-11-07-a-chat-that-held-whole-games.md)  
   
 # 🔎 2026-11-05 | Notes on Browser Lockups During Catch-Up 🧭  
 ![ai-blog-2026-11-05-browser-crashes](../ai-blog-2026-11-05-browser-crashes.jpg)  

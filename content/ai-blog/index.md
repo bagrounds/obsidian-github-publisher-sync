@@ -6,12 +6,15 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-07T16:08:13-08:00
+updated: 2026-11-08T11:04:06-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (285)  
+# 🤖 AI Blog (288)  
+- [2026-11-08 | 📜 What Expand's Log Taught Us (An Attempt We Didn't Keep) 🃏](./2026-11-08-logging-what-cards-move.md)  
+- [2026-11-08 | 🩹 Fixing the Catch-Up Crash 📏](./2026-11-08-fixing-the-catch-up-crash.md)  
 - [2026-11-07 | 💥 Reproducing the Catch-Up Crash 🔁](./2026-11-07-reproducing-the-catch-up-crash.md)  
 - [2026-11-07 | 🧯 Finding Browser Crashes in CI 🔍](./2026-11-07-browser-crash-tools.md)  
+- [2026-11-07 | 🗂️ A Chat That Held Whole Games 💾](./2026-11-07-a-chat-that-held-whole-games.md)  
 - [2026-11-05 | 🔎 Notes on Browser Lockups During Catch-Up 🧭](./2026-11-05-browser-crashes.md)  
 - [2026-11-04 | 📱 What Phones Do to Web Pages 🚪](./2026-11-04-what-phones-do-to-web-pages.md)  
 - [2026-11-04 | 🔍 TLA+ for a Card Game 🃏](./2026-11-04-tla-plus-for-a-card-game.md)  

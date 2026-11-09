@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-09T06:08:59-08:00
+updated: 2026-11-09T06:32:57-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -44,16 +44,16 @@ updated: 2026-11-09T06:08:59-08:00
 - [2026-11-06 | 🏛️ Building Bridges: Community as the Structure of Belonging 🏛️](./systems-for-public-good/2026-11-06-building-bridges-community-as-the-structure-of-belonging.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (213)  
+## [📰 The Noise](./the-noise/index.md) (214)  
+- [2026-11-09 | 📰 🌍 The Unfolding Tapestry of Global Dynamics 📰](./the-noise/2026-11-09-the-unfolding-tapestry-of-global-dynamics.md)  
 - [2026-11-08 | 📰 🌎 The Unyielding Tide of Urgency 📰](./the-noise/2026-11-08-the-unyielding-tide-of-urgency.md)  
 - [2026-11-07 | 📰 🌎 The Echo Chamber's Hum 📰](./the-noise/2026-11-07-the-echo-chamber-s-hum.md)  
-- [2026-11-06 | 📰 🌎 Navigating the Aftermath: Ripples of Change 📰](./the-noise/2026-11-06-navigating-the-aftermath-ripples-of-change.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (212)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (213)  
+- [2026-11-09 | 🌟 Waves of Progress: Illuminating Breakthroughs and Global Harmony 🌟](./positivity-bias/2026-11-09-waves-of-progress-illuminating-breakthroughs-and-global-harmony.md)  
 - [2026-11-08 | 🌟 ☀️ A Symphony of Progress: From Cosmic Insights to Community Light 🌟](./positivity-bias/2026-11-08-a-symphony-of-progress-from-cosmic-insights-to-community-light.md)  
 - [2026-11-07 | 🌟 Pathways of Progress: Unearthing Discoveries, Healing Horizons, and a Greener World 🌟](./positivity-bias/2026-11-07-pathways-of-progress-unearthing-discoveries-healing-horizons-and-a-greener-world.md)  
-- [2026-11-06 | 🌟 🚀 Galactic Leaps and Earthly Triumphs: A Week of Boundless Progress 🌟](./positivity-bias/2026-11-06-galactic-leaps-and-earthly-triumphs-a-week-of-boundless-progress.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (162)  
@@ -74,10 +74,10 @@ updated: 2026-11-09T06:08:59-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (959)  
+## [📺 Videos](./videos/index.md) (960)  
+- [📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)](./videos/pete-hegseth-last-week-tonight-with-john-oliver-hbo.md)  
 - [😴🔋✨ How to rest so well you never feel exhausted](./videos/how-to-rest-so-well-you-never-feel-exhausted.md)  
 - [🔦💡 Shining a Light](./videos/shining-a-light.md)  
-- [🛡️🐘🎙️ A Bulwark Against Trump with Sarah Longwell | The Weekly Show with Jon Stewart](./videos/a-bulwark-against-trump-with-sarah-longwell-the-weekly-show-with-jon-stewart.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

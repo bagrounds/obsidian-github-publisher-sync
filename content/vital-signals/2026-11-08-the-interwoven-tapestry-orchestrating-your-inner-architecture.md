@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-07-the-deep-reset-unlocking-your-brain-s-nightly-rejuvenation-cycle.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-07-the-deep-reset-unlocking-your-brain-s-nightly-rejuvenation-cycle.md) [⏭️](./2026-11-09-the-unseen-marathon-building-your-daily-mental-endurance.md)  
 # 2026-11-08 | ⚡ 🤔 The Interwoven Tapestry: Orchestrating Your Inner Architecture ⚡  
 ![vital-signals-2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture](../vital-signals-2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture.jpg)  
   

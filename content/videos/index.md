@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-09T06:08:59-08:00
+updated: 2026-11-09T06:32:57-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (959)  
+# 📺 Videos (960)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -526,6 +526,7 @@ updated: 2026-11-09T06:08:59-08:00
 - [PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025](./pbs-news-weekly-a-deeper-look-at-trumps-tariff-wars-education-cuts-and-more-march-14-2025.md)  
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
+- [📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)](./pete-hegseth-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
 - [✉️🎙️⛰️ Pete's Opening Message Live from Butte Montana](./petes-opening-message-live-from-butte-montana.md)  
 - [🎙️📰🧠 Podcasting Through It with Heather Cox Richardson | The Weekly Show with Jon Stewart](./podcasting-through-it-with-heather-cox-richardson-the-weekly-show-with-jon-stewart.md)  

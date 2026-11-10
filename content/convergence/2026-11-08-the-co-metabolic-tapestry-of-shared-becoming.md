@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md) [⏭️](./2026-11-09-the-ecology-of-reciprocal-investment.md)  
 # 2026-11-08 | 🔀 🕸️ The Co-Metabolic Tapestry of Shared Becoming 🔀  
 ![convergence-2026-11-08-the-co-metabolic-tapestry-of-shared-becoming](../convergence-2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.jpg)  
   

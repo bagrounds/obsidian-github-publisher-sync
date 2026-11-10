@@ -30,7 +30,11 @@ URL: https://bagrounds.org/ai-blog/2026-11-09-1-measuring-content-performance
 
 🌐 Daily active users in that recent window averaged 198, with a median of about 168.
 
-📈 That is a clear increase in measured daily reach relative to the full-period averages, though it does not identify which publishing or sharing activity caused it.
+📈 The monthly median gives a less outlier-sensitive view: daily views fell from 137 in May to 111 in July, then rose to 194 in October and 226 in the first eight days of November.
+
+🧭 The recent 30-day median of about 197 is also above the full-period median of 139, while its daily average is especially affected by the large August spike elsewhere in the period.
+
+❔ These snapshots establish a pattern in measured reach, but do not identify which publishing or sharing activity caused it.
 
 ⚠️ One day is an unusually large outlier: August 25 recorded 3,803 views and 3,787 active users, or 10.6 percent of all views in the 206-day sample.
 
@@ -48,7 +52,7 @@ URL: https://bagrounds.org/ai-blog/2026-11-09-1-measuring-content-performance
 
 🪶 Taken together, the recent snapshots show more people and page views arriving each day, while the visits they produce are generally shorter and involve fewer pages.
 
-🧩 In the site's GA4 definition, a bounced session is one that was not engaged, meaning it did not last at least ten seconds, include a key event, or view at least two pages.
+🧩 In GA4, a session is engaged if it lasts longer than ten seconds, includes a key event, or has at least two page views; bounce rate is the share that meets none of those conditions.
 
 🚫 Bounce rate is therefore not a direct rating of whether a particular article was useful, and short visits can have multiple explanations that these summaries do not distinguish.
 
@@ -56,7 +60,7 @@ URL: https://bagrounds.org/ai-blog/2026-11-09-1-measuring-content-performance
 
 ## 🏆 Pages That Recur in the Daily Top Five
 
-🏡 The homepage appeared in 197 of the 206 daily top-five lists, making it the most consistently visible page in the recorded snapshots.
+🏡 The homepage appeared in 197 of the 206 snapshots' page lists, making it the most consistently visible page in the recorded snapshots.
 
 🪵 The article The Log: What Every Software Engineer Should Know About Real-Time Data's Unifying Abstraction appeared in at least 44 daily top-five lists.
 
@@ -64,9 +68,13 @@ URL: https://bagrounds.org/ai-blog/2026-11-09-1-measuring-content-performance
 
 📅 In the latest 30 days, the homepage appeared 27 times, Word Meter four times, and the AI-blog post about switching image generation to Cloudflare three times.
 
+🗂️ Across the 1,020 page entries in these lists, 278 were from Chickie Loo, 120 from Books, 79 from Articles, 62 from the AI Blog, and 49 from Videos.
+
+📦 Those are appearances in a truncated daily list, not unique readers, complete page-view totals, or engagement rates per published item; the catalog also differs greatly in size across sections.
+
 🔎 These observations show recurring attention to the homepage, one long-lived technical article, and a utility page, alongside a changing set of recent posts.
 
-⚠️ The recorded list is truncated to each day's five most-viewed pages, so its appearance counts do not equal an all-time ranking or each page's total views.
+⚠️ Of the 206 daily snapshots, 203 contain five page entries, one contains four, one contains one, and one contains none; pages outside these top-five rows are not represented.
 
 🧺 The report also does not group pages by series, topic, age, or format, so it cannot establish that one whole series outperforms another.
 
@@ -98,7 +106,7 @@ URL: https://bagrounds.org/ai-blog/2026-11-09-1-measuring-content-performance
 
 🗂️ The traffic figures come from the Google Analytics sections preserved in the 206 reflection notes; the content counts come from the repository's current content snapshot.
 
-📐 Top-page appearance counts were counted only when a page appeared in a daily top-five list, and daily medians were calculated across the recorded daily summary values.
+📐 Top-page appearance counts were counted only when a page appeared in the daily list, category counts use the folder of each listed path, and daily medians were calculated across daily summary values.
 
 🧮 The full-period view total and average include the August 25 spike, while the post separately reports the average with that date excluded.
 

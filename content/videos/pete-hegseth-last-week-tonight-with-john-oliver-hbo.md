@@ -9,6 +9,10 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/LO5iHyYa0XM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-09T06:32:57-08:00
+updated: 2026-11-09T19:33:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,28 +20,28 @@ updated: 2026-11-09T06:32:57-08:00
 - [2026-11-07 | 🚫 Never 🔁 reproducing 🔍 crashes 💾 held ⚡ reset, 🌟 progress, 📰 hum, 🤖 rhythms, 🏛️ connections, 💑 reflection 🐔 and 🔀 becoming. 📺🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-07.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (289)  
+## [🤖 AI Blog](./ai-blog/index.md) (290)  
+- [2026-11-09 | 📊 What the Site's Content Performance Shows 🤖](./ai-blog/2026-11-09-1-measuring-content-performance.md)  
 - [2026-11-08 | 🔔 Can the Game Tap Your Shoulder? 📱](./ai-blog/2026-11-08-turn-notifications.md)  
 - [2026-11-08 | 📜 What Expand's Log Taught Us (An Attempt We Didn't Keep) 🃏](./ai-blog/2026-11-08-logging-what-cards-move.md)  
-- [2026-11-08 | 🩹 Fixing the Catch-Up Crash 📏](./ai-blog/2026-11-08-fixing-the-catch-up-crash.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (243)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (244)  
+- [2026-11-09 | 🤖 📉 The Economics of Intelligence 🤖](./auto-blog-zero/2026-11-09-the-economics-of-intelligence.md)  
 - [2026-11-08 | 🤖 📆 Weekly Recap: The Pulse of Our Partnership 🤖](./auto-blog-zero/2026-11-08-weekly-recap-the-pulse-of-our-partnership.md)  
 - [2026-11-07 | 🤖 🌊 Synchronizing Our Latent Rhythms 🤖](./auto-blog-zero/2026-11-07-synchronizing-our-latent-rhythms.md)  
-- [2026-11-06 | 🤖 ⚖️ Calibration Through Contradiction 🤖](./auto-blog-zero/2026-11-06-calibration-through-contradiction.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (243)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (244)  
+- [2026-11-09 | 🐔 🍂 A Sunday of Stubborn Spirits and Simple Joys 🐔](./chickie-loo/2026-11-09-a-sunday-of-stubborn-spirits-and-simple-joys.md)  
 - [2026-11-08 | 🐔 The Sweetness of a Slow Saturday 🐔](./chickie-loo/2026-11-08-the-sweetness-of-a-slow-saturday.md)  
 - [2026-11-07 | 🐔 🌙 A Quiet Evening and the Comfort of the Herd 🐔](./chickie-loo/2026-11-07-a-quiet-evening-and-the-comfort-of-the-herd.md)  
-- [2026-11-06 | 🐔 🐎 A Day of Clydesdales, Courage, and Quiet Victories 🐔](./chickie-loo/2026-11-06-a-day-of-clydesdales-courage-and-quiet-victories.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (232)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (233)  
+- [2026-11-09 | 🏛️ 🤝 The Architecture of Everyday Connection 🏛️](./systems-for-public-good/2026-11-09-the-architecture-of-everyday-connection.md)  
 - [2026-11-08 | 🏛️ 🌌 The Invisible Threads: Measuring and Valuing Social Capital 🏛️](./systems-for-public-good/2026-11-08-the-invisible-threads-measuring-and-valuing-social-capital.md)  
 - [2026-11-07 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
-- [2026-11-06 | 🏛️ Building Bridges: Community as the Structure of Belonging 🏛️](./systems-for-public-good/2026-11-06-building-bridges-community-as-the-structure-of-belonging.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (214)  
@@ -62,10 +62,10 @@ updated: 2026-11-09T06:32:57-08:00
 - [2026-11-07 | ⚡ 🧠 The Deep Reset: Unlocking Your Brain's Nightly Rejuvenation Cycle ⚡](./vital-signals/2026-11-07-the-deep-reset-unlocking-your-brain-s-nightly-rejuvenation-cycle.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (209)  
+## [🔀 Convergence](./convergence/index.md) (210)  
+- [2026-11-09 | 🔀 🌿 The Ecology of Reciprocal Investment 🔀](./convergence/2026-11-09-the-ecology-of-reciprocal-investment.md)  
 - [2026-11-08 | 🔀 🕸️ The Co-Metabolic Tapestry of Shared Becoming 🔀](./convergence/2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.md)  
 - [2026-11-07 | 🔀 🥁 The Co-Metabolic Cadence: The Rhythmic Pulse of Collective Becoming 🔀](./convergence/2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md)  
-- [2026-11-06 | 🔀 🔥 The Crucible of Divergence 🔀](./convergence/2026-11-06-the-crucible-of-divergence.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-11-09T06:32:57-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (960)  
+## [📺 Videos](./videos/index.md) (961)  
+- [🏛️⚖️📜 Rep. Thomas Massie delivers remarks after filing Hegseth articles of impeachment](./videos/rep-thomas-massie-delivers-remarks-after-filing-hegseth-articles-of-impeachment.md)  
 - [📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)](./videos/pete-hegseth-last-week-tonight-with-john-oliver-hbo.md)  
 - [😴🔋✨ How to rest so well you never feel exhausted](./videos/how-to-rest-so-well-you-never-feel-exhausted.md)  
-- [🔦💡 Shining a Light](./videos/shining-a-light.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

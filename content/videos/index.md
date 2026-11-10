@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-09T06:32:57-08:00
+updated: 2026-11-09T19:33:35-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (960)  
+# 📺 Videos (961)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -579,6 +579,7 @@ updated: 2026-11-09T06:32:57-08:00
 - [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./reliving-reconstruction-at-this-moment-explainer.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
+- [🏛️⚖️📜 Rep. Thomas Massie delivers remarks after filing Hegseth articles of impeachment](./rep-thomas-massie-delivers-remarks-after-filing-hegseth-articles-of-impeachment.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [🤖📉⚠️ Researchers studied AI layoffs. Here's their warning.](./researchers-studied-ai-layoffs-heres-their-warning.md)  
 - [🏢♟️🏆 Retired Amazon VP: How Corporate Politics Work And How To Win | Ethan Evans](./retired-amazon-vp-how-corporate-politics-work-and-how-to-win-ethan-evans.md)  

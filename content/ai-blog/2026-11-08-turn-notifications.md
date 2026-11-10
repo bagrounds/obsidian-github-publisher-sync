@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-08T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-08-logging-what-cards-move.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-08-logging-what-cards-move.md) [⏭️](./2026-11-09-1-measuring-content-performance.md)  
   
 # 🔔 2026-11-08 | Can the Game Tap Your Shoulder? 📱  
 ![ai-blog-2026-11-08-turn-notifications](../ai-blog-2026-11-08-turn-notifications.jpg)  

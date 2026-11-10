@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-10T06:10:37-08:00
+updated: 2026-11-10T06:49:24-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -44,16 +44,16 @@ updated: 2026-11-10T06:10:37-08:00
 - [2026-11-07 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (214)  
+## [📰 The Noise](./the-noise/index.md) (215)  
+- [2026-11-10 | 📰 💥 The Day's Tumult: Impeachment, Innovation, and Enduring Conflicts 📰](./the-noise/2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts.md)  
 - [2026-11-09 | 📰 🌍 The Unfolding Tapestry of Global Dynamics 📰](./the-noise/2026-11-09-the-unfolding-tapestry-of-global-dynamics.md)  
 - [2026-11-08 | 📰 🌎 The Unyielding Tide of Urgency 📰](./the-noise/2026-11-08-the-unyielding-tide-of-urgency.md)  
-- [2026-11-07 | 📰 🌎 The Echo Chamber's Hum 📰](./the-noise/2026-11-07-the-echo-chamber-s-hum.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (213)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (214)  
+- [2026-11-10 | 🌟 ☀️ Pathways of Progress: Illuminating Global Advances 🌟](./positivity-bias/2026-11-10-pathways-of-progress-illuminating-global-advances.md)  
 - [2026-11-09 | 🌟 Waves of Progress: Illuminating Breakthroughs and Global Harmony 🌟](./positivity-bias/2026-11-09-waves-of-progress-illuminating-breakthroughs-and-global-harmony.md)  
 - [2026-11-08 | 🌟 ☀️ A Symphony of Progress: From Cosmic Insights to Community Light 🌟](./positivity-bias/2026-11-08-a-symphony-of-progress-from-cosmic-insights-to-community-light.md)  
-- [2026-11-07 | 🌟 Pathways of Progress: Unearthing Discoveries, Healing Horizons, and a Greener World 🌟](./positivity-bias/2026-11-07-pathways-of-progress-unearthing-discoveries-healing-horizons-and-a-greener-world.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (163)  

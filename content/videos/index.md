@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-09T19:33:35-08:00
+updated: 2026-11-09T20:01:18-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (961)  
+# 📺 Videos (962)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -282,6 +282,7 @@ updated: 2026-11-09T19:33:35-08:00
 - [🌅🌊⚖️ Heather Cox Richardson: ‘VERY optimistic’ about a political TIDAL SHIFT and Trump accountability](./heather-cox-richardson-very-optimistic-about-a-political-tidal-shift-and-trump-accountability.md)  
 - [📜🔮📈 Heather Cox Richardson: What History Predicts Happens Next](./heather-cox-richardson-what-history-predicts-happens-next.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
+- [🏛️⚖️📉 Hegseth faces impeachment push as Congress returns to Washington](./hegseth-faces-impeachment-push-as-congress-returns-to-washington.md)  
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
 - [🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning](./historian-timothy-snyder-on-orbans-defeat-christian-nationalism-and-what-trump-is-really-planning.md)  
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  

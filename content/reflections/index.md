@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-11-09T19:33:35-08:00
+updated: 2026-11-09T20:01:18-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (725)  
-- [2026-11-09](./2026-11-09.md)  
+- [2026-11-09 | 🍑 Impeach 👹 Hegseth 🇺🇸](./2026-11-09.md)  
 - [2026-11-08 | ⚡ Architecture 🃏 Taught 🌟 Progress, 📰 Urgency 🐔 Slows 🤖 Pulse, 🏛️ Capital 💑 Reflection 🔀 Becoming 📏 Fixes 📱 Tap. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./2026-11-08.md)  
 - [2026-11-07 | 🚫 Never 🔁 reproducing 🔍 crashes 💾 held ⚡ reset, 🌟 progress, 📰 hum, 🤖 rhythms, 🏛️ connections, 💑 reflection 🐔 and 🔀 becoming. 📺🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./2026-11-07.md)  
 - [2026-11-06 | 🧭 Navigating 🔀 Divergence, ⚡ Fueling 🌟 Progress and 🐔 Courage, 🏛️ Building 🛡️ Bulwark and ✨ Light, facing 🤖 Contradiction and the 👻 Ghost. 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./2026-11-06.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-09T19:33:35-08:00
+updated: 2026-11-09T20:01:18-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-11-09T19:33:35-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (725)  
-- [2026-11-09](./reflections/2026-11-09.md)  
+- [2026-11-09 | 🍑 Impeach 👹 Hegseth 🇺🇸](./reflections/2026-11-09.md)  
 - [2026-11-08 | ⚡ Architecture 🃏 Taught 🌟 Progress, 📰 Urgency 🐔 Slows 🤖 Pulse, 🏛️ Capital 💑 Reflection 🔀 Becoming 📏 Fixes 📱 Tap. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-08.md)  
 - [2026-11-07 | 🚫 Never 🔁 reproducing 🔍 crashes 💾 held ⚡ reset, 🌟 progress, 📰 hum, 🤖 rhythms, 🏛️ connections, 💑 reflection 🐔 and 🔀 becoming. 📺🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-07.md)  
   
@@ -74,10 +74,10 @@ updated: 2026-11-09T19:33:35-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (961)  
+## [📺 Videos](./videos/index.md) (962)  
+- [🏛️⚖️📉 Hegseth faces impeachment push as Congress returns to Washington](./videos/hegseth-faces-impeachment-push-as-congress-returns-to-washington.md)  
 - [🏛️⚖️📜 Rep. Thomas Massie delivers remarks after filing Hegseth articles of impeachment](./videos/rep-thomas-massie-delivers-remarks-after-filing-hegseth-articles-of-impeachment.md)  
 - [📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)](./videos/pete-hegseth-last-week-tonight-with-john-oliver-hbo.md)  
-- [😴🔋✨ How to rest so well you never feel exhausted](./videos/how-to-rest-so-well-you-never-feel-exhausted.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

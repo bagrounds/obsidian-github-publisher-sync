@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture.md) [⏭️](./2026-11-10-deconstructing-the-zone-the-neurobiology-of-effortless-engagement.md)  
 # 2026-11-09 | ⚡ 🏃‍♀️ The Unseen Marathon: Building Your Daily Mental Endurance ⚡  
 ![vital-signals-2026-11-09-the-unseen-marathon-building-your-daily-mental-endurance](../vital-signals-2026-11-09-the-unseen-marathon-building-your-daily-mental-endurance.jpg)  
   

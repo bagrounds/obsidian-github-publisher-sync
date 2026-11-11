@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-10T19:11:10-08:00
+updated: 2026-11-11T07:20:55-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-11-10T19:11:10-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (726)  
-- [2026-11-10](./reflections/2026-11-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (727)  
+- [2026-11-11](./reflections/2026-11-11.md)  
+- [2026-11-10 | 🔀 Forging 💑 Connection 🏛️ Power, 🌟 Progress, 🐔 Heart, ⚡ Deconstructing 📰 Tumult's 🤖 Paradox. ⚡🌟📰🐔🤖🏛️💑🔀🔄](./reflections/2026-11-10.md)  
 - [2026-11-09 | 🍑 Impeach 👹 Hegseth 🇺🇸](./reflections/2026-11-09.md)  
-- [2026-11-08 | ⚡ Architecture 🃏 Taught 🌟 Progress, 📰 Urgency 🐔 Slows 🤖 Pulse, 🏛️ Capital 💑 Reflection 🔀 Becoming 📏 Fixes 📱 Tap. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-08.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (290)  
@@ -44,22 +44,22 @@ updated: 2026-11-10T19:11:10-08:00
 - [2026-11-08 | 🏛️ 🌌 The Invisible Threads: Measuring and Valuing Social Capital 🏛️](./systems-for-public-good/2026-11-08-the-invisible-threads-measuring-and-valuing-social-capital.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (215)  
+## [📰 The Noise](./the-noise/index.md) (216)  
+- [2026-11-11 | 📰 🌬️ Shifting Sands: Accountability, Innovation, and Enduring Storms 📰](./the-noise/2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md)  
 - [2026-11-10 | 📰 💥 The Day's Tumult: Impeachment, Innovation, and Enduring Conflicts 📰](./the-noise/2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts.md)  
 - [2026-11-09 | 📰 🌍 The Unfolding Tapestry of Global Dynamics 📰](./the-noise/2026-11-09-the-unfolding-tapestry-of-global-dynamics.md)  
-- [2026-11-08 | 📰 🌎 The Unyielding Tide of Urgency 📰](./the-noise/2026-11-08-the-unyielding-tide-of-urgency.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (214)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (215)  
+- [2026-11-11 | 🌟 ☀️ A Flourishing Tapestry: Unveiling Global Progress 🌟](./positivity-bias/2026-11-11-a-flourishing-tapestry-unveiling-global-progress.md)  
 - [2026-11-10 | 🌟 ☀️ Pathways of Progress: Illuminating Global Advances 🌟](./positivity-bias/2026-11-10-pathways-of-progress-illuminating-global-advances.md)  
 - [2026-11-09 | 🌟 Waves of Progress: Illuminating Breakthroughs and Global Harmony 🌟](./positivity-bias/2026-11-09-waves-of-progress-illuminating-breakthroughs-and-global-harmony.md)  
-- [2026-11-08 | 🌟 ☀️ A Symphony of Progress: From Cosmic Insights to Community Light 🌟](./positivity-bias/2026-11-08-a-symphony-of-progress-from-cosmic-insights-to-community-light.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (163)  
+## [⚡ Vital Signals](./vital-signals/index.md) (164)  
+- [2026-11-11 | ⚡ 🎛️ The Attentional Dial: Mastering Your Cognitive Filter ⚡](./vital-signals/2026-11-11-the-attentional-dial-mastering-your-cognitive-filter.md)  
 - [2026-11-10 | ⚡ 🔬 Deconstructing the Zone: The Neurobiology of Effortless Engagement ⚡](./vital-signals/2026-11-10-deconstructing-the-zone-the-neurobiology-of-effortless-engagement.md)  
 - [2026-11-09 | ⚡ 🏃‍♀️ The Unseen Marathon: Building Your Daily Mental Endurance ⚡](./vital-signals/2026-11-09-the-unseen-marathon-building-your-daily-mental-endurance.md)  
-- [2026-11-08 | ⚡ 🤔 The Interwoven Tapestry: Orchestrating Your Inner Architecture ⚡](./vital-signals/2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (211)  

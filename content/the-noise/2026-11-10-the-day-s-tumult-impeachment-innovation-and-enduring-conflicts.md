@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-09-the-unfolding-tapestry-of-global-dynamics.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-09-the-unfolding-tapestry-of-global-dynamics.md) [⏭️](./2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md)  
 # 2026-11-10 | 📰 💥 The Day's Tumult: Impeachment, Innovation, and Enduring Conflicts 📰  
 ![the-noise-2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts](../the-noise-2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts.jpg)  
   

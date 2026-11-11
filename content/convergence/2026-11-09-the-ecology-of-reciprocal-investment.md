@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.md) [⏭️](./2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle.md)  
 # 2026-11-09 | 🔀 🌿 The Ecology of Reciprocal Investment 🔀  
 ![convergence-2026-11-09-the-ecology-of-reciprocal-investment](../convergence-2026-11-09-the-ecology-of-reciprocal-investment.jpg)  
   

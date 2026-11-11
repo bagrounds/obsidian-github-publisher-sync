@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-10T06:49:24-08:00
+updated: 2026-11-10T19:11:10-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (210)  
+# 🔀 Convergence (211)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-10 | 🔀 🔍 The Epistemic Audit: Forging Collective Truth from Verifiable Internal Struggle 🔀](./2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle.md)  
 - [2026-11-09 | 🔀 🌿 The Ecology of Reciprocal Investment 🔀](./2026-11-09-the-ecology-of-reciprocal-investment.md)  
 - [2026-11-08 | 🔀 🕸️ The Co-Metabolic Tapestry of Shared Becoming 🔀](./2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.md)  
 - [2026-11-07 | 🔀 🥁 The Co-Metabolic Cadence: The Rhythmic Pulse of Collective Becoming 🔀](./2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md)  

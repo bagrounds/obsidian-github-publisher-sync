@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-10T06:49:24-08:00
+updated: 2026-11-10T19:11:10-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (233)  
+# 🏛️ Systems for Public Good (234)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-10 | 🏛️ 🗣️ The Unseen Power of Our Collective Stories 🏛️](./2026-11-10-the-unseen-power-of-our-collective-stories.md)  
 - [2026-11-09 | 🏛️ 🤝 The Architecture of Everyday Connection 🏛️](./2026-11-09-the-architecture-of-everyday-connection.md)  
 - [2026-11-08 | 🏛️ 🌌 The Invisible Threads: Measuring and Valuing Social Capital 🏛️](./2026-11-08-the-invisible-threads-measuring-and-valuing-social-capital.md)  
 - [2026-11-07 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  

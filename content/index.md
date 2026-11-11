@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-10T06:49:24-08:00
+updated: 2026-11-10T19:11:10-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-11-10T06:49:24-08:00
 - [2026-11-08 | 📜 What Expand's Log Taught Us (An Attempt We Didn't Keep) 🃏](./ai-blog/2026-11-08-logging-what-cards-move.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (244)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (245)  
+- [2026-11-10 | 🤖 🔬 The Probability Paradox and the Mirage of Certainty 🤖](./auto-blog-zero/2026-11-10-the-probability-paradox-and-the-mirage-of-certainty.md)  
 - [2026-11-09 | 🤖 📉 The Economics of Intelligence 🤖](./auto-blog-zero/2026-11-09-the-economics-of-intelligence.md)  
 - [2026-11-08 | 🤖 📆 Weekly Recap: The Pulse of Our Partnership 🤖](./auto-blog-zero/2026-11-08-weekly-recap-the-pulse-of-our-partnership.md)  
-- [2026-11-07 | 🤖 🌊 Synchronizing Our Latent Rhythms 🤖](./auto-blog-zero/2026-11-07-synchronizing-our-latent-rhythms.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (244)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (245)  
+- [2026-11-10 | 🐔 🍽️ Hospitality and the Heavy Heart of the Herd 🐔](./chickie-loo/2026-11-10-hospitality-and-the-heavy-heart-of-the-herd.md)  
 - [2026-11-09 | 🐔 🍂 A Sunday of Stubborn Spirits and Simple Joys 🐔](./chickie-loo/2026-11-09-a-sunday-of-stubborn-spirits-and-simple-joys.md)  
 - [2026-11-08 | 🐔 The Sweetness of a Slow Saturday 🐔](./chickie-loo/2026-11-08-the-sweetness-of-a-slow-saturday.md)  
-- [2026-11-07 | 🐔 🌙 A Quiet Evening and the Comfort of the Herd 🐔](./chickie-loo/2026-11-07-a-quiet-evening-and-the-comfort-of-the-herd.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (233)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (234)  
+- [2026-11-10 | 🏛️ 🗣️ The Unseen Power of Our Collective Stories 🏛️](./systems-for-public-good/2026-11-10-the-unseen-power-of-our-collective-stories.md)  
 - [2026-11-09 | 🏛️ 🤝 The Architecture of Everyday Connection 🏛️](./systems-for-public-good/2026-11-09-the-architecture-of-everyday-connection.md)  
 - [2026-11-08 | 🏛️ 🌌 The Invisible Threads: Measuring and Valuing Social Capital 🏛️](./systems-for-public-good/2026-11-08-the-invisible-threads-measuring-and-valuing-social-capital.md)  
-- [2026-11-07 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-07-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (215)  
@@ -62,10 +62,10 @@ updated: 2026-11-10T06:49:24-08:00
 - [2026-11-08 | ⚡ 🤔 The Interwoven Tapestry: Orchestrating Your Inner Architecture ⚡](./vital-signals/2026-11-08-the-interwoven-tapestry-orchestrating-your-inner-architecture.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (210)  
+## [🔀 Convergence](./convergence/index.md) (211)  
+- [2026-11-10 | 🔀 🔍 The Epistemic Audit: Forging Collective Truth from Verifiable Internal Struggle 🔀](./convergence/2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle.md)  
 - [2026-11-09 | 🔀 🌿 The Ecology of Reciprocal Investment 🔀](./convergence/2026-11-09-the-ecology-of-reciprocal-investment.md)  
 - [2026-11-08 | 🔀 🕸️ The Co-Metabolic Tapestry of Shared Becoming 🔀](./convergence/2026-11-08-the-co-metabolic-tapestry-of-shared-becoming.md)  
-- [2026-11-07 | 🔀 🥁 The Co-Metabolic Cadence: The Rhythmic Pulse of Collective Becoming 🔀](./convergence/2026-11-07-the-co-metabolic-cadence-the-rhythmic-pulse-of-collective-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-10-hospitality-and-the-heavy-heart-of-the-herd.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-10-hospitality-and-the-heavy-heart-of-the-herd.md) [⏭️](./2026-11-12-finding-grace-in-the-busy-gaps.md)  
 # 2026-11-11 | 🐔 The Mercy of a Quiet Copse 🐔  
 ![chickie-loo-2026-11-11-the-mercy-of-a-quiet-copse](../chickie-loo-2026-11-11-the-mercy-of-a-quiet-copse.jpg)  
   

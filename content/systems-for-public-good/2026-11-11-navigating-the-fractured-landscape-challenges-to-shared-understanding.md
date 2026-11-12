@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-10-the-unseen-power-of-our-collective-stories.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-10-the-unseen-power-of-our-collective-stories.md) [⏭️](./2026-11-12-architecting-agreement-designing-for-deliberation.md)  
 # 2026-11-11 | 🏛️ 🗣️ Navigating the Fractured Landscape: Challenges to Shared Understanding 🏛️  
 ![systems-for-public-good-2026-11-11-navigating-the-fractured-landscape-challenges-to-shared-understanding](../systems-for-public-good-2026-11-11-navigating-the-fractured-landscape-challenges-to-shared-understanding.jpg)  
   

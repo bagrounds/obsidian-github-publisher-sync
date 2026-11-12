@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-10-the-day-s-tumult-impeachment-innovation-and-enduring-conflicts.md) [⏭️](./2026-11-12-navigating-the-perpetual-present.md)  
 # 2026-11-11 | 📰 🌬️ Shifting Sands: Accountability, Innovation, and Enduring Storms 📰  
 ![the-noise-2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms](../the-noise-2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-09-the-ecology-of-reciprocal-investment.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-09-the-ecology-of-reciprocal-investment.md) [⏭️](./2026-11-11-the-calibrated-flow-orchestrating-the-generative-exchange-of-doubt-and-attunement.md)  
 # 2026-11-10 | 🔀 🔍 The Epistemic Audit: Forging Collective Truth from Verifiable Internal Struggle 🔀  
 ![convergence-2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle](../convergence-2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle.jpg)  
   

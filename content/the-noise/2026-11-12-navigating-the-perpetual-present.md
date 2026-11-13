@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md) [⏭️](./2026-11-13-unfolding-crises-diverging-paths.md)  
 # 2026-11-12 | 📰 🌀 Navigating the Perpetual Present 📰  
 ![the-noise-2026-11-12-navigating-the-perpetual-present](../the-noise-2026-11-12-navigating-the-perpetual-present.jpg)  
   

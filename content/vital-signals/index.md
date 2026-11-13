@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-11-12T09:24:32-08:00
+updated: 2026-11-13T07:02:59-08:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (165)  
+# ⚡ Vital Signals (166)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-11-13 | ⚡ 🧠 The Cognitive Horizon: Mastering Your Brain's Bandwidth ⚡](./2026-11-13-the-cognitive-horizon-mastering-your-brain-s-bandwidth.md)  
 - [2026-11-12 | ⚡ ⚙️ The Invisible Anchor: The Metabolic Cost of Sustained Focus ⚡](./2026-11-12-the-invisible-anchor-the-metabolic-cost-of-sustained-focus.md)  
 - [2026-11-11 | ⚡ 🎛️ The Attentional Dial: Mastering Your Cognitive Filter ⚡](./2026-11-11-the-attentional-dial-mastering-your-cognitive-filter.md)  
 - [2026-11-10 | ⚡ 🔬 Deconstructing the Zone: The Neurobiology of Effortless Engagement ⚡](./2026-11-10-deconstructing-the-zone-the-neurobiology-of-effortless-engagement.md)  

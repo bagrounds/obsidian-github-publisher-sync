@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-12T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-11-a-flourishing-tapestry-unveiling-global-progress.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-11-a-flourishing-tapestry-unveiling-global-progress.md) [⏭️](./2026-11-13-illuminating-progress-a-world-building-brighter-futures.md)  
 # 2026-11-12 | 🌟 ☀️ A Horizon Illuminated: Daily Strides Towards a Brighter World 🌟  
 ![positivity-bias-2026-11-12-a-horizon-illuminated-daily-strides-towards-a-brighter-world](../positivity-bias-2026-11-12-a-horizon-illuminated-daily-strides-towards-a-brighter-world.jpg)  
   

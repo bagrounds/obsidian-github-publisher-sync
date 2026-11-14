@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-12-navigating-the-perpetual-present.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-12-navigating-the-perpetual-present.md) [⏭️](./2026-11-14-the-shifting-sands-of-power-and-progress.md)  
 # 2026-11-13 | 📰 Unfolding Crises, Diverging Paths 📰  
 ![the-noise-2026-11-13-unfolding-crises-diverging-paths](../the-noise-2026-11-13-unfolding-crises-diverging-paths.jpg)  
   

@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-11-14T06:51:53-08:00
+updated: 2026-11-14T07:31:28-08:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (218)  
+# 📰 The Noise (219)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-11-14 | 📰 The Shifting Sands of Power and Progress 📰](./2026-11-14-the-shifting-sands-of-power-and-progress.md)  
 - [2026-11-13 | 📰 Unfolding Crises, Diverging Paths 📰](./2026-11-13-unfolding-crises-diverging-paths.md)  
 - [2026-11-12 | 📰 🌀 Navigating the Perpetual Present 📰](./2026-11-12-navigating-the-perpetual-present.md)  
 - [2026-11-11 | 📰 🌬️ Shifting Sands: Accountability, Innovation, and Enduring Storms 📰](./2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-14T06:51:53-08:00
+updated: 2026-11-14T07:31:28-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -32,10 +32,10 @@ updated: 2026-11-14T06:51:53-08:00
 - [2026-11-11 | 🤖 🏗️ The Architecture of Doubt 🤖](./auto-blog-zero/2026-11-11-the-architecture-of-doubt.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (248)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (249)  
+- [2026-11-14 | 🐔 A Graceful Goodbye 🐔](./chickie-loo/2026-11-14-a-graceful-goodbye.md)  
 - [2026-11-13 | 🐔 🕊️ A Final Act of Kindness 🐔](./chickie-loo/2026-11-13-a-final-act-of-kindness.md)  
 - [2026-11-12 | 🐔 Finding Grace in the Busy Gaps 🐔](./chickie-loo/2026-11-12-finding-grace-in-the-busy-gaps.md)  
-- [2026-11-11 | 🐔 The Mercy of a Quiet Copse 🐔](./chickie-loo/2026-11-11-the-mercy-of-a-quiet-copse.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (237)  
@@ -44,10 +44,10 @@ updated: 2026-11-14T06:51:53-08:00
 - [2026-11-11 | 🏛️ 🗣️ Navigating the Fractured Landscape: Challenges to Shared Understanding 🏛️](./systems-for-public-good/2026-11-11-navigating-the-fractured-landscape-challenges-to-shared-understanding.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (218)  
+## [📰 The Noise](./the-noise/index.md) (219)  
+- [2026-11-14 | 📰 The Shifting Sands of Power and Progress 📰](./the-noise/2026-11-14-the-shifting-sands-of-power-and-progress.md)  
 - [2026-11-13 | 📰 Unfolding Crises, Diverging Paths 📰](./the-noise/2026-11-13-unfolding-crises-diverging-paths.md)  
 - [2026-11-12 | 📰 🌀 Navigating the Perpetual Present 📰](./the-noise/2026-11-12-navigating-the-perpetual-present.md)  
-- [2026-11-11 | 📰 🌬️ Shifting Sands: Accountability, Innovation, and Enduring Storms 📰](./the-noise/2026-11-11-shifting-sands-accountability-innovation-and-enduring-storms.md)  
   
   
 ## [🌟 Positivity Bias](./positivity-bias/index.md) (218)  

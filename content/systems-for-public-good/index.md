@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-13T07:02:59-08:00
+updated: 2026-11-14T06:51:53-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (236)  
+# 🏛️ Systems for Public Good (237)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-13 | 🏛️ 🚧 Navigating the Implementation Maze: Practical Challenges 🏛️](./2026-11-13-navigating-the-implementation-maze-practical-challenges.md)  
 - [2026-11-12 | 🏛️ 🧠 Architecting Agreement: Designing for Deliberation 🏛️](./2026-11-12-architecting-agreement-designing-for-deliberation.md)  
 - [2026-11-11 | 🏛️ 🗣️ Navigating the Fractured Landscape: Challenges to Shared Understanding 🏛️](./2026-11-11-navigating-the-fractured-landscape-challenges-to-shared-understanding.md)  
 - [2026-11-10 | 🏛️ 🗣️ The Unseen Power of Our Collective Stories 🏛️](./2026-11-10-the-unseen-power-of-our-collective-stories.md)  

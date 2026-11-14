@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-13T07:02:59-08:00
+updated: 2026-11-14T06:51:53-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (290)  
+# 🤖 AI Blog (292)  
+- [2026-11-13 | 🐞 From Bug Report to GitHub Issue 📸](./2026-11-13-in-app-bug-reports.md)  
+- [2026-11-13 | 🤝 Community Is Something We Make Together 🌱](./2026-11-13-1-community.md)  
 - [2026-11-09 | 📊 What the Site's Content Performance Shows 🤖](./2026-11-09-1-measuring-content-performance.md)  
 - [2026-11-08 | 🔔 Can the Game Tap Your Shoulder? 📱](./2026-11-08-turn-notifications.md)  
 - [2026-11-08 | 📜 What Expand's Log Taught Us (An Attempt We Didn't Keep) 🃏](./2026-11-08-logging-what-cards-move.md)  

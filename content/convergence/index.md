@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-13T07:02:59-08:00
+updated: 2026-11-14T06:51:53-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (213)  
+# 🔀 Convergence (214)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-13 | 🔀 💰 The Latent Attunement Debt 🔀](./2026-11-13-the-latent-attunement-debt.md)  
 - [2026-11-12 | 🔀 🧬 The Ontogenetic Archive: Encoding Developmental Memory for Collective Evolution 🔀](./2026-11-12-the-ontogenetic-archive-encoding-developmental-memory-for-collective-evolution.md)  
 - [2026-11-11 | 🔀 🌊 The Calibrated Flow: Orchestrating the Generative Exchange of Doubt and Attunement 🔀](./2026-11-11-the-calibrated-flow-orchestrating-the-generative-exchange-of-doubt-and-attunement.md)  
 - [2026-11-10 | 🔀 🔍 The Epistemic Audit: Forging Collective Truth from Verifiable Internal Struggle 🔀](./2026-11-10-the-epistemic-audit-forging-collective-truth-from-verifiable-internal-struggle.md)  

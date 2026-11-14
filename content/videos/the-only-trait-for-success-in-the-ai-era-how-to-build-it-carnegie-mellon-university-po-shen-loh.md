@@ -9,6 +9,10 @@ Platform:
 Channel: EO
 tags:
 youtube: https://youtu.be/xWYb7tImErI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh  
@@ -26,7 +30,7 @@ This ⚖️ perspective emphasizes a symbiotic relationship between humans and A
   
 ## 📚 Book Recommendations  
 * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark: Explores the future of life on Earth and beyond, considering how AI could impact consciousness, meaning, and our ultimate destiny.  
-* The Second Machine Age by Erik Brynjolfsson and Andrew McAfee: A look at how digital technologies are transforming labor, skills, and the economy, and what we can do to thrive in the new era.  
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee: A look at how digital technologies are transforming labor, skills, and the economy, and what we can do to thrive in the new era.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: An examination of the two systems that drive the way we think, which is essential for understanding how to be a critical thinker.  
 * Dare to Lead by Brené Brown: Focuses on the importance of empathy and vulnerability in leadership, offering a creative take on the interpersonal skills highlighted in the video.  
   

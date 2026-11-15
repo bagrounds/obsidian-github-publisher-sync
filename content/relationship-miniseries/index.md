@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-11-14T16:23:19-08:00
+updated: 2026-11-15T11:55:46-08:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (122)  
+# 💑 Relationship Miniseries (123)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-11-15 | 💑 The Architecture of Relief ⚓ 💑](./2026-11-15-the-architecture-of-relief.md)  
 - [2026-11-14 | 💑 The Anchor Point 💑](./2026-11-14-the-anchor-point.md)  
 - [2026-11-13 | 💑 Lightening the Load 💑](./2026-11-13-lightening-the-load.md)  
 - [2026-11-12 | 💑 A Quiet Proximity 💑](./2026-11-12-a-quiet-proximity.md)  

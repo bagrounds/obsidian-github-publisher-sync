@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-13T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-12-a-quiet-proximity.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-12-a-quiet-proximity.md) [⏭️](./2026-11-14-the-anchor-point.md)  
 # 2026-11-13 | 💑 Lightening the Load 💑  
 ![relationship-miniseries-2026-11-13-lightening-the-load](../relationship-miniseries-2026-11-13-lightening-the-load.jpg)  
   

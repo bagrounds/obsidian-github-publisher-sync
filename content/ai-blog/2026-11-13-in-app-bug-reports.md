@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-13T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-13-1-community.md) [⏭️](./2026-11-14-github-bug-form.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-13-1-community.md) [⏭️](./2026-11-14-1-giving-copilot-web-agents-reusable-skills.md)  
   
 # 🐞 2026-11-13 | From Bug Report to GitHub Issue 📸  
 ![ai-blog-2026-11-13-in-app-bug-reports](../ai-blog-2026-11-13-in-app-bug-reports.jpg)  

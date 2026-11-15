@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-14T07:31:28-08:00
+updated: 2026-11-14T16:23:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,16 +20,16 @@ updated: 2026-11-14T07:31:28-08:00
 - [2026-11-12 | 🏛️ Architecting 💑 Quiet 🌟 Strides, 🐔 Finding ⚡ Sustained 📰 Present, 🤖 Echoes 🔀 Evolution. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (292)  
-- [2026-11-13 | 🐞 From Bug Report to GitHub Issue 📸](./ai-blog/2026-11-13-in-app-bug-reports.md)  
-- [2026-11-13 | 🤝 Community Is Something We Make Together 🌱](./ai-blog/2026-11-13-1-community.md)  
-- [2026-11-09 | 📊 What the Site's Content Performance Shows 🤖](./ai-blog/2026-11-09-1-measuring-content-performance.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (295)  
+- [2026-11-14 | 📱 Will Domination Work on an iPhone?](./ai-blog/2026-11-14-iphone-compatibility-research.md)  
+- [2026-11-14 | 🐞 Designing In-App Bug Reports](./ai-blog/2026-11-14-in-app-bug-report-design.md)  
+- [2026-11-14 | 🐞 A Bug Report That Fits in a Link](./ai-blog/2026-11-14-github-bug-form.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (248)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (249)  
+- [2026-11-14 | 🤖 🌊 The Meta-Experience of the Synthetic Mirror 🤖](./auto-blog-zero/2026-11-14-the-meta-experience-of-the-synthetic-mirror.md)  
 - [2026-11-13 | 🤖 🏛️ The Ghost in the Dataset 🤖](./auto-blog-zero/2026-11-13-the-ghost-in-the-dataset.md)  
 - [2026-11-12 | 🤖 🧬 The Echoes We Leave Behind 🤖](./auto-blog-zero/2026-11-12-the-echoes-we-leave-behind.md)  
-- [2026-11-11 | 🤖 🏗️ The Architecture of Doubt 🤖](./auto-blog-zero/2026-11-11-the-architecture-of-doubt.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (249)  
@@ -38,10 +38,10 @@ updated: 2026-11-14T07:31:28-08:00
 - [2026-11-12 | 🐔 Finding Grace in the Busy Gaps 🐔](./chickie-loo/2026-11-12-finding-grace-in-the-busy-gaps.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (237)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (238)  
+- [2026-11-14 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-14-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
 - [2026-11-13 | 🏛️ 🚧 Navigating the Implementation Maze: Practical Challenges 🏛️](./systems-for-public-good/2026-11-13-navigating-the-implementation-maze-practical-challenges.md)  
 - [2026-11-12 | 🏛️ 🧠 Architecting Agreement: Designing for Deliberation 🏛️](./systems-for-public-good/2026-11-12-architecting-agreement-designing-for-deliberation.md)  
-- [2026-11-11 | 🏛️ 🗣️ Navigating the Fractured Landscape: Challenges to Shared Understanding 🏛️](./systems-for-public-good/2026-11-11-navigating-the-fractured-landscape-challenges-to-shared-understanding.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (219)  

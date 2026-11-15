@@ -6,13 +6,16 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-14T16:23:19-08:00
+updated: 2026-11-15T11:55:46-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (295)  
+# 🤖 AI Blog (298)  
+- [2026-11-15 | 📱 Keeping Chat in the Visible Viewport](./2026-11-15-chat-input-visibility.md)  
 - [2026-11-14 | 📱 Will Domination Work on an iPhone?](./2026-11-14-iphone-compatibility-research.md)  
 - [2026-11-14 | 🐞 Designing In-App Bug Reports](./2026-11-14-in-app-bug-report-design.md)  
 - [2026-11-14 | 🐞 A Bug Report That Fits in a Link](./2026-11-14-github-bug-form.md)  
+- [2026-11-14 | 🎳 Bowling Alone: A Book Report 🫂](./2026-11-14-2-bowling-alone-book-report.md)  
+- [2026-11-14 | 🧭 Giving Copilot Web Agents Reusable Skills 🤖](./2026-11-14-1-giving-copilot-web-agents-reusable-skills.md)  
 - [2026-11-13 | 🐞 From Bug Report to GitHub Issue 📸](./2026-11-13-in-app-bug-reports.md)  
 - [2026-11-13 | 🤝 Community Is Something We Make Together 🌱](./2026-11-13-1-community.md)  
 - [2026-11-09 | 📊 What the Site's Content Performance Shows 🤖](./2026-11-09-1-measuring-content-performance.md)  

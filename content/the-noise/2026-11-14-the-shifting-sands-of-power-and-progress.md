@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-13-unfolding-crises-diverging-paths.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-13-unfolding-crises-diverging-paths.md) [⏭️](./2026-11-15-currents-and-crosscurrents-a-world-in-motion.md)  
 # 2026-11-14 | 📰 The Shifting Sands of Power and Progress 📰  
 ![the-noise-2026-11-14-the-shifting-sands-of-power-and-progress](../the-noise-2026-11-14-the-shifting-sands-of-power-and-progress.jpg)  
   

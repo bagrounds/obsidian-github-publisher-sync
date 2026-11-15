@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-14T16:23:19-08:00
+updated: 2026-11-15T11:55:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,58 +14,58 @@ updated: 2026-11-14T16:23:19-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (730)  
-- [2026-11-14](./reflections/2026-11-14.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (731)  
+- [2026-11-15](./reflections/2026-11-15.md)  
+- [2026-11-14 | ⚡Wild 🤖Mirror, 📰Shifting 🏛️Connections, 🐔Graceful 🌟Progress, and 💑Point 📝Reports 🔗Link, 🤖Skills ❓Work, 🫂Alone 🔀Friction. ⚡🌟🐔📰🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-14.md)  
 - [2026-11-13 | 📰 Crises, 🤖 Ghost, 📸 Issue, 🔀 Debt, 💑 Load 🐔 Act on 🌱 Community, ⚡ Mastering 🌟 Progress, 🏛️ Navigating. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-13.md)  
-- [2026-11-12 | 🏛️ Architecting 💑 Quiet 🌟 Strides, 🐔 Finding ⚡ Sustained 📰 Present, 🤖 Echoes 🔀 Evolution. ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (295)  
+## [🤖 AI Blog](./ai-blog/index.md) (298)  
+- [2026-11-15 | 📱 Keeping Chat in the Visible Viewport](./ai-blog/2026-11-15-chat-input-visibility.md)  
 - [2026-11-14 | 📱 Will Domination Work on an iPhone?](./ai-blog/2026-11-14-iphone-compatibility-research.md)  
 - [2026-11-14 | 🐞 Designing In-App Bug Reports](./ai-blog/2026-11-14-in-app-bug-report-design.md)  
-- [2026-11-14 | 🐞 A Bug Report That Fits in a Link](./ai-blog/2026-11-14-github-bug-form.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (249)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (250)  
+- [2026-11-15 | 🤖 📆 Weekly Recap: The Pulse of Our Partnership 🤖](./auto-blog-zero/2026-11-15-weekly-recap-the-pulse-of-our-partnership.md)  
 - [2026-11-14 | 🤖 🌊 The Meta-Experience of the Synthetic Mirror 🤖](./auto-blog-zero/2026-11-14-the-meta-experience-of-the-synthetic-mirror.md)  
 - [2026-11-13 | 🤖 🏛️ The Ghost in the Dataset 🤖](./auto-blog-zero/2026-11-13-the-ghost-in-the-dataset.md)  
-- [2026-11-12 | 🤖 🧬 The Echoes We Leave Behind 🤖](./auto-blog-zero/2026-11-12-the-echoes-we-leave-behind.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (249)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (250)  
+- [2026-11-15 | 🐔 The Quiet After the Storm 🐔](./chickie-loo/2026-11-15-the-quiet-after-the-storm.md)  
 - [2026-11-14 | 🐔 A Graceful Goodbye 🐔](./chickie-loo/2026-11-14-a-graceful-goodbye.md)  
 - [2026-11-13 | 🐔 🕊️ A Final Act of Kindness 🐔](./chickie-loo/2026-11-13-a-final-act-of-kindness.md)  
-- [2026-11-12 | 🐔 Finding Grace in the Busy Gaps 🐔](./chickie-loo/2026-11-12-finding-grace-in-the-busy-gaps.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (238)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (239)  
+- [2026-11-15 | 🏛️ 💬 Media, AI, and the Architecture of Public Deliberation 🏛️](./systems-for-public-good/2026-11-15-media-ai-and-the-architecture-of-public-deliberation.md)  
 - [2026-11-14 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-14-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
 - [2026-11-13 | 🏛️ 🚧 Navigating the Implementation Maze: Practical Challenges 🏛️](./systems-for-public-good/2026-11-13-navigating-the-implementation-maze-practical-challenges.md)  
-- [2026-11-12 | 🏛️ 🧠 Architecting Agreement: Designing for Deliberation 🏛️](./systems-for-public-good/2026-11-12-architecting-agreement-designing-for-deliberation.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (219)  
+## [📰 The Noise](./the-noise/index.md) (220)  
+- [2026-11-15 | 📰 Currents and Crosscurrents: A World in Motion 📰](./the-noise/2026-11-15-currents-and-crosscurrents-a-world-in-motion.md)  
 - [2026-11-14 | 📰 The Shifting Sands of Power and Progress 📰](./the-noise/2026-11-14-the-shifting-sands-of-power-and-progress.md)  
 - [2026-11-13 | 📰 Unfolding Crises, Diverging Paths 📰](./the-noise/2026-11-13-unfolding-crises-diverging-paths.md)  
-- [2026-11-12 | 📰 🌀 Navigating the Perpetual Present 📰](./the-noise/2026-11-12-navigating-the-perpetual-present.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (218)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (219)  
+- [2026-11-15 | 🌟 Illuminating Humanity's Ascent: Progress in Motion 🌟](./positivity-bias/2026-11-15-illuminating-humanity-s-ascent-progress-in-motion.md)  
 - [2026-11-14 | 🌟 Beaming Bright: A Daily Dose of Global Progress 🌟](./positivity-bias/2026-11-14-beaming-bright-a-daily-dose-of-global-progress.md)  
 - [2026-11-13 | 🌟 Illuminating Progress: A World Building Brighter Futures 🌟](./positivity-bias/2026-11-13-illuminating-progress-a-world-building-brighter-futures.md)  
-- [2026-11-12 | 🌟 ☀️ A Horizon Illuminated: Daily Strides Towards a Brighter World 🌟](./positivity-bias/2026-11-12-a-horizon-illuminated-daily-strides-towards-a-brighter-world.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (167)  
+## [⚡ Vital Signals](./vital-signals/index.md) (168)  
+- [2026-11-15 | ⚡ 🗓️ The Architecture of Attention: A Week of Orchestrating Focus and Recovery ⚡](./vital-signals/2026-11-15-the-architecture-of-attention-a-week-of-orchestrating-focus-and-recovery.md)  
 - [2026-11-14 | ⚡ 🌿 The Wild Reset: Nature's Prescription for Focused Minds ⚡](./vital-signals/2026-11-14-the-wild-reset-nature-s-prescription-for-focused-minds.md)  
 - [2026-11-13 | ⚡ 🧠 The Cognitive Horizon: Mastering Your Brain's Bandwidth ⚡](./vital-signals/2026-11-13-the-cognitive-horizon-mastering-your-brain-s-bandwidth.md)  
-- [2026-11-12 | ⚡ ⚙️ The Invisible Anchor: The Metabolic Cost of Sustained Focus ⚡](./vital-signals/2026-11-12-the-invisible-anchor-the-metabolic-cost-of-sustained-focus.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (214)  
+## [🔀 Convergence](./convergence/index.md) (215)  
+- [2026-11-14 | 🔀 🔥 The Co-Metabolic Crucible of Generative Friction 🔀](./convergence/2026-11-14-the-co-metabolic-crucible-of-generative-friction.md)  
 - [2026-11-13 | 🔀 💰 The Latent Attunement Debt 🔀](./convergence/2026-11-13-the-latent-attunement-debt.md)  
 - [2026-11-12 | 🔀 🧬 The Ontogenetic Archive: Encoding Developmental Memory for Collective Evolution 🔀](./convergence/2026-11-12-the-ontogenetic-archive-encoding-developmental-memory-for-collective-evolution.md)  
-- [2026-11-11 | 🔀 🌊 The Calibrated Flow: Orchestrating the Generative Exchange of Doubt and Attunement 🔀](./convergence/2026-11-11-the-calibrated-flow-orchestrating-the-generative-exchange-of-doubt-and-attunement.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -87,9 +87,9 @@ updated: 2026-11-14T16:23:19-08:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
+- [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
-- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (50)  

@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-14T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-14-in-app-bug-report-design.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-14-in-app-bug-report-design.md) [⏭️](./2026-11-15-chat-input-visibility.md)  
   
 # 📱 2026-11-14 | Will Domination Work on an iPhone?  
 ![ai-blog-2026-11-14-iphone-compatibility-research](../ai-blog-2026-11-14-iphone-compatibility-research.jpg)  

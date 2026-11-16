@@ -9,6 +9,10 @@ Platform:
 Channel: The Daily Show
 tags:
 youtube: https://youtu.be/W-o2X4C24lg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-15T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸📜📧 Heather Cox Richardson on America’s Political History & “Letters from an American” | The Daily Show  

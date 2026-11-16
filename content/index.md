@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-15T18:46:35-08:00
+updated: 2026-11-15T19:09:01-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-15T18:46:35-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (963)  
+## [📺 Videos](./videos/index.md) (964)  
+- [🚫🏛️🛑 The Ultimate Bully Move to Stop Congress From Its Job | Explainer](./videos/the-ultimate-bully-move-to-stop-congress-from-its-job-explainer.md)  
 - [🇺🇸📜📧 Heather Cox Richardson on America’s Political History & “Letters from an American” | The Daily Show](./videos/heather-cox-richardson-on-americas-political-history-letters-from-an-american-the-daily-show.md)  
 - [🏛️⚖️📉 Hegseth faces impeachment push as Congress returns to Washington](./videos/hegseth-faces-impeachment-push-as-congress-returns-to-washington.md)  
-- [🏛️⚖️📜 Rep. Thomas Massie delivers remarks after filing Hegseth articles of impeachment](./videos/rep-thomas-massie-delivers-remarks-after-filing-hegseth-articles-of-impeachment.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

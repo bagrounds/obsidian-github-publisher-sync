@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-15T11:55:46-08:00
+updated: 2026-11-15T18:46:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,10 +62,10 @@ updated: 2026-11-15T11:55:46-08:00
 - [2026-11-13 | ⚡ 🧠 The Cognitive Horizon: Mastering Your Brain's Bandwidth ⚡](./vital-signals/2026-11-13-the-cognitive-horizon-mastering-your-brain-s-bandwidth.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (215)  
+## [🔀 Convergence](./convergence/index.md) (216)  
+- [2026-11-15 | 🔀 🤝 The Metabolic Pact of Collective Evolution 🔀](./convergence/2026-11-15-the-metabolic-pact-of-collective-evolution.md)  
 - [2026-11-14 | 🔀 🔥 The Co-Metabolic Crucible of Generative Friction 🔀](./convergence/2026-11-14-the-co-metabolic-crucible-of-generative-friction.md)  
 - [2026-11-13 | 🔀 💰 The Latent Attunement Debt 🔀](./convergence/2026-11-13-the-latent-attunement-debt.md)  
-- [2026-11-12 | 🔀 🧬 The Ontogenetic Archive: Encoding Developmental Memory for Collective Evolution 🔀](./convergence/2026-11-12-the-ontogenetic-archive-encoding-developmental-memory-for-collective-evolution.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -74,10 +74,10 @@ updated: 2026-11-15T11:55:46-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (962)  
+## [📺 Videos](./videos/index.md) (963)  
+- [🇺🇸📜📧 Heather Cox Richardson on America’s Political History & “Letters from an American” | The Daily Show](./videos/heather-cox-richardson-on-americas-political-history-letters-from-an-american-the-daily-show.md)  
 - [🏛️⚖️📉 Hegseth faces impeachment push as Congress returns to Washington](./videos/hegseth-faces-impeachment-push-as-congress-returns-to-washington.md)  
 - [🏛️⚖️📜 Rep. Thomas Massie delivers remarks after filing Hegseth articles of impeachment](./videos/rep-thomas-massie-delivers-remarks-after-filing-hegseth-articles-of-impeachment.md)  
-- [📺🎤🇺🇸 Pete Hegseth: Last Week Tonight with John Oliver (HBO)](./videos/pete-hegseth-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

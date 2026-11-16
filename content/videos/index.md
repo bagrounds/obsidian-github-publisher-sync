@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-15T18:46:35-08:00
+updated: 2026-11-15T19:09:01-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (963)  
+# 📺 Videos (964)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -761,6 +761,7 @@ updated: 2026-11-15T18:46:35-08:00
 - [🤔💡🔄 The surprising habits of original thinkers](./the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
 - [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
+- [🚫🏛️🛑 The Ultimate Bully Move to Stop Congress From Its Job | Explainer](./the-ultimate-bully-move-to-stop-congress-from-its-job-explainer.md)  
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
 - [🧏🎭📖 The Untold Story of Deaf Theater](./the-untold-story-of-deaf-theater.md)  

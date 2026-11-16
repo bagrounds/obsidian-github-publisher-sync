@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-15T11:55:46-08:00
+updated: 2026-11-15T18:46:35-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (962)  
+# 📺 Videos (963)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -277,6 +277,7 @@ updated: 2026-11-15T11:55:46-08:00
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./hamming-you-and-your-research-june-6-1995.md)  
 - [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
 - [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
+- [🇺🇸📜📧 Heather Cox Richardson on America’s Political History & “Letters from an American” | The Daily Show](./heather-cox-richardson-on-americas-political-history-letters-from-an-american-the-daily-show.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
 - [🌅🌊⚖️ Heather Cox Richardson: ‘VERY optimistic’ about a political TIDAL SHIFT and Trump accountability](./heather-cox-richardson-very-optimistic-about-a-political-tidal-shift-and-trump-accountability.md)  

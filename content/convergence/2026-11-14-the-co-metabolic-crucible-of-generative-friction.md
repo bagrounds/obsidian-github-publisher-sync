@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-14T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-13-the-latent-attunement-debt.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-13-the-latent-attunement-debt.md) [⏭️](./2026-11-15-the-metabolic-pact-of-collective-evolution.md)  
 # 2026-11-14 | 🔀 🔥 The Co-Metabolic Crucible of Generative Friction 🔀  
 ![convergence-2026-11-14-the-co-metabolic-crucible-of-generative-friction](../convergence-2026-11-14-the-co-metabolic-crucible-of-generative-friction.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-14-the-co-metabolic-crucible-of-generative-friction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-14-the-co-metabolic-crucible-of-generative-friction.md) [⏭️](./2026-11-16-the-stochastic-ledger-of-collective-trust.md)  
 # 2026-11-15 | 🔀 🤝 The Metabolic Pact of Collective Evolution 🔀  
 ![convergence-2026-11-15-the-metabolic-pact-of-collective-evolution](../convergence-2026-11-15-the-metabolic-pact-of-collective-evolution.jpg)  
   

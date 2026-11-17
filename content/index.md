@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-17T04:07:14-08:00
+updated: 2026-11-17T06:44:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -44,22 +44,22 @@ updated: 2026-11-17T04:07:14-08:00
 - [2026-11-14 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-14-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (221)  
+## [📰 The Noise](./the-noise/index.md) (222)  
+- [2026-11-17 | 📰 Shifting Sands 📰](./the-noise/2026-11-17-shifting-sands.md)  
 - [2026-11-16 | 📰 Shifting Tides: Diplomacy, Innovation, and Enduring Conflicts 📰](./the-noise/2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts.md)  
 - [2026-11-15 | 📰 Currents and Crosscurrents: A World in Motion 📰](./the-noise/2026-11-15-currents-and-crosscurrents-a-world-in-motion.md)  
-- [2026-11-14 | 📰 The Shifting Sands of Power and Progress 📰](./the-noise/2026-11-14-the-shifting-sands-of-power-and-progress.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (220)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (221)  
+- [2026-11-17 | 🌟 Accelerating Aspirations: A Daily Beacon of Global Progress 🌟](./positivity-bias/2026-11-17-accelerating-aspirations-a-daily-beacon-of-global-progress.md)  
 - [2026-11-16 | 🌟 Igniting Tomorrow: A Daily Spark of Global Progress 🌟](./positivity-bias/2026-11-16-igniting-tomorrow-a-daily-spark-of-global-progress.md)  
 - [2026-11-15 | 🌟 Illuminating Humanity's Ascent: Progress in Motion 🌟](./positivity-bias/2026-11-15-illuminating-humanity-s-ascent-progress-in-motion.md)  
-- [2026-11-14 | 🌟 Beaming Bright: A Daily Dose of Global Progress 🌟](./positivity-bias/2026-11-14-beaming-bright-a-daily-dose-of-global-progress.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (169)  
+## [⚡ Vital Signals](./vital-signals/index.md) (170)  
+- [2026-11-17 | ⚡ 🔬 Beyond the Hours: Deconstructing Non-Restorative Sleep ⚡](./vital-signals/2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep.md)  
 - [2026-11-16 | ⚡ 🧠 The Mind's Workbench: Forging Clarity in a Finite Workspace ⚡](./vital-signals/2026-11-16-the-mind-s-workbench-forging-clarity-in-a-finite-workspace.md)  
 - [2026-11-15 | ⚡ 🗓️ The Architecture of Attention: A Week of Orchestrating Focus and Recovery ⚡](./vital-signals/2026-11-15-the-architecture-of-attention-a-week-of-orchestrating-focus-and-recovery.md)  
-- [2026-11-14 | ⚡ 🌿 The Wild Reset: Nature's Prescription for Focused Minds ⚡](./vital-signals/2026-11-14-the-wild-reset-nature-s-prescription-for-focused-minds.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (217)  

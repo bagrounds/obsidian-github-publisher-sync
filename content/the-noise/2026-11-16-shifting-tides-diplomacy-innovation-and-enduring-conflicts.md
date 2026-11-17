@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-15-currents-and-crosscurrents-a-world-in-motion.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-15-currents-and-crosscurrents-a-world-in-motion.md) [⏭️](./2026-11-17-shifting-sands.md)  
 # 2026-11-16 | 📰 Shifting Tides: Diplomacy, Innovation, and Enduring Conflicts 📰  
 ![the-noise-2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts](../the-noise-2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts.jpg)  
   

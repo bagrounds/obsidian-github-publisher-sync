@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-17T00:00:00Z
 force_analyze_links: false
+updated: 2026-11-18T14:19:28
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-16-the-mind-s-workbench-forging-clarity-in-a-finite-workspace.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-16-the-mind-s-workbench-forging-clarity-in-a-finite-workspace.md) [⏭️](./2026-11-18-unpacking-hidden-interruptions-beyond-the-obvious-sleep-disruptors.md)  
 # 2026-11-17 | ⚡ 🔬 Beyond the Hours: Deconstructing Non-Restorative Sleep ⚡  
 ![vital-signals-2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep](../vital-signals-2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep.jpg)  
   
@@ -117,3 +118,14 @@ force_analyze_links: false
 - 🌐 [onepeloton.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJd4F7qOPcbWJUQRqfJ1glk6LelEpjvaDT3S-2TR7pGrYxx0c04anvquLUJLSLXucucvBcwMJFclgWoTMItS3eK1GoV2VMb-bt9FsszaNao2b7zlbk2UPML7kJ_QCJ8XccWoeBZIijs1zZNyXfDl5iO0F6Wug4d8QrcQ==)  
 - 🌐 [bettersleep.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmFtLgpLSV36dxS2NrERD1mZsCApxMJVXAn6iXkbszdrV1YPu-8F-M7O0HB_Ruoh79XMxYgqgiHEjOmemoZDUkAWrgkeA-KV46pm15gPRo74tO7SQBzdeXOAvPUcFHXrw27mvLVHZYPOTSkvOtCvymbYjyLeNiSxVyM4nNvtHx9zeiQFP5Ar-LugxSXHIec1nu)  
 - 🌐 [acibademinternational.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj9iuouhtxOJcdPmg71U7Pp2bmS9Qz3EodQtAndnLTNYQ3J56BGeifM7GOsW7tfZv_S1rz5GYyX4dbp-aaDHWX3iq4YWxHZoAlc3QPZbtaYwKneFjs5-6ZZkh7kj1AMdYd2fsS-nrd8YlAevMfzIEnsUgugPXycbZDTjPBBwL5NOHHRb661w7ojTK3kuMAPXVVNcbdcMHZ8L41YQlsaNey-YVhODlE6bgM-7U=)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n2lqtemz4t2m" data-bluesky-cid="bafyreigl5jdxpawuqojmpsq2vh3uj7oijqhovm4uwum5mkzwe5xyx6jujm"><p>2026-11-17 | ⚡ 🔬 Beyond the Hours: Deconstructing Non-Restorative Sleep ⚡  
+  
+#AI Q: 😴 Is more sleep always more rest?  
+  
+😴 Sleep Quality | 🧠 Brain Health | ⏰ Circadian Rhythms | 🌱 Healthy Habits  
+https://bagrounds.org/vital-signals/2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n2lqtemz4t2m?ref_src=embed">2026-11-18T14:19:23.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  
+  
+## 🐘 Mastodon    
+<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@bagrounds/117637876202005550/embed" style="background: #282c37; border-radius: 8px; border: 1px solid #393f4f; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@bagrounds/117637876202005550" target="_blank" style="align-items: center; color: #d9e1e8; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z" fill="currentColor"/></svg> <div style="color: #9baec8; margin-top: 16px;">Post by @bagrounds@mastodon.social</div> <div style="font-weight: bold;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>

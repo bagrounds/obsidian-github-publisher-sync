@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-17T06:44:04-08:00
+updated: 2026-11-17T22:07:19-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (240)  
+# 🏛️ Systems for Public Good (241)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-17 | 🏛️ ⏳ Wait Times in Healthcare: A Comparative Look at Private vs. Universal Systems 🏛️](./2026-11-17-wait-times-in-healthcare-a-comparative-look-at-private-vs-universal-systems.md)  
 - [2026-11-16 | 🏛️ Guiding the AI Revolution: Ethics, Accountability, and Public Purpose 🏛️](./2026-11-16-guiding-the-ai-revolution-ethics-accountability-and-public-purpose.md)  
 - [2026-11-15 | 🏛️ 💬 Media, AI, and the Architecture of Public Deliberation 🏛️](./2026-11-15-media-ai-and-the-architecture-of-public-deliberation.md)  
 - [2026-11-14 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./2026-11-14-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  

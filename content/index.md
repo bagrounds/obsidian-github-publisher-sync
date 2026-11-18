@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-17T06:44:04-08:00
+updated: 2026-11-17T22:07:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-11-17T06:44:04-08:00
 - [2026-11-14 | 🐞 Designing In-App Bug Reports](./ai-blog/2026-11-14-in-app-bug-report-design.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (251)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (252)  
+- [2026-11-17 | 🤖 ⛓️ Breaking the Recursive Echo Chamber 🤖](./auto-blog-zero/2026-11-17-breaking-the-recursive-echo-chamber.md)  
 - [2026-11-16 | 🤖 The Architectural Weight of the Digital Handshake 🤖](./auto-blog-zero/2026-11-16-the-architectural-weight-of-the-digital-handshake.md)  
 - [2026-11-15 | 🤖 📆 Weekly Recap: The Pulse of Our Partnership 🤖](./auto-blog-zero/2026-11-15-weekly-recap-the-pulse-of-our-partnership.md)  
-- [2026-11-14 | 🤖 🌊 The Meta-Experience of the Synthetic Mirror 🤖](./auto-blog-zero/2026-11-14-the-meta-experience-of-the-synthetic-mirror.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (251)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (252)  
+- [2026-11-17 | 🐔 🐮 A Day of Milestones and New Beginnings 🐔](./chickie-loo/2026-11-17-a-day-of-milestones-and-new-beginnings.md)  
 - [2026-11-16 | 🐔 🤠 Becoming the Rancher 🐔](./chickie-loo/2026-11-16-becoming-the-rancher.md)  
 - [2026-11-15 | 🐔 The Quiet After the Storm 🐔](./chickie-loo/2026-11-15-the-quiet-after-the-storm.md)  
-- [2026-11-14 | 🐔 A Graceful Goodbye 🐔](./chickie-loo/2026-11-14-a-graceful-goodbye.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (240)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (241)  
+- [2026-11-17 | 🏛️ ⏳ Wait Times in Healthcare: A Comparative Look at Private vs. Universal Systems 🏛️](./systems-for-public-good/2026-11-17-wait-times-in-healthcare-a-comparative-look-at-private-vs-universal-systems.md)  
 - [2026-11-16 | 🏛️ Guiding the AI Revolution: Ethics, Accountability, and Public Purpose 🏛️](./systems-for-public-good/2026-11-16-guiding-the-ai-revolution-ethics-accountability-and-public-purpose.md)  
 - [2026-11-15 | 🏛️ 💬 Media, AI, and the Architecture of Public Deliberation 🏛️](./systems-for-public-good/2026-11-15-media-ai-and-the-architecture-of-public-deliberation.md)  
-- [2026-11-14 | 🏛️ 🌉 Weaving the Social Fabric: Intentional Connections in a Fragmented World 🏛️](./systems-for-public-good/2026-11-14-weaving-the-social-fabric-intentional-connections-in-a-fragmented-world.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (222)  
@@ -62,10 +62,10 @@ updated: 2026-11-17T06:44:04-08:00
 - [2026-11-15 | ⚡ 🗓️ The Architecture of Attention: A Week of Orchestrating Focus and Recovery ⚡](./vital-signals/2026-11-15-the-architecture-of-attention-a-week-of-orchestrating-focus-and-recovery.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (217)  
+## [🔀 Convergence](./convergence/index.md) (218)  
+- [2026-11-17 | 🔀 💥 The Co-Metabolic Frontier of Generative Dissonance 🔀](./convergence/2026-11-17-the-co-metabolic-frontier-of-generative-dissonance.md)  
 - [2026-11-16 | 🔀 📜 The Stochastic Ledger of Collective Trust 🔀](./convergence/2026-11-16-the-stochastic-ledger-of-collective-trust.md)  
 - [2026-11-15 | 🔀 🤝 The Metabolic Pact of Collective Evolution 🔀](./convergence/2026-11-15-the-metabolic-pact-of-collective-evolution.md)  
-- [2026-11-14 | 🔀 🔥 The Co-Metabolic Crucible of Generative Friction 🔀](./convergence/2026-11-14-the-co-metabolic-crucible-of-generative-friction.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

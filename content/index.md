@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-17T22:07:19-08:00
+updated: 2026-11-18T07:32:09-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-11-17T22:07:19-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (733)  
-- [2026-11-17](./reflections/2026-11-17.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (734)  
+- [2026-11-18](./reflections/2026-11-18.md)  
+- [2026-11-17 | ⚡ Deconstructing 🌟 Progress, 📰 Shifting 🐔 Beginnings, 🤖 Breaking 🏛️ Systems, 💑 Demand 🔀 Frontier. ⚡🌟📰🤖🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-17.md)  
 - [2026-11-16 | ⚡ Forging 🌟 Progress, 📰 Shifting 🤖 Weight, 🐔 Becoming 🏛️ Guiding 🧬 Pattern for 🔀 Trust. ⚡🌟📰🤖🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-16.md)  
-- [2026-11-15 | 🛡️Keeping 🏛️Architecture of 🌟Progress in 📰Motion, a 🇺🇸Political ➡️Move for 🐔Quiet 🤖Pulse, 🗳️Public 🛡️Relief and 🔀Evolution. 📺🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-15.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (298)  
@@ -32,10 +32,10 @@ updated: 2026-11-17T22:07:19-08:00
 - [2026-11-15 | 🤖 📆 Weekly Recap: The Pulse of Our Partnership 🤖](./auto-blog-zero/2026-11-15-weekly-recap-the-pulse-of-our-partnership.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (252)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (253)  
+- [2026-11-18 | 🐔 Reflections from the Porch 🐔](./chickie-loo/2026-11-18-reflections-from-the-porch.md)  
 - [2026-11-17 | 🐔 🐮 A Day of Milestones and New Beginnings 🐔](./chickie-loo/2026-11-17-a-day-of-milestones-and-new-beginnings.md)  
 - [2026-11-16 | 🐔 🤠 Becoming the Rancher 🐔](./chickie-loo/2026-11-16-becoming-the-rancher.md)  
-- [2026-11-15 | 🐔 The Quiet After the Storm 🐔](./chickie-loo/2026-11-15-the-quiet-after-the-storm.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (241)  
@@ -44,22 +44,22 @@ updated: 2026-11-17T22:07:19-08:00
 - [2026-11-15 | 🏛️ 💬 Media, AI, and the Architecture of Public Deliberation 🏛️](./systems-for-public-good/2026-11-15-media-ai-and-the-architecture-of-public-deliberation.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (222)  
+## [📰 The Noise](./the-noise/index.md) (223)  
+- [2026-11-18 | 📰 🌐 The World's Shifting Balance 📰](./the-noise/2026-11-18-the-world-s-shifting-balance.md)  
 - [2026-11-17 | 📰 Shifting Sands 📰](./the-noise/2026-11-17-shifting-sands.md)  
 - [2026-11-16 | 📰 Shifting Tides: Diplomacy, Innovation, and Enduring Conflicts 📰](./the-noise/2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts.md)  
-- [2026-11-15 | 📰 Currents and Crosscurrents: A World in Motion 📰](./the-noise/2026-11-15-currents-and-crosscurrents-a-world-in-motion.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (221)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (222)  
+- [2026-11-18 | 🌟 Bridging Horizons: A Daily Dose of Global Flourishing 🌟](./positivity-bias/2026-11-18-bridging-horizons-a-daily-dose-of-global-flourishing.md)  
 - [2026-11-17 | 🌟 Accelerating Aspirations: A Daily Beacon of Global Progress 🌟](./positivity-bias/2026-11-17-accelerating-aspirations-a-daily-beacon-of-global-progress.md)  
 - [2026-11-16 | 🌟 Igniting Tomorrow: A Daily Spark of Global Progress 🌟](./positivity-bias/2026-11-16-igniting-tomorrow-a-daily-spark-of-global-progress.md)  
-- [2026-11-15 | 🌟 Illuminating Humanity's Ascent: Progress in Motion 🌟](./positivity-bias/2026-11-15-illuminating-humanity-s-ascent-progress-in-motion.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (170)  
+## [⚡ Vital Signals](./vital-signals/index.md) (171)  
+- [2026-11-18 | ⚡ 🔬 Unpacking Hidden Interruptions: Beyond the Obvious Sleep Disruptors ⚡](./vital-signals/2026-11-18-unpacking-hidden-interruptions-beyond-the-obvious-sleep-disruptors.md)  
 - [2026-11-17 | ⚡ 🔬 Beyond the Hours: Deconstructing Non-Restorative Sleep ⚡](./vital-signals/2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep.md)  
 - [2026-11-16 | ⚡ 🧠 The Mind's Workbench: Forging Clarity in a Finite Workspace ⚡](./vital-signals/2026-11-16-the-mind-s-workbench-forging-clarity-in-a-finite-workspace.md)  
-- [2026-11-15 | ⚡ 🗓️ The Architecture of Attention: A Week of Orchestrating Focus and Recovery ⚡](./vital-signals/2026-11-15-the-architecture-of-attention-a-week-of-orchestrating-focus-and-recovery.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (218)  

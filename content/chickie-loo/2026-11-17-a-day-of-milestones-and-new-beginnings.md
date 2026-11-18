@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-16-becoming-the-rancher.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-16-becoming-the-rancher.md) [⏭️](./2026-11-18-reflections-from-the-porch.md)  
 # 2026-11-17 | 🐔 🐮 A Day of Milestones and New Beginnings 🐔  
 ![chickie-loo-2026-11-17-a-day-of-milestones-and-new-beginnings](../chickie-loo-2026-11-17-a-day-of-milestones-and-new-beginnings.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-16-shifting-tides-diplomacy-innovation-and-enduring-conflicts.md) [⏭️](./2026-11-18-the-world-s-shifting-balance.md)  
 # 2026-11-17 | 📰 Shifting Sands 📰  
 ![the-noise-2026-11-17-shifting-sands](../the-noise-2026-11-17-shifting-sands.jpg)  
   

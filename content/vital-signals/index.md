@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-11-17T22:07:19-08:00
+updated: 2026-11-18T07:32:09-08:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (170)  
+# ⚡ Vital Signals (171)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-11-18 | ⚡ 🔬 Unpacking Hidden Interruptions: Beyond the Obvious Sleep Disruptors ⚡](./2026-11-18-unpacking-hidden-interruptions-beyond-the-obvious-sleep-disruptors.md)  
 - [2026-11-17 | ⚡ 🔬 Beyond the Hours: Deconstructing Non-Restorative Sleep ⚡](./2026-11-17-beyond-the-hours-deconstructing-non-restorative-sleep.md)  
 - [2026-11-16 | ⚡ 🧠 The Mind's Workbench: Forging Clarity in a Finite Workspace ⚡](./2026-11-16-the-mind-s-workbench-forging-clarity-in-a-finite-workspace.md)  
 - [2026-11-15 | ⚡ 🗓️ The Architecture of Attention: A Week of Orchestrating Focus and Recovery ⚡](./2026-11-15-the-architecture-of-attention-a-week-of-orchestrating-focus-and-recovery.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-18-the-world-s-shifting-balance.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-18-the-world-s-shifting-balance.md) [⏭️](./2026-11-20-the-world-in-a-churn.md)  
 # 2026-11-19 | 📰 🌐 The World's Persistent Unraveling 📰  
 ![the-noise-2026-11-19-the-world-s-persistent-unraveling](../the-noise-2026-11-19-the-world-s-persistent-unraveling.jpg)  
   

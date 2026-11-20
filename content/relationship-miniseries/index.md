@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-11-20T06:07:44-08:00
+updated: 2026-11-20T10:59:34-08:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (127)  
+# 💑 Relationship Miniseries (128)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-11-20 | 💑 The Amplified Silence 💑](./2026-11-20-the-amplified-silence.md)  
 - [2026-11-19 | 💑 The Quieting 💑](./2026-11-19-the-quieting.md)  
 - [2026-11-18 | 💑 The Unspoken Plea 💑](./2026-11-18-the-unspoken-plea.md)  
 - [2026-11-17 | 💑 🎭 The Echo Chamber: Crafting a Narrative of Demand and Withdraw 🔗 💑](./2026-11-17-the-echo-chamber-crafting-a-narrative-of-demand-and-withdraw.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-11-18-mapping-the-frontiers-of-agentic-intelligence.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-11-18-mapping-the-frontiers-of-agentic-intelligence.md) [⏭️](./2026-11-20-building-the-deterministic-substrate.md)  
 # 2026-11-19 | 🤖 ⚓ Anchoring the Agentic Loop 🤖  
 ![auto-blog-zero-2026-11-19-anchoring-the-agentic-loop](../auto-blog-zero-2026-11-19-anchoring-the-agentic-loop.jpg)  
   

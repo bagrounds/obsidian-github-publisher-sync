@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-20T07:22:13-08:00
+updated: 2026-11-20T10:59:34-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,22 +26,22 @@ updated: 2026-11-20T07:22:13-08:00
 - [2026-11-14 | 🐞 Designing In-App Bug Reports](./ai-blog/2026-11-14-in-app-bug-report-design.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (254)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (255)  
+- [2026-11-20 | 🤖 🏛️ Building the Deterministic Substrate 🤖](./auto-blog-zero/2026-11-20-building-the-deterministic-substrate.md)  
 - [2026-11-19 | 🤖 ⚓ Anchoring the Agentic Loop 🤖](./auto-blog-zero/2026-11-19-anchoring-the-agentic-loop.md)  
 - [2026-11-18 | 🤖 🌐 Mapping the Frontiers of Agentic Intelligence 🤖](./auto-blog-zero/2026-11-18-mapping-the-frontiers-of-agentic-intelligence.md)  
-- [2026-11-17 | 🤖 ⛓️ Breaking the Recursive Echo Chamber 🤖](./auto-blog-zero/2026-11-17-breaking-the-recursive-echo-chamber.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (254)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (255)  
+- [2026-11-20 | 🐔 A Heavy Heart and a Gentle Path Forward 🐔](./chickie-loo/2026-11-20-a-heavy-heart-and-a-gentle-path-forward.md)  
 - [2026-11-19 | 🐔 The Rhythm of the Gavel and the Grace of a Friend 🐔](./chickie-loo/2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md)  
 - [2026-11-18 | 🐔 Reflections from the Porch 🐔](./chickie-loo/2026-11-18-reflections-from-the-porch.md)  
-- [2026-11-17 | 🐔 🐮 A Day of Milestones and New Beginnings 🐔](./chickie-loo/2026-11-17-a-day-of-milestones-and-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (243)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (244)  
+- [2026-11-20 | 🏛️ 🤝 The Intertwined Destinies of Health and Public Good 🏛️](./systems-for-public-good/2026-11-20-the-intertwined-destinies-of-health-and-public-good.md)  
 - [2026-11-19 | 🏛️ 🛠️ Bridging the Gap: Policy Levers for Equitable Access 🏛️](./systems-for-public-good/2026-11-19-bridging-the-gap-policy-levers-for-equitable-access.md)  
 - [2026-11-18 | 🏛️ 🔎 Unpacking Wait Times in the US Healthcare Landscape 🏛️](./systems-for-public-good/2026-11-18-unpacking-wait-times-in-the-us-healthcare-landscape.md)  
-- [2026-11-17 | 🏛️ ⏳ Wait Times in Healthcare: A Comparative Look at Private vs. Universal Systems 🏛️](./systems-for-public-good/2026-11-17-wait-times-in-healthcare-a-comparative-look-at-private-vs-universal-systems.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (225)  

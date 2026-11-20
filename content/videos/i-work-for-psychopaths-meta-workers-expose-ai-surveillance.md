@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/ca7ufSI1Qxg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👿👁️💻 “I Work For Psychopaths”: Meta Workers Expose AI Surveillance  
@@ -55,7 +59,7 @@ youtube: https://youtu.be/ca7ufSI1Qxg
   
 ### 🆚 Contrasting  
   
-* 🎯 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs by John Doerr argues that transparent metric tracking and data-driven goal setting empower teams and align organizational performance.  
+* 🎯 [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](../books/measure-what-matters.md) by John Doerr argues that transparent metric tracking and data-driven goal setting empower teams and align organizational performance.  
 * ⚙️ The Principles of Scientific Management by Frederick Winslow Taylor advocates for rigorous time-motion measurement and standardized workplace efficiency as mutually beneficial drivers of industrial productivity and prosperity.  
   
 ### 🎨 Creatively Related  

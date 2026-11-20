@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T22:23:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, vibrant illustration featuring a soft-focus, glowing atom floating in the center. Encircling the nucleus are colorful, playful orbits holding glowing spheres that represent qubits. One sphere is split into two translucent, overlapping colors—blue and gold—to visually represent the concept of superposition. The background is a deep, soothing navy blue, scattered with subtle, minimalist constellations and geometric shapes that suggest a nursery aesthetic. A small, curious baby’s silhouette is visible in the bottom corner, reaching out toward the floating quantum particles with a look of wonder. The entire scene is bathed in a soft, ethereal light, balancing scientific intrigue with a gentle, child-friendly atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️ℹ️👶 Quantum Information for Babies  
+![books-quantum-information-for-babies](../books-quantum-information-for-babies.jpg)  
 [🛒 Quantum Information for Babies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4a1DCPT)  
   
 👶💡⚛️ Simplifies complex concepts like qubits and information systems into a colorfully illustrated board book, aiming to spark early scientific curiosity in both babies and adults.  

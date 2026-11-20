@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-18-bridging-horizons-a-daily-dose-of-global-flourishing.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-18-bridging-horizons-a-daily-dose-of-global-flourishing.md) [⏭️](./2026-11-20-the-unfolding-tapestry-a-daily-weave-of-global-flourishing.md)  
 # 2026-11-19 | 🌟 Cultivating Progress: A Daily Harvest of Hope 🌟  
 ![positivity-bias-2026-11-19-cultivating-progress-a-daily-harvest-of-hope](../positivity-bias-2026-11-19-cultivating-progress-a-daily-harvest-of-hope.jpg)  
   

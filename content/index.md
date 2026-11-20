@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-20T06:07:44-08:00
+updated: 2026-11-20T07:22:13-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -44,16 +44,16 @@ updated: 2026-11-20T06:07:44-08:00
 - [2026-11-17 | 🏛️ ⏳ Wait Times in Healthcare: A Comparative Look at Private vs. Universal Systems 🏛️](./systems-for-public-good/2026-11-17-wait-times-in-healthcare-a-comparative-look-at-private-vs-universal-systems.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (224)  
+## [📰 The Noise](./the-noise/index.md) (225)  
+- [2026-11-20 | 📰 🌐 The World in a Churn 📰](./the-noise/2026-11-20-the-world-in-a-churn.md)  
 - [2026-11-19 | 📰 🌐 The World's Persistent Unraveling 📰](./the-noise/2026-11-19-the-world-s-persistent-unraveling.md)  
 - [2026-11-18 | 📰 🌐 The World's Shifting Balance 📰](./the-noise/2026-11-18-the-world-s-shifting-balance.md)  
-- [2026-11-17 | 📰 Shifting Sands 📰](./the-noise/2026-11-17-shifting-sands.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (223)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (224)  
+- [2026-11-20 | 🌟 The Unfolding Tapestry: A Daily Weave of Global Flourishing 🌟](./positivity-bias/2026-11-20-the-unfolding-tapestry-a-daily-weave-of-global-flourishing.md)  
 - [2026-11-19 | 🌟 Cultivating Progress: A Daily Harvest of Hope 🌟](./positivity-bias/2026-11-19-cultivating-progress-a-daily-harvest-of-hope.md)  
 - [2026-11-18 | 🌟 Bridging Horizons: A Daily Dose of Global Flourishing 🌟](./positivity-bias/2026-11-18-bridging-horizons-a-daily-dose-of-global-flourishing.md)  
-- [2026-11-17 | 🌟 Accelerating Aspirations: A Daily Beacon of Global Progress 🌟](./positivity-bias/2026-11-17-accelerating-aspirations-a-daily-beacon-of-global-progress.md)  
   
   
 ## [⚡ Vital Signals](./vital-signals/index.md) (173)  

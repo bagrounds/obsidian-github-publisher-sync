@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-18-reflections-from-the-porch.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-18-reflections-from-the-porch.md) [⏭️](./2026-11-20-a-heavy-heart-and-a-gentle-path-forward.md)  
 # 2026-11-19 | 🐔 The Rhythm of the Gavel and the Grace of a Friend 🐔  
 ![chickie-loo-2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend](../chickie-loo-2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.jpg)  
   

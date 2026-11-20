@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-19T16:50:43-08:00
+updated: 2026-11-19T18:58:25-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (966)  
+# 📺 Videos (967)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -411,6 +411,7 @@ updated: 2026-11-19T16:50:43-08:00
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
+- [👿👁️💻 “I Work For Psychopaths”: Meta Workers Expose AI Surveillance](./i-work-for-psychopaths-meta-workers-expose-ai-surveillance.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🇺🇸 James Talarico Full Victory Speech](./james-talarico-full-victory-speech.md)  
 - [🏛️🤬 Jason Crow is really pissed](./jason-crow-is-really-pissed.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-19T16:50:43-08:00
+updated: 2026-11-19T18:58:25-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-19T16:50:43-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (966)  
+## [📺 Videos](./videos/index.md) (967)  
+- [👿👁️💻 “I Work For Psychopaths”: Meta Workers Expose AI Surveillance](./videos/i-work-for-psychopaths-meta-workers-expose-ai-surveillance.md)  
 - [😱🤫🗞️ Scandal](./videos/nvidia-scandal.md)  
 - [🧠🌊🔄 How to Rewire Your Brain - and Find Your Flow | Heather Berlin | TED](./videos/how-to-rewire-your-brain-and-find-your-flow-heather-berlin-ted.md)  
-- [🚫🏛️🛑 The Ultimate Bully Move to Stop Congress From Its Job | Explainer](./videos/the-ultimate-bully-move-to-stop-congress-from-its-job-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

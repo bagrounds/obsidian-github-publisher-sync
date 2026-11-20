@@ -9,6 +9,10 @@ Platform:
 Channel: TED
 tags:
 youtube: https://youtu.be/B2SIsncgFi0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🌊🔄 How to Rewire Your Brain - and Find Your Flow | Heather Berlin | TED  
@@ -62,4 +66,4 @@ youtube: https://youtu.be/B2SIsncgFi0
 ### 🎨 Creatively Related  
   
 * 🎨 The Creative Act by Rick Rubin offers poetic meditations on artistic surrender, encouraging creators to quiet their analytical egos and tune into natural inspiration.  
-* 📵 Bored and Brilliant by Manoush Zomorodi details how detaching from digital distractions and reclaiming idle mind-wandering sparks original thinking and personal breakthroughs.
+* 📵 [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](../books/bored-and-brilliant.md) by Manoush Zomorodi details how detaching from digital distractions and reclaiming idle mind-wandering sparks original thinking and personal breakthroughs.

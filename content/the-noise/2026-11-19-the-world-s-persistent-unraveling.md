@@ -12,6 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
+updated: 2026-11-20T18:21:35
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-18-the-world-s-shifting-balance.md) [⏭️](./2026-11-20-the-world-in-a-churn.md)  
 # 2026-11-19 | 📰 🌐 The World's Persistent Unraveling 📰  
@@ -95,3 +96,11 @@ force_analyze_links: false
 *   🌐 The Verge.  
   
 ✍️ Written by gemini-2.5-flash  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n2r7c5gcyo2e" data-bluesky-cid="bafyreiayzkf37xljx5ddfpidbdpybtcjdw734p3fbp54b7g5kz5itncxyy"><p>2026-11-19 | 📰 🌐 The World&#39;s Persistent Unraveling 📰  
+  
+#AI Q: 🌍 Which global issue feels like it will never actually be resolved?  
+  
+🕊️ Diplomatic Hurdles (Covers Geopolitics/Unfinished business)  
+https://bagrounds.org/the-noise/2026-11-19-the-world-s-persistent-unraveling</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n2r7c5gcyo2e?ref_src=embed">2026-11-20T18:21:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

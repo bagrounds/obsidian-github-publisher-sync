@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-18-unpacking-hidden-interruptions-beyond-the-obvious-sleep-disruptors.md)  
+[Home](../index.md) > [⚡ Vital Signals](./index.md) | [⏮️](./2026-11-18-unpacking-hidden-interruptions-beyond-the-obvious-sleep-disruptors.md) [⏭️](./2026-11-20-the-evening-descent-optimizing-your-brain-s-off-ramp-to-sleep.md)  
 # 2026-11-19 | ⚡ 🌌 Your Sleep Sanctuary: Engineering Deep Rest Beyond the Hours ⚡  
 ![vital-signals-2026-11-19-your-sleep-sanctuary-engineering-deep-rest-beyond-the-hours](../vital-signals-2026-11-19-your-sleep-sanctuary-engineering-deep-rest-beyond-the-hours.jpg)  
   

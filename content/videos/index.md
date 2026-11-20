@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-18T07:32:09-08:00
+updated: 2026-11-19T16:50:43-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (964)  
+# 📺 Videos (966)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -353,6 +353,7 @@ updated: 2026-11-18T07:32:09-08:00
 - [🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student](./how-to-research-any-topic-deep-dive-like-a-phd-student.md)  
 - [😴🔋✨ How to rest so well you never feel exhausted](./how-to-rest-so-well-you-never-feel-exhausted.md)  
 - [😴🔋⚡ How to Rest So Well You Never Feel Exhausted Again](./how-to-rest-so-well-you-never-feel-exhausted-again.md)  
+- [🧠🌊🔄 How to Rewire Your Brain - and Find Your Flow | Heather Berlin | TED](./how-to-rewire-your-brain-and-find-your-flow-heather-berlin-ted.md)  
 - [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./how-to-spot-ai-and-misinformation-online.md)  
 - [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
@@ -592,6 +593,7 @@ updated: 2026-11-18T07:32:09-08:00
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [👤🎭🏛️ Russell Vought: The Shadow President](./russell-vought-the-shadow-president.md)  
+- [😱🤫🗞️ Scandal](./nvidia-scandal.md)  
 - [Schiff Sends Message Directly to Trump in Surprise Hearing](./schiff-sends-message-directly-to-trump-in-surprise-hearing.md)  
 - [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
 - [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  

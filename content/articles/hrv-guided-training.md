@@ -3,7 +3,7 @@ share: true
 aliases:
   - ❤️📈🏋️ HRV Guided training
 title: ❤️📈🏋️ HRV Guided training
-URL: https://bagrounds.org/articles/
+URL: https://bagrounds.org/articles/hrv-guided-training
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T00:43:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist composition featuring a glowing, stylized digital pulse wave that transitions from a soft, rhythmic blue to a vibrant, energetic orange. The wave is centered against a dark, matte charcoal background, symbolizing the balance between rest and high-intensity effort. Floating subtly above the wave is a faint, holographic geometric heart icon rendered in thin, elegant white lines. The lighting is soft and atmospheric, emphasizing the intersection of biological data and modern athletic performance. The overall aesthetic is sleek, high-tech, and professional, reflecting the intersection of physiology and data-driven training.
+updated: 2026-11-19T08:19:40
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❤️📈🏋️ HRV Guided training](https://www.kubios.com/blog/hrv-guided-training)  
@@ -35,4 +36,12 @@ image_prompt: A clean, minimalist composition featuring a glowing, stylized digi
 * The Ultimate Guide to HRV Training by Joel Jamieson: 🧠 An in-depth look at HRV as a tool for making informed decisions about training.  
 * Heart Breath Mind by Dr. Leah Lagos: 💨 This book offers a creatively related perspective on using breath and the mind to influence the body's physical response to stress, which is measured by HRV.  
 * High-Performance Training for Sports edited by David Joyce and Dan Lewindon: 🏆 A broader text covering various aspects of athletic performance, including monitoring and recovery, to provide a wider context.  
-* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](../books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: 🕵️‍♀️ An investigative book that busts myths about athletic recovery, offering a contrasting and scientific look at what really works.
+* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](../books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: 🕵️‍♀️ An investigative book that busts myths about athletic recovery, offering a contrasting and scientific look at what really works.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n2nn6wq2vd2c" data-bluesky-cid="bafyreia4inv4mfqkwq7a62j4c5vlk7wqfj343hbe54d6isfny26rddiiae"><p>❤️📈🏋️ HRV Guided training  
+  
+#AI Q: 📊 Does listening to biometric data improve performance or ruin the fun of training?  
+  
+🧬 Physiology | ⚡ Performance | 🛌 Recovery Science  
+https://bagrounds.org/articles/hrv-guided-training</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n2nn6wq2vd2c?ref_src=embed">2026-11-19T08:19:36.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

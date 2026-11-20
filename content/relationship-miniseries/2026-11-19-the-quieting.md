@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-18-the-unspoken-plea.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-18-the-unspoken-plea.md) [⏭️](./2026-11-20-the-amplified-silence.md)  
 # 2026-11-19 | 💑 The Quieting 💑  
 ![relationship-miniseries-2026-11-19-the-quieting](../relationship-miniseries-2026-11-19-the-quieting.jpg)  
   

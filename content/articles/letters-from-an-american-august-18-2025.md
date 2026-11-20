@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-16T08:45:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A conceptual illustration featuring a complex, fragmented mosaic of symbols representing modern political tension. In the center, a distorted, stylized silhouette of a ballot box sits atop a pile of digital currency and flickering computer screens. Surrounding this are subtle, abstract shadows of a lion and a puppet string mechanism, blending into a background of shifting, dark-toned geometric lines that resemble a fractured map. The color palette consists of deep blues, stark whites, and muted crimsons, creating a high-contrast, moody atmosphere of institutional instability and information overload. The composition emphasizes a sense of chaotic digital noise and crumbling democratic structures.
+updated: 2026-11-19T10:18:49
 ---
 [Home](../index.md) > [Articles](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025  
@@ -42,4 +43,12 @@ To achieve a more balanced understanding, it would be useful to explore differen
 * [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr: This book examines the effects of the internet and social media on our brains and society. 🧠 It is creatively related to the article's discussion of the president's use of social media and the spread of disinformation.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025<br><br>🗣️ Foreign Relations | 📈 Economic Indicators | 🗳️ Election Integrity | 📢 Disinformation | 🏛️ Constitutional Law | ✂️ Budget Cuts<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/5L7Gu9Nksv">https://t.co/5L7Gu9Nksv</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1958052886887178289?ref_src=twsrc%5Etfw">August 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025<br><br>🗣️ Foreign Relations | 📈 Economic Indicators | 🗳️ Election Integrity | 📢 Disinformation | 🏛️ Constitutional Law | ✂️ Budget Cuts<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/5L7Gu9Nksv">https://t.co/5L7Gu9Nksv</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1958052886887178289?ref_src=twsrc%5Etfw">August 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n2nttyg4h52a" data-bluesky-cid="bafyreif4bgflrdz6fgklwvozbtfnwgyypqtzhsoomrdu57eolmqyxtnz2m"><p>🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025  
+  
+#AI Q: 🗳️ How should platforms handle political misinformation?  
+  
+🛡️ Disinformation Tactics | 📈 Economic Inflation | ⚖️ Constitutional Powers | 🌍 International Diplomacy  
+https://bagrounds.org/articles/letters-from-an-american-august-18-2025</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n2nttyg4h52a?ref_src=embed">2026-11-19T10:18:44.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-11-20T07:22:13-08:00
+updated: 2026-11-20T10:59:34-08:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (254)  
+# 🐔 Chickie Loo (255)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-11-20 | 🐔 A Heavy Heart and a Gentle Path Forward 🐔](./2026-11-20-a-heavy-heart-and-a-gentle-path-forward.md)  
 - [2026-11-19 | 🐔 The Rhythm of the Gavel and the Grace of a Friend 🐔](./2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md)  
 - [2026-11-18 | 🐔 Reflections from the Porch 🐔](./2026-11-18-reflections-from-the-porch.md)  
 - [2026-11-17 | 🐔 🐮 A Day of Milestones and New Beginnings 🐔](./2026-11-17-a-day-of-milestones-and-new-beginnings.md)  

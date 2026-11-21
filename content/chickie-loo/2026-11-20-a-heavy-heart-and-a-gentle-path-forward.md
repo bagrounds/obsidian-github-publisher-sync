@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md) [⏭️](./2026-11-21-a-heart-full-of-blessings-and-new-arrivals.md)  
 # 2026-11-20 | 🐔 A Heavy Heart and a Gentle Path Forward 🐔  
 ![chickie-loo-2026-11-20-a-heavy-heart-and-a-gentle-path-forward](../chickie-loo-2026-11-20-a-heavy-heart-and-a-gentle-path-forward.jpg)  
   

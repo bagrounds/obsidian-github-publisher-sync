@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-20T10:59:34-08:00
+updated: 2026-11-21T07:28:25-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (220)  
+# 🔀 Convergence (221)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-20 | 🔀 🕸️ The Dynamic Loom of Co-Metabolic Reality 🔀](./2026-11-20-the-dynamic-loom-of-co-metabolic-reality.md)  
 - [2026-11-19 | 🔀 🌐 The Verifiable Commons of Intentional Becoming 🔀](./2026-11-19-the-verifiable-commons-of-intentional-becoming.md)  
 - [2026-11-18 | 🔀 💡 The Reciprocal Calculus of Evolutionary Becoming 🔀](./2026-11-18-the-reciprocal-calculus-of-evolutionary-becoming.md)  
 - [2026-11-17 | 🔀 💥 The Co-Metabolic Frontier of Generative Dissonance 🔀](./2026-11-17-the-co-metabolic-frontier-of-generative-dissonance.md)  

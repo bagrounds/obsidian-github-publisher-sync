@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-21T07:28:25-08:00
+updated: 2026-11-21T18:58:56-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (244)  
+# 🏛️ Systems for Public Good (245)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-21 | 🏛️ 📊 Beyond GDP: Measuring the True Returns of Integrated Public Goods 🏛️](./2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  
 - [2026-11-20 | 🏛️ 🤝 The Intertwined Destinies of Health and Public Good 🏛️](./2026-11-20-the-intertwined-destinies-of-health-and-public-good.md)  
 - [2026-11-19 | 🏛️ 🛠️ Bridging the Gap: Policy Levers for Equitable Access 🏛️](./2026-11-19-bridging-the-gap-policy-levers-for-equitable-access.md)  
 - [2026-11-18 | 🏛️ 🔎 Unpacking Wait Times in the US Healthcare Landscape 🏛️](./2026-11-18-unpacking-wait-times-in-the-us-healthcare-landscape.md)  

@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-15T22:30:50Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, split-composition illustration. On the left, a stylized digital heartbeat line transitions into a smooth, rising bar graph, rendered in clean, vibrant teal and soft grey tones. On the right, a silhouette of an athlete in a focused, balanced yoga or recovery pose, bathed in warm, soft-focus ambient light. The background is a clean, off-white gradient, emphasizing a sense of clarity, efficiency, and wellness. The overall aesthetic is modern, scientific, and serene, representing the balance between high-intensity performance and data-driven recovery.
+updated: 2026-11-22T10:15:39
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](https://pmc.ncbi.nlm.nih.gov/articles/PMC8705715)  
@@ -42,4 +43,8 @@ This study contrasts with some previous research by showing no significant diffe
 * [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](../books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md) by Sara C. Mednick: Explores how to use your body's natural rhythms to improve energy, thinking, and overall health.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort<a href="https://t.co/FHnNboHvcW">https://t.co/FHnNboHvcW</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1957548869681836284?ref_src=twsrc%5Etfw">August 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort<a href="https://t.co/FHnNboHvcW">https://t.co/FHnNboHvcW</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1957548869681836284?ref_src=twsrc%5Etfw">August 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n2vf33jcdm2m" data-bluesky-cid="bafyreiep566gfrvjn5iqr4xpdv5sbr6yhxwweeeyzub4xx34z6dpgi4syi"><p>#AI Q: ❤️ Train less, gain more?  
+https://bagrounds.org/articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n2vf33jcdm2m?ref_src=embed">2026-11-22T10:15:35.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

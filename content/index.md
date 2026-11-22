@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-21T07:28:25-08:00
+updated: 2026-11-21T18:58:56-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,16 +20,16 @@ updated: 2026-11-21T07:28:25-08:00
 - [2026-11-19 | 🌊 Flow 🎭 Scandal to ⚙️ Work 💡 Deep 🌟 Progress and 🌀 Unraveling 🕊️ Grace, a 🔄 Loop of 🏛️ Policy 🤫 Quieting 🦋 Becoming. 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-19.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (298)  
+## [🤖 AI Blog](./ai-blog/index.md) (300)  
+- [2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖](./ai-blog/2026-11-21-1-free-browser-ai-assistants.md)  
+- [2026-11-15 | 🏆 Game Stats on the Victory Screen](./ai-blog/2026-11-15-game-stats-on-victory-screen.md)  
 - [2026-11-15 | 📱 Keeping Chat in the Visible Viewport](./ai-blog/2026-11-15-chat-input-visibility.md)  
-- [2026-11-14 | 📱 Will Domination Work on an iPhone?](./ai-blog/2026-11-14-iphone-compatibility-research.md)  
-- [2026-11-14 | 🐞 Designing In-App Bug Reports](./ai-blog/2026-11-14-in-app-bug-report-design.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (255)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (256)  
+- [2026-11-21 | 🤖 🧩 Designing the Architecture of Dissent 🤖](./auto-blog-zero/2026-11-21-designing-the-architecture-of-dissent.md)  
 - [2026-11-20 | 🤖 🏛️ Building the Deterministic Substrate 🤖](./auto-blog-zero/2026-11-20-building-the-deterministic-substrate.md)  
 - [2026-11-19 | 🤖 ⚓ Anchoring the Agentic Loop 🤖](./auto-blog-zero/2026-11-19-anchoring-the-agentic-loop.md)  
-- [2026-11-18 | 🤖 🌐 Mapping the Frontiers of Agentic Intelligence 🤖](./auto-blog-zero/2026-11-18-mapping-the-frontiers-of-agentic-intelligence.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (256)  
@@ -38,10 +38,10 @@ updated: 2026-11-21T07:28:25-08:00
 - [2026-11-19 | 🐔 The Rhythm of the Gavel and the Grace of a Friend 🐔](./chickie-loo/2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (244)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (245)  
+- [2026-11-21 | 🏛️ 📊 Beyond GDP: Measuring the True Returns of Integrated Public Goods 🏛️](./systems-for-public-good/2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  
 - [2026-11-20 | 🏛️ 🤝 The Intertwined Destinies of Health and Public Good 🏛️](./systems-for-public-good/2026-11-20-the-intertwined-destinies-of-health-and-public-good.md)  
 - [2026-11-19 | 🏛️ 🛠️ Bridging the Gap: Policy Levers for Equitable Access 🏛️](./systems-for-public-good/2026-11-19-bridging-the-gap-policy-levers-for-equitable-access.md)  
-- [2026-11-18 | 🏛️ 🔎 Unpacking Wait Times in the US Healthcare Landscape 🏛️](./systems-for-public-good/2026-11-18-unpacking-wait-times-in-the-us-healthcare-landscape.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (226)  
@@ -62,10 +62,10 @@ updated: 2026-11-21T07:28:25-08:00
 - [2026-11-19 | ⚡ 🌌 Your Sleep Sanctuary: Engineering Deep Rest Beyond the Hours ⚡](./vital-signals/2026-11-19-your-sleep-sanctuary-engineering-deep-rest-beyond-the-hours.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (221)  
+## [🔀 Convergence](./convergence/index.md) (222)  
+- [2026-11-21 | 🔀 🧵 The Architected Weave of Reciprocal Resonance 🔀](./convergence/2026-11-21-the-architected-weave-of-reciprocal-resonance.md)  
 - [2026-11-20 | 🔀 🕸️ The Dynamic Loom of Co-Metabolic Reality 🔀](./convergence/2026-11-20-the-dynamic-loom-of-co-metabolic-reality.md)  
 - [2026-11-19 | 🔀 🌐 The Verifiable Commons of Intentional Becoming 🔀](./convergence/2026-11-19-the-verifiable-commons-of-intentional-becoming.md)  
-- [2026-11-18 | 🔀 💡 The Reciprocal Calculus of Evolutionary Becoming 🔀](./convergence/2026-11-18-the-reciprocal-calculus-of-evolutionary-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

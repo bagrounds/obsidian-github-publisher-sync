@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-21T18:58:56-08:00
+updated: 2026-11-22T07:07:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,16 +14,16 @@ updated: 2026-11-21T18:58:56-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (737)  
-- [2026-11-21](./reflections/2026-11-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (738)  
+- [2026-11-22](./reflections/2026-11-22.md)  
+- [2026-11-21 | 📰 Shifting 🤖 Architecture 🏛️ Returns ⚡ Priming 🌟 Progress; 🐔 Heart, 💑 Broken 🔀 Weave, 🤖 Complete. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-21.md)  
 - [2026-11-20 | 🐔 Heart 📰 Churn 🔀 Reality, 💑 Amplified 🌟 Flourishing 🏛️ Destinies 🤖 Substrate ⚡ Sleep. 💡⚡🌟📰🤖🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-20.md)  
-- [2026-11-19 | 🌊 Flow 🎭 Scandal to ⚙️ Work 💡 Deep 🌟 Progress and 🌀 Unraveling 🕊️ Grace, a 🔄 Loop of 🏛️ Policy 🤫 Quieting 🦋 Becoming. 📺⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-19.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (300)  
+## [🤖 AI Blog](./ai-blog/index.md) (302)  
+- [2026-11-22 | 🧠 Three Better Bot Strategies](./ai-blog/2026-11-22-new-bot-strategy.md)  
+- [2026-11-22 | 🥇 End of Game Stats](./ai-blog/2026-11-22-end-of-game-stats.md)  
 - [2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖](./ai-blog/2026-11-21-1-free-browser-ai-assistants.md)  
-- [2026-11-15 | 🏆 Game Stats on the Victory Screen](./ai-blog/2026-11-15-game-stats-on-victory-screen.md)  
-- [2026-11-15 | 📱 Keeping Chat in the Visible Viewport](./ai-blog/2026-11-15-chat-input-visibility.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (256)  
@@ -44,22 +44,22 @@ updated: 2026-11-21T18:58:56-08:00
 - [2026-11-19 | 🏛️ 🛠️ Bridging the Gap: Policy Levers for Equitable Access 🏛️](./systems-for-public-good/2026-11-19-bridging-the-gap-policy-levers-for-equitable-access.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (226)  
+## [📰 The Noise](./the-noise/index.md) (227)  
+- [2026-11-22 | 📰 🌐 The World's Unyielding Currents 📰](./the-noise/2026-11-22-the-world-s-unyielding-currents.md)  
 - [2026-11-21 | 📰 🌐 The World's Shifting Sands and Persistent Shadows 📰](./the-noise/2026-11-21-the-world-s-shifting-sands-and-persistent-shadows.md)  
 - [2026-11-20 | 📰 🌐 The World in a Churn 📰](./the-noise/2026-11-20-the-world-in-a-churn.md)  
-- [2026-11-19 | 📰 🌐 The World's Persistent Unraveling 📰](./the-noise/2026-11-19-the-world-s-persistent-unraveling.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (225)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (226)  
+- [2026-11-22 | 🌟 A World Reaching for Greater Heights 🌟](./positivity-bias/2026-11-22-a-world-reaching-for-greater-heights.md)  
 - [2026-11-21 | 🌟 ☀️ A Daily Bloom of Progress 🌟](./positivity-bias/2026-11-21-a-daily-bloom-of-progress.md)  
 - [2026-11-20 | 🌟 The Unfolding Tapestry: A Daily Weave of Global Flourishing 🌟](./positivity-bias/2026-11-20-the-unfolding-tapestry-a-daily-weave-of-global-flourishing.md)  
-- [2026-11-19 | 🌟 Cultivating Progress: A Daily Harvest of Hope 🌟](./positivity-bias/2026-11-19-cultivating-progress-a-daily-harvest-of-hope.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (174)  
+## [⚡ Vital Signals](./vital-signals/index.md) (175)  
+- [2026-11-22 | ⚡ 😴 The Deep Reset: Architecting a Week of Restorative Sleep ⚡](./vital-signals/2026-11-22-the-deep-reset-architecting-a-week-of-restorative-sleep.md)  
 - [2026-11-21 | ⚡ ☀️ The Morning Ignition: Priming Your Brain for Peak Performance ⚡](./vital-signals/2026-11-21-the-morning-ignition-priming-your-brain-for-peak-performance.md)  
 - [2026-11-20 | ⚡ 🌙 The Evening Descent: Optimizing Your Brain's Off-Ramp to Sleep ⚡](./vital-signals/2026-11-20-the-evening-descent-optimizing-your-brain-s-off-ramp-to-sleep.md)  
-- [2026-11-19 | ⚡ 🌌 Your Sleep Sanctuary: Engineering Deep Rest Beyond the Hours ⚡](./vital-signals/2026-11-19-your-sleep-sanctuary-engineering-deep-rest-beyond-the-hours.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (222)  
@@ -88,8 +88,8 @@ updated: 2026-11-21T18:58:56-08:00
   
 ## [📄  Articles](./articles/index.md) (85)  
 - [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
+- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
-- [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (50)  

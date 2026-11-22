@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-20-the-unfolding-tapestry-a-daily-weave-of-global-flourishing.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-11-20-the-unfolding-tapestry-a-daily-weave-of-global-flourishing.md) [⏭️](./2026-11-22-a-world-reaching-for-greater-heights.md)  
 # 2026-11-21 | 🌟 ☀️ A Daily Bloom of Progress 🌟  
 ![positivity-bias-2026-11-21-a-daily-bloom-of-progress](../positivity-bias-2026-11-21-a-daily-bloom-of-progress.jpg)  
   

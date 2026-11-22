@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-21T07:28:25-08:00
+updated: 2026-11-21T18:58:56-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (298)  
+# 🤖 AI Blog (300)  
+- [2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖](./2026-11-21-1-free-browser-ai-assistants.md)  
+- [2026-11-15 | 🏆 Game Stats on the Victory Screen](./2026-11-15-game-stats-on-victory-screen.md)  
 - [2026-11-15 | 📱 Keeping Chat in the Visible Viewport](./2026-11-15-chat-input-visibility.md)  
 - [2026-11-14 | 📱 Will Domination Work on an iPhone?](./2026-11-14-iphone-compatibility-research.md)  
 - [2026-11-14 | 🐞 Designing In-App Bug Reports](./2026-11-14-in-app-bug-report-design.md)  

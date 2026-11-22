@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-14T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-14-iphone-compatibility-research.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-14-iphone-compatibility-research.md) [⏭️](./2026-11-15-game-stats-on-victory-screen.md)  
   
 # 📱 2026-11-15 | Keeping Chat in the Visible Viewport  
 ![ai-blog-2026-11-15-chat-input-visibility](../ai-blog-2026-11-15-chat-input-visibility.jpg)  

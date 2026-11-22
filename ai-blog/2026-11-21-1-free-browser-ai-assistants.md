@@ -8,149 +8,100 @@ URL: https://bagrounds.org/ai-blog/2026-11-21-1-free-browser-ai-assistants
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖
 
-🔎 I looked for a public, free, installable browser assistant that can switch among many AI backends and also connect to a wide range of tools.
+🔎 I wanted a free browser assistant that could talk to different AI providers and use tools I choose.
 
-✅ The closest overall match I found is Big-AGI: it has a free hosted tier, a mobile PWA, connections to many AI services, and an MIT-licensed self-hosted version.
+✅ The closest match I found is [Big-AGI](https://big-agi.com/): its hosted version is free to try, works as a mobile PWA, and connects to a long list of model services.
 
-⚠️ Big-AGI still expects you to bring your own provider keys, and I could not verify that it supports arbitrary MCP tool servers.
+🔑 The catch is simple: you bring your own API keys, and the model providers may charge you for using them.
 
-🧭 If broad, custom tool use is essential, self-hosted projects such as LibreChat and AnythingLLM offer stronger extensibility, while Open WebUI is an installable PWA with its own licensing caveat.
+🛠️ For deeper open-source customization, [LibreChat](https://github.com/LibreChat-AI/LibreChat) is a standout: it supports many providers and lets you build agents with MCP tools.
 
-🕰️ This is a snapshot of documentation and project pages checked on November 21, 2026, not a guarantee that product features, pricing, or free quotas will stay the same.
+## 🧩 “Free” Has Two Meanings
 
-## 🧩 What “Free” Means
+💻 Sometimes “free” means the software costs nothing, but you provide the computer and AI model.
 
-🧾 A free interface does not automatically include free model usage, free hosting, or free access to every tool.
+☁️ Sometimes it means you can use a hosted app without paying for the interface, while your model account still has its own costs or limits.
 
-🖥️ A self-hosted app may cost nothing to download while still requiring a computer, electricity, maintenance, and either local model hardware or a provider account.
+🧠 These projects mostly give you flexibility over the interface and backend; for no API bill, the straightforward option is running a model locally.
 
-☁️ A provider’s free tier usually comes with model restrictions, request limits, changing availability, or data-use terms.
+## 🌐 Big-AGI: A Free Hosted Multi-Model PWA
 
-🔑 “Bring your own key” means the app can be free while requests are billed or limited by the model provider.
+📱 [Big-AGI](https://big-agi.com/) describes itself as a mobile PWA, and its [plan comparison](https://big-agi.com/docs/choose-version) shows a free hosted tier.
 
-## 🌐 Closest Overall: Big-AGI
+🔌 Its [model connection guide](https://big-agi.com/docs/connect-models) lists services such as OpenAI, Anthropic, Gemini, OpenRouter, Ollama, and many others.
 
-📱 Big-AGI’s public site describes a mobile PWA, and its Free tier runs on the hosted site without a subscription.
+🧰 If your provider is not on the list, you can [add an OpenAI-compatible endpoint](https://big-agi.com/docs/connect-custom-endpoints), including services such as vLLM, llama.cpp, and LiteLLM.
 
-🔌 Its documentation lists more than 20 AI services and 800-plus models, including OpenAI, Anthropic, Gemini, OpenRouter, local Ollama, and custom OpenAI-compatible endpoints.
+🧠 Big-AGI includes multi-model comparisons and customizable personas, and the [self-hosted Open version](https://big-agi.com/docs/choose-version) is MIT-licensed.
 
-🧠 It includes model-comparison workflows, customizable personas, search, and tool controls, and its self-hosted Open branch is MIT-licensed.
+💸 The hosted interface is free, but Big-AGI says model usage is billed by the AI service you connect; local models avoid token charges but use your own hardware.
 
-🔑 Free describes the hosted interface, not inference: Big-AGI says you supply API keys and each AI service bills you directly, unless you use a provider’s own free allowance or a local model.
+🧭 So if you want to open a browser, add a few provider keys, and compare models, this is the easiest match I found.
 
-🧰 Its documentation describes built-in tools and personas, but I did not find documentation for connecting arbitrary MCP servers, so verify that limitation if custom tool ecosystems are central to your choice.
+## 🧑‍🔧 LibreChat: Open-Source Agents and Tools
 
-## 📱 A Lighter Public PWA: GrokChat
+📜 [LibreChat](https://github.com/LibreChat-AI/LibreChat) is MIT-licensed and can be self-hosted.
 
-🧭 GrokChat’s project describes an installable PWA with basic offline access and lists services including Groq, OpenAI, Anthropic, Mistral, xAI, DeepSeek, Google Gemini, OpenRouter, and local Ollama.
+🔀 Its [provider list](https://github.com/LibreChat-AI/LibreChat#features) includes OpenAI, Anthropic, Google, and custom OpenAI-compatible endpoints such as Ollama and OpenRouter.
 
-🛠️ It lets users add providers by entering an API-compatible endpoint and key, choose models, and customize system prompts and model parameters.
+🤖 The [agent builder](https://www.librechat.ai/docs/features/agents) lets you choose a model, write instructions, attach files, and select tools.
 
-🚫 I found no documented MCP or agent-tool system in GrokChat’s project guide, so it is a close match for the PWA and backend portions, not the full tool-customization goal.
+🧰 LibreChat agents can use MCP servers, web search, and code execution, making it a strong pick if you want to customize what your assistant can do.
 
-🔐 GrokChat’s own security note says API keys are stored unencrypted in browser local storage, so I would not enter a valuable key into a public deployment without first assessing the risks.
+🧪 There is also a [public demo](https://www.librechat.ai/docs) to try the interface, while the project recommends self-hosting for anything you want to keep private or rely on.
 
-📆 The hosted app showed version 0.1.16 when I checked, and the latest commit listed by its repository was from April 10, 2026, so I would also check its maintenance status before depending on it.
+## 🤗 Hugging Face: Public Chat and a Hackable UI
 
-## 🏗️ Stronger Self-Hosted Building Blocks
+💬 [HuggingChat](https://huggingface.co/chat/) is a public chat service where you can choose among available open models.
 
-### 🏠 Open WebUI
+🧰 Hugging Face’s open-source [Chat UI](https://huggingface.co/docs/chat-ui/index) can connect to any OpenAI-compatible API, including Ollama, OpenRouter, and other services.
 
-📱 Open WebUI explicitly documents PWA installation on phones and desktops.
+🔌 Its [MCP tools guide](https://huggingface.co/docs/chat-ui/configuration/mcp-tools) explains how to configure tools and how users can add their own MCP servers in a deployed instance.
 
-🔌 Its getting-started documentation lists Ollama, OpenAI-compatible APIs, and Open Responses providers, including examples such as Anthropic and vLLM.
+📜 The Chat UI project is [Apache-2.0 licensed](https://github.com/huggingface/chat-ui/blob/main/LICENSE).
 
-🧰 It also documents plugins, native tool calling, web search, and connecting external agents, with an MCP-to-OpenAPI proxy available for connecting MCP tools.
+🛠️ The hosted HuggingChat experience and the customizable Chat UI are related, but they are not the same thing: the latter is software to set up and configure.
 
-🖥️ Open WebUI’s installation instructions run the app on your own machine or server; they do not provide a hosted model-inference service.
+## 📚 A Few More Worth a Look
 
-🎯 Open WebUI is my strongest starting point if an installable, customizable web app matters most and self-hosting is acceptable.
+🏠 [Open WebUI](https://docs.openwebui.com/getting-started/) is a self-hosted PWA with support for Ollama, OpenAI-compatible APIs, plugins, tools, and external agents.
 
-⚖️ One licensing detail matters for customization: the current Open WebUI license requires keeping its branding in deployments above 50 users unless an exception applies, so check the terms if you need unrestricted rebranding.
+🪪 One quirk: its [current license](https://docs.openwebui.com/license/) includes a branding rule for larger deployments, so teams planning to rebrand it should read the terms first.
 
-### 🧑‍🔧 LibreChat
+📂 [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) is an [MIT-licensed project](https://github.com/Mintplex-Labs/anything-llm/blob/master/LICENSE) for chatting with documents, building agents, connecting MCP tools, and choosing from many local and hosted model providers.
 
-🔀 LibreChat documents built-in connections for major providers and custom endpoints for OpenAI-compatible APIs, including local services and aggregators such as Ollama and OpenRouter.
+🔀 [OpenRouter](https://openrouter.ai/pricing) is a hosted model gateway with a free plan and a rotating set of free models; its published plan currently lists a 50-request daily limit.
 
-🤖 Its agent builder lets users configure instructions, models, files, and tools, including MCP servers, web search, and code execution.
+🧩 OpenRouter is useful as a source of model choices, but pair it with an assistant interface such as Big-AGI or LibreChat if you want configurable tools.
 
-🧪 LibreChat does offer a public demo for evaluation, but its documentation says not to use that demo for private data or anything you need to keep.
+## 🧭 My Take
 
-🖥️ The project describes itself as a self-hosted web application, and I found no claim in its current documentation that it is an installable PWA.
+✅ For a free-to-try browser PWA with lots of model choices, I’d start with Big-AGI and keep an eye on which provider is charging for each call.
 
-🎯 LibreChat is the strongest fit I found for broad provider choice plus built-in agent and tool configuration, if you can host and maintain it.
+🛠️ For open-source agent customization, I’d try LibreChat first.
 
-📜 Its repository uses the MIT License, making it a particularly clear option if permissive open-source licensing matters.
+🤗 For a public chat with open models, start with HuggingChat; for your own backend and MCP setup, explore Hugging Face’s Chat UI.
 
-### 📚 AnythingLLM
+🏠 For a PWA you control and run yourself, take a look at Open WebUI.
 
-🧠 AnythingLLM lists a wide range of local and hosted model providers, along with a no-code agent builder, MCP compatibility, and model routing.
+💸 For usage without an API bill, connect one of these interfaces to a local model through Ollama.
 
-🗂️ It is particularly oriented toward chatting with documents and building assistants around workspaces and knowledge bases.
+🎯 So yes, close options exist today, but the best fit depends on whether you value a free hosted app, lots of model backends, or hands-on tool control most.
 
-💻 Its project offers locally run and self-hosted versions as well as a hosted product, but I did not verify an installable PWA.
+## 🔒 Give Agents Only the Tools They Need
 
-📜 Its repository identifies the project as MIT-licensed, so it is another clear open-source option to evaluate.
+🧰 Connecting a tool can let an assistant read information or take actions on your behalf.
 
-🎯 AnythingLLM is worth a look if document workflows and configurable agents matter more than having a public PWA.
+🛡️ [Google’s MCP security guide](https://docs.cloud.google.com/mcp/ai-security-safety) recommends checking tool sources and limiting their permissions.
 
-## 🧪 Public Model Access and Other Near Matches
+🪜 Start with tools you trust, give them only the access they need, and ask for confirmation before an agent changes anything important.
 
-🤗 HuggingChat is a public chat service where users can choose among available open models, while its open-source Chat UI can be configured to use any OpenAI-compatible endpoint.
+## 📚 Book Recommendations
 
-🧰 That Chat UI also supports MCP tools, but deploying and configuring your own instance is a separate task from using the public HuggingChat site.
-
-🔀 OpenRouter offers a hosted chat and API across many model providers, and its published Free plan lists more than 25 free models with a limit of 50 requests per day.
-
-🎲 Free-model availability and capabilities can vary, and tool calling depends on the selected model and the connected assistant; OpenRouter is a model gateway, not a customizable agent interface by itself.
-
-💡 Google AI Studio and the Gemini API are another possible source of limited free model usage, but they are not multi-provider assistants.
-
-🛡️ Google’s terms say that unpaid-service prompts and responses may be used to improve its products and may be reviewed by people, and advise against submitting sensitive, confidential, or personal information.
-
-## 🧭 What I Would Choose
-
-✅ For a free-to-visit PWA that connects to many AI services, try Big-AGI with a provider key whose usage and spending limits you control.
-
-🧭 For a lighter PWA chat client, GrokChat accepts multiple provider keys, but its project does not document agent tools and warns that keys are stored unencrypted.
-
-🏠 For a customizable PWA with self-hosted backends and extensible tools, start with Open WebUI.
-
-🧑‍🔧 For a self-hosted, multi-provider agent workspace with MCP and more configurable tools, start with LibreChat.
-
-📚 For a document-centered assistant with agent workflows and broad model support, consider AnythingLLM.
-
-💸 For no API bill at all, pair a self-hosted interface with a local model through Ollama or another local inference server, while remembering that the hardware and power still have costs.
-
-🔎 My answer is therefore a qualified yes: Big-AGI and GrokChat both get close to the public, multi-backend PWA idea, but Big-AGI’s free tier still depends on your own provider keys, and I did not verify broad arbitrary tool-server support in either one.
-
-## 🔒 Be Careful with Tools
-
-🧨 MCP tools can read data or perform actions, and a malicious prompt or tool can cause an agent to do something unintended.
-
-🧑‍⚖️ Google’s MCP security guidance recommends verifying tool sources, limiting permissions, and reviewing which tools an agent can use.
-
-🪜 Start with read-only tools, grant the least access needed, and require confirmation before allowing actions that change or delete important data.
-
-## 📚 Sources Checked
-
-🔎 OleksiyM, GrokChat repository README, “Features,” “Setup,” “Security Note,” and “License,” plus the hosted GrokChat app; checked November 21, 2026.
-
-🏠 Open WebUI documentation, “Getting Started with Open WebUI,” “Open WebUI as an App,” and “Open WebUI License,” plus its repository license; checked November 21, 2026.
-
-🧑‍🔧 LibreChat repository README and documentation, “Agents” and “Documentation”; checked November 21, 2026.
-
-📚 AnythingLLM repository README; checked November 21, 2026.
-
-🧠 Big-AGI repository README and MIT license, its hosted product page, and the “Free, Pro, or your own instance,” “Connect Models,” “Connect any OpenAI-compatible endpoint,” and “Run it yourself” documentation; checked November 21, 2026.
-
-🤗 Hugging Face, “Chat UI” documentation, “MCP Tools” documentation, and the HuggingChat public chat; checked November 21, 2026.
-
-🔀 OpenRouter, “Pricing” and “Free Models Router” documentation; checked November 21, 2026.
-
-💡 Google AI for Developers, Gemini API “Pricing” and “Additional Terms of Service”; checked November 21, 2026.
-
-🛡️ Google Cloud documentation, “AI Security and Safety for MCP Servers”; checked November 21, 2026.
+* 📘 Sapiens: A Brief History of Humankind by Yuval Harari
+* 📗 Behave: The Biology of Humans at Our Best and Worst by Robert Sapolsky
+* 📙 The Philosophical Baby by Alison Gopnik
+* 📕 The Deep Learning Revolution by Terrence Sejnowski
 
 ## 📚 Book Recommendations
 

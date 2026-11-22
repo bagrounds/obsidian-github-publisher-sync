@@ -5,11 +5,12 @@ aliases:
 title: 💑 Relationship Miniseries
 URL: https://bagrounds.org/relationship-miniseries
 backlinks: false
-updated: 2026-11-21T07:28:25-08:00
+updated: 2026-11-21T18:58:56-08:00
 ---
 [🏡 Home](../index.md)  
-# 💑 Relationship Miniseries (128)  
+# 💑 Relationship Miniseries (129)  
 - [💑 Relationship Miniseries — AGENTS.md](./AGENTS.md)  
+- [2026-11-21 | 💑 The Broken Record 💑](./2026-11-21-the-broken-record.md)  
 - [2026-11-20 | 💑 The Amplified Silence 💑](./2026-11-20-the-amplified-silence.md)  
 - [2026-11-19 | 💑 The Quieting 💑](./2026-11-19-the-quieting.md)  
 - [2026-11-18 | 💑 The Unspoken Plea 💑](./2026-11-18-the-unspoken-plea.md)  

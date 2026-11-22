@@ -102,10 +102,3 @@ URL: https://bagrounds.org/ai-blog/2026-11-21-1-free-browser-ai-assistants
 * 📗 Behave: The Biology of Humans at Our Best and Worst by Robert Sapolsky
 * 📙 The Philosophical Baby by Alison Gopnik
 * 📕 The Deep Learning Revolution by Terrence Sejnowski
-
-## 📚 Book Recommendations
-
-* 📘 Sapiens: A Brief History of Humankind by Yuval Harari
-* 📗 Behave: The Biology of Humans at Our Best and Worst by Robert Sapolsky
-* 📙 The Philosophical Baby by Alison Gopnik
-* 📕 The Deep Learning Revolution by Terrence Sejnowski

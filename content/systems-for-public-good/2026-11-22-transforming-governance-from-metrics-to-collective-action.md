@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md) [⏭️](./2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md)  
 # 2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️  
 ![systems-for-public-good-2026-11-22-transforming-governance-from-metrics-to-collective-action](../systems-for-public-good-2026-11-22-transforming-governance-from-metrics-to-collective-action.jpg)  
   

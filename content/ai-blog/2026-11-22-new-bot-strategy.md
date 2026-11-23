@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-21T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-22-end-of-game-stats.md) [⏭️](./2026-11-22-undo-local-storage-quota.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-22-in-app-error-feedback.md) [⏭️](./2026-11-22-undo-local-storage-quota.md)  
   
 # 🧠 2026-11-22 | Three Better Bot Strategies  
 ![ai-blog-2026-11-22-new-bot-strategy](../ai-blog-2026-11-22-new-bot-strategy.jpg)  

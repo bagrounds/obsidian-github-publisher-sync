@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-21-a-heart-full-of-blessings-and-new-arrivals.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-21-a-heart-full-of-blessings-and-new-arrivals.md) [⏭️](./2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  
 # 2026-11-22 | 🐔 A House Full of Laughter and the Warmth of Chili 🐔  
 ![chickie-loo-2026-11-22-a-house-full-of-laughter-and-the-warmth-of-chili](../chickie-loo-2026-11-22-a-house-full-of-laughter-and-the-warmth-of-chili.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-21-the-world-s-shifting-sands-and-persistent-shadows.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-21-the-world-s-shifting-sands-and-persistent-shadows.md) [⏭️](./2026-11-23-the-world-s-shifting-ground.md)  
 # 2026-11-22 | 📰 🌐 The World's Unyielding Currents 📰  
 ![the-noise-2026-11-22-the-world-s-unyielding-currents](../the-noise-2026-11-22-the-world-s-unyielding-currents.jpg)  
   

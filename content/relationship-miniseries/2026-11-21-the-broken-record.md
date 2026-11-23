@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-20-the-amplified-silence.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-20-the-amplified-silence.md) [⏭️](./2026-11-22-the-echo-chamber-weekly-recap-and-reflection.md)  
 # 2026-11-21 | 💑 The Broken Record 💑  
 ![relationship-miniseries-2026-11-21-the-broken-record](../relationship-miniseries-2026-11-21-the-broken-record.jpg)  
   

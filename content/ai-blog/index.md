@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-22T07:07:02-08:00
+updated: 2026-11-22T18:25:27-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (302)  
+# 🤖 AI Blog (303)  
+- [2026-11-22 | 🧭 Undo and the Full Browser Store](./2026-11-22-undo-local-storage-quota.md)  
 - [2026-11-22 | 🧠 Three Better Bot Strategies](./2026-11-22-new-bot-strategy.md)  
 - [2026-11-22 | 🥇 End of Game Stats](./2026-11-22-end-of-game-stats.md)  
 - [2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖](./2026-11-21-1-free-browser-ai-assistants.md)  

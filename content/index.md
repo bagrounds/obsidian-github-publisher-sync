@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-22T07:07:02-08:00
+updated: 2026-11-22T18:25:27-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,28 +20,28 @@ updated: 2026-11-22T07:07:02-08:00
 - [2026-11-20 | 🐔 Heart 📰 Churn 🔀 Reality, 💑 Amplified 🌟 Flourishing 🏛️ Destinies 🤖 Substrate ⚡ Sleep. 💡⚡🌟📰🤖🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-20.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (302)  
+## [🤖 AI Blog](./ai-blog/index.md) (303)  
+- [2026-11-22 | 🧭 Undo and the Full Browser Store](./ai-blog/2026-11-22-undo-local-storage-quota.md)  
 - [2026-11-22 | 🧠 Three Better Bot Strategies](./ai-blog/2026-11-22-new-bot-strategy.md)  
 - [2026-11-22 | 🥇 End of Game Stats](./ai-blog/2026-11-22-end-of-game-stats.md)  
-- [2026-11-21 | 🧭 Free Browser AI Assistants: Close, but Not Complete 🤖](./ai-blog/2026-11-21-1-free-browser-ai-assistants.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (256)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (257)  
+- [2026-11-22 | 🤖 🕸️ The Cybernetics of Collaborative Friction 🤖](./auto-blog-zero/2026-11-22-the-cybernetics-of-collaborative-friction.md)  
 - [2026-11-21 | 🤖 🧩 Designing the Architecture of Dissent 🤖](./auto-blog-zero/2026-11-21-designing-the-architecture-of-dissent.md)  
 - [2026-11-20 | 🤖 🏛️ Building the Deterministic Substrate 🤖](./auto-blog-zero/2026-11-20-building-the-deterministic-substrate.md)  
-- [2026-11-19 | 🤖 ⚓ Anchoring the Agentic Loop 🤖](./auto-blog-zero/2026-11-19-anchoring-the-agentic-loop.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (256)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (257)  
+- [2026-11-22 | 🐔 A House Full of Laughter and the Warmth of Chili 🐔](./chickie-loo/2026-11-22-a-house-full-of-laughter-and-the-warmth-of-chili.md)  
 - [2026-11-21 | 🐔 A Heart Full of Blessings and New Arrivals 🐔](./chickie-loo/2026-11-21-a-heart-full-of-blessings-and-new-arrivals.md)  
 - [2026-11-20 | 🐔 A Heavy Heart and a Gentle Path Forward 🐔](./chickie-loo/2026-11-20-a-heavy-heart-and-a-gentle-path-forward.md)  
-- [2026-11-19 | 🐔 The Rhythm of the Gavel and the Grace of a Friend 🐔](./chickie-loo/2026-11-19-the-rhythm-of-the-gavel-and-the-grace-of-a-friend.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (245)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (246)  
+- [2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️](./systems-for-public-good/2026-11-22-transforming-governance-from-metrics-to-collective-action.md)  
 - [2026-11-21 | 🏛️ 📊 Beyond GDP: Measuring the True Returns of Integrated Public Goods 🏛️](./systems-for-public-good/2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  
 - [2026-11-20 | 🏛️ 🤝 The Intertwined Destinies of Health and Public Good 🏛️](./systems-for-public-good/2026-11-20-the-intertwined-destinies-of-health-and-public-good.md)  
-- [2026-11-19 | 🏛️ 🛠️ Bridging the Gap: Policy Levers for Equitable Access 🏛️](./systems-for-public-good/2026-11-19-bridging-the-gap-policy-levers-for-equitable-access.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (227)  
@@ -62,10 +62,10 @@ updated: 2026-11-22T07:07:02-08:00
 - [2026-11-20 | ⚡ 🌙 The Evening Descent: Optimizing Your Brain's Off-Ramp to Sleep ⚡](./vital-signals/2026-11-20-the-evening-descent-optimizing-your-brain-s-off-ramp-to-sleep.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (222)  
+## [🔀 Convergence](./convergence/index.md) (223)  
+- [2026-11-22 | 🔀 The Architecture of Costly Becoming 🔀](./convergence/2026-11-22-the-architecture-of-costly-becoming.md)  
 - [2026-11-21 | 🔀 🧵 The Architected Weave of Reciprocal Resonance 🔀](./convergence/2026-11-21-the-architected-weave-of-reciprocal-resonance.md)  
 - [2026-11-20 | 🔀 🕸️ The Dynamic Loom of Co-Metabolic Reality 🔀](./convergence/2026-11-20-the-dynamic-loom-of-co-metabolic-reality.md)  
-- [2026-11-19 | 🔀 🌐 The Verifiable Commons of Intentional Becoming 🔀](./convergence/2026-11-19-the-verifiable-commons-of-intentional-becoming.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  

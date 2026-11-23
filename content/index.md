@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-23T07:10:24-08:00
+updated: 2026-11-23T10:07:07-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-23T07:10:24-08:00
 - [2026-11-21 | 📰 Shifting 🤖 Architecture 🏛️ Returns ⚡ Priming 🌟 Progress; 🐔 Heart, 💑 Broken 🔀 Weave, 🤖 Complete. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-21.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (303)  
+## [🤖 AI Blog](./ai-blog/index.md) (306)  
+- [2026-11-23 | 🗄️ Why Domination Runs Out of Browser Storage](./ai-blog/2026-11-23-domination-browser-storage.md)  
 - [2026-11-22 | 🧭 Undo and the Full Browser Store](./ai-blog/2026-11-22-undo-local-storage-quota.md)  
 - [2026-11-22 | 🧠 Three Better Bot Strategies](./ai-blog/2026-11-22-new-bot-strategy.md)  
-- [2026-11-22 | 🥇 End of Game Stats](./ai-blog/2026-11-22-end-of-game-stats.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (257)  
@@ -32,16 +32,16 @@ updated: 2026-11-23T07:10:24-08:00
 - [2026-11-20 | 🤖 🏛️ Building the Deterministic Substrate 🤖](./auto-blog-zero/2026-11-20-building-the-deterministic-substrate.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (257)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (258)  
+- [2026-11-23 | 🐔 ❄️ A Cold Front, A Full Heart, and the Rhythms of Home 🐔](./chickie-loo/2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  
 - [2026-11-22 | 🐔 A House Full of Laughter and the Warmth of Chili 🐔](./chickie-loo/2026-11-22-a-house-full-of-laughter-and-the-warmth-of-chili.md)  
 - [2026-11-21 | 🐔 A Heart Full of Blessings and New Arrivals 🐔](./chickie-loo/2026-11-21-a-heart-full-of-blessings-and-new-arrivals.md)  
-- [2026-11-20 | 🐔 A Heavy Heart and a Gentle Path Forward 🐔](./chickie-loo/2026-11-20-a-heavy-heart-and-a-gentle-path-forward.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (246)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (247)  
+- [2026-11-23 | 🏛️ 🏡 Empowering Local Communities: Cultivating Ownership and Agency 🏛️](./systems-for-public-good/2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md)  
 - [2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️](./systems-for-public-good/2026-11-22-transforming-governance-from-metrics-to-collective-action.md)  
 - [2026-11-21 | 🏛️ 📊 Beyond GDP: Measuring the True Returns of Integrated Public Goods 🏛️](./systems-for-public-good/2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  
-- [2026-11-20 | 🏛️ 🤝 The Intertwined Destinies of Health and Public Good 🏛️](./systems-for-public-good/2026-11-20-the-intertwined-destinies-of-health-and-public-good.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (228)  

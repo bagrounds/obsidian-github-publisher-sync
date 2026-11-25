@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md) [⏭️](./2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen.md)  
 # 2026-11-24 | 🐔 Generations of Love and a Lesson in the Pasture 🐔  
 ![chickie-loo-2026-11-24-generations-of-love-and-a-lesson-in-the-pasture](../chickie-loo-2026-11-24-generations-of-love-and-a-lesson-in-the-pasture.jpg)  
   

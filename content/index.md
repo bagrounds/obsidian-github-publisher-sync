@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-24T17:47:14-08:00
+updated: 2026-11-25T08:26:40-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,10 +14,10 @@ updated: 2026-11-24T17:47:14-08:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (740)  
-- [2026-11-24](./reflections/2026-11-24.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (741)  
+- [2026-11-25](./reflections/2026-11-25.md)  
+- [2026-11-24 | ⚡ Switching 🌟 Horizons 📰 Peril 🐔 Pasture 🤖 Agentic 🏛️ Federation 💑 Tenderness 🔀 Evolution 🤖⚡🌟📰🐔🏛️💑🔀 ⚡🌟📰🐔🤖🏛️💑🔀🔄🤖🐲](./reflections/2026-11-24.md)  
 - [2026-11-23 | 🏃‍♀️ Out of 📰 Shifting 🐔 Heart, 💖 Health, and 🔀 Trust, 🌟 Progress's 🏛️ Agency 💑 Bridges 🤖 Challenger. 🤖⚡🌟📰🐔🏛️💑🔀🔄](./reflections/2026-11-23.md)  
-- [2026-11-22 | 🔄 Transforming 💪 Unyielding 💥 Friction and 🏗️ Architecting a 👍 Better 🌎 World, ↩️ Undo 🦋 Becoming for 🧠 Reflection, 🔥 Warmth, and 📈 Stats. 🤖⚡🌟📰🐔🏛️💑🔀🔄🤖🐲](./reflections/2026-11-22.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (306)  
@@ -32,10 +32,10 @@ updated: 2026-11-24T17:47:14-08:00
 - [2026-11-22 | 🤖 🕸️ The Cybernetics of Collaborative Friction 🤖](./auto-blog-zero/2026-11-22-the-cybernetics-of-collaborative-friction.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (259)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (260)  
+- [2026-11-25 | 🐔 The Eve of Gratitude and the Hum of a Busy Kitchen 🐔](./chickie-loo/2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen.md)  
 - [2026-11-24 | 🐔 Generations of Love and a Lesson in the Pasture 🐔](./chickie-loo/2026-11-24-generations-of-love-and-a-lesson-in-the-pasture.md)  
 - [2026-11-23 | 🐔 ❄️ A Cold Front, A Full Heart, and the Rhythms of Home 🐔](./chickie-loo/2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  
-- [2026-11-22 | 🐔 A House Full of Laughter and the Warmth of Chili 🐔](./chickie-loo/2026-11-22-a-house-full-of-laughter-and-the-warmth-of-chili.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (248)  
@@ -44,22 +44,22 @@ updated: 2026-11-24T17:47:14-08:00
 - [2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️](./systems-for-public-good/2026-11-22-transforming-governance-from-metrics-to-collective-action.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (229)  
+## [📰 The Noise](./the-noise/index.md) (230)  
+- [2026-11-25 | 📰 🌐 The Accelerating Currents 📰](./the-noise/2026-11-25-the-accelerating-currents.md)  
 - [2026-11-24 | 📰 🌐 The Diverging Paths of Progress and Peril 📰](./the-noise/2026-11-24-the-diverging-paths-of-progress-and-peril.md)  
 - [2026-11-23 | 📰 🌐 The World's Shifting Ground 📰](./the-noise/2026-11-23-the-world-s-shifting-ground.md)  
-- [2026-11-22 | 📰 🌐 The World's Unyielding Currents 📰](./the-noise/2026-11-22-the-world-s-unyielding-currents.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (228)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (229)  
+- [2026-11-25 | 🌟 💖 Health's Healing Touch & Medical Marvels 🌟](./positivity-bias/2026-11-25-health-s-healing-touch-medical-marvels.md)  
 - [2026-11-24 | 🌟 ✨ Healing Horizons & Medical Breakthroughs 🌟](./positivity-bias/2026-11-24-healing-horizons-medical-breakthroughs.md)  
 - [2026-11-23 | 🌟 🚀 Propelling Humanity Forward: A New Week of Progress 🌟](./positivity-bias/2026-11-23-propelling-humanity-forward-a-new-week-of-progress.md)  
-- [2026-11-22 | 🌟 A World Reaching for Greater Heights 🌟](./positivity-bias/2026-11-22-a-world-reaching-for-greater-heights.md)  
   
   
-## [⚡ Vital Signals](./vital-signals/index.md) (177)  
+## [⚡ Vital Signals](./vital-signals/index.md) (178)  
+- [2026-11-25 | ⚡ 🧠 The Brain's Steady Burn: How Stable Glucose Fuels Focus and Mood ⚡](./vital-signals/2026-11-25-the-brain-s-steady-burn-how-stable-glucose-fuels-focus-and-mood.md)  
 - [2026-11-24 | ⚡ 🔄 The Agile Engine: Unlocking Your Body's Fuel-Switching Superpower ⚡](./vital-signals/2026-11-24-the-agile-engine-unlocking-your-body-s-fuel-switching-superpower.md)  
 - [2026-11-23 | ⚡ ⚖️ The Body's Balance Sheet: Decoding Your Essential Fat for Optimal Health ⚡](./vital-signals/2026-11-23-the-body-s-balance-sheet-decoding-your-essential-fat-for-optimal-health.md)  
-- [2026-11-22 | ⚡ 😴 The Deep Reset: Architecting a Week of Restorative Sleep ⚡](./vital-signals/2026-11-22-the-deep-reset-architecting-a-week-of-restorative-sleep.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (225)  
@@ -87,8 +87,8 @@ updated: 2026-11-24T17:47:14-08:00
   
   
 ## [📄  Articles](./articles/index.md) (85)  
-- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
+- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
 - [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
   
   

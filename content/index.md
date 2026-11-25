@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-25T08:26:40-08:00
+updated: 2026-11-25T13:40:28-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,10 +26,10 @@ updated: 2026-11-25T08:26:40-08:00
 - [2026-11-22 | 🧠 Three Better Bot Strategies](./ai-blog/2026-11-22-new-bot-strategy.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (259)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (260)  
+- [2026-11-25 | 🤖 🧱 The Burden of the Architect’s Memory 🤖](./auto-blog-zero/2026-11-25-the-burden-of-the-architect-s-memory.md)  
 - [2026-11-24 | 🤖 🧠 The Epistemology of Memory in Agentic Systems 🤖](./auto-blog-zero/2026-11-24-the-epistemology-of-memory-in-agentic-systems.md)  
 - [2026-11-23 | 🤖 🧪 Putting the Challenger to the Ultimate Test 🤖](./auto-blog-zero/2026-11-23-putting-the-challenger-to-the-ultimate-test.md)  
-- [2026-11-22 | 🤖 🕸️ The Cybernetics of Collaborative Friction 🤖](./auto-blog-zero/2026-11-22-the-cybernetics-of-collaborative-friction.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (260)  
@@ -38,10 +38,10 @@ updated: 2026-11-25T08:26:40-08:00
 - [2026-11-23 | 🐔 ❄️ A Cold Front, A Full Heart, and the Rhythms of Home 🐔](./chickie-loo/2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (248)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (249)  
+- [2026-11-25 | 🏛️ 🚧 Overcoming Inertia: Political and Cultural Barriers to Adaptation 🏛️](./systems-for-public-good/2026-11-25-overcoming-inertia-political-and-cultural-barriers-to-adaptation.md)  
 - [2026-11-24 | 🏛️ 🌐 Scaling Local Impact: Beyond Uniformity, Towards Federation 🏛️](./systems-for-public-good/2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation.md)  
 - [2026-11-23 | 🏛️ 🏡 Empowering Local Communities: Cultivating Ownership and Agency 🏛️](./systems-for-public-good/2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md)  
-- [2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️](./systems-for-public-good/2026-11-22-transforming-governance-from-metrics-to-collective-action.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (230)  
@@ -74,10 +74,10 @@ updated: 2026-11-25T08:26:40-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (967)  
+## [📺 Videos](./videos/index.md) (969)  
+- [🕵️‍♂️⚖️🏛️ How Do You Investigate a President This Corrupt | The Ezra Klein Show](./videos/how-do-you-investigate-a-president-this-corrupt-the-ezra-klein-show.md)  
+- [⚖️🚫🏛️ Andrew Weissmann Explains Why Trump Can’t Pardon His Way Out of Everything](./videos/andrew-weissmann-explains-why-trump-cant-pardon-his-way-out-of-everything.md)  
 - [👿👁️💻 “I Work For Psychopaths”: Meta Workers Expose AI Surveillance](./videos/i-work-for-psychopaths-meta-workers-expose-ai-surveillance.md)  
-- [😱🤫🗞️ Scandal](./videos/nvidia-scandal.md)  
-- [🧠🌊🔄 How to Rewire Your Brain - and Find Your Flow | Heather Berlin | TED](./videos/how-to-rewire-your-brain-and-find-your-flow-heather-berlin-ted.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-23T10:07:07-08:00
+updated: 2026-11-24T17:47:14-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (247)  
+# 🏛️ Systems for Public Good (248)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-24 | 🏛️ 🌐 Scaling Local Impact: Beyond Uniformity, Towards Federation 🏛️](./2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation.md)  
 - [2026-11-23 | 🏛️ 🏡 Empowering Local Communities: Cultivating Ownership and Agency 🏛️](./2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md)  
 - [2026-11-22 | 🏛️ 🚧 Transforming Governance: From Metrics to Collective Action 🏛️](./2026-11-22-transforming-governance-from-metrics-to-collective-action.md)  
 - [2026-11-21 | 🏛️ 📊 Beyond GDP: Measuring the True Returns of Integrated Public Goods 🏛️](./2026-11-21-beyond-gdp-measuring-the-true-returns-of-integrated-public-goods.md)  

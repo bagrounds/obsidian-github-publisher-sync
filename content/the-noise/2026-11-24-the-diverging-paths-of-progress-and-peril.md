@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-23-the-world-s-shifting-ground.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-23-the-world-s-shifting-ground.md) [⏭️](./2026-11-25-the-accelerating-currents.md)  
 # 2026-11-24 | 📰 🌐 The Diverging Paths of Progress and Peril 📰  
 ![the-noise-2026-11-24-the-diverging-paths-of-progress-and-peril](../the-noise-2026-11-24-the-diverging-paths-of-progress-and-peril.jpg)  
   

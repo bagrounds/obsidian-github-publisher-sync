@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-23-the-invisible-bridge-repairing-the-rupture.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-23-the-invisible-bridge-repairing-the-rupture.md) [⏭️](./2026-11-25-the-hesitation.md)  
 # 2026-11-24 | 💑 🎭 The Architecture of Tenderness 💑  
 ![relationship-miniseries-2026-11-24-the-architecture-of-tenderness](../relationship-miniseries-2026-11-24-the-architecture-of-tenderness.jpg)  
   

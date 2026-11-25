@@ -5,11 +5,12 @@ aliases:
 title: ⚡ Vital Signals
 URL: https://bagrounds.org/vital-signals
 backlinks: false
-updated: 2026-11-24T17:47:14-08:00
+updated: 2026-11-25T08:26:40-08:00
 ---
 [🏡 Home](../index.md)  
-# ⚡ Vital Signals (177)  
+# ⚡ Vital Signals (178)  
 - [⚡ Vital Signals — AGENTS.md](./AGENTS.md)  
+- [2026-11-25 | ⚡ 🧠 The Brain's Steady Burn: How Stable Glucose Fuels Focus and Mood ⚡](./2026-11-25-the-brain-s-steady-burn-how-stable-glucose-fuels-focus-and-mood.md)  
 - [2026-11-24 | ⚡ 🔄 The Agile Engine: Unlocking Your Body's Fuel-Switching Superpower ⚡](./2026-11-24-the-agile-engine-unlocking-your-body-s-fuel-switching-superpower.md)  
 - [2026-11-23 | ⚡ ⚖️ The Body's Balance Sheet: Decoding Your Essential Fat for Optimal Health ⚡](./2026-11-23-the-body-s-balance-sheet-decoding-your-essential-fat-for-optimal-health.md)  
 - [2026-11-22 | ⚡ 😴 The Deep Reset: Architecting a Week of Restorative Sleep ⚡](./2026-11-22-the-deep-reset-architecting-a-week-of-restorative-sleep.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-25T08:26:40-08:00
+updated: 2026-11-25T13:40:28-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (967)  
+# 📺 Videos (969)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -96,6 +96,7 @@ updated: 2026-11-25T08:26:40-08:00
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./andrej-karpathy-software-is-changing-again.md)  
 - [⚙️📊 Andrew Kelley: A Practical Guide to Applying Data Oriented Design (DoD)](./andrew-kelley-a-practical-guide-to-applying-data-oriented-design-dod.md)  
 - [🤖🚀📈 Andrew Ng: Building Faster with AI](./andrew-ng-building-faster-with-ai.md)  
+- [⚖️🚫🏛️ Andrew Weissmann Explains Why Trump Can’t Pardon His Way Out of Everything](./andrew-weissmann-explains-why-trump-cant-pardon-his-way-out-of-everything.md)  
 - [⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](./an-engineers-guide-to-preventing-burnout-jacquelyn-maccoon-tedxuoft.md)  
 - [🆕🧱🗣️ A New Theory of Compositionality](./a-new-theory-of-compositionality.md)  
 - [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
@@ -302,6 +303,7 @@ updated: 2026-11-25T08:26:40-08:00
 - [👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](./how-does-aging-impact-runners-our-tips-for-long-term-success-from-working-with-masters-runners.md)  
 - [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
 - [🤝💥💬 How do you get a connection with someone when there is a conflict? - Frederik Imbo](./how-do-you-get-a-connection-with-someone-when-there-is-a-conflict-frederik-imbo.md)  
+- [🕵️‍♂️⚖️🏛️ How Do You Investigate a President This Corrupt | The Ezra Klein Show](./how-do-you-investigate-a-president-this-corrupt-the-ezra-klein-show.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  

@@ -13,7 +13,7 @@ image_date: 2026-11-24T18:28:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant illustration depicts numerous distinct, stylized community icons (e.g., small houses, diverse geometric shapes) scattered at the base, each in unique colors and forms, symbolizing local initiatives. Delicate, glowing lines emanate from each community, connecting them to several others, forming a dynamic, non-uniform network. These lines gently converge upwards into a larger, open, interwoven structure, like a supportive canopy or a loose web, representing federation and shared principles rather than a rigid blueprint. The overall image conveys organic growth, interconnectedness, and adaptive scaling, celebrating local diversity within a unified system.
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-11-23-empowering-local-communities-cultivating-ownership-and-agency.md) [⏭️](./2026-11-25-overcoming-inertia-political-and-cultural-barriers-to-adaptation.md)  
 # 2026-11-24 | 🏛️ 🌐 Scaling Local Impact: Beyond Uniformity, Towards Federation 🏛️  
 ![systems-for-public-good-2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation](../systems-for-public-good-2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation.jpg)  
   

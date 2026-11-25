@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-11-23T10:07:07-08:00
+updated: 2026-11-24T17:47:14-08:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (223)  
+# 🔀 Convergence (225)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-11-24 | 🔀 The Metabolic Pact of Collective Evolution 🔀](./2026-11-24-the-metabolic-pact-of-collective-evolution.md)  
+- [2026-11-23 | 🔀 💓 The Calibrated Pulse of Co-Evolutionary Trust 🔀](./2026-11-23-the-calibrated-pulse-of-co-evolutionary-trust.md)  
 - [2026-11-22 | 🔀 The Architecture of Costly Becoming 🔀](./2026-11-22-the-architecture-of-costly-becoming.md)  
 - [2026-11-21 | 🔀 🧵 The Architected Weave of Reciprocal Resonance 🔀](./2026-11-21-the-architected-weave-of-reciprocal-resonance.md)  
 - [2026-11-20 | 🔀 🕸️ The Dynamic Loom of Co-Metabolic Reality 🔀](./2026-11-20-the-dynamic-loom-of-co-metabolic-reality.md)  

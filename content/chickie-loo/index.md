@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-11-25T17:22:32-08:00
+updated: 2026-11-26T08:25:34-08:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (260)  
+# 🐔 Chickie Loo (261)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-11-26 | 🐔 🦃 The Quiet Joy of a Thanksgiving Morning 🐔](./2026-11-26-the-quiet-joy-of-a-thanksgiving-morning.md)  
 - [2026-11-25 | 🐔 The Eve of Gratitude and the Hum of a Busy Kitchen 🐔](./2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen.md)  
 - [2026-11-24 | 🐔 Generations of Love and a Lesson in the Pasture 🐔](./2026-11-24-generations-of-love-and-a-lesson-in-the-pasture.md)  
 - [2026-11-23 | 🐔 ❄️ A Cold Front, A Full Heart, and the Rhythms of Home 🐔](./2026-11-23-a-cold-front-a-full-heart-and-the-rhythms-of-home.md)  

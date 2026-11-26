@@ -9,6 +9,10 @@ Platform:
 Channel: CUNY Graduate Center
 tags:
 youtube: https://youtu.be/BZrTCblDgdk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🏛️ Paul Krugman and Heather Cox Richardson in Conversation  
@@ -61,5 +65,5 @@ youtube: https://youtu.be/BZrTCblDgdk
   
 ### 🎨 Creatively Related  
   
-* 📖 Manufacturing Consent by Edward S. Herman and Noam Chomsky analyzes how institutional and economic power shapes mass media narratives.  
+* 📖 [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky analyzes how institutional and economic power shapes mass media narratives.  
 * 📖 The Shock Doctrine by Naomi Klein explores how political and economic shocks are used to advance sweeping market restructuring.

@@ -9,6 +9,10 @@ Platform:
 Channel: The Ezra Klein Show
 tags:
 youtube: https://youtu.be/IFFUOrW30rc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-11-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🕵️‍♂️⚖️🏛️ How Do You Investigate a President This Corrupt | The Ezra Klein Show  
@@ -60,12 +64,12 @@ youtube: https://youtu.be/IFFUOrW30rc
   
 ### ↔️ Similar  
   
-* 🔎 Kleptopia by Tom Burgis examines how dirty money, political power, and global financial networks operate across governments and elites.  
+* 🔎 [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](../books/kleptopia-how-dirty-money-is-conquering-the-world.md) by Tom Burgis examines how dirty money, political power, and global financial networks operate across governments and elites.  
 * 🔎 The Power Broker by Robert A. Caro details how an unelected official amassed vast public authority, controlled infrastructure and contracts, and reshaped New York.  
   
 ### 🆚 Contrasting  
   
-* ⚖️ The Righteous Mind by Jonathan Haidt analyzes moral psychology and why people with different values and political alignments interpret events and fairness differently.  
+* ⚖️ [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt analyzes moral psychology and why people with different values and political alignments interpret events and fairness differently.  
 * ⚖️ Trust by Francis Fukuyama explores how social capital, shared norms, and interpersonal trust shape economic life and institutional functioning.  
   
 ### 🎨 Creatively Related  

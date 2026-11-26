@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-25T16:59:35-08:00
+updated: 2026-11-25T17:22:32-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -74,10 +74,10 @@ updated: 2026-11-25T16:59:35-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (969)  
+## [📺 Videos](./videos/index.md) (970)  
+- [🗣️🏛️ Paul Krugman and Heather Cox Richardson in Conversation](./videos/paul-krugman-and-heather-cox-richardson-in-conversation.md)  
 - [🕵️‍♂️⚖️🏛️ How Do You Investigate a President This Corrupt | The Ezra Klein Show](./videos/how-do-you-investigate-a-president-this-corrupt-the-ezra-klein-show.md)  
 - [⚖️🚫🏛️ Andrew Weissmann Explains Why Trump Can’t Pardon His Way Out of Everything](./videos/andrew-weissmann-explains-why-trump-cant-pardon-his-way-out-of-everything.md)  
-- [👿👁️💻 “I Work For Psychopaths”: Meta Workers Expose AI Surveillance](./videos/i-work-for-psychopaths-meta-workers-expose-ai-surveillance.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

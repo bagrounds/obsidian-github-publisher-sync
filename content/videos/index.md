@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-11-25T16:59:35-08:00
+updated: 2026-11-25T17:22:32-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (969)  
+# 📺 Videos (970)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🇯🇵🧹🏠 11 Japanese Organisation Rules Americans Break - That Make Your House Messy](./11-japanese-organisation-rules-americans-break-that-make-your-house-messy.md)  
@@ -526,6 +526,7 @@ updated: 2026-11-25T16:59:35-08:00
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  
 - [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
+- [🗣️🏛️ Paul Krugman and Heather Cox Richardson in Conversation](./paul-krugman-and-heather-cox-richardson-in-conversation.md)  
 - [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./pbs-news-hour-full-episode-jan-22-2026.md)  
 - [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./pbs-news-weekend-full-episode-june-14-2025.md)  
 - [🇺🇸📰🗓️ PBS News Weekend full episode, June 22, 2025](./pbs-news-weekend-full-episode-june-22-2025.md)  

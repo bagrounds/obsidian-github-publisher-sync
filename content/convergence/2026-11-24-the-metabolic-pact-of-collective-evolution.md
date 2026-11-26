@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-23-the-calibrated-pulse-of-co-evolutionary-trust.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-11-23-the-calibrated-pulse-of-co-evolutionary-trust.md) [⏭️](./2026-11-25-the-authenticated-architecture-of-shared-truth.md)  
 # 2026-11-24 | 🔀 The Metabolic Pact of Collective Evolution 🔀  
 ![convergence-2026-11-24-the-metabolic-pact-of-collective-evolution](../convergence-2026-11-24-the-metabolic-pact-of-collective-evolution.jpg)  
   

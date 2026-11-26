@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-24-generations-of-love-and-a-lesson-in-the-pasture.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-11-24-generations-of-love-and-a-lesson-in-the-pasture.md) [⏭️](./2026-11-26-the-quiet-joy-of-a-thanksgiving-morning.md)  
 # 2026-11-25 | 🐔 The Eve of Gratitude and the Hum of a Busy Kitchen 🐔  
 ![chickie-loo-2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen](../chickie-loo-2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen.jpg)  
   

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-24-the-diverging-paths-of-progress-and-peril.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-11-24-the-diverging-paths-of-progress-and-peril.md) [⏭️](./2026-11-26-the-unfolding-tapestry-of-urgency.md)  
 # 2026-11-25 | 📰 🌐 The Accelerating Currents 📰  
 ![the-noise-2026-11-25-the-accelerating-currents](../the-noise-2026-11-25-the-accelerating-currents.jpg)  
   

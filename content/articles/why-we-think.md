@@ -13,6 +13,7 @@ link_analysis_version: "2"
 image_date: 2026-05-17T05:30:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration depicting the contrast between intuitive and deliberate thought. On the left, a glowing, translucent human silhouette is filled with a chaotic, rapid-fire network of bright sparks and quick, jagged lightning lines representing fast System 1 thinking. On the right, the same silhouette is composed of an intricate, methodical web of interconnected golden geometric gears and crystalline nodes, with a slow, steady pulse of light flowing through them to represent slow System 2 reasoning. The background is a deep, atmospheric navy blue, with faint, ethereal neural pathways bridging the two halves, symbolizing the transition from instinct to analytical chain-of-thought. The overall aesthetic is clean, modern, and high-tech, using a palette of soft gold, electric blue, and deep charcoal.
+updated: 2026-11-27T12:18:25
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤔💭🤔💭 Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking)  
@@ -70,4 +71,12 @@ image_prompt: A split-composition illustration depicting the contrast between in
   
 ### 🎨 Creatively Related  
 * [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths: This connects computational problem-solving principles, like optimal stopping and caching, to human decision-making and practical thought processes.  
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: It discusses how intellectual frameworks (paradigms) fundamentally shift, creatively relating to how new techniques like CoT or tool use fundamentally change the capabilities and research approaches in AI.
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: It discusses how intellectual frameworks (paradigms) fundamentally shift, creatively relating to how new techniques like CoT or tool use fundamentally change the capabilities and research approaches in AI.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3n3c6b7xipv2m" data-bluesky-cid="bafyreibgdswkrp3ijwm2iyztnr5gwght2ctgvlgo2zbmsbwmrioynxsgvi"><p>🤔💭🤔💭 Why We Think  
+  
+#AI Q: 🤔 Do you trust an AI&#39;s step by step explanation, or is it just making up a story?  
+  
+🐌 Slow Reasoning | 🔗 Chain-of-Thought | 💻 Inference Scaling | ⚖️  
+https://bagrounds.org/articles/why-we-think</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3n3c6b7xipv2m?ref_src=embed">2026-11-27T12:18:21.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-11-27T09:12:34-08:00
+updated: 2026-11-27T16:58:35-08:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (250)  
+# 🏛️ Systems for Public Good (251)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-11-27 | 🏛️ 🔁 Embedding Adaptive Governance: From Experiment to Everyday Practice 🏛️](./2026-11-27-embedding-adaptive-governance-from-experiment-to-everyday-practice.md)  
 - [2026-11-26 | 🏛️ 🏗️ Forging Adaptive Governance: Policy and Institutional Levers 🏛️](./2026-11-26-forging-adaptive-governance-policy-and-institutional-levers.md)  
 - [2026-11-25 | 🏛️ 🚧 Overcoming Inertia: Political and Cultural Barriers to Adaptation 🏛️](./2026-11-25-overcoming-inertia-political-and-cultural-barriers-to-adaptation.md)  
 - [2026-11-24 | 🏛️ 🌐 Scaling Local Impact: Beyond Uniformity, Towards Federation 🏛️](./2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation.md)  

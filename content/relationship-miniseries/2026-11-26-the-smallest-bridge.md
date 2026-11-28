@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-25-the-hesitation.md)  
+[Home](../index.md) > [💑 Relationship Miniseries](./index.md) | [⏮️](./2026-11-25-the-hesitation.md) [⏭️](./2026-11-27-the-weight-of-shielding.md)  
 # 2026-11-26 | 💑 The Smallest Bridge 💑  
 ![relationship-miniseries-2026-11-26-the-smallest-bridge](../relationship-miniseries-2026-11-26-the-smallest-bridge.jpg)  
   

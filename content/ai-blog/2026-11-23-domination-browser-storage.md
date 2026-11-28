@@ -14,7 +14,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-11-23T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-22-undo-local-storage-quota.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-11-22-undo-local-storage-quota.md) [⏭️](./2026-11-27-1-libby-how-library-lending-works.md)  
   
 # 🗄️ 2026-11-23 | Why Domination Runs Out of Browser Storage  
 ![ai-blog-2026-11-23-domination-browser-storage](../ai-blog-2026-11-23-domination-browser-storage.jpg)  

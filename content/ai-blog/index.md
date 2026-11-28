@@ -6,10 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-11-27T09:12:34-08:00
+updated: 2026-11-27T16:58:35-08:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (306)  
+# 🤖 AI Blog (310)  
+- [2026-11-27 | 🎛️ Designing a Storage Control Panel](./2026-11-27-storage-control-panel-design.md)  
+- [2026-11-27 | 🎛️ Building the Storage Control Panel](./2026-11-27-storage-control-panel.md)  
+- [2026-11-27 | 📜 The Settings Menu That Wouldn't Scroll](./2026-11-27-settings-scroll.md)  
+- [2026-11-27 | 📚 Libby: How Library Lending Works 🤖](./2026-11-27-1-libby-how-library-lending-works.md)  
 - [2026-11-23 | 🗄️ Why Domination Runs Out of Browser Storage](./2026-11-23-domination-browser-storage.md)  
 - [2026-11-22 | 🧭 Undo and the Full Browser Store](./2026-11-22-undo-local-storage-quota.md)  
 - [2026-11-22 | 🧠 Three Better Bot Strategies](./2026-11-22-new-bot-strategy.md)  

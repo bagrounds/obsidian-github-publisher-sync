@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-11-27T09:12:34-08:00
+updated: 2026-11-27T16:58:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,10 +20,10 @@ updated: 2026-11-27T09:12:34-08:00
 - [2026-11-25 | ✨ Explains ❓ How 🗣️ Conversation ⚡ Fuels 🌟 Healing 📰 Currents, 💖 Gratitude 🏛️ Overcoming 💑 Hesitation's 🤖 Burden, 🔀 Architecture's ✅ Truth. 📺⚡🌟📰🐔🏛️💑🤖🔀🔄🤖🐲](./reflections/2026-11-25.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (306)  
-- [2026-11-23 | 🗄️ Why Domination Runs Out of Browser Storage](./ai-blog/2026-11-23-domination-browser-storage.md)  
-- [2026-11-22 | 🧭 Undo and the Full Browser Store](./ai-blog/2026-11-22-undo-local-storage-quota.md)  
-- [2026-11-22 | 🧠 Three Better Bot Strategies](./ai-blog/2026-11-22-new-bot-strategy.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (310)  
+- [2026-11-27 | 🎛️ Designing a Storage Control Panel](./ai-blog/2026-11-27-storage-control-panel-design.md)  
+- [2026-11-27 | 🎛️ Building the Storage Control Panel](./ai-blog/2026-11-27-storage-control-panel.md)  
+- [2026-11-27 | 📜 The Settings Menu That Wouldn't Scroll](./ai-blog/2026-11-27-settings-scroll.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (262)  
@@ -38,10 +38,10 @@ updated: 2026-11-27T09:12:34-08:00
 - [2026-11-25 | 🐔 The Eve of Gratitude and the Hum of a Busy Kitchen 🐔](./chickie-loo/2026-11-25-the-eve-of-gratitude-and-the-hum-of-a-busy-kitchen.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (250)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (251)  
+- [2026-11-27 | 🏛️ 🔁 Embedding Adaptive Governance: From Experiment to Everyday Practice 🏛️](./systems-for-public-good/2026-11-27-embedding-adaptive-governance-from-experiment-to-everyday-practice.md)  
 - [2026-11-26 | 🏛️ 🏗️ Forging Adaptive Governance: Policy and Institutional Levers 🏛️](./systems-for-public-good/2026-11-26-forging-adaptive-governance-policy-and-institutional-levers.md)  
 - [2026-11-25 | 🏛️ 🚧 Overcoming Inertia: Political and Cultural Barriers to Adaptation 🏛️](./systems-for-public-good/2026-11-25-overcoming-inertia-political-and-cultural-barriers-to-adaptation.md)  
-- [2026-11-24 | 🏛️ 🌐 Scaling Local Impact: Beyond Uniformity, Towards Federation 🏛️](./systems-for-public-good/2026-11-24-scaling-local-impact-beyond-uniformity-towards-federation.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (232)  
